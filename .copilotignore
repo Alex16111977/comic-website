@@ -1,0 +1,16 @@
+# Ignore volume HTML files to reduce context
+volumes/**/*.html
+
+# Ignore data files
+data/*.py
+data/*.json
+data/*.csv
+
+# Ignore large files
+*.min.js
+*.min.css
+
+# Keep only main files
+!index.html
+!css/styles.css
+!js/script.js
