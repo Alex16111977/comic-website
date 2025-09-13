@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>König Lear - Comic Navigation</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: rgba(255,255,255,0.9);
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        
+        .volume {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .volume h2 {
+            margin: 0 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid;
+        }
+        
+        .volume-1 h2 { 
+            color: #FFD700; 
+            border-color: #FFD700;
+        }
+        
+        .volume-2 h2 { 
+            color: #7f39fb; 
+            border-color: #7f39fb;
+        }
+        
+        .volume-3 h2 { 
+            color: #4CAF50; 
+            border-color: #4CAF50;
+        }
+        
+        .issue {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f5f5f5;
+            border-radius: 10px;
+        }
+        
+        .issue h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        
+        .pages {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .page-link {
+            display: inline-block;
+            padding: 8px 15px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .page-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .page-link.ready {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+        }
+        
+        .page-link.planned {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        
+        .stats {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .stat-item {
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 10px;
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>👑 König Lear Comic</h1>
+        <div class="subtitle">Немецкий язык через классическую литературу</div>
+        
+        <div class="stats">
+            <h2>📊 Статистика</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Тома</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Выпусков</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">16</div>
+                    <div class="stat-label">Готовых страниц</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">180+</div>
+                    <div class="stat-label">Слов</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ТОМ 1: MACHT -->
+        <div class="volume volume-1">
+            <h2>📖 Band 1: MACHT (Власть)</h2>
+            
+            <div class="issue">
+                <h3>Ausgabe 1: Der Thron (Трон)</h3>
+                <div class="pages">
+                    <a href="volumes/volume_1_macht/issue_01_thron_page_1.html" class="page-link ready">Seite 1</a>
+                    <a href="volumes/volume_1_macht/issue_01_thron_page_2.html" class="page-link ready">Seite 2</a>
+                    <a href="volumes/volume_1_macht/issue_01_thron_page_3.html" class="page-link ready">Seite 3</a>
+                    <a href="volumes/volume_1_macht/issue_01_thron_page_4.html" class="page-link ready">Seite 4</a>
+                    <a href="volumes/volume_1_macht/issue_01_thron_page_5.html" class="page-link ready">Seite 5</a>
+                    <a href="volumes/volume_1_macht/issue_01_thron_page_6.html" class="page-link ready">Seite 6</a>
+                </div>
+            </div>
+            
+            <div class="issue">
+                <h3>Ausgabe 2: Die Lüge (Ложь)</h3>
+                <div class="pages">
+                    <a href="volumes/volume_1_macht/issue_02_luege_page_1.html" class="page-link ready">Seite 1</a>
+                    <a href="#" class="page-link planned">Seite 2</a>
+                    <a href="#" class="page-link planned">Seite 3</a>
+                    <a href="#" class="page-link planned">Seite 4</a>
+                    <a href="#" class="page-link planned">Seite 5</a>
+                </div>
+            </div>
+            
+            <div class="issue">
+                <h3>Ausgabe 3: Der Fluch (Проклятие)</h3>
+                <div class="pages">
+                    <a href="#" class="page-link planned">Seite 1-5</a>
+                </div>
+            </div>
+            
+            <div class="issue">
+                <h3>Ausgabe 4: Die Verwandlung (Превращение)</h3>
+                <div class="pages">
+                    <a href="#" class="page-link planned">Seite 1-5</a>
+                </div>
+            </div>
+            
+            <div class="issue">
+                <h3>Ausgabe 5: Die Wut (Ярость)</h3>
+                <div class="pages">
+                    <a href="#" class="page-link planned">Seite 1-6</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ТОМ 2: WAHNSINN -->
+        <div class="volume volume-2">
+            <h2>🌪️ Band 2: WAHNSINN (Безумие)</h2>
+            
+            <div class="issue">
+                <h3>Ausgabe 6: Der Sturm (Буря)</h3>
+                <div class="pages">
+                    <a href="volumes/volume_2_wahnsinn/issue_06_sturm_page_1.html" class="page-link ready">Seite 1</a>
+                    <a href="volumes/volume_2_wahnsinn/issue_06_sturm_page_2.html" class="page-link ready">Seite 2</a>
+                    <a href="volumes/volume_2_wahnsinn/issue_06_sturm_page_3.html" class="page-link ready">Seite 3</a>
+                    <a href="volumes/volume_2_wahnsinn/issue_06_sturm_page_4.html" class="page-link ready">Seite 4</a>
+                    <a href="volumes/volume_2_wahnsinn/issue_06_sturm_page_5.html" class="page-link ready">Seite 5</a>
+                    <a href="volumes/volume_2_wahnsinn/issue_06_sturm_page_6.html" class="page-link ready">Seite 6</a>
+                </div>
+            </div>
+            
+            <div class="issue">
+                <h3>Ausgabe 7: Die Höhle (Пещера)</h3>
+                <div class="pages">
+                    <a href="volumes/volume_2_wahnsinn/issue_07_hoehle_page_1.html" class="page-link ready">Seite 1</a>
+                    <a href="volumes/volume_2_wahnsinn/issue_07_hoehle_page_2.html" class="page-link ready">Seite 2</a>
+                    <a href="volumes/volume_2_wahnsinn/issue_07_hoehle_page_3.html" class="page-link ready">Seite 3</a>
+                    <a href="#" class="page-link planned">Seite 4</a>
+                    <a href="#" class="page-link planned">Seite 5</a>
+                </div>
+            </div>
+            
+            <div class="issue">
+                <h3>Ausgabe 8: Das Gericht (Суд)</h3>
+                <div class="pages">
+                    <a href="#" class="page-link planned">Seite 1-5</a>
+                </div>
+            </div>
+            
+            <div class="issue">
+                <h3>Ausgabe 9: Die Blendung (Ослепление)</h3>
+                <div class="pages">
+                    <a href="#" class="page-link planned">Seite 1-6</a>
+                </div>
+            </div>
+            
+            <div class="issue">
+                <h3>Ausgabe 10: Der Abgrund (Бездна)</h3>
+                <div class="pages">
+                    <a href="#" class="page-link planned">Seite 1-5</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ТОМ 3: WEISHEIT -->
+        <div class="volume volume-3">
+            <h2>💚 Band 3: WEISHEIT (Мудрость)</h2>
+            
+            <div class="issue">
+                <h3>Ausgabe 11-15: Wiedersehen</h3>
+                <div class="pages">
+                    <a href="#" class="page-link planned">In Entwicklung...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

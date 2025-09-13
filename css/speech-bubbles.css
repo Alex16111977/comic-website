@@ -1,0 +1,159 @@
+/* speech-bubbles.css - Стили для диалогов */
+
+.speech-bubble {
+  position: absolute;
+  background: white;
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 15px;
+  max-width: 200px;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 14px;
+  z-index: 10;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Хвостик пузыря */
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #000;
+}
+
+.speech-bubble::before {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  left: 31px;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 9px solid white;
+  z-index: 1;
+}
+
+/* Позиции пузырей */
+.bubble-top-left {
+  top: 20px;
+  left: 20px;
+}
+
+.bubble-top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.bubble-bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
+.bubble-bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+
+.bubble-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Типы пузырей */
+.bubble-shout {
+  background: #FFE4E1;
+  border: 3px solid #FF0000;
+  font-weight: bold;
+  font-size: 16px;
+  animation: shake 0.5s;
+}
+
+.bubble-whisper {
+  background: #F0F8FF;
+  border: 1px dashed #666;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.bubble-thought {
+  border-radius: 50%;
+  border: 2px dashed #999;
+  background: #F5F5F5;
+}
+
+.bubble-thought::after,
+.bubble-thought::before {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 40px;
+  width: 10px;
+  height: 10px;
+  background: #F5F5F5;
+  border: 2px dashed #999;
+  border-radius: 50%;
+}
+
+.bubble-thought::before {
+  bottom: -30px;
+  left: 50px;
+  width: 6px;
+  height: 6px;
+}
+
+/* Немецкий текст в пузыре */
+.bubble-german {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+/* Перевод в пузыре */
+.bubble-translation {
+  font-size: 11px;
+  color: #7f8c8d;
+  font-style: italic;
+  border-top: 1px dashed #ddd;
+  padding-top: 5px;
+  margin-top: 5px;
+}
+
+/* Звуковые эффекты */
+.sfx {
+  position: absolute;
+  font-family: Impact, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FF0000;
+  text-shadow: 2px 2px 0 #000;
+  transform: rotate(-15deg);
+  z-index: 5;
+}
+
+.sfx-large {
+  font-size: 36px;
+}
+
+.sfx-small {
+  font-size: 18px;
+}
+
+/* Анимации */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}

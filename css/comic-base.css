@@ -1,0 +1,211 @@
+/* comic-base.css - Основные стили комикса Король Лір */
+
+:root {
+  /* Эмоциональные градиенты для трех томов */
+  --gradient-macht: linear-gradient(135deg, #FFD700 0%, #FF8C00 50%, #8B4513 100%);
+  --gradient-wahnsinn: linear-gradient(135deg, #1a1a2e 0%, #7f39fb 50%, #0c0c1f 100%);
+  --gradient-weisheit: linear-gradient(135deg, #a8e6cf 0%, #dcedc1 50%, #ffffff 100%);
+  
+  /* Размеры и отступы */
+  --panel-gap: 10px;
+  --panel-border: 3px solid #000;
+  --panel-radius: 5px;
+  
+  /* Цвета */
+  --text-primary: #2c3e50;
+  --text-secondary: #7f8c8d;
+  --bg-light: #ecf0f1;
+  --shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Контейнер страницы комикса */
+.comic-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--panel-gap);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+/* Базовые стили панелей */
+.panel {
+  background: white;
+  border: var(--panel-border);
+  border-radius: var(--panel-radius);
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.panel:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow);
+  z-index: 10;
+}
+
+/* Размеры панелей */
+.panel-full {
+  grid-column: 1 / -1;
+  min-height: 500px;
+}
+
+.panel-half {
+  grid-column: span 2;
+  min-height: 400px;
+}
+
+.panel-third {
+  grid-column: span 1;
+  min-height: 300px;
+}
+
+.panel-vertical {
+  grid-row: span 2;
+  min-height: 600px;
+}
+
+/* Контент панели */
+.panel-content {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Номер панели */
+.panel-number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Фон панели с градиентом */
+.panel-macht {
+  background: var(--gradient-macht);
+}
+
+.panel-wahnsinn {
+  background: var(--gradient-wahnsinn);
+}
+
+.panel-weisheit {
+  background: var(--gradient-weisheit);
+}
+
+/* Заголовок страницы */
+.page-header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.page-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.page-header p {
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+/* Словарь страницы */
+.page-vocabulary {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.page-vocabulary h3 {
+  color: var(--text-primary);
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.vocabulary-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  list-style: none;
+}
+
+.vocabulary-item {
+  padding: 10px;
+  background: var(--bg-light);
+  border-radius: 5px;
+  border-left: 4px solid #3498db;
+}
+
+.word-german {
+  font-weight: bold;
+  color: var(--text-primary);
+  font-size: 1.1em;
+}
+
+.word-translation {
+  color: var(--text-secondary);
+  margin-top: 5px;
+}
+
+.word-transcription {
+  font-style: italic;
+  color: #95a5a6;
+  font-size: 0.9em;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.panel {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.panel:nth-child(1) { animation-delay: 0.1s; }
+.panel:nth-child(2) { animation-delay: 0.2s; }
+.panel:nth-child(3) { animation-delay: 0.3s; }
+.panel:nth-child(4) { animation-delay: 0.4s; }
+.panel:nth-child(5) { animation-delay: 0.5s; }
+.panel:nth-child(6) { animation-delay: 0.6s; }
