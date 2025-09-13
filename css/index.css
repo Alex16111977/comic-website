@@ -128,3 +128,34 @@ h1 {
     font-size: 0.9em;
     opacity: 0.9;
 }
+
+#lira-journey {
+    margin-top: 40px;
+}
+.journey-map {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+}
+.journey-map .phase {
+    flex: 1 1 250px;
+    padding: 15px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background: #fafafa;
+}
+.journey-map .phase.final {
+    border-color: #c00;
+    background: #ffecec;
+}
+.journey-map h3 {
+    margin-top: 0;
+}
+.journey-map .phase ul {
+    display: none;
+}
+.journey-map .phase.open ul {
+    display: block;
+}
