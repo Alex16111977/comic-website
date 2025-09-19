@@ -319,6 +319,223 @@ body {
     color: #666;
 }
 
+.relations-wrapper {
+    margin: 20px 0 40px;
+}
+
+.relations-container {
+    display: none;
+    background: white;
+    border-radius: 20px;
+    padding: 32px 36px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+    margin-bottom: 32px;
+}
+
+.relations-container.active {
+    display: block;
+    animation: fadeIn 0.45s ease;
+}
+
+.relations-title {
+    text-align: center;
+    font-size: 1.8em;
+    color: #1f2937;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.relations-subtitle {
+    text-align: center;
+    color: #4b5563;
+    margin-bottom: 24px;
+    font-size: 0.95em;
+}
+
+.relation-section {
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    border-radius: 16px;
+    background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+    margin-bottom: 16px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.relation-section:last-of-type {
+    margin-bottom: 0;
+}
+
+.relation-section[data-has-content="false"] {
+    display: none;
+}
+
+.relation-section.expanded {
+    box-shadow: 0 12px 30px rgba(102, 126, 234, 0.18);
+}
+
+.relation-toggle {
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.05em;
+    font-weight: 600;
+    color: #4338ca;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    text-align: left;
+}
+
+.relation-toggle:hover,
+.relation-section.expanded .relation-toggle {
+    background: rgba(102, 126, 234, 0.12);
+    color: #312e81;
+}
+
+.relation-toggle:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.35);
+}
+
+.toggle-icon {
+    font-size: 0.85em;
+    transition: transform 0.3s ease;
+}
+
+.relation-section.expanded .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.relations-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    padding: 0 24px;
+}
+
+.relation-section.expanded .relations-content {
+    padding: 18px 24px 24px;
+}
+
+.relation-group,
+.synonym-group,
+.collocation-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.relation-group:last-child,
+.synonym-group:last-child,
+.collocation-group:last-child {
+    margin-bottom: 0;
+}
+
+.relation-header,
+.synonym-word,
+.collocation-word {
+    font-weight: 700;
+    color: #4338ca;
+    font-size: 1.05em;
+}
+
+.drag-targets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.drag-target {
+    min-width: 120px;
+    min-height: 52px;
+    border: 2px dashed #a5b4fc;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(79, 70, 229, 0.08);
+    color: #4338ca;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.drag-target .target-answer {
+    color: #1f2937;
+    font-weight: 600;
+}
+
+.drag-target.correct {
+    border-color: #34d399;
+    background: rgba(16, 185, 129, 0.15);
+}
+
+.drag-target.incorrect {
+    border-color: #f87171;
+    background: rgba(248, 113, 113, 0.15);
+}
+
+.drag-target.drag-over {
+    border-style: solid;
+    transform: scale(1.02);
+}
+
+.drag-sources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.drag-source {
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-weight: 600;
+    cursor: grab;
+    user-select: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 6px 18px rgba(102, 126, 234, 0.35);
+}
+
+.drag-source:active,
+.drag-source.dragging {
+    cursor: grabbing;
+    transform: scale(0.95);
+}
+
+.drag-source.selected {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.6);
+}
+
+.synonym-list,
+.collocation-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.synonym-item,
+.collocation-item {
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: rgba(102, 126, 234, 0.15);
+    color: #312e81;
+    font-weight: 600;
+    font-size: 0.95em;
+}
+
+.relations-empty-state {
+    margin-top: 16px;
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.95em;
+}
+
 .phase-navigation {
     display: flex;
     justify-content: center;
@@ -414,7 +631,7 @@ body {
     .container {
         padding: 10px;
     }
-    
+
     .page-header h1 {
         font-size: 2em;
     }
@@ -478,7 +695,52 @@ body {
     .word-theme {
         font-size: 0.7em;
     }
-    
+
+    .relations-container {
+        padding: 24px 20px;
+        margin-bottom: 24px;
+    }
+
+    .relations-title {
+        font-size: 1.5em;
+    }
+
+    .relations-subtitle {
+        font-size: 0.9em;
+        margin-bottom: 18px;
+    }
+
+    .relation-toggle {
+        padding: 16px 18px;
+        font-size: 1em;
+    }
+
+    .relations-content {
+        padding: 0 18px;
+    }
+
+    .relation-section.expanded .relations-content {
+        padding: 16px 18px 18px;
+    }
+
+    .drag-targets {
+        flex-direction: column;
+    }
+
+    .drag-target {
+        width: 100%;
+    }
+
+    .drag-sources {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .drag-source {
+        width: 100%;
+        text-align: center;
+    }
+
     .phase-navigation {
         flex-direction: column;
         align-items: center;
