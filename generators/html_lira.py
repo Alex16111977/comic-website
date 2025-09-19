@@ -1,4 +1,5 @@
 """HTML Generator for Lira Journey pages"""
+import json
 import re
 
 from .base import BaseGenerator
@@ -14,7 +15,7 @@ class LiraHTMLGenerator(BaseGenerator):
         journey_phases = character.get("journey_phases", [])
         js = LiraJSGenerator.generate(character)
 
-        exercises = self._prepare_exercises(journey_phases)
+        exercises, quizzes, quizzes_json = self._prepare_exercises(journey_phases)
         initial_description = journey_phases[0].get("description", "") if journey_phases else ""
         first_phase_title = journey_phases[0].get("title", "") if journey_phases else ""
         initial_progress = self._initial_progress_percentage(len(journey_phases))
@@ -24,6 +25,8 @@ class LiraHTMLGenerator(BaseGenerator):
             character=character,
             journey_phases=journey_phases,
             exercises=exercises,
+            quizzes=quizzes,
+            quizzes_json=quizzes_json,
             initial_description=initial_description,
             initial_progress=initial_progress,
             first_phase_title=first_phase_title,
@@ -33,9 +36,32 @@ class LiraHTMLGenerator(BaseGenerator):
     def _prepare_exercises(self, journey_phases):
         """Prepare exercises with blanks replaced by interactive spans."""
         exercises = []
+        quizzes = []
+        quizzes_map = {}
 
         for index, phase in enumerate(journey_phases):
+            phase_id = phase.get("id", f"phase-{index}")
             scene = phase.get("theatrical_scene")
+
+            phase_quizzes = []
+            for quiz in phase.get("quizzes", []):
+                phase_quizzes.append(
+                    {
+                        "question": quiz.get("question", ""),
+                        "choices": quiz.get("choices", []),
+                        "correct_index": quiz.get("correct_index", 0),
+                    }
+                )
+
+            quizzes.append(
+                {
+                    "phase_id": phase_id,
+                    "questions": phase_quizzes,
+                    "is_active": index == 0,
+                }
+            )
+            quizzes_map[phase_id] = phase_quizzes
+
             if not scene:
                 continue
 
@@ -57,14 +83,16 @@ class LiraHTMLGenerator(BaseGenerator):
 
             exercises.append(
                 {
-                    "phase_id": phase["id"],
+                    "phase_id": phase_id,
                     "title": scene["title"],
                     "text": rendered_text,
                     "is_active": index == 0,
                 }
             )
 
-        return exercises
+        quizzes_json = json.dumps(quizzes_map, ensure_ascii=False)
+
+        return exercises, quizzes, quizzes_json
 
     def _build_words_dictionary(self, phase, scene):
         """Build dictionary with vocabulary answers for blanks."""

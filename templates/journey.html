@@ -78,6 +78,36 @@
             {% endfor %}
         </div>
 
+        {% if quizzes %}
+        <div class="quiz-section" data-quiz-map='{{ quizzes_json | safe }}'>
+            <h2>🧠 Викторина по фазам</h2>
+            <p class="quiz-intro">Проверьте знание слов: в текущей фазе <span class="quiz-count">{% if quizzes and quizzes[0].questions %}{{ quizzes[0].questions | length }}{% else %}0{% endif %}</span> вопрос(ов).</p>
+
+            {% for quiz in quizzes %}
+            <div class="quiz-phase-container{% if quiz.is_active %} active{% endif %}" data-phase="{{ quiz.phase_id }}">
+                {% if quiz.questions %}
+                    {% for question in quiz.questions %}
+                    <div class="quiz-card{% if loop.first %} active{% endif %}" data-question-index="{{ loop.index0 }}" data-correct-index="{{ question.correct_index }}">
+                        <div class="quiz-question">{{ question.question }}</div>
+                        <div class="quiz-choices">
+                            {% for choice in question.choices %}
+                            <button class="quiz-choice" type="button" data-choice-index="{{ loop.index0 }}">{{ choice }}</button>
+                            {% endfor %}
+                        </div>
+                        <div class="quiz-feedback" role="status" aria-live="polite"></div>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="quiz-card empty active">
+                        <div class="quiz-question">Вопросы для этой фазы скоро появятся.</div>
+                    </div>
+                {% endif %}
+                <div class="quiz-completion" aria-hidden="true">🎉 Викторина пройдена! Так держать!</div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
         <nav class="bottom-nav">
             <a href="../index.html" class="nav-link">← К главной</a>
         </nav>
