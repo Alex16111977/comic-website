@@ -21,7 +21,30 @@
           "russian": "знать",
           "transcription": "[дер А-дель]",
           "sentence": "Der Adel erwartet von mir ehrenhaftes Verhalten.",
-          "sentence_translation": "Знать ожидает от меня достойного поведения."
+          "sentence_translation": "Знать ожидает от меня достойного поведения.",
+          "sentence_parts": [
+            {
+              "text": "Der"
+            },
+            {
+              "text": "Adel"
+            },
+            {
+              "text": "erwartet"
+            },
+            {
+              "text": "von"
+            },
+            {
+              "text": "mir"
+            },
+            {
+              "text": "ehrenhaftes"
+            },
+            {
+              "text": "Verhalten."
+            }
+          ]
         },
         {
           "german": "der Erbe",
@@ -114,7 +137,27 @@
           "russian": "бежать",
           "transcription": "[ФЛИ-ен]",
           "sentence": "Ich muss vor falschen Anschuldigungen fliehen.",
-          "sentence_translation": "Я должен бежать от ложных обвинений."
+          "sentence_translation": "Я должен бежать от ложных обвинений.",
+          "sentence_parts": [
+            {
+              "text": "Ich"
+            },
+            {
+              "text": "muss"
+            },
+            {
+              "text": "vor"
+            },
+            {
+              "text": "falschen"
+            },
+            {
+              "text": "Anschuldigungen"
+            },
+            {
+              "text": "fliehen."
+            }
+          ]
         },
         {
           "german": "der Verrat",
@@ -207,7 +250,30 @@
           "russian": "безумие",
           "transcription": "[дер ВАН-зин]",
           "sentence": "Ich spiele den Wahnsinn, um zu überleben.",
-          "sentence_translation": "Я играю безумие, чтобы выжить."
+          "sentence_translation": "Я играю безумие, чтобы выжить.",
+          "sentence_parts": [
+            {
+              "text": "Ich"
+            },
+            {
+              "text": "spiele"
+            },
+            {
+              "text": "den"
+            },
+            {
+              "text": "Wahnsinn,"
+            },
+            {
+              "text": "um"
+            },
+            {
+              "text": "zu"
+            },
+            {
+              "text": "überleben."
+            }
+          ]
         },
         {
           "german": "der Bettler",
@@ -300,7 +366,27 @@
           "russian": "буря",
           "transcription": "[дер ШТУРМ]",
           "sentence": "Der Sturm tobt über unseren Köpfen.",
-          "sentence_translation": "Буря бушует над нашими головами."
+          "sentence_translation": "Буря бушует над нашими головами.",
+          "sentence_parts": [
+            {
+              "text": "Der"
+            },
+            {
+              "text": "Sturm"
+            },
+            {
+              "text": "tobt"
+            },
+            {
+              "text": "über"
+            },
+            {
+              "text": "unseren"
+            },
+            {
+              "text": "Köpfen."
+            }
+          ]
         },
         {
           "german": "frieren",
@@ -393,7 +479,27 @@
           "russian": "слепой",
           "transcription": "[БЛИНД]",
           "sentence": "Mein blinder Vater erkennt mich nicht.",
-          "sentence_translation": "Мой слепой отец не узнаёт меня."
+          "sentence_translation": "Мой слепой отец не узнаёт меня.",
+          "sentence_parts": [
+            {
+              "text": "Mein"
+            },
+            {
+              "text": "blinder"
+            },
+            {
+              "text": "Vater"
+            },
+            {
+              "text": "erkennt"
+            },
+            {
+              "text": "mich"
+            },
+            {
+              "text": "nicht."
+            }
+          ]
         },
         {
           "german": "führen",
@@ -486,7 +592,30 @@
           "russian": "бой",
           "transcription": "[дер КАМПФ]",
           "sentence": "Der Kampf gegen meinen Bruder ist unvermeidlich.",
-          "sentence_translation": "Бой с моим братом неизбежен."
+          "sentence_translation": "Бой с моим братом неизбежен.",
+          "sentence_parts": [
+            {
+              "text": "Der"
+            },
+            {
+              "text": "Kampf"
+            },
+            {
+              "text": "gegen"
+            },
+            {
+              "text": "meinen"
+            },
+            {
+              "text": "Bruder"
+            },
+            {
+              "text": "ist"
+            },
+            {
+              "text": "unvermeidlich."
+            }
+          ]
         },
         {
           "german": "das Duell",
@@ -579,7 +708,24 @@
           "russian": "выживать",
           "transcription": "[ю-бер-ЛЕ-бен]",
           "sentence": "Ich habe alle Prüfungen überlebt.",
-          "sentence_translation": "Я пережил все испытания."
+          "sentence_translation": "Я пережил все испытания.",
+          "sentence_parts": [
+            {
+              "text": "Ich"
+            },
+            {
+              "text": "habe"
+            },
+            {
+              "text": "alle"
+            },
+            {
+              "text": "Prüfungen"
+            },
+            {
+              "text": "überlebt."
+            }
+          ]
         },
         {
           "german": "erben",

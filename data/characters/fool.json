@@ -15,7 +15,33 @@
           "russian": "шут",
           "transcription": "[дер НАР]",
           "sentence": "Als Narr sage ich die Wahrheit durch Scherze.",
-          "sentence_translation": "Как шут я говорю правду через шутки."
+          "sentence_translation": "Как шут я говорю правду через шутки.",
+          "sentence_parts": [
+            {
+              "text": "Als"
+            },
+            {
+              "text": "Narr"
+            },
+            {
+              "text": "sage"
+            },
+            {
+              "text": "ich"
+            },
+            {
+              "text": "die"
+            },
+            {
+              "text": "Wahrheit"
+            },
+            {
+              "text": "durch"
+            },
+            {
+              "text": "Scherze."
+            }
+          ]
         },
         {
           "german": "die Weisheit",
@@ -108,7 +134,30 @@
           "russian": "правда",
           "transcription": "[ди ВАР-хайт]",
           "sentence": "Die Wahrheit verpacke ich in lustige Lieder.",
-          "sentence_translation": "Правду я заворачиваю в весёлые песни."
+          "sentence_translation": "Правду я заворачиваю в весёлые песни.",
+          "sentence_parts": [
+            {
+              "text": "Die"
+            },
+            {
+              "text": "Wahrheit"
+            },
+            {
+              "text": "verpacke"
+            },
+            {
+              "text": "ich"
+            },
+            {
+              "text": "in"
+            },
+            {
+              "text": "lustige"
+            },
+            {
+              "text": "Lieder."
+            }
+          ]
         },
         {
           "german": "der Scherz",
@@ -194,7 +243,24 @@
           "russian": "пророчество",
           "transcription": "[ди про-фе-ЦАЙ-унг]",
           "sentence": "Meine Prophezeiung wird wahr werden.",
-          "sentence_translation": "Моё пророчество сбудется."
+          "sentence_translation": "Моё пророчество сбудется.",
+          "sentence_parts": [
+            {
+              "text": "Meine"
+            },
+            {
+              "text": "Prophezeiung"
+            },
+            {
+              "text": "wird"
+            },
+            {
+              "text": "wahr"
+            },
+            {
+              "text": "werden."
+            }
+          ]
         },
         {
           "german": "das Rätsel",
@@ -287,7 +353,30 @@
           "russian": "безумие",
           "transcription": "[дер ВАН-зин]",
           "sentence": "Im Wahnsinn finden wir uns als Brüder.",
-          "sentence_translation": "В безумии мы находим друг друга как братья."
+          "sentence_translation": "В безумии мы находим друг друга как братья.",
+          "sentence_parts": [
+            {
+              "text": "Im"
+            },
+            {
+              "text": "Wahnsinn"
+            },
+            {
+              "text": "finden"
+            },
+            {
+              "text": "wir"
+            },
+            {
+              "text": "uns"
+            },
+            {
+              "text": "als"
+            },
+            {
+              "text": "Brüder."
+            }
+          ]
         },
         {
           "german": "die Freundschaft",
@@ -373,7 +462,27 @@
           "russian": "песня",
           "transcription": "[дас ЛИД]",
           "sentence": "Mein Lied erzählt von vergangenen Tagen.",
-          "sentence_translation": "Моя песня рассказывает о прошлых днях."
+          "sentence_translation": "Моя песня рассказывает о прошлых днях.",
+          "sentence_parts": [
+            {
+              "text": "Mein"
+            },
+            {
+              "text": "Lied"
+            },
+            {
+              "text": "erzählt"
+            },
+            {
+              "text": "von"
+            },
+            {
+              "text": "vergangenen"
+            },
+            {
+              "text": "Tagen."
+            }
+          ]
         },
         {
           "german": "der Trost",
@@ -466,7 +575,30 @@
           "russian": "философия",
           "transcription": "[ди фи-ло-зо-ФИ]",
           "sentence": "Meine Philosophie ist einfach: Alles ist Narretei.",
-          "sentence_translation": "Моя философия проста: всё - глупость."
+          "sentence_translation": "Моя философия проста: всё - глупость.",
+          "sentence_parts": [
+            {
+              "text": "Meine"
+            },
+            {
+              "text": "Philosophie"
+            },
+            {
+              "text": "ist"
+            },
+            {
+              "text": "einfach:"
+            },
+            {
+              "text": "Alles"
+            },
+            {
+              "text": "ist"
+            },
+            {
+              "text": "Narretei."
+            }
+          ]
         },
         {
           "german": "das Schicksal",
@@ -552,7 +684,30 @@
           "russian": "исчезать",
           "transcription": "[фер-ШВИН-ден]",
           "sentence": "Ich verschwinde wie ein Traum im Morgen.",
-          "sentence_translation": "Я исчезаю как сон поутру."
+          "sentence_translation": "Я исчезаю как сон поутру.",
+          "sentence_parts": [
+            {
+              "text": "Ich"
+            },
+            {
+              "text": "verschwinde"
+            },
+            {
+              "text": "wie"
+            },
+            {
+              "text": "ein"
+            },
+            {
+              "text": "Traum"
+            },
+            {
+              "text": "im"
+            },
+            {
+              "text": "Morgen."
+            }
+          ]
         },
         {
           "german": "das Geheimnis",

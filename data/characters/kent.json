@@ -15,7 +15,30 @@
           "russian": "верность",
           "transcription": "[ди ТРОЙ-е]",
           "sentence": "Die Treue zu meinem König ist unerschütterlich.",
-          "sentence_translation": "Верность моему королю непоколебима."
+          "sentence_translation": "Верность моему королю непоколебима.",
+          "sentence_parts": [
+            {
+              "text": "Die"
+            },
+            {
+              "text": "Treue"
+            },
+            {
+              "text": "zu"
+            },
+            {
+              "text": "meinem"
+            },
+            {
+              "text": "König"
+            },
+            {
+              "text": "ist"
+            },
+            {
+              "text": "unerschütterlich."
+            }
+          ]
         },
         {
           "german": "der Mut",
@@ -108,7 +131,33 @@
           "russian": "изгнание",
           "transcription": "[ди фер-БА-нунг]",
           "sentence": "Die Verbannung ist der Preis für meine Ehrlichkeit.",
-          "sentence_translation": "Изгнание - цена моей честности."
+          "sentence_translation": "Изгнание - цена моей честности.",
+          "sentence_parts": [
+            {
+              "text": "Die"
+            },
+            {
+              "text": "Verbannung"
+            },
+            {
+              "text": "ist"
+            },
+            {
+              "text": "der"
+            },
+            {
+              "text": "Preis"
+            },
+            {
+              "text": "für"
+            },
+            {
+              "text": "meine"
+            },
+            {
+              "text": "Ehrlichkeit."
+            }
+          ]
         },
         {
           "german": "die Ungerechtigkeit",
@@ -194,7 +243,30 @@
           "russian": "переодевание",
           "transcription": "[ди фер-КЛАЙ-дунг]",
           "sentence": "In Verkleidung diene ich meinem König weiter.",
-          "sentence_translation": "В переодевании я продолжаю служить королю."
+          "sentence_translation": "В переодевании я продолжаю служить королю.",
+          "sentence_parts": [
+            {
+              "text": "In"
+            },
+            {
+              "text": "Verkleidung"
+            },
+            {
+              "text": "diene"
+            },
+            {
+              "text": "ich"
+            },
+            {
+              "text": "meinem"
+            },
+            {
+              "text": "König"
+            },
+            {
+              "text": "weiter."
+            }
+          ]
         },
         {
           "german": "die List",
@@ -287,7 +359,30 @@
           "russian": "служба",
           "transcription": "[дер ДИНСТ]",
           "sentence": "Mein Dienst geht über die Verbannung hinaus.",
-          "sentence_translation": "Моя служба идёт дальше изгнания."
+          "sentence_translation": "Моя служба идёт дальше изгнания.",
+          "sentence_parts": [
+            {
+              "text": "Mein"
+            },
+            {
+              "text": "Dienst"
+            },
+            {
+              "text": "geht"
+            },
+            {
+              "text": "über"
+            },
+            {
+              "text": "die"
+            },
+            {
+              "text": "Verbannung"
+            },
+            {
+              "text": "hinaus."
+            }
+          ]
         },
         {
           "german": "der Schutz",
@@ -373,7 +468,30 @@
           "russian": "наказание",
           "transcription": "[ди ШТРА-фе]",
           "sentence": "Diese Strafe erdulde ich für meinen König.",
-          "sentence_translation": "Это наказание я терплю ради короля."
+          "sentence_translation": "Это наказание я терплю ради короля.",
+          "sentence_parts": [
+            {
+              "text": "Diese"
+            },
+            {
+              "text": "Strafe"
+            },
+            {
+              "text": "erdulde"
+            },
+            {
+              "text": "ich"
+            },
+            {
+              "text": "für"
+            },
+            {
+              "text": "meinen"
+            },
+            {
+              "text": "König."
+            }
+          ]
         },
         {
           "german": "die Demütigung",
@@ -466,7 +584,30 @@
           "russian": "буря",
           "transcription": "[дер ШТУРМ]",
           "sentence": "Im Sturm bleibe ich bei meinem König.",
-          "sentence_translation": "В буре я остаюсь с моим королём."
+          "sentence_translation": "В буре я остаюсь с моим королём.",
+          "sentence_parts": [
+            {
+              "text": "Im"
+            },
+            {
+              "text": "Sturm"
+            },
+            {
+              "text": "bleibe"
+            },
+            {
+              "text": "ich"
+            },
+            {
+              "text": "bei"
+            },
+            {
+              "text": "meinem"
+            },
+            {
+              "text": "König."
+            }
+          ]
         },
         {
           "german": "der Beistand",
@@ -552,7 +693,33 @@
           "russian": "смерть",
           "transcription": "[дер ТОД]",
           "sentence": "Bis zum Tod bleibe ich an seiner Seite.",
-          "sentence_translation": "До смерти я остаюсь рядом с ним."
+          "sentence_translation": "До смерти я остаюсь рядом с ним.",
+          "sentence_parts": [
+            {
+              "text": "Bis"
+            },
+            {
+              "text": "zum"
+            },
+            {
+              "text": "Tod"
+            },
+            {
+              "text": "bleibe"
+            },
+            {
+              "text": "ich"
+            },
+            {
+              "text": "an"
+            },
+            {
+              "text": "seiner"
+            },
+            {
+              "text": "Seite."
+            }
+          ]
         },
         {
           "german": "der Abschied",

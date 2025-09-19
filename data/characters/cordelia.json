@@ -21,7 +21,30 @@
           "russian": "правда",
           "transcription": "[ди ВАР-хайт]",
           "sentence": "Die Wahrheit war vor meinen Augen verborgen.",
-          "sentence_translation": "Правда была скрыта от моих глаз."
+          "sentence_translation": "Правда была скрыта от моих глаз.",
+          "sentence_parts": [
+            {
+              "text": "Die"
+            },
+            {
+              "text": "Wahrheit"
+            },
+            {
+              "text": "war"
+            },
+            {
+              "text": "vor"
+            },
+            {
+              "text": "meinen"
+            },
+            {
+              "text": "Augen"
+            },
+            {
+              "text": "verborgen."
+            }
+          ]
         },
         {
           "german": "die Zeremonie",
@@ -114,7 +137,30 @@
           "russian": "изгонять",
           "transcription": "[фер-ШТО-сен]",
           "sentence": "Der König verstößt mich aus seinem Herzen.",
-          "sentence_translation": "Король изгоняет меня из своего сердца."
+          "sentence_translation": "Король изгоняет меня из своего сердца.",
+          "sentence_parts": [
+            {
+              "text": "Der"
+            },
+            {
+              "text": "König"
+            },
+            {
+              "text": "verstößt"
+            },
+            {
+              "text": "mich"
+            },
+            {
+              "text": "aus"
+            },
+            {
+              "text": "seinem"
+            },
+            {
+              "text": "Herzen."
+            }
+          ]
         },
         {
           "german": "verlassen",
@@ -207,7 +253,36 @@
           "russian": "забота",
           "transcription": "[ди ЗОР-ге]",
           "sentence": "Die Sorge um meinen Vater lässt mich nicht schlafen.",
-          "sentence_translation": "Забота об отце не даёт мне спать."
+          "sentence_translation": "Забота об отце не даёт мне спать.",
+          "sentence_parts": [
+            {
+              "text": "Die"
+            },
+            {
+              "text": "Sorge"
+            },
+            {
+              "text": "um"
+            },
+            {
+              "text": "meinen"
+            },
+            {
+              "text": "Vater"
+            },
+            {
+              "text": "lässt"
+            },
+            {
+              "text": "mich"
+            },
+            {
+              "text": "nicht"
+            },
+            {
+              "text": "schlafen."
+            }
+          ]
         },
         {
           "german": "die Einsamkeit",
@@ -300,7 +375,39 @@
           "russian": "возвращаться",
           "transcription": "[цу-РЮК-ке-рен]",
           "sentence": "Mit einer Armee kehre ich zurück, meinen Vater zu retten.",
-          "sentence_translation": "С армией я возвращаюсь спасти моего отца."
+          "sentence_translation": "С армией я возвращаюсь спасти моего отца.",
+          "sentence_parts": [
+            {
+              "text": "Mit"
+            },
+            {
+              "text": "einer"
+            },
+            {
+              "text": "Armee"
+            },
+            {
+              "text": "kehre"
+            },
+            {
+              "text": "ich"
+            },
+            {
+              "text": "zurück,"
+            },
+            {
+              "text": "meinen"
+            },
+            {
+              "text": "Vater"
+            },
+            {
+              "text": "zu"
+            },
+            {
+              "text": "retten."
+            }
+          ]
         },
         {
           "german": "der Kampf",
@@ -393,7 +500,30 @@
           "russian": "прощать",
           "transcription": "[фер-ЦАЙ-ен]",
           "sentence": "Ich verzeihe dir alles, mein lieber Vater.",
-          "sentence_translation": "Я прощаю тебе всё, мой дорогой отец."
+          "sentence_translation": "Я прощаю тебе всё, мой дорогой отец.",
+          "sentence_parts": [
+            {
+              "text": "Ich"
+            },
+            {
+              "text": "verzeihe"
+            },
+            {
+              "text": "dir"
+            },
+            {
+              "text": "alles,"
+            },
+            {
+              "text": "mein"
+            },
+            {
+              "text": "lieber"
+            },
+            {
+              "text": "Vater."
+            }
+          ]
         },
         {
           "german": "die Tränen",
@@ -486,7 +616,33 @@
           "russian": "пленный",
           "transcription": "[ге-ФАН-ген]",
           "sentence": "Obwohl gefangen, bin ich frei in meinem Herzen.",
-          "sentence_translation": "Хотя я в плену, в сердце я свободна."
+          "sentence_translation": "Хотя я в плену, в сердце я свободна.",
+          "sentence_parts": [
+            {
+              "text": "Obwohl"
+            },
+            {
+              "text": "gefangen,"
+            },
+            {
+              "text": "bin"
+            },
+            {
+              "text": "ich"
+            },
+            {
+              "text": "frei"
+            },
+            {
+              "text": "in"
+            },
+            {
+              "text": "meinem"
+            },
+            {
+              "text": "Herzen."
+            }
+          ]
         },
         {
           "german": "das Gefängnis",
@@ -579,7 +735,33 @@
           "russian": "смерть",
           "transcription": "[дер ТОД]",
           "sentence": "Der Tod trennt uns nur für kurze Zeit.",
-          "sentence_translation": "Смерть разлучает нас лишь ненадолго."
+          "sentence_translation": "Смерть разлучает нас лишь ненадолго.",
+          "sentence_parts": [
+            {
+              "text": "Der"
+            },
+            {
+              "text": "Tod"
+            },
+            {
+              "text": "trennt"
+            },
+            {
+              "text": "uns"
+            },
+            {
+              "text": "nur"
+            },
+            {
+              "text": "für"
+            },
+            {
+              "text": "kurze"
+            },
+            {
+              "text": "Zeit."
+            }
+          ]
         },
         {
           "german": "sterben",

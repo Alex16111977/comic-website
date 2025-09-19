@@ -21,7 +21,30 @@
           "russian": "ложь",
           "transcription": "[ди ЛЮ-ге]",
           "sentence": "Die Lüge klingt süßer als die Wahrheit.",
-          "sentence_translation": "Ложь звучит слаще правды."
+          "sentence_translation": "Ложь звучит слаще правды.",
+          "sentence_parts": [
+            {
+              "text": "Die"
+            },
+            {
+              "text": "Lüge"
+            },
+            {
+              "text": "klingt"
+            },
+            {
+              "text": "süßer"
+            },
+            {
+              "text": "als"
+            },
+            {
+              "text": "die"
+            },
+            {
+              "text": "Wahrheit."
+            }
+          ]
         },
         {
           "german": "schwören",
@@ -114,7 +137,33 @@
           "russian": "власть",
           "transcription": "[ди МАХТ]",
           "sentence": "Die Macht über das halbe Königreich ist mein.",
-          "sentence_translation": "Власть над половиной королевства моя."
+          "sentence_translation": "Власть над половиной королевства моя.",
+          "sentence_parts": [
+            {
+              "text": "Die"
+            },
+            {
+              "text": "Macht"
+            },
+            {
+              "text": "über"
+            },
+            {
+              "text": "das"
+            },
+            {
+              "text": "halbe"
+            },
+            {
+              "text": "Königreich"
+            },
+            {
+              "text": "ist"
+            },
+            {
+              "text": "mein."
+            }
+          ]
         },
         {
           "german": "herrschen",
@@ -207,7 +256,30 @@
           "russian": "унижать",
           "transcription": "[де-МЮ-ти-ген]",
           "sentence": "Ich demütige meinen alten Vater ohne Mitleid.",
-          "sentence_translation": "Я унижаю старого отца без жалости."
+          "sentence_translation": "Я унижаю старого отца без жалости.",
+          "sentence_parts": [
+            {
+              "text": "Ich"
+            },
+            {
+              "text": "demütige"
+            },
+            {
+              "text": "meinen"
+            },
+            {
+              "text": "alten"
+            },
+            {
+              "text": "Vater"
+            },
+            {
+              "text": "ohne"
+            },
+            {
+              "text": "Mitleid."
+            }
+          ]
         },
         {
           "german": "grausam",
@@ -300,7 +372,30 @@
           "russian": "отвергать",
           "transcription": "[фер-ШТО-сен]",
           "sentence": "Ich verstoße meinen Vater in die Nacht.",
-          "sentence_translation": "Я отвергаю отца в ночь."
+          "sentence_translation": "Я отвергаю отца в ночь.",
+          "sentence_parts": [
+            {
+              "text": "Ich"
+            },
+            {
+              "text": "verstoße"
+            },
+            {
+              "text": "meinen"
+            },
+            {
+              "text": "Vater"
+            },
+            {
+              "text": "in"
+            },
+            {
+              "text": "die"
+            },
+            {
+              "text": "Nacht."
+            }
+          ]
         },
         {
           "german": "der Sturm",
@@ -386,7 +481,27 @@
           "russian": "ссориться",
           "transcription": "[ШТРАЙ-тен]",
           "sentence": "Ich streite mit meinem schwachen Mann.",
-          "sentence_translation": "Я ссорюсь со своим слабым мужем."
+          "sentence_translation": "Я ссорюсь со своим слабым мужем.",
+          "sentence_parts": [
+            {
+              "text": "Ich"
+            },
+            {
+              "text": "streite"
+            },
+            {
+              "text": "mit"
+            },
+            {
+              "text": "meinem"
+            },
+            {
+              "text": "schwachen"
+            },
+            {
+              "text": "Mann."
+            }
+          ]
         },
         {
           "german": "verraten",
@@ -479,7 +594,27 @@
           "russian": "ревность",
           "transcription": "[ди АЙ-фер-зухт]",
           "sentence": "Die Eifersucht verzehrt mich von innen.",
-          "sentence_translation": "Ревность пожирает меня изнутри."
+          "sentence_translation": "Ревность пожирает меня изнутри.",
+          "sentence_parts": [
+            {
+              "text": "Die"
+            },
+            {
+              "text": "Eifersucht"
+            },
+            {
+              "text": "verzehrt"
+            },
+            {
+              "text": "mich"
+            },
+            {
+              "text": "von"
+            },
+            {
+              "text": "innen."
+            }
+          ]
         },
         {
           "german": "rivalisieren",
@@ -572,7 +707,33 @@
           "russian": "отравлять",
           "transcription": "[фер-ГИФ-тен]",
           "sentence": "Ich vergifte erst meine Schwester, dann mich selbst.",
-          "sentence_translation": "Я отравляю сначала сестру, потом себя."
+          "sentence_translation": "Я отравляю сначала сестру, потом себя.",
+          "sentence_parts": [
+            {
+              "text": "Ich"
+            },
+            {
+              "text": "vergifte"
+            },
+            {
+              "text": "erst"
+            },
+            {
+              "text": "meine"
+            },
+            {
+              "text": "Schwester,"
+            },
+            {
+              "text": "dann"
+            },
+            {
+              "text": "mich"
+            },
+            {
+              "text": "selbst."
+            }
+          ]
         },
         {
           "german": "die Verzweiflung",

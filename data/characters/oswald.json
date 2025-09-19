@@ -15,7 +15,30 @@
           "russian": "слуга",
           "transcription": "[дер ДИ-нер]",
           "sentence": "Als Diener gehorche ich meiner Herrin blind.",
-          "sentence_translation": "Как слуга я слепо подчиняюсь своей госпоже."
+          "sentence_translation": "Как слуга я слепо подчиняюсь своей госпоже.",
+          "sentence_parts": [
+            {
+              "text": "Als"
+            },
+            {
+              "text": "Diener"
+            },
+            {
+              "text": "gehorche"
+            },
+            {
+              "text": "ich"
+            },
+            {
+              "text": "meiner"
+            },
+            {
+              "text": "Herrin"
+            },
+            {
+              "text": "blind."
+            }
+          ]
         },
         {
           "german": "der Gehorsam",
@@ -108,7 +131,27 @@
           "russian": "гонец",
           "transcription": "[дер БО-те]",
           "sentence": "Als Bote überbringe ich böse Nachrichten.",
-          "sentence_translation": "Как гонец я приношу дурные вести."
+          "sentence_translation": "Как гонец я приношу дурные вести.",
+          "sentence_parts": [
+            {
+              "text": "Als"
+            },
+            {
+              "text": "Bote"
+            },
+            {
+              "text": "überbringe"
+            },
+            {
+              "text": "ich"
+            },
+            {
+              "text": "böse"
+            },
+            {
+              "text": "Nachrichten."
+            }
+          ]
         },
         {
           "german": "der Auftrag",
@@ -194,7 +237,30 @@
           "russian": "оскорбление",
           "transcription": "[ди бе-ЛАЙ-ди-гунг]",
           "sentence": "Jede Beleidigung spreche ich mit Genuss aus.",
-          "sentence_translation": "Каждое оскорбление я произношу с наслаждением."
+          "sentence_translation": "Каждое оскорбление я произношу с наслаждением.",
+          "sentence_parts": [
+            {
+              "text": "Jede"
+            },
+            {
+              "text": "Beleidigung"
+            },
+            {
+              "text": "spreche"
+            },
+            {
+              "text": "ich"
+            },
+            {
+              "text": "mit"
+            },
+            {
+              "text": "Genuss"
+            },
+            {
+              "text": "aus."
+            }
+          ]
         },
         {
           "german": "die Respektlosigkeit",
@@ -287,7 +353,30 @@
           "russian": "шпион",
           "transcription": "[дер шпи-ОН]",
           "sentence": "Als Spion lausche ich an jeder Tür.",
-          "sentence_translation": "Как шпион я подслушиваю у каждой двери."
+          "sentence_translation": "Как шпион я подслушиваю у каждой двери.",
+          "sentence_parts": [
+            {
+              "text": "Als"
+            },
+            {
+              "text": "Spion"
+            },
+            {
+              "text": "lausche"
+            },
+            {
+              "text": "ich"
+            },
+            {
+              "text": "an"
+            },
+            {
+              "text": "jeder"
+            },
+            {
+              "text": "Tür."
+            }
+          ]
         },
         {
           "german": "der Verrat",
@@ -373,7 +462,27 @@
           "russian": "интрига",
           "transcription": "[ди ин-ТРИ-ге]",
           "sentence": "Jede Intrige spinne ich mit Freude.",
-          "sentence_translation": "Каждую интригу я плету с радостью."
+          "sentence_translation": "Каждую интригу я плету с радостью.",
+          "sentence_parts": [
+            {
+              "text": "Jede"
+            },
+            {
+              "text": "Intrige"
+            },
+            {
+              "text": "spinne"
+            },
+            {
+              "text": "ich"
+            },
+            {
+              "text": "mit"
+            },
+            {
+              "text": "Freude."
+            }
+          ]
         },
         {
           "german": "der Plan",
@@ -466,7 +575,27 @@
           "russian": "преследование",
           "transcription": "[ди фер-ФОЛЬ-гунг]",
           "sentence": "Die Verfolgung des blinden Grafen beginnt.",
-          "sentence_translation": "Преследование слепого графа начинается."
+          "sentence_translation": "Преследование слепого графа начинается.",
+          "sentence_parts": [
+            {
+              "text": "Die"
+            },
+            {
+              "text": "Verfolgung"
+            },
+            {
+              "text": "des"
+            },
+            {
+              "text": "blinden"
+            },
+            {
+              "text": "Grafen"
+            },
+            {
+              "text": "beginnt."
+            }
+          ]
         },
         {
           "german": "die Jagd",
@@ -552,7 +681,30 @@
           "russian": "смерть",
           "transcription": "[дер ТОД]",
           "sentence": "Der Tod ereilt mich durch Эдгars Hand.",
-          "sentence_translation": "Смерть настигает меня от руки Эдгара."
+          "sentence_translation": "Смерть настигает меня от руки Эдгара.",
+          "sentence_parts": [
+            {
+              "text": "Der"
+            },
+            {
+              "text": "Tod"
+            },
+            {
+              "text": "ereilt"
+            },
+            {
+              "text": "mich"
+            },
+            {
+              "text": "durch"
+            },
+            {
+              "text": "Эдгars"
+            },
+            {
+              "text": "Hand."
+            }
+          ]
         },
         {
           "german": "die Feigheit",

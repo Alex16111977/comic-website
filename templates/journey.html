@@ -66,6 +66,36 @@
             </div>
         </div>
 
+        <section class="constructor-section" data-has-constructors="{{ 'true' if has_constructor_exercises else 'false' }}">
+            <h2>🧩 Конструктор фраз</h2>
+            <p class="constructor-description">Соберите немецкое предложение из фрагментов, чтобы закрепить лексику текущей фазы.</p>
+            <div class="constructor-body">
+                <div class="constructor-empty-state"{% if has_constructor_exercises %} hidden{% endif %}>
+                    Для этой истории пока нет предложений для сборки. Попробуйте выбрать другую фазу или загляните позже!
+                </div>
+                <div class="constructor-exercise"{% if not has_constructor_exercises %} hidden{% endif %}>
+                    <div class="constructor-header">
+                        <div class="constructor-term">
+                            <span class="constructor-word"></span>
+                            <span class="constructor-word-translation"></span>
+                        </div>
+                        <div class="constructor-progress-indicator">—</div>
+                    </div>
+                    <div class="constructor-sentence-translation"></div>
+                    <div class="constructor-workspace" aria-live="polite">
+                        <div class="constructor-dropzone" aria-label="Собранное предложение"></div>
+                    </div>
+                    <div class="constructor-pool" aria-label="Фрагменты предложения"></div>
+                    <div class="constructor-controls">
+                        <button type="button" class="constructor-check">Проверить</button>
+                        <button type="button" class="constructor-reset">Сбросить</button>
+                        <button type="button" class="constructor-next">Следующее</button>
+                    </div>
+                    <div class="constructor-feedback" role="status" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+
         <div class="relations-wrapper">
             {% for phase in journey_phases %}
             {% set phase_id = phase.id if phase.id else 'phase-' ~ loop.index0 %}

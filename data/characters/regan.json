@@ -21,7 +21,30 @@
           "russian": "притворяться",
           "transcription": "[ФОР-той-шен]",
           "sentence": "Ich täusche Liebe vor, die nie existierte.",
-          "sentence_translation": "Я притворяюсь в любви, которой никогда не было."
+          "sentence_translation": "Я притворяюсь в любви, которой никогда не было.",
+          "sentence_parts": [
+            {
+              "text": "Ich"
+            },
+            {
+              "text": "täusche"
+            },
+            {
+              "text": "Liebe"
+            },
+            {
+              "text": "vor,"
+            },
+            {
+              "text": "die"
+            },
+            {
+              "text": "nie"
+            },
+            {
+              "text": "existierte."
+            }
+          ]
         },
         {
           "german": "übertreffen",
@@ -114,7 +137,30 @@
           "russian": "союз",
           "transcription": "[дас БЮНД-нис]",
           "sentence": "Ein Bündnis mit Goneril gegen unseren Vater.",
-          "sentence_translation": "Союз с Гонерильей против нашего отца."
+          "sentence_translation": "Союз с Гонерильей против нашего отца.",
+          "sentence_parts": [
+            {
+              "text": "Ein"
+            },
+            {
+              "text": "Bündnis"
+            },
+            {
+              "text": "mit"
+            },
+            {
+              "text": "Goneril"
+            },
+            {
+              "text": "gegen"
+            },
+            {
+              "text": "unseren"
+            },
+            {
+              "text": "Vater."
+            }
+          ]
         },
         {
           "german": "teilen",
@@ -200,7 +246,27 @@
           "russian": "пытать",
           "transcription": "[ФОЛЬ-терн]",
           "sentence": "Ich foltere ihn mit kalten Worten.",
-          "sentence_translation": "Я пытаю его холодными словами."
+          "sentence_translation": "Я пытаю его холодными словами.",
+          "sentence_parts": [
+            {
+              "text": "Ich"
+            },
+            {
+              "text": "foltere"
+            },
+            {
+              "text": "ihn"
+            },
+            {
+              "text": "mit"
+            },
+            {
+              "text": "kalten"
+            },
+            {
+              "text": "Worten."
+            }
+          ]
         },
         {
           "german": "erniedrigen",
@@ -293,7 +359,27 @@
           "russian": "ослеплять",
           "transcription": "[БЛЕН-ден]",
           "sentence": "Wir blenden den treuen Grafen Gloucester.",
-          "sentence_translation": "Мы ослепляем верного графа Глостера."
+          "sentence_translation": "Мы ослепляем верного графа Глостера.",
+          "sentence_parts": [
+            {
+              "text": "Wir"
+            },
+            {
+              "text": "blenden"
+            },
+            {
+              "text": "den"
+            },
+            {
+              "text": "treuen"
+            },
+            {
+              "text": "Grafen"
+            },
+            {
+              "text": "Gloucester."
+            }
+          ]
         },
         {
           "german": "der Sadismus",
@@ -386,7 +472,27 @@
           "russian": "вдова",
           "transcription": "[ди ВИТ-ве]",
           "sentence": "Als Witwe bin ich endlich frei.",
-          "sentence_translation": "Как вдова я наконец свободна."
+          "sentence_translation": "Как вдова я наконец свободна.",
+          "sentence_parts": [
+            {
+              "text": "Als"
+            },
+            {
+              "text": "Witwe"
+            },
+            {
+              "text": "bin"
+            },
+            {
+              "text": "ich"
+            },
+            {
+              "text": "endlich"
+            },
+            {
+              "text": "frei."
+            }
+          ]
         },
         {
           "german": "begehren",
@@ -472,7 +578,24 @@
           "russian": "соревноваться",
           "transcription": "[ВЕТ-кемп-фен]",
           "sentence": "Wir wettkämpfen um Edmunds Liebe.",
-          "sentence_translation": "Мы соревнуемся за любовь Эдмунда."
+          "sentence_translation": "Мы соревнуемся за любовь Эдмунда.",
+          "sentence_parts": [
+            {
+              "text": "Wir"
+            },
+            {
+              "text": "wettkämpfen"
+            },
+            {
+              "text": "um"
+            },
+            {
+              "text": "Edmunds"
+            },
+            {
+              "text": "Liebe."
+            }
+          ]
         },
         {
           "german": "hassen",
@@ -558,7 +681,30 @@
           "russian": "отравленный",
           "transcription": "[фер-ГИФ-тет]",
           "sentence": "Ich bin von meiner eigenen Schwester vergiftet.",
-          "sentence_translation": "Я отравлена собственной сестрой."
+          "sentence_translation": "Я отравлена собственной сестрой.",
+          "sentence_parts": [
+            {
+              "text": "Ich"
+            },
+            {
+              "text": "bin"
+            },
+            {
+              "text": "von"
+            },
+            {
+              "text": "meiner"
+            },
+            {
+              "text": "eigenen"
+            },
+            {
+              "text": "Schwester"
+            },
+            {
+              "text": "vergiftet."
+            }
+          ]
         },
         {
           "german": "leiden",

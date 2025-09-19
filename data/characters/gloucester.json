@@ -15,7 +15,30 @@
           "russian": "знать",
           "transcription": "[дер А-дель]",
           "sentence": "Als Adel diene ich meinem König treu.",
-          "sentence_translation": "Как знать я верно служу своему королю."
+          "sentence_translation": "Как знать я верно служу своему королю.",
+          "sentence_parts": [
+            {
+              "text": "Als"
+            },
+            {
+              "text": "Adel"
+            },
+            {
+              "text": "diene"
+            },
+            {
+              "text": "ich"
+            },
+            {
+              "text": "meinem"
+            },
+            {
+              "text": "König"
+            },
+            {
+              "text": "treu."
+            }
+          ]
         },
         {
           "german": "dienen",
@@ -108,7 +131,24 @@
           "russian": "письмо",
           "transcription": "[дер БРИФ]",
           "sentence": "Dieser Brief beweist Edgars Verrat.",
-          "sentence_translation": "Это письмо доказывает предательство Эдгара."
+          "sentence_translation": "Это письмо доказывает предательство Эдгара.",
+          "sentence_parts": [
+            {
+              "text": "Dieser"
+            },
+            {
+              "text": "Brief"
+            },
+            {
+              "text": "beweist"
+            },
+            {
+              "text": "Edgars"
+            },
+            {
+              "text": "Verrat."
+            }
+          ]
         },
         {
           "german": "glauben",
@@ -201,7 +241,24 @@
           "russian": "изгонять",
           "transcription": "[фер-ШТО-сен]",
           "sentence": "Ich verstoße meinen unschuldigen Sohn.",
-          "sentence_translation": "Я изгоняю своего невинного сына."
+          "sentence_translation": "Я изгоняю своего невинного сына.",
+          "sentence_parts": [
+            {
+              "text": "Ich"
+            },
+            {
+              "text": "verstoße"
+            },
+            {
+              "text": "meinen"
+            },
+            {
+              "text": "unschuldigen"
+            },
+            {
+              "text": "Sohn."
+            }
+          ]
         },
         {
           "german": "verfluchen",
@@ -287,7 +344,27 @@
           "russian": "помогать",
           "transcription": "[ХЕЛЬ-фен]",
           "sentence": "Heimlich helfe ich dem verstoßenen König.",
-          "sentence_translation": "Тайно я помогаю изгнанному королю."
+          "sentence_translation": "Тайно я помогаю изгнанному королю.",
+          "sentence_parts": [
+            {
+              "text": "Heimlich"
+            },
+            {
+              "text": "helfe"
+            },
+            {
+              "text": "ich"
+            },
+            {
+              "text": "dem"
+            },
+            {
+              "text": "verstoßenen"
+            },
+            {
+              "text": "König."
+            }
+          ]
         },
         {
           "german": "das Mitleid",
@@ -380,7 +457,27 @@
           "russian": "ослеплять",
           "transcription": "[БЛЕН-ден]",
           "sentence": "Sie blenden mich für meinen Verrat.",
-          "sentence_translation": "Они ослепляют меня за мою измену."
+          "sentence_translation": "Они ослепляют меня за мою измену.",
+          "sentence_parts": [
+            {
+              "text": "Sie"
+            },
+            {
+              "text": "blenden"
+            },
+            {
+              "text": "mich"
+            },
+            {
+              "text": "für"
+            },
+            {
+              "text": "meinen"
+            },
+            {
+              "text": "Verrat."
+            }
+          ]
         },
         {
           "german": "die Folter",
@@ -466,7 +563,27 @@
           "russian": "отчаяние",
           "transcription": "[ди фер-ЦВАЙ-флунг]",
           "sentence": "Die Verzweiflung treibt mich zum Abgrund.",
-          "sentence_translation": "Отчаяние гонит меня к пропасти."
+          "sentence_translation": "Отчаяние гонит меня к пропасти.",
+          "sentence_parts": [
+            {
+              "text": "Die"
+            },
+            {
+              "text": "Verzweiflung"
+            },
+            {
+              "text": "treibt"
+            },
+            {
+              "text": "mich"
+            },
+            {
+              "text": "zum"
+            },
+            {
+              "text": "Abgrund."
+            }
+          ]
         },
         {
           "german": "springen",
@@ -559,7 +676,27 @@
           "russian": "узнавать",
           "transcription": "[ер-КЕН-нен]",
           "sentence": "Endlich erkenne ich meinen treuen Edgar.",
-          "sentence_translation": "Наконец я узнаю моего верного Эдгара."
+          "sentence_translation": "Наконец я узнаю моего верного Эдгара.",
+          "sentence_parts": [
+            {
+              "text": "Endlich"
+            },
+            {
+              "text": "erkenne"
+            },
+            {
+              "text": "ich"
+            },
+            {
+              "text": "meinen"
+            },
+            {
+              "text": "treuen"
+            },
+            {
+              "text": "Edgar."
+            }
+          ]
         },
         {
           "german": "vergeben",

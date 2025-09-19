@@ -21,7 +21,30 @@
           "russian": "трон",
           "transcription": "[дер ТРОН]",
           "sentence": "Vom Thron herab verkünde ich meinen Willen.",
-          "sentence_translation": "С трона я провозглашаю свою волю."
+          "sentence_translation": "С трона я провозглашаю свою волю.",
+          "sentence_parts": [
+            {
+              "text": "Vom"
+            },
+            {
+              "text": "Thron"
+            },
+            {
+              "text": "herab"
+            },
+            {
+              "text": "verkünde"
+            },
+            {
+              "text": "ich"
+            },
+            {
+              "text": "meinen"
+            },
+            {
+              "text": "Willen."
+            }
+          ]
         },
         {
           "german": "das Königreich",
@@ -114,7 +137,27 @@
           "russian": "унижать",
           "transcription": "[де-МЮ-ти-ген]",
           "sentence": "Meine eigene Tochter will mich demütigen!",
-          "sentence_translation": "Моя собственная дочь хочет меня унизить!"
+          "sentence_translation": "Моя собственная дочь хочет меня унизить!",
+          "sentence_parts": [
+            {
+              "text": "Meine"
+            },
+            {
+              "text": "eigene"
+            },
+            {
+              "text": "Tochter"
+            },
+            {
+              "text": "will"
+            },
+            {
+              "text": "mich"
+            },
+            {
+              "text": "demütigen!"
+            }
+          ]
         },
         {
           "german": "der Zorn",
@@ -207,7 +250,30 @@
           "russian": "покидать",
           "transcription": "[фер-ЛА-сен]",
           "sentence": "Auch Regan will mich verlassen und verstoßen!",
-          "sentence_translation": "И Регана хочет меня покинуть и отвергнуть!"
+          "sentence_translation": "И Регана хочет меня покинуть и отвергнуть!",
+          "sentence_parts": [
+            {
+              "text": "Auch"
+            },
+            {
+              "text": "Regan"
+            },
+            {
+              "text": "will"
+            },
+            {
+              "text": "mich"
+            },
+            {
+              "text": "verlassen"
+            },
+            {
+              "text": "und"
+            },
+            {
+              "text": "verstoßen!"
+            }
+          ]
         },
         {
           "german": "verstoßen",
@@ -300,7 +366,36 @@
           "russian": "буря",
           "transcription": "[дер ШТУРМ]",
           "sentence": "Der Sturm in meinem Kopf ist schlimmer als draußen!",
-          "sentence_translation": "Буря в моей голове хуже, чем снаружи!"
+          "sentence_translation": "Буря в моей голове хуже, чем снаружи!",
+          "sentence_parts": [
+            {
+              "text": "Der"
+            },
+            {
+              "text": "Sturm"
+            },
+            {
+              "text": "in"
+            },
+            {
+              "text": "meinem"
+            },
+            {
+              "text": "Kopf"
+            },
+            {
+              "text": "ist"
+            },
+            {
+              "text": "schlimmer"
+            },
+            {
+              "text": "als"
+            },
+            {
+              "text": "draußen!"
+            }
+          ]
         },
         {
           "german": "der Wahnsinn",
@@ -393,7 +488,33 @@
           "russian": "нищета",
           "transcription": "[дас Э-ленд]",
           "sentence": "Im Elend erkenne ich die Wahrheit der Welt.",
-          "sentence_translation": "В нищете я познаю истину мира."
+          "sentence_translation": "В нищете я познаю истину мира.",
+          "sentence_parts": [
+            {
+              "text": "Im"
+            },
+            {
+              "text": "Elend"
+            },
+            {
+              "text": "erkenne"
+            },
+            {
+              "text": "ich"
+            },
+            {
+              "text": "die"
+            },
+            {
+              "text": "Wahrheit"
+            },
+            {
+              "text": "der"
+            },
+            {
+              "text": "Welt."
+            }
+          ]
         },
         {
           "german": "der Bettler",
@@ -486,7 +607,27 @@
           "russian": "узнавать",
           "transcription": "[эр-КЕ-нен]",
           "sentence": "Ich erkenne dich, meine treue Cordelia!",
-          "sentence_translation": "Я узнаю тебя, моя верная Корделия!"
+          "sentence_translation": "Я узнаю тебя, моя верная Корделия!",
+          "sentence_parts": [
+            {
+              "text": "Ich"
+            },
+            {
+              "text": "erkenne"
+            },
+            {
+              "text": "dich,"
+            },
+            {
+              "text": "meine"
+            },
+            {
+              "text": "treue"
+            },
+            {
+              "text": "Cordelia!"
+            }
+          ]
         },
         {
           "german": "verstehen",
@@ -579,7 +720,36 @@
           "russian": "прощать",
           "transcription": "[фер-ЦАЙ-ен]",
           "sentence": "Verzeih mir, ich bin nur ein törichter alter Mann.",
-          "sentence_translation": "Прости меня, я всего лишь глупый старик."
+          "sentence_translation": "Прости меня, я всего лишь глупый старик.",
+          "sentence_parts": [
+            {
+              "text": "Verzeih"
+            },
+            {
+              "text": "mir,"
+            },
+            {
+              "text": "ich"
+            },
+            {
+              "text": "bin"
+            },
+            {
+              "text": "nur"
+            },
+            {
+              "text": "ein"
+            },
+            {
+              "text": "törichter"
+            },
+            {
+              "text": "alter"
+            },
+            {
+              "text": "Mann."
+            }
+          ]
         },
         {
           "german": "der Tod",

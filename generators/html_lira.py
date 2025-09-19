@@ -89,7 +89,8 @@ class LiraHTMLGenerator(BaseGenerator):
         exercises, quizzes, quizzes_json = self._prepare_exercises(journey_phases)
 
         relations_metadata = self._collect_relations_metadata(journey_phases)
-        js = LiraJSGenerator.generate(character)
+        constructor_exercises = self._collect_constructor_exercises(journey_phases)
+        js = LiraJSGenerator.generate(character, constructor_exercises)
         initial_description = journey_phases[0].get("description", "") if journey_phases else ""
         first_phase_title = journey_phases[0].get("title", "") if journey_phases else ""
         initial_progress = self._initial_progress_percentage(len(journey_phases))
@@ -105,6 +106,7 @@ class LiraHTMLGenerator(BaseGenerator):
             initial_progress=initial_progress,
             first_phase_title=first_phase_title,
             relations_metadata=relations_metadata,
+            has_constructor_exercises=bool(constructor_exercises),
             js=js,
         )
 
@@ -152,6 +154,60 @@ class LiraHTMLGenerator(BaseGenerator):
             }
 
         return metadata
+
+    def _collect_constructor_exercises(self, journey_phases):
+        """Extract constructor exercises with normalized sentence parts."""
+
+        def _normalize_parts(parts):
+            normalized = []
+            if not isinstance(parts, list):
+                return normalized
+
+            for part in parts:
+                if isinstance(part, str):
+                    text = part.strip()
+                    if text:
+                        normalized.append({"text": text})
+                elif isinstance(part, dict):
+                    text = str(part.get("text", "")).strip()
+                    if not text:
+                        continue
+                    entry = {"text": text}
+                    translation = part.get("translation")
+                    if translation:
+                        entry["translation"] = str(translation)
+                    hint = part.get("hint")
+                    if hint:
+                        entry["hint"] = str(hint)
+                    normalized.append(entry)
+
+            return normalized
+
+        constructor_map = {}
+
+        for index, phase in enumerate(journey_phases):
+            phase_id = phase.get("id", f"phase-{index}")
+            phase_exercises = []
+
+            for word in phase.get("vocabulary", []):
+                normalized_parts = _normalize_parts(word.get("sentence_parts"))
+                if not normalized_parts:
+                    continue
+
+                phase_exercises.append(
+                    {
+                        "word": word.get("german", ""),
+                        "translation": word.get("russian", ""),
+                        "sentence": word.get("sentence", ""),
+                        "sentence_translation": word.get("sentence_translation", ""),
+                        "parts": normalized_parts,
+                    }
+                )
+
+            if phase_exercises:
+                constructor_map[phase_id] = phase_exercises
+
+        return constructor_map
 
     def _prepare_exercises(self, journey_phases):
         """Prepare exercises with blanks replaced by interactive spans."""

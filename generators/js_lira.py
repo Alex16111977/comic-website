@@ -5,13 +5,14 @@ import json
 
 class LiraJSGenerator:
     """Generate JavaScript for journey interactivity with mobile support"""
-    
+
     @staticmethod
-    def generate(character_data):
+    def generate(character_data, constructor_exercises=None):
         """Generate JS with vocabulary data from character JSON"""
-        
+
         # Build vocabulary object from character data using JSON serialization
         phase_vocabularies = {}
+        constructor_exercises = constructor_exercises or {}
 
         for phase in character_data.get('journey_phases', []):
             phase_id = phase.get('id')
@@ -19,12 +20,55 @@ class LiraJSGenerator:
                 continue
 
             words = []
+            raw_constructors = constructor_exercises.get(phase_id, [])
+            constructors = []
+
+            if isinstance(raw_constructors, list):
+                for exercise in raw_constructors:
+                    if not isinstance(exercise, dict):
+                        continue
+
+                    parts = exercise.get('parts')
+                    if not isinstance(parts, list):
+                        parts = []
+
+                    constructors.append({
+                        'word': exercise.get('word', ''),
+                        'translation': exercise.get('translation', ''),
+                        'sentence': exercise.get('sentence', ''),
+                        'sentenceTranslation': exercise.get('sentence_translation')
+                            or exercise.get('sentenceTranslation', ''),
+                        'parts': parts,
+                    })
+            else:
+                constructors = []
             for word in phase.get('vocabulary', []):
                 themes = word.get('themes') or []
                 if isinstance(themes, str):
                     themes = [themes]
                 elif not isinstance(themes, list):
                     themes = []
+
+                sentence_parts = []
+                raw_parts = word.get('sentence_parts')
+                if isinstance(raw_parts, list):
+                    for part in raw_parts:
+                        if isinstance(part, dict):
+                            text = str(part.get('text', '')).strip()
+                            if not text:
+                                continue
+                            entry = {'text': text}
+                            translation = part.get('translation')
+                            if translation:
+                                entry['translation'] = str(translation)
+                            hint = part.get('hint')
+                            if hint:
+                                entry['hint'] = str(hint)
+                            sentence_parts.append(entry)
+                        elif isinstance(part, str):
+                            text = part.strip()
+                            if text:
+                                sentence_parts.append({'text': text})
 
                 # Добавляем поля для relations функционала
                 word_family = word.get('wordFamily') or []
@@ -53,6 +97,7 @@ class LiraJSGenerator:
                     'sentenceTranslation': word.get('sentence_translation', ''),
                     'visual_hint': word.get('visual_hint', ''),
                     'themes': themes,
+                    'sentenceParts': sentence_parts,
                     'wordFamily': word_family,  # Для relations
                     'synonyms': synonyms,        # Для relations
                     'collocations': collocations # Для relations
@@ -81,6 +126,7 @@ class LiraJSGenerator:
                 'description': phase.get('description', ''),
                 'words': words,
                 'quizzes': quizzes,
+                'constructorExercises': constructors,
             }
 
         vocab_js = (
@@ -98,11 +144,462 @@ let progressLineLength = 0;
 const QUIZ_ADVANCE_DELAY = 1200;
 
 // Device detection
-const isTouchDevice = ('ontouchstart' in window) || 
-                      (navigator.maxTouchPoints > 0) || 
+const isTouchDevice = ('ontouchstart' in window) ||
+                      (navigator.maxTouchPoints > 0) ||
                       (navigator.msMaxTouchPoints > 0);
 const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 const isAndroid = /Android/.test(navigator.userAgent);
+
+const constructorState = {
+    phaseIndexes: {},
+    activePhase: null,
+    activeExercise: null
+};
+let constructorElements = null;
+let constructorDraggedChip = null;
+
+function getConstructorElements() {
+    const section = document.querySelector('.constructor-section');
+    if (!section) return null;
+
+    return {
+        section,
+        exercise: section.querySelector('.constructor-exercise'),
+        emptyState: section.querySelector('.constructor-empty-state'),
+        pool: section.querySelector('.constructor-pool'),
+        dropzone: section.querySelector('.constructor-dropzone'),
+        feedback: section.querySelector('.constructor-feedback'),
+        word: section.querySelector('.constructor-word'),
+        translation: section.querySelector('.constructor-word-translation'),
+        sentenceTranslation: section.querySelector('.constructor-sentence-translation'),
+        progress: section.querySelector('.constructor-progress-indicator'),
+        checkBtn: section.querySelector('.constructor-check'),
+        resetBtn: section.querySelector('.constructor-reset'),
+        nextBtn: section.querySelector('.constructor-next')
+    };
+}
+
+function initializeConstructor() {
+    constructorElements = getConstructorElements();
+    if (!constructorElements) return;
+
+    const { checkBtn, resetBtn, nextBtn, dropzone, pool } = constructorElements;
+
+    if (checkBtn) {
+        registerConstructorButton(checkBtn, handleConstructorCheck);
+    }
+    if (resetBtn) {
+        registerConstructorButton(resetBtn, handleConstructorReset);
+    }
+    if (nextBtn) {
+        registerConstructorButton(nextBtn, handleConstructorNext);
+    }
+
+    if (dropzone) {
+        dropzone.addEventListener('dragover', handleConstructorDropzoneDragOver);
+        dropzone.addEventListener('drop', handleConstructorDropzoneDrop);
+        dropzone.addEventListener('dragleave', handleConstructorDropzoneDragLeave);
+    }
+
+    if (pool) {
+        pool.addEventListener('dragover', handleConstructorPoolDragOver);
+        pool.addEventListener('drop', handleConstructorPoolDrop);
+        pool.addEventListener('dragleave', handleConstructorPoolDragLeave);
+    }
+}
+
+function registerConstructorButton(button, handler) {
+    button.addEventListener('click', function(event) {
+        event.preventDefault();
+        handler();
+    });
+
+    if (isTouchDevice) {
+        button.addEventListener('touchstart', function() {
+            this.classList.add('touching');
+        });
+
+        button.addEventListener('touchend', function() {
+            setTimeout(() => {
+                this.classList.remove('touching');
+            }, 120);
+        });
+    }
+}
+
+function normalizeConstructorSentence(sentence) {
+    return (sentence || '').replace(/\\s+/g, ' ').trim();
+}
+
+function shuffleArray(items) {
+    const array = Array.isArray(items) ? items.slice() : [];
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+function renderConstructor(phaseKey) {
+    if (!constructorElements) {
+        constructorElements = getConstructorElements();
+    }
+    if (!constructorElements || !constructorElements.section) return;
+
+    const phase = phaseVocabularies[phaseKey];
+    const exercises = Array.isArray(phase && phase.constructorExercises)
+        ? phase.constructorExercises
+        : [];
+
+    const { exercise, emptyState, feedback, progress, dropzone, pool, word, translation, sentenceTranslation } = constructorElements;
+
+    constructorState.activePhase = phaseKey;
+
+    if (!exercises.length) {
+        if (exercise) {
+            exercise.setAttribute('hidden', 'hidden');
+        }
+        if (emptyState) {
+            emptyState.removeAttribute('hidden');
+        }
+        if (feedback) {
+            feedback.textContent = '';
+            feedback.classList.remove('success', 'error');
+        }
+        if (progress) {
+            progress.textContent = '—';
+        }
+        if (dropzone) {
+            dropzone.innerHTML = '';
+            dropzone.classList.remove('constructor-dropzone--success');
+        }
+        if (pool) {
+            pool.innerHTML = '';
+            pool.classList.remove('constructor-pool--active');
+        }
+        if (word) {
+            word.textContent = '';
+        }
+        if (translation) {
+            translation.textContent = '';
+        }
+        if (sentenceTranslation) {
+            sentenceTranslation.textContent = '';
+        }
+        constructorState.activeExercise = null;
+        return;
+    }
+
+    if (emptyState) {
+        emptyState.setAttribute('hidden', 'hidden');
+    }
+    if (exercise) {
+        exercise.removeAttribute('hidden');
+    }
+
+    const savedIndex = constructorState.phaseIndexes[phaseKey] || 0;
+    const normalizedIndex = Math.max(0, Math.min(savedIndex, exercises.length - 1));
+    renderConstructorExercise(phaseKey, normalizedIndex);
+}
+
+function renderConstructorExercise(phaseKey, exerciseIndex) {
+    if (!constructorElements) {
+        constructorElements = getConstructorElements();
+    }
+    if (!constructorElements || !constructorElements.section) return;
+
+    const phase = phaseVocabularies[phaseKey];
+    const exercises = Array.isArray(phase && phase.constructorExercises)
+        ? phase.constructorExercises
+        : [];
+    if (!exercises.length) return;
+
+    const { pool, dropzone, feedback, word, translation, sentenceTranslation, progress, nextBtn } = constructorElements;
+    const safeIndex = Math.max(0, Math.min(exerciseIndex, exercises.length - 1));
+    const exerciseData = exercises[safeIndex];
+
+    constructorState.phaseIndexes[phaseKey] = safeIndex;
+    constructorState.activeExercise = exerciseData;
+
+    if (word) {
+        word.textContent = exerciseData.word || '';
+    }
+    if (translation) {
+        translation.textContent = exerciseData.translation || '';
+    }
+    if (sentenceTranslation) {
+        sentenceTranslation.textContent = exerciseData.sentence_translation || exerciseData.sentenceTranslation || '';
+    }
+    if (progress) {
+        progress.textContent = `${safeIndex + 1} / ${exercises.length}`;
+    }
+    if (feedback) {
+        feedback.textContent = '';
+        feedback.classList.remove('success', 'error');
+    }
+
+    if (dropzone) {
+        dropzone.innerHTML = '';
+        dropzone.dataset.expected = exerciseData.sentence || '';
+        dropzone.dataset.expectedNormalized = normalizeConstructorSentence(exerciseData.sentence || '');
+        dropzone.dataset.parts = String((exerciseData.parts || []).length);
+        dropzone.classList.remove('constructor-dropzone--success', 'constructor-dropzone--active');
+
+        const placeholder = document.createElement('div');
+        placeholder.className = 'constructor-drop-placeholder';
+        placeholder.textContent = 'Перетащите фрагменты сюда по порядку';
+        dropzone.appendChild(placeholder);
+    }
+
+    if (pool) {
+        pool.innerHTML = '';
+        pool.classList.remove('constructor-pool--active');
+        const shuffledParts = shuffleArray(exerciseData.parts || []);
+        shuffledParts.forEach((part, index) => {
+            const chip = createConstructorChip(part, index);
+            pool.appendChild(chip);
+        });
+    }
+
+    if (nextBtn) {
+        const isSingle = exercises.length <= 1;
+        nextBtn.disabled = isSingle;
+        nextBtn.classList.toggle('disabled', isSingle);
+    }
+}
+
+function createConstructorChip(part, index) {
+    const chip = document.createElement('div');
+    chip.className = 'constructor-chip';
+    chip.textContent = part.text || '';
+    chip.setAttribute('draggable', 'true');
+    chip.dataset.partIndex = String(index);
+    chip.dataset.partText = part.text || '';
+    chip.tabIndex = 0;
+
+    chip.addEventListener('dragstart', handleConstructorDragStart);
+    chip.addEventListener('dragend', handleConstructorDragEnd);
+
+    chip.addEventListener('click', function(event) {
+        event.preventDefault();
+        toggleChipPlacement(this);
+    });
+
+    chip.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            toggleChipPlacement(this);
+        }
+    });
+
+    return chip;
+}
+
+function toggleChipPlacement(chip) {
+    if (!constructorElements) return;
+
+    const parent = chip.parentElement;
+    if (parent === constructorElements.pool) {
+        moveChipToDropzone(chip);
+    } else {
+        moveChipToPool(chip);
+    }
+}
+
+function moveChipToDropzone(chip) {
+    if (!constructorElements) return;
+
+    const { dropzone, pool } = constructorElements;
+    if (!dropzone) return;
+
+    const placeholder = dropzone.querySelector('.constructor-drop-placeholder');
+    if (placeholder) {
+        placeholder.remove();
+    }
+
+    dropzone.appendChild(chip);
+    dropzone.classList.remove('constructor-dropzone--active', 'constructor-dropzone--success');
+    chip.classList.add('constructor-chip--placed');
+    chip.setAttribute('aria-pressed', 'true');
+
+    if (pool) {
+        pool.classList.remove('constructor-pool--active');
+    }
+
+    updateConstructorFeedback('');
+}
+
+function moveChipToPool(chip) {
+    if (!constructorElements) return;
+
+    const { pool, dropzone } = constructorElements;
+    if (!pool) return;
+
+    pool.appendChild(chip);
+    chip.classList.remove('constructor-chip--placed');
+    chip.setAttribute('aria-pressed', 'false');
+
+    if (dropzone) {
+        dropzone.classList.remove('constructor-dropzone--active', 'constructor-dropzone--success');
+    }
+
+    ensureConstructorPlaceholder();
+    updateConstructorFeedback('');
+}
+
+function ensureConstructorPlaceholder() {
+    if (!constructorElements || !constructorElements.dropzone) return;
+
+    const dropzone = constructorElements.dropzone;
+    const hasChips = dropzone.querySelectorAll('.constructor-chip').length > 0;
+    let placeholder = dropzone.querySelector('.constructor-drop-placeholder');
+
+    if (hasChips) {
+        if (placeholder) {
+            placeholder.remove();
+        }
+    } else if (!placeholder) {
+        placeholder = document.createElement('div');
+        placeholder.className = 'constructor-drop-placeholder';
+        placeholder.textContent = 'Перетащите фрагменты сюда по порядку';
+        dropzone.appendChild(placeholder);
+    }
+}
+
+function handleConstructorDragStart(event) {
+    constructorDraggedChip = this;
+    this.classList.add('constructor-chip--dragging');
+    if (event.dataTransfer) {
+        event.dataTransfer.effectAllowed = 'move';
+        event.dataTransfer.setData('text/plain', this.dataset.partText || '');
+    }
+}
+
+function handleConstructorDragEnd() {
+    this.classList.remove('constructor-chip--dragging');
+    constructorDraggedChip = null;
+}
+
+function handleConstructorDropzoneDragOver(event) {
+    if (!constructorDraggedChip) return;
+    event.preventDefault();
+    if (constructorElements && constructorElements.dropzone) {
+        constructorElements.dropzone.classList.add('constructor-dropzone--active');
+    }
+}
+
+function handleConstructorDropzoneDrop(event) {
+    if (!constructorDraggedChip) return;
+    event.preventDefault();
+    if (constructorElements && constructorElements.dropzone) {
+        constructorElements.dropzone.classList.remove('constructor-dropzone--active');
+    }
+    moveChipToDropzone(constructorDraggedChip);
+}
+
+function handleConstructorDropzoneDragLeave() {
+    if (constructorElements && constructorElements.dropzone) {
+        constructorElements.dropzone.classList.remove('constructor-dropzone--active');
+    }
+}
+
+function handleConstructorPoolDragOver(event) {
+    if (!constructorDraggedChip) return;
+    event.preventDefault();
+    if (constructorElements && constructorElements.pool) {
+        constructorElements.pool.classList.add('constructor-pool--active');
+    }
+}
+
+function handleConstructorPoolDrop(event) {
+    if (!constructorDraggedChip) return;
+    event.preventDefault();
+    if (constructorElements && constructorElements.pool) {
+        constructorElements.pool.classList.remove('constructor-pool--active');
+    }
+    moveChipToPool(constructorDraggedChip);
+}
+
+function handleConstructorPoolDragLeave() {
+    if (constructorElements && constructorElements.pool) {
+        constructorElements.pool.classList.remove('constructor-pool--active');
+    }
+}
+
+function updateConstructorFeedback(message, status) {
+    if (!constructorElements || !constructorElements.feedback) return;
+
+    const feedback = constructorElements.feedback;
+    feedback.textContent = message || '';
+    feedback.classList.remove('success', 'error');
+
+    if (status === 'success') {
+        feedback.classList.add('success');
+    } else if (status === 'error') {
+        feedback.classList.add('error');
+    }
+}
+
+function handleConstructorCheck() {
+    if (!constructorElements || !constructorElements.dropzone) return;
+
+    const dropzone = constructorElements.dropzone;
+    const chips = Array.from(dropzone.querySelectorAll('.constructor-chip'));
+    const expectedNormalized = dropzone.dataset.expectedNormalized || '';
+    const totalParts = parseInt(dropzone.dataset.parts || '0', 10);
+    const assembled = chips.map(chip => chip.dataset.partText || '').join(' ');
+    const assembledNormalized = normalizeConstructorSentence(assembled);
+
+    if (!chips.length) {
+        updateConstructorFeedback('Сначала перенесите фрагменты предложения.', 'error');
+        return;
+    }
+
+    if (chips.length !== totalParts) {
+        updateConstructorFeedback('Кажется, один из фрагментов ещё в списке. Проверьте себя!', 'error');
+        return;
+    }
+
+    if (assembledNormalized && assembledNormalized === expectedNormalized) {
+        dropzone.classList.add('constructor-dropzone--success');
+        updateConstructorFeedback('Отлично! Предложение собрано верно.', 'success');
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(20);
+        }
+    } else {
+        dropzone.classList.remove('constructor-dropzone--success');
+        updateConstructorFeedback('Попробуйте ещё раз: порядок фрагментов отличается.', 'error');
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(40);
+        }
+    }
+}
+
+function handleConstructorReset() {
+    if (!constructorState.activePhase) return;
+    const phaseKey = constructorState.activePhase;
+    const index = constructorState.phaseIndexes[phaseKey] || 0;
+    renderConstructorExercise(phaseKey, index);
+}
+
+function handleConstructorNext() {
+    if (!constructorState.activePhase) return;
+
+    const phaseKey = constructorState.activePhase;
+    const phase = phaseVocabularies[phaseKey];
+    const exercises = Array.isArray(phase && phase.constructorExercises)
+        ? phase.constructorExercises
+        : [];
+    if (!exercises.length) return;
+
+    const currentIndex = constructorState.phaseIndexes[phaseKey] || 0;
+    const nextIndex = (currentIndex + 1) % exercises.length;
+    renderConstructorExercise(phaseKey, nextIndex);
+
+    if (navigator.vibrate && isTouchDevice) {
+        navigator.vibrate(15);
+    }
+}
 
 // Prevent iOS zoom on double tap
 if (isIOS) {
@@ -276,7 +773,9 @@ function displayVocabulary(phaseKey) {
             grid.appendChild(card);
         }, index * 50);
     });
-    
+
+    renderConstructor(phaseKey);
+
     // Update progress bar
     const progress = ((currentPhaseIndex + 1) / phaseKeys.length) * 100;
     if (progressFill) progressFill.style.width = progress + '%';
@@ -759,6 +1258,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const journeyPoints = document.querySelectorAll('.journey-point');
     initializeProgressLine();
     attachQuizHandlers();
+    initializeConstructor();
 
     // Initialize relation toggles
     const relationToggles = document.querySelectorAll('.relation-toggle');

@@ -15,7 +15,27 @@
           "russian": "молчание",
           "transcription": "[дас ШВАЙ-ген]",
           "sentence": "Mein Schweigen macht mich zum Mitschuldigen.",
-          "sentence_translation": "Моё молчание делает меня соучастником."
+          "sentence_translation": "Моё молчание делает меня соучастником.",
+          "sentence_parts": [
+            {
+              "text": "Mein"
+            },
+            {
+              "text": "Schweigen"
+            },
+            {
+              "text": "macht"
+            },
+            {
+              "text": "mich"
+            },
+            {
+              "text": "zum"
+            },
+            {
+              "text": "Mitschuldigen."
+            }
+          ]
         },
         {
           "german": "die Schwäche",
@@ -108,7 +128,33 @@
           "russian": "сомнение",
           "transcription": "[дер ЦВАЙ-фель]",
           "sentence": "Der Zweifel an ihrer Güte wächst in mir.",
-          "sentence_translation": "Сомнение в её доброте растёт во мне."
+          "sentence_translation": "Сомнение в её доброте растёт во мне.",
+          "sentence_parts": [
+            {
+              "text": "Der"
+            },
+            {
+              "text": "Zweifel"
+            },
+            {
+              "text": "an"
+            },
+            {
+              "text": "ihrer"
+            },
+            {
+              "text": "Güte"
+            },
+            {
+              "text": "wächst"
+            },
+            {
+              "text": "in"
+            },
+            {
+              "text": "mir."
+            }
+          ]
         },
         {
           "german": "das Gewissen",
@@ -194,7 +240,27 @@
           "russian": "осознание",
           "transcription": "[ди ер-КЕНТ-нис]",
           "sentence": "Die Erkenntnis ihrer Bosheit erschüttert mich.",
-          "sentence_translation": "Осознание её злобы потрясает меня."
+          "sentence_translation": "Осознание её злобы потрясает меня.",
+          "sentence_parts": [
+            {
+              "text": "Die"
+            },
+            {
+              "text": "Erkenntnis"
+            },
+            {
+              "text": "ihrer"
+            },
+            {
+              "text": "Bosheit"
+            },
+            {
+              "text": "erschüttert"
+            },
+            {
+              "text": "mich."
+            }
+          ]
         },
         {
           "german": "das Entsetzen",
@@ -287,7 +353,27 @@
           "russian": "спор",
           "transcription": "[дер ШТРАЙТ]",
           "sentence": "Der Streit mit meiner Frau eskaliert.",
-          "sentence_translation": "Спор с моей женой обостряется."
+          "sentence_translation": "Спор с моей женой обостряется.",
+          "sentence_parts": [
+            {
+              "text": "Der"
+            },
+            {
+              "text": "Streit"
+            },
+            {
+              "text": "mit"
+            },
+            {
+              "text": "meiner"
+            },
+            {
+              "text": "Frau"
+            },
+            {
+              "text": "eskaliert."
+            }
+          ]
         },
         {
           "german": "der Mut",
@@ -373,7 +459,27 @@
           "russian": "мораль",
           "transcription": "[ди мо-РАЛЬ]",
           "sentence": "Die Moral leitet nun meine Entscheidungen.",
-          "sentence_translation": "Мораль теперь руководит моими решениями."
+          "sentence_translation": "Мораль теперь руководит моими решениями.",
+          "sentence_parts": [
+            {
+              "text": "Die"
+            },
+            {
+              "text": "Moral"
+            },
+            {
+              "text": "leitet"
+            },
+            {
+              "text": "nun"
+            },
+            {
+              "text": "meine"
+            },
+            {
+              "text": "Entscheidungen."
+            }
+          ]
         },
         {
           "german": "die Gerechtigkeit",
@@ -466,7 +572,30 @@
           "russian": "борьба",
           "transcription": "[дер КАМПФ]",
           "sentence": "Der Kampf für das Recht beginnt jetzt.",
-          "sentence_translation": "Борьба за право начинается сейчас."
+          "sentence_translation": "Борьба за право начинается сейчас.",
+          "sentence_parts": [
+            {
+              "text": "Der"
+            },
+            {
+              "text": "Kampf"
+            },
+            {
+              "text": "für"
+            },
+            {
+              "text": "das"
+            },
+            {
+              "text": "Recht"
+            },
+            {
+              "text": "beginnt"
+            },
+            {
+              "text": "jetzt."
+            }
+          ]
         },
         {
           "german": "das Recht",
@@ -552,7 +681,30 @@
           "russian": "правление",
           "transcription": "[ди ХЕР-шафт]",
           "sentence": "Die Herrschaft fällt nun in meine Hände.",
-          "sentence_translation": "Правление теперь переходит в мои руки."
+          "sentence_translation": "Правление теперь переходит в мои руки.",
+          "sentence_parts": [
+            {
+              "text": "Die"
+            },
+            {
+              "text": "Herrschaft"
+            },
+            {
+              "text": "fällt"
+            },
+            {
+              "text": "nun"
+            },
+            {
+              "text": "in"
+            },
+            {
+              "text": "meine"
+            },
+            {
+              "text": "Hände."
+            }
+          ]
         },
         {
           "german": "die Weisheit",

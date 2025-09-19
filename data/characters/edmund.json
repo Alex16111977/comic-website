@@ -21,7 +21,27 @@
           "russian": "бастард",
           "transcription": "[дер БАС-тард]",
           "sentence": "Als Bastard habe ich keine Rechte.",
-          "sentence_translation": "Как бастард я не имею прав."
+          "sentence_translation": "Как бастард я не имею прав.",
+          "sentence_parts": [
+            {
+              "text": "Als"
+            },
+            {
+              "text": "Bastard"
+            },
+            {
+              "text": "habe"
+            },
+            {
+              "text": "ich"
+            },
+            {
+              "text": "keine"
+            },
+            {
+              "text": "Rechte."
+            }
+          ]
         },
         {
           "german": "der Neid",
@@ -114,7 +134,24 @@
           "russian": "подделывать",
           "transcription": "[ФЕЛЬ-шен]",
           "sentence": "Ich fälsche Edgars Brief perfekt.",
-          "sentence_translation": "Я идеально подделываю письмо Эдгара."
+          "sentence_translation": "Я идеально подделываю письмо Эдгара.",
+          "sentence_parts": [
+            {
+              "text": "Ich"
+            },
+            {
+              "text": "fälsche"
+            },
+            {
+              "text": "Edgars"
+            },
+            {
+              "text": "Brief"
+            },
+            {
+              "text": "perfekt."
+            }
+          ]
         },
         {
           "german": "intrigieren",
@@ -207,7 +244,27 @@
           "russian": "изгонять",
           "transcription": "[фер-ТРАЙ-бен]",
           "sentence": "Ich vertreibe Edgar aus seinem Erbe.",
-          "sentence_translation": "Я изгоняю Эдгара из его наследства."
+          "sentence_translation": "Я изгоняю Эдгара из его наследства.",
+          "sentence_parts": [
+            {
+              "text": "Ich"
+            },
+            {
+              "text": "vertreibe"
+            },
+            {
+              "text": "Edgar"
+            },
+            {
+              "text": "aus"
+            },
+            {
+              "text": "seinem"
+            },
+            {
+              "text": "Erbe."
+            }
+          ]
         },
         {
           "german": "triumphieren",
@@ -300,7 +357,30 @@
           "russian": "объединяться",
           "transcription": "[фер-БЮН-ден]",
           "sentence": "Ich verbünde mich mit den bösen Schwestern.",
-          "sentence_translation": "Я объединяюсь со злыми сёстрами."
+          "sentence_translation": "Я объединяюсь со злыми сёстрами.",
+          "sentence_parts": [
+            {
+              "text": "Ich"
+            },
+            {
+              "text": "verbünde"
+            },
+            {
+              "text": "mich"
+            },
+            {
+              "text": "mit"
+            },
+            {
+              "text": "den"
+            },
+            {
+              "text": "bösen"
+            },
+            {
+              "text": "Schwestern."
+            }
+          ]
         },
         {
           "german": "die Macht",
@@ -393,7 +473,24 @@
           "russian": "предавать",
           "transcription": "[фер-РА-тен]",
           "sentence": "Ich verrate meinen eigenen Vater.",
-          "sentence_translation": "Я предаю собственного отца."
+          "sentence_translation": "Я предаю собственного отца.",
+          "sentence_parts": [
+            {
+              "text": "Ich"
+            },
+            {
+              "text": "verrate"
+            },
+            {
+              "text": "meinen"
+            },
+            {
+              "text": "eigenen"
+            },
+            {
+              "text": "Vater."
+            }
+          ]
         },
         {
           "german": "blenden",
@@ -486,7 +583,30 @@
           "russian": "любовная связь",
           "transcription": "[ди ЛИБ-шафт]",
           "sentence": "Meine Liebschaft mit beiden Schwestern ist gefährlich.",
-          "sentence_translation": "Моя любовная связь с обеими сёстрами опасна."
+          "sentence_translation": "Моя любовная связь с обеими сёстрами опасна.",
+          "sentence_parts": [
+            {
+              "text": "Meine"
+            },
+            {
+              "text": "Liebschaft"
+            },
+            {
+              "text": "mit"
+            },
+            {
+              "text": "beiden"
+            },
+            {
+              "text": "Schwestern"
+            },
+            {
+              "text": "ist"
+            },
+            {
+              "text": "gefährlich."
+            }
+          ]
         },
         {
           "german": "die Rivalität",
@@ -579,7 +699,30 @@
           "russian": "дуэль",
           "transcription": "[дас ду-ЭЛЬ]",
           "sentence": "Das Duell mit Edgar ist mein Ende.",
-          "sentence_translation": "Дуэль с Эдгаром - мой конец."
+          "sentence_translation": "Дуэль с Эдгаром - мой конец.",
+          "sentence_parts": [
+            {
+              "text": "Das"
+            },
+            {
+              "text": "Duell"
+            },
+            {
+              "text": "mit"
+            },
+            {
+              "text": "Edgar"
+            },
+            {
+              "text": "ist"
+            },
+            {
+              "text": "mein"
+            },
+            {
+              "text": "Ende."
+            }
+          ]
         },
         {
           "german": "fallen",

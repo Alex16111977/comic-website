@@ -15,7 +15,27 @@
           "russian": "честолюбие",
           "transcription": "[дер ЭР-гайц]",
           "sentence": "Mein Ehrgeiz kennt keine Grenzen mehr.",
-          "sentence_translation": "Моё честолюбие не знает больше границ."
+          "sentence_translation": "Моё честолюбие не знает больше границ.",
+          "sentence_parts": [
+            {
+              "text": "Mein"
+            },
+            {
+              "text": "Ehrgeiz"
+            },
+            {
+              "text": "kennt"
+            },
+            {
+              "text": "keine"
+            },
+            {
+              "text": "Grenzen"
+            },
+            {
+              "text": "mehr."
+            }
+          ]
         },
         {
           "german": "die Gier",
@@ -108,7 +128,27 @@
           "russian": "жестокость",
           "transcription": "[ди ГРАУ-зам-кайт]",
           "sentence": "Die Grausamkeit meiner Frau gefällt mir.",
-          "sentence_translation": "Жестокость моей жены мне нравится."
+          "sentence_translation": "Жестокость моей жены мне нравится.",
+          "sentence_parts": [
+            {
+              "text": "Die"
+            },
+            {
+              "text": "Grausamkeit"
+            },
+            {
+              "text": "meiner"
+            },
+            {
+              "text": "Frau"
+            },
+            {
+              "text": "gefällt"
+            },
+            {
+              "text": "mir."
+            }
+          ]
         },
         {
           "german": "die Bosheit",
@@ -194,7 +234,24 @@
           "russian": "тирания",
           "transcription": "[ди тю-ра-НАЙ]",
           "sentence": "Meine Tyrannei erstickt jeden Widerstand.",
-          "sentence_translation": "Моя тирания душит любое сопротивление."
+          "sentence_translation": "Моя тирания душит любое сопротивление.",
+          "sentence_parts": [
+            {
+              "text": "Meine"
+            },
+            {
+              "text": "Tyrannei"
+            },
+            {
+              "text": "erstickt"
+            },
+            {
+              "text": "jeden"
+            },
+            {
+              "text": "Widerstand."
+            }
+          ]
         },
         {
           "german": "die Unterdrückung",
@@ -287,7 +344,27 @@
           "russian": "наказание",
           "transcription": "[ди ШТРА-фе]",
           "sentence": "Die Strafe für Widerspruch ist hart.",
-          "sentence_translation": "Наказание за возражение сурово."
+          "sentence_translation": "Наказание за возражение сурово.",
+          "sentence_parts": [
+            {
+              "text": "Die"
+            },
+            {
+              "text": "Strafe"
+            },
+            {
+              "text": "für"
+            },
+            {
+              "text": "Widerspruch"
+            },
+            {
+              "text": "ist"
+            },
+            {
+              "text": "hart."
+            }
+          ]
         },
         {
           "german": "der Zorn",
@@ -373,7 +450,27 @@
           "russian": "пытка",
           "transcription": "[ди ФОЛЬ-тер]",
           "sentence": "Die Folter ist mein liebstes Werkzeug.",
-          "sentence_translation": "Пытка - мой любимый инструмент."
+          "sentence_translation": "Пытка - мой любимый инструмент.",
+          "sentence_parts": [
+            {
+              "text": "Die"
+            },
+            {
+              "text": "Folter"
+            },
+            {
+              "text": "ist"
+            },
+            {
+              "text": "mein"
+            },
+            {
+              "text": "liebstes"
+            },
+            {
+              "text": "Werkzeug."
+            }
+          ]
         },
         {
           "german": "der Sadismus",
@@ -466,7 +563,33 @@
           "russian": "рана",
           "transcription": "[ди ВУН-де]",
           "sentence": "Die Wunde brennt wie Feuer in meinem Leib.",
-          "sentence_translation": "Рана горит как огонь в моём теле."
+          "sentence_translation": "Рана горит как огонь в моём теле.",
+          "sentence_parts": [
+            {
+              "text": "Die"
+            },
+            {
+              "text": "Wunde"
+            },
+            {
+              "text": "brennt"
+            },
+            {
+              "text": "wie"
+            },
+            {
+              "text": "Feuer"
+            },
+            {
+              "text": "in"
+            },
+            {
+              "text": "meinem"
+            },
+            {
+              "text": "Leib."
+            }
+          ]
         },
         {
           "german": "der Schmerz",
@@ -552,7 +675,30 @@
           "russian": "смерть",
           "transcription": "[дер ТОД]",
           "sentence": "Der Tod kommt für mich zu früh.",
-          "sentence_translation": "Смерть приходит ко мне слишком рано."
+          "sentence_translation": "Смерть приходит ко мне слишком рано.",
+          "sentence_parts": [
+            {
+              "text": "Der"
+            },
+            {
+              "text": "Tod"
+            },
+            {
+              "text": "kommt"
+            },
+            {
+              "text": "für"
+            },
+            {
+              "text": "mich"
+            },
+            {
+              "text": "zu"
+            },
+            {
+              "text": "früh."
+            }
+          ]
         },
         {
           "german": "die Vergeltung",
