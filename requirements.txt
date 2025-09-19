@@ -13,8 +13,8 @@
 # That's it! No pip install needed.
 # ========================================
 
-# Core project has NO dependencies
-# The project is designed to work with pure Python
+# Core project dependencies
+Jinja2>=3.1.0
 
 # Optional: Development tools (not required to run)
 # Uncomment if you want development tools:

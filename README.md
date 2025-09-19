@@ -11,7 +11,7 @@ Interactive educational website generator for learning German through Shakespear
 - **12 Characters** - From King Lear to servants, each with unique journey
 - **15 Journey Stages** - Timeline visualization for each character
 - **100+ German Quotes** - With transcription [ukr] and translation
-- **Pure Python** - No external dependencies required
+- **Jinja2 Templates** - HTML генерируется из переиспользуемых шаблонов
 - **Single File Engine** - All logic in `main.py`
 - **Responsive Design** - Works on all devices without Bootstrap
 
@@ -21,6 +21,9 @@ Interactive educational website generator for learning German through Shakespear
 # Clone repository
 git clone https://github.com/Alex16111977/comic-website.git
 cd comic-website
+
+# Install dependencies
+pip install -r requirements.txt
 
 # Generate website
 python main.py
@@ -38,10 +41,12 @@ comic-website/
 ├── README.md            # This file
 ├── generators/          # HTML/CSS/JS generators
 │   ├── base.py          # Base generator class
-│   ├── css_lira.py      # CSS with gradients
+│   ├── css_lira.py      # CSS helper utilities
 │   ├── html_lira.py     # HTML journey generator
 │   ├── index_gen.py     # Index page generator
 │   └── js_lira.py       # JavaScript generator
+├── templates/          # HTML шаблоны Jinja2
+├── static/             # Статические файлы (CSS, шрифты)
 ├── data/                # Project data
 │   ├── characters/      # 12 JSON character files
 │   │   ├── king_lear.json
@@ -53,7 +58,8 @@ comic-website/
 │   └── vocabulary/      # German dictionaries
 ├── output/              # Generated website
 │   ├── index.html       # Main page
-│   └── journeys/        # 12 character journey pages
+│   ├── journeys/        # 12 character journey pages
+│   └── static/          # Скопированные статические ресурсы
 └── scripts/             # Utility scripts
 ```
 
@@ -80,8 +86,8 @@ comic-website/
 ## 🛠️ Technical Stack
 
 - **Python 3.13** - Core language
-- **No Dependencies** - Pure Python implementation
-- **Inline CSS** - All styles embedded
+- **Jinja2** - Шаблонизатор для HTML
+- **Static CSS** - Стили вынесены в файлы для кеширования
 - **Vanilla JS** - No frameworks needed
 - **JSON Data** - Character information storage
 
@@ -121,7 +127,7 @@ The generator creates:
 
 ### Modify Styles
 
-Edit generators/css_lira.py for visual changes:
+Edit `static/css/journey.css` and `static/css/index.css` for visual changes:
 - Character gradients
 - Card animations
 - Timeline styles
@@ -158,7 +164,7 @@ This project helps learn German through:
 - **180 Journey Stages** total (15 per character)
 - **100+ German Quotes** with transcription
 - **13 Generated Pages** fully interactive
-- **0 Dependencies** pure Python
+- **Template-driven HTML** with cached static assets
 
 ## 🤝 Contributing
 

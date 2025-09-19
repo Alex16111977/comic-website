@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>König Lear - Интерактивное путешествие</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>👑 Путешествие Короля Лира</h1>
+            <p class="subtitle">
+                Изучаем немецкий через трагедию Шекспира<br>
+                Интерактивное путешествие с {{ character_count }} персонажами
+            </p>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">{{ character_count }}</span>
+                    <span class="stat-label">Персонажей</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">{{ phase_total }}</span>
+                    <span class="stat-label">Фазы пути</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">{{ vocabulary_total }}</span>
+                    <span class="stat-label">Слов B1</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="characters-grid">
+            {% for card in cards %}
+            <div class="character-card" data-character="{{ card.id }}">
+                <div class="card-icon">{{ card.icon }}</div>
+                <h3>{{ card.name }}</h3>
+                <p class="role">{{ card.role }}</p>
+                <div class="phase-count">{{ card.phase_count }} фаз путешествия</div>
+                <a href="{{ card.url }}" class="journey-link">Начать путешествие →</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

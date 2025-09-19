@@ -5,6 +5,7 @@ Supports 12 characters with unique journeys
 """
 
 import sys
+import shutil
 from pathlib import Path
 
 # Add project root to path
@@ -22,6 +23,11 @@ def main():
     # Create output directories
     config.OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     (config.OUTPUT_DIR / "journeys").mkdir(exist_ok=True)
+
+    # Copy static assets for browser caching
+    static_src = config.BASE_DIR / "static"
+    if static_src.exists():
+        shutil.copytree(static_src, config.OUTPUT_DIR / "static", dirs_exist_ok=True)
     
     # Initialize generators
     lira_gen = LiraHTMLGenerator(config)
