@@ -61,6 +61,21 @@ class LiraHTMLGenerator(BaseGenerator):
                 if 'collocations' not in word or not word['collocations']:
                     word['collocations'] = list(entry.get('collocations', []))
 
+                if not word.get('visual_hint') and entry.get('visual_hint'):
+                    word['visual_hint'] = entry['visual_hint']
+
+                if 'themes' not in word or not word['themes']:
+                    entry_themes = entry.get('themes')
+                    if entry_themes:
+                        if isinstance(entry_themes, str):
+                            entry_themes = [entry_themes]
+                        elif isinstance(entry_themes, tuple):
+                            entry_themes = list(entry_themes)
+                        elif not isinstance(entry_themes, list):
+                            entry_themes = [entry_themes]
+
+                        word['themes'] = list(entry_themes)
+
     def generate_journey(self, character_file):
         """Generate journey page for a character"""
         character = self.load_character(character_file)
