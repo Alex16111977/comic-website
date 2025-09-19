@@ -616,27 +616,11 @@ function displayVocabulary(phaseKey) {
             card.className = 'word-card';
             card.style.animationDelay = `${index * 0.1}s`;
 
-            const visualHintMarkup = item.visual_hint
-                ? `<div class="word-visual-hint" aria-hidden="true">${item.visual_hint}</div>`
-                : '';
-
-            const themesMarkup = Array.isArray(item.themes) && item.themes.length
-                ? `<div class="word-themes">${item.themes.map(theme => `<span class=\"word-theme\">${theme}</span>`).join('')}</div>`
-                : '';
-
             card.innerHTML = `
-                <div class="word-card-header">
-                    ${visualHintMarkup}
-                    <div class="word-meta">
-                        <div class="word-german">${item.word}</div>
-                        <div class="word-translation">${item.translation}</div>
-                        <div class="word-transcription">${item.transcription}</div>
-                    </div>
-                </div>
-                ${themesMarkup}
-                <div class="word-sentence">
-                    <div class="sentence-german">"${item.sentence}"</div>
-                    <div class="sentence-translation">${item.sentenceTranslation}</div>
+                <div class="word-meta">
+                    <div class="word-german">${item.word}</div>
+                    <div class="word-translation">${item.translation}</div>
+                    <div class="word-transcription">${item.transcription}</div>
                 </div>
             `;
             grid.appendChild(card);
