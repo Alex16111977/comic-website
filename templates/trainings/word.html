@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренировка: {{ word.article }} {{ word.word }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/training.css">
+</head>
+<body>
+    <div class="training-container" data-word-id="{{ word.id }}">
+        <header class="training-header">
+            <a class="back-link" href="../index.html">← На главную</a>
+            <div class="word-title">
+                <div class="word-emoji" aria-hidden="true">{{ word.emoji or "📘" }}</div>
+                <div>
+                    <p class="word-article">{{ word.article }}</p>
+                    <h1>{{ word.word }}</h1>
+                    {% if translations.ru or translations.en %}
+                    <p class="word-translation">{{ translations.ru or translations.en }}</p>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="word-tags">
+                {% if word.level %}<span class="tag">Уровень {{ word.level }}</span>{% endif %}
+                {% if word.gender %}<span class="tag">{{ word.gender }}</span>{% endif %}
+                {% if category.name %}
+                <span class="tag tag-accent">{{ category.emoji }} {{ category.name }}</span>
+                {% elif word.category %}
+                <span class="tag">Тема: {{ word.category }}</span>
+                {% endif %}
+                {% if word.phonetic %}<span class="tag">{{ word.phonetic }}</span>{% endif %}
+            </div>
+        </header>
+
+        <main>
+            <section class="training-section">
+                <h2>Быстрый обзор</h2>
+                <div class="overview-grid">
+                    <article class="info-card">
+                        <h3>Значение</h3>
+                        <p>
+                            {% if translations.ru or translations.en %}
+                                {% if translations.ru %}<strong>RU:</strong> {{ translations.ru }}<br>{% endif %}
+                                {% if translations.en %}<strong>EN:</strong> {{ translations.en }}{% endif %}
+                            {% else %}
+                                Перевод пока не указан.
+                            {% endif %}
+                        </p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Пример</h3>
+                        {% if word.example %}
+                        <p class="example">{{ word.example.de or word.example }}</p>
+                        <p class="example-translation">{{ word.example.ru or word.example.en }}</p>
+                        {% else %}
+                        <p>Добавьте свой пример использования слова.</p>
+                        {% endif %}
+                    </article>
+                    {% if learning_stats %}
+                    <article class="info-card stats">
+                        <h3>Прогресс словаря</h3>
+                        <p>Всего слов: {{ learning_stats.total_words }}</p>
+                        <p>Изучено: {{ learning_stats.learned }} • В процессе: {{ learning_stats.in_progress }}</p>
+                    </article>
+                    {% endif %}
+                </div>
+            </section>
+
+            {% if quiz.has_quiz %}
+            <section class="training-section" aria-labelledby="quiz-title">
+                <div class="section-header">
+                    <h2 id="quiz-title">Викторина</h2>
+                    <p>Выберите правильный ответ из предложенных вариантов.</p>
+                </div>
+                <div class="quiz" data-component="quiz">
+                    <p class="quiz-question">{{ quiz.question }}</p>
+                    <div class="quiz-options">
+                        {% for option in quiz.options %}
+                        <button class="quiz-option" type="button" data-correct="{{ 'true' if option.is_correct else 'false' }}">{{ option.label }}</button>
+                        {% endfor %}
+                    </div>
+                    <div class="feedback" data-role="quiz-feedback" aria-live="polite"></div>
+                </div>
+            </section>
+            {% endif %}
+
+            {% if match_game.has_game %}
+            <section class="training-section" aria-labelledby="match-title">
+                <div class="section-header">
+                    <h2 id="match-title">Собери карточку</h2>
+                    <p>Перетащите характеристики в подходящие поля.</p>
+                </div>
+                <div class="match-game" data-component="match">
+                    <div class="match-grid">
+                        <ul class="match-targets">
+                            {% for target in match_game.targets %}
+                            <li class="match-target">
+                                <span class="match-label">{{ target.label }}</span>
+                                <div class="match-dropzone" data-key="{{ target.key }}" aria-label="{{ target.label }}"></div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        <div class="match-tokens" aria-label="Характеристики для перетаскивания">
+                            {% for token in match_game.tokens %}
+                            <div class="match-token" draggable="true" data-key="{{ token.key }}">{{ token.label }}</div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="feedback" data-role="match-feedback" aria-live="polite"></div>
+                </div>
+            </section>
+            {% endif %}
+
+            <section class="training-section" aria-labelledby="typing-title">
+                <div class="section-header">
+                    <h2 id="typing-title">Письменная практика</h2>
+                    <p>Восстановите слово по примеру предложения.</p>
+                </div>
+                <div class="typing-task" data-component="typing" data-answer="{{ typing_task.answer | upper }}">
+                    {% if typing_task.prompt %}
+                    <p class="typing-prompt">{{ typing_task.prompt }}</p>
+                    {% else %}
+                    <p class="typing-prompt">Напишите слово: {{ word.word }}</p>
+                    {% endif %}
+                    <label class="typing-label">
+                        Ваш ответ
+                        <input type="text" class="typing-input" placeholder="Введите слово">
+                    </label>
+                    <div class="typing-actions">
+                        <button type="button" class="typing-check">Проверить</button>
+                        {% if typing_task.hint %}
+                        <button type="button" class="typing-hint" data-hint="{{ typing_task.hint }}">Подсказка</button>
+                        {% endif %}
+                    </div>
+                    <div class="feedback" data-role="typing-feedback" aria-live="polite"></div>
+                </div>
+            </section>
+
+            {% if related_words %}
+            <section class="training-section" aria-labelledby="related-title">
+                <h2 id="related-title">Соседние слова</h2>
+                <div class="related-grid">
+                    {% for related in related_words %}
+                    <article class="related-card">
+                        <h3>{{ related.article }} {{ related.word }}</h3>
+                        {% if related.translation_ru or related.translation_en %}
+                        <p>{{ related.translation_ru or related.translation_en }}</p>
+                        {% endif %}
+                        <a href="{{ related.id }}.html" class="related-link">Тренироваться →</a>
+                    </article>
+                    {% endfor %}
+                </div>
+            </section>
+            {% endif %}
+        </main>
+    </div>
+    <script src="../static/js/training.js"></script>
+</body>
+</html>
