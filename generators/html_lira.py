@@ -179,11 +179,28 @@ class LiraHTMLGenerator(BaseGenerator):
             scene = phase.get("theatrical_scene")
 
             vocabulary_words = []
+            constructor_entries = []
             for entry in phase.get("vocabulary", []):
                 german = (entry.get("german") or "").strip()
                 russian = (entry.get("russian") or "").strip()
                 if german and russian:
                     vocabulary_words.append((german, russian))
+
+                sentence_parts = entry.get("sentence_parts")
+                if isinstance(sentence_parts, list) and len(sentence_parts) > 1:
+                    constructor_entries.append(
+                        {
+                            "german": german,
+                            "russian": russian,
+                            "sentence": entry.get("sentence", ""),
+                            "sentence_translation": entry.get(
+                                "sentence_translation", ""
+                            ),
+                            "parts": sentence_parts,
+                        }
+                    )
+
+            phase["sentence_parts"] = constructor_entries
 
             existing_quizzes_data = list(phase.get("quizzes", []))
             referenced_words = {

@@ -15,56 +15,88 @@
           "russian": "знать",
           "transcription": "[дер А-дель]",
           "sentence": "Gloucester steht unter dem glühenden Kronleuchter des Thronsaals. Selbst wenn die Welt zerfällt, bleibt das Wort „der Adel“ mein Nordstern.",
-          "sentence_translation": "Глостер стоит под пылающей люстрой тронного зала. Даже если мир распадается, слово «знать» остаётся моим северным светом."
+          "sentence_translation": "Глостер стоит под пылающей люстрой тронного зала. Даже если мир распадается, слово «знать» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Gloucester steht unter dem glühenden Kronleuchter des Thronsaals.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „der Adel“ mein Nordstern."
+          ]
         },
         {
           "german": "dienen",
           "russian": "служить",
           "transcription": "[ДИ-нен]",
           "sentence": "Neben der ausgerollten Reichskarte beugt sich Gloucester über Lears schweren Tisch. Mit fester Stimme schwöre ich mir: Das Wort „dienen“ wird heute nicht verraten.",
-          "sentence_translation": "У развернутой карты королевства Глостер склоняется над тяжёлым столом Лира. Твёрдым голосом я клянусь себе: слово «служить» сегодня не будет предано."
+          "sentence_translation": "У развернутой карты королевства Глостер склоняется над тяжёлым столом Лира. Твёрдым голосом я клянусь себе: слово «служить» сегодня не будет предано.",
+          "sentence_parts": [
+            "Neben der ausgerollten Reichskarte beugt sich Gloucester über Lears schweren Tisch.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „dienen“ wird heute nicht verraten."
+          ]
         },
         {
           "german": "vertrauen",
           "russian": "доверять",
           "transcription": "[фер-ТРАУ-ен]",
           "sentence": "Vor den steinernen Ahnenstatuen verschränkt Gloucester die Hände hinter dem Rücken. Ich atme tief ein und lasse nur das Wort „vertrauen“ wieder hinaus.",
-          "sentence_translation": "Перед каменными статуями предков Глостер сцепляет руки за спиной. Я глубоко вдыхаю и выпускаю только слово «доверять»."
+          "sentence_translation": "Перед каменными статуями предков Глостер сцепляет руки за спиной. Я глубоко вдыхаю и выпускаю только слово «доверять».",
+          "sentence_parts": [
+            "Vor den steinernen Ahnenstatuen verschränkt Gloucester die Hände hinter dem Rücken.",
+            "Ich atme tief ein und lasse nur das Wort „vertrauen“ wieder hinaus."
+          ]
         },
         {
           "german": "der Graf",
           "russian": "граф",
           "transcription": "[дер ГРАФ]",
           "sentence": "Zwischen flüsternden Höflingen gleitet Gloucester über den kalten Marmorboden. Ich zeichne das Wort „der Graf“ mit unsichtbarer Tinte auf meine Handfläche.",
-          "sentence_translation": "Между шепчущимися придворными Глостер скользит по холодному мраморному полу. Я вывожу слово «граф» невидимыми чернилами на ладони."
+          "sentence_translation": "Между шепчущимися придворными Глостер скользит по холодному мраморному полу. Я вывожу слово «граф» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Zwischen flüsternden Höflingen gleitet Gloucester über den kalten Marmorboden.",
+            "Ich zeichne das Wort „der Graf“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
         },
         {
           "german": "die Ehre",
           "russian": "честь",
           "transcription": "[ди Э-ре]",
           "sentence": "Am Rand des purpurnen Teppichs wartet Gloucester auf ein Zeichen des Königs. Ich zeichne das Wort „die Ehre“ mit unsichtbarer Tinte auf meine Handfläche.",
-          "sentence_translation": "На краю пурпурного ковра Глостер ждёт знака от короля. Я вывожу слово «честь» невидимыми чернилами на ладони."
+          "sentence_translation": "На краю пурпурного ковра Глостер ждёт знака от короля. Я вывожу слово «честь» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Am Rand des purpurnen Teppichs wartet Gloucester auf ein Zeichen des Königs.",
+            "Ich zeichne das Wort „die Ehre“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
         },
         {
           "german": "rechtschaffen",
           "russian": "праведный",
           "transcription": "[РЕХТ-ша-фен]",
           "sentence": "Unter wehenden Standarten der Schwestern senkt Gloucester kurz den Blick. Ich presse das Wort „rechtschaffen“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "Под развевающимися штандартами сестёр Глостер на миг опускает взгляд. Я стискиваю слово «праведный» зубами, чтобы не вырвалось сомнение."
+          "sentence_translation": "Под развевающимися штандартами сестёр Глостер на миг опускает взгляд. Я стискиваю слово «праведный» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Unter wehenden Standarten der Schwestern senkt Gloucester kurz den Blick.",
+            "Ich presse das Wort „rechtschaffen“ zwischen die Zähne, damit kein Zweifel entweicht."
+          ]
         },
         {
           "german": "die Pflicht",
           "russian": "долг",
           "transcription": "[ди ПФЛИХТ]",
           "sentence": "Hinter der vergoldeten Balustrade beobachtet Gloucester das gespannte Antlitz des Hofes. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Pflicht“ gehört mir.",
-          "sentence_translation": "За позолоченной балюстрадой Глостер наблюдает за напряжёнными лицами двора. Буря за окнами усиливает клятву: слово «долг» принадлежит мне."
+          "sentence_translation": "За позолоченной балюстрадой Глостер наблюдает за напряжёнными лицами двора. Буря за окнами усиливает клятву: слово «долг» принадлежит мне.",
+          "sentence_parts": [
+            "Hinter der vergoldeten Balustrade beobachtet Gloucester das gespannte Antlitz des Hofes.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Pflicht“ gehört mir."
+          ]
         },
         {
           "german": "achten",
           "russian": "уважать",
           "transcription": "[АХ-тен]",
           "sentence": "Im Schein der offenen Feuerbecken erhebt Gloucester langsam die Stimme. Ich zeichne das Wort „achten“ mit unsichtbarer Tinte auf meine Handfläche.",
-          "sentence_translation": "В отблесках открытых жаровен Глостер медленно поднимает голос. Я вывожу слово «уважать» невидимыми чернилами на ладони."
+          "sentence_translation": "В отблесках открытых жаровен Глостер медленно поднимает голос. Я вывожу слово «уважать» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Im Schein der offenen Feuerbecken erhebt Gloucester langsam die Stimme.",
+            "Ich zeichne das Wort „achten“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -108,56 +140,89 @@
           "russian": "письмо",
           "transcription": "[дер БРИФ]",
           "sentence": "Im hallenden Torbogen von Gonerils Burg verharrt Gloucester zwischen gepackten Kisten. Das kalte Licht lässt das Wort „der Brief“ wie geschmolzenes Gold erscheinen.",
-          "sentence_translation": "В гулком проёме ворот замка Гонерильи Глостер замирает среди нагруженных ящиков. Холодный свет заставляет слово «письмо» сиять словно расплавленное золото."
+          "sentence_translation": "В гулком проёме ворот замка Гонерильи Глостер замирает среди нагруженных ящиков. Холодный свет заставляет слово «письмо» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Im hallenden Torbogen von Gonerils Burg verharrt Gloucester zwischen gepackten Kisten.",
+            "Das kalte Licht lässt das Wort „der Brief“ wie geschmolzenes Gold erscheinen."
+          ]
         },
         {
           "german": "glauben",
           "russian": "верить",
           "transcription": "[ГЛАУ-бен]",
           "sentence": "Auf der windigen Freitreppe blickt Gloucester zum schweigenden Hof hinunter. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „glauben“ gehört mir.",
-          "sentence_translation": "На продуваемой ветром лестнице Глостер смотрит вниз на молчаливый двор. Буря за окнами усиливает клятву: слово «верить» принадлежит мне."
+          "sentence_translation": "На продуваемой ветром лестнице Глостер смотрит вниз на молчаливый двор. Буря за окнами усиливает клятву: слово «верить» принадлежит мне.",
+          "sentence_parts": [
+            "Auf der windigen Freitreppe blickt Gloucester zum schweigenden Hof hinunter.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „glauben“ gehört mir."
+          ]
         },
         {
           "german": "täuschen",
           "russian": "обманывать",
           "transcription": "[ТОЙ-шен]",
           "sentence": "Zwischen zurückgelassenen Dienern schließt Gloucester den Reisemantel enger. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „täuschen“ gehört mir.",
-          "sentence_translation": "Среди оставленных слуг Глостер плотнее запахивает дорожный плащ. Буря за окнами усиливает клятву: слово «обманывать» принадлежит мне."
+          "sentence_translation": "Среди оставленных слуг Глостер плотнее запахивает дорожный плащ. Буря за окнами усиливает клятву: слово «обманывать» принадлежит мне.",
+          "sentence_parts": [
+            "Zwischen zurückgelassenen Dienern schließt Gloucester den Reisemantel enger.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „täuschen“ gehört mir."
+          ]
         },
         {
           "german": "der Betrug",
           "russian": "обман",
           "transcription": "[дер бе-ТРУГ]",
           "sentence": "Am dunklen Pferdestall streicht Gloucester einem nervösen Tier über die Mähne. Ich zeichne das Wort „der Betrug“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "У тёмного конюшенного ряда Глостер гладит гриву нервного коня. Я черчу слово «обман» в мыслях поверх линий судьбы."
+          "sentence_translation": "У тёмного конюшенного ряда Глостер гладит гриву нервного коня. Я черчу слово «обман» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Am dunklen Pferdestall streicht Gloucester einem nervösen Tier über die Mähne.",
+            "Ich zeichne das Wort „der Betrug“ in Gedanken über die Linien des Schicksals."
+          ]
         },
         {
           "german": "arglos",
           "russian": "простодушный",
           "transcription": "[АРГ-лос]",
           "sentence": "Vor dem knarrenden Fallgatter tastet Gloucester ein letztes Mal nach dem Haustor. Ich zeichne das Wort „arglos“ mit unsichtbarer Tinte auf meine Handfläche.",
-          "sentence_translation": "Перед скрипящим подъёмным мостом Глостер в последний раз касается родной двери. Я вывожу слово «простодушный» невидимыми чернилами на ладони."
+          "sentence_translation": "Перед скрипящим подъёмным мостом Глостер в последний раз касается родной двери. Я вывожу слово «простодушный» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Vor dem knarrenden Fallgatter tastet Gloucester ein letztes Mal nach dem Haustor.",
+            "Ich zeichne das Wort „arglos“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
         },
         {
           "german": "verdächtigen",
           "russian": "подозревать",
           "transcription": "[фер-ДЕХ-ти-ген]",
           "sentence": "Zwischen verstreuten Schriftrollen dreht Gloucester den Ring an der Hand. Selbst wenn die Welt zerfällt, bleibt das Wort „verdächtigen“ mein Nordstern.",
-          "sentence_translation": "Среди разбросанных свитков Глостер вертит кольцо на пальце. Даже если мир распадается, слово «подозревать» остаётся моим северным светом."
+          "sentence_translation": "Среди разбросанных свитков Глостер вертит кольцо на пальце. Даже если мир распадается, слово «подозревать» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Zwischen verstreuten Schriftrollen dreht Gloucester den Ring an der Hand.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „verdächtigen“ mein Nordstern."
+          ]
         },
         {
           "german": "leichtgläubig",
           "russian": "легковерный",
           "transcription": "[ЛАЙХТ-глой-биг]",
           "sentence": "Am leeren Bankettisch zählt Gloucester die verlöschenden Kerzen. Mein Atem zeichnet das Wort „leichtgläubig“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "У пустого банкетного стола Глостер пересчитывает гаснущие свечи. Моё дыхание рисует слово «легковерный» в холодном воздухе между нами."
+          "sentence_translation": "У пустого банкетного стола Глостер пересчитывает гаснущие свечи. Моё дыхание рисует слово «легковерный» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Am leeren Bankettisch zählt Gloucester die verlöschenden Kerzen.",
+            "Mein Atem zeichnet das Wort „leichtgläubig“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "die Falle",
           "russian": "ловушка",
           "transcription": "[ди ФА-ле]",
           "sentence": "Zwischen schweigenden Wachen geht Gloucester auf den kalten Hof hinaus. Ich presse das Wort „die Falle“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "Между молчаливыми стражниками Глостер выходит на холодный двор. Я стискиваю слово «ловушка» зубами, чтобы не вырвалось сомнение."
+          "sentence_translation": "Между молчаливыми стражниками Глостер выходит на холодный двор. Я стискиваю слово «ловушка» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Zwischen schweigenden Wachen geht Gloucester auf den kalten Hof hinaus.",
+            "Ich presse das Wort „die Falle“ zwischen die Zähne,",
+            "damit kein Zweifel entweicht."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -201,49 +266,77 @@
           "russian": "изгонять",
           "transcription": "[фер-ШТО-сен]",
           "sentence": "Im zugigen Seitenflügel lauscht Gloucester dem Heulen der Küstenwinde. Ich umarme das Wort „verstoßen“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "В продуваемом ветром боковом крыле Глостер слушает вой прибрежного ветра. Я обнимаю слово «изгонять», будто это единственный союзник."
+          "sentence_translation": "В продуваемом ветром боковом крыле Глостер слушает вой прибрежного ветра. Я обнимаю слово «изгонять», будто это единственный союзник.",
+          "sentence_parts": [
+            "Im zugigen Seitenflügel lauscht Gloucester dem Heulen der Küstenwinde.",
+            "Ich umarme das Wort „verstoßen“, als wäre es mein einziger Verbündeter."
+          ]
         },
         {
           "german": "verfluchen",
           "russian": "проклинать",
           "transcription": "[фер-ФЛУ-хен]",
           "sentence": "Vor dem rauchigen Kamin der Burg faltet Gloucester einen zerknitterten Brief. Ich zeichne das Wort „verfluchen“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "Перед дымным камином замка Глостер складывает измятый лист. Я черчу слово «проклинать» в мыслях поверх линий судьбы."
+          "sentence_translation": "Перед дымным камином замка Глостер складывает измятый лист. Я черчу слово «проклинать» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Vor dem rauchigen Kamin der Burg faltet Gloucester einen zerknitterten Brief.",
+            "Ich zeichne das Wort „verfluchen“ in Gedanken über die Linien des Schicksals."
+          ]
         },
         {
           "german": "bereuen",
           "russian": "сожалеть",
           "transcription": "[бе-РОЙ-ен]",
           "sentence": "Unter farblosen Wandteppichen schreitet Gloucester rastlos auf und ab. Das kalte Licht lässt das Wort „bereuen“ wie geschmolzenes Gold erscheinen.",
-          "sentence_translation": "Под выцветшими гобеленами Глостер беспокойно меряет шагами зал. Холодный свет заставляет слово «сожалеть» сиять словно расплавленное золото."
+          "sentence_translation": "Под выцветшими гобеленами Глостер беспокойно меряет шагами зал. Холодный свет заставляет слово «сожалеть» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Unter farblosen Wandteppichen schreitet Gloucester rastlos auf und ab.",
+            "Das kalte Licht lässt das Wort „bereuen“ wie geschmolzenes Gold erscheinen."
+          ]
         },
         {
           "german": "der Irrtum",
           "russian": "заблуждение",
           "transcription": "[дер ИР-тум]",
           "sentence": "An der schmalen Fensterluke zählt Gloucester die Fackeln auf dem Hof. Ich halte das Wort „der Irrtum“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "У узкой бойницы Глостер считает факелы на дворе. Я держу слово «заблуждение» как факел у сердца."
+          "sentence_translation": "У узкой бойницы Глостер считает факелы на дворе. Я держу слово «заблуждение» как факел у сердца.",
+          "sentence_parts": [
+            "An der schmalen Fensterluke zählt Gloucester die Fackeln auf dem Hof.",
+            "Ich halte das Wort „der Irrtum“ wie eine Fackel vor meinem Herzen."
+          ]
         },
         {
           "german": "blind",
           "russian": "слепой",
           "transcription": "[БЛИНД]",
           "sentence": "Zwischen Reisekoffern der Gesandten sucht Gloucester nach frischen Botschaften. Wie ein stilles Gebet legt sich das Wort „blind“ auf meine Lippen.",
-          "sentence_translation": "Среди дорожных сундуков послов Глостер ищет свежие вести. Как тихая молитва слово «слепой» ложится на мои губы."
+          "sentence_translation": "Среди дорожных сундуков послов Глостер ищет свежие вести. Как тихая молитва слово «слепой» ложится на мои губы.",
+          "sentence_parts": [
+            "Zwischen Reisekoffern der Gesandten sucht Gloucester nach frischen Botschaften.",
+            "Wie ein stilles Gebet legt sich das Wort „blind“ auf meine Lippen."
+          ]
         },
         {
           "german": "jagen",
           "russian": "гнать",
           "transcription": "[Я-ген]",
           "sentence": "Im stillen Kapellenraum kniet Gloucester vor der kalten Steinfigur. Mit jeder Faser meines Körpers verspreche ich: Das Wort „jagen“ bleibt lebendig.",
-          "sentence_translation": "В тихой капелле Глостер преклоняет колени перед холодной каменной фигурой. Каждой клеткой тела я обещаю: слово «гнать» останется живым."
+          "sentence_translation": "В тихой капелле Глостер преклоняет колени перед холодной каменной фигурой. Каждой клеткой тела я обещаю: слово «гнать» останется живым.",
+          "sentence_parts": [
+            "Im stillen Kapellenraum kniet Gloucester vor der kalten Steinfigur.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „jagen“ bleibt lebendig."
+          ]
         },
         {
           "german": "die Ungerechtigkeit",
           "russian": "несправедливость",
           "transcription": "[ди УН-ге-рех-тиг-кайт]",
           "sentence": "Auf dem Balkon, den das Meer besprüht, hält Gloucester die Laterne fest. Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Ungerechtigkeit“ bleibt lebendig.",
-          "sentence_translation": "На балконе, омываемом морскими брызгами, Глостер крепко держит фонарь. Каждой клеткой тела я обещаю: слово «несправедливость» останется живым."
+          "sentence_translation": "На балконе, омываемом морскими брызгами, Глостер крепко держит фонарь. Каждой клеткой тела я обещаю: слово «несправедливость» останется живым.",
+          "sentence_parts": [
+            "Auf dem Balkon, den das Meer besprüht, hält Gloucester die Laterne fest.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Ungerechtigkeit“ bleibt lebendig."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -287,56 +380,88 @@
           "russian": "помогать",
           "transcription": "[ХЕЛЬ-фен]",
           "sentence": "Mitten auf der vom Regen gepeitschten Heide stemmt sich Gloucester gegen den Wind. Das Echo des Wortes „helfen“ übertönt das Flüstern der Höflinge.",
-          "sentence_translation": "Посреди хлещущей дождём пустоши Глостер упирается в ветер. Эхо слова «помогать» заглушает шёпот придворных."
+          "sentence_translation": "Посреди хлещущей дождём пустоши Глостер упирается в ветер. Эхо слова «помогать» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Mitten auf der vom Regen gepeitschten Heide stemmt sich Gloucester gegen den Wind.",
+            "Das Echo des Wortes „helfen“ übertönt das Flüstern der Höflinge."
+          ]
         },
         {
           "german": "das Mitleid",
           "russian": "сострадание",
           "transcription": "[дас МИТ-лайд]",
           "sentence": "Unter einem zerrissenen Banner schützt Gloucester die Augen vor den Blitzen. Selbst wenn die Welt zerfällt, bleibt das Wort „das Mitleid“ mein Nordstern.",
-          "sentence_translation": "Под разорванным знаменем Глостер прикрывает глаза от молний. Даже если мир распадается, слово «сострадание» остаётся моим северным светом."
+          "sentence_translation": "Под разорванным знаменем Глостер прикрывает глаза от молний. Даже если мир распадается, слово «сострадание» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Unter einem zerrissenen Banner schützt Gloucester die Augen vor den Blitzen.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „das Mitleid“ mein Nordstern."
+          ]
         },
         {
           "german": "riskieren",
           "russian": "рисковать",
           "transcription": "[рис-КИ-рен]",
           "sentence": "Am Rand eines umgestürzten Baumes sucht Gloucester Deckung vor dem Donner. Selbst wenn die Welt zerfällt, bleibt das Wort „riskieren“ mein Nordstern.",
-          "sentence_translation": "У поваленного дерева Глостер ищет укрытия от грома. Даже если мир распадается, слово «рисковать» остаётся моим северным светом."
+          "sentence_translation": "У поваленного дерева Глостер ищет укрытия от грома. Даже если мир распадается, слово «рисковать» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Am Rand eines umgestürzten Baumes sucht Gloucester Deckung vor dem Donner.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „riskieren“ mein Nordstern."
+          ]
         },
         {
           "german": "die Gefahr",
           "russian": "опасность",
           "transcription": "[ди ге-ФАР]",
           "sentence": "Zwischen schäumenden Wassergräben stolpert Gloucester durch den Schlamm. Das kalte Licht lässt das Wort „die Gefahr“ wie geschmolzenes Gold erscheinen.",
-          "sentence_translation": "Между пенящимися лужами Глостер пробирается через грязь. Холодный свет заставляет слово «опасность» сиять словно расплавленное золото."
+          "sentence_translation": "Между пенящимися лужами Глостер пробирается через грязь. Холодный свет заставляет слово «опасность» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Zwischen schäumenden Wassergräben stolpert Gloucester durch den Schlamm.",
+            "Das kalte Licht lässt das Wort „die Gefahr“ wie geschmolzenes Gold erscheinen."
+          ]
         },
         {
           "german": "heimlich",
           "russian": "тайно",
           "transcription": "[ХАЙМ-лих]",
           "sentence": "Vor einem zuckenden Himmel hebt Gloucester die Arme trotzig an. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „heimlich“ gehört mir.",
-          "sentence_translation": "На фоне вспыхивающего неба Глостер упрямо поднимает руки. Буря за окнами усиливает клятву: слово «тайно» принадлежит мне."
+          "sentence_translation": "На фоне вспыхивающего неба Глостер упрямо поднимает руки. Буря за окнами усиливает клятву: слово «тайно» принадлежит мне.",
+          "sentence_parts": [
+            "Vor einem zuckenden Himmel hebt Gloucester die Arme trotzig an.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „heimlich“ gehört mir."
+          ]
         },
         {
           "german": "schützen",
           "russian": "защищать",
           "transcription": "[ШЮ-цен]",
           "sentence": "Unter dem durchtränkten Umhang presst Gloucester den Atem gegen die Kälte. Mit jeder Faser meines Körpers verspreche ich: Das Wort „schützen“ bleibt lebendig.",
-          "sentence_translation": "Под промокшим плащом Глостер прижимает дыхание к груди, спасаясь от холода. Каждой клеткой тела я обещаю: слово «защищать» останется живым."
+          "sentence_translation": "Под промокшим плащом Глостер прижимает дыхание к груди, спасаясь от холода. Каждой клеткой тела я обещаю: слово «защищать» останется живым.",
+          "sentence_parts": [
+            "Unter dem durchtränkten Umhang presst Gloucester den Atem gegen die Kälte.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „schützen“ bleibt lebendig."
+          ]
         },
         {
           "german": "der Verrat",
           "russian": "измена",
           "transcription": "[дер фер-РАТ]",
           "sentence": "Am kläglichen Feuerrest wärmt Gloucester zitternde Finger. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „der Verrat“ gehört mir.",
-          "sentence_translation": "У жалких огненных углей Глостер греет дрожащие пальцы. Буря за окнами усиливает клятву: слово «измена» принадлежит мне."
+          "sentence_translation": "У жалких огненных углей Глостер греет дрожащие пальцы. Буря за окнами усиливает клятву: слово «измена» принадлежит мне.",
+          "sentence_parts": [
+            "Am kläglichen Feuerrest wärmt Gloucester zitternde Finger.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „der Verrat“ gehört mir."
+          ]
         },
         {
           "german": "wagen",
           "russian": "осмеливаться",
           "transcription": "[ВА-ген]",
           "sentence": "Zwischen heulenden Hunden ruft Gloucester gegen den tosenden Sturm an. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „wagen“ gehört mir.",
-          "sentence_translation": "Среди воющих псов Глостер перекрикивает беснующуюся бурю. Буря за окнами усиливает клятву: слово «осмеливаться» принадлежит мне."
+          "sentence_translation": "Среди воющих псов Глостер перекрикивает беснующуюся бурю. Буря за окнами усиливает клятву: слово «осмеливаться» принадлежит мне.",
+          "sentence_parts": [
+            "Zwischen heulenden Hunden ruft Gloucester gegen den tosenden Sturm an.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „wagen“ gehört mir."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -380,49 +505,79 @@
           "russian": "ослеплять",
           "transcription": "[БЛЕН-ден]",
           "sentence": "Im dunklen Zelt der Feldärzte sitzt Gloucester bei der flackernden Kerze. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „blenden“ gehört mir.",
-          "sentence_translation": "В тёмном шатре полевых лекарей Глостер сидит у мерцающей свечи. Буря за окнами усиливает клятву: слово «ослеплять» принадлежит мне."
+          "sentence_translation": "В тёмном шатре полевых лекарей Глостер сидит у мерцающей свечи. Буря за окнами усиливает клятву: слово «ослеплять» принадлежит мне.",
+          "sentence_parts": [
+            "Im dunklen Zelt der Feldärzte sitzt Gloucester bei der flackernden Kerze.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „blenden“ gehört mir."
+          ]
         },
         {
           "german": "die Folter",
           "russian": "пытка",
           "transcription": "[ди ФОЛЬ-тер]",
           "sentence": "Zwischen zerbeulten Rüstungen streicht Gloucester über ein altes Wappen. Ich presse das Wort „die Folter“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "Среди помятых доспехов Глостер гладит старый герб. Я стискиваю слово «пытка» зубами, чтобы не вырвалось сомнение."
+          "sentence_translation": "Среди помятых доспехов Глостер гладит старый герб. Я стискиваю слово «пытка» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Zwischen zerbeulten Rüstungen streicht Gloucester über ein altes Wappen.",
+            "Ich presse das Wort „die Folter“ zwischen die Zähne,",
+            "damit kein Zweifel entweicht."
+          ]
         },
         {
           "german": "der Schmerz",
           "russian": "боль",
           "transcription": "[дер ШМЕРЦ]",
           "sentence": "Am niedrigen Dachbalken der Hütte stößt Gloucester fast den Kopf. Ich umarme das Wort „der Schmerz“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "О низкую балку хижины Глостер едва не ударяется головой. Я обнимаю слово «боль», будто это единственный союзник."
+          "sentence_translation": "О низкую балку хижины Глостер едва не ударяется головой. Я обнимаю слово «боль», будто это единственный союзник.",
+          "sentence_parts": [
+            "Am niedrigen Dachbalken der Hütte stößt Gloucester fast den Kopf.",
+            "Ich umarme das Wort „der Schmerz“, als wäre es mein einziger Verbündeter."
+          ]
         },
         {
           "german": "die Dunkelheit",
           "russian": "темнота",
           "transcription": "[ди ДУН-кель-хайт]",
           "sentence": "Neben der schlafenden Wache flüstert Gloucester in die schwere Nacht. Ich presse das Wort „die Dunkelheit“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "Рядом со спящим стражем Глостер шепчет в тяжёлую ночь. Я стискиваю слово «темнота» зубами, чтобы не вырвалось сомнение."
+          "sentence_translation": "Рядом со спящим стражем Глостер шепчет в тяжёлую ночь. Я стискиваю слово «темнота» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Neben der schlafenden Wache flüstert Gloucester in die schwere Nacht.",
+            "Ich presse das Wort „die Dunkelheit“ zwischen die Zähne,",
+            "damit kein Zweifel entweicht."
+          ]
         },
         {
           "german": "schreien",
           "russian": "кричать",
           "transcription": "[ШРАЙ-ен]",
           "sentence": "Vor dem einfachen Feldbett betrachtet Gloucester die Narben vergangener Schlachten. Mit fester Stimme schwöre ich mir: Das Wort „schreien“ wird heute nicht verraten.",
-          "sentence_translation": "Перед грубой походной койкой Глостер разглядывает шрамы прошлых битв. Твёрдым голосом я клянусь себе: слово «кричать» сегодня не будет предано."
+          "sentence_translation": "Перед грубой походной койкой Глостер разглядывает шрамы прошлых битв. Твёрдым голосом я клянусь себе: слово «кричать» сегодня не будет предано.",
+          "sentence_parts": [
+            "Vor dem einfachen Feldbett betrachtet Gloucester die Narben vergangener Schlachten.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „schreien“ wird heute nicht verraten."
+          ]
         },
         {
           "german": "erblinden",
           "russian": "слепнуть",
           "transcription": "[ер-БЛИН-ден]",
           "sentence": "Im Geruch von feuchtem Stroh legt Gloucester den Mantel zur Seite. Ich flüstere den Wächtern des Schicksals zu: Das Wort „erblinden“ darf nicht vergehen.",
-          "sentence_translation": "В запахе влажной соломы Глостер откладывает плащ в сторону. Я шепчу стражам судьбы: слово «слепнуть» не должно исчезнуть."
+          "sentence_translation": "В запахе влажной соломы Глостер откладывает плащ в сторону. Я шепчу стражам судьбы: слово «слепнуть» не должно исчезнуть.",
+          "sentence_parts": [
+            "Im Geruch von feuchtem Stroh legt Gloucester den Mantel zur Seite.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „erblinden“ darf nicht vergehen."
+          ]
         },
         {
           "german": "die Rache",
           "russian": "месть",
           "transcription": "[ди РА-хе]",
           "sentence": "Auf dem wackligen Holztisch ordnet Gloucester zerlesene Briefe. Wie ein stilles Gebet legt sich das Wort „die Rache“ auf meine Lippen.",
-          "sentence_translation": "На шатком деревянном столе Глостер раскладывает зачитанные письма. Как тихая молитва слово «месть» ложится на мои губы."
+          "sentence_translation": "На шатком деревянном столе Глостер раскладывает зачитанные письма. Как тихая молитва слово «месть» ложится на мои губы.",
+          "sentence_parts": [
+            "Auf dem wackligen Holztisch ordnet Gloucester zerlesene Briefe.",
+            "Wie ein stilles Gebet legt sich das Wort „die Rache“ auf meine Lippen."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -466,56 +621,88 @@
           "russian": "отчаяние",
           "transcription": "[ди фер-ЦВАЙ-флунг]",
           "sentence": "Auf den weißen Klippen von Dover blickt Gloucester in den aufgewühlten Kanal. Selbst wenn die Welt zerfällt, bleibt das Wort „die Verzweiflung“ mein Nordstern.",
-          "sentence_translation": "На белых скалах Дувра Глостер смотрит в вздыбленный пролив. Даже если мир распадается, слово «отчаяние» остаётся моим северным светом."
+          "sentence_translation": "На белых скалах Дувра Глостер смотрит в вздыбленный пролив. Даже если мир распадается, слово «отчаяние» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Auf den weißen Klippen von Dover blickt Gloucester in den aufgewühlten Kanal.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „die Verzweiflung“ mein Nordstern."
+          ]
         },
         {
           "german": "springen",
           "russian": "прыгать",
           "transcription": "[ШПРИН-ген]",
           "sentence": "Zwischen flatternden Feldzeichen richtet Gloucester den Helm. Das Echo des Wortes „springen“ übertönt das Flüstern der Höflinge.",
-          "sentence_translation": "Среди хлопающих штандартов Глостер поправляет шлем. Эхо слова «прыгать» заглушает шёпот придворных."
+          "sentence_translation": "Среди хлопающих штандартов Глостер поправляет шлем. Эхо слова «прыгать» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Zwischen flatternden Feldzeichen richtet Gloucester den Helm.",
+            "Das Echo des Wortes „springen“ übertönt das Flüstern der Höflinge."
+          ]
         },
         {
           "german": "die Täuschung",
           "russian": "обман",
           "transcription": "[ди ТОЙ-шунг]",
           "sentence": "Am Lagerfeuer der Franzosen zeichnet Gloucester Marschrouten in den Sand. Ich halte das Wort „die Täuschung“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "У французского костра Глостер рисует в песке путь марша. Я держу слово «обман» как факел у сердца."
+          "sentence_translation": "У французского костра Глостер рисует в песке путь марша. Я держу слово «обман» как факел у сердца.",
+          "sentence_parts": [
+            "Am Lagerfeuer der Franzosen zeichnet Gloucester Marschrouten in den Sand.",
+            "Ich halte das Wort „die Täuschung“ wie eine Fackel vor meinem Herzen."
+          ]
         },
         {
           "german": "der Abgrund",
           "russian": "пропасть",
           "transcription": "[дер АБ-грунд]",
           "sentence": "Neben verschnürten Versorgungskisten kontrolliert Gloucester das Siegel. Ich halte das Wort „der Abgrund“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "У перевязанных провиантных ящиков Глостер проверяет печати. Я держу слово «пропасть» как факел у сердца."
+          "sentence_translation": "У перевязанных провиантных ящиков Глостер проверяет печати. Я держу слово «пропасть» как факел у сердца.",
+          "sentence_parts": [
+            "Neben verschnürten Versorgungskisten kontrolliert Gloucester das Siegel.",
+            "Ich halte das Wort „der Abgrund“ wie eine Fackel vor meinem Herzen."
+          ]
         },
         {
           "german": "aufgeben",
           "russian": "сдаваться",
           "transcription": "[АУФ-ге-бен]",
           "sentence": "Vor dem Seidenzelt der Heerführer lauscht Gloucester dem dumpfen Meer. Das kalte Licht lässt das Wort „aufgeben“ wie geschmolzenes Gold erscheinen.",
-          "sentence_translation": "Перед шёлковым шатром полководцев Глостер слушает глухой шум моря. Холодный свет заставляет слово «сдаваться» сиять словно расплавленное золото."
+          "sentence_translation": "Перед шёлковым шатром полководцев Глостер слушает глухой шум моря. Холодный свет заставляет слово «сдаваться» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Vor dem Seidenzelt der Heerführer lauscht Gloucester dem dumpfen Meer.",
+            "Das kalte Licht lässt das Wort „aufgeben“ wie geschmolzenes Gold erscheinen."
+          ]
         },
         {
           "german": "die Hoffnungslosigkeit",
           "russian": "безнадёжность",
           "transcription": "[ди ХОФ-нунгс-ло-зиг-кайт]",
           "sentence": "Auf dem sandigen Trainingsplatz übt Gloucester das Ziehen des Schwerts. Mein Atem zeichnet das Wort „die Hoffnungslosigkeit“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "На песчаном плацу Глостер отрабатывает выхват меча. Моё дыхание рисует слово «безнадёжность» в холодном воздухе между нами."
+          "sentence_translation": "На песчаном плацу Глостер отрабатывает выхват меча. Моё дыхание рисует слово «безнадёжность» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Auf dem sandigen Trainingsplatz übt Gloucester das Ziehen des Schwerts.",
+            "Mein Atem zeichnet das Wort „die Hoffnungslosigkeit“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "stürzen",
           "russian": "падать",
           "transcription": "[ШТЮР-цен]",
           "sentence": "Zwischen pochenden Trommeln hebt Gloucester das Banner der Hoffnung. Das kalte Licht lässt das Wort „stürzen“ wie geschmolzenes Gold erscheinen.",
-          "sentence_translation": "Под гул барабанов Глостер поднимает знамя надежды. Холодный свет заставляет слово «падать» сиять словно расплавленное золото."
+          "sentence_translation": "Под гул барабанов Глостер поднимает знамя надежды. Холодный свет заставляет слово «падать» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Zwischen pochenden Trommeln hebt Gloucester das Banner der Hoffnung.",
+            "Das kalte Licht lässt das Wort „stürzen“ wie geschmolzenes Gold erscheinen."
+          ]
         },
         {
           "german": "erlösen",
           "russian": "избавлять",
           "transcription": "[ер-ЛЁ-зен]",
           "sentence": "Am Morgennebel der Küste legt Gloucester die Hand auf das pochende Herz. Ich presse das Wort „erlösen“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "В утреннем тумане побережья Глостер кладёт ладонь на бьющееся сердце. Я стискиваю слово «избавлять» зубами, чтобы не вырвалось сомнение."
+          "sentence_translation": "В утреннем тумане побережья Глостер кладёт ладонь на бьющееся сердце. Я стискиваю слово «избавлять» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Am Morgennebel der Küste legt Gloucester die Hand auf das pochende Herz.",
+            "Ich presse das Wort „erlösen“ zwischen die Zähne, damit kein Zweifel entweicht."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -559,56 +746,88 @@
           "russian": "узнавать",
           "transcription": "[ер-КЕН-нен]",
           "sentence": "Im feuchten Kerker stützt Gloucester sich an den tropfenden Stein. Ich umarme das Wort „erkennen“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "В сыром подземелье Глостер опирается на сочащийся камень. Я обнимаю слово «узнавать», будто это единственный союзник."
+          "sentence_translation": "В сыром подземелье Глостер опирается на сочащийся камень. Я обнимаю слово «узнавать», будто это единственный союзник.",
+          "sentence_parts": [
+            "Im feuchten Kerker stützt Gloucester sich an den tropfenden Stein.",
+            "Ich umarme das Wort „erkennen“, als wäre es mein einziger Verbündeter."
+          ]
         },
         {
           "german": "vergeben",
           "russian": "прощать",
           "transcription": "[фер-ГЕ-бен]",
           "sentence": "Unter der trüben Laterne zählt Gloucester die eisernen Ringe der Kette. Ich zeichne das Wort „vergeben“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "Под мутным фонарём Глостер пересчитывает железные кольца цепи. Я черчу слово «прощать» в мыслях поверх линий судьбы."
+          "sentence_translation": "Под мутным фонарём Глостер пересчитывает железные кольца цепи. Я черчу слово «прощать» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Unter der trüben Laterne zählt Gloucester die eisernen Ringe der Kette.",
+            "Ich zeichne das Wort „vergeben“ in Gedanken über die Linien des Schicksals."
+          ]
         },
         {
           "german": "sterben",
           "russian": "умирать",
           "transcription": "[ШТЕР-бен]",
           "sentence": "Neben der schweren Holztür horcht Gloucester auf entferntes Schluchzen. Ich halte das Wort „sterben“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "У тяжёлой двери Глостер прислушивается к далёким рыданиям. Я держу слово «умирать» как факел у сердца."
+          "sentence_translation": "У тяжёлой двери Глостер прислушивается к далёким рыданиям. Я держу слово «умирать» как факел у сердца.",
+          "sentence_parts": [
+            "Neben der schweren Holztür horcht Gloucester auf entferntes Schluchzen.",
+            "Ich halte das Wort „sterben“ wie eine Fackel vor meinem Herzen."
+          ]
         },
         {
           "german": "die Erkenntnis",
           "russian": "осознание",
           "transcription": "[ди ер-КЕНТ-нис]",
           "sentence": "Auf der kalten Steinbank zieht Gloucester den Mantel enger um die Schultern. Das Echo des Wortes „die Erkenntnis“ übertönt das Flüstern der Höflinge.",
-          "sentence_translation": "На холодной каменной скамье Глостер плотнее кутается в плащ. Эхо слова «осознание» заглушает шёпот придворных."
+          "sentence_translation": "На холодной каменной скамье Глостер плотнее кутается в плащ. Эхо слова «осознание» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Auf der kalten Steinbank zieht Gloucester den Mantel enger um die Schultern.",
+            "Das Echo des Wortes „die Erkenntnis“ übertönt das Flüstern der Höflinge."
+          ]
         },
         {
           "german": "die Reue",
           "russian": "раскаяние",
           "transcription": "[ди РОЙ-е]",
           "sentence": "Zwischen Schatten der Gitterstäbe hebt Gloucester das Gesicht zum Licht. Ich zeichne das Wort „die Reue“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "Между тенями решёток Глостер поднимает лицо к свету. Я черчу слово «раскаяние» в мыслях поверх линий судьбы."
+          "sentence_translation": "Между тенями решёток Глостер поднимает лицо к свету. Я черчу слово «раскаяние» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Zwischen Schatten der Gitterstäbe hebt Gloucester das Gesicht zum Licht.",
+            "Ich zeichne das Wort „die Reue“ in Gedanken über die Linien des Schicksals."
+          ]
         },
         {
           "german": "umarmen",
           "russian": "обнимать",
           "transcription": "[ум-АР-мен]",
           "sentence": "Am rostigen Wassereimer spiegelt Gloucester kurz die eigenen Augen. Wie ein stilles Gebet legt sich das Wort „umarmen“ auf meine Lippen.",
-          "sentence_translation": "У ржавого ведра с водой Глостер на мгновение видит отражение глаз. Как тихая молитва слово «обнимать» ложится на мои губы."
+          "sentence_translation": "У ржавого ведра с водой Глостер на мгновение видит отражение глаз. Как тихая молитва слово «обнимать» ложится на мои губы.",
+          "sentence_parts": [
+            "Am rostigen Wassereimer spiegelt Gloucester kurz die eigenen Augen.",
+            "Wie ein stilles Gebet legt sich das Wort „umarmen“ auf meine Lippen."
+          ]
         },
         {
           "german": "die Versöhnung",
           "russian": "примирение",
           "transcription": "[ди фер-ЗЁ-нунг]",
           "sentence": "Im dumpfen Hall der Schritte zählt Gloucester den Rhythmus der Wachen. Mein Atem zeichnet das Wort „die Versöhnung“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "В глухом эхе шагов Глостер отсчитывает ритм часовых. Моё дыхание рисует слово «примирение» в холодном воздухе между нами."
+          "sentence_translation": "В глухом эхе шагов Глостер отсчитывает ритм часовых. Моё дыхание рисует слово «примирение» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Im dumpfen Hall der Schritte zählt Gloucester den Rhythmus der Wachen.",
+            "Mein Atem zeichnet das Wort „die Versöhnung“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "das Herz",
           "russian": "сердце",
           "transcription": "[дас ХЕРЦ]",
           "sentence": "Vor dem verriegelten Fenster zeichnet Gloucester Kreise in den Staub. Ich halte das Wort „das Herz“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "Перед заколоченным окном Глостер чертит круги в пыли. Я держу слово «сердце» как факел у сердца."
+          "sentence_translation": "Перед заколоченным окном Глостер чертит круги в пыли. Я держу слово «сердце» как факел у сердца.",
+          "sentence_parts": [
+            "Vor dem verriegelten Fenster zeichnet Gloucester Kreise in den Staub.",
+            "Ich halte das Wort „das Herz“ wie eine Fackel vor meinem Herzen."
+          ]
         }
       ],
       "theatrical_scene": {

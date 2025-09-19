@@ -15,56 +15,88 @@
           "russian": "честолюбие",
           "transcription": "[дер ЭР-гайц]",
           "sentence": "In der Waffenkammer betrachtet Cornwall gierig die ausgestellten Kronjuwelen. Das Echo des Wortes „der Ehrgeiz“ übertönt das Flüstern der Höflinge.",
-          "sentence_translation": "В оружейной Корнуолл жадно рассматривает выставленные коронные драгоценности. Эхо слова «честолюбие» заглушает шёпот придворных."
+          "sentence_translation": "В оружейной Корнуолл жадно рассматривает выставленные коронные драгоценности. Эхо слова «честолюбие» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "In der Waffenkammer betrachtet Cornwall gierig die ausgestellten Kronjuwelen.",
+            "Das Echo des Wortes „der Ehrgeiz“ übertönt das Flüstern der Höflinge."
+          ]
         },
         {
           "german": "die Gier",
           "russian": "жадность",
           "transcription": "[ди ГИР]",
           "sentence": "Vor der Karte Englands fährt Cornwall mit dem Dolch über neue Grenzen. Mein Atem zeichnet das Wort „die Gier“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "Перед картой Англии Корнуолл проводит кинжалом новые границы. Моё дыхание рисует слово «жадность» в холодном воздухе между нами."
+          "sentence_translation": "Перед картой Англии Корнуолл проводит кинжалом новые границы. Моё дыхание рисует слово «жадность» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Vor der Karte Englands fährt Cornwall mit dem Dolch über neue Grenzen.",
+            "Mein Atem zeichnet das Wort „die Gier“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "streben",
           "russian": "стремиться",
           "transcription": "[ШТРЕ-бен]",
           "sentence": "Zwischen knienden Vasallen lässt Cornwall die Finger über den Thronsessel gleiten. Ich presse das Wort „streben“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "Среди преклонивших колено вассалов Корнуолл проводит пальцами по тронному креслу. Я стискиваю слово «стремиться» зубами, чтобы не вырвалось сомнение."
+          "sentence_translation": "Среди преклонивших колено вассалов Корнуолл проводит пальцами по тронному креслу. Я стискиваю слово «стремиться» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Zwischen knienden Vasallen lässt Cornwall die Finger über den Thronsessel gleiten.",
+            "Ich presse das Wort „streben“ zwischen die Zähne, damit kein Zweifel entweicht."
+          ]
         },
         {
           "german": "verlangen",
           "russian": "желать",
           "transcription": "[фер-ЛАН-ген]",
           "sentence": "Am hohen Fenster misst Cornwall den Abstand zur Hauptstadt. Mein Atem zeichnet das Wort „verlangen“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "У высокого окна Корнуолл вымеряет расстояние до столицы. Моё дыхание рисует слово «желать» в холодном воздухе между нами."
+          "sentence_translation": "У высокого окна Корнуолл вымеряет расстояние до столицы. Моё дыхание рисует слово «желать» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Am hohen Fenster misst Cornwall den Abstand zur Hauptstadt.",
+            "Mein Atem zeichnet das Wort „verlangen“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "begehren",
           "russian": "вожделеть",
           "transcription": "[бе-ГЕ-рен]",
           "sentence": "Neben dem schwelenden Kamin testet Cornwall das Gewicht eines Schwertes. Ich flüstere den Wächtern des Schicksals zu: Das Wort „begehren“ darf nicht vergehen.",
-          "sentence_translation": "У тлеющего камина Корнуолл взвешивает на руке меч. Я шепчу стражам судьбы: слово «вожделеть» не должно исчезнуть."
+          "sentence_translation": "У тлеющего камина Корнуолл взвешивает на руке меч. Я шепчу стражам судьбы: слово «вожделеть» не должно исчезнуть.",
+          "sentence_parts": [
+            "Neben dem schwelenden Kamin testet Cornwall das Gewicht eines Schwertes.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „begehren“ darf nicht vergehen."
+          ]
         },
         {
           "german": "gierig",
           "russian": "жадный",
           "transcription": "[ГИ-риг]",
           "sentence": "Auf dem Turnierplatz lässt Cornwall seine Reiter zu später Stunde antreten. Selbst wenn die Welt zerfällt, bleibt das Wort „gierig“ mein Nordstern.",
-          "sentence_translation": "На турнирной площадке Корнуолл строит всадников поздним вечером. Даже если мир распадается, слово «жадный» остаётся моим северным светом."
+          "sentence_translation": "На турнирной площадке Корнуолл строит всадников поздним вечером. Даже если мир распадается, слово «жадный» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Auf dem Turnierplatz lässt Cornwall seine Reiter zu später Stunde antreten.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „gierig“ mein Nordstern."
+          ]
         },
         {
           "german": "die Herrschsucht",
           "russian": "властолюбие",
           "transcription": "[ди ХЕР-зухт]",
           "sentence": "Zwischen Pergamentrollen überdenkt Cornwall geheime Bündnisse. Wie ein stilles Gebet legt sich das Wort „die Herrschsucht“ auf meine Lippen.",
-          "sentence_translation": "Среди свитков пергамента Корнуолл обдумывает тайные союзы. Как тихая молитва слово «властолюбие» ложится на мои губы."
+          "sentence_translation": "Среди свитков пергамента Корнуолл обдумывает тайные союзы. Как тихая молитва слово «властолюбие» ложится на мои губы.",
+          "sentence_parts": [
+            "Zwischen Pergamentrollen überdenkt Cornwall geheime Bündnisse.",
+            "Wie ein stilles Gebet legt sich das Wort „die Herrschsucht“ auf meine Lippen."
+          ]
         },
         {
           "german": "ergreifen",
           "russian": "захватывать",
           "transcription": "[ер-ГРАЙ-фен]",
           "sentence": "Im Spiegel der Audienzhalle probt Cornwall das Lächeln eines Herrschers. Ich umarme das Wort „ergreifen“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "В зеркале аудиенц-зала Корнуолл репетирует улыбку правителя. Я обнимаю слово «захватывать», будто это единственный союзник."
+          "sentence_translation": "В зеркале аудиенц-зала Корнуолл репетирует улыбку правителя. Я обнимаю слово «захватывать», будто это единственный союзник.",
+          "sentence_parts": [
+            "Im Spiegel der Audienzhalle probt Cornwall das Lächeln eines Herrschers.",
+            "Ich umarme das Wort „ergreifen“, als wäre es mein einziger Verbündeter."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -108,49 +140,77 @@
           "russian": "жестокость",
           "transcription": "[ди ГРАУ-зам-кайт]",
           "sentence": "Neben Regans vergiftetem Lächeln hebt Cornwall den Kelch zum Spott. Ich umarme das Wort „die Grausamkeit“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "Рядом с ядовитой улыбкой Реганы Корнуолл поднимает кубок насмешки. Я обнимаю слово «жестокость», будто это единственный союзник."
+          "sentence_translation": "Рядом с ядовитой улыбкой Реганы Корнуолл поднимает кубок насмешки. Я обнимаю слово «жестокость», будто это единственный союзник.",
+          "sentence_parts": [
+            "Neben Regans vergiftetem Lächeln hebt Cornwall den Kelch zum Spott.",
+            "Ich umarme das Wort „die Grausamkeit“, als wäre es mein einziger Verbündeter."
+          ]
         },
         {
           "german": "die Bosheit",
           "russian": "злоба",
           "transcription": "[ди БОС-хайт]",
           "sentence": "Auf der Galerie des Schlosses applaudiert Cornwall den Demütigungen des Königs. Ich umarme das Wort „die Bosheit“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "На галерее замка Корнуолл аплодирует унижениям короля. Я обнимаю слово «злоба», будто это единственный союзник."
+          "sentence_translation": "На галерее замка Корнуолл аплодирует унижениям короля. Я обнимаю слово «злоба», будто это единственный союзник.",
+          "sentence_parts": [
+            "Auf der Galerie des Schlosses applaudiert Cornwall den Demütigungen des Königs.",
+            "Ich umarme das Wort „die Bosheit“, als wäre es mein einziger Verbündeter."
+          ]
         },
         {
           "german": "billigen",
           "russian": "одобрять",
           "transcription": "[БИ-ли-ген]",
           "sentence": "Zwischen eingeschüchterten Dienern greift Cornwall nach der Peitsche. Das kalte Licht lässt das Wort „billigen“ wie geschmolzenes Gold erscheinen.",
-          "sentence_translation": "Среди запуганных слуг Корнуолл тянется к плётке. Холодный свет заставляет слово «одобрять» сиять словно расплавленное золото."
+          "sentence_translation": "Среди запуганных слуг Корнуолл тянется к плётке. Холодный свет заставляет слово «одобрять» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Zwischen eingeschüchterten Dienern greift Cornwall nach der Peitsche.",
+            "Das kalte Licht lässt das Wort „billigen“ wie geschmolzenes Gold erscheinen."
+          ]
         },
         {
           "german": "unterstützen",
           "russian": "поддерживать",
           "transcription": "[ун-тер-ШТЮ-цен]",
           "sentence": "Am hohen Lehnsessel sitzt Cornwall mit kalter Zufriedenheit. Ich zeichne das Wort „unterstützen“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "В высоком кресле-ленном Корнуолл сидит с холодным довольством. Я черчу слово «поддерживать» в мыслях поверх линий судьбы."
+          "sentence_translation": "В высоком кресле-ленном Корнуолл сидит с холодным довольством. Я черчу слово «поддерживать» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Am hohen Lehnsessel sitzt Cornwall mit kalter Zufriedenheit.",
+            "Ich zeichne das Wort „unterstützen“ in Gedanken über die Linien des Schicksals."
+          ]
         },
         {
           "german": "anstacheln",
           "russian": "подстрекать",
           "transcription": "[АН-шта-хельн]",
           "sentence": "Vor dem Bannerschrank zerreißt Cornwall einen höflichen Bittbrief. Selbst wenn die Welt zerfällt, bleibt das Wort „anstacheln“ mein Nordstern.",
-          "sentence_translation": "Перед шкафом со штандартами Корнуолл разрывает вежливое прошение. Даже если мир распадается, слово «подстрекать» остаётся моим северным светом."
+          "sentence_translation": "Перед шкафом со штандартами Корнуолл разрывает вежливое прошение. Даже если мир распадается, слово «подстрекать» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Vor dem Bannerschrank zerreißt Cornwall einen höflichen Bittbrief.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „anstacheln“ mein Nordstern."
+          ]
         },
         {
           "german": "ermutigen",
           "russian": "поощрять",
           "transcription": "[ер-МУ-ти-ген]",
           "sentence": "Unter stürmischen Trommeln befiehlt Cornwall den Wachen näherzukommen. Das Echo des Wortes „ermutigen“ übertönt das Flüstern der Höflinge.",
-          "sentence_translation": "Под грохот барабанов Корнуолл приказывает стражам подойти ближе. Эхо слова «поощрять» заглушает шёпот придворных."
+          "sentence_translation": "Под грохот барабанов Корнуолл приказывает стражам подойти ближе. Эхо слова «поощрять» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Unter stürmischen Trommeln befiehlt Cornwall den Wachen näherzukommen.",
+            "Das Echo des Wortes „ermutigen“ übertönt das Flüstern der Höflinge."
+          ]
         },
         {
           "german": "die Härte",
           "russian": "суровость",
           "transcription": "[ди ХЕР-те]",
           "sentence": "Im Schatten der Folterkammer tauscht Cornwall mit Regan heimliche Blicke. Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Härte“ darf nicht vergehen.",
-          "sentence_translation": "В тени пыточной Корнуолл обменивается с Реганой тайными взглядами. Я шепчу стражам судьбы: слово «суровость» не должно исчезнуть."
+          "sentence_translation": "В тени пыточной Корнуолл обменивается с Реганой тайными взглядами. Я шепчу стражам судьбы: слово «суровость» не должно исчезнуть.",
+          "sentence_parts": [
+            "Im Schatten der Folterkammer tauscht Cornwall mit Regan heimliche Blicke.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Härte“ darf nicht vergehen."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -194,56 +254,88 @@
           "russian": "тирания",
           "transcription": "[ди тю-ра-НАЙ]",
           "sentence": "Auf dem Burghof verteilt Cornwall neue, erbarmungslose Dekrete. Ich zeichne das Wort „die Tyrannei“ mit unsichtbarer Tinte auf meine Handfläche.",
-          "sentence_translation": "На замковом дворе Корнуолл раздаёт новые беспощадные указы. Я вывожу слово «тирания» невидимыми чернилами на ладони."
+          "sentence_translation": "На замковом дворе Корнуолл раздаёт новые беспощадные указы. Я вывожу слово «тирания» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Auf dem Burghof verteilt Cornwall neue, erbarmungslose Dekrete.",
+            "Ich zeichne das Wort „die Tyrannei“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
         },
         {
           "german": "die Unterdrückung",
           "russian": "угнетение",
           "transcription": "[ди ун-тер-ДРЮ-кунг]",
           "sentence": "Vor gefesselten Gefangenen lässt Cornwall die Streitkolben prüfen. Mein Atem zeichnet das Wort „die Unterdrückung“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "Перед связанными пленниками Корнуолл приказывает проверить боевые булавы. Моё дыхание рисует слово «угнетение» в холодном воздухе между нами."
+          "sentence_translation": "Перед связанными пленниками Корнуолл приказывает проверить боевые булавы. Моё дыхание рисует слово «угнетение» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Vor gefesselten Gefangenen lässt Cornwall die Streitkolben prüfen.",
+            "Mein Atem zeichnet das Wort „die Unterdrückung“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "die Furcht",
           "russian": "страх",
           "transcription": "[ди ФУРХТ]",
           "sentence": "Zwischen klirrenden Ketten schreitet Cornwall mit schwerem Schritt. Ich halte das Wort „die Furcht“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "Среди звенящих цепей Корнуолл идёт тяжёлым шагом. Я держу слово «страх» как факел у сердца."
+          "sentence_translation": "Среди звенящих цепей Корнуолл идёт тяжёлым шагом. Я держу слово «страх» как факел у сердца.",
+          "sentence_parts": [
+            "Zwischen klirrenden Ketten schreitet Cornwall mit schwerem Schritt.",
+            "Ich halte das Wort „die Furcht“ wie eine Fackel vor meinem Herzen."
+          ]
         },
         {
           "german": "unterdrücken",
           "russian": "подавлять",
           "transcription": "[ун-тер-ДРЮ-кен]",
           "sentence": "Am schwarzen Banner der Macht schwört Cornwall sich ewige Herrschaft. Mein Atem zeichnet das Wort „unterdrücken“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "У чёрного знамени власти Корнуолл клянётся вечным господством. Моё дыхание рисует слово «подавлять» в холодном воздухе между нами."
+          "sentence_translation": "У чёрного знамени власти Корнуолл клянётся вечным господством. Моё дыхание рисует слово «подавлять» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Am schwarzen Banner der Macht schwört Cornwall sich ewige Herrschaft.",
+            "Mein Atem zeichnet das Wort „unterdrücken“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "knechten",
           "russian": "порабощать",
           "transcription": "[КНЕХ-тен]",
           "sentence": "Auf dem Gerichtspodest stützt Cornwall sich auf den Stab aus Eisen. Ich presse das Wort „knechten“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "На судейском помосте Корнуолл опирается на железный посох. Я стискиваю слово «порабощать» зубами, чтобы не вырвалось сомнение."
+          "sentence_translation": "На судейском помосте Корнуолл опирается на железный посох. Я стискиваю слово «порабощать» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Auf dem Gerichtspodest stützt Cornwall sich auf den Stab aus Eisen.",
+            "Ich presse das Wort „knechten“ zwischen die Zähne, damit kein Zweifel entweicht."
+          ]
         },
         {
           "german": "zwingen",
           "russian": "принуждать",
           "transcription": "[ЦВИН-ген]",
           "sentence": "Unter den Blicken eingeschüchterter Edelleute reißt Cornwall das Urteil an sich. Ich zeichne das Wort „zwingen“ mit unsichtbarer Tinte auf meine Handfläche.",
-          "sentence_translation": "Под взглядами запуганных дворян Корнуолл присваивает себе право суда. Я вывожу слово «принуждать» невидимыми чернилами на ладони."
+          "sentence_translation": "Под взглядами запуганных дворян Корнуолл присваивает себе право суда. Я вывожу слово «принуждать» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Unter den Blicken eingeschüchterter Edelleute reißt Cornwall das Urteil an sich.",
+            "Ich zeichne das Wort „zwingen“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
         },
         {
           "german": "die Willkür",
           "russian": "произвол",
           "transcription": "[ди ВИЛЬ-кюр]",
           "sentence": "An der Treppe zum Kerker verteilt Cornwall grausame Befehle. Ich umarme das Wort „die Willkür“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "У лестницы в темницу Корнуолл раздаёт жестокие приказы. Я обнимаю слово «произвол», будто это единственный союзник."
+          "sentence_translation": "У лестницы в темницу Корнуолл раздаёт жестокие приказы. Я обнимаю слово «произвол», будто это единственный союзник.",
+          "sentence_parts": [
+            "An der Treppe zum Kerker verteilt Cornwall grausame Befehle.",
+            "Ich umarme das Wort „die Willkür“, als wäre es mein einziger Verbündeter."
+          ]
         },
         {
           "german": "brutal",
           "russian": "брутальный",
           "transcription": "[бру-ТАЛЬ]",
           "sentence": "Im düsteren Thronsaal schlägt Cornwall mit der Faust auf die Armlehne. Ich halte das Wort „brutal“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "В мрачном тронном зале Корнуолл бьёт кулаком по подлокотнику. Я держу слово «брутальный» как факел у сердца."
+          "sentence_translation": "В мрачном тронном зале Корнуолл бьёт кулаком по подлокотнику. Я держу слово «брутальный» как факел у сердца.",
+          "sentence_parts": [
+            "Im düsteren Thronsaal schlägt Cornwall mit der Faust auf die Armlehne.",
+            "Ich halte das Wort „brutal“ wie eine Fackel vor meinem Herzen."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -287,49 +379,77 @@
           "russian": "наказание",
           "transcription": "[ди ШТРА-фе]",
           "sentence": "Vor den geschockten Höflingen deutet Cornwall auf die leeren Holzkolben. Wie ein stilles Gebet legt sich das Wort „die Strafe“ auf meine Lippen.",
-          "sentence_translation": "Перед потрясёнными придворными Корнуолл указывает на пустые колодки. Как тихая молитва слово «наказание» ложится на мои губы."
+          "sentence_translation": "Перед потрясёнными придворными Корнуолл указывает на пустые колодки. Как тихая молитва слово «наказание» ложится на мои губы.",
+          "sentence_parts": [
+            "Vor den geschockten Höflingen deutet Cornwall auf die leeren Holzkolben.",
+            "Wie ein stilles Gebet legt sich das Wort „die Strafe“ auf meine Lippen."
+          ]
         },
         {
           "german": "der Zorn",
           "russian": "гнев",
           "transcription": "[дер ЦОРН]",
           "sentence": "Auf dem nassen Hof befiehlt Cornwall die Fesselung des Widerspenstigen. Mit fester Stimme schwöre ich mir: Das Wort „der Zorn“ wird heute nicht verraten.",
-          "sentence_translation": "На мокром дворе Корнуолл приказывает заковать непокорного. Твёрдым голосом я клянусь себе: слово «гнев» сегодня не будет предано."
+          "sentence_translation": "На мокром дворе Корнуолл приказывает заковать непокорного. Твёрдым голосом я клянусь себе: слово «гнев» сегодня не будет предано.",
+          "sentence_parts": [
+            "Auf dem nassen Hof befiehlt Cornwall die Fesselung des Widerspenstigen.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „der Zorn“ wird heute nicht verraten."
+          ]
         },
         {
           "german": "bestrafen",
           "russian": "карать",
           "transcription": "[бе-ШТРА-фен]",
           "sentence": "Neben Regans spöttischem Blick wirft Cornwall das Urteil in die Luft. Ich flüstere den Wächtern des Schicksals zu: Das Wort „bestrafen“ darf nicht vergehen.",
-          "sentence_translation": "Рядом с насмешливым взглядом Реганы Корнуолл бросает приговор в воздух. Я шепчу стражам судьбы: слово «карать» не должно исчезнуть."
+          "sentence_translation": "Рядом с насмешливым взглядом Реганы Корнуолл бросает приговор в воздух. Я шепчу стражам судьбы: слово «карать» не должно исчезнуть.",
+          "sentence_parts": [
+            "Neben Regans spöttischem Blick wirft Cornwall das Urteil in die Luft.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „bestrafen“ darf nicht vergehen."
+          ]
         },
         {
           "german": "züchtigen",
           "russian": "наказывать",
           "transcription": "[ЦЮХ-ти-ген]",
           "sentence": "Am Werkzeugtisch der Garde prüft Cornwall die scharfen Nägel. Ich presse das Wort „züchtigen“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "У верстака стражи Корнуолл проверяет острые гвозди. Я стискиваю слово «наказывать» зубами, чтобы не вырвалось сомнение."
+          "sentence_translation": "У верстака стражи Корнуолл проверяет острые гвозди. Я стискиваю слово «наказывать» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Am Werkzeugtisch der Garde prüft Cornwall die scharfen Nägel.",
+            "Ich presse das Wort „züchtigen“ zwischen die Zähne, damit kein Zweifel entweicht."
+          ]
         },
         {
           "german": "demütigen",
           "russian": "унижать",
           "transcription": "[де-МЮ-ти-ген]",
           "sentence": "Vor den verschreckten Dienern lächelt Cornwall über das Flehen um Gnade. Ich flüstere den Wächtern des Schicksals zu: Das Wort „demütigen“ darf nicht vergehen.",
-          "sentence_translation": "Перед перепуганными слугами Корнуолл улыбается мольбам о пощаде. Я шепчу стражам судьбы: слово «унижать» не должно исчезнуть."
+          "sentence_translation": "Перед перепуганными слугами Корнуолл улыбается мольбам о пощаде. Я шепчу стражам судьбы: слово «унижать» не должно исчезнуть.",
+          "sentence_parts": [
+            "Vor den verschreckten Dienern lächelt Cornwall über das Flehen um Gnade.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „demütigen“ darf nicht vergehen."
+          ]
         },
         {
           "german": "erniedrigen",
           "russian": "унижать",
           "transcription": "[ер-НИД-ри-ген]",
           "sentence": "Unter Donnerhall befiehlt Cornwall das Opfer in den Regen zu stellen. Selbst wenn die Welt zerfällt, bleibt das Wort „erniedrigen“ mein Nordstern.",
-          "sentence_translation": "Под раскаты грома Корнуолл приказывает поставить жертву под дождь. Даже если мир распадается, слово «унижать» остаётся моим северным светом."
+          "sentence_translation": "Под раскаты грома Корнуолл приказывает поставить жертву под дождь. Даже если мир распадается, слово «унижать» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Unter Donnerhall befiehlt Cornwall das Opfer in den Regen zu stellen.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „erniedrigen“ mein Nordstern."
+          ]
         },
         {
           "german": "quälen",
           "russian": "мучить",
           "transcription": "[КВЕ-лен]",
           "sentence": "Auf dem Steinboden hinterlässt Cornwall Spuren von Blut und Wasser. Ich halte das Wort „quälen“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "На каменном полу Корнуолл оставляет следы крови и воды. Я держу слово «мучить» как факел у сердца."
+          "sentence_translation": "На каменном полу Корнуолл оставляет следы крови и воды. Я держу слово «мучить» как факел у сердца.",
+          "sentence_parts": [
+            "Auf dem Steinboden hinterlässt Cornwall Spuren von Blut und Wasser.",
+            "Ich halte das Wort „quälen“ wie eine Fackel vor meinem Herzen."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -373,56 +493,88 @@
           "russian": "пытка",
           "transcription": "[ди ФОЛЬ-тер]",
           "sentence": "Im düsteren Saal bindet Cornwall den Grafen an den eichenen Stuhl. Mit fester Stimme schwöre ich mir: Das Wort „die Folter“ wird heute nicht verraten.",
-          "sentence_translation": "В мрачном зале Корнуолл приковывает графа к дубовому креслу. Твёрдым голосом я клянусь себе: слово «пытка» сегодня не будет предано."
+          "sentence_translation": "В мрачном зале Корнуолл приковывает графа к дубовому креслу. Твёрдым голосом я клянусь себе: слово «пытка» сегодня не будет предано.",
+          "sentence_parts": [
+            "Im düsteren Saal bindet Cornwall den Grafen an den eichenen Stuhl.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „die Folter“ wird heute nicht verraten."
+          ]
         },
         {
           "german": "der Sadismus",
           "russian": "садизм",
           "transcription": "[дер за-ДИС-мус]",
           "sentence": "Neben knirschenden Seilen entfachen Regans Diener das Feuer, während Cornwall zuschaut. Ich zeichne das Wort „der Sadismus“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "Под скрип канатов слуги Реганы раздувают огонь, пока Корнуолл наблюдает. Я черчу слово «садизм» в мыслях поверх линий судьбы."
+          "sentence_translation": "Под скрип канатов слуги Реганы раздувают огонь, пока Корнуолл наблюдает. Я черчу слово «садизм» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Neben knirschenden Seilen entfachen Regans Diener das Feuer, während Cornwall zuschaut.",
+            "Ich zeichne das Wort „der Sadismus“ in Gedanken über die Linien des Schicksals."
+          ]
         },
         {
           "german": "das Blut",
           "russian": "кровь",
           "transcription": "[дас БЛУТ]",
           "sentence": "Vor der versammelten Ritterschaft lässt Cornwall die Dolche bereitlegen. Ich zeichne das Wort „das Blut“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "Перед собравшимся рыцарством Корнуолл велит приготовить кинжалы. Я черчу слово «кровь» в мыслях поверх линий судьбы."
+          "sentence_translation": "Перед собравшимся рыцарством Корнуолл велит приготовить кинжалы. Я черчу слово «кровь» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Vor der versammelten Ritterschaft lässt Cornwall die Dolche bereitlegen.",
+            "Ich zeichne das Wort „das Blut“ in Gedanken über die Linien des Schicksals."
+          ]
         },
         {
           "german": "foltern",
           "russian": "пытать",
           "transcription": "[ФОЛЬ-терн]",
           "sentence": "Am blutbefleckten Boden tritt Cornwall das Geständnis aus dem Gefangenen. Mit jeder Faser meines Körpers verspreche ich: Das Wort „foltern“ bleibt lebendig.",
-          "sentence_translation": "На забрызганном кровью полу Корнуолл выбивает признание из пленника. Каждой клеткой тела я обещаю: слово «пытать» останется живым."
+          "sentence_translation": "На забрызганном кровью полу Корнуолл выбивает признание из пленника. Каждой клеткой тела я обещаю: слово «пытать» останется живым.",
+          "sentence_parts": [
+            "Am blutbefleckten Boden tritt Cornwall das Geständnis aus dem Gefangenen.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „foltern“ bleibt lebendig."
+          ]
         },
         {
           "german": "verstümmeln",
           "russian": "калечить",
           "transcription": "[фер-ШТЮМ-мельн]",
           "sentence": "Zwischen aufschreienden Dienern bleibt Cornwall eiskalt und unbewegt. Selbst wenn die Welt zerfällt, bleibt das Wort „verstümmeln“ mein Nordstern.",
-          "sentence_translation": "Среди вскрикивающих слуг Корнуолл остаётся ледяным и неподвижным. Даже если мир распадается, слово «калечить» остаётся моим северным светом."
+          "sentence_translation": "Среди вскрикивающих слуг Корнуолл остаётся ледяным и неподвижным. Даже если мир распадается, слово «калечить» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Zwischen aufschreienden Dienern bleibt Cornwall eiskalt und unbewegt.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „verstümmeln“ mein Nordstern."
+          ]
         },
         {
           "german": "blenden",
           "russian": "ослеплять",
           "transcription": "[БЛЕН-ден]",
           "sentence": "Unter Regans Jubel reißt Cornwall das grausame Werk zu Ende. Mein Atem zeichnet das Wort „blenden“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "Под ликование Реганы Корнуолл довершает жестокую работу. Моё дыхание рисует слово «ослеплять» в холодном воздухе между нами."
+          "sentence_translation": "Под ликование Реганы Корнуолл довершает жестокую работу. Моё дыхание рисует слово «ослеплять» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Unter Regans Jubel reißt Cornwall das grausame Werk zu Ende.",
+            "Mein Atem zeichnet das Wort „blenden“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "ausstechen",
           "russian": "выкалывать",
           "transcription": "[АУС-ште-хен]",
           "sentence": "Vor den entsetzten Augen des Hofes wischt Cornwall das Blut vom Stiefel. Ich atme tief ein und lasse nur das Wort „ausstechen“ wieder hinaus.",
-          "sentence_translation": "Перед ужаснувшимися придворными Корнуолл стирает кровь с сапога. Я глубоко вдыхаю и выпускаю только слово «выкалывать»."
+          "sentence_translation": "Перед ужаснувшимися придворными Корнуолл стирает кровь с сапога. Я глубоко вдыхаю и выпускаю только слово «выкалывать».",
+          "sentence_parts": [
+            "Vor den entsetzten Augen des Hofes wischt Cornwall das Blut vom Stiefel.",
+            "Ich atme tief ein und lasse nur das Wort „ausstechen“ wieder hinaus."
+          ]
         },
         {
           "german": "die Qual",
           "russian": "мука",
           "transcription": "[ди КВАЛЬ]",
           "sentence": "Im Nachhall der Schreie richtet Cornwall den Mantel und wendet sich zur Tür. Ich umarme das Wort „die Qual“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "В отзвуках криков Корнуолл поправляет плащ и разворачивается к двери. Я обнимаю слово «мука», будто это единственный союзник."
+          "sentence_translation": "В отзвуках криков Корнуолл поправляет плащ и разворачивается к двери. Я обнимаю слово «мука», будто это единственный союзник.",
+          "sentence_parts": [
+            "Im Nachhall der Schreie richtet Cornwall den Mantel und wendet sich zur Tür.",
+            "Ich umarme das Wort „die Qual“, als wäre es mein einziger Verbündeter."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -466,49 +618,77 @@
           "russian": "рана",
           "transcription": "[ди ВУН-де]",
           "sentence": "Im dunklen Korridor presst Cornwall die Hand gegen die frische Wunde. Ich atme tief ein und lasse nur das Wort „die Wunde“ wieder hinaus.",
-          "sentence_translation": "В тёмном коридоре Корнуолл прижимает руку к свежей ране. Я глубоко вдыхаю и выпускаю только слово «рана»."
+          "sentence_translation": "В тёмном коридоре Корнуолл прижимает руку к свежей ране. Я глубоко вдыхаю и выпускаю только слово «рана».",
+          "sentence_parts": [
+            "Im dunklen Korridor presst Cornwall die Hand gegen die frische Wunde.",
+            "Ich atme tief ein und lasse nur das Wort „die Wunde“ wieder hinaus."
+          ]
         },
         {
           "german": "der Schmerz",
           "russian": "боль",
           "transcription": "[дер ШМЕРЦ]",
           "sentence": "Auf der Treppe taumelt Cornwall, während das Blut den Stein färbt. Das kalte Licht lässt das Wort „der Schmerz“ wie geschmolzenes Gold erscheinen.",
-          "sentence_translation": "На лестнице Корнуолл пошатывается, окрашивая камень кровью. Холодный свет заставляет слово «боль» сиять словно расплавленное золото."
+          "sentence_translation": "На лестнице Корнуолл пошатывается, окрашивая камень кровью. Холодный свет заставляет слово «боль» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Auf der Treppe taumelt Cornwall, während das Blut den Stein färbt.",
+            "Das kalte Licht lässt das Wort „der Schmerz“ wie geschmolzenes Gold erscheinen."
+          ]
         },
         {
           "german": "die Überraschung",
           "russian": "удивление",
           "transcription": "[ди ю-бер-РА-шунг]",
           "sentence": "Neben Regans erschrockener Stimme sucht Cornwall Halt am Geländer. Ich zeichne das Wort „die Überraschung“ mit unsichtbarer Tinte auf meine Handfläche.",
-          "sentence_translation": "Рядом с испуганным голосом Реганы Корнуолл ищет опоры в перилах. Я вывожу слово «удивление» невидимыми чернилами на ладони."
+          "sentence_translation": "Рядом с испуганным голосом Реганы Корнуолл ищет опоры в перилах. Я вывожу слово «удивление» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Neben Regans erschrockener Stimme sucht Cornwall Halt am Geländer.",
+            "Ich zeichne das Wort „die Überraschung“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
         },
         {
           "german": "bluten",
           "russian": "кровоточить",
           "transcription": "[БЛУ-тен]",
           "sentence": "Im Stall greift Cornwall nach einem Sattel, doch die Kräfte schwinden. Ich umarme das Wort „bluten“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "В конюшне Корнуолл тянется к седлу, но силы уходят. Я обнимаю слово «кровоточить», будто это единственный союзник."
+          "sentence_translation": "В конюшне Корнуолл тянется к седлу, но силы уходят. Я обнимаю слово «кровоточить», будто это единственный союзник.",
+          "sentence_parts": [
+            "Im Stall greift Cornwall nach einem Sattel, doch die Kräfte schwinden.",
+            "Ich umarme das Wort „bluten“, als wäre es mein einziger Verbündeter."
+          ]
         },
         {
           "german": "verwundet",
           "russian": "раненый",
           "transcription": "[фер-ВУН-дет]",
           "sentence": "Vor dem Tor der Burg hinterlässt Cornwall eine Spur aus rotem Staub. Selbst wenn die Welt zerfällt, bleibt das Wort „verwundet“ mein Nordstern.",
-          "sentence_translation": "Перед воротами замка Корнуолл оставляет след из красной пыли. Даже если мир распадается, слово «раненый» остаётся моим северным светом."
+          "sentence_translation": "Перед воротами замка Корнуолл оставляет след из красной пыли. Даже если мир распадается, слово «раненый» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Vor dem Tor der Burg hinterlässt Cornwall eine Spur aus rotem Staub.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „verwundet“ mein Nordstern."
+          ]
         },
         {
           "german": "schwächen",
           "russian": "ослаблять",
           "transcription": "[ШВЕ-хен]",
           "sentence": "Auf dem Hof sinkt Cornwall zwischen erschrockenen Wachen zusammen. Wie ein stilles Gebet legt sich das Wort „schwächen“ auf meine Lippen.",
-          "sentence_translation": "На дворе Корнуолл падает среди испуганных стражников. Как тихая молитва слово «ослаблять» ложится на мои губы."
+          "sentence_translation": "На дворе Корнуолл падает среди испуганных стражников. Как тихая молитва слово «ослаблять» ложится на мои губы.",
+          "sentence_parts": [
+            "Auf dem Hof sinkt Cornwall zwischen erschrockenen Wachen zusammen.",
+            "Wie ein stilles Gebet legt sich das Wort „schwächen“ auf meine Lippen."
+          ]
         },
         {
           "german": "leiden",
           "russian": "страдать",
           "transcription": "[ЛАЙ-ден]",
           "sentence": "Unter dem bleiernen Himmel schwört Cornwall Rache mit letzter Kraft. Das kalte Licht lässt das Wort „leiden“ wie geschmolzenes Gold erscheinen.",
-          "sentence_translation": "Под свинцовым небом Корнуолл клянётся в мести из последних сил. Холодный свет заставляет слово «страдать» сиять словно расплавленное золото."
+          "sentence_translation": "Под свинцовым небом Корнуолл клянётся в мести из последних сил. Холодный свет заставляет слово «страдать» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Unter dem bleiernen Himmel schwört Cornwall Rache mit letzter Kraft.",
+            "Das kalte Licht lässt das Wort „leiden“ wie geschmolzenes Gold erscheinen."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -552,56 +732,89 @@
           "russian": "смерть",
           "transcription": "[дер ТОД]",
           "sentence": "Im Treppenhaus der Burg bricht Cornwall auf das kalte Steinpodest. Mein Atem zeichnet das Wort „der Tod“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "На лестнице замка Корнуолл рушится на холодную площадку. Моё дыхание рисует слово «смерть» в холодном воздухе между нами."
+          "sentence_translation": "На лестнице замка Корнуолл рушится на холодную площадку. Моё дыхание рисует слово «смерть» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Im Treppenhaus der Burg bricht Cornwall auf das kalte Steinpodest.",
+            "Mein Atem zeichnet das Wort „der Tod“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "die Vergeltung",
           "russian": "возмездие",
           "transcription": "[ди фер-ГЕЛЬ-тунг]",
           "sentence": "Zwischen zerbrochenen Waffen liegt Cornwall und ringt nach Atem. Das kalte Licht lässt das Wort „die Vergeltung“ wie geschmolzenes Gold erscheinen.",
-          "sentence_translation": "Среди разбитого оружия Корнуолл лежит, хватая воздух. Холодный свет заставляет слово «возмездие» сиять словно расплавленное золото."
+          "sentence_translation": "Среди разбитого оружия Корнуолл лежит, хватая воздух. Холодный свет заставляет слово «возмездие» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Zwischen zerbrochenen Waffen liegt Cornwall und ringt nach Atem.",
+            "Das kalte Licht lässt das Wort „die Vergeltung“ wie geschmolzenes Gold erscheinen."
+          ]
         },
         {
           "german": "das Ende",
           "russian": "конец",
           "transcription": "[дас ЕН-де]",
           "sentence": "Vor Regans entsetztem Blick verliert Cornwall den Griff um das eigene Blut. Ich halte das Wort „das Ende“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "Перед ужаснувшимся взглядом Реганы Корнуолл теряет хватку на собственной ране. Я держу слово «конец» как факел у сердца."
+          "sentence_translation": "Перед ужаснувшимся взглядом Реганы Корнуолл теряет хватку на собственной ране. Я держу слово «конец» как факел у сердца.",
+          "sentence_parts": [
+            "Vor Regans entsetztem Blick verliert Cornwall den Griff um das eigene Blut.",
+            "Ich halte das Wort „das Ende“ wie eine Fackel vor meinem Herzen."
+          ]
         },
         {
           "german": "sterben",
           "russian": "умирать",
           "transcription": "[ШТЕР-бен]",
           "sentence": "Am Fuß der Treppe murmelt Cornwall die letzten Befehle. Ich umarme das Wort „sterben“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "У подножия лестницы Корнуолл бормочет последние приказы. Я обнимаю слово «умирать», будто это единственный союзник."
+          "sentence_translation": "У подножия лестницы Корнуолл бормочет последние приказы. Я обнимаю слово «умирать», будто это единственный союзник.",
+          "sentence_parts": [
+            "Am Fuß der Treppe murmelt Cornwall die letzten Befehle.",
+            "Ich umarme das Wort „sterben“, als wäre es mein einziger Verbündeter."
+          ]
         },
         {
           "german": "verenden",
           "russian": "издыхать",
           "transcription": "[фер-ЕН-ден]",
           "sentence": "Auf der kalten Flaggenkiste sinkt Cornwall schwer zusammen. Mein Atem zeichnet das Wort „verenden“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "На холодном сундуке со знамёнами Корнуолл тяжело оседает. Моё дыхание рисует слово «издыхать» в холодном воздухе между нами."
+          "sentence_translation": "На холодном сундуке со знамёнами Корнуолл тяжело оседает. Моё дыхание рисует слово «издыхать» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Auf der kalten Flaggenkiste sinkt Cornwall schwer zusammen.",
+            "Mein Atem zeichnet das Wort „verenden“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "verfluchen",
           "russian": "проклинать",
           "transcription": "[фер-ФЛУ-хен]",
           "sentence": "Neben zerborstenen Fenstern haucht Cornwall den letzten Fluch aus. Mit fester Stimme schwöre ich mir: Das Wort „verfluchen“ wird heute nicht verraten.",
-          "sentence_translation": "У разбитых окон Корнуолл выдыхает последний проклятый звук. Твёрдым голосом я клянусь себе: слово «проклинать» сегодня не будет предано."
+          "sentence_translation": "У разбитых окон Корнуолл выдыхает последний проклятый звук. Твёрдым голосом я клянусь себе: слово «проклинать» сегодня не будет предано.",
+          "sentence_parts": [
+            "Neben zerborstenen Fenstern haucht Cornwall den letzten Fluch aus.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „verfluchen“ wird heute nicht verraten."
+          ]
         },
         {
           "german": "röcheln",
           "russian": "хрипеть",
           "transcription": "[РЁ-хельн]",
           "sentence": "Unter dem prasselnden Regen verglimmt Cornwalls Leben rasch. Ich halte das Wort „röcheln“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "Под проливным дождём жизнь Корнуолл быстро гаснет. Я держу слово «хрипеть» как факел у сердца."
+          "sentence_translation": "Под проливным дождём жизнь Корнуолл быстро гаснет. Я держу слово «хрипеть» как факел у сердца.",
+          "sentence_parts": [
+            "Unter dem prasselnden Regen verglimmt Cornwalls Leben rasch.",
+            "Ich halte das Wort „röcheln“ wie eine Fackel vor meinem Herzen."
+          ]
         },
         {
           "german": "die Strafe",
           "russian": "кара",
           "transcription": "[ди ШТРА-фе]",
           "sentence": "Im Staub des Hofes starrt Cornwall zum grauen Himmel, bevor die Augen erlöschen. Ich atme tief ein und lasse nur das Wort „die Strafe“ wieder hinaus.",
-          "sentence_translation": "В пыли двора Корнуолл смотрит в серое небо, прежде чем глаза угасают. Я глубоко вдыхаю и выпускаю только слово «кара»."
+          "sentence_translation": "В пыли двора Корнуолл смотрит в серое небо, прежде чем глаза угасают. Я глубоко вдыхаю и выпускаю только слово «кара».",
+          "sentence_parts": [
+            "Im Staub des Hofes starrt Cornwall zum grauen Himmel,",
+            "bevor die Augen erlöschen.",
+            "Ich atme tief ein und lasse nur das Wort „die Strafe“ wieder hinaus."
+          ]
         }
       ],
       "theatrical_scene": {
