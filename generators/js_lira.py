@@ -509,71 +509,481 @@ function renderRelations(container, phaseKey) {
 
     // Render Word Families section
     const familiesSection = container.querySelector('.word-families-section');
-    if (familiesSection && wordFamilies.length > 0) {
+    if (familiesSection) {
         const content = familiesSection.querySelector('.relations-content');
+        familiesSection.dataset.hasContent = wordFamilies.length > 0 ? 'true' : 'false';
+
         if (content) {
-            content.innerHTML = wordFamilies.map((item, idx) => `
-                <div class="relation-group" data-group-index="${idx}">
-                    <div class="relation-header">${item.base}</div>
-                    <div class="drag-targets">
-                        ${item.family.map((word, wordIdx) => `
-                            <div class="drag-target" 
-                                 data-target="${word}"
-                                 data-group="${idx}"
-                                 data-word-index="${wordIdx}">
-                                <span class="target-placeholder">?</span>
-                                <span class="target-answer" style="display: none;">${word}</span>
-                            </div>
-                        `).join('')}
+            if (wordFamilies.length > 0) {
+                content.innerHTML = wordFamilies.map((item, idx) => `
+                    <div class="relation-group" data-group-index="${idx}">
+                        <div class="relation-header">${item.base}</div>
+                        <div class="drag-targets">
+                            ${item.family.map((word, wordIdx) => `
+                                <div class="drag-target"
+                                     data-target="${word}"
+                                     data-group="${idx}"
+                                     data-word-index="${wordIdx}">
+                                    <span class="target-placeholder">?</span>
+                                    <span class="target-answer" style="display: none;">${word}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                        <div class="drag-sources">
+                            ${item.family.map((word, wordIdx) => `
+                                <div class="drag-source"
+                                     data-source="${word}"
+                                     data-group="${idx}"
+                                     data-word-index="${wordIdx}"
+                                     draggable="true">
+                                    ${word}
+                                </div>
+                            `).join('')}
+                        </div>
                     </div>
-                    <div class="drag-sources">
-                        ${item.family.map((word, wordIdx) => `
-                            <div class="drag-source" 
-                                 data-source="${word}"
-                                 data-group="${idx}"
-                                 data-word-index="${wordIdx}"
-                                 draggable="true">
-                                ${word}
-                            </div>
-                        `).join('')}
-                    </div>
-                </div>
-            `).join('');
-            attachDragDropHandlers(content);
+                `).join('');
+                attachDragDropHandlers(content);
+            } else {
+                content.innerHTML = '';
+            }
         }
     }
 
     // Render Synonyms section
     const synonymsSection = container.querySelector('.synonyms-section');
-    if (synonymsSection && synonymGroups.length > 0) {
+    if (synonymsSection) {
         const content = synonymsSection.querySelector('.relations-content');
+        const synonymPairs = [];
+
+        synonymGroups.forEach((item, groupIdx) => {
+            if (!item || !item.synonyms) return;
+            item.synonyms.forEach((synonym, synonymIdx) => {
+                synonymPairs.push({
+                    id: `syn-${groupIdx}-${synonymIdx}`,
+                    prompt: item.word,
+                    match: synonym
+                });
+            });
+        });
+
+        synonymsSection.dataset.hasContent = synonymPairs.length > 0 ? 'true' : 'false';
+
         if (content) {
-            content.innerHTML = synonymGroups.map((item, idx) => `
-                <div class="synonym-group">
-                    <div class="synonym-word">${item.word}</div>
-                    <div class="synonym-list">
-                        ${item.synonyms.map(syn => `<span class="synonym-item">${syn}</span>`).join('')}
-                    </div>
-                </div>
-            `).join('');
+            if (synonymPairs.length > 0) {
+                content.innerHTML = '';
+                buildPairMatchingActivity(content, synonymPairs, {
+                    promptLabel: 'Слова',
+                    matchLabel: 'Синонимы',
+                    matchMessage: 'Отлично! Пара найдена.',
+                    mismatchMessage: 'Не совпало. Попробуйте ещё раз.',
+                    successMessage: 'Вы подобрали все синонимичные пары!'
+                });
+            } else {
+                content.innerHTML = '<div class="relations-empty-state">Синонимы для этой фазы отсутствуют.</div>';
+            }
         }
     }
 
     // Render Collocations section
     const collocationsSection = container.querySelector('.collocations-section');
-    if (collocationsSection && collocations.length > 0) {
+    if (collocationsSection) {
         const content = collocationsSection.querySelector('.relations-content');
+        const collocationPairs = [];
+
+        collocations.forEach((item, groupIdx) => {
+            if (!item || !item.collocations) return;
+            item.collocations.forEach((phrase, phraseIdx) => {
+                collocationPairs.push({
+                    id: `col-${groupIdx}-${phraseIdx}`,
+                    prompt: item.word,
+                    match: phrase
+                });
+            });
+        });
+
+        collocationsSection.dataset.hasContent = collocationPairs.length > 0 ? 'true' : 'false';
+
         if (content) {
-            content.innerHTML = collocations.map((item, idx) => `
-                <div class="collocation-group">
-                    <div class="collocation-word">${item.word}</div>
-                    <div class="collocation-list">
-                        ${item.collocations.map(coll => `<span class="collocation-item">${coll}</span>`).join('')}
-                    </div>
-                </div>
-            `).join('');
+            if (collocationPairs.length > 0) {
+                content.innerHTML = '';
+                buildMemoryGame(content, collocationPairs, {
+                    matchMessage: 'Ура! Коллокация открыта.',
+                    mismatchMessage: 'Эти карточки не образуют пару.',
+                    successMessage: 'Все коллокации найдены!'
+                });
+            } else {
+                content.innerHTML = '<div class="relations-empty-state">Коллокации для этой фазы отсутствуют.</div>';
+            }
         }
     }
+}
+
+function addInteractiveListener(element, handler) {
+    if (!element || typeof handler !== 'function') return;
+
+    let touchTriggered = false;
+    const invokeHandler = function(event) {
+        handler.call(this, event);
+    };
+
+    if (isTouchDevice) {
+        element.addEventListener('touchstart', function(event) {
+            touchTriggered = true;
+            if (event.cancelable) {
+                event.preventDefault();
+            }
+            invokeHandler.call(this, event);
+        }, { passive: false });
+
+        element.addEventListener('click', function(event) {
+            if (touchTriggered) {
+                touchTriggered = false;
+                return;
+            }
+            if (event.cancelable) {
+                event.preventDefault();
+            }
+            invokeHandler.call(this, event);
+        });
+    } else {
+        element.addEventListener('click', function(event) {
+            if (event.cancelable) {
+                event.preventDefault();
+            }
+            invokeHandler.call(this, event);
+        });
+    }
+}
+
+function shuffleArray(array) {
+    const copy = Array.isArray(array) ? array.slice() : [];
+    for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
+}
+
+function buildPairMatchingActivity(container, pairs, options = {}) {
+    if (!container || !pairs || pairs.length === 0) return;
+
+    const settings = Object.assign({
+        promptLabel: 'Колонка 1',
+        matchLabel: 'Колонка 2',
+        matchMessage: 'Верно! Пара найдена.',
+        mismatchMessage: 'Пока не то. Попробуйте снова.',
+        successMessage: 'Все пары подобраны!'
+    }, options);
+
+    container.classList.add('pair-matching-container');
+    container.innerHTML = '';
+
+    const layout = document.createElement('div');
+    layout.className = 'pair-matching-layout';
+
+    const promptsWrapper = document.createElement('div');
+    promptsWrapper.className = 'pair-column-wrapper';
+    const promptsLabel = document.createElement('div');
+    promptsLabel.className = 'pair-column-label';
+    promptsLabel.textContent = settings.promptLabel;
+    const promptsColumn = document.createElement('div');
+    promptsColumn.className = 'pair-column pair-prompts';
+
+    const matchesWrapper = document.createElement('div');
+    matchesWrapper.className = 'pair-column-wrapper';
+    const matchesLabel = document.createElement('div');
+    matchesLabel.className = 'pair-column-label';
+    matchesLabel.textContent = settings.matchLabel;
+    const matchesColumn = document.createElement('div');
+    matchesColumn.className = 'pair-column pair-matches';
+
+    promptsWrapper.appendChild(promptsLabel);
+    promptsWrapper.appendChild(promptsColumn);
+    matchesWrapper.appendChild(matchesLabel);
+    matchesWrapper.appendChild(matchesColumn);
+
+    layout.appendChild(promptsWrapper);
+    layout.appendChild(matchesWrapper);
+
+    const status = document.createElement('div');
+    status.className = 'pair-status';
+    status.textContent = 'Выберите слово и подходящий синоним.';
+
+    container.appendChild(layout);
+    container.appendChild(status);
+
+    const promptCards = shuffleArray(pairs.map(pair => ({
+        label: pair.prompt,
+        pairId: pair.id
+    })));
+
+    const matchCards = shuffleArray(pairs.map(pair => ({
+        label: pair.match,
+        pairId: pair.id
+    })));
+
+    let activePrompt = null;
+    let activeMatch = null;
+    let remainingPairs = pairs.length;
+
+    function updateStatus(message, type) {
+        status.textContent = message || '';
+        status.classList.remove('success', 'error');
+        if (type) {
+            status.classList.add(type);
+        }
+    }
+
+    function handleMatchSuccess(promptCard, matchCard) {
+        [promptCard, matchCard].forEach(card => {
+            card.classList.remove('selected', 'incorrect');
+            card.classList.add('matched', 'correct');
+            card.setAttribute('disabled', 'true');
+            card.setAttribute('aria-disabled', 'true');
+        });
+
+        remainingPairs -= 1;
+
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(20);
+        }
+
+        if (remainingPairs === 0) {
+            updateStatus(settings.successMessage, 'success');
+        } else {
+            updateStatus(settings.matchMessage, 'success');
+        }
+    }
+
+    function handleMatchFailure(promptCard, matchCard) {
+        [promptCard, matchCard].forEach(card => {
+            card.classList.add('incorrect');
+        });
+
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(40);
+        }
+
+        updateStatus(settings.mismatchMessage, 'error');
+
+        setTimeout(() => {
+            [promptCard, matchCard].forEach(card => {
+                card.classList.remove('incorrect', 'selected');
+            });
+        }, 650);
+    }
+
+    function evaluateSelection() {
+        if (!activePrompt || !activeMatch) return;
+
+        const promptCard = activePrompt;
+        const matchCard = activeMatch;
+
+        activePrompt = null;
+        activeMatch = null;
+
+        if (promptCard.dataset.pairId === matchCard.dataset.pairId) {
+            handleMatchSuccess(promptCard, matchCard);
+        } else {
+            handleMatchFailure(promptCard, matchCard);
+        }
+    }
+
+    function toggleSelection(card, type) {
+        if (card.classList.contains('matched')) {
+            return;
+        }
+
+        if (card.classList.contains('selected')) {
+            card.classList.remove('selected');
+            if (type === 'prompt') {
+                activePrompt = null;
+            } else {
+                activeMatch = null;
+            }
+            return;
+        }
+
+        if (type === 'prompt') {
+            if (activePrompt) {
+                activePrompt.classList.remove('selected');
+            }
+            activePrompt = card;
+        } else {
+            if (activeMatch) {
+                activeMatch.classList.remove('selected');
+            }
+            activeMatch = card;
+        }
+
+        card.classList.add('selected');
+        evaluateSelection();
+    }
+
+    promptCards.forEach(data => {
+        const card = document.createElement('button');
+        card.type = 'button';
+        card.className = 'pair-card pair-card-prompt';
+        card.dataset.pairId = data.pairId;
+        card.textContent = data.label;
+
+        addInteractiveListener(card, function() {
+            toggleSelection(card, 'prompt');
+        });
+
+        promptsColumn.appendChild(card);
+    });
+
+    matchCards.forEach(data => {
+        const card = document.createElement('button');
+        card.type = 'button';
+        card.className = 'pair-card pair-card-match';
+        card.dataset.pairId = data.pairId;
+        card.textContent = data.label;
+
+        addInteractiveListener(card, function() {
+            toggleSelection(card, 'match');
+        });
+
+        matchesColumn.appendChild(card);
+    });
+}
+
+function buildMemoryGame(container, pairs, options = {}) {
+    if (!container || !pairs || pairs.length === 0) return;
+
+    const settings = Object.assign({
+        matchMessage: 'Пара найдена!',
+        mismatchMessage: 'Это не пара.',
+        successMessage: 'Все пары найдены!'
+    }, options);
+
+    container.classList.add('memory-game-container');
+    container.innerHTML = '';
+
+    const grid = document.createElement('div');
+    grid.className = 'memory-card-grid';
+
+    const status = document.createElement('div');
+    status.className = 'memory-status';
+    status.textContent = 'Откройте карточки и найдите совпадающие пары.';
+
+    container.appendChild(grid);
+    container.appendChild(status);
+
+    const cardsData = [];
+    pairs.forEach(pair => {
+        cardsData.push({
+            pairId: pair.id,
+            label: pair.prompt,
+            role: 'prompt'
+        });
+        cardsData.push({
+            pairId: pair.id,
+            label: pair.match,
+            role: 'match'
+        });
+    });
+
+    const shuffledCards = shuffleArray(cardsData);
+
+    let flippedCards = [];
+    let matchedPairs = 0;
+    let boardLocked = false;
+
+    function updateStatus(message, type) {
+        status.textContent = message || '';
+        status.classList.remove('success', 'error');
+        if (type) {
+            status.classList.add(type);
+        }
+    }
+
+    function resetFlippedCards() {
+        flippedCards.forEach(card => {
+            card.classList.remove('flipped', 'incorrect');
+        });
+        flippedCards = [];
+        boardLocked = false;
+    }
+
+    function handleCorrectMatch(firstCard, secondCard) {
+        [firstCard, secondCard].forEach(card => {
+            card.classList.add('matched', 'correct');
+            card.setAttribute('disabled', 'true');
+            card.setAttribute('aria-disabled', 'true');
+        });
+
+        matchedPairs += 1;
+        flippedCards = [];
+
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(25);
+        }
+
+        if (matchedPairs === pairs.length) {
+            updateStatus(settings.successMessage, 'success');
+        } else {
+            updateStatus(settings.matchMessage, 'success');
+        }
+    }
+
+    function handleIncorrectMatch(firstCard, secondCard) {
+        boardLocked = true;
+        [firstCard, secondCard].forEach(card => {
+            card.classList.add('incorrect');
+        });
+
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(40);
+        }
+
+        updateStatus(settings.mismatchMessage, 'error');
+
+        setTimeout(() => {
+            resetFlippedCards();
+        }, 850);
+    }
+
+    function evaluateFlippedCards() {
+        if (flippedCards.length < 2) return;
+
+        const [firstCard, secondCard] = flippedCards;
+
+        if (firstCard.dataset.pairId === secondCard.dataset.pairId && firstCard.dataset.cardRole !== secondCard.dataset.cardRole) {
+            handleCorrectMatch(firstCard, secondCard);
+        } else {
+            handleIncorrectMatch(firstCard, secondCard);
+        }
+    }
+
+    function handleCardInteraction(card) {
+        if (boardLocked || card.classList.contains('matched') || card.classList.contains('flipped')) {
+            return;
+        }
+
+        card.classList.add('flipped');
+        flippedCards.push(card);
+        evaluateFlippedCards();
+    }
+
+    shuffledCards.forEach(data => {
+        const card = document.createElement('button');
+        card.type = 'button';
+        card.className = 'memory-card';
+        card.dataset.pairId = data.pairId;
+        card.dataset.cardRole = data.role;
+        card.innerHTML = `
+            <span class="memory-card-placeholder">?</span>
+            <span class="memory-card-content">${data.label}</span>
+        `;
+
+        addInteractiveListener(card, function() {
+            handleCardInteraction(card);
+        });
+
+        grid.appendChild(card);
+    });
 }
 
 function attachDragDropHandlers(container) {

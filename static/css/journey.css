@@ -512,6 +512,206 @@ body {
     box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.6);
 }
 
+.pair-matching-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.pair-matching-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    align-items: flex-start;
+}
+
+.pair-column-wrapper {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(102, 126, 234, 0.25);
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pair-column-label {
+    font-size: 0.85em;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #4338ca;
+}
+
+.pair-column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.pair-card {
+    padding: 10px 18px;
+    border-radius: 14px;
+    border: 2px solid #c7d2fe;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(129, 140, 248, 0.2));
+    color: #312e81;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.18);
+    min-width: 120px;
+    text-align: center;
+}
+
+.pair-card:hover,
+.pair-card.selected {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(102, 126, 234, 0.35);
+}
+
+.pair-card.correct {
+    background: linear-gradient(135deg, #34d399, #10b981);
+    border-color: #10b981;
+    color: #ffffff;
+    box-shadow: 0 12px 26px rgba(16, 185, 129, 0.32);
+}
+
+.pair-card.incorrect {
+    border-color: #f87171;
+    background: rgba(248, 113, 113, 0.16);
+    color: #b91c1c;
+    box-shadow: 0 10px 24px rgba(248, 113, 113, 0.25);
+}
+
+.pair-card.matched,
+.pair-card[disabled] {
+    cursor: default;
+    pointer-events: none;
+    opacity: 0.92;
+}
+
+.pair-status {
+    text-align: center;
+    font-size: 0.95em;
+    font-weight: 500;
+    color: #4b5563;
+    min-height: 24px;
+    transition: color 0.3s ease;
+}
+
+.pair-status.success {
+    color: #059669;
+}
+
+.pair-status.error {
+    color: #dc2626;
+}
+
+.memory-game-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.memory-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 14px;
+}
+
+.memory-card {
+    position: relative;
+    border: 2px solid #c7d2fe;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(224, 231, 255, 0.85), rgba(199, 210, 254, 0.95));
+    color: #312e81;
+    font-weight: 600;
+    min-height: 110px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.memory-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(129, 140, 248, 0.3);
+}
+
+.memory-card-placeholder {
+    font-size: 1.6em;
+    font-weight: 700;
+    opacity: 0.75;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.memory-card-content {
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    line-height: 1.3;
+}
+
+.memory-card.flipped {
+    background: #ffffff;
+    box-shadow: 0 14px 30px rgba(129, 140, 248, 0.32);
+}
+
+.memory-card.flipped .memory-card-placeholder {
+    opacity: 0;
+    transform: scale(0.85);
+}
+
+.memory-card.flipped .memory-card-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.memory-card.correct {
+    background: linear-gradient(135deg, #34d399, #10b981);
+    border-color: #10b981;
+    color: #ffffff;
+}
+
+.memory-card.incorrect {
+    border-color: #f87171;
+    background: rgba(248, 113, 113, 0.18);
+    color: #b91c1c;
+}
+
+.memory-card.matched,
+.memory-card[disabled] {
+    cursor: default;
+    pointer-events: none;
+}
+
+.memory-status {
+    text-align: center;
+    font-size: 0.95em;
+    font-weight: 500;
+    color: #4b5563;
+    min-height: 24px;
+    transition: color 0.3s ease;
+}
+
+.memory-status.success {
+    color: #059669;
+}
+
+.memory-status.error {
+    color: #dc2626;
+}
+
 .synonym-list,
 .collocation-list {
     display: flex;
