@@ -1,5 +1,6 @@
 """HTML Generator for Lira Journey pages"""
 import json
+import random
 import re
 from pathlib import Path
 
@@ -149,11 +150,28 @@ class LiraHTMLGenerator(BaseGenerator):
 
             phase_quizzes = []
             for quiz in phase.get("quizzes", []):
+                choices = list(quiz.get("choices", []))
+                correct_index = quiz.get("correct_index", 0)
+
+                correct_choice = None
+                if 0 <= correct_index < len(choices):
+                    correct_choice = choices[correct_index]
+
+                random.shuffle(choices)
+
+                if correct_choice is not None and choices:
+                    try:
+                        correct_index = choices.index(correct_choice)
+                    except ValueError:
+                        correct_index = 0
+                else:
+                    correct_index = 0
+
                 phase_quizzes.append(
                     {
                         "question": quiz.get("question", ""),
-                        "choices": quiz.get("choices", []),
-                        "correct_index": quiz.get("correct_index", 0),
+                        "choices": choices,
+                        "correct_index": correct_index,
                     }
                 )
 
