@@ -4,6 +4,7 @@ King Lear Comic Generator - Main Entry Point
 Supports 12 characters with unique journeys
 """
 
+import json
 import sys
 import shutil
 from pathlib import Path
@@ -12,7 +13,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 import config
-from generators import LiraHTMLGenerator, IndexGenerator
+from generators import IndexGenerator, LiraHTMLGenerator, TrainingPageGenerator
 
 def main():
     """Main generator function"""
@@ -23,6 +24,7 @@ def main():
     # Create output directories
     config.OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     (config.OUTPUT_DIR / "journeys").mkdir(exist_ok=True)
+    (config.OUTPUT_DIR / "trainings").mkdir(exist_ok=True)
 
     # Copy static assets for browser caching
     static_src = config.BASE_DIR / "static"
@@ -32,6 +34,17 @@ def main():
     # Initialize generators
     lira_gen = LiraHTMLGenerator(config)
     index_gen = IndexGenerator(config)
+
+    vocabulary_data = {}
+    vocabulary_path = config.DATA_DIR / "vocabulary" / "words.json"
+    if vocabulary_path.exists():
+        try:
+            with vocabulary_path.open("r", encoding="utf-8") as fp:
+                vocabulary_data = json.load(fp)
+        except (OSError, json.JSONDecodeError) as exc:
+            print(f"[WARNING] Не удалось загрузить словарь: {exc}")
+
+    training_gen = TrainingPageGenerator(config, vocabulary_data)
     
     # Get character files in specified order
     character_files = []
@@ -73,10 +86,28 @@ def main():
             print(f"[ERROR] Failed to generate {char_file.stem}: {e}")
     
     # Generate index page
+    review_items = index_gen.get_review_items()
+
+    if review_items:
+        print("\n[GENERATING] Training pages...")
+        for item in review_items:
+            word = training_gen.find_word(item.get("id"))
+            if not word:
+                print(f"[SKIP] Нет данных для {item.get('id')}")
+                continue
+
+            try:
+                training_html = training_gen.generate_word_page(word)
+                training_path = config.OUTPUT_DIR / "trainings" / f"{item['id']}.html"
+                training_gen.save_file(training_html, training_path)
+                print(f"[OK] Training saved: {training_path.name}")
+            except Exception as exc:
+                print(f"[ERROR] Failed to generate training for {item.get('id')}: {exc}")
+
     if character_files:
         print("\n[GENERATING] Index page...")
         try:
-            index_html = index_gen.generate(character_files)
+            index_html = index_gen.generate(character_files, review_items=review_items)
             index_gen.save_file(index_html, config.OUTPUT_DIR / "index.html")
             print("[OK] Index page created")
         except Exception as e:

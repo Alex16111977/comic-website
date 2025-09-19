@@ -7,7 +7,7 @@ from .base import BaseGenerator
 class IndexGenerator(BaseGenerator):
     """Generate index page with all character journeys"""
 
-    def generate(self, character_files):
+    def generate(self, character_files, review_items=None):
         """Generate index page with character grid"""
         role_descriptions = {
             "king_lear": "Трагический король",
@@ -50,7 +50,8 @@ class IndexGenerator(BaseGenerator):
                 }
             )
 
-        review_items = self._get_review_items()
+        if review_items is None:
+            review_items = self.get_review_items()
 
         return self.render_template(
             "index.html",
@@ -60,6 +61,10 @@ class IndexGenerator(BaseGenerator):
             vocabulary_total=vocabulary_total,
             review_items=review_items,
         )
+
+    def get_review_items(self, limit=6):
+        """Public helper to provide review items for other generators."""
+        return self._get_review_items(limit=limit)
 
     def _get_review_items(self, limit=6):
         """Return a curated list of vocabulary items for spaced repetition."""
