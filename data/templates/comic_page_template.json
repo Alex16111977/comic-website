@@ -1,0 +1,90 @@
+{
+  "$schema": "comic_page_v1",
+  "page_id": "",
+  "volume_id": "",
+  "issue_id": "",
+  "page_number": 1,
+  "layout_type": "three-panel-vertical",
+  "background_music": "",
+  "panels": [
+    {
+      "panel_id": "p1",
+      "order": 1,
+      "type": "establishing",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 40,
+        "grid_column": "span 12",
+        "grid_row": "span 4"
+      },
+      "background": {
+        "type": "gradient",
+        "value": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+        "effects": ["vignette"]
+      },
+      "characters": [
+        {
+          "character_id": "",
+          "position": {"x": 50, "y": 50},
+          "scale": 1.0,
+          "z_index": 1,
+          "sprite": "neutral",
+          "emotion": "contemplative",
+          "animation": "idle"
+        }
+      ],
+      "speech_bubbles": [
+        {
+          "id": "b1",
+          "type": "speech",
+          "character_id": "",
+          "position": {"x": 60, "y": 20},
+          "tail": {
+            "direction": "bottom-left",
+            "style": "standard"
+          },
+          "text": {
+            "de": "",
+            "ru": ""
+          },
+          "emotion_indicator": "❗",
+          "vocabulary_highlights": [],
+          "duration": 3000,
+          "auto_advance": false
+        }
+      ],
+      "sound_effects": [
+        {
+          "text": "BANG!",
+          "position": {"x": 70, "y": 30},
+          "style": "explosive",
+          "animation": "shake",
+          "size": "large"
+        }
+      ],
+      "narration": {
+        "text": {
+          "de": "",
+          "ru": ""
+        },
+        "position": "top",
+        "style": "classic",
+        "background": "rgba(0,0,0,0.7)"
+      }
+    }
+  ],
+  "navigation": {
+    "previous": "",
+    "next": "",
+    "chapter_menu": true,
+    "keyboard_enabled": true,
+    "swipe_enabled": true
+  },
+  "preload": {
+    "next_pages": 2,
+    "images": [],
+    "sounds": []
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "dialogue_v1",
+  "dialogue_id": "",
+  "scene_id": "",
+  "speakers": [],
+  "exchanges": [
+    {
+      "speaker": "",
+      "text": {
+        "de": "",
+        "ru": ""
+      },
+      "emotion": "",
+      "action": "",
+      "vocabulary_highlights": []
+    }
+  ]
+}

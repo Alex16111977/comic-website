@@ -1,0 +1,256 @@
+{
+  "template_info": {
+    "name": "Comic Page Template",
+    "version": "1.0.0",
+    "created": "2025-01-06",
+    "purpose": "Template for comic pages in King Lear learning system"
+  },
+  "page": {
+    "id": "page_act1_scene1_001",
+    "volume": 1,
+    "page_number": 1,
+    "title": "The Love Test",
+    "title_de": "Die Liebesprobe",
+    "act": 1,
+    "scene": 1,
+    "layout": "grid_2x3",
+    "background_theme": "throne_room",
+    "panels": [
+      {
+        "panel_id": "panel_001",
+        "panel_number": 1,
+        "position": {
+          "row": 1,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 2
+        },
+        "type": "establishing",
+        "background": {
+          "image": "assets/backgrounds/throne_room_wide.jpg",
+          "mood": "majestic"
+        },
+        "characters": [],
+        "narration": {
+          "text_de": "Im Thronsaal von König Lear...",
+          "text_ru": "В тронном зале короля Лира...",
+          "position": "top",
+          "style": "caption"
+        },
+        "vocabulary_highlights": ["Thronsaal", "König"],
+        "sound_effect": "royal_fanfare.mp3"
+      },
+      {
+        "panel_id": "panel_002",
+        "panel_number": 2,
+        "position": {
+          "row": 2,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1
+        },
+        "type": "dialogue",
+        "background": {
+          "image": "assets/backgrounds/throne_close.jpg",
+          "focus": "throne"
+        },
+        "characters": [
+          {
+            "character_id": "char_001",
+            "name": "Lear",
+            "position": "center",
+            "size": "medium",
+            "emotion": "proud",
+            "pose": "sitting_throne"
+          }
+        ],
+        "dialogue": {
+          "speaker": "Lear",
+          "text_de": "Wir haben unser Reich geteilt in drei.",
+          "text_ru": "Мы разделили наше королевство на три части.",
+          "transcription": "[вир ХА-бен УН-зер райх ге-ТАЙЛТ ин драй]",
+          "bubble_type": "speech",
+          "bubble_position": "right",
+          "bubble_style": "royal"
+        },
+        "vocabulary_highlights": ["Reich", "geteilt", "drei"],
+        "grammar_note": "Perfekt with haben"
+      },
+      {
+        "panel_id": "panel_003",
+        "panel_number": 3,
+        "position": {
+          "row": 2,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1
+        },
+        "type": "reaction",
+        "background": {
+          "image": "assets/backgrounds/throne_side.jpg",
+          "focus": "daughters"
+        },
+        "characters": [
+          {
+            "character_id": "char_002",
+            "name": "Goneril",
+            "position": "left",
+            "size": "small",
+            "emotion": "scheming"
+          },
+          {
+            "character_id": "char_003",
+            "name": "Regan",
+            "position": "center",
+            "size": "small",
+            "emotion": "eager"
+          },
+          {
+            "character_id": "char_004",
+            "name": "Cordelia",
+            "position": "right",
+            "size": "small",
+            "emotion": "worried"
+          }
+        ],
+        "visual_effect": "focus_blur_background"
+      },
+      {
+        "panel_id": "panel_004",
+        "panel_number": 4,
+        "position": {
+          "row": 3,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1
+        },
+        "type": "dialogue",
+        "background": {
+          "image": "assets/backgrounds/throne_medium.jpg"
+        },
+        "characters": [
+          {
+            "character_id": "char_001",
+            "name": "Lear",
+            "position": "right",
+            "size": "large",
+            "emotion": "expectant"
+          }
+        ],
+        "dialogue": {
+          "speaker": "Lear",
+          "text_de": "Sagt mir, meine Töchter, welche von euch liebt uns am meisten?",
+          "text_ru": "Скажите мне, дочери мои, которая из вас любит нас больше всех?",
+          "bubble_type": "speech",
+          "bubble_style": "question"
+        },
+        "vocabulary_highlights": ["Töchter", "liebt", "meisten"],
+        "grammar_note": "Superlativ: am meisten"
+      },
+      {
+        "panel_id": "panel_005",
+        "panel_number": 5,
+        "position": {
+          "row": 3,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1
+        },
+        "type": "dialogue",
+        "background": {
+          "image": "assets/backgrounds/goneril_close.jpg"
+        },
+        "characters": [
+          {
+            "character_id": "char_002",
+            "name": "Goneril",
+            "position": "center",
+            "size": "large",
+            "emotion": "false_love"
+          }
+        ],
+        "dialogue": {
+          "speaker": "Goneril",
+          "text_de": "Mehr lieb' ich Euch, als Worte je umfassen!",
+          "text_ru": "Я люблю вас больше, чем можно выразить словами!",
+          "bubble_type": "speech",
+          "bubble_style": "flowery"
+        },
+        "vocabulary_highlights": ["lieben", "Worte", "mehr"],
+        "visual_effect": "sparkles"
+      },
+      {
+        "panel_id": "panel_006",
+        "panel_number": 6,
+        "position": {
+          "row": 3,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1
+        },
+        "type": "thought",
+        "background": {
+          "image": "assets/backgrounds/cordelia_close.jpg"
+        },
+        "characters": [
+          {
+            "character_id": "char_004",
+            "name": "Cordelia",
+            "position": "center",
+            "size": "large",
+            "emotion": "troubled"
+          }
+        ],
+        "dialogue": {
+          "speaker": "Cordelia",
+          "text_de": "Was sagt Cordelia nun? Sie liebt und schweigt.",
+          "text_ru": "Что скажет Корделия? Она любит и молчит.",
+          "bubble_type": "thought",
+          "bubble_style": "soft"
+        },
+        "vocabulary_highlights": ["schweigen", "lieben"],
+        "visual_effect": "vignette"
+      }
+    ],
+    "vocabulary_focus": [
+      "Reich",
+      "teilen",
+      "Tochter",
+      "lieben",
+      "Worte",
+      "schweigen"
+    ],
+    "grammar_focus": [
+      "Perfekt tense",
+      "Superlative",
+      "Modal verbs"
+    ],
+    "learning_objectives": [
+      "Understand family vocabulary",
+      "Learn expressions of love and emotion",
+      "Practice Perfekt tense"
+    ],
+    "interactive_elements": [
+      {
+        "type": "vocabulary_popup",
+        "trigger": "click",
+        "words": ["Reich", "Töchter", "lieben"]
+      },
+      {
+        "type": "audio_pronunciation",
+        "trigger": "hover",
+        "enabled": true
+      }
+    ],
+    "navigation": {
+      "previous": null,
+      "next": "page_act1_scene1_002",
+      "scene_menu": "act1_scene1_menu"
+    },
+    "notes": {
+      "cultural": "Shakespeare's love test adapted for German learners",
+      "difficulty": "B1",
+      "reading_time": "3-5 minutes"
+    }
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "template_info": {
+    "name": "Character Template",
+    "version": "1.0.0",
+    "created": "2025-01-06",
+    "purpose": "Template for King Lear character profiles"
+  },
+  "character": {
+    "id": "char_001",
+    "name": "King Lear",
+    "name_de": "König Lear",
+    "name_ru": "Король Лир",
+    "emoji": "👑",
+    "role": "protagonist",
+    "age": "80+",
+    "description": {
+      "de": "Der alte König von Britannien, der sein Reich unter seinen Töchtern aufteilen will",
+      "ru": "Стареющий король Британии, решивший разделить королевство между дочерьми"
+    },
+    "avatar": "assets/characters/lear.png",
+    "color_scheme": {
+      "primary": "#6B46C1",
+      "secondary": "#9333EA",
+      "accent": "#F59E0B"
+    },
+    "personality_traits": [
+      "proud",
+      "aging",
+      "impulsive",
+      "tragic",
+      "vulnerable"
+    ],
+    "quotes": [
+      {
+        "de": "Nichts wird aus nichts",
+        "ru": "Из ничего не выйдет ничего",
+        "transcription": "[НИХТС вирд аус НИХТС]",
+        "act": 1,
+        "scene": 1,
+        "context": "Response to Cordelia's honesty",
+        "vocabulary": ["nichts", "werden", "aus"],
+        "emotion": "angry"
+      },
+      {
+        "de": "Ich bin ein Mann, an dem man mehr gesündigt hat, als der gesündigt",
+        "ru": "Я человек, против которого грешили больше, чем грешил он сам",
+        "act": 3,
+        "scene": 2,
+        "context": "During the storm",
+        "vocabulary": ["Mann", "sündigen", "mehr"],
+        "emotion": "desperate"
+      }
+    ],
+    "relationships": {
+      "cordelia": {
+        "type": "daughter",
+        "status": "beloved",
+        "dynamic": "tragic_love"
+      },
+      "goneril": {
+        "type": "daughter", 
+        "status": "eldest",
+        "dynamic": "betrayed_by"
+      },
+      "regan": {
+        "type": "daughter",
+        "status": "middle",
+        "dynamic": "betrayed_by"
+      },
+      "fool": {
+        "type": "companion",
+        "status": "loyal",
+        "dynamic": "truth_teller"
+      }
+    },
+    "journey_stages": [
+      {
+        "stage": 1,
+        "title": "The Division",
+        "title_de": "Die Teilung",
+        "description": "Lear divides his kingdom",
+        "location": "throne_room",
+        "emotional_state": "confident",
+        "vocabulary_focus": ["Reich", "Macht", "Tochter", "Liebe", "teilen"],
+        "key_decision": "Banishing Cordelia"
+      },
+      {
+        "stage": 2,
+        "title": "The Rejection",
+        "title_de": "Die Ablehnung",
+        "description": "Rejected by Goneril and Regan",
+        "location": "goneril_castle",
+        "emotional_state": "confused",
+        "vocabulary_focus": ["Undank", "Verrat", "Zorn", "verlassen"],
+        "key_decision": "Going into the storm"
+      },
+      {
+        "stage": 3,
+        "title": "The Storm",
+        "title_de": "Der Sturm",
+        "description": "Madness in the storm",
+        "location": "heath",
+        "emotional_state": "mad",
+        "vocabulary_focus": ["Sturm", "Wahnsinn", "Natur", "Donner", "Blitz"],
+        "key_decision": "Embracing madness"
+      },
+      {
+        "stage": 4,
+        "title": "The Recognition",
+        "title_de": "Die Erkenntnis",
+        "description": "Reunited with Cordelia",
+        "location": "french_camp",
+        "emotional_state": "remorseful",
+        "vocabulary_focus": ["Vergebung", "Erkenntnis", "Reue", "Liebe"],
+        "key_decision": "Asking forgiveness"
+      },
+      {
+        "stage": 5,
+        "title": "The End",
+        "title_de": "Das Ende",
+        "description": "Death with Cordelia",
+        "location": "prison",
+        "emotional_state": "tragic",
+        "vocabulary_focus": ["Tod", "Verlust", "Ende", "Trauer"],
+        "key_decision": "Final words"
+      }
+    ],
+    "vocabulary_associated": [
+      "König",
+      "Reich",
+      "Macht",
+      "Alter",
+      "Wahnsinn",
+      "Tochter",
+      "Verrat",
+      "Sturm",
+      "Tod"
+    ],
+    "scenes_appears_in": [
+      "act1_scene1",
+      "act1_scene4",
+      "act1_scene5",
+      "act2_scene2",
+      "act2_scene4",
+      "act3_scene2",
+      "act3_scene4",
+      "act3_scene6",
+      "act4_scene6",
+      "act4_scene7",
+      "act5_scene3"
+    ],
+    "learning_notes": {
+      "vocabulary_level": "B1-B2",
+      "grammar_focus": [
+        "Modal verbs (müssen, können, wollen)",
+        "Imperative mood",
+        "Subjunctive (Konjunktiv)"
+      ],
+      "cultural_context": "Shakespeare's King Lear adapted for German learners"
+    }
+  }
+}

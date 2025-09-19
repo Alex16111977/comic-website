@@ -1,0 +1,1745 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путь Корделии | König Lear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        
+/* LIRA JOURNEY STYLES - Mobile Optimized */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Prevent iOS zoom on input focus */
+input, select, textarea, button {
+    font-size: 16px !important;
+}
+
+/* Prevent text selection on mobile */
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.page-header {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    animation: fadeInDown 0.8s ease;
+}
+
+.page-header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    opacity: 0.95;
+}
+
+.journey-section {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+.journey-timeline {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.journey-line {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.progress-line {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawLine 2s ease forwards;
+    animation-delay: 1s;
+}
+
+.journey-points {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    padding: 0 30px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+}
+
+.journey-point {
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+    transform: scale(0.9);
+    /* Mobile touch optimizations */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+    min-width: 80px;
+    padding: 10px 5px;
+    position: relative;
+}
+
+.journey-point.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Touch feedback for mobile */
+@media (hover: none) and (pointer: coarse) {
+    .journey-point {
+        min-width: 90px;
+    }
+    
+    .journey-point:active {
+        transform: scale(0.95);
+        opacity: 0.9;
+    }
+}
+
+.point-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    border: 3px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin: 0 auto 10px;
+    transition: all 0.3s ease;
+}
+
+.journey-point.active .point-circle {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-color: #667eea;
+    transform: scale(1.2);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.journey-point h4 {
+    font-size: 0.9em;
+    margin: 5px 0;
+    color: #333;
+}
+
+.journey-point p {
+    font-size: 0.75em;
+    color: #666;
+    display: none;
+}
+
+.journey-point.active p {
+    display: block;
+}
+
+.journey-progress {
+    margin-top: 20px;
+}
+
+.progress-track {
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    transition: width 0.5s ease;
+}
+
+.progress-text {
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.vocabulary-section {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+.vocabulary-section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.vocabulary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+    min-height: 200px;
+}
+
+.word-card {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    animation: slideIn 0.4s ease;
+}
+
+.word-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.word-german {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 8px;
+}
+
+.word-translation {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.word-transcription {
+    font-size: 0.9em;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.word-sentence {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.sentence-german {
+    font-size: 0.95em;
+    color: #444;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.sentence-translation {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.phase-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.change-phase-btn {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    /* Mobile optimizations */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    appearance: none;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    user-select: none;
+    min-height: 48px;
+    min-width: 160px;
+}
+
+.change-phase-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.change-phase-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
+}
+
+.change-phase-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+/* Touch device specific button styles */
+@media (hover: none) and (pointer: coarse) {
+    .change-phase-btn {
+        padding: 18px 36px;
+        font-size: 1.15em;
+        min-height: 56px;
+    }
+    
+    .change-phase-btn:hover {
+        transform: none;
+    }
+    
+    .change-phase-btn:active:not(:disabled) {
+        transform: scale(0.98);
+        opacity: 0.9;
+    }
+}
+
+.bottom-nav {
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 12px 24px;
+    border: 2px solid white;
+    border-radius: 8px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    /* Mobile optimizations */
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    min-height: 48px;
+}
+
+.nav-link:hover {
+    background: white;
+    color: #667eea;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .page-header h1 {
+        font-size: 2em;
+    }
+    
+    .subtitle {
+        font-size: 1em;
+    }
+    
+    .journey-section {
+        padding: 20px;
+        border-radius: 15px;
+    }
+    
+    .journey-points {
+        padding: 0 10px;
+        gap: 10px;
+    }
+    
+    .journey-point {
+        min-width: 70px;
+    }
+    
+    .point-circle {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+    
+    .journey-point h4 {
+        font-size: 0.8em;
+    }
+    
+    .vocabulary-section {
+        padding: 20px;
+    }
+    
+    .vocabulary-section h2 {
+        font-size: 1.5em;
+    }
+    
+    .vocabulary-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .word-card {
+        padding: 15px;
+    }
+    
+    .phase-navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .change-phase-btn {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .journey-points {
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        padding-bottom: 10px;
+    }
+    
+    .journey-point {
+        scroll-snap-align: center;
+        flex: 0 0 auto;
+    }
+    
+    /* Custom scrollbar for journey points */
+    .journey-points::-webkit-scrollbar {
+        height: 6px;
+    }
+    
+    .journey-points::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 3px;
+    }
+    
+    .journey-points::-webkit-scrollbar-thumb {
+        background: #667eea;
+        border-radius: 3px;
+    }
+}
+
+/* iOS specific fixes */
+@supports (-webkit-touch-callout: none) {
+    /* iOS only styles */
+    button, .journey-point {
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    .change-phase-btn,
+    .show-answer-btn,
+    .nav-link {
+        -webkit-appearance: none;
+        appearance: none;
+    }
+    
+    /* Fix iOS button radius */
+    input[type="button"],
+    input[type="submit"] {
+        border-radius: 0;
+    }
+}
+
+/* Android specific optimizations */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .journey-points {
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes drawLine {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+        
+        .theatrical-scene {
+            background: linear-gradient(135deg, #f6f8fb 0%, #e9ecf1 100%);
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 30px 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08), 0 2px 10px rgba(102, 126, 234, 0.1);
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .theatrical-scene.active {
+            display: block;
+        }
+        
+        .theatrical-scene::before {
+            content: 'ACT';
+            position: absolute;
+            font-size: 100px;
+            font-weight: 900;
+            opacity: 0.05;
+            right: -30px;
+            top: -30px;
+            transform: rotate(-15deg);
+        }
+        
+        .scene-title {
+            color: #2d3748;
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-bottom: 25px;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 15px;
+        }
+        
+        .scene-narrative {
+            color: #4a5568;
+            font-size: 1.15em;
+            line-height: 1.9;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+        
+        .scene-narrative b {
+            color: #667eea;
+            font-weight: 700;
+            background: linear-gradient(180deg, transparent 60%, rgba(102, 126, 234, 0.15) 60%);
+            padding: 0 2px;
+            transition: all 0.3s ease;
+        }
+        
+        .scene-narrative b:hover {
+            background: linear-gradient(180deg, transparent 40%, rgba(102, 126, 234, 0.25) 40%);
+            color: #5a67d8;
+        }
+        
+        .emotional-peak {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+            color: #2d3748;
+            font-size: 1.1em;
+            font-style: italic;
+            margin-top: 25px;
+            position: relative;
+            box-shadow: inset 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .emotional-peak::before {
+            content: '';
+            position: absolute;
+            left: -4px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(180deg, #667eea, #764ba2);
+            border-radius: 4px;
+        }
+        
+        /* Стили для упражнения */
+        .exercise-section {
+            background: linear-gradient(135deg, #fff9e6 0%, #fff4d6 100%);
+            border: 2px solid #f6ad55;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 35px;
+            position: relative;
+        }
+        
+        .exercise-title {
+            color: #d97706;
+            font-size: 1.4em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .exercise-text {
+            color: #4a5568;
+            font-size: 1.1em;
+            line-height: 1.9;
+            text-align: justify;
+        }
+        
+        .exercise-text .blank {
+            display: inline-block;
+            min-width: 100px;
+            border-bottom: 2px solid #f6ad55;
+            margin: 0 4px;
+            color: #a0aec0;
+            font-style: italic;
+            font-size: 0.9em;
+            padding: 0 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .exercise-container {
+            display: none;
+        }
+        
+        .exercise-container.active {
+            display: block;
+        }
+        
+        .exercises-container {
+            margin-top: 40px;
+        }
+        
+        .show-answer-btn {
+            background: linear-gradient(135deg, #f6ad55 0%, #ed8936 100%);
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(237, 137, 54, 0.3);
+            /* Mobile optimizations */
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+            min-height: 48px;
+            min-width: 160px;
+        }
+        
+        .show-answer-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(237, 137, 54, 0.4);
+        }
+        
+        .show-answer-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 8px rgba(237, 137, 54, 0.3);
+        }
+        
+        /* Touch device optimizations */
+        @media (hover: none) and (pointer: coarse) {
+            .show-answer-btn {
+                padding: 18px 36px;
+                font-size: 1.2em;
+                min-height: 56px;
+            }
+            
+            .show-answer-btn:hover {
+                transform: none;
+            }
+            
+            .show-answer-btn:active {
+                transform: scale(0.98);
+                opacity: 0.9;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from { 
+                opacity: 0; 
+                transform: translateY(20px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .theatrical-scene {
+                padding: 25px 20px;
+            }
+            
+            .scene-title {
+                font-size: 1.4em;
+            }
+            
+            .scene-narrative {
+                font-size: 1.05em;
+                text-align: left;
+            }
+            
+            .exercise-section {
+                padding: 20px;
+            }
+            
+            .exercise-text {
+                font-size: 1em;
+                line-height: 1.8;
+            }
+            
+            .exercise-text .blank {
+                min-width: 80px;
+                padding: 2px 6px;
+                margin: 2px;
+            }
+            
+            .show-answer-btn {
+                width: 90%;
+                max-width: 300px;
+                padding: 18px 24px;
+                font-size: 1.15em;
+            }
+        }
+        
+        /* iOS specific fixes */
+        @supports (-webkit-touch-callout: none) {
+            .show-answer-btn {
+                -webkit-appearance: none;
+                appearance: none;
+            }
+            
+            .exercise-text .blank {
+                -webkit-tap-highlight-color: transparent;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="page-header">
+            <h1>👑 Путь Корделии</h1>
+            <p class="subtitle">Изучаем немецкий через трагедию Шекспира</p>
+        </header>
+        
+        <div class="journey-section">
+            <h2>📚 Путешествие Cordelia</h2>
+            
+            <div class="journey-timeline">
+                <svg class="journey-line" width="100%" height="4">
+                    <line x1="0" y1="2" x2="100%" y2="2" stroke="#6b5b95" stroke-width="2" opacity="0.3"/>
+                    <line x1="0" y1="2" x2="14%" y2="2" stroke="#6b5b95" stroke-width="3" class="progress-line"/>
+                </svg>
+                
+                <div class="journey-points">
+                    
+                <div class="journey-point active" data-phase="throne">
+                    <div class="point-circle">👸</div>
+                    <h4>Тронный зал</h4>
+                    <p>Wahrheit • Liebe • Ehrlichkeit</p>
+                </div>
+                <div class="journey-point " data-phase="goneril">
+                    <div class="point-circle">🚢</div>
+                    <h4>Изгнание</h4>
+                    <p>verlassen • verstoßen • Frankreich</p>
+                </div>
+                <div class="journey-point " data-phase="regan">
+                    <div class="point-circle">🏰</div>
+                    <h4>Во Франции</h4>
+                    <p>warten • sorgen • beten</p>
+                </div>
+                <div class="journey-point " data-phase="storm">
+                    <div class="point-circle">⚔️</div>
+                    <h4>Возвращение</h4>
+                    <p>zurückkehren • kämpfen • retten</p>
+                </div>
+                <div class="journey-point " data-phase="hut">
+                    <div class="point-circle">💔</div>
+                    <h4>Встреча</h4>
+                    <p>verzeihen • umarmen • heilen</p>
+                </div>
+                <div class="journey-point " data-phase="dover">
+                    <div class="point-circle">⚖️</div>
+                    <h4>Плен</h4>
+                    <p>gefangen • Würde • Gerechtigkeit</p>
+                </div>
+                <div class="journey-point " data-phase="prison">
+                    <div class="point-circle">😢</div>
+                    <h4>Финал</h4>
+                    <p>sterben • Opfer • ewig</p>
+                </div>
+                </div>
+            </div>
+            
+            <div class="journey-progress">
+                <div class="progress-track">
+                    <div class="progress-fill" style="width: 14%"></div>
+                </div>
+                <div class="progress-text">Акт I: Разделение королевства</div>
+            </div>
+        </div>
+        
+        <!-- Theatrical Scene Section -->
+        <div class="theatrical-scenes">
+            
+                <div class="theatrical-scene active" data-phase="throne">
+                    <h3 class="scene-title">ИСПЫТАНИЕ ИСТИННОЙ ЛЮБВИ</h3>
+                    <div class="scene-narrative">Вот она - великая <b>ZEREMONIE (церемония)</b> раздела королевства. Отец хочет услышать слова любви. Сёстры льстят ему, но я не могу. <b>DIE WAHRHEIT (правда)</b> - моё единственное оружие. «Я люблю вас согласно моему долгу, не больше и не меньше». Отец требует: «<b>VERKÜNDEN (провозгласи)</b> свою любовь!» Но я не буду <b>GEHORCHEN (повиноваться)</b> лжи! <b>DIE PFLICHT (долг)</b> дочери - любить отца честно. Эта <b>FEIERLICH (торжественная)</b> клятва стоит мне всего. <b>DIE MACHT (власть)</b> и богатство исчезают. Но моя <b>DIE TREUE (верность)</b> правде остаётся нерушимой.</div>
+                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Я люблю вас как дочь, а мужа буду любить как жену!» - кричу я. Отец в ярости отвергает меня! Королевство потеряно, но честь спасена!</div>
+                </div>
+                <div class="theatrical-scene " data-phase="goneril">
+                    <h3 class="scene-title">ИЗГНАНИЕ БЕЗ ПРИДАНОГО</h3>
+                    <div class="scene-narrative">Отец меня <b>VERSTOSSEN (изгоняет)</b>! Его <b>DER ZORN (гнев)</b> безграничен. Без <b>DIE MITGIFT (приданого)</b> я становлюсь никем. <b>DIE STRAFE (наказание)</b> за правду жестоко! Я <b>VERLASSEN (покидаю)</b> родной дом, становлюсь <b>FREMD (чужой)</b> в собственной стране. Но король Франции <b>AUFNEHMEN (принимает)</b> меня! «Она сама - сокровище», - говорит он. Сёстры торжествуют, Кент тоже изгнан за защиту меня. Но в моём сердце живёт <b>DIE HOFFNUNG (надежда)</b> - отец поймёт свою ошибку. Я уезжаю с достоинством.</div>
+                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Прощайте, сёстры! Покажите теперь свою любовь!» - кричу я. Слёзы текут по щекам, но я не обернусь назад!</div>
+                </div>
+                <div class="theatrical-scene " data-phase="regan">
+                    <h3 class="scene-title">ТРЕВОЖНЫЕ ВЕСТИ ИЗ АНГЛИИ</h3>
+                    <div class="scene-narrative">Во французском замке я живу с тревогой. <b>DIE SORGE (забота)</b> об отце не даёт покоя. <b>DIE NACHRICHT (известия)</b> из Англии ужасают - отец скитается в буре! <b>DIE EINSAMKEIT (одиночество)</b> изгнания тяжела, но мысль, что отец <b>LEIDEN (страдает)</b>, невыносима! <b>DIE ANGST (страх)</b> за него растёт с каждым днём. Я не могу <b>BESCHÜTZEN (защитить)</b> его отсюда. <b>DIE SEHNSUCHT (тоска)</b> по примирению разрывает сердце. Каждую ночь я <b>BETEN (молюсь)</b> за его спасение. Муж готовит армию - мы должны действовать!</div>
+                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Отец в безумии!» - кричит гонец. Я падаю на колени: «Боже, сохрани его до моего возвращения!» Решение принято - мы идём!</div>
+                </div>
+                <div class="theatrical-scene " data-phase="storm">
+                    <h3 class="scene-title">АРМИЯ ЛЮБВИ И СПРАВЕДЛИВОСТИ</h3>
+                    <div class="scene-narrative">Белые скалы Дувра! Я <b>ZURÜCKKEHREN (возвращаюсь)</b> с <b>DIE ARMEE (армией)</b>! Не завоевать, а <b>RETTEN (спасти)</b> отца от жестоких сестёр! <b>DER KAMPF (борьба)</b> за его честь - мой священный долг. <b>DIE SCHLACHT (битва)</b> будет жестокой, но <b>DIE GERECHTIGKEIT (справедливость)</b> на нашей стороне! Я должна быть <b>MUTIG (храброй)</b> ради отца. Французские солдаты кричат: «За короля Лира!» Верный Кент тайно помогает нам. Любовь должна <b>SIEGEN (победить)</b> ненависть! Мечи подняты, знамёна развеваются - вперёд!</div>
+                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «За правду! За любовь! За отца!» - кричу я, поднимая меч! Армия ревёт! Моё сердце - щит, любовь - оружие!</div>
+                </div>
+                <div class="theatrical-scene " data-phase="hut">
+                    <h3 class="scene-title">СЛЁЗЫ ВОССОЕДИНЕНИЯ</h3>
+                    <div class="scene-narrative">Отец спит, измученный безумием. Музыка должна <b>HEILEN (исцелить)</b> его душу. Он открывает глаза: «Ты дух?» - «Нет, отец, я твоя Корделия!» <b>DIE TRÄNEN (слёзы)</b> текут по его щекам. «<b>VERZEIHEN (Прости)</b> меня!» - плачет он. Я <b>UMARMEN (обнимаю)</b> его крепко. «Ты <b>ERKENNEN (узнаёшь)</b> меня?» - спрашиваю нежно. <b>DIE REUE (раскаяние)</b> в его глазах разрывает моё сердце. Я говорю <b>SANFT (нежно)</b>: «Тише, всё позади». <b>DIE VERGEBUNG (прощение)</b> приносит покой нашим душам. Мы снова вместе!</div>
+                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Не плачь, отец! Твои слёзы жгут меня!» - рыдаю я, целуя его руки. «Я люблю тебя! Всё прощено!» Мы обнимаемся как никогда!</div>
+                </div>
+                <div class="theatrical-scene " data-phase="dover">
+                    <h3 class="scene-title">ПЛЕН С ДОСТОИНСТВОМ</h3>
+                    <div class="scene-narrative">Битва проиграна. Эдмунд ведёт нас как <b>GEFANGEN (пленников)</b>. В <b>DAS GEFÄNGNIS (тюрьму)</b> мы идём, но с <b>DIE WÜRDE (достоинством)</b>! «Не плачь, отец», - я <b>TRÖSTEN (утешаю)</b> его. «Мы будем петь как птицы в клетке, рассказывать сказки». Я остаюсь <b>TAPFER (отважной)</b> ради него. Наша <b>DIE EHRE (честь)</b> не запятнана! <b>DAS SCHICKSAL (судьба)</b> свела нас вместе даже в темнице. В сердце живёт <b>DIE DEMUT (смирение)</b> - мы принимаем всё с покоем. Любовь делает нас свободными даже в цепях!</div>
+                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Кто разлучит нас теперь?» - говорю отцу, сжимая его руку. «Боги накажут тех, кто заставил нас плакать!» В темницу как на пир!</div>
+                </div>
+                <div class="theatrical-scene " data-phase="prison">
+                    <h3 class="scene-title">ПОСЛЕДНЕЕ ДЫХАНИЕ ЛЮБВИ</h3>
+                    <div class="scene-narrative">Тайный приказ Эдмунда исполнен. Я <b>STERBEN (умираю)</b>. Я - <b>DAS OPFER (жертва)</b> правды и любви. <b>DER TOD (смерть)</b> приходит тихо. Моя <b>DIE SEELE (душа)</b> спокойна - я жила честно! «Отец...» - последний вздох. <b>DAS ENDE (конец)</b> земного пути, но наша любовь <b>EWIG (вечна)</b>! <b>DER ABSCHIED (прощание)</b> - это не навсегда. <b>DIE ERLÖSUNG (спасение)</b> ждёт в небесах. Я слышу крики, бой - слишком поздно! Темнота окутывает. Прости, отец, что ухожу первой... В вечности мы встретимся снова!</div>
+                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: Верёвка затягивается... «Отец! Я люблю...» - не успеваю договорить. Последний вздох с твоим именем! Прости, что оставляю тебя!</div>
+                </div>
+        </div>
+        
+        <div class="vocabulary-section">
+            <h2>📖 Словарь: Фаза "<span id="current-phase">Тронный зал</span>"</h2>
+            <div class="vocabulary-grid"></div>
+            
+            <div class="phase-navigation">
+                <button class="change-phase-btn prev-btn">← Предыдущая фаза</button>
+                <button class="change-phase-btn next-btn">Следующая фаза →</button>
+            </div>
+        </div>
+        
+        <!-- Exercises Section AFTER Vocabulary -->
+        <div class="exercises-container">
+            
+                    <div class="exercise-container active" data-phase="throne">
+                        <div class="exercise-section">
+                            <h4 class="exercise-title">📝 Упражнение: ИСПЫТАНИЕ ИСТИННОЙ ЛЮБВИ</h4>
+                            <div class="exercise-text">Вот она - великая <span class="blank" data-answer="die ZEREMONIE" data-hint="церемония">_______ (церемония)</span> раздела королевства. Отец хочет услышать слова любви. Сёстры льстят ему, но я не могу. <span class="blank" data-answer="die WAHRHEIT" data-hint="правда">_______ (правда)</span> - моё единственное оружие. «Я люблю вас согласно моему долгу, не больше и не меньше». Отец требует: «<span class="blank" data-answer="VERKÜNDEN" data-hint="провозгласи">_______ (провозгласи)</span> свою любовь!» Но я не буду <span class="blank" data-answer="GEHORCHEN" data-hint="повиноваться">_______ (повиноваться)</span> лжи! <span class="blank" data-answer="die PFLICHT" data-hint="долг">_______ (долг)</span> дочери - любить отца честно. Эта <span class="blank" data-answer="FEIERLICH" data-hint="торжественная">_______ (торжественная)</span> клятва стоит мне всего. <span class="blank" data-answer="die MACHT" data-hint="власть">_______ (власть)</span> и богатство исчезают. Но моя <span class="blank" data-answer="die TREUE" data-hint="верность">_______ (верность)</span> правде остаётся нерушимой.</div>
+                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                        </div>
+                    </div>
+                    <div class="exercise-container " data-phase="goneril">
+                        <div class="exercise-section">
+                            <h4 class="exercise-title">📝 Упражнение: ИЗГНАНИЕ БЕЗ ПРИДАНОГО</h4>
+                            <div class="exercise-text">Отец меня <span class="blank" data-answer="VERSTOSSEN" data-hint="изгоняет">_______ (изгоняет)</span>! Его <span class="blank" data-answer="der ZORN" data-hint="гнев">_______ (гнев)</span> безграничен. Без <span class="blank" data-answer="DIE MITGIFT" data-hint="приданого">_______ (приданого)</span> я становлюсь никем. <span class="blank" data-answer="die STRAFE" data-hint="наказание">_______ (наказание)</span> за правду жестоко! Я <span class="blank" data-answer="VERLASSEN" data-hint="покидаю">_______ (покидаю)</span> родной дом, становлюсь <span class="blank" data-answer="FREMD" data-hint="чужой">_______ (чужой)</span> в собственной стране. Но король Франции <span class="blank" data-answer="AUFNEHMEN" data-hint="принимает">_______ (принимает)</span> меня! «Она сама - сокровище», - говорит он. Сёстры торжествуют, Кент тоже изгнан за защиту меня. Но в моём сердце живёт <span class="blank" data-answer="die HOFFNUNG" data-hint="надежда">_______ (надежда)</span> - отец поймёт свою ошибку. Я уезжаю с достоинством.</div>
+                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                        </div>
+                    </div>
+                    <div class="exercise-container " data-phase="regan">
+                        <div class="exercise-section">
+                            <h4 class="exercise-title">📝 Упражнение: ТРЕВОЖНЫЕ ВЕСТИ ИЗ АНГЛИИ</h4>
+                            <div class="exercise-text">Во французском замке я живу с тревогой. <span class="blank" data-answer="die SORGE" data-hint="забота">_______ (забота)</span> об отце не даёт покоя. <span class="blank" data-answer="DIE NACHRICHT" data-hint="известия">_______ (известия)</span> из Англии ужасают - отец скитается в буре! <span class="blank" data-answer="die EINSAMKEIT" data-hint="одиночество">_______ (одиночество)</span> изгнания тяжела, но мысль, что отец <span class="blank" data-answer="LEIDEN" data-hint="страдает">_______ (страдает)</span>, невыносима! <span class="blank" data-answer="die ANGST" data-hint="страх">_______ (страх)</span> за него растёт с каждым днём. Я не могу <span class="blank" data-answer="BESCHÜTZEN" data-hint="защитить">_______ (защитить)</span> его отсюда. <span class="blank" data-answer="die SEHNSUCHT" data-hint="тоска">_______ (тоска)</span> по примирению разрывает сердце. Каждую ночь я <span class="blank" data-answer="BETEN" data-hint="молюсь">_______ (молюсь)</span> за его спасение. Муж готовит армию - мы должны действовать!</div>
+                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                        </div>
+                    </div>
+                    <div class="exercise-container " data-phase="storm">
+                        <div class="exercise-section">
+                            <h4 class="exercise-title">📝 Упражнение: АРМИЯ ЛЮБВИ И СПРАВЕДЛИВОСТИ</h4>
+                            <div class="exercise-text">Белые скалы Дувра! Я <span class="blank" data-answer="ZURÜCKKEHREN" data-hint="возвращаюсь">_______ (возвращаюсь)</span> с <span class="blank" data-answer="DIE ARMEE" data-hint="армией">_______ (армией)</span>! Не завоевать, а <span class="blank" data-answer="RETTEN" data-hint="спасти">_______ (спасти)</span> отца от жестоких сестёр! <span class="blank" data-answer="der KAMPF" data-hint="борьба">_______ (борьба)</span> за его честь - мой священный долг. <span class="blank" data-answer="die SCHLACHT" data-hint="битва">_______ (битва)</span> будет жестокой, но <span class="blank" data-answer="die GERECHTIGKEIT" data-hint="справедливость">_______ (справедливость)</span> на нашей стороне! Я должна быть <span class="blank" data-answer="MUTIG" data-hint="храброй">_______ (храброй)</span> ради отца. Французские солдаты кричат: «За короля Лира!» Верный Кент тайно помогает нам. Любовь должна <span class="blank" data-answer="SIEGEN" data-hint="победить">_______ (победить)</span> ненависть! Мечи подняты, знамёна развеваются - вперёд!</div>
+                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                        </div>
+                    </div>
+                    <div class="exercise-container " data-phase="hut">
+                        <div class="exercise-section">
+                            <h4 class="exercise-title">📝 Упражнение: СЛЁЗЫ ВОССОЕДИНЕНИЯ</h4>
+                            <div class="exercise-text">Отец спит, измученный безумием. Музыка должна <span class="blank" data-answer="HEILEN" data-hint="исцелить">_______ (исцелить)</span> его душу. Он открывает глаза: «Ты дух?» - «Нет, отец, я твоя Корделия!» <span class="blank" data-answer="die TRÄNEN" data-hint="слёзы">_______ (слёзы)</span> текут по его щекам. «<span class="blank" data-answer="VERZEIHEN" data-hint="Прости">_______ (Прости)</span> меня!» - плачет он. Я <span class="blank" data-answer="UMARMEN" data-hint="обнимаю">_______ (обнимаю)</span> его крепко. «Ты <span class="blank" data-answer="ERKENNEN" data-hint="узнаёшь">_______ (узнаёшь)</span> меня?» - спрашиваю нежно. <span class="blank" data-answer="die REUE" data-hint="раскаяние">_______ (раскаяние)</span> в его глазах разрывает моё сердце. Я говорю <span class="blank" data-answer="SANFT" data-hint="нежно">_______ (нежно)</span>: «Тише, всё позади». <span class="blank" data-answer="die VERGEBUNG" data-hint="прощение">_______ (прощение)</span> приносит покой нашим душам. Мы снова вместе!</div>
+                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                        </div>
+                    </div>
+                    <div class="exercise-container " data-phase="dover">
+                        <div class="exercise-section">
+                            <h4 class="exercise-title">📝 Упражнение: ПЛЕН С ДОСТОИНСТВОМ</h4>
+                            <div class="exercise-text">Битва проиграна. Эдмунд ведёт нас как <span class="blank" data-answer="GEFANGEN" data-hint="пленников">_______ (пленников)</span>. В <span class="blank" data-answer="DAS GEFÄNGNIS" data-hint="тюрьму">_______ (тюрьму)</span> мы идём, но с <span class="blank" data-answer="DIE WÜRDE" data-hint="достоинством">_______ (достоинством)</span>! «Не плачь, отец», - я <span class="blank" data-answer="TRÖSTEN" data-hint="утешаю">_______ (утешаю)</span> его. «Мы будем петь как птицы в клетке, рассказывать сказки». Я остаюсь <span class="blank" data-answer="TAPFER" data-hint="отважной">_______ (отважной)</span> ради него. Наша <span class="blank" data-answer="die EHRE" data-hint="честь">_______ (честь)</span> не запятнана! <span class="blank" data-answer="das SCHICKSAL" data-hint="судьба">_______ (судьба)</span> свела нас вместе даже в темнице. В сердце живёт <span class="blank" data-answer="die DEMUT" data-hint="смирение">_______ (смирение)</span> - мы принимаем всё с покоем. Любовь делает нас свободными даже в цепях!</div>
+                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                        </div>
+                    </div>
+                    <div class="exercise-container " data-phase="prison">
+                        <div class="exercise-section">
+                            <h4 class="exercise-title">📝 Упражнение: ПОСЛЕДНЕЕ ДЫХАНИЕ ЛЮБВИ</h4>
+                            <div class="exercise-text">Тайный приказ Эдмунда исполнен. Я <span class="blank" data-answer="STERBEN" data-hint="умираю">_______ (умираю)</span>. Я - <span class="blank" data-answer="das OPFER" data-hint="жертва">_______ (жертва)</span> правды и любви. <span class="blank" data-answer="der TOD" data-hint="смерть">_______ (смерть)</span> приходит тихо. Моя <span class="blank" data-answer="die SEELE" data-hint="душа">_______ (душа)</span> спокойна - я жила честно! «Отец...» - последний вздох. <span class="blank" data-answer="das ENDE" data-hint="конец">_______ (конец)</span> земного пути, но наша любовь <span class="blank" data-answer="EWIG" data-hint="вечна">_______ (вечна)</span>! <span class="blank" data-answer="der ABSCHIED" data-hint="прощание">_______ (прощание)</span> - это не навсегда. <span class="blank" data-answer="die ERLÖSUNG" data-hint="спасение">_______ (спасение)</span> ждёт в небесах. Я слышу крики, бой - слишком поздно! Темнота окутывает. Прости, отец, что ухожу первой... В вечности мы встретимся снова!</div>
+                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                        </div>
+                    </div>
+        </div>
+        
+        <nav class="bottom-nav">
+            <a href="../index.html" class="nav-link">← К главной</a>
+        </nav>
+    </div>
+    
+    <script>const phaseVocabularies = {
+    throne: {
+        title: 'Тронный зал',
+        description: 'Акт I: Честная любовь',
+        words: [
+            {
+                word: 'die Wahrheit',
+                translation: 'правда',
+                transcription: '[ди ВАР-хайт]',
+                sentence: 'Die Wahrheit war vor meinen Augen verborgen.',
+                sentenceTranslation: 'Правда была скрыта от моих глаз.'
+            },
+            {
+                word: 'die Zeremonie',
+                translation: 'церемония',
+                transcription: '[ди це-ре-мо-НИ]',
+                sentence: 'Die Zeremonie beginnt im prächtigen Thronsaal.',
+                sentenceTranslation: 'Церемония начинается в великолепном тронном зале.'
+            },
+            {
+                word: 'verkünden',
+                translation: 'провозглашать',
+                transcription: '[фер-КЮН-ден]',
+                sentence: 'Ich verkünde nur die Wahrheit meines Herzens.',
+                sentenceTranslation: 'Я провозглашаю только правду моего сердца.'
+            },
+            {
+                word: 'die Macht',
+                translation: 'власть',
+                transcription: '[ди МАХТ]',
+                sentence: 'Die Macht bedeutet nichts ohne wahre Liebe.',
+                sentenceTranslation: 'Власть ничего не значит без истинной любви.'
+            },
+            {
+                word: 'gehorchen',
+                translation: 'повиноваться',
+                transcription: '[ге-ХОР-хен]',
+                sentence: 'Ich kann der Lüge nicht gehorchen.',
+                sentenceTranslation: 'Я не могу повиноваться лжи.'
+            },
+            {
+                word: 'die Pflicht',
+                translation: 'долг',
+                transcription: '[ди ПФЛИХТ]',
+                sentence: 'Meine Pflicht ist es, ehrlich zu sein.',
+                sentenceTranslation: 'Мой долг - быть честной.'
+            },
+            {
+                word: 'feierlich',
+                translation: 'торжественный',
+                transcription: '[ФАЙ-ер-лих]',
+                sentence: 'Dieser feierliche Moment wird zur Tragödie.',
+                sentenceTranslation: 'Этот торжественный момент становится трагедией.'
+            },
+            {
+                word: 'die Treue',
+                translation: 'верность',
+                transcription: '[ди ТРОЙ-е]',
+                sentence: 'Meine Treue gilt der Wahrheit und der echten Liebe.',
+                sentenceTranslation: 'Моя верность принадлежит правде и истинной любви.'
+            },
+        ]
+    },
+    goneril: {
+        title: 'Изгнание',
+        description: 'Акт I: Отъезд во Францию',
+        words: [
+            {
+                word: 'verstoßen',
+                translation: 'изгонять',
+                transcription: '[фер-ШТО-сен]',
+                sentence: 'Der König verstößt mich aus seinem Herzen.',
+                sentenceTranslation: 'Король изгоняет меня из своего сердца.'
+            },
+            {
+                word: 'verlassen',
+                translation: 'покидать',
+                transcription: '[фер-ЛА-сен]',
+                sentence: 'Schweren Herzens verlasse ich mein Vaterland.',
+                sentenceTranslation: 'С тяжёлым сердцем я покидаю родину.'
+            },
+            {
+                word: 'der Zorn',
+                translation: 'гнев',
+                transcription: '[дер ЦОРН]',
+                sentence: 'Sein Zorn ist grenzenlos und blind.',
+                sentenceTranslation: 'Его гнев безграничен и слеп.'
+            },
+            {
+                word: 'die Strafe',
+                translation: 'наказание',
+                transcription: '[ди ШТРА-фе]',
+                sentence: 'Diese Strafe ist der Preis für meine Ehrlichkeit.',
+                sentenceTranslation: 'Это наказание - цена моей честности.'
+            },
+            {
+                word: 'fremd',
+                translation: 'чужой',
+                transcription: '[ФРЕМД]',
+                sentence: 'Ich bin jetzt fremd in meinem eigenen Land.',
+                sentenceTranslation: 'Я теперь чужая в своей собственной стране.'
+            },
+            {
+                word: 'die Mitgift',
+                translation: 'приданое',
+                transcription: '[ди МИТ-гифт]',
+                sentence: 'Ohne Mitgift bin ich reicher an Ehre.',
+                sentenceTranslation: 'Без приданого я богаче честью.'
+            },
+            {
+                word: 'aufnehmen',
+                translation: 'принимать',
+                transcription: '[АУФ-не-мен]',
+                sentence: 'Der König von Frankreich nimmt mich liebevoll auf.',
+                sentenceTranslation: 'Король Франции принимает меня с любовью.'
+            },
+            {
+                word: 'die Hoffnung',
+                translation: 'надежда',
+                transcription: '[ди ХОФ-нунг]',
+                sentence: 'Die Hoffnung auf Versöhnung stirbt nie in meinem Herzen.',
+                sentenceTranslation: 'Надежда на примирение никогда не умирает в моём сердце.'
+            },
+        ]
+    },
+    regan: {
+        title: 'Во Франции',
+        description: 'Акт II-III: Беспокойство за отца',
+        words: [
+            {
+                word: 'die Sorge',
+                translation: 'забота',
+                transcription: '[ди ЗОР-ге]',
+                sentence: 'Die Sorge um meinen Vater lässt mich nicht schlafen.',
+                sentenceTranslation: 'Забота об отце не даёт мне спать.'
+            },
+            {
+                word: 'die Einsamkeit',
+                translation: 'одиночество',
+                transcription: '[ди АЙН-зам-кайт]',
+                sentence: 'In der Einsamkeit denke ich an ihn.',
+                sentenceTranslation: 'В одиночестве я думаю о нём.'
+            },
+            {
+                word: 'die Nachricht',
+                translation: 'известие',
+                transcription: '[ди НАХ-рихт]',
+                sentence: 'Schreckliche Nachrichten erreichen mich aus England.',
+                sentenceTranslation: 'Ужасные известия доходят до меня из Англии.'
+            },
+            {
+                word: 'die Angst',
+                translation: 'страх',
+                transcription: '[ди АНГСТ]',
+                sentence: 'Die Angst um meinen Vater wächst täglich.',
+                sentenceTranslation: 'Страх за отца растёт с каждым днём.'
+            },
+            {
+                word: 'leiden',
+                translation: 'страдать',
+                transcription: '[ЛАЙ-ден]',
+                sentence: 'Er muss furchtbar leiden ohne mich.',
+                sentenceTranslation: 'Он должно быть ужасно страдает без меня.'
+            },
+            {
+                word: 'beschützen',
+                translation: 'защищать',
+                transcription: '[бе-ШЮ-цен]',
+                sentence: 'Ich kann ihn aus der Ferne nicht beschützen.',
+                sentenceTranslation: 'Я не могу защитить его издалека.'
+            },
+            {
+                word: 'die Sehnsucht',
+                translation: 'тоска',
+                transcription: '[ди ЗЕН-зухт]',
+                sentence: 'Die Sehnsucht nach Versöhnung erfüllt mein Herz.',
+                sentenceTranslation: 'Тоска по примирению наполняет моё сердце.'
+            },
+            {
+                word: 'beten',
+                translation: 'молиться',
+                transcription: '[БЕ-тен]',
+                sentence: 'Jeden Tag bete ich für seine Sicherheit.',
+                sentenceTranslation: 'Каждый день я молюсь за его безопасность.'
+            },
+        ]
+    },
+    storm: {
+        title: 'Возвращение',
+        description: 'Акт IV: Возвращение с армией',
+        words: [
+            {
+                word: 'zurückkehren',
+                translation: 'возвращаться',
+                transcription: '[цу-РЮК-ке-рен]',
+                sentence: 'Mit einer Armee kehre ich zurück, meinen Vater zu retten.',
+                sentenceTranslation: 'С армией я возвращаюсь спасти моего отца.'
+            },
+            {
+                word: 'der Kampf',
+                translation: 'борьба',
+                transcription: '[дер КАМПФ]',
+                sentence: 'Dieser Kampf ist für die Ehre meines Vaters.',
+                sentenceTranslation: 'Эта борьба за честь моего отца.'
+            },
+            {
+                word: 'retten',
+                translation: 'спасать',
+                transcription: '[РЕ-тен]',
+                sentence: 'Ich muss meinen Vater vor seinen grausamen Töchtern retten.',
+                sentenceTranslation: 'Я должна спасти отца от его жестоких дочерей.'
+            },
+            {
+                word: 'die Schlacht',
+                translation: 'битва',
+                transcription: '[ди ШЛАХТ]',
+                sentence: 'Diese Schlacht entscheidet über das Schicksal des Königreichs.',
+                sentenceTranslation: 'Эта битва решает судьбу королевства.'
+            },
+            {
+                word: 'mutig',
+                translation: 'храбрый',
+                transcription: '[МУ-тиг]',
+                sentence: 'Sei mutig, mein Herz, für die gerechte Sache.',
+                sentenceTranslation: 'Будь храбрым, моё сердце, ради правого дела.'
+            },
+            {
+                word: 'die Gerechtigkeit',
+                translation: 'справедливость',
+                transcription: '[ди ге-РЕХ-тиг-кайт]',
+                sentence: 'Die Gerechtigkeit führt meine Klinge.',
+                sentenceTranslation: 'Справедливость ведёт мой клинок.'
+            },
+            {
+                word: 'siegen',
+                translation: 'побеждать',
+                transcription: '[ЗИ-ген]',
+                sentence: 'Die Liebe wird über den Hass siegen.',
+                sentenceTranslation: 'Любовь победит ненависть.'
+            },
+            {
+                word: 'die Armee',
+                translation: 'армия',
+                transcription: '[ди ар-МЭ]',
+                sentence: 'Diese Armee kämpft für Gerechtigkeit und Liebe.',
+                sentenceTranslation: 'Эта армия сражается за справедливость и любовь.'
+            },
+        ]
+    },
+    hut: {
+        title: 'Встреча',
+        description: 'Акт IV: Встреча с отцом',
+        words: [
+            {
+                word: 'verzeihen',
+                translation: 'прощать',
+                transcription: '[фер-ЦАЙ-ен]',
+                sentence: 'Ich verzeihe dir alles, mein lieber Vater.',
+                sentenceTranslation: 'Я прощаю тебе всё, мой дорогой отец.'
+            },
+            {
+                word: 'die Tränen',
+                translation: 'слёзы',
+                transcription: '[ди ТРЕ-нен]',
+                sentence: 'Unsere Tränen waschen den Schmerz fort.',
+                sentenceTranslation: 'Наши слёзы смывают боль.'
+            },
+            {
+                word: 'umarmen',
+                translation: 'обнимать',
+                transcription: '[ум-АР-мен]',
+                sentence: 'Lass mich dich umarmen und deine Tränen trocknen.',
+                sentenceTranslation: 'Позволь мне обнять тебя и вытереть твои слёзы.'
+            },
+            {
+                word: 'erkennen',
+                translation: 'узнавать',
+                transcription: '[ер-КЕН-нен]',
+                sentence: 'Erkennst du mich, dein Kind Cordelia?',
+                sentenceTranslation: 'Узнаёшь ли ты меня, твоё дитя Корделия?'
+            },
+            {
+                word: 'heilen',
+                translation: 'исцелять',
+                transcription: '[ХАЙ-лен]',
+                sentence: 'Meine Liebe wird deine Wunden heilen.',
+                sentenceTranslation: 'Моя любовь исцелит твои раны.'
+            },
+            {
+                word: 'die Reue',
+                translation: 'раскаяние',
+                transcription: '[ди РОЙ-е]',
+                sentence: 'Deine Reue ist nicht nötig, nur deine Liebe.',
+                sentenceTranslation: 'Твоё раскаяние не нужно, только твоя любовь.'
+            },
+            {
+                word: 'sanft',
+                translation: 'нежный',
+                transcription: '[ЗАНФТ]',
+                sentence: 'Sei sanft zu dir selbst, lieber Vater.',
+                sentenceTranslation: 'Будь нежен к себе, дорогой отец.'
+            },
+            {
+                word: 'die Vergebung',
+                translation: 'прощение',
+                transcription: '[ди фер-ГЕ-бунг]',
+                sentence: 'Die Vergebung ist der Schlüssel zum Frieden.',
+                sentenceTranslation: 'Прощение - ключ к покою.'
+            },
+        ]
+    },
+    dover: {
+        title: 'Плен',
+        description: 'Акт V: Захват в плен',
+        words: [
+            {
+                word: 'gefangen',
+                translation: 'пленный',
+                transcription: '[ге-ФАН-ген]',
+                sentence: 'Obwohl gefangen, bin ich frei in meinem Herzen.',
+                sentenceTranslation: 'Хотя я в плену, в сердце я свободна.'
+            },
+            {
+                word: 'das Gefängnis',
+                translation: 'тюрьма',
+                transcription: '[дас ге-ФЭНГ-нис]',
+                sentence: 'Dieses Gefängnis kann meine Liebe nicht einsperren.',
+                sentenceTranslation: 'Эта тюрьма не может запереть мою любовь.'
+            },
+            {
+                word: 'die Würde',
+                translation: 'достоинство',
+                transcription: '[ди ВЮР-де]',
+                sentence: 'Mit Würde trage ich mein Schicksal.',
+                sentenceTranslation: 'С достоинством я несу свою судьбу.'
+            },
+            {
+                word: 'trösten',
+                translation: 'утешать',
+                transcription: '[ТРЁС-тен]',
+                sentence: 'Lass mich dich trösten in dieser dunklen Stunde.',
+                sentenceTranslation: 'Позволь мне утешить тебя в этот тёмный час.'
+            },
+            {
+                word: 'tapfer',
+                translation: 'отважный',
+                transcription: '[ТАП-фер]',
+                sentence: 'Ich bleibe tapfer für dich, Vater.',
+                sentenceTranslation: 'Я остаюсь отважной ради тебя, отец.'
+            },
+            {
+                word: 'die Demut',
+                translation: 'смирение',
+                transcription: '[ди ДЕ-мут]',
+                sentence: 'In der Demut finden wir wahre Größe.',
+                sentenceTranslation: 'В смирении мы находим истинное величие.'
+            },
+            {
+                word: 'das Schicksal',
+                translation: 'судьба',
+                transcription: '[дас ШИК-заль]',
+                sentence: 'Unser Schicksal ist miteinander verwoben.',
+                sentenceTranslation: 'Наши судьбы переплетены.'
+            },
+            {
+                word: 'die Ehre',
+                translation: 'честь',
+                transcription: '[ди Э-ре]',
+                sentence: 'Unsere Ehre bleibt unbefleckt.',
+                sentenceTranslation: 'Наша честь остаётся незапятнанной.'
+            },
+        ]
+    },
+    prison: {
+        title: 'Финал',
+        description: 'Акт V: Трагический конец',
+        words: [
+            {
+                word: 'der Tod',
+                translation: 'смерть',
+                transcription: '[дер ТОД]',
+                sentence: 'Der Tod trennt uns nur für kurze Zeit.',
+                sentenceTranslation: 'Смерть разлучает нас лишь ненадолго.'
+            },
+            {
+                word: 'sterben',
+                translation: 'умирать',
+                transcription: '[ШТЕР-бен]',
+                sentence: 'Wenn ich sterben muss, sterbe ich mit reinem Herzen.',
+                sentenceTranslation: 'Если я должна умереть, я умру с чистым сердцем.'
+            },
+            {
+                word: 'das Opfer',
+                translation: 'жертва',
+                transcription: '[дас ОП-фер]',
+                sentence: 'Ich bin das Opfer der Wahrheit und Liebe.',
+                sentenceTranslation: 'Я жертва правды и любви.'
+            },
+            {
+                word: 'die Seele',
+                translation: 'душа',
+                transcription: '[ди ЗЕ-ле]',
+                sentence: 'Meine Seele ist rein vor Gott.',
+                sentenceTranslation: 'Моя душа чиста перед Богом.'
+            },
+            {
+                word: 'das Ende',
+                translation: 'конец',
+                transcription: '[дас ЕН-де]',
+                sentence: 'Dies ist nicht das Ende, nur ein Übergang.',
+                sentenceTranslation: 'Это не конец, только переход.'
+            },
+            {
+                word: 'ewig',
+                translation: 'вечный',
+                transcription: '[Э-виг]',
+                sentence: 'Unsere Liebe ist ewig, Vater.',
+                sentenceTranslation: 'Наша любовь вечна, отец.'
+            },
+            {
+                word: 'der Abschied',
+                translation: 'прощание',
+                transcription: '[дер АБ-шид]',
+                sentence: 'Unser Abschied ist nur vorübergehend.',
+                sentenceTranslation: 'Наше прощание лишь временно.'
+            },
+            {
+                word: 'die Erlösung',
+                translation: 'спасение',
+                transcription: '[ди ер-ЛЁ-зунг]',
+                sentence: 'Im Tod finde ich Erlösung und Frieden.',
+                sentenceTranslation: 'В смерти я нахожу спасение и покой.'
+            },
+        ]
+    },
+};
+
+
+let currentPhaseIndex = 0;
+const phaseKeys = Object.keys(phaseVocabularies);
+let isTransitioning = false; // Prevent double clicks/taps
+
+// Device detection
+const isTouchDevice = ('ontouchstart' in window) || 
+                      (navigator.maxTouchPoints > 0) || 
+                      (navigator.msMaxTouchPoints > 0);
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+const isAndroid = /Android/.test(navigator.userAgent);
+
+// Prevent iOS zoom on double tap
+if (isIOS) {
+    let lastTouchEnd = 0;
+    document.addEventListener('touchend', function(event) {
+        const now = Date.now();
+        if (now - lastTouchEnd <= 300) {
+            event.preventDefault();
+        }
+        lastTouchEnd = now;
+    }, false);
+}
+
+function displayVocabulary(phaseKey) {
+    // Prevent multiple rapid transitions
+    if (isTransitioning) return;
+    isTransitioning = true;
+    
+    const phase = phaseVocabularies[phaseKey];
+    const grid = document.querySelector('.vocabulary-grid');
+    const phaseTitle = document.getElementById('current-phase');
+    const progressFill = document.querySelector('.progress-fill');
+    const progressText = document.querySelector('.progress-text');
+    
+    if (!phase || !grid || !phaseTitle) {
+        console.error('Missing required elements');
+        isTransitioning = false;
+        return;
+    }
+    
+    phaseTitle.textContent = phase.title;
+    
+    // Update theatrical scene with smooth transition
+    const scenes = document.querySelectorAll('.theatrical-scene');
+    scenes.forEach(scene => {
+        if (scene.dataset.phase === phaseKey) {
+            scene.classList.add('active');
+            // Scroll to scene on mobile
+            if (isTouchDevice && window.innerWidth < 768) {
+                setTimeout(() => {
+                    scene.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'start' 
+                    });
+                }, 100);
+            }
+        } else {
+            scene.classList.remove('active');
+        }
+    });
+    
+    // Update exercises
+    const exercises = document.querySelectorAll('.exercise-container');
+    exercises.forEach(exercise => {
+        if (exercise.dataset.phase === phaseKey) {
+            exercise.classList.add('active');
+        } else {
+            exercise.classList.remove('active');
+        }
+    });
+    
+    grid.innerHTML = '';
+    
+    phase.words.forEach((item, index) => {
+        setTimeout(() => {
+            const card = document.createElement('div');
+            card.className = 'word-card';
+            card.style.animationDelay = `${index * 0.1}s`;
+            card.innerHTML = `
+                <div class="word-german">${item.word}</div>
+                <div class="word-translation">${item.translation}</div>
+                <div class="word-transcription">${item.transcription}</div>
+                <div class="word-sentence">
+                    <div class="sentence-german">"${item.sentence}"</div>
+                    <div class="sentence-translation">${item.sentenceTranslation}</div>
+                </div>
+            `;
+            grid.appendChild(card);
+        }, index * 50);
+    });
+    
+    // Update progress bar
+    const progress = ((currentPhaseIndex + 1) / phaseKeys.length) * 100;
+    if (progressFill) progressFill.style.width = progress + '%';
+    if (progressText) progressText.textContent = phase.description;
+    
+    // Update navigation buttons state
+    updateNavigationButtons();
+    
+    // Reset transition flag
+    setTimeout(() => {
+        isTransitioning = false;
+    }, 500);
+}
+
+// Update navigation buttons based on current position
+function updateNavigationButtons() {
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    
+    if (prevBtn) {
+        prevBtn.disabled = currentPhaseIndex === 0;
+        prevBtn.style.opacity = currentPhaseIndex === 0 ? '0.5' : '1';
+        prevBtn.style.cursor = currentPhaseIndex === 0 ? 'not-allowed' : 'pointer';
+    }
+    
+    if (nextBtn) {
+        nextBtn.disabled = currentPhaseIndex >= phaseKeys.length - 1;
+        nextBtn.style.opacity = currentPhaseIndex >= phaseKeys.length - 1 ? '0.5' : '1';
+        nextBtn.style.cursor = currentPhaseIndex >= phaseKeys.length - 1 ? 'not-allowed' : 'pointer';
+    }
+}
+
+// Safe click handler for journey points
+function handleJourneyPointClick(point, index) {
+    if (isTransitioning) return;
+    
+    const journeyPoints = document.querySelectorAll('.journey-point');
+    journeyPoints.forEach(p => p.classList.remove('active'));
+    point.classList.add('active');
+    currentPhaseIndex = index;
+    displayVocabulary(point.dataset.phase);
+    
+    // Update progress line animation
+    const progressLine = document.querySelector('.progress-line');
+    if (progressLine) {
+        const lineProgress = ((index + 1) / journeyPoints.length) * 100;
+        progressLine.style.strokeDashoffset = 1000 - (1000 * lineProgress / 100);
+    }
+    
+    // Provide haptic feedback on supported devices
+    if (navigator.vibrate && isTouchDevice) {
+        navigator.vibrate(10); // Short vibration feedback
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('[Init] Starting initialization...');
+    
+    const journeyPoints = document.querySelectorAll('.journey-point');
+    const progressLine = document.querySelector('.progress-line');
+    
+    console.log('[Init] Found', journeyPoints.length, 'journey points');
+    
+    // ИСПРАВЛЕНИЕ: Упрощенная логика обработчиков для всех устройств
+    journeyPoints.forEach((point, index) => {
+        // Универсальный обработчик клика для всех устройств
+        point.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            handleJourneyPointClick(this, index);
+        });
+        
+        // Дополнительная поддержка touch для мобильных
+        if (isTouchDevice) {
+            // Визуальная обратная связь при касании
+            point.addEventListener('touchstart', function() {
+                this.style.transform = 'scale(0.95)';
+            });
+            
+            point.addEventListener('touchend', function() {
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 100);
+            });
+        }
+        
+        // Курсор pointer для всех устройств
+        point.style.cursor = 'pointer';
+    });
+    
+    // Previous button handler - ИСПРАВЛЕНО
+    const prevBtn = document.querySelector('.prev-btn');
+    if (prevBtn) {
+        prevBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            if (!isTransitioning && currentPhaseIndex > 0) {
+                currentPhaseIndex--;
+                const targetPoint = journeyPoints[currentPhaseIndex];
+                if (targetPoint) {
+                    handleJourneyPointClick(targetPoint, currentPhaseIndex);
+                }
+                
+                // Haptic feedback для мобильных
+                if (navigator.vibrate && isTouchDevice) {
+                    navigator.vibrate(10);
+                }
+            }
+        });
+    }
+    
+    // Next button handler - ИСПРАВЛЕНО
+    const nextBtn = document.querySelector('.next-btn');
+    if (nextBtn) {
+        nextBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            if (!isTransitioning && currentPhaseIndex < phaseKeys.length - 1) {
+                currentPhaseIndex++;
+                const targetPoint = journeyPoints[currentPhaseIndex];
+                if (targetPoint) {
+                    handleJourneyPointClick(targetPoint, currentPhaseIndex);
+                }
+                
+                // Haptic feedback для мобильных
+                if (navigator.vibrate && isTouchDevice) {
+                    navigator.vibrate(10);
+                }
+            }
+        });
+    }
+    
+    // Initialize first phase
+    if (journeyPoints.length > 0 && phaseKeys.length > 0) {
+        console.log('[Init] Initializing first phase:', phaseKeys[0]);
+        journeyPoints[0].classList.add('active');
+        displayVocabulary(phaseKeys[0]);
+    } else {
+        console.error('[Init] No journey points or phases found!');
+    }
+    
+    // Add swipe support for mobile navigation
+    if (isTouchDevice) {
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        document.addEventListener('touchstart', function(e) {
+            touchStartX = e.changedTouches[0].screenX;
+        }, false);
+        
+        document.addEventListener('touchend', function(e) {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, false);
+        
+        function handleSwipe() {
+            const swipeThreshold = 50; // Minimum distance for swipe
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    // Swiped left - go to next phase
+                    if (nextBtn && !nextBtn.disabled) {
+                        nextBtn.click();
+                    }
+                } else {
+                    // Swiped right - go to previous phase
+                    if (prevBtn && !prevBtn.disabled) {
+                        prevBtn.click();
+                    }
+                }
+            }
+        }
+    }
+    
+    console.log('[Init] Initialization complete');
+});
+
+// Function to toggle answers in exercise - РАБОТАЕТ ДЛЯ ВСЕХ
+function toggleAnswers(button) {
+    // Prevent double tap/click
+    if (button.dataset.processing === 'true') return;
+    button.dataset.processing = 'true';
+    
+    const exerciseSection = button.closest('.exercise-section');
+    if (!exerciseSection) {
+        console.error('Exercise section not found');
+        button.dataset.processing = 'false';
+        return;
+    }
+    
+    const exerciseText = exerciseSection.querySelector('.exercise-text');
+    const blanks = exerciseText.querySelectorAll('.blank');
+    
+    if (button.textContent === 'Показать ответы') {
+        // Show answers
+        blanks.forEach(blank => {
+            const answer = blank.getAttribute('data-answer');
+            const hint = blank.getAttribute('data-hint');
+            if (answer && hint) {
+                blank.innerHTML = answer + ' (' + hint + ')';
+                blank.style.color = '#d97706';
+                blank.style.fontWeight = '600';
+                blank.style.fontStyle = 'normal';
+                blank.style.borderBottomColor = '#22c55e';
+            }
+        });
+        button.textContent = 'Скрыть ответы';
+        button.style.background = 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)';
+    } else {
+        // Hide answers
+        blanks.forEach(blank => {
+            const hint = blank.getAttribute('data-hint');
+            if (hint) {
+                blank.innerHTML = '_______ (' + hint + ')';
+                blank.style.color = '#a0aec0';
+                blank.style.fontWeight = 'normal';
+                blank.style.fontStyle = 'italic';
+                blank.style.borderBottomColor = '#f6ad55';
+            }
+        });
+        button.textContent = 'Показать ответы';
+        button.style.background = 'linear-gradient(135deg, #f6ad55 0%, #ed8936 100%)';
+    }
+    
+    // Haptic feedback for mobile
+    if (navigator.vibrate && isTouchDevice) {
+        navigator.vibrate(15);
+    }
+    
+    // Reset processing flag
+    setTimeout(() => {
+        button.dataset.processing = 'false';
+    }, 300);
+}
+
+// Initialize answer button handlers - УПРОЩЕНО
+document.addEventListener('DOMContentLoaded', function() {
+    const answerButtons = document.querySelectorAll('.show-answer-btn');
+    
+    answerButtons.forEach(button => {
+        // Универсальный обработчик для всех устройств
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleAnswers(this);
+        });
+        
+        // Визуальная обратная связь для мобильных
+        if (isTouchDevice) {
+            button.addEventListener('touchstart', function() {
+                this.style.transform = 'scale(0.98)';
+                this.style.opacity = '0.9';
+            });
+            
+            button.addEventListener('touchend', function() {
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                    this.style.opacity = '1';
+                }, 100);
+            });
+        }
+    });
+});
+
+// Log device info for debugging
+console.log('[Device Info]', {
+    isTouchDevice: isTouchDevice,
+    isIOS: isIOS,
+    isAndroid: isAndroid,
+    userAgent: navigator.userAgent,
+    phaseCount: phaseKeys.length
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "id": "character_id",
+  "name": "Character Name",
+  "title": "Путешествие Character",
+  "journey": {
+    "stages": [
+      {
+        "id": "stage_id",
+        "title": "Stage Title",
+        "icon": "emoji",
+        "keywords": ["word1", "word2", "word3"],
+        "act": 1,
+        "scenes": [1, 2],
+        "description": "Stage description",
+        "vocabulary_phase": "phase_id"
+      }
+    ]
+  },
+  "quotes": {
+    "phase_id": [
+      {
+        "german": "German quote",
+        "transcription": "[transcription]",
+        "russian": "Russian translation"
+      }
+    ]
+  }
+}

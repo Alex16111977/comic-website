@@ -1,0 +1,36 @@
+# King Lear Comic Generator - Requirements
+# ========================================
+# 
+# This project uses ONLY Python standard library!
+# No external dependencies required.
+#
+# Python version: 3.13+ recommended
+# Python version: 3.8+ minimum
+#
+# To run the project:
+#   python main.py
+#
+# That's it! No pip install needed.
+# ========================================
+
+# Core project has NO dependencies
+# The project is designed to work with pure Python
+
+# Optional: Development tools (not required to run)
+# Uncomment if you want development tools:
+#
+# # Linting and formatting
+# pylint>=3.0.0
+# black>=23.0.0
+# flake8>=6.0.0
+#
+# # Type checking
+# mypy>=1.5.0
+#
+# # Testing
+# pytest>=7.4.0
+# pytest-cov>=4.1.0
+#
+# # Documentation
+# sphinx>=7.0.0
+# sphinx-rtd-theme>=1.3.0

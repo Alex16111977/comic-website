@@ -1,0 +1,49 @@
+{
+  "$schema": "character_v1",
+  "character_id": "",
+  "name": {
+    "de": "",
+    "ru": "",
+    "original": ""
+  },
+  "role": "protagonist",
+  "emoji": "👑",
+  "color_theme": "#6B5B95",
+  "personality": {
+    "traits": [],
+    "arc": "",
+    "motivation": "",
+    "fears": [],
+    "desires": []
+  },
+  "visual": {
+    "description": "",
+    "sprites": {
+      "neutral": "",
+      "happy": "",
+      "sad": "",
+      "angry": "",
+      "shocked": "",
+      "thinking": ""
+    },
+    "bubble_style": "royal",
+    "font_family": "serif",
+    "text_color": "#1a202c"
+  },
+  "linguistic": {
+    "speech_level": "formal",
+    "vocabulary_complexity": "B1",
+    "signature_phrases": [],
+    "speech_patterns": []
+  },
+  "journey_presence": {
+    "stages": [],
+    "key_scenes": [],
+    "relationships": {}
+  },
+  "stats": {
+    "appearances": 0,
+    "words_spoken": 0,
+    "vocabulary_introduced": []
+  }
+}
