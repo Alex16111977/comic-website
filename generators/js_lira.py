@@ -1,15 +1,89 @@
 """JavaScript Generator for Lira Journey interactivity"""
 
 import json
+from pathlib import Path
 
 
 class LiraJSGenerator:
     """Generate JavaScript for journey interactivity with mobile support"""
-    
+
+    _vocabulary_index = None
+
+    @classmethod
+    def _load_vocabulary_index(cls):
+        """Load vocabulary enrichment data from the shared vocabulary file."""
+
+        if cls._vocabulary_index is not None:
+            return cls._vocabulary_index
+
+        vocab_path = (
+            Path(__file__).resolve().parent.parent
+            / "data"
+            / "vocabulary"
+            / "vocabulary.json"
+        )
+
+        index = {}
+
+        if vocab_path.exists():
+            with open(vocab_path, 'r', encoding='utf-8') as vocab_file:
+                data = json.load(vocab_file)
+                for entry in data.get('vocabulary', []):
+                    german = (entry.get('german') or '').strip().lower()
+                    if german:
+                        index[german] = entry
+
+        cls._vocabulary_index = index
+        return cls._vocabulary_index
+
+    @classmethod
+    def _collect_relations(cls, german_word, phase_reference):
+        """Return word family, synonyms and collocations for the given word/phase."""
+
+        vocabulary = cls._load_vocabulary_index()
+        entry = vocabulary.get((german_word or '').strip().lower())
+
+        if not entry:
+            return [], [], []
+
+        def _filter_items(items, base_word_key):
+            filtered = []
+            for item in items:
+                if not isinstance(item, dict):
+                    continue
+
+                phases = item.get('phases') or []
+                if phases and phase_reference and phase_reference not in phases:
+                    continue
+
+                formatted = {
+                    base_word_key: entry.get('german', ''),
+                }
+
+                for key, value in item.items():
+                    if key == 'phases':
+                        continue
+                    formatted_key = {
+                        'part_of_speech': 'partOfSpeech',
+                    }.get(key, key)
+                    formatted[formatted_key] = value
+
+                filtered.append(formatted)
+
+            return filtered
+
+        families = _filter_items(entry.get('word_family', []), 'baseWord')
+        synonyms = _filter_items(entry.get('synonyms', []), 'baseWord')
+        collocations = _filter_items(entry.get('collocations', []), 'baseWord')
+
+        return families, synonyms, collocations
+
     @staticmethod
     def generate(character_data):
         """Generate JS with vocabulary data from character JSON"""
-        
+
+        character_id = character_data.get('id', '')
+
         # Build vocabulary object from character data using JSON serialization
         phase_vocabularies = {}
 
@@ -18,14 +92,24 @@ class LiraJSGenerator:
             if not phase_id:
                 continue
 
+            phase_reference = f"{character_id}:{phase_id}" if character_id else None
+
             words = []
             for word in phase.get('vocabulary', []):
+                word_families, synonyms, collocations = LiraJSGenerator._collect_relations(
+                    word.get('german'),
+                    phase_reference,
+                )
+
                 words.append({
                     'word': word.get('german', ''),
                     'translation': word.get('russian', ''),
                     'transcription': word.get('transcription', ''),
                     'sentence': word.get('sentence', ''),
                     'sentenceTranslation': word.get('sentence_translation', ''),
+                    'wordFamily': word_families,
+                    'synonyms': synonyms,
+                    'collocations': collocations,
                 })
 
             phase_vocabularies[phase_id] = {
@@ -46,6 +130,27 @@ const phaseKeys = Object.keys(phaseVocabularies);
 let isTransitioning = false; // Prevent double clicks/taps
 let progressLineElement = null;
 let progressLineLength = 0;
+let relationsContainer = null;
+let relationsEmptyState = null;
+let relationsFeedbackElement = null;
+let relationsBaseList = null;
+let relationsTargetList = null;
+let relationsTargetTitle = null;
+let relationToggles = [];
+const relationState = {
+    activeType: 'families',
+    selectedBase: null,
+    matchedBases: new Set(),
+    matchedTargets: new Set(),
+    data: {
+        families: [],
+        collocations: [],
+        baseWords: {
+            families: [],
+            collocations: []
+        }
+    }
+};
 
 // Device detection
 const isTouchDevice = ('ontouchstart' in window) || 
@@ -127,6 +232,233 @@ function initializeProgressLine() {
     updateProgressLineByPercent(startValue);
 }
 
+function resetRelationState() {
+    relationState.selectedBase = null;
+    relationState.matchedBases.clear();
+    relationState.matchedTargets.clear();
+}
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+function handleTargetSelection(item, itemId) {
+    if (!relationState.selectedBase) {
+        if (relationsFeedbackElement) {
+            relationsFeedbackElement.textContent = 'Сначала выберите слово слева.';
+        }
+        return;
+    }
+
+    if (relationState.matchedTargets.has(itemId)) {
+        return;
+    }
+
+    if (item.baseWord === relationState.selectedBase) {
+        relationState.matchedTargets.add(itemId);
+        relationState.matchedBases.add(item.baseWord);
+        relationState.selectedBase = null;
+
+        if (relationsFeedbackElement) {
+            const mainPart = relationState.activeType === 'families'
+                ? `${item.word} — ${item.translation || ''}`
+                : `${item.phrase} — ${item.translation || ''}`;
+            let detail = `Отлично! ${mainPart.trim()}`;
+            if (relationState.activeType === 'collocations' && item.example) {
+                detail += ` (${item.example})`;
+            }
+            relationsFeedbackElement.textContent = detail;
+
+            const totalMatches = relationState.data.baseWords[relationState.activeType].length;
+            if (totalMatches > 0 && relationState.matchedBases.size === totalMatches) {
+                relationsFeedbackElement.textContent += ' Все пары для этой категории подобраны!';
+            }
+        }
+
+        renderRelations();
+    } else {
+        if (relationsFeedbackElement) {
+            relationsFeedbackElement.textContent = 'Это не подходит, попробуйте другую пару.';
+        }
+        if (relationsBaseList) {
+            const selectedButton = relationsBaseList.querySelector(`button[data-word="${relationState.selectedBase}"]`);
+            if (selectedButton) {
+                selectedButton.classList.add('shake');
+                setTimeout(() => selectedButton.classList.remove('shake'), 400);
+            }
+        }
+    }
+}
+
+function renderRelations() {
+    if (!relationsBaseList || !relationsTargetList) return;
+
+    const type = relationState.activeType;
+    const baseWords = relationState.data.baseWords[type] || [];
+    const items = relationState.data[type] || [];
+
+    relationsBaseList.innerHTML = '';
+    relationsTargetList.innerHTML = '';
+
+    if (relationsTargetTitle) {
+        relationsTargetTitle.textContent = type === 'families' ? 'Родственные формы' : 'Устойчивые выражения';
+    }
+
+    baseWords.forEach(baseWord => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'relation-card base-card';
+        button.textContent = baseWord;
+        button.dataset.word = baseWord;
+        button.disabled = relationState.matchedBases.has(baseWord);
+
+        if (relationState.selectedBase === baseWord) {
+            button.classList.add('selected');
+        }
+        if (relationState.matchedBases.has(baseWord)) {
+            button.classList.add('matched');
+        }
+
+        button.addEventListener('click', () => {
+            if (relationState.matchedBases.has(baseWord)) return;
+            relationState.selectedBase = relationState.selectedBase === baseWord ? null : baseWord;
+            renderRelations();
+        });
+
+        relationsBaseList.appendChild(button);
+    });
+
+    const shuffledItems = shuffleArray(items.slice());
+    shuffledItems.forEach(item => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'relation-card target-card';
+
+        const identifier = `${type}:${item.baseWord}:${type === 'families' ? item.word : item.phrase}`;
+        button.dataset.id = identifier;
+        button.dataset.baseWord = item.baseWord;
+
+        if (relationState.matchedTargets.has(identifier)) {
+            button.classList.add('matched');
+            button.disabled = true;
+        }
+
+        const mainLine = type === 'families' ? item.word : item.phrase;
+        const details = [];
+
+        if (item.translation) {
+            details.push(item.translation);
+        }
+
+        if (type === 'families') {
+            if (item.partOfSpeech) {
+                details.push(item.partOfSpeech);
+            }
+            if (item.note) {
+                details.push(item.note);
+            }
+        } else if (item.example) {
+            details.push(item.example);
+        }
+
+        button.innerHTML = `<span class="relation-main">${mainLine}</span>` +
+            (details.length ? `<span class="relation-sub">${details.join(' • ')}</span>` : '');
+
+        button.addEventListener('click', () => handleTargetSelection(item, identifier));
+        relationsTargetList.appendChild(button);
+    });
+}
+
+function setupRelationsForPhase(phaseKey) {
+    if (!relationsContainer || !relationsEmptyState) return;
+
+    const phase = phaseVocabularies[phaseKey];
+    if (!phase) return;
+
+    const families = [];
+    const collocations = [];
+    const familyBaseWords = new Set();
+    const collocationBaseWords = new Set();
+
+    (phase.words || []).forEach(word => {
+        if (Array.isArray(word.wordFamily) && word.wordFamily.length) {
+            word.wordFamily.forEach(item => {
+                families.push({
+                    baseWord: word.word,
+                    word: item.word,
+                    translation: item.translation || '',
+                    partOfSpeech: item.partOfSpeech || '',
+                    note: item.note || ''
+                });
+            });
+            familyBaseWords.add(word.word);
+        }
+
+        if (Array.isArray(word.collocations) && word.collocations.length) {
+            word.collocations.forEach(item => {
+                collocations.push({
+                    baseWord: word.word,
+                    phrase: item.phrase,
+                    translation: item.translation || '',
+                    example: item.example || ''
+                });
+            });
+            collocationBaseWords.add(word.word);
+        }
+    });
+
+    relationState.data = {
+        families,
+        collocations,
+        baseWords: {
+            families: Array.from(familyBaseWords),
+            collocations: Array.from(collocationBaseWords)
+        }
+    };
+
+    resetRelationState();
+
+    const hasFamilies = families.length > 0;
+    const hasCollocations = collocations.length > 0;
+
+    relationState.activeType = hasFamilies ? 'families' : 'collocations';
+
+    relationToggles.forEach(toggle => {
+        const type = toggle.dataset.type;
+        const hasData = type === 'families' ? hasFamilies : hasCollocations;
+        toggle.disabled = !hasData;
+        toggle.classList.toggle('disabled', !hasData);
+        toggle.setAttribute('aria-disabled', String(!hasData));
+        toggle.classList.toggle('active', relationState.activeType === type && hasData);
+    });
+
+    if (!hasFamilies && !hasCollocations) {
+        relationsContainer.classList.add('hidden');
+        relationsEmptyState.classList.remove('hidden');
+        if (relationsFeedbackElement) {
+            relationsFeedbackElement.textContent = 'Для этой фазы пока нет данных о родственных словах или коллокациях.';
+        }
+        if (relationsBaseList) relationsBaseList.innerHTML = '';
+        if (relationsTargetList) relationsTargetList.innerHTML = '';
+        return;
+    }
+
+    relationsEmptyState.classList.add('hidden');
+    relationsContainer.classList.remove('hidden');
+
+    if (relationsFeedbackElement) {
+        relationsFeedbackElement.textContent = relationState.activeType === 'families'
+            ? 'Сопоставьте слово с родственной формой справа.'
+            : 'Сопоставьте слово с подходящим выражением справа.';
+    }
+
+    renderRelations();
+}
+
 function displayVocabulary(phaseKey) {
     // Prevent multiple rapid transitions
     if (isTransitioning) return;
@@ -194,7 +526,9 @@ function displayVocabulary(phaseKey) {
             grid.appendChild(card);
         }, index * 50);
     });
-    
+
+    setupRelationsForPhase(phaseKey);
+
     // Update progress bar
     const progress = ((currentPhaseIndex + 1) / phaseKeys.length) * 100;
     if (progressFill) progressFill.style.width = progress + '%';
@@ -248,6 +582,34 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('[Init] Starting initialization...');
 
     const journeyPoints = document.querySelectorAll('.journey-point');
+    relationsContainer = document.getElementById('word-relations-game');
+    relationsEmptyState = document.querySelector('.relations-empty-state');
+    relationsFeedbackElement = document.querySelector('.relations-feedback');
+    relationsBaseList = document.querySelector('.relations-list.base-list');
+    relationsTargetList = document.querySelector('.relations-list.target-list');
+    relationsTargetTitle = document.querySelector('.target-title');
+    relationToggles = Array.from(document.querySelectorAll('.relations-toggle'));
+
+    relationToggles.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+            if (this.disabled || this.classList.contains('disabled')) {
+                return;
+            }
+
+            relationState.activeType = this.dataset.type;
+            resetRelationState();
+            relationToggles.forEach(btn => btn.classList.toggle('active', btn === this));
+
+            if (relationsFeedbackElement) {
+                relationsFeedbackElement.textContent = this.dataset.type === 'families'
+                    ? 'Сопоставьте слово с родственной формой справа.'
+                    : 'Сопоставьте слово с подходящим выражением справа.';
+            }
+
+            renderRelations();
+        });
+    });
+
     initializeProgressLine();
 
     console.log('[Init] Found', journeyPoints.length, 'journey points');
