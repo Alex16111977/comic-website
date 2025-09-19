@@ -26,6 +26,25 @@ class LiraJSGenerator:
                 elif not isinstance(themes, list):
                     themes = []
 
+                # Добавляем поля для relations функционала
+                word_family = word.get('wordFamily') or []
+                if isinstance(word_family, str):
+                    word_family = [word_family]
+                elif not isinstance(word_family, list):
+                    word_family = []
+
+                synonyms = word.get('synonyms') or []
+                if isinstance(synonyms, str):
+                    synonyms = [synonyms]
+                elif not isinstance(synonyms, list):
+                    synonyms = []
+
+                collocations = word.get('collocations') or []
+                if isinstance(collocations, str):
+                    collocations = [collocations]
+                elif not isinstance(collocations, list):
+                    collocations = []
+
                 words.append({
                     'word': word.get('german', ''),
                     'translation': word.get('russian', ''),
@@ -34,6 +53,9 @@ class LiraJSGenerator:
                     'sentenceTranslation': word.get('sentence_translation', ''),
                     'visual_hint': word.get('visual_hint', ''),
                     'themes': themes,
+                    'wordFamily': word_family,  # Для relations
+                    'synonyms': synonyms,        # Для relations
+                    'collocations': collocations # Для relations
                 })
 
             quizzes = []
@@ -207,6 +229,9 @@ function displayVocabulary(phaseKey) {
         quizCountElement.textContent = quizData.length;
     }
 
+    // Setup relations for current phase
+    setupRelationsForPhase(phaseKey);
+
     grid.innerHTML = '';
 
     phase.words.forEach((item, index) => {
@@ -256,6 +281,8 @@ function displayVocabulary(phaseKey) {
         isTransitioning = false;
     }, 500);
 }
+
+// ============= QUIZ FUNCTIONS (lines 240-400) =============
 
 function resetQuizContainer(container, activateFirstCard = false) {
     if (!container) return;
@@ -424,6 +451,264 @@ function attachQuizHandlers() {
     });
 }
 
+// ============= RELATIONS FUNCTIONS (lines 400-600) =============
+
+function setupRelationsForPhase(phaseKey) {
+    const relationsContainers = document.querySelectorAll('.relations-container');
+    relationsContainers.forEach(container => {
+        if (container.dataset.phase === phaseKey) {
+            container.classList.add('active');
+            renderRelations(container, phaseKey);
+        } else {
+            container.classList.remove('active');
+        }
+    });
+}
+
+function renderRelations(container, phaseKey) {
+    if (!container || !phaseKey) return;
+
+    const phase = phaseVocabularies[phaseKey];
+    if (!phase || !phase.words) return;
+
+    // Collect all relations data
+    const wordFamilies = [];
+    const synonymGroups = [];
+    const collocations = [];
+
+    phase.words.forEach(word => {
+        if (word.wordFamily && word.wordFamily.length > 0) {
+            wordFamilies.push({
+                base: word.word,
+                family: word.wordFamily
+            });
+        }
+        if (word.synonyms && word.synonyms.length > 0) {
+            synonymGroups.push({
+                word: word.word,
+                synonyms: word.synonyms
+            });
+        }
+        if (word.collocations && word.collocations.length > 0) {
+            collocations.push({
+                word: word.word,
+                collocations: word.collocations
+            });
+        }
+    });
+
+    // Render Word Families section
+    const familiesSection = container.querySelector('.word-families-section');
+    if (familiesSection && wordFamilies.length > 0) {
+        const content = familiesSection.querySelector('.relations-content');
+        if (content) {
+            content.innerHTML = wordFamilies.map((item, idx) => `
+                <div class="relation-group" data-group-index="${idx}">
+                    <div class="relation-header">${item.base}</div>
+                    <div class="drag-targets">
+                        ${item.family.map((word, wordIdx) => `
+                            <div class="drag-target" 
+                                 data-target="${word}"
+                                 data-group="${idx}"
+                                 data-word-index="${wordIdx}">
+                                <span class="target-placeholder">?</span>
+                                <span class="target-answer" style="display: none;">${word}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="drag-sources">
+                        ${item.family.map((word, wordIdx) => `
+                            <div class="drag-source" 
+                                 data-source="${word}"
+                                 data-group="${idx}"
+                                 data-word-index="${wordIdx}"
+                                 draggable="true">
+                                ${word}
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `).join('');
+            attachDragDropHandlers(content);
+        }
+    }
+
+    // Render Synonyms section
+    const synonymsSection = container.querySelector('.synonyms-section');
+    if (synonymsSection && synonymGroups.length > 0) {
+        const content = synonymsSection.querySelector('.relations-content');
+        if (content) {
+            content.innerHTML = synonymGroups.map((item, idx) => `
+                <div class="synonym-group">
+                    <div class="synonym-word">${item.word}</div>
+                    <div class="synonym-list">
+                        ${item.synonyms.map(syn => `<span class="synonym-item">${syn}</span>`).join('')}
+                    </div>
+                </div>
+            `).join('');
+        }
+    }
+
+    // Render Collocations section
+    const collocationsSection = container.querySelector('.collocations-section');
+    if (collocationsSection && collocations.length > 0) {
+        const content = collocationsSection.querySelector('.relations-content');
+        if (content) {
+            content.innerHTML = collocations.map((item, idx) => `
+                <div class="collocation-group">
+                    <div class="collocation-word">${item.word}</div>
+                    <div class="collocation-list">
+                        ${item.collocations.map(coll => `<span class="collocation-item">${coll}</span>`).join('')}
+                    </div>
+                </div>
+            `).join('');
+        }
+    }
+}
+
+function attachDragDropHandlers(container) {
+    const sources = container.querySelectorAll('.drag-source');
+    const targets = container.querySelectorAll('.drag-target');
+
+    sources.forEach(source => {
+        source.addEventListener('dragstart', handleDragStart);
+        source.addEventListener('dragend', handleDragEnd);
+
+        // Touch events for mobile
+        source.addEventListener('touchstart', handleTouchStart);
+        source.addEventListener('touchmove', handleTouchMove);
+        source.addEventListener('touchend', handleTouchEnd);
+    });
+
+    targets.forEach(target => {
+        target.addEventListener('dragover', handleDragOver);
+        target.addEventListener('drop', handleDrop);
+        target.addEventListener('dragleave', handleDragLeave);
+
+        // Click to select on mobile
+        target.addEventListener('click', handleTargetClick);
+    });
+}
+
+let draggedElement = null;
+let selectedSource = null;
+
+function handleDragStart(e) {
+    draggedElement = this;
+    this.classList.add('dragging');
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('text/html', this.innerHTML);
+}
+
+function handleDragEnd(e) {
+    this.classList.remove('dragging');
+    draggedElement = null;
+}
+
+function handleDragOver(e) {
+    if (e.preventDefault) {
+        e.preventDefault();
+    }
+    e.dataTransfer.dropEffect = 'move';
+    this.classList.add('drag-over');
+    return false;
+}
+
+function handleDragLeave(e) {
+    this.classList.remove('drag-over');
+}
+
+function handleDrop(e) {
+    if (e.stopPropagation) {
+        e.stopPropagation();
+    }
+    this.classList.remove('drag-over');
+
+    if (draggedElement && draggedElement !== this) {
+        const sourceData = draggedElement.dataset.source;
+        const targetData = this.dataset.target;
+
+        if (sourceData === targetData) {
+            this.classList.add('correct');
+            const placeholder = this.querySelector('.target-placeholder');
+            const answer = this.querySelector('.target-answer');
+            if (placeholder) placeholder.style.display = 'none';
+            if (answer) answer.style.display = 'block';
+            draggedElement.style.visibility = 'hidden';
+        } else {
+            this.classList.add('incorrect');
+            setTimeout(() => {
+                this.classList.remove('incorrect');
+            }, 500);
+        }
+    }
+    return false;
+}
+
+// Touch handlers for mobile
+let touchItem = null;
+
+function handleTouchStart(e) {
+    touchItem = this;
+    selectedSource = this;
+    this.classList.add('selected');
+}
+
+function handleTouchMove(e) {
+    e.preventDefault();
+}
+
+function handleTouchEnd(e) {
+    if (!touchItem) return;
+    
+    const touch = e.changedTouches[0];
+    const target = document.elementFromPoint(touch.clientX, touch.clientY);
+    
+    if (target && target.classList.contains('drag-target')) {
+        handleTargetSelection(target, touchItem);
+    }
+    
+    touchItem.classList.remove('selected');
+    touchItem = null;
+}
+
+function handleTargetClick(e) {
+    if (selectedSource) {
+        handleTargetSelection(this, selectedSource);
+        selectedSource.classList.remove('selected');
+        selectedSource = null;
+    }
+}
+
+function handleTargetSelection(target, source) {
+    const sourceData = source.dataset.source;
+    const targetData = target.dataset.target;
+
+    if (sourceData === targetData) {
+        target.classList.add('correct');
+        const placeholder = target.querySelector('.target-placeholder');
+        const answer = target.querySelector('.target-answer');
+        if (placeholder) placeholder.style.display = 'none';
+        if (answer) answer.style.display = 'block';
+        source.style.visibility = 'hidden';
+        
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(20);
+        }
+    } else {
+        target.classList.add('incorrect');
+        setTimeout(() => {
+            target.classList.remove('incorrect');
+        }, 500);
+        
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(40);
+        }
+    }
+}
+
+// ============= END OF RELATIONS FUNCTIONS =============
+
 // Update navigation buttons based on current position
 function updateNavigationButtons() {
     const prevBtn = document.querySelector('.prev-btn');
@@ -464,6 +749,25 @@ document.addEventListener('DOMContentLoaded', function() {
     const journeyPoints = document.querySelectorAll('.journey-point');
     initializeProgressLine();
     attachQuizHandlers();
+
+    // Initialize relation toggles
+    const relationToggles = document.querySelectorAll('.relation-toggle');
+    relationToggles.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+            const section = this.closest('.relation-section');
+            if (section) {
+                section.classList.toggle('expanded');
+                const content = section.querySelector('.relations-content');
+                if (content) {
+                    if (section.classList.contains('expanded')) {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    } else {
+                        content.style.maxHeight = '0';
+                    }
+                }
+            }
+        });
+    });
 
     console.log('[Init] Found', journeyPoints.length, 'journey points');
     
