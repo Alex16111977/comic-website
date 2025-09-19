@@ -1,5 +1,6 @@
 """HTML Generator for Lira Journey pages"""
 import json
+import random
 import re
 from pathlib import Path
 
@@ -137,6 +138,104 @@ class LiraHTMLGenerator(BaseGenerator):
 
         return metadata
 
+    @staticmethod
+    def _find_quiz_lexeme(quiz, vocabulary):
+        question = (quiz.get("question") or "").lower()
+        if not question:
+            return None
+
+        for word in vocabulary or []:
+            german = (word.get("german") or "").strip()
+            if not german:
+                continue
+            if german.lower() in question:
+                return german.lower()
+
+        quote_match = re.search(r"«([^»]+)»", question)
+        if quote_match:
+            return quote_match.group(1).strip().lower()
+
+        quote_match = re.search(r'"([^"]+)"', question)
+        if quote_match:
+            return quote_match.group(1).strip().lower()
+
+        return None
+
+    @staticmethod
+    def _build_quiz_choices(correct_answer, current_word, phase_vocab, neighbor_vocab_lists, journey_phases):
+        correct_lower = (correct_answer or "").strip().lower()
+        current_german = (current_word.get("german") or "").strip().lower()
+
+        candidates = []
+        seen = set()
+
+        def add_candidates(words):
+            for entry in words or []:
+                translation = (entry.get("russian") or "").strip()
+                if not translation:
+                    continue
+                translation_lower = translation.lower()
+                if translation_lower == correct_lower:
+                    continue
+                german = (entry.get("german") or "").strip().lower()
+                if german and german == current_german:
+                    continue
+                if translation_lower in seen:
+                    continue
+                seen.add(translation_lower)
+                candidates.append(translation)
+
+        add_candidates(phase_vocab)
+        for words in neighbor_vocab_lists:
+            add_candidates(words)
+
+        if len(candidates) < 2 and journey_phases:
+            for phase in journey_phases:
+                add_candidates(phase.get("vocabulary", []))
+                if len(candidates) >= 3:
+                    break
+
+        if len(candidates) < 2:
+            return None, None
+
+        false_count = min(3, len(candidates))
+        false_count = max(2, false_count)
+        false_choices = random.sample(candidates, false_count)
+        choices = false_choices + [correct_answer]
+        random.shuffle(choices)
+        correct_index = choices.index(correct_answer)
+        return choices, correct_index
+
+    def _generate_vocabulary_quiz(self, word, phase_vocab, journey_phases, index):
+        german = (word.get("german") or "").strip()
+        russian = (word.get("russian") or "").strip()
+        if not german or not russian:
+            return None
+
+        neighbor_vocab = []
+        if index > 0:
+            neighbor_vocab.append(journey_phases[index - 1].get("vocabulary", []))
+        if index + 1 < len(journey_phases):
+            neighbor_vocab.append(journey_phases[index + 1].get("vocabulary", []))
+
+        choices, correct_index = self._build_quiz_choices(
+            russian,
+            word,
+            phase_vocab,
+            neighbor_vocab,
+            journey_phases,
+        )
+
+        if not choices:
+            return None
+
+        question = f"Что означает немецкое слово «{german}»?"
+        return {
+            "question": question,
+            "choices": choices,
+            "correct_index": correct_index,
+        }
+
     def _prepare_exercises(self, journey_phases):
         """Prepare exercises with blanks replaced by interactive spans."""
         exercises = []
@@ -147,15 +246,39 @@ class LiraHTMLGenerator(BaseGenerator):
             phase_id = phase.get("id", f"phase-{index}")
             scene = phase.get("theatrical_scene")
 
+            phase_vocab = phase.get("vocabulary", [])
             phase_quizzes = []
+            covered_lexemes = set()
+
             for quiz in phase.get("quizzes", []):
-                phase_quizzes.append(
-                    {
-                        "question": quiz.get("question", ""),
-                        "choices": quiz.get("choices", []),
-                        "correct_index": quiz.get("correct_index", 0),
-                    }
+                normalized_quiz = {
+                    "question": quiz.get("question", ""),
+                    "choices": quiz.get("choices", []),
+                    "correct_index": quiz.get("correct_index", 0),
+                }
+                phase_quizzes.append(normalized_quiz)
+                lexeme = self._find_quiz_lexeme(quiz, phase_vocab)
+                if lexeme:
+                    covered_lexemes.add(lexeme)
+
+            for word in phase_vocab:
+                german = (word.get("german") or "").strip()
+                if not german:
+                    continue
+                if german.lower() in covered_lexemes:
+                    continue
+
+                generated_quiz = self._generate_vocabulary_quiz(
+                    word,
+                    phase_vocab,
+                    journey_phases,
+                    index,
                 )
+                if not generated_quiz:
+                    continue
+
+                phase_quizzes.append(generated_quiz)
+                covered_lexemes.add(german.lower())
 
             quizzes.append(
                 {
