@@ -144,12 +144,73 @@ class LiraHTMLGenerator(BaseGenerator):
         quizzes = []
         quizzes_map = {}
 
+        def _extract_question_word(question):
+            """Try to pull the german lexeme referenced in a quiz question."""
+            if not question:
+                return None
+
+            match = re.search(r"«([^»]+)»", question)
+            if match:
+                return match.group(1).strip()
+
+            match = re.search(r'"([^"]+)"', question)
+            if match:
+                return match.group(1).strip()
+
+            return None
+
         for index, phase in enumerate(journey_phases):
             phase_id = phase.get("id", f"phase-{index}")
             scene = phase.get("theatrical_scene")
 
+            vocabulary_words = []
+            for entry in phase.get("vocabulary", []):
+                german = (entry.get("german") or "").strip()
+                russian = (entry.get("russian") or "").strip()
+                if german and russian:
+                    vocabulary_words.append((german, russian))
+
+            existing_quizzes_data = list(phase.get("quizzes", []))
+            referenced_words = {
+                word.lower()
+                for word in (
+                    _extract_question_word(quiz.get("question"))
+                    for quiz in existing_quizzes_data
+                )
+                if word
+            }
+
+            if vocabulary_words:
+                all_translations = [russian for _, russian in vocabulary_words]
+                for german, russian in vocabulary_words:
+                    if german.lower() in referenced_words:
+                        continue
+
+                    distractor_pool = [
+                        option
+                        for option in all_translations
+                        if option.lower() != russian.lower()
+                    ]
+
+                    distractor_count = min(3, len(distractor_pool))
+                    if distractor_count < 2:
+                        distractor_count = len(distractor_pool)
+
+                    if distractor_count:
+                        distractors = random.sample(distractor_pool, distractor_count)
+                    else:
+                        distractors = []
+
+                    new_quiz = {
+                        "question": f"Что означает немецкое слово «{german}»?",
+                        "choices": [russian, *distractors],
+                        "correct_index": 0,
+                    }
+                    existing_quizzes_data.append(new_quiz)
+                    referenced_words.add(german.lower())
+
             phase_quizzes = []
-            for quiz in phase.get("quizzes", []):
+            for quiz in existing_quizzes_data:
                 choices = list(quiz.get("choices", []))
                 correct_index = quiz.get("correct_index", 0)
 
