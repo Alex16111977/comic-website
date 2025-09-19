@@ -61,13 +61,18 @@
         "Совершенный оттенок: завершённое действие «отвергать»"
       ],
       "synonyms": [
-        "отвергать",
-        "verstoßen — тоже «отвергать»"
+        "отвергать"
       ],
       "collocations": [
         "Ich weise alle seine Bitten ab. — Я отвергаю все его просьбы."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "verstoßen",
+          "note": "тоже «отвергать»"
+        }
+      ]
     },
     {
       "id": "word_0435",
@@ -163,13 +168,18 @@
       "synonyms": [
         "ничего",
         "не",
-        "misstrauen — тоже «не»",
         "подозревающий"
       ],
       "collocations": [
         "Ahnungslos vertraue ich meinem Bruder. — Ничего не подозревая, я доверяю брату."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "misstrauen",
+          "note": "тоже «не»"
+        }
+      ]
     },
     {
       "id": "word_0169",
@@ -261,14 +271,22 @@
         "Совершенный оттенок: завершённое действие «обвинять»"
       ],
       "synonyms": [
-        "обвинять",
-        "beschuldigen — тоже «обвинять»",
-        "verklagen — тоже «обвинять»"
+        "обвинять"
       ],
       "collocations": [
         "Ich klage sie ihrer Unmenschlichkeit an. — Я обвиняю её в бесчеловечности."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "beschuldigen",
+          "note": "тоже «обвинять»"
+        },
+        {
+          "synonym": "verklagen",
+          "note": "тоже «обвинять»"
+        }
+      ]
     },
     {
       "id": "word_0440",
@@ -393,13 +411,18 @@
         "Совершенный оттенок: завершённое действие «подозревать»"
       ],
       "synonyms": [
-        "подозревать",
-        "verdächtigen — тоже «подозревать»"
+        "подозревать"
       ],
       "collocations": [
         "Ich argwöhne Gift in meinem Wein. — Я подозреваю яд в моём вине."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "verdächtigen",
+          "note": "тоже «подозревать»"
+        }
+      ]
     },
     {
       "id": "word_0443",
@@ -695,13 +718,18 @@
         "Совершенный оттенок: завершённое действие «просыпаться»"
       ],
       "synonyms": [
-        "просыпаться",
-        "erwachen — тоже «просыпаться»"
+        "просыпаться"
       ],
       "collocations": [
         "Ich wache auf aus meinem langen Schlaf. — Я просыпаюсь от долгого сна."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "erwachen",
+          "note": "тоже «просыпаться»"
+        }
+      ]
     },
     {
       "id": "word_0171",
@@ -727,13 +755,18 @@
         "Совершенный оттенок: завершённое действие «расти»"
       ],
       "synonyms": [
-        "расти",
-        "wachsen — тоже «расти»"
+        "расти"
       ],
       "collocations": [
         "Im Sturm zeigt sich, wie wichtig das Aufwachsen ist. — Во время бури становится понятно, насколько важно расти."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "wachsen",
+          "note": "тоже «расти»"
+        }
+      ]
     },
     {
       "id": "word_0172",
@@ -759,14 +792,22 @@
         "Совершенный оттенок: завершённое действие «выдерживать»"
       ],
       "synonyms": [
-        "выдерживать",
-        "ausharren — тоже «выдерживать»",
-        "durchhalten — тоже «выдерживать»"
+        "выдерживать"
       ],
       "collocations": [
         "Der Narr spürt, wie das Aushalten alle verändert. — Шут чувствует, как умение выдерживать меняет всех."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "ausharren",
+          "note": "тоже «выдерживать»"
+        },
+        {
+          "synonym": "durchhalten",
+          "note": "тоже «выдерживать»"
+        }
+      ]
     },
     {
       "id": "word_0452",
@@ -794,14 +835,22 @@
         "Совершенный оттенок: завершённое действие «выдерживать»"
       ],
       "synonyms": [
-        "выдерживать",
-        "aushalten — тоже «выдерживать»",
-        "durchhalten — тоже «выдерживать»"
+        "выдерживать"
       ],
       "collocations": [
         "Ich harre aus bis zur Befreiung. — Я выдерживаю до освобождения."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "aushalten",
+          "note": "тоже «выдерживать»"
+        },
+        {
+          "synonym": "durchhalten",
+          "note": "тоже «выдерживать»"
+        }
+      ]
     },
     {
       "id": "word_0453",
@@ -829,14 +878,22 @@
         "Совершенный оттенок: завершённое действие «выдавать»"
       ],
       "synonyms": [
-        "выдавать",
-        "verheiraten — тоже «выдавать»",
-        "verraten — тоже «выдавать»"
+        "выдавать"
       ],
       "collocations": [
         "Ich liefere ihn seinen Feinden aus. — Я выдаю его врагам."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "verheiraten",
+          "note": "тоже «выдавать»"
+        },
+        {
+          "synonym": "verraten",
+          "note": "тоже «выдавать»"
+        }
+      ]
     },
     {
       "id": "word_0454",
@@ -933,13 +990,18 @@
         "Совершенный оттенок: завершённое действие «угрожать»"
       ],
       "synonyms": [
-        "угрожать",
-        "drohen — тоже «угрожать»"
+        "угрожать"
       ],
       "collocations": [
         "Ich bedrohe sie mit dem Tod. — Я угрожаю ей смертью."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "drohen",
+          "note": "тоже «угрожать»"
+        }
+      ]
     },
     {
       "id": "word_0173",
@@ -999,13 +1061,18 @@
         "Совершенный оттенок: завершённое действие «исполнять»"
       ],
       "synonyms": [
-        "исполнять",
-        "erfüllen — тоже «исполнять»"
+        "исполнять"
       ],
       "collocations": [
         "Jeden Befehl befolge ich sofort. — Каждый приказ я исполняю немедленно."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "erfüllen",
+          "note": "тоже «исполнять»"
+        }
+      ]
     },
     {
       "id": "word_0174",
@@ -1094,9 +1161,7 @@
       ],
       "synonyms": [
         "вожделеть",
-        "желать",
-        "verlangen — тоже «желать»",
-        "wünschen — тоже «желать»"
+        "желать"
       ],
       "collocations": [
         "Im Sturm zeigt sich, wie wichtig das Begehren ist. — Во время бури становится понятно, насколько важно желать.",
@@ -1104,7 +1169,17 @@
         "Ich begehre die Krone für mich selbst. — Я вожделею корону для себя.",
         "Ich begehre Edmund mehr als mein Leben. — Я желаю Эдмунда больше жизни."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "verlangen",
+          "note": "тоже «желать»"
+        },
+        {
+          "synonym": "wünschen",
+          "note": "тоже «желать»"
+        }
+      ]
     },
     {
       "id": "word_0458",
@@ -1169,14 +1244,19 @@
         "Совершенный оттенок: завершённое действие «понимать»"
       ],
       "synonyms": [
-        "понимать",
-        "verstehen — тоже «понимать»"
+        "понимать"
       ],
       "collocations": [
         "Das Begreifen fällt Lear unerwartet schwer. — Лиру неожиданно тяжело понимать.",
         "Ich begreife das Ausmaß ihrer Grausamkeit. — Я понимаю масштаб её жестокости."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "verstehen",
+          "note": "тоже «понимать»"
+        }
+      ]
     },
     {
       "id": "word_0178",
@@ -1268,13 +1348,18 @@
         "Совершенный оттенок: завершённое действие «бороться»"
       ],
       "synonyms": [
-        "бороться",
-        "kämpfen — тоже «бороться»"
+        "бороться"
       ],
       "collocations": [
         "Ich bekämpfe sie mit allen Mitteln. — Я борюсь с ней всеми средствами."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "kämpfen",
+          "note": "тоже «бороться»"
+        }
+      ]
     },
     {
       "id": "word_0180",
@@ -1363,13 +1448,18 @@
         "Совершенный оттенок: завершённое действие «лгать»"
       ],
       "synonyms": [
-        "лгать",
-        "lügen — тоже «лгать»"
+        "лгать"
       ],
       "collocations": [
         "Cordelia zeigt, dass das Belügen auch ohne Stolz möglich ist. — Корделия показывает, что лгать можно и без гордыни."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "lügen",
+          "note": "тоже «лгать»"
+        }
+      ]
     },
     {
       "id": "word_0460",
@@ -1498,14 +1588,22 @@
         "Совершенный оттенок: завершённое действие «обвинять»"
       ],
       "synonyms": [
-        "обвинять",
-        "anklagen — тоже «обвинять»",
-        "verklagen — тоже «обвинять»"
+        "обвинять"
       ],
       "collocations": [
         "Ich beschuldige Edgar des Verrats. — Я обвиняю Эдгара в предательстве."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "anklagen",
+          "note": "тоже «обвинять»"
+        },
+        {
+          "synonym": "verklagen",
+          "note": "тоже «обвинять»"
+        }
+      ]
     },
     {
       "id": "word_0184",
@@ -1531,9 +1629,7 @@
         "Совершенный оттенок: завершённое действие «защищать»"
       ],
       "synonyms": [
-        "защищать",
-        "schützen — тоже «защищать»",
-        "verteidigen — тоже «защищать»"
+        "защищать"
       ],
       "collocations": [
         "Der Narr spürt, wie das Beschützen alle verändert. — Шут чувствует, как умение защищать меняет всех.",
@@ -1541,7 +1637,17 @@
         "Heimlich beschütze ich den wahnsinnigen König. — Тайно я защищаю безумного короля.",
         "Ich kann ihn aus der Ferne nicht beschützen. — Я не могу защитить его издалека."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "schützen",
+          "note": "тоже «защищать»"
+        },
+        {
+          "synonym": "verteidigen",
+          "note": "тоже «защищать»"
+        }
+      ]
     },
     {
       "id": "word_0463",
@@ -1601,15 +1707,23 @@
       ],
       "synonyms": [
         "карать",
-        "наказывать",
-        "strafen — тоже «наказывать»",
-        "züchtigen — тоже «наказывать»"
+        "наказывать"
       ],
       "collocations": [
         "Das Bestrafen fällt Lear unerwartet schwer. — Лиру неожиданно тяжело наказывать.",
         "Ich bestrafe Kent für seine Frechheit. — Я караю Кента за его дерзость."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "strafen",
+          "note": "тоже «наказывать»"
+        },
+        {
+          "synonym": "züchtigen",
+          "note": "тоже «наказывать»"
+        }
+      ]
     },
     {
       "id": "word_0464",
@@ -1669,16 +1783,27 @@
       ],
       "synonyms": [
         "изменять",
-        "verstellen — тоже «изменять»",
-        "обманывать",
-        "hintergehen — тоже «обманывать»",
-        "täuschen — тоже «обманывать»"
+        "обманывать"
       ],
       "collocations": [
         "Cordelia zeigt, dass das Betrügen auch ohne Stolz möglich ist. — Корделия показывает, что обманывать можно и без гордыни.",
         "Ich betrüge ihn mit Edmund. — Я изменяю ему с Эдмундом."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "verstellen",
+          "note": "тоже «изменять»"
+        },
+        {
+          "synonym": "hintergehen",
+          "note": "тоже «обманывать»"
+        },
+        {
+          "synonym": "täuschen",
+          "note": "тоже «обманывать»"
+        }
+      ]
     },
     {
       "id": "word_0465",
@@ -1710,14 +1835,19 @@
       ],
       "synonyms": [
         "умолять",
-        "просить",
-        "bitten — тоже «просить»"
+        "просить"
       ],
       "collocations": [
         "Um mein Leben bettle ich vergeblich. — О жизни я умоляю напрасно.",
         "Muss ich um Unterkunft betteln bei meinen eigenen Kindern? — Должен ли я просить крова у собственных детей?"
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "bitten",
+          "note": "тоже «просить»"
+        }
+      ]
     },
     {
       "id": "word_0466",
@@ -1935,13 +2065,18 @@
         "Совершенный оттенок: завершённое действие «просить»"
       ],
       "synonyms": [
-        "просить",
-        "betteln — тоже «просить»"
+        "просить"
       ],
       "collocations": [
         "Cordelia zeigt, dass das Bitten auch ohne Stolz möglich ist. — Корделия показывает, что просить можно и без гордыни."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "betteln",
+          "note": "тоже «просить»"
+        }
+      ]
     },
     {
       "id": "word_0469",
@@ -2296,14 +2431,19 @@
         "Семейство значений: убежище"
       ],
       "synonyms": [
-        "убежище",
-        "die Zuflucht — тоже «убежище»"
+        "убежище"
       ],
       "collocations": [
         "Lears Herz wird schwer, wenn das Asyl zur Sprache kommt. — Сердце Лира тяжелеет: «убежище» звучит слишком близко."
       ],
       "visual_hint": "📚",
-      "gender": "neuter"
+      "gender": "neuter",
+      "synonym_notes": [
+        {
+          "synonym": "die Zuflucht",
+          "note": "тоже «убежище»"
+        }
+      ]
     },
     {
       "id": "word_0003",
@@ -2634,13 +2774,18 @@
         "Семейство значений: ужас"
       ],
       "synonyms": [
-        "ужас",
-        "das Grauen — тоже «ужас»"
+        "ужас"
       ],
       "collocations": [
         "Mit Entsetzen sehe ich ihr wahres Gesicht. — С ужасом я вижу её истинное лицо."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "das Grauen",
+          "note": "тоже «ужас»"
+        }
+      ]
     },
     {
       "id": "word_0011",
@@ -2731,14 +2876,19 @@
         "Семейство значений: изгнание"
       ],
       "synonyms": [
-        "изгнание",
-        "die Verbannung — тоже «изгнание»"
+        "изгнание"
       ],
       "collocations": [
         "Für die Höflinge bleibt das Exil ein ständiges Thema. — Для придворных «изгнание» — постоянная тема."
       ],
       "visual_hint": "📚",
-      "gender": "neuter"
+      "gender": "neuter",
+      "synonym_notes": [
+        {
+          "synonym": "die Verbannung",
+          "note": "тоже «изгнание»"
+        }
+      ]
     },
     {
       "id": "word_0014",
@@ -3056,14 +3206,19 @@
         "Семейство значений: ужас"
       ],
       "synonyms": [
-        "ужас",
-        "das Entsetzen — тоже «ужас»"
+        "ужас"
       ],
       "collocations": [
         "Der Narr spottet, sobald das Grauen erwähnt wird. — Шут насмехается, едва кто-то произносит «ужас»."
       ],
       "visual_hint": "📚",
-      "gender": "neuter"
+      "gender": "neuter",
+      "synonym_notes": [
+        {
+          "synonym": "das Entsetzen",
+          "note": "тоже «ужас»"
+        }
+      ]
     },
     {
       "id": "word_0023",
@@ -4074,15 +4229,20 @@
         "Совершенный оттенок: завершённое действие «унижать»"
       ],
       "synonyms": [
-        "унижать",
-        "erniedrigen — тоже «унижать»"
+        "унижать"
       ],
       "collocations": [
         "Meine eigene Tochter will mich demütigen! — Моя собственная дочь хочет меня унизить!",
         "Ich demütige ihn vor aller Augen. — Я унижаю его на глазах у всех.",
         "Ich demütige meinen alten Vater ohne Mitleid. — Я унижаю старого отца без жалости."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "erniedrigen",
+          "note": "тоже «унижать»"
+        }
+      ]
     },
     {
       "id": "word_0487",
@@ -4219,8 +4379,6 @@
       ],
       "synonyms": [
         "знать",
-        "kennen — тоже «знать»",
-        "wissen — тоже «знать»",
         "дворянство"
       ],
       "collocations": [
@@ -4229,7 +4387,17 @@
         "Als Adel diene ich meinem König treu. — Как знать я верно служу своему королю."
       ],
       "visual_hint": "📚",
-      "gender": "masculine"
+      "gender": "masculine",
+      "synonym_notes": [
+        {
+          "synonym": "kennen",
+          "note": "тоже «знать»"
+        },
+        {
+          "synonym": "wissen",
+          "note": "тоже «знать»"
+        }
+      ]
     },
     {
       "id": "word_0490",
@@ -4419,8 +4587,7 @@
         "Семейство значений: обман"
       ],
       "synonyms": [
-        "обман",
-        "die Täuschung — тоже «обман»"
+        "обман"
       ],
       "collocations": [
         "Cordelia merkt sich genau, wie der Betrug verteilt wird. — Корделия внимательно следит, кому достанется «обман».",
@@ -4428,7 +4595,13 @@
         "Ich erkenne den Betrug nicht. — Я не распознаю обман."
       ],
       "visual_hint": "📚",
-      "gender": "masculine"
+      "gender": "masculine",
+      "synonym_notes": [
+        {
+          "synonym": "die Täuschung",
+          "note": "тоже «обман»"
+        }
+      ]
     },
     {
       "id": "word_0493",
@@ -5020,13 +5193,18 @@
         "Семейство значений: мир"
       ],
       "synonyms": [
-        "мир",
-        "die Welt — тоже «мир»"
+        "мир"
       ],
       "collocations": [
         "Der Friede soll wieder ins Land kommen. — Мир должен вернуться в страну."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "die Welt",
+          "note": "тоже «мир»"
+        }
+      ]
     },
     {
       "id": "word_0061",
@@ -6881,13 +7059,18 @@
         "Семейство значений: интрига"
       ],
       "synonyms": [
-        "интрига",
-        "die Intrige — тоже «интрига»"
+        "интрига"
       ],
       "collocations": [
         "Diese Affäre wird tödlich enden. — Эта интрига закончится смертью."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "die Intrige",
+          "note": "тоже «интрига»"
+        }
+      ]
     },
     {
       "id": "word_0522",
@@ -6979,15 +7162,20 @@
         "Семейство значений: страх"
       ],
       "synonyms": [
-        "страх",
-        "die Furcht — тоже «страх»"
+        "страх"
       ],
       "collocations": [
         "Im Thronsaal verstummen die Gespräche über die Angst nie. — В тронном зале постоянно звучит слово «страх».",
         "Die Angst um meinen Vater wächst täglich. — Страх за отца растёт с каждым днём."
       ],
       "visual_hint": "📚",
-      "gender": "feminine"
+      "gender": "feminine",
+      "synonym_notes": [
+        {
+          "synonym": "die Furcht",
+          "note": "тоже «страх»"
+        }
+      ]
     },
     {
       "id": "word_0094",
@@ -8380,13 +8568,18 @@
         "Семейство значений: страх"
       ],
       "synonyms": [
-        "страх",
-        "die Angst — тоже «страх»"
+        "страх"
       ],
       "collocations": [
         "Durch Furcht halte ich alle unter Kontrolle. — Страхом я держу всех под контролем."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "die Angst",
+          "note": "тоже «страх»"
+        }
+      ]
     },
     {
       "id": "word_0114",
@@ -9161,8 +9354,7 @@
         "Семейство значений: интрига"
       ],
       "synonyms": [
-        "интрига",
-        "die Affäre — тоже «интрига»"
+        "интрига"
       ],
       "collocations": [
         "Während des Sturms wirkt die Intrige noch bedrückender. — Во время бури само «интрига» звучит ещё тяжелее.",
@@ -9171,7 +9363,13 @@
         "Meine Intrige wird sie vernichten. — Моя интрига уничтожит её."
       ],
       "visual_hint": "📚",
-      "gender": "feminine"
+      "gender": "feminine",
+      "synonym_notes": [
+        {
+          "synonym": "die Affäre",
+          "note": "тоже «интрига»"
+        }
+      ]
     },
     {
       "id": "word_0556",
@@ -9905,15 +10103,20 @@
         "Семейство значений: природа"
       ],
       "synonyms": [
-        "природа",
-        "die Wildnis — тоже «природа»"
+        "природа"
       ],
       "collocations": [
         "Im Thronsaal verstummen die Gespräche über die Natur nie. — В тронном зале постоянно звучит слово «природа».",
         "Die Natur ist meine Göttin, nicht das Gesetz. — Природа - моя богиня, не закон."
       ],
       "visual_hint": "📚",
-      "gender": "feminine"
+      "gender": "feminine",
+      "synonym_notes": [
+        {
+          "synonym": "die Wildnis",
+          "note": "тоже «природа»"
+        }
+      ]
     },
     {
       "id": "word_0569",
@@ -11055,14 +11258,19 @@
         "Семейство значений: обман"
       ],
       "synonyms": [
-        "обман",
-        "der Betrug — тоже «обман»"
+        "обман"
       ],
       "collocations": [
         "Die Täuschung ist vollkommen. — Обман совершенен.",
         "Edgars liebevolle Täuschung rettet mich. — Любящий обман Эдгара спасает меня."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "der Betrug",
+          "note": "тоже «обман»"
+        }
+      ]
     },
     {
       "id": "word_0155",
@@ -11291,13 +11499,18 @@
         "Семейство значений: изгнание"
       ],
       "synonyms": [
-        "изгнание",
-        "das Exil — тоже «изгнание»"
+        "изгнание"
       ],
       "collocations": [
         "Die Verbannung ist der Preis für meine Ehrlichkeit. — Изгнание - цена моей честности."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "das Exil",
+          "note": "тоже «изгнание»"
+        }
+      ]
     },
     {
       "id": "word_0590",
@@ -11836,14 +12049,19 @@
         "Семейство значений: мир"
       ],
       "synonyms": [
-        "мир",
-        "der Friede — тоже «мир»"
+        "мир"
       ],
       "collocations": [
         "Während des Sturms wirkt die Welt noch bedrückender. — Во время бури само «мир» звучит ещё тяжелее."
       ],
       "visual_hint": "📚",
-      "gender": "feminine"
+      "gender": "feminine",
+      "synonym_notes": [
+        {
+          "synonym": "der Friede",
+          "note": "тоже «мир»"
+        }
+      ]
     },
     {
       "id": "word_0163",
@@ -11870,14 +12088,19 @@
       ],
       "synonyms": [
         "дикая",
-        "природа",
-        "die Natur — тоже «природа»"
+        "природа"
       ],
       "collocations": [
         "Für die Höflinge bleibt die Wildnis ein ständiges Thema. — Для придворных «дикая природа» — постоянная тема."
       ],
       "visual_hint": "📚",
-      "gender": "feminine"
+      "gender": "feminine",
+      "synonym_notes": [
+        {
+          "synonym": "die Natur",
+          "note": "тоже «природа»"
+        }
+      ]
     },
     {
       "id": "word_0599",
@@ -12138,13 +12361,18 @@
         "Семейство значений: убежище"
       ],
       "synonyms": [
-        "убежище",
-        "das Asyl — тоже «убежище»"
+        "убежище"
       ],
       "collocations": [
         "Ich suche Zuflucht für uns beide. — Я ищу убежище для нас обоих."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "das Asyl",
+          "note": "тоже «убежище»"
+        }
+      ]
     },
     {
       "id": "word_0167",
@@ -12334,13 +12562,18 @@
         "Совершенный оттенок: завершённое действие «угрожать»"
       ],
       "synonyms": [
-        "угрожать",
-        "bedrohen — тоже «угрожать»"
+        "угрожать"
       ],
       "collocations": [
         "Der Narr spürt, wie das Drohen alle verändert. — Шут чувствует, как умение угрожать меняет всех."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "bedrohen",
+          "note": "тоже «угрожать»"
+        }
+      ]
     },
     {
       "id": "word_0606",
@@ -12368,14 +12601,22 @@
         "Совершенный оттенок: завершённое действие «терпеть»"
       ],
       "synonyms": [
-        "терпеть",
-        "erdulden — тоже «терпеть»",
-        "ertragen — тоже «терпеть»"
+        "терпеть"
       ],
       "collocations": [
         "Ich dulde ihre Grausamkeit zu lange. — Я слишком долго терплю её жестокость."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "erdulden",
+          "note": "тоже «терпеть»"
+        },
+        {
+          "synonym": "ertragen",
+          "note": "тоже «терпеть»"
+        }
+      ]
     },
     {
       "id": "word_0197",
@@ -12401,15 +12642,23 @@
         "Совершенный оттенок: завершённое действие «выдерживать»"
       ],
       "synonyms": [
-        "выдерживать",
-        "aushalten — тоже «выдерживать»",
-        "ausharren — тоже «выдерживать»"
+        "выдерживать"
       ],
       "collocations": [
         "Das Durchhalten fällt Lear unerwartet schwer. — Лиру неожиданно тяжело выдерживать.",
         "Gemeinsam werden wir durchhalten. — Вместе мы выдержим."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "aushalten",
+          "note": "тоже «выдерживать»"
+        },
+        {
+          "synonym": "ausharren",
+          "note": "тоже «выдерживать»"
+        }
+      ]
     },
     {
       "id": "word_0607",
@@ -12565,13 +12814,18 @@
         "Совершенный оттенок: завершённое действие «запирать»"
       ],
       "synonyms": [
-        "запирать",
-        "verschließen — тоже «запирать»"
+        "запирать"
       ],
       "collocations": [
         "Im Sturm zeigt sich, wie wichtig das Einsperren ist. — Во время бури становится понятно, насколько важно запирать."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "verschließen",
+          "note": "тоже «запирать»"
+        }
+      ]
     },
     {
       "id": "word_0200",
@@ -13025,14 +13279,22 @@
         "Совершенный оттенок: завершённое действие «терпеть»"
       ],
       "synonyms": [
-        "терпеть",
-        "dulden — тоже «терпеть»",
-        "ertragen — тоже «терпеть»"
+        "терпеть"
       ],
       "collocations": [
         "Ich erdulde die Schande ohne Klage. — Я терплю позор без жалоб."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "dulden",
+          "note": "тоже «терпеть»"
+        },
+        {
+          "synonym": "ertragen",
+          "note": "тоже «терпеть»"
+        }
+      ]
     },
     {
       "id": "word_0210",
@@ -13058,13 +13320,18 @@
         "Совершенный оттенок: завершённое действие «происходить»"
       ],
       "synonyms": [
-        "происходить",
-        "geschehen — тоже «происходить»"
+        "происходить"
       ],
       "collocations": [
         "Cordelia zeigt, dass das Ereignen auch ohne Stolz möglich ist. — Корделия показывает, что происходить можно и без гордыни."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "geschehen",
+          "note": "тоже «происходить»"
+        }
+      ]
     },
     {
       "id": "word_0211",
@@ -13090,14 +13357,22 @@
         "Совершенный оттенок: завершённое действие «узнавать»"
       ],
       "synonyms": [
-        "узнавать",
-        "erkennen — тоже «узнавать»",
-        "wiedererkennen — тоже «узнавать»"
+        "узнавать"
       ],
       "collocations": [
         "Im Sturm zeigt sich, wie wichtig das Erfahren ist. — Во время бури становится понятно, насколько важно узнавать."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "erkennen",
+          "note": "тоже «узнавать»"
+        },
+        {
+          "synonym": "wiedererkennen",
+          "note": "тоже «узнавать»"
+        }
+      ]
     },
     {
       "id": "word_0212",
@@ -13123,13 +13398,18 @@
         "Совершенный оттенок: завершённое действие «исполнять»"
       ],
       "synonyms": [
-        "исполнять",
-        "befolgen — тоже «исполнять»"
+        "исполнять"
       ],
       "collocations": [
         "Der Narr spürt, wie das Erfüllen alle verändert. — Шут чувствует, как умение исполнять меняет всех."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "befolgen",
+          "note": "тоже «исполнять»"
+        }
+      ]
     },
     {
       "id": "word_0614",
@@ -13284,9 +13564,7 @@
       ],
       "synonyms": [
         "познавать",
-        "узнавать",
-        "erfahren — тоже «узнавать»",
-        "wiedererkennen — тоже «узнавать»"
+        "узнавать"
       ],
       "collocations": [
         "Im Sturm zeigt sich, wie wichtig das Erkennen ist. — Во время бури становится понятно, насколько важно узнавать.",
@@ -13295,7 +13573,17 @@
         "Endlich erkenne ich meinen treuen Edgar. — Наконец я узнаю моего верного Эдгара.",
         "Ich erkenne die Wahrheit hinter dem Schein. — Я познаю правду за видимостью."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "erfahren",
+          "note": "тоже «узнавать»"
+        },
+        {
+          "synonym": "wiedererkennen",
+          "note": "тоже «узнавать»"
+        }
+      ]
     },
     {
       "id": "word_0616",
@@ -13425,14 +13713,19 @@
         "Совершенный оттенок: завершённое действие «унижать»"
       ],
       "synonyms": [
-        "унижать",
-        "demütigen — тоже «унижать»"
+        "унижать"
       ],
       "collocations": [
         "Ich erniedrige den einst mächtigen König. — Я унижаю некогда могущественного короля.",
         "Ich erniedrige den treuen Diener. — Я унижаю верного слугу."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "demütigen",
+          "note": "тоже «унижать»"
+        }
+      ]
     },
     {
       "id": "word_0216",
@@ -13620,14 +13913,22 @@
         "Совершенный оттенок: завершённое действие «терпеть»"
       ],
       "synonyms": [
-        "терпеть",
-        "dulden — тоже «терпеть»",
-        "erdulden — тоже «терпеть»"
+        "терпеть"
       ],
       "collocations": [
         "Der Narr spürt, wie das Ertragen alle verändert. — Шут чувствует, как умение терпеть меняет всех."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "dulden",
+          "note": "тоже «терпеть»"
+        },
+        {
+          "synonym": "erdulden",
+          "note": "тоже «терпеть»"
+        }
+      ]
     },
     {
       "id": "word_0221",
@@ -13654,14 +13955,19 @@
       ],
       "synonyms": [
         "пробуждаться",
-        "просыпаться",
-        "aufwachen — тоже «просыпаться»"
+        "просыпаться"
       ],
       "collocations": [
         "Das Erwachen fällt Lear unerwartet schwer. — Лиру неожиданно тяжело просыпаться.",
         "Endlich erwache ich aus meiner Blindheit. — Наконец я пробуждаюсь от своей слепоты."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "aufwachen",
+          "note": "тоже «просыпаться»"
+        }
+      ]
     },
     {
       "id": "word_0222",
@@ -13789,15 +14095,20 @@
         "Совершенный оттенок: завершённое действие «падать»"
       ],
       "synonyms": [
-        "падать",
-        "stürzen — тоже «падать»"
+        "падать"
       ],
       "collocations": [
         "Der Narr spürt, wie das Fallen alle verändert. — Шут чувствует, как умение падать меняет всех.",
         "Ich falle wie der Feigling, der ich bin. — Я падаю как трус, которым являюсь.",
         "Ich falle von seinem gerechten Schwert. — Я падаю от его справедливого меча."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "stürzen",
+          "note": "тоже «падать»"
+        }
+      ]
     },
     {
       "id": "word_0225",
@@ -14015,14 +14326,19 @@
         "Совершенный оттенок: завершённое действие «бежать»"
       ],
       "synonyms": [
-        "бежать",
-        "rennen — тоже «бежать»"
+        "бежать"
       ],
       "collocations": [
         "Der Narr spürt, wie das Fliehen alle verändert. — Шут чувствует, как умение бежать меняет всех.",
         "Ich muss vor falschen Anschuldigungen fliehen. — Я должен бежать от ложных обвинений."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "rennen",
+          "note": "тоже «бежать»"
+        }
+      ]
     },
     {
       "id": "word_0229",
@@ -14048,14 +14364,22 @@
         "Совершенный оттенок: завершённое действие «проклинать»"
       ],
       "synonyms": [
-        "проклинать",
-        "verfluchen — тоже «проклинать»",
-        "verwünschen — тоже «проклинать»"
+        "проклинать"
       ],
       "collocations": [
         "Das Fluchen fällt Lear unerwartet schwer. — Лиру неожиданно тяжело проклинать."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "verfluchen",
+          "note": "тоже «проклинать»"
+        },
+        {
+          "synonym": "verwünschen",
+          "note": "тоже «проклинать»"
+        }
+      ]
     },
     {
       "id": "word_0230",
@@ -14384,14 +14708,19 @@
         "Совершенный оттенок: завершённое действие «вести»"
       ],
       "synonyms": [
-        "вести",
-        "verhalten — тоже «вести»"
+        "вести"
       ],
       "collocations": [
         "Der Narr spürt, wie das Führen alle verändert. — Шут чувствует, как умение вести меняет всех.",
         "Ich führe ihn sicher durch die Dunkelheit. — Я веду его безопасно сквозь тьму."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "verhalten",
+          "note": "тоже «вести»"
+        }
+      ]
     },
     {
       "id": "word_0234",
@@ -14642,13 +14971,18 @@
         "Совершенный оттенок: завершённое действие «происходить»"
       ],
       "synonyms": [
-        "происходить",
-        "ereignen — тоже «происходить»"
+        "происходить"
       ],
       "collocations": [
         "Cordelia zeigt, dass das Geschehen auch ohne Stolz möglich ist. — Корделия показывает, что происходить можно и без гордыни."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "ereignen",
+          "note": "тоже «происходить»"
+        }
+      ]
     },
     {
       "id": "word_0239",
@@ -14871,14 +15205,22 @@
         "Совершенный оттенок: завершённое действие «размышлять»"
       ],
       "synonyms": [
-        "размышлять",
-        "nachdenken — тоже «размышлять»",
-        "sinnen — тоже «размышлять»"
+        "размышлять"
       ],
       "collocations": [
         "Nachts grüble ich über richtig und falsch. — Ночами я размышляю о правильном и неправильном."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "nachdenken",
+          "note": "тоже «размышлять»"
+        },
+        {
+          "synonym": "sinnen",
+          "note": "тоже «размышлять»"
+        }
+      ]
     },
     {
       "id": "word_0242",
@@ -15192,15 +15534,20 @@
         "Совершенный оттенок: завершённое действие «править»"
       ],
       "synonyms": [
-        "править",
-        "regieren — тоже «править»"
+        "править"
       ],
       "collocations": [
         "Der Narr spürt, wie das Herrschen alle verändert. — Шут чувствует, как умение править меняет всех.",
         "Ich habe lange genug geherrscht. — Я правил достаточно долго.",
         "Jetzt herrsche ich über meine Länder. — Теперь я правлю своими землями."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "regieren",
+          "note": "тоже «править»"
+        }
+      ]
     },
     {
       "id": "word_0641",
@@ -15328,14 +15675,22 @@
         "Совершенный оттенок: завершённое действие «обманывать»"
       ],
       "synonyms": [
-        "обманывать",
-        "betrügen — тоже «обманывать»",
-        "täuschen — тоже «обманывать»"
+        "обманывать"
       ],
       "collocations": [
         "Ich hintergehe jeden, der mir traut. — Я обманываю каждого, кто мне доверяет."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "betrügen",
+          "note": "тоже «обманывать»"
+        },
+        {
+          "synonym": "täuschen",
+          "note": "тоже «обманывать»"
+        }
+      ]
     },
     {
       "id": "word_0249",
@@ -15558,14 +15913,22 @@
         "Совершенный оттенок: завершённое действие «знать»"
       ],
       "synonyms": [
-        "знать",
-        "der Adel — тоже «знать»",
-        "wissen — тоже «знать»"
+        "знать"
       ],
       "collocations": [
         "Das Kennen fällt Lear unerwartet schwer. — Лиру неожиданно тяжело знать."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "der Adel",
+          "note": "тоже «знать»"
+        },
+        {
+          "synonym": "wissen",
+          "note": "тоже «знать»"
+        }
+      ]
     },
     {
       "id": "word_0254",
@@ -15625,13 +15988,18 @@
       ],
       "synonyms": [
         "ясно",
-        "видеть",
-        "sehen — тоже «видеть»"
+        "видеть"
       ],
       "collocations": [
         "Zum ersten Mal sehe ich klar. — Впервые я вижу ясно."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "sehen",
+          "note": "тоже «видеть»"
+        }
+      ]
     },
     {
       "id": "word_0649",
@@ -15852,7 +16220,6 @@
       ],
       "synonyms": [
         "бороться",
-        "bekämpfen — тоже «бороться»",
         "сражаться"
       ],
       "collocations": [
@@ -15860,7 +16227,13 @@
         "Ich kämpfe gegen alle seine Feinde. — Я сражаюсь против всех его врагов.",
         "Ich kämpfe um das, was ich begehre. — Я борюсь за то, чего желаю."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "bekämpfen",
+          "note": "тоже «бороться»"
+        }
+      ]
     },
     {
       "id": "word_0256",
@@ -16012,13 +16385,18 @@
         "Совершенный оттенок: завершённое действие «жить»"
       ],
       "synonyms": [
-        "жить",
-        "wohnen — тоже «жить»"
+        "жить"
       ],
       "collocations": [
         "Der Narr spürt, wie das Leben alle verändert. — Шут чувствует, как умение жить меняет всех."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "wohnen",
+          "note": "тоже «жить»"
+        }
+      ]
     },
     {
       "id": "word_0654",
@@ -16274,14 +16652,19 @@
         "Совершенный оттенок: завершённое действие «лгать»"
       ],
       "synonyms": [
-        "лгать",
-        "belügen — тоже «лгать»"
+        "лгать"
       ],
       "collocations": [
         "Der Narr spürt, wie das Lügen alle verändert. — Шут чувствует, как умение лгать меняет всех.",
         "Ich lüge ohne mit der Wimper zu zucken. — Я лгу не моргнув глазом."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "belügen",
+          "note": "тоже «лгать»"
+        }
+      ]
     },
     {
       "id": "word_0265",
@@ -16307,13 +16690,18 @@
         "Совершенный оттенок: завершённое действие «делать»"
       ],
       "synonyms": [
-        "делать",
-        "tun — тоже «делать»"
+        "делать"
       ],
       "collocations": [
         "Das Machen fällt Lear unerwartet schwer. — Лиру неожиданно тяжело делать."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "tun",
+          "note": "тоже «делать»"
+        }
+      ]
     },
     {
       "id": "word_0658",
@@ -16504,16 +16892,27 @@
       ],
       "synonyms": [
         "не",
-        "ahnungslos — тоже «не»",
-        "доверять",
-        "trauen — тоже «доверять»",
-        "vertrauen — тоже «доверять»"
+        "доверять"
       ],
       "collocations": [
         "Im Sturm zeigt sich, wie wichtig das Misstrauen ist. — Во время бури становится понятно, насколько важно не доверять.",
         "Ich misstraue jedem ihrer Worte. — Я не доверяю ни одному её слову."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "ahnungslos",
+          "note": "тоже «не»"
+        },
+        {
+          "synonym": "trauen",
+          "note": "тоже «доверять»"
+        },
+        {
+          "synonym": "vertrauen",
+          "note": "тоже «доверять»"
+        }
+      ]
     },
     {
       "id": "word_0268",
@@ -16539,14 +16938,19 @@
         "Совершенный оттенок: завершённое действие «убивать»"
       ],
       "synonyms": [
-        "убивать",
-        "töten — тоже «убивать»"
+        "убивать"
       ],
       "collocations": [
         "Der Narr spürt, wie das Morden alle verändert. — Шут чувствует, как умение убивать меняет всех.",
         "Ich bin bereit zu morden für meine Lust. — Я готова убивать ради своей страсти."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "töten",
+          "note": "тоже «убивать»"
+        }
+      ]
     },
     {
       "id": "word_0662",
@@ -16638,13 +17042,18 @@
         "Совершенный оттенок: завершённое действие «должен»"
       ],
       "synonyms": [
-        "должен",
-        "sollen — тоже «должен»"
+        "должен"
       ],
       "collocations": [
         "Das Müssen fällt Lear unerwartet schwer. — Лиру неожиданно тяжело должен."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "sollen",
+          "note": "тоже «должен»"
+        }
+      ]
     },
     {
       "id": "word_0664",
@@ -16672,14 +17081,22 @@
         "Совершенный оттенок: завершённое действие «размышлять»"
       ],
       "synonyms": [
-        "размышлять",
-        "grübeln — тоже «размышлять»",
-        "sinnen — тоже «размышлять»"
+        "размышлять"
       ],
       "collocations": [
         "Ich denke nach über des Lebens Sinn. — Я размышляю о смысле жизни."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "grübeln",
+          "note": "тоже «размышлять»"
+        },
+        {
+          "synonym": "sinnen",
+          "note": "тоже «размышлять»"
+        }
+      ]
     },
     {
       "id": "word_0665",
@@ -17202,14 +17619,22 @@
         "Совершенный оттенок: завершённое действие «говорить»"
       ],
       "synonyms": [
-        "говорить",
-        "sagen — тоже «говорить»",
-        "sprechen — тоже «говорить»"
+        "говорить"
       ],
       "collocations": [
         "Im Sturm zeigt sich, wie wichtig das Reden ist. — Во время бури становится понятно, насколько важно говорить."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "sagen",
+          "note": "тоже «говорить»"
+        },
+        {
+          "synonym": "sprechen",
+          "note": "тоже «говорить»"
+        }
+      ]
     },
     {
       "id": "word_0276",
@@ -17236,7 +17661,6 @@
       ],
       "synonyms": [
         "править",
-        "herrschen — тоже «править»",
         "управлять"
       ],
       "collocations": [
@@ -17244,7 +17668,13 @@
         "Mit Weisheit werde ich regieren. — С мудростью я буду править.",
         "Ich werde mit eiserner Hand regieren. — Я буду управлять железной рукой."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "herrschen",
+          "note": "тоже «править»"
+        }
+      ]
     },
     {
       "id": "word_0277",
@@ -17332,13 +17762,18 @@
         "Совершенный оттенок: завершённое действие «бежать»"
       ],
       "synonyms": [
-        "бежать",
-        "fliehen — тоже «бежать»"
+        "бежать"
       ],
       "collocations": [
         "Im Sturm zeigt sich, wie wichtig das Rennen ist. — Во время бури становится понятно, насколько важно бежать."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "fliehen",
+          "note": "тоже «бежать»"
+        }
+      ]
     },
     {
       "id": "word_0280",
@@ -17397,14 +17832,19 @@
         "Совершенный оттенок: завершённое действие «судить»"
       ],
       "synonyms": [
-        "судить",
-        "urteilen — тоже «судить»"
+        "судить"
       ],
       "collocations": [
         "Das Richten fällt Lear unerwartet schwer. — Лиру неожиданно тяжело судить.",
         "Gerecht will ich über die Verbrecher richten. — Справедливо я хочу судить преступников."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "urteilen",
+          "note": "тоже «судить»"
+        }
+      ]
     },
     {
       "id": "word_0676",
@@ -17628,14 +18068,22 @@
         "Совершенный оттенок: завершённое действие «говорить»"
       ],
       "synonyms": [
-        "говорить",
-        "reden — тоже «говорить»",
-        "sprechen — тоже «говорить»"
+        "говорить"
       ],
       "collocations": [
         "Im Sturm zeigt sich, wie wichtig das Sagen ist. — Во время бури становится понятно, насколько важно говорить."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "reden",
+          "note": "тоже «говорить»"
+        },
+        {
+          "synonym": "sprechen",
+          "note": "тоже «говорить»"
+        }
+      ]
     },
     {
       "id": "word_0680",
@@ -17726,14 +18174,22 @@
       ],
       "synonyms": [
         "терпеть",
-        "dulden — тоже «терпеть»",
-        "erdulden — тоже «терпеть»",
         "неудачу"
       ],
       "collocations": [
         "Das Scheitern fällt Lear unerwartet schwer. — Лиру неожиданно тяжело терпеть неудачу."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "dulden",
+          "note": "тоже «терпеть»"
+        },
+        {
+          "synonym": "erdulden",
+          "note": "тоже «терпеть»"
+        }
+      ]
     },
     {
       "id": "word_0286",
@@ -18213,14 +18669,22 @@
         "Совершенный оттенок: завершённое действие «защищать»"
       ],
       "synonyms": [
-        "защищать",
-        "beschützen — тоже «защищать»",
-        "verteidigen — тоже «защищать»"
+        "защищать"
       ],
       "collocations": [
         "Ich will den wahnsinnigen König schützen. — Я хочу защитить безумного короля."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "beschützen",
+          "note": "тоже «защищать»"
+        },
+        {
+          "synonym": "verteidigen",
+          "note": "тоже «защищать»"
+        }
+      ]
     },
     {
       "id": "word_0294",
@@ -18246,13 +18710,18 @@
         "Совершенный оттенок: завершённое действие «видеть»"
       ],
       "synonyms": [
-        "видеть",
-        "klar sehen — тоже «видеть»"
+        "видеть"
       ],
       "collocations": [
         "Cordelia zeigt, dass das Sehen auch ohne Stolz möglich ist. — Корделия показывает, что видеть можно и без гордыни."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "klar sehen",
+          "note": "тоже «видеть»"
+        }
+      ]
     },
     {
       "id": "word_0295",
@@ -18344,13 +18813,18 @@
         "Совершенный оттенок: завершённое действие «защищаться»"
       ],
       "synonyms": [
-        "защищаться",
-        "wehren — тоже «защищаться»"
+        "защищаться"
       ],
       "collocations": [
         "Ich wehre mich gegen ihre Tyrannei. — Я защищаюсь от её тирании."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "wehren",
+          "note": "тоже «защищаться»"
+        }
+      ]
     },
     {
       "id": "word_0296",
@@ -18441,14 +18915,22 @@
         "Совершенный оттенок: завершённое действие «размышлять»"
       ],
       "synonyms": [
-        "размышлять",
-        "grübeln — тоже «размышлять»",
-        "nachdenken — тоже «размышлять»"
+        "размышлять"
       ],
       "collocations": [
         "Cordelia zeigt, dass das Sinnen auch ohne Stolz möglich ist. — Корделия показывает, что размышлять можно и без гордыни."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "grübeln",
+          "note": "тоже «размышлять»"
+        },
+        {
+          "synonym": "nachdenken",
+          "note": "тоже «размышлять»"
+        }
+      ]
     },
     {
       "id": "word_0299",
@@ -18505,13 +18987,18 @@
         "Совершенный оттенок: завершённое действие «должен»"
       ],
       "synonyms": [
-        "должен",
-        "müssen — тоже «должен»"
+        "должен"
       ],
       "collocations": [
         "Der Narr spürt, wie das Sollen alle verändert. — Шут чувствует, как умение должен меняет всех."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "müssen",
+          "note": "тоже «должен»"
+        }
+      ]
     },
     {
       "id": "word_0301",
@@ -18666,13 +19153,18 @@
         "Совершенный оттенок: завершённое действие «насмехаться»"
       ],
       "synonyms": [
-        "насмехаться",
-        "verhöhnen — тоже «насмехаться»"
+        "насмехаться"
       ],
       "collocations": [
         "Ich spotte über die Torheit der Mächtigen. — Я насмехаюсь над глупостью сильных."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "verhöhnen",
+          "note": "тоже «насмехаться»"
+        }
+      ]
     },
     {
       "id": "word_0304",
@@ -18698,14 +19190,22 @@
         "Совершенный оттенок: завершённое действие «говорить»"
       ],
       "synonyms": [
-        "говорить",
-        "reden — тоже «говорить»",
-        "sagen — тоже «говорить»"
+        "говорить"
       ],
       "collocations": [
         "Der Narr spürt, wie das Sprechen alle verändert. — Шут чувствует, как умение говорить меняет всех."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "reden",
+          "note": "тоже «говорить»"
+        },
+        {
+          "synonym": "sagen",
+          "note": "тоже «говорить»"
+        }
+      ]
     },
     {
       "id": "word_0305",
@@ -18894,15 +19394,23 @@
         "Совершенный оттенок: завершённое действие «наказывать»"
       ],
       "synonyms": [
-        "наказывать",
-        "bestrafen — тоже «наказывать»",
-        "züchtigen — тоже «наказывать»"
+        "наказывать"
       ],
       "collocations": [
         "Cordelia zeigt, dass das Strafen auch ohne Stolz möglich ist. — Корделия показывает, что наказывать можно и без гордыни.",
         "Die Schuldigen müssen bestraft werden. — Виновные должны быть наказаны."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "bestrafen",
+          "note": "тоже «наказывать»"
+        },
+        {
+          "synonym": "züchtigen",
+          "note": "тоже «наказывать»"
+        }
+      ]
     },
     {
       "id": "word_0693",
@@ -19025,14 +19533,19 @@
         "Совершенный оттенок: завершённое действие «падать»"
       ],
       "synonyms": [
-        "падать",
-        "fallen — тоже «падать»"
+        "падать"
       ],
       "collocations": [
         "Der Narr spürt, wie das Stürzen alle verändert. — Шут чувствует, как умение падать меняет всех.",
         "Ich glaube, von hohen Klippen zu stürzen. — Я верю, что падаю с высоких скал."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "fallen",
+          "note": "тоже «падать»"
+        }
+      ]
     },
     {
       "id": "word_0313",
@@ -19281,14 +19794,22 @@
         "Совершенный оттенок: завершённое действие «доверять»"
       ],
       "synonyms": [
-        "доверять",
-        "misstrauen — тоже «доверять»",
-        "vertrauen — тоже «доверять»"
+        "доверять"
       ],
       "collocations": [
         "Das Trauen fällt Lear unerwartet schwer. — Лиру неожиданно тяжело доверять."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "misstrauen",
+          "note": "тоже «доверять»"
+        },
+        {
+          "synonym": "vertrauen",
+          "note": "тоже «доверять»"
+        }
+      ]
     },
     {
       "id": "word_0322",
@@ -19511,13 +20032,18 @@
         "Совершенный оттенок: завершённое действие «делать»"
       ],
       "synonyms": [
-        "делать",
-        "machen — тоже «делать»"
+        "делать"
       ],
       "collocations": [
         "Das Tun fällt Lear unerwartet schwer. — Лиру неожиданно тяжело делать."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "machen",
+          "note": "тоже «делать»"
+        }
+      ]
     },
     {
       "id": "word_0315",
@@ -19543,9 +20069,7 @@
         "Совершенный оттенок: завершённое действие «обманывать»"
       ],
       "synonyms": [
-        "обманывать",
-        "betrügen — тоже «обманывать»",
-        "hintergehen — тоже «обманывать»"
+        "обманывать"
       ],
       "collocations": [
         "Im Sturm zeigt sich, wie wichtig das Täuschen ist. — Во время бури становится понятно, насколько важно обманывать.",
@@ -19553,7 +20077,17 @@
         "Edmund täuscht mich mit falschen Beweisen. — Эдмунд обманывает меня ложными доказательствами.",
         "Ich täusche meinen alten Vater leicht. — Я легко обманываю старого отца."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "betrügen",
+          "note": "тоже «обманывать»"
+        },
+        {
+          "synonym": "hintergehen",
+          "note": "тоже «обманывать»"
+        }
+      ]
     },
     {
       "id": "word_0318",
@@ -19579,13 +20113,18 @@
         "Совершенный оттенок: завершённое действие «убивать»"
       ],
       "synonyms": [
-        "убивать",
-        "morden — тоже «убивать»"
+        "убивать"
       ],
       "collocations": [
         "Cordelia zeigt, dass das Töten auch ohne Stolz möglich ist. — Корделия показывает, что убивать можно и без гордыни."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "morden",
+          "note": "тоже «убивать»"
+        }
+      ]
     },
     {
       "id": "word_0698",
@@ -19681,14 +20220,22 @@
         "Совершенный оттенок: завершённое действие «возвращаться»"
       ],
       "synonyms": [
-        "возвращаться",
-        "wiederkehren — тоже «возвращаться»",
-        "zurückkehren — тоже «возвращаться»"
+        "возвращаться"
       ],
       "collocations": [
         "Der Narr spürt, wie das Umkehren alle verändert. — Шут чувствует, как умение возвращаться меняет всех."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "wiederkehren",
+          "note": "тоже «возвращаться»"
+        },
+        {
+          "synonym": "zurückkehren",
+          "note": "тоже «возвращаться»"
+        }
+      ]
     },
     {
       "id": "word_0329",
@@ -19940,13 +20487,18 @@
         "Совершенный оттенок: завершённое действие «проигрывать»"
       ],
       "synonyms": [
-        "проигрывать",
-        "verlieren — тоже «проигрывать»"
+        "проигрывать"
       ],
       "collocations": [
         "Ich unterliege dem edlen Edgar. — Я проигрываю благородному Эдгару."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "verlieren",
+          "note": "тоже «проигрывать»"
+        }
+      ]
     },
     {
       "id": "word_0334",
@@ -20131,13 +20683,18 @@
         "Совершенный оттенок: завершённое действие «судить»"
       ],
       "synonyms": [
-        "судить",
-        "richten — тоже «судить»"
+        "судить"
       ],
       "collocations": [
         "Das Urteilen fällt Lear unerwartet schwer. — Лиру неожиданно тяжело судить."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "richten",
+          "note": "тоже «судить»"
+        }
+      ]
     },
     {
       "id": "word_0705",
@@ -20197,15 +20754,23 @@
       ],
       "synonyms": [
         "изгнать",
-        "изгонять",
-        "verstoßen — тоже «изгонять»",
-        "vertreiben — тоже «изгонять»"
+        "изгонять"
       ],
       "collocations": [
         "Cordelia zeigt, dass das Verbannen auch ohne Stolz möglich ist. — Корделия показывает, что изгонять можно и без гордыни.",
         "Mein Vater will mich aus dem Land verbannen. — Мой отец хочет изгнать меня из страны."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "verstoßen",
+          "note": "тоже «изгонять»"
+        },
+        {
+          "synonym": "vertreiben",
+          "note": "тоже «изгонять»"
+        }
+      ]
     },
     {
       "id": "word_0706",
@@ -20264,13 +20829,18 @@
         "Совершенный оттенок: завершённое действие «скрывать»"
       ],
       "synonyms": [
-        "скрывать",
-        "verheimlichen — тоже «скрывать»"
+        "скрывать"
       ],
       "collocations": [
         "Im Sturm zeigt sich, wie wichtig das Verbergen ist. — Во время бури становится понятно, насколько важно скрывать."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "verheimlichen",
+          "note": "тоже «скрывать»"
+        }
+      ]
     },
     {
       "id": "word_0341",
@@ -20517,14 +21087,19 @@
         "Совершенный оттенок: завершённое действие «подозревать»"
       ],
       "synonyms": [
-        "подозревать",
-        "argwöhnen — тоже «подозревать»"
+        "подозревать"
       ],
       "collocations": [
         "Im Sturm zeigt sich, wie wichtig das Verdächtigen ist. — Во время бури становится понятно, насколько важно подозревать.",
         "Ich verdächtige meinen guten Sohn Edgar. — Я подозреваю моего доброго сына Эдгара."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "argwöhnen",
+          "note": "тоже «подозревать»"
+        }
+      ]
     },
     {
       "id": "word_0709",
@@ -20650,9 +21225,7 @@
         "Совершенный оттенок: завершённое действие «проклинать»"
       ],
       "synonyms": [
-        "проклинать",
-        "fluchen — тоже «проклинать»",
-        "verwünschen — тоже «проклинать»"
+        "проклинать"
       ],
       "collocations": [
         "Im Sturm zeigt sich, wie wichtig das Verfluchen ist. — Во время бури становится понятно, насколько важно проклинать.",
@@ -20660,7 +21233,17 @@
         "Sterbend verfluche ich meine Mörder. — Умирая, я проклинаю своих убийц.",
         "Im Zorn verfluche ich Edgar. — В гневе я проклинаю Эдгара."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "fluchen",
+          "note": "тоже «проклинать»"
+        },
+        {
+          "synonym": "verwünschen",
+          "note": "тоже «проклинать»"
+        }
+      ]
     },
     {
       "id": "word_0711",
@@ -20789,15 +21372,20 @@
         "Совершенный оттенок: завершённое действие «прощать»"
       ],
       "synonyms": [
-        "прощать",
-        "verzeihen — тоже «прощать»"
+        "прощать"
       ],
       "collocations": [
         "Das Vergeben fällt Lear unerwartet schwer. — Лиру неожиданно тяжело прощать.",
         "Kannst du einem törichten alten Mann vergeben? — Можешь ли ты простить глупого старика?",
         "Edgar vergibt mir meine Blindheit. — Эдгар прощает мне мою слепоту."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "verzeihen",
+          "note": "тоже «прощать»"
+        }
+      ]
     },
     {
       "id": "word_0350",
@@ -20984,13 +21572,18 @@
       ],
       "synonyms": [
         "вести",
-        "führen — тоже «вести»",
         "себя"
       ],
       "collocations": [
         "Das Verhalten fällt Lear unerwartet schwer. — Лиру неожиданно тяжело вести себя."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "führen",
+          "note": "тоже «вести»"
+        }
+      ]
     },
     {
       "id": "word_0354",
@@ -21016,13 +21609,18 @@
         "Совершенный оттенок: завершённое действие «скрывать»"
       ],
       "synonyms": [
-        "скрывать",
-        "verbergen — тоже «скрывать»"
+        "скрывать"
       ],
       "collocations": [
         "Cordelia zeigt, dass das Verheimlichen auch ohne Stolz möglich ist. — Корделия показывает, что скрывать можно и без гордыни."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "verbergen",
+          "note": "тоже «скрывать»"
+        }
+      ]
     },
     {
       "id": "word_0355",
@@ -21049,14 +21647,22 @@
       ],
       "synonyms": [
         "выдавать",
-        "ausliefern — тоже «выдавать»",
-        "verraten — тоже «выдавать»",
         "замуж"
       ],
       "collocations": [
         "Im Sturm zeigt sich, wie wichtig das Verheiraten ist. — Во время бури становится понятно, насколько важно выдавать замуж."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "ausliefern",
+          "note": "тоже «выдавать»"
+        },
+        {
+          "synonym": "verraten",
+          "note": "тоже «выдавать»"
+        }
+      ]
     },
     {
       "id": "word_0715",
@@ -21121,14 +21727,19 @@
       ],
       "synonyms": [
         "высмеивать",
-        "насмехаться",
-        "spotten — тоже «насмехаться»"
+        "насмехаться"
       ],
       "collocations": [
         "Ich verhöhne seine königliche Würde. — Я высмеиваю его королевское достоинство.",
         "Ich verhöhne seine väterliche Liebe. — Я насмехаюсь над его отцовской любовью."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "spotten",
+          "note": "тоже «насмехаться»"
+        }
+      ]
     },
     {
       "id": "word_0356",
@@ -21216,14 +21827,22 @@
         "Совершенный оттенок: завершённое действие «обвинять»"
       ],
       "synonyms": [
-        "обвинять",
-        "anklagen — тоже «обвинять»",
-        "beschuldigen — тоже «обвинять»"
+        "обвинять"
       ],
       "collocations": [
         "Cordelia zeigt, dass das Verklagen auch ohne Stolz möglich ist. — Корделия показывает, что обвинять можно и без гордыни."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "anklagen",
+          "note": "тоже «обвинять»"
+        },
+        {
+          "synonym": "beschuldigen",
+          "note": "тоже «обвинять»"
+        }
+      ]
     },
     {
       "id": "word_0717",
@@ -21287,15 +21906,23 @@
       ],
       "synonyms": [
         "желать",
-        "begehren — тоже «желать»",
-        "wünschen — тоже «желать»",
         "требовать"
       ],
       "collocations": [
         "Im Sturm zeigt sich, wie wichtig das Verlangen ist. — Во время бури становится понятно, насколько важно требовать.",
         "Ich verlange mehr als mir zusteht. — Я желаю больше, чем мне положено."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "begehren",
+          "note": "тоже «желать»"
+        },
+        {
+          "synonym": "wünschen",
+          "note": "тоже «желать»"
+        }
+      ]
     },
     {
       "id": "word_0360",
@@ -21416,13 +22043,18 @@
         "Совершенный оттенок: завершённое действие «ранить»"
       ],
       "synonyms": [
-        "ранить",
-        "verwunden — тоже «ранить»"
+        "ранить"
       ],
       "collocations": [
         "Im Sturm zeigt sich, wie wichtig das Verletzen ist. — Во время бури становится понятно, насколько важно ранить."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "verwunden",
+          "note": "тоже «ранить»"
+        }
+      ]
     },
     {
       "id": "word_0364",
@@ -21449,14 +22081,19 @@
       ],
       "synonyms": [
         "проигрывать",
-        "unterliegen — тоже «проигрывать»",
         "терять"
       ],
       "collocations": [
         "Der Narr spürt, wie das Verlieren alle verändert. — Шут чувствует, как умение терять меняет всех.",
         "Ich verliere alles, was ich gewann. — Я проигрываю всё, что выиграл."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "unterliegen",
+          "note": "тоже «проигрывать»"
+        }
+      ]
     },
     {
       "id": "word_0365",
@@ -21643,9 +22280,7 @@
       ],
       "synonyms": [
         "предавать",
-        "выдавать",
-        "ausliefern — тоже «выдавать»",
-        "verheiraten — тоже «выдавать»"
+        "выдавать"
       ],
       "collocations": [
         "Der Narr spürt, wie das Verraten alle verändert. — Шут чувствует, как умение предавать меняет всех.",
@@ -21653,7 +22288,17 @@
         "Ich verrate meinen eigenen Vater. — Я предаю собственного отца.",
         "Ich verrate meinen Mann für Edmund. — Я предаю мужа ради Эдмунда."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "ausliefern",
+          "note": "тоже «выдавать»"
+        },
+        {
+          "synonym": "verheiraten",
+          "note": "тоже «выдавать»"
+        }
+      ]
     },
     {
       "id": "word_0369",
@@ -21774,14 +22419,19 @@
         "Совершенный оттенок: завершённое действие «запирать»"
       ],
       "synonyms": [
-        "запирать",
-        "einsperren — тоже «запирать»"
+        "запирать"
       ],
       "collocations": [
         "Im Sturm zeigt sich, wie wichtig das Verschließen ist. — Во время бури становится понятно, насколько важно запирать.",
         "Ich verschließe meine Türen vor ihm. — Я запираю двери перед ним."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "einsperren",
+          "note": "тоже «запирать»"
+        }
+      ]
     },
     {
       "id": "word_0372",
@@ -21966,14 +22616,19 @@
         "Совершенный оттенок: завершённое действие «понимать»"
       ],
       "synonyms": [
-        "понимать",
-        "begreifen — тоже «понимать»"
+        "понимать"
       ],
       "collocations": [
         "Cordelia zeigt, dass das Verstehen auch ohne Stolz möglich ist. — Корделия показывает, что понимать можно и без гордыни.",
         "Jetzt verstehe ich, wer mich wirklich liebte. — Теперь я понимаю, кто действительно меня любил."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "begreifen",
+          "note": "тоже «понимать»"
+        }
+      ]
     },
     {
       "id": "word_0721",
@@ -22001,13 +22656,18 @@
         "Совершенный оттенок: завершённое действие «изменять»"
       ],
       "synonyms": [
-        "изменять",
-        "betrügen — тоже «изменять»"
+        "изменять"
       ],
       "collocations": [
         "Ich verstelle meine Stimme und Haltung. — Я изменяю свой голос и осанку."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "betrügen",
+          "note": "тоже «изменять»"
+        }
+      ]
     },
     {
       "id": "word_0379",
@@ -22034,10 +22694,7 @@
       ],
       "synonyms": [
         "изгонять",
-        "verbannen — тоже «изгонять»",
-        "vertreiben — тоже «изгонять»",
-        "отвергать",
-        "abweisen — тоже «отвергать»"
+        "отвергать"
       ],
       "collocations": [
         "Im Sturm zeigt sich, wie wichtig das Verstoßen ist. — Во время бури становится понятно, насколько важно изгонять.",
@@ -22046,7 +22703,21 @@
         "Ich verstoße meinen unschuldigen Sohn. — Я изгоняю своего невинного сына.",
         "Ich verstoße meinen Vater in die Nacht. — Я отвергаю отца в ночь."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "verbannen",
+          "note": "тоже «изгонять»"
+        },
+        {
+          "synonym": "vertreiben",
+          "note": "тоже «изгонять»"
+        },
+        {
+          "synonym": "abweisen",
+          "note": "тоже «отвергать»"
+        }
+      ]
     },
     {
       "id": "word_0722",
@@ -22168,15 +22839,23 @@
         "Совершенный оттенок: завершённое действие «защищать»"
       ],
       "synonyms": [
-        "защищать",
-        "beschützen — тоже «защищать»",
-        "schützen — тоже «защищать»"
+        "защищать"
       ],
       "collocations": [
         "Das Verteidigen fällt Lear unerwartet schwer. — Лиру неожиданно тяжело защищать.",
         "Ich verteidige Корделия gegen Ungerechtigkeit. — Я защищаю Корделию от несправедливости."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "beschützen",
+          "note": "тоже «защищать»"
+        },
+        {
+          "synonym": "schützen",
+          "note": "тоже «защищать»"
+        }
+      ]
     },
     {
       "id": "word_0382",
@@ -22233,16 +22912,24 @@
         "Совершенный оттенок: завершённое действие «доверять»"
       ],
       "synonyms": [
-        "доверять",
-        "misstrauen — тоже «доверять»",
-        "trauen — тоже «доверять»"
+        "доверять"
       ],
       "collocations": [
         "Im Sturm zeigt sich, wie wichtig das Vertrauen ist. — Во время бури становится понятно, насколько важно доверять.",
         "Mein Vater vertraut mir vollkommen. — Мой отец полностью мне доверяет.",
         "Ich vertraue beiden Söhnen gleich. — Я доверяю обоим сыновьям одинаково."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "misstrauen",
+          "note": "тоже «доверять»"
+        },
+        {
+          "synonym": "trauen",
+          "note": "тоже «доверять»"
+        }
+      ]
     },
     {
       "id": "word_0384",
@@ -22269,8 +22956,6 @@
       ],
       "synonyms": [
         "изгонять",
-        "verbannen — тоже «изгонять»",
-        "verstoßen — тоже «изгонять»",
         "прогонять"
       ],
       "collocations": [
@@ -22279,7 +22964,17 @@
         "Ich vertreibe Edgar aus seinem Erbe. — Я изгоняю Эдгара из его наследства.",
         "Ich vertreibe ihn aus meinem Haus. — Я изгоняю его из моего дома."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "verbannen",
+          "note": "тоже «изгонять»"
+        },
+        {
+          "synonym": "verstoßen",
+          "note": "тоже «изгонять»"
+        }
+      ]
     },
     {
       "id": "word_0385",
@@ -22431,13 +23126,18 @@
         "Совершенный оттенок: завершённое действие «ранить»"
       ],
       "synonyms": [
-        "ранить",
-        "verletzen — тоже «ранить»"
+        "ранить"
       ],
       "collocations": [
         "Das Verwunden fällt Lear unerwartet schwer. — Лиру неожиданно тяжело ранить."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "verletzen",
+          "note": "тоже «ранить»"
+        }
+      ]
     },
     {
       "id": "word_0724",
@@ -22529,14 +23229,22 @@
         "Совершенный оттенок: завершённое действие «проклинать»"
       ],
       "synonyms": [
-        "проклинать",
-        "fluchen — тоже «проклинать»",
-        "verfluchen — тоже «проклинать»"
+        "проклинать"
       ],
       "collocations": [
         "Ich verwünsche meine Schwester mit letzter Kraft. — Я проклинаю сестру последними силами."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "fluchen",
+          "note": "тоже «проклинать»"
+        },
+        {
+          "synonym": "verfluchen",
+          "note": "тоже «проклинать»"
+        }
+      ]
     },
     {
       "id": "word_0390",
@@ -22562,15 +23270,20 @@
         "Совершенный оттенок: завершённое действие «прощать»"
       ],
       "synonyms": [
-        "прощать",
-        "vergeben — тоже «прощать»"
+        "прощать"
       ],
       "collocations": [
         "Cordelia zeigt, dass das Verzeihen auch ohne Stolz möglich ist. — Корделия показывает, что прощать можно и без гордыни.",
         "Verzeih mir, ich bin nur ein törichter alter Mann. — Прости меня, я всего лишь глупый старик.",
         "Ich verzeihe dir alles, mein lieber Vater. — Я прощаю тебе всё, мой дорогой отец."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "vergeben",
+          "note": "тоже «прощать»"
+        }
+      ]
     },
     {
       "id": "word_0391",
@@ -22722,13 +23435,18 @@
         "Совершенный оттенок: завершённое действие «притворяться»"
       ],
       "synonyms": [
-        "притворяться",
-        "vortäuschen — тоже «притворяться»"
+        "притворяться"
       ],
       "collocations": [
         "Ich gebe vor, ein einfacher Mann zu sein. — Я притворяюсь простым человеком."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "vortäuschen",
+          "note": "тоже «притворяться»"
+        }
+      ]
     },
     {
       "id": "word_0727",
@@ -22853,13 +23571,18 @@
         "Совершенный оттенок: завершённое действие «притворяться»"
       ],
       "synonyms": [
-        "притворяться",
-        "vorgeben — тоже «притворяться»"
+        "притворяться"
       ],
       "collocations": [
         "Ich täusche Liebe vor, die nie existierte. — Я притворяюсь в любви, которой никогда не было."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "vorgeben",
+          "note": "тоже «притворяться»"
+        }
+      ]
     },
     {
       "id": "word_0396",
@@ -22916,13 +23639,18 @@
         "Совершенный оттенок: завершённое действие «расти»"
       ],
       "synonyms": [
-        "расти",
-        "aufwachsen — тоже «расти»"
+        "расти"
       ],
       "collocations": [
         "Das Wachsen fällt Lear unerwartet schwer. — Лиру неожиданно тяжело расти."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "aufwachsen",
+          "note": "тоже «расти»"
+        }
+      ]
     },
     {
       "id": "word_0398",
@@ -23170,13 +23898,18 @@
         "Совершенный оттенок: завершённое действие «защищаться»"
       ],
       "synonyms": [
-        "защищаться",
-        "sich wehren — тоже «защищаться»"
+        "защищаться"
       ],
       "collocations": [
         "Der Narr spürt, wie das Wehren alle verändert. — Шут чувствует, как умение защищаться меняет всех."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "sich wehren",
+          "note": "тоже «защищаться»"
+        }
+      ]
     },
     {
       "id": "word_0405",
@@ -23553,15 +24286,26 @@
       ],
       "synonyms": [
         "узнавать",
-        "erfahren — тоже «узнавать»",
-        "erkennen — тоже «узнавать»",
-        "вновь",
-        "wiedersehen — тоже «вновь»"
+        "вновь"
       ],
       "collocations": [
         "Cordelia zeigt, dass das Wiedererkennen auch ohne Stolz möglich ist. — Корделия показывает, что узнавать вновь можно и без гордыни."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "erfahren",
+          "note": "тоже «узнавать»"
+        },
+        {
+          "synonym": "erkennen",
+          "note": "тоже «узнавать»"
+        },
+        {
+          "synonym": "wiedersehen",
+          "note": "тоже «вновь»"
+        }
+      ]
     },
     {
       "id": "word_0415",
@@ -23649,14 +24393,22 @@
         "Совершенный оттенок: завершённое действие «возвращаться»"
       ],
       "synonyms": [
-        "возвращаться",
-        "umkehren — тоже «возвращаться»",
-        "zurückkehren — тоже «возвращаться»"
+        "возвращаться"
       ],
       "collocations": [
         "Das Wiederkehren fällt Lear unerwartet schwer. — Лиру неожиданно тяжело возвращаться."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "umkehren",
+          "note": "тоже «возвращаться»"
+        },
+        {
+          "synonym": "zurückkehren",
+          "note": "тоже «возвращаться»"
+        }
+      ]
     },
     {
       "id": "word_0418",
@@ -23683,13 +24435,18 @@
       ],
       "synonyms": [
         "встречаться",
-        "вновь",
-        "wiedererkennen — тоже «вновь»"
+        "вновь"
       ],
       "collocations": [
         "Cordelia zeigt, dass das Wiedersehen auch ohne Stolz möglich ist. — Корделия показывает, что встречаться вновь можно и без гордыни."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "wiedererkennen",
+          "note": "тоже «вновь»"
+        }
+      ]
     },
     {
       "id": "word_0734",
@@ -23748,14 +24505,22 @@
         "Совершенный оттенок: завершённое действие «знать»"
       ],
       "synonyms": [
-        "знать",
-        "der Adel — тоже «знать»",
-        "kennen — тоже «знать»"
+        "знать"
       ],
       "collocations": [
         "Im Sturm zeigt sich, wie wichtig das Wissen ist. — Во время бури становится понятно, насколько важно знать."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "der Adel",
+          "note": "тоже «знать»"
+        },
+        {
+          "synonym": "kennen",
+          "note": "тоже «знать»"
+        }
+      ]
     },
     {
       "id": "word_0420",
@@ -23781,13 +24546,18 @@
         "Совершенный оттенок: завершённое действие «жить»"
       ],
       "synonyms": [
-        "жить",
-        "leben — тоже «жить»"
+        "жить"
       ],
       "collocations": [
         "Der Narr spürt, wie das Wohnen alle verändert. — Шут чувствует, как умение жить меняет всех."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "leben",
+          "note": "тоже «жить»"
+        }
+      ]
     },
     {
       "id": "word_0421",
@@ -23876,14 +24646,22 @@
         "Совершенный оттенок: завершённое действие «желать»"
       ],
       "synonyms": [
-        "желать",
-        "begehren — тоже «желать»",
-        "verlangen — тоже «желать»"
+        "желать"
       ],
       "collocations": [
         "Cordelia zeigt, dass das Wünschen auch ohne Stolz möglich ist. — Корделия показывает, что желать можно и без гордыни."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "begehren",
+          "note": "тоже «желать»"
+        },
+        {
+          "synonym": "verlangen",
+          "note": "тоже «желать»"
+        }
+      ]
     },
     {
       "id": "word_0423",
@@ -24100,16 +24878,24 @@
         "Совершенный оттенок: завершённое действие «возвращаться»"
       ],
       "synonyms": [
-        "возвращаться",
-        "umkehren — тоже «возвращаться»",
-        "wiederkehren — тоже «возвращаться»"
+        "возвращаться"
       ],
       "collocations": [
         "Cordelia zeigt, dass das Zurückkehren auch ohne Stolz möglich ist. — Корделия показывает, что возвращаться можно и без гордыни.",
         "Mit einer Armee kehre ich zurück, meinen Vater zu retten. — С армией я возвращаюсь спасти моего отца.",
         "Ich schwöre, verkleidet zurückzukehren. — Я клянусь вернуться переодетым."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "umkehren",
+          "note": "тоже «возвращаться»"
+        },
+        {
+          "synonym": "wiederkehren",
+          "note": "тоже «возвращаться»"
+        }
+      ]
     },
     {
       "id": "word_0431",
@@ -24296,14 +25082,22 @@
         "Совершенный оттенок: завершённое действие «наказывать»"
       ],
       "synonyms": [
-        "наказывать",
-        "bestrafen — тоже «наказывать»",
-        "strafen — тоже «наказывать»"
+        "наказывать"
       ],
       "collocations": [
         "Öffentlich züchtige ich die Widerspenstigen. — Публично я наказываю непокорных."
       ],
-      "visual_hint": "📚"
+      "visual_hint": "📚",
+      "synonym_notes": [
+        {
+          "synonym": "bestrafen",
+          "note": "тоже «наказывать»"
+        },
+        {
+          "synonym": "strafen",
+          "note": "тоже «наказывать»"
+        }
+      ]
     },
     {
       "id": "word_0737",
