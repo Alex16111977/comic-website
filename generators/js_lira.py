@@ -20,12 +20,20 @@ class LiraJSGenerator:
 
             words = []
             for word in phase.get('vocabulary', []):
+                themes = word.get('themes') or []
+                if isinstance(themes, str):
+                    themes = [themes]
+                elif not isinstance(themes, list):
+                    themes = []
+
                 words.append({
                     'word': word.get('german', ''),
                     'translation': word.get('russian', ''),
                     'transcription': word.get('transcription', ''),
                     'sentence': word.get('sentence', ''),
                     'sentenceTranslation': word.get('sentence_translation', ''),
+                    'visual_hint': word.get('visual_hint', ''),
+                    'themes': themes,
                 })
 
             phase_vocabularies[phase_id] = {
@@ -182,10 +190,25 @@ function displayVocabulary(phaseKey) {
             const card = document.createElement('div');
             card.className = 'word-card';
             card.style.animationDelay = `${index * 0.1}s`;
+
+            const visualHintMarkup = item.visual_hint
+                ? `<div class="word-visual-hint" aria-hidden="true">${item.visual_hint}</div>`
+                : '';
+
+            const themesMarkup = Array.isArray(item.themes) && item.themes.length
+                ? `<div class="word-themes">${item.themes.map(theme => `<span class=\"word-theme\">${theme}</span>`).join('')}</div>`
+                : '';
+
             card.innerHTML = `
-                <div class="word-german">${item.word}</div>
-                <div class="word-translation">${item.translation}</div>
-                <div class="word-transcription">${item.transcription}</div>
+                <div class="word-card-header">
+                    ${visualHintMarkup}
+                    <div class="word-meta">
+                        <div class="word-german">${item.word}</div>
+                        <div class="word-translation">${item.translation}</div>
+                        <div class="word-transcription">${item.transcription}</div>
+                    </div>
+                </div>
+                ${themesMarkup}
                 <div class="word-sentence">
                     <div class="sentence-german">"${item.sentence}"</div>
                     <div class="sentence-translation">${item.sentenceTranslation}</div>

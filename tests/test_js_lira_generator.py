@@ -25,6 +25,8 @@ class LiraJSGeneratorTests(unittest.TestCase):
                             'transcription': '[энт-ШАЙ-дӯнг]',
                             'sentence': 'Er flüstert: "Das ist Edmunds Weg."\nUnd geht.',
                             'sentence_translation': 'Он шепчет: "Это путь Эдмунда."\nИ уходит.',
+                            'visual_hint': '🎯',
+                            'themes': ['Strategie', 'Täuschung'],
                         }
                     ],
                 }
@@ -61,6 +63,8 @@ class LiraJSGeneratorTests(unittest.TestCase):
             word_payload['sentenceTranslation'],
             word_source['sentence_translation'],
         )
+        self.assertEqual(word_payload['visual_hint'], word_source['visual_hint'])
+        self.assertEqual(word_payload['themes'], word_source['themes'])
 
         # ensure_ascii=False keeps non-latin characters intact in the script output
         self.assertIn('решение', script)
