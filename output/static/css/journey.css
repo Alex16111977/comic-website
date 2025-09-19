@@ -199,6 +199,215 @@ body {
     color: #333;
 }
 
+.constructor-section {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+.constructor-section h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.constructor-intro {
+    text-align: center;
+    color: #555;
+    margin-bottom: 24px;
+}
+
+.constructor-panel {
+    display: none;
+}
+
+.constructor-panel.active {
+    display: block;
+}
+
+.constructor-empty {
+    margin-top: 16px;
+    text-align: center;
+    color: #777;
+    font-style: italic;
+}
+
+.constructor-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.constructor-word {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #4a3f8c;
+}
+
+.constructor-translation {
+    color: #666;
+    font-size: 1em;
+}
+
+.constructor-progress {
+    margin-left: auto;
+    font-size: 0.9em;
+    color: #888;
+}
+
+.constructor-hint {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.constructor-areas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.constructor-source,
+.constructor-target {
+    background: #f7f7ff;
+    border: 2px dashed rgba(118, 75, 162, 0.3);
+    border-radius: 16px;
+    padding: 20px;
+    min-height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-start;
+    position: relative;
+}
+
+.constructor-target {
+    border-style: solid;
+    background: #fbf8ff;
+}
+
+.constructor-placeholder {
+    color: #aaa;
+    font-size: 0.95em;
+}
+
+.constructor-target.has-fragments .constructor-placeholder {
+    display: none;
+}
+
+.constructor-fragment {
+    background: white;
+    border: 1px solid rgba(102, 126, 234, 0.4);
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-size: 0.95em;
+    color: #4a3f8c;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.constructor-fragment:active {
+    transform: scale(0.98);
+}
+
+.constructor-fragment.in-target {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.2));
+    border-color: rgba(118, 75, 162, 0.5);
+}
+
+.constructor-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.constructor-control {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 999px;
+    padding: 12px 24px;
+    font-size: 0.95em;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.constructor-control:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.constructor-control:disabled,
+.constructor-control[disabled] {
+    background: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.constructor-feedback {
+    text-align: center;
+    min-height: 24px;
+    font-weight: 600;
+}
+
+.constructor-feedback.success {
+    color: #2e8b57;
+}
+
+.constructor-feedback.error {
+    color: #c0392b;
+}
+
+.constructor-original {
+    text-align: center;
+    color: #555;
+    font-size: 0.95em;
+}
+
+@media (max-width: 900px) {
+    .constructor-areas {
+        grid-template-columns: 1fr;
+    }
+
+    .constructor-source,
+    .constructor-target {
+        min-height: 120px;
+    }
+}
+
+@media (max-width: 600px) {
+    .constructor-section {
+        padding: 28px 20px;
+    }
+
+    .constructor-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .constructor-word {
+        font-size: 1.3em;
+    }
+
+    .constructor-controls {
+        flex-direction: column;
+    }
+
+    .constructor-control {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .vocabulary-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
