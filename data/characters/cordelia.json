@@ -72,6 +72,28 @@
           "sentence": "Meine Treue gilt der Wahrheit und der echten Liebe.",
           "sentence_translation": "Моя верность принадлежит правде и истинной любви."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Wahrheit»?",
+          "choices": [
+            "церемония",
+            "провозглашать",
+            "власть",
+            "правда"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «die Zeremonie»?",
+          "choices": [
+            "правда",
+            "провозглашать",
+            "власть",
+            "церемония"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -142,6 +164,28 @@
           "transcription": "[ди ХОФ-нунг]",
           "sentence": "Die Hoffnung auf Versöhnung stirbt nie in meinem Herzen.",
           "sentence_translation": "Надежда на примирение никогда не умирает в моём сердце."
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «verstoßen»?",
+          "choices": [
+            "покидать",
+            "гнев",
+            "наказание",
+            "изгонять"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «verlassen»?",
+          "choices": [
+            "изгонять",
+            "гнев",
+            "наказание",
+            "покидать"
+          ],
+          "correct_index": 3
         }
       ]
     },
@@ -214,6 +258,28 @@
           "sentence": "Jeden Tag bete ich für seine Sicherheit.",
           "sentence_translation": "Каждый день я молюсь за его безопасность."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Sorge»?",
+          "choices": [
+            "одиночество",
+            "известие",
+            "страх",
+            "забота"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «die Einsamkeit»?",
+          "choices": [
+            "забота",
+            "известие",
+            "страх",
+            "одиночество"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -284,6 +350,28 @@
           "transcription": "[ди ар-МЭ]",
           "sentence": "Diese Armee kämpft für Gerechtigkeit und Liebe.",
           "sentence_translation": "Эта армия сражается за справедливость и любовь."
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «zurückkehren»?",
+          "choices": [
+            "борьба",
+            "спасать",
+            "битва",
+            "возвращаться"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Kampf»?",
+          "choices": [
+            "возвращаться",
+            "спасать",
+            "битва",
+            "борьба"
+          ],
+          "correct_index": 3
         }
       ]
     },
@@ -356,6 +444,28 @@
           "sentence": "Die Vergebung ist der Schlüssel zum Frieden.",
           "sentence_translation": "Прощение - ключ к покою."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «verzeihen»?",
+          "choices": [
+            "слёзы",
+            "обнимать",
+            "узнавать",
+            "прощать"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «die Tränen»?",
+          "choices": [
+            "прощать",
+            "обнимать",
+            "узнавать",
+            "слёзы"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -427,6 +537,28 @@
           "sentence": "Unsere Ehre bleibt unbefleckt.",
           "sentence_translation": "Наша честь остаётся незапятнанной."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «gefangen»?",
+          "choices": [
+            "тюрьма",
+            "достоинство",
+            "утешать",
+            "пленный"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «das Gefängnis»?",
+          "choices": [
+            "пленный",
+            "достоинство",
+            "утешать",
+            "тюрьма"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -497,6 +629,28 @@
           "transcription": "[ди ер-ЛЁ-зунг]",
           "sentence": "Im Tod finde ich Erlösung und Frieden.",
           "sentence_translation": "В смерти я нахожу спасение и покой."
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «der Tod»?",
+          "choices": [
+            "умирать",
+            "жертва",
+            "душа",
+            "смерть"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «sterben»?",
+          "choices": [
+            "смерть",
+            "жертва",
+            "душа",
+            "умирать"
+          ],
+          "correct_index": 3
         }
       ]
     }
