@@ -54,6 +54,13 @@ class LiraHTMLGenerator(BaseGenerator):
                 if not entry:
                     continue
 
+                if 'vocabulary_id' not in word and entry.get('id'):
+                    word['vocabulary_id'] = entry['id']
+
+                slug = cls._slugify(german)
+                if slug and not word.get('slug'):
+                    word['slug'] = slug
+
                 if 'wordFamily' not in word or not word['wordFamily']:
                     word['wordFamily'] = list(entry.get('word_family', []))
                 if 'synonyms' not in word or not word['synonyms']:
@@ -75,6 +82,14 @@ class LiraHTMLGenerator(BaseGenerator):
                             entry_themes = [entry_themes]
 
                         word['themes'] = list(entry_themes)
+
+    @staticmethod
+    def _slugify(value):
+        """Return a URL/ID friendly slug for german lexemes."""
+        if not value:
+            return None
+        slug = re.sub(r"[^a-z0-9]+", "-", value.lower())
+        return slug.strip("-") or None
 
     def generate_journey(self, character_file):
         """Generate journey page for a character"""

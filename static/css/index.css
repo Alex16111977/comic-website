@@ -97,6 +97,16 @@ body {
     gap: 22px;
 }
 
+.review-empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 24px;
+    border-radius: 16px;
+    background: rgba(102, 126, 234, 0.12);
+    color: #4a5568;
+    font-weight: 600;
+}
+
 .review-card {
     background: rgba(255, 255, 255, 0.95);
     color: #1a202c;
@@ -134,10 +144,59 @@ body {
     z-index: 1;
 }
 
+.review-remove-btn {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(102, 126, 234, 0.16);
+    color: #2d3748;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.review-remove-btn:hover,
+.review-remove-btn:focus {
+    background: rgba(102, 126, 234, 0.35);
+    color: #1a202c;
+    transform: translateY(-1px);
+    outline: none;
+}
+
+.review-remove-btn:active {
+    transform: scale(0.94);
+}
+
 .review-card-header {
     display: flex;
     align-items: flex-start;
     gap: 18px;
+}
+
+.review-origin {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin-top: -8px;
+    margin-bottom: 4px;
+}
+
+.review-origin-item {
+    font-size: 0.85em;
+    font-weight: 600;
+    color: #4a5568;
+    letter-spacing: 0.3px;
 }
 
 .review-icon {
@@ -400,6 +459,14 @@ body {
         padding: 22px;
     }
 
+    .review-remove-btn {
+        top: 14px;
+        right: 14px;
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+
     .review-card-header {
         gap: 14px;
     }
@@ -426,6 +493,13 @@ body {
     .review-card-header {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .review-remove-btn {
+        top: 10px;
+        right: 10px;
+        width: 28px;
+        height: 28px;
     }
 
     .review-icon {

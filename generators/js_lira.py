@@ -1,17 +1,37 @@
 """JavaScript Generator for Lira Journey interactivity"""
 
 import json
+import re
 
 
 class LiraJSGenerator:
     """Generate JavaScript for journey interactivity with mobile support"""
     
     @staticmethod
+    def _slugify(value):
+        """Return a safe slug for vocabulary identifiers."""
+        if not value:
+            return None
+        slug = re.sub(r"[^a-z0-9]+", "-", value.lower())
+        return slug.strip("-") or None
+
+    @staticmethod
+    def _build_word_id(character_id, phase_id, german_word, index):
+        """Compose a stable identifier for vocabulary cards."""
+        base = LiraJSGenerator._slugify(german_word) or f"word-{index}"
+        parts = [part for part in [character_id, phase_id, base] if part]
+        if not parts:
+            return f"word-{index}"
+        return "-".join(parts)
+
+    @staticmethod
     def generate(character_data):
         """Generate JS with vocabulary data from character JSON"""
-        
+
         # Build vocabulary object from character data using JSON serialization
         phase_vocabularies = {}
+        character_id = character_data.get('id') or character_data.get('character_id') or ''
+        character_slug = LiraJSGenerator._slugify(character_id) or ''
 
         for phase in character_data.get('journey_phases', []):
             phase_id = phase.get('id')
@@ -20,6 +40,16 @@ class LiraJSGenerator:
 
             words = []
             for word in phase.get('vocabulary', []):
+                german_word = word.get('german') or word.get('word')
+                vocabulary_id = word.get('vocabulary_id')
+                slug = word.get('slug') or LiraJSGenerator._slugify(german_word)
+                word_id = (
+                    word.get('id')
+                    or vocabulary_id
+                    or slug
+                    or LiraJSGenerator._build_word_id(character_slug, phase_id, german_word, len(words))
+                )
+
                 themes = word.get('themes') or []
                 if isinstance(themes, str):
                     themes = [themes]
@@ -46,6 +76,9 @@ class LiraJSGenerator:
                     collocations = []
 
                 words.append({
+                    'id': word_id,
+                    'slug': slug,
+                    'vocabularyId': vocabulary_id,
                     'word': word.get('german', ''),
                     'translation': word.get('russian', ''),
                     'transcription': word.get('transcription', ''),
@@ -83,7 +116,15 @@ class LiraJSGenerator:
                 'quizzes': quizzes,
             }
 
+        character_meta = {
+            'id': character_id,
+            'name': character_data.get('name', ''),
+            'title': character_data.get('title', ''),
+        }
+
         vocab_js = (
+            "const characterMeta = "
+            f"{json.dumps(character_meta, ensure_ascii=False)};\n"
             "const phaseVocabularies = "
             f"{json.dumps(phase_vocabularies, ensure_ascii=False, indent=4)};\n\n"
         )
@@ -96,6 +137,107 @@ let isTransitioning = false; // Prevent double clicks/taps
 let progressLineElement = null;
 let progressLineLength = 0;
 const QUIZ_ADVANCE_DELAY = 1200;
+const REVIEW_QUEUE_KEY = 'reviewQueue';
+
+function safeJSONParse(raw) {
+    if (!raw) return null;
+    try {
+        return JSON.parse(raw);
+    } catch (error) {
+        console.warn('[ReviewQueue] Failed to parse JSON from storage', error);
+        return null;
+    }
+}
+
+function loadReviewQueue() {
+    if (!('localStorage' in window)) {
+        return [];
+    }
+    const stored = safeJSONParse(localStorage.getItem(REVIEW_QUEUE_KEY));
+    return Array.isArray(stored) ? stored : [];
+}
+
+function saveReviewQueue(queue) {
+    if (!('localStorage' in window)) {
+        return;
+    }
+    try {
+        localStorage.setItem(REVIEW_QUEUE_KEY, JSON.stringify(queue));
+    } catch (error) {
+        console.warn('[ReviewQueue] Unable to persist queue', error);
+    }
+}
+
+function buildQueueEntry(word, phaseKey) {
+    const phase = phaseVocabularies[phaseKey] || {};
+    return {
+        wordId: word.id,
+        vocabularyId: word.vocabularyId || null,
+        slug: word.slug || null,
+        word: word.word,
+        translation: word.translation,
+        characterId: characterMeta.id || null,
+        characterName: characterMeta.name || null,
+        phaseId: phaseKey,
+        phaseTitle: phase.title || null,
+        addedAt: new Date().toISOString(),
+    };
+}
+
+function findQueueIndex(queue, wordId, phaseKey) {
+    return queue.findIndex(entry =>
+        entry.wordId === wordId &&
+        entry.phaseId === phaseKey &&
+        entry.characterId === (characterMeta.id || null)
+    );
+}
+
+function updateReviewButtonState(button, isQueued) {
+    if (!button) return;
+    button.dataset.queued = isQueued ? 'true' : 'false';
+    if (isQueued) {
+        button.classList.add('in-queue');
+        button.textContent = 'В очереди';
+        button.setAttribute('aria-pressed', 'true');
+    } else {
+        button.classList.remove('in-queue');
+        button.textContent = 'В повторение';
+        button.setAttribute('aria-pressed', 'false');
+    }
+}
+
+function handleReviewButtonClick(button, word, phaseKey) {
+    if (!word || !word.id) {
+        console.warn('[ReviewQueue] Unable to add word without identifier');
+        return;
+    }
+
+    const queue = loadReviewQueue();
+    const index = findQueueIndex(queue, word.id, phaseKey);
+
+    if (index >= 0) {
+        queue.splice(index, 1);
+        saveReviewQueue(queue);
+        updateReviewButtonState(button, false);
+        button.classList.remove('added');
+        return;
+    }
+
+    queue.push(buildQueueEntry(word, phaseKey));
+    saveReviewQueue(queue);
+    updateReviewButtonState(button, true);
+    button.classList.add('added');
+    setTimeout(() => button.classList.remove('added'), 600);
+}
+
+function setupReviewButton(button, word, phaseKey) {
+    if (!button) return;
+    const queue = loadReviewQueue();
+    const isQueued = findQueueIndex(queue, word.id, phaseKey) >= 0;
+    updateReviewButtonState(button, isQueued);
+
+    button.addEventListener('click', () => handleReviewButtonClick(button, word, phaseKey));
+}
 
 // Device detection
 const isTouchDevice = ('ontouchstart' in window) || 
@@ -272,7 +414,24 @@ function displayVocabulary(phaseKey) {
                     <div class="sentence-german">"${item.sentence}"</div>
                     <div class="sentence-translation">${item.sentenceTranslation}</div>
                 </div>
+                <div class="word-actions">
+                    <button class="word-review-btn" type="button" data-word-id="${item.id || ''}">В повторение</button>
+                </div>
             `;
+
+            card.dataset.wordId = item.id || '';
+            card.dataset.phaseId = phaseKey;
+            card.dataset.characterId = characterMeta.id || '';
+            if (item.vocabularyId) {
+                card.dataset.vocabularyId = item.vocabularyId;
+            }
+            if (item.slug) {
+                card.dataset.wordSlug = item.slug;
+            }
+
+            const reviewButton = card.querySelector('.word-review-btn');
+            setupReviewButton(reviewButton, item, phaseKey);
+
             grid.appendChild(card);
         }, index * 50);
     });

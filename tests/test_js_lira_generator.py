@@ -36,11 +36,13 @@ class LiraJSGeneratorTests(unittest.TestCase):
         script = LiraJSGenerator.generate(character_data)
 
         # Extract JSON portion of the script and validate it can round-trip
+        self.assertIn('const characterMeta = ', script)
         self.assertIn('const phaseVocabularies = ', script)
+
+        _, phase_section = script.split('const phaseVocabularies = ', 1)
         separator = ';' + '\n' * 2
-        self.assertIn(separator, script)
-        json_part, _ = script.split(separator, 1)
-        json_str = json_part.replace('const phaseVocabularies = ', '', 1)
+        self.assertIn(separator, phase_section)
+        json_str, _ = phase_section.split(separator, 1)
         payload = json.loads(json_str)
 
         self.assertIn('phase1', payload)

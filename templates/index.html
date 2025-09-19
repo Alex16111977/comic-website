@@ -39,7 +39,16 @@
             </div>
             <div class="review-grid">
                 {% for item in review_items %}
-                <article class="review-card" data-word-id="{{ item.id }}">
+                <article class="review-card"
+                         data-word-id="{{ item.id }}"
+                         data-vocabulary-id="{{ item.id }}"
+                         {% if item.character_id %}data-character-id="{{ item.character_id }}"{% endif %}
+                         {% if item.phase_id %}data-phase-id="{{ item.phase_id }}"{% endif %}
+                         {% if item.character_name %}data-character-name="{{ item.character_name }}"{% endif %}
+                         {% if item.phase_title %}data-phase-title="{{ item.phase_title }}"{% endif %}
+                         {% if item.word_slug %}data-word-slug="{{ item.word_slug }}"{% endif %}
+                         {% if item.added_at %}data-added-at="{{ item.added_at }}"{% endif %}>
+                    <button class="review-remove-btn" type="button" aria-label="Убрать из повторения">×</button>
                     <div class="review-card-header">
                         <div class="review-icon">{{ item.emoji }}</div>
                         <div class="review-title">
@@ -49,6 +58,19 @@
                             {% endif %}
                         </div>
                     </div>
+                    {% if item.character_name or item.phase_title or item.added_at %}
+                    <div class="review-origin">
+                        {% if item.character_name %}
+                        <span class="review-origin-item">Персонаж: {{ item.character_name }}</span>
+                        {% endif %}
+                        {% if item.phase_title %}
+                        <span class="review-origin-item">Фаза: {{ item.phase_title }}</span>
+                        {% endif %}
+                        {% if item.added_at %}
+                        <span class="review-origin-item">Добавлено: {{ item.added_at|replace('T', ' ') }}</span>
+                        {% endif %}
+                    </div>
+                    {% endif %}
                     {% if item.example %}
                     <p class="review-example">«{{ item.example }}»</p>
                     {% endif %}
@@ -82,5 +104,6 @@
             {% endfor %}
         </div>
     </div>
+    <script src="static/js/index.js"></script>
 </body>
 </html>

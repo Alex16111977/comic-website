@@ -1,5 +1,6 @@
 """Index page generator with character cards"""
 import json
+import re
 
 from .base import BaseGenerator
 
@@ -68,45 +69,221 @@ class IndexGenerator(BaseGenerator):
 
     def _get_review_items(self, limit=6):
         """Return a curated list of vocabulary items for spaced repetition."""
+        queue_items = self._load_review_queue()
+        if not queue_items:
+            return []
+
+        vocabulary_words = self._load_vocabulary_words()
+        if not vocabulary_words:
+            return []
+
+        word_index = {
+            word.get("id"): word
+            for word in vocabulary_words
+            if isinstance(word, dict) and word.get("id")
+        }
+
+        slug_index = {}
+        for word in vocabulary_words:
+            if not isinstance(word, dict):
+                continue
+            for slug in self._slugs_for_vocabulary(word):
+                slug_index.setdefault(slug, word)
+
+        review_items = []
+        character_cache = {}
+
+        for entry in queue_items:
+            if limit and len(review_items) >= limit:
+                break
+
+            if not isinstance(entry, dict):
+                continue
+
+            word_entry = None
+            candidate_ids = [
+                entry.get("vocabulary_id"),
+                entry.get("word_id"),
+                entry.get("id"),
+            ]
+
+            for candidate in candidate_ids:
+                if candidate and candidate in word_index:
+                    word_entry = word_index[candidate]
+                    break
+
+            if not word_entry:
+                slug_candidates = [
+                    entry.get("word_slug"),
+                    entry.get("slug"),
+                    self._slugify_text(entry.get("word")),
+                ]
+                for slug in slug_candidates:
+                    if slug and slug in slug_index:
+                        word_entry = slug_index[slug]
+                        break
+
+            if not word_entry:
+                continue
+
+            word_id = word_entry.get("id") or self._get_item_id(word_entry)
+            character_id = entry.get("character_id")
+            phase_id = entry.get("phase_id")
+            character_meta = self._get_character_meta(character_id, character_cache)
+            phase_meta = {}
+            if character_meta:
+                phase_meta = (character_meta.get("phases") or {}).get(phase_id, {})
+
+            review_items.append(
+                {
+                    "id": word_id,
+                    "emoji": entry.get("emoji") or word_entry.get("emoji", "📝"),
+                    "word": self._format_word(word_entry),
+                    "translation": self._extract_translation(word_entry),
+                    "level": word_entry.get("level"),
+                    "category": word_entry.get("category"),
+                    "phonetic": word_entry.get("phonetic"),
+                    "example": self._extract_example(word_entry),
+                    "practice_url": f"trainings/{word_id}.html",
+                    "word_slug": self._slugify_text(word_entry.get("word")) or entry.get("word_slug"),
+                    "character_id": character_id,
+                    "character_name": character_meta.get("name") if character_meta else None,
+                    "character_title": character_meta.get("title") if character_meta else None,
+                    "phase_id": phase_id,
+                    "phase_title": phase_meta.get("title") if phase_meta else None,
+                    "added_at": entry.get("added_at"),
+                }
+            )
+
+        return review_items
+
+    def _load_review_queue(self):
+        """Load queued vocabulary selections from JSON storage."""
+        queue_path = self.config.DATA_DIR / "review_queue.json"
+        if not queue_path.exists():
+            return []
+
+        try:
+            with queue_path.open("r", encoding="utf-8") as fp:
+                queue_data = json.load(fp)
+        except (OSError, json.JSONDecodeError) as exc:
+            print(f"[WARNING] Unable to load review queue: {exc}")
+            return []
+
+        items = queue_data.get("items")
+        if not isinstance(items, list):
+            return []
+
+        enumerated = [
+            (index, item)
+            for index, item in enumerate(items)
+            if isinstance(item, dict)
+        ]
+
+        enumerated.sort(
+            key=lambda pair: (
+                self._priority_value(pair[1].get("priority")),
+                pair[1].get("added_at") or "",
+                pair[0],
+            )
+        )
+
+        return [item for _, item in enumerated]
+
+    def _load_vocabulary_words(self):
+        """Load detailed vocabulary data."""
         vocabulary_path = self.config.DATA_DIR / "vocabulary" / "words.json"
         if not vocabulary_path.exists():
             return []
 
         try:
-            with open(vocabulary_path, "r", encoding="utf-8") as f:
-                vocabulary = json.load(f)
+            with vocabulary_path.open("r", encoding="utf-8") as fp:
+                vocabulary = json.load(fp)
         except (OSError, json.JSONDecodeError) as exc:
             print(f"[WARNING] Unable to load vocabulary data: {exc}")
             return []
 
-        words = vocabulary.get("words", [])
+        words = vocabulary.get("words")
         if not isinstance(words, list):
             return []
+        return words
 
-        pending_words = [word for word in words if not word.get("learned", False)]
-        if not pending_words:
-            pending_words = words
+    def _get_character_meta(self, character_id, cache):
+        """Return character metadata with phase titles."""
+        if not character_id:
+            return {}
 
-        sorted_words = sorted(pending_words, key=self._review_sort_key)
-        selected_words = sorted_words[:limit]
+        if character_id in cache:
+            return cache[character_id]
 
-        review_items = []
-        for word in selected_words:
-            review_items.append(
-                {
-                    "id": self._get_item_id(word),
-                    "emoji": word.get("emoji", "📝"),
-                    "word": self._format_word(word),
-                    "translation": self._extract_translation(word),
-                    "level": word.get("level"),
-                    "category": word.get("category"),
-                    "phonetic": word.get("phonetic"),
-                    "example": self._extract_example(word),
-                    "practice_url": f"trainings/{self._get_item_id(word)}.html",
-                }
-            )
+        char_file = self.config.CHARACTERS_DIR / f"{character_id}.json"
+        if not char_file.exists():
+            cache[character_id] = {}
+            return cache[character_id]
 
-        return review_items
+        try:
+            data = self.load_character(char_file)
+        except (OSError, json.JSONDecodeError):
+            cache[character_id] = {}
+            return cache[character_id]
+
+        phases = {}
+        for phase in data.get("journey_phases", []):
+            if not isinstance(phase, dict):
+                continue
+            phase_id = phase.get("id")
+            if not phase_id:
+                continue
+            phases[phase_id] = {
+                "title": phase.get("title"),
+                "icon": phase.get("icon"),
+            }
+
+        cache[character_id] = {
+            "id": character_id,
+            "name": data.get("name"),
+            "title": data.get("title"),
+            "phases": phases,
+        }
+        return cache[character_id]
+
+    def _slugs_for_vocabulary(self, word):
+        """Return possible slug representations for vocabulary entry."""
+        slugs = set()
+        if not isinstance(word, dict):
+            return slugs
+
+        base = word.get("word")
+        article = word.get("article")
+
+        slug_candidates = [
+            base,
+            f"{article} {base}" if article and base else None,
+        ]
+
+        for value in slug_candidates:
+            slug = self._slugify_text(value)
+            if slug:
+                slugs.add(slug)
+
+        return slugs
+
+    @staticmethod
+    def _slugify_text(value):
+        """Normalize a string into a slug."""
+        if not value:
+            return None
+        slug = re.sub(r"[^a-z0-9]+", "-", str(value).lower())
+        slug = slug.strip("-")
+        return slug or None
+
+    @staticmethod
+    def _priority_value(value):
+        """Convert optional priority into sortable integer."""
+        try:
+            return int(value)
+        except (TypeError, ValueError):
+            return 9999
 
     def _review_sort_key(self, word):
         """Sort vocabulary by frequency, level and alphabetical order."""

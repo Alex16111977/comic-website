@@ -27,11 +27,12 @@ def test_mobile_navigation():
     # Regenerate site with new mobile features
     print("[*] Regenerating site with mobile optimizations...")
     
+    project_root = Path(__file__).resolve().parents[1]
     result = subprocess.run(
         [sys.executable, 'main.py'],
         capture_output=True,
         text=True,
-        cwd=r'F:\AiKlientBank\KingLearComic'
+        cwd=str(project_root)
     )
     
     if result.returncode == 0:

@@ -1,0 +1,40 @@
+{
+  "updated_at": "2024-05-05T09:00:00Z",
+  "items": [
+    {
+      "word_id": "w002",
+      "vocabulary_id": "w002",
+      "word_slug": "macht",
+      "character_id": "cordelia",
+      "phase_id": "throne",
+      "added_at": "2024-05-04T18:32:00Z",
+      "comment": "Корделия вспоминает о власти.",
+      "priority": 1
+    },
+    {
+      "word_id": "w004",
+      "vocabulary_id": "w004",
+      "word_slug": "verzweiflung",
+      "character_id": "king_lear",
+      "phase_id": "storm",
+      "added_at": "2024-05-05T07:45:00Z",
+      "priority": 2
+    },
+    {
+      "word_id": "w006",
+      "vocabulary_id": "w006",
+      "word_slug": "wahnsinn",
+      "character_id": "fool",
+      "phase_id": "mad_companion",
+      "added_at": "2024-05-03T21:10:00Z"
+    },
+    {
+      "word_id": "w010",
+      "vocabulary_id": "w010",
+      "word_slug": "verrat",
+      "character_id": "edmund",
+      "phase_id": "storm",
+      "added_at": "2024-05-02T11:05:00Z"
+    }
+  ]
+}

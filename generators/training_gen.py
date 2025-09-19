@@ -15,11 +15,21 @@ class TrainingPageGenerator(BaseGenerator):
         self._data = vocabulary_data or {}
         self._words: List[Dict] = list(self._data.get("words", []))
         self._categories: Dict[str, Dict] = self._data.get("categories", {})
+        self._word_index: Dict[str, Dict] = {}
+        for entry in self._words:
+            if isinstance(entry, dict) and entry.get("id"):
+                self._word_index[entry["id"]] = entry
 
     def find_word(self, word_id: str) -> Optional[Dict]:
         """Return a word entry by its identifier."""
+        if not word_id:
+            return None
+        if word_id in self._word_index:
+            return self._word_index[word_id]
+
         for word in self._words:
             if word.get("id") == word_id:
+                self._word_index[word_id] = word
                 return word
         return None
 

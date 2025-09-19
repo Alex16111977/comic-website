@@ -319,6 +319,42 @@ body {
     color: #666;
 }
 
+.word-actions {
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.word-review-btn {
+    border: none;
+    border-radius: 999px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 0.95em;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    cursor: pointer;
+    box-shadow: 0 10px 24px rgba(118, 75, 162, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+}
+
+.word-review-btn:hover,
+.word-review-btn:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 32px rgba(102, 126, 234, 0.35);
+    outline: none;
+}
+
+.word-review-btn.in-queue {
+    background: linear-gradient(135deg, #48bb78, #4299e1);
+    box-shadow: 0 10px 24px rgba(72, 187, 120, 0.3);
+}
+
+.word-review-btn.added {
+    animation: reviewPulse 0.4s ease;
+}
+
 .relations-wrapper {
     margin: 20px 0 40px;
 }
@@ -1189,6 +1225,18 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes reviewPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
     }
 }
 
