@@ -113,6 +113,26 @@ def main():
         except Exception as e:
             print(f"[ERROR] Failed to generate index: {e}")
     
+    # Copy universal training page
+    print("\n[GENERATING] Universal training page...")
+    try:
+        training_template = config.TEMPLATES_DIR / "training.html"
+        if training_template.exists():
+            # Read template
+            with open(training_template, 'r', encoding='utf-8') as f:
+                training_html = f.read()
+            
+            # Save to output
+            training_output = config.OUTPUT_DIR / "training.html"
+            with open(training_output, 'w', encoding='utf-8') as f:
+                f.write(training_html)
+            
+            print("[OK] Universal training page created")
+        else:
+            print("[WARNING] Training template not found")
+    except Exception as e:
+        print(f"[ERROR] Failed to create training page: {e}")
+    
     # Summary
     print("\n" + "=" * 60)
     print(f"[SUMMARY]")

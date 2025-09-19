@@ -1405,3 +1405,219 @@ body {
         -webkit-tap-highlight-color: transparent;
     }
 }
+
+/* ============= STUDY WORDS STYLES ============= */
+
+.review-today-section {
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+}
+
+.review-today-section h2 {
+    color: white;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.review-today-section .subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    min-height: 80px;
+}
+
+.review-empty {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    width: 100%;
+}
+
+.review-card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.review-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.review-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.review-card-content strong {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.review-card-content span {
+    color: #666;
+    font-size: 1em;
+}
+
+.review-card-content em {
+    color: #999;
+    font-size: 0.9em;
+}
+
+.review-remove-btn {
+    background: #22c55e;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.review-remove-btn:hover {
+    background: #16a34a;
+    transform: scale(1.1);
+}
+
+/* Study button on word cards */
+.study-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-top: 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.study-btn:hover:not(:disabled) {
+    background: linear-gradient(135deg, #5a67d8 0%, #68428f 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.study-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.study-feedback {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(34, 197, 94, 0.95);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.study-feedback.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Стилі для кнопки "Изучить" */
+.study-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 0.95em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.study-btn:hover:not(:disabled) {
+    background: linear-gradient(135deg, #5a67d8 0%, #68428f 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.study-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.study-btn.added {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+}
+
+/* Word card adjustments for study button */
+.word-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 150px;
+    padding: 20px;
+}
+
+.word-card-header {
+    flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+    .review-today-section {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+    
+    .review-today-section h2 {
+        font-size: 1.5em;
+    }
+    
+    .review-card {
+        width: 100%;
+        max-width: none;
+    }
+    
+    .study-feedback {
+        top: auto;
+        bottom: 20px;
+        right: 10px;
+        left: 10px;
+        text-align: center;
+    }
+}

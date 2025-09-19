@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренировка слова</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .training-container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 900px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        .training-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .back-link {
+            color: #6b7280;
+            text-decoration: none;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: color 0.3s;
+        }
+        
+        .back-link:hover {
+            color: #374151;
+        }
+        
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: #6b7280;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .close-btn:hover {
+            transform: scale(1.2);
+            color: #374151;
+        }
+        
+        .progress-section {
+            margin-bottom: 30px;
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background: #e5e7eb;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: width 0.3s ease;
+        }
+        
+        .progress-text {
+            text-align: center;
+            color: #6b7280;
+            font-size: 14px;
+        }
+        
+        .exercise-content {
+            min-height: 400px;
+            margin-bottom: 30px;
+        }
+        
+        /* Стили для упражнения "Знакомство" */
+        .introduction-exercise {
+            text-align: center;
+        }
+        
+        .word-display {
+            margin-bottom: 30px;
+        }
+        
+        .word-main {
+            font-size: 48px;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 10px;
+        }
+        
+        .word-transcription {
+            font-size: 20px;
+            color: #6b7280;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .word-translation {
+            font-size: 24px;
+            color: #374151;
+        }
+        
+        .examples-section {
+            margin-top: 40px;
+            text-align: left;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .examples-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .example-item {
+            background: #f9fafb;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        
+        .example-character {
+            font-size: 13px;
+            color: #6b7280;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .example-character strong {
+            color: #667eea;
+        }
+        
+        .example-german {
+            font-size: 16px;
+            color: #111827;
+            margin-bottom: 5px;
+            font-style: italic;
+            line-height: 1.5;
+        }
+        
+        .example-russian {
+            font-size: 14px;
+            color: #6b7280;
+            line-height: 1.4;
+        }
+        
+        /* Стили для упражнений с выбором */
+        .quiz-exercise {
+            text-align: center;
+        }
+        
+        .quiz-question {
+            font-size: 24px;
+            color: #111827;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        
+        .quiz-word {
+            font-size: 36px;
+            color: #667eea;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        
+        .quiz-options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .quiz-option {
+            padding: 20px;
+            background: #f3f4f6;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .quiz-option:hover:not(:disabled) {
+            background: #e5e7eb;
+            transform: translateY(-2px);
+        }
+        
+        .quiz-option.correct {
+            background: #d1fae5;
+            border-color: #10b981;
+            color: #065f46;
+        }
+        
+        .quiz-option.incorrect {
+            background: #fee2e2;
+            border-color: #ef4444;
+            color: #991b1b;
+        }
+        
+        .quiz-option:disabled {
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+        
+        .quiz-feedback {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 20px;
+            min-height: 30px;
+        }
+        
+        .feedback-correct {
+            color: #10b981;
+        }
+        
+        .feedback-incorrect {
+            color: #ef4444;
+        }
+        
+        /* Стили для упражнения с вводом */
+        .context-exercise {
+            text-align: center;
+        }
+        
+        .context-sentence {
+            font-size: 20px;
+            color: #111827;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .context-blank {
+            display: inline-block;
+            min-width: 150px;
+            border-bottom: 2px solid #667eea;
+            font-weight: 600;
+            color: #667eea;
+        }
+        
+        .context-input {
+            width: 100%;
+            max-width: 400px;
+            padding: 15px;
+            font-size: 18px;
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .context-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        /* Кнопки управления */
+        .controls-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .skip-btn {
+            padding: 10px 20px;
+            background: #f3f4f6;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            color: #6b7280;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .skip-btn:hover {
+            background: #e5e7eb;
+        }
+        
+        .next-btn, .check-btn {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .next-btn:hover, .check-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .next-btn:disabled, .check-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        /* Счетчик правильных ответов */
+        .score-section {
+            text-align: center;
+            padding: 20px;
+            background: #f9fafb;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        .score-text {
+            font-size: 16px;
+            color: #374151;
+        }
+        
+        .score-number {
+            font-weight: 700;
+            color: #667eea;
+            font-size: 20px;
+        }
+        
+        /* Финальный экран */
+        .completion-screen {
+            text-align: center;
+            padding: 40px;
+        }
+        
+        .completion-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+        
+        .completion-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 10px;
+        }
+        
+        .completion-text {
+            font-size: 18px;
+            color: #6b7280;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        
+        .completion-btn {
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+        
+        .completion-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Информация о слове остаётся */
+        .note-info {
+            background: #fef3c7;
+            border: 1px solid #fbbf24;
+            border-radius: 8px;
+            padding: 10px 15px;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #92400e;
+        }
+        
+        /* Адаптивность */
+        @media (max-width: 640px) {
+            .training-container {
+                padding: 20px;
+            }
+            
+            .quiz-options {
+                grid-template-columns: 1fr;
+            }
+            
+            .word-main {
+                font-size: 36px;
+            }
+            
+            .quiz-word {
+                font-size: 28px;
+            }
+            
+            .examples-section {
+                max-height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="training-container">
+        <div class="training-header">
+            <a href="index.html" class="back-link">← На главную</a>
+            <button class="close-btn" onclick="window.location.href='index.html'">✕</button>
+        </div>
+        
+        <div class="progress-section">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+            </div>
+            <p class="progress-text" id="progress-text">Упражнение 1 из 5</p>
+        </div>
+        
+        <div class="exercise-content" id="exercise-content">
+            <!-- Контент упражнений будет загружаться сюда -->
+        </div>
+        
+        <div class="controls-section" id="controls">
+            <button class="skip-btn" id="skip-btn" onclick="TrainingSystem.skipExercise()" style="display:none;">
+                Пропустить
+            </button>
+            <button class="next-btn" id="next-btn" onclick="TrainingSystem.nextExercise()" style="display:none;">
+                Далее →
+            </button>
+        </div>
+        
+        <div class="score-section">
+            <p class="score-text">
+                Правильных ответов: <span class="score-number" id="correct-count">0</span> / <span id="required-count">3</span>
+            </p>
+        </div>
+    </div>
+    
+    <script>
+    // Универсальная система тренировки
+    const TrainingSystem = {
+        // Текущее состояние
+        currentWord: null,
+        currentExerciseIndex: 0,
+        exercises: [],
+        correctAnswers: 0,
+        requiredCorrect: 3,
+        wordExamples: [],
+        allWords: [],
+        characterData: {},
+        
+        // Инициализация при загрузке страницы
+        async init() {
+            console.log('[Training] Initializing...');
+            
+            // Получаем параметр word из URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const wordId = urlParams.get('word');
+            
+            if (!wordId) {
+                alert('Не указано слово для тренировки');
+                window.location.href = 'index.html';
+                return;
+            }
+            
+            // Загружаем слово из localStorage
+            const words = this.getWordsFromStorage();
+            this.allWords = words;
+            this.currentWord = words.find(w => {
+                const wId = (w.id || w.word || '').replace(/\s+/g, '_').toLowerCase();
+                return wId === wordId.toLowerCase();
+            });
+            
+            if (!this.currentWord) {
+                alert('Слово не найдено в списке для изучения');
+                window.location.href = 'index.html';
+                return;
+            }
+            
+            // Обновляем заголовок страницы
+            document.title = `Тренировка: ${this.currentWord.word}`;
+            
+            // Загружаем примеры использования
+            await this.loadWordExamples();
+            
+            // Создаем упражнения
+            this.createExercises();
+            
+            // Начинаем первое упражнение
+            this.showCurrentExercise();
+        },
+        
+        // Получение слов из localStorage
+        getWordsFromStorage() {
+            try {
+                const data = localStorage.getItem('liraJourney:studyWords');
+                return data ? JSON.parse(data) : [];
+            } catch(e) {
+                console.error('[Training] Error reading localStorage:', e);
+                return [];
+            }
+        },
+        
+        // Загрузка примеров слова
+        async loadWordExamples() {
+            this.wordExamples = [];
+            
+            // Сначала проверяем есть ли примеры в самом объекте слова (из localStorage)
+            if (this.currentWord.examples && Array.isArray(this.currentWord.examples)) {
+                this.wordExamples = this.currentWord.examples;
+                console.log('[Training] Using examples from localStorage:', this.wordExamples.length);
+                return; // Используем примеры из localStorage
+            }
+            
+            // Если примеров нет, пробуем загрузить из JSON файлов (может не работать из-за CORS)
+            const word = this.currentWord.word.toLowerCase();
+            const wordBase = word.replace(/^(der|die|das)\s+/i, '').toLowerCase();
+            
+            // Список персонажей с русскими названиями
+            const characters = [
+                {id: 'king_lear', name: 'Король Лір'},
+                {id: 'cordelia', name: 'Корделія'},
+                {id: 'goneril', name: 'Гонерілья'},
+                {id: 'regan', name: 'Регана'},
+                {id: 'gloucester', name: 'Глостер'},
+                {id: 'edgar', name: 'Едгар'},
+                {id: 'edmund', name: 'Едмунд'},
+                {id: 'kent', name: 'Кент'},
+                {id: 'fool', name: 'Шут'},
+                {id: 'albany', name: 'Олбані'},
+                {id: 'cornwall', name: 'Корнуолл'},
+                {id: 'oswald', name: 'Освальд'}
+            ];
+            
+            // Собираем ВСЕ примеры из всех персонажей
+            for (const char of characters) {
+                try {
+                    const response = await fetch(`../data/characters/${char.id}.json`);
+                    if (!response.ok) continue;
+                    
+                    const data = await response.json();
+                    const examples = this.findWordInCharacterData(data, wordBase);
+                    
+                    examples.forEach(ex => {
+                        ex.character = char.name;
+                        ex.characterId = char.id;
+                        ex.phaseNumber = ex.phaseNumber || '';
+                    });
+                    
+                    this.wordExamples.push(...examples);
+                } catch(e) {
+                    console.log(`[Training] Could not load ${char.id}:`, e);
+                }
+            }
+            
+            // НЕ ограничиваем количество примеров - показываем все найденные
+            // Но ограничиваем до 10 для удобства отображения
+            if (this.wordExamples.length > 10) {
+                // Берём по 1-2 примера от каждого персонажа
+                const byCharacter = {};
+                this.wordExamples.forEach(ex => {
+                    if (!byCharacter[ex.characterId]) {
+                        byCharacter[ex.characterId] = [];
+                    }
+                    byCharacter[ex.characterId].push(ex);
+                });
+                
+                const selected = [];
+                for (const charId in byCharacter) {
+                    selected.push(...byCharacter[charId].slice(0, 2));
+                    if (selected.length >= 10) break;
+                }
+                this.wordExamples = selected.slice(0, 10);
+            }
+            
+            console.log('[Training] Found examples:', this.wordExamples.length);
+        },
+        
+        // Поиск слова в данных персонажа
+        findWordInCharacterData(data, searchWord) {
+            const examples = [];
+            
+            // Ищем в journey_phases
+            if (data.journey_phases) {
+                data.journey_phases.forEach((phase, phaseIndex) => {
+                    // Проверяем vocabulary
+                    if (phase.vocabulary) {
+                        phase.vocabulary.forEach(vocab => {
+                            const german = (vocab.german || '').toLowerCase();
+                            const germanBase = german.replace(/^(der|die|das)\s+/i, '').toLowerCase();
+                            
+                            if (germanBase.includes(searchWord) || searchWord.includes(germanBase) || 
+                                german === searchWord || germanBase === searchWord) {
+                                if (vocab.sentence) {
+                                    examples.push({
+                                        phase: phase.title,
+                                        phaseNumber: `Етап ${phaseIndex + 1}`,
+                                        german: vocab.sentence,
+                                        russian: vocab.sentence_translation || '',
+                                        context: phase.description
+                                    });
+                                }
+                            }
+                        });
+                    }
+                    
+                    // Проверяем theatrical_scene для поиска дополнительных примеров
+                    if (phase.theatrical_scene && phase.theatrical_scene.quotes) {
+                        phase.theatrical_scene.quotes.forEach(quote => {
+                            if (quote.german && quote.german.toLowerCase().includes(searchWord)) {
+                                examples.push({
+                                    phase: phase.title,
+                                    phaseNumber: `Етап ${phaseIndex + 1}`,
+                                    german: quote.german,
+                                    russian: quote.russian || '',
+                                    context: phase.theatrical_scene.title
+                                });
+                            }
+                        });
+                    }
+                });
+            }
+            
+            return examples;
+        },
+        
+        // Создание упражнений
+        createExercises() {
+            this.exercises = [];
+            
+            // 1. Знакомство со словом (всегда первое)
+            this.exercises.push({
+                type: 'introduction',
+                title: 'Знакомство со словом'
+            });
+            
+            // 2. Выбери перевод
+            this.exercises.push({
+                type: 'choose_translation',
+                title: 'Выберите правильный перевод'
+            });
+            
+            // 3. Обратный перевод
+            this.exercises.push({
+                type: 'reverse_translation',
+                title: 'Выберите немецкое слово'
+            });
+            
+            // 4. Артикль (если это существительное с артиклем)
+            if (this.currentWord.word && this.currentWord.word.match(/^(der|die|das)\s/i)) {
+                this.exercises.push({
+                    type: 'article',
+                    title: 'Выберите правильный артикль'
+                });
+            }
+            
+            // 5. Контекст (если есть пример)
+            if (this.wordExamples.length > 0 || this.currentWord.example) {
+                this.exercises.push({
+                    type: 'context',
+                    title: 'Вставьте слово в контекст'
+                });
+            }
+            
+            console.log('[Training] Created exercises:', this.exercises);
+        },
+        
+        // Показ текущего упражнения
+        showCurrentExercise() {
+            if (this.currentExerciseIndex >= this.exercises.length) {
+                this.showCompletion();
+                return;
+            }
+            
+            const exercise = this.exercises[this.currentExerciseIndex];
+            const content = document.getElementById('exercise-content');
+            
+            // Обновляем прогресс
+            const progress = ((this.currentExerciseIndex + 1) / this.exercises.length) * 100;
+            document.getElementById('progress-fill').style.width = progress + '%';
+            document.getElementById('progress-text').textContent = 
+                `Упражнение ${this.currentExerciseIndex + 1} из ${this.exercises.length}`;
+            
+            // Генерируем контент упражнения
+            switch(exercise.type) {
+                case 'introduction':
+                    this.showIntroduction();
+                    break;
+                case 'choose_translation':
+                    this.showChooseTranslation();
+                    break;
+                case 'reverse_translation':
+                    this.showReverseTranslation();
+                    break;
+                case 'article':
+                    this.showArticleExercise();
+                    break;
+                case 'context':
+                    this.showContextExercise();
+                    break;
+            }
+        },
+        
+        // Упражнение 1: Знакомство
+        showIntroduction() {
+            const content = document.getElementById('exercise-content');
+            
+            let examplesHTML = '';
+            if (this.wordExamples.length > 0) {
+                examplesHTML = `
+                    <div class="examples-section">
+                        <h3 class="examples-title">Приклади використання у тексті (${this.wordExamples.length} знайдено):</h3>
+                        ${this.wordExamples.map(ex => `
+                            <div class="example-item">
+                                <div class="example-character">
+                                    <strong>${ex.character}</strong>, ${ex.phaseNumber} - ${ex.phase || ex.context}
+                                </div>
+                                <div class="example-german">"${ex.german}"</div>
+                                ${ex.russian ? `<div class="example-russian">${ex.russian}</div>` : ''}
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            }
+            
+            content.innerHTML = `
+                <div class="introduction-exercise">
+                    <div class="word-display">
+                        <div class="word-main">${this.currentWord.word}</div>
+                        ${this.currentWord.transcription ? 
+                            `<div class="word-transcription">${this.currentWord.transcription}</div>` : ''}
+                        <div class="word-translation">${this.currentWord.translation}</div>
+                    </div>
+                    ${examplesHTML}
+                    <div class="note-info">
+                        💡 Після тренування слово залишається у вашому списку. Ви самі вирішуєте коли його видалити.
+                    </div>
+                </div>
+            `;
+            
+            // Показываем только кнопку "Далее"
+            document.getElementById('skip-btn').style.display = 'none';
+            document.getElementById('next-btn').style.display = 'block';
+        },
+        
+        // Упражнение 2: Выбери перевод
+        showChooseTranslation() {
+            const content = document.getElementById('exercise-content');
+            
+            // Генерируем варианты ответов
+            const options = this.generateTranslationOptions(false);
+            
+            content.innerHTML = `
+                <div class="quiz-exercise">
+                    <div class="quiz-question">Выберите правильный перевод:</div>
+                    <div class="quiz-word">${this.currentWord.word}</div>
+                    <div class="quiz-options">
+                        ${options.map((opt, idx) => `
+                            <button class="quiz-option" onclick="TrainingSystem.checkAnswer(${idx}, ${opt.correct})">
+                                ${opt.text}
+                            </button>
+                        `).join('')}
+                    </div>
+                    <div class="quiz-feedback" id="feedback"></div>
+                </div>
+            `;
+            
+            // Скрываем кнопки пока не ответит
+            document.getElementById('skip-btn').style.display = 'block';
+            document.getElementById('next-btn').style.display = 'none';
+        },
+        
+        // Упражнение 3: Обратный перевод
+        showReverseTranslation() {
+            const content = document.getElementById('exercise-content');
+            
+            // Генерируем варианты ответов
+            const options = this.generateTranslationOptions(true);
+            
+            content.innerHTML = `
+                <div class="quiz-exercise">
+                    <div class="quiz-question">Выберите немецкое слово:</div>
+                    <div class="quiz-word">${this.currentWord.translation}</div>
+                    <div class="quiz-options">
+                        ${options.map((opt, idx) => `
+                            <button class="quiz-option" onclick="TrainingSystem.checkAnswer(${idx}, ${opt.correct})">
+                                ${opt.text}
+                            </button>
+                        `).join('')}
+                    </div>
+                    <div class="quiz-feedback" id="feedback"></div>
+                </div>
+            `;
+            
+            document.getElementById('skip-btn').style.display = 'block';
+            document.getElementById('next-btn').style.display = 'none';
+        },
+        
+        // Упражнение 4: Артикль
+        showArticleExercise() {
+            const content = document.getElementById('exercise-content');
+            
+            // Извлекаем слово без артикля
+            const wordWithoutArticle = this.currentWord.word.replace(/^(der|die|das)\s+/i, '');
+            const correctArticle = this.currentWord.word.match(/^(der|die|das)/i)[1].toLowerCase();
+            
+            content.innerHTML = `
+                <div class="quiz-exercise">
+                    <div class="quiz-question">Выберите правильный артикль:</div>
+                    <div class="quiz-word">_____ ${wordWithoutArticle}</div>
+                    <div class="quiz-options">
+                        <button class="quiz-option" onclick="TrainingSystem.checkArticle('der', '${correctArticle}')">
+                            der
+                        </button>
+                        <button class="quiz-option" onclick="TrainingSystem.checkArticle('die', '${correctArticle}')">
+                            die
+                        </button>
+                        <button class="quiz-option" onclick="TrainingSystem.checkArticle('das', '${correctArticle}')">
+                            das
+                        </button>
+                    </div>
+                    <div class="quiz-feedback" id="feedback"></div>
+                </div>
+            `;
+            
+            document.getElementById('skip-btn').style.display = 'block';
+            document.getElementById('next-btn').style.display = 'none';
+        },
+        
+        // Упражнение 5: Контекст
+        showContextExercise() {
+            const content = document.getElementById('exercise-content');
+            
+            // Берем пример предложения
+            let sentence = '';
+            if (this.wordExamples.length > 0) {
+                // Выбираем случайный пример
+                const randomExample = this.wordExamples[Math.floor(Math.random() * Math.min(3, this.wordExamples.length))];
+                sentence = randomExample.german;
+            } else if (this.currentWord.example) {
+                sentence = this.currentWord.example;
+            } else {
+                // Генерируем простое предложение если примера нет
+                sentence = `Das ist ${this.currentWord.word}.`;
+            }
+            
+            // Заменяем слово на пропуск
+            const wordToReplace = this.currentWord.word.replace(/^(der|die|das)\s+/i, '');
+            const sentenceWithBlank = sentence.replace(
+                new RegExp(wordToReplace, 'gi'),
+                '<span class="context-blank">_____</span>'
+            );
+            
+            content.innerHTML = `
+                <div class="context-exercise">
+                    <div class="quiz-question">Вставьте пропущенное слово:</div>
+                    <div class="context-sentence">${sentenceWithBlank}</div>
+                    <input type="text" class="context-input" id="context-input" 
+                           placeholder="Введите слово..." 
+                           onkeypress="if(event.key==='Enter') TrainingSystem.checkContext()">
+                    <button class="check-btn" onclick="TrainingSystem.checkContext()">
+                        Проверить
+                    </button>
+                    <div class="quiz-feedback" id="feedback"></div>
+                </div>
+            `;
+            
+            document.getElementById('skip-btn').style.display = 'block';
+            document.getElementById('next-btn').style.display = 'none';
+            document.getElementById('context-input').focus();
+        },
+        
+        // Генерация вариантов для викторины
+        generateTranslationOptions(reverse = false) {
+            const options = [];
+            const correct = reverse ? this.currentWord.word : this.currentWord.translation;
+            
+            // Добавляем правильный ответ
+            options.push({ text: correct, correct: true });
+            
+            // Добавляем неправильные варианты
+            const distractors = reverse ? 
+                ['die Macht', 'die Krone', 'der Verrat', 'die Schlacht', 'das Erbe', 'der Sturm'] :
+                ['власть', 'корона', 'предательство', 'битва', 'наследство', 'буря'];
+            
+            // Если есть другие слова в localStorage, используем их
+            if (this.allWords.length > 1) {
+                const otherWords = this.allWords.filter(w => w.word !== this.currentWord.word);
+                otherWords.forEach(w => {
+                    const text = reverse ? w.word : w.translation;
+                    if (text && text !== correct && options.length < 4) {
+                        options.push({ text, correct: false });
+                    }
+                });
+            }
+            
+            // Дополняем стандартными дистракторами если нужно
+            while (options.length < 4) {
+                const distractor = distractors[options.length - 1];
+                if (distractor && !options.find(o => o.text === distractor)) {
+                    options.push({ text: distractor, correct: false });
+                }
+            }
+            
+            // Перемешиваем варианты
+            return this.shuffle(options).slice(0, 4);
+        },
+        
+        // Перемешивание массива
+        shuffle(array) {
+            const arr = [...array];
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr;
+        },
+        
+        // Проверка ответа в викторине
+        checkAnswer(index, isCorrect) {
+            const options = document.querySelectorAll('.quiz-option');
+            const feedback = document.getElementById('feedback');
+            
+            // Отключаем все кнопки
+            options.forEach(btn => btn.disabled = true);
+            
+            // Подсвечиваем ответы
+            options[index].classList.add(isCorrect ? 'correct' : 'incorrect');
+            
+            // Находим и подсвечиваем правильный ответ
+            if (!isCorrect) {
+                options.forEach((btn, idx) => {
+                    if (btn.textContent.trim() === this.currentWord.translation ||
+                        btn.textContent.trim() === this.currentWord.word) {
+                        btn.classList.add('correct');
+                    }
+                });
+            }
+            
+            // Показываем feedback
+            if (isCorrect) {
+                feedback.innerHTML = '<span class="feedback-correct">✅ Правильно!</span>';
+                this.correctAnswers++;
+                document.getElementById('correct-count').textContent = this.correctAnswers;
+            } else {
+                feedback.innerHTML = '<span class="feedback-incorrect">❌ Неправильно!</span>';
+            }
+            
+            // Показываем кнопку "Далее"
+            document.getElementById('next-btn').style.display = 'block';
+            
+            // Проверяем завершение
+            if (this.correctAnswers >= this.requiredCorrect && this.currentExerciseIndex === this.exercises.length - 1) {
+                setTimeout(() => this.showCompletion(), 1500);
+            }
+        },
+        
+        // Проверка артикля
+        checkArticle(selected, correct) {
+            const options = document.querySelectorAll('.quiz-option');
+            const feedback = document.getElementById('feedback');
+            const isCorrect = selected === correct;
+            
+            // Отключаем все кнопки
+            options.forEach(btn => {
+                btn.disabled = true;
+                if (btn.textContent.trim() === selected) {
+                    btn.classList.add(isCorrect ? 'correct' : 'incorrect');
+                }
+                if (btn.textContent.trim() === correct && !isCorrect) {
+                    btn.classList.add('correct');
+                }
+            });
+            
+            // Показываем feedback
+            if (isCorrect) {
+                feedback.innerHTML = '<span class="feedback-correct">✅ Правильно!</span>';
+                this.correctAnswers++;
+                document.getElementById('correct-count').textContent = this.correctAnswers;
+            } else {
+                feedback.innerHTML = `<span class="feedback-incorrect">❌ Правильный артикль: ${correct}</span>`;
+            }
+            
+            // Показываем кнопку "Далее"
+            document.getElementById('next-btn').style.display = 'block';
+            
+            // Проверяем завершение
+            if (this.correctAnswers >= this.requiredCorrect && this.currentExerciseIndex === this.exercises.length - 1) {
+                setTimeout(() => this.showCompletion(), 1500);
+            }
+        },
+        
+        // Проверка контекста
+        checkContext() {
+            const input = document.getElementById('context-input');
+            const feedback = document.getElementById('feedback');
+            const userAnswer = input.value.trim().toLowerCase();
+            const correctWord = this.currentWord.word.replace(/^(der|die|das)\s+/i, '').toLowerCase();
+            
+            const isCorrect = userAnswer === correctWord || 
+                              userAnswer === this.currentWord.word.toLowerCase();
+            
+            // Отключаем ввод
+            input.disabled = true;
+            
+            if (isCorrect) {
+                feedback.innerHTML = '<span class="feedback-correct">✅ Правильно!</span>';
+                this.correctAnswers++;
+                document.getElementById('correct-count').textContent = this.correctAnswers;
+            } else {
+                feedback.innerHTML = `<span class="feedback-incorrect">❌ Правильный ответ: ${this.currentWord.word}</span>`;
+            }
+            
+            // Показываем кнопку "Далее"
+            document.getElementById('next-btn').style.display = 'block';
+            
+            // Проверяем завершение
+            if (this.correctAnswers >= this.requiredCorrect && this.currentExerciseIndex === this.exercises.length - 1) {
+                setTimeout(() => this.showCompletion(), 1500);
+            }
+        },
+        
+        // Переход к следующему упражнению
+        nextExercise() {
+            this.currentExerciseIndex++;
+            this.showCurrentExercise();
+        },
+        
+        // Пропуск упражнения
+        skipExercise() {
+            this.currentExerciseIndex++;
+            this.showCurrentExercise();
+        },
+        
+        // Показ экрана завершения  
+        showCompletion() {
+            const content = document.getElementById('exercise-content');
+            
+            // НЕ удаляем слово - пользователь сам решит когда удалить
+            // this.removeWordFromStorage(); - ЗАКОММЕНТИРОВАНО
+            
+            const successMessage = this.correctAnswers >= this.requiredCorrect ? 
+                'Отлична робота! Ви добре запам\'ятали це слово.' : 
+                'Хороша спроба! Продовжуйте тренуватися.';
+            
+            content.innerHTML = `
+                <div class="completion-screen">
+                    <div class="completion-icon">🎉</div>
+                    <h2 class="completion-title">${successMessage}</h2>
+                    <p class="completion-text">
+                        Слово "${this.currentWord.word}" залишається у вашому списку для вивчення.<br>
+                        Правильних відповідей: ${this.correctAnswers}<br>
+                        <br>
+                        <small style="color: #6b7280;">Ви можете видалити слово зі списку на головній сторінці, коли вважатимете за потрібне.</small>
+                    </p>
+                    <a href="index.html" class="completion-btn">
+                        Повернутися на головну
+                    </a>
+                </div>
+            `;
+            
+            // Скрываем элементы управления
+            document.getElementById('controls').style.display = 'none';
+            document.querySelector('.score-section').style.display = 'none';
+            document.querySelector('.progress-section').style.display = 'none';
+        },
+        
+        // Удаление слова из localStorage (не используется, но оставляем на будущее)
+        removeWordFromStorage() {
+            try {
+                let words = this.getWordsFromStorage();
+                const wordId = (this.currentWord.id || this.currentWord.word || '').replace(/\s+/g, '_').toLowerCase();
+                words = words.filter(w => {
+                    const wId = (w.id || w.word || '').replace(/\s+/g, '_').toLowerCase();
+                    return wId !== wordId;
+                });
+                localStorage.setItem('liraJourney:studyWords', JSON.stringify(words));
+                console.log('[Training] Word removed from storage');
+            } catch(e) {
+                console.error('[Training] Error removing word:', e);
+            }
+        }
+    };
+    
+    // Запуск при загрузке страницы
+    document.addEventListener('DOMContentLoaded', () => {
+        TrainingSystem.init();
+    });
+    </script>
+</body>
+</html>

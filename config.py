@@ -9,6 +9,7 @@ DATA_DIR = BASE_DIR / "data"
 OUTPUT_DIR = BASE_DIR / "output"
 CHARACTERS_DIR = DATA_DIR / "characters"
 GENERATORS_DIR = BASE_DIR / "generators"
+TEMPLATES_DIR = BASE_DIR / "templates"
 
 # Character display order (главные → второстепенные → злодеи → слуги)
 CHARACTER_ORDER = [

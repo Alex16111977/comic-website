@@ -31,51 +31,19 @@
             </div>
         </header>
 
-        {% if review_items %}
+        <!-- Раздел "Повторить сегодня" с детальными карточками -->
         <section class="review-section">
             <div class="review-header">
                 <h2>Повторить сегодня</h2>
-                <p>Подборка {{ review_items|length }} слов и выражений, которые стоит освежить.</p>
+                <p>Подборка слов и выражений, которые стоит освежить</p>
             </div>
-            <div class="review-grid">
-                {% for item in review_items %}
-                <article class="review-card"
-                    data-word-id="{{ item.id }}"
-                    {% if item.character_id %}data-character-id="{{ item.character_id }}"{% endif %}
-                    {% if item.phase_id %}data-phase-id="{{ item.phase_id }}"{% endif %}>
-                    <button class="review-remove" type="button" data-action="remove"
-                        aria-label="Убрать «{{ item.word }}» из очереди">
-                        Убрать
-                    </button>
-                    <div class="review-card-header">
-                        <div class="review-icon">{{ item.emoji }}</div>
-                        <div class="review-title">
-                            <span class="review-word">{{ item.word }}</span>
-                            {% if item.translation %}
-                            <span class="review-translation">{{ item.translation }}</span>
-                            {% endif %}
-                        </div>
-                    </div>
-                    {% if item.example %}
-                    <p class="review-example">«{{ item.example }}»</p>
-                    {% endif %}
-                    <div class="review-meta">
-                        {% if item.level %}
-                        <span class="review-tag">Уровень {{ item.level }}</span>
-                        {% endif %}
-                        {% if item.category %}
-                        <span class="review-tag">Тема: {{ item.category }}</span>
-                        {% endif %}
-                        {% if item.phonetic %}
-                        <span class="review-tag">{{ item.phonetic }}</span>
-                        {% endif %}
-                    </div>
-                    <a href="{{ item.practice_url }}" class="review-link" aria-label="Тренировка слова {{ item.word }}">Тренировка →</a>
-                </article>
-                {% endfor %}
+            <div id="review-grid" class="review-grid">
+                <p class="review-empty">Выберите слова для повторения на страницах персонажей</p>
             </div>
+            <button class="clear-all-btn" onclick="StudyManager.clearAll()" style="display:none;">
+                Очистить все
+            </button>
         </section>
-        {% endif %}
 
         <div class="characters-grid">
             {% for card in cards %}
@@ -89,5 +57,91 @@
             {% endfor %}
         </div>
     </div>
+    <script>
+    // StudyManager для работы с localStorage на главной странице
+    const StudyManager = {
+        STORAGE_KEY: 'liraJourney:studyWords',
+        MAX_WORDS: 5,
+        
+        getWords() {
+            try {
+                const data = localStorage.getItem(this.STORAGE_KEY);
+                return data ? JSON.parse(data) : [];
+            } catch(e) {
+                return [];
+            }
+        },
+        
+        removeWord(wordId) {
+            let words = this.getWords();
+            words = words.filter(w => w.id !== wordId);
+            localStorage.setItem(this.STORAGE_KEY, JSON.stringify(words));
+            this.updateDisplay();
+        },
+        
+        clearAll() {
+            localStorage.setItem(this.STORAGE_KEY, JSON.stringify([]));
+            this.updateDisplay();
+        },
+        
+        updateDisplay() {
+            const container = document.getElementById('review-grid');
+            const clearBtn = document.querySelector('.clear-all-btn');
+            const words = this.getWords();
+            
+            if (words.length === 0) {
+                container.innerHTML = '<p class="review-empty">Выберите слова для повторения на страницах персонажей</p>';
+                clearBtn.style.display = 'none';
+                return;
+            }
+            
+            clearBtn.style.display = 'block';
+            
+            // Создаём детальные карточки с полной информацией
+            container.innerHTML = words.map(w => {
+                const wordId = w.id || w.word.replace(/\s+/g, '_').toLowerCase();
+                const emoji = w.emoji || '📖';
+                const level = w.level || 'A2';
+                const theme = w.theme || 'royal';
+                const example = w.example || `«${w.originalSentence || '...'}\u00bb`;
+                
+                return `
+                <article class="review-card" data-word-id="${wordId}">
+                    <button class="review-remove" type="button" onclick="StudyManager.removeWord('${wordId}')"
+                        aria-label="Убрать «${w.word}\u00bb из очереди">
+                        Убрать
+                    </button>
+                    <div class="review-card-header">
+                        <div class="review-icon">${emoji}</div>
+                        <div class="review-title">
+                            <span class="review-word">${w.word}</span>
+                            <span class="review-translation">${w.translation}</span>
+                        </div>
+                    </div>
+                    ${example ? `<p class="review-example">${example}</p>` : ''}
+                    <div class="review-meta">
+                        <span class="review-tag">Уровень ${level}</span>
+                        <span class="review-tag">Тема: ${theme}</span>
+                        ${w.transcription ? `<span class="review-tag">${w.transcription}</span>` : ''}
+                    </div>
+                    <a href="training.html?word=${wordId}" class="review-link" aria-label="Тренировка слова ${w.word}">Тренировка →</a>
+                </article>
+                `;
+            }).join('');
+        }
+    };
+    
+    // Обновляем при загрузке
+    document.addEventListener('DOMContentLoaded', () => {
+        StudyManager.updateDisplay();
+    });
+    
+    // Обновляем при изменении localStorage из других вкладок
+    window.addEventListener('storage', (e) => {
+        if (e.key === StudyManager.STORAGE_KEY) {
+            StudyManager.updateDisplay();
+        }
+    });
+    </script>
 </body>
 </html>

@@ -94,7 +94,22 @@ class LiraJSGenerator:
         vocab_js += f"const characterId = {json.dumps(character_id)};\n"
         vocab_js += "const STORAGE_PREFIX = 'liraJourney';\n"
         vocab_js += "const REVIEW_QUEUE_KEY = `${STORAGE_PREFIX}:reviewQueue`;\n"
+        vocab_js += "const STUDY_WORDS_KEY = `${STORAGE_PREFIX}:studyWords`;\n"
+        vocab_js += "const MAX_STUDY_WORDS = 5;\n"
         vocab_js += "const quizStateCache = {};\n\n"
+        
+        # Add debug info
+        vocab_js += """// Debug info
+console.log('Journey page loaded:', characterId);
+console.log('LocalStorage available:', typeof(Storage) !== "undefined");
+
+// Проверяем что есть в localStorage при загрузке
+if (typeof(Storage) !== "undefined") {
+    const existingWords = localStorage.getItem('liraJourney:studyWords');
+    console.log('Existing words in storage:', existingWords);
+}
+
+"""
 
         # Add enhanced mobile-friendly interaction code
         vocab_js += '''
@@ -624,7 +639,7 @@ function displayVocabulary(phaseKey) {
                 ? `<div class="word-themes">${item.themes.map(theme => `<span class=\"word-theme\">${theme}</span>`).join('')}</div>`
                 : '';
 
-            // Упрощенная карточка - только слово, перевод и транскрипция
+            // Карточка с кнопкой Изучить (без примеров предложений)
             card.innerHTML = `
                 <div class="word-card-header">
                     <div class="word-meta">
@@ -632,7 +647,15 @@ function displayVocabulary(phaseKey) {
                         <div class="word-translation">${item.translation}</div>
                         <div class="word-transcription"><em>${item.transcription}</em></div>
                     </div>
+                    ${visualHintMarkup}
                 </div>
+                ${themesMarkup}
+                <button class="study-btn" 
+                        data-word="${item.word}" 
+                        data-translation="${item.translation}" 
+                        data-transcription="${item.transcription}">
+                    📚 Изучить
+                </button>
             `;
             grid.appendChild(card);
         }, index * 50);
@@ -1778,6 +1801,88 @@ console.log('[Device Info]', {
     isAndroid: isAndroid,
     userAgent: navigator.userAgent,
     phaseCount: phaseKeys.length
+});
+
+// ============= STUDY WORDS HANDLERS =============
+
+// Обработчик для кнопок "Изучить" - работа с localStorage
+document.addEventListener('DOMContentLoaded', function() {
+    // Добавляем обработчики на все кнопки при загрузке
+    document.addEventListener('click', function(e) {
+        if (e.target && e.target.classList.contains('study-btn')) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const btn = e.target;
+            const word = btn.dataset.word;
+            const wordKey = word.replace(/\s+/g, '_').toLowerCase();
+            
+            // Создаём объект слова для сохранения
+            const fullWordData = {
+                id: wordKey,
+                word: word,
+                translation: btn.dataset.translation,
+                transcription: btn.dataset.transcription,
+                emoji: characterId === 'king_lear' ? '👑' : '📖',
+                level: 'A2',
+                theme: 'royal', 
+                addedAt: new Date().toISOString()
+            };
+            
+            // Работа с localStorage
+            const STORAGE_KEY = 'liraJourney:studyWords';
+            let words = [];
+            
+            try {
+                const data = localStorage.getItem(STORAGE_KEY);
+                words = data ? JSON.parse(data) : [];
+            } catch(e) {
+                console.error('Error reading localStorage:', e);
+                words = [];
+            }
+            
+            // Проверка дубликата по ID
+            if (words.find(w => w.id === fullWordData.id)) {
+                btn.textContent = '✓ Уже добавлено';
+                btn.disabled = true;
+                setTimeout(() => {
+                    btn.textContent = '📚 Изучить';
+                    btn.disabled = false;
+                }, 2000);
+                return;
+            }
+            
+            // Добавляем слово
+            words.push(fullWordData);
+            
+            // Оставляем только последние 5
+            if (words.length > 5) {
+                words = words.slice(-5);
+            }
+            
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(words));
+                console.log('Word added to localStorage:', fullWordData);
+                
+                // Визуальная обратная связь
+                btn.textContent = '✓ Добавлено';
+                btn.classList.add('added');
+                btn.disabled = true;
+                
+                setTimeout(() => {
+                    btn.textContent = '📚 Изучить';
+                    btn.classList.remove('added');
+                    btn.disabled = false;
+                }, 2000);
+            } catch(e) {
+                console.error('Error saving to localStorage:', e);
+                btn.textContent = '❌ Ошибка';
+                setTimeout(() => {
+                    btn.textContent = '📚 Изучить';
+                }, 2000);
+            }
+        }
+    });
 });
 '''
         return vocab_js
