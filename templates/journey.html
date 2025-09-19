@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ character.title }} | König Lear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/journey.css">
+</head>
+<body>
+    <div class="container">
+        <header class="page-header">
+            <h1>👑 {{ character.title }}</h1>
+            <p class="subtitle">Изучаем немецкий через трагедию Шекспира</p>
+        </header>
+
+        <div class="journey-section">
+            <h2>📚 Путешествие {{ character.name }}</h2>
+
+            <div class="journey-timeline">
+                <svg class="journey-line" width="100%" height="4">
+                    <line x1="0" y1="2" x2="100%" y2="2" stroke="#6b5b95" stroke-width="2" opacity="0.3" />
+                    <line x1="0" y1="2" x2="{{ initial_progress }}%" y2="2" stroke="#6b5b95" stroke-width="3" class="progress-line" />
+                </svg>
+
+                <div class="journey-points">
+                    {% for phase in journey_phases %}
+                    <div class="journey-point{% if loop.first %} active{% endif %}" data-phase="{{ phase.id }}">
+                        <div class="point-circle">{{ phase.icon }}</div>
+                        <h4>{{ phase.title }}</h4>
+                        {% if phase.keywords %}
+                        <p>{{ phase.keywords }}</p>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="journey-progress">
+                <div class="progress-track">
+                    <div class="progress-fill" style="width: {{ initial_progress }}%"></div>
+                </div>
+                <div class="progress-text">{{ initial_description }}</div>
+            </div>
+        </div>
+
+        {% if journey_phases %}
+        <div class="theatrical-scenes">
+            {% for phase in journey_phases if phase.theatrical_scene %}
+            <div class="theatrical-scene{% if loop.first %} active{% endif %}" data-phase="{{ phase.id }}">
+                <h3 class="scene-title">{{ phase.theatrical_scene.title }}</h3>
+                <div class="scene-narrative">{{ phase.theatrical_scene.narrative | safe }}</div>
+                <div class="emotional-peak">{{ phase.theatrical_scene.emotional_peak }}</div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="vocabulary-section">
+            <h2>📖 Словарь: Фаза "<span id="current-phase">{{ first_phase_title }}</span>"</h2>
+            <div class="vocabulary-grid"></div>
+
+            <div class="phase-navigation">
+                <button class="change-phase-btn prev-btn" type="button">← Предыдущая фаза</button>
+                <button class="change-phase-btn next-btn" type="button">Следующая фаза →</button>
+            </div>
+        </div>
+
+        <div class="exercises-container">
+            {% for exercise in exercises %}
+            <div class="exercise-container{% if exercise.is_active %} active{% endif %}" data-phase="{{ exercise.phase_id }}">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: {{ exercise.title }}</h4>
+                    <div class="exercise-text">{{ exercise.text | safe }}</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <nav class="bottom-nav">
+            <a href="../index.html" class="nav-link">← К главной</a>
+        </nav>
+    </div>
+
+    <script>{{ js | safe }}</script>
+</body>
+</html>
