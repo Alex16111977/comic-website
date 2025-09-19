@@ -20,57 +20,57 @@
           "german": "der Bastard",
           "russian": "бастард",
           "transcription": "[дер БАС-тард]",
-          "sentence": "Als Bastard habe ich keine Rechte.",
-          "sentence_translation": "Как бастард я не имею прав."
+          "sentence": "Im Schloss von Gloucester schwört Edmund heimlich: Als Bastard habe ich keine Rechte.",
+          "sentence_translation": "В замке Глостера Эдмунд тайно клянётся: Как бастард я не имею прав."
         },
         {
           "german": "der Neid",
           "russian": "зависть",
           "transcription": "[дер НАЙД]",
-          "sentence": "Der Neid auf Edgar verzehrt mich.",
-          "sentence_translation": "Зависть к Эдгару пожирает меня."
+          "sentence": "Im Schloss von Gloucester schwört Edmund heimlich: Der Neid auf Edgar verzehrt mich.",
+          "sentence_translation": "В замке Глостера Эдмунд тайно клянётся: Зависть к Эдгару пожирает меня."
         },
         {
           "german": "die Ambition",
           "russian": "амбиция",
           "transcription": "[ди ам-би-ЦИ-он]",
-          "sentence": "Meine Ambition kennt keine Grenzen.",
-          "sentence_translation": "Моя амбиция не знает границ."
+          "sentence": "Im Schloss von Gloucester schwört Edmund heimlich: Meine Ambition kennt keine Grenzen.",
+          "sentence_translation": "В замке Глостера Эдмунд тайно клянётся: Моя амбиция не знает границ."
         },
         {
           "german": "benachteiligt",
           "russian": "обделённый",
           "transcription": "[бе-НАХ-тай-лигт]",
-          "sentence": "Ich bin von Geburt an benachteiligt.",
-          "sentence_translation": "Я обделён с рождения."
+          "sentence": "Im Schloss von Gloucester schwört Edmund heimlich: Ich bin von Geburt an benachteiligt.",
+          "sentence_translation": "В замке Глостера Эдмунд тайно клянётся: Я обделён с рождения."
         },
         {
           "german": "die Rache",
           "russian": "месть",
           "transcription": "[ди РА-хе]",
-          "sentence": "Die Rache an der Gesellschaft ist mein Ziel.",
-          "sentence_translation": "Месть обществу - моя цель."
+          "sentence": "Im Schloss von Gloucester schwört Edmund heimlich: Die Rache an der Gesellschaft ist mein Ziel.",
+          "sentence_translation": "В замке Глостера Эдмунд тайно клянётся: Месть обществу - моя цель."
         },
         {
           "german": "aufsteigen",
           "russian": "возвышаться",
           "transcription": "[АУФ-штай-ген]",
-          "sentence": "Ich will über alle aufsteigen.",
-          "sentence_translation": "Я хочу возвыситься над всеми."
+          "sentence": "Im Schloss von Gloucester schwört Edmund heimlich: Ich will über alle aufsteigen.",
+          "sentence_translation": "В замке Глостера Эдмунд тайно клянётся: Я хочу возвыситься над всеми."
         },
         {
           "german": "unehelich",
           "russian": "внебрачный",
           "transcription": "[УН-э-е-лих]",
-          "sentence": "Meine uneheliche Geburt ist mein Fluch.",
-          "sentence_translation": "Моё внебрачное рождение - мой проклятие."
+          "sentence": "Im Schloss von Gloucester schwört Edmund heimlich: Meine uneheliche Geburt ist mein Fluch.",
+          "sentence_translation": "В замке Глостера Эдмунд тайно клянётся: Моё внебрачное рождение - мой проклятие."
         },
         {
           "german": "die Natur",
           "russian": "природа",
           "transcription": "[ди на-ТУР]",
-          "sentence": "Die Natur ist meine Göttin, nicht das Gesetz.",
-          "sentence_translation": "Природа - моя богиня, не закон."
+          "sentence": "Im Schloss von Gloucester schwört Edmund heimlich: Die Natur ist meine Göttin, nicht das Gesetz.",
+          "sentence_translation": "В замке Глостера Эдмунд тайно клянётся: Природа - моя богиня, не закон."
         }
       ],
       "quizzes": [
@@ -113,57 +113,57 @@
           "german": "fälschen",
           "russian": "подделывать",
           "transcription": "[ФЕЛЬ-шен]",
-          "sentence": "Ich fälsche Edgars Brief perfekt.",
-          "sentence_translation": "Я идеально подделываю письмо Эдгара."
+          "sentence": "In seiner Kammer unterschreibt Edmund den falschen Brief: Ich fälsche Edgars Brief perfekt.",
+          "sentence_translation": "В своей комнате Эдмунд подписывает фальшивое письмо: Я идеально подделываю письмо Эдгара."
         },
         {
           "german": "intrigieren",
           "russian": "интриговать",
           "transcription": "[ин-три-ГИ-рен]",
-          "sentence": "Ich intrigiere gegen meinen Bruder.",
-          "sentence_translation": "Я интригую против брата."
+          "sentence": "In seiner Kammer unterschreibt Edmund den falschen Brief: Ich intrigiere gegen meinen Bruder.",
+          "sentence_translation": "В своей комнате Эдмунд подписывает фальшивое письмо: Я интригую против брата."
         },
         {
           "german": "beschuldigen",
           "russian": "обвинять",
           "transcription": "[бе-ШУЛЬ-ди-ген]",
-          "sentence": "Ich beschuldige Edgar des Verrats.",
-          "sentence_translation": "Я обвиняю Эдгара в предательстве."
+          "sentence": "In seiner Kammer unterschreibt Edmund den falschen Brief: Ich beschuldige Edgar des Verrats.",
+          "sentence_translation": "В своей комнате Эдмунд подписывает фальшивое письмо: Я обвиняю Эдгара в предательстве."
         },
         {
           "german": "der Plan",
           "russian": "план",
           "transcription": "[дер ПЛАН]",
-          "sentence": "Mein Plan wird perfekt ausgeführt.",
-          "sentence_translation": "Мой план выполняется идеально."
+          "sentence": "In seiner Kammer unterschreibt Edmund den falschen Brief: Mein Plan wird perfekt ausgeführt.",
+          "sentence_translation": "В своей комнате Эдмунд подписывает фальшивое письмо: Мой план выполняется идеально."
         },
         {
           "german": "manipulieren",
           "russian": "манипулировать",
           "transcription": "[ма-ни-пу-ЛИ-рен]",
-          "sentence": "Ich manipuliere meinen Vater geschickt.",
-          "sentence_translation": "Я ловко манипулирую отцом."
+          "sentence": "In seiner Kammer unterschreibt Edmund den falschen Brief: Ich manipuliere meinen Vater geschickt.",
+          "sentence_translation": "В своей комнате Эдмунд подписывает фальшивое письмо: Я ловко манипулирую отцом."
         },
         {
           "german": "der Brief",
           "russian": "письмо",
           "transcription": "[дер БРИФ]",
-          "sentence": "Der gefälschte Brief ist mein Beweis.",
-          "sentence_translation": "Поддельное письмо - моё доказательство."
+          "sentence": "In seiner Kammer unterschreibt Edmund den falschen Brief: Der gefälschte Brief ist mein Beweis.",
+          "sentence_translation": "В своей комнате Эдмунд подписывает фальшивое письмо: Поддельное письмо - моё доказательство."
         },
         {
           "german": "lügen",
           "russian": "лгать",
           "transcription": "[ЛЮ-ген]",
-          "sentence": "Ich lüge ohne mit der Wimper zu zucken.",
-          "sentence_translation": "Я лгу не моргнув глазом."
+          "sentence": "In seiner Kammer unterschreibt Edmund den falschen Brief: Ich lüge ohne mit der Wimper zu zucken.",
+          "sentence_translation": "В своей комнате Эдмунд подписывает фальшивое письмо: Я лгу не моргнув глазом."
         },
         {
           "german": "die Täuschung",
           "russian": "обман",
           "transcription": "[ди ТОЙ-шунг]",
-          "sentence": "Die Täuschung ist vollkommen.",
-          "sentence_translation": "Обман совершенен."
+          "sentence": "In seiner Kammer unterschreibt Edmund den falschen Brief: Die Täuschung ist vollkommen.",
+          "sentence_translation": "В своей комнате Эдмунд подписывает фальшивое письмо: Обман совершенен."
         }
       ],
       "quizzes": [
@@ -206,57 +206,57 @@
           "german": "vertreiben",
           "russian": "изгонять",
           "transcription": "[фер-ТРАЙ-бен]",
-          "sentence": "Ich vertreibe Edgar aus seinem Erbe.",
-          "sentence_translation": "Я изгоняю Эдгара из его наследства."
+          "sentence": "Im Saal, den Regan hält, prahlt Edmund: Ich vertreibe Edgar aus seinem Erbe.",
+          "sentence_translation": "В зале, который удерживает Регана, Эдмунд хвастается: Я изгоняю Эдгара из его наследства."
         },
         {
           "german": "triumphieren",
           "russian": "торжествовать",
           "transcription": "[три-ум-ФИ-рен]",
-          "sentence": "Ich triumphiere über meinen Bruder.",
-          "sentence_translation": "Я торжествую над братом."
+          "sentence": "Im Saal, den Regan hält, prahlt Edmund: Ich triumphiere über meinen Bruder.",
+          "sentence_translation": "В зале, который удерживает Регана, Эдмунд хвастается: Я торжествую над братом."
         },
         {
           "german": "erben",
           "russian": "наследовать",
           "transcription": "[ЭР-бен]",
-          "sentence": "Nun erbe ich alles, was Edgar zustand.",
-          "sentence_translation": "Теперь я наследую всё, что полагалось Эдгару."
+          "sentence": "Im Saal, den Regan hält, prahlt Edmund: Nun erbe ich alles, was Edgar zustand.",
+          "sentence_translation": "В зале, который удерживает Регана, Эдмунд хвастается: Теперь я наследую всё, что полагалось Эдгару."
         },
         {
           "german": "der Erfolg",
           "russian": "успех",
           "transcription": "[дер эр-ФОЛЬГ]",
-          "sentence": "Mein Erfolg ist vollkommen.",
-          "sentence_translation": "Мой успех полный."
+          "sentence": "Im Saal, den Regan hält, prahlt Edmund: Mein Erfolg ist vollkommen.",
+          "sentence_translation": "В зале, который удерживает Регана, Эдмунд хвастается: Мой успех полный."
         },
         {
           "german": "gewinnen",
           "russian": "выигрывать",
           "transcription": "[ге-ВИН-нен]",
-          "sentence": "Ich gewinne alles durch List.",
-          "sentence_translation": "Я выигрываю всё хитростью."
+          "sentence": "Im Saal, den Regan hält, prahlt Edmund: Ich gewinne alles durch List.",
+          "sentence_translation": "В зале, который удерживает Регана, Эдмунд хвастается: Я выигрываю всё хитростью."
         },
         {
           "german": "die Belohnung",
           "russian": "награда",
           "transcription": "[ди бе-ЛО-нунг]",
-          "sentence": "Die Belohnung für meine Intrige ist groß.",
-          "sentence_translation": "Награда за мою интригу велика."
+          "sentence": "Im Saal, den Regan hält, prahlt Edmund: Die Belohnung für meine Intrige ist groß.",
+          "sentence_translation": "В зале, который удерживает Регана, Эдмунд хвастается: Награда за мою интригу велика."
         },
         {
           "german": "verdrängen",
           "russian": "вытеснять",
           "transcription": "[фер-ДРЕН-ген]",
-          "sentence": "Ich verdränge den rechtmäßigen Erben.",
-          "sentence_translation": "Я вытесняю законного наследника."
+          "sentence": "Im Saal, den Regan hält, prahlt Edmund: Ich verdränge den rechtmäßigen Erben.",
+          "sentence_translation": "В зале, который удерживает Регана, Эдмунд хвастается: Я вытесняю законного наследника."
         },
         {
           "german": "der Sieg",
           "russian": "победа",
           "transcription": "[дер ЗИГ]",
-          "sentence": "Der Sieg über Edgar ist süß.",
-          "sentence_translation": "Победа над Эдгаром сладка."
+          "sentence": "Im Saal, den Regan hält, prahlt Edmund: Der Sieg über Edgar ist süß.",
+          "sentence_translation": "В зале, который удерживает Регана, Эдмунд хвастается: Победа над Эдгаром сладка."
         }
       ],
       "quizzes": [
@@ -299,57 +299,57 @@
           "german": "verbünden",
           "russian": "объединяться",
           "transcription": "[фер-БЮН-ден]",
-          "sentence": "Ich verbünde mich mit den bösen Schwestern.",
-          "sentence_translation": "Я объединяюсь со злыми сёстрами."
+          "sentence": "Während die Schwestern über Lear beraten, versichert Edmund: Ich verbünde mich mit den bösen Schwestern.",
+          "sentence_translation": "Пока сёстры совещаются о Лире, Эдмунд уверяет: Я объединяюсь со злыми сёстрами."
         },
         {
           "german": "die Macht",
           "russian": "власть",
           "transcription": "[ди МАХТ]",
-          "sentence": "Die Macht über das Königreich ist nah.",
-          "sentence_translation": "Власть над королевством близка."
+          "sentence": "Während die Schwestern über Lear beraten, versichert Edmund: Die Macht über das Königreich ist nah.",
+          "sentence_translation": "Пока сёстры совещаются о Лире, Эдмунд уверяет: Власть над королевством близка."
         },
         {
           "german": "erobern",
           "russian": "завоёвывать",
           "transcription": "[эр-О-берн]",
-          "sentence": "Wir erobern das Reich gemeinsam.",
-          "sentence_translation": "Мы завоёвываем королевство вместе."
+          "sentence": "Während die Schwestern über Lear beraten, versichert Edmund: Wir erobern das Reich gemeinsam.",
+          "sentence_translation": "Пока сёстры совещаются о Лире, Эдмунд уверяет: Мы завоёвываем королевство вместе."
         },
         {
           "german": "das Bündnis",
           "russian": "союз",
           "transcription": "[дас БЮНД-нис]",
-          "sentence": "Unser Bündnis ist stark und grausam.",
-          "sentence_translation": "Наш союз силён и жесток."
+          "sentence": "Während die Schwestern über Lear beraten, versichert Edmund: Unser Bündnis ist stark und grausam.",
+          "sentence_translation": "Пока сёстры совещаются о Лире, Эдмунд уверяет: Наш союз силён и жесток."
         },
         {
           "german": "verführen",
           "russian": "соблазнять",
           "transcription": "[фер-ФЮ-рен]",
-          "sentence": "Ich verführe beide Schwestern gleichzeitig.",
-          "sentence_translation": "Я соблазняю обеих сестёр одновременно."
+          "sentence": "Während die Schwestern über Lear beraten, versichert Edmund: Ich verführe beide Schwestern gleichzeitig.",
+          "sentence_translation": "Пока сёстры совещаются о Лире, Эдмунд уверяет: Я соблазняю обеих сестёр одновременно."
         },
         {
           "german": "die Eroberung",
           "russian": "завоевание",
           "transcription": "[ди эр-О-бе-рунг]",
-          "sentence": "Die Eroberung des Throns ist mein Ziel.",
-          "sentence_translation": "Завоевание трона - моя цель."
+          "sentence": "Während die Schwestern über Lear beraten, versichert Edmund: Die Eroberung des Throns ist mein Ziel.",
+          "sentence_translation": "Пока сёстры совещаются о Лире, Эдмунд уверяет: Завоевание трона - моя цель."
         },
         {
           "german": "beherrschen",
           "russian": "господствовать",
           "transcription": "[бе-ХЕР-шен]",
-          "sentence": "Ich beherrsche das Spiel der Macht.",
-          "sentence_translation": "Я господствую в игре власти."
+          "sentence": "Während die Schwestern über Lear beraten, versichert Edmund: Ich beherrsche das Spiel der Macht.",
+          "sentence_translation": "Пока сёстры совещаются о Лире, Эдмунд уверяет: Я господствую в игре власти."
         },
         {
           "german": "die Allianz",
           "russian": "альянс",
           "transcription": "[ди а-ли-АНЦС]",
-          "sentence": "Unsere Allianz wird alle Feinde vernichten.",
-          "sentence_translation": "Наш альянс уничтожит всех врагов."
+          "sentence": "Während die Schwestern über Lear beraten, versichert Edmund: Unsere Allianz wird alle Feinde vernichten.",
+          "sentence_translation": "Пока сёстры совещаются о Лире, Эдмунд уверяет: Наш альянс уничтожит всех врагов."
         }
       ],
       "quizzes": [
@@ -392,57 +392,57 @@
           "german": "verraten",
           "russian": "предавать",
           "transcription": "[фер-РА-тен]",
-          "sentence": "Ich verrate meinen eigenen Vater.",
-          "sentence_translation": "Я предаю собственного отца."
+          "sentence": "Vor den Toren von Gloucester verkauft Edmund seinen Vater: Ich verrate meinen eigenen Vater.",
+          "sentence_translation": "Перед воротами Глостера Эдмунд продаёт отца: Я предаю собственного отца."
         },
         {
           "german": "blenden",
           "russian": "ослеплять",
           "transcription": "[БЛЕН-ден]",
-          "sentence": "Sie blenden ihn auf meinen Hinweis.",
-          "sentence_translation": "Они ослепляют его по моей наводке."
+          "sentence": "Vor den Toren von Gloucester verkauft Edmund seinen Vater: Sie blenden ihn auf meinen Hinweis.",
+          "sentence_translation": "Перед воротами Глостера Эдмунд продаёт отца: Они ослепляют его по моей наводке."
         },
         {
           "german": "die Grausamkeit",
           "russian": "жестокость",
           "transcription": "[ди ГРАУ-зам-кайт]",
-          "sentence": "Meine Grausamkeit kennt keine Grenzen.",
-          "sentence_translation": "Моя жестокость не знает границ."
+          "sentence": "Vor den Toren von Gloucester verkauft Edmund seinen Vater: Meine Grausamkeit kennt keine Grenzen.",
+          "sentence_translation": "Перед воротами Глостера Эдмунд продаёт отца: Моя жестокость не знает границ."
         },
         {
           "german": "denunzieren",
           "russian": "доносить",
           "transcription": "[де-нун-ЦИ-рен]",
-          "sentence": "Ich denunziere meinen Vater als Verräter.",
-          "sentence_translation": "Я доношу на отца как на предателя."
+          "sentence": "Vor den Toren von Gloucester verkauft Edmund seinen Vater: Ich denunziere meinen Vater als Verräter.",
+          "sentence_translation": "Перед воротами Глостера Эдмунд продаёт отца: Я доношу на отца как на предателя."
         },
         {
           "german": "ausliefern",
           "russian": "выдавать",
           "transcription": "[АУС-ли-ферн]",
-          "sentence": "Ich liefere ihn seinen Feinden aus.",
-          "sentence_translation": "Я выдаю его врагам."
+          "sentence": "Vor den Toren von Gloucester verkauft Edmund seinen Vater: Ich liefere ihn seinen Feinden aus.",
+          "sentence_translation": "Перед воротами Глостера Эдмунд продаёт отца: Я выдаю его врагам."
         },
         {
           "german": "die Folter",
           "russian": "пытка",
           "transcription": "[ди ФОЛЬ-тер]",
-          "sentence": "Die Folter meines Vaters stört mich nicht.",
-          "sentence_translation": "Пытка моего отца меня не тревожит."
+          "sentence": "Vor den Toren von Gloucester verkauft Edmund seinen Vater: Die Folter meines Vaters stört mich nicht.",
+          "sentence_translation": "Перед воротами Глостера Эдмунд продаёт отца: Пытка моего отца меня не тревожит."
         },
         {
           "german": "opfern",
           "russian": "жертвовать",
           "transcription": "[ОП-ферн]",
-          "sentence": "Ich opfere ihn für meine Ambitionen.",
-          "sentence_translation": "Я жертвую им ради своих амбиций."
+          "sentence": "Vor den Toren von Gloucester verkauft Edmund seinen Vater: Ich opfere ihn für meine Ambitionen.",
+          "sentence_translation": "Перед воротами Глостера Эдмунд продаёт отца: Я жертвую им ради своих амбиций."
         },
         {
           "german": "erbarmungslos",
           "russian": "беспощадный",
           "transcription": "[эр-БАР-мунгс-лос]",
-          "sentence": "Erbarmungslos verfolge ich mein Ziel.",
-          "sentence_translation": "Беспощадно я преследую свою цель."
+          "sentence": "Vor den Toren von Gloucester verkauft Edmund seinen Vater: Erbarmungslos verfolge ich mein Ziel.",
+          "sentence_translation": "Перед воротами Глостера Эдмунд продаёт отца: Беспощадно я преследую свою цель."
         }
       ],
       "quizzes": [
@@ -485,57 +485,57 @@
           "german": "die Liebschaft",
           "russian": "любовная связь",
           "transcription": "[ди ЛИБ-шафт]",
-          "sentence": "Meine Liebschaft mit beiden Schwestern ist gefährlich.",
-          "sentence_translation": "Моя любовная связь с обеими сёстрами опасна."
+          "sentence": "Zwischen den Lagern von Goneril und Regan flüstert Edmund: Meine Liebschaft mit beiden Schwestern ist gefährlich.",
+          "sentence_translation": "Между лагерями Гонериль и Реганы Эдмунд шепчет: Моя любовная связь с обеими сёстрами опасна."
         },
         {
           "german": "die Rivalität",
           "russian": "соперничество",
           "transcription": "[ди ри-ва-ли-ТЕТ]",
-          "sentence": "Ihre Rivalität spielt mir in die Hände.",
-          "sentence_translation": "Их соперничество играет мне на руку."
+          "sentence": "Zwischen den Lagern von Goneril und Regan flüstert Edmund: Ihre Rivalität spielt mir in die Hände.",
+          "sentence_translation": "Между лагерями Гонериль и Реганы Эдмунд шепчет: Их соперничество играет мне на руку."
         },
         {
           "german": "spielen",
           "russian": "играть",
           "transcription": "[ШПИ-лен]",
-          "sentence": "Ich spiele mit ihren Gefühlen.",
-          "sentence_translation": "Я играю с их чувствами."
+          "sentence": "Zwischen den Lagern von Goneril und Regan flüstert Edmund: Ich spiele mit ihren Gefühlen.",
+          "sentence_translation": "Между лагерями Гонериль и Реганы Эдмунд шепчет: Я играю с их чувствами."
         },
         {
           "german": "verlocken",
           "russian": "завлекать",
           "transcription": "[фер-ЛО-кен]",
-          "sentence": "Ich verlocke sie mit falschen Versprechen.",
-          "sentence_translation": "Я завлекаю их ложными обещаниями."
+          "sentence": "Zwischen den Lagern von Goneril und Regan flüstert Edmund: Ich verlocke sie mit falschen Versprechen.",
+          "sentence_translation": "Между лагерями Гонериль и Реганы Эдмунд шепчет: Я завлекаю их ложными обещаниями."
         },
         {
           "german": "die Lust",
           "russian": "похоть",
           "transcription": "[ди ЛУСТ]",
-          "sentence": "Ihre Lust macht sie blind.",
-          "sentence_translation": "Их похоть делает их слепыми."
+          "sentence": "Zwischen den Lagern von Goneril und Regan flüstert Edmund: Ihre Lust macht sie blind.",
+          "sentence_translation": "Между лагерями Гонериль и Реганы Эдмунд шепчет: Их похоть делает их слепыми."
         },
         {
           "german": "ausnutzen",
           "russian": "использовать",
           "transcription": "[АУС-нут-цен]",
-          "sentence": "Ich nutze ihre Leidenschaft aus.",
-          "sentence_translation": "Я использую их страсть."
+          "sentence": "Zwischen den Lagern von Goneril und Regan flüstert Edmund: Ich nutze ihre Leidenschaft aus.",
+          "sentence_translation": "Между лагерями Гонериль и Реганы Эдмунд шепчет: Я использую их страсть."
         },
         {
           "german": "jonglieren",
           "russian": "жонглировать",
           "transcription": "[жон-ГЛИ-рен]",
-          "sentence": "Ich jongliere mit zwei gefährlichen Frauen.",
-          "sentence_translation": "Я жонглирую двумя опасными женщинами."
+          "sentence": "Zwischen den Lagern von Goneril und Regan flüstert Edmund: Ich jongliere mit zwei gefährlichen Frauen.",
+          "sentence_translation": "Между лагерями Гонериль и Реганы Эдмунд шепчет: Я жонглирую двумя опасными женщинами."
         },
         {
           "german": "die Affäre",
           "russian": "интрига",
           "transcription": "[ди а-ФЕ-ре]",
-          "sentence": "Diese Affäre wird tödlich enden.",
-          "sentence_translation": "Эта интрига закончится смертью."
+          "sentence": "Zwischen den Lagern von Goneril und Regan flüstert Edmund: Diese Affäre wird tödlich enden.",
+          "sentence_translation": "Между лагерями Гонериль и Реганы Эдмунд шепчет: Эта интрига закончится смертью."
         }
       ],
       "quizzes": [
@@ -578,57 +578,57 @@
           "german": "das Duell",
           "russian": "дуэль",
           "transcription": "[дас ду-ЭЛЬ]",
-          "sentence": "Das Duell mit Edgar ist mein Ende.",
-          "sentence_translation": "Дуэль с Эдгаром - мой конец."
+          "sentence": "Im Feldlager von Albany vor dem Duell erkennt Edmund: Das Duell mit Edgar ist mein Ende.",
+          "sentence_translation": "В лагере Олбани перед дуэлью Эдмунд признаёт: Дуэль с Эдгаром - мой конец."
         },
         {
           "german": "fallen",
           "russian": "падать",
           "transcription": "[ФАЛ-лен]",
-          "sentence": "Ich falle von seinem gerechten Schwert.",
-          "sentence_translation": "Я падаю от его справедливого меча."
+          "sentence": "Im Feldlager von Albany vor dem Duell erkennt Edmund: Ich falle von seinem gerechten Schwert.",
+          "sentence_translation": "В лагере Олбани перед дуэлью Эдмунд признаёт: Я падаю от его справедливого меча."
         },
         {
           "german": "bereuen",
           "russian": "сожалеть",
           "transcription": "[бе-РОЙ-ен]",
-          "sentence": "Am Ende bereue ich meine Taten.",
-          "sentence_translation": "В конце я сожалею о своих делах."
+          "sentence": "Im Feldlager von Albany vor dem Duell erkennt Edmund: Am Ende bereue ich meine Taten.",
+          "sentence_translation": "В лагере Олбани перед дуэлью Эдмунд признаёт: В конце я сожалею о своих делах."
         },
         {
           "german": "die Niederlage",
           "russian": "поражение",
           "transcription": "[ди НИ-дер-ла-ге]",
-          "sentence": "Die Niederlage ist vollkommen.",
-          "sentence_translation": "Поражение полное."
+          "sentence": "Im Feldlager von Albany vor dem Duell erkennt Edmund: Die Niederlage ist vollkommen.",
+          "sentence_translation": "В лагере Олбани перед дуэлью Эдмунд признаёт: Поражение полное."
         },
         {
           "german": "verlieren",
           "russian": "проигрывать",
           "transcription": "[фер-ЛИ-рен]",
-          "sentence": "Ich verliere alles, was ich gewann.",
-          "sentence_translation": "Я проигрываю всё, что выиграл."
+          "sentence": "Im Feldlager von Albany vor dem Duell erkennt Edmund: Ich verliere alles, was ich gewann.",
+          "sentence_translation": "В лагере Олбани перед дуэлью Эдмунд признаёт: Я проигрываю всё, что выиграл."
         },
         {
           "german": "der Untergang",
           "russian": "падение",
           "transcription": "[дер УН-тер-ганг]",
-          "sentence": "Mein Untergang ist gerecht.",
-          "sentence_translation": "Моё падение справедливо."
+          "sentence": "Im Feldlager von Albany vor dem Duell erkennt Edmund: Mein Untergang ist gerecht.",
+          "sentence_translation": "В лагере Олбани перед дуэлью Эдмунд признаёт: Моё падение справедливо."
         },
         {
           "german": "gestehen",
           "russian": "признаваться",
           "transcription": "[ге-ШТЕ-ен]",
-          "sentence": "Ich gestehe alle meine Verbrechen.",
-          "sentence_translation": "Я признаюсь во всех преступлениях."
+          "sentence": "Im Feldlager von Albany vor dem Duell erkennt Edmund: Ich gestehe alle meine Verbrechen.",
+          "sentence_translation": "В лагере Олбани перед дуэлью Эдмунд признаёт: Я признаюсь во всех преступлениях."
         },
         {
           "german": "das Ende",
           "russian": "конец",
           "transcription": "[дас ЭН-де]",
-          "sentence": "Das Ende kommt schnell und gerecht.",
-          "sentence_translation": "Конец приходит быстро и справедливо."
+          "sentence": "Im Feldlager von Albany vor dem Duell erkennt Edmund: Das Ende kommt schnell und gerecht.",
+          "sentence_translation": "В лагере Олбани перед дуэлью Эдмунд признаёт: Конец приходит быстро и справедливо."
         }
       ],
       "quizzes": [

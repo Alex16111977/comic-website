@@ -14,57 +14,57 @@
           "german": "der Adel",
           "russian": "знать",
           "transcription": "[дер А-дель]",
-          "sentence": "Als Adel diene ich meinem König treu.",
-          "sentence_translation": "Как знать я верно служу своему королю."
+          "sentence": "Im Schloss von Gloucester versichert der alte Graf König Lear: Als Adel diene ich meinem König treu.",
+          "sentence_translation": "В замке Глостера старый граф уверяет короля Лира: Как знать я верно служу своему королю."
         },
         {
           "german": "dienen",
           "russian": "служить",
           "transcription": "[ДИ-нен]",
-          "sentence": "Ich diene dem König seit vielen Jahren.",
-          "sentence_translation": "Я служу королю много лет."
+          "sentence": "Im Schloss von Gloucester versichert der alte Graf König Lear: Ich diene dem König seit vielen Jahren.",
+          "sentence_translation": "В замке Глостера старый граф уверяет короля Лира: Я служу королю много лет."
         },
         {
           "german": "vertrauen",
           "russian": "доверять",
           "transcription": "[фер-ТРАУ-ен]",
-          "sentence": "Ich vertraue beiden Söhnen gleich.",
-          "sentence_translation": "Я доверяю обоим сыновьям одинаково."
+          "sentence": "Im Schloss von Gloucester versichert der alte Graf König Lear: Ich vertraue beiden Söhnen gleich.",
+          "sentence_translation": "В замке Глостера старый граф уверяет короля Лира: Я доверяю обоим сыновьям одинаково."
         },
         {
           "german": "der Graf",
           "russian": "граф",
           "transcription": "[дер ГРАФ]",
-          "sentence": "Als Graf habe ich große Verantwortung.",
-          "sentence_translation": "Как граф я несу большую ответственность."
+          "sentence": "Im Schloss von Gloucester versichert der alte Graf König Lear: Als Graf habe ich große Verantwortung.",
+          "sentence_translation": "В замке Глостера старый граф уверяет короля Лира: Как граф я несу большую ответственность."
         },
         {
           "german": "die Ehre",
           "russian": "честь",
           "transcription": "[ди Э-ре]",
-          "sentence": "Meine Ehre ist mein höchstes Gut.",
-          "sentence_translation": "Моя честь - моё высшее благо."
+          "sentence": "Im Schloss von Gloucester versichert der alte Graf König Lear: Meine Ehre ist mein höchstes Gut.",
+          "sentence_translation": "В замке Глостера старый граф уверяет короля Лира: Моя честь - моё высшее благо."
         },
         {
           "german": "rechtschaffen",
           "russian": "праведный",
           "transcription": "[РЕХТ-ша-фен]",
-          "sentence": "Ich bin ein rechtschaffener Mann.",
-          "sentence_translation": "Я праведный человек."
+          "sentence": "Im Schloss von Gloucester versichert der alte Graf König Lear: Ich bin ein rechtschaffener Mann.",
+          "sentence_translation": "В замке Глостера старый граф уверяет короля Лира: Я праведный человек."
         },
         {
           "german": "die Pflicht",
           "russian": "долг",
           "transcription": "[ди ПФЛИХТ]",
-          "sentence": "Meine Pflicht ruft mich zum König.",
-          "sentence_translation": "Мой долг зовёт меня к королю."
+          "sentence": "Im Schloss von Gloucester versichert der alte Graf König Lear: Meine Pflicht ruft mich zum König.",
+          "sentence_translation": "В замке Глостера старый граф уверяет короля Лира: Мой долг зовёт меня к королю."
         },
         {
           "german": "achten",
           "russian": "уважать",
           "transcription": "[АХ-тен]",
-          "sentence": "Ich achte beide Söhne, Edgar und Edmund.",
-          "sentence_translation": "Я уважаю обоих сыновей, Эдгара и Эдмунда."
+          "sentence": "Im Schloss von Gloucester versichert der alte Graf König Lear: Ich achte beide Söhne, Edgar und Edmund.",
+          "sentence_translation": "В замке Глостера старый граф уверяет короля Лира: Я уважаю обоих сыновей, Эдгара и Эдмунда."
         }
       ],
       "theatrical_scene": {
@@ -107,57 +107,57 @@
           "german": "der Brief",
           "russian": "письмо",
           "transcription": "[дер БРИФ]",
-          "sentence": "Dieser Brief beweist Edgars Verrat.",
-          "sentence_translation": "Это письмо доказывает предательство Эдгара."
+          "sentence": "Als Edmund den Brief präsentiert, vertraut Gloucester Gonerils Hof: Dieser Brief beweist Edgars Verrat.",
+          "sentence_translation": "Когда Эдмунд показывает письмо, Глостер доверяет придворным Гонериль: Это письмо доказывает предательство Эдгара."
         },
         {
           "german": "glauben",
           "russian": "верить",
           "transcription": "[ГЛАУ-бен]",
-          "sentence": "Ich glaube Edmunds Lügen sofort.",
-          "sentence_translation": "Я сразу верю лжи Эдмунда."
+          "sentence": "Als Edmund den Brief präsentiert, vertraut Gloucester Gonerils Hof: Ich glaube Edmunds Lügen sofort.",
+          "sentence_translation": "Когда Эдмунд показывает письмо, Глостер доверяет придворным Гонериль: Я сразу верю лжи Эдмунда."
         },
         {
           "german": "täuschen",
           "russian": "обманывать",
           "transcription": "[ТОЙ-шен]",
-          "sentence": "Edmund täuscht mich mit falschen Beweisen.",
-          "sentence_translation": "Эдмунд обманывает меня ложными доказательствами."
+          "sentence": "Als Edmund den Brief präsentiert, vertraut Gloucester Gonerils Hof: Edmund täuscht mich mit falschen Beweisen.",
+          "sentence_translation": "Когда Эдмунд показывает письмо, Глостер доверяет придворным Гонериль: Эдмунд обманывает меня ложными доказательствами."
         },
         {
           "german": "der Betrug",
           "russian": "обман",
           "transcription": "[дер бе-ТРУГ]",
-          "sentence": "Ich erkenne den Betrug nicht.",
-          "sentence_translation": "Я не распознаю обман."
+          "sentence": "Als Edmund den Brief präsentiert, vertraut Gloucester Gonerils Hof: Ich erkenne den Betrug nicht.",
+          "sentence_translation": "Когда Эдмунд показывает письмо, Глостер доверяет придворным Гонериль: Я не распознаю обман."
         },
         {
           "german": "arglos",
           "russian": "простодушный",
           "transcription": "[АРГ-лос]",
-          "sentence": "Ich bin zu arglos für solche Intrigen.",
-          "sentence_translation": "Я слишком простодушен для таких интриг."
+          "sentence": "Als Edmund den Brief präsentiert, vertraut Gloucester Gonerils Hof: Ich bin zu arglos für solche Intrigen.",
+          "sentence_translation": "Когда Эдмунд показывает письмо, Глостер доверяет придворным Гонериль: Я слишком простодушен для таких интриг."
         },
         {
           "german": "verdächtigen",
           "russian": "подозревать",
           "transcription": "[фер-ДЕХ-ти-ген]",
-          "sentence": "Ich verdächtige meinen guten Sohn Edgar.",
-          "sentence_translation": "Я подозреваю моего доброго сына Эдгара."
+          "sentence": "Als Edmund den Brief präsentiert, vertraut Gloucester Gonerils Hof: Ich verdächtige meinen guten Sohn Edgar.",
+          "sentence_translation": "Когда Эдмунд показывает письмо, Глостер доверяет придворным Гонериль: Я подозреваю моего доброго сына Эдгара."
         },
         {
           "german": "leichtgläubig",
           "russian": "легковерный",
           "transcription": "[ЛАЙХТ-глой-биг]",
-          "sentence": "Ich bin zu leichtgläubig für diese Welt.",
-          "sentence_translation": "Я слишком легковерен для этого мира."
+          "sentence": "Als Edmund den Brief präsentiert, vertraut Gloucester Gonerils Hof: Ich bin zu leichtgläubig für diese Welt.",
+          "sentence_translation": "Когда Эдмунд показывает письмо, Глостер доверяет придворным Гонериль: Я слишком легковерен для этого мира."
         },
         {
           "german": "die Falle",
           "russian": "ловушка",
           "transcription": "[ди ФА-ле]",
-          "sentence": "Ich tappe blind in Edmunds Falle.",
-          "sentence_translation": "Я слепо попадаю в ловушку Эдмунда."
+          "sentence": "Als Edmund den Brief präsentiert, vertraut Gloucester Gonerils Hof: Ich tappe blind in Edmunds Falle.",
+          "sentence_translation": "Когда Эдмунд показывает письмо, Глостер доверяет придворным Гонериль: Я слепо попадаю в ловушку Эдмунда."
         }
       ],
       "theatrical_scene": {
@@ -200,50 +200,50 @@
           "german": "verstoßen",
           "russian": "изгонять",
           "transcription": "[фер-ШТО-сен]",
-          "sentence": "Ich verstoße meinen unschuldigen Sohn.",
-          "sentence_translation": "Я изгоняю своего невинного сына."
+          "sentence": "Im Hof von Regans Burg verflucht Gloucester seinen Sohn: Ich verstoße meinen unschuldigen Sohn.",
+          "sentence_translation": "Во дворе замка Реганы Глостер проклинает сына: Я изгоняю своего невинного сына."
         },
         {
           "german": "verfluchen",
           "russian": "проклинать",
           "transcription": "[фер-ФЛУ-хен]",
-          "sentence": "Im Zorn verfluche ich Edgar.",
-          "sentence_translation": "В гневе я проклинаю Эдгара."
+          "sentence": "Im Hof von Regans Burg verflucht Gloucester seinen Sohn: Im Zorn verfluche ich Edgar.",
+          "sentence_translation": "Во дворе замка Реганы Глостер проклинает сына: В гневе я проклинаю Эдгара."
         },
         {
           "german": "bereuen",
           "russian": "сожалеть",
           "transcription": "[бе-РОЙ-ен]",
-          "sentence": "Später werde ich diese Tat bitter bereuen.",
-          "sentence_translation": "Позже я горько пожалею об этом поступке."
+          "sentence": "Im Hof von Regans Burg verflucht Gloucester seinen Sohn: Später werde ich diese Tat bitter bereuen.",
+          "sentence_translation": "Во дворе замка Реганы Глостер проклинает сына: Позже я горько пожалею об этом поступке."
         },
         {
           "german": "der Irrtum",
           "russian": "заблуждение",
           "transcription": "[дер ИР-тум]",
-          "sentence": "Mein Irrtum zerstört meine Familie.",
-          "sentence_translation": "Моё заблуждение разрушает мою семью."
+          "sentence": "Im Hof von Regans Burg verflucht Gloucester seinen Sohn: Mein Irrtum zerstört meine Familie.",
+          "sentence_translation": "Во дворе замка Реганы Глостер проклинает сына: Моё заблуждение разрушает мою семью."
         },
         {
           "german": "blind",
           "russian": "слепой",
           "transcription": "[БЛИНД]",
-          "sentence": "Ich bin blind für die Wahrheit.",
-          "sentence_translation": "Я слеп к правде."
+          "sentence": "Im Hof von Regans Burg verflucht Gloucester seinen Sohn: Ich bin blind für die Wahrheit.",
+          "sentence_translation": "Во дворе замка Реганы Глостер проклинает сына: Я слеп к правде."
         },
         {
           "german": "jagen",
           "russian": "гнать",
           "transcription": "[Я-ген]",
-          "sentence": "Ich jage meinen Sohn fort wie einen Verbrecher.",
-          "sentence_translation": "Я гоню сына прочь как преступника."
+          "sentence": "Im Hof von Regans Burg verflucht Gloucester seinen Sohn: Ich jage meinen Sohn fort wie einen Verbrecher.",
+          "sentence_translation": "Во дворе замка Реганы Глостер проклинает сына: Я гоню сына прочь как преступника."
         },
         {
           "german": "die Ungerechtigkeit",
           "russian": "несправедливость",
           "transcription": "[ди УН-ге-рех-тиг-кайт]",
-          "sentence": "Ich begehe große Ungerechtigkeit.",
-          "sentence_translation": "Я совершаю большую несправедливость."
+          "sentence": "Im Hof von Regans Burg verflucht Gloucester seinen Sohn: Ich begehe große Ungerechtigkeit.",
+          "sentence_translation": "Во дворе замка Реганы Глостер проклинает сына: Я совершаю большую несправедливость."
         }
       ],
       "theatrical_scene": {
@@ -286,57 +286,57 @@
           "german": "helfen",
           "russian": "помогать",
           "transcription": "[ХЕЛЬ-фен]",
-          "sentence": "Heimlich helfe ich dem verstoßenen König.",
-          "sentence_translation": "Тайно я помогаю изгнанному королю."
+          "sentence": "In der Nacht auf der Heide hilft Gloucester dem wahnsinnigen Lear: Heimlich helfe ich dem verstoßenen König.",
+          "sentence_translation": "В ночи на пустоши Глостер помогает обезумевшему Лиру: Тайно я помогаю изгнанному королю."
         },
         {
           "german": "das Mitleid",
           "russian": "сострадание",
           "transcription": "[дас МИТ-лайд]",
-          "sentence": "Mitleid erfüllt mein Herz für Lear.",
-          "sentence_translation": "Сострадание наполняет моё сердце к Лиру."
+          "sentence": "In der Nacht auf der Heide hilft Gloucester dem wahnsinnigen Lear: Mitleid erfüllt mein Herz für Lear.",
+          "sentence_translation": "В ночи на пустоши Глостер помогает обезумевшему Лиру: Сострадание наполняет моё сердце к Лиру."
         },
         {
           "german": "riskieren",
           "russian": "рисковать",
           "transcription": "[рис-КИ-рен]",
-          "sentence": "Ich riskiere alles für den alten König.",
-          "sentence_translation": "Я рискую всем ради старого короля."
+          "sentence": "In der Nacht auf der Heide hilft Gloucester dem wahnsinnigen Lear: Ich riskiere alles für den alten König.",
+          "sentence_translation": "В ночи на пустоши Глостер помогает обезумевшему Лиру: Я рискую всем ради старого короля."
         },
         {
           "german": "die Gefahr",
           "russian": "опасность",
           "transcription": "[ди ге-ФАР]",
-          "sentence": "Die Gefahr der Entdeckung ist groß.",
-          "sentence_translation": "Опасность разоблачения велика."
+          "sentence": "In der Nacht auf der Heide hilft Gloucester dem wahnsinnigen Lear: Die Gefahr der Entdeckung ist groß.",
+          "sentence_translation": "В ночи на пустоши Глостер помогает обезумевшему Лиру: Опасность разоблачения велика."
         },
         {
           "german": "heimlich",
           "russian": "тайно",
           "transcription": "[ХАЙМ-лих]",
-          "sentence": "Ich handle heimlich gegen die neuen Herrscher.",
-          "sentence_translation": "Я действую тайно против новых правителей."
+          "sentence": "In der Nacht auf der Heide hilft Gloucester dem wahnsinnigen Lear: Ich handle heimlich gegen die neuen Herrscher.",
+          "sentence_translation": "В ночи на пустоши Глостер помогает обезумевшему Лиру: Я действую тайно против новых правителей."
         },
         {
           "german": "schützen",
           "russian": "защищать",
           "transcription": "[ШЮ-цен]",
-          "sentence": "Ich will den wahnsinnigen König schützen.",
-          "sentence_translation": "Я хочу защитить безумного короля."
+          "sentence": "In der Nacht auf der Heide hilft Gloucester dem wahnsinnigen Lear: Ich will den wahnsinnigen König schützen.",
+          "sentence_translation": "В ночи на пустоши Глостер помогает обезумевшему Лиру: Я хочу защитить безумного короля."
         },
         {
           "german": "der Verrat",
           "russian": "измена",
           "transcription": "[дер фер-РАТ]",
-          "sentence": "Meine Hilfe gilt als Verrat.",
-          "sentence_translation": "Моя помощь считается изменой."
+          "sentence": "In der Nacht auf der Heide hilft Gloucester dem wahnsinnigen Lear: Meine Hilfe gilt als Verrat.",
+          "sentence_translation": "В ночи на пустоши Глостер помогает обезумевшему Лиру: Моя помощь считается изменой."
         },
         {
           "german": "wagen",
           "russian": "осмеливаться",
           "transcription": "[ВА-ген]",
-          "sentence": "Ich wage es, gegen die Töchter zu handeln.",
-          "sentence_translation": "Я осмеливаюсь действовать против дочерей."
+          "sentence": "In der Nacht auf der Heide hilft Gloucester dem wahnsinnigen Lear: Ich wage es, gegen die Töchter zu handeln.",
+          "sentence_translation": "В ночи на пустоши Глостер помогает обезумевшему Лиру: Я осмеливаюсь действовать против дочерей."
         }
       ],
       "theatrical_scene": {
@@ -379,50 +379,50 @@
           "german": "blenden",
           "russian": "ослеплять",
           "transcription": "[БЛЕН-ден]",
-          "sentence": "Sie blenden mich für meinen Verrat.",
-          "sentence_translation": "Они ослепляют меня за мою измену."
+          "sentence": "Im finsteren Kerker der Burg lassen Regan und Cornwall Gloucester leiden: Sie blenden mich für meinen Verrat.",
+          "sentence_translation": "В тёмном застенке замка Реганы и Корнуолла Глостер страдает: Они ослепляют меня за мою измену."
         },
         {
           "german": "die Folter",
           "russian": "пытка",
           "transcription": "[ди ФОЛЬ-тер]",
-          "sentence": "Die Folter ist grausam und erbarmungslos.",
-          "sentence_translation": "Пытка жестока и беспощадна."
+          "sentence": "Im finsteren Kerker der Burg lassen Regan und Cornwall Gloucester leiden: Die Folter ist grausam und erbarmungslos.",
+          "sentence_translation": "В тёмном застенке замка Реганы и Корнуолла Глостер страдает: Пытка жестока и беспощадна."
         },
         {
           "german": "der Schmerz",
           "russian": "боль",
           "transcription": "[дер ШМЕРЦ]",
-          "sentence": "Der Schmerz durchbohrt meine Seele.",
-          "sentence_translation": "Боль пронзает мою душу."
+          "sentence": "Im finsteren Kerker der Burg lassen Regan und Cornwall Gloucester leiden: Der Schmerz durchbohrt meine Seele.",
+          "sentence_translation": "В тёмном застенке замка Реганы и Корнуолла Глостер страдает: Боль пронзает мою душу."
         },
         {
           "german": "die Dunkelheit",
           "russian": "темнота",
           "transcription": "[ди ДУН-кель-хайт]",
-          "sentence": "Ewige Dunkelheit umgibt mich nun.",
-          "sentence_translation": "Вечная темнота окружает меня теперь."
+          "sentence": "Im finsteren Kerker der Burg lassen Regan und Cornwall Gloucester leiden: Ewige Dunkelheit umgibt mich nun.",
+          "sentence_translation": "В тёмном застенке замка Реганы и Корнуолла Глостер страдает: Вечная темнота окружает меня теперь."
         },
         {
           "german": "schreien",
           "russian": "кричать",
           "transcription": "[ШРАЙ-ен]",
-          "sentence": "Ich schreie vor unerträglichem Schmerz.",
-          "sentence_translation": "Я кричу от невыносимой боли."
+          "sentence": "Im finsteren Kerker der Burg lassen Regan und Cornwall Gloucester leiden: Ich schreie vor unerträglichem Schmerz.",
+          "sentence_translation": "В тёмном застенке замка Реганы и Корнуолла Глостер страдает: Я кричу от невыносимой боли."
         },
         {
           "german": "erblinden",
           "russian": "слепнуть",
           "transcription": "[ер-БЛИН-ден]",
-          "sentence": "Ich erblinde durch ihre Grausamkeit.",
-          "sentence_translation": "Я слепну от их жестокости."
+          "sentence": "Im finsteren Kerker der Burg lassen Regan und Cornwall Gloucester leiden: Ich erblinde durch ihre Grausamkeit.",
+          "sentence_translation": "В тёмном застенке замка Реганы и Корнуолла Глостер страдает: Я слепну от их жестокости."
         },
         {
           "german": "die Rache",
           "russian": "месть",
           "transcription": "[ди РА-хе]",
-          "sentence": "Dies ist ihre Rache für meine Treue.",
-          "sentence_translation": "Это их месть за мою верность."
+          "sentence": "Im finsteren Kerker der Burg lassen Regan und Cornwall Gloucester leiden: Dies ist ihre Rache für meine Treue.",
+          "sentence_translation": "В тёмном застенке замка Реганы и Корнуолла Глостер страдает: Это их месть за мою верность."
         }
       ],
       "theatrical_scene": {
@@ -465,57 +465,57 @@
           "german": "die Verzweiflung",
           "russian": "отчаяние",
           "transcription": "[ди фер-ЦВАЙ-флунг]",
-          "sentence": "Die Verzweiflung treibt mich zum Abgrund.",
-          "sentence_translation": "Отчаяние гонит меня к пропасти."
+          "sentence": "An den Klippen von Dover führt armer Tom den blinden Gloucester: Die Verzweiflung treibt mich zum Abgrund.",
+          "sentence_translation": "На утёсах Дувра бедный Том ведёт слепого Глостера: Отчаяние гонит меня к пропасти."
         },
         {
           "german": "springen",
           "russian": "прыгать",
           "transcription": "[ШПРИН-ген]",
-          "sentence": "Ich will von den Klippen springen.",
-          "sentence_translation": "Я хочу прыгнуть со скал."
+          "sentence": "An den Klippen von Dover führt armer Tom den blinden Gloucester: Ich will von den Klippen springen.",
+          "sentence_translation": "На утёсах Дувра бедный Том ведёт слепого Глостера: Я хочу прыгнуть со скал."
         },
         {
           "german": "die Täuschung",
           "russian": "обман",
           "transcription": "[ди ТОЙ-шунг]",
-          "sentence": "Edgars liebevolle Täuschung rettet mich.",
-          "sentence_translation": "Любящий обман Эдгара спасает меня."
+          "sentence": "An den Klippen von Dover führt armer Tom den blinden Gloucester: Edgars liebevolle Täuschung rettet mich.",
+          "sentence_translation": "На утёсах Дувра бедный Том ведёт слепого Глостера: Любящий обман Эдгара спасает меня."
         },
         {
           "german": "der Abgrund",
           "russian": "пропасть",
           "transcription": "[дер АБ-грунд]",
-          "sentence": "Der Abgrund ruft nach mir.",
-          "sentence_translation": "Пропасть зовёт меня."
+          "sentence": "An den Klippen von Dover führt armer Tom den blinden Gloucester: Der Abgrund ruft nach mir.",
+          "sentence_translation": "На утёсах Дувра бедный Том ведёт слепого Глостера: Пропасть зовёт меня."
         },
         {
           "german": "aufgeben",
           "russian": "сдаваться",
           "transcription": "[АУФ-ге-бен]",
-          "sentence": "Ich will das Leben aufgeben.",
-          "sentence_translation": "Я хочу отказаться от жизни."
+          "sentence": "An den Klippen von Dover führt armer Tom den blinden Gloucester: Ich will das Leben aufgeben.",
+          "sentence_translation": "На утёсах Дувра бедный Том ведёт слепого Глостера: Я хочу отказаться от жизни."
         },
         {
           "german": "die Hoffnungslosigkeit",
           "russian": "безнадёжность",
           "transcription": "[ди ХОФ-нунгс-ло-зиг-кайт]",
-          "sentence": "Die Hoffnungslosigkeit erdrückt mich.",
-          "sentence_translation": "Безнадёжность давит меня."
+          "sentence": "An den Klippen von Dover führt armer Tom den blinden Gloucester: Die Hoffnungslosigkeit erdrückt mich.",
+          "sentence_translation": "На утёсах Дувра бедный Том ведёт слепого Глостера: Безнадёжность давит меня."
         },
         {
           "german": "stürzen",
           "russian": "падать",
           "transcription": "[ШТЮР-цен]",
-          "sentence": "Ich glaube, von hohen Klippen zu stürzen.",
-          "sentence_translation": "Я верю, что падаю с высоких скал."
+          "sentence": "An den Klippen von Dover führt armer Tom den blinden Gloucester: Ich glaube, von hohen Klippen zu stürzen.",
+          "sentence_translation": "На утёсах Дувра бедный Том ведёт слепого Глостера: Я верю, что падаю с высоких скал."
         },
         {
           "german": "erlösen",
           "russian": "избавлять",
           "transcription": "[ер-ЛЁ-зен]",
-          "sentence": "Der Tod soll mich von der Schuld erlösen.",
-          "sentence_translation": "Смерть должна избавить меня от вины."
+          "sentence": "An den Klippen von Dover führt armer Tom den blinden Gloucester: Der Tod soll mich von der Schuld erlösen.",
+          "sentence_translation": "На утёсах Дувра бедный Том ведёт слепого Глостера: Смерть должна избавить меня от вины."
         }
       ],
       "theatrical_scene": {
@@ -558,57 +558,57 @@
           "german": "erkennen",
           "russian": "узнавать",
           "transcription": "[ер-КЕН-нен]",
-          "sentence": "Endlich erkenne ich meinen treuen Edgar.",
-          "sentence_translation": "Наконец я узнаю моего верного Эдгара."
+          "sentence": "Nach der Rettung in Dover erkennt Gloucester in Edgars Armen: Endlich erkenne ich meinen treuen Edgar.",
+          "sentence_translation": "После спасения в Дувре Глостер узнаёт Эдгара в его объятиях: Наконец я узнаю моего верного Эдгара."
         },
         {
           "german": "vergeben",
           "russian": "прощать",
           "transcription": "[фер-ГЕ-бен]",
-          "sentence": "Edgar vergibt mir meine Blindheit.",
-          "sentence_translation": "Эдгар прощает мне мою слепоту."
+          "sentence": "Nach der Rettung in Dover erkennt Gloucester in Edgars Armen: Edgar vergibt mir meine Blindheit.",
+          "sentence_translation": "После спасения в Дувре Глостер узнаёт Эдгара в его объятиях: Эдгар прощает мне мою слепоту."
         },
         {
           "german": "sterben",
           "russian": "умирать",
           "transcription": "[ШТЕР-бен]",
-          "sentence": "Ich sterbe vor Freude und Kummer.",
-          "sentence_translation": "Я умираю от радости и горя."
+          "sentence": "Nach der Rettung in Dover erkennt Gloucester in Edgars Armen: Ich sterbe vor Freude und Kummer.",
+          "sentence_translation": "После спасения в Дувре Глостер узнаёт Эдгара в его объятиях: Я умираю от радости и горя."
         },
         {
           "german": "die Erkenntnis",
           "russian": "осознание",
           "transcription": "[ди ер-КЕНТ-нис]",
-          "sentence": "Die späte Erkenntnis bricht mein Herz.",
-          "sentence_translation": "Позднее осознание разбивает моё сердце."
+          "sentence": "Nach der Rettung in Dover erkennt Gloucester in Edgars Armen: Die späte Erkenntnis bricht mein Herz.",
+          "sentence_translation": "После спасения в Дувре Глостер узнаёт Эдгара в его объятиях: Позднее осознание разбивает моё сердце."
         },
         {
           "german": "die Reue",
           "russian": "раскаяние",
           "transcription": "[ди РОЙ-е]",
-          "sentence": "Die Reue überwältigt meine Seele.",
-          "sentence_translation": "Раскаяние переполняет мою душу."
+          "sentence": "Nach der Rettung in Dover erkennt Gloucester in Edgars Armen: Die Reue überwältigt meine Seele.",
+          "sentence_translation": "После спасения в Дувре Глостер узнаёт Эдгара в его объятиях: Раскаяние переполняет мою душу."
         },
         {
           "german": "umarmen",
           "russian": "обнимать",
           "transcription": "[ум-АР-мен]",
-          "sentence": "Ein letztes Mal umarme ich meinen Sohn.",
-          "sentence_translation": "В последний раз я обнимаю сына."
+          "sentence": "Nach der Rettung in Dover erkennt Gloucester in Edgars Armen: Ein letztes Mal umarme ich meinen Sohn.",
+          "sentence_translation": "После спасения в Дувре Глостер узнаёт Эдгара в его объятиях: В последний раз я обнимаю сына."
         },
         {
           "german": "die Versöhnung",
           "russian": "примирение",
           "transcription": "[ди фер-ЗЁ-нунг]",
-          "sentence": "Die Versöhnung kommt zu spät.",
-          "sentence_translation": "Примирение приходит слишком поздно."
+          "sentence": "Nach der Rettung in Dover erkennt Gloucester in Edgars Armen: Die Versöhnung kommt zu spät.",
+          "sentence_translation": "После спасения в Дувре Глостер узнаёт Эдгара в его объятиях: Примирение приходит слишком поздно."
         },
         {
           "german": "das Herz",
           "russian": "сердце",
           "transcription": "[дас ХЕРЦ]",
-          "sentence": "Mein Herz zerbricht vor Glück und Leid.",
-          "sentence_translation": "Моё сердце разрывается от счастья и горя."
+          "sentence": "Nach der Rettung in Dover erkennt Gloucester in Edgars Armen: Mein Herz zerbricht vor Glück und Leid.",
+          "sentence_translation": "После спасения в Дувре Глостер узнаёт Эдгара в его объятиях: Моё сердце разрывается от счастья и горя."
         }
       ],
       "theatrical_scene": {

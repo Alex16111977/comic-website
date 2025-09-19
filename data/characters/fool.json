@@ -14,57 +14,57 @@
           "german": "der Narr",
           "russian": "шут",
           "transcription": "[дер НАР]",
-          "sentence": "Als Narr sage ich die Wahrheit durch Scherze.",
-          "sentence_translation": "Как шут я говорю правду через шутки."
+          "sentence": "Im Thronsaal von Lear tanzt der Narr neben Cordelia: Als Narr sage ich die Wahrheit durch Scherze.",
+          "sentence_translation": "В тронном зале Лира шут пляшет рядом с Корделией: Как шут я говорю правду через шутки."
         },
         {
           "german": "die Weisheit",
           "russian": "мудрость",
           "transcription": "[ди ВАЙС-хайт]",
-          "sentence": "Hinter meinen Späßen verbirgt sich Weisheit.",
-          "sentence_translation": "За моими шутками скрывается мудрость."
+          "sentence": "Im Thronsaal von Lear tanzt der Narr neben Cordelia: Hinter meinen Späßen verbirgt sich Weisheit.",
+          "sentence_translation": "В тронном зале Лира шут пляшет рядом с Корделией: За моими шутками скрывается мудрость."
         },
         {
           "german": "die Trauer",
           "russian": "печаль",
           "transcription": "[ди ТРАУ-ер]",
-          "sentence": "Die Trauer um Корделия macht mich stumm.",
-          "sentence_translation": "Печаль о Корделии делает меня немым."
+          "sentence": "Im Thronsaal von Lear tanzt der Narr neben Cordelia: Die Trauer um Корделия macht mich stumm.",
+          "sentence_translation": "В тронном зале Лира шут пляшет рядом с Корделией: Печаль о Корделии делает меня немым."
         },
         {
           "german": "scherzen",
           "russian": "шутить",
           "transcription": "[ШЕР-цен]",
-          "sentence": "Ich scherze, um den Schmerz zu verbergen.",
-          "sentence_translation": "Я шучу, чтобы скрыть боль."
+          "sentence": "Im Thronsaal von Lear tanzt der Narr neben Cordelia: Ich scherze, um den Schmerz zu verbergen.",
+          "sentence_translation": "В тронном зале Лира шут пляшет рядом с Корделией: Я шучу, чтобы скрыть боль."
         },
         {
           "german": "der Spaß",
           "russian": "забава",
           "transcription": "[дер ШПАС]",
-          "sentence": "Der Spaß ist meine Maske vor der Welt.",
-          "sentence_translation": "Забава - моя маска перед миром."
+          "sentence": "Im Thronsaal von Lear tanzt der Narr neben Cordelia: Der Spaß ist meine Maske vor der Welt.",
+          "sentence_translation": "В тронном зале Лира шут пляшет рядом с Корделией: Забава - моя маска перед миром."
         },
         {
           "german": "klug",
           "russian": "умный",
           "transcription": "[КЛУГ]",
-          "sentence": "Ich bin klüger als alle bei Hofe.",
-          "sentence_translation": "Я умнее всех при дворе."
+          "sentence": "Im Thronsaal von Lear tanzt der Narr neben Cordelia: Ich bin klüger als alle bei Hofe.",
+          "sentence_translation": "В тронном зале Лира шут пляшет рядом с Корделией: Я умнее всех при дворе."
         },
         {
           "german": "vermissen",
           "russian": "скучать",
           "transcription": "[фер-МИ-сен]",
-          "sentence": "Ich vermisse die süße Корделия sehr.",
-          "sentence_translation": "Я очень скучаю по милой Корделии."
+          "sentence": "Im Thronsaal von Lear tanzt der Narr neben Cordelia: Ich vermisse die süße Корделия sehr.",
+          "sentence_translation": "В тронном зале Лира шут пляшет рядом с Корделией: Я очень скучаю по милой Корделии."
         },
         {
           "german": "der Witz",
           "russian": "остроумие",
           "transcription": "[дер ВИТЦ]",
-          "sentence": "Mein Witz ist scharf wie ein Schwert.",
-          "sentence_translation": "Моё остроумие остро как меч."
+          "sentence": "Im Thronsaal von Lear tanzt der Narr neben Cordelia: Mein Witz ist scharf wie ein Schwert.",
+          "sentence_translation": "В тронном зале Лира шут пляшет рядом с Корделией: Моё остроумие остро как меч."
         }
       ],
       "theatrical_scene": {
@@ -107,50 +107,50 @@
           "german": "die Wahrheit",
           "russian": "правда",
           "transcription": "[ди ВАР-хайт]",
-          "sentence": "Die Wahrheit verpacke ich in lustige Lieder.",
-          "sentence_translation": "Правду я заворачиваю в весёлые песни."
+          "sentence": "Unter Gonerils kaltem Blick singt der Narr: Die Wahrheit verpacke ich in lustige Lieder.",
+          "sentence_translation": "Под холодным взглядом Гонериль шут поёт: Правду я заворачиваю в весёлые песни."
         },
         {
           "german": "der Scherz",
           "russian": "шутка",
           "transcription": "[дер ШЕРЦ]",
-          "sentence": "Jeder Scherz enthält eine bittere Lehre.",
-          "sentence_translation": "Каждая шутка содержит горький урок."
+          "sentence": "Unter Gonerils kaltem Blick singt der Narr: Jeder Scherz enthält eine bittere Lehre.",
+          "sentence_translation": "Под холодным взглядом Гонериль шут поёт: Каждая шутка содержит горький урок."
         },
         {
           "german": "die Warnung",
           "russian": "предупреждение",
           "transcription": "[ди ВАР-нунг]",
-          "sentence": "Meine Warnung kommt als Rätsel verkleidet.",
-          "sentence_translation": "Моё предупреждение приходит замаскированным под загадку."
+          "sentence": "Unter Gonerils kaltem Blick singt der Narr: Meine Warnung kommt als Rätsel verkleidet.",
+          "sentence_translation": "Под холодным взглядом Гонериль шут поёт: Моё предупреждение приходит замаскированным под загадку."
         },
         {
           "german": "bitter",
           "russian": "горький",
           "transcription": "[БИ-тер]",
-          "sentence": "Die Wahrheit schmeckt bitter wie Galle.",
-          "sentence_translation": "Правда горька как желчь."
+          "sentence": "Unter Gonerils kaltem Blick singt der Narr: Die Wahrheit schmeckt bitter wie Galle.",
+          "sentence_translation": "Под холодным взглядом Гонериль шут поёт: Правда горька как желчь."
         },
         {
           "german": "spotten",
           "russian": "насмехаться",
           "transcription": "[ШПО-тен]",
-          "sentence": "Ich spotte über die Torheit der Mächtigen.",
-          "sentence_translation": "Я насмехаюсь над глупостью сильных."
+          "sentence": "Unter Gonerils kaltem Blick singt der Narr: Ich spotte über die Torheit der Mächtigen.",
+          "sentence_translation": "Под холодным взглядом Гонериль шут поёт: Я насмехаюсь над глупостью сильных."
         },
         {
           "german": "necken",
           "russian": "дразнить",
           "transcription": "[НЕ-кен]",
-          "sentence": "Ich necke den König mit der Wahrheit.",
-          "sentence_translation": "Я дразню короля правдой."
+          "sentence": "Unter Gonerils kaltem Blick singt der Narr: Ich necke den König mit der Wahrheit.",
+          "sentence_translation": "Под холодным взглядом Гонериль шут поёт: Я дразню короля правдой."
         },
         {
           "german": "enthüllen",
           "russian": "раскрывать",
           "transcription": "[энт-ХЮ-лен]",
-          "sentence": "Spielerisch enthülle ich seine Fehler.",
-          "sentence_translation": "Играючи я раскрываю его ошибки."
+          "sentence": "Unter Gonerils kaltem Blick singt der Narr: Spielerisch enthülle ich seine Fehler.",
+          "sentence_translation": "Под холодным взглядом Гонериль шут поёт: Играючи я раскрываю его ошибки."
         }
       ],
       "theatrical_scene": {
@@ -193,57 +193,57 @@
           "german": "die Prophezeiung",
           "russian": "пророчество",
           "transcription": "[ди про-фе-ЦАЙ-унг]",
-          "sentence": "Meine Prophezeiung wird wahr werden.",
-          "sentence_translation": "Моё пророчество сбудется."
+          "sentence": "Auf der sturmgepeitschten Heide prophezeit der Narr: Meine Prophezeiung wird wahr werden.",
+          "sentence_translation": "На продуваемой бурей пустоши шут пророчит: Моё пророчество сбудется."
         },
         {
           "german": "das Rätsel",
           "russian": "загадка",
           "transcription": "[дас РЕТ-зель]",
-          "sentence": "In Rätseln spreche ich von der Zukunft.",
-          "sentence_translation": "В загадках я говорю о будущем."
+          "sentence": "Auf der sturmgepeitschten Heide prophezeit der Narr: In Rätseln spreche ich von der Zukunft.",
+          "sentence_translation": "На продуваемой бурей пустоши шут пророчит: В загадках я говорю о будущем."
         },
         {
           "german": "die Vorahnung",
           "russian": "предчувствие",
           "transcription": "[ди ФОР-а-нунг]",
-          "sentence": "Eine dunkle Vorahnung erfüllt mein Herz.",
-          "sentence_translation": "Тёмное предчувствие наполняет моё сердце."
+          "sentence": "Auf der sturmgepeitschten Heide prophezeit der Narr: Eine dunkle Vorahnung erfüllt mein Herz.",
+          "sentence_translation": "На продуваемой бурей пустоши шут пророчит: Тёмное предчувствие наполняет моё сердце."
         },
         {
           "german": "vorhersagen",
           "russian": "предсказывать",
           "transcription": "[ФОР-хер-за-ген]",
-          "sentence": "Ich sage das kommende Unheil vorher.",
-          "sentence_translation": "Я предсказываю грядущую беду."
+          "sentence": "Auf der sturmgepeitschten Heide prophezeit der Narr: Ich sage das kommende Unheil vorher.",
+          "sentence_translation": "На продуваемой бурей пустоши шут пророчит: Я предсказываю грядущую беду."
         },
         {
           "german": "deuten",
           "russian": "толковать",
           "transcription": "[ДОЙ-тен]",
-          "sentence": "Die Zeichen deute ich besser als alle.",
-          "sentence_translation": "Знаки я толкую лучше всех."
+          "sentence": "Auf der sturmgepeitschten Heide prophezeit der Narr: Die Zeichen deute ich besser als alle.",
+          "sentence_translation": "На продуваемой бурей пустоши шут пророчит: Знаки я толкую лучше всех."
         },
         {
           "german": "ahnen",
           "russian": "предчувствовать",
           "transcription": "[А-нен]",
-          "sentence": "Ich ahne das schlimme Ende voraus.",
-          "sentence_translation": "Я предчувствую плохой конец."
+          "sentence": "Auf der sturmgepeitschten Heide prophezeit der Narr: Ich ahne das schlimme Ende voraus.",
+          "sentence_translation": "На продуваемой бурей пустоши шут пророчит: Я предчувствую плохой конец."
         },
         {
           "german": "das Omen",
           "russian": "знамение",
           "transcription": "[дас О-мен]",
-          "sentence": "Jedes Omen zeigt auf Untergang.",
-          "sentence_translation": "Каждое знамение указывает на гибель."
+          "sentence": "Auf der sturmgepeitschten Heide prophezeit der Narr: Jedes Omen zeigt auf Untergang.",
+          "sentence_translation": "На продуваемой бурей пустоши шут пророчит: Каждое знамение указывает на гибель."
         },
         {
           "german": "rätselhaft",
           "russian": "загадочный",
           "transcription": "[РЕТ-зель-хафт]",
-          "sentence": "Meine Worte bleiben rätselhaft und wahr.",
-          "sentence_translation": "Мои слова остаются загадочными и правдивыми."
+          "sentence": "Auf der sturmgepeitschten Heide prophezeit der Narr: Meine Worte bleiben rätselhaft und wahr.",
+          "sentence_translation": "На продуваемой бурей пустоши шут пророчит: Мои слова остаются загадочными и правдивыми."
         }
       ],
       "theatrical_scene": {
@@ -286,50 +286,50 @@
           "german": "der Wahnsinn",
           "russian": "безумие",
           "transcription": "[дер ВАН-зин]",
-          "sentence": "Im Wahnsinn finden wir uns als Brüder.",
-          "sentence_translation": "В безумии мы находим друг друга как братья."
+          "sentence": "In der Hütte teilt der Narr Lears Wahnsinn: Im Wahnsinn finden wir uns als Brüder.",
+          "sentence_translation": "В хижине шут разделяет безумие Лира: В безумии мы находим друг друга как братья."
         },
         {
           "german": "die Freundschaft",
           "russian": "дружба",
           "transcription": "[ди ФРОЙНД-шафт]",
-          "sentence": "Unsere Freundschaft überdauert den Sturm.",
-          "sentence_translation": "Наша дружба переживёт бурю."
+          "sentence": "In der Hütte teilt der Narr Lears Wahnsinn: Unsere Freundschaft überdauert den Sturm.",
+          "sentence_translation": "В хижине шут разделяет безумие Лира: Наша дружба переживёт бурю."
         },
         {
           "german": "begleiten",
           "russian": "сопровождать",
           "transcription": "[бе-ГЛАЙ-тен]",
-          "sentence": "Treu begleite ich meinen verrückten König.",
-          "sentence_translation": "Верно я сопровождаю своего безумного короля."
+          "sentence": "In der Hütte teilt der Narr Lears Wahnsinn: Treu begleite ich meinen verrückten König.",
+          "sentence_translation": "В хижине шут разделяет безумие Лира: Верно я сопровождаю своего безумного короля."
         },
         {
           "german": "frieren",
           "russian": "мёрзнуть",
           "transcription": "[ФРИ-рен]",
-          "sentence": "Wir frieren gemeinsam in der kalten Nacht.",
-          "sentence_translation": "Мы мёрзнем вместе в холодную ночь."
+          "sentence": "In der Hütte teilt der Narr Lears Wahnsinn: Wir frieren gemeinsam in der kalten Nacht.",
+          "sentence_translation": "В хижине шут разделяет безумие Лира: Мы мёрзнем вместе в холодную ночь."
         },
         {
           "german": "singen",
           "russian": "петь",
           "transcription": "[ЗИН-ген]",
-          "sentence": "Ich singe, um seine Angst zu lindern.",
-          "sentence_translation": "Я пою, чтобы облегчить его страх."
+          "sentence": "In der Hütte teilt der Narr Lears Wahnsinn: Ich singe, um seine Angst zu lindern.",
+          "sentence_translation": "В хижине шут разделяет безумие Лира: Я пою, чтобы облегчить его страх."
         },
         {
           "german": "zittern",
           "russian": "дрожать",
           "transcription": "[ЦИ-терн]",
-          "sentence": "Vor Kälte zittern wir wie Espenlaub.",
-          "sentence_translation": "От холода мы дрожим как осиновый лист."
+          "sentence": "In der Hütte teilt der Narr Lears Wahnsinn: Vor Kälte zittern wir wie Espenlaub.",
+          "sentence_translation": "В хижине шут разделяет безумие Лира: От холода мы дрожим как осиновый лист."
         },
         {
           "german": "treu",
           "russian": "верный",
           "transcription": "[ТРОЙ]",
-          "sentence": "Ich bleibe treu, wenn alle anderen fliehen.",
-          "sentence_translation": "Я остаюсь верным, когда все остальные бегут."
+          "sentence": "In der Hütte teilt der Narr Lears Wahnsinn: Ich bleibe treu, wenn alle anderen fliehen.",
+          "sentence_translation": "В хижине шут разделяет безумие Лира: Я остаюсь верным, когда все остальные бегут."
         }
       ],
       "theatrical_scene": {
@@ -372,57 +372,57 @@
           "german": "das Lied",
           "russian": "песня",
           "transcription": "[дас ЛИД]",
-          "sentence": "Mein Lied erzählt von vergangenen Tagen.",
-          "sentence_translation": "Моя песня рассказывает о прошлых днях."
+          "sentence": "Bei Cordelias Rückkehr nach Dover singt der Narr leise: Mein Lied erzählt von vergangenen Tagen.",
+          "sentence_translation": "Во время возвращения Корделии в Дувр шут тихо поёт: Моя песня рассказывает о прошлых днях."
         },
         {
           "german": "der Trost",
           "russian": "утешение",
           "transcription": "[дер ТРОСТ]",
-          "sentence": "Mit Liedern bringe ich kleinen Trost.",
-          "sentence_translation": "Песнями я приношу малое утешение."
+          "sentence": "Bei Cordelias Rückkehr nach Dover singt der Narr leise: Mit Liedern bringe ich kleinen Trost.",
+          "sentence_translation": "Во время возвращения Корделии в Дувр шут тихо поёт: Песнями я приношу малое утешение."
         },
         {
           "german": "die Ironie",
           "russian": "ирония",
           "transcription": "[ди и-ро-НИ]",
-          "sentence": "Die Ironie ist meine letzte Waffe.",
-          "sentence_translation": "Ирония - моё последнее оружие."
+          "sentence": "Bei Cordelias Rückkehr nach Dover singt der Narr leise: Die Ironie ist meine letzte Waffe.",
+          "sentence_translation": "Во время возвращения Корделии в Дувр шут тихо поёт: Ирония - моё последнее оружие."
         },
         {
           "german": "summen",
           "russian": "напевать",
           "transcription": "[ЗУ-мен]",
-          "sentence": "Leise summe ich alte Melodien.",
-          "sentence_translation": "Тихо я напеваю старые мелодии."
+          "sentence": "Bei Cordelias Rückkehr nach Dover singt der Narr leise: Leise summe ich alte Melodien.",
+          "sentence_translation": "Во время возвращения Корделии в Дувр шут тихо поёт: Тихо я напеваю старые мелодии."
         },
         {
           "german": "die Melodie",
           "russian": "мелодия",
           "transcription": "[ди ме-ло-ДИ]",
-          "sentence": "Die Melodie erinnert an bessere Zeiten.",
-          "sentence_translation": "Мелодия напоминает о лучших временах."
+          "sentence": "Bei Cordelias Rückkehr nach Dover singt der Narr leise: Die Melodie erinnert an bessere Zeiten.",
+          "sentence_translation": "Во время возвращения Корделии в Дувр шут тихо поёт: Мелодия напоминает о лучших временах."
         },
         {
           "german": "pfeifen",
           "russian": "свистеть",
           "transcription": "[ПФАЙ-фен]",
-          "sentence": "Ich pfeife gegen die Dunkelheit an.",
-          "sentence_translation": "Я свищу против темноты."
+          "sentence": "Bei Cordelias Rückkehr nach Dover singt der Narr leise: Ich pfeife gegen die Dunkelheit an.",
+          "sentence_translation": "Во время возвращения Корделии в Дувр шут тихо поёт: Я свищу против темноты."
         },
         {
           "german": "der Reim",
           "russian": "рифма",
           "transcription": "[дер РАЙМ]",
-          "sentence": "Jeder Reim verbirgt eine tiefe Wahrheit.",
-          "sentence_translation": "Каждая рифма скрывает глубокую правду."
+          "sentence": "Bei Cordelias Rückkehr nach Dover singt der Narr leise: Jeder Reim verbirgt eine tiefe Wahrheit.",
+          "sentence_translation": "Во время возвращения Корделии в Дувр шут тихо поёт: Каждая рифма скрывает глубокую правду."
         },
         {
           "german": "klingen",
           "russian": "звучать",
           "transcription": "[КЛИН-ген]",
-          "sentence": "Meine Worte klingen lustig, doch sind traurig.",
-          "sentence_translation": "Мои слова звучат весело, но печальны."
+          "sentence": "Bei Cordelias Rückkehr nach Dover singt der Narr leise: Meine Worte klingen lustig, doch sind traurig.",
+          "sentence_translation": "Во время возвращения Корделии в Дувр шут тихо поёт: Мои слова звучат весело, но печальны."
         }
       ],
       "theatrical_scene": {
@@ -465,50 +465,50 @@
           "german": "die Philosophie",
           "russian": "философия",
           "transcription": "[ди фи-ло-зо-ФИ]",
-          "sentence": "Meine Philosophie ist einfach: Alles ist Narretei.",
-          "sentence_translation": "Моя философия проста: всё - глупость."
+          "sentence": "Nach dem Marsch nach Dover sinniert der Narr: Meine Philosophie ist einfach: Alles ist Narretei.",
+          "sentence_translation": "После перехода в Дувр шут размышляет: Моя философия проста: всё - глупость."
         },
         {
           "german": "das Schicksal",
           "russian": "судьба",
           "transcription": "[дас ШИК-заль]",
-          "sentence": "Das Schicksal macht Narren aus uns allen.",
-          "sentence_translation": "Судьба делает дураков из всех нас."
+          "sentence": "Nach dem Marsch nach Dover sinniert der Narr: Das Schicksal macht Narren aus uns allen.",
+          "sentence_translation": "После перехода в Дувр шут размышляет: Судьба делает дураков из всех нас."
         },
         {
           "german": "die Vergänglichkeit",
           "russian": "бренность",
           "transcription": "[ди фер-ГЕНГ-лих-кайт]",
-          "sentence": "Die Vergänglichkeit der Macht ist offenbar.",
-          "sentence_translation": "Бренность власти очевидна."
+          "sentence": "Nach dem Marsch nach Dover sinniert der Narr: Die Vergänglichkeit der Macht ist offenbar.",
+          "sentence_translation": "После перехода в Дувр шут размышляет: Бренность власти очевидна."
         },
         {
           "german": "nachdenken",
           "russian": "размышлять",
           "transcription": "[НАХ-ден-кен]",
-          "sentence": "Ich denke nach über des Lebens Sinn.",
-          "sentence_translation": "Я размышляю о смысле жизни."
+          "sentence": "Nach dem Marsch nach Dover sinniert der Narr: Ich denke nach über des Lebens Sinn.",
+          "sentence_translation": "После перехода в Дувр шут размышляет: Я размышляю о смысле жизни."
         },
         {
           "german": "erkennen",
           "russian": "познавать",
           "transcription": "[ер-КЕН-нен]",
-          "sentence": "Ich erkenne die Wahrheit hinter dem Schein.",
-          "sentence_translation": "Я познаю правду за видимостью."
+          "sentence": "Nach dem Marsch nach Dover sinniert der Narr: Ich erkenne die Wahrheit hinter dem Schein.",
+          "sentence_translation": "После перехода в Дувр шут размышляет: Я познаю правду за видимостью."
         },
         {
           "german": "der Sinn",
           "russian": "смысл",
           "transcription": "[дер ЗИН]",
-          "sentence": "Der Sinn des Lebens ist ein schlechter Witz.",
-          "sentence_translation": "Смысл жизни - плохая шутка."
+          "sentence": "Nach dem Marsch nach Dover sinniert der Narr: Der Sinn des Lebens ist ein schlechter Witz.",
+          "sentence_translation": "После перехода в Дувр шут размышляет: Смысл жизни - плохая шутка."
         },
         {
           "german": "vergänglich",
           "russian": "преходящий",
           "transcription": "[фер-ГЕНГ-лих]",
-          "sentence": "Alles ist vergänglich, nur die Torheit bleibt.",
-          "sentence_translation": "Всё преходяще, только глупость остаётся."
+          "sentence": "Nach dem Marsch nach Dover sinniert der Narr: Alles ist vergänglich, nur die Torheit bleibt.",
+          "sentence_translation": "После перехода в Дувр шут размышляет: Всё преходяще, только глупость остаётся."
         }
       ],
       "theatrical_scene": {
@@ -551,57 +551,57 @@
           "german": "verschwinden",
           "russian": "исчезать",
           "transcription": "[фер-ШВИН-ден]",
-          "sentence": "Ich verschwinde wie ein Traum im Morgen.",
-          "sentence_translation": "Я исчезаю как сон поутру."
+          "sentence": "Kurz vor Cordelias Gefangennahme verschwindet der Narr: Ich verschwinde wie ein Traum im Morgen.",
+          "sentence_translation": "Незадолго до пленения Корделии шут исчезает: Я исчезаю как сон поутру."
         },
         {
           "german": "das Geheimnis",
           "russian": "тайна",
           "transcription": "[дас ге-ХАЙМ-нис]",
-          "sentence": "Mein Verschwinden bleibt ein ewiges Geheimnis.",
-          "sentence_translation": "Моё исчезновение остаётся вечной тайной."
+          "sentence": "Kurz vor Cordelias Gefangennahme verschwindet der Narr: Mein Verschwinden bleibt ein ewiges Geheimnis.",
+          "sentence_translation": "Незадолго до пленения Корделии шут исчезает: Моё исчезновение остаётся вечной тайной."
         },
         {
           "german": "die Leere",
           "russian": "пустота",
           "transcription": "[ди ЛЕ-ре]",
-          "sentence": "Ich hinterlasse nur Leere und Erinnerung.",
-          "sentence_translation": "Я оставляю только пустоту и воспоминание."
+          "sentence": "Kurz vor Cordelias Gefangennahme verschwindet der Narr: Ich hinterlasse nur Leere und Erinnerung.",
+          "sentence_translation": "Незадолго до пленения Корделии шут исчезает: Я оставляю только пустоту и воспоминание."
         },
         {
           "german": "sich auflösen",
           "russian": "растворяться",
           "transcription": "[зих АУФ-лё-зен]",
-          "sentence": "Ich löse mich auf wie Nebel im Wind.",
-          "sentence_translation": "Я растворяюсь как туман на ветру."
+          "sentence": "Kurz vor Cordelias Gefangennahme verschwindet der Narr: Ich löse mich auf wie Nebel im Wind.",
+          "sentence_translation": "Незадолго до пленения Корделии шут исчезает: Я растворяюсь как туман на ветру."
         },
         {
           "german": "spurlos",
           "russian": "бесследно",
           "transcription": "[ШПУР-лос]",
-          "sentence": "Spurlos gehe ich aus dieser Welt.",
-          "sentence_translation": "Бесследно я ухожу из этого мира."
+          "sentence": "Kurz vor Cordelias Gefangennahme verschwindet der Narr: Spurlos gehe ich aus dieser Welt.",
+          "sentence_translation": "Незадолго до пленения Корделии шут исчезает: Бесследно я ухожу из этого мира."
         },
         {
           "german": "der Nebel",
           "russian": "туман",
           "transcription": "[дер НЕ-бель]",
-          "sentence": "Im Nebel verliere ich mich für immer.",
-          "sentence_translation": "В тумане я теряюсь навсегда."
+          "sentence": "Kurz vor Cordelias Gefangennahme verschwindet der Narr: Im Nebel verliere ich mich für immer.",
+          "sentence_translation": "Незадолго до пленения Корделии шут исчезает: В тумане я теряюсь навсегда."
         },
         {
           "german": "rätselhaft",
           "russian": "загадочный",
           "transcription": "[РЕТ-зель-хафт]",
-          "sentence": "Mein Ende bleibt rätselhaft und stumm.",
-          "sentence_translation": "Мой конец остаётся загадочным и немым."
+          "sentence": "Kurz vor Cordelias Gefangennahme verschwindet der Narr: Mein Ende bleibt rätselhaft und stumm.",
+          "sentence_translation": "Незадолго до пленения Корделии шут исчезает: Мой конец остаётся загадочным и немым."
         },
         {
           "german": "fortgehen",
           "russian": "уходить",
           "transcription": "[ФОРТ-ге-ен]",
-          "sentence": "Ich gehe fort, wenn keiner es bemerkt.",
-          "sentence_translation": "Я ухожу, когда никто не замечает."
+          "sentence": "Kurz vor Cordelias Gefangennahme verschwindet der Narr: Ich gehe fort, wenn keiner es bemerkt.",
+          "sentence_translation": "Незадолго до пленения Корделии шут исчезает: Я ухожу, когда никто не замечает."
         }
       ],
       "theatrical_scene": {

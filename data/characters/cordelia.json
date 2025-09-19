@@ -20,57 +20,57 @@
           "german": "die Wahrheit",
           "russian": "правда",
           "transcription": "[ди ВАР-хайт]",
-          "sentence": "Die Wahrheit war vor meinen Augen verborgen.",
-          "sentence_translation": "Правда была скрыта от моих глаз."
+          "sentence": "Im Thronsaal von König Lear spricht Cordelia: Die Wahrheit war vor meinen Augen verborgen.",
+          "sentence_translation": "В тронном зале короля Лира Корделия говорит: Правда была скрыта от моих глаз."
         },
         {
           "german": "die Zeremonie",
           "russian": "церемония",
           "transcription": "[ди це-ре-мо-НИ]",
-          "sentence": "Die Zeremonie beginnt im prächtigen Thronsaal.",
-          "sentence_translation": "Церемония начинается в великолепном тронном зале."
+          "sentence": "Im Thronsaal von König Lear spricht Cordelia: Die Zeremonie beginnt im prächtigen Thronsaal.",
+          "sentence_translation": "В тронном зале короля Лира Корделия говорит: Церемония начинается в великолепном тронном зале."
         },
         {
           "german": "verkünden",
           "russian": "провозглашать",
           "transcription": "[фер-КЮН-ден]",
-          "sentence": "Ich verkünde nur die Wahrheit meines Herzens.",
-          "sentence_translation": "Я провозглашаю только правду моего сердца."
+          "sentence": "Im Thronsaal von König Lear spricht Cordelia: Ich verkünde nur die Wahrheit meines Herzens.",
+          "sentence_translation": "В тронном зале короля Лира Корделия говорит: Я провозглашаю только правду моего сердца."
         },
         {
           "german": "die Macht",
           "russian": "власть",
           "transcription": "[ди МАХТ]",
-          "sentence": "Die Macht bedeutet nichts ohne wahre Liebe.",
-          "sentence_translation": "Власть ничего не значит без истинной любви."
+          "sentence": "Im Thronsaal von König Lear spricht Cordelia: Die Macht bedeutet nichts ohne wahre Liebe.",
+          "sentence_translation": "В тронном зале короля Лира Корделия говорит: Власть ничего не значит без истинной любви."
         },
         {
           "german": "gehorchen",
           "russian": "повиноваться",
           "transcription": "[ге-ХОР-хен]",
-          "sentence": "Ich kann der Lüge nicht gehorchen.",
-          "sentence_translation": "Я не могу повиноваться лжи."
+          "sentence": "Im Thronsaal von König Lear spricht Cordelia: Ich kann der Lüge nicht gehorchen.",
+          "sentence_translation": "В тронном зале короля Лира Корделия говорит: Я не могу повиноваться лжи."
         },
         {
           "german": "die Pflicht",
           "russian": "долг",
           "transcription": "[ди ПФЛИХТ]",
-          "sentence": "Meine Pflicht ist es, ehrlich zu sein.",
-          "sentence_translation": "Мой долг - быть честной."
+          "sentence": "Im Thronsaal von König Lear spricht Cordelia: Meine Pflicht ist es, ehrlich zu sein.",
+          "sentence_translation": "В тронном зале короля Лира Корделия говорит: Мой долг - быть честной."
         },
         {
           "german": "feierlich",
           "russian": "торжественный",
           "transcription": "[ФАЙ-ер-лих]",
-          "sentence": "Dieser feierliche Moment wird zur Tragödie.",
-          "sentence_translation": "Этот торжественный момент становится трагедией."
+          "sentence": "Im Thronsaal von König Lear spricht Cordelia: Dieser feierliche Moment wird zur Tragödie.",
+          "sentence_translation": "В тронном зале короля Лира Корделия говорит: Этот торжественный момент становится трагедией."
         },
         {
           "german": "die Treue",
           "russian": "верность",
           "transcription": "[ди ТРОЙ-е]",
-          "sentence": "Meine Treue gilt der Wahrheit und der echten Liebe.",
-          "sentence_translation": "Моя верность принадлежит правде и истинной любви."
+          "sentence": "Im Thronsaal von König Lear spricht Cordelia: Meine Treue gilt der Wahrheit und der echten Liebe.",
+          "sentence_translation": "В тронном зале короля Лира Корделия говорит: Моя верность принадлежит правде и истинной любви."
         }
       ],
       "quizzes": [
@@ -113,57 +113,57 @@
           "german": "verstoßen",
           "russian": "изгонять",
           "transcription": "[фер-ШТО-сен]",
-          "sentence": "Der König verstößt mich aus seinem Herzen.",
-          "sentence_translation": "Король изгоняет меня из своего сердца."
+          "sentence": "Auf dem Kai vor der Abreise nach Frankreich schwört Cordelia: Der König verstößt mich aus seinem Herzen.",
+          "sentence_translation": "На причале перед отъездом во Францию Корделия клянётся: Король изгоняет меня из своего сердца."
         },
         {
           "german": "verlassen",
           "russian": "покидать",
           "transcription": "[фер-ЛА-сен]",
-          "sentence": "Schweren Herzens verlasse ich mein Vaterland.",
-          "sentence_translation": "С тяжёлым сердцем я покидаю родину."
+          "sentence": "Auf dem Kai vor der Abreise nach Frankreich schwört Cordelia: Schweren Herzens verlasse ich mein Vaterland.",
+          "sentence_translation": "На причале перед отъездом во Францию Корделия клянётся: С тяжёлым сердцем я покидаю родину."
         },
         {
           "german": "der Zorn",
           "russian": "гнев",
           "transcription": "[дер ЦОРН]",
-          "sentence": "Sein Zorn ist grenzenlos und blind.",
-          "sentence_translation": "Его гнев безграничен и слеп."
+          "sentence": "Auf dem Kai vor der Abreise nach Frankreich schwört Cordelia: Sein Zorn ist grenzenlos und blind.",
+          "sentence_translation": "На причале перед отъездом во Францию Корделия клянётся: Его гнев безграничен и слеп."
         },
         {
           "german": "die Strafe",
           "russian": "наказание",
           "transcription": "[ди ШТРА-фе]",
-          "sentence": "Diese Strafe ist der Preis für meine Ehrlichkeit.",
-          "sentence_translation": "Это наказание - цена моей честности."
+          "sentence": "Auf dem Kai vor der Abreise nach Frankreich schwört Cordelia: Diese Strafe ist der Preis für meine Ehrlichkeit.",
+          "sentence_translation": "На причале перед отъездом во Францию Корделия клянётся: Это наказание - цена моей честности."
         },
         {
           "german": "fremd",
           "russian": "чужой",
           "transcription": "[ФРЕМД]",
-          "sentence": "Ich bin jetzt fremd in meinem eigenen Land.",
-          "sentence_translation": "Я теперь чужая в своей собственной стране."
+          "sentence": "Auf dem Kai vor der Abreise nach Frankreich schwört Cordelia: Ich bin jetzt fremd in meinem eigenen Land.",
+          "sentence_translation": "На причале перед отъездом во Францию Корделия клянётся: Я теперь чужая в своей собственной стране."
         },
         {
           "german": "die Mitgift",
           "russian": "приданое",
           "transcription": "[ди МИТ-гифт]",
-          "sentence": "Ohne Mitgift bin ich reicher an Ehre.",
-          "sentence_translation": "Без приданого я богаче честью."
+          "sentence": "Auf dem Kai vor der Abreise nach Frankreich schwört Cordelia: Ohne Mitgift bin ich reicher an Ehre.",
+          "sentence_translation": "На причале перед отъездом во Францию Корделия клянётся: Без приданого я богаче честью."
         },
         {
           "german": "aufnehmen",
           "russian": "принимать",
           "transcription": "[АУФ-не-мен]",
-          "sentence": "Der König von Frankreich nimmt mich liebevoll auf.",
-          "sentence_translation": "Король Франции принимает меня с любовью."
+          "sentence": "Auf dem Kai vor der Abreise nach Frankreich schwört Cordelia: Der König von Frankreich nimmt mich liebevoll auf.",
+          "sentence_translation": "На причале перед отъездом во Францию Корделия клянётся: Король Франции принимает меня с любовью."
         },
         {
           "german": "die Hoffnung",
           "russian": "надежда",
           "transcription": "[ди ХОФ-нунг]",
-          "sentence": "Die Hoffnung auf Versöhnung stirbt nie in meinem Herzen.",
-          "sentence_translation": "Надежда на примирение никогда не умирает в моём сердце."
+          "sentence": "Auf dem Kai vor der Abreise nach Frankreich schwört Cordelia: Die Hoffnung auf Versöhnung stirbt nie in meinem Herzen.",
+          "sentence_translation": "На причале перед отъездом во Францию Корделия клянётся: Надежда на примирение никогда не умирает в моём сердце."
         }
       ],
       "quizzes": [
@@ -206,57 +206,57 @@
           "german": "die Sorge",
           "russian": "забота",
           "transcription": "[ди ЗОР-ге]",
-          "sentence": "Die Sorge um meinen Vater lässt mich nicht schlafen.",
-          "sentence_translation": "Забота об отце не даёт мне спать."
+          "sentence": "Im französischen Exil erinnert sich Cordelia an Lear: Die Sorge um meinen Vater lässt mich nicht schlafen.",
+          "sentence_translation": "Во французском изгнании Корделия вспоминает Лира: Забота об отце не даёт мне спать."
         },
         {
           "german": "die Einsamkeit",
           "russian": "одиночество",
           "transcription": "[ди АЙН-зам-кайт]",
-          "sentence": "In der Einsamkeit denke ich an ihn.",
-          "sentence_translation": "В одиночестве я думаю о нём."
+          "sentence": "Im französischen Exil erinnert sich Cordelia an Lear: In der Einsamkeit denke ich an ihn.",
+          "sentence_translation": "Во французском изгнании Корделия вспоминает Лира: В одиночестве я думаю о нём."
         },
         {
           "german": "die Nachricht",
           "russian": "известие",
           "transcription": "[ди НАХ-рихт]",
-          "sentence": "Schreckliche Nachrichten erreichen mich aus England.",
-          "sentence_translation": "Ужасные известия доходят до меня из Англии."
+          "sentence": "Im französischen Exil erinnert sich Cordelia an Lear: Schreckliche Nachrichten erreichen mich aus England.",
+          "sentence_translation": "Во французском изгнании Корделия вспоминает Лира: Ужасные известия доходят до меня из Англии."
         },
         {
           "german": "die Angst",
           "russian": "страх",
           "transcription": "[ди АНГСТ]",
-          "sentence": "Die Angst um meinen Vater wächst täglich.",
-          "sentence_translation": "Страх за отца растёт с каждым днём."
+          "sentence": "Im französischen Exil erinnert sich Cordelia an Lear: Die Angst um meinen Vater wächst täglich.",
+          "sentence_translation": "Во французском изгнании Корделия вспоминает Лира: Страх за отца растёт с каждым днём."
         },
         {
           "german": "leiden",
           "russian": "страдать",
           "transcription": "[ЛАЙ-ден]",
-          "sentence": "Er muss furchtbar leiden ohne mich.",
-          "sentence_translation": "Он должно быть ужасно страдает без меня."
+          "sentence": "Im französischen Exil erinnert sich Cordelia an Lear: Er muss furchtbar leiden ohne mich.",
+          "sentence_translation": "Во французском изгнании Корделия вспоминает Лира: Он должно быть ужасно страдает без меня."
         },
         {
           "german": "beschützen",
           "russian": "защищать",
           "transcription": "[бе-ШЮ-цен]",
-          "sentence": "Ich kann ihn aus der Ferne nicht beschützen.",
-          "sentence_translation": "Я не могу защитить его издалека."
+          "sentence": "Im französischen Exil erinnert sich Cordelia an Lear: Ich kann ihn aus der Ferne nicht beschützen.",
+          "sentence_translation": "Во французском изгнании Корделия вспоминает Лира: Я не могу защитить его издалека."
         },
         {
           "german": "die Sehnsucht",
           "russian": "тоска",
           "transcription": "[ди ЗЕН-зухт]",
-          "sentence": "Die Sehnsucht nach Versöhnung erfüllt mein Herz.",
-          "sentence_translation": "Тоска по примирению наполняет моё сердце."
+          "sentence": "Im französischen Exil erinnert sich Cordelia an Lear: Die Sehnsucht nach Versöhnung erfüllt mein Herz.",
+          "sentence_translation": "Во французском изгнании Корделия вспоминает Лира: Тоска по примирению наполняет моё сердце."
         },
         {
           "german": "beten",
           "russian": "молиться",
           "transcription": "[БЕ-тен]",
-          "sentence": "Jeden Tag bete ich für seine Sicherheit.",
-          "sentence_translation": "Каждый день я молюсь за его безопасность."
+          "sentence": "Im französischen Exil erinnert sich Cordelia an Lear: Jeden Tag bete ich für seine Sicherheit.",
+          "sentence_translation": "Во французском изгнании Корделия вспоминает Лира: Каждый день я молюсь за его безопасность."
         }
       ],
       "quizzes": [
@@ -299,57 +299,57 @@
           "german": "zurückkehren",
           "russian": "возвращаться",
           "transcription": "[цу-РЮК-ке-рен]",
-          "sentence": "Mit einer Armee kehre ich zurück, meinen Vater zu retten.",
-          "sentence_translation": "С армией я возвращаюсь спасти моего отца."
+          "sentence": "Mit der französischen Armee vor Dover ruft Cordelia: Mit einer Armee kehre ich zurück, meinen Vater zu retten.",
+          "sentence_translation": "Во главе французской армии у Дувра Корделия восклицает: С армией я возвращаюсь спасти моего отца."
         },
         {
           "german": "der Kampf",
           "russian": "борьба",
           "transcription": "[дер КАМПФ]",
-          "sentence": "Dieser Kampf ist für die Ehre meines Vaters.",
-          "sentence_translation": "Эта борьба за честь моего отца."
+          "sentence": "Mit der französischen Armee vor Dover ruft Cordelia: Dieser Kampf ist für die Ehre meines Vaters.",
+          "sentence_translation": "Во главе французской армии у Дувра Корделия восклицает: Эта борьба за честь моего отца."
         },
         {
           "german": "retten",
           "russian": "спасать",
           "transcription": "[РЕ-тен]",
-          "sentence": "Ich muss meinen Vater vor seinen grausamen Töchtern retten.",
-          "sentence_translation": "Я должна спасти отца от его жестоких дочерей."
+          "sentence": "Mit der französischen Armee vor Dover ruft Cordelia: Ich muss meinen Vater vor seinen grausamen Töchtern retten.",
+          "sentence_translation": "Во главе французской армии у Дувра Корделия восклицает: Я должна спасти отца от его жестоких дочерей."
         },
         {
           "german": "die Schlacht",
           "russian": "битва",
           "transcription": "[ди ШЛАХТ]",
-          "sentence": "Diese Schlacht entscheidet über das Schicksal des Königreichs.",
-          "sentence_translation": "Эта битва решает судьбу королевства."
+          "sentence": "Mit der französischen Armee vor Dover ruft Cordelia: Diese Schlacht entscheidet über das Schicksal des Königreichs.",
+          "sentence_translation": "Во главе французской армии у Дувра Корделия восклицает: Эта битва решает судьбу королевства."
         },
         {
           "german": "mutig",
           "russian": "храбрый",
           "transcription": "[МУ-тиг]",
-          "sentence": "Sei mutig, mein Herz, für die gerechte Sache.",
-          "sentence_translation": "Будь храбрым, моё сердце, ради правого дела."
+          "sentence": "Mit der französischen Armee vor Dover ruft Cordelia: Sei mutig, mein Herz, für die gerechte Sache.",
+          "sentence_translation": "Во главе французской армии у Дувра Корделия восклицает: Будь храбрым, моё сердце, ради правого дела."
         },
         {
           "german": "die Gerechtigkeit",
           "russian": "справедливость",
           "transcription": "[ди ге-РЕХ-тиг-кайт]",
-          "sentence": "Die Gerechtigkeit führt meine Klinge.",
-          "sentence_translation": "Справедливость ведёт мой клинок."
+          "sentence": "Mit der französischen Armee vor Dover ruft Cordelia: Die Gerechtigkeit führt meine Klinge.",
+          "sentence_translation": "Во главе французской армии у Дувра Корделия восклицает: Справедливость ведёт мой клинок."
         },
         {
           "german": "siegen",
           "russian": "побеждать",
           "transcription": "[ЗИ-ген]",
-          "sentence": "Die Liebe wird über den Hass siegen.",
-          "sentence_translation": "Любовь победит ненависть."
+          "sentence": "Mit der französischen Armee vor Dover ruft Cordelia: Die Liebe wird über den Hass siegen.",
+          "sentence_translation": "Во главе французской армии у Дувра Корделия восклицает: Любовь победит ненависть."
         },
         {
           "german": "die Armee",
           "russian": "армия",
           "transcription": "[ди ар-МЭ]",
-          "sentence": "Diese Armee kämpft für Gerechtigkeit und Liebe.",
-          "sentence_translation": "Эта армия сражается за справедливость и любовь."
+          "sentence": "Mit der französischen Armee vor Dover ruft Cordelia: Diese Armee kämpft für Gerechtigkeit und Liebe.",
+          "sentence_translation": "Во главе французской армии у Дувра Корделия восклицает: Эта армия сражается за справедливость и любовь."
         }
       ],
       "quizzes": [
@@ -392,57 +392,57 @@
           "german": "verzeihen",
           "russian": "прощать",
           "transcription": "[фер-ЦАЙ-ен]",
-          "sentence": "Ich verzeihe dir alles, mein lieber Vater.",
-          "sentence_translation": "Я прощаю тебе всё, мой дорогой отец."
+          "sentence": "In der armseligen Hütte, wo Lear tobt, hält Cordelia seine Hände: Ich verzeihe dir alles, mein lieber Vater.",
+          "sentence_translation": "В убогой хижине, где метётся Лир, Корделия держит его руки: Я прощаю тебе всё, мой дорогой отец."
         },
         {
           "german": "die Tränen",
           "russian": "слёзы",
           "transcription": "[ди ТРЕ-нен]",
-          "sentence": "Unsere Tränen waschen den Schmerz fort.",
-          "sentence_translation": "Наши слёзы смывают боль."
+          "sentence": "In der armseligen Hütte, wo Lear tobt, hält Cordelia seine Hände: Unsere Tränen waschen den Schmerz fort.",
+          "sentence_translation": "В убогой хижине, где метётся Лир, Корделия держит его руки: Наши слёзы смывают боль."
         },
         {
           "german": "umarmen",
           "russian": "обнимать",
           "transcription": "[ум-АР-мен]",
-          "sentence": "Lass mich dich umarmen und deine Tränen trocknen.",
-          "sentence_translation": "Позволь мне обнять тебя и вытереть твои слёзы."
+          "sentence": "In der armseligen Hütte, wo Lear tobt, hält Cordelia seine Hände: Lass mich dich umarmen und deine Tränen trocknen.",
+          "sentence_translation": "В убогой хижине, где метётся Лир, Корделия держит его руки: Позволь мне обнять тебя и вытереть твои слёзы."
         },
         {
           "german": "erkennen",
           "russian": "узнавать",
           "transcription": "[ер-КЕН-нен]",
-          "sentence": "Erkennst du mich, dein Kind Cordelia?",
-          "sentence_translation": "Узнаёшь ли ты меня, твоё дитя Корделия?"
+          "sentence": "In der armseligen Hütte, wo Lear tobt, hält Cordelia seine Hände: Erkennst du mich, dein Kind Cordelia?",
+          "sentence_translation": "В убогой хижине, где метётся Лир, Корделия держит его руки: Узнаёшь ли ты меня, твоё дитя Корделия?"
         },
         {
           "german": "heilen",
           "russian": "исцелять",
           "transcription": "[ХАЙ-лен]",
-          "sentence": "Meine Liebe wird deine Wunden heilen.",
-          "sentence_translation": "Моя любовь исцелит твои раны."
+          "sentence": "In der armseligen Hütte, wo Lear tobt, hält Cordelia seine Hände: Meine Liebe wird deine Wunden heilen.",
+          "sentence_translation": "В убогой хижине, где метётся Лир, Корделия держит его руки: Моя любовь исцелит твои раны."
         },
         {
           "german": "die Reue",
           "russian": "раскаяние",
           "transcription": "[ди РОЙ-е]",
-          "sentence": "Deine Reue ist nicht nötig, nur deine Liebe.",
-          "sentence_translation": "Твоё раскаяние не нужно, только твоя любовь."
+          "sentence": "In der armseligen Hütte, wo Lear tobt, hält Cordelia seine Hände: Deine Reue ist nicht nötig, nur deine Liebe.",
+          "sentence_translation": "В убогой хижине, где метётся Лир, Корделия держит его руки: Твоё раскаяние не нужно, только твоя любовь."
         },
         {
           "german": "sanft",
           "russian": "нежный",
           "transcription": "[ЗАНФТ]",
-          "sentence": "Sei sanft zu dir selbst, lieber Vater.",
-          "sentence_translation": "Будь нежен к себе, дорогой отец."
+          "sentence": "In der armseligen Hütte, wo Lear tobt, hält Cordelia seine Hände: Sei sanft zu dir selbst, lieber Vater.",
+          "sentence_translation": "В убогой хижине, где метётся Лир, Корделия держит его руки: Будь нежен к себе, дорогой отец."
         },
         {
           "german": "die Vergebung",
           "russian": "прощение",
           "transcription": "[ди фер-ГЕ-бунг]",
-          "sentence": "Die Vergebung ist der Schlüssel zum Frieden.",
-          "sentence_translation": "Прощение - ключ к покою."
+          "sentence": "In der armseligen Hütte, wo Lear tobt, hält Cordelia seine Hände: Die Vergebung ist der Schlüssel zum Frieden.",
+          "sentence_translation": "В убогой хижине, где метётся Лир, Корделия держит его руки: Прощение - ключ к покою."
         }
       ],
       "quizzes": [
@@ -485,57 +485,57 @@
           "german": "gefangen",
           "russian": "пленный",
           "transcription": "[ге-ФАН-ген]",
-          "sentence": "Obwohl gefangen, bin ich frei in meinem Herzen.",
-          "sentence_translation": "Хотя я в плену, в сердце я свободна."
+          "sentence": "Nach der Niederlage auf dem Feld von Dover spricht Cordelia als Gefangene: Obwohl gefangen, bin ich frei in meinem Herzen.",
+          "sentence_translation": "После поражения на поле под Дувром Корделия говорит как пленница: Хотя я в плену, в сердце я свободна."
         },
         {
           "german": "das Gefängnis",
           "russian": "тюрьма",
           "transcription": "[дас ге-ФЭНГ-нис]",
-          "sentence": "Dieses Gefängnis kann meine Liebe nicht einsperren.",
-          "sentence_translation": "Эта тюрьма не может запереть мою любовь."
+          "sentence": "Nach der Niederlage auf dem Feld von Dover spricht Cordelia als Gefangene: Dieses Gefängnis kann meine Liebe nicht einsperren.",
+          "sentence_translation": "После поражения на поле под Дувром Корделия говорит как пленница: Эта тюрьма не может запереть мою любовь."
         },
         {
           "german": "die Würde",
           "russian": "достоинство",
           "transcription": "[ди ВЮР-де]",
-          "sentence": "Mit Würde trage ich mein Schicksal.",
-          "sentence_translation": "С достоинством я несу свою судьбу."
+          "sentence": "Nach der Niederlage auf dem Feld von Dover spricht Cordelia als Gefangene: Mit Würde trage ich mein Schicksal.",
+          "sentence_translation": "После поражения на поле под Дувром Корделия говорит как пленница: С достоинством я несу свою судьбу."
         },
         {
           "german": "trösten",
           "russian": "утешать",
           "transcription": "[ТРЁС-тен]",
-          "sentence": "Lass mich dich trösten in dieser dunklen Stunde.",
-          "sentence_translation": "Позволь мне утешить тебя в этот тёмный час."
+          "sentence": "Nach der Niederlage auf dem Feld von Dover spricht Cordelia als Gefangene: Lass mich dich trösten in dieser dunklen Stunde.",
+          "sentence_translation": "После поражения на поле под Дувром Корделия говорит как пленница: Позволь мне утешить тебя в этот тёмный час."
         },
         {
           "german": "tapfer",
           "russian": "отважный",
           "transcription": "[ТАП-фер]",
-          "sentence": "Ich bleibe tapfer für dich, Vater.",
-          "sentence_translation": "Я остаюсь отважной ради тебя, отец."
+          "sentence": "Nach der Niederlage auf dem Feld von Dover spricht Cordelia als Gefangene: Ich bleibe tapfer für dich, Vater.",
+          "sentence_translation": "После поражения на поле под Дувром Корделия говорит как пленница: Я остаюсь отважной ради тебя, отец."
         },
         {
           "german": "die Demut",
           "russian": "смирение",
           "transcription": "[ди ДЕ-мут]",
-          "sentence": "In der Demut finden wir wahre Größe.",
-          "sentence_translation": "В смирении мы находим истинное величие."
+          "sentence": "Nach der Niederlage auf dem Feld von Dover spricht Cordelia als Gefangene: In der Demut finden wir wahre Größe.",
+          "sentence_translation": "После поражения на поле под Дувром Корделия говорит как пленница: В смирении мы находим истинное величие."
         },
         {
           "german": "das Schicksal",
           "russian": "судьба",
           "transcription": "[дас ШИК-заль]",
-          "sentence": "Unser Schicksal ist miteinander verwoben.",
-          "sentence_translation": "Наши судьбы переплетены."
+          "sentence": "Nach der Niederlage auf dem Feld von Dover spricht Cordelia als Gefangene: Unser Schicksal ist miteinander verwoben.",
+          "sentence_translation": "После поражения на поле под Дувром Корделия говорит как пленница: Наши судьбы переплетены."
         },
         {
           "german": "die Ehre",
           "russian": "честь",
           "transcription": "[ди Э-ре]",
-          "sentence": "Unsere Ehre bleibt unbefleckt.",
-          "sentence_translation": "Наша честь остаётся незапятнанной."
+          "sentence": "Nach der Niederlage auf dem Feld von Dover spricht Cordelia als Gefangene: Unsere Ehre bleibt unbefleckt.",
+          "sentence_translation": "После поражения на поле под Дувром Корделия говорит как пленница: Наша честь остаётся незапятнанной."
         }
       ],
       "quizzes": [
@@ -578,57 +578,57 @@
           "german": "der Tod",
           "russian": "смерть",
           "transcription": "[дер ТОД]",
-          "sentence": "Der Tod trennt uns nur für kurze Zeit.",
-          "sentence_translation": "Смерть разлучает нас лишь ненадолго."
+          "sentence": "Im Kerker, den Edmund bewacht, haucht Cordelia: Der Tod trennt uns nur für kurze Zeit.",
+          "sentence_translation": "В темнице, которую стерёжёт Эдмунд, Корделия шепчет: Смерть разлучает нас лишь ненадолго."
         },
         {
           "german": "sterben",
           "russian": "умирать",
           "transcription": "[ШТЕР-бен]",
-          "sentence": "Wenn ich sterben muss, sterbe ich mit reinem Herzen.",
-          "sentence_translation": "Если я должна умереть, я умру с чистым сердцем."
+          "sentence": "Im Kerker, den Edmund bewacht, haucht Cordelia: Wenn ich sterben muss, sterbe ich mit reinem Herzen.",
+          "sentence_translation": "В темнице, которую стерёжёт Эдмунд, Корделия шепчет: Если я должна умереть, я умру с чистым сердцем."
         },
         {
           "german": "das Opfer",
           "russian": "жертва",
           "transcription": "[дас ОП-фер]",
-          "sentence": "Ich bin das Opfer der Wahrheit und Liebe.",
-          "sentence_translation": "Я жертва правды и любви."
+          "sentence": "Im Kerker, den Edmund bewacht, haucht Cordelia: Ich bin das Opfer der Wahrheit und Liebe.",
+          "sentence_translation": "В темнице, которую стерёжёт Эдмунд, Корделия шепчет: Я жертва правды и любви."
         },
         {
           "german": "die Seele",
           "russian": "душа",
           "transcription": "[ди ЗЕ-ле]",
-          "sentence": "Meine Seele ist rein vor Gott.",
-          "sentence_translation": "Моя душа чиста перед Богом."
+          "sentence": "Im Kerker, den Edmund bewacht, haucht Cordelia: Meine Seele ist rein vor Gott.",
+          "sentence_translation": "В темнице, которую стерёжёт Эдмунд, Корделия шепчет: Моя душа чиста перед Богом."
         },
         {
           "german": "das Ende",
           "russian": "конец",
           "transcription": "[дас ЕН-де]",
-          "sentence": "Dies ist nicht das Ende, nur ein Übergang.",
-          "sentence_translation": "Это не конец, только переход."
+          "sentence": "Im Kerker, den Edmund bewacht, haucht Cordelia: Dies ist nicht das Ende, nur ein Übergang.",
+          "sentence_translation": "В темнице, которую стерёжёт Эдмунд, Корделия шепчет: Это не конец, только переход."
         },
         {
           "german": "ewig",
           "russian": "вечный",
           "transcription": "[Э-виг]",
-          "sentence": "Unsere Liebe ist ewig, Vater.",
-          "sentence_translation": "Наша любовь вечна, отец."
+          "sentence": "Im Kerker, den Edmund bewacht, haucht Cordelia: Unsere Liebe ist ewig, Vater.",
+          "sentence_translation": "В темнице, которую стерёжёт Эдмунд, Корделия шепчет: Наша любовь вечна, отец."
         },
         {
           "german": "der Abschied",
           "russian": "прощание",
           "transcription": "[дер АБ-шид]",
-          "sentence": "Unser Abschied ist nur vorübergehend.",
-          "sentence_translation": "Наше прощание лишь временно."
+          "sentence": "Im Kerker, den Edmund bewacht, haucht Cordelia: Unser Abschied ist nur vorübergehend.",
+          "sentence_translation": "В темнице, которую стерёжёт Эдмунд, Корделия шепчет: Наше прощание лишь временно."
         },
         {
           "german": "die Erlösung",
           "russian": "спасение",
           "transcription": "[ди ер-ЛЁ-зунг]",
-          "sentence": "Im Tod finde ich Erlösung und Frieden.",
-          "sentence_translation": "В смерти я нахожу спасение и покой."
+          "sentence": "Im Kerker, den Edmund bewacht, haucht Cordelia: Im Tod finde ich Erlösung und Frieden.",
+          "sentence_translation": "В темнице, которую стерёжёт Эдмунд, Корделия шепчет: В смерти я нахожу спасение и покой."
         }
       ],
       "quizzes": [
