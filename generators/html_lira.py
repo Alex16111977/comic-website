@@ -65,6 +65,12 @@ class LiraHTMLGenerator(BaseGenerator):
         character = self.load_character(character_file)
         self._enrich_character_vocabulary(character)
         journey_phases = character.get("journey_phases", [])
+
+        for index, phase in enumerate(journey_phases):
+            if not phase.get("id"):
+                phase["id"] = f"phase-{index}"
+
+        relations_metadata = self._collect_relations_metadata(journey_phases)
         js = LiraJSGenerator.generate(character)
 
         exercises, quizzes, quizzes_json = self._prepare_exercises(journey_phases)
@@ -82,8 +88,54 @@ class LiraHTMLGenerator(BaseGenerator):
             initial_description=initial_description,
             initial_progress=initial_progress,
             first_phase_title=first_phase_title,
+            relations_metadata=relations_metadata,
             js=js,
         )
+
+    def _collect_relations_metadata(self, journey_phases):
+        """Build metadata to control visibility of relation sections."""
+        metadata = {}
+
+        for index, phase in enumerate(journey_phases):
+            phase_id = phase.get("id", f"phase-{index}")
+
+            has_word_families = False
+            has_synonyms = False
+            has_collocations = False
+
+            for word in phase.get("vocabulary", []):
+                word_family = word.get("wordFamily")
+                if isinstance(word_family, str):
+                    word_family = [word_family]
+                elif not isinstance(word_family, list):
+                    word_family = []
+                if word_family:
+                    has_word_families = True
+
+                synonyms = word.get("synonyms")
+                if isinstance(synonyms, str):
+                    synonyms = [synonyms]
+                elif not isinstance(synonyms, list):
+                    synonyms = []
+                if synonyms:
+                    has_synonyms = True
+
+                collocations = word.get("collocations")
+                if isinstance(collocations, str):
+                    collocations = [collocations]
+                elif not isinstance(collocations, list):
+                    collocations = []
+                if collocations:
+                    has_collocations = True
+
+            metadata[phase_id] = {
+                "has_word_families": has_word_families,
+                "has_synonyms": has_synonyms,
+                "has_collocations": has_collocations,
+                "has_relations": has_word_families or has_synonyms or has_collocations,
+            }
+
+        return metadata
 
     def _prepare_exercises(self, journey_phases):
         """Prepare exercises with blanks replaced by interactive spans."""
