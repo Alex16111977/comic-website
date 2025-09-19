@@ -210,15 +210,15 @@ body {
 .word-card {
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     border-radius: 15px;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    text-align: left;
+    text-align: center;
     transition: all 0.3s ease;
     animation: slideIn 0.4s ease;
     position: relative;
     overflow: hidden;
+    min-height: auto;
 }
 
 .word-card::after {
@@ -237,45 +237,16 @@ body {
 
 .word-card-header {
     display: flex;
-    align-items: flex-start;
-    gap: 16px;
-}
-
-.word-visual-hint {
-    width: 56px;
-    height: 56px;
-    border-radius: 16px;
-    background: rgba(102, 126, 234, 0.12);
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    box-shadow: inset 0 0 0 1px rgba(102, 126, 234, 0.2);
-    color: #574b90;
-    flex-shrink: 0;
+    gap: 8px;
 }
 
 .word-meta {
-    flex: 1;
-}
-
-.word-themes {
     display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: -4px;
-}
-
-.word-theme {
-    background: rgba(102, 126, 234, 0.12);
-    color: #4c51bf;
-    border-radius: 999px;
-    padding: 4px 10px;
-    font-size: 0.75em;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    box-shadow: inset 0 0 0 1px rgba(102, 126, 234, 0.25);
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 }
 
 .word-card:hover {
@@ -284,39 +255,23 @@ body {
 }
 
 .word-german {
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: 700;
     color: #667eea;
-    margin-bottom: 6px;
+    margin: 0;
 }
 
 .word-translation {
     font-size: 1.1em;
-    color: #555;
-    margin-bottom: 4px;
+    color: #333;
+    margin: 0;
 }
 
 .word-transcription {
-    font-size: 0.9em;
-    color: #888;
-    font-style: italic;
-}
-
-.word-sentence {
-    padding-top: 16px;
-    border-top: 1px solid #e0e0e0;
-}
-
-.sentence-german {
     font-size: 0.95em;
-    color: #444;
-    margin-bottom: 5px;
-    font-style: italic;
-}
-
-.sentence-translation {
-    font-size: 0.9em;
     color: #666;
+    font-style: italic;
+    margin: 0;
 }
 
 .relations-wrapper {
@@ -878,22 +833,11 @@ body {
     }
     
     .word-card {
-        padding: 15px;
-        gap: 14px;
+        padding: 12px;
     }
 
     .word-card-header {
-        gap: 12px;
-    }
-
-    .word-visual-hint {
-        width: 48px;
-        height: 48px;
-        font-size: 1.6rem;
-    }
-
-    .word-theme {
-        font-size: 0.7em;
+        gap: 6px;
     }
 
     .relations-container {
