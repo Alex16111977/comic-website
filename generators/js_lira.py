@@ -44,6 +44,8 @@ class LiraJSGenerator:
 let currentPhaseIndex = 0;
 const phaseKeys = Object.keys(phaseVocabularies);
 let isTransitioning = false; // Prevent double clicks/taps
+let progressLineElement = null;
+let progressLineLength = 0;
 
 // Device detection
 const isTouchDevice = ('ontouchstart' in window) || 
@@ -64,11 +66,72 @@ if (isIOS) {
     }, false);
 }
 
+function clampProgress(value) {
+    if (isNaN(value)) return 0;
+    return Math.min(100, Math.max(0, value));
+}
+
+function ensureProgressLineLength() {
+    if (!progressLineElement) return 0;
+    if (progressLineLength) return progressLineLength;
+
+    if (typeof progressLineElement.getTotalLength === 'function') {
+        progressLineLength = progressLineElement.getTotalLength();
+    }
+
+    if (!progressLineLength && typeof progressLineElement.getBBox === 'function') {
+        try {
+            const bbox = progressLineElement.getBBox();
+            if (bbox && bbox.width) {
+                progressLineLength = bbox.width;
+            }
+        } catch (error) {
+            console.warn('[ProgressLine] Unable to get bounding box length', error);
+        }
+    }
+
+    if (!progressLineLength) {
+        const parent = progressLineElement.parentElement;
+        if (parent) {
+            const parentWidth = parent.getBoundingClientRect().width;
+            if (parentWidth) {
+                progressLineLength = parentWidth;
+            }
+        }
+    }
+
+    if (!progressLineLength) {
+        progressLineLength = 1;
+    }
+
+    return progressLineLength;
+}
+
+function updateProgressLineByPercent(progressPercent) {
+    if (!progressLineElement) return;
+
+    const length = ensureProgressLineLength();
+    progressLineElement.style.strokeDasharray = `${length} ${length}`;
+
+    const clamped = clampProgress(progressPercent);
+    const offset = length - (length * clamped / 100);
+    progressLineElement.style.strokeDashoffset = offset;
+}
+
+function initializeProgressLine() {
+    progressLineElement = document.querySelector('.progress-line');
+    if (!progressLineElement) return;
+
+    const startValue = clampProgress(parseFloat(progressLineElement.dataset.startProgress || '0'));
+    ensureProgressLineLength();
+    updateProgressLineByPercent(startValue);
+}
+
 function displayVocabulary(phaseKey) {
     // Prevent multiple rapid transitions
     if (isTransitioning) return;
     isTransitioning = true;
-    
+
     const phase = phaseVocabularies[phaseKey];
     const grid = document.querySelector('.vocabulary-grid');
     const phaseTitle = document.getElementById('current-phase');
@@ -136,7 +199,8 @@ function displayVocabulary(phaseKey) {
     const progress = ((currentPhaseIndex + 1) / phaseKeys.length) * 100;
     if (progressFill) progressFill.style.width = progress + '%';
     if (progressText) progressText.textContent = phase.description;
-    
+    updateProgressLineByPercent(progress);
+
     // Update navigation buttons state
     updateNavigationButtons();
     
@@ -173,14 +237,7 @@ function handleJourneyPointClick(point, index) {
     point.classList.add('active');
     currentPhaseIndex = index;
     displayVocabulary(point.dataset.phase);
-    
-    // Update progress line animation
-    const progressLine = document.querySelector('.progress-line');
-    if (progressLine) {
-        const lineProgress = ((index + 1) / journeyPoints.length) * 100;
-        progressLine.style.strokeDashoffset = 1000 - (1000 * lineProgress / 100);
-    }
-    
+
     // Provide haptic feedback on supported devices
     if (navigator.vibrate && isTouchDevice) {
         navigator.vibrate(10); // Short vibration feedback
@@ -189,10 +246,10 @@ function handleJourneyPointClick(point, index) {
 
 document.addEventListener('DOMContentLoaded', function() {
     console.log('[Init] Starting initialization...');
-    
+
     const journeyPoints = document.querySelectorAll('.journey-point');
-    const progressLine = document.querySelector('.progress-line');
-    
+    initializeProgressLine();
+
     console.log('[Init] Found', journeyPoints.length, 'journey points');
     
     // ИСПРАВЛЕНИЕ: Упрощенная логика обработчиков для всех устройств
