@@ -86,6 +86,28 @@ class LiraHTMLGenerator(BaseGenerator):
             if not phase.get("id"):
                 phase["id"] = f"phase-{index}"
 
+            constructor_items = []
+            for vocab_index, word in enumerate(phase.get("vocabulary", [])):
+                sentence_parts = word.get("sentence_parts")
+                if not isinstance(sentence_parts, list) or len(sentence_parts) < 2:
+                    continue
+
+                cleaned_parts = [part for part in sentence_parts if isinstance(part, str)]
+                if len(cleaned_parts) < 2:
+                    continue
+
+                constructor_items.append(
+                    {
+                        "uid": f"{phase['id']}-{vocab_index}",
+                        "word": word.get("german", ""),
+                        "sentence": word.get("sentence", ""),
+                        "sentence_translation": word.get("sentence_translation", ""),
+                        "sentence_parts": cleaned_parts,
+                    }
+                )
+
+            phase["constructor_items"] = constructor_items
+
         exercises, quizzes, quizzes_json = self._prepare_exercises(journey_phases)
 
         relations_metadata = self._collect_relations_metadata(journey_phases)

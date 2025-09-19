@@ -66,6 +66,27 @@
             </div>
         </div>
 
+        <section class="constructor-section" aria-labelledby="constructor-title">
+            <div class="constructor-header">
+                <h2 id="constructor-title">🧩 Конструктор предложений</h2>
+                <p class="constructor-intro">Соберите реплики из сцены: перетащите подходящие слова из банка в пропуски предложений текущей фазы.</p>
+            </div>
+            <div class="constructor-layout">
+                <div class="constructor-targets" data-constructor-targets>
+                    <p class="constructor-empty-message">Выберите фазу, чтобы начать упражнение.</p>
+                </div>
+                <div class="constructor-sources">
+                    <h3 class="constructor-subtitle">Банк слов</h3>
+                    <div class="constructor-word-bank" data-constructor-sources></div>
+                    <div class="constructor-actions">
+                        <button class="constructor-btn check" type="button" data-constructor-check disabled>Проверить</button>
+                        <button class="constructor-btn reset" type="button" data-constructor-reset disabled>Сбросить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="constructor-feedback" data-constructor-feedback role="status" aria-live="polite"></div>
+        </section>
+
         <div class="relations-wrapper">
             {% for phase in journey_phases %}
             {% set phase_id = phase.id if phase.id else 'phase-' ~ loop.index0 %}
@@ -164,5 +185,379 @@
     </div>
 
     <script>{{ js | safe }}</script>
+    <script>
+    (function() {
+        const constructorState = {
+            activePhase: null,
+            selectedWordId: null
+        };
+
+        function getConstructorElements() {
+            const section = document.querySelector('.constructor-section');
+            if (!section) {
+                return null;
+            }
+
+            return {
+                section,
+                targets: section.querySelector('[data-constructor-targets]'),
+                sources: section.querySelector('[data-constructor-sources]'),
+                feedback: section.querySelector('[data-constructor-feedback]'),
+                checkButton: section.querySelector('[data-constructor-check]'),
+                resetButton: section.querySelector('[data-constructor-reset]')
+            };
+        }
+
+        function normaliseWord(value) {
+            return (value || '').trim().toLowerCase();
+        }
+
+        function computeSentenceWord(item) {
+            if (!item || !item.sentence || !Array.isArray(item.sentenceParts)) {
+                return item && item.word ? item.word : '';
+            }
+
+            const sentence = item.sentence;
+            const parts = item.sentenceParts;
+            const leading = parts[0] || '';
+            const trailing = parts.length > 1 ? parts.slice(1).join('') : '';
+            const start = leading.length;
+            const end = sentence.length - trailing.length;
+
+            if (start >= 0 && end > start) {
+                return sentence.substring(start, end);
+            }
+
+            return item.word || '';
+        }
+
+        function clearWordSelection(container) {
+            if (!container) return;
+            container.querySelectorAll('.constructor-word.selected').forEach(element => {
+                element.classList.remove('selected');
+                element.setAttribute('aria-pressed', 'false');
+            });
+        }
+
+        function releaseWord(wordId, container) {
+            if (!wordId || !container) return;
+            const wordElement = container.querySelector(`.constructor-word[data-word-id="${wordId}"]`);
+            if (!wordElement) return;
+
+            wordElement.classList.remove('used', 'selected');
+            wordElement.setAttribute('draggable', 'true');
+            wordElement.removeAttribute('aria-disabled');
+            wordElement.setAttribute('tabindex', '0');
+            wordElement.setAttribute('aria-pressed', 'false');
+        }
+
+        function resetDropZone(drop) {
+            if (!drop) return;
+            drop.textContent = drop.dataset.placeholder || 'Перетащите слово';
+            drop.dataset.wordId = '';
+            drop.dataset.filledWord = '';
+            drop.classList.remove('filled', 'constructor-drop-correct', 'constructor-drop-incorrect');
+        }
+
+        function assignWordToDrop(wordElement, drop, container) {
+            if (!wordElement || !drop || !container) return;
+
+            const previousId = drop.dataset.wordId;
+            if (previousId && previousId !== wordElement.dataset.wordId) {
+                releaseWord(previousId, container);
+            }
+
+            drop.dataset.wordId = wordElement.dataset.wordId;
+            drop.dataset.filledWord = wordElement.dataset.word;
+            drop.textContent = wordElement.dataset.word;
+            drop.classList.add('filled');
+            drop.classList.remove('constructor-drop-correct', 'constructor-drop-incorrect');
+
+            wordElement.classList.add('used');
+            wordElement.classList.remove('selected');
+            wordElement.setAttribute('draggable', 'false');
+            wordElement.setAttribute('aria-disabled', 'true');
+            wordElement.setAttribute('tabindex', '-1');
+            wordElement.setAttribute('aria-pressed', 'false');
+
+            constructorState.selectedWordId = null;
+        }
+
+        function handleWordDrop(event, drop, container) {
+            event.preventDefault();
+            const wordId = event.dataTransfer ? event.dataTransfer.getData('text/plain') : '';
+            if (!wordId) return;
+            const wordElement = container.querySelector(`.constructor-word[data-word-id="${wordId}"]`);
+            if (!wordElement || wordElement.classList.contains('used')) return;
+            assignWordToDrop(wordElement, drop, container);
+        }
+
+        function handleDropClick(drop, container) {
+            if (!drop || !container) return;
+
+            const selectedId = constructorState.selectedWordId;
+            if (selectedId) {
+                const selectedElement = container.querySelector(`.constructor-word[data-word-id="${selectedId}"]`);
+                if (selectedElement && !selectedElement.classList.contains('used')) {
+                    assignWordToDrop(selectedElement, drop, container);
+                }
+                clearWordSelection(container);
+                return;
+            }
+
+            if (drop.dataset.wordId) {
+                releaseWord(drop.dataset.wordId, container);
+                resetDropZone(drop);
+            }
+        }
+
+        function evaluateConstructor() {
+            const refs = getConstructorElements();
+            if (!refs || !refs.targets) return;
+
+            const dropZones = Array.from(refs.targets.querySelectorAll('[data-constructor-drop]'));
+            if (!dropZones.length) {
+                if (refs.feedback) {
+                    refs.feedback.textContent = 'Выберите фазу, чтобы начать упражнение.';
+                    refs.feedback.classList.remove('success', 'error');
+                }
+                return;
+            }
+
+            let filledCount = 0;
+            let correctCount = 0;
+
+            dropZones.forEach(drop => {
+                const expected = normaliseWord(drop.dataset.answer);
+                const current = normaliseWord(drop.dataset.filledWord);
+
+                if (current) {
+                    filledCount += 1;
+                    if (current === expected) {
+                        correctCount += 1;
+                        drop.classList.add('constructor-drop-correct');
+                        drop.classList.remove('constructor-drop-incorrect');
+                        drop.textContent = drop.dataset.answerDisplay || drop.textContent;
+                    } else {
+                        drop.classList.add('constructor-drop-incorrect');
+                        drop.classList.remove('constructor-drop-correct');
+                    }
+                } else {
+                    drop.classList.remove('constructor-drop-correct', 'constructor-drop-incorrect');
+                }
+            });
+
+            if (!refs.feedback) return;
+
+            if (!filledCount) {
+                refs.feedback.textContent = 'Перетащите слова в пропуски и попробуйте снова.';
+                refs.feedback.classList.remove('success', 'error');
+            } else if (correctCount === dropZones.length) {
+                refs.feedback.textContent = 'Отлично! Все предложения собраны верно.';
+                refs.feedback.classList.add('success');
+                refs.feedback.classList.remove('error');
+            } else {
+                refs.feedback.textContent = 'Проверьте подсвеченные ответы и попробуйте ещё раз.';
+                refs.feedback.classList.add('error');
+                refs.feedback.classList.remove('success');
+            }
+        }
+
+        function resetConstructorView() {
+            if (!constructorState.activePhase) return;
+            renderConstructor(constructorState.activePhase);
+        }
+
+        function registerWordEvents(wordElement, container) {
+            if (!wordElement) return;
+
+            wordElement.addEventListener('dragstart', event => {
+                event.dataTransfer.setData('text/plain', wordElement.dataset.wordId);
+                event.dataTransfer.effectAllowed = 'move';
+                wordElement.classList.add('dragging');
+            });
+
+            wordElement.addEventListener('dragend', () => {
+                wordElement.classList.remove('dragging');
+            });
+
+            wordElement.addEventListener('click', () => {
+                if (wordElement.classList.contains('used')) {
+                    return;
+                }
+
+                const alreadySelected = wordElement.classList.contains('selected');
+                clearWordSelection(container);
+
+                if (!alreadySelected) {
+                    wordElement.classList.add('selected');
+                    wordElement.setAttribute('aria-pressed', 'true');
+                    constructorState.selectedWordId = wordElement.dataset.wordId;
+                } else {
+                    constructorState.selectedWordId = null;
+                }
+            });
+        }
+
+        function buildDropZone(item, container) {
+            const drop = document.createElement('button');
+            drop.type = 'button';
+            drop.className = 'constructor-drop';
+            drop.dataset.answer = item.word || '';
+            drop.dataset.answerDisplay = computeSentenceWord(item);
+            drop.dataset.placeholder = 'Перетащите слово';
+            drop.dataset.wordId = '';
+            drop.dataset.filledWord = '';
+            drop.setAttribute('data-constructor-drop', '');
+            drop.setAttribute('aria-label', `Пропуск для слова «${item.word}»`);
+            drop.textContent = drop.dataset.placeholder;
+
+            drop.addEventListener('dragover', event => {
+                event.preventDefault();
+                drop.classList.add('drag-over');
+            });
+
+            drop.addEventListener('dragleave', () => {
+                drop.classList.remove('drag-over');
+            });
+
+            drop.addEventListener('drop', event => {
+                drop.classList.remove('drag-over');
+                const refs = getConstructorElements();
+                if (!refs) return;
+                handleWordDrop(event, drop, refs.sources);
+            });
+
+            drop.addEventListener('click', () => {
+                const refs = getConstructorElements();
+                if (!refs) return;
+                handleDropClick(drop, refs.sources);
+            });
+
+            return drop;
+        }
+
+        function renderConstructor(phaseKey) {
+            const refs = getConstructorElements();
+            if (!refs || !refs.targets || !refs.sources) {
+                return;
+            }
+
+            constructorState.activePhase = phaseKey;
+            constructorState.selectedWordId = null;
+
+            refs.feedback && (refs.feedback.textContent = '');
+            refs.targets.innerHTML = '';
+            refs.sources.innerHTML = '';
+
+            const dataSource = typeof phaseConstructorData !== 'undefined' && phaseConstructorData[phaseKey]
+                ? phaseConstructorData[phaseKey]
+                : (phaseVocabularies[phaseKey] ? phaseVocabularies[phaseKey].constructorItems : []);
+
+            const items = Array.isArray(dataSource)
+                ? dataSource.filter(item => Array.isArray(item.sentenceParts) && item.sentenceParts.length >= 2)
+                : [];
+
+            if (!items.length) {
+                refs.section.classList.add('constructor-empty');
+                if (refs.checkButton) refs.checkButton.disabled = true;
+                if (refs.resetButton) refs.resetButton.disabled = true;
+
+                const message = document.createElement('p');
+                message.className = 'constructor-empty-message';
+                message.textContent = 'В этой фазе пока нет предложений для сборки.';
+                refs.targets.appendChild(message);
+                return;
+            }
+
+            refs.section.classList.remove('constructor-empty');
+            if (refs.checkButton) refs.checkButton.disabled = false;
+            if (refs.resetButton) refs.resetButton.disabled = false;
+
+            const itemsWithIds = items.map((item, index) => ({
+                uid: item.uid || `${phaseKey}-${index}`,
+                word: item.word || '',
+                sentence: item.sentence || '',
+                sentenceTranslation: item.sentenceTranslation || '',
+                sentenceParts: item.sentenceParts || []
+            }));
+
+            const shuffled = shuffleArray(itemsWithIds);
+
+            shuffled.forEach(item => {
+                const wordButton = document.createElement('button');
+                wordButton.type = 'button';
+                wordButton.className = 'constructor-word';
+                wordButton.textContent = item.word;
+                wordButton.dataset.wordId = item.uid;
+                wordButton.dataset.word = item.word;
+                wordButton.setAttribute('draggable', 'true');
+                wordButton.setAttribute('tabindex', '0');
+                wordButton.setAttribute('aria-pressed', 'false');
+                if (item.sentenceTranslation) {
+                    wordButton.title = item.sentenceTranslation;
+                }
+                refs.sources.appendChild(wordButton);
+                registerWordEvents(wordButton, refs.sources);
+            });
+
+            itemsWithIds.forEach(item => {
+                const sentenceRow = document.createElement('div');
+                sentenceRow.className = 'constructor-sentence';
+                const lead = document.createElement('span');
+                lead.className = 'constructor-sentence-part';
+                lead.textContent = item.sentenceParts[0] || '';
+
+                const tail = document.createElement('span');
+                tail.className = 'constructor-sentence-part';
+                tail.textContent = item.sentenceParts.slice(1).join('') || '';
+
+                const drop = buildDropZone(item, refs.sources);
+
+                sentenceRow.appendChild(lead);
+                sentenceRow.appendChild(drop);
+                sentenceRow.appendChild(tail);
+
+                refs.targets.appendChild(sentenceRow);
+            });
+        }
+
+        function initConstructorControls() {
+            const refs = getConstructorElements();
+            if (!refs) return;
+
+            if (refs.checkButton) {
+                refs.checkButton.addEventListener('click', evaluateConstructor);
+            }
+
+            if (refs.resetButton) {
+                refs.resetButton.addEventListener('click', resetConstructorView);
+            }
+        }
+
+        function augmentDisplayVocabulary() {
+            if (typeof displayVocabulary !== 'function') return;
+            const original = displayVocabulary;
+            window.displayVocabulary = function(phaseKey) {
+                const result = original.apply(this, arguments);
+                renderConstructor(phaseKey);
+                return result;
+            };
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            initConstructorControls();
+            augmentDisplayVocabulary();
+
+            if (typeof phaseKeys !== 'undefined' && phaseKeys.length) {
+                const initialIndex = typeof currentPhaseIndex === 'number'
+                    ? Math.max(0, Math.min(currentPhaseIndex, phaseKeys.length - 1))
+                    : 0;
+                const initialPhase = phaseKeys[initialIndex];
+                renderConstructor(initialPhase);
+            }
+        });
+    })();
+    </script>
 </body>
 </html>

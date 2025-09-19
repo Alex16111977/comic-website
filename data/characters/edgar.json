@@ -21,7 +21,11 @@
           "russian": "знать",
           "transcription": "[дер А-дель]",
           "sentence": "In Glosters Halle verspricht Edgar seinem Vater: Der Adel erwartet von mir ehrenhaftes Verhalten.",
-          "sentence_translation": "В зале Глостера Эдгар обещает отцу: Знать ожидает от меня достойного поведения."
+          "sentence_translation": "В зале Глостера Эдгар обещает отцу: Знать ожидает от меня достойного поведения.",
+          "sentence_parts": [
+            "In Glosters Halle verspricht Edgar seinem Vater: ",
+            " erwartet von mir ehrenhaftes Verhalten."
+          ]
         },
         {
           "german": "der Erbe",
@@ -49,21 +53,33 @@
           "russian": "честь",
           "transcription": "[ди Э-ре]",
           "sentence": "In Glosters Halle verspricht Edgar seinem Vater: Die Ehre der Familie liegt in meinen Händen.",
-          "sentence_translation": "В зале Глостера Эдгар обещает отцу: Честь семьи в моих руках."
+          "sentence_translation": "В зале Глостера Эдгар обещает отцу: Честь семьи в моих руках.",
+          "sentence_parts": [
+            "In Glosters Halle verspricht Edgar seinem Vater: ",
+            " der Familie liegt in meinen Händen."
+          ]
         },
         {
           "german": "legitim",
           "russian": "законный",
           "transcription": "[ле-ги-ТИМ]",
           "sentence": "In Glosters Halle verspricht Edgar seinem Vater: Ich bin der legitime Sohn des Grafen.",
-          "sentence_translation": "В зале Глостера Эдгар обещает отцу: Я законный сын графа."
+          "sentence_translation": "В зале Глостера Эдгар обещает отцу: Я законный сын графа.",
+          "sentence_parts": [
+            "In Glosters Halle verspricht Edgar seinem Vater: Ich bin der ",
+            "e Sohn des Grafen."
+          ]
         },
         {
           "german": "der Graf",
           "russian": "граф",
           "transcription": "[дер ГРАФ]",
           "sentence": "In Glosters Halle verspricht Edgar seinem Vater: Mein Vater, der Graf, ist ein edler Mann.",
-          "sentence_translation": "В зале Глостера Эдгар обещает отцу: Мой отец, граф, благородный человек."
+          "sentence_translation": "В зале Глостера Эдгар обещает отцу: Мой отец, граф, благородный человек.",
+          "sentence_parts": [
+            "In Glosters Halle verspricht Edgar seinem Vater: Mein Vater, ",
+            ", ist ein edler Mann."
+          ]
         },
         {
           "german": "ahnungslos",
@@ -114,28 +130,44 @@
           "russian": "бежать",
           "transcription": "[ФЛИ-ен]",
           "sentence": "Nach Edmunds Verrat flieht Edgar durch den Wald: Ich muss vor falschen Anschuldigungen fliehen.",
-          "sentence_translation": "После предательства Эдмунда Эдгар бежит через лес: Я должен бежать от ложных обвинений."
+          "sentence_translation": "После предательства Эдмунда Эдгар бежит через лес: Я должен бежать от ложных обвинений.",
+          "sentence_parts": [
+            "Nach Edmunds Verrat flieht Edgar durch den Wald: Ich muss vor falschen Anschuldigungen ",
+            "."
+          ]
         },
         {
           "german": "der Verrat",
           "russian": "предательство",
           "transcription": "[дер фер-РАТ]",
           "sentence": "Nach Edmunds Verrat flieht Edgar durch den Wald: Der Verrat meines Bruders zerstört mein Leben.",
-          "sentence_translation": "После предательства Эдмунда Эдгар бежит через лес: Предательство моего брата разрушает мою жизнь."
+          "sentence_translation": "После предательства Эдмунда Эдгар бежит через лес: Предательство моего брата разрушает мою жизнь.",
+          "sentence_parts": [
+            "Nach Edmunds Verrat flieht Edgar durch den Wald: ",
+            " meines Bruders zerstört mein Leben."
+          ]
         },
         {
           "german": "die Gefahr",
           "russian": "опасность",
           "transcription": "[ди ге-ФАР]",
           "sentence": "Nach Edmunds Verrat flieht Edgar durch den Wald: Die Gefahr lauert überall um mich herum.",
-          "sentence_translation": "После предательства Эдмунда Эдгар бежит через лес: Опасность подстерегает меня повсюду."
+          "sentence_translation": "После предательства Эдмунда Эдгар бежит через лес: Опасность подстерегает меня повсюду.",
+          "sentence_parts": [
+            "Nach Edmunds Verrat flieht Edgar durch den Wald: ",
+            " lauert überall um mich herum."
+          ]
         },
         {
           "german": "verfolgen",
           "russian": "преследовать",
           "transcription": "[фер-ФОЛЬ-ген]",
           "sentence": "Nach Edmunds Verrat flieht Edgar durch den Wald: Die Soldaten verfolgen mich wie einen Verbrecher.",
-          "sentence_translation": "После предательства Эдмунда Эдгар бежит через лес: Солдаты преследуют меня как преступника."
+          "sentence_translation": "После предательства Эдмунда Эдгар бежит через лес: Солдаты преследуют меня как преступника.",
+          "sentence_parts": [
+            "Nach Edmunds Verrat flieht Edgar durch den Wald: Die Soldaten ",
+            " mich wie einen Verbrecher."
+          ]
         },
         {
           "german": "verstecken",
@@ -228,7 +260,11 @@
           "russian": "голый",
           "transcription": "[НАКТ]",
           "sentence": "Als armer Tom auf der Heide erklärt Edgar: Fast nackt wandere ich durch die Wildnis.",
-          "sentence_translation": "Под видом бедного Тома на пустоши Эдгар объясняет: Почти голый, я брожу по дикой местности."
+          "sentence_translation": "Под видом бедного Тома на пустоши Эдгар объясняет: Почти голый, я брожу по дикой местности.",
+          "sentence_parts": [
+            "Als armer Tom auf der Heide erklärt Edgar: Fast ",
+            " wandere ich durch die Wildnis."
+          ]
         },
         {
           "german": "murmeln",
@@ -256,7 +292,11 @@
           "russian": "безумный",
           "transcription": "[ВАН-зи-ниг]",
           "sentence": "Als armer Tom auf der Heide erklärt Edgar: Ich gebe vor, wahnsinnig zu sein.",
-          "sentence_translation": "Под видом бедного Тома на пустоши Эдгар объясняет: Я притворяюсь безумным."
+          "sentence_translation": "Под видом бедного Тома на пустоши Эдгар объясняет: Я притворяюсь безумным.",
+          "sentence_parts": [
+            "Als armer Tom auf der Heide erklärt Edgar: Ich gebe vor, ",
+            " zu sein."
+          ]
         }
       ],
       "quizzes": [
@@ -300,14 +340,22 @@
           "russian": "буря",
           "transcription": "[дер ШТУРМ]",
           "sentence": "In Lears sturmgepeitschter Nacht begleitet Edgar den König: Der Sturm tobt über unseren Köpfen.",
-          "sentence_translation": "В штормовую ночь Лира Эдгар сопровождает короля: Буря бушует над нашими головами."
+          "sentence_translation": "В штормовую ночь Лира Эдгар сопровождает короля: Буря бушует над нашими головами.",
+          "sentence_parts": [
+            "In Lears sturmgepeitschter Nacht begleitet Edgar den König: ",
+            " tobt über unseren Köpfen."
+          ]
         },
         {
           "german": "frieren",
           "russian": "мёрзнуть",
           "transcription": "[ФРИ-рен]",
           "sentence": "In Lears sturmgepeitschter Nacht begleitet Edgar den König: Wir frieren gemeinsam in dieser kalten Nacht.",
-          "sentence_translation": "В штормовую ночь Лира Эдгар сопровождает короля: Мы мёрзнем вместе в эту холодную ночь."
+          "sentence_translation": "В штормовую ночь Лира Эдгар сопровождает короля: Мы мёрзнем вместе в эту холодную ночь.",
+          "sentence_parts": [
+            "In Lears sturmgepeitschter Nacht begleitet Edgar den König: Wir ",
+            " gemeinsam in dieser kalten Nacht."
+          ]
         },
         {
           "german": "leiden",
@@ -342,7 +390,11 @@
           "russian": "гром",
           "transcription": "[дер ДО-нер]",
           "sentence": "In Lears sturmgepeitschter Nacht begleitet Edgar den König: Der Donner übertönt unsere Schreie.",
-          "sentence_translation": "В штормовую ночь Лира Эдгар сопровождает короля: Гром заглушает наши крики."
+          "sentence_translation": "В штормовую ночь Лира Эдгар сопровождает короля: Гром заглушает наши крики.",
+          "sentence_parts": [
+            "In Lears sturmgepeitschter Nacht begleitet Edgar den König: ",
+            " übertönt unsere Schreie."
+          ]
         },
         {
           "german": "der Blitz",
@@ -393,7 +445,11 @@
           "russian": "слепой",
           "transcription": "[БЛИНД]",
           "sentence": "Vor der Hütte führt Edgar den blinden Gloucester: Mein blinder Vater erkennt mich nicht.",
-          "sentence_translation": "Перед хижиной Эдгар ведёт слепого Глостера: Мой слепой отец не узнаёт меня."
+          "sentence_translation": "Перед хижиной Эдгар ведёт слепого Глостера: Мой слепой отец не узнаёт меня.",
+          "sentence_parts": [
+            "Vor der Hütte führt Edgar den ",
+            "en Gloucester: Mein blinder Vater erkennt mich nicht."
+          ]
         },
         {
           "german": "führen",
@@ -421,7 +477,11 @@
           "russian": "спасать",
           "transcription": "[РЕ-тен]",
           "sentence": "Vor der Hütte führt Edgar den blinden Gloucester: Mit List will ich meinen Vater retten.",
-          "sentence_translation": "Перед хижиной Эдгар ведёт слепого Глостера: Хитростью я хочу спасти отца."
+          "sentence_translation": "Перед хижиной Эдгар ведёт слепого Глостера: Хитростью я хочу спасти отца.",
+          "sentence_parts": [
+            "Vor der Hütte führt Edgar den blinden Gloucester: Mit List will ich meinen Vater ",
+            "."
+          ]
         },
         {
           "german": "die List",
@@ -486,7 +546,11 @@
           "russian": "бой",
           "transcription": "[дер КАМПФ]",
           "sentence": "Auf den Klippen von Dover schwört Edgar: Der Kampf gegen meinen Bruder ist unvermeidlich.",
-          "sentence_translation": "На утёсах Дувра Эдгар клянётся: Бой с моим братом неизбежен."
+          "sentence_translation": "На утёсах Дувра Эдгар клянётся: Бой с моим братом неизбежен.",
+          "sentence_parts": [
+            "Auf den Klippen von Dover schwört Edgar: ",
+            " gegen meinen Bruder ist unvermeidlich."
+          ]
         },
         {
           "german": "das Duell",
@@ -514,14 +578,22 @@
           "russian": "побеждать",
           "transcription": "[ЗИ-ген]",
           "sentence": "Auf den Klippen von Dover schwört Edgar: Die Wahrheit wird über die Lüge siegen.",
-          "sentence_translation": "На утёсах Дувра Эдгар клянётся: Правда победит ложь."
+          "sentence_translation": "На утёсах Дувра Эдгар клянётся: Правда победит ложь.",
+          "sentence_parts": [
+            "Auf den Klippen von Dover schwört Edgar: Die Wahrheit wird über die Lüge ",
+            "."
+          ]
         },
         {
           "german": "die Gerechtigkeit",
           "russian": "справедливость",
           "transcription": "[ди ге-РЕХ-тиг-кайт]",
           "sentence": "Auf den Klippen von Dover schwört Edgar: Die Gerechtigkeit fordert diesen Kampf.",
-          "sentence_translation": "На утёсах Дувра Эдгар клянётся: Справедливость требует этого боя."
+          "sentence_translation": "На утёсах Дувра Эдгар клянётся: Справедливость требует этого боя.",
+          "sentence_parts": [
+            "Auf den Klippen von Dover schwört Edgar: ",
+            " fordert diesen Kampf."
+          ]
         },
         {
           "german": "das Schwert",
@@ -593,14 +665,22 @@
           "russian": "будущее",
           "transcription": "[ди ЦУ-кунфт]",
           "sentence": "Nach dem Sieg über Edmund vor Lears Hof erklärt Edgar: Die Zukunft des Königreichs liegt in unseren Händen.",
-          "sentence_translation": "После победы над Эдмундом перед двором Лира Эдгар объявляет: Будущее королевства в наших руках."
+          "sentence_translation": "После победы над Эдмундом перед двором Лира Эдгар объявляет: Будущее королевства в наших руках.",
+          "sentence_parts": [
+            "Nach dem Sieg über Edmund vor Lears Hof erklärt Edgar: ",
+            " des Königreichs liegt in unseren Händen."
+          ]
         },
         {
           "german": "regieren",
           "russian": "править",
           "transcription": "[ре-ГИ-рен]",
           "sentence": "Nach dem Sieg über Edmund vor Lears Hof erklärt Edgar: Mit Weisheit werde ich regieren.",
-          "sentence_translation": "После победы над Эдмундом перед двором Лира Эдгар объявляет: С мудростью я буду править."
+          "sentence_translation": "После победы над Эдмундом перед двором Лира Эдгар объявляет: С мудростью я буду править.",
+          "sentence_parts": [
+            "Nach dem Sieg über Edmund vor Lears Hof erklärt Edgar: Mit Weisheit werde ich ",
+            "."
+          ]
         },
         {
           "german": "die Weisheit",
@@ -621,14 +701,22 @@
           "russian": "ответственность",
           "transcription": "[ди фер-АНТ-вор-тунг]",
           "sentence": "Nach dem Sieg über Edmund vor Lears Hof erklärt Edgar: Die Verantwortung für alle wiegt schwer.",
-          "sentence_translation": "После победы над Эдмундом перед двором Лира Эдгар объявляет: Ответственность за всех тяжела."
+          "sentence_translation": "После победы над Эдмундом перед двором Лира Эдгар объявляет: Ответственность за всех тяжела.",
+          "sentence_parts": [
+            "Nach dem Sieg über Edmund vor Lears Hof erklärt Edgar: ",
+            " für alle wiegt schwer."
+          ]
         },
         {
           "german": "neu",
           "russian": "новый",
           "transcription": "[НОЙ]",
           "sentence": "Nach dem Sieg über Edmund vor Lears Hof erklärt Edgar: Eine neue Ära beginnt für unser Land.",
-          "sentence_translation": "После победы над Эдмундом перед двором Лира Эдгар объявляет: Новая эра начинается для нашей страны."
+          "sentence_translation": "После победы над Эдмундом перед двором Лира Эдгар объявляет: Новая эра начинается для нашей страны.",
+          "sentence_parts": [
+            "Nach dem Sieg über Edmund vor Lears Hof erklärt Edgar: Eine ",
+            "e Ära beginnt für unser Land."
+          ]
         }
       ],
       "quizzes": [

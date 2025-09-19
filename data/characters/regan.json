@@ -28,14 +28,22 @@
           "russian": "превосходить",
           "transcription": "[ю-бер-ТРЕ-фен]",
           "sentence": "Im Thronsaal von Lear wetteifert Regan mit ihrer Schwester: Ich will meine Schwester in der Lüge übertreffen.",
-          "sentence_translation": "В тронном зале Лира Регана соперничает с сестрой: Я хочу превзойти сестру во лжи."
+          "sentence_translation": "В тронном зале Лира Регана соперничает с сестрой: Я хочу превзойти сестру во лжи.",
+          "sentence_parts": [
+            "Im Thronsaal von Lear wetteifert Regan mit ihrer Schwester: Ich will meine Schwester in der Lüge ",
+            "."
+          ]
         },
         {
           "german": "wetteifern",
           "russian": "состязаться",
           "transcription": "[ВЕТ-ай-ферн]",
           "sentence": "Im Thronsaal von Lear wetteifert Regan mit ihrer Schwester: Wir wetteifern um das größte Erbe.",
-          "sentence_translation": "В тронном зале Лира Регана соперничает с сестрой: Мы состязаемся за большее наследство."
+          "sentence_translation": "В тронном зале Лира Регана соперничает с сестрой: Мы состязаемся за большее наследство.",
+          "sentence_parts": [
+            "Im Thronsaal von Lear wetteifert Regan mit ihrer Schwester: Wir ",
+            " um das größte Erbe."
+          ]
         },
         {
           "german": "die Falschheit",
@@ -70,7 +78,11 @@
           "russian": "алчность",
           "transcription": "[ди ХАБ-гир]",
           "sentence": "Im Thronsaal von Lear wetteifert Regan mit ihrer Schwester: Die Habgier treibt meine süßen Worte.",
-          "sentence_translation": "В тронном зале Лира Регана соперничает с сестрой: Алчность движет моими сладкими словами."
+          "sentence_translation": "В тронном зале Лира Регана соперничает с сестрой: Алчность движет моими сладкими словами.",
+          "sentence_parts": [
+            "Im Thronsaal von Lear wetteifert Regan mit ihrer Schwester: ",
+            " treibt meine süßen Worte."
+          ]
         }
       ],
       "quizzes": [
@@ -121,21 +133,33 @@
           "russian": "делить",
           "transcription": "[ТАЙ-лен]",
           "sentence": "Beim geheimen Pakt in Gonerils Gemächern flüstert Regan: Wir teilen das Reich zwischen uns.",
-          "sentence_translation": "На тайном сговоре в покоях Гонериль Регана шепчет: Мы делим королевство между собой."
+          "sentence_translation": "На тайном сговоре в покоях Гонериль Регана шепчет: Мы делим королевство между собой.",
+          "sentence_parts": [
+            "Beim geheimen Pakt in Gonerils Gemächern flüstert Regan: Wir ",
+            " das Reich zwischen uns."
+          ]
         },
         {
           "german": "planen",
           "russian": "планировать",
           "transcription": "[ПЛА-нен]",
           "sentence": "Beim geheimen Pakt in Gonerils Gemächern flüstert Regan: Wir planen den Untergang des alten Königs.",
-          "sentence_translation": "На тайном сговоре в покоях Гонериль Регана шепчет: Мы планируем падение старого короля."
+          "sentence_translation": "На тайном сговоре в покоях Гонериль Регана шепчет: Мы планируем падение старого короля.",
+          "sentence_parts": [
+            "Beim geheimen Pakt in Gonerils Gemächern flüstert Regan: Wir ",
+            " den Untergang des alten Königs."
+          ]
         },
         {
           "german": "verschwören",
           "russian": "заговорить",
           "transcription": "[фер-ШВЁ-рен]",
           "sentence": "Beim geheimen Pakt in Gonerils Gemächern flüstert Regan: Wir verschwören uns gegen ihn.",
-          "sentence_translation": "На тайном сговоре в покоях Гонериль Регана шепчет: Мы составляем заговор против него."
+          "sentence_translation": "На тайном сговоре в покоях Гонериль Регана шепчет: Мы составляем заговор против него.",
+          "sentence_parts": [
+            "Beim geheimen Pakt in Gonerils Gemächern flüstert Regan: Wir ",
+            " uns gegen ihn."
+          ]
         },
         {
           "german": "die Absprache",
@@ -149,7 +173,11 @@
           "russian": "договариваться",
           "transcription": "[фер-АЙН-ба-рен]",
           "sentence": "Beim geheimen Pakt in Gonerils Gemächern flüstert Regan: Wir vereinbaren gemeinsame Grausamkeit.",
-          "sentence_translation": "На тайном сговоре в покоях Гонериль Регана шепчет: Мы договариваемся о совместной жестокости."
+          "sentence_translation": "На тайном сговоре в покоях Гонериль Регана шепчет: Мы договариваемся о совместной жестокости.",
+          "sentence_parts": [
+            "Beim geheimen Pakt in Gonerils Gemächern flüstert Regan: Wir ",
+            " gemeinsame Grausamkeit."
+          ]
         },
         {
           "german": "die Strategie",
@@ -293,7 +321,11 @@
           "russian": "ослеплять",
           "transcription": "[БЛЕН-ден]",
           "sentence": "Während Gloucester geblendet wird, befiehlt Regan: Wir blenden den treuen Grafen Gloucester.",
-          "sentence_translation": "Во время ослепления Глостера Регана приказывает: Мы ослепляем верного графа Глостера."
+          "sentence_translation": "Во время ослепления Глостера Регана приказывает: Мы ослепляем верного графа Глостера.",
+          "sentence_parts": [
+            "Während Gloucester geblendet wird, befiehlt Regan: Wir ",
+            " den treuen Grafen Gloucester."
+          ]
         },
         {
           "german": "der Sadismus",
@@ -321,14 +353,22 @@
           "russian": "пытка",
           "transcription": "[ди ФОЛЬ-тер]",
           "sentence": "Während Gloucester geblendet wird, befiehlt Regan: Die Folter ist meine Unterhaltung.",
-          "sentence_translation": "Во время ослепления Глостера Регана приказывает: Пытка - моё развлечение."
+          "sentence_translation": "Во время ослепления Глостера Регана приказывает: Пытка - моё развлечение.",
+          "sentence_parts": [
+            "Während Gloucester geblendet wird, befiehlt Regan: ",
+            " ist meine Unterhaltung."
+          ]
         },
         {
           "german": "erbarmungslos",
           "russian": "беспощадный",
           "transcription": "[ер-БАР-мунгс-лос]",
           "sentence": "Während Gloucester geblendet wird, befiehlt Regan: Ich bin erbarmungslos in meiner Rache.",
-          "sentence_translation": "Во время ослепления Глостера Регана приказывает: Я беспощадна в своей мести."
+          "sentence_translation": "Во время ослепления Глостера Регана приказывает: Я беспощадна в своей мести.",
+          "sentence_parts": [
+            "Während Gloucester geblendet wird, befiehlt Regan: Ich bin ",
+            " in meiner Rache."
+          ]
         },
         {
           "german": "die Brutalität",
@@ -400,7 +440,11 @@
           "russian": "соблазнять",
           "transcription": "[фер-ФЮ-рен]",
           "sentence": "Als Witwe nach Cornwalls Tod verlangt Regan nach Edmund: Ich will Edmund verführen und besitzen.",
-          "sentence_translation": "Став вдовой после смерти Корнуолла, Регана требует Эдмунда: Я хочу соблазнить и завладеть Эдмундом."
+          "sentence_translation": "Став вдовой после смерти Корнуолла, Регана требует Эдмунда: Я хочу соблазнить и завладеть Эдмундом.",
+          "sentence_parts": [
+            "Als Witwe nach Cornwalls Tod verlangt Regan nach Edmund: Ich will Edmund ",
+            " und besitzen."
+          ]
         },
         {
           "german": "die Begierde",
@@ -421,7 +465,11 @@
           "russian": "похоть",
           "transcription": "[ди ЛУСТ]",
           "sentence": "Als Witwe nach Cornwalls Tod verlangt Regan nach Edmund: Die Lust macht mich blind für Gefahr.",
-          "sentence_translation": "Став вдовой после смерти Корнуолла, Регана требует Эдмунда: Похоть делает меня слепой к опасности."
+          "sentence_translation": "Став вдовой после смерти Корнуолла, Регана требует Эдмунда: Похоть делает меня слепой к опасности.",
+          "sentence_parts": [
+            "Als Witwe nach Cornwalls Tod verlangt Regan nach Edmund: ",
+            " macht mich blind für Gefahr."
+          ]
         },
         {
           "german": "werben",
@@ -472,7 +520,11 @@
           "russian": "соревноваться",
           "transcription": "[ВЕТ-кемп-фен]",
           "sentence": "Im Lager vor Dover droht Regan ihrer Schwester: Wir wettkämpfen um Edmunds Liebe.",
-          "sentence_translation": "В лагере под Дувром Регана грозит сестре: Мы соревнуемся за любовь Эдмунда."
+          "sentence_translation": "В лагере под Дувром Регана грозит сестре: Мы соревнуемся за любовь Эдмунда.",
+          "sentence_parts": [
+            "Im Lager vor Dover droht Regan ihrer Schwester: Wir ",
+            " um Edmunds Liebe."
+          ]
         },
         {
           "german": "hassen",
@@ -558,7 +610,11 @@
           "russian": "отравленный",
           "transcription": "[фер-ГИФ-тет]",
           "sentence": "Vergiftet von Goneril stirbt Regan in ihrem Zelt: Ich bin von meiner eigenen Schwester vergiftet.",
-          "sentence_translation": "Отравленная Гонериль Регана умирает в своём шатре: Я отравлена собственной сестрой."
+          "sentence_translation": "Отравленная Гонериль Регана умирает в своём шатре: Я отравлена собственной сестрой.",
+          "sentence_parts": [
+            "",
+            " von Goneril stirbt Regan in ihrem Zelt: Ich bin von meiner eigenen Schwester vergiftet."
+          ]
         },
         {
           "german": "leiden",
@@ -579,7 +635,11 @@
           "russian": "мучение",
           "transcription": "[ди КВАЛЬ]",
           "sentence": "Vergiftet von Goneril stirbt Regan in ihrem Zelt: Die Qual des Giftes zerreißt mich.",
-          "sentence_translation": "Отравленная Гонериль Регана умирает в своём шатре: Мучение от яда разрывает меня."
+          "sentence_translation": "Отравленная Гонериль Регана умирает в своём шатре: Мучение от яда разрывает меня.",
+          "sentence_parts": [
+            "Vergiftet von Goneril stirbt Regan in ihrem Zelt: ",
+            " des Giftes zerreißt mich."
+          ]
         },
         {
           "german": "verwünschen",
@@ -593,7 +653,11 @@
           "russian": "рок",
           "transcription": "[дас фер-ХЕНГ-нис]",
           "sentence": "Vergiftet von Goneril stirbt Regan in ihrem Zelt: Das Verhängnis ereilt mich gerecht.",
-          "sentence_translation": "Отравленная Гонериль Регана умирает в своём шатре: Рок настигает меня справедливо."
+          "sentence_translation": "Отравленная Гонериль Регана умирает в своём шатре: Рок настигает меня справедливо.",
+          "sentence_parts": [
+            "Vergiftet von Goneril stirbt Regan in ihrem Zelt: ",
+            " ereilt mich gerecht."
+          ]
         },
         {
           "german": "büßen",
@@ -607,7 +671,11 @@
           "russian": "проклятый",
           "transcription": "[фер-ФЛУХТ]",
           "sentence": "Vergiftet von Goneril stirbt Regan in ihrem Zelt: Verflucht sei unser böses Blut!",
-          "sentence_translation": "Отравленная Гонериль Регана умирает в своём шатре: Проклята наша злая кровь!"
+          "sentence_translation": "Отравленная Гонериль Регана умирает в своём шатре: Проклята наша злая кровь!",
+          "sentence_parts": [
+            "Vergiftet von Goneril stirbt Regan in ihrem Zelt: ",
+            " sei unser böses Blut!"
+          ]
         }
       ],
       "quizzes": [

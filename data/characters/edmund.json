@@ -28,7 +28,11 @@
           "russian": "зависть",
           "transcription": "[дер НАЙД]",
           "sentence": "Im Schloss von Gloucester schwört Edmund heimlich: Der Neid auf Edgar verzehrt mich.",
-          "sentence_translation": "В замке Глостера Эдмунд тайно клянётся: Зависть к Эдгару пожирает меня."
+          "sentence_translation": "В замке Глостера Эдмунд тайно клянётся: Зависть к Эдгару пожирает меня.",
+          "sentence_parts": [
+            "Im Schloss von Gloucester schwört Edmund heimlich: ",
+            " auf Edgar verzehrt mich."
+          ]
         },
         {
           "german": "die Ambition",
@@ -42,21 +46,33 @@
           "russian": "обделённый",
           "transcription": "[бе-НАХ-тай-лигт]",
           "sentence": "Im Schloss von Gloucester schwört Edmund heimlich: Ich bin von Geburt an benachteiligt.",
-          "sentence_translation": "В замке Глостера Эдмунд тайно клянётся: Я обделён с рождения."
+          "sentence_translation": "В замке Глостера Эдмунд тайно клянётся: Я обделён с рождения.",
+          "sentence_parts": [
+            "Im Schloss von Gloucester schwört Edmund heimlich: Ich bin von Geburt an ",
+            "."
+          ]
         },
         {
           "german": "die Rache",
           "russian": "месть",
           "transcription": "[ди РА-хе]",
           "sentence": "Im Schloss von Gloucester schwört Edmund heimlich: Die Rache an der Gesellschaft ist mein Ziel.",
-          "sentence_translation": "В замке Глостера Эдмунд тайно клянётся: Месть обществу - моя цель."
+          "sentence_translation": "В замке Глостера Эдмунд тайно клянётся: Месть обществу - моя цель.",
+          "sentence_parts": [
+            "Im Schloss von Gloucester schwört Edmund heimlich: ",
+            " an der Gesellschaft ist mein Ziel."
+          ]
         },
         {
           "german": "aufsteigen",
           "russian": "возвышаться",
           "transcription": "[АУФ-штай-ген]",
           "sentence": "Im Schloss von Gloucester schwört Edmund heimlich: Ich will über alle aufsteigen.",
-          "sentence_translation": "В замке Глостера Эдмунд тайно клянётся: Я хочу возвыситься над всеми."
+          "sentence_translation": "В замке Глостера Эдмунд тайно клянётся: Я хочу возвыситься над всеми.",
+          "sentence_parts": [
+            "Im Schloss von Gloucester schwört Edmund heimlich: Ich will über alle ",
+            "."
+          ]
         },
         {
           "german": "unehelich",
@@ -163,7 +179,11 @@
           "russian": "обман",
           "transcription": "[ди ТОЙ-шунг]",
           "sentence": "In seiner Kammer unterschreibt Edmund den falschen Brief: Die Täuschung ist vollkommen.",
-          "sentence_translation": "В своей комнате Эдмунд подписывает фальшивое письмо: Обман совершенен."
+          "sentence_translation": "В своей комнате Эдмунд подписывает фальшивое письмо: Обман совершенен.",
+          "sentence_parts": [
+            "In seiner Kammer unterschreibt Edmund den falschen Brief: ",
+            " ist vollkommen."
+          ]
         }
       ],
       "quizzes": [
@@ -242,7 +262,11 @@
           "russian": "награда",
           "transcription": "[ди бе-ЛО-нунг]",
           "sentence": "Im Saal, den Regan hält, prahlt Edmund: Die Belohnung für meine Intrige ist groß.",
-          "sentence_translation": "В зале, который удерживает Регана, Эдмунд хвастается: Награда за мою интригу велика."
+          "sentence_translation": "В зале, который удерживает Регана, Эдмунд хвастается: Награда за мою интригу велика.",
+          "sentence_parts": [
+            "Im Saal, den Regan hält, prahlt Edmund: ",
+            " für meine Intrige ist groß."
+          ]
         },
         {
           "german": "verdrängen",
@@ -256,7 +280,11 @@
           "russian": "победа",
           "transcription": "[дер ЗИГ]",
           "sentence": "Im Saal, den Regan hält, prahlt Edmund: Der Sieg über Edgar ist süß.",
-          "sentence_translation": "В зале, который удерживает Регана, Эдмунд хвастается: Победа над Эдгаром сладка."
+          "sentence_translation": "В зале, который удерживает Регана, Эдмунд хвастается: Победа над Эдгаром сладка.",
+          "sentence_parts": [
+            "Im Saal, den Regan hält, prahlt Edmund: ",
+            " über Edgar ist süß."
+          ]
         }
       ],
       "quizzes": [
@@ -307,14 +335,22 @@
           "russian": "власть",
           "transcription": "[ди МАХТ]",
           "sentence": "Während die Schwestern über Lear beraten, versichert Edmund: Die Macht über das Königreich ist nah.",
-          "sentence_translation": "Пока сёстры совещаются о Лире, Эдмунд уверяет: Власть над королевством близка."
+          "sentence_translation": "Пока сёстры совещаются о Лире, Эдмунд уверяет: Власть над королевством близка.",
+          "sentence_parts": [
+            "Während die Schwestern über Lear beraten, versichert Edmund: ",
+            " über das Königreich ist nah."
+          ]
         },
         {
           "german": "erobern",
           "russian": "завоёвывать",
           "transcription": "[эр-О-берн]",
           "sentence": "Während die Schwestern über Lear beraten, versichert Edmund: Wir erobern das Reich gemeinsam.",
-          "sentence_translation": "Пока сёстры совещаются о Лире, Эдмунд уверяет: Мы завоёвываем королевство вместе."
+          "sentence_translation": "Пока сёстры совещаются о Лире, Эдмунд уверяет: Мы завоёвываем королевство вместе.",
+          "sentence_parts": [
+            "Während die Schwestern über Lear beraten, versichert Edmund: Wir ",
+            " das Reich gemeinsam."
+          ]
         },
         {
           "german": "das Bündnis",
@@ -335,7 +371,11 @@
           "russian": "завоевание",
           "transcription": "[ди эр-О-бе-рунг]",
           "sentence": "Während die Schwestern über Lear beraten, versichert Edmund: Die Eroberung des Throns ist mein Ziel.",
-          "sentence_translation": "Пока сёстры совещаются о Лире, Эдмунд уверяет: Завоевание трона - моя цель."
+          "sentence_translation": "Пока сёстры совещаются о Лире, Эдмунд уверяет: Завоевание трона - моя цель.",
+          "sentence_parts": [
+            "Während die Schwestern über Lear beraten, versichert Edmund: ",
+            " des Throns ist mein Ziel."
+          ]
         },
         {
           "german": "beherrschen",
@@ -400,7 +440,11 @@
           "russian": "ослеплять",
           "transcription": "[БЛЕН-ден]",
           "sentence": "Vor den Toren von Gloucester verkauft Edmund seinen Vater: Sie blenden ihn auf meinen Hinweis.",
-          "sentence_translation": "Перед воротами Глостера Эдмунд продаёт отца: Они ослепляют его по моей наводке."
+          "sentence_translation": "Перед воротами Глостера Эдмунд продаёт отца: Они ослепляют его по моей наводке.",
+          "sentence_parts": [
+            "Vor den Toren von Gloucester verkauft Edmund seinen Vater: Sie ",
+            " ihn auf meinen Hinweis."
+          ]
         },
         {
           "german": "die Grausamkeit",
@@ -428,7 +472,11 @@
           "russian": "пытка",
           "transcription": "[ди ФОЛЬ-тер]",
           "sentence": "Vor den Toren von Gloucester verkauft Edmund seinen Vater: Die Folter meines Vaters stört mich nicht.",
-          "sentence_translation": "Перед воротами Глостера Эдмунд продаёт отца: Пытка моего отца меня не тревожит."
+          "sentence_translation": "Перед воротами Глостера Эдмунд продаёт отца: Пытка моего отца меня не тревожит.",
+          "sentence_parts": [
+            "Vor den Toren von Gloucester verkauft Edmund seinen Vater: ",
+            " meines Vaters stört mich nicht."
+          ]
         },
         {
           "german": "opfern",
@@ -442,7 +490,11 @@
           "russian": "беспощадный",
           "transcription": "[эр-БАР-мунгс-лос]",
           "sentence": "Vor den Toren von Gloucester verkauft Edmund seinen Vater: Erbarmungslos verfolge ich mein Ziel.",
-          "sentence_translation": "Перед воротами Глостера Эдмунд продаёт отца: Беспощадно я преследую свою цель."
+          "sentence_translation": "Перед воротами Глостера Эдмунд продаёт отца: Беспощадно я преследую свою цель.",
+          "sentence_parts": [
+            "Vor den Toren von Gloucester verkauft Edmund seinen Vater: ",
+            " verfolge ich mein Ziel."
+          ]
         }
       ],
       "quizzes": [
@@ -579,7 +631,11 @@
           "russian": "дуэль",
           "transcription": "[дас ду-ЭЛЬ]",
           "sentence": "Im Feldlager von Albany vor dem Duell erkennt Edmund: Das Duell mit Edgar ist mein Ende.",
-          "sentence_translation": "В лагере Олбани перед дуэлью Эдмунд признаёт: Дуэль с Эдгаром - мой конец."
+          "sentence_translation": "В лагере Олбани перед дуэлью Эдмунд признаёт: Дуэль с Эдгаром - мой конец.",
+          "sentence_parts": [
+            "Im Feldlager von Albany vor dem Duell erkennt Edmund: ",
+            " mit Edgar ist mein Ende."
+          ]
         },
         {
           "german": "fallen",
@@ -600,7 +656,11 @@
           "russian": "поражение",
           "transcription": "[ди НИ-дер-ла-ге]",
           "sentence": "Im Feldlager von Albany vor dem Duell erkennt Edmund: Die Niederlage ist vollkommen.",
-          "sentence_translation": "В лагере Олбани перед дуэлью Эдмунд признаёт: Поражение полное."
+          "sentence_translation": "В лагере Олбани перед дуэлью Эдмунд признаёт: Поражение полное.",
+          "sentence_parts": [
+            "Im Feldlager von Albany vor dem Duell erkennt Edmund: ",
+            " ist vollkommen."
+          ]
         },
         {
           "german": "verlieren",
@@ -628,7 +688,11 @@
           "russian": "конец",
           "transcription": "[дас ЭН-де]",
           "sentence": "Im Feldlager von Albany vor dem Duell erkennt Edmund: Das Ende kommt schnell und gerecht.",
-          "sentence_translation": "В лагере Олбани перед дуэлью Эдмунд признаёт: Конец приходит быстро и справедливо."
+          "sentence_translation": "В лагере Олбани перед дуэлью Эдмунд признаёт: Конец приходит быстро и справедливо.",
+          "sentence_parts": [
+            "Im Feldlager von Albany vor dem Duell erkennt Edmund: ",
+            " kommt schnell und gerecht."
+          ]
         }
       ],
       "quizzes": [

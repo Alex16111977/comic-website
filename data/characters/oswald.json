@@ -50,14 +50,22 @@
           "russian": "покорный",
           "transcription": "[ер-ГЕ-бен]",
           "sentence": "Im Haus der Goneril herrscht Oswald als Verwalter: Ergeben folge ich jedem Befehl.",
-          "sentence_translation": "В доме Гонериль Освальд распоряжается как управляющий: Покорно я следую каждому приказу."
+          "sentence_translation": "В доме Гонериль Освальд распоряжается как управляющий: Покорно я следую каждому приказу.",
+          "sentence_parts": [
+            "Im Haus der Goneril herrscht Oswald als Verwalter: ",
+            " folge ich jedem Befehl."
+          ]
         },
         {
           "german": "unterwürfig",
           "russian": "раболепный",
           "transcription": "[УН-тер-вюр-фиг]",
           "sentence": "Im Haus der Goneril herrscht Oswald als Verwalter: Unterwürfig krieche ich vor meiner Herrin.",
-          "sentence_translation": "В доме Гонериль Освальд распоряжается как управляющий: Раболепно я пресмыкаюсь перед госпожой."
+          "sentence_translation": "В доме Гонериль Освальд распоряжается как управляющий: Раболепно я пресмыкаюсь перед госпожой.",
+          "sentence_parts": [
+            "Im Haus der Goneril herrscht Oswald als Verwalter: ",
+            " krieche ich vor meiner Herrin."
+          ]
         },
         {
           "german": "befolgen",
@@ -143,7 +151,11 @@
           "russian": "послание",
           "transcription": "[ди БОТ-шафт]",
           "sentence": "Zwischen Gonerils Palast und Regans Burg rennt Oswald: Die Botschaft meiner Herrin ist grausam.",
-          "sentence_translation": "Между дворцом Гонериль и замком Реганы Освальд бегает: Послание моей госпожи жестоко."
+          "sentence_translation": "Между дворцом Гонериль и замком Реганы Освальд бегает: Послание моей госпожи жестоко.",
+          "sentence_parts": [
+            "Zwischen Gonerils Palast und Regans Burg rennt Oswald: ",
+            " meiner Herrin ist grausam."
+          ]
         },
         {
           "german": "eilen",
@@ -229,7 +241,11 @@
           "russian": "дерзкий",
           "transcription": "[ФРЕХ]",
           "sentence": "Vor König Lear am Tor von Gonerils Schloss spottet Oswald: Frech widerspreche ich dem alten Mann.",
-          "sentence_translation": "Перед королём Лиром у ворот замка Гонериль Освальд издевается: Дерзко я возражаю старику."
+          "sentence_translation": "Перед королём Лиром у ворот замка Гонериль Освальд издевается: Дерзко я возражаю старику.",
+          "sentence_parts": [
+            "Vor König Lear am Tor von Gonerils Schloss spottet Oswald: ",
+            " widerspreche ich dem alten Mann."
+          ]
         },
         {
           "german": "missachten",
@@ -243,7 +259,11 @@
           "russian": "трусливый",
           "transcription": "[ФАЙ-ге]",
           "sentence": "Vor König Lear am Tor von Gonerils Schloss spottet Oswald: Feige verstecke ich mich hinter meiner Herrin.",
-          "sentence_translation": "Перед королём Лиром у ворот замка Гонериль Освальд издевается: Трусливо я прячусь за своей госпожой."
+          "sentence_translation": "Перед королём Лиром у ворот замка Гонериль Освальд издевается: Трусливо я прячусь за своей госпожой.",
+          "sentence_parts": [
+            "Vor König Lear am Tor von Gonerils Schloss spottet Oswald: ",
+            " verstecke ich mich hinter meiner Herrin."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -294,7 +314,11 @@
           "russian": "предательство",
           "transcription": "[дер фер-РАТ]",
           "sentence": "In den Korridoren von Albanys Burg schleicht Oswald: Der Verrat ist mein tägliches Geschäft.",
-          "sentence_translation": "В коридорах замка Олбани Освальд крадётся: Предательство - моё ежедневное дело."
+          "sentence_translation": "В коридорах замка Олбани Освальд крадётся: Предательство - моё ежедневное дело.",
+          "sentence_parts": [
+            "In den Korridoren von Albanys Burg schleicht Oswald: ",
+            " ist mein tägliches Geschäft."
+          ]
         },
         {
           "german": "die Heimlichkeit",
@@ -408,14 +432,22 @@
           "russian": "коварный",
           "transcription": "[ТЮ-киш]",
           "sentence": "Bei nächtlichen Beratungen mit Goneril plant Oswald: Tückisch plane ich meinen nächsten Schritt.",
-          "sentence_translation": "На ночных советах с Гонериль Освальд планирует: Коварно я планирую свой следующий шаг."
+          "sentence_translation": "На ночных советах с Гонериль Освальд планирует: Коварно я планирую свой следующий шаг.",
+          "sentence_parts": [
+            "Bei nächtlichen Beratungen mit Goneril plant Oswald: ",
+            " plane ich meinen nächsten Schritt."
+          ]
         },
         {
           "german": "verschlagen",
           "russian": "хитрый",
           "transcription": "[фер-ШЛАГ-ен]",
           "sentence": "Bei nächtlichen Beratungen mit Goneril plant Oswald: Verschlagen verberge ich meine wahren Absichten.",
-          "sentence_translation": "На ночных советах с Гонериль Освальд планирует: Хитро я скрываю свои истинные намерения."
+          "sentence_translation": "На ночных советах с Гонериль Освальд планирует: Хитро я скрываю свои истинные намерения.",
+          "sentence_parts": [
+            "Bei nächtlichen Beratungen mit Goneril plant Oswald: ",
+            " verberge ich meine wahren Absichten."
+          ]
         },
         {
           "german": "die Falle",
@@ -466,14 +498,22 @@
           "russian": "преследование",
           "transcription": "[ди фер-ФОЛЬ-гунг]",
           "sentence": "Auf den Feldern nahe Dover jagt Oswald den blinden Gloucester: Die Verfolgung des blinden Grafen beginnt.",
-          "sentence_translation": "На полях близ Дувра Освальд гонится за слепым Глостером: Преследование слепого графа начинается."
+          "sentence_translation": "На полях близ Дувра Освальд гонится за слепым Глостером: Преследование слепого графа начинается.",
+          "sentence_parts": [
+            "Auf den Feldern nahe Dover jagt Oswald den blinden Gloucester: ",
+            " des blinden Grafen beginnt."
+          ]
         },
         {
           "german": "die Jagd",
           "russian": "охота",
           "transcription": "[ди ЯГДТ]",
           "sentence": "Auf den Feldern nahe Dover jagt Oswald den blinden Gloucester: Die Jagd auf Gloucester macht mir Spaß.",
-          "sentence_translation": "На полях близ Дувра Освальд гонится за слепым Глостером: Охота на Глостера доставляет мне удовольствие."
+          "sentence_translation": "На полях близ Дувра Освальд гонится за слепым Глостером: Охота на Глостера доставляет мне удовольствие.",
+          "sentence_parts": [
+            "Auf den Feldern nahe Dover jagt Oswald den blinden Gloucester: ",
+            " auf Gloucester macht mir Spaß."
+          ]
         },
         {
           "german": "verfolgen",
@@ -552,7 +592,11 @@
           "russian": "смерть",
           "transcription": "[дер ТОД]",
           "sentence": "Als Edgar ihn am Strand von Dover stellt, jammert Oswald: Der Tod ereilt mich durch Эдгars Hand.",
-          "sentence_translation": "Когда Эдгар настигает его на берегу Дувра, Освальд стонет: Смерть настигает меня от руки Эдгара."
+          "sentence_translation": "Когда Эдгар настигает его на берегу Дувра, Освальд стонет: Смерть настигает меня от руки Эдгара.",
+          "sentence_parts": [
+            "Als Edgar ihn am Strand von Dover stellt, jammert Oswald: ",
+            " ereilt mich durch Эдгars Hand."
+          ]
         },
         {
           "german": "die Feigheit",
@@ -566,7 +610,11 @@
           "russian": "поражение",
           "transcription": "[ди НИ-дер-ла-ге]",
           "sentence": "Als Edgar ihn am Strand von Dover stellt, jammert Oswald: Die Niederlage ist mein letztes Schicksal.",
-          "sentence_translation": "Когда Эдгар настигает его на берегу Дувра, Освальд стонет: Поражение - моя последняя судьба."
+          "sentence_translation": "Когда Эдгар настигает его на берегу Дувра, Освальд стонет: Поражение - моя последняя судьба.",
+          "sentence_parts": [
+            "Als Edgar ihn am Strand von Dover stellt, jammert Oswald: ",
+            " ist mein letztes Schicksal."
+          ]
         },
         {
           "german": "fallen",
@@ -587,7 +635,11 @@
           "russian": "хныкать",
           "transcription": "[ВИМ-мерн]",
           "sentence": "Als Edgar ihn am Strand von Dover stellt, jammert Oswald: Wimmernd bitte ich um Gnade.",
-          "sentence_translation": "Когда Эдгар настигает его на берегу Дувра, Освальд стонет: Хныкая, я прошу о пощаде."
+          "sentence_translation": "Когда Эдгар настигает его на берегу Дувра, Освальд стонет: Хныкая, я прошу о пощаде.",
+          "sentence_parts": [
+            "Als Edgar ihn am Strand von Dover stellt, jammert Oswald: ",
+            "d bitte ich um Gnade."
+          ]
         },
         {
           "german": "betteln",
@@ -601,7 +653,11 @@
           "russian": "жалкий",
           "transcription": "[ер-БЕРМ-лих]",
           "sentence": "Als Edgar ihn am Strand von Dover stellt, jammert Oswald: Erbärmlich ende ich wie ich gelebt habe.",
-          "sentence_translation": "Когда Эдгар настигает его на берегу Дувра, Освальд стонет: Жалко я заканчиваю, как и жил."
+          "sentence_translation": "Когда Эдгар настигает его на берегу Дувра, Освальд стонет: Жалко я заканчиваю, как и жил.",
+          "sentence_parts": [
+            "Als Edgar ihn am Strand von Dover stellt, jammert Oswald: ",
+            " ende ich wie ich gelebt habe."
+          ]
         }
       ],
       "theatrical_scene": {

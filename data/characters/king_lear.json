@@ -35,7 +35,11 @@
           "russian": "власть",
           "transcription": "[ди МАХТ]",
           "sentence": "Im prunkvollen Thronsaal ruft König Lear: Die Macht gebe ich an jene, die mich am meisten liebt.",
-          "sentence_translation": "В роскошном тронном зале восклицает король Лир: Власть я отдаю той, кто любит меня больше всех."
+          "sentence_translation": "В роскошном тронном зале восклицает король Лир: Власть я отдаю той, кто любит меня больше всех.",
+          "sentence_parts": [
+            "Im prunkvollen Thronsaal ruft König Lear: ",
+            " gebe ich an jene, die mich am meisten liebt."
+          ]
         },
         {
           "german": "herrschen",
@@ -63,14 +67,22 @@
           "russian": "церемония",
           "transcription": "[ди це-ре-мо-НИ]",
           "sentence": "Im prunkvollen Thronsaal ruft König Lear: Die Zeremonie der Teilung beginnt jetzt.",
-          "sentence_translation": "В роскошном тронном зале восклицает король Лир: Церемония раздела начинается сейчас."
+          "sentence_translation": "В роскошном тронном зале восклицает король Лир: Церемония раздела начинается сейчас.",
+          "sentence_parts": [
+            "Im prunkvollen Thronsaal ruft König Lear: ",
+            " der Teilung beginnt jetzt."
+          ]
         },
         {
           "german": "prächtig",
           "russian": "великолепный",
           "transcription": "[ПРЕХ-тиг]",
           "sentence": "Im prunkvollen Thronsaal ruft König Lear: Ein prächtiger Tag für eine verhängnisvolle Entscheidung.",
-          "sentence_translation": "В роскошном тронном зале восклицает король Лир: Великолепный день для рокового решения."
+          "sentence_translation": "В роскошном тронном зале восклицает король Лир: Великолепный день для рокового решения.",
+          "sentence_parts": [
+            "Im prunkvollen Thronsaal ruft König Lear: Ein ",
+            "er Tag für eine verhängnisvolle Entscheidung."
+          ]
         }
       ],
       "quizzes": [
@@ -114,7 +126,11 @@
           "russian": "унижать",
           "transcription": "[де-МЮ-ти-ген]",
           "sentence": "In Gonerils Palast fühlt Lear: Meine eigene Tochter will mich demütigen!",
-          "sentence_translation": "Во дворце Гонериль Лир ощущает: Моя собственная дочь хочет меня унизить!"
+          "sentence_translation": "Во дворце Гонериль Лир ощущает: Моя собственная дочь хочет меня унизить!",
+          "sentence_parts": [
+            "In Gonerils Palast fühlt Lear: Meine eigene Tochter will mich ",
+            "!"
+          ]
         },
         {
           "german": "der Zorn",
@@ -128,7 +144,11 @@
           "russian": "неблагодарность",
           "transcription": "[ди УН-данк-бар-кайт]",
           "sentence": "In Gonerils Palast fühlt Lear: Die Undankbarkeit ist schärfer als der Zahn einer Schlange!",
-          "sentence_translation": "Во дворце Гонериль Лир ощущает: Неблагодарность острее змеиного зуба!"
+          "sentence_translation": "Во дворце Гонериль Лир ощущает: Неблагодарность острее змеиного зуба!",
+          "sentence_parts": [
+            "In Gonerils Palast fühlt Lear: ",
+            " ist schärfer als der Zahn einer Schlange!"
+          ]
         },
         {
           "german": "verfluchen",
@@ -142,7 +162,11 @@
           "russian": "изгонять",
           "transcription": "[фер-ТРАЙ-бен]",
           "sentence": "In Gonerils Palast fühlt Lear: Aus meinem eigenen Haus will sie mich vertreiben!",
-          "sentence_translation": "Во дворце Гонериль Лир ощущает: Из моего собственного дома она хочет меня изгнать!"
+          "sentence_translation": "Во дворце Гонериль Лир ощущает: Из моего собственного дома она хочет меня изгнать!",
+          "sentence_parts": [
+            "In Gonerils Palast fühlt Lear: Aus meinem eigenen Haus will sie mich ",
+            "!"
+          ]
         },
         {
           "german": "die Kränkung",
@@ -156,7 +180,11 @@
           "russian": "сожалеть",
           "transcription": "[бе-РОЙ-ен]",
           "sentence": "In Gonerils Palast fühlt Lear: Sie wird ihre Grausamkeit bereuen!",
-          "sentence_translation": "Во дворце Гонериль Лир ощущает: Она пожалеет о своей жестокости!"
+          "sentence_translation": "Во дворце Гонериль Лир ощущает: Она пожалеет о своей жестокости!",
+          "sentence_parts": [
+            "In Gonerils Palast fühlt Lear: Sie wird ihre Grausamkeit ",
+            "!"
+          ]
         },
         {
           "german": "der Fluch",
@@ -207,14 +235,22 @@
           "russian": "покидать",
           "transcription": "[фер-ЛА-сен]",
           "sentence": "Auf dem Hof von Regans Burg fleht Lear: Auch Regan will mich verlassen und verstoßen!",
-          "sentence_translation": "На дворе замка Реганы Лир умоляет: И Регана хочет меня покинуть и отвергнуть!"
+          "sentence_translation": "На дворе замка Реганы Лир умоляет: И Регана хочет меня покинуть и отвергнуть!",
+          "sentence_parts": [
+            "Auf dem Hof von Regans Burg fleht Lear: Auch Regan will mich ",
+            " und verstoßen!"
+          ]
         },
         {
           "german": "verstoßen",
           "russian": "отвергать",
           "transcription": "[фер-ШТО-сен]",
           "sentence": "Auf dem Hof von Regans Burg fleht Lear: Meine Töchter verstoßen mich wie einen Bettler!",
-          "sentence_translation": "На дворе замка Реганы Лир умоляет: Мои дочери отвергают меня как нищего!"
+          "sentence_translation": "На дворе замка Реганы Лир умоляет: Мои дочери отвергают меня как нищего!",
+          "sentence_parts": [
+            "Auf dem Hof von Regans Burg fleht Lear: Meine Töchter ",
+            " mich wie einen Bettler!"
+          ]
         },
         {
           "german": "die Grausamkeit",
@@ -228,14 +264,22 @@
           "russian": "отчаяние",
           "transcription": "[ди фер-ЦВАЙ-флунг]",
           "sentence": "Auf dem Hof von Regans Burg fleht Lear: Die Verzweiflung packt mein altes Herz!",
-          "sentence_translation": "На дворе замка Реганы Лир умоляет: Отчаяние охватывает моё старое сердце!"
+          "sentence_translation": "На дворе замка Реганы Лир умоляет: Отчаяние охватывает моё старое сердце!",
+          "sentence_parts": [
+            "Auf dem Hof von Regans Burg fleht Lear: ",
+            " packt mein altes Herz!"
+          ]
         },
         {
           "german": "betteln",
           "russian": "просить",
           "transcription": "[БЕ-тельн]",
           "sentence": "Auf dem Hof von Regans Burg fleht Lear: Muss ich um Unterkunft betteln bei meinen eigenen Kindern?",
-          "sentence_translation": "На дворе замка Реганы Лир умоляет: Должен ли я просить крова у собственных детей?"
+          "sentence_translation": "На дворе замка Реганы Лир умоляет: Должен ли я просить крова у собственных детей?",
+          "sentence_parts": [
+            "Auf dem Hof von Regans Burg fleht Lear: Muss ich um Unterkunft ",
+            " bei meinen eigenen Kindern?"
+          ]
         },
         {
           "german": "die Einsamkeit",
@@ -300,28 +344,44 @@
           "russian": "буря",
           "transcription": "[дер ШТУРМ]",
           "sentence": "Auf der Heide unter peitschendem Regen schreit Lear: Der Sturm in meinem Kopf ist schlimmer als draußen!",
-          "sentence_translation": "На пустоши под хлещущим дождём Лир кричит: Буря в моей голове хуже, чем снаружи!"
+          "sentence_translation": "На пустоши под хлещущим дождём Лир кричит: Буря в моей голове хуже, чем снаружи!",
+          "sentence_parts": [
+            "Auf der Heide unter peitschendem Regen schreit Lear: ",
+            " in meinem Kopf ist schlimmer als draußen!"
+          ]
         },
         {
           "german": "der Wahnsinn",
           "russian": "безумие",
           "transcription": "[дер ВАН-зин]",
           "sentence": "Auf der Heide unter peitschendem Regen schreit Lear: Der Wahnsinn ist gnädiger als die Vernunft!",
-          "sentence_translation": "На пустоши под хлещущим дождём Лир кричит: Безумие милосерднее разума!"
+          "sentence_translation": "На пустоши под хлещущим дождём Лир кричит: Безумие милосерднее разума!",
+          "sentence_parts": [
+            "Auf der Heide unter peitschendem Regen schreit Lear: ",
+            " ist gnädiger als die Vernunft!"
+          ]
         },
         {
           "german": "toben",
           "russian": "бушевать",
           "transcription": "[ТО-бен]",
           "sentence": "Auf der Heide unter peitschendem Regen schreit Lear: Lasst die Winde toben und die Blitze fallen!",
-          "sentence_translation": "На пустоши под хлещущим дождём Лир кричит: Пусть ветры бушуют и молнии падают!"
+          "sentence_translation": "На пустоши под хлещущим дождём Лир кричит: Пусть ветры бушуют и молнии падают!",
+          "sentence_parts": [
+            "Auf der Heide unter peitschendem Regen schreit Lear: Lasst die Winde ",
+            " und die Blitze fallen!"
+          ]
         },
         {
           "german": "der Donner",
           "russian": "гром",
           "transcription": "[дер ДО-нер]",
           "sentence": "Auf der Heide unter peitschendem Regen schreit Lear: Der Donner ist die Stimme der Götter!",
-          "sentence_translation": "На пустоши под хлещущим дождём Лир кричит: Гром - это голос богов!"
+          "sentence_translation": "На пустоши под хлещущим дождём Лир кричит: Гром - это голос богов!",
+          "sentence_parts": [
+            "Auf der Heide unter peitschendem Regen schreit Lear: ",
+            " ist die Stimme der Götter!"
+          ]
         },
         {
           "german": "der Blitz",
@@ -407,14 +467,22 @@
           "russian": "бедный",
           "transcription": "[АРМ]",
           "sentence": "In der verfallenen Hütte bei Gloucester halluziniert Lear: Die Armen leiden mehr als Könige jemals wissen.",
-          "sentence_translation": "В полуразвалившейся хижине у Глостера Лир бредит: Бедные страдают больше, чем короли когда-либо узнают."
+          "sentence_translation": "В полуразвалившейся хижине у Глостера Лир бредит: Бедные страдают больше, чем короли когда-либо узнают.",
+          "sentence_parts": [
+            "In der verfallenen Hütte bei Gloucester halluziniert Lear: Die ",
+            "en leiden mehr als Könige jemals wissen."
+          ]
         },
         {
           "german": "frieren",
           "russian": "мёрзнуть",
           "transcription": "[ФРИ-рен]",
           "sentence": "In der verfallenen Hütte bei Gloucester halluziniert Lear: Wir alle frieren in dieser kalten Welt.",
-          "sentence_translation": "В полуразвалившейся хижине у Глостера Лир бредит: Мы все мёрзнем в этом холодном мире."
+          "sentence_translation": "В полуразвалившейся хижине у Глостера Лир бредит: Мы все мёрзнем в этом холодном мире.",
+          "sentence_parts": [
+            "In der verfallenen Hütte bei Gloucester halluziniert Lear: Wir alle ",
+            " in dieser kalten Welt."
+          ]
         },
         {
           "german": "die Hütte",
@@ -442,7 +510,11 @@
           "russian": "познание",
           "transcription": "[ди ер-КЕНТ-нис]",
           "sentence": "In der verfallenen Hütte bei Gloucester halluziniert Lear: Die Erkenntnis kommt durch Schmerz und Verlust.",
-          "sentence_translation": "В полуразвалившейся хижине у Глостера Лир бредит: Познание приходит через боль и утрату."
+          "sentence_translation": "В полуразвалившейся хижине у Глостера Лир бредит: Познание приходит через боль и утрату.",
+          "sentence_parts": [
+            "In der verfallenen Hütte bei Gloucester halluziniert Lear: ",
+            " kommt durch Schmerz und Verlust."
+          ]
         }
       ],
       "quizzes": [
@@ -500,28 +572,44 @@
           "russian": "правда",
           "transcription": "[ди ВАР-хайт]",
           "sentence": "Vor den Klippen von Dover bei Cordelias Truppen erkennt Lear: Die Wahrheit war immer in deinen Worten, Kind.",
-          "sentence_translation": "У утёсов Дувра рядом с войском Корделии Лир осознаёт: Правда всегда была в твоих словах, дитя."
+          "sentence_translation": "У утёсов Дувра рядом с войском Корделии Лир осознаёт: Правда всегда была в твоих словах, дитя.",
+          "sentence_parts": [
+            "Vor den Klippen von Dover bei Cordelias Truppen erkennt Lear: ",
+            " war immer in deinen Worten, Kind."
+          ]
         },
         {
           "german": "die Reue",
           "russian": "раскаяние",
           "transcription": "[ди РОЙ-е]",
           "sentence": "Vor den Klippen von Dover bei Cordelias Truppen erkennt Lear: Die Reue brennt heißer als alle Feuer der Hölle.",
-          "sentence_translation": "У утёсов Дувра рядом с войском Корделии Лир осознаёт: Раскаяние жжёт горячее всех адских огней."
+          "sentence_translation": "У утёсов Дувра рядом с войском Корделии Лир осознаёт: Раскаяние жжёт горячее всех адских огней.",
+          "sentence_parts": [
+            "Vor den Klippen von Dover bei Cordelias Truppen erkennt Lear: ",
+            " brennt heißer als alle Feuer der Hölle."
+          ]
         },
         {
           "german": "die Weisheit",
           "russian": "мудрость",
           "transcription": "[ди ВАЙС-хайт]",
           "sentence": "Vor den Klippen von Dover bei Cordelias Truppen erkennt Lear: Die Weisheit kommt zu spät zu mir.",
-          "sentence_translation": "У утёсов Дувра рядом с войском Корделии Лир осознаёт: Мудрость приходит ко мне слишком поздно."
+          "sentence_translation": "У утёсов Дувра рядом с войском Корделии Лир осознаёт: Мудрость приходит ко мне слишком поздно.",
+          "sentence_parts": [
+            "Vor den Klippen von Dover bei Cordelias Truppen erkennt Lear: ",
+            " kommt zu spät zu mir."
+          ]
         },
         {
           "german": "vergeben",
           "russian": "прощать",
           "transcription": "[фер-ГЕ-бен]",
           "sentence": "Vor den Klippen von Dover bei Cordelias Truppen erkennt Lear: Kannst du einem törichten alten Mann vergeben?",
-          "sentence_translation": "У утёсов Дувра рядом с войском Корделии Лир осознаёт: Можешь ли ты простить глупого старика?"
+          "sentence_translation": "У утёсов Дувра рядом с войском Корделии Лир осознаёт: Можешь ли ты простить глупого старика?",
+          "sentence_parts": [
+            "Vor den Klippen von Dover bei Cordelias Truppen erkennt Lear: Kannst du einem törichten alten Mann ",
+            "?"
+          ]
         },
         {
           "german": "die Einsicht",
@@ -586,21 +674,33 @@
           "russian": "смерть",
           "transcription": "[дер ТОД]",
           "sentence": "Im Kerker, den Edmund bewacht, flüstert Lear: Der Tod ist gnädiger als das Leben ohne dich.",
-          "sentence_translation": "В темнице, которую охраняет Эдмунд, Лир шепчет: Смерть милосерднее жизни без тебя."
+          "sentence_translation": "В темнице, которую охраняет Эдмунд, Лир шепчет: Смерть милосерднее жизни без тебя.",
+          "sentence_parts": [
+            "Im Kerker, den Edmund bewacht, flüstert Lear: ",
+            " ist gnädiger als das Leben ohne dich."
+          ]
         },
         {
           "german": "sterben",
           "russian": "умирать",
           "transcription": "[ШТЕР-бен]",
           "sentence": "Im Kerker, den Edmund bewacht, flüstert Lear: Lass mich an deiner Seite sterben, Cordelia.",
-          "sentence_translation": "В темнице, которую охраняет Эдмунд, Лир шепчет: Позволь мне умереть рядом с тобой, Корделия."
+          "sentence_translation": "В темнице, которую охраняет Эдмунд, Лир шепчет: Позволь мне умереть рядом с тобой, Корделия.",
+          "sentence_parts": [
+            "Im Kerker, den Edmund bewacht, flüstert Lear: Lass mich an deiner Seite ",
+            ", Cordelia."
+          ]
         },
         {
           "german": "das Ende",
           "russian": "конец",
           "transcription": "[дас ЕН-де]",
           "sentence": "Im Kerker, den Edmund bewacht, flüstert Lear: Das Ende kommt, aber mit dir bin ich nicht allein.",
-          "sentence_translation": "В темнице, которую охраняет Эдмунд, Лир шепчет: Конец приходит, но с тобой я не одинок."
+          "sentence_translation": "В темнице, которую охраняет Эдмунд, Лир шепчет: Конец приходит, но с тобой я не одинок.",
+          "sentence_parts": [
+            "Im Kerker, den Edmund bewacht, flüstert Lear: ",
+            " kommt, aber mit dir bin ich nicht allein."
+          ]
         },
         {
           "german": "das Herz",
@@ -614,7 +714,11 @@
           "russian": "скорбь",
           "transcription": "[ди ТРАУ-ер]",
           "sentence": "Im Kerker, den Edmund bewacht, flüstert Lear: Die Trauer überwältigt meine Seele.",
-          "sentence_translation": "В темнице, которую охраняет Эдмунд, Лир шепчет: Скорбь переполняет мою душу."
+          "sentence_translation": "В темнице, которую охраняет Эдмунд, Лир шепчет: Скорбь переполняет мою душу.",
+          "sentence_parts": [
+            "Im Kerker, den Edmund bewacht, flüstert Lear: ",
+            " überwältigt meine Seele."
+          ]
         },
         {
           "german": "der Abschied",

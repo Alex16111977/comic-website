@@ -21,7 +21,11 @@
           "russian": "ложь",
           "transcription": "[ди ЛЮ-ге]",
           "sentence": "Im Thronsaal von König Lear haucht Goneril: Die Lüge klingt süßer als die Wahrheit.",
-          "sentence_translation": "В тронном зале короля Лира Гонериль шепчет: Ложь звучит слаще правды."
+          "sentence_translation": "В тронном зале короля Лира Гонериль шепчет: Ложь звучит слаще правды.",
+          "sentence_parts": [
+            "Im Thronsaal von König Lear haucht Goneril: ",
+            " klingt süßer als die Wahrheit."
+          ]
         },
         {
           "german": "schwören",
@@ -35,21 +39,33 @@
           "russian": "наследство",
           "transcription": "[дас ЕР-бе]",
           "sentence": "Im Thronsaal von König Lear haucht Goneril: Das Erbe ist endlich mein.",
-          "sentence_translation": "В тронном зале короля Лира Гонериль шепчет: Наследство наконец моё."
+          "sentence_translation": "В тронном зале короля Лира Гонериль шепчет: Наследство наконец моё.",
+          "sentence_parts": [
+            "Im Thronsaal von König Lear haucht Goneril: ",
+            " ist endlich mein."
+          ]
         },
         {
           "german": "heucheln",
           "russian": "лицемерить",
           "transcription": "[ХОЙ-хельн]",
           "sentence": "Im Thronsaal von König Lear haucht Goneril: Ich muss vor meinem Vater heucheln.",
-          "sentence_translation": "В тронном зале короля Лира Гонериль шепчет: Я должна лицемерить перед отцом."
+          "sentence_translation": "В тронном зале короля Лира Гонериль шепчет: Я должна лицемерить перед отцом.",
+          "sentence_parts": [
+            "Im Thronsaal von König Lear haucht Goneril: Ich muss vor meinem Vater ",
+            "."
+          ]
         },
         {
           "german": "die Gier",
           "russian": "жадность",
           "transcription": "[ди ГИР]",
           "sentence": "Im Thronsaal von König Lear haucht Goneril: Die Gier nach Macht treibt mich an.",
-          "sentence_translation": "В тронном зале короля Лира Гонериль шепчет: Жадность к власти движет мной."
+          "sentence_translation": "В тронном зале короля Лира Гонериль шепчет: Жадность к власти движет мной.",
+          "sentence_parts": [
+            "Im Thronsaal von König Lear haucht Goneril: ",
+            " nach Macht treibt mich an."
+          ]
         },
         {
           "german": "täuschen",
@@ -114,7 +130,11 @@
           "russian": "власть",
           "transcription": "[ди МАХТ]",
           "sentence": "In ihrem Palast in Albany prahlt Goneril: Die Macht über das halbe Königreich ist mein.",
-          "sentence_translation": "В своём дворце в Олбани Гонериль хвастается: Власть над половиной королевства моя."
+          "sentence_translation": "В своём дворце в Олбани Гонериль хвастается: Власть над половиной королевства моя.",
+          "sentence_parts": [
+            "In ihrem Palast in Albany prahlt Goneril: ",
+            " über das halbe Königreich ist mein."
+          ]
         },
         {
           "german": "herrschen",
@@ -135,7 +155,11 @@
           "russian": "трон",
           "transcription": "[дер ТРОН]",
           "sentence": "In ihrem Palast in Albany prahlt Goneril: Der Thron meines Vaters wird bald leer sein.",
-          "sentence_translation": "В своём дворце в Олбани Гонериль хвастается: Трон моего отца скоро опустеет."
+          "sentence_translation": "В своём дворце в Олбани Гонериль хвастается: Трон моего отца скоро опустеет.",
+          "sentence_parts": [
+            "In ihrem Palast in Albany prahlt Goneril: ",
+            " meines Vaters wird bald leer sein."
+          ]
         },
         {
           "german": "erobern",
@@ -149,14 +173,22 @@
           "russian": "господство",
           "transcription": "[ди ХЕР-шафт]",
           "sentence": "In ihrem Palast in Albany prahlt Goneril: Die Herrschaft über alle ist mein Ziel.",
-          "sentence_translation": "В своём дворце в Олбани Гонериль хвастается: Господство над всеми - моя цель."
+          "sentence_translation": "В своём дворце в Олбани Гонериль хвастается: Господство над всеми - моя цель.",
+          "sentence_parts": [
+            "In ihrem Palast in Albany prahlt Goneril: ",
+            " über alle ist mein Ziel."
+          ]
         },
         {
           "german": "regieren",
           "russian": "управлять",
           "transcription": "[ре-ГИ-рен]",
           "sentence": "In ihrem Palast in Albany prahlt Goneril: Ich werde mit eiserner Hand regieren.",
-          "sentence_translation": "В своём дворце в Олбани Гонериль хвастается: Я буду управлять железной рукой."
+          "sentence_translation": "В своём дворце в Олбани Гонериль хвастается: Я буду управлять железной рукой.",
+          "sentence_parts": [
+            "In ihrem Palast in Albany prahlt Goneril: Ich werde mit eiserner Hand ",
+            "."
+          ]
         },
         {
           "german": "unterwerfen",
@@ -214,14 +246,22 @@
           "russian": "жестокий",
           "transcription": "[ГРАУ-зам]",
           "sentence": "Als Lear bei ihr Quartier nimmt, befiehlt Goneril: Ich bin grausam zu dem, der mir alles gab.",
-          "sentence_translation": "Когда Лир квартирует у неё, Гонериль приказывает: Я жестока к тому, кто дал мне всё."
+          "sentence_translation": "Когда Лир квартирует у неё, Гонериль приказывает: Я жестока к тому, кто дал мне всё.",
+          "sentence_parts": [
+            "Als Lear bei ihr Quartier nimmt, befiehlt Goneril: Ich bin ",
+            " zu dem, der mir alles gab."
+          ]
         },
         {
           "german": "die Rache",
           "russian": "месть",
           "transcription": "[ди РА-хе]",
           "sentence": "Als Lear bei ihr Quartier nimmt, befiehlt Goneril: Die Rache für Jahre der Unterwerfung.",
-          "sentence_translation": "Когда Лир квартирует у неё, Гонериль приказывает: Месть за годы подчинения."
+          "sentence_translation": "Когда Лир квартирует у неё, Гонериль приказывает: Месть за годы подчинения.",
+          "sentence_parts": [
+            "Als Lear bei ihr Quartier nimmt, befiehlt Goneril: ",
+            " für Jahre der Unterwerfung."
+          ]
         },
         {
           "german": "vertreiben",
@@ -249,7 +289,11 @@
           "russian": "мучить",
           "transcription": "[КВЕ-лен]",
           "sentence": "Als Lear bei ihr Quartier nimmt, befiehlt Goneril: Es macht mir Freude, ihn zu quälen.",
-          "sentence_translation": "Когда Лир квартирует у неё, Гонериль приказывает: Мне доставляет радость мучить его."
+          "sentence_translation": "Когда Лир квартирует у неё, Гонериль приказывает: Мне доставляет радость мучить его.",
+          "sentence_parts": [
+            "Als Lear bei ihr Quartier nimmt, befiehlt Goneril: Es macht mir Freude, ihn zu ",
+            "."
+          ]
         },
         {
           "german": "beschränken",
@@ -307,14 +351,22 @@
           "russian": "буря",
           "transcription": "[дер ШТУРМ]",
           "sentence": "Vor den Toren ihres Schlosses stößt Goneril den Vater hinaus: Der Sturm soll sein neues Zuhause sein.",
-          "sentence_translation": "Перед воротами своего замка Гонериль выталкивает отца: Буря пусть будет его новым домом."
+          "sentence_translation": "Перед воротами своего замка Гонериль выталкивает отца: Буря пусть будет его новым домом.",
+          "sentence_parts": [
+            "Vor den Toren ihres Schlosses stößt Goneril den Vater hinaus: ",
+            " soll sein neues Zuhause sein."
+          ]
         },
         {
           "german": "gnadenlos",
           "russian": "безжалостный",
           "transcription": "[ГНА-ден-лос]",
           "sentence": "Vor den Toren ihres Schlosses stößt Goneril den Vater hinaus: Ich bin gnadenlos wie der Winter.",
-          "sentence_translation": "Перед воротами своего замка Гонериль выталкивает отца: Я безжалостна как зима."
+          "sentence_translation": "Перед воротами своего замка Гонериль выталкивает отца: Я безжалостна как зима.",
+          "sentence_parts": [
+            "Vor den Toren ihres Schlosses stößt Goneril den Vater hinaus: Ich bin ",
+            " wie der Winter."
+          ]
         },
         {
           "german": "verschließen",
@@ -328,14 +380,22 @@
           "russian": "холод",
           "transcription": "[ди КЕЛ-те]",
           "sentence": "Vor den Toren ihres Schlosses stößt Goneril den Vater hinaus: Die Kälte meines Herzens übertrifft den Winter.",
-          "sentence_translation": "Перед воротами своего замка Гонериль выталкивает отца: Холод моего сердца превосходит зиму."
+          "sentence_translation": "Перед воротами своего замка Гонериль выталкивает отца: Холод моего сердца превосходит зиму.",
+          "sentence_parts": [
+            "Vor den Toren ihres Schlosses stößt Goneril den Vater hinaus: ",
+            " meines Herzens übertrifft den Winter."
+          ]
         },
         {
           "german": "erbarmungslos",
           "russian": "беспощадный",
           "transcription": "[ер-БАР-мунгс-лос]",
           "sentence": "Vor den Toren ihres Schlosses stößt Goneril den Vater hinaus: Erbarmungslos werfe ich ihn hinaus.",
-          "sentence_translation": "Перед воротами своего замка Гонериль выталкивает отца: Беспощадно я выбрасываю его."
+          "sentence_translation": "Перед воротами своего замка Гонериль выталкивает отца: Беспощадно я выбрасываю его.",
+          "sentence_parts": [
+            "Vor den Toren ihres Schlosses stößt Goneril den Vater hinaus: ",
+            " werfe ich ihn hinaus."
+          ]
         },
         {
           "german": "verhärten",
@@ -400,7 +460,11 @@
           "russian": "раздор",
           "transcription": "[ди ЦВИ-трахт]",
           "sentence": "In Albanys Kriegslager streitet Goneril mit ihrem Mann: Die Zwietracht zerstört unsere Ehe.",
-          "sentence_translation": "В военном лагере Олбани Гонериль ссорится с мужем: Раздор разрушает наш брак."
+          "sentence_translation": "В военном лагере Олбани Гонериль ссорится с мужем: Раздор разрушает наш брак.",
+          "sentence_parts": [
+            "In Albanys Kriegslager streitet Goneril mit ihrem Mann: ",
+            " zerstört unsere Ehe."
+          ]
         },
         {
           "german": "hassen",
@@ -479,7 +543,11 @@
           "russian": "ревность",
           "transcription": "[ди АЙ-фер-зухт]",
           "sentence": "Im Feldlager vor Dover grollt Goneril gegen Regan: Die Eifersucht verzehrt mich von innen.",
-          "sentence_translation": "В поле под Дувром Гонериль злится на Регану: Ревность пожирает меня изнутри."
+          "sentence_translation": "В поле под Дувром Гонериль злится на Регану: Ревность пожирает меня изнутри.",
+          "sentence_parts": [
+            "Im Feldlager vor Dover grollt Goneril gegen Regan: ",
+            " verzehrt mich von innen."
+          ]
         },
         {
           "german": "rivalisieren",
@@ -507,14 +575,22 @@
           "russian": "устранять",
           "transcription": "[бе-ЗАЙ-ти-ген]",
           "sentence": "Im Feldlager vor Dover grollt Goneril gegen Regan: Ich muss meine Schwester beseitigen.",
-          "sentence_translation": "В поле под Дувром Гонериль злится на Регану: Я должна устранить свою сестру."
+          "sentence_translation": "В поле под Дувром Гонериль злится на Регану: Я должна устранить свою сестру.",
+          "sentence_parts": [
+            "Im Feldlager vor Dover grollt Goneril gegen Regan: Ich muss meine Schwester ",
+            "."
+          ]
         },
         {
           "german": "das Gift",
           "russian": "яд",
           "transcription": "[дас ГИФТ]",
           "sentence": "Im Feldlager vor Dover grollt Goneril gegen Regan: Das Gift ist bereit für meine Schwester.",
-          "sentence_translation": "В поле под Дувром Гонериль злится на Регану: Яд готов для моей сестры."
+          "sentence_translation": "В поле под Дувром Гонериль злится на Регану: Яд готов для моей сестры.",
+          "sentence_parts": [
+            "Im Feldlager vor Dover grollt Goneril gegen Regan: ",
+            " ist bereit für meine Schwester."
+          ]
         },
         {
           "german": "die Intrige",
@@ -528,7 +604,11 @@
           "russian": "убивать",
           "transcription": "[МОР-ден]",
           "sentence": "Im Feldlager vor Dover grollt Goneril gegen Regan: Ich bin bereit zu morden für meine Lust.",
-          "sentence_translation": "В поле под Дувром Гонериль злится на Регану: Я готова убивать ради своей страсти."
+          "sentence_translation": "В поле под Дувром Гонериль злится на Регану: Я готова убивать ради своей страсти.",
+          "sentence_parts": [
+            "Im Feldlager vor Dover grollt Goneril gegen Regan: Ich bin bereit zu ",
+            " für meine Lust."
+          ]
         }
       ],
       "quizzes": [
@@ -579,7 +659,11 @@
           "russian": "отчаяние",
           "transcription": "[ди фер-ЦВАЙ-флунг]",
           "sentence": "Allein in ihrem Zelt nach Regans Tod flüstert Goneril: Die Verzweiflung führt mich zum Tod.",
-          "sentence_translation": "Одна в своём шатре после смерти Реганы Гонериль шепчет: Отчаяние ведёт меня к смерти."
+          "sentence_translation": "Одна в своём шатре после смерти Реганы Гонериль шепчет: Отчаяние ведёт меня к смерти.",
+          "sentence_parts": [
+            "Allein in ihrem Zelt nach Regans Tod flüstert Goneril: ",
+            " führt mich zum Tod."
+          ]
         },
         {
           "german": "sterben",
@@ -593,7 +677,11 @@
           "russian": "вина",
           "transcription": "[ди ШУЛЬД]",
           "sentence": "Allein in ihrem Zelt nach Regans Tod flüstert Goneril: Die Schuld erdrückt mich am Ende.",
-          "sentence_translation": "Одна в своём шатре после смерти Реганы Гонериль шепчет: Вина давит меня в конце."
+          "sentence_translation": "Одна в своём шатре после смерти Реганы Гонериль шепчет: Вина давит меня в конце.",
+          "sentence_parts": [
+            "Allein in ihrem Zelt nach Regans Tod flüstert Goneril: ",
+            " erdrückt mich am Ende."
+          ]
         },
         {
           "german": "vernichten",
@@ -607,7 +695,11 @@
           "russian": "погибель",
           "transcription": "[дас фер-ДЕР-бен]",
           "sentence": "Allein in ihrem Zelt nach Regans Tod flüstert Goneril: Das Verderben holt mich ein.",
-          "sentence_translation": "Одна в своём шатре после смерти Реганы Гонериль шепчет: Погибель настигает меня."
+          "sentence_translation": "Одна в своём шатре после смерти Реганы Гонериль шепчет: Погибель настигает меня.",
+          "sentence_parts": [
+            "Allein in ihrem Zelt nach Regans Tod flüstert Goneril: ",
+            " holt mich ein."
+          ]
         },
         {
           "german": "bereuen",
@@ -621,7 +713,11 @@
           "russian": "ад",
           "transcription": "[ди ХЁ-ле]",
           "sentence": "Allein in ihrem Zelt nach Regans Tod flüstert Goneril: Die Hölle wartet auf meine schwarze Seele.",
-          "sentence_translation": "Одна в своём шатре после смерти Реганы Гонериль шепчет: Ад ждёт мою чёрную душу."
+          "sentence_translation": "Одна в своём шатре после смерти Реганы Гонериль шепчет: Ад ждёт мою чёрную душу.",
+          "sentence_parts": [
+            "Allein in ihrem Zelt nach Regans Tod flüstert Goneril: ",
+            " wartet auf meine schwarze Seele."
+          ]
         }
       ],
       "quizzes": [

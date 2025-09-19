@@ -29,7 +29,11 @@
           "russian": "брак",
           "transcription": "[ди Э-е]",
           "sentence": "Im Schloss von Goneril am Hof König Lears gesteht Albany: Die Ehe bindet mich an eine grausame Frau.",
-          "sentence_translation": "Во дворце Гонериль при дворе короля Лира признаётся Олбани: Брак связывает меня с жестокой женой."
+          "sentence_translation": "Во дворце Гонериль при дворе короля Лира признаётся Олбани: Брак связывает меня с жестокой женой.",
+          "sentence_parts": [
+            "Im Schloss von Goneril am Hof König Lears gesteht Albany: ",
+            " bindet mich an eine grausame Frau."
+          ]
         },
         {
           "german": "dulden",
@@ -43,7 +47,11 @@
           "russian": "пассивный",
           "transcription": "[па-СИФ]",
           "sentence": "Im Schloss von Goneril am Hof König Lears gesteht Albany: Passiv schaue ich dem Unrecht zu.",
-          "sentence_translation": "Во дворце Гонериль при дворе короля Лира признаётся Олбани: Пассивно я наблюдаю за несправедливостью."
+          "sentence_translation": "Во дворце Гонериль при дворе короля Лира признаётся Олбани: Пассивно я наблюдаю за несправедливостью.",
+          "sentence_parts": [
+            "Im Schloss von Goneril am Hof König Lears gesteht Albany: ",
+            " schaue ich dem Unrecht zu."
+          ]
         },
         {
           "german": "nachgeben",
@@ -64,7 +72,11 @@
           "russian": "мягкий",
           "transcription": "[МИЛЬД]",
           "sentence": "Im Schloss von Goneril am Hof König Lears gesteht Albany: Meine milde Art wird als Schwäche gesehen.",
-          "sentence_translation": "Во дворце Гонериль при дворе короля Лира признаётся Олбани: Моя мягкость воспринимается как слабость."
+          "sentence_translation": "Во дворце Гонериль при дворе короля Лира признаётся Олбани: Моя мягкость воспринимается как слабость.",
+          "sentence_parts": [
+            "Im Schloss von Goneril am Hof König Lears gesteht Albany: Meine ",
+            "e Art wird als Schwäche gesehen."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -108,7 +120,11 @@
           "russian": "сомнение",
           "transcription": "[дер ЦВАЙ-фель]",
           "sentence": "Nach Cordelias Verbannung flüstert Albany in den stillen Fluren seines Schlosses: Der Zweifel an ihrer Güte wächst in mir.",
-          "sentence_translation": "После изгнания Корделии Олбани шепчет в тихих коридорах своего замка: Сомнение в её доброте растёт во мне."
+          "sentence_translation": "После изгнания Корделии Олбани шепчет в тихих коридорах своего замка: Сомнение в её доброте растёт во мне.",
+          "sentence_parts": [
+            "Nach Cordelias Verbannung flüstert Albany in den stillen Fluren seines Schlosses: ",
+            " an ihrer Güte wächst in mir."
+          ]
         },
         {
           "german": "das Gewissen",
@@ -129,7 +145,11 @@
           "russian": "подвергать сомнению",
           "transcription": "[ХИН-тер-фра-ген]",
           "sentence": "Nach Cordelias Verbannung flüstert Albany in den stillen Fluren seines Schlosses: Ich beginne ihre Taten zu hinterfragen.",
-          "sentence_translation": "После изгнания Корделии Олбани шепчет в тихих коридорах своего замка: Я начинаю подвергать сомнению её поступки."
+          "sentence_translation": "После изгнания Корделии Олбани шепчет в тихих коридорах своего замка: Я начинаю подвергать сомнению её поступки.",
+          "sentence_parts": [
+            "Nach Cordelias Verbannung flüstert Albany in den stillen Fluren seines Schlosses: Ich beginne ihre Taten zu ",
+            "."
+          ]
         },
         {
           "german": "beunruhigen",
@@ -143,7 +163,11 @@
           "russian": "неуверенный",
           "transcription": "[УН-зи-хер]",
           "sentence": "Nach Cordelias Verbannung flüstert Albany in den stillen Fluren seines Schlosses: Ich werde unsicher in meinem Schweigen.",
-          "sentence_translation": "После изгнания Корделии Олбани шепчет в тихих коридорах своего замка: Я становлюсь неуверенным в своём молчании."
+          "sentence_translation": "После изгнания Корделии Олбани шепчет в тихих коридорах своего замка: Я становлюсь неуверенным в своём молчании.",
+          "sentence_parts": [
+            "Nach Cordelias Verbannung flüstert Albany in den stillen Fluren seines Schlosses: Ich werde ",
+            " in meinem Schweigen."
+          ]
         },
         {
           "german": "grübeln",
@@ -194,7 +218,11 @@
           "russian": "осознание",
           "transcription": "[ди ер-КЕНТ-нис]",
           "sentence": "Als Gonerils Grausamkeit vor König Lear offenbart wird, erwacht Albany: Die Erkenntnis ihrer Bosheit erschüttert mich.",
-          "sentence_translation": "Когда жестокость Гонериль раскрывается перед королём Лиром, Олбани пробуждается: Осознание её злобы потрясает меня."
+          "sentence_translation": "Когда жестокость Гонериль раскрывается перед королём Лиром, Олбани пробуждается: Осознание её злобы потрясает меня.",
+          "sentence_parts": [
+            "Als Gonerils Grausamkeit vor König Lear offenbart wird, erwacht Albany: ",
+            " ihrer Bosheit erschüttert mich."
+          ]
         },
         {
           "german": "das Entsetzen",
@@ -222,7 +250,11 @@
           "russian": "пугаться",
           "transcription": "[ер-ШРЕК-кен]",
           "sentence": "Als Gonerils Grausamkeit vor König Lear offenbart wird, erwacht Albany: Ihre Taten erschrecken mein gutes Herz.",
-          "sentence_translation": "Когда жестокость Гонериль раскрывается перед королём Лиром, Олбани пробуждается: Её поступки пугают моё доброе сердце."
+          "sentence_translation": "Когда жестокость Гонериль раскрывается перед королём Лиром, Олбани пробуждается: Её поступки пугают моё доброе сердце.",
+          "sentence_parts": [
+            "Als Gonerils Grausamkeit vor König Lear offenbart wird, erwacht Albany: Ihre Taten ",
+            " mein gutes Herz."
+          ]
         },
         {
           "german": "aufwachen",
@@ -287,7 +319,11 @@
           "russian": "спор",
           "transcription": "[дер ШТРАЙТ]",
           "sentence": "Im Saal, in dem Lear gedemütigt wurde, stellt Albany seine Frau: Der Streit mit meiner Frau eskaliert.",
-          "sentence_translation": "В зале, где унижали Лира, Олбани бросает вызов своей жене: Спор с моей женой обостряется."
+          "sentence_translation": "В зале, где унижали Лира, Олбани бросает вызов своей жене: Спор с моей женой обостряется.",
+          "sentence_parts": [
+            "Im Saal, in dem Lear gedemütigt wurde, stellt Albany seine Frau: ",
+            " mit meiner Frau eskaliert."
+          ]
         },
         {
           "german": "der Mut",
@@ -373,7 +409,11 @@
           "russian": "мораль",
           "transcription": "[ди мо-РАЛЬ]",
           "sentence": "Vor den erschütterten Höflingen Lears verkündet Albany: Die Moral leitet nun meine Entscheidungen.",
-          "sentence_translation": "Перед потрясёнными придворными Лира Олбани заявляет: Мораль теперь руководит моими решениями."
+          "sentence_translation": "Перед потрясёнными придворными Лира Олбани заявляет: Мораль теперь руководит моими решениями.",
+          "sentence_parts": [
+            "Vor den erschütterten Höflingen Lears verkündet Albany: ",
+            " leitet nun meine Entscheidungen."
+          ]
         },
         {
           "german": "die Gerechtigkeit",
@@ -401,7 +441,11 @@
           "russian": "праведный",
           "transcription": "[РЕХТ-ша-фен]",
           "sentence": "Vor den erschütterten Höflingen Lears verkündet Albany: Ich will rechtschaffen leben und handeln.",
-          "sentence_translation": "Перед потрясёнными придворными Лира Олбани заявляет: Я хочу жить и действовать праведно."
+          "sentence_translation": "Перед потрясёнными придворными Лира Олбани заявляет: Я хочу жить и действовать праведно.",
+          "sentence_parts": [
+            "Vor den erschütterten Höflingen Lears verkündet Albany: Ich will ",
+            " leben und handeln."
+          ]
         },
         {
           "german": "das Prinzip",
@@ -422,7 +466,11 @@
           "russian": "добродетель",
           "transcription": "[ди ТУ-генд]",
           "sentence": "Vor den erschütterten Höflingen Lears verkündet Albany: Die Tugend wird mein Leitstern sein.",
-          "sentence_translation": "Перед потрясёнными придворными Лира Олбани заявляет: Добродетель будет моей путеводной звездой."
+          "sentence_translation": "Перед потрясёнными придворными Лира Олбани заявляет: Добродетель будет моей путеводной звездой.",
+          "sentence_parts": [
+            "Vor den erschütterten Höflingen Lears verkündet Albany: ",
+            " wird mein Leitstern sein."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -466,14 +514,22 @@
           "russian": "борьба",
           "transcription": "[дер КАМПФ]",
           "sentence": "An Lears verwaistem Hof sammelt Albany die Getreuen: Der Kampf für das Recht beginnt jetzt.",
-          "sentence_translation": "При опустевшем дворе Лира Олбани собирает верных: Борьба за право начинается сейчас."
+          "sentence_translation": "При опустевшем дворе Лира Олбани собирает верных: Борьба за право начинается сейчас.",
+          "sentence_parts": [
+            "An Lears verwaistem Hof sammelt Albany die Getreuen: ",
+            " für das Recht beginnt jetzt."
+          ]
         },
         {
           "german": "das Recht",
           "russian": "право",
           "transcription": "[дас РЕХТ]",
           "sentence": "An Lears verwaistem Hof sammelt Albany die Getreuen: Das Recht muss über das Unrecht siegen.",
-          "sentence_translation": "При опустевшем дворе Лира Олбани собирает верных: Право должно победить неправду."
+          "sentence_translation": "При опустевшем дворе Лира Олбани собирает верных: Право должно победить неправду.",
+          "sentence_parts": [
+            "An Lears verwaistem Hof sammelt Albany die Getreuen: ",
+            " muss über das Unrecht siegen."
+          ]
         },
         {
           "german": "die Güte",
@@ -494,14 +550,22 @@
           "russian": "судить",
           "transcription": "[РИХ-тен]",
           "sentence": "An Lears verwaistem Hof sammelt Albany die Getreuen: Gerecht will ich über die Verbrecher richten.",
-          "sentence_translation": "При опустевшем дворе Лира Олбани собирает верных: Справедливо я хочу судить преступников."
+          "sentence_translation": "При опустевшем дворе Лира Олбани собирает верных: Справедливо я хочу судить преступников.",
+          "sentence_parts": [
+            "An Lears verwaistem Hof sammelt Albany die Getreuen: Gerecht will ich über die Verbrecher ",
+            "."
+          ]
         },
         {
           "german": "beschützen",
           "russian": "защищать",
           "transcription": "[бе-ШЮ-цен]",
           "sentence": "An Lears verwaistem Hof sammelt Albany die Getreuen: Die Unschuldigen will ich beschützen.",
-          "sentence_translation": "При опустевшем дворе Лира Олбани собирает верных: Невинных я хочу защитить."
+          "sentence_translation": "При опустевшем дворе Лира Олбани собирает верных: Невинных я хочу защитить.",
+          "sentence_parts": [
+            "An Lears verwaistem Hof sammelt Albany die Getreuen: Die Unschuldigen will ich ",
+            "."
+          ]
         },
         {
           "german": "eingreifen",
@@ -552,7 +616,11 @@
           "russian": "правление",
           "transcription": "[ди ХЕР-шафт]",
           "sentence": "Nach der Tragödie von Dover übernimmt Albany im Thronsaal Lears: Die Herrschaft fällt nun in meine Hände.",
-          "sentence_translation": "После трагедии в Дувре Олбани принимает власть в тронном зале Лира: Правление теперь переходит в мои руки."
+          "sentence_translation": "После трагедии в Дувре Олбани принимает власть в тронном зале Лира: Правление теперь переходит в мои руки.",
+          "sentence_parts": [
+            "Nach der Tragödie von Dover übernimmt Albany im Thronsaal Lears: ",
+            " fällt nun in meine Hände."
+          ]
         },
         {
           "german": "die Weisheit",
@@ -587,21 +655,33 @@
           "russian": "обновлять",
           "transcription": "[ер-НОЙ-ерн]",
           "sentence": "Nach der Tragödie von Dover übernimmt Albany im Thronsaal Lears: Das Reich will ich erneuern und heilen.",
-          "sentence_translation": "После трагедии в Дувре Олбани принимает власть в тронном зале Лира: Королевство я хочу обновить и исцелить."
+          "sentence_translation": "После трагедии в Дувре Олбани принимает власть в тронном зале Лира: Королевство я хочу обновить и исцелить.",
+          "sentence_parts": [
+            "Nach der Tragödie von Dover übernimmt Albany im Thronsaal Lears: Das Reich will ich ",
+            " und heilen."
+          ]
         },
         {
           "german": "versöhnen",
           "russian": "примирять",
           "transcription": "[фер-ЗЁ-нен]",
           "sentence": "Nach der Tragödie von Dover übernimmt Albany im Thronsaal Lears: Ich will die Getrennten versöhnen.",
-          "sentence_translation": "После трагедии в Дувре Олбани принимает власть в тронном зале Лира: Я хочу примирить разделённых."
+          "sentence_translation": "После трагедии в Дувре Олбани принимает власть в тронном зале Лира: Я хочу примирить разделённых.",
+          "sentence_parts": [
+            "Nach der Tragödie von Dover übernimmt Albany im Thronsaal Lears: Ich will die Getrennten ",
+            "."
+          ]
         },
         {
           "german": "der Friede",
           "russian": "мир",
           "transcription": "[дер ФРИ-де]",
           "sentence": "Nach der Tragödie von Dover übernimmt Albany im Thronsaal Lears: Der Friede soll wieder ins Land kommen.",
-          "sentence_translation": "После трагедии в Дувре Олбани принимает власть в тронном зале Лира: Мир должен вернуться в страну."
+          "sentence_translation": "После трагедии в Дувре Олбани принимает власть в тронном зале Лира: Мир должен вернуться в страну.",
+          "sentence_parts": [
+            "Nach der Tragödie von Dover übernimmt Albany im Thronsaal Lears: ",
+            " soll wieder ins Land kommen."
+          ]
         }
       ],
       "theatrical_scene": {

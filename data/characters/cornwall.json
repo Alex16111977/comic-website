@@ -22,7 +22,11 @@
           "russian": "жадность",
           "transcription": "[ди ГИР]",
           "sentence": "In Glosters Schloss plant Herzog Cornwall: Die Gier nach Macht verzehrt meine Seele.",
-          "sentence_translation": "В замке Глостера герцог Корнуолл замышляет: Жадность к власти пожирает мою душу."
+          "sentence_translation": "В замке Глостера герцог Корнуолл замышляет: Жадность к власти пожирает мою душу.",
+          "sentence_parts": [
+            "In Glosters Schloss plant Herzog Cornwall: ",
+            " nach Macht verzehrt meine Seele."
+          ]
         },
         {
           "german": "streben",
@@ -50,14 +54,22 @@
           "russian": "жадный",
           "transcription": "[ГИ-риг]",
           "sentence": "In Glosters Schloss plant Herzog Cornwall: Gierig greife ich nach jedem Stück Macht.",
-          "sentence_translation": "В замке Глостера герцог Корнуолл замышляет: Жадно я хватаюсь за каждый кусок власти."
+          "sentence_translation": "В замке Глостера герцог Корнуолл замышляет: Жадно я хватаюсь за каждый кусок власти.",
+          "sentence_parts": [
+            "In Glosters Schloss plant Herzog Cornwall: ",
+            " greife ich nach jedem Stück Macht."
+          ]
         },
         {
           "german": "die Herrschsucht",
           "russian": "властолюбие",
           "transcription": "[ди ХЕР-зухт]",
           "sentence": "In Glosters Schloss plant Herzog Cornwall: Die Herrschsucht bestimmt all meine Taten.",
-          "sentence_translation": "В замке Глостера герцог Корнуолл замышляет: Властолюбие определяет все мои поступки."
+          "sentence_translation": "В замке Глостера герцог Корнуолл замышляет: Властолюбие определяет все мои поступки.",
+          "sentence_parts": [
+            "In Glosters Schloss plant Herzog Cornwall: ",
+            " bestimmt all meine Taten."
+          ]
         },
         {
           "german": "ergreifen",
@@ -108,7 +120,11 @@
           "russian": "жестокость",
           "transcription": "[ди ГРАУ-зам-кайт]",
           "sentence": "In Regans Gemächern zeigt Cornwall seiner Frau die Härte: Die Grausamkeit meiner Frau gefällt mir.",
-          "sentence_translation": "В покоях Реганы Корнуолл демонстрирует жене свою жестокость: Жестокость моей жены мне нравится."
+          "sentence_translation": "В покоях Реганы Корнуолл демонстрирует жене свою жестокость: Жестокость моей жены мне нравится.",
+          "sentence_parts": [
+            "In Regans Gemächern zeigt Cornwall seiner Frau die Härte: ",
+            " meiner Frau gefällt mir."
+          ]
         },
         {
           "german": "die Bosheit",
@@ -150,7 +166,11 @@
           "russian": "суровость",
           "transcription": "[ди ХЕР-те]",
           "sentence": "In Regans Gemächern zeigt Cornwall seiner Frau die Härte: Mit eiserner Härte regieren wir zusammen.",
-          "sentence_translation": "В покоях Реганы Корнуолл демонстрирует жене свою жестокость: С железной суровостью мы правим вместе."
+          "sentence_translation": "В покоях Реганы Корнуолл демонстрирует жене свою жестокость: С железной суровостью мы правим вместе.",
+          "sentence_parts": [
+            "In Regans Gemächern zeigt Cornwall seiner Frau ",
+            ": Mit eiserner Härte regieren wir zusammen."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -201,7 +221,11 @@
           "russian": "угнетение",
           "transcription": "[ди ун-тер-ДРЮ-кунг]",
           "sentence": "Während Lear vor der Burg um Einlass fleht, prahlt Cornwall: Die Unterdrückung ist mein Herrschaftsmittel.",
-          "sentence_translation": "Пока Лир умоляет впустить его в замок, Корнуолл хвастается: Угнетение - моё средство правления."
+          "sentence_translation": "Пока Лир умоляет впустить его в замок, Корнуолл хвастается: Угнетение - моё средство правления.",
+          "sentence_parts": [
+            "Während Lear vor der Burg um Einlass fleht, prahlt Cornwall: ",
+            " ist mein Herrschaftsmittel."
+          ]
         },
         {
           "german": "die Furcht",
@@ -243,7 +267,11 @@
           "russian": "брутальный",
           "transcription": "[бру-ТАЛЬ]",
           "sentence": "Während Lear vor der Burg um Einlass fleht, prahlt Cornwall: Brutal zerschlage ich jeden Widerstand.",
-          "sentence_translation": "Пока Лир умоляет впустить его в замок, Корнуолл хвастается: Брутально я сокрушаю любое сопротивление."
+          "sentence_translation": "Пока Лир умоляет впустить его в замок, Корнуолл хвастается: Брутально я сокрушаю любое сопротивление.",
+          "sentence_parts": [
+            "Während Lear vor der Burg um Einlass fleht, prahlt Cornwall: ",
+            " zerschlage ich jeden Widerstand."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -287,7 +315,11 @@
           "russian": "наказание",
           "transcription": "[ди ШТРА-фе]",
           "sentence": "Vor den Mauern von Glosters Burg befiehlt Cornwall: Die Strafe für Widerspruch ist hart.",
-          "sentence_translation": "Перед стенами замка Глостера Корнуолл приказывает: Наказание за возражение сурово."
+          "sentence_translation": "Перед стенами замка Глостера Корнуолл приказывает: Наказание за возражение сурово.",
+          "sentence_parts": [
+            "Vor den Mauern von Glosters Burg befiehlt Cornwall: ",
+            " für Widerspruch ist hart."
+          ]
         },
         {
           "german": "der Zorn",
@@ -329,7 +361,11 @@
           "russian": "мучить",
           "transcription": "[КВЕ-лен]",
           "sentence": "Vor den Mauern von Glosters Burg befiehlt Cornwall: Es bereitet mir Freude, ihn zu quälen.",
-          "sentence_translation": "Перед стенами замка Глостера Корнуолл приказывает: Мне доставляет радость мучить его."
+          "sentence_translation": "Перед стенами замка Глостера Корнуолл приказывает: Мне доставляет радость мучить его.",
+          "sentence_parts": [
+            "Vor den Mauern von Glosters Burg befiehlt Cornwall: Es bereitet mir Freude, ihn zu ",
+            "."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -373,7 +409,11 @@
           "russian": "пытка",
           "transcription": "[ди ФОЛЬ-тер]",
           "sentence": "Im Kerker von Gloster bereitet Cornwall die Folter: Die Folter ist mein liebstes Werkzeug.",
-          "sentence_translation": "В застенках Глостера Корнуолл готовит пытку: Пытка - мой любимый инструмент."
+          "sentence_translation": "В застенках Глостера Корнуолл готовит пытку: Пытка - мой любимый инструмент.",
+          "sentence_parts": [
+            "Im Kerker von Gloster bereitet Cornwall ",
+            ": Die Folter ist mein liebstes Werkzeug."
+          ]
         },
         {
           "german": "der Sadismus",
@@ -387,7 +427,11 @@
           "russian": "кровь",
           "transcription": "[дас БЛУТ]",
           "sentence": "Im Kerker von Gloster bereitet Cornwall die Folter: Das Blut des Grafen befleckt meine Hände.",
-          "sentence_translation": "В застенках Глостера Корнуолл готовит пытку: Кровь графа пятнает мои руки."
+          "sentence_translation": "В застенках Глостера Корнуолл готовит пытку: Кровь графа пятнает мои руки.",
+          "sentence_parts": [
+            "Im Kerker von Gloster bereitet Cornwall die Folter: ",
+            " des Grafen befleckt meine Hände."
+          ]
         },
         {
           "german": "foltern",
@@ -466,28 +510,44 @@
           "russian": "рана",
           "transcription": "[ди ВУН-де]",
           "sentence": "Nachdem Gloucester geblendet ist, taumelt Cornwall blutend durch den Hof: Die Wunde brennt wie Feuer in meinem Leib.",
-          "sentence_translation": "Осле слепления Глостера Корнуолл, истекая кровью, шатается по двору: Рана горит как огонь в моём теле."
+          "sentence_translation": "Осле слепления Глостера Корнуолл, истекая кровью, шатается по двору: Рана горит как огонь в моём теле.",
+          "sentence_parts": [
+            "Nachdem Gloucester geblendet ist, taumelt Cornwall blutend durch den Hof: ",
+            " brennt wie Feuer in meinem Leib."
+          ]
         },
         {
           "german": "der Schmerz",
           "russian": "боль",
           "transcription": "[дер ШМЕРЦ]",
           "sentence": "Nachdem Gloucester geblendet ist, taumelt Cornwall blutend durch den Hof: Der Schmerz durchbohrt meinen Körper.",
-          "sentence_translation": "Осле слепления Глостера Корнуолл, истекая кровью, шатается по двору: Боль пронзает моё тело."
+          "sentence_translation": "Осле слепления Глостера Корнуолл, истекая кровью, шатается по двору: Боль пронзает моё тело.",
+          "sentence_parts": [
+            "Nachdem Gloucester geblendet ist, taumelt Cornwall blutend durch den Hof: ",
+            " durchbohrt meinen Körper."
+          ]
         },
         {
           "german": "die Überraschung",
           "russian": "удивление",
           "transcription": "[ди ю-бер-РА-шунг]",
           "sentence": "Nachdem Gloucester geblendet ist, taumelt Cornwall blutend durch den Hof: Die Überraschung des Angriffs schockiert mich.",
-          "sentence_translation": "Осле слепления Глостера Корнуолл, истекая кровью, шатается по двору: Неожиданность нападения шокирует меня."
+          "sentence_translation": "Осле слепления Глостера Корнуолл, истекая кровью, шатается по двору: Неожиданность нападения шокирует меня.",
+          "sentence_parts": [
+            "Nachdem Gloucester geblendet ist, taumelt Cornwall blutend durch den Hof: ",
+            " des Angriffs schockiert mich."
+          ]
         },
         {
           "german": "bluten",
           "russian": "кровоточить",
           "transcription": "[БЛУ-тен]",
           "sentence": "Nachdem Gloucester geblendet ist, taumelt Cornwall blutend durch den Hof: Ich blute wie ein geschlachtetes Schwein.",
-          "sentence_translation": "Осле слепления Глостера Корнуолл, истекая кровью, шатается по двору: Я кровоточу как зарезанная свинья."
+          "sentence_translation": "Осле слепления Глостера Корнуолл, истекая кровью, шатается по двору: Я кровоточу как зарезанная свинья.",
+          "sentence_parts": [
+            "Nachdem Gloucester geblendet ist, taumelt Cornwall ",
+            "d durch den Hof: Ich blute wie ein geschlachtetes Schwein."
+          ]
         },
         {
           "german": "verwundet",
@@ -552,14 +612,22 @@
           "russian": "смерть",
           "transcription": "[дер ТОД]",
           "sentence": "Sterbend in Regans Gemächern knurrt Cornwall: Der Tod kommt für mich zu früh.",
-          "sentence_translation": "Умирая в покоях Реганы, Корнуолл рычит: Смерть приходит ко мне слишком рано."
+          "sentence_translation": "Умирая в покоях Реганы, Корнуолл рычит: Смерть приходит ко мне слишком рано.",
+          "sentence_parts": [
+            "Sterbend in Regans Gemächern knurrt Cornwall: ",
+            " kommt für mich zu früh."
+          ]
         },
         {
           "german": "die Vergeltung",
           "russian": "возмездие",
           "transcription": "[ди фер-ГЕЛЬ-тунг]",
           "sentence": "Sterbend in Regans Gemächern knurrt Cornwall: Die Vergeltung ereilt mich unerwartet.",
-          "sentence_translation": "Умирая в покоях Реганы, Корнуолл рычит: Возмездие настигает меня неожиданно."
+          "sentence_translation": "Умирая в покоях Реганы, Корнуолл рычит: Возмездие настигает меня неожиданно.",
+          "sentence_parts": [
+            "Sterbend in Regans Gemächern knurrt Cornwall: ",
+            " ereilt mich unerwartet."
+          ]
         },
         {
           "german": "das Ende",
@@ -573,7 +641,11 @@
           "russian": "умирать",
           "transcription": "[ШТЕР-бен]",
           "sentence": "Sterbend in Regans Gemächern knurrt Cornwall: Ich sterbe ohne Reue für meine Taten.",
-          "sentence_translation": "Умирая в покоях Реганы, Корнуолл рычит: Я умираю без раскаяния за свои дела."
+          "sentence_translation": "Умирая в покоях Реганы, Корнуолл рычит: Я умираю без раскаяния за свои дела.",
+          "sentence_parts": [
+            "",
+            "d in Regans Gemächern knurrt Cornwall: Ich sterbe ohne Reue für meine Taten."
+          ]
         },
         {
           "german": "verenden",
@@ -594,7 +666,11 @@
           "russian": "хрипеть",
           "transcription": "[РЁ-хельн]",
           "sentence": "Sterbend in Regans Gemächern knurrt Cornwall: Röchelnd hauche ich mein Leben aus.",
-          "sentence_translation": "Умирая в покоях Реганы, Корнуолл рычит: Хрипя, я испускаю дух."
+          "sentence_translation": "Умирая в покоях Реганы, Корнуолл рычит: Хрипя, я испускаю дух.",
+          "sentence_parts": [
+            "Sterbend in Regans Gemächern knurrt Cornwall: ",
+            "d hauche ich mein Leben aus."
+          ]
         },
         {
           "german": "die Strafe",

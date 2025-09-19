@@ -12,6 +12,7 @@ class LiraJSGenerator:
         
         # Build vocabulary object from character data using JSON serialization
         phase_vocabularies = {}
+        phase_constructor_data = {}
 
         for phase in character_data.get('journey_phases', []):
             phase_id = phase.get('id')
@@ -19,7 +20,8 @@ class LiraJSGenerator:
                 continue
 
             words = []
-            for word in phase.get('vocabulary', []):
+            constructor_items = []
+            for index, word in enumerate(phase.get('vocabulary', [])):
                 themes = word.get('themes') or []
                 if isinstance(themes, str):
                     themes = [themes]
@@ -45,18 +47,36 @@ class LiraJSGenerator:
                 elif not isinstance(collocations, list):
                     collocations = []
 
+                sentence_parts_raw = word.get('sentence_parts') or []
+                if isinstance(sentence_parts_raw, list):
+                    sentence_parts = [
+                        part for part in sentence_parts_raw if isinstance(part, str)
+                    ]
+                else:
+                    sentence_parts = []
+
                 words.append({
                     'word': word.get('german', ''),
                     'translation': word.get('russian', ''),
                     'transcription': word.get('transcription', ''),
                     'sentence': word.get('sentence', ''),
                     'sentenceTranslation': word.get('sentence_translation', ''),
+                    'sentenceParts': sentence_parts,
                     'visual_hint': word.get('visual_hint', ''),
                     'themes': themes,
                     'wordFamily': word_family,  # Для relations
                     'synonyms': synonyms,        # Для relations
                     'collocations': collocations # Для relations
                 })
+
+                if sentence_parts and len(sentence_parts) >= 2:
+                    constructor_items.append({
+                        'uid': f"{phase_id}-{index}",
+                        'word': word.get('german', ''),
+                        'sentence': word.get('sentence', ''),
+                        'sentenceTranslation': word.get('sentence_translation', ''),
+                        'sentenceParts': sentence_parts,
+                    })
 
             quizzes = []
             for quiz in phase.get('quizzes', []):
@@ -82,13 +102,22 @@ class LiraJSGenerator:
                 'words': words,
                 'quizzes': quizzes,
                 'quizAttempts': {},
+                'constructorItems': constructor_items,
             }
+
+            if constructor_items:
+                phase_constructor_data[phase_id] = constructor_items
 
         character_id = character_data.get('id') or character_data.get('slug') or 'journey'
 
         vocab_js = (
             "const phaseVocabularies = "
             f"{json.dumps(phase_vocabularies, ensure_ascii=False, indent=4)};\n\n"
+        )
+
+        vocab_js += (
+            "const phaseConstructorData = "
+            f"{json.dumps(phase_constructor_data, ensure_ascii=False, indent=4)};\n\n"
         )
 
         vocab_js += f"const characterId = {json.dumps(character_id)};\n"
