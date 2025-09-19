@@ -21,56 +21,85 @@
           "russian": "знать",
           "transcription": "[дер А-дель]",
           "sentence": "Der Adel erwartet von mir ehrenhaftes Verhalten.",
-          "sentence_translation": "Знать ожидает от меня достойного поведения."
+          "sentence_translation": "Знать ожидает от меня достойного поведения.",
+          "answer_forms": [
+            "знать",
+            "знати"
+          ]
         },
         {
           "german": "der Erbe",
           "russian": "наследник",
           "transcription": "[дер ЕР-бе]",
           "sentence": "Als rechtmäßiger Erbe habe ich Pflichten.",
-          "sentence_translation": "Как законный наследник, у меня есть обязанности."
+          "sentence_translation": "Как законный наследник, у меня есть обязанности.",
+          "answer_forms": [
+            "наследник"
+          ]
         },
         {
           "german": "das Königreich",
           "russian": "королевство",
           "transcription": "[дас КЁ-ниг-райх]",
           "sentence": "Ich diene dem Königreich mit Ehre.",
-          "sentence_translation": "Я служу королевству с честью."
+          "sentence_translation": "Я служу королевству с честью.",
+          "answer_forms": [
+            "королевство",
+            "королевству"
+          ]
         },
         {
           "german": "vertrauen",
           "russian": "доверять",
           "transcription": "[фер-ТРАУ-ен]",
           "sentence": "Mein Vater vertraut mir vollkommen.",
-          "sentence_translation": "Мой отец полностью мне доверяет."
+          "sentence_translation": "Мой отец полностью мне доверяет.",
+          "answer_forms": [
+            "доверять",
+            "доверяет"
+          ]
         },
         {
           "german": "die Ehre",
           "russian": "честь",
           "transcription": "[ди Э-ре]",
           "sentence": "Die Ehre der Familie liegt in meinen Händen.",
-          "sentence_translation": "Честь семьи в моих руках."
+          "sentence_translation": "Честь семьи в моих руках.",
+          "answer_forms": [
+            "честь"
+          ]
         },
         {
           "german": "legitim",
           "russian": "законный",
           "transcription": "[ле-ги-ТИМ]",
           "sentence": "Ich bin der legitime Sohn des Grafen.",
-          "sentence_translation": "Я законный сын графа."
+          "sentence_translation": "Я законный сын графа.",
+          "answer_forms": [
+            "законный"
+          ]
         },
         {
           "german": "der Graf",
           "russian": "граф",
           "transcription": "[дер ГРАФ]",
           "sentence": "Mein Vater, der Graf, ist ein edler Mann.",
-          "sentence_translation": "Мой отец, граф, благородный человек."
+          "sentence_translation": "Мой отец, граф, благородный человек.",
+          "answer_forms": [
+            "граф",
+            "графа"
+          ]
         },
         {
           "german": "ahnungslos",
           "russian": "ничего не подозревающий",
           "transcription": "[А-нунгс-лос]",
           "sentence": "Ahnungslos vertraue ich meinem Bruder.",
-          "sentence_translation": "Ничего не подозревая, я доверяю брату."
+          "sentence_translation": "Ничего не подозревая, я доверяю брату.",
+          "answer_forms": [
+            "ничего не подозревающий",
+            "ничего не подозревая"
+          ]
         }
       ]
     },
@@ -92,56 +121,82 @@
           "russian": "бежать",
           "transcription": "[ФЛИ-ен]",
           "sentence": "Ich muss vor falschen Anschuldigungen fliehen.",
-          "sentence_translation": "Я должен бежать от ложных обвинений."
+          "sentence_translation": "Я должен бежать от ложных обвинений.",
+          "answer_forms": [
+            "бежать"
+          ]
         },
         {
           "german": "der Verrat",
           "russian": "предательство",
           "transcription": "[дер фер-РАТ]",
           "sentence": "Der Verrat meines Bruders zerstört mein Leben.",
-          "sentence_translation": "Предательство моего брата разрушает мою жизнь."
+          "sentence_translation": "Предательство моего брата разрушает мою жизнь.",
+          "answer_forms": [
+            "предательство"
+          ]
         },
         {
           "german": "die Gefahr",
           "russian": "опасность",
           "transcription": "[ди ге-ФАР]",
           "sentence": "Die Gefahr lauert überall um mich herum.",
-          "sentence_translation": "Опасность подстерегает меня повсюду."
+          "sentence_translation": "Опасность подстерегает меня повсюду.",
+          "answer_forms": [
+            "опасность"
+          ]
         },
         {
           "german": "verfolgen",
           "russian": "преследовать",
           "transcription": "[фер-ФОЛЬ-ген]",
           "sentence": "Die Soldaten verfolgen mich wie einen Verbrecher.",
-          "sentence_translation": "Солдаты преследуют меня как преступника."
+          "sentence_translation": "Солдаты преследуют меня как преступника.",
+          "answer_forms": [
+            "преследовать",
+            "преследуют"
+          ]
         },
         {
           "german": "verstecken",
           "russian": "прятаться",
           "transcription": "[фер-ШТЕ-кен]",
           "sentence": "Ich muss mich in den Wäldern verstecken.",
-          "sentence_translation": "Я должен прятаться в лесах."
+          "sentence_translation": "Я должен прятаться в лесах.",
+          "answer_forms": [
+            "прятаться",
+            "прячусь"
+          ]
         },
         {
           "german": "die Intrige",
           "russian": "интрига",
           "transcription": "[ди ин-ТРИ-ге]",
           "sentence": "Edmunds Intrige hat mich zum Geächteten gemacht.",
-          "sentence_translation": "Интрига Эдмунда сделала меня изгоем."
+          "sentence_translation": "Интрига Эдмунда сделала меня изгоем.",
+          "answer_forms": [
+            "интрига"
+          ]
         },
         {
           "german": "der Betrug",
           "russian": "обман",
           "transcription": "[дер бе-ТРУГ]",
           "sentence": "Dieser Betrug wird eines Tages aufgedeckt.",
-          "sentence_translation": "Этот обман однажды раскроется."
+          "sentence_translation": "Этот обман однажды раскроется.",
+          "answer_forms": [
+            "обман"
+          ]
         },
         {
           "german": "verbannen",
           "russian": "изгнать",
           "transcription": "[фер-БАН-нен]",
           "sentence": "Mein Vater will mich aus dem Land verbannen.",
-          "sentence_translation": "Мой отец хочет изгнать меня из страны."
+          "sentence_translation": "Мой отец хочет изгнать меня из страны.",
+          "answer_forms": [
+            "изгнать"
+          ]
         }
       ]
     },
@@ -163,56 +218,82 @@
           "russian": "безумие",
           "transcription": "[дер ВАН-зин]",
           "sentence": "Ich spiele den Wahnsinn, um zu überleben.",
-          "sentence_translation": "Я играю безумие, чтобы выжить."
+          "sentence_translation": "Я играю безумие, чтобы выжить.",
+          "answer_forms": [
+            "безумие"
+          ]
         },
         {
           "german": "der Bettler",
           "russian": "нищий",
           "transcription": "[дер БЕТ-лер]",
           "sentence": "Als Bettler bin ich unsichtbar für meine Feinde.",
-          "sentence_translation": "Как нищий, я невидим для врагов."
+          "sentence_translation": "Как нищий, я невидим для врагов.",
+          "answer_forms": [
+            "нищий"
+          ]
         },
         {
           "german": "die Verkleidung",
           "russian": "маскировка",
           "transcription": "[ди фер-КЛАЙ-дунг]",
           "sentence": "Diese Verkleidung ist meine einzige Rettung.",
-          "sentence_translation": "Эта маскировка - моё единственное спасение."
+          "sentence_translation": "Эта маскировка - моё единственное спасение.",
+          "answer_forms": [
+            "маскировка"
+          ]
         },
         {
           "german": "nackt",
           "russian": "голый",
           "transcription": "[НАКТ]",
           "sentence": "Fast nackt wandere ich durch die Wildnis.",
-          "sentence_translation": "Почти голый, я брожу по дикой местности."
+          "sentence_translation": "Почти голый, я брожу по дикой местности.",
+          "answer_forms": [
+            "голый"
+          ]
         },
         {
           "german": "murmeln",
           "russian": "бормотать",
           "transcription": "[МУР-мельн]",
           "sentence": "Ich murmle Unsinn, um verrückt zu wirken.",
-          "sentence_translation": "Я бормочу чепуху, чтобы казаться сумасшедшим."
+          "sentence_translation": "Я бормочу чепуху, чтобы казаться сумасшедшим.",
+          "answer_forms": [
+            "бормотать",
+            "бормочу"
+          ]
         },
         {
           "german": "zittern",
           "russian": "дрожать",
           "transcription": "[ЦИ-терн]",
           "sentence": "Vor Kälte und Angst zittere ich ständig.",
-          "sentence_translation": "От холода и страха я постоянно дрожу."
+          "sentence_translation": "От холода и страха я постоянно дрожу.",
+          "answer_forms": [
+            "дрожать",
+            "дрожу"
+          ]
         },
         {
           "german": "das Elend",
           "russian": "нищета",
           "transcription": "[дас Э-ленд]",
           "sentence": "Im Elend lerne ich die wahre Natur des Menschen.",
-          "sentence_translation": "В нищете я познаю истинную природу человека."
+          "sentence_translation": "В нищете я познаю истинную природу человека.",
+          "answer_forms": [
+            "нищета"
+          ]
         },
         {
           "german": "wahnsinnig",
           "russian": "безумный",
           "transcription": "[ВАН-зи-ниг]",
           "sentence": "Ich gebe vor, wahnsinnig zu sein.",
-          "sentence_translation": "Я притворяюсь безумным."
+          "sentence_translation": "Я притворяюсь безумным.",
+          "answer_forms": [
+            "безумный"
+          ]
         }
       ]
     },
@@ -234,56 +315,85 @@
           "russian": "буря",
           "transcription": "[дер ШТУРМ]",
           "sentence": "Der Sturm tobt über unseren Köpfen.",
-          "sentence_translation": "Буря бушует над нашими головами."
+          "sentence_translation": "Буря бушует над нашими головами.",
+          "answer_forms": [
+            "буря"
+          ]
         },
         {
           "german": "frieren",
           "russian": "мёрзнуть",
           "transcription": "[ФРИ-рен]",
           "sentence": "Wir frieren gemeinsam in dieser kalten Nacht.",
-          "sentence_translation": "Мы мёрзнем вместе в эту холодную ночь."
+          "sentence_translation": "Мы мёрзнем вместе в эту холодную ночь.",
+          "answer_forms": [
+            "мёрзнуть",
+            "мёрзнем"
+          ]
         },
         {
           "german": "leiden",
           "russian": "страдать",
           "transcription": "[ЛАЙ-ден]",
           "sentence": "Der König leidet mehr als ich jemals gelitten habe.",
-          "sentence_translation": "Король страдает больше, чем я когда-либо страдал."
+          "sentence_translation": "Король страдает больше, чем я когда-либо страдал.",
+          "answer_forms": [
+            "страдать",
+            "страдает"
+          ]
         },
         {
           "german": "die Hütte",
           "russian": "хижина",
           "transcription": "[ди ХЮ-те]",
           "sentence": "In dieser armseligen Hütte finden wir Zuflucht.",
-          "sentence_translation": "В этой жалкой хижине мы находим убежище."
+          "sentence_translation": "В этой жалкой хижине мы находим убежище.",
+          "answer_forms": [
+            "хижина",
+            "хижине"
+          ]
         },
         {
           "german": "beschützen",
           "russian": "защищать",
           "transcription": "[бе-ШЮ-цен]",
           "sentence": "Heimlich beschütze ich den wahnsinnigen König.",
-          "sentence_translation": "Тайно я защищаю безумного короля."
+          "sentence_translation": "Тайно я защищаю безумного короля.",
+          "answer_forms": [
+            "защищать",
+            "защищаю"
+          ]
         },
         {
           "german": "begleiten",
           "russian": "сопровождать",
           "transcription": "[бе-ГЛАЙ-тен]",
           "sentence": "Als Tom begleite ich Lear durch seine dunkelste Stunde.",
-          "sentence_translation": "Как Том, я сопровождаю Лира в его самый тёмный час."
+          "sentence_translation": "Как Том, я сопровождаю Лира в его самый тёмный час.",
+          "answer_forms": [
+            "сопровождать",
+            "сопровождаю"
+          ]
         },
         {
           "german": "der Donner",
           "russian": "гром",
           "transcription": "[дер ДО-нер]",
           "sentence": "Der Donner übertönt unsere Schreie.",
-          "sentence_translation": "Гром заглушает наши крики."
+          "sentence_translation": "Гром заглушает наши крики.",
+          "answer_forms": [
+            "гром"
+          ]
         },
         {
           "german": "der Blitz",
           "russian": "молния",
           "transcription": "[дер БЛИЦ]",
           "sentence": "Die Blitze erhellen unser Elend.",
-          "sentence_translation": "Молнии освещают нашу нищету."
+          "sentence_translation": "Молнии освещают нашу нищету.",
+          "answer_forms": [
+            "молния"
+          ]
         }
       ]
     },
@@ -305,56 +415,85 @@
           "russian": "слепой",
           "transcription": "[БЛИНД]",
           "sentence": "Mein blinder Vater erkennt mich nicht.",
-          "sentence_translation": "Мой слепой отец не узнаёт меня."
+          "sentence_translation": "Мой слепой отец не узнаёт меня.",
+          "answer_forms": [
+            "слепой"
+          ]
         },
         {
           "german": "führen",
           "russian": "вести",
           "transcription": "[ФЮ-рен]",
           "sentence": "Ich führe ihn sicher durch die Dunkelheit.",
-          "sentence_translation": "Я веду его безопасно сквозь тьму."
+          "sentence_translation": "Я веду его безопасно сквозь тьму.",
+          "answer_forms": [
+            "вести",
+            "веду"
+          ]
         },
         {
           "german": "die Klippe",
           "russian": "утёс",
           "transcription": "[ди КЛИ-пе]",
           "sentence": "Er glaubt, wir stehen am Rand der Klippe.",
-          "sentence_translation": "Он думает, мы стоим на краю утёса."
+          "sentence_translation": "Он думает, мы стоим на краю утёса.",
+          "answer_forms": [
+            "утёс",
+            "утёса"
+          ]
         },
         {
           "german": "täuschen",
           "russian": "обманывать",
           "transcription": "[ТОЙ-шен]",
           "sentence": "Ich täusche ihn, um sein Leben zu retten.",
-          "sentence_translation": "Я обманываю его, чтобы спасти его жизнь."
+          "sentence_translation": "Я обманываю его, чтобы спасти его жизнь.",
+          "answer_forms": [
+            "обманывать",
+            "обманываю"
+          ]
         },
         {
           "german": "retten",
           "russian": "спасать",
           "transcription": "[РЕ-тен]",
           "sentence": "Mit List will ich meinen Vater retten.",
-          "sentence_translation": "Хитростью я хочу спасти отца."
+          "sentence_translation": "Хитростью я хочу спасти отца.",
+          "answer_forms": [
+            "спасать",
+            "спасти"
+          ]
         },
         {
           "german": "die List",
           "russian": "хитрость",
           "transcription": "[ди ЛИСТ]",
           "sentence": "Meine List bewahrt ihn vor dem Selbstmord.",
-          "sentence_translation": "Моя хитрость спасает его от самоубийства."
+          "sentence_translation": "Моя хитрость спасает его от самоубийства.",
+          "answer_forms": [
+            "хитрость"
+          ]
         },
         {
           "german": "trösten",
           "russian": "утешать",
           "transcription": "[ТРЁС-тен]",
           "sentence": "Als Fremder tröste ich meinen eigenen Vater.",
-          "sentence_translation": "Как чужой, я утешаю собственного отца."
+          "sentence_translation": "Как чужой, я утешаю собственного отца.",
+          "answer_forms": [
+            "утешать",
+            "утешаю"
+          ]
         },
         {
           "german": "die Verzweiflung",
           "russian": "отчаяние",
           "transcription": "[ди фер-ЦВАЙ-флунг]",
           "sentence": "Seine Verzweiflung bricht mir das Herz.",
-          "sentence_translation": "Его отчаяние разбивает мне сердце."
+          "sentence_translation": "Его отчаяние разбивает мне сердце.",
+          "answer_forms": [
+            "отчаяние"
+          ]
         }
       ]
     },
@@ -376,56 +515,82 @@
           "russian": "бой",
           "transcription": "[дер КАМПФ]",
           "sentence": "Der Kampf gegen meinen Bruder ist unvermeidlich.",
-          "sentence_translation": "Бой с моим братом неизбежен."
+          "sentence_translation": "Бой с моим братом неизбежен.",
+          "answer_forms": [
+            "бой"
+          ]
         },
         {
           "german": "das Duell",
           "russian": "дуэль",
           "transcription": "[дас ду-ЭЛЬ]",
           "sentence": "In diesem Duell kämpfe ich für die Gerechtigkeit.",
-          "sentence_translation": "В этой дуэли я сражаюсь за справедливость."
+          "sentence_translation": "В этой дуэли я сражаюсь за справедливость.",
+          "answer_forms": [
+            "дуэль"
+          ]
         },
         {
           "german": "die Rache",
           "russian": "месть",
           "transcription": "[ди РА-хе]",
           "sentence": "Nicht Rache, sondern Gerechtigkeit leitet meine Klinge.",
-          "sentence_translation": "Не месть, а справедливость ведёт мой клинок."
+          "sentence_translation": "Не месть, а справедливость ведёт мой клинок.",
+          "answer_forms": [
+            "месть"
+          ]
         },
         {
           "german": "enthüllen",
           "russian": "разоблачать",
           "transcription": "[энт-ХЮ-лен]",
           "sentence": "Ich enthülle meine wahre Identität.",
-          "sentence_translation": "Я разоблачаю свою истинную личность."
+          "sentence_translation": "Я разоблачаю свою истинную личность.",
+          "answer_forms": [
+            "разоблачать",
+            "разоблачаю"
+          ]
         },
         {
           "german": "siegen",
           "russian": "побеждать",
           "transcription": "[ЗИ-ген]",
           "sentence": "Die Wahrheit wird über die Lüge siegen.",
-          "sentence_translation": "Правда победит ложь."
+          "sentence_translation": "Правда победит ложь.",
+          "answer_forms": [
+            "побеждать",
+            "победить"
+          ]
         },
         {
           "german": "die Gerechtigkeit",
           "russian": "справедливость",
           "transcription": "[ди ге-РЕХ-тиг-кайт]",
           "sentence": "Die Gerechtigkeit fordert diesen Kampf.",
-          "sentence_translation": "Справедливость требует этого боя."
+          "sentence_translation": "Справедливость требует этого боя.",
+          "answer_forms": [
+            "справедливость"
+          ]
         },
         {
           "german": "das Schwert",
           "russian": "меч",
           "transcription": "[дас ШВЕРТ]",
           "sentence": "Mein Schwert ist die Waffe der Wahrheit.",
-          "sentence_translation": "Мой меч - оружие правды."
+          "sentence_translation": "Мой меч - оружие правды.",
+          "answer_forms": [
+            "меч"
+          ]
         },
         {
           "german": "der Bruder",
           "russian": "брат",
           "transcription": "[дер БРУ-дер]",
           "sentence": "Mein Bruder muss für seine Verbrechen büßen.",
-          "sentence_translation": "Мой брат должен поплатиться за свои преступления."
+          "sentence_translation": "Мой брат должен поплатиться за свои преступления.",
+          "answer_forms": [
+            "брат"
+          ]
         }
       ]
     },
@@ -447,56 +612,84 @@
           "russian": "выживать",
           "transcription": "[ю-бер-ЛЕ-бен]",
           "sentence": "Ich habe alle Prüfungen überlebt.",
-          "sentence_translation": "Я пережил все испытания."
+          "sentence_translation": "Я пережил все испытания.",
+          "answer_forms": [
+            "выживать",
+            "выжил"
+          ]
         },
         {
           "german": "erben",
           "russian": "наследовать",
           "transcription": "[ЭР-бен]",
           "sentence": "Nun erbe ich Titel und Verantwortung.",
-          "sentence_translation": "Теперь я наследую титул и ответственность."
+          "sentence_translation": "Теперь я наследую титул и ответственность.",
+          "answer_forms": [
+            "наследовать",
+            "наследую"
+          ]
         },
         {
           "german": "die Zukunft",
           "russian": "будущее",
           "transcription": "[ди ЦУ-кунфт]",
           "sentence": "Die Zukunft des Königreichs liegt in unseren Händen.",
-          "sentence_translation": "Будущее королевства в наших руках."
+          "sentence_translation": "Будущее королевства в наших руках.",
+          "answer_forms": [
+            "будущее"
+          ]
         },
         {
           "german": "regieren",
           "russian": "править",
           "transcription": "[ре-ГИ-рен]",
           "sentence": "Mit Weisheit werde ich regieren.",
-          "sentence_translation": "С мудростью я буду править."
+          "sentence_translation": "С мудростью я буду править.",
+          "answer_forms": [
+            "править"
+          ]
         },
         {
           "german": "die Weisheit",
           "russian": "мудрость",
           "transcription": "[ди ВАЙС-хайт]",
           "sentence": "Durch Leiden habe ich Weisheit erlangt.",
-          "sentence_translation": "Через страдания я обрёл мудрость."
+          "sentence_translation": "Через страдания я обрёл мудрость.",
+          "answer_forms": [
+            "мудрость",
+            "мудростью"
+          ]
         },
         {
           "german": "die Ordnung",
           "russian": "порядок",
           "transcription": "[ди ОРД-нунг]",
           "sentence": "Neue Ordnung muss aus dem Chaos entstehen.",
-          "sentence_translation": "Новый порядок должен возникнуть из хаоса."
+          "sentence_translation": "Новый порядок должен возникнуть из хаоса.",
+          "answer_forms": [
+            "порядок"
+          ]
         },
         {
           "german": "die Verantwortung",
           "russian": "ответственность",
           "transcription": "[ди фер-АНТ-вор-тунг]",
           "sentence": "Die Verantwortung für alle wiegt schwer.",
-          "sentence_translation": "Ответственность за всех тяжела."
+          "sentence_translation": "Ответственность за всех тяжела.",
+          "answer_forms": [
+            "ответственность"
+          ]
         },
         {
           "german": "neu",
           "russian": "новый",
           "transcription": "[НОЙ]",
           "sentence": "Eine neue Ära beginnt für unser Land.",
-          "sentence_translation": "Новая эра начинается для нашей страны."
+          "sentence_translation": "Новая эра начинается для нашей страны.",
+          "answer_forms": [
+            "новый",
+            "новая"
+          ]
         }
       ]
     }

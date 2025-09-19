@@ -382,66 +382,62 @@ class LiraHTMLGenerator(BaseGenerator):
                 
                 if 'exercise_text' in scene and scene['exercise_text']:
                     import re
-                    
-                    # Создаем словарь соответствий из vocabulary
+
+                    def format_answer(german_word):
+                        if not german_word:
+                            return ''
+                        german_word = german_word.strip()
+                        lower = german_word.lower()
+                        for article in ('der ', 'die ', 'das '):
+                            if lower.startswith(article):
+                                parts = german_word.split(' ', 1)
+                                if len(parts) > 1:
+                                    return f"{parts[0]} {parts[1].upper()}"
+                                return german_word.upper()
+                        return german_word.upper()
+
                     words_dict = {}
-                    if 'vocabulary' in phase:
-                        for vocab in phase['vocabulary']:
-                            # Берём полную форму с артиклем для существительных
-                            german = vocab['german']
-                            russian = vocab['russian']
-                            
-                            # Для существительных берём ПОЛНУЮ форму С АРТИКЛЕМ
-                            # Для глаголов и прилагательных - без артикля
-                            if german.startswith(('der ', 'die ', 'das ')):
-                                # Существительное - берём С артиклем
-                                # Артикль в нижнем регистре, слово заглавными
-                                parts = german.split(' ', 1)
-                                words_dict[russian] = f"{parts[0]} {parts[1].upper()}"
-                            else:
-                                # Глагол или прилагательное - как есть заглавными
-                                words_dict[russian] = german.upper()
-                            
-                            # Также добавляем варианты для падежей
-                            # троне -> трон, церемонию -> церемония и т.д.
-                            if russian == 'трон':
-                                words_dict['троне'] = words_dict[russian]
-                            elif russian == 'церемония':
-                                words_dict['церемонию'] = words_dict[russian]
-                            elif russian == 'гнев':
-                                words_dict['гнев'] = words_dict[russian]
-                            elif russian == 'проклятие':
-                                words_dict['проклятием'] = words_dict[russian]
-                            elif russian == 'нищета':
-                                words_dict['нищету'] = words_dict[russian]
-                            elif russian == 'хижина':
-                                words_dict['хижине'] = words_dict[russian]
-                            elif russian == 'правда':
-                                words_dict['правду'] = words_dict[russian]
-                            elif russian == 'конец':
-                                words_dict['концом'] = words_dict[russian]
-                            elif russian == 'слеза':
-                                words_dict['слезы'] = words_dict[russian]
-                            elif russian == 'нужда':
-                                words_dict['нужде'] = words_dict[russian]
-                            elif russian == 'вечный':
-                                words_dict['вечна'] = words_dict[russian]
-                    
-                    # Также пробуем извлечь из narrative как fallback
+                    for vocab in phase.get('vocabulary', []):
+                        german = vocab.get('german', '')
+                        answer = format_answer(german)
+                        forms = vocab.get('answer_forms') or []
+                        if not forms:
+                            base = vocab.get('russian')
+                            if base:
+                                forms = [base]
+                        for form in forms:
+                            if not form:
+                                continue
+                            words_dict[form.strip()] = answer
+
                     pattern = r'<b>([^(]+)\s*\(([^)]+)\)</b>'
                     german_words = re.findall(pattern, scene['narrative'])
-                    for german, russian in german_words:
-                        if russian.strip() not in words_dict:
-                            words_dict[russian.strip()] = german.strip()
-                    
-                    # Заменяем пропуски с правильными data-атрибутами
+                    for german_word, russian_hint in german_words:
+                        hint = russian_hint.strip()
+                        if hint and hint not in words_dict:
+                            words_dict[hint] = format_answer(german_word.strip())
+
+                    missing_hints = set()
+
                     exercise_text = scene['exercise_text']
+
                     def replace_blank(match):
                         hint = match.group(1)
-                        answer = words_dict.get(hint, 'UNKNOWN')
+                        answer = words_dict.get(hint)
+                        if not answer:
+                            missing_hints.add(hint)
+                            answer = 'UNKNOWN'
                         return f'<span class="blank" data-answer="{answer}" data-hint="{hint}">_______ ({hint})</span>'
-                    
+
                     exercise_text = re.sub(r'___ \(([^)]+)\)', replace_blank, exercise_text)
+
+                    if missing_hints:
+                        char_id = character.get('id') or character.get('name', 'unknown')
+                        phase_id = phase.get('id', 'unknown')
+                        missing_list = ', '.join(sorted(missing_hints))
+                        raise ValueError(
+                            f"Не найдены формы ответов для подсказок ({missing_list}) в фазе '{phase_id}' персонажа '{char_id}'"
+                        )
                     
                     exercises_html += f'''
                     <div class="exercise-container {active_class}" data-phase="{phase['id']}">

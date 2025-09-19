@@ -15,56 +15,82 @@
           "russian": "шут",
           "transcription": "[дер НАР]",
           "sentence": "Als Narr sage ich die Wahrheit durch Scherze.",
-          "sentence_translation": "Как шут я говорю правду через шутки."
+          "sentence_translation": "Как шут я говорю правду через шутки.",
+          "answer_forms": [
+            "шут"
+          ]
         },
         {
           "german": "die Weisheit",
           "russian": "мудрость",
           "transcription": "[ди ВАЙС-хайт]",
           "sentence": "Hinter meinen Späßen verbirgt sich Weisheit.",
-          "sentence_translation": "За моими шутками скрывается мудрость."
+          "sentence_translation": "За моими шутками скрывается мудрость.",
+          "answer_forms": [
+            "мудрость"
+          ]
         },
         {
           "german": "die Trauer",
           "russian": "печаль",
           "transcription": "[ди ТРАУ-ер]",
           "sentence": "Die Trauer um Корделия macht mich stumm.",
-          "sentence_translation": "Печаль о Корделии делает меня немым."
+          "sentence_translation": "Печаль о Корделии делает меня немым.",
+          "answer_forms": [
+            "печаль"
+          ]
         },
         {
           "german": "scherzen",
           "russian": "шутить",
           "transcription": "[ШЕР-цен]",
           "sentence": "Ich scherze, um den Schmerz zu verbergen.",
-          "sentence_translation": "Я шучу, чтобы скрыть боль."
+          "sentence_translation": "Я шучу, чтобы скрыть боль.",
+          "answer_forms": [
+            "шутить",
+            "шучу"
+          ]
         },
         {
           "german": "der Spaß",
           "russian": "забава",
           "transcription": "[дер ШПАС]",
           "sentence": "Der Spaß ist meine Maske vor der Welt.",
-          "sentence_translation": "Забава - моя маска перед миром."
+          "sentence_translation": "Забава - моя маска перед миром.",
+          "answer_forms": [
+            "забава"
+          ]
         },
         {
           "german": "klug",
           "russian": "умный",
           "transcription": "[КЛУГ]",
           "sentence": "Ich bin klüger als alle bei Hofe.",
-          "sentence_translation": "Я умнее всех при дворе."
+          "sentence_translation": "Я умнее всех при дворе.",
+          "answer_forms": [
+            "умный"
+          ]
         },
         {
           "german": "vermissen",
           "russian": "скучать",
           "transcription": "[фер-МИ-сен]",
           "sentence": "Ich vermisse die süße Корделия sehr.",
-          "sentence_translation": "Я очень скучаю по милой Корделии."
+          "sentence_translation": "Я очень скучаю по милой Корделии.",
+          "answer_forms": [
+            "скучать",
+            "скучаю"
+          ]
         },
         {
           "german": "der Witz",
           "russian": "остроумие",
           "transcription": "[дер ВИТЦ]",
           "sentence": "Mein Witz ist scharf wie ein Schwert.",
-          "sentence_translation": "Моё остроумие остро как меч."
+          "sentence_translation": "Моё остроумие остро как меч.",
+          "answer_forms": [
+            "остроумие"
+          ]
         }
       ],
       "theatrical_scene": {
@@ -86,49 +112,75 @@
           "russian": "правда",
           "transcription": "[ди ВАР-хайт]",
           "sentence": "Die Wahrheit verpacke ich in lustige Lieder.",
-          "sentence_translation": "Правду я заворачиваю в весёлые песни."
+          "sentence_translation": "Правду я заворачиваю в весёлые песни.",
+          "answer_forms": [
+            "правда"
+          ]
         },
         {
           "german": "der Scherz",
           "russian": "шутка",
           "transcription": "[дер ШЕРЦ]",
           "sentence": "Jeder Scherz enthält eine bittere Lehre.",
-          "sentence_translation": "Каждая шутка содержит горький урок."
+          "sentence_translation": "Каждая шутка содержит горький урок.",
+          "answer_forms": [
+            "шутка",
+            "шутку"
+          ]
         },
         {
           "german": "die Warnung",
           "russian": "предупреждение",
           "transcription": "[ди ВАР-нунг]",
           "sentence": "Meine Warnung kommt als Rätsel verkleidet.",
-          "sentence_translation": "Моё предупреждение приходит замаскированным под загадку."
+          "sentence_translation": "Моё предупреждение приходит замаскированным под загадку.",
+          "answer_forms": [
+            "предупреждение"
+          ]
         },
         {
           "german": "bitter",
           "russian": "горький",
           "transcription": "[БИ-тер]",
           "sentence": "Die Wahrheit schmeckt bitter wie Galle.",
-          "sentence_translation": "Правда горька как желчь."
+          "sentence_translation": "Правда горька как желчь.",
+          "answer_forms": [
+            "горький",
+            "горькая"
+          ]
         },
         {
           "german": "spotten",
           "russian": "насмехаться",
           "transcription": "[ШПО-тен]",
           "sentence": "Ich spotte über die Torheit der Mächtigen.",
-          "sentence_translation": "Я насмехаюсь над глупостью сильных."
+          "sentence_translation": "Я насмехаюсь над глупостью сильных.",
+          "answer_forms": [
+            "насмехаться",
+            "насмехаюсь"
+          ]
         },
         {
           "german": "necken",
           "russian": "дразнить",
           "transcription": "[НЕ-кен]",
           "sentence": "Ich necke den König mit der Wahrheit.",
-          "sentence_translation": "Я дразню короля правдой."
+          "sentence_translation": "Я дразню короля правдой.",
+          "answer_forms": [
+            "дразнить",
+            "дражню"
+          ]
         },
         {
           "german": "enthüllen",
           "russian": "раскрывать",
           "transcription": "[энт-ХЮ-лен]",
           "sentence": "Spielerisch enthülle ich seine Fehler.",
-          "sentence_translation": "Играючи я раскрываю его ошибки."
+          "sentence_translation": "Играючи я раскрываю его ошибки.",
+          "answer_forms": [
+            "раскрывать",
+            "раскрываю"
+          ]
         }
       ],
       "theatrical_scene": {
@@ -150,56 +202,85 @@
           "russian": "пророчество",
           "transcription": "[ди про-фе-ЦАЙ-унг]",
           "sentence": "Meine Prophezeiung wird wahr werden.",
-          "sentence_translation": "Моё пророчество сбудется."
+          "sentence_translation": "Моё пророчество сбудется.",
+          "answer_forms": [
+            "пророчество"
+          ]
         },
         {
           "german": "das Rätsel",
           "russian": "загадка",
           "transcription": "[дас РЕТ-зель]",
           "sentence": "In Rätseln spreche ich von der Zukunft.",
-          "sentence_translation": "В загадках я говорю о будущем."
+          "sentence_translation": "В загадках я говорю о будущем.",
+          "answer_forms": [
+            "загадка",
+            "загадке"
+          ]
         },
         {
           "german": "die Vorahnung",
           "russian": "предчувствие",
           "transcription": "[ди ФОР-а-нунг]",
           "sentence": "Eine dunkle Vorahnung erfüllt mein Herz.",
-          "sentence_translation": "Тёмное предчувствие наполняет моё сердце."
+          "sentence_translation": "Тёмное предчувствие наполняет моё сердце.",
+          "answer_forms": [
+            "предчувствие"
+          ]
         },
         {
           "german": "vorhersagen",
           "russian": "предсказывать",
           "transcription": "[ФОР-хер-за-ген]",
           "sentence": "Ich sage das kommende Unheil vorher.",
-          "sentence_translation": "Я предсказываю грядущую беду."
+          "sentence_translation": "Я предсказываю грядущую беду.",
+          "answer_forms": [
+            "предсказывать",
+            "предсказываю"
+          ]
         },
         {
           "german": "deuten",
           "russian": "толковать",
           "transcription": "[ДОЙ-тен]",
           "sentence": "Die Zeichen deute ich besser als alle.",
-          "sentence_translation": "Знаки я толкую лучше всех."
+          "sentence_translation": "Знаки я толкую лучше всех.",
+          "answer_forms": [
+            "толковать",
+            "толкую"
+          ]
         },
         {
           "german": "ahnen",
           "russian": "предчувствовать",
           "transcription": "[А-нен]",
           "sentence": "Ich ahne das schlimme Ende voraus.",
-          "sentence_translation": "Я предчувствую плохой конец."
+          "sentence_translation": "Я предчувствую плохой конец.",
+          "answer_forms": [
+            "предчувствовать",
+            "предчувствую"
+          ]
         },
         {
           "german": "das Omen",
           "russian": "знамение",
           "transcription": "[дас О-мен]",
           "sentence": "Jedes Omen zeigt auf Untergang.",
-          "sentence_translation": "Каждое знамение указывает на гибель."
+          "sentence_translation": "Каждое знамение указывает на гибель.",
+          "answer_forms": [
+            "знамение"
+          ]
         },
         {
           "german": "rätselhaft",
           "russian": "загадочный",
           "transcription": "[РЕТ-зель-хафт]",
           "sentence": "Meine Worte bleiben rätselhaft und wahr.",
-          "sentence_translation": "Мои слова остаются загадочными и правдивыми."
+          "sentence_translation": "Мои слова остаются загадочными и правдивыми.",
+          "answer_forms": [
+            "загадочный",
+            "загадочны"
+          ]
         }
       ],
       "theatrical_scene": {
@@ -221,49 +302,76 @@
           "russian": "безумие",
           "transcription": "[дер ВАН-зин]",
           "sentence": "Im Wahnsinn finden wir uns als Brüder.",
-          "sentence_translation": "В безумии мы находим друг друга как братья."
+          "sentence_translation": "В безумии мы находим друг друга как братья.",
+          "answer_forms": [
+            "безумие",
+            "безумии"
+          ]
         },
         {
           "german": "die Freundschaft",
           "russian": "дружба",
           "transcription": "[ди ФРОЙНД-шафт]",
           "sentence": "Unsere Freundschaft überdauert den Sturm.",
-          "sentence_translation": "Наша дружба переживёт бурю."
+          "sentence_translation": "Наша дружба переживёт бурю.",
+          "answer_forms": [
+            "дружба"
+          ]
         },
         {
           "german": "begleiten",
           "russian": "сопровождать",
           "transcription": "[бе-ГЛАЙ-тен]",
           "sentence": "Treu begleite ich meinen verrückten König.",
-          "sentence_translation": "Верно я сопровождаю своего безумного короля."
+          "sentence_translation": "Верно я сопровождаю своего безумного короля.",
+          "answer_forms": [
+            "сопровождать",
+            "сопровождаю"
+          ]
         },
         {
           "german": "frieren",
           "russian": "мёрзнуть",
           "transcription": "[ФРИ-рен]",
           "sentence": "Wir frieren gemeinsam in der kalten Nacht.",
-          "sentence_translation": "Мы мёрзнем вместе в холодную ночь."
+          "sentence_translation": "Мы мёрзнем вместе в холодную ночь.",
+          "answer_forms": [
+            "мёрзнуть",
+            "мёрзнем"
+          ]
         },
         {
           "german": "singen",
           "russian": "петь",
           "transcription": "[ЗИН-ген]",
           "sentence": "Ich singe, um seine Angst zu lindern.",
-          "sentence_translation": "Я пою, чтобы облегчить его страх."
+          "sentence_translation": "Я пою, чтобы облегчить его страх.",
+          "answer_forms": [
+            "петь",
+            "пою"
+          ]
         },
         {
           "german": "zittern",
           "russian": "дрожать",
           "transcription": "[ЦИ-терн]",
           "sentence": "Vor Kälte zittern wir wie Espenlaub.",
-          "sentence_translation": "От холода мы дрожим как осиновый лист."
+          "sentence_translation": "От холода мы дрожим как осиновый лист.",
+          "answer_forms": [
+            "дрожать",
+            "дрожим"
+          ]
         },
         {
           "german": "treu",
           "russian": "верный",
           "transcription": "[ТРОЙ]",
           "sentence": "Ich bleibe treu, wenn alle anderen fliehen.",
-          "sentence_translation": "Я остаюсь верным, когда все остальные бегут."
+          "sentence_translation": "Я остаюсь верным, когда все остальные бегут.",
+          "answer_forms": [
+            "верный",
+            "верным"
+          ]
         }
       ],
       "theatrical_scene": {
@@ -285,56 +393,85 @@
           "russian": "песня",
           "transcription": "[дас ЛИД]",
           "sentence": "Mein Lied erzählt von vergangenen Tagen.",
-          "sentence_translation": "Моя песня рассказывает о прошлых днях."
+          "sentence_translation": "Моя песня рассказывает о прошлых днях.",
+          "answer_forms": [
+            "песня",
+            "песню"
+          ]
         },
         {
           "german": "der Trost",
           "russian": "утешение",
           "transcription": "[дер ТРОСТ]",
           "sentence": "Mit Liedern bringe ich kleinen Trost.",
-          "sentence_translation": "Песнями я приношу малое утешение."
+          "sentence_translation": "Песнями я приношу малое утешение.",
+          "answer_forms": [
+            "утешение"
+          ]
         },
         {
           "german": "die Ironie",
           "russian": "ирония",
           "transcription": "[ди и-ро-НИ]",
           "sentence": "Die Ironie ist meine letzte Waffe.",
-          "sentence_translation": "Ирония - моё последнее оружие."
+          "sentence_translation": "Ирония - моё последнее оружие.",
+          "answer_forms": [
+            "ирония"
+          ]
         },
         {
           "german": "summen",
           "russian": "напевать",
           "transcription": "[ЗУ-мен]",
           "sentence": "Leise summe ich alte Melodien.",
-          "sentence_translation": "Тихо я напеваю старые мелодии."
+          "sentence_translation": "Тихо я напеваю старые мелодии.",
+          "answer_forms": [
+            "напевать",
+            "напеваю"
+          ]
         },
         {
           "german": "die Melodie",
           "russian": "мелодия",
           "transcription": "[ди ме-ло-ДИ]",
           "sentence": "Die Melodie erinnert an bessere Zeiten.",
-          "sentence_translation": "Мелодия напоминает о лучших временах."
+          "sentence_translation": "Мелодия напоминает о лучших временах.",
+          "answer_forms": [
+            "мелодия",
+            "мелодии"
+          ]
         },
         {
           "german": "pfeifen",
           "russian": "свистеть",
           "transcription": "[ПФАЙ-фен]",
           "sentence": "Ich pfeife gegen die Dunkelheit an.",
-          "sentence_translation": "Я свищу против темноты."
+          "sentence_translation": "Я свищу против темноты.",
+          "answer_forms": [
+            "свистеть",
+            "свищу"
+          ]
         },
         {
           "german": "der Reim",
           "russian": "рифма",
           "transcription": "[дер РАЙМ]",
           "sentence": "Jeder Reim verbirgt eine tiefe Wahrheit.",
-          "sentence_translation": "Каждая рифма скрывает глубокую правду."
+          "sentence_translation": "Каждая рифма скрывает глубокую правду.",
+          "answer_forms": [
+            "рифма"
+          ]
         },
         {
           "german": "klingen",
           "russian": "звучать",
           "transcription": "[КЛИН-ген]",
           "sentence": "Meine Worte klingen lustig, doch sind traurig.",
-          "sentence_translation": "Мои слова звучат весело, но печальны."
+          "sentence_translation": "Мои слова звучат весело, но печальны.",
+          "answer_forms": [
+            "звучать",
+            "звучат"
+          ]
         }
       ],
       "theatrical_scene": {
@@ -356,49 +493,74 @@
           "russian": "философия",
           "transcription": "[ди фи-ло-зо-ФИ]",
           "sentence": "Meine Philosophie ist einfach: Alles ist Narretei.",
-          "sentence_translation": "Моя философия проста: всё - глупость."
+          "sentence_translation": "Моя философия проста: всё - глупость.",
+          "answer_forms": [
+            "философия"
+          ]
         },
         {
           "german": "das Schicksal",
           "russian": "судьба",
           "transcription": "[дас ШИК-заль]",
           "sentence": "Das Schicksal macht Narren aus uns allen.",
-          "sentence_translation": "Судьба делает дураков из всех нас."
+          "sentence_translation": "Судьба делает дураков из всех нас.",
+          "answer_forms": [
+            "судьба"
+          ]
         },
         {
           "german": "die Vergänglichkeit",
           "russian": "бренность",
           "transcription": "[ди фер-ГЕНГ-лих-кайт]",
           "sentence": "Die Vergänglichkeit der Macht ist offenbar.",
-          "sentence_translation": "Бренность власти очевидна."
+          "sentence_translation": "Бренность власти очевидна.",
+          "answer_forms": [
+            "бренность"
+          ]
         },
         {
           "german": "nachdenken",
           "russian": "размышлять",
           "transcription": "[НАХ-ден-кен]",
           "sentence": "Ich denke nach über des Lebens Sinn.",
-          "sentence_translation": "Я размышляю о смысле жизни."
+          "sentence_translation": "Я размышляю о смысле жизни.",
+          "answer_forms": [
+            "размышлять",
+            "размышляю"
+          ]
         },
         {
           "german": "erkennen",
           "russian": "познавать",
           "transcription": "[ер-КЕН-нен]",
           "sentence": "Ich erkenne die Wahrheit hinter dem Schein.",
-          "sentence_translation": "Я познаю правду за видимостью."
+          "sentence_translation": "Я познаю правду за видимостью.",
+          "answer_forms": [
+            "познавать",
+            "познаю"
+          ]
         },
         {
           "german": "der Sinn",
           "russian": "смысл",
           "transcription": "[дер ЗИН]",
           "sentence": "Der Sinn des Lebens ist ein schlechter Witz.",
-          "sentence_translation": "Смысл жизни - плохая шутка."
+          "sentence_translation": "Смысл жизни - плохая шутка.",
+          "answer_forms": [
+            "смысл",
+            "смысле"
+          ]
         },
         {
           "german": "vergänglich",
           "russian": "преходящий",
           "transcription": "[фер-ГЕНГ-лих]",
           "sentence": "Alles ist vergänglich, nur die Torheit bleibt.",
-          "sentence_translation": "Всё преходяще, только глупость остаётся."
+          "sentence_translation": "Всё преходяще, только глупость остаётся.",
+          "answer_forms": [
+            "преходящий",
+            "преходяще"
+          ]
         }
       ],
       "theatrical_scene": {
@@ -420,56 +582,85 @@
           "russian": "исчезать",
           "transcription": "[фер-ШВИН-ден]",
           "sentence": "Ich verschwinde wie ein Traum im Morgen.",
-          "sentence_translation": "Я исчезаю как сон поутру."
+          "sentence_translation": "Я исчезаю как сон поутру.",
+          "answer_forms": [
+            "исчезать",
+            "исчезнуть"
+          ]
         },
         {
           "german": "das Geheimnis",
           "russian": "тайна",
           "transcription": "[дас ге-ХАЙМ-нис]",
           "sentence": "Mein Verschwinden bleibt ein ewiges Geheimnis.",
-          "sentence_translation": "Моё исчезновение остаётся вечной тайной."
+          "sentence_translation": "Моё исчезновение остаётся вечной тайной.",
+          "answer_forms": [
+            "тайна"
+          ]
         },
         {
           "german": "die Leere",
           "russian": "пустота",
           "transcription": "[ди ЛЕ-ре]",
           "sentence": "Ich hinterlasse nur Leere und Erinnerung.",
-          "sentence_translation": "Я оставляю только пустоту и воспоминание."
+          "sentence_translation": "Я оставляю только пустоту и воспоминание.",
+          "answer_forms": [
+            "пустота",
+            "пустоту"
+          ]
         },
         {
           "german": "sich auflösen",
           "russian": "растворяться",
           "transcription": "[зих АУФ-лё-зен]",
           "sentence": "Ich löse mich auf wie Nebel im Wind.",
-          "sentence_translation": "Я растворяюсь как туман на ветру."
+          "sentence_translation": "Я растворяюсь как туман на ветру.",
+          "answer_forms": [
+            "растворяться",
+            "растворяюсь"
+          ]
         },
         {
           "german": "spurlos",
           "russian": "бесследно",
           "transcription": "[ШПУР-лос]",
           "sentence": "Spurlos gehe ich aus dieser Welt.",
-          "sentence_translation": "Бесследно я ухожу из этого мира."
+          "sentence_translation": "Бесследно я ухожу из этого мира.",
+          "answer_forms": [
+            "бесследно"
+          ]
         },
         {
           "german": "der Nebel",
           "russian": "туман",
           "transcription": "[дер НЕ-бель]",
           "sentence": "Im Nebel verliere ich mich für immer.",
-          "sentence_translation": "В тумане я теряюсь навсегда."
+          "sentence_translation": "В тумане я теряюсь навсегда.",
+          "answer_forms": [
+            "туман"
+          ]
         },
         {
           "german": "rätselhaft",
           "russian": "загадочный",
           "transcription": "[РЕТ-зель-хафт]",
           "sentence": "Mein Ende bleibt rätselhaft und stumm.",
-          "sentence_translation": "Мой конец остаётся загадочным и немым."
+          "sentence_translation": "Мой конец остаётся загадочным и немым.",
+          "answer_forms": [
+            "загадочный",
+            "загадочен"
+          ]
         },
         {
           "german": "fortgehen",
           "russian": "уходить",
           "transcription": "[ФОРТ-ге-ен]",
           "sentence": "Ich gehe fort, wenn keiner es bemerkt.",
-          "sentence_translation": "Я ухожу, когда никто не замечает."
+          "sentence_translation": "Я ухожу, когда никто не замечает.",
+          "answer_forms": [
+            "уходить",
+            "ухожу"
+          ]
         }
       ],
       "theatrical_scene": {

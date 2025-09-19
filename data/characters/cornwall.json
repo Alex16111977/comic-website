@@ -15,56 +15,83 @@
           "russian": "честолюбие",
           "transcription": "[дер ЭР-гайц]",
           "sentence": "Mein Ehrgeiz kennt keine Grenzen mehr.",
-          "sentence_translation": "Моё честолюбие не знает больше границ."
+          "sentence_translation": "Моё честолюбие не знает больше границ.",
+          "answer_forms": [
+            "честолюбие"
+          ]
         },
         {
           "german": "die Gier",
           "russian": "жадность",
           "transcription": "[ди ГИР]",
           "sentence": "Die Gier nach Macht verzehrt meine Seele.",
-          "sentence_translation": "Жадность к власти пожирает мою душу."
+          "sentence_translation": "Жадность к власти пожирает мою душу.",
+          "answer_forms": [
+            "жадность"
+          ]
         },
         {
           "german": "streben",
           "russian": "стремиться",
           "transcription": "[ШТРЕ-бен]",
           "sentence": "Ich strebe nach absoluter Kontrolle.",
-          "sentence_translation": "Я стремлюсь к абсолютному контролю."
+          "sentence_translation": "Я стремлюсь к абсолютному контролю.",
+          "answer_forms": [
+            "стремиться",
+            "стремлюсь"
+          ]
         },
         {
           "german": "verlangen",
           "russian": "желать",
           "transcription": "[фер-ЛАН-ген]",
           "sentence": "Ich verlange mehr als mir zusteht.",
-          "sentence_translation": "Я желаю больше, чем мне положено."
+          "sentence_translation": "Я желаю больше, чем мне положено.",
+          "answer_forms": [
+            "желать",
+            "желаю"
+          ]
         },
         {
           "german": "begehren",
           "russian": "вожделеть",
           "transcription": "[бе-ГЕ-рен]",
           "sentence": "Ich begehre die Krone für mich selbst.",
-          "sentence_translation": "Я вожделею корону для себя."
+          "sentence_translation": "Я вожделею корону для себя.",
+          "answer_forms": [
+            "вожделеть"
+          ]
         },
         {
           "german": "gierig",
           "russian": "жадный",
           "transcription": "[ГИ-риг]",
           "sentence": "Gierig greife ich nach jedem Stück Macht.",
-          "sentence_translation": "Жадно я хватаюсь за каждый кусок власти."
+          "sentence_translation": "Жадно я хватаюсь за каждый кусок власти.",
+          "answer_forms": [
+            "жадный"
+          ]
         },
         {
           "german": "die Herrschsucht",
           "russian": "властолюбие",
           "transcription": "[ди ХЕР-зухт]",
           "sentence": "Die Herrschsucht bestimmt all meine Taten.",
-          "sentence_translation": "Властолюбие определяет все мои поступки."
+          "sentence_translation": "Властолюбие определяет все мои поступки.",
+          "answer_forms": [
+            "властолюбие"
+          ]
         },
         {
           "german": "ergreifen",
           "russian": "захватывать",
           "transcription": "[ер-ГРАЙ-фен]",
           "sentence": "Ich ergreife jede Gelegenheit zur Macht.",
-          "sentence_translation": "Я захватываю каждую возможность власти."
+          "sentence_translation": "Я захватываю каждую возможность власти.",
+          "answer_forms": [
+            "захватывать",
+            "захватить"
+          ]
         }
       ],
       "theatrical_scene": {
@@ -86,49 +113,74 @@
           "russian": "жестокость",
           "transcription": "[ди ГРАУ-зам-кайт]",
           "sentence": "Die Grausamkeit meiner Frau gefällt mir.",
-          "sentence_translation": "Жестокость моей жены мне нравится."
+          "sentence_translation": "Жестокость моей жены мне нравится.",
+          "answer_forms": [
+            "жестокость"
+          ]
         },
         {
           "german": "die Bosheit",
           "russian": "злоба",
           "transcription": "[ди БОС-хайт]",
           "sentence": "Unsere Bosheit macht uns zum perfekten Paar.",
-          "sentence_translation": "Наша злоба делает нас идеальной парой."
+          "sentence_translation": "Наша злоба делает нас идеальной парой.",
+          "answer_forms": [
+            "злоба"
+          ]
         },
         {
           "german": "billigen",
           "russian": "одобрять",
           "transcription": "[БИ-ли-ген]",
           "sentence": "Ich billige alle ihre grausamen Pläne.",
-          "sentence_translation": "Я одобряю все её жестокие планы."
+          "sentence_translation": "Я одобряю все её жестокие планы.",
+          "answer_forms": [
+            "одобрять",
+            "одобряю"
+          ]
         },
         {
           "german": "unterstützen",
           "russian": "поддерживать",
           "transcription": "[ун-тер-ШТЮ-цен]",
           "sentence": "Ich unterstütze ihre Unmenschlichkeit.",
-          "sentence_translation": "Я поддерживаю её бесчеловечность."
+          "sentence_translation": "Я поддерживаю её бесчеловечность.",
+          "answer_forms": [
+            "поддерживать",
+            "поддерживаю"
+          ]
         },
         {
           "german": "anstacheln",
           "russian": "подстрекать",
           "transcription": "[АН-шта-хельн]",
           "sentence": "Ich stachle sie zu größerer Grausamkeit an.",
-          "sentence_translation": "Я подстрекаю её к большей жестокости."
+          "sentence_translation": "Я подстрекаю её к большей жестокости.",
+          "answer_forms": [
+            "подстрекать",
+            "подстрекаю"
+          ]
         },
         {
           "german": "ermutigen",
           "russian": "поощрять",
           "transcription": "[ер-МУ-ти-ген]",
           "sentence": "Ich ermutige ihre dunkelsten Impulse.",
-          "sentence_translation": "Я поощряю её самые тёмные импульсы."
+          "sentence_translation": "Я поощряю её самые тёмные импульсы.",
+          "answer_forms": [
+            "поощрять",
+            "поощряю"
+          ]
         },
         {
           "german": "die Härte",
           "russian": "суровость",
           "transcription": "[ди ХЕР-те]",
           "sentence": "Mit eiserner Härte regieren wir zusammen.",
-          "sentence_translation": "С железной суровостью мы правим вместе."
+          "sentence_translation": "С железной суровостью мы правим вместе.",
+          "answer_forms": [
+            "суровость"
+          ]
         }
       ],
       "theatrical_scene": {
@@ -150,56 +202,83 @@
           "russian": "тирания",
           "transcription": "[ди тю-ра-НАЙ]",
           "sentence": "Meine Tyrannei erstickt jeden Widerstand.",
-          "sentence_translation": "Моя тирания душит любое сопротивление."
+          "sentence_translation": "Моя тирания душит любое сопротивление.",
+          "answer_forms": [
+            "тирания"
+          ]
         },
         {
           "german": "die Unterdrückung",
           "russian": "угнетение",
           "transcription": "[ди ун-тер-ДРЮ-кунг]",
           "sentence": "Die Unterdrückung ist mein Herrschaftsmittel.",
-          "sentence_translation": "Угнетение - моё средство правления."
+          "sentence_translation": "Угнетение - моё средство правления.",
+          "answer_forms": [
+            "угнетение"
+          ]
         },
         {
           "german": "die Furcht",
           "russian": "страх",
           "transcription": "[ди ФУРХТ]",
           "sentence": "Durch Furcht halte ich alle unter Kontrolle.",
-          "sentence_translation": "Страхом я держу всех под контролем."
+          "sentence_translation": "Страхом я держу всех под контролем.",
+          "answer_forms": [
+            "страх"
+          ]
         },
         {
           "german": "unterdrücken",
           "russian": "подавлять",
           "transcription": "[ун-тер-ДРЮ-кен]",
           "sentence": "Ich unterdrücke jeden freien Gedanken.",
-          "sentence_translation": "Я подавляю любую свободную мысль."
+          "sentence_translation": "Я подавляю любую свободную мысль.",
+          "answer_forms": [
+            "подавлять",
+            "подавляю"
+          ]
         },
         {
           "german": "knechten",
           "russian": "порабощать",
           "transcription": "[КНЕХ-тен]",
           "sentence": "Ich knechte alle, die mir unterstehen.",
-          "sentence_translation": "Я порабощаю всех, кто мне подчинён."
+          "sentence_translation": "Я порабощаю всех, кто мне подчинён.",
+          "answer_forms": [
+            "порабощать"
+          ]
         },
         {
           "german": "zwingen",
           "russian": "принуждать",
           "transcription": "[ЦВИН-ген]",
           "sentence": "Ich zwinge alle zu absolutem Gehorsam.",
-          "sentence_translation": "Я принуждаю всех к абсолютному послушанию."
+          "sentence_translation": "Я принуждаю всех к абсолютному послушанию.",
+          "answer_forms": [
+            "принуждать",
+            "принуждаю"
+          ]
         },
         {
           "german": "die Willkür",
           "russian": "произвол",
           "transcription": "[ди ВИЛЬ-кюр]",
           "sentence": "Meine Willkür ist das einzige Gesetz.",
-          "sentence_translation": "Мой произвол - единственный закон."
+          "sentence_translation": "Мой произвол - единственный закон.",
+          "answer_forms": [
+            "произвол"
+          ]
         },
         {
           "german": "brutal",
           "russian": "брутальный",
           "transcription": "[бру-ТАЛЬ]",
           "sentence": "Brutal zerschlage ich jeden Widerstand.",
-          "sentence_translation": "Брутально я сокрушаю любое сопротивление."
+          "sentence_translation": "Брутально я сокрушаю любое сопротивление.",
+          "answer_forms": [
+            "брутальный",
+            "брутально"
+          ]
         }
       ],
       "theatrical_scene": {
@@ -221,49 +300,74 @@
           "russian": "наказание",
           "transcription": "[ди ШТРА-фе]",
           "sentence": "Die Strafe für Widerspruch ist hart.",
-          "sentence_translation": "Наказание за возражение сурово."
+          "sentence_translation": "Наказание за возражение сурово.",
+          "answer_forms": [
+            "наказание"
+          ]
         },
         {
           "german": "der Zorn",
           "russian": "гнев",
           "transcription": "[дер ЦОРН]",
           "sentence": "Mein Zorn kennt keine Barmherzigkeit.",
-          "sentence_translation": "Мой гнев не знает милосердия."
+          "sentence_translation": "Мой гнев не знает милосердия.",
+          "answer_forms": [
+            "гнев"
+          ]
         },
         {
           "german": "bestrafen",
           "russian": "карать",
           "transcription": "[бе-ШТРА-фен]",
           "sentence": "Ich bestrafe Kent für seine Frechheit.",
-          "sentence_translation": "Я караю Кента за его дерзость."
+          "sentence_translation": "Я караю Кента за его дерзость.",
+          "answer_forms": [
+            "карать",
+            "караю"
+          ]
         },
         {
           "german": "züchtigen",
           "russian": "наказывать",
           "transcription": "[ЦЮХ-ти-ген]",
           "sentence": "Öffentlich züchtige ich die Widerspenstigen.",
-          "sentence_translation": "Публично я наказываю непокорных."
+          "sentence_translation": "Публично я наказываю непокорных.",
+          "answer_forms": [
+            "наказывать",
+            "наказываю"
+          ]
         },
         {
           "german": "demütigen",
           "russian": "унижать",
           "transcription": "[де-МЮ-ти-ген]",
           "sentence": "Ich demütige ihn vor aller Augen.",
-          "sentence_translation": "Я унижаю его на глазах у всех."
+          "sentence_translation": "Я унижаю его на глазах у всех.",
+          "answer_forms": [
+            "унижать",
+            "унижаю"
+          ]
         },
         {
           "german": "erniedrigen",
           "russian": "унижать",
           "transcription": "[ер-НИД-ри-ген]",
           "sentence": "Ich erniedrige den treuen Diener.",
-          "sentence_translation": "Я унижаю верного слугу."
+          "sentence_translation": "Я унижаю верного слугу.",
+          "answer_forms": [
+            "унижать",
+            "унижаю"
+          ]
         },
         {
           "german": "quälen",
           "russian": "мучить",
           "transcription": "[КВЕ-лен]",
           "sentence": "Es bereitet mir Freude, ihn zu quälen.",
-          "sentence_translation": "Мне доставляет радость мучить его."
+          "sentence_translation": "Мне доставляет радость мучить его.",
+          "answer_forms": [
+            "мучить"
+          ]
         }
       ],
       "theatrical_scene": {
@@ -285,56 +389,83 @@
           "russian": "пытка",
           "transcription": "[ди ФОЛЬ-тер]",
           "sentence": "Die Folter ist mein liebstes Werkzeug.",
-          "sentence_translation": "Пытка - мой любимый инструмент."
+          "sentence_translation": "Пытка - мой любимый инструмент.",
+          "answer_forms": [
+            "пытка"
+          ]
         },
         {
           "german": "der Sadismus",
           "russian": "садизм",
           "transcription": "[дер за-ДИС-мус]",
           "sentence": "Mein Sadismus kennt keine Grenzen.",
-          "sentence_translation": "Мой садизм не знает границ."
+          "sentence_translation": "Мой садизм не знает границ.",
+          "answer_forms": [
+            "садизм"
+          ]
         },
         {
           "german": "das Blut",
           "russian": "кровь",
           "transcription": "[дас БЛУТ]",
           "sentence": "Das Blut des Grafen befleckt meine Hände.",
-          "sentence_translation": "Кровь графа пятнает мои руки."
+          "sentence_translation": "Кровь графа пятнает мои руки.",
+          "answer_forms": [
+            "кровь"
+          ]
         },
         {
           "german": "foltern",
           "russian": "пытать",
           "transcription": "[ФОЛЬ-терн]",
           "sentence": "Mit Lust foltere ich den alten Mann.",
-          "sentence_translation": "С наслаждением я пытаю старика."
+          "sentence_translation": "С наслаждением я пытаю старика.",
+          "answer_forms": [
+            "пытать"
+          ]
         },
         {
           "german": "verstümmeln",
           "russian": "калечить",
           "transcription": "[фер-ШТЮМ-мельн]",
           "sentence": "Ich verstümmle ihn ohne Erbarmen.",
-          "sentence_translation": "Я калечу его без милосердия."
+          "sentence_translation": "Я калечу его без милосердия.",
+          "answer_forms": [
+            "калечить",
+            "калечу"
+          ]
         },
         {
           "german": "blenden",
           "russian": "ослеплять",
           "transcription": "[БЛЕН-ден]",
           "sentence": "Eigenhändig blende ich Gloucester.",
-          "sentence_translation": "Собственноручно я ослепляю Глостера."
+          "sentence_translation": "Собственноручно я ослепляю Глостера.",
+          "answer_forms": [
+            "ослеплять",
+            "ослепляю"
+          ]
         },
         {
           "german": "ausstechen",
           "russian": "выкалывать",
           "transcription": "[АУС-ште-хен]",
           "sentence": "Seine Augen steche ich mit Freude aus.",
-          "sentence_translation": "Его глаза я выкалываю с радостью."
+          "sentence_translation": "Его глаза я выкалываю с радостью.",
+          "answer_forms": [
+            "выкалывать",
+            "выкалываю"
+          ]
         },
         {
           "german": "die Qual",
           "russian": "мука",
           "transcription": "[ди КВАЛЬ]",
           "sentence": "Seine Qual bereitet mir Vergnügen.",
-          "sentence_translation": "Его мука доставляет мне удовольствие."
+          "sentence_translation": "Его мука доставляет мне удовольствие.",
+          "answer_forms": [
+            "мука"
+          ]
         }
       ],
       "theatrical_scene": {
@@ -356,49 +487,74 @@
           "russian": "рана",
           "transcription": "[ди ВУН-де]",
           "sentence": "Die Wunde brennt wie Feuer in meinem Leib.",
-          "sentence_translation": "Рана горит как огонь в моём теле."
+          "sentence_translation": "Рана горит как огонь в моём теле.",
+          "answer_forms": [
+            "рана"
+          ]
         },
         {
           "german": "der Schmerz",
           "russian": "боль",
           "transcription": "[дер ШМЕРЦ]",
           "sentence": "Der Schmerz durchbohrt meinen Körper.",
-          "sentence_translation": "Боль пронзает моё тело."
+          "sentence_translation": "Боль пронзает моё тело.",
+          "answer_forms": [
+            "боль"
+          ]
         },
         {
           "german": "die Überraschung",
           "russian": "удивление",
           "transcription": "[ди ю-бер-РА-шунг]",
           "sentence": "Die Überraschung des Angriffs schockiert mich.",
-          "sentence_translation": "Неожиданность нападения шокирует меня."
+          "sentence_translation": "Неожиданность нападения шокирует меня.",
+          "answer_forms": [
+            "удивление"
+          ]
         },
         {
           "german": "bluten",
           "russian": "кровоточить",
           "transcription": "[БЛУ-тен]",
           "sentence": "Ich blute wie ein geschlachtetes Schwein.",
-          "sentence_translation": "Я кровоточу как зарезанная свинья."
+          "sentence_translation": "Я кровоточу как зарезанная свинья.",
+          "answer_forms": [
+            "кровоточить",
+            "кровоточу"
+          ]
         },
         {
           "german": "verwundet",
           "russian": "раненый",
           "transcription": "[фер-ВУН-дет]",
           "sentence": "Schwer verwundet sinke ich zu Boden.",
-          "sentence_translation": "Тяжело раненый я падаю на землю."
+          "sentence_translation": "Тяжело раненый я падаю на землю.",
+          "answer_forms": [
+            "раненый",
+            "ранен"
+          ]
         },
         {
           "german": "schwächen",
           "russian": "ослаблять",
           "transcription": "[ШВЕ-хен]",
           "sentence": "Die Verletzung schwächt meinen starken Körper.",
-          "sentence_translation": "Ранение ослабляет моё сильное тело."
+          "sentence_translation": "Ранение ослабляет моё сильное тело.",
+          "answer_forms": [
+            "ослаблять",
+            "ослабляет"
+          ]
         },
         {
           "german": "leiden",
           "russian": "страдать",
           "transcription": "[ЛАЙ-ден]",
           "sentence": "Zum ersten Mal leide ich selbst.",
-          "sentence_translation": "Впервые я сам страдаю."
+          "sentence_translation": "Впервые я сам страдаю.",
+          "answer_forms": [
+            "страдать",
+            "страдаю"
+          ]
         }
       ],
       "theatrical_scene": {
@@ -420,56 +576,84 @@
           "russian": "смерть",
           "transcription": "[дер ТОД]",
           "sentence": "Der Tod kommt für mich zu früh.",
-          "sentence_translation": "Смерть приходит ко мне слишком рано."
+          "sentence_translation": "Смерть приходит ко мне слишком рано.",
+          "answer_forms": [
+            "смерть"
+          ]
         },
         {
           "german": "die Vergeltung",
           "russian": "возмездие",
           "transcription": "[ди фер-ГЕЛЬ-тунг]",
           "sentence": "Die Vergeltung ereilt mich unerwartet.",
-          "sentence_translation": "Возмездие настигает меня неожиданно."
+          "sentence_translation": "Возмездие настигает меня неожиданно.",
+          "answer_forms": [
+            "возмездие"
+          ]
         },
         {
           "german": "das Ende",
           "russian": "конец",
           "transcription": "[дас ЕН-де]",
           "sentence": "Mein Ende kommt durch eines Dieners Hand.",
-          "sentence_translation": "Мой конец приходит от руки слуги."
+          "sentence_translation": "Мой конец приходит от руки слуги.",
+          "answer_forms": [
+            "конец"
+          ]
         },
         {
           "german": "sterben",
           "russian": "умирать",
           "transcription": "[ШТЕР-бен]",
           "sentence": "Ich sterbe ohne Reue für meine Taten.",
-          "sentence_translation": "Я умираю без раскаяния за свои дела."
+          "sentence_translation": "Я умираю без раскаяния за свои дела.",
+          "answer_forms": [
+            "умирать",
+            "умираю"
+          ]
         },
         {
           "german": "verenden",
           "russian": "издыхать",
           "transcription": "[фер-ЕН-ден]",
           "sentence": "Wie ein Tier verende ich elend.",
-          "sentence_translation": "Как зверь я издыхаю жалко."
+          "sentence_translation": "Как зверь я издыхаю жалко.",
+          "answer_forms": [
+            "издыхать",
+            "издыхаю"
+          ]
         },
         {
           "german": "verfluchen",
           "russian": "проклинать",
           "transcription": "[фер-ФЛУ-хен]",
           "sentence": "Sterbend verfluche ich meine Mörder.",
-          "sentence_translation": "Умирая, я проклинаю своих убийц."
+          "sentence_translation": "Умирая, я проклинаю своих убийц.",
+          "answer_forms": [
+            "проклинать",
+            "проклинаю"
+          ]
         },
         {
           "german": "röcheln",
           "russian": "хрипеть",
           "transcription": "[РЁ-хельн]",
           "sentence": "Röchelnd hauche ich mein Leben aus.",
-          "sentence_translation": "Хрипя, я испускаю дух."
+          "sentence_translation": "Хрипя, я испускаю дух.",
+          "answer_forms": [
+            "хрипеть",
+            "хриплю"
+          ]
         },
         {
           "german": "die Strafe",
           "russian": "кара",
           "transcription": "[ди ШТРА-фе]",
           "sentence": "Dies ist die gerechte Strafe für meine Grausamkeit.",
-          "sentence_translation": "Это справедливая кара за мою жестокость."
+          "sentence_translation": "Это справедливая кара за мою жестокость.",
+          "answer_forms": [
+            "кара"
+          ]
         }
       ],
       "theatrical_scene": {

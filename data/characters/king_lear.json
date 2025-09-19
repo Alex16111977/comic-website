@@ -21,56 +21,83 @@
           "russian": "трон",
           "transcription": "[дер ТРОН]",
           "sentence": "Vom Thron herab verkünde ich meinen Willen.",
-          "sentence_translation": "С трона я провозглашаю свою волю."
+          "sentence_translation": "С трона я провозглашаю свою волю.",
+          "answer_forms": [
+            "трон",
+            "троне"
+          ]
         },
         {
           "german": "das Königreich",
           "russian": "королевство",
           "transcription": "[дас КЁ-ниг-райх]",
           "sentence": "Mein Königreich teile ich unter meinen Töchtern.",
-          "sentence_translation": "Моё королевство я делю между дочерьми."
+          "sentence_translation": "Моё королевство я делю между дочерьми.",
+          "answer_forms": [
+            "королевство"
+          ]
         },
         {
           "german": "die Macht",
           "russian": "власть",
           "transcription": "[ди МАХТ]",
           "sentence": "Die Macht gebe ich an jene, die mich am meisten liebt.",
-          "sentence_translation": "Власть я отдаю той, кто любит меня больше всех."
+          "sentence_translation": "Власть я отдаю той, кто любит меня больше всех.",
+          "answer_forms": [
+            "власть"
+          ]
         },
         {
           "german": "herrschen",
           "russian": "править",
           "transcription": "[ХЕР-шен]",
           "sentence": "Ich habe lange genug geherrscht.",
-          "sentence_translation": "Я правил достаточно долго."
+          "sentence_translation": "Я правил достаточно долго.",
+          "answer_forms": [
+            "править"
+          ]
         },
         {
           "german": "verkünden",
           "russian": "провозглашать",
           "transcription": "[фер-КЮН-ден]",
           "sentence": "Ich verkünde die Teilung meines Reiches.",
-          "sentence_translation": "Я провозглашаю раздел моего королевства."
+          "sentence_translation": "Я провозглашаю раздел моего королевства.",
+          "answer_forms": [
+            "провозглашать",
+            "провозглашаю"
+          ]
         },
         {
           "german": "die Krone",
           "russian": "корона",
           "transcription": "[ди КРО-не]",
           "sentence": "Diese Krone ist schwer geworden für mein altes Haupt.",
-          "sentence_translation": "Эта корона стала тяжела для моей старой головы."
+          "sentence_translation": "Эта корона стала тяжела для моей старой головы.",
+          "answer_forms": [
+            "корона"
+          ]
         },
         {
           "german": "die Zeremonie",
           "russian": "церемония",
           "transcription": "[ди це-ре-мо-НИ]",
           "sentence": "Die Zeremonie der Teilung beginnt jetzt.",
-          "sentence_translation": "Церемония раздела начинается сейчас."
+          "sentence_translation": "Церемония раздела начинается сейчас.",
+          "answer_forms": [
+            "церемония",
+            "церемонию"
+          ]
         },
         {
           "german": "prächtig",
           "russian": "великолепный",
           "transcription": "[ПРЕХ-тиг]",
           "sentence": "Ein prächtiger Tag für eine verhängnisvolle Entscheidung.",
-          "sentence_translation": "Великолепный день для рокового решения."
+          "sentence_translation": "Великолепный день для рокового решения.",
+          "answer_forms": [
+            "великолепный"
+          ]
         }
       ]
     },
@@ -92,56 +119,85 @@
           "russian": "унижать",
           "transcription": "[де-МЮ-ти-ген]",
           "sentence": "Meine eigene Tochter will mich demütigen!",
-          "sentence_translation": "Моя собственная дочь хочет меня унизить!"
+          "sentence_translation": "Моя собственная дочь хочет меня унизить!",
+          "answer_forms": [
+            "унижать",
+            "унизить"
+          ]
         },
         {
           "german": "der Zorn",
           "russian": "гнев",
           "transcription": "[дер ЦОРН]",
           "sentence": "Mein Zorn brennt wie Feuer in meiner Brust!",
-          "sentence_translation": "Мой гнев горит как огонь в моей груди!"
+          "sentence_translation": "Мой гнев горит как огонь в моей груди!",
+          "answer_forms": [
+            "гнев"
+          ]
         },
         {
           "german": "die Undankbarkeit",
           "russian": "неблагодарность",
           "transcription": "[ди УН-данк-бар-кайт]",
           "sentence": "Die Undankbarkeit ist schärfer als der Zahn einer Schlange!",
-          "sentence_translation": "Неблагодарность острее змеиного зуба!"
+          "sentence_translation": "Неблагодарность острее змеиного зуба!",
+          "answer_forms": [
+            "неблагодарность",
+            "неблагодарности"
+          ]
         },
         {
           "german": "verfluchen",
           "russian": "проклинать",
           "transcription": "[фер-ФЛУ-хен]",
           "sentence": "Ich verfluche dich bei allen Sternen!",
-          "sentence_translation": "Я проклинаю тебя всеми звёздами!"
+          "sentence_translation": "Я проклинаю тебя всеми звёздами!",
+          "answer_forms": [
+            "проклинать",
+            "проклинаю"
+          ]
         },
         {
           "german": "vertreiben",
           "russian": "изгонять",
           "transcription": "[фер-ТРАЙ-бен]",
           "sentence": "Aus meinem eigenen Haus will sie mich vertreiben!",
-          "sentence_translation": "Из моего собственного дома она хочет меня изгнать!"
+          "sentence_translation": "Из моего собственного дома она хочет меня изгнать!",
+          "answer_forms": [
+            "изгонять",
+            "изгнать"
+          ]
         },
         {
           "german": "die Kränkung",
           "russian": "обида",
           "transcription": "[ди КРЭН-кунг]",
           "sentence": "Diese Kränkung werde ich nicht vergessen!",
-          "sentence_translation": "Эту обиду я не забуду!"
+          "sentence_translation": "Эту обиду я не забуду!",
+          "answer_forms": [
+            "обида"
+          ]
         },
         {
           "german": "bereuen",
           "russian": "сожалеть",
           "transcription": "[бе-РОЙ-ен]",
           "sentence": "Sie wird ihre Grausamkeit bereuen!",
-          "sentence_translation": "Она пожалеет о своей жестокости!"
+          "sentence_translation": "Она пожалеет о своей жестокости!",
+          "answer_forms": [
+            "сожалеть"
+          ]
         },
         {
           "german": "der Fluch",
           "russian": "проклятие",
           "transcription": "[дер ФЛУХ]",
           "sentence": "Mein Fluch soll über dich kommen!",
-          "sentence_translation": "Моё проклятие падёт на тебя!"
+          "sentence_translation": "Моё проклятие падёт на тебя!",
+          "answer_forms": [
+            "проклятие",
+            "проклятием"
+          ]
         }
       ]
     },
@@ -163,56 +219,84 @@
           "russian": "покидать",
           "transcription": "[фер-ЛА-сен]",
           "sentence": "Auch Regan will mich verlassen und verstoßen!",
-          "sentence_translation": "И Регана хочет меня покинуть и отвергнуть!"
+          "sentence_translation": "И Регана хочет меня покинуть и отвергнуть!",
+          "answer_forms": [
+            "покидать"
+          ]
         },
         {
           "german": "verstoßen",
           "russian": "отвергать",
           "transcription": "[фер-ШТО-сен]",
           "sentence": "Meine Töchter verstoßen mich wie einen Bettler!",
-          "sentence_translation": "Мои дочери отвергают меня как нищего!"
+          "sentence_translation": "Мои дочери отвергают меня как нищего!",
+          "answer_forms": [
+            "отвергать",
+            "отвергнуть"
+          ]
         },
         {
           "german": "die Grausamkeit",
           "russian": "жестокость",
           "transcription": "[ди ГРАУ-зам-кайт]",
           "sentence": "Ihre Grausamkeit übertrifft die ihrer Schwester!",
-          "sentence_translation": "Её жестокость превосходит жестокость сестры!"
+          "sentence_translation": "Её жестокость превосходит жестокость сестры!",
+          "answer_forms": [
+            "жестокость"
+          ]
         },
         {
           "german": "die Verzweiflung",
           "russian": "отчаяние",
           "transcription": "[ди фер-ЦВАЙ-флунг]",
           "sentence": "Die Verzweiflung packt mein altes Herz!",
-          "sentence_translation": "Отчаяние охватывает моё старое сердце!"
+          "sentence_translation": "Отчаяние охватывает моё старое сердце!",
+          "answer_forms": [
+            "отчаяние"
+          ]
         },
         {
           "german": "betteln",
           "russian": "просить",
           "transcription": "[БЕ-тельн]",
           "sentence": "Muss ich um Unterkunft betteln bei meinen eigenen Kindern?",
-          "sentence_translation": "Должен ли я просить крова у собственных детей?"
+          "sentence_translation": "Должен ли я просить крова у собственных детей?",
+          "answer_forms": [
+            "просить",
+            "прошу"
+          ]
         },
         {
           "german": "die Einsamkeit",
           "russian": "одиночество",
           "transcription": "[ди АЙН-зам-кайт]",
           "sentence": "Die Einsamkeit umgibt mich wie ein kalter Mantel.",
-          "sentence_translation": "Одиночество окружает меня как холодный плащ."
+          "sentence_translation": "Одиночество окружает меня как холодный плащ.",
+          "answer_forms": [
+            "одиночество"
+          ]
         },
         {
           "german": "die Träne",
           "russian": "слеза",
           "transcription": "[ди ТРЭ-не]",
           "sentence": "Keine Träne will ich für diese Undankbaren vergießen!",
-          "sentence_translation": "Ни одной слезы я не пролью за этих неблагодарных!"
+          "sentence_translation": "Ни одной слезы я не пролью за этих неблагодарных!",
+          "answer_forms": [
+            "слеза",
+            "слезы"
+          ]
         },
         {
           "german": "die Not",
           "russian": "нужда",
           "transcription": "[ди НОТ]",
           "sentence": "In meiner Not erkennen sie mich nicht als Vater.",
-          "sentence_translation": "В моей нужде они не признают меня отцом."
+          "sentence_translation": "В моей нужде они не признают меня отцом.",
+          "answer_forms": [
+            "нужда",
+            "нужде"
+          ]
         }
       ]
     },
@@ -234,56 +318,82 @@
           "russian": "буря",
           "transcription": "[дер ШТУРМ]",
           "sentence": "Der Sturm in meinem Kopf ist schlimmer als draußen!",
-          "sentence_translation": "Буря в моей голове хуже, чем снаружи!"
+          "sentence_translation": "Буря в моей голове хуже, чем снаружи!",
+          "answer_forms": [
+            "буря"
+          ]
         },
         {
           "german": "der Wahnsinn",
           "russian": "безумие",
           "transcription": "[дер ВАН-зин]",
           "sentence": "Der Wahnsinn ist gnädiger als die Vernunft!",
-          "sentence_translation": "Безумие милосерднее разума!"
+          "sentence_translation": "Безумие милосерднее разума!",
+          "answer_forms": [
+            "безумие"
+          ]
         },
         {
           "german": "toben",
           "russian": "бушевать",
           "transcription": "[ТО-бен]",
           "sentence": "Lasst die Winde toben und die Blitze fallen!",
-          "sentence_translation": "Пусть ветры бушуют и молнии падают!"
+          "sentence_translation": "Пусть ветры бушуют и молнии падают!",
+          "answer_forms": [
+            "бушевать",
+            "бушуют"
+          ]
         },
         {
           "german": "der Donner",
           "russian": "гром",
           "transcription": "[дер ДО-нер]",
           "sentence": "Der Donner ist die Stimme der Götter!",
-          "sentence_translation": "Гром - это голос богов!"
+          "sentence_translation": "Гром - это голос богов!",
+          "answer_forms": [
+            "гром"
+          ]
         },
         {
           "german": "der Blitz",
           "russian": "молния",
           "transcription": "[дер БЛИЦ]",
           "sentence": "Die Blitze sollen meine weißen Haare verbrennen!",
-          "sentence_translation": "Пусть молнии сожгут мои седые волосы!"
+          "sentence_translation": "Пусть молнии сожгут мои седые волосы!",
+          "answer_forms": [
+            "молния"
+          ]
         },
         {
           "german": "schreien",
           "russian": "кричать",
           "transcription": "[ШРАЙ-ен]",
           "sentence": "Ich schreie in den Wind meine Wut hinaus!",
-          "sentence_translation": "Я кричу в ветер свою ярость!"
+          "sentence_translation": "Я кричу в ветер свою ярость!",
+          "answer_forms": [
+            "кричать",
+            "кричу"
+          ]
         },
         {
           "german": "nackt",
           "russian": "голый",
           "transcription": "[НАКТ]",
           "sentence": "Nackt kam ich auf die Welt, nackt gehe ich!",
-          "sentence_translation": "Голым я пришёл в мир, голым и уйду!"
+          "sentence_translation": "Голым я пришёл в мир, голым и уйду!",
+          "answer_forms": [
+            "голый"
+          ]
         },
         {
           "german": "das Chaos",
           "russian": "хаос",
           "transcription": "[дас ХА-ос]",
           "sentence": "Das Chaos in der Natur spiegelt meine Seele!",
-          "sentence_translation": "Хаос в природе отражает мою душу!"
+          "sentence_translation": "Хаос в природе отражает мою душу!",
+          "answer_forms": [
+            "хаос"
+          ]
         }
       ]
     },
@@ -305,56 +415,85 @@
           "russian": "нищета",
           "transcription": "[дас Э-ленд]",
           "sentence": "Im Elend erkenne ich die Wahrheit der Welt.",
-          "sentence_translation": "В нищете я познаю истину мира."
+          "sentence_translation": "В нищете я познаю истину мира.",
+          "answer_forms": [
+            "нищета",
+            "нищету"
+          ]
         },
         {
           "german": "der Bettler",
           "russian": "нищий",
           "transcription": "[дер БЕТ-лер]",
           "sentence": "Dieser Bettler ist glücklicher als ich, der König!",
-          "sentence_translation": "Этот нищий счастливее меня, короля!"
+          "sentence_translation": "Этот нищий счастливее меня, короля!",
+          "answer_forms": [
+            "нищий"
+          ]
         },
         {
           "german": "arm",
           "russian": "бедный",
           "transcription": "[АРМ]",
           "sentence": "Die Armen leiden mehr als Könige jemals wissen.",
-          "sentence_translation": "Бедные страдают больше, чем короли когда-либо узнают."
+          "sentence_translation": "Бедные страдают больше, чем короли когда-либо узнают.",
+          "answer_forms": [
+            "бедный",
+            "бедны"
+          ]
         },
         {
           "german": "frieren",
           "russian": "мёрзнуть",
           "transcription": "[ФРИ-рен]",
           "sentence": "Wir alle frieren in dieser kalten Welt.",
-          "sentence_translation": "Мы все мёрзнем в этом холодном мире."
+          "sentence_translation": "Мы все мёрзнем в этом холодном мире.",
+          "answer_forms": [
+            "мёрзнуть",
+            "мёрзнем"
+          ]
         },
         {
           "german": "die Hütte",
           "russian": "хижина",
           "transcription": "[ди ХЮ-те]",
           "sentence": "Diese Hütte ist ein Palast für die Verlassenen.",
-          "sentence_translation": "Эта хижина - дворец для покинутых."
+          "sentence_translation": "Эта хижина - дворец для покинутых.",
+          "answer_forms": [
+            "хижина",
+            "хижине"
+          ]
         },
         {
           "german": "leiden",
           "russian": "страдать",
           "transcription": "[ЛАЙ-ден]",
           "sentence": "Wer nicht gelitten hat, kennt das Leben nicht.",
-          "sentence_translation": "Кто не страдал, не знает жизни."
+          "sentence_translation": "Кто не страдал, не знает жизни.",
+          "answer_forms": [
+            "страдать",
+            "страдают"
+          ]
         },
         {
           "german": "der Narr",
           "russian": "шут",
           "transcription": "[дер НАР]",
           "sentence": "Mein Narr ist weiser als ich je war.",
-          "sentence_translation": "Мой шут мудрее, чем я когда-либо был."
+          "sentence_translation": "Мой шут мудрее, чем я когда-либо был.",
+          "answer_forms": [
+            "шут"
+          ]
         },
         {
           "german": "die Erkenntnis",
           "russian": "познание",
           "transcription": "[ди ер-КЕНТ-нис]",
           "sentence": "Die Erkenntnis kommt durch Schmerz und Verlust.",
-          "sentence_translation": "Познание приходит через боль и утрату."
+          "sentence_translation": "Познание приходит через боль и утрату.",
+          "answer_forms": [
+            "познание"
+          ]
         }
       ]
     },
@@ -376,56 +515,85 @@
           "russian": "узнавать",
           "transcription": "[эр-КЕ-нен]",
           "sentence": "Ich erkenne dich, meine treue Cordelia!",
-          "sentence_translation": "Я узнаю тебя, моя верная Корделия!"
+          "sentence_translation": "Я узнаю тебя, моя верная Корделия!",
+          "answer_forms": [
+            "узнавать",
+            "узнаю"
+          ]
         },
         {
           "german": "verstehen",
           "russian": "понимать",
           "transcription": "[фер-ШТЕ-ен]",
           "sentence": "Jetzt verstehe ich, wer mich wirklich liebte.",
-          "sentence_translation": "Теперь я понимаю, кто действительно меня любил."
+          "sentence_translation": "Теперь я понимаю, кто действительно меня любил.",
+          "answer_forms": [
+            "понимать",
+            "понимаю"
+          ]
         },
         {
           "german": "die Wahrheit",
           "russian": "правда",
           "transcription": "[ди ВАР-хайт]",
           "sentence": "Die Wahrheit war immer in deinen Worten, Kind.",
-          "sentence_translation": "Правда всегда была в твоих словах, дитя."
+          "sentence_translation": "Правда всегда была в твоих словах, дитя.",
+          "answer_forms": [
+            "правда",
+            "правду"
+          ]
         },
         {
           "german": "die Reue",
           "russian": "раскаяние",
           "transcription": "[ди РОЙ-е]",
           "sentence": "Die Reue brennt heißer als alle Feuer der Hölle.",
-          "sentence_translation": "Раскаяние жжёт горячее всех адских огней."
+          "sentence_translation": "Раскаяние жжёт горячее всех адских огней.",
+          "answer_forms": [
+            "раскаяние"
+          ]
         },
         {
           "german": "die Weisheit",
           "russian": "мудрость",
           "transcription": "[ди ВАЙС-хайт]",
           "sentence": "Die Weisheit kommt zu spät zu mir.",
-          "sentence_translation": "Мудрость приходит ко мне слишком поздно."
+          "sentence_translation": "Мудрость приходит ко мне слишком поздно.",
+          "answer_forms": [
+            "мудрость"
+          ]
         },
         {
           "german": "vergeben",
           "russian": "прощать",
           "transcription": "[фер-ГЕ-бен]",
           "sentence": "Kannst du einem törichten alten Mann vergeben?",
-          "sentence_translation": "Можешь ли ты простить глупого старика?"
+          "sentence_translation": "Можешь ли ты простить глупого старика?",
+          "answer_forms": [
+            "прощать",
+            "простить"
+          ]
         },
         {
           "german": "die Einsicht",
           "russian": "прозрение",
           "transcription": "[ди АЙН-зихт]",
           "sentence": "Die Einsicht verbrennt meine Seele.",
-          "sentence_translation": "Прозрение сжигает мою душу."
+          "sentence_translation": "Прозрение сжигает мою душу.",
+          "answer_forms": [
+            "прозрение"
+          ]
         },
         {
           "german": "schuldig",
           "russian": "виновный",
           "transcription": "[ШУЛЬ-диг]",
           "sentence": "Ich bin schuldig vor meiner Tochter.",
-          "sentence_translation": "Я виновен перед своей дочерью."
+          "sentence_translation": "Я виновен перед своей дочерью.",
+          "answer_forms": [
+            "виновный",
+            "виновен"
+          ]
         }
       ]
     },
@@ -447,56 +615,83 @@
           "russian": "прощать",
           "transcription": "[фер-ЦАЙ-ен]",
           "sentence": "Verzeih mir, ich bin nur ein törichter alter Mann.",
-          "sentence_translation": "Прости меня, я всего лишь глупый старик."
+          "sentence_translation": "Прости меня, я всего лишь глупый старик.",
+          "answer_forms": [
+            "прощать"
+          ]
         },
         {
           "german": "der Tod",
           "russian": "смерть",
           "transcription": "[дер ТОД]",
           "sentence": "Der Tod ist gnädiger als das Leben ohne dich.",
-          "sentence_translation": "Смерть милосерднее жизни без тебя."
+          "sentence_translation": "Смерть милосерднее жизни без тебя.",
+          "answer_forms": [
+            "смерть"
+          ]
         },
         {
           "german": "sterben",
           "russian": "умирать",
           "transcription": "[ШТЕР-бен]",
           "sentence": "Lass mich an deiner Seite sterben, Cordelia.",
-          "sentence_translation": "Позволь мне умереть рядом с тобой, Корделия."
+          "sentence_translation": "Позволь мне умереть рядом с тобой, Корделия.",
+          "answer_forms": [
+            "умирать",
+            "умереть"
+          ]
         },
         {
           "german": "das Ende",
           "russian": "конец",
           "transcription": "[дас ЕН-де]",
           "sentence": "Das Ende kommt, aber mit dir bin ich nicht allein.",
-          "sentence_translation": "Конец приходит, но с тобой я не одинок."
+          "sentence_translation": "Конец приходит, но с тобой я не одинок.",
+          "answer_forms": [
+            "конец",
+            "концом"
+          ]
         },
         {
           "german": "das Herz",
           "russian": "сердце",
           "transcription": "[дас ХЕРЦ]",
           "sentence": "Mein Herz bricht vor Schmerz und Liebe.",
-          "sentence_translation": "Моё сердце разбивается от боли и любви."
+          "sentence_translation": "Моё сердце разбивается от боли и любви.",
+          "answer_forms": [
+            "сердце"
+          ]
         },
         {
           "german": "die Trauer",
           "russian": "скорбь",
           "transcription": "[ди ТРАУ-ер]",
           "sentence": "Die Trauer überwältigt meine Seele.",
-          "sentence_translation": "Скорбь переполняет мою душу."
+          "sentence_translation": "Скорбь переполняет мою душу.",
+          "answer_forms": [
+            "скорбь"
+          ]
         },
         {
           "german": "der Abschied",
           "russian": "прощание",
           "transcription": "[дер АБ-шид]",
           "sentence": "Das ist unser letzter Abschied, mein Kind.",
-          "sentence_translation": "Это наше последнее прощание, дитя моё."
+          "sentence_translation": "Это наше последнее прощание, дитя моё.",
+          "answer_forms": [
+            "прощание"
+          ]
         },
         {
           "german": "ewig",
           "russian": "вечный",
           "transcription": "[Э-виг]",
           "sentence": "Unsere Liebe wird ewig dauern, mein Kind.",
-          "sentence_translation": "Наша любовь будет вечной, дитя моё."
+          "sentence_translation": "Наша любовь будет вечной, дитя моё.",
+          "answer_forms": [
+            "вечный",
+            "вечна"
+          ]
         }
       ]
     }
