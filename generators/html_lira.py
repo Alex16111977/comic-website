@@ -1,6 +1,7 @@
 """HTML Generator for Lira Journey pages"""
 import json
 import re
+from pathlib import Path
 
 from .base import BaseGenerator
 from .js_lira import LiraJSGenerator
@@ -9,9 +10,60 @@ from .js_lira import LiraJSGenerator
 class LiraHTMLGenerator(BaseGenerator):
     """Generate complete HTML pages in lira-journey style"""
 
+    _vocabulary_cache = None
+
+    @classmethod
+    def _load_vocabulary_cache(cls):
+        """Load vocabulary enrichment data once."""
+        if cls._vocabulary_cache is not None:
+            return cls._vocabulary_cache
+
+        vocab_path = (
+            Path(__file__).resolve().parents[1]
+            / 'data'
+            / 'vocabulary'
+            / 'vocabulary.json'
+        )
+
+        cache = {}
+        if vocab_path.exists():
+            with vocab_path.open('r', encoding='utf-8') as fp:
+                data = json.load(fp)
+            for entry in data.get('vocabulary', []):
+                german = (entry.get('german') or '').strip().lower()
+                if german:
+                    cache[german] = entry
+
+        cls._vocabulary_cache = cache
+        return cls._vocabulary_cache
+
+    @classmethod
+    def _enrich_character_vocabulary(cls, character):
+        """Attach word relations from shared vocabulary to character words."""
+        vocab_index = cls._load_vocabulary_cache()
+        if not vocab_index:
+            return
+
+        for phase in character.get('journey_phases', []):
+            for word in phase.get('vocabulary', []):
+                german = (word.get('german') or '').strip().lower()
+                if not german:
+                    continue
+                entry = vocab_index.get(german)
+                if not entry:
+                    continue
+
+                if 'wordFamily' not in word or not word['wordFamily']:
+                    word['wordFamily'] = list(entry.get('word_family', []))
+                if 'synonyms' not in word or not word['synonyms']:
+                    word['synonyms'] = list(entry.get('synonyms', []))
+                if 'collocations' not in word or not word['collocations']:
+                    word['collocations'] = list(entry.get('collocations', []))
+
     def generate_journey(self, character_file):
         """Generate journey page for a character"""
         character = self.load_character(character_file)
+        self._enrich_character_vocabulary(character)
         journey_phases = character.get("journey_phases", [])
         js = LiraJSGenerator.generate(character)
 
