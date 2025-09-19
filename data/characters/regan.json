@@ -72,6 +72,28 @@
           "sentence": "Die Habgier treibt meine süßen Worte.",
           "sentence_translation": "Алчность движет моими сладкими словами."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «vortäuschen»?",
+          "choices": [
+            "превосходить",
+            "состязаться",
+            "фальшь",
+            "притворяться"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «übertreffen»?",
+          "choices": [
+            "притворяться",
+            "состязаться",
+            "фальшь",
+            "превосходить"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -135,6 +157,28 @@
           "transcription": "[ди штра-те-ГИ]",
           "sentence": "Unsere Strategie wird ihn brechen.",
           "sentence_translation": "Наша стратегия сломает его."
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «das Bündnis»?",
+          "choices": [
+            "делить",
+            "планировать",
+            "заговорить",
+            "союз"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «teilen»?",
+          "choices": [
+            "союз",
+            "планировать",
+            "заговорить",
+            "делить"
+          ],
+          "correct_index": 3
         }
       ]
     },
@@ -207,6 +251,28 @@
           "sentence": "Meine Grausamkeit übertrifft die meiner Schwester.",
           "sentence_translation": "Моя жестокость превосходит жестокость сестры."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «foltern»?",
+          "choices": [
+            "унижать",
+            "насмехаться",
+            "злоба",
+            "пытать"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «erniedrigen»?",
+          "choices": [
+            "пытать",
+            "насмехаться",
+            "злоба",
+            "унижать"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -278,6 +344,28 @@
           "sentence": "Ich zertrete seine Augen unter meinem Fuß.",
           "sentence_translation": "Я растаптываю его глаза под ногой."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «blenden»?",
+          "choices": [
+            "садизм",
+            "наслаждаться",
+            "выкалывать",
+            "ослеплять"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Sadismus»?",
+          "choices": [
+            "ослеплять",
+            "наслаждаться",
+            "выкалывать",
+            "садизм"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -342,6 +430,28 @@
           "sentence": "Ich werbe schamlos um seine Gunst.",
           "sentence_translation": "Я бесстыдно добиваюсь его благосклонности."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Witwe»?",
+          "choices": [
+            "вожделеть",
+            "соблазнять",
+            "вожделение",
+            "вдова"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «begehren»?",
+          "choices": [
+            "вдова",
+            "соблазнять",
+            "вожделение",
+            "вожделеть"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -405,6 +515,28 @@
           "transcription": "[АРГ-вё-нен]",
           "sentence": "Ich argwöhne Gift in meinem Wein.",
           "sentence_translation": "Я подозреваю яд в моём вине."
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «wettkämpfen»?",
+          "choices": [
+            "ненавидеть",
+            "угрожать",
+            "соперничество",
+            "соревноваться"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «hassen»?",
+          "choices": [
+            "соревноваться",
+            "угрожать",
+            "соперничество",
+            "ненавидеть"
+          ],
+          "correct_index": 3
         }
       ]
     },
@@ -476,6 +608,28 @@
           "transcription": "[фер-ФЛУХТ]",
           "sentence": "Verflucht sei unser böses Blut!",
           "sentence_translation": "Проклята наша злая кровь!"
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «vergiftet»?",
+          "choices": [
+            "страдать",
+            "издыхать",
+            "мучение",
+            "отравленный"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «leiden»?",
+          "choices": [
+            "отравленный",
+            "издыхать",
+            "мучение",
+            "страдать"
+          ],
+          "correct_index": 3
         }
       ]
     }

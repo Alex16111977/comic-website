@@ -20,18 +20,35 @@ class LiraJSGenerator:
 
             words = []
             for word in phase.get('vocabulary', []):
+                themes = word.get('themes') or []
+                if isinstance(themes, str):
+                    themes = [themes]
+                elif not isinstance(themes, list):
+                    themes = []
+
                 words.append({
                     'word': word.get('german', ''),
                     'translation': word.get('russian', ''),
                     'transcription': word.get('transcription', ''),
                     'sentence': word.get('sentence', ''),
                     'sentenceTranslation': word.get('sentence_translation', ''),
+                    'visual_hint': word.get('visual_hint', ''),
+                    'themes': themes,
+                })
+
+            quizzes = []
+            for quiz in phase.get('quizzes', []):
+                quizzes.append({
+                    'question': quiz.get('question', ''),
+                    'choices': quiz.get('choices', []),
+                    'correctIndex': quiz.get('correct_index', 0),
                 })
 
             phase_vocabularies[phase_id] = {
                 'title': phase.get('title', ''),
                 'description': phase.get('description', ''),
                 'words': words,
+                'quizzes': quizzes,
             }
 
         vocab_js = (
@@ -46,6 +63,7 @@ const phaseKeys = Object.keys(phaseVocabularies);
 let isTransitioning = false; // Prevent double clicks/taps
 let progressLineElement = null;
 let progressLineLength = 0;
+const QUIZ_ADVANCE_DELAY = 1200;
 
 // Device detection
 const isTouchDevice = ('ontouchstart' in window) || 
@@ -174,18 +192,47 @@ function displayVocabulary(phaseKey) {
             exercise.classList.remove('active');
         }
     });
-    
+
+    // Update quizzes
+    const quizContainers = document.querySelectorAll('.quiz-phase-container');
+    quizContainers.forEach(container => {
+        const isCurrent = container.dataset.phase === phaseKey;
+        container.classList.toggle('active', isCurrent);
+        resetQuizContainer(container, isCurrent);
+    });
+
+    const quizCountElement = document.querySelector('.quiz-count');
+    if (quizCountElement) {
+        const quizData = Array.isArray(phase.quizzes) ? phase.quizzes : [];
+        quizCountElement.textContent = quizData.length;
+    }
+
     grid.innerHTML = '';
-    
+
     phase.words.forEach((item, index) => {
         setTimeout(() => {
             const card = document.createElement('div');
             card.className = 'word-card';
             card.style.animationDelay = `${index * 0.1}s`;
+
+            const visualHintMarkup = item.visual_hint
+                ? `<div class="word-visual-hint" aria-hidden="true">${item.visual_hint}</div>`
+                : '';
+
+            const themesMarkup = Array.isArray(item.themes) && item.themes.length
+                ? `<div class="word-themes">${item.themes.map(theme => `<span class=\"word-theme\">${theme}</span>`).join('')}</div>`
+                : '';
+
             card.innerHTML = `
-                <div class="word-german">${item.word}</div>
-                <div class="word-translation">${item.translation}</div>
-                <div class="word-transcription">${item.transcription}</div>
+                <div class="word-card-header">
+                    ${visualHintMarkup}
+                    <div class="word-meta">
+                        <div class="word-german">${item.word}</div>
+                        <div class="word-translation">${item.translation}</div>
+                        <div class="word-transcription">${item.transcription}</div>
+                    </div>
+                </div>
+                ${themesMarkup}
                 <div class="word-sentence">
                     <div class="sentence-german">"${item.sentence}"</div>
                     <div class="sentence-translation">${item.sentenceTranslation}</div>
@@ -208,6 +255,173 @@ function displayVocabulary(phaseKey) {
     setTimeout(() => {
         isTransitioning = false;
     }, 500);
+}
+
+function resetQuizContainer(container, activateFirstCard = false) {
+    if (!container) return;
+
+    const cards = Array.from(container.querySelectorAll('.quiz-card'));
+    let firstVisibleSet = false;
+
+    cards.forEach(card => {
+        const isPlaceholder = card.classList.contains('empty');
+        if (activateFirstCard && !firstVisibleSet && !isPlaceholder) {
+            card.classList.add('active');
+            firstVisibleSet = true;
+        } else {
+            card.classList.remove('active');
+        }
+
+        card.dataset.answered = 'false';
+
+        const choices = card.querySelectorAll('.quiz-choice');
+        choices.forEach(choice => {
+            choice.disabled = false;
+            choice.classList.remove('correct', 'incorrect', 'locked', 'touching');
+            choice.removeAttribute('aria-disabled');
+        });
+
+        const feedback = card.querySelector('.quiz-feedback');
+        if (feedback) {
+            feedback.textContent = '';
+        }
+    });
+
+    const completion = container.querySelector('.quiz-completion');
+    if (completion) {
+        completion.classList.remove('visible');
+        completion.setAttribute('aria-hidden', 'true');
+    }
+
+    if (activateFirstCard && !firstVisibleSet) {
+        const placeholder = container.querySelector('.quiz-card');
+        if (placeholder) {
+            placeholder.classList.add('active');
+        }
+    }
+}
+
+function advanceQuiz(currentCard) {
+    const container = currentCard ? currentCard.closest('.quiz-phase-container') : null;
+    if (!container) return;
+
+    const cards = Array.from(container.querySelectorAll('.quiz-card')).filter(card => !card.classList.contains('empty'));
+    const currentIndex = cards.indexOf(currentCard);
+
+    if (currentIndex === -1) return;
+
+    if (currentIndex < cards.length - 1) {
+        currentCard.classList.remove('active');
+        const nextCard = cards[currentIndex + 1];
+        nextCard.classList.add('active');
+        nextCard.dataset.answered = 'false';
+
+        const choices = nextCard.querySelectorAll('.quiz-choice');
+        choices.forEach(choice => {
+            choice.disabled = false;
+            choice.classList.remove('correct', 'incorrect', 'locked', 'touching');
+            choice.removeAttribute('aria-disabled');
+        });
+
+        const feedback = nextCard.querySelector('.quiz-feedback');
+        if (feedback) {
+            feedback.textContent = '';
+        }
+
+        if (isTouchDevice && window.innerWidth < 768) {
+            setTimeout(() => {
+                nextCard.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+            }, 150);
+        }
+    } else {
+        const completion = container.querySelector('.quiz-completion');
+        if (completion) {
+            completion.classList.add('visible');
+            completion.setAttribute('aria-hidden', 'false');
+
+            if (isTouchDevice && window.innerWidth < 768) {
+                setTimeout(() => {
+                    completion.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+                }, 150);
+            }
+        }
+    }
+}
+
+function handleQuizChoiceSelection(button) {
+    if (!button) return;
+
+    const quizCard = button.closest('.quiz-card');
+    if (!quizCard || quizCard.dataset.answered === 'true') {
+        return;
+    }
+
+    const selectedIndex = parseInt(button.dataset.choiceIndex || '0', 10);
+    const correctIndex = parseInt(quizCard.dataset.correctIndex || '0', 10);
+    const choices = Array.from(quizCard.querySelectorAll('.quiz-choice'));
+    const feedback = quizCard.querySelector('.quiz-feedback');
+
+    quizCard.dataset.answered = 'true';
+
+    choices.forEach(choice => {
+        choice.disabled = true;
+        choice.classList.add('locked');
+        choice.setAttribute('aria-disabled', 'true');
+    });
+
+    const correctChoice = choices.find(choice => parseInt(choice.dataset.choiceIndex || '0', 10) === correctIndex);
+
+    if (selectedIndex === correctIndex) {
+        button.classList.add('correct');
+        if (feedback) {
+            feedback.textContent = 'Верно! Отличная работа.';
+        }
+    } else {
+        button.classList.add('incorrect');
+        if (correctChoice) {
+            correctChoice.classList.add('correct');
+        }
+        if (feedback) {
+            feedback.textContent = 'Неверно. Правильный ответ подсвечен.';
+        }
+    }
+
+    if (navigator.vibrate && isTouchDevice) {
+        navigator.vibrate(selectedIndex === correctIndex ? 20 : 40);
+    }
+
+    setTimeout(() => {
+        advanceQuiz(quizCard);
+    }, QUIZ_ADVANCE_DELAY);
+}
+
+function attachQuizHandlers() {
+    const choiceButtons = document.querySelectorAll('.quiz-choice');
+    choiceButtons.forEach(button => {
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            handleQuizChoiceSelection(this);
+        });
+
+        if (isTouchDevice) {
+            button.addEventListener('touchstart', function() {
+                this.classList.add('touching');
+            });
+
+            button.addEventListener('touchend', function() {
+                setTimeout(() => {
+                    this.classList.remove('touching');
+                }, 120);
+            });
+        }
+    });
 }
 
 // Update navigation buttons based on current position
@@ -249,6 +463,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const journeyPoints = document.querySelectorAll('.journey-point');
     initializeProgressLine();
+    attachQuizHandlers();
 
     console.log('[Init] Found', journeyPoints.length, 'journey points');
     

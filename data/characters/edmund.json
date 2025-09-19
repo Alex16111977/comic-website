@@ -72,6 +72,28 @@
           "sentence": "Die Natur ist meine Göttin, nicht das Gesetz.",
           "sentence_translation": "Природа - моя богиня, не закон."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «der Bastard»?",
+          "choices": [
+            "зависть",
+            "амбиция",
+            "обделённый",
+            "бастард"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Neid»?",
+          "choices": [
+            "бастард",
+            "амбиция",
+            "обделённый",
+            "зависть"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -142,6 +164,28 @@
           "transcription": "[ди ТОЙ-шунг]",
           "sentence": "Die Täuschung ist vollkommen.",
           "sentence_translation": "Обман совершенен."
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «fälschen»?",
+          "choices": [
+            "интриговать",
+            "обвинять",
+            "план",
+            "подделывать"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «intrigieren»?",
+          "choices": [
+            "подделывать",
+            "обвинять",
+            "план",
+            "интриговать"
+          ],
+          "correct_index": 3
         }
       ]
     },
@@ -214,6 +258,28 @@
           "sentence": "Der Sieg über Edgar ist süß.",
           "sentence_translation": "Победа над Эдгаром сладка."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «vertreiben»?",
+          "choices": [
+            "торжествовать",
+            "наследовать",
+            "успех",
+            "изгонять"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «triumphieren»?",
+          "choices": [
+            "изгонять",
+            "наследовать",
+            "успех",
+            "торжествовать"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -284,6 +350,28 @@
           "transcription": "[ди а-ли-АНЦС]",
           "sentence": "Unsere Allianz wird alle Feinde vernichten.",
           "sentence_translation": "Наш альянс уничтожит всех врагов."
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «verbünden»?",
+          "choices": [
+            "власть",
+            "завоёвывать",
+            "союз",
+            "объединяться"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «die Macht»?",
+          "choices": [
+            "объединяться",
+            "завоёвывать",
+            "союз",
+            "власть"
+          ],
+          "correct_index": 3
         }
       ]
     },
@@ -356,6 +444,28 @@
           "sentence": "Erbarmungslos verfolge ich mein Ziel.",
           "sentence_translation": "Беспощадно я преследую свою цель."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «verraten»?",
+          "choices": [
+            "ослеплять",
+            "жестокость",
+            "доносить",
+            "предавать"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «blenden»?",
+          "choices": [
+            "предавать",
+            "жестокость",
+            "доносить",
+            "ослеплять"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -427,6 +537,28 @@
           "sentence": "Diese Affäre wird tödlich enden.",
           "sentence_translation": "Эта интрига закончится смертью."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Liebschaft»?",
+          "choices": [
+            "соперничество",
+            "играть",
+            "завлекать",
+            "любовная связь"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «die Rivalität»?",
+          "choices": [
+            "любовная связь",
+            "играть",
+            "завлекать",
+            "соперничество"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -497,6 +629,28 @@
           "transcription": "[дас ЭН-де]",
           "sentence": "Das Ende kommt schnell und gerecht.",
           "sentence_translation": "Конец приходит быстро и справедливо."
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «das Duell»?",
+          "choices": [
+            "падать",
+            "сожалеть",
+            "поражение",
+            "дуэль"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «fallen»?",
+          "choices": [
+            "дуэль",
+            "сожалеть",
+            "поражение",
+            "падать"
+          ],
+          "correct_index": 3
         }
       ]
     }

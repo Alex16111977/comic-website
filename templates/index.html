@@ -31,6 +31,45 @@
             </div>
         </header>
 
+        {% if review_items %}
+        <section class="review-section">
+            <div class="review-header">
+                <h2>Повторить сегодня</h2>
+                <p>Подборка {{ review_items|length }} слов и выражений, которые стоит освежить.</p>
+            </div>
+            <div class="review-grid">
+                {% for item in review_items %}
+                <article class="review-card" data-word-id="{{ item.id }}">
+                    <div class="review-card-header">
+                        <div class="review-icon">{{ item.emoji }}</div>
+                        <div class="review-title">
+                            <span class="review-word">{{ item.word }}</span>
+                            {% if item.translation %}
+                            <span class="review-translation">{{ item.translation }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% if item.example %}
+                    <p class="review-example">«{{ item.example }}»</p>
+                    {% endif %}
+                    <div class="review-meta">
+                        {% if item.level %}
+                        <span class="review-tag">Уровень {{ item.level }}</span>
+                        {% endif %}
+                        {% if item.category %}
+                        <span class="review-tag">Тема: {{ item.category }}</span>
+                        {% endif %}
+                        {% if item.phonetic %}
+                        <span class="review-tag">{{ item.phonetic }}</span>
+                        {% endif %}
+                    </div>
+                    <a href="{{ item.practice_url }}" class="review-link" aria-label="Тренировка слова {{ item.word }}">Тренировка →</a>
+                </article>
+                {% endfor %}
+            </div>
+        </section>
+        {% endif %}
+
         <div class="characters-grid">
             {% for card in cards %}
             <div class="character-card" data-character="{{ card.id }}">

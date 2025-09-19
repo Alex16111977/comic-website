@@ -72,6 +72,28 @@
           "sentence": "Ein prächtiger Tag für eine verhängnisvolle Entscheidung.",
           "sentence_translation": "Великолепный день для рокового решения."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «der Thron»?",
+          "choices": [
+            "королевство",
+            "власть",
+            "править",
+            "трон"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «das Königreich»?",
+          "choices": [
+            "трон",
+            "власть",
+            "править",
+            "королевство"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -142,6 +164,28 @@
           "transcription": "[дер ФЛУХ]",
           "sentence": "Mein Fluch soll über dich kommen!",
           "sentence_translation": "Моё проклятие падёт на тебя!"
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «demütigen»?",
+          "choices": [
+            "гнев",
+            "неблагодарность",
+            "проклинать",
+            "унижать"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Zorn»?",
+          "choices": [
+            "унижать",
+            "неблагодарность",
+            "проклинать",
+            "гнев"
+          ],
+          "correct_index": 3
         }
       ]
     },
@@ -214,6 +258,28 @@
           "sentence": "In meiner Not erkennen sie mich nicht als Vater.",
           "sentence_translation": "В моей нужде они не признают меня отцом."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «verlassen»?",
+          "choices": [
+            "отвергать",
+            "жестокость",
+            "отчаяние",
+            "покидать"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «verstoßen»?",
+          "choices": [
+            "покидать",
+            "жестокость",
+            "отчаяние",
+            "отвергать"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -284,6 +350,28 @@
           "transcription": "[дас ХА-ос]",
           "sentence": "Das Chaos in der Natur spiegelt meine Seele!",
           "sentence_translation": "Хаос в природе отражает мою душу!"
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «der Sturm»?",
+          "choices": [
+            "безумие",
+            "бушевать",
+            "гром",
+            "буря"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Wahnsinn»?",
+          "choices": [
+            "буря",
+            "бушевать",
+            "гром",
+            "безумие"
+          ],
+          "correct_index": 3
         }
       ]
     },
@@ -356,6 +444,28 @@
           "sentence": "Die Erkenntnis kommt durch Schmerz und Verlust.",
           "sentence_translation": "Познание приходит через боль и утрату."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «das Elend»?",
+          "choices": [
+            "нищий",
+            "бедный",
+            "мёрзнуть",
+            "нищета"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Bettler»?",
+          "choices": [
+            "нищета",
+            "бедный",
+            "мёрзнуть",
+            "нищий"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -427,6 +537,28 @@
           "sentence": "Ich bin schuldig vor meiner Tochter.",
           "sentence_translation": "Я виновен перед своей дочерью."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «erkennen»?",
+          "choices": [
+            "понимать",
+            "правда",
+            "раскаяние",
+            "узнавать"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «verstehen»?",
+          "choices": [
+            "узнавать",
+            "правда",
+            "раскаяние",
+            "понимать"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -497,6 +629,28 @@
           "transcription": "[Э-виг]",
           "sentence": "Unsere Liebe wird ewig dauern, mein Kind.",
           "sentence_translation": "Наша любовь будет вечной, дитя моё."
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «verzeihen»?",
+          "choices": [
+            "смерть",
+            "умирать",
+            "конец",
+            "прощать"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Tod»?",
+          "choices": [
+            "прощать",
+            "умирать",
+            "конец",
+            "смерть"
+          ],
+          "correct_index": 3
         }
       ]
     }

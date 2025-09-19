@@ -72,6 +72,28 @@
           "sentence": "Ahnungslos vertraue ich meinem Bruder.",
           "sentence_translation": "Ничего не подозревая, я доверяю брату."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «der Adel»?",
+          "choices": [
+            "наследник",
+            "королевство",
+            "доверять",
+            "знать"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Erbe»?",
+          "choices": [
+            "знать",
+            "королевство",
+            "доверять",
+            "наследник"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -142,6 +164,28 @@
           "transcription": "[фер-БАН-нен]",
           "sentence": "Mein Vater will mich aus dem Land verbannen.",
           "sentence_translation": "Мой отец хочет изгнать меня из страны."
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «fliehen»?",
+          "choices": [
+            "предательство",
+            "опасность",
+            "преследовать",
+            "бежать"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Verrat»?",
+          "choices": [
+            "бежать",
+            "опасность",
+            "преследовать",
+            "предательство"
+          ],
+          "correct_index": 3
         }
       ]
     },
@@ -214,6 +258,28 @@
           "sentence": "Ich gebe vor, wahnsinnig zu sein.",
           "sentence_translation": "Я притворяюсь безумным."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «der Wahnsinn»?",
+          "choices": [
+            "нищий",
+            "маскировка",
+            "голый",
+            "безумие"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Bettler»?",
+          "choices": [
+            "безумие",
+            "маскировка",
+            "голый",
+            "нищий"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -284,6 +350,28 @@
           "transcription": "[дер БЛИЦ]",
           "sentence": "Die Blitze erhellen unser Elend.",
           "sentence_translation": "Молнии освещают нашу нищету."
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «der Sturm»?",
+          "choices": [
+            "мёрзнуть",
+            "страдать",
+            "хижина",
+            "буря"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «frieren»?",
+          "choices": [
+            "буря",
+            "страдать",
+            "хижина",
+            "мёрзнуть"
+          ],
+          "correct_index": 3
         }
       ]
     },
@@ -356,6 +444,28 @@
           "sentence": "Seine Verzweiflung bricht mir das Herz.",
           "sentence_translation": "Его отчаяние разбивает мне сердце."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «blind»?",
+          "choices": [
+            "вести",
+            "утёс",
+            "обманывать",
+            "слепой"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «führen»?",
+          "choices": [
+            "слепой",
+            "утёс",
+            "обманывать",
+            "вести"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -427,6 +537,28 @@
           "sentence": "Mein Bruder muss für seine Verbrechen büßen.",
           "sentence_translation": "Мой брат должен поплатиться за свои преступления."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «der Kampf»?",
+          "choices": [
+            "дуэль",
+            "месть",
+            "разоблачать",
+            "бой"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «das Duell»?",
+          "choices": [
+            "бой",
+            "месть",
+            "разоблачать",
+            "дуэль"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -497,6 +629,28 @@
           "transcription": "[НОЙ]",
           "sentence": "Eine neue Ära beginnt für unser Land.",
           "sentence_translation": "Новая эра начинается для нашей страны."
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «überleben»?",
+          "choices": [
+            "наследовать",
+            "будущее",
+            "править",
+            "выживать"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «erben»?",
+          "choices": [
+            "выживать",
+            "будущее",
+            "править",
+            "наследовать"
+          ],
+          "correct_index": 3
         }
       ]
     }

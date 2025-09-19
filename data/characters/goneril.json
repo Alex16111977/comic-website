@@ -72,6 +72,28 @@
           "sentence": "Sein ganzes Vermögen wird mir gehören.",
           "sentence_translation": "Всё его состояние будет моим."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Lüge»?",
+          "choices": [
+            "клясться",
+            "наследство",
+            "лицемерить",
+            "ложь"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «schwören»?",
+          "choices": [
+            "ложь",
+            "наследство",
+            "лицемерить",
+            "клясться"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -142,6 +164,28 @@
           "transcription": "[ун-тер-ВЕР-фен]",
           "sentence": "Alle müssen sich mir unterwerfen.",
           "sentence_translation": "Все должны мне подчиниться."
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Macht»?",
+          "choices": [
+            "править",
+            "приказывать",
+            "трон",
+            "власть"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «herrschen»?",
+          "choices": [
+            "власть",
+            "приказывать",
+            "трон",
+            "править"
+          ],
+          "correct_index": 3
         }
       ]
     },
@@ -214,6 +258,28 @@
           "sentence": "Ich beschränke seine Dienerschaft auf null.",
           "sentence_translation": "Я ограничиваю его свиту до нуля."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «demütigen»?",
+          "choices": [
+            "жестокий",
+            "месть",
+            "изгонять",
+            "унижать"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «grausam»?",
+          "choices": [
+            "унижать",
+            "месть",
+            "изгонять",
+            "жестокий"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -277,6 +343,28 @@
           "transcription": "[фер-ХЕР-тен]",
           "sentence": "Mein Herz verhärtet sich gegen alle Bitten.",
           "sentence_translation": "Моё сердце ожесточается против всех просьб."
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «verstoßen»?",
+          "choices": [
+            "буря",
+            "безжалостный",
+            "запирать",
+            "отвергать"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Sturm»?",
+          "choices": [
+            "отвергать",
+            "безжалостный",
+            "запирать",
+            "буря"
+          ],
+          "correct_index": 3
         }
       ]
     },
@@ -349,6 +437,28 @@
           "sentence": "Meine Leidenschaft gilt nur Edmund.",
           "sentence_translation": "Моя страсть принадлежит только Эдмунду."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «streiten»?",
+          "choices": [
+            "предавать",
+            "раздор",
+            "ненавидеть",
+            "ссориться"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «verraten»?",
+          "choices": [
+            "ссориться",
+            "раздор",
+            "ненавидеть",
+            "предавать"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -420,6 +530,28 @@
           "sentence": "Ich bin bereit zu morden für meine Lust.",
           "sentence_translation": "Я готова убивать ради своей страсти."
         }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Eifersucht»?",
+          "choices": [
+            "соперничать",
+            "бороться",
+            "желать",
+            "ревность"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «rivalisieren»?",
+          "choices": [
+            "ревность",
+            "бороться",
+            "желать",
+            "соперничать"
+          ],
+          "correct_index": 3
+        }
       ]
     },
     {
@@ -490,6 +622,28 @@
           "transcription": "[ди ХЁ-ле]",
           "sentence": "Die Hölle wartet auf meine schwarze Seele.",
           "sentence_translation": "Ад ждёт мою чёрную душу."
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «vergiften»?",
+          "choices": [
+            "отчаяние",
+            "умирать",
+            "вина",
+            "отравлять"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «die Verzweiflung»?",
+          "choices": [
+            "отравлять",
+            "умирать",
+            "вина",
+            "отчаяние"
+          ],
+          "correct_index": 3
         }
       ]
     }
