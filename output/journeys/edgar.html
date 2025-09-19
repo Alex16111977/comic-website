@@ -5,763 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Превращение Эдгара | König Lear</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        
-/* LIRA JOURNEY STYLES - Mobile Optimized */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-/* Prevent iOS zoom on input focus */
-input, select, textarea, button {
-    font-size: 16px !important;
-}
-
-/* Prevent text selection on mobile */
-.no-select {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-body {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
-    font-family: 'Inter', 'Segoe UI', sans-serif;
-    color: #333;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.page-header {
-    text-align: center;
-    color: white;
-    margin-bottom: 40px;
-    animation: fadeInDown 0.8s ease;
-}
-
-.page-header h1 {
-    font-size: 3em;
-    font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 1.2em;
-    opacity: 0.95;
-}
-
-.journey-section {
-    background: white;
-    border-radius: 20px;
-    padding: 40px;
-    margin-bottom: 40px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-}
-
-.journey-timeline {
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.journey-line {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.progress-line {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: drawLine 2s ease forwards;
-    animation-delay: 1s;
-}
-
-.journey-points {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    z-index: 2;
-    padding: 0 30px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-}
-
-.journey-point {
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    opacity: 0.7;
-    transform: scale(0.9);
-    /* Mobile touch optimizations */
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    user-select: none;
-    touch-action: manipulation;
-    min-width: 80px;
-    padding: 10px 5px;
-    position: relative;
-}
-
-.journey-point.active {
-    opacity: 1;
-    transform: scale(1);
-}
-
-/* Touch feedback for mobile */
-@media (hover: none) and (pointer: coarse) {
-    .journey-point {
-        min-width: 90px;
-    }
-    
-    .journey-point:active {
-        transform: scale(0.95);
-        opacity: 0.9;
-    }
-}
-
-.point-circle {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: white;
-    border: 3px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    margin: 0 auto 10px;
-    transition: all 0.3s ease;
-}
-
-.journey-point.active .point-circle {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    border-color: #667eea;
-    transform: scale(1.2);
-    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
-}
-
-.journey-point h4 {
-    font-size: 0.9em;
-    margin: 5px 0;
-    color: #333;
-}
-
-.journey-point p {
-    font-size: 0.75em;
-    color: #666;
-    display: none;
-}
-
-.journey-point.active p {
-    display: block;
-}
-
-.journey-progress {
-    margin-top: 20px;
-}
-
-.progress-track {
-    height: 8px;
-    background: #e0e0e0;
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.progress-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    transition: width 0.5s ease;
-}
-
-.progress-text {
-    text-align: center;
-    margin-top: 10px;
-    color: #666;
-    font-size: 0.9em;
-}
-
-.vocabulary-section {
-    background: white;
-    border-radius: 20px;
-    padding: 40px;
-    margin-bottom: 40px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-}
-
-.vocabulary-section h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-    text-align: center;
-    color: #333;
-}
-
-.vocabulary-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    margin-bottom: 30px;
-    min-height: 200px;
-}
-
-.word-card {
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-    border-radius: 15px;
-    padding: 20px;
-    text-align: center;
-    transition: all 0.3s ease;
-    animation: slideIn 0.4s ease;
-}
-
-.word-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
-.word-german {
-    font-size: 1.4em;
-    font-weight: 700;
-    color: #667eea;
-    margin-bottom: 8px;
-}
-
-.word-translation {
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 5px;
-}
-
-.word-transcription {
-    font-size: 0.9em;
-    color: #888;
-    font-style: italic;
-    margin-bottom: 15px;
-}
-
-.word-sentence {
-    margin-top: 15px;
-    padding-top: 15px;
-    border-top: 1px solid #e0e0e0;
-}
-
-.sentence-german {
-    font-size: 0.95em;
-    color: #444;
-    margin-bottom: 5px;
-    font-style: italic;
-}
-
-.sentence-translation {
-    font-size: 0.9em;
-    color: #666;
-}
-
-.phase-navigation {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-}
-
-.change-phase-btn {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
-    border: none;
-    padding: 16px 32px;
-    border-radius: 12px;
-    font-size: 1.1em;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-    /* Mobile optimizations */
-    -webkit-tap-highlight-color: transparent;
-    -webkit-appearance: none;
-    appearance: none;
-    touch-action: manipulation;
-    -webkit-user-select: none;
-    user-select: none;
-    min-height: 48px;
-    min-width: 160px;
-}
-
-.change-phase-btn:hover:not(:disabled) {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-}
-
-.change-phase-btn:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
-}
-
-.change-phase-btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    transform: none !important;
-}
-
-/* Touch device specific button styles */
-@media (hover: none) and (pointer: coarse) {
-    .change-phase-btn {
-        padding: 18px 36px;
-        font-size: 1.15em;
-        min-height: 56px;
-    }
-    
-    .change-phase-btn:hover {
-        transform: none;
-    }
-    
-    .change-phase-btn:active:not(:disabled) {
-        transform: scale(0.98);
-        opacity: 0.9;
-    }
-}
-
-.bottom-nav {
-    text-align: center;
-    margin-top: 40px;
-    padding-bottom: 20px;
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1em;
-    padding: 12px 24px;
-    border: 2px solid white;
-    border-radius: 8px;
-    display: inline-block;
-    transition: all 0.3s ease;
-    /* Mobile optimizations */
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
-    min-height: 48px;
-}
-
-.nav-link:hover {
-    background: white;
-    color: #667eea;
-}
-
-/* Mobile responsive styles */
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-    
-    .page-header h1 {
-        font-size: 2em;
-    }
-    
-    .subtitle {
-        font-size: 1em;
-    }
-    
-    .journey-section {
-        padding: 20px;
-        border-radius: 15px;
-    }
-    
-    .journey-points {
-        padding: 0 10px;
-        gap: 10px;
-    }
-    
-    .journey-point {
-        min-width: 70px;
-    }
-    
-    .point-circle {
-        width: 48px;
-        height: 48px;
-        font-size: 20px;
-    }
-    
-    .journey-point h4 {
-        font-size: 0.8em;
-    }
-    
-    .vocabulary-section {
-        padding: 20px;
-    }
-    
-    .vocabulary-section h2 {
-        font-size: 1.5em;
-    }
-    
-    .vocabulary-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-    
-    .word-card {
-        padding: 15px;
-    }
-    
-    .phase-navigation {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .change-phase-btn {
-        width: 90%;
-        max-width: 300px;
-    }
-}
-
-/* Small mobile devices */
-@media (max-width: 480px) {
-    .journey-points {
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        padding-bottom: 10px;
-    }
-    
-    .journey-point {
-        scroll-snap-align: center;
-        flex: 0 0 auto;
-    }
-    
-    /* Custom scrollbar for journey points */
-    .journey-points::-webkit-scrollbar {
-        height: 6px;
-    }
-    
-    .journey-points::-webkit-scrollbar-track {
-        background: #f1f1f1;
-        border-radius: 3px;
-    }
-    
-    .journey-points::-webkit-scrollbar-thumb {
-        background: #667eea;
-        border-radius: 3px;
-    }
-}
-
-/* iOS specific fixes */
-@supports (-webkit-touch-callout: none) {
-    /* iOS only styles */
-    button, .journey-point {
-        -webkit-tap-highlight-color: transparent;
-    }
-    
-    .change-phase-btn,
-    .show-answer-btn,
-    .nav-link {
-        -webkit-appearance: none;
-        appearance: none;
-    }
-    
-    /* Fix iOS button radius */
-    input[type="button"],
-    input[type="submit"] {
-        border-radius: 0;
-    }
-}
-
-/* Android specific optimizations */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-    .journey-points {
-        -webkit-overflow-scrolling: touch;
-    }
-}
-
-/* Animations */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes drawLine {
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-        
-        .theatrical-scene {
-            background: linear-gradient(135deg, #f6f8fb 0%, #e9ecf1 100%);
-            border: 1px solid rgba(102, 126, 234, 0.2);
-            padding: 35px;
-            border-radius: 20px;
-            margin: 30px 0;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.08), 0 2px 10px rgba(102, 126, 234, 0.1);
-            display: none;
-            animation: fadeIn 0.5s ease;
-        }
-        
-        .theatrical-scene.active {
-            display: block;
-        }
-        
-        .theatrical-scene::before {
-            content: 'ACT';
-            position: absolute;
-            font-size: 100px;
-            font-weight: 900;
-            opacity: 0.05;
-            right: -30px;
-            top: -30px;
-            transform: rotate(-15deg);
-        }
-        
-        .scene-title {
-            color: #2d3748;
-            font-size: 1.8em;
-            font-weight: 700;
-            margin-bottom: 25px;
-            text-align: center;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 15px;
-        }
-        
-        .scene-narrative {
-            color: #4a5568;
-            font-size: 1.15em;
-            line-height: 1.9;
-            margin-bottom: 25px;
-            text-align: justify;
-        }
-        
-        .scene-narrative b {
-            color: #667eea;
-            font-weight: 700;
-            background: linear-gradient(180deg, transparent 60%, rgba(102, 126, 234, 0.15) 60%);
-            padding: 0 2px;
-            transition: all 0.3s ease;
-        }
-        
-        .scene-narrative b:hover {
-            background: linear-gradient(180deg, transparent 40%, rgba(102, 126, 234, 0.25) 40%);
-            color: #5a67d8;
-        }
-        
-        .emotional-peak {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
-            padding: 25px;
-            border-radius: 15px;
-            border-left: 4px solid #667eea;
-            color: #2d3748;
-            font-size: 1.1em;
-            font-style: italic;
-            margin-top: 25px;
-            position: relative;
-            box-shadow: inset 0 2px 8px rgba(0,0,0,0.05);
-        }
-        
-        .emotional-peak::before {
-            content: '';
-            position: absolute;
-            left: -4px;
-            top: 0;
-            bottom: 0;
-            width: 4px;
-            background: linear-gradient(180deg, #667eea, #764ba2);
-            border-radius: 4px;
-        }
-        
-        /* Стили для упражнения */
-        .exercise-section {
-            background: linear-gradient(135deg, #fff9e6 0%, #fff4d6 100%);
-            border: 2px solid #f6ad55;
-            padding: 30px;
-            border-radius: 15px;
-            margin-top: 35px;
-            position: relative;
-        }
-        
-        .exercise-title {
-            color: #d97706;
-            font-size: 1.4em;
-            font-weight: 700;
-            margin-bottom: 20px;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        
-        .exercise-text {
-            color: #4a5568;
-            font-size: 1.1em;
-            line-height: 1.9;
-            text-align: justify;
-        }
-        
-        .exercise-text .blank {
-            display: inline-block;
-            min-width: 100px;
-            border-bottom: 2px solid #f6ad55;
-            margin: 0 4px;
-            color: #a0aec0;
-            font-style: italic;
-            font-size: 0.9em;
-            padding: 0 4px;
-            transition: all 0.3s ease;
-        }
-        
-        .exercise-container {
-            display: none;
-        }
-        
-        .exercise-container.active {
-            display: block;
-        }
-        
-        .exercises-container {
-            margin-top: 40px;
-        }
-        
-        .show-answer-btn {
-            background: linear-gradient(135deg, #f6ad55 0%, #ed8936 100%);
-            color: white;
-            border: none;
-            padding: 16px 32px;
-            border-radius: 12px;
-            font-size: 1.1em;
-            font-weight: 600;
-            cursor: pointer;
-            margin-top: 20px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(237, 137, 54, 0.3);
-            /* Mobile optimizations */
-            touch-action: manipulation;
-            -webkit-tap-highlight-color: transparent;
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            user-select: none;
-            min-height: 48px;
-            min-width: 160px;
-        }
-        
-        .show-answer-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(237, 137, 54, 0.4);
-        }
-        
-        .show-answer-btn:active {
-            transform: translateY(0);
-            box-shadow: 0 2px 8px rgba(237, 137, 54, 0.3);
-        }
-        
-        /* Touch device optimizations */
-        @media (hover: none) and (pointer: coarse) {
-            .show-answer-btn {
-                padding: 18px 36px;
-                font-size: 1.2em;
-                min-height: 56px;
-            }
-            
-            .show-answer-btn:hover {
-                transform: none;
-            }
-            
-            .show-answer-btn:active {
-                transform: scale(0.98);
-                opacity: 0.9;
-            }
-        }
-        
-        @keyframes fadeIn {
-            from { 
-                opacity: 0; 
-                transform: translateY(20px); 
-            }
-            to { 
-                opacity: 1; 
-                transform: translateY(0); 
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .theatrical-scene {
-                padding: 25px 20px;
-            }
-            
-            .scene-title {
-                font-size: 1.4em;
-            }
-            
-            .scene-narrative {
-                font-size: 1.05em;
-                text-align: left;
-            }
-            
-            .exercise-section {
-                padding: 20px;
-            }
-            
-            .exercise-text {
-                font-size: 1em;
-                line-height: 1.8;
-            }
-            
-            .exercise-text .blank {
-                min-width: 80px;
-                padding: 2px 6px;
-                margin: 2px;
-            }
-            
-            .show-answer-btn {
-                width: 90%;
-                max-width: 300px;
-                padding: 18px 24px;
-                font-size: 1.15em;
-            }
-        }
-        
-        /* iOS specific fixes */
-        @supports (-webkit-touch-callout: none) {
-            .show-answer-btn {
-                -webkit-appearance: none;
-                appearance: none;
-            }
-            
-            .exercise-text .blank {
-                -webkit-tap-highlight-color: transparent;
-            }
-        }
-        
-    </style>
+    <link rel="stylesheet" href="../static/css/journey.css">
 </head>
 <body>
     <div class="container">
@@ -769,608 +13,643 @@ body {
             <h1>👑 Превращение Эдгара</h1>
             <p class="subtitle">Изучаем немецкий через трагедию Шекспира</p>
         </header>
-        
+
         <div class="journey-section">
             <h2>📚 Путешествие Edgar</h2>
-            
+
             <div class="journey-timeline">
                 <svg class="journey-line" width="100%" height="4">
-                    <line x1="0" y1="2" x2="100%" y2="2" stroke="#6b5b95" stroke-width="2" opacity="0.3"/>
-                    <line x1="0" y1="2" x2="14%" y2="2" stroke="#6b5b95" stroke-width="3" class="progress-line"/>
+                    <line x1="0" y1="2" x2="100%" y2="2" stroke="#6b5b95" stroke-width="2" opacity="0.3" />
+                    <line x1="0" y1="2" x2="14%" y2="2" stroke="#6b5b95" stroke-width="3" class="progress-line" />
                 </svg>
-                
+
                 <div class="journey-points">
                     
-                <div class="journey-point active" data-phase="throne">
-                    <div class="point-circle">🤴</div>
-                    <h4>Благородный сын</h4>
-                    <p>edel • Sohn • Erbe</p>
-                </div>
-                <div class="journey-point " data-phase="goneril">
-                    <div class="point-circle">🏃</div>
-                    <h4>Бегство</h4>
-                    <p>fliehen • Verrat • Gefahr</p>
-                </div>
-                <div class="journey-point " data-phase="regan">
-                    <div class="point-circle">🎭</div>
-                    <h4>Том из Бедлама</h4>
-                    <p>verrückt • nackt • arm</p>
-                </div>
-                <div class="journey-point " data-phase="storm">
-                    <div class="point-circle">⛈️</div>
-                    <h4>В буре</h4>
-                    <p>Sturm • frieren • leiden</p>
-                </div>
-                <div class="journey-point " data-phase="hut">
-                    <div class="point-circle">👁️</div>
-                    <h4>Проводник слепого</h4>
-                    <p>blind • führen • Klippe</p>
-                </div>
-                <div class="journey-point " data-phase="dover">
-                    <div class="point-circle">⚔️</div>
-                    <h4>Дуэль</h4>
-                    <p>Kampf • Bruder • Wahrheit</p>
-                </div>
-                <div class="journey-point " data-phase="prison">
-                    <div class="point-circle">👑</div>
-                    <h4>Наследник</h4>
-                    <p>überleben • Erbe • Zukunft</p>
-                </div>
+                    <div class="journey-point active" data-phase="throne">
+                        <div class="point-circle">🤴</div>
+                        <h4>Благородный сын</h4>
+                        
+                        <p>edel • Sohn • Erbe</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="goneril">
+                        <div class="point-circle">🏃</div>
+                        <h4>Бегство</h4>
+                        
+                        <p>fliehen • Verrat • Gefahr</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="regan">
+                        <div class="point-circle">🎭</div>
+                        <h4>Том из Бедлама</h4>
+                        
+                        <p>verrückt • nackt • arm</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="storm">
+                        <div class="point-circle">⛈️</div>
+                        <h4>В буре</h4>
+                        
+                        <p>Sturm • frieren • leiden</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="hut">
+                        <div class="point-circle">👁️</div>
+                        <h4>Проводник слепого</h4>
+                        
+                        <p>blind • führen • Klippe</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="dover">
+                        <div class="point-circle">⚔️</div>
+                        <h4>Дуэль</h4>
+                        
+                        <p>Kampf • Bruder • Wahrheit</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="prison">
+                        <div class="point-circle">👑</div>
+                        <h4>Наследник</h4>
+                        
+                        <p>überleben • Erbe • Zukunft</p>
+                        
+                    </div>
+                    
                 </div>
             </div>
-            
+
             <div class="journey-progress">
                 <div class="progress-track">
                     <div class="progress-fill" style="width: 14%"></div>
                 </div>
-                <div class="progress-text">Акт I: Разделение королевства</div>
+                <div class="progress-text">Акт I: Законный наследник</div>
             </div>
         </div>
+
         
-        <!-- Theatrical Scene Section -->
         <div class="theatrical-scenes">
             
-                <div class="theatrical-scene active" data-phase="throne">
-                    <h3 class="scene-title">НЕВИННОСТЬ НАСЛЕДНИКА</h3>
-                    <div class="scene-narrative">Я живу в мире <b>DER ADEL (знати)</b>, где честь превыше всего. Как <b>DER ERBE (наследник)</b> графа Глостера, я служу <b>DAS KÖNIGREICH (королевству)</b> верой и правдой. Отец полностью мне <b>VERTRAUEN (доверяет)</b>. <b>DIE EHRE (честь)</b> нашей семьи незапятнанна! Я - <b>LEGITIM (законный)</b> сын <b>DER GRAF (графа)</b>! <b>AHNUNGSLOS (ничего не подозревая)</b>, я живу в мире с братом Эдмундом. Как же я слеп! Не вижу змеи рядом! Моя наивность станет моим проклятием!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Эдмунд - мой любимый брат!» - говорю я отцу. «Мы делим всё поровну!» О, если бы я знал, какую бездну он готовит!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="goneril">
-                    <h3 class="scene-title">ПРЕДАТЕЛЬСТВО БРАТА</h3>
-                    <div class="scene-narrative">Эдмунд! Мой брат! Что ты наделал?! Я должен <b>FLIEHEN (бежать)</b>! <b>DER VERRAT (предательство)</b> брата как нож в спину! <b>DIE GEFAHR (опасность)</b> повсюду! Солдаты <b>VERFOLGEN (преследуют)</b> меня как зверя! Я <b>VERSTECKEN (прячусь)</b> в лесах! <b>DIE INTRIGE (интрига)</b> Эдмунда совершенна - отец верит ему! <b>DER BETRUG (обман)</b> раскрыт слишком поздно! Отец хочет меня <b>VERBANNEN (изгнать)</b>! Я потерял всё - имя, дом, будущее! Но я выживу и отомщу!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Эдмунд, брат, зачем?!» - кричу я в ночь. Стража приближается! Я бегу в темноту леса! Из принца - в изгоя!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="regan">
-                    <h3 class="scene-title">БЕЗУМНЫЙ ТОМ</h3>
-                    <div class="scene-narrative">Я стал Томом из Бедлама! <b>DER WAHNSINN (безумие)</b> - моя маска! Как <b>DER BETTLER (нищий)</b>, я невидим для врагов! <b>DIE VERKLEIDUNG (маскировка)</b> спасает мою жизнь! Почти <b>NACKT (голый)</b>, я брожу по пустошам! Я <b>MURMELN (бормочу)</b> бессмыслицу: «Том холоден! Дьяволы кусают!» Я <b>ZITTERN (дрожу)</b> от холода и страха! <b>DAS ELEND (нищета)</b> учит меня правде о человеческой природе! Я <b>WAHNSINNIG (безумный)</b> Том! «Фи, фо, фам! Чую кровь британца!» Никто не узнает графского сына!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Бедный Том! Том замёрз!» - вою я в ночь. Колючки в ногах, грязь на лице! Из принца в безумца! Но я жив!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="storm">
-                    <h3 class="scene-title">ТОВАРИЩИ ПО НЕСЧАСТЬЮ</h3>
-                    <div class="scene-narrative"><b>DER STURM (буря)</b> бушует над нами! Король Лир здесь, в хижине! Мы вместе <b>FRIEREN (мёрзнем)</b>! Он <b>LEIDEN (страдает)</b> больше меня - потерял королевство и разум! В этой жалкой <b>DIE HÜTTE (хижине)</b> мы нашли убежище. Я тайно <b>BESCHÜTZEN (защищаю)</b> безумного короля. Как Том, я <b>BEGLEITEN (сопровождаю)</b> его в безумии. <b>DER DONNER (гром)</b> гремит! <b>DER BLITZ (молния)</b> освещает наши страдания! «Бедный Том служил семи дьяволам!» - кричу я. Лир думает, я его философ!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Это холодная ночь для нас, безумцев!» - говорю королю. Он обнимает меня! Два изгоя в буре! Принц и король - оба нищие!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="hut">
-                    <h3 class="scene-title">ОБМАН ВО СПАСЕНИЕ</h3>
-                    <div class="scene-narrative">Боже! Мой отец <b>BLIND (слепой)</b>! Эдмунд довёл его до этого! Я <b>FÜHREN (веду)</b> его, но не открываюсь! Он хочет броситься с <b>DIE KLIPPE (утёса)</b> в Дувре! Я <b>TÄUSCHEN (обманываю)</b> его, чтобы <b>RETTEN (спасти)</b>! «Мы на вершине утёса!» - вру я. <b>DIE LIST (хитрость)</b> во имя любви! Он падает на ровном месте, думая, что прыгнул! Я <b>TRÖSTEN (утешаю)</b> его как чужой: «Боги спасли вас!» <b>DIE VERZWEIFLUNG (отчаяние)</b> отца разрывает моё сердце! Но я не могу открыться - ещё не время!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Прыгайте, милорд!» - кричу я. Он падает на траву! «Чудо! Вы живы!» Отец плачет! Я еле сдерживаю слёзы!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="dover">
-                    <h3 class="scene-title">ПРАВДА ПРОТИВ ЛЖИ</h3>
-                    <div class="scene-narrative">Час настал! <b>DER KAMPF (бой)</b> с братом-предателем! <b>DAS DUELL (дуэль)</b> решит всё! Не <b>DIE RACHE (месть)</b>, а <b>DIE GERECHTIGKEIT (справедливость)</b> ведёт мой меч! Я <b>ENTHÜLLEN (разоблачаю)</b> себя: «Я - Эдгар, твой брат!» Правда должна <b>SIEGEN (победить)</b> ложь! <b>DAS SCHWERT (меч)</b> в моей руке - оружие истины! «<b>DER BRUDER (брат)</b>, ты предал отца и меня!» Мы сражаемся! Клинки звенят! Эдмунд падает! Справедливость восторжествовала!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Моё имя - Эдгар! Твой законный брат!» - кричу я, сняв шлем. Эдмунд ранен! «Колесо судьбы совершило круг!» Правда победила!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="prison">
-                    <h3 class="scene-title">НОВОЕ НАЧАЛО</h3>
-                    <div class="scene-narrative">Я <b>ÜBERLEBEN (выжил)</b>! Теперь я <b>ERBEN (наследую)</b> титул и земли отца. <b>DIE ZUKUNFT (будущее)</b> королевства в руках выживших. Я буду <b>REGIEREN (править)</b> с <b>DIE WEISHEIT (мудростью)</b>, обретённой через страдания! <b>DIE ORDNUNG (порядок)</b> должен вернуться из хаоса! <b>DIE VERANTWORTUNG (ответственность)</b> огромна, но я готов! <b>NEU (новая)</b> эра начинается! Из безумца Тома я стал графом Эдгаром. Путь был страшен, но он закалил меня. Я буду справедливым правителем!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Мы, пережившие бурю, должны говорить правду!» - провозглашаю я. «Старые умерли, молодые должны нести бремя!» Я - новый граф!</div>
-                </div>
+            <div class="theatrical-scene active" data-phase="throne">
+                <h3 class="scene-title">НЕВИННОСТЬ НАСЛЕДНИКА</h3>
+                <div class="scene-narrative">Я живу в мире <b>DER ADEL (знати)</b>, где честь превыше всего. Как <b>DER ERBE (наследник)</b> графа Глостера, я служу <b>DAS KÖNIGREICH (королевству)</b> верой и правдой. Отец полностью мне <b>VERTRAUEN (доверяет)</b>. <b>DIE EHRE (честь)</b> нашей семьи незапятнанна! Я - <b>LEGITIM (законный)</b> сын <b>DER GRAF (графа)</b>! <b>AHNUNGSLOS (ничего не подозревая)</b>, я живу в мире с братом Эдмундом. Как же я слеп! Не вижу змеи рядом! Моя наивность станет моим проклятием!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Эдмунд - мой любимый брат!» - говорю я отцу. «Мы делим всё поровну!» О, если бы я знал, какую бездну он готовит!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="goneril">
+                <h3 class="scene-title">ПРЕДАТЕЛЬСТВО БРАТА</h3>
+                <div class="scene-narrative">Эдмунд! Мой брат! Что ты наделал?! Я должен <b>FLIEHEN (бежать)</b>! <b>DER VERRAT (предательство)</b> брата как нож в спину! <b>DIE GEFAHR (опасность)</b> повсюду! Солдаты <b>VERFOLGEN (преследуют)</b> меня как зверя! Я <b>VERSTECKEN (прячусь)</b> в лесах! <b>DIE INTRIGE (интрига)</b> Эдмунда совершенна - отец верит ему! <b>DER BETRUG (обман)</b> раскрыт слишком поздно! Отец хочет меня <b>VERBANNEN (изгнать)</b>! Я потерял всё - имя, дом, будущее! Но я выживу и отомщу!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Эдмунд, брат, зачем?!» - кричу я в ночь. Стража приближается! Я бегу в темноту леса! Из принца - в изгоя!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="regan">
+                <h3 class="scene-title">БЕЗУМНЫЙ ТОМ</h3>
+                <div class="scene-narrative">Я стал Томом из Бедлама! <b>DER WAHNSINN (безумие)</b> - моя маска! Как <b>DER BETTLER (нищий)</b>, я невидим для врагов! <b>DIE VERKLEIDUNG (маскировка)</b> спасает мою жизнь! Почти <b>NACKT (голый)</b>, я брожу по пустошам! Я <b>MURMELN (бормочу)</b> бессмыслицу: «Том холоден! Дьяволы кусают!» Я <b>ZITTERN (дрожу)</b> от холода и страха! <b>DAS ELEND (нищета)</b> учит меня правде о человеческой природе! Я <b>WAHNSINNIG (безумный)</b> Том! «Фи, фо, фам! Чую кровь британца!» Никто не узнает графского сына!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Бедный Том! Том замёрз!» - вою я в ночь. Колючки в ногах, грязь на лице! Из принца в безумца! Но я жив!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="storm">
+                <h3 class="scene-title">ТОВАРИЩИ ПО НЕСЧАСТЬЮ</h3>
+                <div class="scene-narrative"><b>DER STURM (буря)</b> бушует над нами! Король Лир здесь, в хижине! Мы вместе <b>FRIEREN (мёрзнем)</b>! Он <b>LEIDEN (страдает)</b> больше меня - потерял королевство и разум! В этой жалкой <b>DIE HÜTTE (хижине)</b> мы нашли убежище. Я тайно <b>BESCHÜTZEN (защищаю)</b> безумного короля. Как Том, я <b>BEGLEITEN (сопровождаю)</b> его в безумии. <b>DER DONNER (гром)</b> гремит! <b>DER BLITZ (молния)</b> освещает наши страдания! «Бедный Том служил семи дьяволам!» - кричу я. Лир думает, я его философ!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Это холодная ночь для нас, безумцев!» - говорю королю. Он обнимает меня! Два изгоя в буре! Принц и король - оба нищие!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="hut">
+                <h3 class="scene-title">ОБМАН ВО СПАСЕНИЕ</h3>
+                <div class="scene-narrative">Боже! Мой отец <b>BLIND (слепой)</b>! Эдмунд довёл его до этого! Я <b>FÜHREN (веду)</b> его, но не открываюсь! Он хочет броситься с <b>DIE KLIPPE (утёса)</b> в Дувре! Я <b>TÄUSCHEN (обманываю)</b> его, чтобы <b>RETTEN (спасти)</b>! «Мы на вершине утёса!» - вру я. <b>DIE LIST (хитрость)</b> во имя любви! Он падает на ровном месте, думая, что прыгнул! Я <b>TRÖSTEN (утешаю)</b> его как чужой: «Боги спасли вас!» <b>DIE VERZWEIFLUNG (отчаяние)</b> отца разрывает моё сердце! Но я не могу открыться - ещё не время!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Прыгайте, милорд!» - кричу я. Он падает на траву! «Чудо! Вы живы!» Отец плачет! Я еле сдерживаю слёзы!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="dover">
+                <h3 class="scene-title">ПРАВДА ПРОТИВ ЛЖИ</h3>
+                <div class="scene-narrative">Час настал! <b>DER KAMPF (бой)</b> с братом-предателем! <b>DAS DUELL (дуэль)</b> решит всё! Не <b>DIE RACHE (месть)</b>, а <b>DIE GERECHTIGKEIT (справедливость)</b> ведёт мой меч! Я <b>ENTHÜLLEN (разоблачаю)</b> себя: «Я - Эдгар, твой брат!» Правда должна <b>SIEGEN (победить)</b> ложь! <b>DAS SCHWERT (меч)</b> в моей руке - оружие истины! «<b>DER BRUDER (брат)</b>, ты предал отца и меня!» Мы сражаемся! Клинки звенят! Эдмунд падает! Справедливость восторжествовала!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Моё имя - Эдгар! Твой законный брат!» - кричу я, сняв шлем. Эдмунд ранен! «Колесо судьбы совершило круг!» Правда победила!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="prison">
+                <h3 class="scene-title">НОВОЕ НАЧАЛО</h3>
+                <div class="scene-narrative">Я <b>ÜBERLEBEN (выжил)</b>! Теперь я <b>ERBEN (наследую)</b> титул и земли отца. <b>DIE ZUKUNFT (будущее)</b> королевства в руках выживших. Я буду <b>REGIEREN (править)</b> с <b>DIE WEISHEIT (мудростью)</b>, обретённой через страдания! <b>DIE ORDNUNG (порядок)</b> должен вернуться из хаоса! <b>DIE VERANTWORTUNG (ответственность)</b> огромна, но я готов! <b>NEU (новая)</b> эра начинается! Из безумца Тома я стал графом Эдгаром. Путь был страшен, но он закалил меня. Я буду справедливым правителем!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Мы, пережившие бурю, должны говорить правду!» - провозглашаю я. «Старые умерли, молодые должны нести бремя!» Я - новый граф!</div>
+            </div>
+            
         </div>
         
+
         <div class="vocabulary-section">
-            <h2>📖 Словарь: Фаза "<span id="current-phase">Тронный зал</span>"</h2>
+            <h2>📖 Словарь: Фаза "<span id="current-phase">Благородный сын</span>"</h2>
             <div class="vocabulary-grid"></div>
-            
+
             <div class="phase-navigation">
-                <button class="change-phase-btn prev-btn">← Предыдущая фаза</button>
-                <button class="change-phase-btn next-btn">Следующая фаза →</button>
+                <button class="change-phase-btn prev-btn" type="button">← Предыдущая фаза</button>
+                <button class="change-phase-btn next-btn" type="button">Следующая фаза →</button>
             </div>
         </div>
-        
-        <!-- Exercises Section AFTER Vocabulary -->
+
         <div class="exercises-container">
             
-                    <div class="exercise-container active" data-phase="throne">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: НЕВИННОСТЬ НАСЛЕДНИКА</h4>
-                            <div class="exercise-text">Я живу в мире <span class="blank" data-answer="DER ADEL" data-hint="знати">_______ (знати)</span>, где честь превыше всего. Как <span class="blank" data-answer="der ERBE" data-hint="наследник">_______ (наследник)</span> графа Глостера, я служу <span class="blank" data-answer="DAS KÖNIGREICH" data-hint="королевству">_______ (королевству)</span> верой и правдой. Отец полностью мне <span class="blank" data-answer="VERTRAUEN" data-hint="доверяет">_______ (доверяет)</span>. <span class="blank" data-answer="die EHRE" data-hint="честь">_______ (честь)</span> нашей семьи незапятнанна! Я - <span class="blank" data-answer="LEGITIM" data-hint="законный">_______ (законный)</span> сын <span class="blank" data-answer="DER GRAF" data-hint="графа">_______ (графа)</span>! <span class="blank" data-answer="AHNUNGSLOS" data-hint="ничего не подозревая">_______ (ничего не подозревая)</span>, я живу в мире с братом Эдмундом. Как же я слеп! Не вижу змеи рядом! Моя наивность станет моим проклятием!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="goneril">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: ПРЕДАТЕЛЬСТВО БРАТА</h4>
-                            <div class="exercise-text">Эдмунд! Мой брат! Что ты наделал?! Я должен <span class="blank" data-answer="FLIEHEN" data-hint="бежать">_______ (бежать)</span>! <span class="blank" data-answer="der VERRAT" data-hint="предательство">_______ (предательство)</span> брата как нож в спину! <span class="blank" data-answer="die GEFAHR" data-hint="опасность">_______ (опасность)</span> повсюду! Солдаты <span class="blank" data-answer="VERFOLGEN" data-hint="преследуют">_______ (преследуют)</span> меня как зверя! Я <span class="blank" data-answer="VERSTECKEN" data-hint="прячусь">_______ (прячусь)</span> в лесах! <span class="blank" data-answer="die INTRIGE" data-hint="интрига">_______ (интрига)</span> Эдмунда совершенна - отец верит ему! <span class="blank" data-answer="der BETRUG" data-hint="обман">_______ (обман)</span> раскрыт слишком поздно! Отец хочет меня <span class="blank" data-answer="VERBANNEN" data-hint="изгнать">_______ (изгнать)</span>! Я потерял всё - имя, дом, будущее! Но я выживу и отомщу!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="regan">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: БЕЗУМНЫЙ ТОМ</h4>
-                            <div class="exercise-text">Я стал Томом из Бедлама! <span class="blank" data-answer="der WAHNSINN" data-hint="безумие">_______ (безумие)</span> - моя маска! Как <span class="blank" data-answer="der BETTLER" data-hint="нищий">_______ (нищий)</span>, я невидим для врагов! <span class="blank" data-answer="die VERKLEIDUNG" data-hint="маскировка">_______ (маскировка)</span> спасает мою жизнь! Почти <span class="blank" data-answer="NACKT" data-hint="голый">_______ (голый)</span>, я брожу по пустошам! Я <span class="blank" data-answer="MURMELN" data-hint="бормочу">_______ (бормочу)</span> бессмыслицу: «Том холоден! Дьяволы кусают!» Я <span class="blank" data-answer="ZITTERN" data-hint="дрожу">_______ (дрожу)</span> от холода и страха! <span class="blank" data-answer="das ELEND" data-hint="нищета">_______ (нищета)</span> учит меня правде о человеческой природе! Я <span class="blank" data-answer="WAHNSINNIG" data-hint="безумный">_______ (безумный)</span> Том! «Фи, фо, фам! Чую кровь британца!» Никто не узнает графского сына!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="storm">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: ТОВАРИЩИ ПО НЕСЧАСТЬЮ</h4>
-                            <div class="exercise-text"><span class="blank" data-answer="der STURM" data-hint="буря">_______ (буря)</span> бушует над нами! Король Лир здесь, в хижине! Мы вместе <span class="blank" data-answer="FRIEREN" data-hint="мёрзнем">_______ (мёрзнем)</span>! Он <span class="blank" data-answer="LEIDEN" data-hint="страдает">_______ (страдает)</span> больше меня - потерял королевство и разум! В этой жалкой <span class="blank" data-answer="die HÜTTE" data-hint="хижине">_______ (хижине)</span> мы нашли убежище. Я тайно <span class="blank" data-answer="BESCHÜTZEN" data-hint="защищаю">_______ (защищаю)</span> безумного короля. Как Том, я <span class="blank" data-answer="BEGLEITEN" data-hint="сопровождаю">_______ (сопровождаю)</span> его в безумии. <span class="blank" data-answer="der DONNER" data-hint="гром">_______ (гром)</span> гремит! <span class="blank" data-answer="der BLITZ" data-hint="молния">_______ (молния)</span> освещает наши страдания! «Бедный Том служил семи дьяволам!» - кричу я. Лир думает, я его философ!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="hut">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: ОБМАН ВО СПАСЕНИЕ</h4>
-                            <div class="exercise-text">Боже! Мой отец <span class="blank" data-answer="BLIND" data-hint="слепой">_______ (слепой)</span>! Эдмунд довёл его до этого! Я <span class="blank" data-answer="FÜHREN" data-hint="веду">_______ (веду)</span> его, но не открываюсь! Он хочет броситься с <span class="blank" data-answer="DIE KLIPPE" data-hint="утёса">_______ (утёса)</span> в Дувре! Я <span class="blank" data-answer="TÄUSCHEN" data-hint="обманываю">_______ (обманываю)</span> его, чтобы <span class="blank" data-answer="RETTEN" data-hint="спасти">_______ (спасти)</span>! «Мы на вершине утёса!» - вру я. <span class="blank" data-answer="die LIST" data-hint="хитрость">_______ (хитрость)</span> во имя любви! Он падает на ровном месте, думая, что прыгнул! Я <span class="blank" data-answer="TRÖSTEN" data-hint="утешаю">_______ (утешаю)</span> его как чужой: «Боги спасли вас!» <span class="blank" data-answer="die VERZWEIFLUNG" data-hint="отчаяние">_______ (отчаяние)</span> отца разрывает моё сердце! Но я не могу открыться - ещё не время!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="dover">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: ПРАВДА ПРОТИВ ЛЖИ</h4>
-                            <div class="exercise-text">Час настал! <span class="blank" data-answer="der KAMPF" data-hint="бой">_______ (бой)</span> с братом-предателем! <span class="blank" data-answer="das DUELL" data-hint="дуэль">_______ (дуэль)</span> решит всё! Не <span class="blank" data-answer="die RACHE" data-hint="месть">_______ (месть)</span>, а <span class="blank" data-answer="die GERECHTIGKEIT" data-hint="справедливость">_______ (справедливость)</span> ведёт мой меч! Я <span class="blank" data-answer="ENTHÜLLEN" data-hint="разоблачаю">_______ (разоблачаю)</span> себя: «Я - Эдгар, твой брат!» Правда должна <span class="blank" data-answer="SIEGEN" data-hint="победить">_______ (победить)</span> ложь! <span class="blank" data-answer="das SCHWERT" data-hint="меч">_______ (меч)</span> в моей руке - оружие истины! «<span class="blank" data-answer="der BRUDER" data-hint="брат">_______ (брат)</span>, ты предал отца и меня!» Мы сражаемся! Клинки звенят! Эдмунд падает! Справедливость восторжествовала!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="prison">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: НОВОЕ НАЧАЛО</h4>
-                            <div class="exercise-text">Я <span class="blank" data-answer="ÜBERLEBEN" data-hint="выжил">_______ (выжил)</span>! Теперь я <span class="blank" data-answer="ERBEN" data-hint="наследую">_______ (наследую)</span> титул и земли отца. <span class="blank" data-answer="die ZUKUNFT" data-hint="будущее">_______ (будущее)</span> королевства в руках выживших. Я буду <span class="blank" data-answer="REGIEREN" data-hint="править">_______ (править)</span> с <span class="blank" data-answer="DIE WEISHEIT" data-hint="мудростью">_______ (мудростью)</span>, обретённой через страдания! <span class="blank" data-answer="die ORDNUNG" data-hint="порядок">_______ (порядок)</span> должен вернуться из хаоса! <span class="blank" data-answer="die VERANTWORTUNG" data-hint="ответственность">_______ (ответственность)</span> огромна, но я готов! <span class="blank" data-answer="NEU" data-hint="новая">_______ (новая)</span> эра начинается! Из безумца Тома я стал графом Эдгаром. Путь был страшен, но он закалил меня. Я буду справедливым правителем!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
+            <div class="exercise-container active" data-phase="throne">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: НЕВИННОСТЬ НАСЛЕДНИКА</h4>
+                    <div class="exercise-text">Я живу в мире <span class="blank" data-answer="DER ADEL" data-hint="знати">_______ (знати)</span>, где честь превыше всего. Как <span class="blank" data-answer="der ERBE" data-hint="наследник">_______ (наследник)</span> графа Глостера, я служу <span class="blank" data-answer="DAS KÖNIGREICH" data-hint="королевству">_______ (королевству)</span> верой и правдой. Отец полностью мне <span class="blank" data-answer="VERTRAUEN" data-hint="доверяет">_______ (доверяет)</span>. <span class="blank" data-answer="die EHRE" data-hint="честь">_______ (честь)</span> нашей семьи незапятнанна! Я - <span class="blank" data-answer="LEGITIM" data-hint="законный">_______ (законный)</span> сын <span class="blank" data-answer="DER GRAF" data-hint="графа">_______ (графа)</span>! <span class="blank" data-answer="AHNUNGSLOS" data-hint="ничего не подозревая">_______ (ничего не подозревая)</span>, я живу в мире с братом Эдмундом. Как же я слеп! Не вижу змеи рядом! Моя наивность станет моим проклятием!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="goneril">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ПРЕДАТЕЛЬСТВО БРАТА</h4>
+                    <div class="exercise-text">Эдмунд! Мой брат! Что ты наделал?! Я должен <span class="blank" data-answer="FLIEHEN" data-hint="бежать">_______ (бежать)</span>! <span class="blank" data-answer="der VERRAT" data-hint="предательство">_______ (предательство)</span> брата как нож в спину! <span class="blank" data-answer="die GEFAHR" data-hint="опасность">_______ (опасность)</span> повсюду! Солдаты <span class="blank" data-answer="VERFOLGEN" data-hint="преследуют">_______ (преследуют)</span> меня как зверя! Я <span class="blank" data-answer="VERSTECKEN" data-hint="прячусь">_______ (прячусь)</span> в лесах! <span class="blank" data-answer="die INTRIGE" data-hint="интрига">_______ (интрига)</span> Эдмунда совершенна - отец верит ему! <span class="blank" data-answer="der BETRUG" data-hint="обман">_______ (обман)</span> раскрыт слишком поздно! Отец хочет меня <span class="blank" data-answer="VERBANNEN" data-hint="изгнать">_______ (изгнать)</span>! Я потерял всё - имя, дом, будущее! Но я выживу и отомщу!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="regan">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: БЕЗУМНЫЙ ТОМ</h4>
+                    <div class="exercise-text">Я стал Томом из Бедлама! <span class="blank" data-answer="der WAHNSINN" data-hint="безумие">_______ (безумие)</span> - моя маска! Как <span class="blank" data-answer="der BETTLER" data-hint="нищий">_______ (нищий)</span>, я невидим для врагов! <span class="blank" data-answer="die VERKLEIDUNG" data-hint="маскировка">_______ (маскировка)</span> спасает мою жизнь! Почти <span class="blank" data-answer="NACKT" data-hint="голый">_______ (голый)</span>, я брожу по пустошам! Я <span class="blank" data-answer="MURMELN" data-hint="бормочу">_______ (бормочу)</span> бессмыслицу: «Том холоден! Дьяволы кусают!» Я <span class="blank" data-answer="ZITTERN" data-hint="дрожу">_______ (дрожу)</span> от холода и страха! <span class="blank" data-answer="das ELEND" data-hint="нищета">_______ (нищета)</span> учит меня правде о человеческой природе! Я <span class="blank" data-answer="WAHNSINNIG" data-hint="безумный">_______ (безумный)</span> Том! «Фи, фо, фам! Чую кровь британца!» Никто не узнает графского сына!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="storm">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ТОВАРИЩИ ПО НЕСЧАСТЬЮ</h4>
+                    <div class="exercise-text"><span class="blank" data-answer="der STURM" data-hint="буря">_______ (буря)</span> бушует над нами! Король Лир здесь, в хижине! Мы вместе <span class="blank" data-answer="FRIEREN" data-hint="мёрзнем">_______ (мёрзнем)</span>! Он <span class="blank" data-answer="LEIDEN" data-hint="страдает">_______ (страдает)</span> больше меня - потерял королевство и разум! В этой жалкой <span class="blank" data-answer="die HÜTTE" data-hint="хижине">_______ (хижине)</span> мы нашли убежище. Я тайно <span class="blank" data-answer="BESCHÜTZEN" data-hint="защищаю">_______ (защищаю)</span> безумного короля. Как Том, я <span class="blank" data-answer="BEGLEITEN" data-hint="сопровождаю">_______ (сопровождаю)</span> его в безумии. <span class="blank" data-answer="der DONNER" data-hint="гром">_______ (гром)</span> гремит! <span class="blank" data-answer="der BLITZ" data-hint="молния">_______ (молния)</span> освещает наши страдания! «Бедный Том служил семи дьяволам!» - кричу я. Лир думает, я его философ!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="hut">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ОБМАН ВО СПАСЕНИЕ</h4>
+                    <div class="exercise-text">Боже! Мой отец <span class="blank" data-answer="BLIND" data-hint="слепой">_______ (слепой)</span>! Эдмунд довёл его до этого! Я <span class="blank" data-answer="FÜHREN" data-hint="веду">_______ (веду)</span> его, но не открываюсь! Он хочет броситься с <span class="blank" data-answer="DIE KLIPPE" data-hint="утёса">_______ (утёса)</span> в Дувре! Я <span class="blank" data-answer="TÄUSCHEN" data-hint="обманываю">_______ (обманываю)</span> его, чтобы <span class="blank" data-answer="RETTEN" data-hint="спасти">_______ (спасти)</span>! «Мы на вершине утёса!» - вру я. <span class="blank" data-answer="die LIST" data-hint="хитрость">_______ (хитрость)</span> во имя любви! Он падает на ровном месте, думая, что прыгнул! Я <span class="blank" data-answer="TRÖSTEN" data-hint="утешаю">_______ (утешаю)</span> его как чужой: «Боги спасли вас!» <span class="blank" data-answer="die VERZWEIFLUNG" data-hint="отчаяние">_______ (отчаяние)</span> отца разрывает моё сердце! Но я не могу открыться - ещё не время!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="dover">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ПРАВДА ПРОТИВ ЛЖИ</h4>
+                    <div class="exercise-text">Час настал! <span class="blank" data-answer="der KAMPF" data-hint="бой">_______ (бой)</span> с братом-предателем! <span class="blank" data-answer="das DUELL" data-hint="дуэль">_______ (дуэль)</span> решит всё! Не <span class="blank" data-answer="die RACHE" data-hint="месть">_______ (месть)</span>, а <span class="blank" data-answer="die GERECHTIGKEIT" data-hint="справедливость">_______ (справедливость)</span> ведёт мой меч! Я <span class="blank" data-answer="ENTHÜLLEN" data-hint="разоблачаю">_______ (разоблачаю)</span> себя: «Я - Эдгар, твой брат!» Правда должна <span class="blank" data-answer="SIEGEN" data-hint="победить">_______ (победить)</span> ложь! <span class="blank" data-answer="das SCHWERT" data-hint="меч">_______ (меч)</span> в моей руке - оружие истины! «<span class="blank" data-answer="der BRUDER" data-hint="брат">_______ (брат)</span>, ты предал отца и меня!» Мы сражаемся! Клинки звенят! Эдмунд падает! Справедливость восторжествовала!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="prison">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: НОВОЕ НАЧАЛО</h4>
+                    <div class="exercise-text">Я <span class="blank" data-answer="ÜBERLEBEN" data-hint="выжил">_______ (выжил)</span>! Теперь я <span class="blank" data-answer="ERBEN" data-hint="наследую">_______ (наследую)</span> титул и земли отца. <span class="blank" data-answer="die ZUKUNFT" data-hint="будущее">_______ (будущее)</span> королевства в руках выживших. Я буду <span class="blank" data-answer="REGIEREN" data-hint="править">_______ (править)</span> с <span class="blank" data-answer="DIE WEISHEIT" data-hint="мудростью">_______ (мудростью)</span>, обретённой через страдания! <span class="blank" data-answer="die ORDNUNG" data-hint="порядок">_______ (порядок)</span> должен вернуться из хаоса! <span class="blank" data-answer="die VERANTWORTUNG" data-hint="ответственность">_______ (ответственность)</span> огромна, но я готов! <span class="blank" data-answer="NEU" data-hint="новая">_______ (новая)</span> эра начинается! Из безумца Тома я стал графом Эдгаром. Путь был страшен, но он закалил меня. Я буду справедливым правителем!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
         </div>
-        
+
         <nav class="bottom-nav">
             <a href="../index.html" class="nav-link">← К главной</a>
         </nav>
     </div>
-    
+
     <script>const phaseVocabularies = {
-    throne: {
-        title: 'Благородный сын',
-        description: 'Акт I: Законный наследник',
-        words: [
+    "throne": {
+        "title": "Благородный сын",
+        "description": "Акт I: Законный наследник",
+        "words": [
             {
-                word: 'der Adel',
-                translation: 'знать',
-                transcription: '[дер А-дель]',
-                sentence: 'Der Adel erwartet von mir ehrenhaftes Verhalten.',
-                sentenceTranslation: 'Знать ожидает от меня достойного поведения.'
+                "word": "der Adel",
+                "translation": "знать",
+                "transcription": "[дер А-дель]",
+                "sentence": "Der Adel erwartet von mir ehrenhaftes Verhalten.",
+                "sentenceTranslation": "Знать ожидает от меня достойного поведения."
             },
             {
-                word: 'der Erbe',
-                translation: 'наследник',
-                transcription: '[дер ЕР-бе]',
-                sentence: 'Als rechtmäßiger Erbe habe ich Pflichten.',
-                sentenceTranslation: 'Как законный наследник, у меня есть обязанности.'
+                "word": "der Erbe",
+                "translation": "наследник",
+                "transcription": "[дер ЕР-бе]",
+                "sentence": "Als rechtmäßiger Erbe habe ich Pflichten.",
+                "sentenceTranslation": "Как законный наследник, у меня есть обязанности."
             },
             {
-                word: 'das Königreich',
-                translation: 'королевство',
-                transcription: '[дас КЁ-ниг-райх]',
-                sentence: 'Ich diene dem Königreich mit Ehre.',
-                sentenceTranslation: 'Я служу королевству с честью.'
+                "word": "das Königreich",
+                "translation": "королевство",
+                "transcription": "[дас КЁ-ниг-райх]",
+                "sentence": "Ich diene dem Königreich mit Ehre.",
+                "sentenceTranslation": "Я служу королевству с честью."
             },
             {
-                word: 'vertrauen',
-                translation: 'доверять',
-                transcription: '[фер-ТРАУ-ен]',
-                sentence: 'Mein Vater vertraut mir vollkommen.',
-                sentenceTranslation: 'Мой отец полностью мне доверяет.'
+                "word": "vertrauen",
+                "translation": "доверять",
+                "transcription": "[фер-ТРАУ-ен]",
+                "sentence": "Mein Vater vertraut mir vollkommen.",
+                "sentenceTranslation": "Мой отец полностью мне доверяет."
             },
             {
-                word: 'die Ehre',
-                translation: 'честь',
-                transcription: '[ди Э-ре]',
-                sentence: 'Die Ehre der Familie liegt in meinen Händen.',
-                sentenceTranslation: 'Честь семьи в моих руках.'
+                "word": "die Ehre",
+                "translation": "честь",
+                "transcription": "[ди Э-ре]",
+                "sentence": "Die Ehre der Familie liegt in meinen Händen.",
+                "sentenceTranslation": "Честь семьи в моих руках."
             },
             {
-                word: 'legitim',
-                translation: 'законный',
-                transcription: '[ле-ги-ТИМ]',
-                sentence: 'Ich bin der legitime Sohn des Grafen.',
-                sentenceTranslation: 'Я законный сын графа.'
+                "word": "legitim",
+                "translation": "законный",
+                "transcription": "[ле-ги-ТИМ]",
+                "sentence": "Ich bin der legitime Sohn des Grafen.",
+                "sentenceTranslation": "Я законный сын графа."
             },
             {
-                word: 'der Graf',
-                translation: 'граф',
-                transcription: '[дер ГРАФ]',
-                sentence: 'Mein Vater, der Graf, ist ein edler Mann.',
-                sentenceTranslation: 'Мой отец, граф, благородный человек.'
+                "word": "der Graf",
+                "translation": "граф",
+                "transcription": "[дер ГРАФ]",
+                "sentence": "Mein Vater, der Graf, ist ein edler Mann.",
+                "sentenceTranslation": "Мой отец, граф, благородный человек."
             },
             {
-                word: 'ahnungslos',
-                translation: 'ничего не подозревающий',
-                transcription: '[А-нунгс-лос]',
-                sentence: 'Ahnungslos vertraue ich meinem Bruder.',
-                sentenceTranslation: 'Ничего не подозревая, я доверяю брату.'
-            },
+                "word": "ahnungslos",
+                "translation": "ничего не подозревающий",
+                "transcription": "[А-нунгс-лос]",
+                "sentence": "Ahnungslos vertraue ich meinem Bruder.",
+                "sentenceTranslation": "Ничего не подозревая, я доверяю брату."
+            }
         ]
     },
-    goneril: {
-        title: 'Бегство',
-        description: 'Акт II: Предательство Эдмунда',
-        words: [
+    "goneril": {
+        "title": "Бегство",
+        "description": "Акт II: Предательство Эдмунда",
+        "words": [
             {
-                word: 'fliehen',
-                translation: 'бежать',
-                transcription: '[ФЛИ-ен]',
-                sentence: 'Ich muss vor falschen Anschuldigungen fliehen.',
-                sentenceTranslation: 'Я должен бежать от ложных обвинений.'
+                "word": "fliehen",
+                "translation": "бежать",
+                "transcription": "[ФЛИ-ен]",
+                "sentence": "Ich muss vor falschen Anschuldigungen fliehen.",
+                "sentenceTranslation": "Я должен бежать от ложных обвинений."
             },
             {
-                word: 'der Verrat',
-                translation: 'предательство',
-                transcription: '[дер фер-РАТ]',
-                sentence: 'Der Verrat meines Bruders zerstört mein Leben.',
-                sentenceTranslation: 'Предательство моего брата разрушает мою жизнь.'
+                "word": "der Verrat",
+                "translation": "предательство",
+                "transcription": "[дер фер-РАТ]",
+                "sentence": "Der Verrat meines Bruders zerstört mein Leben.",
+                "sentenceTranslation": "Предательство моего брата разрушает мою жизнь."
             },
             {
-                word: 'die Gefahr',
-                translation: 'опасность',
-                transcription: '[ди ге-ФАР]',
-                sentence: 'Die Gefahr lauert überall um mich herum.',
-                sentenceTranslation: 'Опасность подстерегает меня повсюду.'
+                "word": "die Gefahr",
+                "translation": "опасность",
+                "transcription": "[ди ге-ФАР]",
+                "sentence": "Die Gefahr lauert überall um mich herum.",
+                "sentenceTranslation": "Опасность подстерегает меня повсюду."
             },
             {
-                word: 'verfolgen',
-                translation: 'преследовать',
-                transcription: '[фер-ФОЛЬ-ген]',
-                sentence: 'Die Soldaten verfolgen mich wie einen Verbrecher.',
-                sentenceTranslation: 'Солдаты преследуют меня как преступника.'
+                "word": "verfolgen",
+                "translation": "преследовать",
+                "transcription": "[фер-ФОЛЬ-ген]",
+                "sentence": "Die Soldaten verfolgen mich wie einen Verbrecher.",
+                "sentenceTranslation": "Солдаты преследуют меня как преступника."
             },
             {
-                word: 'verstecken',
-                translation: 'прятаться',
-                transcription: '[фер-ШТЕ-кен]',
-                sentence: 'Ich muss mich in den Wäldern verstecken.',
-                sentenceTranslation: 'Я должен прятаться в лесах.'
+                "word": "verstecken",
+                "translation": "прятаться",
+                "transcription": "[фер-ШТЕ-кен]",
+                "sentence": "Ich muss mich in den Wäldern verstecken.",
+                "sentenceTranslation": "Я должен прятаться в лесах."
             },
             {
-                word: 'die Intrige',
-                translation: 'интрига',
-                transcription: '[ди ин-ТРИ-ге]',
-                sentence: 'Edmunds Intrige hat mich zum Geächteten gemacht.',
-                sentenceTranslation: 'Интрига Эдмунда сделала меня изгоем.'
+                "word": "die Intrige",
+                "translation": "интрига",
+                "transcription": "[ди ин-ТРИ-ге]",
+                "sentence": "Edmunds Intrige hat mich zum Geächteten gemacht.",
+                "sentenceTranslation": "Интрига Эдмунда сделала меня изгоем."
             },
             {
-                word: 'der Betrug',
-                translation: 'обман',
-                transcription: '[дер бе-ТРУГ]',
-                sentence: 'Dieser Betrug wird eines Tages aufgedeckt.',
-                sentenceTranslation: 'Этот обман однажды раскроется.'
+                "word": "der Betrug",
+                "translation": "обман",
+                "transcription": "[дер бе-ТРУГ]",
+                "sentence": "Dieser Betrug wird eines Tages aufgedeckt.",
+                "sentenceTranslation": "Этот обман однажды раскроется."
             },
             {
-                word: 'verbannen',
-                translation: 'изгнать',
-                transcription: '[фер-БАН-нен]',
-                sentence: 'Mein Vater will mich aus dem Land verbannen.',
-                sentenceTranslation: 'Мой отец хочет изгнать меня из страны.'
-            },
+                "word": "verbannen",
+                "translation": "изгнать",
+                "transcription": "[фер-БАН-нен]",
+                "sentence": "Mein Vater will mich aus dem Land verbannen.",
+                "sentenceTranslation": "Мой отец хочет изгнать меня из страны."
+            }
         ]
     },
-    regan: {
-        title: 'Том из Бедлама',
-        description: 'Акт III: Превращение в безумца',
-        words: [
+    "regan": {
+        "title": "Том из Бедлама",
+        "description": "Акт III: Превращение в безумца",
+        "words": [
             {
-                word: 'der Wahnsinn',
-                translation: 'безумие',
-                transcription: '[дер ВАН-зин]',
-                sentence: 'Ich spiele den Wahnsinn, um zu überleben.',
-                sentenceTranslation: 'Я играю безумие, чтобы выжить.'
+                "word": "der Wahnsinn",
+                "translation": "безумие",
+                "transcription": "[дер ВАН-зин]",
+                "sentence": "Ich spiele den Wahnsinn, um zu überleben.",
+                "sentenceTranslation": "Я играю безумие, чтобы выжить."
             },
             {
-                word: 'der Bettler',
-                translation: 'нищий',
-                transcription: '[дер БЕТ-лер]',
-                sentence: 'Als Bettler bin ich unsichtbar für meine Feinde.',
-                sentenceTranslation: 'Как нищий, я невидим для врагов.'
+                "word": "der Bettler",
+                "translation": "нищий",
+                "transcription": "[дер БЕТ-лер]",
+                "sentence": "Als Bettler bin ich unsichtbar für meine Feinde.",
+                "sentenceTranslation": "Как нищий, я невидим для врагов."
             },
             {
-                word: 'die Verkleidung',
-                translation: 'маскировка',
-                transcription: '[ди фер-КЛАЙ-дунг]',
-                sentence: 'Diese Verkleidung ist meine einzige Rettung.',
-                sentenceTranslation: 'Эта маскировка - моё единственное спасение.'
+                "word": "die Verkleidung",
+                "translation": "маскировка",
+                "transcription": "[ди фер-КЛАЙ-дунг]",
+                "sentence": "Diese Verkleidung ist meine einzige Rettung.",
+                "sentenceTranslation": "Эта маскировка - моё единственное спасение."
             },
             {
-                word: 'nackt',
-                translation: 'голый',
-                transcription: '[НАКТ]',
-                sentence: 'Fast nackt wandere ich durch die Wildnis.',
-                sentenceTranslation: 'Почти голый, я брожу по дикой местности.'
+                "word": "nackt",
+                "translation": "голый",
+                "transcription": "[НАКТ]",
+                "sentence": "Fast nackt wandere ich durch die Wildnis.",
+                "sentenceTranslation": "Почти голый, я брожу по дикой местности."
             },
             {
-                word: 'murmeln',
-                translation: 'бормотать',
-                transcription: '[МУР-мельн]',
-                sentence: 'Ich murmle Unsinn, um verrückt zu wirken.',
-                sentenceTranslation: 'Я бормочу чепуху, чтобы казаться сумасшедшим.'
+                "word": "murmeln",
+                "translation": "бормотать",
+                "transcription": "[МУР-мельн]",
+                "sentence": "Ich murmle Unsinn, um verrückt zu wirken.",
+                "sentenceTranslation": "Я бормочу чепуху, чтобы казаться сумасшедшим."
             },
             {
-                word: 'zittern',
-                translation: 'дрожать',
-                transcription: '[ЦИ-терн]',
-                sentence: 'Vor Kälte und Angst zittere ich ständig.',
-                sentenceTranslation: 'От холода и страха я постоянно дрожу.'
+                "word": "zittern",
+                "translation": "дрожать",
+                "transcription": "[ЦИ-терн]",
+                "sentence": "Vor Kälte und Angst zittere ich ständig.",
+                "sentenceTranslation": "От холода и страха я постоянно дрожу."
             },
             {
-                word: 'das Elend',
-                translation: 'нищета',
-                transcription: '[дас Э-ленд]',
-                sentence: 'Im Elend lerne ich die wahre Natur des Menschen.',
-                sentenceTranslation: 'В нищете я познаю истинную природу человека.'
+                "word": "das Elend",
+                "translation": "нищета",
+                "transcription": "[дас Э-ленд]",
+                "sentence": "Im Elend lerne ich die wahre Natur des Menschen.",
+                "sentenceTranslation": "В нищете я познаю истинную природу человека."
             },
             {
-                word: 'wahnsinnig',
-                translation: 'безумный',
-                transcription: '[ВАН-зи-ниг]',
-                sentence: 'Ich gebe vor, wahnsinnig zu sein.',
-                sentenceTranslation: 'Я притворяюсь безумным.'
-            },
+                "word": "wahnsinnig",
+                "translation": "безумный",
+                "transcription": "[ВАН-зи-ниг]",
+                "sentence": "Ich gebe vor, wahnsinnig zu sein.",
+                "sentenceTranslation": "Я притворяюсь безумным."
+            }
         ]
     },
-    storm: {
-        title: 'В буре',
-        description: 'Акт III: Встреча с Лиром',
-        words: [
+    "storm": {
+        "title": "В буре",
+        "description": "Акт III: Встреча с Лиром",
+        "words": [
             {
-                word: 'der Sturm',
-                translation: 'буря',
-                transcription: '[дер ШТУРМ]',
-                sentence: 'Der Sturm tobt über unseren Köpfen.',
-                sentenceTranslation: 'Буря бушует над нашими головами.'
+                "word": "der Sturm",
+                "translation": "буря",
+                "transcription": "[дер ШТУРМ]",
+                "sentence": "Der Sturm tobt über unseren Köpfen.",
+                "sentenceTranslation": "Буря бушует над нашими головами."
             },
             {
-                word: 'frieren',
-                translation: 'мёрзнуть',
-                transcription: '[ФРИ-рен]',
-                sentence: 'Wir frieren gemeinsam in dieser kalten Nacht.',
-                sentenceTranslation: 'Мы мёрзнем вместе в эту холодную ночь.'
+                "word": "frieren",
+                "translation": "мёрзнуть",
+                "transcription": "[ФРИ-рен]",
+                "sentence": "Wir frieren gemeinsam in dieser kalten Nacht.",
+                "sentenceTranslation": "Мы мёрзнем вместе в эту холодную ночь."
             },
             {
-                word: 'leiden',
-                translation: 'страдать',
-                transcription: '[ЛАЙ-ден]',
-                sentence: 'Der König leidet mehr als ich jemals gelitten habe.',
-                sentenceTranslation: 'Король страдает больше, чем я когда-либо страдал.'
+                "word": "leiden",
+                "translation": "страдать",
+                "transcription": "[ЛАЙ-ден]",
+                "sentence": "Der König leidet mehr als ich jemals gelitten habe.",
+                "sentenceTranslation": "Король страдает больше, чем я когда-либо страдал."
             },
             {
-                word: 'die Hütte',
-                translation: 'хижина',
-                transcription: '[ди ХЮ-те]',
-                sentence: 'In dieser armseligen Hütte finden wir Zuflucht.',
-                sentenceTranslation: 'В этой жалкой хижине мы находим убежище.'
+                "word": "die Hütte",
+                "translation": "хижина",
+                "transcription": "[ди ХЮ-те]",
+                "sentence": "In dieser armseligen Hütte finden wir Zuflucht.",
+                "sentenceTranslation": "В этой жалкой хижине мы находим убежище."
             },
             {
-                word: 'beschützen',
-                translation: 'защищать',
-                transcription: '[бе-ШЮ-цен]',
-                sentence: 'Heimlich beschütze ich den wahnsinnigen König.',
-                sentenceTranslation: 'Тайно я защищаю безумного короля.'
+                "word": "beschützen",
+                "translation": "защищать",
+                "transcription": "[бе-ШЮ-цен]",
+                "sentence": "Heimlich beschütze ich den wahnsinnigen König.",
+                "sentenceTranslation": "Тайно я защищаю безумного короля."
             },
             {
-                word: 'begleiten',
-                translation: 'сопровождать',
-                transcription: '[бе-ГЛАЙ-тен]',
-                sentence: 'Als Tom begleite ich Lear durch seine dunkelste Stunde.',
-                sentenceTranslation: 'Как Том, я сопровождаю Лира в его самый тёмный час.'
+                "word": "begleiten",
+                "translation": "сопровождать",
+                "transcription": "[бе-ГЛАЙ-тен]",
+                "sentence": "Als Tom begleite ich Lear durch seine dunkelste Stunde.",
+                "sentenceTranslation": "Как Том, я сопровождаю Лира в его самый тёмный час."
             },
             {
-                word: 'der Donner',
-                translation: 'гром',
-                transcription: '[дер ДО-нер]',
-                sentence: 'Der Donner übertönt unsere Schreie.',
-                sentenceTranslation: 'Гром заглушает наши крики.'
+                "word": "der Donner",
+                "translation": "гром",
+                "transcription": "[дер ДО-нер]",
+                "sentence": "Der Donner übertönt unsere Schreie.",
+                "sentenceTranslation": "Гром заглушает наши крики."
             },
             {
-                word: 'der Blitz',
-                translation: 'молния',
-                transcription: '[дер БЛИЦ]',
-                sentence: 'Die Blitze erhellen unser Elend.',
-                sentenceTranslation: 'Молнии освещают нашу нищету.'
-            },
+                "word": "der Blitz",
+                "translation": "молния",
+                "transcription": "[дер БЛИЦ]",
+                "sentence": "Die Blitze erhellen unser Elend.",
+                "sentenceTranslation": "Молнии освещают нашу нищету."
+            }
         ]
     },
-    hut: {
-        title: 'Проводник слепого',
-        description: 'Акт IV: Спасение отца',
-        words: [
+    "hut": {
+        "title": "Проводник слепого",
+        "description": "Акт IV: Спасение отца",
+        "words": [
             {
-                word: 'blind',
-                translation: 'слепой',
-                transcription: '[БЛИНД]',
-                sentence: 'Mein blinder Vater erkennt mich nicht.',
-                sentenceTranslation: 'Мой слепой отец не узнаёт меня.'
+                "word": "blind",
+                "translation": "слепой",
+                "transcription": "[БЛИНД]",
+                "sentence": "Mein blinder Vater erkennt mich nicht.",
+                "sentenceTranslation": "Мой слепой отец не узнаёт меня."
             },
             {
-                word: 'führen',
-                translation: 'вести',
-                transcription: '[ФЮ-рен]',
-                sentence: 'Ich führe ihn sicher durch die Dunkelheit.',
-                sentenceTranslation: 'Я веду его безопасно сквозь тьму.'
+                "word": "führen",
+                "translation": "вести",
+                "transcription": "[ФЮ-рен]",
+                "sentence": "Ich führe ihn sicher durch die Dunkelheit.",
+                "sentenceTranslation": "Я веду его безопасно сквозь тьму."
             },
             {
-                word: 'die Klippe',
-                translation: 'утёс',
-                transcription: '[ди КЛИ-пе]',
-                sentence: 'Er glaubt, wir stehen am Rand der Klippe.',
-                sentenceTranslation: 'Он думает, мы стоим на краю утёса.'
+                "word": "die Klippe",
+                "translation": "утёс",
+                "transcription": "[ди КЛИ-пе]",
+                "sentence": "Er glaubt, wir stehen am Rand der Klippe.",
+                "sentenceTranslation": "Он думает, мы стоим на краю утёса."
             },
             {
-                word: 'täuschen',
-                translation: 'обманывать',
-                transcription: '[ТОЙ-шен]',
-                sentence: 'Ich täusche ihn, um sein Leben zu retten.',
-                sentenceTranslation: 'Я обманываю его, чтобы спасти его жизнь.'
+                "word": "täuschen",
+                "translation": "обманывать",
+                "transcription": "[ТОЙ-шен]",
+                "sentence": "Ich täusche ihn, um sein Leben zu retten.",
+                "sentenceTranslation": "Я обманываю его, чтобы спасти его жизнь."
             },
             {
-                word: 'retten',
-                translation: 'спасать',
-                transcription: '[РЕ-тен]',
-                sentence: 'Mit List will ich meinen Vater retten.',
-                sentenceTranslation: 'Хитростью я хочу спасти отца.'
+                "word": "retten",
+                "translation": "спасать",
+                "transcription": "[РЕ-тен]",
+                "sentence": "Mit List will ich meinen Vater retten.",
+                "sentenceTranslation": "Хитростью я хочу спасти отца."
             },
             {
-                word: 'die List',
-                translation: 'хитрость',
-                transcription: '[ди ЛИСТ]',
-                sentence: 'Meine List bewahrt ihn vor dem Selbstmord.',
-                sentenceTranslation: 'Моя хитрость спасает его от самоубийства.'
+                "word": "die List",
+                "translation": "хитрость",
+                "transcription": "[ди ЛИСТ]",
+                "sentence": "Meine List bewahrt ihn vor dem Selbstmord.",
+                "sentenceTranslation": "Моя хитрость спасает его от самоубийства."
             },
             {
-                word: 'trösten',
-                translation: 'утешать',
-                transcription: '[ТРЁС-тен]',
-                sentence: 'Als Fremder tröste ich meinen eigenen Vater.',
-                sentenceTranslation: 'Как чужой, я утешаю собственного отца.'
+                "word": "trösten",
+                "translation": "утешать",
+                "transcription": "[ТРЁС-тен]",
+                "sentence": "Als Fremder tröste ich meinen eigenen Vater.",
+                "sentenceTranslation": "Как чужой, я утешаю собственного отца."
             },
             {
-                word: 'die Verzweiflung',
-                translation: 'отчаяние',
-                transcription: '[ди фер-ЦВАЙ-флунг]',
-                sentence: 'Seine Verzweiflung bricht mir das Herz.',
-                sentenceTranslation: 'Его отчаяние разбивает мне сердце.'
-            },
+                "word": "die Verzweiflung",
+                "translation": "отчаяние",
+                "transcription": "[ди фер-ЦВАЙ-флунг]",
+                "sentence": "Seine Verzweiflung bricht mir das Herz.",
+                "sentenceTranslation": "Его отчаяние разбивает мне сердце."
+            }
         ]
     },
-    dover: {
-        title: 'Дуэль',
-        description: 'Акт V: Поединок с Эдмундом',
-        words: [
+    "dover": {
+        "title": "Дуэль",
+        "description": "Акт V: Поединок с Эдмундом",
+        "words": [
             {
-                word: 'der Kampf',
-                translation: 'бой',
-                transcription: '[дер КАМПФ]',
-                sentence: 'Der Kampf gegen meinen Bruder ist unvermeidlich.',
-                sentenceTranslation: 'Бой с моим братом неизбежен.'
+                "word": "der Kampf",
+                "translation": "бой",
+                "transcription": "[дер КАМПФ]",
+                "sentence": "Der Kampf gegen meinen Bruder ist unvermeidlich.",
+                "sentenceTranslation": "Бой с моим братом неизбежен."
             },
             {
-                word: 'das Duell',
-                translation: 'дуэль',
-                transcription: '[дас ду-ЭЛЬ]',
-                sentence: 'In diesem Duell kämpfe ich für die Gerechtigkeit.',
-                sentenceTranslation: 'В этой дуэли я сражаюсь за справедливость.'
+                "word": "das Duell",
+                "translation": "дуэль",
+                "transcription": "[дас ду-ЭЛЬ]",
+                "sentence": "In diesem Duell kämpfe ich für die Gerechtigkeit.",
+                "sentenceTranslation": "В этой дуэли я сражаюсь за справедливость."
             },
             {
-                word: 'die Rache',
-                translation: 'месть',
-                transcription: '[ди РА-хе]',
-                sentence: 'Nicht Rache, sondern Gerechtigkeit leitet meine Klinge.',
-                sentenceTranslation: 'Не месть, а справедливость ведёт мой клинок.'
+                "word": "die Rache",
+                "translation": "месть",
+                "transcription": "[ди РА-хе]",
+                "sentence": "Nicht Rache, sondern Gerechtigkeit leitet meine Klinge.",
+                "sentenceTranslation": "Не месть, а справедливость ведёт мой клинок."
             },
             {
-                word: 'enthüllen',
-                translation: 'разоблачать',
-                transcription: '[энт-ХЮ-лен]',
-                sentence: 'Ich enthülle meine wahre Identität.',
-                sentenceTranslation: 'Я разоблачаю свою истинную личность.'
+                "word": "enthüllen",
+                "translation": "разоблачать",
+                "transcription": "[энт-ХЮ-лен]",
+                "sentence": "Ich enthülle meine wahre Identität.",
+                "sentenceTranslation": "Я разоблачаю свою истинную личность."
             },
             {
-                word: 'siegen',
-                translation: 'побеждать',
-                transcription: '[ЗИ-ген]',
-                sentence: 'Die Wahrheit wird über die Lüge siegen.',
-                sentenceTranslation: 'Правда победит ложь.'
+                "word": "siegen",
+                "translation": "побеждать",
+                "transcription": "[ЗИ-ген]",
+                "sentence": "Die Wahrheit wird über die Lüge siegen.",
+                "sentenceTranslation": "Правда победит ложь."
             },
             {
-                word: 'die Gerechtigkeit',
-                translation: 'справедливость',
-                transcription: '[ди ге-РЕХ-тиг-кайт]',
-                sentence: 'Die Gerechtigkeit fordert diesen Kampf.',
-                sentenceTranslation: 'Справедливость требует этого боя.'
+                "word": "die Gerechtigkeit",
+                "translation": "справедливость",
+                "transcription": "[ди ге-РЕХ-тиг-кайт]",
+                "sentence": "Die Gerechtigkeit fordert diesen Kampf.",
+                "sentenceTranslation": "Справедливость требует этого боя."
             },
             {
-                word: 'das Schwert',
-                translation: 'меч',
-                transcription: '[дас ШВЕРТ]',
-                sentence: 'Mein Schwert ist die Waffe der Wahrheit.',
-                sentenceTranslation: 'Мой меч - оружие правды.'
+                "word": "das Schwert",
+                "translation": "меч",
+                "transcription": "[дас ШВЕРТ]",
+                "sentence": "Mein Schwert ist die Waffe der Wahrheit.",
+                "sentenceTranslation": "Мой меч - оружие правды."
             },
             {
-                word: 'der Bruder',
-                translation: 'брат',
-                transcription: '[дер БРУ-дер]',
-                sentence: 'Mein Bruder muss für seine Verbrechen büßen.',
-                sentenceTranslation: 'Мой брат должен поплатиться за свои преступления.'
-            },
+                "word": "der Bruder",
+                "translation": "брат",
+                "transcription": "[дер БРУ-дер]",
+                "sentence": "Mein Bruder muss für seine Verbrechen büßen.",
+                "sentenceTranslation": "Мой брат должен поплатиться за свои преступления."
+            }
         ]
     },
-    prison: {
-        title: 'Наследник',
-        description: 'Акт V: Новый граф',
-        words: [
+    "prison": {
+        "title": "Наследник",
+        "description": "Акт V: Новый граф",
+        "words": [
             {
-                word: 'überleben',
-                translation: 'выживать',
-                transcription: '[ю-бер-ЛЕ-бен]',
-                sentence: 'Ich habe alle Prüfungen überlebt.',
-                sentenceTranslation: 'Я пережил все испытания.'
+                "word": "überleben",
+                "translation": "выживать",
+                "transcription": "[ю-бер-ЛЕ-бен]",
+                "sentence": "Ich habe alle Prüfungen überlebt.",
+                "sentenceTranslation": "Я пережил все испытания."
             },
             {
-                word: 'erben',
-                translation: 'наследовать',
-                transcription: '[ЭР-бен]',
-                sentence: 'Nun erbe ich Titel und Verantwortung.',
-                sentenceTranslation: 'Теперь я наследую титул и ответственность.'
+                "word": "erben",
+                "translation": "наследовать",
+                "transcription": "[ЭР-бен]",
+                "sentence": "Nun erbe ich Titel und Verantwortung.",
+                "sentenceTranslation": "Теперь я наследую титул и ответственность."
             },
             {
-                word: 'die Zukunft',
-                translation: 'будущее',
-                transcription: '[ди ЦУ-кунфт]',
-                sentence: 'Die Zukunft des Königreichs liegt in unseren Händen.',
-                sentenceTranslation: 'Будущее королевства в наших руках.'
+                "word": "die Zukunft",
+                "translation": "будущее",
+                "transcription": "[ди ЦУ-кунфт]",
+                "sentence": "Die Zukunft des Königreichs liegt in unseren Händen.",
+                "sentenceTranslation": "Будущее королевства в наших руках."
             },
             {
-                word: 'regieren',
-                translation: 'править',
-                transcription: '[ре-ГИ-рен]',
-                sentence: 'Mit Weisheit werde ich regieren.',
-                sentenceTranslation: 'С мудростью я буду править.'
+                "word": "regieren",
+                "translation": "править",
+                "transcription": "[ре-ГИ-рен]",
+                "sentence": "Mit Weisheit werde ich regieren.",
+                "sentenceTranslation": "С мудростью я буду править."
             },
             {
-                word: 'die Weisheit',
-                translation: 'мудрость',
-                transcription: '[ди ВАЙС-хайт]',
-                sentence: 'Durch Leiden habe ich Weisheit erlangt.',
-                sentenceTranslation: 'Через страдания я обрёл мудрость.'
+                "word": "die Weisheit",
+                "translation": "мудрость",
+                "transcription": "[ди ВАЙС-хайт]",
+                "sentence": "Durch Leiden habe ich Weisheit erlangt.",
+                "sentenceTranslation": "Через страдания я обрёл мудрость."
             },
             {
-                word: 'die Ordnung',
-                translation: 'порядок',
-                transcription: '[ди ОРД-нунг]',
-                sentence: 'Neue Ordnung muss aus dem Chaos entstehen.',
-                sentenceTranslation: 'Новый порядок должен возникнуть из хаоса.'
+                "word": "die Ordnung",
+                "translation": "порядок",
+                "transcription": "[ди ОРД-нунг]",
+                "sentence": "Neue Ordnung muss aus dem Chaos entstehen.",
+                "sentenceTranslation": "Новый порядок должен возникнуть из хаоса."
             },
             {
-                word: 'die Verantwortung',
-                translation: 'ответственность',
-                transcription: '[ди фер-АНТ-вор-тунг]',
-                sentence: 'Die Verantwortung für alle wiegt schwer.',
-                sentenceTranslation: 'Ответственность за всех тяжела.'
+                "word": "die Verantwortung",
+                "translation": "ответственность",
+                "transcription": "[ди фер-АНТ-вор-тунг]",
+                "sentence": "Die Verantwortung für alle wiegt schwer.",
+                "sentenceTranslation": "Ответственность за всех тяжела."
             },
             {
-                word: 'neu',
-                translation: 'новый',
-                transcription: '[НОЙ]',
-                sentence: 'Eine neue Ära beginnt für unser Land.',
-                sentenceTranslation: 'Новая эра начинается для нашей страны.'
-            },
+                "word": "neu",
+                "translation": "новый",
+                "transcription": "[НОЙ]",
+                "sentence": "Eine neue Ära beginnt für unser Land.",
+                "sentenceTranslation": "Новая эра начинается для нашей страны."
+            }
         ]
-    },
+    }
 };
 
 

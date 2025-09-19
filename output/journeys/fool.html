@@ -5,763 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Путь Шута | König Lear</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        
-/* LIRA JOURNEY STYLES - Mobile Optimized */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-/* Prevent iOS zoom on input focus */
-input, select, textarea, button {
-    font-size: 16px !important;
-}
-
-/* Prevent text selection on mobile */
-.no-select {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-body {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
-    font-family: 'Inter', 'Segoe UI', sans-serif;
-    color: #333;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.page-header {
-    text-align: center;
-    color: white;
-    margin-bottom: 40px;
-    animation: fadeInDown 0.8s ease;
-}
-
-.page-header h1 {
-    font-size: 3em;
-    font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 1.2em;
-    opacity: 0.95;
-}
-
-.journey-section {
-    background: white;
-    border-radius: 20px;
-    padding: 40px;
-    margin-bottom: 40px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-}
-
-.journey-timeline {
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.journey-line {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.progress-line {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: drawLine 2s ease forwards;
-    animation-delay: 1s;
-}
-
-.journey-points {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    z-index: 2;
-    padding: 0 30px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-}
-
-.journey-point {
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    opacity: 0.7;
-    transform: scale(0.9);
-    /* Mobile touch optimizations */
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    user-select: none;
-    touch-action: manipulation;
-    min-width: 80px;
-    padding: 10px 5px;
-    position: relative;
-}
-
-.journey-point.active {
-    opacity: 1;
-    transform: scale(1);
-}
-
-/* Touch feedback for mobile */
-@media (hover: none) and (pointer: coarse) {
-    .journey-point {
-        min-width: 90px;
-    }
-    
-    .journey-point:active {
-        transform: scale(0.95);
-        opacity: 0.9;
-    }
-}
-
-.point-circle {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: white;
-    border: 3px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    margin: 0 auto 10px;
-    transition: all 0.3s ease;
-}
-
-.journey-point.active .point-circle {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    border-color: #667eea;
-    transform: scale(1.2);
-    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
-}
-
-.journey-point h4 {
-    font-size: 0.9em;
-    margin: 5px 0;
-    color: #333;
-}
-
-.journey-point p {
-    font-size: 0.75em;
-    color: #666;
-    display: none;
-}
-
-.journey-point.active p {
-    display: block;
-}
-
-.journey-progress {
-    margin-top: 20px;
-}
-
-.progress-track {
-    height: 8px;
-    background: #e0e0e0;
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.progress-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    transition: width 0.5s ease;
-}
-
-.progress-text {
-    text-align: center;
-    margin-top: 10px;
-    color: #666;
-    font-size: 0.9em;
-}
-
-.vocabulary-section {
-    background: white;
-    border-radius: 20px;
-    padding: 40px;
-    margin-bottom: 40px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-}
-
-.vocabulary-section h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-    text-align: center;
-    color: #333;
-}
-
-.vocabulary-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    margin-bottom: 30px;
-    min-height: 200px;
-}
-
-.word-card {
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-    border-radius: 15px;
-    padding: 20px;
-    text-align: center;
-    transition: all 0.3s ease;
-    animation: slideIn 0.4s ease;
-}
-
-.word-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
-.word-german {
-    font-size: 1.4em;
-    font-weight: 700;
-    color: #667eea;
-    margin-bottom: 8px;
-}
-
-.word-translation {
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 5px;
-}
-
-.word-transcription {
-    font-size: 0.9em;
-    color: #888;
-    font-style: italic;
-    margin-bottom: 15px;
-}
-
-.word-sentence {
-    margin-top: 15px;
-    padding-top: 15px;
-    border-top: 1px solid #e0e0e0;
-}
-
-.sentence-german {
-    font-size: 0.95em;
-    color: #444;
-    margin-bottom: 5px;
-    font-style: italic;
-}
-
-.sentence-translation {
-    font-size: 0.9em;
-    color: #666;
-}
-
-.phase-navigation {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-}
-
-.change-phase-btn {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
-    border: none;
-    padding: 16px 32px;
-    border-radius: 12px;
-    font-size: 1.1em;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-    /* Mobile optimizations */
-    -webkit-tap-highlight-color: transparent;
-    -webkit-appearance: none;
-    appearance: none;
-    touch-action: manipulation;
-    -webkit-user-select: none;
-    user-select: none;
-    min-height: 48px;
-    min-width: 160px;
-}
-
-.change-phase-btn:hover:not(:disabled) {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-}
-
-.change-phase-btn:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
-}
-
-.change-phase-btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    transform: none !important;
-}
-
-/* Touch device specific button styles */
-@media (hover: none) and (pointer: coarse) {
-    .change-phase-btn {
-        padding: 18px 36px;
-        font-size: 1.15em;
-        min-height: 56px;
-    }
-    
-    .change-phase-btn:hover {
-        transform: none;
-    }
-    
-    .change-phase-btn:active:not(:disabled) {
-        transform: scale(0.98);
-        opacity: 0.9;
-    }
-}
-
-.bottom-nav {
-    text-align: center;
-    margin-top: 40px;
-    padding-bottom: 20px;
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1em;
-    padding: 12px 24px;
-    border: 2px solid white;
-    border-radius: 8px;
-    display: inline-block;
-    transition: all 0.3s ease;
-    /* Mobile optimizations */
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
-    min-height: 48px;
-}
-
-.nav-link:hover {
-    background: white;
-    color: #667eea;
-}
-
-/* Mobile responsive styles */
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-    
-    .page-header h1 {
-        font-size: 2em;
-    }
-    
-    .subtitle {
-        font-size: 1em;
-    }
-    
-    .journey-section {
-        padding: 20px;
-        border-radius: 15px;
-    }
-    
-    .journey-points {
-        padding: 0 10px;
-        gap: 10px;
-    }
-    
-    .journey-point {
-        min-width: 70px;
-    }
-    
-    .point-circle {
-        width: 48px;
-        height: 48px;
-        font-size: 20px;
-    }
-    
-    .journey-point h4 {
-        font-size: 0.8em;
-    }
-    
-    .vocabulary-section {
-        padding: 20px;
-    }
-    
-    .vocabulary-section h2 {
-        font-size: 1.5em;
-    }
-    
-    .vocabulary-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-    
-    .word-card {
-        padding: 15px;
-    }
-    
-    .phase-navigation {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .change-phase-btn {
-        width: 90%;
-        max-width: 300px;
-    }
-}
-
-/* Small mobile devices */
-@media (max-width: 480px) {
-    .journey-points {
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        padding-bottom: 10px;
-    }
-    
-    .journey-point {
-        scroll-snap-align: center;
-        flex: 0 0 auto;
-    }
-    
-    /* Custom scrollbar for journey points */
-    .journey-points::-webkit-scrollbar {
-        height: 6px;
-    }
-    
-    .journey-points::-webkit-scrollbar-track {
-        background: #f1f1f1;
-        border-radius: 3px;
-    }
-    
-    .journey-points::-webkit-scrollbar-thumb {
-        background: #667eea;
-        border-radius: 3px;
-    }
-}
-
-/* iOS specific fixes */
-@supports (-webkit-touch-callout: none) {
-    /* iOS only styles */
-    button, .journey-point {
-        -webkit-tap-highlight-color: transparent;
-    }
-    
-    .change-phase-btn,
-    .show-answer-btn,
-    .nav-link {
-        -webkit-appearance: none;
-        appearance: none;
-    }
-    
-    /* Fix iOS button radius */
-    input[type="button"],
-    input[type="submit"] {
-        border-radius: 0;
-    }
-}
-
-/* Android specific optimizations */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-    .journey-points {
-        -webkit-overflow-scrolling: touch;
-    }
-}
-
-/* Animations */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes drawLine {
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-        
-        .theatrical-scene {
-            background: linear-gradient(135deg, #f6f8fb 0%, #e9ecf1 100%);
-            border: 1px solid rgba(102, 126, 234, 0.2);
-            padding: 35px;
-            border-radius: 20px;
-            margin: 30px 0;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.08), 0 2px 10px rgba(102, 126, 234, 0.1);
-            display: none;
-            animation: fadeIn 0.5s ease;
-        }
-        
-        .theatrical-scene.active {
-            display: block;
-        }
-        
-        .theatrical-scene::before {
-            content: 'ACT';
-            position: absolute;
-            font-size: 100px;
-            font-weight: 900;
-            opacity: 0.05;
-            right: -30px;
-            top: -30px;
-            transform: rotate(-15deg);
-        }
-        
-        .scene-title {
-            color: #2d3748;
-            font-size: 1.8em;
-            font-weight: 700;
-            margin-bottom: 25px;
-            text-align: center;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 15px;
-        }
-        
-        .scene-narrative {
-            color: #4a5568;
-            font-size: 1.15em;
-            line-height: 1.9;
-            margin-bottom: 25px;
-            text-align: justify;
-        }
-        
-        .scene-narrative b {
-            color: #667eea;
-            font-weight: 700;
-            background: linear-gradient(180deg, transparent 60%, rgba(102, 126, 234, 0.15) 60%);
-            padding: 0 2px;
-            transition: all 0.3s ease;
-        }
-        
-        .scene-narrative b:hover {
-            background: linear-gradient(180deg, transparent 40%, rgba(102, 126, 234, 0.25) 40%);
-            color: #5a67d8;
-        }
-        
-        .emotional-peak {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
-            padding: 25px;
-            border-radius: 15px;
-            border-left: 4px solid #667eea;
-            color: #2d3748;
-            font-size: 1.1em;
-            font-style: italic;
-            margin-top: 25px;
-            position: relative;
-            box-shadow: inset 0 2px 8px rgba(0,0,0,0.05);
-        }
-        
-        .emotional-peak::before {
-            content: '';
-            position: absolute;
-            left: -4px;
-            top: 0;
-            bottom: 0;
-            width: 4px;
-            background: linear-gradient(180deg, #667eea, #764ba2);
-            border-radius: 4px;
-        }
-        
-        /* Стили для упражнения */
-        .exercise-section {
-            background: linear-gradient(135deg, #fff9e6 0%, #fff4d6 100%);
-            border: 2px solid #f6ad55;
-            padding: 30px;
-            border-radius: 15px;
-            margin-top: 35px;
-            position: relative;
-        }
-        
-        .exercise-title {
-            color: #d97706;
-            font-size: 1.4em;
-            font-weight: 700;
-            margin-bottom: 20px;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        
-        .exercise-text {
-            color: #4a5568;
-            font-size: 1.1em;
-            line-height: 1.9;
-            text-align: justify;
-        }
-        
-        .exercise-text .blank {
-            display: inline-block;
-            min-width: 100px;
-            border-bottom: 2px solid #f6ad55;
-            margin: 0 4px;
-            color: #a0aec0;
-            font-style: italic;
-            font-size: 0.9em;
-            padding: 0 4px;
-            transition: all 0.3s ease;
-        }
-        
-        .exercise-container {
-            display: none;
-        }
-        
-        .exercise-container.active {
-            display: block;
-        }
-        
-        .exercises-container {
-            margin-top: 40px;
-        }
-        
-        .show-answer-btn {
-            background: linear-gradient(135deg, #f6ad55 0%, #ed8936 100%);
-            color: white;
-            border: none;
-            padding: 16px 32px;
-            border-radius: 12px;
-            font-size: 1.1em;
-            font-weight: 600;
-            cursor: pointer;
-            margin-top: 20px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(237, 137, 54, 0.3);
-            /* Mobile optimizations */
-            touch-action: manipulation;
-            -webkit-tap-highlight-color: transparent;
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            user-select: none;
-            min-height: 48px;
-            min-width: 160px;
-        }
-        
-        .show-answer-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(237, 137, 54, 0.4);
-        }
-        
-        .show-answer-btn:active {
-            transform: translateY(0);
-            box-shadow: 0 2px 8px rgba(237, 137, 54, 0.3);
-        }
-        
-        /* Touch device optimizations */
-        @media (hover: none) and (pointer: coarse) {
-            .show-answer-btn {
-                padding: 18px 36px;
-                font-size: 1.2em;
-                min-height: 56px;
-            }
-            
-            .show-answer-btn:hover {
-                transform: none;
-            }
-            
-            .show-answer-btn:active {
-                transform: scale(0.98);
-                opacity: 0.9;
-            }
-        }
-        
-        @keyframes fadeIn {
-            from { 
-                opacity: 0; 
-                transform: translateY(20px); 
-            }
-            to { 
-                opacity: 1; 
-                transform: translateY(0); 
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .theatrical-scene {
-                padding: 25px 20px;
-            }
-            
-            .scene-title {
-                font-size: 1.4em;
-            }
-            
-            .scene-narrative {
-                font-size: 1.05em;
-                text-align: left;
-            }
-            
-            .exercise-section {
-                padding: 20px;
-            }
-            
-            .exercise-text {
-                font-size: 1em;
-                line-height: 1.8;
-            }
-            
-            .exercise-text .blank {
-                min-width: 80px;
-                padding: 2px 6px;
-                margin: 2px;
-            }
-            
-            .show-answer-btn {
-                width: 90%;
-                max-width: 300px;
-                padding: 18px 24px;
-                font-size: 1.15em;
-            }
-        }
-        
-        /* iOS specific fixes */
-        @supports (-webkit-touch-callout: none) {
-            .show-answer-btn {
-                -webkit-appearance: none;
-                appearance: none;
-            }
-            
-            .exercise-text .blank {
-                -webkit-tap-highlight-color: transparent;
-            }
-        }
-        
-    </style>
+    <link rel="stylesheet" href="../static/css/journey.css">
 </head>
 <body>
     <div class="container">
@@ -769,587 +13,622 @@ body {
             <h1>👑 Путь Шута</h1>
             <p class="subtitle">Изучаем немецкий через трагедию Шекспира</p>
         </header>
-        
+
         <div class="journey-section">
             <h2>📚 Путешествие Fool</h2>
-            
+
             <div class="journey-timeline">
                 <svg class="journey-line" width="100%" height="4">
-                    <line x1="0" y1="2" x2="100%" y2="2" stroke="#6b5b95" stroke-width="2" opacity="0.3"/>
-                    <line x1="0" y1="2" x2="14%" y2="2" stroke="#6b5b95" stroke-width="3" class="progress-line"/>
+                    <line x1="0" y1="2" x2="100%" y2="2" stroke="#6b5b95" stroke-width="2" opacity="0.3" />
+                    <line x1="0" y1="2" x2="14%" y2="2" stroke="#6b5b95" stroke-width="3" class="progress-line" />
                 </svg>
-                
+
                 <div class="journey-points">
                     
-                <div class="journey-point active" data-phase="jester">
-                    <div class="point-circle">🃏</div>
-                    <h4>Королевский шут</h4>
-                    <p>Narr • Weisheit • Trauer</p>
-                </div>
-                <div class="journey-point " data-phase="bitter_truths">
-                    <div class="point-circle">🎭</div>
-                    <h4>Горькие истины</h4>
-                    <p>Wahrheit • Scherz • Warnung</p>
-                </div>
-                <div class="journey-point " data-phase="prophecies">
-                    <div class="point-circle">🔮</div>
-                    <h4>Пророчества</h4>
-                    <p>Prophezeiung • Rätsel • Vorahnung</p>
-                </div>
-                <div class="journey-point " data-phase="mad_companion">
-                    <div class="point-circle">🌪️</div>
-                    <h4>Спутник безумия</h4>
-                    <p>Wahnsinn • Freundschaft • Sturm</p>
-                </div>
-                <div class="journey-point " data-phase="songs">
-                    <div class="point-circle">🎵</div>
-                    <h4>Песни в хижине</h4>
-                    <p>Lied • Trost • Ironie</p>
-                </div>
-                <div class="journey-point " data-phase="wisdom">
-                    <div class="point-circle">💭</div>
-                    <h4>Последняя мудрость</h4>
-                    <p>Philosophie • Schicksal • Vergänglichkeit</p>
-                </div>
-                <div class="journey-point " data-phase="vanishing">
-                    <div class="point-circle">👻</div>
-                    <h4>Исчезновение</h4>
-                    <p>Verschwinden • Geheimnis • Leere</p>
-                </div>
+                    <div class="journey-point active" data-phase="jester">
+                        <div class="point-circle">🃏</div>
+                        <h4>Королевский шут</h4>
+                        
+                        <p>Narr • Weisheit • Trauer</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="bitter_truths">
+                        <div class="point-circle">🎭</div>
+                        <h4>Горькие истины</h4>
+                        
+                        <p>Wahrheit • Scherz • Warnung</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="prophecies">
+                        <div class="point-circle">🔮</div>
+                        <h4>Пророчества</h4>
+                        
+                        <p>Prophezeiung • Rätsel • Vorahnung</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="mad_companion">
+                        <div class="point-circle">🌪️</div>
+                        <h4>Спутник безумия</h4>
+                        
+                        <p>Wahnsinn • Freundschaft • Sturm</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="songs">
+                        <div class="point-circle">🎵</div>
+                        <h4>Песни в хижине</h4>
+                        
+                        <p>Lied • Trost • Ironie</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="wisdom">
+                        <div class="point-circle">💭</div>
+                        <h4>Последняя мудрость</h4>
+                        
+                        <p>Philosophie • Schicksal • Vergänglichkeit</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="vanishing">
+                        <div class="point-circle">👻</div>
+                        <h4>Исчезновение</h4>
+                        
+                        <p>Verschwinden • Geheimnis • Leere</p>
+                        
+                    </div>
+                    
                 </div>
             </div>
-            
+
             <div class="journey-progress">
                 <div class="progress-track">
                     <div class="progress-fill" style="width: 14%"></div>
                 </div>
-                <div class="progress-text">Акт I: Разделение королевства</div>
+                <div class="progress-text">Акт I: При дворе, грустит о Корделии</div>
             </div>
         </div>
+
         
-        <!-- Theatrical Scene Section -->
         <div class="theatrical-scenes">
             
-                <div class="theatrical-scene active" data-phase="jester">
-                    <h3 class="scene-title">МАСКА СМЕХА</h3>
-                    <div class="scene-narrative">Я - <b>DER NARR (шут)</b>, но я самый <b>KLUG (умный)</b> человек в этом дворце дураков! <b>DIE WEISHEIT (мудрость)</b> прячется за моими колокольчиками. Я <b>SCHERZEN (шучу)</b>, но <b>DIE TRAUER (печаль)</b> о Корделии разрывает моё сердце! Я <b>VERMISSEN (скучаю)</b> по ней каждый день! <b>DER SPAß (забава)</b> - моя маска, <b>DER WITZ (остроумие)</b> - мой щит. Король отдал королевство лживым дочерям, а истинную любовь изгнал! О, какая глупость! И только я, шут, вижу правду! Но кто слушает шута? Все смеются над моими песнями, не слыша горечи в словах.</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Корделия уехала во Францию, и с ней ушла вся радость!» - пою я, пряча слёзы за улыбкой.</div>
-                </div>
-                <div class="theatrical-scene " data-phase="bitter_truths">
-                    <h3 class="scene-title">ЯДОВИТЫЕ ШУТКИ</h3>
-                    <div class="scene-narrative"><b>DIE WAHRHEIT (правда)</b> - мой товар, но я продаю её как <b>DER SCHERZ (шутку)</b>! Каждая <b>DIE WARNUNG (предупреждение)</b> звучит как песенка! «Дядюшка, ты сделал своих дочерей матерями, а себя - ребёнком!» Я <b>NECKEN (дражню)</b> короля, я <b>SPOTTEN (насмехаюсь)</b> над его глупостью! <b>BITTER (горькая)</b> правда льётся из моих уст! Я <b>ENTHÜLLEN (раскрываю)</b> его ошибки в каждой рифме! «Ты отдал всё и не оставил себе ничего, старый дурак!» Но он смеётся, не понимая, что шут - единственный, кто говорит правду в этом дворце лжи!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Правда и ложь поменялись местами! Теперь тот, кто говорит правду - шут, а лжецы - принцессы!»</div>
-                </div>
-                <div class="theatrical-scene " data-phase="prophecies">
-                    <h3 class="scene-title">ВИДЕНИЯ ГИБЕЛИ</h3>
-                    <div class="scene-narrative">Слушайте мою <b>DIE PROPHEZEIUNG (пророчество)</b>! В каждом <b>DAS RÄTSEL (загадке)</b> я <b>VORHERSAGEN (предсказываю)</b> будущее! <b>DIE VORAHNUNG (предчувствие)</b> тьмы наполняет меня! Я <b>DEUTEN (толкую)</b> знаки - каждое <b>DAS OMEN (знамение)</b> кричит о беде! Я <b>AHNEN (предчувствую)</b> кровь и слёзы! «Когда священники станут пивоварами, а знать начнёт шить - тогда королевство падёт!» Мои слова <b>RÄTSELHAFT (загадочны)</b>, но истинны! Буря идёт! Безумие грядёт! Смерть стучится в двери! Но кто поверит шуту-пророку? Все думают, это просто песенка дурака!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Англия погибнет от собственной глупости!» - кричу я в пустоту, зная, что меня не слышат!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="mad_companion">
-                    <h3 class="scene-title">БРАТЬЯ В БУРЕ</h3>
-                    <div class="scene-narrative">В буре мы с королём - братья в <b>DER WAHNSINN (безумии)</b>! Наша <b>DIE FREUNDSCHAFT (дружба)</b> крепче грома! Я <b>BEGLEITEN (сопровождаю)</b> его через ад! Мы <b>FRIEREN (мёрзнем)</b> вместе, мы <b>ZITTERN (дрожим)</b> как листья! Я <b>SINGEN (пою)</b> ему песни, чтобы заглушить вой ветра! Я остаюсь <b>TREU (верным)</b>, когда все предали! «Дурак и безумец - вот пара!» - смеюсь я сквозь слёзы. Дождь смывает краску с моего лица, но не смывает любовь к старому королю. В хижине нищего Тома мы - три безумца, потерявшие всё, кроме друг друга!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Эй, дядюшка! Безумие - это когда шут единственный друг короля!» - кричу я в грозу!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="songs">
-                    <h3 class="scene-title">КОЛЫБЕЛЬНАЯ БЕЗУМИЮ</h3>
-                    <div class="scene-narrative">В убогой хижине я пою <b>DAS LIED (песню)</b> для безумного короля. <b>DER TROST (утешение)</b> в моих словах слабо, но искренне. Я <b>SUMMEN (напеваю)</b> старые <b>DIE MELODIE (мелодии)</b> о временах, когда он был великим! <b>DIE IRONIE (ирония)</b> - теперь король нищий стал богаче короля богатого! Я <b>PFEIFEN (свищу)</b>, чтобы прогнать тьму. Каждый <b>DER REIM (рифма)</b> - горькая правда. Мои слова <b>KLINGEN (звучат)</b> весело, но сердце плачет. «Тот, кто имел тысячу коней, теперь счастлив с соломенной подстилкой!» О, как низко мы пали! И только песня шута напоминает о былом величии!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Спи, мой король-нищий! Завтра будет хуже!» - пою я, укрывая его соломой.</div>
-                </div>
-                <div class="theatrical-scene " data-phase="wisdom">
-                    <h3 class="scene-title">МУДРОСТЬ ДУРАКА</h3>
-                    <div class="scene-narrative">Моя <b>DIE PHILOSOPHIE (философия)</b> проста - мир сошёл с ума, а я единственный нормальный! Я <b>NACHDENKEN (размышляю)</b> о <b>DER SINN (смысле)</b> всего этого хаоса. <b>DAS SCHICKSAL (судьба)</b> смеётся над нами! Я <b>ERKENNEN (познаю)</b> истину - <b>DIE VERGÄNGLICHKEIT (бренность)</b> власти очевидна! Король стал нищим, дочери стали тиранами, правда стала ложью! Всё <b>VERGÄNGLICH (преходяще)</b>, только глупость вечна! «Мы рождаемся с плачем, потому что пришли в этот театр дураков!» Вот вся мудрость! Мир - сцена для безумцев, а я - единственный, кто это понимает!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Истина в том, что все мы шуты судьбы! Только я честен в своём шутовстве!»</div>
-                </div>
-                <div class="theatrical-scene " data-phase="vanishing">
-                    <h3 class="scene-title">РАСТВОРЕНИЕ В ТУМАНЕ</h3>
-                    <div class="scene-narrative">Пришло время мне <b>VERSCHWINDEN (исчезнуть)</b>. Я <b>SICH AUFLÖSEN (растворяюсь)</b> как <b>DER NEBEL (туман)</b> на рассвете. <b>SPURLOS (бесследно)</b> я <b>FORTGEHEN (ухожу)</b> из этой трагедии. Моё исчезновение - <b>DAS GEHEIMNIS (тайна)</b>, которую никто не разгадает. Я оставляю только <b>DIE LEERE (пустоту)</b> и эхо смеха. Мой конец <b>RÄTSELHAFT (загадочен)</b> как мои песни. Куда уходят шуты, когда короли умирают? В никуда. В ничто. В смех ветра. «И пойду я спать в полдень», - говорю я в последний раз. Больше меня никто не увидит. Шут был, и шута нет.</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Прощайте! Шут уходит раньше всех, чтобы не видеть конца!» - и я исчезаю навсегда в тумане.</div>
-                </div>
+            <div class="theatrical-scene active" data-phase="jester">
+                <h3 class="scene-title">МАСКА СМЕХА</h3>
+                <div class="scene-narrative">Я - <b>DER NARR (шут)</b>, но я самый <b>KLUG (умный)</b> человек в этом дворце дураков! <b>DIE WEISHEIT (мудрость)</b> прячется за моими колокольчиками. Я <b>SCHERZEN (шучу)</b>, но <b>DIE TRAUER (печаль)</b> о Корделии разрывает моё сердце! Я <b>VERMISSEN (скучаю)</b> по ней каждый день! <b>DER SPAß (забава)</b> - моя маска, <b>DER WITZ (остроумие)</b> - мой щит. Король отдал королевство лживым дочерям, а истинную любовь изгнал! О, какая глупость! И только я, шут, вижу правду! Но кто слушает шута? Все смеются над моими песнями, не слыша горечи в словах.</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Корделия уехала во Францию, и с ней ушла вся радость!» - пою я, пряча слёзы за улыбкой.</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="bitter_truths">
+                <h3 class="scene-title">ЯДОВИТЫЕ ШУТКИ</h3>
+                <div class="scene-narrative"><b>DIE WAHRHEIT (правда)</b> - мой товар, но я продаю её как <b>DER SCHERZ (шутку)</b>! Каждая <b>DIE WARNUNG (предупреждение)</b> звучит как песенка! «Дядюшка, ты сделал своих дочерей матерями, а себя - ребёнком!» Я <b>NECKEN (дражню)</b> короля, я <b>SPOTTEN (насмехаюсь)</b> над его глупостью! <b>BITTER (горькая)</b> правда льётся из моих уст! Я <b>ENTHÜLLEN (раскрываю)</b> его ошибки в каждой рифме! «Ты отдал всё и не оставил себе ничего, старый дурак!» Но он смеётся, не понимая, что шут - единственный, кто говорит правду в этом дворце лжи!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Правда и ложь поменялись местами! Теперь тот, кто говорит правду - шут, а лжецы - принцессы!»</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="prophecies">
+                <h3 class="scene-title">ВИДЕНИЯ ГИБЕЛИ</h3>
+                <div class="scene-narrative">Слушайте мою <b>DIE PROPHEZEIUNG (пророчество)</b>! В каждом <b>DAS RÄTSEL (загадке)</b> я <b>VORHERSAGEN (предсказываю)</b> будущее! <b>DIE VORAHNUNG (предчувствие)</b> тьмы наполняет меня! Я <b>DEUTEN (толкую)</b> знаки - каждое <b>DAS OMEN (знамение)</b> кричит о беде! Я <b>AHNEN (предчувствую)</b> кровь и слёзы! «Когда священники станут пивоварами, а знать начнёт шить - тогда королевство падёт!» Мои слова <b>RÄTSELHAFT (загадочны)</b>, но истинны! Буря идёт! Безумие грядёт! Смерть стучится в двери! Но кто поверит шуту-пророку? Все думают, это просто песенка дурака!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Англия погибнет от собственной глупости!» - кричу я в пустоту, зная, что меня не слышат!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="mad_companion">
+                <h3 class="scene-title">БРАТЬЯ В БУРЕ</h3>
+                <div class="scene-narrative">В буре мы с королём - братья в <b>DER WAHNSINN (безумии)</b>! Наша <b>DIE FREUNDSCHAFT (дружба)</b> крепче грома! Я <b>BEGLEITEN (сопровождаю)</b> его через ад! Мы <b>FRIEREN (мёрзнем)</b> вместе, мы <b>ZITTERN (дрожим)</b> как листья! Я <b>SINGEN (пою)</b> ему песни, чтобы заглушить вой ветра! Я остаюсь <b>TREU (верным)</b>, когда все предали! «Дурак и безумец - вот пара!» - смеюсь я сквозь слёзы. Дождь смывает краску с моего лица, но не смывает любовь к старому королю. В хижине нищего Тома мы - три безумца, потерявшие всё, кроме друг друга!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Эй, дядюшка! Безумие - это когда шут единственный друг короля!» - кричу я в грозу!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="songs">
+                <h3 class="scene-title">КОЛЫБЕЛЬНАЯ БЕЗУМИЮ</h3>
+                <div class="scene-narrative">В убогой хижине я пою <b>DAS LIED (песню)</b> для безумного короля. <b>DER TROST (утешение)</b> в моих словах слабо, но искренне. Я <b>SUMMEN (напеваю)</b> старые <b>DIE MELODIE (мелодии)</b> о временах, когда он был великим! <b>DIE IRONIE (ирония)</b> - теперь король нищий стал богаче короля богатого! Я <b>PFEIFEN (свищу)</b>, чтобы прогнать тьму. Каждый <b>DER REIM (рифма)</b> - горькая правда. Мои слова <b>KLINGEN (звучат)</b> весело, но сердце плачет. «Тот, кто имел тысячу коней, теперь счастлив с соломенной подстилкой!» О, как низко мы пали! И только песня шута напоминает о былом величии!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Спи, мой король-нищий! Завтра будет хуже!» - пою я, укрывая его соломой.</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="wisdom">
+                <h3 class="scene-title">МУДРОСТЬ ДУРАКА</h3>
+                <div class="scene-narrative">Моя <b>DIE PHILOSOPHIE (философия)</b> проста - мир сошёл с ума, а я единственный нормальный! Я <b>NACHDENKEN (размышляю)</b> о <b>DER SINN (смысле)</b> всего этого хаоса. <b>DAS SCHICKSAL (судьба)</b> смеётся над нами! Я <b>ERKENNEN (познаю)</b> истину - <b>DIE VERGÄNGLICHKEIT (бренность)</b> власти очевидна! Король стал нищим, дочери стали тиранами, правда стала ложью! Всё <b>VERGÄNGLICH (преходяще)</b>, только глупость вечна! «Мы рождаемся с плачем, потому что пришли в этот театр дураков!» Вот вся мудрость! Мир - сцена для безумцев, а я - единственный, кто это понимает!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Истина в том, что все мы шуты судьбы! Только я честен в своём шутовстве!»</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="vanishing">
+                <h3 class="scene-title">РАСТВОРЕНИЕ В ТУМАНЕ</h3>
+                <div class="scene-narrative">Пришло время мне <b>VERSCHWINDEN (исчезнуть)</b>. Я <b>SICH AUFLÖSEN (растворяюсь)</b> как <b>DER NEBEL (туман)</b> на рассвете. <b>SPURLOS (бесследно)</b> я <b>FORTGEHEN (ухожу)</b> из этой трагедии. Моё исчезновение - <b>DAS GEHEIMNIS (тайна)</b>, которую никто не разгадает. Я оставляю только <b>DIE LEERE (пустоту)</b> и эхо смеха. Мой конец <b>RÄTSELHAFT (загадочен)</b> как мои песни. Куда уходят шуты, когда короли умирают? В никуда. В ничто. В смех ветра. «И пойду я спать в полдень», - говорю я в последний раз. Больше меня никто не увидит. Шут был, и шута нет.</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Прощайте! Шут уходит раньше всех, чтобы не видеть конца!» - и я исчезаю навсегда в тумане.</div>
+            </div>
+            
         </div>
         
+
         <div class="vocabulary-section">
-            <h2>📖 Словарь: Фаза "<span id="current-phase">Тронный зал</span>"</h2>
+            <h2>📖 Словарь: Фаза "<span id="current-phase">Королевский шут</span>"</h2>
             <div class="vocabulary-grid"></div>
-            
+
             <div class="phase-navigation">
-                <button class="change-phase-btn prev-btn">← Предыдущая фаза</button>
-                <button class="change-phase-btn next-btn">Следующая фаза →</button>
+                <button class="change-phase-btn prev-btn" type="button">← Предыдущая фаза</button>
+                <button class="change-phase-btn next-btn" type="button">Следующая фаза →</button>
             </div>
         </div>
-        
-        <!-- Exercises Section AFTER Vocabulary -->
+
         <div class="exercises-container">
             
-                    <div class="exercise-container active" data-phase="jester">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: МАСКА СМЕХА</h4>
-                            <div class="exercise-text">Я - <span class="blank" data-answer="der NARR" data-hint="шут">_______ (шут)</span>, но я самый <span class="blank" data-answer="KLUG" data-hint="умный">_______ (умный)</span> человек в этом дворце дураков! <span class="blank" data-answer="die WEISHEIT" data-hint="мудрость">_______ (мудрость)</span> прячется за моими колокольчиками. Я <span class="blank" data-answer="SCHERZEN" data-hint="шучу">_______ (шучу)</span>, но <span class="blank" data-answer="die TRAUER" data-hint="печаль">_______ (печаль)</span> о Корделии разрывает моё сердце! Я <span class="blank" data-answer="VERMISSEN" data-hint="скучаю">_______ (скучаю)</span> по ней каждый день! <span class="blank" data-answer="der SPASS" data-hint="забава">_______ (забава)</span> - моя маска, <span class="blank" data-answer="der WITZ" data-hint="остроумие">_______ (остроумие)</span> - мой щит. Король отдал королевство лживым дочерям, а истинную любовь изгнал! О, какая глупость! И только я, шут, вижу правду! Но кто слушает шута? Все смеются над моими песнями, не слыша горечи в словах.</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="bitter_truths">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: ЯДОВИТЫЕ ШУТКИ</h4>
-                            <div class="exercise-text"><span class="blank" data-answer="die WAHRHEIT" data-hint="правда">_______ (правда)</span> - мой товар, но я продаю её как <span class="blank" data-answer="DER SCHERZ" data-hint="шутку">_______ (шутку)</span>! Каждая <span class="blank" data-answer="die WARNUNG" data-hint="предупреждение">_______ (предупреждение)</span> звучит как песенка! «Дядюшка, ты сделал своих дочерей матерями, а себя - ребёнком!» Я <span class="blank" data-answer="NECKEN" data-hint="дражню">_______ (дражню)</span> короля, я <span class="blank" data-answer="SPOTTEN" data-hint="насмехаюсь">_______ (насмехаюсь)</span> над его глупостью! <span class="blank" data-answer="BITTER" data-hint="горькая">_______ (горькая)</span> правда льётся из моих уст! Я <span class="blank" data-answer="ENTHÜLLEN" data-hint="раскрываю">_______ (раскрываю)</span> его ошибки в каждой рифме! «Ты отдал всё и не оставил себе ничего, старый дурак!» Но он смеётся, не понимая, что шут - единственный, кто говорит правду в этом дворце лжи!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="prophecies">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: ВИДЕНИЯ ГИБЕЛИ</h4>
-                            <div class="exercise-text">Слушайте мою <span class="blank" data-answer="die PROPHEZEIUNG" data-hint="пророчество">_______ (пророчество)</span>! В каждом <span class="blank" data-answer="DAS RÄTSEL" data-hint="загадке">_______ (загадке)</span> я <span class="blank" data-answer="VORHERSAGEN" data-hint="предсказываю">_______ (предсказываю)</span> будущее! <span class="blank" data-answer="die VORAHNUNG" data-hint="предчувствие">_______ (предчувствие)</span> тьмы наполняет меня! Я <span class="blank" data-answer="DEUTEN" data-hint="толкую">_______ (толкую)</span> знаки - каждое <span class="blank" data-answer="das OMEN" data-hint="знамение">_______ (знамение)</span> кричит о беде! Я <span class="blank" data-answer="AHNEN" data-hint="предчувствую">_______ (предчувствую)</span> кровь и слёзы! «Когда священники станут пивоварами, а знать начнёт шить - тогда королевство падёт!» Мои слова <span class="blank" data-answer="RÄTSELHAFT" data-hint="загадочны">_______ (загадочны)</span>, но истинны! Буря идёт! Безумие грядёт! Смерть стучится в двери! Но кто поверит шуту-пророку? Все думают, это просто песенка дурака!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="mad_companion">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: БРАТЬЯ В БУРЕ</h4>
-                            <div class="exercise-text">В буре мы с королём - братья в <span class="blank" data-answer="DER WAHNSINN" data-hint="безумии">_______ (безумии)</span>! Наша <span class="blank" data-answer="die FREUNDSCHAFT" data-hint="дружба">_______ (дружба)</span> крепче грома! Я <span class="blank" data-answer="BEGLEITEN" data-hint="сопровождаю">_______ (сопровождаю)</span> его через ад! Мы <span class="blank" data-answer="FRIEREN" data-hint="мёрзнем">_______ (мёрзнем)</span> вместе, мы <span class="blank" data-answer="ZITTERN" data-hint="дрожим">_______ (дрожим)</span> как листья! Я <span class="blank" data-answer="SINGEN" data-hint="пою">_______ (пою)</span> ему песни, чтобы заглушить вой ветра! Я остаюсь <span class="blank" data-answer="TREU" data-hint="верным">_______ (верным)</span>, когда все предали! «Дурак и безумец - вот пара!» - смеюсь я сквозь слёзы. Дождь смывает краску с моего лица, но не смывает любовь к старому королю. В хижине нищего Тома мы - три безумца, потерявшие всё, кроме друг друга!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="songs">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: КОЛЫБЕЛЬНАЯ БЕЗУМИЮ</h4>
-                            <div class="exercise-text">В убогой хижине я пою <span class="blank" data-answer="DAS LIED" data-hint="песню">_______ (песню)</span> для безумного короля. <span class="blank" data-answer="der TROST" data-hint="утешение">_______ (утешение)</span> в моих словах слабо, но искренне. Я <span class="blank" data-answer="SUMMEN" data-hint="напеваю">_______ (напеваю)</span> старые <span class="blank" data-answer="DIE MELODIE" data-hint="мелодии">_______ (мелодии)</span> о временах, когда он был великим! <span class="blank" data-answer="die IRONIE" data-hint="ирония">_______ (ирония)</span> - теперь король нищий стал богаче короля богатого! Я <span class="blank" data-answer="PFEIFEN" data-hint="свищу">_______ (свищу)</span>, чтобы прогнать тьму. Каждый <span class="blank" data-answer="der REIM" data-hint="рифма">_______ (рифма)</span> - горькая правда. Мои слова <span class="blank" data-answer="KLINGEN" data-hint="звучат">_______ (звучат)</span> весело, но сердце плачет. «Тот, кто имел тысячу коней, теперь счастлив с соломенной подстилкой!» О, как низко мы пали! И только песня шута напоминает о былом величии!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="wisdom">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: МУДРОСТЬ ДУРАКА</h4>
-                            <div class="exercise-text">Моя <span class="blank" data-answer="die PHILOSOPHIE" data-hint="философия">_______ (философия)</span> проста - мир сошёл с ума, а я единственный нормальный! Я <span class="blank" data-answer="NACHDENKEN" data-hint="размышляю">_______ (размышляю)</span> о <span class="blank" data-answer="DER SINN" data-hint="смысле">_______ (смысле)</span> всего этого хаоса. <span class="blank" data-answer="das SCHICKSAL" data-hint="судьба">_______ (судьба)</span> смеётся над нами! Я <span class="blank" data-answer="ERKENNEN" data-hint="познаю">_______ (познаю)</span> истину - <span class="blank" data-answer="die VERGÄNGLICHKEIT" data-hint="бренность">_______ (бренность)</span> власти очевидна! Король стал нищим, дочери стали тиранами, правда стала ложью! Всё <span class="blank" data-answer="VERGÄNGLICH" data-hint="преходяще">_______ (преходяще)</span>, только глупость вечна! «Мы рождаемся с плачем, потому что пришли в этот театр дураков!» Вот вся мудрость! Мир - сцена для безумцев, а я - единственный, кто это понимает!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="vanishing">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: РАСТВОРЕНИЕ В ТУМАНЕ</h4>
-                            <div class="exercise-text">Пришло время мне <span class="blank" data-answer="VERSCHWINDEN" data-hint="исчезнуть">_______ (исчезнуть)</span>. Я <span class="blank" data-answer="SICH AUFLÖSEN" data-hint="растворяюсь">_______ (растворяюсь)</span> как <span class="blank" data-answer="der NEBEL" data-hint="туман">_______ (туман)</span> на рассвете. <span class="blank" data-answer="SPURLOS" data-hint="бесследно">_______ (бесследно)</span> я <span class="blank" data-answer="FORTGEHEN" data-hint="ухожу">_______ (ухожу)</span> из этой трагедии. Моё исчезновение - <span class="blank" data-answer="das GEHEIMNIS" data-hint="тайна">_______ (тайна)</span>, которую никто не разгадает. Я оставляю только <span class="blank" data-answer="DIE LEERE" data-hint="пустоту">_______ (пустоту)</span> и эхо смеха. Мой конец <span class="blank" data-answer="RÄTSELHAFT" data-hint="загадочен">_______ (загадочен)</span> как мои песни. Куда уходят шуты, когда короли умирают? В никуда. В ничто. В смех ветра. «И пойду я спать в полдень», - говорю я в последний раз. Больше меня никто не увидит. Шут был, и шута нет.</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
+            <div class="exercise-container active" data-phase="jester">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: МАСКА СМЕХА</h4>
+                    <div class="exercise-text">Я - <span class="blank" data-answer="der NARR" data-hint="шут">_______ (шут)</span>, но я самый <span class="blank" data-answer="KLUG" data-hint="умный">_______ (умный)</span> человек в этом дворце дураков! <span class="blank" data-answer="die WEISHEIT" data-hint="мудрость">_______ (мудрость)</span> прячется за моими колокольчиками. Я <span class="blank" data-answer="SCHERZEN" data-hint="шучу">_______ (шучу)</span>, но <span class="blank" data-answer="die TRAUER" data-hint="печаль">_______ (печаль)</span> о Корделии разрывает моё сердце! Я <span class="blank" data-answer="VERMISSEN" data-hint="скучаю">_______ (скучаю)</span> по ней каждый день! <span class="blank" data-answer="der SPASS" data-hint="забава">_______ (забава)</span> - моя маска, <span class="blank" data-answer="der WITZ" data-hint="остроумие">_______ (остроумие)</span> - мой щит. Король отдал королевство лживым дочерям, а истинную любовь изгнал! О, какая глупость! И только я, шут, вижу правду! Но кто слушает шута? Все смеются над моими песнями, не слыша горечи в словах.</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="bitter_truths">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ЯДОВИТЫЕ ШУТКИ</h4>
+                    <div class="exercise-text"><span class="blank" data-answer="die WAHRHEIT" data-hint="правда">_______ (правда)</span> - мой товар, но я продаю её как <span class="blank" data-answer="DER SCHERZ" data-hint="шутку">_______ (шутку)</span>! Каждая <span class="blank" data-answer="die WARNUNG" data-hint="предупреждение">_______ (предупреждение)</span> звучит как песенка! «Дядюшка, ты сделал своих дочерей матерями, а себя - ребёнком!» Я <span class="blank" data-answer="NECKEN" data-hint="дражню">_______ (дражню)</span> короля, я <span class="blank" data-answer="SPOTTEN" data-hint="насмехаюсь">_______ (насмехаюсь)</span> над его глупостью! <span class="blank" data-answer="BITTER" data-hint="горькая">_______ (горькая)</span> правда льётся из моих уст! Я <span class="blank" data-answer="ENTHÜLLEN" data-hint="раскрываю">_______ (раскрываю)</span> его ошибки в каждой рифме! «Ты отдал всё и не оставил себе ничего, старый дурак!» Но он смеётся, не понимая, что шут - единственный, кто говорит правду в этом дворце лжи!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="prophecies">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ВИДЕНИЯ ГИБЕЛИ</h4>
+                    <div class="exercise-text">Слушайте мою <span class="blank" data-answer="die PROPHEZEIUNG" data-hint="пророчество">_______ (пророчество)</span>! В каждом <span class="blank" data-answer="DAS RÄTSEL" data-hint="загадке">_______ (загадке)</span> я <span class="blank" data-answer="VORHERSAGEN" data-hint="предсказываю">_______ (предсказываю)</span> будущее! <span class="blank" data-answer="die VORAHNUNG" data-hint="предчувствие">_______ (предчувствие)</span> тьмы наполняет меня! Я <span class="blank" data-answer="DEUTEN" data-hint="толкую">_______ (толкую)</span> знаки - каждое <span class="blank" data-answer="das OMEN" data-hint="знамение">_______ (знамение)</span> кричит о беде! Я <span class="blank" data-answer="AHNEN" data-hint="предчувствую">_______ (предчувствую)</span> кровь и слёзы! «Когда священники станут пивоварами, а знать начнёт шить - тогда королевство падёт!» Мои слова <span class="blank" data-answer="RÄTSELHAFT" data-hint="загадочны">_______ (загадочны)</span>, но истинны! Буря идёт! Безумие грядёт! Смерть стучится в двери! Но кто поверит шуту-пророку? Все думают, это просто песенка дурака!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="mad_companion">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: БРАТЬЯ В БУРЕ</h4>
+                    <div class="exercise-text">В буре мы с королём - братья в <span class="blank" data-answer="DER WAHNSINN" data-hint="безумии">_______ (безумии)</span>! Наша <span class="blank" data-answer="die FREUNDSCHAFT" data-hint="дружба">_______ (дружба)</span> крепче грома! Я <span class="blank" data-answer="BEGLEITEN" data-hint="сопровождаю">_______ (сопровождаю)</span> его через ад! Мы <span class="blank" data-answer="FRIEREN" data-hint="мёрзнем">_______ (мёрзнем)</span> вместе, мы <span class="blank" data-answer="ZITTERN" data-hint="дрожим">_______ (дрожим)</span> как листья! Я <span class="blank" data-answer="SINGEN" data-hint="пою">_______ (пою)</span> ему песни, чтобы заглушить вой ветра! Я остаюсь <span class="blank" data-answer="TREU" data-hint="верным">_______ (верным)</span>, когда все предали! «Дурак и безумец - вот пара!» - смеюсь я сквозь слёзы. Дождь смывает краску с моего лица, но не смывает любовь к старому королю. В хижине нищего Тома мы - три безумца, потерявшие всё, кроме друг друга!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="songs">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: КОЛЫБЕЛЬНАЯ БЕЗУМИЮ</h4>
+                    <div class="exercise-text">В убогой хижине я пою <span class="blank" data-answer="DAS LIED" data-hint="песню">_______ (песню)</span> для безумного короля. <span class="blank" data-answer="der TROST" data-hint="утешение">_______ (утешение)</span> в моих словах слабо, но искренне. Я <span class="blank" data-answer="SUMMEN" data-hint="напеваю">_______ (напеваю)</span> старые <span class="blank" data-answer="DIE MELODIE" data-hint="мелодии">_______ (мелодии)</span> о временах, когда он был великим! <span class="blank" data-answer="die IRONIE" data-hint="ирония">_______ (ирония)</span> - теперь король нищий стал богаче короля богатого! Я <span class="blank" data-answer="PFEIFEN" data-hint="свищу">_______ (свищу)</span>, чтобы прогнать тьму. Каждый <span class="blank" data-answer="der REIM" data-hint="рифма">_______ (рифма)</span> - горькая правда. Мои слова <span class="blank" data-answer="KLINGEN" data-hint="звучат">_______ (звучат)</span> весело, но сердце плачет. «Тот, кто имел тысячу коней, теперь счастлив с соломенной подстилкой!» О, как низко мы пали! И только песня шута напоминает о былом величии!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="wisdom">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: МУДРОСТЬ ДУРАКА</h4>
+                    <div class="exercise-text">Моя <span class="blank" data-answer="die PHILOSOPHIE" data-hint="философия">_______ (философия)</span> проста - мир сошёл с ума, а я единственный нормальный! Я <span class="blank" data-answer="NACHDENKEN" data-hint="размышляю">_______ (размышляю)</span> о <span class="blank" data-answer="DER SINN" data-hint="смысле">_______ (смысле)</span> всего этого хаоса. <span class="blank" data-answer="das SCHICKSAL" data-hint="судьба">_______ (судьба)</span> смеётся над нами! Я <span class="blank" data-answer="ERKENNEN" data-hint="познаю">_______ (познаю)</span> истину - <span class="blank" data-answer="die VERGÄNGLICHKEIT" data-hint="бренность">_______ (бренность)</span> власти очевидна! Король стал нищим, дочери стали тиранами, правда стала ложью! Всё <span class="blank" data-answer="VERGÄNGLICH" data-hint="преходяще">_______ (преходяще)</span>, только глупость вечна! «Мы рождаемся с плачем, потому что пришли в этот театр дураков!» Вот вся мудрость! Мир - сцена для безумцев, а я - единственный, кто это понимает!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="vanishing">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: РАСТВОРЕНИЕ В ТУМАНЕ</h4>
+                    <div class="exercise-text">Пришло время мне <span class="blank" data-answer="VERSCHWINDEN" data-hint="исчезнуть">_______ (исчезнуть)</span>. Я <span class="blank" data-answer="SICH AUFLÖSEN" data-hint="растворяюсь">_______ (растворяюсь)</span> как <span class="blank" data-answer="der NEBEL" data-hint="туман">_______ (туман)</span> на рассвете. <span class="blank" data-answer="SPURLOS" data-hint="бесследно">_______ (бесследно)</span> я <span class="blank" data-answer="FORTGEHEN" data-hint="ухожу">_______ (ухожу)</span> из этой трагедии. Моё исчезновение - <span class="blank" data-answer="das GEHEIMNIS" data-hint="тайна">_______ (тайна)</span>, которую никто не разгадает. Я оставляю только <span class="blank" data-answer="DIE LEERE" data-hint="пустоту">_______ (пустоту)</span> и эхо смеха. Мой конец <span class="blank" data-answer="RÄTSELHAFT" data-hint="загадочен">_______ (загадочен)</span> как мои песни. Куда уходят шуты, когда короли умирают? В никуда. В ничто. В смех ветра. «И пойду я спать в полдень», - говорю я в последний раз. Больше меня никто не увидит. Шут был, и шута нет.</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
         </div>
-        
+
         <nav class="bottom-nav">
             <a href="../index.html" class="nav-link">← К главной</a>
         </nav>
     </div>
-    
+
     <script>const phaseVocabularies = {
-    jester: {
-        title: 'Королевский шут',
-        description: 'Акт I: При дворе, грустит о Корделии',
-        words: [
+    "jester": {
+        "title": "Королевский шут",
+        "description": "Акт I: При дворе, грустит о Корделии",
+        "words": [
             {
-                word: 'der Narr',
-                translation: 'шут',
-                transcription: '[дер НАР]',
-                sentence: 'Als Narr sage ich die Wahrheit durch Scherze.',
-                sentenceTranslation: 'Как шут я говорю правду через шутки.'
+                "word": "der Narr",
+                "translation": "шут",
+                "transcription": "[дер НАР]",
+                "sentence": "Als Narr sage ich die Wahrheit durch Scherze.",
+                "sentenceTranslation": "Как шут я говорю правду через шутки."
             },
             {
-                word: 'die Weisheit',
-                translation: 'мудрость',
-                transcription: '[ди ВАЙС-хайт]',
-                sentence: 'Hinter meinen Späßen verbirgt sich Weisheit.',
-                sentenceTranslation: 'За моими шутками скрывается мудрость.'
+                "word": "die Weisheit",
+                "translation": "мудрость",
+                "transcription": "[ди ВАЙС-хайт]",
+                "sentence": "Hinter meinen Späßen verbirgt sich Weisheit.",
+                "sentenceTranslation": "За моими шутками скрывается мудрость."
             },
             {
-                word: 'die Trauer',
-                translation: 'печаль',
-                transcription: '[ди ТРАУ-ер]',
-                sentence: 'Die Trauer um Корделия macht mich stumm.',
-                sentenceTranslation: 'Печаль о Корделии делает меня немым.'
+                "word": "die Trauer",
+                "translation": "печаль",
+                "transcription": "[ди ТРАУ-ер]",
+                "sentence": "Die Trauer um Корделия macht mich stumm.",
+                "sentenceTranslation": "Печаль о Корделии делает меня немым."
             },
             {
-                word: 'scherzen',
-                translation: 'шутить',
-                transcription: '[ШЕР-цен]',
-                sentence: 'Ich scherze, um den Schmerz zu verbergen.',
-                sentenceTranslation: 'Я шучу, чтобы скрыть боль.'
+                "word": "scherzen",
+                "translation": "шутить",
+                "transcription": "[ШЕР-цен]",
+                "sentence": "Ich scherze, um den Schmerz zu verbergen.",
+                "sentenceTranslation": "Я шучу, чтобы скрыть боль."
             },
             {
-                word: 'der Spaß',
-                translation: 'забава',
-                transcription: '[дер ШПАС]',
-                sentence: 'Der Spaß ist meine Maske vor der Welt.',
-                sentenceTranslation: 'Забава - моя маска перед миром.'
+                "word": "der Spaß",
+                "translation": "забава",
+                "transcription": "[дер ШПАС]",
+                "sentence": "Der Spaß ist meine Maske vor der Welt.",
+                "sentenceTranslation": "Забава - моя маска перед миром."
             },
             {
-                word: 'klug',
-                translation: 'умный',
-                transcription: '[КЛУГ]',
-                sentence: 'Ich bin klüger als alle bei Hofe.',
-                sentenceTranslation: 'Я умнее всех при дворе.'
+                "word": "klug",
+                "translation": "умный",
+                "transcription": "[КЛУГ]",
+                "sentence": "Ich bin klüger als alle bei Hofe.",
+                "sentenceTranslation": "Я умнее всех при дворе."
             },
             {
-                word: 'vermissen',
-                translation: 'скучать',
-                transcription: '[фер-МИ-сен]',
-                sentence: 'Ich vermisse die süße Корделия sehr.',
-                sentenceTranslation: 'Я очень скучаю по милой Корделии.'
+                "word": "vermissen",
+                "translation": "скучать",
+                "transcription": "[фер-МИ-сен]",
+                "sentence": "Ich vermisse die süße Корделия sehr.",
+                "sentenceTranslation": "Я очень скучаю по милой Корделии."
             },
             {
-                word: 'der Witz',
-                translation: 'остроумие',
-                transcription: '[дер ВИТЦ]',
-                sentence: 'Mein Witz ist scharf wie ein Schwert.',
-                sentenceTranslation: 'Моё остроумие остро как меч.'
-            },
+                "word": "der Witz",
+                "translation": "остроумие",
+                "transcription": "[дер ВИТЦ]",
+                "sentence": "Mein Witz ist scharf wie ein Schwert.",
+                "sentenceTranslation": "Моё остроумие остро как меч."
+            }
         ]
     },
-    bitter_truths: {
-        title: 'Горькие истины',
-        description: 'Акт I: Говорит правду через шутки',
-        words: [
+    "bitter_truths": {
+        "title": "Горькие истины",
+        "description": "Акт I: Говорит правду через шутки",
+        "words": [
             {
-                word: 'die Wahrheit',
-                translation: 'правда',
-                transcription: '[ди ВАР-хайт]',
-                sentence: 'Die Wahrheit verpacke ich in lustige Lieder.',
-                sentenceTranslation: 'Правду я заворачиваю в весёлые песни.'
+                "word": "die Wahrheit",
+                "translation": "правда",
+                "transcription": "[ди ВАР-хайт]",
+                "sentence": "Die Wahrheit verpacke ich in lustige Lieder.",
+                "sentenceTranslation": "Правду я заворачиваю в весёлые песни."
             },
             {
-                word: 'der Scherz',
-                translation: 'шутка',
-                transcription: '[дер ШЕРЦ]',
-                sentence: 'Jeder Scherz enthält eine bittere Lehre.',
-                sentenceTranslation: 'Каждая шутка содержит горький урок.'
+                "word": "der Scherz",
+                "translation": "шутка",
+                "transcription": "[дер ШЕРЦ]",
+                "sentence": "Jeder Scherz enthält eine bittere Lehre.",
+                "sentenceTranslation": "Каждая шутка содержит горький урок."
             },
             {
-                word: 'die Warnung',
-                translation: 'предупреждение',
-                transcription: '[ди ВАР-нунг]',
-                sentence: 'Meine Warnung kommt als Rätsel verkleidet.',
-                sentenceTranslation: 'Моё предупреждение приходит замаскированным под загадку.'
+                "word": "die Warnung",
+                "translation": "предупреждение",
+                "transcription": "[ди ВАР-нунг]",
+                "sentence": "Meine Warnung kommt als Rätsel verkleidet.",
+                "sentenceTranslation": "Моё предупреждение приходит замаскированным под загадку."
             },
             {
-                word: 'bitter',
-                translation: 'горький',
-                transcription: '[БИ-тер]',
-                sentence: 'Die Wahrheit schmeckt bitter wie Galle.',
-                sentenceTranslation: 'Правда горька как желчь.'
+                "word": "bitter",
+                "translation": "горький",
+                "transcription": "[БИ-тер]",
+                "sentence": "Die Wahrheit schmeckt bitter wie Galle.",
+                "sentenceTranslation": "Правда горька как желчь."
             },
             {
-                word: 'spotten',
-                translation: 'насмехаться',
-                transcription: '[ШПО-тен]',
-                sentence: 'Ich spotte über die Torheit der Mächtigen.',
-                sentenceTranslation: 'Я насмехаюсь над глупостью сильных.'
+                "word": "spotten",
+                "translation": "насмехаться",
+                "transcription": "[ШПО-тен]",
+                "sentence": "Ich spotte über die Torheit der Mächtigen.",
+                "sentenceTranslation": "Я насмехаюсь над глупостью сильных."
             },
             {
-                word: 'necken',
-                translation: 'дразнить',
-                transcription: '[НЕ-кен]',
-                sentence: 'Ich necke den König mit der Wahrheit.',
-                sentenceTranslation: 'Я дразню короля правдой.'
+                "word": "necken",
+                "translation": "дразнить",
+                "transcription": "[НЕ-кен]",
+                "sentence": "Ich necke den König mit der Wahrheit.",
+                "sentenceTranslation": "Я дразню короля правдой."
             },
             {
-                word: 'enthüllen',
-                translation: 'раскрывать',
-                transcription: '[энт-ХЮ-лен]',
-                sentence: 'Spielerisch enthülle ich seine Fehler.',
-                sentenceTranslation: 'Играючи я раскрываю его ошибки.'
-            },
+                "word": "enthüllen",
+                "translation": "раскрывать",
+                "transcription": "[энт-ХЮ-лен]",
+                "sentence": "Spielerisch enthülle ich seine Fehler.",
+                "sentenceTranslation": "Играючи я раскрываю его ошибки."
+            }
         ]
     },
-    prophecies: {
-        title: 'Пророчества',
-        description: 'Акт II: Предсказывает беды',
-        words: [
+    "prophecies": {
+        "title": "Пророчества",
+        "description": "Акт II: Предсказывает беды",
+        "words": [
             {
-                word: 'die Prophezeiung',
-                translation: 'пророчество',
-                transcription: '[ди про-фе-ЦАЙ-унг]',
-                sentence: 'Meine Prophezeiung wird wahr werden.',
-                sentenceTranslation: 'Моё пророчество сбудется.'
+                "word": "die Prophezeiung",
+                "translation": "пророчество",
+                "transcription": "[ди про-фе-ЦАЙ-унг]",
+                "sentence": "Meine Prophezeiung wird wahr werden.",
+                "sentenceTranslation": "Моё пророчество сбудется."
             },
             {
-                word: 'das Rätsel',
-                translation: 'загадка',
-                transcription: '[дас РЕТ-зель]',
-                sentence: 'In Rätseln spreche ich von der Zukunft.',
-                sentenceTranslation: 'В загадках я говорю о будущем.'
+                "word": "das Rätsel",
+                "translation": "загадка",
+                "transcription": "[дас РЕТ-зель]",
+                "sentence": "In Rätseln spreche ich von der Zukunft.",
+                "sentenceTranslation": "В загадках я говорю о будущем."
             },
             {
-                word: 'die Vorahnung',
-                translation: 'предчувствие',
-                transcription: '[ди ФОР-а-нунг]',
-                sentence: 'Eine dunkle Vorahnung erfüllt mein Herz.',
-                sentenceTranslation: 'Тёмное предчувствие наполняет моё сердце.'
+                "word": "die Vorahnung",
+                "translation": "предчувствие",
+                "transcription": "[ди ФОР-а-нунг]",
+                "sentence": "Eine dunkle Vorahnung erfüllt mein Herz.",
+                "sentenceTranslation": "Тёмное предчувствие наполняет моё сердце."
             },
             {
-                word: 'vorhersagen',
-                translation: 'предсказывать',
-                transcription: '[ФОР-хер-за-ген]',
-                sentence: 'Ich sage das kommende Unheil vorher.',
-                sentenceTranslation: 'Я предсказываю грядущую беду.'
+                "word": "vorhersagen",
+                "translation": "предсказывать",
+                "transcription": "[ФОР-хер-за-ген]",
+                "sentence": "Ich sage das kommende Unheil vorher.",
+                "sentenceTranslation": "Я предсказываю грядущую беду."
             },
             {
-                word: 'deuten',
-                translation: 'толковать',
-                transcription: '[ДОЙ-тен]',
-                sentence: 'Die Zeichen deute ich besser als alle.',
-                sentenceTranslation: 'Знаки я толкую лучше всех.'
+                "word": "deuten",
+                "translation": "толковать",
+                "transcription": "[ДОЙ-тен]",
+                "sentence": "Die Zeichen deute ich besser als alle.",
+                "sentenceTranslation": "Знаки я толкую лучше всех."
             },
             {
-                word: 'ahnen',
-                translation: 'предчувствовать',
-                transcription: '[А-нен]',
-                sentence: 'Ich ahne das schlimme Ende voraus.',
-                sentenceTranslation: 'Я предчувствую плохой конец.'
+                "word": "ahnen",
+                "translation": "предчувствовать",
+                "transcription": "[А-нен]",
+                "sentence": "Ich ahne das schlimme Ende voraus.",
+                "sentenceTranslation": "Я предчувствую плохой конец."
             },
             {
-                word: 'das Omen',
-                translation: 'знамение',
-                transcription: '[дас О-мен]',
-                sentence: 'Jedes Omen zeigt auf Untergang.',
-                sentenceTranslation: 'Каждое знамение указывает на гибель.'
+                "word": "das Omen",
+                "translation": "знамение",
+                "transcription": "[дас О-мен]",
+                "sentence": "Jedes Omen zeigt auf Untergang.",
+                "sentenceTranslation": "Каждое знамение указывает на гибель."
             },
             {
-                word: 'rätselhaft',
-                translation: 'загадочный',
-                transcription: '[РЕТ-зель-хафт]',
-                sentence: 'Meine Worte bleiben rätselhaft und wahr.',
-                sentenceTranslation: 'Мои слова остаются загадочными и правдивыми.'
-            },
+                "word": "rätselhaft",
+                "translation": "загадочный",
+                "transcription": "[РЕТ-зель-хафт]",
+                "sentence": "Meine Worte bleiben rätselhaft und wahr.",
+                "sentenceTranslation": "Мои слова остаются загадочными и правдивыми."
+            }
         ]
     },
-    mad_companion: {
-        title: 'Спутник безумия',
-        description: 'Акт III: Единственный друг в буре',
-        words: [
+    "mad_companion": {
+        "title": "Спутник безумия",
+        "description": "Акт III: Единственный друг в буре",
+        "words": [
             {
-                word: 'der Wahnsinn',
-                translation: 'безумие',
-                transcription: '[дер ВАН-зин]',
-                sentence: 'Im Wahnsinn finden wir uns als Brüder.',
-                sentenceTranslation: 'В безумии мы находим друг друга как братья.'
+                "word": "der Wahnsinn",
+                "translation": "безумие",
+                "transcription": "[дер ВАН-зин]",
+                "sentence": "Im Wahnsinn finden wir uns als Brüder.",
+                "sentenceTranslation": "В безумии мы находим друг друга как братья."
             },
             {
-                word: 'die Freundschaft',
-                translation: 'дружба',
-                transcription: '[ди ФРОЙНД-шафт]',
-                sentence: 'Unsere Freundschaft überdauert den Sturm.',
-                sentenceTranslation: 'Наша дружба переживёт бурю.'
+                "word": "die Freundschaft",
+                "translation": "дружба",
+                "transcription": "[ди ФРОЙНД-шафт]",
+                "sentence": "Unsere Freundschaft überdauert den Sturm.",
+                "sentenceTranslation": "Наша дружба переживёт бурю."
             },
             {
-                word: 'begleiten',
-                translation: 'сопровождать',
-                transcription: '[бе-ГЛАЙ-тен]',
-                sentence: 'Treu begleite ich meinen verrückten König.',
-                sentenceTranslation: 'Верно я сопровождаю своего безумного короля.'
+                "word": "begleiten",
+                "translation": "сопровождать",
+                "transcription": "[бе-ГЛАЙ-тен]",
+                "sentence": "Treu begleite ich meinen verrückten König.",
+                "sentenceTranslation": "Верно я сопровождаю своего безумного короля."
             },
             {
-                word: 'frieren',
-                translation: 'мёрзнуть',
-                transcription: '[ФРИ-рен]',
-                sentence: 'Wir frieren gemeinsam in der kalten Nacht.',
-                sentenceTranslation: 'Мы мёрзнем вместе в холодную ночь.'
+                "word": "frieren",
+                "translation": "мёрзнуть",
+                "transcription": "[ФРИ-рен]",
+                "sentence": "Wir frieren gemeinsam in der kalten Nacht.",
+                "sentenceTranslation": "Мы мёрзнем вместе в холодную ночь."
             },
             {
-                word: 'singen',
-                translation: 'петь',
-                transcription: '[ЗИН-ген]',
-                sentence: 'Ich singe, um seine Angst zu lindern.',
-                sentenceTranslation: 'Я пою, чтобы облегчить его страх.'
+                "word": "singen",
+                "translation": "петь",
+                "transcription": "[ЗИН-ген]",
+                "sentence": "Ich singe, um seine Angst zu lindern.",
+                "sentenceTranslation": "Я пою, чтобы облегчить его страх."
             },
             {
-                word: 'zittern',
-                translation: 'дрожать',
-                transcription: '[ЦИ-терн]',
-                sentence: 'Vor Kälte zittern wir wie Espenlaub.',
-                sentenceTranslation: 'От холода мы дрожим как осиновый лист.'
+                "word": "zittern",
+                "translation": "дрожать",
+                "transcription": "[ЦИ-терн]",
+                "sentence": "Vor Kälte zittern wir wie Espenlaub.",
+                "sentenceTranslation": "От холода мы дрожим как осиновый лист."
             },
             {
-                word: 'treu',
-                translation: 'верный',
-                transcription: '[ТРОЙ]',
-                sentence: 'Ich bleibe treu, wenn alle anderen fliehen.',
-                sentenceTranslation: 'Я остаюсь верным, когда все остальные бегут.'
-            },
+                "word": "treu",
+                "translation": "верный",
+                "transcription": "[ТРОЙ]",
+                "sentence": "Ich bleibe treu, wenn alle anderen fliehen.",
+                "sentenceTranslation": "Я остаюсь верным, когда все остальные бегут."
+            }
         ]
     },
-    songs: {
-        title: 'Песни в хижине',
-        description: 'Акт III: Поёт и утешает',
-        words: [
+    "songs": {
+        "title": "Песни в хижине",
+        "description": "Акт III: Поёт и утешает",
+        "words": [
             {
-                word: 'das Lied',
-                translation: 'песня',
-                transcription: '[дас ЛИД]',
-                sentence: 'Mein Lied erzählt von vergangenen Tagen.',
-                sentenceTranslation: 'Моя песня рассказывает о прошлых днях.'
+                "word": "das Lied",
+                "translation": "песня",
+                "transcription": "[дас ЛИД]",
+                "sentence": "Mein Lied erzählt von vergangenen Tagen.",
+                "sentenceTranslation": "Моя песня рассказывает о прошлых днях."
             },
             {
-                word: 'der Trost',
-                translation: 'утешение',
-                transcription: '[дер ТРОСТ]',
-                sentence: 'Mit Liedern bringe ich kleinen Trost.',
-                sentenceTranslation: 'Песнями я приношу малое утешение.'
+                "word": "der Trost",
+                "translation": "утешение",
+                "transcription": "[дер ТРОСТ]",
+                "sentence": "Mit Liedern bringe ich kleinen Trost.",
+                "sentenceTranslation": "Песнями я приношу малое утешение."
             },
             {
-                word: 'die Ironie',
-                translation: 'ирония',
-                transcription: '[ди и-ро-НИ]',
-                sentence: 'Die Ironie ist meine letzte Waffe.',
-                sentenceTranslation: 'Ирония - моё последнее оружие.'
+                "word": "die Ironie",
+                "translation": "ирония",
+                "transcription": "[ди и-ро-НИ]",
+                "sentence": "Die Ironie ist meine letzte Waffe.",
+                "sentenceTranslation": "Ирония - моё последнее оружие."
             },
             {
-                word: 'summen',
-                translation: 'напевать',
-                transcription: '[ЗУ-мен]',
-                sentence: 'Leise summe ich alte Melodien.',
-                sentenceTranslation: 'Тихо я напеваю старые мелодии.'
+                "word": "summen",
+                "translation": "напевать",
+                "transcription": "[ЗУ-мен]",
+                "sentence": "Leise summe ich alte Melodien.",
+                "sentenceTranslation": "Тихо я напеваю старые мелодии."
             },
             {
-                word: 'die Melodie',
-                translation: 'мелодия',
-                transcription: '[ди ме-ло-ДИ]',
-                sentence: 'Die Melodie erinnert an bessere Zeiten.',
-                sentenceTranslation: 'Мелодия напоминает о лучших временах.'
+                "word": "die Melodie",
+                "translation": "мелодия",
+                "transcription": "[ди ме-ло-ДИ]",
+                "sentence": "Die Melodie erinnert an bessere Zeiten.",
+                "sentenceTranslation": "Мелодия напоминает о лучших временах."
             },
             {
-                word: 'pfeifen',
-                translation: 'свистеть',
-                transcription: '[ПФАЙ-фен]',
-                sentence: 'Ich pfeife gegen die Dunkelheit an.',
-                sentenceTranslation: 'Я свищу против темноты.'
+                "word": "pfeifen",
+                "translation": "свистеть",
+                "transcription": "[ПФАЙ-фен]",
+                "sentence": "Ich pfeife gegen die Dunkelheit an.",
+                "sentenceTranslation": "Я свищу против темноты."
             },
             {
-                word: 'der Reim',
-                translation: 'рифма',
-                transcription: '[дер РАЙМ]',
-                sentence: 'Jeder Reim verbirgt eine tiefe Wahrheit.',
-                sentenceTranslation: 'Каждая рифма скрывает глубокую правду.'
+                "word": "der Reim",
+                "translation": "рифма",
+                "transcription": "[дер РАЙМ]",
+                "sentence": "Jeder Reim verbirgt eine tiefe Wahrheit.",
+                "sentenceTranslation": "Каждая рифма скрывает глубокую правду."
             },
             {
-                word: 'klingen',
-                translation: 'звучать',
-                transcription: '[КЛИН-ген]',
-                sentence: 'Meine Worte klingen lustig, doch sind traurig.',
-                sentenceTranslation: 'Мои слова звучат весело, но печальны.'
-            },
+                "word": "klingen",
+                "translation": "звучать",
+                "transcription": "[КЛИН-ген]",
+                "sentence": "Meine Worte klingen lustig, doch sind traurig.",
+                "sentenceTranslation": "Мои слова звучат весело, но печальны."
+            }
         ]
     },
-    wisdom: {
-        title: 'Последняя мудрость',
-        description: 'Акт III-IV: Философские размышления',
-        words: [
+    "wisdom": {
+        "title": "Последняя мудрость",
+        "description": "Акт III-IV: Философские размышления",
+        "words": [
             {
-                word: 'die Philosophie',
-                translation: 'философия',
-                transcription: '[ди фи-ло-зо-ФИ]',
-                sentence: 'Meine Philosophie ist einfach: Alles ist Narretei.',
-                sentenceTranslation: 'Моя философия проста: всё - глупость.'
+                "word": "die Philosophie",
+                "translation": "философия",
+                "transcription": "[ди фи-ло-зо-ФИ]",
+                "sentence": "Meine Philosophie ist einfach: Alles ist Narretei.",
+                "sentenceTranslation": "Моя философия проста: всё - глупость."
             },
             {
-                word: 'das Schicksal',
-                translation: 'судьба',
-                transcription: '[дас ШИК-заль]',
-                sentence: 'Das Schicksal macht Narren aus uns allen.',
-                sentenceTranslation: 'Судьба делает дураков из всех нас.'
+                "word": "das Schicksal",
+                "translation": "судьба",
+                "transcription": "[дас ШИК-заль]",
+                "sentence": "Das Schicksal macht Narren aus uns allen.",
+                "sentenceTranslation": "Судьба делает дураков из всех нас."
             },
             {
-                word: 'die Vergänglichkeit',
-                translation: 'бренность',
-                transcription: '[ди фер-ГЕНГ-лих-кайт]',
-                sentence: 'Die Vergänglichkeit der Macht ist offenbar.',
-                sentenceTranslation: 'Бренность власти очевидна.'
+                "word": "die Vergänglichkeit",
+                "translation": "бренность",
+                "transcription": "[ди фер-ГЕНГ-лих-кайт]",
+                "sentence": "Die Vergänglichkeit der Macht ist offenbar.",
+                "sentenceTranslation": "Бренность власти очевидна."
             },
             {
-                word: 'nachdenken',
-                translation: 'размышлять',
-                transcription: '[НАХ-ден-кен]',
-                sentence: 'Ich denke nach über des Lebens Sinn.',
-                sentenceTranslation: 'Я размышляю о смысле жизни.'
+                "word": "nachdenken",
+                "translation": "размышлять",
+                "transcription": "[НАХ-ден-кен]",
+                "sentence": "Ich denke nach über des Lebens Sinn.",
+                "sentenceTranslation": "Я размышляю о смысле жизни."
             },
             {
-                word: 'erkennen',
-                translation: 'познавать',
-                transcription: '[ер-КЕН-нен]',
-                sentence: 'Ich erkenne die Wahrheit hinter dem Schein.',
-                sentenceTranslation: 'Я познаю правду за видимостью.'
+                "word": "erkennen",
+                "translation": "познавать",
+                "transcription": "[ер-КЕН-нен]",
+                "sentence": "Ich erkenne die Wahrheit hinter dem Schein.",
+                "sentenceTranslation": "Я познаю правду за видимостью."
             },
             {
-                word: 'der Sinn',
-                translation: 'смысл',
-                transcription: '[дер ЗИН]',
-                sentence: 'Der Sinn des Lebens ist ein schlechter Witz.',
-                sentenceTranslation: 'Смысл жизни - плохая шутка.'
+                "word": "der Sinn",
+                "translation": "смысл",
+                "transcription": "[дер ЗИН]",
+                "sentence": "Der Sinn des Lebens ist ein schlechter Witz.",
+                "sentenceTranslation": "Смысл жизни - плохая шутка."
             },
             {
-                word: 'vergänglich',
-                translation: 'преходящий',
-                transcription: '[фер-ГЕНГ-лих]',
-                sentence: 'Alles ist vergänglich, nur die Torheit bleibt.',
-                sentenceTranslation: 'Всё преходяще, только глупость остаётся.'
-            },
+                "word": "vergänglich",
+                "translation": "преходящий",
+                "transcription": "[фер-ГЕНГ-лих]",
+                "sentence": "Alles ist vergänglich, nur die Torheit bleibt.",
+                "sentenceTranslation": "Всё преходяще, только глупость остаётся."
+            }
         ]
     },
-    vanishing: {
-        title: 'Исчезновение',
-        description: 'Акт III: Таинственно исчезает',
-        words: [
+    "vanishing": {
+        "title": "Исчезновение",
+        "description": "Акт III: Таинственно исчезает",
+        "words": [
             {
-                word: 'verschwinden',
-                translation: 'исчезать',
-                transcription: '[фер-ШВИН-ден]',
-                sentence: 'Ich verschwinde wie ein Traum im Morgen.',
-                sentenceTranslation: 'Я исчезаю как сон поутру.'
+                "word": "verschwinden",
+                "translation": "исчезать",
+                "transcription": "[фер-ШВИН-ден]",
+                "sentence": "Ich verschwinde wie ein Traum im Morgen.",
+                "sentenceTranslation": "Я исчезаю как сон поутру."
             },
             {
-                word: 'das Geheimnis',
-                translation: 'тайна',
-                transcription: '[дас ге-ХАЙМ-нис]',
-                sentence: 'Mein Verschwinden bleibt ein ewiges Geheimnis.',
-                sentenceTranslation: 'Моё исчезновение остаётся вечной тайной.'
+                "word": "das Geheimnis",
+                "translation": "тайна",
+                "transcription": "[дас ге-ХАЙМ-нис]",
+                "sentence": "Mein Verschwinden bleibt ein ewiges Geheimnis.",
+                "sentenceTranslation": "Моё исчезновение остаётся вечной тайной."
             },
             {
-                word: 'die Leere',
-                translation: 'пустота',
-                transcription: '[ди ЛЕ-ре]',
-                sentence: 'Ich hinterlasse nur Leere und Erinnerung.',
-                sentenceTranslation: 'Я оставляю только пустоту и воспоминание.'
+                "word": "die Leere",
+                "translation": "пустота",
+                "transcription": "[ди ЛЕ-ре]",
+                "sentence": "Ich hinterlasse nur Leere und Erinnerung.",
+                "sentenceTranslation": "Я оставляю только пустоту и воспоминание."
             },
             {
-                word: 'sich auflösen',
-                translation: 'растворяться',
-                transcription: '[зих АУФ-лё-зен]',
-                sentence: 'Ich löse mich auf wie Nebel im Wind.',
-                sentenceTranslation: 'Я растворяюсь как туман на ветру.'
+                "word": "sich auflösen",
+                "translation": "растворяться",
+                "transcription": "[зих АУФ-лё-зен]",
+                "sentence": "Ich löse mich auf wie Nebel im Wind.",
+                "sentenceTranslation": "Я растворяюсь как туман на ветру."
             },
             {
-                word: 'spurlos',
-                translation: 'бесследно',
-                transcription: '[ШПУР-лос]',
-                sentence: 'Spurlos gehe ich aus dieser Welt.',
-                sentenceTranslation: 'Бесследно я ухожу из этого мира.'
+                "word": "spurlos",
+                "translation": "бесследно",
+                "transcription": "[ШПУР-лос]",
+                "sentence": "Spurlos gehe ich aus dieser Welt.",
+                "sentenceTranslation": "Бесследно я ухожу из этого мира."
             },
             {
-                word: 'der Nebel',
-                translation: 'туман',
-                transcription: '[дер НЕ-бель]',
-                sentence: 'Im Nebel verliere ich mich für immer.',
-                sentenceTranslation: 'В тумане я теряюсь навсегда.'
+                "word": "der Nebel",
+                "translation": "туман",
+                "transcription": "[дер НЕ-бель]",
+                "sentence": "Im Nebel verliere ich mich für immer.",
+                "sentenceTranslation": "В тумане я теряюсь навсегда."
             },
             {
-                word: 'rätselhaft',
-                translation: 'загадочный',
-                transcription: '[РЕТ-зель-хафт]',
-                sentence: 'Mein Ende bleibt rätselhaft und stumm.',
-                sentenceTranslation: 'Мой конец остаётся загадочным и немым.'
+                "word": "rätselhaft",
+                "translation": "загадочный",
+                "transcription": "[РЕТ-зель-хафт]",
+                "sentence": "Mein Ende bleibt rätselhaft und stumm.",
+                "sentenceTranslation": "Мой конец остаётся загадочным и немым."
             },
             {
-                word: 'fortgehen',
-                translation: 'уходить',
-                transcription: '[ФОРТ-ге-ен]',
-                sentence: 'Ich gehe fort, wenn keiner es bemerkt.',
-                sentenceTranslation: 'Я ухожу, когда никто не замечает.'
-            },
+                "word": "fortgehen",
+                "translation": "уходить",
+                "transcription": "[ФОРТ-ге-ен]",
+                "sentence": "Ich gehe fort, wenn keiner es bemerkt.",
+                "sentenceTranslation": "Я ухожу, когда никто не замечает."
+            }
         ]
-    },
+    }
 };
 
 

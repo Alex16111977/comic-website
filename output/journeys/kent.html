@@ -5,763 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Путь Кента | König Lear</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        
-/* LIRA JOURNEY STYLES - Mobile Optimized */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-/* Prevent iOS zoom on input focus */
-input, select, textarea, button {
-    font-size: 16px !important;
-}
-
-/* Prevent text selection on mobile */
-.no-select {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-body {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
-    font-family: 'Inter', 'Segoe UI', sans-serif;
-    color: #333;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.page-header {
-    text-align: center;
-    color: white;
-    margin-bottom: 40px;
-    animation: fadeInDown 0.8s ease;
-}
-
-.page-header h1 {
-    font-size: 3em;
-    font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 1.2em;
-    opacity: 0.95;
-}
-
-.journey-section {
-    background: white;
-    border-radius: 20px;
-    padding: 40px;
-    margin-bottom: 40px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-}
-
-.journey-timeline {
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.journey-line {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.progress-line {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: drawLine 2s ease forwards;
-    animation-delay: 1s;
-}
-
-.journey-points {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    z-index: 2;
-    padding: 0 30px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-}
-
-.journey-point {
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    opacity: 0.7;
-    transform: scale(0.9);
-    /* Mobile touch optimizations */
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    user-select: none;
-    touch-action: manipulation;
-    min-width: 80px;
-    padding: 10px 5px;
-    position: relative;
-}
-
-.journey-point.active {
-    opacity: 1;
-    transform: scale(1);
-}
-
-/* Touch feedback for mobile */
-@media (hover: none) and (pointer: coarse) {
-    .journey-point {
-        min-width: 90px;
-    }
-    
-    .journey-point:active {
-        transform: scale(0.95);
-        opacity: 0.9;
-    }
-}
-
-.point-circle {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: white;
-    border: 3px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    margin: 0 auto 10px;
-    transition: all 0.3s ease;
-}
-
-.journey-point.active .point-circle {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    border-color: #667eea;
-    transform: scale(1.2);
-    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
-}
-
-.journey-point h4 {
-    font-size: 0.9em;
-    margin: 5px 0;
-    color: #333;
-}
-
-.journey-point p {
-    font-size: 0.75em;
-    color: #666;
-    display: none;
-}
-
-.journey-point.active p {
-    display: block;
-}
-
-.journey-progress {
-    margin-top: 20px;
-}
-
-.progress-track {
-    height: 8px;
-    background: #e0e0e0;
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.progress-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    transition: width 0.5s ease;
-}
-
-.progress-text {
-    text-align: center;
-    margin-top: 10px;
-    color: #666;
-    font-size: 0.9em;
-}
-
-.vocabulary-section {
-    background: white;
-    border-radius: 20px;
-    padding: 40px;
-    margin-bottom: 40px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-}
-
-.vocabulary-section h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-    text-align: center;
-    color: #333;
-}
-
-.vocabulary-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    margin-bottom: 30px;
-    min-height: 200px;
-}
-
-.word-card {
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-    border-radius: 15px;
-    padding: 20px;
-    text-align: center;
-    transition: all 0.3s ease;
-    animation: slideIn 0.4s ease;
-}
-
-.word-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
-.word-german {
-    font-size: 1.4em;
-    font-weight: 700;
-    color: #667eea;
-    margin-bottom: 8px;
-}
-
-.word-translation {
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 5px;
-}
-
-.word-transcription {
-    font-size: 0.9em;
-    color: #888;
-    font-style: italic;
-    margin-bottom: 15px;
-}
-
-.word-sentence {
-    margin-top: 15px;
-    padding-top: 15px;
-    border-top: 1px solid #e0e0e0;
-}
-
-.sentence-german {
-    font-size: 0.95em;
-    color: #444;
-    margin-bottom: 5px;
-    font-style: italic;
-}
-
-.sentence-translation {
-    font-size: 0.9em;
-    color: #666;
-}
-
-.phase-navigation {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-}
-
-.change-phase-btn {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
-    border: none;
-    padding: 16px 32px;
-    border-radius: 12px;
-    font-size: 1.1em;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-    /* Mobile optimizations */
-    -webkit-tap-highlight-color: transparent;
-    -webkit-appearance: none;
-    appearance: none;
-    touch-action: manipulation;
-    -webkit-user-select: none;
-    user-select: none;
-    min-height: 48px;
-    min-width: 160px;
-}
-
-.change-phase-btn:hover:not(:disabled) {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-}
-
-.change-phase-btn:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
-}
-
-.change-phase-btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    transform: none !important;
-}
-
-/* Touch device specific button styles */
-@media (hover: none) and (pointer: coarse) {
-    .change-phase-btn {
-        padding: 18px 36px;
-        font-size: 1.15em;
-        min-height: 56px;
-    }
-    
-    .change-phase-btn:hover {
-        transform: none;
-    }
-    
-    .change-phase-btn:active:not(:disabled) {
-        transform: scale(0.98);
-        opacity: 0.9;
-    }
-}
-
-.bottom-nav {
-    text-align: center;
-    margin-top: 40px;
-    padding-bottom: 20px;
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1em;
-    padding: 12px 24px;
-    border: 2px solid white;
-    border-radius: 8px;
-    display: inline-block;
-    transition: all 0.3s ease;
-    /* Mobile optimizations */
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
-    min-height: 48px;
-}
-
-.nav-link:hover {
-    background: white;
-    color: #667eea;
-}
-
-/* Mobile responsive styles */
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-    
-    .page-header h1 {
-        font-size: 2em;
-    }
-    
-    .subtitle {
-        font-size: 1em;
-    }
-    
-    .journey-section {
-        padding: 20px;
-        border-radius: 15px;
-    }
-    
-    .journey-points {
-        padding: 0 10px;
-        gap: 10px;
-    }
-    
-    .journey-point {
-        min-width: 70px;
-    }
-    
-    .point-circle {
-        width: 48px;
-        height: 48px;
-        font-size: 20px;
-    }
-    
-    .journey-point h4 {
-        font-size: 0.8em;
-    }
-    
-    .vocabulary-section {
-        padding: 20px;
-    }
-    
-    .vocabulary-section h2 {
-        font-size: 1.5em;
-    }
-    
-    .vocabulary-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-    
-    .word-card {
-        padding: 15px;
-    }
-    
-    .phase-navigation {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .change-phase-btn {
-        width: 90%;
-        max-width: 300px;
-    }
-}
-
-/* Small mobile devices */
-@media (max-width: 480px) {
-    .journey-points {
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        padding-bottom: 10px;
-    }
-    
-    .journey-point {
-        scroll-snap-align: center;
-        flex: 0 0 auto;
-    }
-    
-    /* Custom scrollbar for journey points */
-    .journey-points::-webkit-scrollbar {
-        height: 6px;
-    }
-    
-    .journey-points::-webkit-scrollbar-track {
-        background: #f1f1f1;
-        border-radius: 3px;
-    }
-    
-    .journey-points::-webkit-scrollbar-thumb {
-        background: #667eea;
-        border-radius: 3px;
-    }
-}
-
-/* iOS specific fixes */
-@supports (-webkit-touch-callout: none) {
-    /* iOS only styles */
-    button, .journey-point {
-        -webkit-tap-highlight-color: transparent;
-    }
-    
-    .change-phase-btn,
-    .show-answer-btn,
-    .nav-link {
-        -webkit-appearance: none;
-        appearance: none;
-    }
-    
-    /* Fix iOS button radius */
-    input[type="button"],
-    input[type="submit"] {
-        border-radius: 0;
-    }
-}
-
-/* Android specific optimizations */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-    .journey-points {
-        -webkit-overflow-scrolling: touch;
-    }
-}
-
-/* Animations */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes drawLine {
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-        
-        .theatrical-scene {
-            background: linear-gradient(135deg, #f6f8fb 0%, #e9ecf1 100%);
-            border: 1px solid rgba(102, 126, 234, 0.2);
-            padding: 35px;
-            border-radius: 20px;
-            margin: 30px 0;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.08), 0 2px 10px rgba(102, 126, 234, 0.1);
-            display: none;
-            animation: fadeIn 0.5s ease;
-        }
-        
-        .theatrical-scene.active {
-            display: block;
-        }
-        
-        .theatrical-scene::before {
-            content: 'ACT';
-            position: absolute;
-            font-size: 100px;
-            font-weight: 900;
-            opacity: 0.05;
-            right: -30px;
-            top: -30px;
-            transform: rotate(-15deg);
-        }
-        
-        .scene-title {
-            color: #2d3748;
-            font-size: 1.8em;
-            font-weight: 700;
-            margin-bottom: 25px;
-            text-align: center;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 15px;
-        }
-        
-        .scene-narrative {
-            color: #4a5568;
-            font-size: 1.15em;
-            line-height: 1.9;
-            margin-bottom: 25px;
-            text-align: justify;
-        }
-        
-        .scene-narrative b {
-            color: #667eea;
-            font-weight: 700;
-            background: linear-gradient(180deg, transparent 60%, rgba(102, 126, 234, 0.15) 60%);
-            padding: 0 2px;
-            transition: all 0.3s ease;
-        }
-        
-        .scene-narrative b:hover {
-            background: linear-gradient(180deg, transparent 40%, rgba(102, 126, 234, 0.25) 40%);
-            color: #5a67d8;
-        }
-        
-        .emotional-peak {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
-            padding: 25px;
-            border-radius: 15px;
-            border-left: 4px solid #667eea;
-            color: #2d3748;
-            font-size: 1.1em;
-            font-style: italic;
-            margin-top: 25px;
-            position: relative;
-            box-shadow: inset 0 2px 8px rgba(0,0,0,0.05);
-        }
-        
-        .emotional-peak::before {
-            content: '';
-            position: absolute;
-            left: -4px;
-            top: 0;
-            bottom: 0;
-            width: 4px;
-            background: linear-gradient(180deg, #667eea, #764ba2);
-            border-radius: 4px;
-        }
-        
-        /* Стили для упражнения */
-        .exercise-section {
-            background: linear-gradient(135deg, #fff9e6 0%, #fff4d6 100%);
-            border: 2px solid #f6ad55;
-            padding: 30px;
-            border-radius: 15px;
-            margin-top: 35px;
-            position: relative;
-        }
-        
-        .exercise-title {
-            color: #d97706;
-            font-size: 1.4em;
-            font-weight: 700;
-            margin-bottom: 20px;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        
-        .exercise-text {
-            color: #4a5568;
-            font-size: 1.1em;
-            line-height: 1.9;
-            text-align: justify;
-        }
-        
-        .exercise-text .blank {
-            display: inline-block;
-            min-width: 100px;
-            border-bottom: 2px solid #f6ad55;
-            margin: 0 4px;
-            color: #a0aec0;
-            font-style: italic;
-            font-size: 0.9em;
-            padding: 0 4px;
-            transition: all 0.3s ease;
-        }
-        
-        .exercise-container {
-            display: none;
-        }
-        
-        .exercise-container.active {
-            display: block;
-        }
-        
-        .exercises-container {
-            margin-top: 40px;
-        }
-        
-        .show-answer-btn {
-            background: linear-gradient(135deg, #f6ad55 0%, #ed8936 100%);
-            color: white;
-            border: none;
-            padding: 16px 32px;
-            border-radius: 12px;
-            font-size: 1.1em;
-            font-weight: 600;
-            cursor: pointer;
-            margin-top: 20px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(237, 137, 54, 0.3);
-            /* Mobile optimizations */
-            touch-action: manipulation;
-            -webkit-tap-highlight-color: transparent;
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            user-select: none;
-            min-height: 48px;
-            min-width: 160px;
-        }
-        
-        .show-answer-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(237, 137, 54, 0.4);
-        }
-        
-        .show-answer-btn:active {
-            transform: translateY(0);
-            box-shadow: 0 2px 8px rgba(237, 137, 54, 0.3);
-        }
-        
-        /* Touch device optimizations */
-        @media (hover: none) and (pointer: coarse) {
-            .show-answer-btn {
-                padding: 18px 36px;
-                font-size: 1.2em;
-                min-height: 56px;
-            }
-            
-            .show-answer-btn:hover {
-                transform: none;
-            }
-            
-            .show-answer-btn:active {
-                transform: scale(0.98);
-                opacity: 0.9;
-            }
-        }
-        
-        @keyframes fadeIn {
-            from { 
-                opacity: 0; 
-                transform: translateY(20px); 
-            }
-            to { 
-                opacity: 1; 
-                transform: translateY(0); 
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .theatrical-scene {
-                padding: 25px 20px;
-            }
-            
-            .scene-title {
-                font-size: 1.4em;
-            }
-            
-            .scene-narrative {
-                font-size: 1.05em;
-                text-align: left;
-            }
-            
-            .exercise-section {
-                padding: 20px;
-            }
-            
-            .exercise-text {
-                font-size: 1em;
-                line-height: 1.8;
-            }
-            
-            .exercise-text .blank {
-                min-width: 80px;
-                padding: 2px 6px;
-                margin: 2px;
-            }
-            
-            .show-answer-btn {
-                width: 90%;
-                max-width: 300px;
-                padding: 18px 24px;
-                font-size: 1.15em;
-            }
-        }
-        
-        /* iOS specific fixes */
-        @supports (-webkit-touch-callout: none) {
-            .show-answer-btn {
-                -webkit-appearance: none;
-                appearance: none;
-            }
-            
-            .exercise-text .blank {
-                -webkit-tap-highlight-color: transparent;
-            }
-        }
-        
-    </style>
+    <link rel="stylesheet" href="../static/css/journey.css">
 </head>
 <body>
     <div class="container">
@@ -769,587 +13,622 @@ body {
             <h1>👑 Путь Кента</h1>
             <p class="subtitle">Изучаем немецкий через трагедию Шекспира</p>
         </header>
-        
+
         <div class="journey-section">
             <h2>📚 Путешествие Kent</h2>
-            
+
             <div class="journey-timeline">
                 <svg class="journey-line" width="100%" height="4">
-                    <line x1="0" y1="2" x2="100%" y2="2" stroke="#6b5b95" stroke-width="2" opacity="0.3"/>
-                    <line x1="0" y1="2" x2="14%" y2="2" stroke="#6b5b95" stroke-width="3" class="progress-line"/>
+                    <line x1="0" y1="2" x2="100%" y2="2" stroke="#6b5b95" stroke-width="2" opacity="0.3" />
+                    <line x1="0" y1="2" x2="14%" y2="2" stroke="#6b5b95" stroke-width="3" class="progress-line" />
                 </svg>
-                
+
                 <div class="journey-points">
                     
-                <div class="journey-point active" data-phase="loyalty">
-                    <div class="point-circle">🛡️</div>
-                    <h4>Верность королю</h4>
-                    <p>Treue • Mut • Wahrheit</p>
-                </div>
-                <div class="journey-point " data-phase="banishment">
-                    <div class="point-circle">🚪</div>
-                    <h4>Изгнание</h4>
-                    <p>Verbannung • Ungerechtigkeit • Zorn</p>
-                </div>
-                <div class="journey-point " data-phase="disguise">
-                    <div class="point-circle">🎭</div>
-                    <h4>Маскировка</h4>
-                    <p>Verkleidung • List • Rückkehr</p>
-                </div>
-                <div class="journey-point " data-phase="service">
-                    <div class="point-circle">⚔️</div>
-                    <h4>Тайная служба</h4>
-                    <p>Dienst • Schutz • Gefahr</p>
-                </div>
-                <div class="journey-point " data-phase="stocks">
-                    <div class="point-circle">⛓️</div>
-                    <h4>В колодках</h4>
-                    <p>Strafe • Demütigung • Standhaftigkeit</p>
-                </div>
-                <div class="journey-point " data-phase="storm_companion">
-                    <div class="point-circle">⛈️</div>
-                    <h4>Спутник в буре</h4>
-                    <p>Sturm • Beistand • Treue</p>
-                </div>
-                <div class="journey-point " data-phase="final_loyalty">
-                    <div class="point-circle">💔</div>
-                    <h4>Верность до конца</h4>
-                    <p>Tod • Abschied • ewige Treue</p>
-                </div>
+                    <div class="journey-point active" data-phase="loyalty">
+                        <div class="point-circle">🛡️</div>
+                        <h4>Верность королю</h4>
+                        
+                        <p>Treue • Mut • Wahrheit</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="banishment">
+                        <div class="point-circle">🚪</div>
+                        <h4>Изгнание</h4>
+                        
+                        <p>Verbannung • Ungerechtigkeit • Zorn</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="disguise">
+                        <div class="point-circle">🎭</div>
+                        <h4>Маскировка</h4>
+                        
+                        <p>Verkleidung • List • Rückkehr</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="service">
+                        <div class="point-circle">⚔️</div>
+                        <h4>Тайная служба</h4>
+                        
+                        <p>Dienst • Schutz • Gefahr</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="stocks">
+                        <div class="point-circle">⛓️</div>
+                        <h4>В колодках</h4>
+                        
+                        <p>Strafe • Demütigung • Standhaftigkeit</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="storm_companion">
+                        <div class="point-circle">⛈️</div>
+                        <h4>Спутник в буре</h4>
+                        
+                        <p>Sturm • Beistand • Treue</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="final_loyalty">
+                        <div class="point-circle">💔</div>
+                        <h4>Верность до конца</h4>
+                        
+                        <p>Tod • Abschied • ewige Treue</p>
+                        
+                    </div>
+                    
                 </div>
             </div>
-            
+
             <div class="journey-progress">
                 <div class="progress-track">
                     <div class="progress-fill" style="width: 14%"></div>
                 </div>
-                <div class="progress-text">Акт I: Разделение королевства</div>
+                <div class="progress-text">Акт I: Защищает Корделию в тронном зале</div>
             </div>
         </div>
+
         
-        <!-- Theatrical Scene Section -->
         <div class="theatrical-scenes">
             
-                <div class="theatrical-scene active" data-phase="loyalty">
-                    <h3 class="scene-title">ВОССТАНИЕ ПРАВДЫ</h3>
-                    <div class="scene-narrative">Я - граф Кент, и <b>DIE TREUE (верность)</b> моя движет мной! В тронном зале я должен <b>WIDERSPRECHEN (возражать)</b> королю! <b>DER MUT (мужество)</b> требует от меня <b>VERTEIDIGEN (защищать)</b> невинную Корделию! Я <b>AUFRICHTIG (искренен)</b>, хотя знаю цену этой искренности. Как <b>DER DIENER (слуга)</b> короля, я должен <b>WARNEN (предупреждать)</b> его! «Остановитесь, мой король!» - кричу я. «То, что вы делаете, не <b>GERECHT (справедливо)</b>!» Гонерилья и Регана - льстивые змеи, а Корделия - истинная дочь! Но гнев Лира слеп, а моя правда его оскорбляет.</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Отмените это решение, пока не поздно!» - умоляю я, но вижу в глазах короля только ярость!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="banishment">
-                    <h3 class="scene-title">ГОРЬКОЕ ИЗГНАНИЕ</h3>
-                    <div class="scene-narrative"><b>DIE VERBANNUNG (изгнание)</b> - вот мой приговор! <b>DER ZORN (гнев)</b> короля обрушивается на меня как молот! Я <b>VERBANNT (изгнан)</b> из страны, которой служил всю жизнь! <b>DIE UNGERECHTIGKEIT (несправедливость)</b> этого решения жжёт мою душу! <b>DER ABSCHIED (прощание)</b> с двором разрывает сердце, но я принимаю <b>DIE STRAFE (наказание)</b> с высоко поднятой головой. «Прощайте!» - говорю я придворным. Но в сердце моём уже зреет план - я буду <b>ZURÜCKKEHREN (возвращаться)</b>! Мой король нуждается во мне, даже если не знает этого. Я найду способ служить ему снова!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Пять дней даёте мне покинуть королевство? Я уйду через час!» - гордо заявляю я, скрывая боль.</div>
-                </div>
-                <div class="theatrical-scene " data-phase="disguise">
-                    <h3 class="scene-title">СЛУГА КАЙ</h3>
-                    <div class="scene-narrative">Я стою перед зеркалом в <b>DIE VERKLEIDUNG (переодевании)</b>. С <b>DER BART (бородой)</b> и грубой одеждой я <b>UNERKANNT (неузнанный)</b>! Я <b>VERSTELLEN (изменяю)</b> голос, делаю его грубее. Я <b>VORGEBEN (притворяюсь)</b> простым человеком по имени Кай. С <b>DIE LIST (хитростью)</b> я вернусь к моему королю! Вот я <b>ANHEUERN (нанимаюсь)</b> к нему на службу. «Я честный человек, ищущий работу», - говорю я грубым голосом. Лир не узнаёт меня! Я остаюсь <b>TREU (верным)</b>, даже если он думает, что Кент мёртв. Моя маскировка совершенна!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Я буду служить тому, кто достоин!» - говорю я Лиру, и он принимает меня, не зная, что принимает старого друга!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="service">
-                    <h3 class="scene-title">ТАЙНЫЙ ЗАЩИТНИК</h3>
-                    <div class="scene-narrative">Мой <b>DER DIENST (служба)</b> продолжается в тени! Я <b>BEWACHEN (охраняю)</b> короля день и ночь. <b>DIE GEFAHR (опасность)</b> повсюду - Освальд оскорбляет его, дочери предают! Я <b>KÄMPFEN (сражаюсь)</b> с наглецом Освальдом, защищая честь короля! <b>DER SCHUTZ (защита)</b>, которую я даю, невидима, но реальна. Я <b>RATEN (советую)</b> королю быть осторожным с дочерьми. Ночью я держу <b>DIE WACHE (стражу)</b>, пока он спит. Он думает, что я простой слуга Кай, но я - его самый верный рыцарь. Каждый день я рискую разоблачением, но это моя священная миссия!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «За вами, господин, я пойду в ад!» - клянусь я, и это чистая правда!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="stocks">
-                    <h3 class="scene-title">НОЧЬ В КОЛОДКАХ</h3>
-                    <div class="scene-narrative">Они <b>FESSELN (сковывают)</b> меня в <b>DER STOCK (колодки)</b>! Корнуолл и Регана наказывают меня как преступника! <b>DIE STRAFE (наказание)</b> жестоко, но я <b>ERDULDEN (терплю)</b> его с <b>DIE STANDHAFTIGKEIT (стойкостью)</b>. <b>DIE DEMÜTIGUNG (унижение)</b> публично - все видят слугу короля в колодках! Но <b>DIE SCHANDE (позор)</b> не мой - это позор тех, кто так обращается со слугой короля! Всю ночь я <b>AUSHARREN (выдерживаю)</b> холод и боль. Ноги немеют, спина горит, но дух мой не сломлен! Когда король увидит меня так, он поймёт, как низко пали его дочери!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Поставить в колодки слугу короля?!» - кричит Лир, увидев меня. Его гнев - моя награда за страдания!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="storm_companion">
-                    <h3 class="scene-title">В СЕРДЦЕ БУРИ</h3>
-                    <div class="scene-narrative"><b>DER STURM (буря)</b> ревёт вокруг нас! Я <b>BEGLEITEN (сопровождаю)</b> безумного короля через ад стихии! Дождь хлещет, <b>DIE KÄLTE (холод)</b> пронизывает до костей, но мой <b>DER BEISTAND (поддержка)</b> не ослабевает! Я ищу <b>DIE ZUFLUCHT (убежище)</b> - хижину, пещеру, что угодно! «Мы должны <b>DURCHHALTEN (выдержать)</b>, мой король!» - кричу я сквозь вой ветра. Я пытаюсь <b>TRÖSTEN (утешать)</b> его, но он говорит с громом и молниями. Мой старый господин потерял разум, но не потерял меня! Я останусь с ним до конца!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Войдите в хижину, господин! Сжальтесь над собой!» - умоляю я, но он хочет чувствовать то, что чувствуют нищие!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="final_loyalty">
-                    <h3 class="scene-title">ПОСЛЕДНИЙ ДОЛГ</h3>
-                    <div class="scene-narrative">Корделия мертва! Лир умирает! <b>DER TOD (смерть)</b> забирает всех, кого я любил! Я <b>WEINEN (плачу)</b> над телом моего короля. <b>DER ABSCHIED (прощание)</b> невыносимо! Моя <b>EWIG (вечная)</b> верность исполнена - я служил до конца! <b>DIE ERSCHÖPFUNG (истощение)</b> овладевает мной. <b>DIE TRAUER (скорбь)</b> слишком тяжела для старого сердца. Я готов <b>AUFGEBEN (сдаться)</b> и <b>FOLGEN (следовать)</b> за моим господином. «Мой господин, я иду!» - шепчу я. Моя служба в этом мире окончена. Пусть Эдгар и Олбани правят. Мой путь ведёт за моим королём в вечность!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Он ушёл навсегда!» - рыдаю я над телом Лира. Моё сердце разбито, моя жизнь окончена!</div>
-                </div>
+            <div class="theatrical-scene active" data-phase="loyalty">
+                <h3 class="scene-title">ВОССТАНИЕ ПРАВДЫ</h3>
+                <div class="scene-narrative">Я - граф Кент, и <b>DIE TREUE (верность)</b> моя движет мной! В тронном зале я должен <b>WIDERSPRECHEN (возражать)</b> королю! <b>DER MUT (мужество)</b> требует от меня <b>VERTEIDIGEN (защищать)</b> невинную Корделию! Я <b>AUFRICHTIG (искренен)</b>, хотя знаю цену этой искренности. Как <b>DER DIENER (слуга)</b> короля, я должен <b>WARNEN (предупреждать)</b> его! «Остановитесь, мой король!» - кричу я. «То, что вы делаете, не <b>GERECHT (справедливо)</b>!» Гонерилья и Регана - льстивые змеи, а Корделия - истинная дочь! Но гнев Лира слеп, а моя правда его оскорбляет.</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Отмените это решение, пока не поздно!» - умоляю я, но вижу в глазах короля только ярость!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="banishment">
+                <h3 class="scene-title">ГОРЬКОЕ ИЗГНАНИЕ</h3>
+                <div class="scene-narrative"><b>DIE VERBANNUNG (изгнание)</b> - вот мой приговор! <b>DER ZORN (гнев)</b> короля обрушивается на меня как молот! Я <b>VERBANNT (изгнан)</b> из страны, которой служил всю жизнь! <b>DIE UNGERECHTIGKEIT (несправедливость)</b> этого решения жжёт мою душу! <b>DER ABSCHIED (прощание)</b> с двором разрывает сердце, но я принимаю <b>DIE STRAFE (наказание)</b> с высоко поднятой головой. «Прощайте!» - говорю я придворным. Но в сердце моём уже зреет план - я буду <b>ZURÜCKKEHREN (возвращаться)</b>! Мой король нуждается во мне, даже если не знает этого. Я найду способ служить ему снова!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Пять дней даёте мне покинуть королевство? Я уйду через час!» - гордо заявляю я, скрывая боль.</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="disguise">
+                <h3 class="scene-title">СЛУГА КАЙ</h3>
+                <div class="scene-narrative">Я стою перед зеркалом в <b>DIE VERKLEIDUNG (переодевании)</b>. С <b>DER BART (бородой)</b> и грубой одеждой я <b>UNERKANNT (неузнанный)</b>! Я <b>VERSTELLEN (изменяю)</b> голос, делаю его грубее. Я <b>VORGEBEN (притворяюсь)</b> простым человеком по имени Кай. С <b>DIE LIST (хитростью)</b> я вернусь к моему королю! Вот я <b>ANHEUERN (нанимаюсь)</b> к нему на службу. «Я честный человек, ищущий работу», - говорю я грубым голосом. Лир не узнаёт меня! Я остаюсь <b>TREU (верным)</b>, даже если он думает, что Кент мёртв. Моя маскировка совершенна!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Я буду служить тому, кто достоин!» - говорю я Лиру, и он принимает меня, не зная, что принимает старого друга!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="service">
+                <h3 class="scene-title">ТАЙНЫЙ ЗАЩИТНИК</h3>
+                <div class="scene-narrative">Мой <b>DER DIENST (служба)</b> продолжается в тени! Я <b>BEWACHEN (охраняю)</b> короля день и ночь. <b>DIE GEFAHR (опасность)</b> повсюду - Освальд оскорбляет его, дочери предают! Я <b>KÄMPFEN (сражаюсь)</b> с наглецом Освальдом, защищая честь короля! <b>DER SCHUTZ (защита)</b>, которую я даю, невидима, но реальна. Я <b>RATEN (советую)</b> королю быть осторожным с дочерьми. Ночью я держу <b>DIE WACHE (стражу)</b>, пока он спит. Он думает, что я простой слуга Кай, но я - его самый верный рыцарь. Каждый день я рискую разоблачением, но это моя священная миссия!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «За вами, господин, я пойду в ад!» - клянусь я, и это чистая правда!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="stocks">
+                <h3 class="scene-title">НОЧЬ В КОЛОДКАХ</h3>
+                <div class="scene-narrative">Они <b>FESSELN (сковывают)</b> меня в <b>DER STOCK (колодки)</b>! Корнуолл и Регана наказывают меня как преступника! <b>DIE STRAFE (наказание)</b> жестоко, но я <b>ERDULDEN (терплю)</b> его с <b>DIE STANDHAFTIGKEIT (стойкостью)</b>. <b>DIE DEMÜTIGUNG (унижение)</b> публично - все видят слугу короля в колодках! Но <b>DIE SCHANDE (позор)</b> не мой - это позор тех, кто так обращается со слугой короля! Всю ночь я <b>AUSHARREN (выдерживаю)</b> холод и боль. Ноги немеют, спина горит, но дух мой не сломлен! Когда король увидит меня так, он поймёт, как низко пали его дочери!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Поставить в колодки слугу короля?!» - кричит Лир, увидев меня. Его гнев - моя награда за страдания!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="storm_companion">
+                <h3 class="scene-title">В СЕРДЦЕ БУРИ</h3>
+                <div class="scene-narrative"><b>DER STURM (буря)</b> ревёт вокруг нас! Я <b>BEGLEITEN (сопровождаю)</b> безумного короля через ад стихии! Дождь хлещет, <b>DIE KÄLTE (холод)</b> пронизывает до костей, но мой <b>DER BEISTAND (поддержка)</b> не ослабевает! Я ищу <b>DIE ZUFLUCHT (убежище)</b> - хижину, пещеру, что угодно! «Мы должны <b>DURCHHALTEN (выдержать)</b>, мой король!» - кричу я сквозь вой ветра. Я пытаюсь <b>TRÖSTEN (утешать)</b> его, но он говорит с громом и молниями. Мой старый господин потерял разум, но не потерял меня! Я останусь с ним до конца!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Войдите в хижину, господин! Сжальтесь над собой!» - умоляю я, но он хочет чувствовать то, что чувствуют нищие!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="final_loyalty">
+                <h3 class="scene-title">ПОСЛЕДНИЙ ДОЛГ</h3>
+                <div class="scene-narrative">Корделия мертва! Лир умирает! <b>DER TOD (смерть)</b> забирает всех, кого я любил! Я <b>WEINEN (плачу)</b> над телом моего короля. <b>DER ABSCHIED (прощание)</b> невыносимо! Моя <b>EWIG (вечная)</b> верность исполнена - я служил до конца! <b>DIE ERSCHÖPFUNG (истощение)</b> овладевает мной. <b>DIE TRAUER (скорбь)</b> слишком тяжела для старого сердца. Я готов <b>AUFGEBEN (сдаться)</b> и <b>FOLGEN (следовать)</b> за моим господином. «Мой господин, я иду!» - шепчу я. Моя служба в этом мире окончена. Пусть Эдгар и Олбани правят. Мой путь ведёт за моим королём в вечность!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Он ушёл навсегда!» - рыдаю я над телом Лира. Моё сердце разбито, моя жизнь окончена!</div>
+            </div>
+            
         </div>
         
+
         <div class="vocabulary-section">
-            <h2>📖 Словарь: Фаза "<span id="current-phase">Тронный зал</span>"</h2>
+            <h2>📖 Словарь: Фаза "<span id="current-phase">Верность королю</span>"</h2>
             <div class="vocabulary-grid"></div>
-            
+
             <div class="phase-navigation">
-                <button class="change-phase-btn prev-btn">← Предыдущая фаза</button>
-                <button class="change-phase-btn next-btn">Следующая фаза →</button>
+                <button class="change-phase-btn prev-btn" type="button">← Предыдущая фаза</button>
+                <button class="change-phase-btn next-btn" type="button">Следующая фаза →</button>
             </div>
         </div>
-        
-        <!-- Exercises Section AFTER Vocabulary -->
+
         <div class="exercises-container">
             
-                    <div class="exercise-container active" data-phase="loyalty">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: ВОССТАНИЕ ПРАВДЫ</h4>
-                            <div class="exercise-text">Я - граф Кент, и <span class="blank" data-answer="die TREUE" data-hint="верность">_______ (верность)</span> моя движет мной! В тронном зале я должен <span class="blank" data-answer="WIDERSPRECHEN" data-hint="возражать">_______ (возражать)</span> королю! <span class="blank" data-answer="der MUT" data-hint="мужество">_______ (мужество)</span> требует от меня <span class="blank" data-answer="VERTEIDIGEN" data-hint="защищать">_______ (защищать)</span> невинную Корделию! Я <span class="blank" data-answer="AUFRICHTIG" data-hint="искренен">_______ (искренен)</span>, хотя знаю цену этой искренности. Как <span class="blank" data-answer="der DIENER" data-hint="слуга">_______ (слуга)</span> короля, я должен <span class="blank" data-answer="WARNEN" data-hint="предупреждать">_______ (предупреждать)</span> его! «Остановитесь, мой король!» - кричу я. «То, что вы делаете, не <span class="blank" data-answer="GERECHT" data-hint="справедливо">_______ (справедливо)</span>!» Гонерилья и Регана - льстивые змеи, а Корделия - истинная дочь! Но гнев Лира слеп, а моя правда его оскорбляет.</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="banishment">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: ГОРЬКОЕ ИЗГНАНИЕ</h4>
-                            <div class="exercise-text"><span class="blank" data-answer="die VERBANNUNG" data-hint="изгнание">_______ (изгнание)</span> - вот мой приговор! <span class="blank" data-answer="der ZORN" data-hint="гнев">_______ (гнев)</span> короля обрушивается на меня как молот! Я <span class="blank" data-answer="VERBANNT" data-hint="изгнан">_______ (изгнан)</span> из страны, которой служил всю жизнь! <span class="blank" data-answer="die UNGERECHTIGKEIT" data-hint="несправедливость">_______ (несправедливость)</span> этого решения жжёт мою душу! <span class="blank" data-answer="der ABSCHIED" data-hint="прощание">_______ (прощание)</span> с двором разрывает сердце, но я принимаю <span class="blank" data-answer="die STRAFE" data-hint="наказание">_______ (наказание)</span> с высоко поднятой головой. «Прощайте!» - говорю я придворным. Но в сердце моём уже зреет план - я буду <span class="blank" data-answer="ZURÜCKKEHREN" data-hint="возвращаться">_______ (возвращаться)</span>! Мой король нуждается во мне, даже если не знает этого. Я найду способ служить ему снова!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="disguise">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: СЛУГА КАЙ</h4>
-                            <div class="exercise-text">Я стою перед зеркалом в <span class="blank" data-answer="DIE VERKLEIDUNG" data-hint="переодевании">_______ (переодевании)</span>. С <span class="blank" data-answer="DER BART" data-hint="бородой">_______ (бородой)</span> и грубой одеждой я <span class="blank" data-answer="UNERKANNT" data-hint="неузнанный">_______ (неузнанный)</span>! Я <span class="blank" data-answer="VERSTELLEN" data-hint="изменяю">_______ (изменяю)</span> голос, делаю его грубее. Я <span class="blank" data-answer="VORGEBEN" data-hint="притворяюсь">_______ (притворяюсь)</span> простым человеком по имени Кай. С <span class="blank" data-answer="DIE LIST" data-hint="хитростью">_______ (хитростью)</span> я вернусь к моему королю! Вот я <span class="blank" data-answer="ANHEUERN" data-hint="нанимаюсь">_______ (нанимаюсь)</span> к нему на службу. «Я честный человек, ищущий работу», - говорю я грубым голосом. Лир не узнаёт меня! Я остаюсь <span class="blank" data-answer="TREU" data-hint="верным">_______ (верным)</span>, даже если он думает, что Кент мёртв. Моя маскировка совершенна!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="service">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: ТАЙНЫЙ ЗАЩИТНИК</h4>
-                            <div class="exercise-text">Мой <span class="blank" data-answer="der DIENST" data-hint="служба">_______ (служба)</span> продолжается в тени! Я <span class="blank" data-answer="BEWACHEN" data-hint="охраняю">_______ (охраняю)</span> короля день и ночь. <span class="blank" data-answer="die GEFAHR" data-hint="опасность">_______ (опасность)</span> повсюду - Освальд оскорбляет его, дочери предают! Я <span class="blank" data-answer="KÄMPFEN" data-hint="сражаюсь">_______ (сражаюсь)</span> с наглецом Освальдом, защищая честь короля! <span class="blank" data-answer="der SCHUTZ" data-hint="защита">_______ (защита)</span>, которую я даю, невидима, но реальна. Я <span class="blank" data-answer="RATEN" data-hint="советую">_______ (советую)</span> королю быть осторожным с дочерьми. Ночью я держу <span class="blank" data-answer="DIE WACHE" data-hint="стражу">_______ (стражу)</span>, пока он спит. Он думает, что я простой слуга Кай, но я - его самый верный рыцарь. Каждый день я рискую разоблачением, но это моя священная миссия!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="stocks">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: НОЧЬ В КОЛОДКАХ</h4>
-                            <div class="exercise-text">Они <span class="blank" data-answer="FESSELN" data-hint="сковывают">_______ (сковывают)</span> меня в <span class="blank" data-answer="DER STOCK" data-hint="колодки">_______ (колодки)</span>! Корнуолл и Регана наказывают меня как преступника! <span class="blank" data-answer="die STRAFE" data-hint="наказание">_______ (наказание)</span> жестоко, но я <span class="blank" data-answer="ERDULDEN" data-hint="терплю">_______ (терплю)</span> его с <span class="blank" data-answer="DIE STANDHAFTIGKEIT" data-hint="стойкостью">_______ (стойкостью)</span>. <span class="blank" data-answer="die DEMÜTIGUNG" data-hint="унижение">_______ (унижение)</span> публично - все видят слугу короля в колодках! Но <span class="blank" data-answer="die SCHANDE" data-hint="позор">_______ (позор)</span> не мой - это позор тех, кто так обращается со слугой короля! Всю ночь я <span class="blank" data-answer="AUSHARREN" data-hint="выдерживаю">_______ (выдерживаю)</span> холод и боль. Ноги немеют, спина горит, но дух мой не сломлен! Когда король увидит меня так, он поймёт, как низко пали его дочери!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="storm_companion">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: В СЕРДЦЕ БУРИ</h4>
-                            <div class="exercise-text"><span class="blank" data-answer="der STURM" data-hint="буря">_______ (буря)</span> ревёт вокруг нас! Я <span class="blank" data-answer="BEGLEITEN" data-hint="сопровождаю">_______ (сопровождаю)</span> безумного короля через ад стихии! Дождь хлещет, <span class="blank" data-answer="die KÄLTE" data-hint="холод">_______ (холод)</span> пронизывает до костей, но мой <span class="blank" data-answer="der BEISTAND" data-hint="поддержка">_______ (поддержка)</span> не ослабевает! Я ищу <span class="blank" data-answer="die ZUFLUCHT" data-hint="убежище">_______ (убежище)</span> - хижину, пещеру, что угодно! «Мы должны <span class="blank" data-answer="DURCHHALTEN" data-hint="выдержать">_______ (выдержать)</span>, мой король!» - кричу я сквозь вой ветра. Я пытаюсь <span class="blank" data-answer="TRÖSTEN" data-hint="утешать">_______ (утешать)</span> его, но он говорит с громом и молниями. Мой старый господин потерял разум, но не потерял меня! Я останусь с ним до конца!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="final_loyalty">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: ПОСЛЕДНИЙ ДОЛГ</h4>
-                            <div class="exercise-text">Корделия мертва! Лир умирает! <span class="blank" data-answer="der TOD" data-hint="смерть">_______ (смерть)</span> забирает всех, кого я любил! Я <span class="blank" data-answer="WEINEN" data-hint="плачу">_______ (плачу)</span> над телом моего короля. <span class="blank" data-answer="der ABSCHIED" data-hint="прощание">_______ (прощание)</span> невыносимо! Моя <span class="blank" data-answer="EWIG" data-hint="вечная">_______ (вечная)</span> верность исполнена - я служил до конца! <span class="blank" data-answer="die ERSCHÖPFUNG" data-hint="истощение">_______ (истощение)</span> овладевает мной. <span class="blank" data-answer="die TRAUER" data-hint="скорбь">_______ (скорбь)</span> слишком тяжела для старого сердца. Я готов <span class="blank" data-answer="AUFGEBEN" data-hint="сдаться">_______ (сдаться)</span> и <span class="blank" data-answer="FOLGEN" data-hint="следовать">_______ (следовать)</span> за моим господином. «Мой господин, я иду!» - шепчу я. Моя служба в этом мире окончена. Пусть Эдгар и Олбани правят. Мой путь ведёт за моим королём в вечность!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
+            <div class="exercise-container active" data-phase="loyalty">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ВОССТАНИЕ ПРАВДЫ</h4>
+                    <div class="exercise-text">Я - граф Кент, и <span class="blank" data-answer="die TREUE" data-hint="верность">_______ (верность)</span> моя движет мной! В тронном зале я должен <span class="blank" data-answer="WIDERSPRECHEN" data-hint="возражать">_______ (возражать)</span> королю! <span class="blank" data-answer="der MUT" data-hint="мужество">_______ (мужество)</span> требует от меня <span class="blank" data-answer="VERTEIDIGEN" data-hint="защищать">_______ (защищать)</span> невинную Корделию! Я <span class="blank" data-answer="AUFRICHTIG" data-hint="искренен">_______ (искренен)</span>, хотя знаю цену этой искренности. Как <span class="blank" data-answer="der DIENER" data-hint="слуга">_______ (слуга)</span> короля, я должен <span class="blank" data-answer="WARNEN" data-hint="предупреждать">_______ (предупреждать)</span> его! «Остановитесь, мой король!» - кричу я. «То, что вы делаете, не <span class="blank" data-answer="GERECHT" data-hint="справедливо">_______ (справедливо)</span>!» Гонерилья и Регана - льстивые змеи, а Корделия - истинная дочь! Но гнев Лира слеп, а моя правда его оскорбляет.</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="banishment">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ГОРЬКОЕ ИЗГНАНИЕ</h4>
+                    <div class="exercise-text"><span class="blank" data-answer="die VERBANNUNG" data-hint="изгнание">_______ (изгнание)</span> - вот мой приговор! <span class="blank" data-answer="der ZORN" data-hint="гнев">_______ (гнев)</span> короля обрушивается на меня как молот! Я <span class="blank" data-answer="VERBANNT" data-hint="изгнан">_______ (изгнан)</span> из страны, которой служил всю жизнь! <span class="blank" data-answer="die UNGERECHTIGKEIT" data-hint="несправедливость">_______ (несправедливость)</span> этого решения жжёт мою душу! <span class="blank" data-answer="der ABSCHIED" data-hint="прощание">_______ (прощание)</span> с двором разрывает сердце, но я принимаю <span class="blank" data-answer="die STRAFE" data-hint="наказание">_______ (наказание)</span> с высоко поднятой головой. «Прощайте!» - говорю я придворным. Но в сердце моём уже зреет план - я буду <span class="blank" data-answer="ZURÜCKKEHREN" data-hint="возвращаться">_______ (возвращаться)</span>! Мой король нуждается во мне, даже если не знает этого. Я найду способ служить ему снова!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="disguise">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: СЛУГА КАЙ</h4>
+                    <div class="exercise-text">Я стою перед зеркалом в <span class="blank" data-answer="DIE VERKLEIDUNG" data-hint="переодевании">_______ (переодевании)</span>. С <span class="blank" data-answer="DER BART" data-hint="бородой">_______ (бородой)</span> и грубой одеждой я <span class="blank" data-answer="UNERKANNT" data-hint="неузнанный">_______ (неузнанный)</span>! Я <span class="blank" data-answer="VERSTELLEN" data-hint="изменяю">_______ (изменяю)</span> голос, делаю его грубее. Я <span class="blank" data-answer="VORGEBEN" data-hint="притворяюсь">_______ (притворяюсь)</span> простым человеком по имени Кай. С <span class="blank" data-answer="DIE LIST" data-hint="хитростью">_______ (хитростью)</span> я вернусь к моему королю! Вот я <span class="blank" data-answer="ANHEUERN" data-hint="нанимаюсь">_______ (нанимаюсь)</span> к нему на службу. «Я честный человек, ищущий работу», - говорю я грубым голосом. Лир не узнаёт меня! Я остаюсь <span class="blank" data-answer="TREU" data-hint="верным">_______ (верным)</span>, даже если он думает, что Кент мёртв. Моя маскировка совершенна!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="service">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ТАЙНЫЙ ЗАЩИТНИК</h4>
+                    <div class="exercise-text">Мой <span class="blank" data-answer="der DIENST" data-hint="служба">_______ (служба)</span> продолжается в тени! Я <span class="blank" data-answer="BEWACHEN" data-hint="охраняю">_______ (охраняю)</span> короля день и ночь. <span class="blank" data-answer="die GEFAHR" data-hint="опасность">_______ (опасность)</span> повсюду - Освальд оскорбляет его, дочери предают! Я <span class="blank" data-answer="KÄMPFEN" data-hint="сражаюсь">_______ (сражаюсь)</span> с наглецом Освальдом, защищая честь короля! <span class="blank" data-answer="der SCHUTZ" data-hint="защита">_______ (защита)</span>, которую я даю, невидима, но реальна. Я <span class="blank" data-answer="RATEN" data-hint="советую">_______ (советую)</span> королю быть осторожным с дочерьми. Ночью я держу <span class="blank" data-answer="DIE WACHE" data-hint="стражу">_______ (стражу)</span>, пока он спит. Он думает, что я простой слуга Кай, но я - его самый верный рыцарь. Каждый день я рискую разоблачением, но это моя священная миссия!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="stocks">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: НОЧЬ В КОЛОДКАХ</h4>
+                    <div class="exercise-text">Они <span class="blank" data-answer="FESSELN" data-hint="сковывают">_______ (сковывают)</span> меня в <span class="blank" data-answer="DER STOCK" data-hint="колодки">_______ (колодки)</span>! Корнуолл и Регана наказывают меня как преступника! <span class="blank" data-answer="die STRAFE" data-hint="наказание">_______ (наказание)</span> жестоко, но я <span class="blank" data-answer="ERDULDEN" data-hint="терплю">_______ (терплю)</span> его с <span class="blank" data-answer="DIE STANDHAFTIGKEIT" data-hint="стойкостью">_______ (стойкостью)</span>. <span class="blank" data-answer="die DEMÜTIGUNG" data-hint="унижение">_______ (унижение)</span> публично - все видят слугу короля в колодках! Но <span class="blank" data-answer="die SCHANDE" data-hint="позор">_______ (позор)</span> не мой - это позор тех, кто так обращается со слугой короля! Всю ночь я <span class="blank" data-answer="AUSHARREN" data-hint="выдерживаю">_______ (выдерживаю)</span> холод и боль. Ноги немеют, спина горит, но дух мой не сломлен! Когда король увидит меня так, он поймёт, как низко пали его дочери!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="storm_companion">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: В СЕРДЦЕ БУРИ</h4>
+                    <div class="exercise-text"><span class="blank" data-answer="der STURM" data-hint="буря">_______ (буря)</span> ревёт вокруг нас! Я <span class="blank" data-answer="BEGLEITEN" data-hint="сопровождаю">_______ (сопровождаю)</span> безумного короля через ад стихии! Дождь хлещет, <span class="blank" data-answer="die KÄLTE" data-hint="холод">_______ (холод)</span> пронизывает до костей, но мой <span class="blank" data-answer="der BEISTAND" data-hint="поддержка">_______ (поддержка)</span> не ослабевает! Я ищу <span class="blank" data-answer="die ZUFLUCHT" data-hint="убежище">_______ (убежище)</span> - хижину, пещеру, что угодно! «Мы должны <span class="blank" data-answer="DURCHHALTEN" data-hint="выдержать">_______ (выдержать)</span>, мой король!» - кричу я сквозь вой ветра. Я пытаюсь <span class="blank" data-answer="TRÖSTEN" data-hint="утешать">_______ (утешать)</span> его, но он говорит с громом и молниями. Мой старый господин потерял разум, но не потерял меня! Я останусь с ним до конца!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="final_loyalty">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ПОСЛЕДНИЙ ДОЛГ</h4>
+                    <div class="exercise-text">Корделия мертва! Лир умирает! <span class="blank" data-answer="der TOD" data-hint="смерть">_______ (смерть)</span> забирает всех, кого я любил! Я <span class="blank" data-answer="WEINEN" data-hint="плачу">_______ (плачу)</span> над телом моего короля. <span class="blank" data-answer="der ABSCHIED" data-hint="прощание">_______ (прощание)</span> невыносимо! Моя <span class="blank" data-answer="EWIG" data-hint="вечная">_______ (вечная)</span> верность исполнена - я служил до конца! <span class="blank" data-answer="die ERSCHÖPFUNG" data-hint="истощение">_______ (истощение)</span> овладевает мной. <span class="blank" data-answer="die TRAUER" data-hint="скорбь">_______ (скорбь)</span> слишком тяжела для старого сердца. Я готов <span class="blank" data-answer="AUFGEBEN" data-hint="сдаться">_______ (сдаться)</span> и <span class="blank" data-answer="FOLGEN" data-hint="следовать">_______ (следовать)</span> за моим господином. «Мой господин, я иду!» - шепчу я. Моя служба в этом мире окончена. Пусть Эдгар и Олбани правят. Мой путь ведёт за моим королём в вечность!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
         </div>
-        
+
         <nav class="bottom-nav">
             <a href="../index.html" class="nav-link">← К главной</a>
         </nav>
     </div>
-    
+
     <script>const phaseVocabularies = {
-    loyalty: {
-        title: 'Верность королю',
-        description: 'Акт I: Защищает Корделию в тронном зале',
-        words: [
+    "loyalty": {
+        "title": "Верность королю",
+        "description": "Акт I: Защищает Корделию в тронном зале",
+        "words": [
             {
-                word: 'die Treue',
-                translation: 'верность',
-                transcription: '[ди ТРОЙ-е]',
-                sentence: 'Die Treue zu meinem König ist unerschütterlich.',
-                sentenceTranslation: 'Верность моему королю непоколебима.'
+                "word": "die Treue",
+                "translation": "верность",
+                "transcription": "[ди ТРОЙ-е]",
+                "sentence": "Die Treue zu meinem König ist unerschütterlich.",
+                "sentenceTranslation": "Верность моему королю непоколебима."
             },
             {
-                word: 'der Mut',
-                translation: 'мужество',
-                transcription: '[дер МУТ]',
-                sentence: 'Der Mut fordert mich, die Wahrheit zu sagen.',
-                sentenceTranslation: 'Мужество требует от меня говорить правду.'
+                "word": "der Mut",
+                "translation": "мужество",
+                "transcription": "[дер МУТ]",
+                "sentence": "Der Mut fordert mich, die Wahrheit zu sagen.",
+                "sentenceTranslation": "Мужество требует от меня говорить правду."
             },
             {
-                word: 'widersprechen',
-                translation: 'возражать',
-                transcription: '[ВИ-дер-шпре-хен]',
-                sentence: 'Ich widerspreche dem König für seine eigene Ehre.',
-                sentenceTranslation: 'Я возражаю королю ради его же чести.'
+                "word": "widersprechen",
+                "translation": "возражать",
+                "transcription": "[ВИ-дер-шпре-хен]",
+                "sentence": "Ich widerspreche dem König für seine eigene Ehre.",
+                "sentenceTranslation": "Я возражаю королю ради его же чести."
             },
             {
-                word: 'verteidigen',
-                translation: 'защищать',
-                transcription: '[фер-ТАЙ-ди-ген]',
-                sentence: 'Ich verteidige Корделия gegen Ungerechtigkeit.',
-                sentenceTranslation: 'Я защищаю Корделию от несправедливости.'
+                "word": "verteidigen",
+                "translation": "защищать",
+                "transcription": "[фер-ТАЙ-ди-ген]",
+                "sentence": "Ich verteidige Корделия gegen Ungerechtigkeit.",
+                "sentenceTranslation": "Я защищаю Корделию от несправедливости."
             },
             {
-                word: 'aufrichtig',
-                translation: 'искренний',
-                transcription: '[АУФ-рих-тиг]',
-                sentence: 'Ich bin aufrichtig, auch wenn es gefährlich ist.',
-                sentenceTranslation: 'Я искренен, даже если это опасно.'
+                "word": "aufrichtig",
+                "translation": "искренний",
+                "transcription": "[АУФ-рих-тиг]",
+                "sentence": "Ich bin aufrichtig, auch wenn es gefährlich ist.",
+                "sentenceTranslation": "Я искренен, даже если это опасно."
             },
             {
-                word: 'der Diener',
-                translation: 'слуга',
-                transcription: '[дер ДИ-нер]',
-                sentence: 'Als treuer Diener spreche ich offen.',
-                sentenceTranslation: 'Как верный слуга, я говорю открыто.'
+                "word": "der Diener",
+                "translation": "слуга",
+                "transcription": "[дер ДИ-нер]",
+                "sentence": "Als treuer Diener spreche ich offen.",
+                "sentenceTranslation": "Как верный слуга, я говорю открыто."
             },
             {
-                word: 'warnen',
-                translation: 'предупреждать',
-                transcription: '[ВАР-нен]',
-                sentence: 'Ich warne den König vor seinem Fehler.',
-                sentenceTranslation: 'Я предупреждаю короля об его ошибке.'
+                "word": "warnen",
+                "translation": "предупреждать",
+                "transcription": "[ВАР-нен]",
+                "sentence": "Ich warne den König vor seinem Fehler.",
+                "sentenceTranslation": "Я предупреждаю короля об его ошибке."
             },
             {
-                word: 'gerecht',
-                translation: 'справедливый',
-                transcription: '[ге-РЕХТ]',
-                sentence: 'Ich kämpfe für das, was gerecht ist.',
-                sentenceTranslation: 'Я борюсь за то, что справедливо.'
-            },
+                "word": "gerecht",
+                "translation": "справедливый",
+                "transcription": "[ге-РЕХТ]",
+                "sentence": "Ich kämpfe für das, was gerecht ist.",
+                "sentenceTranslation": "Я борюсь за то, что справедливо."
+            }
         ]
     },
-    banishment: {
-        title: 'Изгнание',
-        description: 'Акт I: Изгнан за правду',
-        words: [
+    "banishment": {
+        "title": "Изгнание",
+        "description": "Акт I: Изгнан за правду",
+        "words": [
             {
-                word: 'die Verbannung',
-                translation: 'изгнание',
-                transcription: '[ди фер-БА-нунг]',
-                sentence: 'Die Verbannung ist der Preis für meine Ehrlichkeit.',
-                sentenceTranslation: 'Изгнание - цена моей честности.'
+                "word": "die Verbannung",
+                "translation": "изгнание",
+                "transcription": "[ди фер-БА-нунг]",
+                "sentence": "Die Verbannung ist der Preis für meine Ehrlichkeit.",
+                "sentenceTranslation": "Изгнание - цена моей честности."
             },
             {
-                word: 'die Ungerechtigkeit',
-                translation: 'несправедливость',
-                transcription: '[ди УН-ге-рех-тиг-кайт]',
-                sentence: 'Diese Ungerechtigkeit werde ich nicht akzeptieren.',
-                sentenceTranslation: 'Эту несправедливость я не приму.'
+                "word": "die Ungerechtigkeit",
+                "translation": "несправедливость",
+                "transcription": "[ди УН-ге-рех-тиг-кайт]",
+                "sentence": "Diese Ungerechtigkeit werde ich nicht akzeptieren.",
+                "sentenceTranslation": "Эту несправедливость я не приму."
             },
             {
-                word: 'der Zorn',
-                translation: 'гнев',
-                transcription: '[дер ЦОРН]',
-                sentence: 'Der Zorn des Königs trifft mich ungerecht.',
-                sentenceTranslation: 'Гнев короля поражает меня несправедливо.'
+                "word": "der Zorn",
+                "translation": "гнев",
+                "transcription": "[дер ЦОРН]",
+                "sentence": "Der Zorn des Königs trifft mich ungerecht.",
+                "sentenceTranslation": "Гнев короля поражает меня несправедливо."
             },
             {
-                word: 'verbannt',
-                translation: 'изгнанный',
-                transcription: '[фер-БАНТ]',
-                sentence: 'Verbannt aus dem Land, das ich liebe.',
-                sentenceTranslation: 'Изгнан из страны, которую люблю.'
+                "word": "verbannt",
+                "translation": "изгнанный",
+                "transcription": "[фер-БАНТ]",
+                "sentence": "Verbannt aus dem Land, das ich liebe.",
+                "sentenceTranslation": "Изгнан из страны, которую люблю."
             },
             {
-                word: 'der Abschied',
-                translation: 'прощание',
-                transcription: '[дер АБ-шид]',
-                sentence: 'Der Abschied vom Hof schmerzt mich tief.',
-                sentenceTranslation: 'Прощание с двором глубоко ранит меня.'
+                "word": "der Abschied",
+                "translation": "прощание",
+                "transcription": "[дер АБ-шид]",
+                "sentence": "Der Abschied vom Hof schmerzt mich tief.",
+                "sentenceTranslation": "Прощание с двором глубоко ранит меня."
             },
             {
-                word: 'die Strafe',
-                translation: 'наказание',
-                transcription: '[ди ШТРА-фе]',
-                sentence: 'Diese Strafe nehme ich mit Würde an.',
-                sentenceTranslation: 'Это наказание я принимаю с достоинством.'
+                "word": "die Strafe",
+                "translation": "наказание",
+                "transcription": "[ди ШТРА-фе]",
+                "sentence": "Diese Strafe nehme ich mit Würde an.",
+                "sentenceTranslation": "Это наказание я принимаю с достоинством."
             },
             {
-                word: 'zurückkehren',
-                translation: 'возвращаться',
-                transcription: '[цу-РЮК-ке-рен]',
-                sentence: 'Ich schwöre, verkleidet zurückzukehren.',
-                sentenceTranslation: 'Я клянусь вернуться переодетым.'
-            },
+                "word": "zurückkehren",
+                "translation": "возвращаться",
+                "transcription": "[цу-РЮК-ке-рен]",
+                "sentence": "Ich schwöre, verkleidet zurückzukehren.",
+                "sentenceTranslation": "Я клянусь вернуться переодетым."
+            }
         ]
     },
-    disguise: {
-        title: 'Маскировка',
-        description: 'Акт I-II: Возвращается как слуга Кай',
-        words: [
+    "disguise": {
+        "title": "Маскировка",
+        "description": "Акт I-II: Возвращается как слуга Кай",
+        "words": [
             {
-                word: 'die Verkleidung',
-                translation: 'переодевание',
-                transcription: '[ди фер-КЛАЙ-дунг]',
-                sentence: 'In Verkleidung diene ich meinem König weiter.',
-                sentenceTranslation: 'В переодевании я продолжаю служить королю.'
+                "word": "die Verkleidung",
+                "translation": "переодевание",
+                "transcription": "[ди фер-КЛАЙ-дунг]",
+                "sentence": "In Verkleidung diene ich meinem König weiter.",
+                "sentenceTranslation": "В переодевании я продолжаю служить королю."
             },
             {
-                word: 'die List',
-                translation: 'хитрость',
-                transcription: '[ди ЛИСТ]',
-                sentence: 'Mit List kehre ich an den Hof zurück.',
-                sentenceTranslation: 'Хитростью я возвращаюсь ко двору.'
+                "word": "die List",
+                "translation": "хитрость",
+                "transcription": "[ди ЛИСТ]",
+                "sentence": "Mit List kehre ich an den Hof zurück.",
+                "sentenceTranslation": "Хитростью я возвращаюсь ко двору."
             },
             {
-                word: 'unerkannt',
-                translation: 'неузнанный',
-                transcription: '[УН-ер-кант]',
-                sentence: 'Unerkannt bleibe ich an seiner Seite.',
-                sentenceTranslation: 'Неузнанным я остаюсь рядом с ним.'
+                "word": "unerkannt",
+                "translation": "неузнанный",
+                "transcription": "[УН-ер-кант]",
+                "sentence": "Unerkannt bleibe ich an seiner Seite.",
+                "sentenceTranslation": "Неузнанным я остаюсь рядом с ним."
             },
             {
-                word: 'vorgeben',
-                translation: 'притворяться',
-                transcription: '[ФОР-ге-бен]',
-                sentence: 'Ich gebe vor, ein einfacher Mann zu sein.',
-                sentenceTranslation: 'Я притворяюсь простым человеком.'
+                "word": "vorgeben",
+                "translation": "притворяться",
+                "transcription": "[ФОР-ге-бен]",
+                "sentence": "Ich gebe vor, ein einfacher Mann zu sein.",
+                "sentenceTranslation": "Я притворяюсь простым человеком."
             },
             {
-                word: 'verstellen',
-                translation: 'изменять',
-                transcription: '[фер-ШТЕ-лен]',
-                sentence: 'Ich verstelle meine Stimme und Haltung.',
-                sentenceTranslation: 'Я изменяю свой голос и осанку.'
+                "word": "verstellen",
+                "translation": "изменять",
+                "transcription": "[фер-ШТЕ-лен]",
+                "sentence": "Ich verstelle meine Stimme und Haltung.",
+                "sentenceTranslation": "Я изменяю свой голос и осанку."
             },
             {
-                word: 'der Bart',
-                translation: 'борода',
-                transcription: '[дер БАРТ]',
-                sentence: 'Mit falschem Bart bin ich nicht zu erkennen.',
-                sentenceTranslation: 'С фальшивой бородой меня не узнать.'
+                "word": "der Bart",
+                "translation": "борода",
+                "transcription": "[дер БАРТ]",
+                "sentence": "Mit falschem Bart bin ich nicht zu erkennen.",
+                "sentenceTranslation": "С фальшивой бородой меня не узнать."
             },
             {
-                word: 'anheuern',
-                translation: 'наниматься',
-                transcription: '[АН-хой-ерн]',
-                sentence: 'Als Кай heuere ich beim König an.',
-                sentenceTranslation: 'Как Кай я нанимаюсь к королю.'
+                "word": "anheuern",
+                "translation": "наниматься",
+                "transcription": "[АН-хой-ерн]",
+                "sentence": "Als Кай heuere ich beim König an.",
+                "sentenceTranslation": "Как Кай я нанимаюсь к королю."
             },
             {
-                word: 'treu',
-                translation: 'верный',
-                transcription: '[ТРОЙ]',
-                sentence: 'Treu bleibe ich trotz der Verkleidung.',
-                sentenceTranslation: 'Верным остаюсь несмотря на переодевание.'
-            },
+                "word": "treu",
+                "translation": "верный",
+                "transcription": "[ТРОЙ]",
+                "sentence": "Treu bleibe ich trotz der Verkleidung.",
+                "sentenceTranslation": "Верным остаюсь несмотря на переодевание."
+            }
         ]
     },
-    service: {
-        title: 'Тайная служба',
-        description: 'Акт II-III: Служит неузнанным',
-        words: [
+    "service": {
+        "title": "Тайная служба",
+        "description": "Акт II-III: Служит неузнанным",
+        "words": [
             {
-                word: 'der Dienst',
-                translation: 'служба',
-                transcription: '[дер ДИНСТ]',
-                sentence: 'Mein Dienst geht über die Verbannung hinaus.',
-                sentenceTranslation: 'Моя служба идёт дальше изгнания.'
+                "word": "der Dienst",
+                "translation": "служба",
+                "transcription": "[дер ДИНСТ]",
+                "sentence": "Mein Dienst geht über die Verbannung hinaus.",
+                "sentenceTranslation": "Моя служба идёт дальше изгнания."
             },
             {
-                word: 'der Schutz',
-                translation: 'защита',
-                transcription: '[дер ШУТЦ]',
-                sentence: 'Ich biete Schutz, ohne erkannt zu werden.',
-                sentenceTranslation: 'Я предоставляю защиту, не будучи узнанным.'
+                "word": "der Schutz",
+                "translation": "защита",
+                "transcription": "[дер ШУТЦ]",
+                "sentence": "Ich biete Schutz, ohne erkannt zu werden.",
+                "sentenceTranslation": "Я предоставляю защиту, не будучи узнанным."
             },
             {
-                word: 'die Gefahr',
-                translation: 'опасность',
-                transcription: '[ди ге-ФАР]',
-                sentence: 'Trotz Gefahr bleibe ich beim König.',
-                sentenceTranslation: 'Несмотря на опасность, я остаюсь с королём.'
+                "word": "die Gefahr",
+                "translation": "опасность",
+                "transcription": "[ди ге-ФАР]",
+                "sentence": "Trotz Gefahr bleibe ich beim König.",
+                "sentenceTranslation": "Несмотря на опасность, я остаюсь с королём."
             },
             {
-                word: 'bewachen',
-                translation: 'охранять',
-                transcription: '[бе-ВА-хен]',
-                sentence: 'Heimlich bewache ich meinen alten Herrn.',
-                sentenceTranslation: 'Тайно я охраняю своего старого господина.'
+                "word": "bewachen",
+                "translation": "охранять",
+                "transcription": "[бе-ВА-хен]",
+                "sentence": "Heimlich bewache ich meinen alten Herrn.",
+                "sentenceTranslation": "Тайно я охраняю своего старого господина."
             },
             {
-                word: 'kämpfen',
-                translation: 'сражаться',
-                transcription: '[КЕМП-фен]',
-                sentence: 'Ich kämpfe gegen alle seine Feinde.',
-                sentenceTranslation: 'Я сражаюсь против всех его врагов.'
+                "word": "kämpfen",
+                "translation": "сражаться",
+                "transcription": "[КЕМП-фен]",
+                "sentence": "Ich kämpfe gegen alle seine Feinde.",
+                "sentenceTranslation": "Я сражаюсь против всех его врагов."
             },
             {
-                word: 'raten',
-                translation: 'советовать',
-                transcription: '[РА-тен]',
-                sentence: 'Als Кай rate ich ihm zur Vorsicht.',
-                sentenceTranslation: 'Как Кай я советую ему осторожность.'
+                "word": "raten",
+                "translation": "советовать",
+                "transcription": "[РА-тен]",
+                "sentence": "Als Кай rate ich ihm zur Vorsicht.",
+                "sentenceTranslation": "Как Кай я советую ему осторожность."
             },
             {
-                word: 'die Wache',
-                translation: 'стража',
-                transcription: '[ди ВА-хе]',
-                sentence: 'Ich halte Wache über seinen Schlaf.',
-                sentenceTranslation: 'Я держу стражу над его сном.'
-            },
+                "word": "die Wache",
+                "translation": "стража",
+                "transcription": "[ди ВА-хе]",
+                "sentence": "Ich halte Wache über seinen Schlaf.",
+                "sentenceTranslation": "Я держу стражу над его сном."
+            }
         ]
     },
-    stocks: {
-        title: 'В колодках',
-        description: 'Акт II: Наказан Корнуоллом',
-        words: [
+    "stocks": {
+        "title": "В колодках",
+        "description": "Акт II: Наказан Корнуоллом",
+        "words": [
             {
-                word: 'die Strafe',
-                translation: 'наказание',
-                transcription: '[ди ШТРА-фе]',
-                sentence: 'Diese Strafe erdulde ich für meinen König.',
-                sentenceTranslation: 'Это наказание я терплю ради короля.'
+                "word": "die Strafe",
+                "translation": "наказание",
+                "transcription": "[ди ШТРА-фе]",
+                "sentence": "Diese Strafe erdulde ich für meinen König.",
+                "sentenceTranslation": "Это наказание я терплю ради короля."
             },
             {
-                word: 'die Demütigung',
-                translation: 'унижение',
-                transcription: '[ди де-МЮ-ти-гунг]',
-                sentence: 'Die Demütigung macht mich nur stärker.',
-                sentenceTranslation: 'Унижение делает меня только сильнее.'
+                "word": "die Demütigung",
+                "translation": "унижение",
+                "transcription": "[ди де-МЮ-ти-гунг]",
+                "sentence": "Die Demütigung macht mich nur stärker.",
+                "sentenceTranslation": "Унижение делает меня только сильнее."
             },
             {
-                word: 'die Standhaftigkeit',
-                translation: 'стойкость',
-                transcription: '[ди ШТАНД-хаф-тиг-кайт]',
-                sentence: 'Mit Standhaftigkeit ertrage ich die Schmach.',
-                sentenceTranslation: 'Со стойкостью я переношу позор.'
+                "word": "die Standhaftigkeit",
+                "translation": "стойкость",
+                "transcription": "[ди ШТАНД-хаф-тиг-кайт]",
+                "sentence": "Mit Standhaftigkeit ertrage ich die Schmach.",
+                "sentenceTranslation": "Со стойкостью я переношу позор."
             },
             {
-                word: 'fesseln',
-                translation: 'сковывать',
-                transcription: '[ФЕ-сельн]',
-                sentence: 'Sie fesseln mich wie einen gemeinen Dieb.',
-                sentenceTranslation: 'Они сковывают меня как обычного вора.'
+                "word": "fesseln",
+                "translation": "сковывать",
+                "transcription": "[ФЕ-сельн]",
+                "sentence": "Sie fesseln mich wie einen gemeinen Dieb.",
+                "sentenceTranslation": "Они сковывают меня как обычного вора."
             },
             {
-                word: 'erdulden',
-                translation: 'терпеть',
-                transcription: '[ер-ДУЛЬ-ден]',
-                sentence: 'Ich erdulde die Schande ohne Klage.',
-                sentenceTranslation: 'Я терплю позор без жалоб.'
+                "word": "erdulden",
+                "translation": "терпеть",
+                "transcription": "[ер-ДУЛЬ-ден]",
+                "sentence": "Ich erdulde die Schande ohne Klage.",
+                "sentenceTranslation": "Я терплю позор без жалоб."
             },
             {
-                word: 'der Stock',
-                translation: 'колодка',
-                transcription: '[дер ШТОК]',
-                sentence: 'Im Stock sitze ich die ganze Nacht.',
-                sentenceTranslation: 'В колодке я сижу всю ночь.'
+                "word": "der Stock",
+                "translation": "колодка",
+                "transcription": "[дер ШТОК]",
+                "sentence": "Im Stock sitze ich die ganze Nacht.",
+                "sentenceTranslation": "В колодке я сижу всю ночь."
             },
             {
-                word: 'ausharren',
-                translation: 'выдерживать',
-                transcription: '[АУС-ха-рен]',
-                sentence: 'Ich harre aus bis zur Befreiung.',
-                sentenceTranslation: 'Я выдерживаю до освобождения.'
+                "word": "ausharren",
+                "translation": "выдерживать",
+                "transcription": "[АУС-ха-рен]",
+                "sentence": "Ich harre aus bis zur Befreiung.",
+                "sentenceTranslation": "Я выдерживаю до освобождения."
             },
             {
-                word: 'die Schande',
-                translation: 'позор',
-                transcription: '[ди ШАН-де]',
-                sentence: 'Diese Schande ist Cornwall\'s, nicht meine.',
-                sentenceTranslation: 'Этот позор Корнуолла, не мой.'
-            },
+                "word": "die Schande",
+                "translation": "позор",
+                "transcription": "[ди ШАН-де]",
+                "sentence": "Diese Schande ist Cornwall's, nicht meine.",
+                "sentenceTranslation": "Этот позор Корнуолла, не мой."
+            }
         ]
     },
-    storm_companion: {
-        title: 'Спутник в буре',
-        description: 'Акт III: Поддерживает Лира',
-        words: [
+    "storm_companion": {
+        "title": "Спутник в буре",
+        "description": "Акт III: Поддерживает Лира",
+        "words": [
             {
-                word: 'der Sturm',
-                translation: 'буря',
-                transcription: '[дер ШТУРМ]',
-                sentence: 'Im Sturm bleibe ich bei meinem König.',
-                sentenceTranslation: 'В буре я остаюсь с моим королём.'
+                "word": "der Sturm",
+                "translation": "буря",
+                "transcription": "[дер ШТУРМ]",
+                "sentence": "Im Sturm bleibe ich bei meinem König.",
+                "sentenceTranslation": "В буре я остаюсь с моим королём."
             },
             {
-                word: 'der Beistand',
-                translation: 'поддержка',
-                transcription: '[дер БАЙ-штанд]',
-                sentence: 'Mein Beistand ist alles, was ich bieten kann.',
-                sentenceTranslation: 'Моя поддержка - всё, что я могу предложить.'
+                "word": "der Beistand",
+                "translation": "поддержка",
+                "transcription": "[дер БАЙ-штанд]",
+                "sentence": "Mein Beistand ist alles, was ich bieten kann.",
+                "sentenceTranslation": "Моя поддержка - всё, что я могу предложить."
             },
             {
-                word: 'begleiten',
-                translation: 'сопровождать',
-                transcription: '[бе-ГЛАЙ-тен]',
-                sentence: 'Ich begleite ihn durch Wind und Regen.',
-                sentenceTranslation: 'Я сопровождаю его сквозь ветер и дождь.'
+                "word": "begleiten",
+                "translation": "сопровождать",
+                "transcription": "[бе-ГЛАЙ-тен]",
+                "sentence": "Ich begleite ihn durch Wind und Regen.",
+                "sentenceTranslation": "Я сопровождаю его сквозь ветер и дождь."
             },
             {
-                word: 'trösten',
-                translation: 'утешать',
-                transcription: '[ТРЁС-тен]',
-                sentence: 'Mit Worten tröste ich den wahnsinnigen König.',
-                sentenceTranslation: 'Словами я утешаю безумного короля.'
+                "word": "trösten",
+                "translation": "утешать",
+                "transcription": "[ТРЁС-тен]",
+                "sentence": "Mit Worten tröste ich den wahnsinnigen König.",
+                "sentenceTranslation": "Словами я утешаю безумного короля."
             },
             {
-                word: 'die Zuflucht',
-                translation: 'убежище',
-                transcription: '[ди ЦУ-флухт]',
-                sentence: 'Ich suche Zuflucht für uns beide.',
-                sentenceTranslation: 'Я ищу убежище для нас обоих.'
+                "word": "die Zuflucht",
+                "translation": "убежище",
+                "transcription": "[ди ЦУ-флухт]",
+                "sentence": "Ich suche Zuflucht für uns beide.",
+                "sentenceTranslation": "Я ищу убежище для нас обоих."
             },
             {
-                word: 'durchhalten',
-                translation: 'выдерживать',
-                transcription: '[ДУРХ-халь-тен]',
-                sentence: 'Gemeinsam werden wir durchhalten.',
-                sentenceTranslation: 'Вместе мы выдержим.'
+                "word": "durchhalten",
+                "translation": "выдерживать",
+                "transcription": "[ДУРХ-халь-тен]",
+                "sentence": "Gemeinsam werden wir durchhalten.",
+                "sentenceTranslation": "Вместе мы выдержим."
             },
             {
-                word: 'die Kälte',
-                translation: 'холод',
-                transcription: '[ди КЕЛ-те]',
-                sentence: 'Die Kälte dringt in unsere Knochen.',
-                sentenceTranslation: 'Холод проникает в наши кости.'
-            },
+                "word": "die Kälte",
+                "translation": "холод",
+                "transcription": "[ди КЕЛ-те]",
+                "sentence": "Die Kälte dringt in unsere Knochen.",
+                "sentenceTranslation": "Холод проникает в наши кости."
+            }
         ]
     },
-    final_loyalty: {
-        title: 'Верность до конца',
-        description: 'Акт V: Остаётся с умирающим Лиром',
-        words: [
+    "final_loyalty": {
+        "title": "Верность до конца",
+        "description": "Акт V: Остаётся с умирающим Лиром",
+        "words": [
             {
-                word: 'der Tod',
-                translation: 'смерть',
-                transcription: '[дер ТОД]',
-                sentence: 'Bis zum Tod bleibe ich an seiner Seite.',
-                sentenceTranslation: 'До смерти я остаюсь рядом с ним.'
+                "word": "der Tod",
+                "translation": "смерть",
+                "transcription": "[дер ТОД]",
+                "sentence": "Bis zum Tod bleibe ich an seiner Seite.",
+                "sentenceTranslation": "До смерти я остаюсь рядом с ним."
             },
             {
-                word: 'der Abschied',
-                translation: 'прощание',
-                transcription: '[дер АБ-шид]',
-                sentence: 'Der Abschied von meinem König bricht mein Herz.',
-                sentenceTranslation: 'Прощание с моим королём разбивает моё сердце.'
+                "word": "der Abschied",
+                "translation": "прощание",
+                "transcription": "[дер АБ-шид]",
+                "sentence": "Der Abschied von meinem König bricht mein Herz.",
+                "sentenceTranslation": "Прощание с моим королём разбивает моё сердце."
             },
             {
-                word: 'ewig',
-                translation: 'вечный',
-                transcription: '[Э-виг]',
-                sentence: 'Meine Treue ist ewig, über den Tod hinaus.',
-                sentenceTranslation: 'Моя верность вечна, за пределами смерти.'
+                "word": "ewig",
+                "translation": "вечный",
+                "transcription": "[Э-виг]",
+                "sentence": "Meine Treue ist ewig, über den Tod hinaus.",
+                "sentenceTranslation": "Моя верность вечна, за пределами смерти."
             },
             {
-                word: 'weinen',
-                translation: 'плакать',
-                transcription: '[ВАЙ-нен]',
-                sentence: 'Ich weine um meinen gefallenen König.',
-                sentenceTranslation: 'Я плачу о моём павшем короле.'
+                "word": "weinen",
+                "translation": "плакать",
+                "transcription": "[ВАЙ-нен]",
+                "sentence": "Ich weine um meinen gefallenen König.",
+                "sentenceTranslation": "Я плачу о моём павшем короле."
             },
             {
-                word: 'die Erschöpfung',
-                translation: 'истощение',
-                transcription: '[ди ер-ШЁП-фунг]',
-                sentence: 'Die Erschöpfung überwältigt meinen alten Körper.',
-                sentenceTranslation: 'Истощение одолевает моё старое тело.'
+                "word": "die Erschöpfung",
+                "translation": "истощение",
+                "transcription": "[ди ер-ШЁП-фунг]",
+                "sentence": "Die Erschöpfung überwältigt meinen alten Körper.",
+                "sentenceTranslation": "Истощение одолевает моё старое тело."
             },
             {
-                word: 'aufgeben',
-                translation: 'сдаваться',
-                transcription: '[АУФ-ге-бен]',
-                sentence: 'Ich gebe auf, nachdem mein Herr gestorben ist.',
-                sentenceTranslation: 'Я сдаюсь после смерти моего господина.'
+                "word": "aufgeben",
+                "translation": "сдаваться",
+                "transcription": "[АУФ-ге-бен]",
+                "sentence": "Ich gebe auf, nachdem mein Herr gestorben ist.",
+                "sentenceTranslation": "Я сдаюсь после смерти моего господина."
             },
             {
-                word: 'die Trauer',
-                translation: 'скорбь',
-                transcription: '[ди ТРАУ-ер]',
-                sentence: 'Die Trauer ist zu schwer zu ertragen.',
-                sentenceTranslation: 'Скорбь слишком тяжела, чтобы вынести.'
+                "word": "die Trauer",
+                "translation": "скорбь",
+                "transcription": "[ди ТРАУ-ер]",
+                "sentence": "Die Trauer ist zu schwer zu ertragen.",
+                "sentenceTranslation": "Скорбь слишком тяжела, чтобы вынести."
             },
             {
-                word: 'folgen',
-                translation: 'следовать',
-                transcription: '[ФОЛЬ-ген]',
-                sentence: 'Bald folge ich meinem König ins Jenseits.',
-                sentenceTranslation: 'Скоро я последую за королём в иной мир.'
-            },
+                "word": "folgen",
+                "translation": "следовать",
+                "transcription": "[ФОЛЬ-ген]",
+                "sentence": "Bald folge ich meinem König ins Jenseits.",
+                "sentenceTranslation": "Скоро я последую за королём в иной мир."
+            }
         ]
-    },
+    }
 };
 
 

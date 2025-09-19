@@ -5,763 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Путь Освальда | König Lear</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        
-/* LIRA JOURNEY STYLES - Mobile Optimized */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-/* Prevent iOS zoom on input focus */
-input, select, textarea, button {
-    font-size: 16px !important;
-}
-
-/* Prevent text selection on mobile */
-.no-select {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-body {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
-    font-family: 'Inter', 'Segoe UI', sans-serif;
-    color: #333;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.page-header {
-    text-align: center;
-    color: white;
-    margin-bottom: 40px;
-    animation: fadeInDown 0.8s ease;
-}
-
-.page-header h1 {
-    font-size: 3em;
-    font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 1.2em;
-    opacity: 0.95;
-}
-
-.journey-section {
-    background: white;
-    border-radius: 20px;
-    padding: 40px;
-    margin-bottom: 40px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-}
-
-.journey-timeline {
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.journey-line {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.progress-line {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: drawLine 2s ease forwards;
-    animation-delay: 1s;
-}
-
-.journey-points {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    z-index: 2;
-    padding: 0 30px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-}
-
-.journey-point {
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    opacity: 0.7;
-    transform: scale(0.9);
-    /* Mobile touch optimizations */
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    user-select: none;
-    touch-action: manipulation;
-    min-width: 80px;
-    padding: 10px 5px;
-    position: relative;
-}
-
-.journey-point.active {
-    opacity: 1;
-    transform: scale(1);
-}
-
-/* Touch feedback for mobile */
-@media (hover: none) and (pointer: coarse) {
-    .journey-point {
-        min-width: 90px;
-    }
-    
-    .journey-point:active {
-        transform: scale(0.95);
-        opacity: 0.9;
-    }
-}
-
-.point-circle {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: white;
-    border: 3px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    margin: 0 auto 10px;
-    transition: all 0.3s ease;
-}
-
-.journey-point.active .point-circle {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    border-color: #667eea;
-    transform: scale(1.2);
-    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
-}
-
-.journey-point h4 {
-    font-size: 0.9em;
-    margin: 5px 0;
-    color: #333;
-}
-
-.journey-point p {
-    font-size: 0.75em;
-    color: #666;
-    display: none;
-}
-
-.journey-point.active p {
-    display: block;
-}
-
-.journey-progress {
-    margin-top: 20px;
-}
-
-.progress-track {
-    height: 8px;
-    background: #e0e0e0;
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.progress-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    transition: width 0.5s ease;
-}
-
-.progress-text {
-    text-align: center;
-    margin-top: 10px;
-    color: #666;
-    font-size: 0.9em;
-}
-
-.vocabulary-section {
-    background: white;
-    border-radius: 20px;
-    padding: 40px;
-    margin-bottom: 40px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-}
-
-.vocabulary-section h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-    text-align: center;
-    color: #333;
-}
-
-.vocabulary-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    margin-bottom: 30px;
-    min-height: 200px;
-}
-
-.word-card {
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-    border-radius: 15px;
-    padding: 20px;
-    text-align: center;
-    transition: all 0.3s ease;
-    animation: slideIn 0.4s ease;
-}
-
-.word-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
-.word-german {
-    font-size: 1.4em;
-    font-weight: 700;
-    color: #667eea;
-    margin-bottom: 8px;
-}
-
-.word-translation {
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 5px;
-}
-
-.word-transcription {
-    font-size: 0.9em;
-    color: #888;
-    font-style: italic;
-    margin-bottom: 15px;
-}
-
-.word-sentence {
-    margin-top: 15px;
-    padding-top: 15px;
-    border-top: 1px solid #e0e0e0;
-}
-
-.sentence-german {
-    font-size: 0.95em;
-    color: #444;
-    margin-bottom: 5px;
-    font-style: italic;
-}
-
-.sentence-translation {
-    font-size: 0.9em;
-    color: #666;
-}
-
-.phase-navigation {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-}
-
-.change-phase-btn {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
-    border: none;
-    padding: 16px 32px;
-    border-radius: 12px;
-    font-size: 1.1em;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-    /* Mobile optimizations */
-    -webkit-tap-highlight-color: transparent;
-    -webkit-appearance: none;
-    appearance: none;
-    touch-action: manipulation;
-    -webkit-user-select: none;
-    user-select: none;
-    min-height: 48px;
-    min-width: 160px;
-}
-
-.change-phase-btn:hover:not(:disabled) {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-}
-
-.change-phase-btn:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
-}
-
-.change-phase-btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    transform: none !important;
-}
-
-/* Touch device specific button styles */
-@media (hover: none) and (pointer: coarse) {
-    .change-phase-btn {
-        padding: 18px 36px;
-        font-size: 1.15em;
-        min-height: 56px;
-    }
-    
-    .change-phase-btn:hover {
-        transform: none;
-    }
-    
-    .change-phase-btn:active:not(:disabled) {
-        transform: scale(0.98);
-        opacity: 0.9;
-    }
-}
-
-.bottom-nav {
-    text-align: center;
-    margin-top: 40px;
-    padding-bottom: 20px;
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1em;
-    padding: 12px 24px;
-    border: 2px solid white;
-    border-radius: 8px;
-    display: inline-block;
-    transition: all 0.3s ease;
-    /* Mobile optimizations */
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
-    min-height: 48px;
-}
-
-.nav-link:hover {
-    background: white;
-    color: #667eea;
-}
-
-/* Mobile responsive styles */
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-    
-    .page-header h1 {
-        font-size: 2em;
-    }
-    
-    .subtitle {
-        font-size: 1em;
-    }
-    
-    .journey-section {
-        padding: 20px;
-        border-radius: 15px;
-    }
-    
-    .journey-points {
-        padding: 0 10px;
-        gap: 10px;
-    }
-    
-    .journey-point {
-        min-width: 70px;
-    }
-    
-    .point-circle {
-        width: 48px;
-        height: 48px;
-        font-size: 20px;
-    }
-    
-    .journey-point h4 {
-        font-size: 0.8em;
-    }
-    
-    .vocabulary-section {
-        padding: 20px;
-    }
-    
-    .vocabulary-section h2 {
-        font-size: 1.5em;
-    }
-    
-    .vocabulary-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-    
-    .word-card {
-        padding: 15px;
-    }
-    
-    .phase-navigation {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .change-phase-btn {
-        width: 90%;
-        max-width: 300px;
-    }
-}
-
-/* Small mobile devices */
-@media (max-width: 480px) {
-    .journey-points {
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        padding-bottom: 10px;
-    }
-    
-    .journey-point {
-        scroll-snap-align: center;
-        flex: 0 0 auto;
-    }
-    
-    /* Custom scrollbar for journey points */
-    .journey-points::-webkit-scrollbar {
-        height: 6px;
-    }
-    
-    .journey-points::-webkit-scrollbar-track {
-        background: #f1f1f1;
-        border-radius: 3px;
-    }
-    
-    .journey-points::-webkit-scrollbar-thumb {
-        background: #667eea;
-        border-radius: 3px;
-    }
-}
-
-/* iOS specific fixes */
-@supports (-webkit-touch-callout: none) {
-    /* iOS only styles */
-    button, .journey-point {
-        -webkit-tap-highlight-color: transparent;
-    }
-    
-    .change-phase-btn,
-    .show-answer-btn,
-    .nav-link {
-        -webkit-appearance: none;
-        appearance: none;
-    }
-    
-    /* Fix iOS button radius */
-    input[type="button"],
-    input[type="submit"] {
-        border-radius: 0;
-    }
-}
-
-/* Android specific optimizations */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-    .journey-points {
-        -webkit-overflow-scrolling: touch;
-    }
-}
-
-/* Animations */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes drawLine {
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-        
-        .theatrical-scene {
-            background: linear-gradient(135deg, #f6f8fb 0%, #e9ecf1 100%);
-            border: 1px solid rgba(102, 126, 234, 0.2);
-            padding: 35px;
-            border-radius: 20px;
-            margin: 30px 0;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.08), 0 2px 10px rgba(102, 126, 234, 0.1);
-            display: none;
-            animation: fadeIn 0.5s ease;
-        }
-        
-        .theatrical-scene.active {
-            display: block;
-        }
-        
-        .theatrical-scene::before {
-            content: 'ACT';
-            position: absolute;
-            font-size: 100px;
-            font-weight: 900;
-            opacity: 0.05;
-            right: -30px;
-            top: -30px;
-            transform: rotate(-15deg);
-        }
-        
-        .scene-title {
-            color: #2d3748;
-            font-size: 1.8em;
-            font-weight: 700;
-            margin-bottom: 25px;
-            text-align: center;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 15px;
-        }
-        
-        .scene-narrative {
-            color: #4a5568;
-            font-size: 1.15em;
-            line-height: 1.9;
-            margin-bottom: 25px;
-            text-align: justify;
-        }
-        
-        .scene-narrative b {
-            color: #667eea;
-            font-weight: 700;
-            background: linear-gradient(180deg, transparent 60%, rgba(102, 126, 234, 0.15) 60%);
-            padding: 0 2px;
-            transition: all 0.3s ease;
-        }
-        
-        .scene-narrative b:hover {
-            background: linear-gradient(180deg, transparent 40%, rgba(102, 126, 234, 0.25) 40%);
-            color: #5a67d8;
-        }
-        
-        .emotional-peak {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
-            padding: 25px;
-            border-radius: 15px;
-            border-left: 4px solid #667eea;
-            color: #2d3748;
-            font-size: 1.1em;
-            font-style: italic;
-            margin-top: 25px;
-            position: relative;
-            box-shadow: inset 0 2px 8px rgba(0,0,0,0.05);
-        }
-        
-        .emotional-peak::before {
-            content: '';
-            position: absolute;
-            left: -4px;
-            top: 0;
-            bottom: 0;
-            width: 4px;
-            background: linear-gradient(180deg, #667eea, #764ba2);
-            border-radius: 4px;
-        }
-        
-        /* Стили для упражнения */
-        .exercise-section {
-            background: linear-gradient(135deg, #fff9e6 0%, #fff4d6 100%);
-            border: 2px solid #f6ad55;
-            padding: 30px;
-            border-radius: 15px;
-            margin-top: 35px;
-            position: relative;
-        }
-        
-        .exercise-title {
-            color: #d97706;
-            font-size: 1.4em;
-            font-weight: 700;
-            margin-bottom: 20px;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        
-        .exercise-text {
-            color: #4a5568;
-            font-size: 1.1em;
-            line-height: 1.9;
-            text-align: justify;
-        }
-        
-        .exercise-text .blank {
-            display: inline-block;
-            min-width: 100px;
-            border-bottom: 2px solid #f6ad55;
-            margin: 0 4px;
-            color: #a0aec0;
-            font-style: italic;
-            font-size: 0.9em;
-            padding: 0 4px;
-            transition: all 0.3s ease;
-        }
-        
-        .exercise-container {
-            display: none;
-        }
-        
-        .exercise-container.active {
-            display: block;
-        }
-        
-        .exercises-container {
-            margin-top: 40px;
-        }
-        
-        .show-answer-btn {
-            background: linear-gradient(135deg, #f6ad55 0%, #ed8936 100%);
-            color: white;
-            border: none;
-            padding: 16px 32px;
-            border-radius: 12px;
-            font-size: 1.1em;
-            font-weight: 600;
-            cursor: pointer;
-            margin-top: 20px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(237, 137, 54, 0.3);
-            /* Mobile optimizations */
-            touch-action: manipulation;
-            -webkit-tap-highlight-color: transparent;
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            user-select: none;
-            min-height: 48px;
-            min-width: 160px;
-        }
-        
-        .show-answer-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(237, 137, 54, 0.4);
-        }
-        
-        .show-answer-btn:active {
-            transform: translateY(0);
-            box-shadow: 0 2px 8px rgba(237, 137, 54, 0.3);
-        }
-        
-        /* Touch device optimizations */
-        @media (hover: none) and (pointer: coarse) {
-            .show-answer-btn {
-                padding: 18px 36px;
-                font-size: 1.2em;
-                min-height: 56px;
-            }
-            
-            .show-answer-btn:hover {
-                transform: none;
-            }
-            
-            .show-answer-btn:active {
-                transform: scale(0.98);
-                opacity: 0.9;
-            }
-        }
-        
-        @keyframes fadeIn {
-            from { 
-                opacity: 0; 
-                transform: translateY(20px); 
-            }
-            to { 
-                opacity: 1; 
-                transform: translateY(0); 
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .theatrical-scene {
-                padding: 25px 20px;
-            }
-            
-            .scene-title {
-                font-size: 1.4em;
-            }
-            
-            .scene-narrative {
-                font-size: 1.05em;
-                text-align: left;
-            }
-            
-            .exercise-section {
-                padding: 20px;
-            }
-            
-            .exercise-text {
-                font-size: 1em;
-                line-height: 1.8;
-            }
-            
-            .exercise-text .blank {
-                min-width: 80px;
-                padding: 2px 6px;
-                margin: 2px;
-            }
-            
-            .show-answer-btn {
-                width: 90%;
-                max-width: 300px;
-                padding: 18px 24px;
-                font-size: 1.15em;
-            }
-        }
-        
-        /* iOS specific fixes */
-        @supports (-webkit-touch-callout: none) {
-            .show-answer-btn {
-                -webkit-appearance: none;
-                appearance: none;
-            }
-            
-            .exercise-text .blank {
-                -webkit-tap-highlight-color: transparent;
-            }
-        }
-        
-    </style>
+    <link rel="stylesheet" href="../static/css/journey.css">
 </head>
 <body>
     <div class="container">
@@ -769,587 +13,622 @@ body {
             <h1>👑 Путь Освальда</h1>
             <p class="subtitle">Изучаем немецкий через трагедию Шекспира</p>
         </header>
-        
+
         <div class="journey-section">
             <h2>📚 Путешествие Oswald</h2>
-            
+
             <div class="journey-timeline">
                 <svg class="journey-line" width="100%" height="4">
-                    <line x1="0" y1="2" x2="100%" y2="2" stroke="#6b5b95" stroke-width="2" opacity="0.3"/>
-                    <line x1="0" y1="2" x2="14%" y2="2" stroke="#6b5b95" stroke-width="3" class="progress-line"/>
+                    <line x1="0" y1="2" x2="100%" y2="2" stroke="#6b5b95" stroke-width="2" opacity="0.3" />
+                    <line x1="0" y1="2" x2="14%" y2="2" stroke="#6b5b95" stroke-width="3" class="progress-line" />
                 </svg>
-                
+
                 <div class="journey-points">
                     
-                <div class="journey-point active" data-phase="steward">
-                    <div class="point-circle">🎩</div>
-                    <h4>Управляющий</h4>
-                    <p>Diener • Gehorsam • Ergebenheit</p>
-                </div>
-                <div class="journey-point " data-phase="messenger">
-                    <div class="point-circle">📨</div>
-                    <h4>Гонец</h4>
-                    <p>Bote • Auftrag • Eile</p>
-                </div>
-                <div class="journey-point " data-phase="insult">
-                    <div class="point-circle">😤</div>
-                    <h4>Оскорбитель</h4>
-                    <p>Beleidigung • Respektlosigkeit • Feigheit</p>
-                </div>
-                <div class="journey-point " data-phase="spy">
-                    <div class="point-circle">🕵️</div>
-                    <h4>Шпион</h4>
-                    <p>Spion • Verrat • Heimlichkeit</p>
-                </div>
-                <div class="journey-point " data-phase="schemer">
-                    <div class="point-circle">🕸️</div>
-                    <h4>Интриган</h4>
-                    <p>Intrige • Plan • Hinterlist</p>
-                </div>
-                <div class="journey-point " data-phase="pursuer">
-                    <div class="point-circle">🏃</div>
-                    <h4>Преследователь</h4>
-                    <p>Verfolgung • Jagd • Gefahr</p>
-                </div>
-                <div class="journey-point " data-phase="coward_death">
-                    <div class="point-circle">💀</div>
-                    <h4>Смерть труса</h4>
-                    <p>Tod • Feigheit • Niederlage</p>
-                </div>
+                    <div class="journey-point active" data-phase="steward">
+                        <div class="point-circle">🎩</div>
+                        <h4>Управляющий</h4>
+                        
+                        <p>Diener • Gehorsam • Ergebenheit</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="messenger">
+                        <div class="point-circle">📨</div>
+                        <h4>Гонец</h4>
+                        
+                        <p>Bote • Auftrag • Eile</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="insult">
+                        <div class="point-circle">😤</div>
+                        <h4>Оскорбитель</h4>
+                        
+                        <p>Beleidigung • Respektlosigkeit • Feigheit</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="spy">
+                        <div class="point-circle">🕵️</div>
+                        <h4>Шпион</h4>
+                        
+                        <p>Spion • Verrat • Heimlichkeit</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="schemer">
+                        <div class="point-circle">🕸️</div>
+                        <h4>Интриган</h4>
+                        
+                        <p>Intrige • Plan • Hinterlist</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="pursuer">
+                        <div class="point-circle">🏃</div>
+                        <h4>Преследователь</h4>
+                        
+                        <p>Verfolgung • Jagd • Gefahr</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="coward_death">
+                        <div class="point-circle">💀</div>
+                        <h4>Смерть труса</h4>
+                        
+                        <p>Tod • Feigheit • Niederlage</p>
+                        
+                    </div>
+                    
                 </div>
             </div>
-            
+
             <div class="journey-progress">
                 <div class="progress-track">
                     <div class="progress-fill" style="width: 14%"></div>
                 </div>
-                <div class="progress-text">Акт I: Разделение королевства</div>
+                <div class="progress-text">Акт I: Верный слуга Гонерильи</div>
             </div>
         </div>
+
         
-        <!-- Theatrical Scene Section -->
         <div class="theatrical-scenes">
             
-                <div class="theatrical-scene active" data-phase="steward">
-                    <h3 class="scene-title">ВЕРНЫЙ ПЁС</h3>
-                    <div class="scene-narrative">Я <b>DER DIENER (слуга)</b> леди Гонерильи, и этим горжусь! Мой <b>DER GEHORSAM (послушание)</b> абсолютен! <b>DIE ERGEBENHEIT (преданность)</b> моей госпоже не знает границ! Я <b>DIENEN (служу)</b> ей всем своим существом! Как <b>DER VERWALTER (управляющий)</b> её дома, я контролирую каждую мелочь! Я <b>UNTERWÜRFIG (раболепно)</b> склоняюсь перед её величием! Каждый приказ я <b>BEFOLGEN (исполняю)</b> мгновенно! Что она прикажет - то и будет сделано! Старый король Лир? Он ничто для меня! Только воля моей госпожи имеет значение! Я готов на всё ради её благосклонности!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: Я живу только для служения ей! Моя жизнь принадлежит леди Гонерилье!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="messenger">
-                    <h3 class="scene-title">БЕГУЩИЙ СЛУГА</h3>
-                    <div class="scene-narrative">Я <b>DER BOTE (гонец)</b> моей жестокой госпожи! Каждый <b>DER AUFTRAG (поручение)</b> выполняю с рвением! В постоянной <b>DIE EILE (спешке)</b> я ношусь по замку! Я <b>ÜBERBRINGEN (передаю)</b> её злые приказы всем! Я <b>HASTEN (спешу)</b> от одного места к другому без отдыха! <b>DIE BOTSCHAFT (послание)</b> леди Гонерильи должно быть доставлено немедленно! Я <b>EILEN (тороплюсь)</b> исполнить каждое её желание! К Реган, к Корнуоллу, к Эдмунду - я бегу повсюду! Мои ноги не знают покоя! Письма, приказы, угрозы - всё несу я! Важность моей миссии наполняет меня гордостью!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: Я - ноги и голос моей госпожи! Через меня она правит!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="insult">
-                    <h3 class="scene-title">НАГЛЫЙ ЛАКЕЙ</h3>
-                    <div class="scene-narrative">Старый безумец Лир! Каждая <b>DIE BELEIDIGUNG (оскорбление)</b> для него - мой долг! Моя <b>DIE RESPEKTLOSIGKEIT (неуважение)</b> к бывшему королю безгранична! Да, из <b>DIE FEIGHEIT (трусости)</b> я нападаю на слабого старика! Я <b>BELEIDIGEN (оскорбляю)</b> его открыто! Я <b>VERHÖHNEN (высмеиваю)</b> его жалкие попытки сохранить достоинство! Я <b>FRECH (дерзко)</b> игнорирую его приказы! Я <b>MISSACHTEN (пренебрегаю)</b> всем, чем он был! Да, я <b>FEIGE (трусливо)</b> прячусь за спиной госпожи! Но это даёт мне власть над королем! Какое наслаждение унижать того, кто раньше был недосягаем!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Вы никто, старик!» - бросаю я в лицо бывшему королю!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="spy">
-                    <h3 class="scene-title">ТЕНЬ В УГЛАХ</h3>
-                    <div class="scene-narrative">Я <b>DER SPION (шпион)</b> в каждом тёмном углу! <b>DER VERRAT (предательство)</b> - моя профессия! В <b>DIE HEIMLICHKEIT (скрытности)</b> я мастер! Я <b>SPIONIEREN (шпионю)</b> за всеми в замке! Я <b>LAUSCHEN (подслушиваю)</b> каждый шёпот, каждый вздох! Я <b>VERRATEN (выдаю)</b> все секреты моей госпоже! Я <b>SCHNÜFFELN (вынюхиваю)</b> тайны как гончая! Кто с кем говорит? О чём шепчутся слуги? Что замышляет Эдмунд? Всё это я узнаю и доношу! Моя госпожа знает всё благодаря мне! Я - её глаза и уши во тьме!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: Ни один секрет не укроется от меня! Я всё вижу, всё слышу!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="schemer">
-                    <h3 class="scene-title">ПАУК В ПАУТИНЕ</h3>
-                    <div class="scene-narrative">Каждая <b>DIE INTRIGE (интрига)</b> - моё искусство! Мой <b>DER PLAN (план)</b> безупречен! С <b>DIE HINTERLIST (коварством)</b> я опутываю всех! Я <b>SCHMIEDEN (кую)</b> заговоры против врагов госпожи! Я <b>HINTERGEHEN (обманываю)</b> доверчивых дураков! Я <b>TÜCKISCH (коварно)</b> расставляю сети! Я <b>VERSCHLAGEN (хитро)</b> манипулирую всеми! Каждая <b>DIE FALLE (ловушка)</b> продумана до мелочей! Эдгар думает, что скрывается? Я найду его! Глостер ищет помощи? Я выдам его! Все танцуют по моей дудке! Моя госпожа будет довольна моей изобретательностью!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: Я дёргаю за ниточки, и все пляшут как марионетки!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="pursuer">
-                    <h3 class="scene-title">ОХОТНИЧИЙ ПЁС</h3>
-                    <div class="scene-narrative"><b>DIE VERFOLGUNG (преследование)</b> слепого Глостера началось! <b>DIE JAGD (охота)</b> на предателя - моя миссия! Я <b>VERFOLGEN (преследую)</b> его без жалости! Как гончая я <b>JAGEN (гонюсь)</b> за ним! Я <b>AUFSPÜREN (выслеживаю)</b> его следы повсюду! Я <b>HETZEN (травлю)</b> его как дикого зверя! Слепой граф - лёгкая <b>DIE BEUTE (добыча)</b> для меня! Он думает, что сможет скрыться? Глупец! Я чую его страх за версту! Моя госпожа приказала поймать его, и я не подведу! Загоню его в угол как крысу!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: Я настигну слепца и доставлю его голову моей госпоже!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="coward_death">
-                    <h3 class="scene-title">ЖАЛКАЯ СМЕРТЬ</h3>
-                    <div class="scene-narrative">Нет! <b>DER TOD (смерть)</b> пришла слишком рано! Моя <b>DIE FEIGHEIT (трусость)</b> меня погубила! <b>DIE NIEDERLAGE (поражение)</b> от руки нищего Эдгара! Я <b>FALLEN (падаю)</b> на колени перед ним! Я <b>UNTERLIEGEN (проигрываю)</b> в схватке с крестьянином! Я <b>WIMMERN (хныкаю)</b> как побитая собака! Я <b>BETTELN (умоляю)</b> о пощаде! Но нет милосердия для меня! Я <b>ERBÄRMLICH (жалко)</b> умираю, как жалко жил! Вся моя подлость, все интриги - всё напрасно! Меч Эдгара пронзает меня! Госпожа... я подвёл вас... Прости меня... Темнота... Холод...</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Пощади!» - визжу я, но меч Эдгара уже в моей груди!</div>
-                </div>
+            <div class="theatrical-scene active" data-phase="steward">
+                <h3 class="scene-title">ВЕРНЫЙ ПЁС</h3>
+                <div class="scene-narrative">Я <b>DER DIENER (слуга)</b> леди Гонерильи, и этим горжусь! Мой <b>DER GEHORSAM (послушание)</b> абсолютен! <b>DIE ERGEBENHEIT (преданность)</b> моей госпоже не знает границ! Я <b>DIENEN (служу)</b> ей всем своим существом! Как <b>DER VERWALTER (управляющий)</b> её дома, я контролирую каждую мелочь! Я <b>UNTERWÜRFIG (раболепно)</b> склоняюсь перед её величием! Каждый приказ я <b>BEFOLGEN (исполняю)</b> мгновенно! Что она прикажет - то и будет сделано! Старый король Лир? Он ничто для меня! Только воля моей госпожи имеет значение! Я готов на всё ради её благосклонности!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: Я живу только для служения ей! Моя жизнь принадлежит леди Гонерилье!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="messenger">
+                <h3 class="scene-title">БЕГУЩИЙ СЛУГА</h3>
+                <div class="scene-narrative">Я <b>DER BOTE (гонец)</b> моей жестокой госпожи! Каждый <b>DER AUFTRAG (поручение)</b> выполняю с рвением! В постоянной <b>DIE EILE (спешке)</b> я ношусь по замку! Я <b>ÜBERBRINGEN (передаю)</b> её злые приказы всем! Я <b>HASTEN (спешу)</b> от одного места к другому без отдыха! <b>DIE BOTSCHAFT (послание)</b> леди Гонерильи должно быть доставлено немедленно! Я <b>EILEN (тороплюсь)</b> исполнить каждое её желание! К Реган, к Корнуоллу, к Эдмунду - я бегу повсюду! Мои ноги не знают покоя! Письма, приказы, угрозы - всё несу я! Важность моей миссии наполняет меня гордостью!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: Я - ноги и голос моей госпожи! Через меня она правит!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="insult">
+                <h3 class="scene-title">НАГЛЫЙ ЛАКЕЙ</h3>
+                <div class="scene-narrative">Старый безумец Лир! Каждая <b>DIE BELEIDIGUNG (оскорбление)</b> для него - мой долг! Моя <b>DIE RESPEKTLOSIGKEIT (неуважение)</b> к бывшему королю безгранична! Да, из <b>DIE FEIGHEIT (трусости)</b> я нападаю на слабого старика! Я <b>BELEIDIGEN (оскорбляю)</b> его открыто! Я <b>VERHÖHNEN (высмеиваю)</b> его жалкие попытки сохранить достоинство! Я <b>FRECH (дерзко)</b> игнорирую его приказы! Я <b>MISSACHTEN (пренебрегаю)</b> всем, чем он был! Да, я <b>FEIGE (трусливо)</b> прячусь за спиной госпожи! Но это даёт мне власть над королем! Какое наслаждение унижать того, кто раньше был недосягаем!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Вы никто, старик!» - бросаю я в лицо бывшему королю!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="spy">
+                <h3 class="scene-title">ТЕНЬ В УГЛАХ</h3>
+                <div class="scene-narrative">Я <b>DER SPION (шпион)</b> в каждом тёмном углу! <b>DER VERRAT (предательство)</b> - моя профессия! В <b>DIE HEIMLICHKEIT (скрытности)</b> я мастер! Я <b>SPIONIEREN (шпионю)</b> за всеми в замке! Я <b>LAUSCHEN (подслушиваю)</b> каждый шёпот, каждый вздох! Я <b>VERRATEN (выдаю)</b> все секреты моей госпоже! Я <b>SCHNÜFFELN (вынюхиваю)</b> тайны как гончая! Кто с кем говорит? О чём шепчутся слуги? Что замышляет Эдмунд? Всё это я узнаю и доношу! Моя госпожа знает всё благодаря мне! Я - её глаза и уши во тьме!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: Ни один секрет не укроется от меня! Я всё вижу, всё слышу!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="schemer">
+                <h3 class="scene-title">ПАУК В ПАУТИНЕ</h3>
+                <div class="scene-narrative">Каждая <b>DIE INTRIGE (интрига)</b> - моё искусство! Мой <b>DER PLAN (план)</b> безупречен! С <b>DIE HINTERLIST (коварством)</b> я опутываю всех! Я <b>SCHMIEDEN (кую)</b> заговоры против врагов госпожи! Я <b>HINTERGEHEN (обманываю)</b> доверчивых дураков! Я <b>TÜCKISCH (коварно)</b> расставляю сети! Я <b>VERSCHLAGEN (хитро)</b> манипулирую всеми! Каждая <b>DIE FALLE (ловушка)</b> продумана до мелочей! Эдгар думает, что скрывается? Я найду его! Глостер ищет помощи? Я выдам его! Все танцуют по моей дудке! Моя госпожа будет довольна моей изобретательностью!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: Я дёргаю за ниточки, и все пляшут как марионетки!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="pursuer">
+                <h3 class="scene-title">ОХОТНИЧИЙ ПЁС</h3>
+                <div class="scene-narrative"><b>DIE VERFOLGUNG (преследование)</b> слепого Глостера началось! <b>DIE JAGD (охота)</b> на предателя - моя миссия! Я <b>VERFOLGEN (преследую)</b> его без жалости! Как гончая я <b>JAGEN (гонюсь)</b> за ним! Я <b>AUFSPÜREN (выслеживаю)</b> его следы повсюду! Я <b>HETZEN (травлю)</b> его как дикого зверя! Слепой граф - лёгкая <b>DIE BEUTE (добыча)</b> для меня! Он думает, что сможет скрыться? Глупец! Я чую его страх за версту! Моя госпожа приказала поймать его, и я не подведу! Загоню его в угол как крысу!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: Я настигну слепца и доставлю его голову моей госпоже!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="coward_death">
+                <h3 class="scene-title">ЖАЛКАЯ СМЕРТЬ</h3>
+                <div class="scene-narrative">Нет! <b>DER TOD (смерть)</b> пришла слишком рано! Моя <b>DIE FEIGHEIT (трусость)</b> меня погубила! <b>DIE NIEDERLAGE (поражение)</b> от руки нищего Эдгара! Я <b>FALLEN (падаю)</b> на колени перед ним! Я <b>UNTERLIEGEN (проигрываю)</b> в схватке с крестьянином! Я <b>WIMMERN (хныкаю)</b> как побитая собака! Я <b>BETTELN (умоляю)</b> о пощаде! Но нет милосердия для меня! Я <b>ERBÄRMLICH (жалко)</b> умираю, как жалко жил! Вся моя подлость, все интриги - всё напрасно! Меч Эдгара пронзает меня! Госпожа... я подвёл вас... Прости меня... Темнота... Холод...</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Пощади!» - визжу я, но меч Эдгара уже в моей груди!</div>
+            </div>
+            
         </div>
         
+
         <div class="vocabulary-section">
-            <h2>📖 Словарь: Фаза "<span id="current-phase">Тронный зал</span>"</h2>
+            <h2>📖 Словарь: Фаза "<span id="current-phase">Управляющий</span>"</h2>
             <div class="vocabulary-grid"></div>
-            
+
             <div class="phase-navigation">
-                <button class="change-phase-btn prev-btn">← Предыдущая фаза</button>
-                <button class="change-phase-btn next-btn">Следующая фаза →</button>
+                <button class="change-phase-btn prev-btn" type="button">← Предыдущая фаза</button>
+                <button class="change-phase-btn next-btn" type="button">Следующая фаза →</button>
             </div>
         </div>
-        
-        <!-- Exercises Section AFTER Vocabulary -->
+
         <div class="exercises-container">
             
-                    <div class="exercise-container active" data-phase="steward">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: ВЕРНЫЙ ПЁС</h4>
-                            <div class="exercise-text">Я <span class="blank" data-answer="der DIENER" data-hint="слуга">_______ (слуга)</span> леди Гонерильи, и этим горжусь! Мой <span class="blank" data-answer="der GEHORSAM" data-hint="послушание">_______ (послушание)</span> абсолютен! <span class="blank" data-answer="die ERGEBENHEIT" data-hint="преданность">_______ (преданность)</span> моей госпоже не знает границ! Я <span class="blank" data-answer="DIENEN" data-hint="служу">_______ (служу)</span> ей всем своим существом! Как <span class="blank" data-answer="der VERWALTER" data-hint="управляющий">_______ (управляющий)</span> её дома, я контролирую каждую мелочь! Я <span class="blank" data-answer="UNTERWÜRFIG" data-hint="раболепно">_______ (раболепно)</span> склоняюсь перед её величием! Каждый приказ я <span class="blank" data-answer="BEFOLGEN" data-hint="исполняю">_______ (исполняю)</span> мгновенно! Что она прикажет - то и будет сделано! Старый король Лир? Он ничто для меня! Только воля моей госпожи имеет значение! Я готов на всё ради её благосклонности!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="messenger">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: БЕГУЩИЙ СЛУГА</h4>
-                            <div class="exercise-text">Я <span class="blank" data-answer="der BOTE" data-hint="гонец">_______ (гонец)</span> моей жестокой госпожи! Каждый <span class="blank" data-answer="der AUFTRAG" data-hint="поручение">_______ (поручение)</span> выполняю с рвением! В постоянной <span class="blank" data-answer="DIE EILE" data-hint="спешке">_______ (спешке)</span> я ношусь по замку! Я <span class="blank" data-answer="ÜBERBRINGEN" data-hint="передаю">_______ (передаю)</span> её злые приказы всем! Я <span class="blank" data-answer="HASTEN" data-hint="спешу">_______ (спешу)</span> от одного места к другому без отдыха! <span class="blank" data-answer="die BOTSCHAFT" data-hint="послание">_______ (послание)</span> леди Гонерильи должно быть доставлено немедленно! Я <span class="blank" data-answer="EILEN" data-hint="тороплюсь">_______ (тороплюсь)</span> исполнить каждое её желание! К Реган, к Корнуоллу, к Эдмунду - я бегу повсюду! Мои ноги не знают покоя! Письма, приказы, угрозы - всё несу я! Важность моей миссии наполняет меня гордостью!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="insult">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: НАГЛЫЙ ЛАКЕЙ</h4>
-                            <div class="exercise-text">Старый безумец Лир! Каждая <span class="blank" data-answer="die BELEIDIGUNG" data-hint="оскорбление">_______ (оскорбление)</span> для него - мой долг! Моя <span class="blank" data-answer="die RESPEKTLOSIGKEIT" data-hint="неуважение">_______ (неуважение)</span> к бывшему королю безгранична! Да, из <span class="blank" data-answer="DIE FEIGHEIT" data-hint="трусости">_______ (трусости)</span> я нападаю на слабого старика! Я <span class="blank" data-answer="BELEIDIGEN" data-hint="оскорбляю">_______ (оскорбляю)</span> его открыто! Я <span class="blank" data-answer="VERHÖHNEN" data-hint="высмеиваю">_______ (высмеиваю)</span> его жалкие попытки сохранить достоинство! Я <span class="blank" data-answer="FRECH" data-hint="дерзко">_______ (дерзко)</span> игнорирую его приказы! Я <span class="blank" data-answer="MISSACHTEN" data-hint="пренебрегаю">_______ (пренебрегаю)</span> всем, чем он был! Да, я <span class="blank" data-answer="FEIGE" data-hint="трусливо">_______ (трусливо)</span> прячусь за спиной госпожи! Но это даёт мне власть над королем! Какое наслаждение унижать того, кто раньше был недосягаем!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="spy">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: ТЕНЬ В УГЛАХ</h4>
-                            <div class="exercise-text">Я <span class="blank" data-answer="der SPION" data-hint="шпион">_______ (шпион)</span> в каждом тёмном углу! <span class="blank" data-answer="der VERRAT" data-hint="предательство">_______ (предательство)</span> - моя профессия! В <span class="blank" data-answer="DIE HEIMLICHKEIT" data-hint="скрытности">_______ (скрытности)</span> я мастер! Я <span class="blank" data-answer="SPIONIEREN" data-hint="шпионю">_______ (шпионю)</span> за всеми в замке! Я <span class="blank" data-answer="LAUSCHEN" data-hint="подслушиваю">_______ (подслушиваю)</span> каждый шёпот, каждый вздох! Я <span class="blank" data-answer="VERRATEN" data-hint="выдаю">_______ (выдаю)</span> все секреты моей госпоже! Я <span class="blank" data-answer="SCHNÜFFELN" data-hint="вынюхиваю">_______ (вынюхиваю)</span> тайны как гончая! Кто с кем говорит? О чём шепчутся слуги? Что замышляет Эдмунд? Всё это я узнаю и доношу! Моя госпожа знает всё благодаря мне! Я - её глаза и уши во тьме!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="schemer">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: ПАУК В ПАУТИНЕ</h4>
-                            <div class="exercise-text">Каждая <span class="blank" data-answer="die INTRIGE" data-hint="интрига">_______ (интрига)</span> - моё искусство! Мой <span class="blank" data-answer="der PLAN" data-hint="план">_______ (план)</span> безупречен! С <span class="blank" data-answer="DIE HINTERLIST" data-hint="коварством">_______ (коварством)</span> я опутываю всех! Я <span class="blank" data-answer="SCHMIEDEN" data-hint="кую">_______ (кую)</span> заговоры против врагов госпожи! Я <span class="blank" data-answer="HINTERGEHEN" data-hint="обманываю">_______ (обманываю)</span> доверчивых дураков! Я <span class="blank" data-answer="TÜCKISCH" data-hint="коварно">_______ (коварно)</span> расставляю сети! Я <span class="blank" data-answer="VERSCHLAGEN" data-hint="хитро">_______ (хитро)</span> манипулирую всеми! Каждая <span class="blank" data-answer="die FALLE" data-hint="ловушка">_______ (ловушка)</span> продумана до мелочей! Эдгар думает, что скрывается? Я найду его! Глостер ищет помощи? Я выдам его! Все танцуют по моей дудке! Моя госпожа будет довольна моей изобретательностью!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="pursuer">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: ОХОТНИЧИЙ ПЁС</h4>
-                            <div class="exercise-text"><span class="blank" data-answer="die VERFOLGUNG" data-hint="преследование">_______ (преследование)</span> слепого Глостера началось! <span class="blank" data-answer="die JAGD" data-hint="охота">_______ (охота)</span> на предателя - моя миссия! Я <span class="blank" data-answer="VERFOLGEN" data-hint="преследую">_______ (преследую)</span> его без жалости! Как гончая я <span class="blank" data-answer="JAGEN" data-hint="гонюсь">_______ (гонюсь)</span> за ним! Я <span class="blank" data-answer="AUFSPÜREN" data-hint="выслеживаю">_______ (выслеживаю)</span> его следы повсюду! Я <span class="blank" data-answer="HETZEN" data-hint="травлю">_______ (травлю)</span> его как дикого зверя! Слепой граф - лёгкая <span class="blank" data-answer="die BEUTE" data-hint="добыча">_______ (добыча)</span> для меня! Он думает, что сможет скрыться? Глупец! Я чую его страх за версту! Моя госпожа приказала поймать его, и я не подведу! Загоню его в угол как крысу!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="coward_death">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: ЖАЛКАЯ СМЕРТЬ</h4>
-                            <div class="exercise-text">Нет! <span class="blank" data-answer="der TOD" data-hint="смерть">_______ (смерть)</span> пришла слишком рано! Моя <span class="blank" data-answer="die FEIGHEIT" data-hint="трусость">_______ (трусость)</span> меня погубила! <span class="blank" data-answer="die NIEDERLAGE" data-hint="поражение">_______ (поражение)</span> от руки нищего Эдгара! Я <span class="blank" data-answer="FALLEN" data-hint="падаю">_______ (падаю)</span> на колени перед ним! Я <span class="blank" data-answer="UNTERLIEGEN" data-hint="проигрываю">_______ (проигрываю)</span> в схватке с крестьянином! Я <span class="blank" data-answer="WIMMERN" data-hint="хныкаю">_______ (хныкаю)</span> как побитая собака! Я <span class="blank" data-answer="BETTELN" data-hint="умоляю">_______ (умоляю)</span> о пощаде! Но нет милосердия для меня! Я <span class="blank" data-answer="ERBÄRMLICH" data-hint="жалко">_______ (жалко)</span> умираю, как жалко жил! Вся моя подлость, все интриги - всё напрасно! Меч Эдгара пронзает меня! Госпожа... я подвёл вас... Прости меня... Темнота... Холод...</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
+            <div class="exercise-container active" data-phase="steward">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ВЕРНЫЙ ПЁС</h4>
+                    <div class="exercise-text">Я <span class="blank" data-answer="der DIENER" data-hint="слуга">_______ (слуга)</span> леди Гонерильи, и этим горжусь! Мой <span class="blank" data-answer="der GEHORSAM" data-hint="послушание">_______ (послушание)</span> абсолютен! <span class="blank" data-answer="die ERGEBENHEIT" data-hint="преданность">_______ (преданность)</span> моей госпоже не знает границ! Я <span class="blank" data-answer="DIENEN" data-hint="служу">_______ (служу)</span> ей всем своим существом! Как <span class="blank" data-answer="der VERWALTER" data-hint="управляющий">_______ (управляющий)</span> её дома, я контролирую каждую мелочь! Я <span class="blank" data-answer="UNTERWÜRFIG" data-hint="раболепно">_______ (раболепно)</span> склоняюсь перед её величием! Каждый приказ я <span class="blank" data-answer="BEFOLGEN" data-hint="исполняю">_______ (исполняю)</span> мгновенно! Что она прикажет - то и будет сделано! Старый король Лир? Он ничто для меня! Только воля моей госпожи имеет значение! Я готов на всё ради её благосклонности!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="messenger">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: БЕГУЩИЙ СЛУГА</h4>
+                    <div class="exercise-text">Я <span class="blank" data-answer="der BOTE" data-hint="гонец">_______ (гонец)</span> моей жестокой госпожи! Каждый <span class="blank" data-answer="der AUFTRAG" data-hint="поручение">_______ (поручение)</span> выполняю с рвением! В постоянной <span class="blank" data-answer="DIE EILE" data-hint="спешке">_______ (спешке)</span> я ношусь по замку! Я <span class="blank" data-answer="ÜBERBRINGEN" data-hint="передаю">_______ (передаю)</span> её злые приказы всем! Я <span class="blank" data-answer="HASTEN" data-hint="спешу">_______ (спешу)</span> от одного места к другому без отдыха! <span class="blank" data-answer="die BOTSCHAFT" data-hint="послание">_______ (послание)</span> леди Гонерильи должно быть доставлено немедленно! Я <span class="blank" data-answer="EILEN" data-hint="тороплюсь">_______ (тороплюсь)</span> исполнить каждое её желание! К Реган, к Корнуоллу, к Эдмунду - я бегу повсюду! Мои ноги не знают покоя! Письма, приказы, угрозы - всё несу я! Важность моей миссии наполняет меня гордостью!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="insult">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: НАГЛЫЙ ЛАКЕЙ</h4>
+                    <div class="exercise-text">Старый безумец Лир! Каждая <span class="blank" data-answer="die BELEIDIGUNG" data-hint="оскорбление">_______ (оскорбление)</span> для него - мой долг! Моя <span class="blank" data-answer="die RESPEKTLOSIGKEIT" data-hint="неуважение">_______ (неуважение)</span> к бывшему королю безгранична! Да, из <span class="blank" data-answer="DIE FEIGHEIT" data-hint="трусости">_______ (трусости)</span> я нападаю на слабого старика! Я <span class="blank" data-answer="BELEIDIGEN" data-hint="оскорбляю">_______ (оскорбляю)</span> его открыто! Я <span class="blank" data-answer="VERHÖHNEN" data-hint="высмеиваю">_______ (высмеиваю)</span> его жалкие попытки сохранить достоинство! Я <span class="blank" data-answer="FRECH" data-hint="дерзко">_______ (дерзко)</span> игнорирую его приказы! Я <span class="blank" data-answer="MISSACHTEN" data-hint="пренебрегаю">_______ (пренебрегаю)</span> всем, чем он был! Да, я <span class="blank" data-answer="FEIGE" data-hint="трусливо">_______ (трусливо)</span> прячусь за спиной госпожи! Но это даёт мне власть над королем! Какое наслаждение унижать того, кто раньше был недосягаем!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="spy">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ТЕНЬ В УГЛАХ</h4>
+                    <div class="exercise-text">Я <span class="blank" data-answer="der SPION" data-hint="шпион">_______ (шпион)</span> в каждом тёмном углу! <span class="blank" data-answer="der VERRAT" data-hint="предательство">_______ (предательство)</span> - моя профессия! В <span class="blank" data-answer="DIE HEIMLICHKEIT" data-hint="скрытности">_______ (скрытности)</span> я мастер! Я <span class="blank" data-answer="SPIONIEREN" data-hint="шпионю">_______ (шпионю)</span> за всеми в замке! Я <span class="blank" data-answer="LAUSCHEN" data-hint="подслушиваю">_______ (подслушиваю)</span> каждый шёпот, каждый вздох! Я <span class="blank" data-answer="VERRATEN" data-hint="выдаю">_______ (выдаю)</span> все секреты моей госпоже! Я <span class="blank" data-answer="SCHNÜFFELN" data-hint="вынюхиваю">_______ (вынюхиваю)</span> тайны как гончая! Кто с кем говорит? О чём шепчутся слуги? Что замышляет Эдмунд? Всё это я узнаю и доношу! Моя госпожа знает всё благодаря мне! Я - её глаза и уши во тьме!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="schemer">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ПАУК В ПАУТИНЕ</h4>
+                    <div class="exercise-text">Каждая <span class="blank" data-answer="die INTRIGE" data-hint="интрига">_______ (интрига)</span> - моё искусство! Мой <span class="blank" data-answer="der PLAN" data-hint="план">_______ (план)</span> безупречен! С <span class="blank" data-answer="DIE HINTERLIST" data-hint="коварством">_______ (коварством)</span> я опутываю всех! Я <span class="blank" data-answer="SCHMIEDEN" data-hint="кую">_______ (кую)</span> заговоры против врагов госпожи! Я <span class="blank" data-answer="HINTERGEHEN" data-hint="обманываю">_______ (обманываю)</span> доверчивых дураков! Я <span class="blank" data-answer="TÜCKISCH" data-hint="коварно">_______ (коварно)</span> расставляю сети! Я <span class="blank" data-answer="VERSCHLAGEN" data-hint="хитро">_______ (хитро)</span> манипулирую всеми! Каждая <span class="blank" data-answer="die FALLE" data-hint="ловушка">_______ (ловушка)</span> продумана до мелочей! Эдгар думает, что скрывается? Я найду его! Глостер ищет помощи? Я выдам его! Все танцуют по моей дудке! Моя госпожа будет довольна моей изобретательностью!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="pursuer">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ОХОТНИЧИЙ ПЁС</h4>
+                    <div class="exercise-text"><span class="blank" data-answer="die VERFOLGUNG" data-hint="преследование">_______ (преследование)</span> слепого Глостера началось! <span class="blank" data-answer="die JAGD" data-hint="охота">_______ (охота)</span> на предателя - моя миссия! Я <span class="blank" data-answer="VERFOLGEN" data-hint="преследую">_______ (преследую)</span> его без жалости! Как гончая я <span class="blank" data-answer="JAGEN" data-hint="гонюсь">_______ (гонюсь)</span> за ним! Я <span class="blank" data-answer="AUFSPÜREN" data-hint="выслеживаю">_______ (выслеживаю)</span> его следы повсюду! Я <span class="blank" data-answer="HETZEN" data-hint="травлю">_______ (травлю)</span> его как дикого зверя! Слепой граф - лёгкая <span class="blank" data-answer="die BEUTE" data-hint="добыча">_______ (добыча)</span> для меня! Он думает, что сможет скрыться? Глупец! Я чую его страх за версту! Моя госпожа приказала поймать его, и я не подведу! Загоню его в угол как крысу!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="coward_death">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ЖАЛКАЯ СМЕРТЬ</h4>
+                    <div class="exercise-text">Нет! <span class="blank" data-answer="der TOD" data-hint="смерть">_______ (смерть)</span> пришла слишком рано! Моя <span class="blank" data-answer="die FEIGHEIT" data-hint="трусость">_______ (трусость)</span> меня погубила! <span class="blank" data-answer="die NIEDERLAGE" data-hint="поражение">_______ (поражение)</span> от руки нищего Эдгара! Я <span class="blank" data-answer="FALLEN" data-hint="падаю">_______ (падаю)</span> на колени перед ним! Я <span class="blank" data-answer="UNTERLIEGEN" data-hint="проигрываю">_______ (проигрываю)</span> в схватке с крестьянином! Я <span class="blank" data-answer="WIMMERN" data-hint="хныкаю">_______ (хныкаю)</span> как побитая собака! Я <span class="blank" data-answer="BETTELN" data-hint="умоляю">_______ (умоляю)</span> о пощаде! Но нет милосердия для меня! Я <span class="blank" data-answer="ERBÄRMLICH" data-hint="жалко">_______ (жалко)</span> умираю, как жалко жил! Вся моя подлость, все интриги - всё напрасно! Меч Эдгара пронзает меня! Госпожа... я подвёл вас... Прости меня... Темнота... Холод...</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
         </div>
-        
+
         <nav class="bottom-nav">
             <a href="../index.html" class="nav-link">← К главной</a>
         </nav>
     </div>
-    
+
     <script>const phaseVocabularies = {
-    steward: {
-        title: 'Управляющий',
-        description: 'Акт I: Верный слуга Гонерильи',
-        words: [
+    "steward": {
+        "title": "Управляющий",
+        "description": "Акт I: Верный слуга Гонерильи",
+        "words": [
             {
-                word: 'der Diener',
-                translation: 'слуга',
-                transcription: '[дер ДИ-нер]',
-                sentence: 'Als Diener gehorche ich meiner Herrin blind.',
-                sentenceTranslation: 'Как слуга я слепо подчиняюсь своей госпоже.'
+                "word": "der Diener",
+                "translation": "слуга",
+                "transcription": "[дер ДИ-нер]",
+                "sentence": "Als Diener gehorche ich meiner Herrin blind.",
+                "sentenceTranslation": "Как слуга я слепо подчиняюсь своей госпоже."
             },
             {
-                word: 'der Gehorsam',
-                translation: 'послушание',
-                transcription: '[дер ге-ХОР-зам]',
-                sentence: 'Mein Gehorsam kennt keine Fragen.',
-                sentenceTranslation: 'Моё послушание не знает вопросов.'
+                "word": "der Gehorsam",
+                "translation": "послушание",
+                "transcription": "[дер ге-ХОР-зам]",
+                "sentence": "Mein Gehorsam kennt keine Fragen.",
+                "sentenceTranslation": "Моё послушание не знает вопросов."
             },
             {
-                word: 'die Ergebenheit',
-                translation: 'преданность',
-                transcription: '[ди ер-ГЕ-бен-хайт]',
-                sentence: 'Meine Ergebenheit gilt nur Lady Goneril.',
-                sentenceTranslation: 'Моя преданность принадлежит только леди Гонерилье.'
+                "word": "die Ergebenheit",
+                "translation": "преданность",
+                "transcription": "[ди ер-ГЕ-бен-хайт]",
+                "sentence": "Meine Ergebenheit gilt nur Lady Goneril.",
+                "sentenceTranslation": "Моя преданность принадлежит только леди Гонерилье."
             },
             {
-                word: 'dienen',
-                translation: 'служить',
-                transcription: '[ДИ-нен]',
-                sentence: 'Ich diene ohne Gewissen oder Ehre.',
-                sentenceTranslation: 'Я служу без совести и чести.'
+                "word": "dienen",
+                "translation": "служить",
+                "transcription": "[ДИ-нен]",
+                "sentence": "Ich diene ohne Gewissen oder Ehre.",
+                "sentenceTranslation": "Я служу без совести и чести."
             },
             {
-                word: 'der Verwalter',
-                translation: 'управляющий',
-                transcription: '[дер фер-ВАЛЬ-тер]',
-                sentence: 'Als Verwalter kontrolliere ich den Haushalt.',
-                sentenceTranslation: 'Как управляющий я контролирую дом.'
+                "word": "der Verwalter",
+                "translation": "управляющий",
+                "transcription": "[дер фер-ВАЛЬ-тер]",
+                "sentence": "Als Verwalter kontrolliere ich den Haushalt.",
+                "sentenceTranslation": "Как управляющий я контролирую дом."
             },
             {
-                word: 'ergeben',
-                translation: 'покорный',
-                transcription: '[ер-ГЕ-бен]',
-                sentence: 'Ergeben folge ich jedem Befehl.',
-                sentenceTranslation: 'Покорно я следую каждому приказу.'
+                "word": "ergeben",
+                "translation": "покорный",
+                "transcription": "[ер-ГЕ-бен]",
+                "sentence": "Ergeben folge ich jedem Befehl.",
+                "sentenceTranslation": "Покорно я следую каждому приказу."
             },
             {
-                word: 'unterwürfig',
-                translation: 'раболепный',
-                transcription: '[УН-тер-вюр-фиг]',
-                sentence: 'Unterwürfig krieche ich vor meiner Herrin.',
-                sentenceTranslation: 'Раболепно я пресмыкаюсь перед госпожой.'
+                "word": "unterwürfig",
+                "translation": "раболепный",
+                "transcription": "[УН-тер-вюр-фиг]",
+                "sentence": "Unterwürfig krieche ich vor meiner Herrin.",
+                "sentenceTranslation": "Раболепно я пресмыкаюсь перед госпожой."
             },
             {
-                word: 'befolgen',
-                translation: 'исполнять',
-                transcription: '[бе-ФОЛЬ-ген]',
-                sentence: 'Jeden Befehl befolge ich sofort.',
-                sentenceTranslation: 'Каждый приказ я исполняю немедленно.'
-            },
+                "word": "befolgen",
+                "translation": "исполнять",
+                "transcription": "[бе-ФОЛЬ-ген]",
+                "sentence": "Jeden Befehl befolge ich sofort.",
+                "sentenceTranslation": "Каждый приказ я исполняю немедленно."
+            }
         ]
     },
-    messenger: {
-        title: 'Гонец',
-        description: 'Акт I-II: Передаёт приказы',
-        words: [
+    "messenger": {
+        "title": "Гонец",
+        "description": "Акт I-II: Передаёт приказы",
+        "words": [
             {
-                word: 'der Bote',
-                translation: 'гонец',
-                transcription: '[дер БО-те]',
-                sentence: 'Als Bote überbringe ich böse Nachrichten.',
-                sentenceTranslation: 'Как гонец я приношу дурные вести.'
+                "word": "der Bote",
+                "translation": "гонец",
+                "transcription": "[дер БО-те]",
+                "sentence": "Als Bote überbringe ich böse Nachrichten.",
+                "sentenceTranslation": "Как гонец я приношу дурные вести."
             },
             {
-                word: 'der Auftrag',
-                translation: 'поручение',
-                transcription: '[дер АУФ-траг]',
-                sentence: 'Jeden Auftrag erfülle ich gewissenhaft.',
-                sentenceTranslation: 'Каждое поручение я выполняю добросовестно.'
+                "word": "der Auftrag",
+                "translation": "поручение",
+                "transcription": "[дер АУФ-траг]",
+                "sentence": "Jeden Auftrag erfülle ich gewissenhaft.",
+                "sentenceTranslation": "Каждое поручение я выполняю добросовестно."
             },
             {
-                word: 'die Eile',
-                translation: 'спешка',
-                transcription: '[ди АЙ-ле]',
-                sentence: 'In großer Eile renne ich hin und her.',
-                sentenceTranslation: 'В большой спешке я бегаю туда-сюда.'
+                "word": "die Eile",
+                "translation": "спешка",
+                "transcription": "[ди АЙ-ле]",
+                "sentence": "In großer Eile renne ich hin und her.",
+                "sentenceTranslation": "В большой спешке я бегаю туда-сюда."
             },
             {
-                word: 'überbringen',
-                translation: 'передавать',
-                transcription: '[ю-бер-БРИН-ген]',
-                sentence: 'Ich überbringe Befehle an alle Diener.',
-                sentenceTranslation: 'Я передаю приказы всем слугам.'
+                "word": "überbringen",
+                "translation": "передавать",
+                "transcription": "[ю-бер-БРИН-ген]",
+                "sentence": "Ich überbringe Befehle an alle Diener.",
+                "sentenceTranslation": "Я передаю приказы всем слугам."
             },
             {
-                word: 'hasten',
-                translation: 'спешить',
-                transcription: '[ХАС-тен]',
-                sentence: 'Ich haste von einem Ort zum anderen.',
-                sentenceTranslation: 'Я спешу с места на место.'
+                "word": "hasten",
+                "translation": "спешить",
+                "transcription": "[ХАС-тен]",
+                "sentence": "Ich haste von einem Ort zum anderen.",
+                "sentenceTranslation": "Я спешу с места на место."
             },
             {
-                word: 'die Botschaft',
-                translation: 'послание',
-                transcription: '[ди БОТ-шафт]',
-                sentence: 'Die Botschaft meiner Herrin ist grausam.',
-                sentenceTranslation: 'Послание моей госпожи жестоко.'
+                "word": "die Botschaft",
+                "translation": "послание",
+                "transcription": "[ди БОТ-шафт]",
+                "sentence": "Die Botschaft meiner Herrin ist grausam.",
+                "sentenceTranslation": "Послание моей госпожи жестоко."
             },
             {
-                word: 'eilen',
-                translation: 'торопиться',
-                transcription: '[АЙ-лен]',
-                sentence: 'Ich eile, um ihre Wünsche zu erfüllen.',
-                sentenceTranslation: 'Я тороплюсь исполнить её желания.'
-            },
+                "word": "eilen",
+                "translation": "торопиться",
+                "transcription": "[АЙ-лен]",
+                "sentence": "Ich eile, um ihre Wünsche zu erfüllen.",
+                "sentenceTranslation": "Я тороплюсь исполнить её желания."
+            }
         ]
     },
-    insult: {
-        title: 'Оскорбитель',
-        description: 'Акт II: Оскорбляет Лира',
-        words: [
+    "insult": {
+        "title": "Оскорбитель",
+        "description": "Акт II: Оскорбляет Лира",
+        "words": [
             {
-                word: 'die Beleidigung',
-                translation: 'оскорбление',
-                transcription: '[ди бе-ЛАЙ-ди-гунг]',
-                sentence: 'Jede Beleidigung spreche ich mit Genuss aus.',
-                sentenceTranslation: 'Каждое оскорбление я произношу с наслаждением.'
+                "word": "die Beleidigung",
+                "translation": "оскорбление",
+                "transcription": "[ди бе-ЛАЙ-ди-гунг]",
+                "sentence": "Jede Beleidigung spreche ich mit Genuss aus.",
+                "sentenceTranslation": "Каждое оскорбление я произношу с наслаждением."
             },
             {
-                word: 'die Respektlosigkeit',
-                translation: 'неуважение',
-                transcription: '[ди рес-ПЕКТ-ло-зиг-кайт]',
-                sentence: 'Meine Respektlosigkeit kennt keine Grenzen.',
-                sentenceTranslation: 'Моё неуважение не знает границ.'
+                "word": "die Respektlosigkeit",
+                "translation": "неуважение",
+                "transcription": "[ди рес-ПЕКТ-ло-зиг-кайт]",
+                "sentence": "Meine Respektlosigkeit kennt keine Grenzen.",
+                "sentenceTranslation": "Моё неуважение не знает границ."
             },
             {
-                word: 'die Feigheit',
-                translation: 'трусость',
-                transcription: '[ди ФАЙГ-хайт]',
-                sentence: 'Aus Feigheit greife ich nur Schwache an.',
-                sentenceTranslation: 'Из трусости я нападаю только на слабых.'
+                "word": "die Feigheit",
+                "translation": "трусость",
+                "transcription": "[ди ФАЙГ-хайт]",
+                "sentence": "Aus Feigheit greife ich nur Schwache an.",
+                "sentenceTranslation": "Из трусости я нападаю только на слабых."
             },
             {
-                word: 'beleidigen',
-                translation: 'оскорблять',
-                transcription: '[бе-ЛАЙ-ди-ген]',
-                sentence: 'Ich beleidige den alten König ohne Scham.',
-                sentenceTranslation: 'Я оскорбляю старого короля без стыда.'
+                "word": "beleidigen",
+                "translation": "оскорблять",
+                "transcription": "[бе-ЛАЙ-ди-ген]",
+                "sentence": "Ich beleidige den alten König ohne Scham.",
+                "sentenceTranslation": "Я оскорбляю старого короля без стыда."
             },
             {
-                word: 'verhöhnen',
-                translation: 'высмеивать',
-                transcription: '[фер-ХЁ-нен]',
-                sentence: 'Ich verhöhne seine königliche Würde.',
-                sentenceTranslation: 'Я высмеиваю его королевское достоинство.'
+                "word": "verhöhnen",
+                "translation": "высмеивать",
+                "transcription": "[фер-ХЁ-нен]",
+                "sentence": "Ich verhöhne seine königliche Würde.",
+                "sentenceTranslation": "Я высмеиваю его королевское достоинство."
             },
             {
-                word: 'frech',
-                translation: 'дерзкий',
-                transcription: '[ФРЕХ]',
-                sentence: 'Frech widerspreche ich dem alten Mann.',
-                sentenceTranslation: 'Дерзко я возражаю старику.'
+                "word": "frech",
+                "translation": "дерзкий",
+                "transcription": "[ФРЕХ]",
+                "sentence": "Frech widerspreche ich dem alten Mann.",
+                "sentenceTranslation": "Дерзко я возражаю старику."
             },
             {
-                word: 'missachten',
-                translation: 'пренебрегать',
-                transcription: '[МИС-ах-тен]',
-                sentence: 'Ich missachte seinen früheren Rang.',
-                sentenceTranslation: 'Я пренебрегаю его прежним рангом.'
+                "word": "missachten",
+                "translation": "пренебрегать",
+                "transcription": "[МИС-ах-тен]",
+                "sentence": "Ich missachte seinen früheren Rang.",
+                "sentenceTranslation": "Я пренебрегаю его прежним рангом."
             },
             {
-                word: 'feige',
-                translation: 'трусливый',
-                transcription: '[ФАЙ-ге]',
-                sentence: 'Feige verstecke ich mich hinter meiner Herrin.',
-                sentenceTranslation: 'Трусливо я прячусь за своей госпожой.'
-            },
+                "word": "feige",
+                "translation": "трусливый",
+                "transcription": "[ФАЙ-ге]",
+                "sentence": "Feige verstecke ich mich hinter meiner Herrin.",
+                "sentenceTranslation": "Трусливо я прячусь за своей госпожой."
+            }
         ]
     },
-    spy: {
-        title: 'Шпион',
-        description: 'Акт III: Шпионит за всеми',
-        words: [
+    "spy": {
+        "title": "Шпион",
+        "description": "Акт III: Шпионит за всеми",
+        "words": [
             {
-                word: 'der Spion',
-                translation: 'шпион',
-                transcription: '[дер шпи-ОН]',
-                sentence: 'Als Spion lausche ich an jeder Tür.',
-                sentenceTranslation: 'Как шпион я подслушиваю у каждой двери.'
+                "word": "der Spion",
+                "translation": "шпион",
+                "transcription": "[дер шпи-ОН]",
+                "sentence": "Als Spion lausche ich an jeder Tür.",
+                "sentenceTranslation": "Как шпион я подслушиваю у каждой двери."
             },
             {
-                word: 'der Verrat',
-                translation: 'предательство',
-                transcription: '[дер фер-РАТ]',
-                sentence: 'Der Verrat ist mein tägliches Geschäft.',
-                sentenceTranslation: 'Предательство - моё ежедневное дело.'
+                "word": "der Verrat",
+                "translation": "предательство",
+                "transcription": "[дер фер-РАТ]",
+                "sentence": "Der Verrat ist mein tägliches Geschäft.",
+                "sentenceTranslation": "Предательство - моё ежедневное дело."
             },
             {
-                word: 'die Heimlichkeit',
-                translation: 'скрытность',
-                transcription: '[ди ХАЙМ-лих-кайт]',
-                sentence: 'In Heimlichkeit sammle ich Informationen.',
-                sentenceTranslation: 'В скрытности я собираю информацию.'
+                "word": "die Heimlichkeit",
+                "translation": "скрытность",
+                "transcription": "[ди ХАЙМ-лих-кайт]",
+                "sentence": "In Heimlichkeit sammle ich Informationen.",
+                "sentenceTranslation": "В скрытности я собираю информацию."
             },
             {
-                word: 'spionieren',
-                translation: 'шпионить',
-                transcription: '[шпи-о-НИ-рен]',
-                sentence: 'Ich spioniere für meine böse Herrin.',
-                sentenceTranslation: 'Я шпионю для моей злой госпожи.'
+                "word": "spionieren",
+                "translation": "шпионить",
+                "transcription": "[шпи-о-НИ-рен]",
+                "sentence": "Ich spioniere für meine böse Herrin.",
+                "sentenceTranslation": "Я шпионю для моей злой госпожи."
             },
             {
-                word: 'lauschen',
-                translation: 'подслушивать',
-                transcription: '[ЛАУ-шен]',
-                sentence: 'Heimlich lausche ich allen Gesprächen.',
-                sentenceTranslation: 'Тайно я подслушиваю все разговоры.'
+                "word": "lauschen",
+                "translation": "подслушивать",
+                "transcription": "[ЛАУ-шен]",
+                "sentence": "Heimlich lausche ich allen Gesprächen.",
+                "sentenceTranslation": "Тайно я подслушиваю все разговоры."
             },
             {
-                word: 'verraten',
-                translation: 'выдавать',
-                transcription: '[фер-РА-тен]',
-                sentence: 'Ich verrate jeden an meine Herrin.',
-                sentenceTranslation: 'Я выдаю каждого своей госпоже.'
+                "word": "verraten",
+                "translation": "выдавать",
+                "transcription": "[фер-РА-тен]",
+                "sentence": "Ich verrate jeden an meine Herrin.",
+                "sentenceTranslation": "Я выдаю каждого своей госпоже."
             },
             {
-                word: 'schnüffeln',
-                translation: 'вынюхивать',
-                transcription: '[ШНЮФ-фельн]',
-                sentence: 'Überall schnüffle ich nach Geheimnissen.',
-                sentenceTranslation: 'Везде я вынюхиваю секреты.'
-            },
+                "word": "schnüffeln",
+                "translation": "вынюхивать",
+                "transcription": "[ШНЮФ-фельн]",
+                "sentence": "Überall schnüffle ich nach Geheimnissen.",
+                "sentenceTranslation": "Везде я вынюхиваю секреты."
+            }
         ]
     },
-    schemer: {
-        title: 'Интриган',
-        description: 'Акт IV: Плетёт интриги',
-        words: [
+    "schemer": {
+        "title": "Интриган",
+        "description": "Акт IV: Плетёт интриги",
+        "words": [
             {
-                word: 'die Intrige',
-                translation: 'интрига',
-                transcription: '[ди ин-ТРИ-ге]',
-                sentence: 'Jede Intrige spinne ich mit Freude.',
-                sentenceTranslation: 'Каждую интригу я плету с радостью.'
+                "word": "die Intrige",
+                "translation": "интрига",
+                "transcription": "[ди ин-ТРИ-ге]",
+                "sentence": "Jede Intrige spinne ich mit Freude.",
+                "sentenceTranslation": "Каждую интригу я плету с радостью."
             },
             {
-                word: 'der Plan',
-                translation: 'план',
-                transcription: '[дер ПЛАН]',
-                sentence: 'Mein hinterhältiger Plan wird funktionieren.',
-                sentenceTranslation: 'Мой коварный план сработает.'
+                "word": "der Plan",
+                "translation": "план",
+                "transcription": "[дер ПЛАН]",
+                "sentence": "Mein hinterhältiger Plan wird funktionieren.",
+                "sentenceTranslation": "Мой коварный план сработает."
             },
             {
-                word: 'die Hinterlist',
-                translation: 'коварство',
-                transcription: '[ди ХИН-тер-лист]',
-                sentence: 'Mit Hinterlist verfolge ich meine Ziele.',
-                sentenceTranslation: 'С коварством я преследую свои цели.'
+                "word": "die Hinterlist",
+                "translation": "коварство",
+                "transcription": "[ди ХИН-тер-лист]",
+                "sentence": "Mit Hinterlist verfolge ich meine Ziele.",
+                "sentenceTranslation": "С коварством я преследую свои цели."
             },
             {
-                word: 'schmieden',
-                translation: 'ковать',
-                transcription: '[ШМИ-ден]',
-                sentence: 'Ich schmiede Pläne gegen alle Feinde.',
-                sentenceTranslation: 'Я кую планы против всех врагов.'
+                "word": "schmieden",
+                "translation": "ковать",
+                "transcription": "[ШМИ-ден]",
+                "sentence": "Ich schmiede Pläne gegen alle Feinde.",
+                "sentenceTranslation": "Я кую планы против всех врагов."
             },
             {
-                word: 'hintergehen',
-                translation: 'обманывать',
-                transcription: '[ХИН-тер-ге-ен]',
-                sentence: 'Ich hintergehe jeden, der mir traut.',
-                sentenceTranslation: 'Я обманываю каждого, кто мне доверяет.'
+                "word": "hintergehen",
+                "translation": "обманывать",
+                "transcription": "[ХИН-тер-ге-ен]",
+                "sentence": "Ich hintergehe jeden, der mir traut.",
+                "sentenceTranslation": "Я обманываю каждого, кто мне доверяет."
             },
             {
-                word: 'tückisch',
-                translation: 'коварный',
-                transcription: '[ТЮ-киш]',
-                sentence: 'Tückisch plane ich meinen nächsten Schritt.',
-                sentenceTranslation: 'Коварно я планирую свой следующий шаг.'
+                "word": "tückisch",
+                "translation": "коварный",
+                "transcription": "[ТЮ-киш]",
+                "sentence": "Tückisch plane ich meinen nächsten Schritt.",
+                "sentenceTranslation": "Коварно я планирую свой следующий шаг."
             },
             {
-                word: 'verschlagen',
-                translation: 'хитрый',
-                transcription: '[фер-ШЛАГ-ен]',
-                sentence: 'Verschlagen verberge ich meine wahren Absichten.',
-                sentenceTranslation: 'Хитро я скрываю свои истинные намерения.'
+                "word": "verschlagen",
+                "translation": "хитрый",
+                "transcription": "[фер-ШЛАГ-ен]",
+                "sentence": "Verschlagen verberge ich meine wahren Absichten.",
+                "sentenceTranslation": "Хитро я скрываю свои истинные намерения."
             },
             {
-                word: 'die Falle',
-                translation: 'ловушка',
-                transcription: '[ди ФА-ле]',
-                sentence: 'Ich stelle Fallen für die Ahnungslosen.',
-                sentenceTranslation: 'Я ставлю ловушки для ничего не подозревающих.'
-            },
+                "word": "die Falle",
+                "translation": "ловушка",
+                "transcription": "[ди ФА-ле]",
+                "sentence": "Ich stelle Fallen für die Ahnungslosen.",
+                "sentenceTranslation": "Я ставлю ловушки для ничего не подозревающих."
+            }
         ]
     },
-    pursuer: {
-        title: 'Преследователь',
-        description: 'Акт IV: Преследует Глостера',
-        words: [
+    "pursuer": {
+        "title": "Преследователь",
+        "description": "Акт IV: Преследует Глостера",
+        "words": [
             {
-                word: 'die Verfolgung',
-                translation: 'преследование',
-                transcription: '[ди фер-ФОЛЬ-гунг]',
-                sentence: 'Die Verfolgung des blinden Grafen beginnt.',
-                sentenceTranslation: 'Преследование слепого графа начинается.'
+                "word": "die Verfolgung",
+                "translation": "преследование",
+                "transcription": "[ди фер-ФОЛЬ-гунг]",
+                "sentence": "Die Verfolgung des blinden Grafen beginnt.",
+                "sentenceTranslation": "Преследование слепого графа начинается."
             },
             {
-                word: 'die Jagd',
-                translation: 'охота',
-                transcription: '[ди ЯГДТ]',
-                sentence: 'Die Jagd auf Gloucester macht mir Spaß.',
-                sentenceTranslation: 'Охота на Глостера доставляет мне удовольствие.'
+                "word": "die Jagd",
+                "translation": "охота",
+                "transcription": "[ди ЯГДТ]",
+                "sentence": "Die Jagd auf Gloucester macht mir Spaß.",
+                "sentenceTranslation": "Охота на Глостера доставляет мне удовольствие."
             },
             {
-                word: 'verfolgen',
-                translation: 'преследовать',
-                transcription: '[фер-ФОЛЬ-ген]',
-                sentence: 'Gnadenlos verfolge ich den alten Mann.',
-                sentenceTranslation: 'Безжалостно я преследую старика.'
+                "word": "verfolgen",
+                "translation": "преследовать",
+                "transcription": "[фер-ФОЛЬ-ген]",
+                "sentence": "Gnadenlos verfolge ich den alten Mann.",
+                "sentenceTranslation": "Безжалостно я преследую старика."
             },
             {
-                word: 'jagen',
-                translation: 'гнаться',
-                transcription: '[Я-ген]',
-                sentence: 'Wie ein Hund jage ich meine Beute.',
-                sentenceTranslation: 'Как собака я гонюсь за добычей.'
+                "word": "jagen",
+                "translation": "гнаться",
+                "transcription": "[Я-ген]",
+                "sentence": "Wie ein Hund jage ich meine Beute.",
+                "sentenceTranslation": "Как собака я гонюсь за добычей."
             },
             {
-                word: 'aufspüren',
-                translation: 'выслеживать',
-                transcription: '[АУФ-шпю-рен]',
-                sentence: 'Ich spüre den Flüchtling überall auf.',
-                sentenceTranslation: 'Я выслеживаю беглеца повсюду.'
+                "word": "aufspüren",
+                "translation": "выслеживать",
+                "transcription": "[АУФ-шпю-рен]",
+                "sentence": "Ich spüre den Flüchtling überall auf.",
+                "sentenceTranslation": "Я выслеживаю беглеца повсюду."
             },
             {
-                word: 'hetzen',
-                translation: 'травить',
-                transcription: '[ХЕ-цен]',
-                sentence: 'Ich hetze ihn bis zum Ende.',
-                sentenceTranslation: 'Я травлю его до конца.'
+                "word": "hetzen",
+                "translation": "травить",
+                "transcription": "[ХЕ-цен]",
+                "sentence": "Ich hetze ihn bis zum Ende.",
+                "sentenceTranslation": "Я травлю его до конца."
             },
             {
-                word: 'die Beute',
-                translation: 'добыча',
-                transcription: '[ди БОЙ-те]',
-                sentence: 'Der Graf ist meine leichte Beute.',
-                sentenceTranslation: 'Граф - моя лёгкая добыча.'
-            },
+                "word": "die Beute",
+                "translation": "добыча",
+                "transcription": "[ди БОЙ-те]",
+                "sentence": "Der Graf ist meine leichte Beute.",
+                "sentenceTranslation": "Граф - моя лёгкая добыча."
+            }
         ]
     },
-    coward_death: {
-        title: 'Смерть труса',
-        description: 'Акт IV: Убит Эдгаром',
-        words: [
+    "coward_death": {
+        "title": "Смерть труса",
+        "description": "Акт IV: Убит Эдгаром",
+        "words": [
             {
-                word: 'der Tod',
-                translation: 'смерть',
-                transcription: '[дер ТОД]',
-                sentence: 'Der Tod ereilt mich durch Эдгars Hand.',
-                sentenceTranslation: 'Смерть настигает меня от руки Эдгара.'
+                "word": "der Tod",
+                "translation": "смерть",
+                "transcription": "[дер ТОД]",
+                "sentence": "Der Tod ereilt mich durch Эдгars Hand.",
+                "sentenceTranslation": "Смерть настигает меня от руки Эдгара."
             },
             {
-                word: 'die Feigheit',
-                translation: 'трусость',
-                transcription: '[ди ФАЙГ-хайт]',
-                sentence: 'Meine Feigheit führt zu meinem Ende.',
-                sentenceTranslation: 'Моя трусость приводит к моему концу.'
+                "word": "die Feigheit",
+                "translation": "трусость",
+                "transcription": "[ди ФАЙГ-хайт]",
+                "sentence": "Meine Feigheit führt zu meinem Ende.",
+                "sentenceTranslation": "Моя трусость приводит к моему концу."
             },
             {
-                word: 'die Niederlage',
-                translation: 'поражение',
-                transcription: '[ди НИ-дер-ла-ге]',
-                sentence: 'Die Niederlage ist mein letztes Schicksal.',
-                sentenceTranslation: 'Поражение - моя последняя судьба.'
+                "word": "die Niederlage",
+                "translation": "поражение",
+                "transcription": "[ди НИ-дер-ла-ге]",
+                "sentence": "Die Niederlage ist mein letztes Schicksal.",
+                "sentenceTranslation": "Поражение - моя последняя судьба."
             },
             {
-                word: 'fallen',
-                translation: 'падать',
-                transcription: '[ФА-лен]',
-                sentence: 'Ich falle wie der Feigling, der ich bin.',
-                sentenceTranslation: 'Я падаю как трус, которым являюсь.'
+                "word": "fallen",
+                "translation": "падать",
+                "transcription": "[ФА-лен]",
+                "sentence": "Ich falle wie der Feigling, der ich bin.",
+                "sentenceTranslation": "Я падаю как трус, которым являюсь."
             },
             {
-                word: 'unterliegen',
-                translation: 'проигрывать',
-                transcription: '[ун-тер-ЛИ-ген]',
-                sentence: 'Ich unterliege dem edlen Edgar.',
-                sentenceTranslation: 'Я проигрываю благородному Эдгару.'
+                "word": "unterliegen",
+                "translation": "проигрывать",
+                "transcription": "[ун-тер-ЛИ-ген]",
+                "sentence": "Ich unterliege dem edlen Edgar.",
+                "sentenceTranslation": "Я проигрываю благородному Эдгару."
             },
             {
-                word: 'wimmern',
-                translation: 'хныкать',
-                transcription: '[ВИМ-мерн]',
-                sentence: 'Wimmernd bitte ich um Gnade.',
-                sentenceTranslation: 'Хныкая, я прошу о пощаде.'
+                "word": "wimmern",
+                "translation": "хныкать",
+                "transcription": "[ВИМ-мерн]",
+                "sentence": "Wimmernd bitte ich um Gnade.",
+                "sentenceTranslation": "Хныкая, я прошу о пощаде."
             },
             {
-                word: 'betteln',
-                translation: 'умолять',
-                transcription: '[БЕ-тельн]',
-                sentence: 'Um mein Leben bettle ich vergeblich.',
-                sentenceTranslation: 'О жизни я умоляю напрасно.'
+                "word": "betteln",
+                "translation": "умолять",
+                "transcription": "[БЕ-тельн]",
+                "sentence": "Um mein Leben bettle ich vergeblich.",
+                "sentenceTranslation": "О жизни я умоляю напрасно."
             },
             {
-                word: 'erbärmlich',
-                translation: 'жалкий',
-                transcription: '[ер-БЕРМ-лих]',
-                sentence: 'Erbärmlich ende ich wie ich gelebt habe.',
-                sentenceTranslation: 'Жалко я заканчиваю, как и жил.'
-            },
+                "word": "erbärmlich",
+                "translation": "жалкий",
+                "transcription": "[ер-БЕРМ-лих]",
+                "sentence": "Erbärmlich ende ich wie ich gelebt habe.",
+                "sentenceTranslation": "Жалко я заканчиваю, как и жил."
+            }
         ]
-    },
+    }
 };
 
 

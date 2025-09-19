@@ -5,763 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Путешествие Короля Лира | König Lear</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        
-/* LIRA JOURNEY STYLES - Mobile Optimized */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-/* Prevent iOS zoom on input focus */
-input, select, textarea, button {
-    font-size: 16px !important;
-}
-
-/* Prevent text selection on mobile */
-.no-select {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-body {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
-    font-family: 'Inter', 'Segoe UI', sans-serif;
-    color: #333;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.page-header {
-    text-align: center;
-    color: white;
-    margin-bottom: 40px;
-    animation: fadeInDown 0.8s ease;
-}
-
-.page-header h1 {
-    font-size: 3em;
-    font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 1.2em;
-    opacity: 0.95;
-}
-
-.journey-section {
-    background: white;
-    border-radius: 20px;
-    padding: 40px;
-    margin-bottom: 40px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-}
-
-.journey-timeline {
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.journey-line {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.progress-line {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: drawLine 2s ease forwards;
-    animation-delay: 1s;
-}
-
-.journey-points {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    z-index: 2;
-    padding: 0 30px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-}
-
-.journey-point {
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    opacity: 0.7;
-    transform: scale(0.9);
-    /* Mobile touch optimizations */
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    user-select: none;
-    touch-action: manipulation;
-    min-width: 80px;
-    padding: 10px 5px;
-    position: relative;
-}
-
-.journey-point.active {
-    opacity: 1;
-    transform: scale(1);
-}
-
-/* Touch feedback for mobile */
-@media (hover: none) and (pointer: coarse) {
-    .journey-point {
-        min-width: 90px;
-    }
-    
-    .journey-point:active {
-        transform: scale(0.95);
-        opacity: 0.9;
-    }
-}
-
-.point-circle {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: white;
-    border: 3px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    margin: 0 auto 10px;
-    transition: all 0.3s ease;
-}
-
-.journey-point.active .point-circle {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    border-color: #667eea;
-    transform: scale(1.2);
-    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
-}
-
-.journey-point h4 {
-    font-size: 0.9em;
-    margin: 5px 0;
-    color: #333;
-}
-
-.journey-point p {
-    font-size: 0.75em;
-    color: #666;
-    display: none;
-}
-
-.journey-point.active p {
-    display: block;
-}
-
-.journey-progress {
-    margin-top: 20px;
-}
-
-.progress-track {
-    height: 8px;
-    background: #e0e0e0;
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.progress-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    transition: width 0.5s ease;
-}
-
-.progress-text {
-    text-align: center;
-    margin-top: 10px;
-    color: #666;
-    font-size: 0.9em;
-}
-
-.vocabulary-section {
-    background: white;
-    border-radius: 20px;
-    padding: 40px;
-    margin-bottom: 40px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-}
-
-.vocabulary-section h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-    text-align: center;
-    color: #333;
-}
-
-.vocabulary-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    margin-bottom: 30px;
-    min-height: 200px;
-}
-
-.word-card {
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-    border-radius: 15px;
-    padding: 20px;
-    text-align: center;
-    transition: all 0.3s ease;
-    animation: slideIn 0.4s ease;
-}
-
-.word-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
-.word-german {
-    font-size: 1.4em;
-    font-weight: 700;
-    color: #667eea;
-    margin-bottom: 8px;
-}
-
-.word-translation {
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 5px;
-}
-
-.word-transcription {
-    font-size: 0.9em;
-    color: #888;
-    font-style: italic;
-    margin-bottom: 15px;
-}
-
-.word-sentence {
-    margin-top: 15px;
-    padding-top: 15px;
-    border-top: 1px solid #e0e0e0;
-}
-
-.sentence-german {
-    font-size: 0.95em;
-    color: #444;
-    margin-bottom: 5px;
-    font-style: italic;
-}
-
-.sentence-translation {
-    font-size: 0.9em;
-    color: #666;
-}
-
-.phase-navigation {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-}
-
-.change-phase-btn {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
-    border: none;
-    padding: 16px 32px;
-    border-radius: 12px;
-    font-size: 1.1em;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-    /* Mobile optimizations */
-    -webkit-tap-highlight-color: transparent;
-    -webkit-appearance: none;
-    appearance: none;
-    touch-action: manipulation;
-    -webkit-user-select: none;
-    user-select: none;
-    min-height: 48px;
-    min-width: 160px;
-}
-
-.change-phase-btn:hover:not(:disabled) {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-}
-
-.change-phase-btn:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
-}
-
-.change-phase-btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    transform: none !important;
-}
-
-/* Touch device specific button styles */
-@media (hover: none) and (pointer: coarse) {
-    .change-phase-btn {
-        padding: 18px 36px;
-        font-size: 1.15em;
-        min-height: 56px;
-    }
-    
-    .change-phase-btn:hover {
-        transform: none;
-    }
-    
-    .change-phase-btn:active:not(:disabled) {
-        transform: scale(0.98);
-        opacity: 0.9;
-    }
-}
-
-.bottom-nav {
-    text-align: center;
-    margin-top: 40px;
-    padding-bottom: 20px;
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1em;
-    padding: 12px 24px;
-    border: 2px solid white;
-    border-radius: 8px;
-    display: inline-block;
-    transition: all 0.3s ease;
-    /* Mobile optimizations */
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
-    min-height: 48px;
-}
-
-.nav-link:hover {
-    background: white;
-    color: #667eea;
-}
-
-/* Mobile responsive styles */
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-    
-    .page-header h1 {
-        font-size: 2em;
-    }
-    
-    .subtitle {
-        font-size: 1em;
-    }
-    
-    .journey-section {
-        padding: 20px;
-        border-radius: 15px;
-    }
-    
-    .journey-points {
-        padding: 0 10px;
-        gap: 10px;
-    }
-    
-    .journey-point {
-        min-width: 70px;
-    }
-    
-    .point-circle {
-        width: 48px;
-        height: 48px;
-        font-size: 20px;
-    }
-    
-    .journey-point h4 {
-        font-size: 0.8em;
-    }
-    
-    .vocabulary-section {
-        padding: 20px;
-    }
-    
-    .vocabulary-section h2 {
-        font-size: 1.5em;
-    }
-    
-    .vocabulary-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-    
-    .word-card {
-        padding: 15px;
-    }
-    
-    .phase-navigation {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .change-phase-btn {
-        width: 90%;
-        max-width: 300px;
-    }
-}
-
-/* Small mobile devices */
-@media (max-width: 480px) {
-    .journey-points {
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        padding-bottom: 10px;
-    }
-    
-    .journey-point {
-        scroll-snap-align: center;
-        flex: 0 0 auto;
-    }
-    
-    /* Custom scrollbar for journey points */
-    .journey-points::-webkit-scrollbar {
-        height: 6px;
-    }
-    
-    .journey-points::-webkit-scrollbar-track {
-        background: #f1f1f1;
-        border-radius: 3px;
-    }
-    
-    .journey-points::-webkit-scrollbar-thumb {
-        background: #667eea;
-        border-radius: 3px;
-    }
-}
-
-/* iOS specific fixes */
-@supports (-webkit-touch-callout: none) {
-    /* iOS only styles */
-    button, .journey-point {
-        -webkit-tap-highlight-color: transparent;
-    }
-    
-    .change-phase-btn,
-    .show-answer-btn,
-    .nav-link {
-        -webkit-appearance: none;
-        appearance: none;
-    }
-    
-    /* Fix iOS button radius */
-    input[type="button"],
-    input[type="submit"] {
-        border-radius: 0;
-    }
-}
-
-/* Android specific optimizations */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-    .journey-points {
-        -webkit-overflow-scrolling: touch;
-    }
-}
-
-/* Animations */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes drawLine {
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-        
-        .theatrical-scene {
-            background: linear-gradient(135deg, #f6f8fb 0%, #e9ecf1 100%);
-            border: 1px solid rgba(102, 126, 234, 0.2);
-            padding: 35px;
-            border-radius: 20px;
-            margin: 30px 0;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.08), 0 2px 10px rgba(102, 126, 234, 0.1);
-            display: none;
-            animation: fadeIn 0.5s ease;
-        }
-        
-        .theatrical-scene.active {
-            display: block;
-        }
-        
-        .theatrical-scene::before {
-            content: 'ACT';
-            position: absolute;
-            font-size: 100px;
-            font-weight: 900;
-            opacity: 0.05;
-            right: -30px;
-            top: -30px;
-            transform: rotate(-15deg);
-        }
-        
-        .scene-title {
-            color: #2d3748;
-            font-size: 1.8em;
-            font-weight: 700;
-            margin-bottom: 25px;
-            text-align: center;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 15px;
-        }
-        
-        .scene-narrative {
-            color: #4a5568;
-            font-size: 1.15em;
-            line-height: 1.9;
-            margin-bottom: 25px;
-            text-align: justify;
-        }
-        
-        .scene-narrative b {
-            color: #667eea;
-            font-weight: 700;
-            background: linear-gradient(180deg, transparent 60%, rgba(102, 126, 234, 0.15) 60%);
-            padding: 0 2px;
-            transition: all 0.3s ease;
-        }
-        
-        .scene-narrative b:hover {
-            background: linear-gradient(180deg, transparent 40%, rgba(102, 126, 234, 0.25) 40%);
-            color: #5a67d8;
-        }
-        
-        .emotional-peak {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
-            padding: 25px;
-            border-radius: 15px;
-            border-left: 4px solid #667eea;
-            color: #2d3748;
-            font-size: 1.1em;
-            font-style: italic;
-            margin-top: 25px;
-            position: relative;
-            box-shadow: inset 0 2px 8px rgba(0,0,0,0.05);
-        }
-        
-        .emotional-peak::before {
-            content: '';
-            position: absolute;
-            left: -4px;
-            top: 0;
-            bottom: 0;
-            width: 4px;
-            background: linear-gradient(180deg, #667eea, #764ba2);
-            border-radius: 4px;
-        }
-        
-        /* Стили для упражнения */
-        .exercise-section {
-            background: linear-gradient(135deg, #fff9e6 0%, #fff4d6 100%);
-            border: 2px solid #f6ad55;
-            padding: 30px;
-            border-radius: 15px;
-            margin-top: 35px;
-            position: relative;
-        }
-        
-        .exercise-title {
-            color: #d97706;
-            font-size: 1.4em;
-            font-weight: 700;
-            margin-bottom: 20px;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        
-        .exercise-text {
-            color: #4a5568;
-            font-size: 1.1em;
-            line-height: 1.9;
-            text-align: justify;
-        }
-        
-        .exercise-text .blank {
-            display: inline-block;
-            min-width: 100px;
-            border-bottom: 2px solid #f6ad55;
-            margin: 0 4px;
-            color: #a0aec0;
-            font-style: italic;
-            font-size: 0.9em;
-            padding: 0 4px;
-            transition: all 0.3s ease;
-        }
-        
-        .exercise-container {
-            display: none;
-        }
-        
-        .exercise-container.active {
-            display: block;
-        }
-        
-        .exercises-container {
-            margin-top: 40px;
-        }
-        
-        .show-answer-btn {
-            background: linear-gradient(135deg, #f6ad55 0%, #ed8936 100%);
-            color: white;
-            border: none;
-            padding: 16px 32px;
-            border-radius: 12px;
-            font-size: 1.1em;
-            font-weight: 600;
-            cursor: pointer;
-            margin-top: 20px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(237, 137, 54, 0.3);
-            /* Mobile optimizations */
-            touch-action: manipulation;
-            -webkit-tap-highlight-color: transparent;
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            user-select: none;
-            min-height: 48px;
-            min-width: 160px;
-        }
-        
-        .show-answer-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(237, 137, 54, 0.4);
-        }
-        
-        .show-answer-btn:active {
-            transform: translateY(0);
-            box-shadow: 0 2px 8px rgba(237, 137, 54, 0.3);
-        }
-        
-        /* Touch device optimizations */
-        @media (hover: none) and (pointer: coarse) {
-            .show-answer-btn {
-                padding: 18px 36px;
-                font-size: 1.2em;
-                min-height: 56px;
-            }
-            
-            .show-answer-btn:hover {
-                transform: none;
-            }
-            
-            .show-answer-btn:active {
-                transform: scale(0.98);
-                opacity: 0.9;
-            }
-        }
-        
-        @keyframes fadeIn {
-            from { 
-                opacity: 0; 
-                transform: translateY(20px); 
-            }
-            to { 
-                opacity: 1; 
-                transform: translateY(0); 
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .theatrical-scene {
-                padding: 25px 20px;
-            }
-            
-            .scene-title {
-                font-size: 1.4em;
-            }
-            
-            .scene-narrative {
-                font-size: 1.05em;
-                text-align: left;
-            }
-            
-            .exercise-section {
-                padding: 20px;
-            }
-            
-            .exercise-text {
-                font-size: 1em;
-                line-height: 1.8;
-            }
-            
-            .exercise-text .blank {
-                min-width: 80px;
-                padding: 2px 6px;
-                margin: 2px;
-            }
-            
-            .show-answer-btn {
-                width: 90%;
-                max-width: 300px;
-                padding: 18px 24px;
-                font-size: 1.15em;
-            }
-        }
-        
-        /* iOS specific fixes */
-        @supports (-webkit-touch-callout: none) {
-            .show-answer-btn {
-                -webkit-appearance: none;
-                appearance: none;
-            }
-            
-            .exercise-text .blank {
-                -webkit-tap-highlight-color: transparent;
-            }
-        }
-        
-    </style>
+    <link rel="stylesheet" href="../static/css/journey.css">
 </head>
 <body>
     <div class="container">
@@ -769,56 +13,77 @@ body {
             <h1>👑 Путешествие Короля Лира</h1>
             <p class="subtitle">Изучаем немецкий через трагедию Шекспира</p>
         </header>
-        
+
         <div class="journey-section">
             <h2>📚 Путешествие König Lear</h2>
-            
+
             <div class="journey-timeline">
                 <svg class="journey-line" width="100%" height="4">
-                    <line x1="0" y1="2" x2="100%" y2="2" stroke="#6b5b95" stroke-width="2" opacity="0.3"/>
-                    <line x1="0" y1="2" x2="14%" y2="2" stroke="#6b5b95" stroke-width="3" class="progress-line"/>
+                    <line x1="0" y1="2" x2="100%" y2="2" stroke="#6b5b95" stroke-width="2" opacity="0.3" />
+                    <line x1="0" y1="2" x2="14%" y2="2" stroke="#6b5b95" stroke-width="3" class="progress-line" />
                 </svg>
-                
+
                 <div class="journey-points">
                     
-                <div class="journey-point active" data-phase="throne">
-                    <div class="point-circle">🏰</div>
-                    <h4>Тронный зал</h4>
-                    <p>Thron • König • Macht</p>
-                </div>
-                <div class="journey-point " data-phase="goneril">
-                    <div class="point-circle">🏛️</div>
-                    <h4>У Гонерильи</h4>
-                    <p>demütigen • reduzieren • Zorn</p>
-                </div>
-                <div class="journey-point " data-phase="regan">
-                    <div class="point-circle">🏠</div>
-                    <h4>У Реганы</h4>
-                    <p>verlassen • verstoßen • Verzweiflung</p>
-                </div>
-                <div class="journey-point " data-phase="storm">
-                    <div class="point-circle">⛈️</div>
-                    <h4>Буря</h4>
-                    <p>Wahnsinn • toben • Sturm</p>
-                </div>
-                <div class="journey-point " data-phase="hut">
-                    <div class="point-circle">🛖</div>
-                    <h4>Хижина</h4>
-                    <p>arm • Elend • Erkenntnis</p>
-                </div>
-                <div class="journey-point " data-phase="dover">
-                    <div class="point-circle">⛰️</div>
-                    <h4>Дувр</h4>
-                    <p>erkennen • verstehen • Weisheit</p>
-                </div>
-                <div class="journey-point " data-phase="prison">
-                    <div class="point-circle">🗝️</div>
-                    <h4>Тюрьма</h4>
-                    <p>verzeihen • sterben • Ende</p>
-                </div>
+                    <div class="journey-point active" data-phase="throne">
+                        <div class="point-circle">🏰</div>
+                        <h4>Тронный зал</h4>
+                        
+                        <p>Thron • König • Macht</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="goneril">
+                        <div class="point-circle">🏛️</div>
+                        <h4>У Гонерильи</h4>
+                        
+                        <p>demütigen • reduzieren • Zorn</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="regan">
+                        <div class="point-circle">🏠</div>
+                        <h4>У Реганы</h4>
+                        
+                        <p>verlassen • verstoßen • Verzweiflung</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="storm">
+                        <div class="point-circle">⛈️</div>
+                        <h4>Буря</h4>
+                        
+                        <p>Wahnsinn • toben • Sturm</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="hut">
+                        <div class="point-circle">🛖</div>
+                        <h4>Хижина</h4>
+                        
+                        <p>arm • Elend • Erkenntnis</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="dover">
+                        <div class="point-circle">⛰️</div>
+                        <h4>Дувр</h4>
+                        
+                        <p>erkennen • verstehen • Weisheit</p>
+                        
+                    </div>
+                    
+                    <div class="journey-point" data-phase="prison">
+                        <div class="point-circle">🗝️</div>
+                        <h4>Тюрьма</h4>
+                        
+                        <p>verzeihen • sterben • Ende</p>
+                        
+                    </div>
+                    
                 </div>
             </div>
-            
+
             <div class="journey-progress">
                 <div class="progress-track">
                     <div class="progress-fill" style="width: 14%"></div>
@@ -826,551 +91,565 @@ body {
                 <div class="progress-text">Акт I: Разделение королевства</div>
             </div>
         </div>
+
         
-        <!-- Theatrical Scene Section -->
         <div class="theatrical-scenes">
             
-                <div class="theatrical-scene active" data-phase="throne">
-                    <h3 class="scene-title">РОКОВОЕ РЕШЕНИЕ В ТРОННОМ ЗАЛЕ</h3>
-                    <div class="scene-narrative">Великолепный <b>PRÄCHTIGER (великолепный)</b> тронный зал. Я восседаю на <b>THRON (троне)</b>, моя <b>KRONE (корона)</b> сверкает в свете факелов. Весь двор собрался на <b>ZEREMONIE (церемонию)</b>. «Мы стары», - <b>VERKÜNDE (провозглашаю)</b> я. «Пора разделить наше <b>KÖNIGREICH (королевство)</b> и передать <b>MACHT (власть)</b> молодым, чтобы они могли <b>HERRSCHEN (править)</b>». Я разворачиваю карту королевства. «Но сначала - испытание! Та из дочерей, что любит нас больше всех, получит лучшую часть!»</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: Момент, когда я поднимаю скипетр! «Скажите, дочери мои, которая из вас любит нас больше всех?» Тронный зал замирает в ожидании. Роковое испытание начинается!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="goneril">
-                    <h3 class="scene-title">ПЕРВОЕ ПРЕДАТЕЛЬСТВО</h3>
-                    <div class="scene-narrative">В доме старшей дочери я узнаю горький вкус <b>UNDANKBARKEIT (неблагодарности)</b>. Гонерилья хочет меня <b>DEMÜTIGEN (унизить)</b>, отобрать мою свиту! «Старик безумный», - слышу я шёпот слуг. Мой <b>ZORN (гнев)</b> пылает как пожар! Я <b>VERFLUCHE (проклинаю)</b> её: «Пусть ты останешься бездетной, змея!» Она хочет <b>VERTREIBEN (изгнать)</b> меня из дома, который я ей подарил! Эта <b>KRÄNKUNG (обида)</b> жжёт сильнее огня. Я покидаю её дом с <b>FLUCH (проклятием)</b> на устах.</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Неблагодарная!» - мой крик сотрясает стены. «Ты - болезнь, язва на моём сердце! Я отрекаюсь от тебя!» Моё проклятие эхом отдаётся в залах!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="regan">
-                    <h3 class="scene-title">ДВОЙНОЕ ПРЕДАТЕЛЬСТВО</h3>
-                    <div class="scene-narrative">У ворот замка Реганы - позор! Моего слугу Кента заковали в колодки! Регана с Гонерильей сговорились <b>VERSTOSSEN (отвергнуть)</b> меня. «Зачем тебе хоть один слуга?» - их <b>GRAUSAMKEIT (жестокость)</b> режет как нож. Я <b>BETTLE (прошу)</b> - я, король! - прошу крова у собственных детей! <b>VERZWEIFLUNG (отчаяние)</b> сжимает горло. «Вы думаете, я буду плакать? Нет, я найду такую месть...» <b>EINSAMKEIT (одиночество)</b> окутывает меня как саван. Ни одной <b>TRÄNE (слезы)</b> не пролью перед ними! В моей <b>NOT (нужде)</b> они видят только обузу.</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Я дал вам всё!» - кричу я в лицо дочерям. «А вы отнимаете у меня последнее - достоинство!» Гром гремит, словно небеса разделяют мой гнев!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="storm">
-                    <h3 class="scene-title">БЕЗУМИЕ В БУРЕ</h3>
-                    <div class="scene-narrative"><b>STURM (буря)</b> снаружи и буря внутри! Я <b>SCHREIE (кричу)</b> в небеса: «Дуйте, ветры! Лейтесь, ливни!» <b>DONNER (гром)</b> - мой собеседник, <b>BLITZ (молния)</b> - мой факел! Пусть <b>TOBEN (бушуют)</b> все стихии! Я срываю одежды - <b>NACKT (голый)</b> я пришёл в мир, голым встречу <b>WAHNSINN (безумие)</b>! «Человек - всего лишь бедное голое животное!» <b>CHAOS (хаос)</b> в природе милосерднее, чем жестокость дочерей! Мой разум трещит как корабль в шторме!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Я - король бури!» - реву я в черное небо. «Молнии, сожгите мою седую голову! Я не прошу пощады ни у неба, ни у ада!» Безумие становится моей короной!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="hut">
-                    <h3 class="scene-title">ПРОЗРЕНИЕ В НИЩЕТЕ</h3>
-                    <div class="scene-narrative">В убогой <b>HÜTTE (хижине)</b> я встречаю настоящее <b>ELEND (нищету)</b>. Бедный Том - <b>BETTLER (нищий)</b> в лохмотьях - учит меня истине. «Человек без одежд, без замков - вот истинный человек!» Мы все <b>ARM (бедны)</b> перед лицом судьбы. Мы <b>FRIEREN (мёрзнем)</b> не от холода, а от жестокости мира. Я вижу, как <b>LEIDEN (страдают)</b> те, кого я никогда не замечал на троне. Мой верный <b>NARR (шут)</b> смеётся сквозь слёзы: «Тот, кто имел всё и потерял, мудрее того, кто никогда не имел». <b>ERKENNTNIS (познание)</b> приходит через боль.</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Бедный Том мудрее короля!» - восклицаю я, глядя на нищего. «Я был слеп на троне! Только потеряв всё, я начинаю видеть!» Слёзы прозрения текут по моим щекам!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="dover">
-                    <h3 class="scene-title">ВСТРЕЧА С ИСТИННОЙ ЛЮБОВЬЮ</h3>
-                    <div class="scene-narrative">На скалах Дувра я <b>ERKENNE (узнаю)</b> ангела - мою Корделию! Теперь я <b>VERSTEHE (понимаю)</b>: только она говорила <b>WAHRHEIT (правду)</b>. «Прости глупого старика!» - моя <b>REUE (раскаяние)</b> жжёт душу. Слишком поздно приходит <b>WEISHEIT (мудрость)</b>. «Можешь ли <b>VERGEBEN (простить)</b> отца, который был слеп?» Моя <b>EINSICHT (прозрение)</b> пришло ценой королевства. Я <b>SCHULDIG (виновен)</b> - я отверг истинную любовь ради лести! «Не плачь, дитя. Твои слёзы жгут мою душу сильнее адского пламени!»</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Корделия!» - падаю на колени перед дочерью. «Ты - моё искупление! Если ты не простишь меня, пусть боги покарают меня вечными муками!» Мы обнимаемся, плача!</div>
-                </div>
-                <div class="theatrical-scene " data-phase="prison">
-                    <h3 class="scene-title">ПОСЛЕДНЕЕ ПРОЩАНИЕ</h3>
-                    <div class="scene-narrative">В темнице с Корделией - рай после ада! «Мы будем петь как птицы в клетке, <b>VERZEIHEN (прощать)</b> друг друга каждый день». Но судьба жестока - моё дитя мертво! «Нет, нет, нет жизни!» <b>TOD (смерть)</b> забрал мой свет! Я готов <b>STERBEN (умереть)</b> - моё <b>HERZ (сердце)</b> разбито. «Смотрите, её губы... она дышит?» - последняя иллюзия перед <b>ENDE (концом)</b>. <b>TRAUER (скорбь)</b> разрывает душу. Наш <b>ABSCHIED (прощание)</b> - не в этом мире, а в следующем. Наша любовь <b>EWIG (вечна)</b>, даже смерть не разлучит нас!</div>
-                    <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Корделия, Корделия!» - держу мёртвую дочь на руках. «Почему собака, лошадь, крыса живы, а ты не дышишь? Никогда, никогда, никогда!» Моё сердце разрывается, я падаю рядом с ней!</div>
-                </div>
+            <div class="theatrical-scene active" data-phase="throne">
+                <h3 class="scene-title">РОКОВОЕ РЕШЕНИЕ В ТРОННОМ ЗАЛЕ</h3>
+                <div class="scene-narrative">Великолепный <b>PRÄCHTIGER (великолепный)</b> тронный зал. Я восседаю на <b>THRON (троне)</b>, моя <b>KRONE (корона)</b> сверкает в свете факелов. Весь двор собрался на <b>ZEREMONIE (церемонию)</b>. «Мы стары», - <b>VERKÜNDE (провозглашаю)</b> я. «Пора разделить наше <b>KÖNIGREICH (королевство)</b> и передать <b>MACHT (власть)</b> молодым, чтобы они могли <b>HERRSCHEN (править)</b>». Я разворачиваю карту королевства. «Но сначала - испытание! Та из дочерей, что любит нас больше всех, получит лучшую часть!»</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: Момент, когда я поднимаю скипетр! «Скажите, дочери мои, которая из вас любит нас больше всех?» Тронный зал замирает в ожидании. Роковое испытание начинается!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="goneril">
+                <h3 class="scene-title">ПЕРВОЕ ПРЕДАТЕЛЬСТВО</h3>
+                <div class="scene-narrative">В доме старшей дочери я узнаю горький вкус <b>UNDANKBARKEIT (неблагодарности)</b>. Гонерилья хочет меня <b>DEMÜTIGEN (унизить)</b>, отобрать мою свиту! «Старик безумный», - слышу я шёпот слуг. Мой <b>ZORN (гнев)</b> пылает как пожар! Я <b>VERFLUCHE (проклинаю)</b> её: «Пусть ты останешься бездетной, змея!» Она хочет <b>VERTREIBEN (изгнать)</b> меня из дома, который я ей подарил! Эта <b>KRÄNKUNG (обида)</b> жжёт сильнее огня. Я покидаю её дом с <b>FLUCH (проклятием)</b> на устах.</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Неблагодарная!» - мой крик сотрясает стены. «Ты - болезнь, язва на моём сердце! Я отрекаюсь от тебя!» Моё проклятие эхом отдаётся в залах!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="regan">
+                <h3 class="scene-title">ДВОЙНОЕ ПРЕДАТЕЛЬСТВО</h3>
+                <div class="scene-narrative">У ворот замка Реганы - позор! Моего слугу Кента заковали в колодки! Регана с Гонерильей сговорились <b>VERSTOSSEN (отвергнуть)</b> меня. «Зачем тебе хоть один слуга?» - их <b>GRAUSAMKEIT (жестокость)</b> режет как нож. Я <b>BETTLE (прошу)</b> - я, король! - прошу крова у собственных детей! <b>VERZWEIFLUNG (отчаяние)</b> сжимает горло. «Вы думаете, я буду плакать? Нет, я найду такую месть...» <b>EINSAMKEIT (одиночество)</b> окутывает меня как саван. Ни одной <b>TRÄNE (слезы)</b> не пролью перед ними! В моей <b>NOT (нужде)</b> они видят только обузу.</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Я дал вам всё!» - кричу я в лицо дочерям. «А вы отнимаете у меня последнее - достоинство!» Гром гремит, словно небеса разделяют мой гнев!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="storm">
+                <h3 class="scene-title">БЕЗУМИЕ В БУРЕ</h3>
+                <div class="scene-narrative"><b>STURM (буря)</b> снаружи и буря внутри! Я <b>SCHREIE (кричу)</b> в небеса: «Дуйте, ветры! Лейтесь, ливни!» <b>DONNER (гром)</b> - мой собеседник, <b>BLITZ (молния)</b> - мой факел! Пусть <b>TOBEN (бушуют)</b> все стихии! Я срываю одежды - <b>NACKT (голый)</b> я пришёл в мир, голым встречу <b>WAHNSINN (безумие)</b>! «Человек - всего лишь бедное голое животное!» <b>CHAOS (хаос)</b> в природе милосерднее, чем жестокость дочерей! Мой разум трещит как корабль в шторме!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Я - король бури!» - реву я в черное небо. «Молнии, сожгите мою седую голову! Я не прошу пощады ни у неба, ни у ада!» Безумие становится моей короной!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="hut">
+                <h3 class="scene-title">ПРОЗРЕНИЕ В НИЩЕТЕ</h3>
+                <div class="scene-narrative">В убогой <b>HÜTTE (хижине)</b> я встречаю настоящее <b>ELEND (нищету)</b>. Бедный Том - <b>BETTLER (нищий)</b> в лохмотьях - учит меня истине. «Человек без одежд, без замков - вот истинный человек!» Мы все <b>ARM (бедны)</b> перед лицом судьбы. Мы <b>FRIEREN (мёрзнем)</b> не от холода, а от жестокости мира. Я вижу, как <b>LEIDEN (страдают)</b> те, кого я никогда не замечал на троне. Мой верный <b>NARR (шут)</b> смеётся сквозь слёзы: «Тот, кто имел всё и потерял, мудрее того, кто никогда не имел». <b>ERKENNTNIS (познание)</b> приходит через боль.</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Бедный Том мудрее короля!» - восклицаю я, глядя на нищего. «Я был слеп на троне! Только потеряв всё, я начинаю видеть!» Слёзы прозрения текут по моим щекам!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="dover">
+                <h3 class="scene-title">ВСТРЕЧА С ИСТИННОЙ ЛЮБОВЬЮ</h3>
+                <div class="scene-narrative">На скалах Дувра я <b>ERKENNE (узнаю)</b> ангела - мою Корделию! Теперь я <b>VERSTEHE (понимаю)</b>: только она говорила <b>WAHRHEIT (правду)</b>. «Прости глупого старика!» - моя <b>REUE (раскаяние)</b> жжёт душу. Слишком поздно приходит <b>WEISHEIT (мудрость)</b>. «Можешь ли <b>VERGEBEN (простить)</b> отца, который был слеп?» Моя <b>EINSICHT (прозрение)</b> пришло ценой королевства. Я <b>SCHULDIG (виновен)</b> - я отверг истинную любовь ради лести! «Не плачь, дитя. Твои слёзы жгут мою душу сильнее адского пламени!»</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Корделия!» - падаю на колени перед дочерью. «Ты - моё искупление! Если ты не простишь меня, пусть боги покарают меня вечными муками!» Мы обнимаемся, плача!</div>
+            </div>
+            
+            <div class="theatrical-scene" data-phase="prison">
+                <h3 class="scene-title">ПОСЛЕДНЕЕ ПРОЩАНИЕ</h3>
+                <div class="scene-narrative">В темнице с Корделией - рай после ада! «Мы будем петь как птицы в клетке, <b>VERZEIHEN (прощать)</b> друг друга каждый день». Но судьба жестока - моё дитя мертво! «Нет, нет, нет жизни!» <b>TOD (смерть)</b> забрал мой свет! Я готов <b>STERBEN (умереть)</b> - моё <b>HERZ (сердце)</b> разбито. «Смотрите, её губы... она дышит?» - последняя иллюзия перед <b>ENDE (концом)</b>. <b>TRAUER (скорбь)</b> разрывает душу. Наш <b>ABSCHIED (прощание)</b> - не в этом мире, а в следующем. Наша любовь <b>EWIG (вечна)</b>, даже смерть не разлучит нас!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Корделия, Корделия!» - держу мёртвую дочь на руках. «Почему собака, лошадь, крыса живы, а ты не дышишь? Никогда, никогда, никогда!» Моё сердце разрывается, я падаю рядом с ней!</div>
+            </div>
+            
         </div>
         
+
         <div class="vocabulary-section">
             <h2>📖 Словарь: Фаза "<span id="current-phase">Тронный зал</span>"</h2>
             <div class="vocabulary-grid"></div>
-            
+
             <div class="phase-navigation">
-                <button class="change-phase-btn prev-btn">← Предыдущая фаза</button>
-                <button class="change-phase-btn next-btn">Следующая фаза →</button>
+                <button class="change-phase-btn prev-btn" type="button">← Предыдущая фаза</button>
+                <button class="change-phase-btn next-btn" type="button">Следующая фаза →</button>
             </div>
         </div>
-        
-        <!-- Exercises Section AFTER Vocabulary -->
+
         <div class="exercises-container">
             
-                    <div class="exercise-container active" data-phase="throne">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: РОКОВОЕ РЕШЕНИЕ В ТРОННОМ ЗАЛЕ</h4>
-                            <div class="exercise-text">Великолепный <span class="blank" data-answer="PRÄCHTIG" data-hint="великолепный">_______ (великолепный)</span> тронный зал. Я восседаю на <span class="blank" data-answer="der THRON" data-hint="троне">_______ (троне)</span>, моя <span class="blank" data-answer="die KRONE" data-hint="корона">_______ (корона)</span> сверкает в свете факелов. Весь двор собрался на <span class="blank" data-answer="die ZEREMONIE" data-hint="церемонию">_______ (церемонию)</span>. «Мы стары», - <span class="blank" data-answer="VERKÜNDE" data-hint="провозглашаю">_______ (провозглашаю)</span> я. «Пора разделить наше <span class="blank" data-answer="das KÖNIGREICH" data-hint="королевство">_______ (королевство)</span> и передать <span class="blank" data-answer="die MACHT" data-hint="власть">_______ (власть)</span> молодым, чтобы они могли <span class="blank" data-answer="HERRSCHEN" data-hint="править">_______ (править)</span>». Я разворачиваю карту королевства. «Но сначала - испытание! Та из дочерей, что любит нас больше всех, получит лучшую часть!»</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="goneril">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: ПЕРВОЕ ПРЕДАТЕЛЬСТВО</h4>
-                            <div class="exercise-text">В доме старшей дочери я узнаю горький вкус <span class="blank" data-answer="UNDANKBARKEIT" data-hint="неблагодарности">_______ (неблагодарности)</span>. Гонерилья хочет меня <span class="blank" data-answer="DEMÜTIGEN" data-hint="унизить">_______ (унизить)</span>, отобрать мою свиту! «Старик безумный», - слышу я шёпот слуг. Мой <span class="blank" data-answer="der ZORN" data-hint="гнев">_______ (гнев)</span> пылает как пожар! Я <span class="blank" data-answer="VERFLUCHE" data-hint="проклинаю">_______ (проклинаю)</span> её: «Пусть ты останешься бездетной, змея!» Она хочет <span class="blank" data-answer="VERTREIBEN" data-hint="изгнать">_______ (изгнать)</span> меня из дома, который я ей подарил! Эта <span class="blank" data-answer="die KRÄNKUNG" data-hint="обида">_______ (обида)</span> жжёт сильнее огня. Я покидаю её дом с <span class="blank" data-answer="der FLUCH" data-hint="проклятием">_______ (проклятием)</span> на устах.</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="regan">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: ДВОЙНОЕ ПРЕДАТЕЛЬСТВО</h4>
-                            <div class="exercise-text">У ворот замка Реганы - позор! Моего слугу Кента заковали в колодки! Регана с Гонерильей сговорились <span class="blank" data-answer="VERSTOSSEN" data-hint="отвергнуть">_______ (отвергнуть)</span> меня. «Зачем тебе хоть один слуга?» - их <span class="blank" data-answer="die GRAUSAMKEIT" data-hint="жестокость">_______ (жестокость)</span> режет как нож. Я <span class="blank" data-answer="BETTLE" data-hint="прошу">_______ (прошу)</span> - я, король! - прошу крова у собственных детей! <span class="blank" data-answer="die VERZWEIFLUNG" data-hint="отчаяние">_______ (отчаяние)</span> сжимает горло. «Вы думаете, я буду плакать? Нет, я найду такую месть...» <span class="blank" data-answer="die EINSAMKEIT" data-hint="одиночество">_______ (одиночество)</span> окутывает меня как саван. Ни одной <span class="blank" data-answer="die TRÄNE" data-hint="слезы">_______ (слезы)</span> не пролью перед ними! В моей <span class="blank" data-answer="die NOT" data-hint="нужде">_______ (нужде)</span> они видят только обузу.</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="storm">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: БЕЗУМИЕ В БУРЕ</h4>
-                            <div class="exercise-text"><span class="blank" data-answer="der STURM" data-hint="буря">_______ (буря)</span> снаружи и буря внутри! Я <span class="blank" data-answer="SCHREIE" data-hint="кричу">_______ (кричу)</span> в небеса: «Дуйте, ветры! Лейтесь, ливни!» <span class="blank" data-answer="der DONNER" data-hint="гром">_______ (гром)</span> - мой собеседник, <span class="blank" data-answer="der BLITZ" data-hint="молния">_______ (молния)</span> - мой факел! Пусть <span class="blank" data-answer="TOBEN" data-hint="бушуют">_______ (бушуют)</span> все стихии! Я срываю одежды - <span class="blank" data-answer="NACKT" data-hint="голый">_______ (голый)</span> я пришёл в мир, голым встречу <span class="blank" data-answer="der WAHNSINN" data-hint="безумие">_______ (безумие)</span>! «Человек - всего лишь бедное голое животное!» <span class="blank" data-answer="das CHAOS" data-hint="хаос">_______ (хаос)</span> в природе милосерднее, чем жестокость дочерей! Мой разум трещит как корабль в шторме!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="hut">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: ПРОЗРЕНИЕ В НИЩЕТЕ</h4>
-                            <div class="exercise-text">В убогой <span class="blank" data-answer="die HÜTTE" data-hint="хижине">_______ (хижине)</span> я встречаю настоящее <span class="blank" data-answer="das ELEND" data-hint="нищету">_______ (нищету)</span>. Бедный Том - <span class="blank" data-answer="der BETTLER" data-hint="нищий">_______ (нищий)</span> в лохмотьях - учит меня истине. «Человек без одежд, без замков - вот истинный человек!» Мы все <span class="blank" data-answer="ARM" data-hint="бедны">_______ (бедны)</span> перед лицом судьбы. Мы <span class="blank" data-answer="FRIEREN" data-hint="мёрзнем">_______ (мёрзнем)</span> не от холода, а от жестокости мира. Я вижу, как <span class="blank" data-answer="LEIDEN" data-hint="страдают">_______ (страдают)</span> те, кого я никогда не замечал на троне. Мой верный <span class="blank" data-answer="der NARR" data-hint="шут">_______ (шут)</span> смеётся сквозь слёзы: «Тот, кто имел всё и потерял, мудрее того, кто никогда не имел». <span class="blank" data-answer="die ERKENNTNIS" data-hint="познание">_______ (познание)</span> приходит через боль.</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="dover">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: ВСТРЕЧА С ИСТИННОЙ ЛЮБОВЬЮ</h4>
-                            <div class="exercise-text">На скалах Дувра я <span class="blank" data-answer="ERKENNE" data-hint="узнаю">_______ (узнаю)</span> ангела - мою Корделию! Теперь я <span class="blank" data-answer="VERSTEHE" data-hint="понимаю">_______ (понимаю)</span>: только она говорила <span class="blank" data-answer="die WAHRHEIT" data-hint="правду">_______ (правду)</span>. «Прости глупого старика!» - моя <span class="blank" data-answer="die REUE" data-hint="раскаяние">_______ (раскаяние)</span> жжёт душу. Слишком поздно приходит <span class="blank" data-answer="die WEISHEIT" data-hint="мудрость">_______ (мудрость)</span>. «Можешь ли <span class="blank" data-answer="VERGEBEN" data-hint="простить">_______ (простить)</span> отца, который был слеп?» Моя <span class="blank" data-answer="die EINSICHT" data-hint="прозрение">_______ (прозрение)</span> пришло ценой королевства. Я <span class="blank" data-answer="SCHULDIG" data-hint="виновен">_______ (виновен)</span> - я отверг истинную любовь ради лести! «Не плачь, дитя. Твои слёзы жгут мою душу сильнее адского пламени!»</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
-                    <div class="exercise-container " data-phase="prison">
-                        <div class="exercise-section">
-                            <h4 class="exercise-title">📝 Упражнение: ПОСЛЕДНЕЕ ПРОЩАНИЕ</h4>
-                            <div class="exercise-text">В темнице с Корделией - рай после ада! «Мы будем петь как птицы в клетке, <span class="blank" data-answer="VERZEIHEN" data-hint="прощать">_______ (прощать)</span> друг друга каждый день». Но судьба жестока - моё дитя мертво! «Нет, нет, нет жизни!» <span class="blank" data-answer="der TOD" data-hint="смерть">_______ (смерть)</span> забрал мой свет! Я готов <span class="blank" data-answer="STERBEN" data-hint="умереть">_______ (умереть)</span> - моё <span class="blank" data-answer="das HERZ" data-hint="сердце">_______ (сердце)</span> разбито. «Смотрите, её губы... она дышит?» - последняя иллюзия перед <span class="blank" data-answer="das ENDE" data-hint="концом">_______ (концом)</span>. <span class="blank" data-answer="die TRAUER" data-hint="скорбь">_______ (скорбь)</span> разрывает душу. Наш <span class="blank" data-answer="der ABSCHIED" data-hint="прощание">_______ (прощание)</span> - не в этом мире, а в следующем. Наша любовь <span class="blank" data-answer="EWIG" data-hint="вечна">_______ (вечна)</span>, даже смерть не разлучит нас!</div>
-                            <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                        </div>
-                    </div>
+            <div class="exercise-container active" data-phase="throne">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: РОКОВОЕ РЕШЕНИЕ В ТРОННОМ ЗАЛЕ</h4>
+                    <div class="exercise-text">Великолепный <span class="blank" data-answer="PRÄCHTIG" data-hint="великолепный">_______ (великолепный)</span> тронный зал. Я восседаю на <span class="blank" data-answer="der THRON" data-hint="троне">_______ (троне)</span>, моя <span class="blank" data-answer="die KRONE" data-hint="корона">_______ (корона)</span> сверкает в свете факелов. Весь двор собрался на <span class="blank" data-answer="die ZEREMONIE" data-hint="церемонию">_______ (церемонию)</span>. «Мы стары», - <span class="blank" data-answer="VERKÜNDE" data-hint="провозглашаю">_______ (провозглашаю)</span> я. «Пора разделить наше <span class="blank" data-answer="das KÖNIGREICH" data-hint="королевство">_______ (королевство)</span> и передать <span class="blank" data-answer="die MACHT" data-hint="власть">_______ (власть)</span> молодым, чтобы они могли <span class="blank" data-answer="HERRSCHEN" data-hint="править">_______ (править)</span>». Я разворачиваю карту королевства. «Но сначала - испытание! Та из дочерей, что любит нас больше всех, получит лучшую часть!»</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="goneril">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ПЕРВОЕ ПРЕДАТЕЛЬСТВО</h4>
+                    <div class="exercise-text">В доме старшей дочери я узнаю горький вкус <span class="blank" data-answer="UNDANKBARKEIT" data-hint="неблагодарности">_______ (неблагодарности)</span>. Гонерилья хочет меня <span class="blank" data-answer="DEMÜTIGEN" data-hint="унизить">_______ (унизить)</span>, отобрать мою свиту! «Старик безумный», - слышу я шёпот слуг. Мой <span class="blank" data-answer="der ZORN" data-hint="гнев">_______ (гнев)</span> пылает как пожар! Я <span class="blank" data-answer="VERFLUCHE" data-hint="проклинаю">_______ (проклинаю)</span> её: «Пусть ты останешься бездетной, змея!» Она хочет <span class="blank" data-answer="VERTREIBEN" data-hint="изгнать">_______ (изгнать)</span> меня из дома, который я ей подарил! Эта <span class="blank" data-answer="die KRÄNKUNG" data-hint="обида">_______ (обида)</span> жжёт сильнее огня. Я покидаю её дом с <span class="blank" data-answer="der FLUCH" data-hint="проклятием">_______ (проклятием)</span> на устах.</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="regan">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ДВОЙНОЕ ПРЕДАТЕЛЬСТВО</h4>
+                    <div class="exercise-text">У ворот замка Реганы - позор! Моего слугу Кента заковали в колодки! Регана с Гонерильей сговорились <span class="blank" data-answer="VERSTOSSEN" data-hint="отвергнуть">_______ (отвергнуть)</span> меня. «Зачем тебе хоть один слуга?» - их <span class="blank" data-answer="die GRAUSAMKEIT" data-hint="жестокость">_______ (жестокость)</span> режет как нож. Я <span class="blank" data-answer="BETTLE" data-hint="прошу">_______ (прошу)</span> - я, король! - прошу крова у собственных детей! <span class="blank" data-answer="die VERZWEIFLUNG" data-hint="отчаяние">_______ (отчаяние)</span> сжимает горло. «Вы думаете, я буду плакать? Нет, я найду такую месть...» <span class="blank" data-answer="die EINSAMKEIT" data-hint="одиночество">_______ (одиночество)</span> окутывает меня как саван. Ни одной <span class="blank" data-answer="die TRÄNE" data-hint="слезы">_______ (слезы)</span> не пролью перед ними! В моей <span class="blank" data-answer="die NOT" data-hint="нужде">_______ (нужде)</span> они видят только обузу.</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="storm">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: БЕЗУМИЕ В БУРЕ</h4>
+                    <div class="exercise-text"><span class="blank" data-answer="der STURM" data-hint="буря">_______ (буря)</span> снаружи и буря внутри! Я <span class="blank" data-answer="SCHREIE" data-hint="кричу">_______ (кричу)</span> в небеса: «Дуйте, ветры! Лейтесь, ливни!» <span class="blank" data-answer="der DONNER" data-hint="гром">_______ (гром)</span> - мой собеседник, <span class="blank" data-answer="der BLITZ" data-hint="молния">_______ (молния)</span> - мой факел! Пусть <span class="blank" data-answer="TOBEN" data-hint="бушуют">_______ (бушуют)</span> все стихии! Я срываю одежды - <span class="blank" data-answer="NACKT" data-hint="голый">_______ (голый)</span> я пришёл в мир, голым встречу <span class="blank" data-answer="der WAHNSINN" data-hint="безумие">_______ (безумие)</span>! «Человек - всего лишь бедное голое животное!» <span class="blank" data-answer="das CHAOS" data-hint="хаос">_______ (хаос)</span> в природе милосерднее, чем жестокость дочерей! Мой разум трещит как корабль в шторме!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="hut">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ПРОЗРЕНИЕ В НИЩЕТЕ</h4>
+                    <div class="exercise-text">В убогой <span class="blank" data-answer="die HÜTTE" data-hint="хижине">_______ (хижине)</span> я встречаю настоящее <span class="blank" data-answer="das ELEND" data-hint="нищету">_______ (нищету)</span>. Бедный Том - <span class="blank" data-answer="der BETTLER" data-hint="нищий">_______ (нищий)</span> в лохмотьях - учит меня истине. «Человек без одежд, без замков - вот истинный человек!» Мы все <span class="blank" data-answer="ARM" data-hint="бедны">_______ (бедны)</span> перед лицом судьбы. Мы <span class="blank" data-answer="FRIEREN" data-hint="мёрзнем">_______ (мёрзнем)</span> не от холода, а от жестокости мира. Я вижу, как <span class="blank" data-answer="LEIDEN" data-hint="страдают">_______ (страдают)</span> те, кого я никогда не замечал на троне. Мой верный <span class="blank" data-answer="der NARR" data-hint="шут">_______ (шут)</span> смеётся сквозь слёзы: «Тот, кто имел всё и потерял, мудрее того, кто никогда не имел». <span class="blank" data-answer="die ERKENNTNIS" data-hint="познание">_______ (познание)</span> приходит через боль.</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="dover">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ВСТРЕЧА С ИСТИННОЙ ЛЮБОВЬЮ</h4>
+                    <div class="exercise-text">На скалах Дувра я <span class="blank" data-answer="ERKENNE" data-hint="узнаю">_______ (узнаю)</span> ангела - мою Корделию! Теперь я <span class="blank" data-answer="VERSTEHE" data-hint="понимаю">_______ (понимаю)</span>: только она говорила <span class="blank" data-answer="die WAHRHEIT" data-hint="правду">_______ (правду)</span>. «Прости глупого старика!» - моя <span class="blank" data-answer="die REUE" data-hint="раскаяние">_______ (раскаяние)</span> жжёт душу. Слишком поздно приходит <span class="blank" data-answer="die WEISHEIT" data-hint="мудрость">_______ (мудрость)</span>. «Можешь ли <span class="blank" data-answer="VERGEBEN" data-hint="простить">_______ (простить)</span> отца, который был слеп?» Моя <span class="blank" data-answer="die EINSICHT" data-hint="прозрение">_______ (прозрение)</span> пришло ценой королевства. Я <span class="blank" data-answer="SCHULDIG" data-hint="виновен">_______ (виновен)</span> - я отверг истинную любовь ради лести! «Не плачь, дитя. Твои слёзы жгут мою душу сильнее адского пламени!»</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
+            <div class="exercise-container" data-phase="prison">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ПОСЛЕДНЕЕ ПРОЩАНИЕ</h4>
+                    <div class="exercise-text">В темнице с Корделией - рай после ада! «Мы будем петь как птицы в клетке, <span class="blank" data-answer="VERZEIHEN" data-hint="прощать">_______ (прощать)</span> друг друга каждый день». Но судьба жестока - моё дитя мертво! «Нет, нет, нет жизни!» <span class="blank" data-answer="der TOD" data-hint="смерть">_______ (смерть)</span> забрал мой свет! Я готов <span class="blank" data-answer="STERBEN" data-hint="умереть">_______ (умереть)</span> - моё <span class="blank" data-answer="das HERZ" data-hint="сердце">_______ (сердце)</span> разбито. «Смотрите, её губы... она дышит?» - последняя иллюзия перед <span class="blank" data-answer="das ENDE" data-hint="концом">_______ (концом)</span>. <span class="blank" data-answer="die TRAUER" data-hint="скорбь">_______ (скорбь)</span> разрывает душу. Наш <span class="blank" data-answer="der ABSCHIED" data-hint="прощание">_______ (прощание)</span> - не в этом мире, а в следующем. Наша любовь <span class="blank" data-answer="EWIG" data-hint="вечна">_______ (вечна)</span>, даже смерть не разлучит нас!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            
         </div>
-        
+
         <nav class="bottom-nav">
             <a href="../index.html" class="nav-link">← К главной</a>
         </nav>
     </div>
-    
+
     <script>const phaseVocabularies = {
-    throne: {
-        title: 'Тронный зал',
-        description: 'Акт I: Разделение королевства',
-        words: [
+    "throne": {
+        "title": "Тронный зал",
+        "description": "Акт I: Разделение королевства",
+        "words": [
             {
-                word: 'der Thron',
-                translation: 'трон',
-                transcription: '[дер ТРОН]',
-                sentence: 'Vom Thron herab verkünde ich meinen Willen.',
-                sentenceTranslation: 'С трона я провозглашаю свою волю.'
+                "word": "der Thron",
+                "translation": "трон",
+                "transcription": "[дер ТРОН]",
+                "sentence": "Vom Thron herab verkünde ich meinen Willen.",
+                "sentenceTranslation": "С трона я провозглашаю свою волю."
             },
             {
-                word: 'das Königreich',
-                translation: 'королевство',
-                transcription: '[дас КЁ-ниг-райх]',
-                sentence: 'Mein Königreich teile ich unter meinen Töchtern.',
-                sentenceTranslation: 'Моё королевство я делю между дочерьми.'
+                "word": "das Königreich",
+                "translation": "королевство",
+                "transcription": "[дас КЁ-ниг-райх]",
+                "sentence": "Mein Königreich teile ich unter meinen Töchtern.",
+                "sentenceTranslation": "Моё королевство я делю между дочерьми."
             },
             {
-                word: 'die Macht',
-                translation: 'власть',
-                transcription: '[ди МАХТ]',
-                sentence: 'Die Macht gebe ich an jene, die mich am meisten liebt.',
-                sentenceTranslation: 'Власть я отдаю той, кто любит меня больше всех.'
+                "word": "die Macht",
+                "translation": "власть",
+                "transcription": "[ди МАХТ]",
+                "sentence": "Die Macht gebe ich an jene, die mich am meisten liebt.",
+                "sentenceTranslation": "Власть я отдаю той, кто любит меня больше всех."
             },
             {
-                word: 'herrschen',
-                translation: 'править',
-                transcription: '[ХЕР-шен]',
-                sentence: 'Ich habe lange genug geherrscht.',
-                sentenceTranslation: 'Я правил достаточно долго.'
+                "word": "herrschen",
+                "translation": "править",
+                "transcription": "[ХЕР-шен]",
+                "sentence": "Ich habe lange genug geherrscht.",
+                "sentenceTranslation": "Я правил достаточно долго."
             },
             {
-                word: 'verkünden',
-                translation: 'провозглашать',
-                transcription: '[фер-КЮН-ден]',
-                sentence: 'Ich verkünde die Teilung meines Reiches.',
-                sentenceTranslation: 'Я провозглашаю раздел моего королевства.'
+                "word": "verkünden",
+                "translation": "провозглашать",
+                "transcription": "[фер-КЮН-ден]",
+                "sentence": "Ich verkünde die Teilung meines Reiches.",
+                "sentenceTranslation": "Я провозглашаю раздел моего королевства."
             },
             {
-                word: 'die Krone',
-                translation: 'корона',
-                transcription: '[ди КРО-не]',
-                sentence: 'Diese Krone ist schwer geworden für mein altes Haupt.',
-                sentenceTranslation: 'Эта корона стала тяжела для моей старой головы.'
+                "word": "die Krone",
+                "translation": "корона",
+                "transcription": "[ди КРО-не]",
+                "sentence": "Diese Krone ist schwer geworden für mein altes Haupt.",
+                "sentenceTranslation": "Эта корона стала тяжела для моей старой головы."
             },
             {
-                word: 'die Zeremonie',
-                translation: 'церемония',
-                transcription: '[ди це-ре-мо-НИ]',
-                sentence: 'Die Zeremonie der Teilung beginnt jetzt.',
-                sentenceTranslation: 'Церемония раздела начинается сейчас.'
+                "word": "die Zeremonie",
+                "translation": "церемония",
+                "transcription": "[ди це-ре-мо-НИ]",
+                "sentence": "Die Zeremonie der Teilung beginnt jetzt.",
+                "sentenceTranslation": "Церемония раздела начинается сейчас."
             },
             {
-                word: 'prächtig',
-                translation: 'великолепный',
-                transcription: '[ПРЕХ-тиг]',
-                sentence: 'Ein prächtiger Tag für eine verhängnisvolle Entscheidung.',
-                sentenceTranslation: 'Великолепный день для рокового решения.'
-            },
+                "word": "prächtig",
+                "translation": "великолепный",
+                "transcription": "[ПРЕХ-тиг]",
+                "sentence": "Ein prächtiger Tag für eine verhängnisvolle Entscheidung.",
+                "sentenceTranslation": "Великолепный день для рокового решения."
+            }
         ]
     },
-    goneril: {
-        title: 'У Гонерильи',
-        description: 'Акт I: Предательство старшей дочери',
-        words: [
+    "goneril": {
+        "title": "У Гонерильи",
+        "description": "Акт I: Предательство старшей дочери",
+        "words": [
             {
-                word: 'demütigen',
-                translation: 'унижать',
-                transcription: '[де-МЮ-ти-ген]',
-                sentence: 'Meine eigene Tochter will mich demütigen!',
-                sentenceTranslation: 'Моя собственная дочь хочет меня унизить!'
+                "word": "demütigen",
+                "translation": "унижать",
+                "transcription": "[де-МЮ-ти-ген]",
+                "sentence": "Meine eigene Tochter will mich demütigen!",
+                "sentenceTranslation": "Моя собственная дочь хочет меня унизить!"
             },
             {
-                word: 'der Zorn',
-                translation: 'гнев',
-                transcription: '[дер ЦОРН]',
-                sentence: 'Mein Zorn brennt wie Feuer in meiner Brust!',
-                sentenceTranslation: 'Мой гнев горит как огонь в моей груди!'
+                "word": "der Zorn",
+                "translation": "гнев",
+                "transcription": "[дер ЦОРН]",
+                "sentence": "Mein Zorn brennt wie Feuer in meiner Brust!",
+                "sentenceTranslation": "Мой гнев горит как огонь в моей груди!"
             },
             {
-                word: 'die Undankbarkeit',
-                translation: 'неблагодарность',
-                transcription: '[ди УН-данк-бар-кайт]',
-                sentence: 'Die Undankbarkeit ist schärfer als der Zahn einer Schlange!',
-                sentenceTranslation: 'Неблагодарность острее змеиного зуба!'
+                "word": "die Undankbarkeit",
+                "translation": "неблагодарность",
+                "transcription": "[ди УН-данк-бар-кайт]",
+                "sentence": "Die Undankbarkeit ist schärfer als der Zahn einer Schlange!",
+                "sentenceTranslation": "Неблагодарность острее змеиного зуба!"
             },
             {
-                word: 'verfluchen',
-                translation: 'проклинать',
-                transcription: '[фер-ФЛУ-хен]',
-                sentence: 'Ich verfluche dich bei allen Sternen!',
-                sentenceTranslation: 'Я проклинаю тебя всеми звёздами!'
+                "word": "verfluchen",
+                "translation": "проклинать",
+                "transcription": "[фер-ФЛУ-хен]",
+                "sentence": "Ich verfluche dich bei allen Sternen!",
+                "sentenceTranslation": "Я проклинаю тебя всеми звёздами!"
             },
             {
-                word: 'vertreiben',
-                translation: 'изгонять',
-                transcription: '[фер-ТРАЙ-бен]',
-                sentence: 'Aus meinem eigenen Haus will sie mich vertreiben!',
-                sentenceTranslation: 'Из моего собственного дома она хочет меня изгнать!'
+                "word": "vertreiben",
+                "translation": "изгонять",
+                "transcription": "[фер-ТРАЙ-бен]",
+                "sentence": "Aus meinem eigenen Haus will sie mich vertreiben!",
+                "sentenceTranslation": "Из моего собственного дома она хочет меня изгнать!"
             },
             {
-                word: 'die Kränkung',
-                translation: 'обида',
-                transcription: '[ди КРЭН-кунг]',
-                sentence: 'Diese Kränkung werde ich nicht vergessen!',
-                sentenceTranslation: 'Эту обиду я не забуду!'
+                "word": "die Kränkung",
+                "translation": "обида",
+                "transcription": "[ди КРЭН-кунг]",
+                "sentence": "Diese Kränkung werde ich nicht vergessen!",
+                "sentenceTranslation": "Эту обиду я не забуду!"
             },
             {
-                word: 'bereuen',
-                translation: 'сожалеть',
-                transcription: '[бе-РОЙ-ен]',
-                sentence: 'Sie wird ihre Grausamkeit bereuen!',
-                sentenceTranslation: 'Она пожалеет о своей жестокости!'
+                "word": "bereuen",
+                "translation": "сожалеть",
+                "transcription": "[бе-РОЙ-ен]",
+                "sentence": "Sie wird ihre Grausamkeit bereuen!",
+                "sentenceTranslation": "Она пожалеет о своей жестокости!"
             },
             {
-                word: 'der Fluch',
-                translation: 'проклятие',
-                transcription: '[дер ФЛУХ]',
-                sentence: 'Mein Fluch soll über dich kommen!',
-                sentenceTranslation: 'Моё проклятие падёт на тебя!'
-            },
+                "word": "der Fluch",
+                "translation": "проклятие",
+                "transcription": "[дер ФЛУХ]",
+                "sentence": "Mein Fluch soll über dich kommen!",
+                "sentenceTranslation": "Моё проклятие падёт на тебя!"
+            }
         ]
     },
-    regan: {
-        title: 'У Реганы',
-        description: 'Акт II: Предательство младшей дочери',
-        words: [
+    "regan": {
+        "title": "У Реганы",
+        "description": "Акт II: Предательство младшей дочери",
+        "words": [
             {
-                word: 'verlassen',
-                translation: 'покидать',
-                transcription: '[фер-ЛА-сен]',
-                sentence: 'Auch Regan will mich verlassen und verstoßen!',
-                sentenceTranslation: 'И Регана хочет меня покинуть и отвергнуть!'
+                "word": "verlassen",
+                "translation": "покидать",
+                "transcription": "[фер-ЛА-сен]",
+                "sentence": "Auch Regan will mich verlassen und verstoßen!",
+                "sentenceTranslation": "И Регана хочет меня покинуть и отвергнуть!"
             },
             {
-                word: 'verstoßen',
-                translation: 'отвергать',
-                transcription: '[фер-ШТО-сен]',
-                sentence: 'Meine Töchter verstoßen mich wie einen Bettler!',
-                sentenceTranslation: 'Мои дочери отвергают меня как нищего!'
+                "word": "verstoßen",
+                "translation": "отвергать",
+                "transcription": "[фер-ШТО-сен]",
+                "sentence": "Meine Töchter verstoßen mich wie einen Bettler!",
+                "sentenceTranslation": "Мои дочери отвергают меня как нищего!"
             },
             {
-                word: 'die Grausamkeit',
-                translation: 'жестокость',
-                transcription: '[ди ГРАУ-зам-кайт]',
-                sentence: 'Ihre Grausamkeit übertrifft die ihrer Schwester!',
-                sentenceTranslation: 'Её жестокость превосходит жестокость сестры!'
+                "word": "die Grausamkeit",
+                "translation": "жестокость",
+                "transcription": "[ди ГРАУ-зам-кайт]",
+                "sentence": "Ihre Grausamkeit übertrifft die ihrer Schwester!",
+                "sentenceTranslation": "Её жестокость превосходит жестокость сестры!"
             },
             {
-                word: 'die Verzweiflung',
-                translation: 'отчаяние',
-                transcription: '[ди фер-ЦВАЙ-флунг]',
-                sentence: 'Die Verzweiflung packt mein altes Herz!',
-                sentenceTranslation: 'Отчаяние охватывает моё старое сердце!'
+                "word": "die Verzweiflung",
+                "translation": "отчаяние",
+                "transcription": "[ди фер-ЦВАЙ-флунг]",
+                "sentence": "Die Verzweiflung packt mein altes Herz!",
+                "sentenceTranslation": "Отчаяние охватывает моё старое сердце!"
             },
             {
-                word: 'betteln',
-                translation: 'просить',
-                transcription: '[БЕ-тельн]',
-                sentence: 'Muss ich um Unterkunft betteln bei meinen eigenen Kindern?',
-                sentenceTranslation: 'Должен ли я просить крова у собственных детей?'
+                "word": "betteln",
+                "translation": "просить",
+                "transcription": "[БЕ-тельн]",
+                "sentence": "Muss ich um Unterkunft betteln bei meinen eigenen Kindern?",
+                "sentenceTranslation": "Должен ли я просить крова у собственных детей?"
             },
             {
-                word: 'die Einsamkeit',
-                translation: 'одиночество',
-                transcription: '[ди АЙН-зам-кайт]',
-                sentence: 'Die Einsamkeit umgibt mich wie ein kalter Mantel.',
-                sentenceTranslation: 'Одиночество окружает меня как холодный плащ.'
+                "word": "die Einsamkeit",
+                "translation": "одиночество",
+                "transcription": "[ди АЙН-зам-кайт]",
+                "sentence": "Die Einsamkeit umgibt mich wie ein kalter Mantel.",
+                "sentenceTranslation": "Одиночество окружает меня как холодный плащ."
             },
             {
-                word: 'die Träne',
-                translation: 'слеза',
-                transcription: '[ди ТРЭ-не]',
-                sentence: 'Keine Träne will ich für diese Undankbaren vergießen!',
-                sentenceTranslation: 'Ни одной слезы я не пролью за этих неблагодарных!'
+                "word": "die Träne",
+                "translation": "слеза",
+                "transcription": "[ди ТРЭ-не]",
+                "sentence": "Keine Träne will ich für diese Undankbaren vergießen!",
+                "sentenceTranslation": "Ни одной слезы я не пролью за этих неблагодарных!"
             },
             {
-                word: 'die Not',
-                translation: 'нужда',
-                transcription: '[ди НОТ]',
-                sentence: 'In meiner Not erkennen sie mich nicht als Vater.',
-                sentenceTranslation: 'В моей нужде они не признают меня отцом.'
-            },
+                "word": "die Not",
+                "translation": "нужда",
+                "transcription": "[ди НОТ]",
+                "sentence": "In meiner Not erkennen sie mich nicht als Vater.",
+                "sentenceTranslation": "В моей нужде они не признают меня отцом."
+            }
         ]
     },
-    storm: {
-        title: 'Буря',
-        description: 'Акт III: Безумие в буре',
-        words: [
+    "storm": {
+        "title": "Буря",
+        "description": "Акт III: Безумие в буре",
+        "words": [
             {
-                word: 'der Sturm',
-                translation: 'буря',
-                transcription: '[дер ШТУРМ]',
-                sentence: 'Der Sturm in meinem Kopf ist schlimmer als draußen!',
-                sentenceTranslation: 'Буря в моей голове хуже, чем снаружи!'
+                "word": "der Sturm",
+                "translation": "буря",
+                "transcription": "[дер ШТУРМ]",
+                "sentence": "Der Sturm in meinem Kopf ist schlimmer als draußen!",
+                "sentenceTranslation": "Буря в моей голове хуже, чем снаружи!"
             },
             {
-                word: 'der Wahnsinn',
-                translation: 'безумие',
-                transcription: '[дер ВАН-зин]',
-                sentence: 'Der Wahnsinn ist gnädiger als die Vernunft!',
-                sentenceTranslation: 'Безумие милосерднее разума!'
+                "word": "der Wahnsinn",
+                "translation": "безумие",
+                "transcription": "[дер ВАН-зин]",
+                "sentence": "Der Wahnsinn ist gnädiger als die Vernunft!",
+                "sentenceTranslation": "Безумие милосерднее разума!"
             },
             {
-                word: 'toben',
-                translation: 'бушевать',
-                transcription: '[ТО-бен]',
-                sentence: 'Lasst die Winde toben und die Blitze fallen!',
-                sentenceTranslation: 'Пусть ветры бушуют и молнии падают!'
+                "word": "toben",
+                "translation": "бушевать",
+                "transcription": "[ТО-бен]",
+                "sentence": "Lasst die Winde toben und die Blitze fallen!",
+                "sentenceTranslation": "Пусть ветры бушуют и молнии падают!"
             },
             {
-                word: 'der Donner',
-                translation: 'гром',
-                transcription: '[дер ДО-нер]',
-                sentence: 'Der Donner ist die Stimme der Götter!',
-                sentenceTranslation: 'Гром - это голос богов!'
+                "word": "der Donner",
+                "translation": "гром",
+                "transcription": "[дер ДО-нер]",
+                "sentence": "Der Donner ist die Stimme der Götter!",
+                "sentenceTranslation": "Гром - это голос богов!"
             },
             {
-                word: 'der Blitz',
-                translation: 'молния',
-                transcription: '[дер БЛИЦ]',
-                sentence: 'Die Blitze sollen meine weißen Haare verbrennen!',
-                sentenceTranslation: 'Пусть молнии сожгут мои седые волосы!'
+                "word": "der Blitz",
+                "translation": "молния",
+                "transcription": "[дер БЛИЦ]",
+                "sentence": "Die Blitze sollen meine weißen Haare verbrennen!",
+                "sentenceTranslation": "Пусть молнии сожгут мои седые волосы!"
             },
             {
-                word: 'schreien',
-                translation: 'кричать',
-                transcription: '[ШРАЙ-ен]',
-                sentence: 'Ich schreie in den Wind meine Wut hinaus!',
-                sentenceTranslation: 'Я кричу в ветер свою ярость!'
+                "word": "schreien",
+                "translation": "кричать",
+                "transcription": "[ШРАЙ-ен]",
+                "sentence": "Ich schreie in den Wind meine Wut hinaus!",
+                "sentenceTranslation": "Я кричу в ветер свою ярость!"
             },
             {
-                word: 'nackt',
-                translation: 'голый',
-                transcription: '[НАКТ]',
-                sentence: 'Nackt kam ich auf die Welt, nackt gehe ich!',
-                sentenceTranslation: 'Голым я пришёл в мир, голым и уйду!'
+                "word": "nackt",
+                "translation": "голый",
+                "transcription": "[НАКТ]",
+                "sentence": "Nackt kam ich auf die Welt, nackt gehe ich!",
+                "sentenceTranslation": "Голым я пришёл в мир, голым и уйду!"
             },
             {
-                word: 'das Chaos',
-                translation: 'хаос',
-                transcription: '[дас ХА-ос]',
-                sentence: 'Das Chaos in der Natur spiegelt meine Seele!',
-                sentenceTranslation: 'Хаос в природе отражает мою душу!'
-            },
+                "word": "das Chaos",
+                "translation": "хаос",
+                "transcription": "[дас ХА-ос]",
+                "sentence": "Das Chaos in der Natur spiegelt meine Seele!",
+                "sentenceTranslation": "Хаос в природе отражает мою душу!"
+            }
         ]
     },
-    hut: {
-        title: 'Хижина',
-        description: 'Акт III: Встреча с Эдгаром',
-        words: [
+    "hut": {
+        "title": "Хижина",
+        "description": "Акт III: Встреча с Эдгаром",
+        "words": [
             {
-                word: 'das Elend',
-                translation: 'нищета',
-                transcription: '[дас Э-ленд]',
-                sentence: 'Im Elend erkenne ich die Wahrheit der Welt.',
-                sentenceTranslation: 'В нищете я познаю истину мира.'
+                "word": "das Elend",
+                "translation": "нищета",
+                "transcription": "[дас Э-ленд]",
+                "sentence": "Im Elend erkenne ich die Wahrheit der Welt.",
+                "sentenceTranslation": "В нищете я познаю истину мира."
             },
             {
-                word: 'der Bettler',
-                translation: 'нищий',
-                transcription: '[дер БЕТ-лер]',
-                sentence: 'Dieser Bettler ist glücklicher als ich, der König!',
-                sentenceTranslation: 'Этот нищий счастливее меня, короля!'
+                "word": "der Bettler",
+                "translation": "нищий",
+                "transcription": "[дер БЕТ-лер]",
+                "sentence": "Dieser Bettler ist glücklicher als ich, der König!",
+                "sentenceTranslation": "Этот нищий счастливее меня, короля!"
             },
             {
-                word: 'arm',
-                translation: 'бедный',
-                transcription: '[АРМ]',
-                sentence: 'Die Armen leiden mehr als Könige jemals wissen.',
-                sentenceTranslation: 'Бедные страдают больше, чем короли когда-либо узнают.'
+                "word": "arm",
+                "translation": "бедный",
+                "transcription": "[АРМ]",
+                "sentence": "Die Armen leiden mehr als Könige jemals wissen.",
+                "sentenceTranslation": "Бедные страдают больше, чем короли когда-либо узнают."
             },
             {
-                word: 'frieren',
-                translation: 'мёрзнуть',
-                transcription: '[ФРИ-рен]',
-                sentence: 'Wir alle frieren in dieser kalten Welt.',
-                sentenceTranslation: 'Мы все мёрзнем в этом холодном мире.'
+                "word": "frieren",
+                "translation": "мёрзнуть",
+                "transcription": "[ФРИ-рен]",
+                "sentence": "Wir alle frieren in dieser kalten Welt.",
+                "sentenceTranslation": "Мы все мёрзнем в этом холодном мире."
             },
             {
-                word: 'die Hütte',
-                translation: 'хижина',
-                transcription: '[ди ХЮ-те]',
-                sentence: 'Diese Hütte ist ein Palast für die Verlassenen.',
-                sentenceTranslation: 'Эта хижина - дворец для покинутых.'
+                "word": "die Hütte",
+                "translation": "хижина",
+                "transcription": "[ди ХЮ-те]",
+                "sentence": "Diese Hütte ist ein Palast für die Verlassenen.",
+                "sentenceTranslation": "Эта хижина - дворец для покинутых."
             },
             {
-                word: 'leiden',
-                translation: 'страдать',
-                transcription: '[ЛАЙ-ден]',
-                sentence: 'Wer nicht gelitten hat, kennt das Leben nicht.',
-                sentenceTranslation: 'Кто не страдал, не знает жизни.'
+                "word": "leiden",
+                "translation": "страдать",
+                "transcription": "[ЛАЙ-ден]",
+                "sentence": "Wer nicht gelitten hat, kennt das Leben nicht.",
+                "sentenceTranslation": "Кто не страдал, не знает жизни."
             },
             {
-                word: 'der Narr',
-                translation: 'шут',
-                transcription: '[дер НАР]',
-                sentence: 'Mein Narr ist weiser als ich je war.',
-                sentenceTranslation: 'Мой шут мудрее, чем я когда-либо был.'
+                "word": "der Narr",
+                "translation": "шут",
+                "transcription": "[дер НАР]",
+                "sentence": "Mein Narr ist weiser als ich je war.",
+                "sentenceTranslation": "Мой шут мудрее, чем я когда-либо был."
             },
             {
-                word: 'die Erkenntnis',
-                translation: 'познание',
-                transcription: '[ди ер-КЕНТ-нис]',
-                sentence: 'Die Erkenntnis kommt durch Schmerz und Verlust.',
-                sentenceTranslation: 'Познание приходит через боль и утрату.'
-            },
+                "word": "die Erkenntnis",
+                "translation": "познание",
+                "transcription": "[ди ер-КЕНТ-нис]",
+                "sentence": "Die Erkenntnis kommt durch Schmerz und Verlust.",
+                "sentenceTranslation": "Познание приходит через боль и утрату."
+            }
         ]
     },
-    dover: {
-        title: 'Дувр',
-        description: 'Акт IV: Встреча с Корделией',
-        words: [
+    "dover": {
+        "title": "Дувр",
+        "description": "Акт IV: Встреча с Корделией",
+        "words": [
             {
-                word: 'erkennen',
-                translation: 'узнавать',
-                transcription: '[эр-КЕ-нен]',
-                sentence: 'Ich erkenne dich, meine treue Cordelia!',
-                sentenceTranslation: 'Я узнаю тебя, моя верная Корделия!'
+                "word": "erkennen",
+                "translation": "узнавать",
+                "transcription": "[эр-КЕ-нен]",
+                "sentence": "Ich erkenne dich, meine treue Cordelia!",
+                "sentenceTranslation": "Я узнаю тебя, моя верная Корделия!"
             },
             {
-                word: 'verstehen',
-                translation: 'понимать',
-                transcription: '[фер-ШТЕ-ен]',
-                sentence: 'Jetzt verstehe ich, wer mich wirklich liebte.',
-                sentenceTranslation: 'Теперь я понимаю, кто действительно меня любил.'
+                "word": "verstehen",
+                "translation": "понимать",
+                "transcription": "[фер-ШТЕ-ен]",
+                "sentence": "Jetzt verstehe ich, wer mich wirklich liebte.",
+                "sentenceTranslation": "Теперь я понимаю, кто действительно меня любил."
             },
             {
-                word: 'die Wahrheit',
-                translation: 'правда',
-                transcription: '[ди ВАР-хайт]',
-                sentence: 'Die Wahrheit war immer in deinen Worten, Kind.',
-                sentenceTranslation: 'Правда всегда была в твоих словах, дитя.'
+                "word": "die Wahrheit",
+                "translation": "правда",
+                "transcription": "[ди ВАР-хайт]",
+                "sentence": "Die Wahrheit war immer in deinen Worten, Kind.",
+                "sentenceTranslation": "Правда всегда была в твоих словах, дитя."
             },
             {
-                word: 'die Reue',
-                translation: 'раскаяние',
-                transcription: '[ди РОЙ-е]',
-                sentence: 'Die Reue brennt heißer als alle Feuer der Hölle.',
-                sentenceTranslation: 'Раскаяние жжёт горячее всех адских огней.'
+                "word": "die Reue",
+                "translation": "раскаяние",
+                "transcription": "[ди РОЙ-е]",
+                "sentence": "Die Reue brennt heißer als alle Feuer der Hölle.",
+                "sentenceTranslation": "Раскаяние жжёт горячее всех адских огней."
             },
             {
-                word: 'die Weisheit',
-                translation: 'мудрость',
-                transcription: '[ди ВАЙС-хайт]',
-                sentence: 'Die Weisheit kommt zu spät zu mir.',
-                sentenceTranslation: 'Мудрость приходит ко мне слишком поздно.'
+                "word": "die Weisheit",
+                "translation": "мудрость",
+                "transcription": "[ди ВАЙС-хайт]",
+                "sentence": "Die Weisheit kommt zu spät zu mir.",
+                "sentenceTranslation": "Мудрость приходит ко мне слишком поздно."
             },
             {
-                word: 'vergeben',
-                translation: 'прощать',
-                transcription: '[фер-ГЕ-бен]',
-                sentence: 'Kannst du einem törichten alten Mann vergeben?',
-                sentenceTranslation: 'Можешь ли ты простить глупого старика?'
+                "word": "vergeben",
+                "translation": "прощать",
+                "transcription": "[фер-ГЕ-бен]",
+                "sentence": "Kannst du einem törichten alten Mann vergeben?",
+                "sentenceTranslation": "Можешь ли ты простить глупого старика?"
             },
             {
-                word: 'die Einsicht',
-                translation: 'прозрение',
-                transcription: '[ди АЙН-зихт]',
-                sentence: 'Die Einsicht verbrennt meine Seele.',
-                sentenceTranslation: 'Прозрение сжигает мою душу.'
+                "word": "die Einsicht",
+                "translation": "прозрение",
+                "transcription": "[ди АЙН-зихт]",
+                "sentence": "Die Einsicht verbrennt meine Seele.",
+                "sentenceTranslation": "Прозрение сжигает мою душу."
             },
             {
-                word: 'schuldig',
-                translation: 'виновный',
-                transcription: '[ШУЛЬ-диг]',
-                sentence: 'Ich bin schuldig vor meiner Tochter.',
-                sentenceTranslation: 'Я виновен перед своей дочерью.'
-            },
+                "word": "schuldig",
+                "translation": "виновный",
+                "transcription": "[ШУЛЬ-диг]",
+                "sentence": "Ich bin schuldig vor meiner Tochter.",
+                "sentenceTranslation": "Я виновен перед своей дочерью."
+            }
         ]
     },
-    prison: {
-        title: 'Тюрьма',
-        description: 'Акт V: Финал трагедии',
-        words: [
+    "prison": {
+        "title": "Тюрьма",
+        "description": "Акт V: Финал трагедии",
+        "words": [
             {
-                word: 'verzeihen',
-                translation: 'прощать',
-                transcription: '[фер-ЦАЙ-ен]',
-                sentence: 'Verzeih mir, ich bin nur ein törichter alter Mann.',
-                sentenceTranslation: 'Прости меня, я всего лишь глупый старик.'
+                "word": "verzeihen",
+                "translation": "прощать",
+                "transcription": "[фер-ЦАЙ-ен]",
+                "sentence": "Verzeih mir, ich bin nur ein törichter alter Mann.",
+                "sentenceTranslation": "Прости меня, я всего лишь глупый старик."
             },
             {
-                word: 'der Tod',
-                translation: 'смерть',
-                transcription: '[дер ТОД]',
-                sentence: 'Der Tod ist gnädiger als das Leben ohne dich.',
-                sentenceTranslation: 'Смерть милосерднее жизни без тебя.'
+                "word": "der Tod",
+                "translation": "смерть",
+                "transcription": "[дер ТОД]",
+                "sentence": "Der Tod ist gnädiger als das Leben ohne dich.",
+                "sentenceTranslation": "Смерть милосерднее жизни без тебя."
             },
             {
-                word: 'sterben',
-                translation: 'умирать',
-                transcription: '[ШТЕР-бен]',
-                sentence: 'Lass mich an deiner Seite sterben, Cordelia.',
-                sentenceTranslation: 'Позволь мне умереть рядом с тобой, Корделия.'
+                "word": "sterben",
+                "translation": "умирать",
+                "transcription": "[ШТЕР-бен]",
+                "sentence": "Lass mich an deiner Seite sterben, Cordelia.",
+                "sentenceTranslation": "Позволь мне умереть рядом с тобой, Корделия."
             },
             {
-                word: 'das Ende',
-                translation: 'конец',
-                transcription: '[дас ЕН-де]',
-                sentence: 'Das Ende kommt, aber mit dir bin ich nicht allein.',
-                sentenceTranslation: 'Конец приходит, но с тобой я не одинок.'
+                "word": "das Ende",
+                "translation": "конец",
+                "transcription": "[дас ЕН-де]",
+                "sentence": "Das Ende kommt, aber mit dir bin ich nicht allein.",
+                "sentenceTranslation": "Конец приходит, но с тобой я не одинок."
             },
             {
-                word: 'das Herz',
-                translation: 'сердце',
-                transcription: '[дас ХЕРЦ]',
-                sentence: 'Mein Herz bricht vor Schmerz und Liebe.',
-                sentenceTranslation: 'Моё сердце разбивается от боли и любви.'
+                "word": "das Herz",
+                "translation": "сердце",
+                "transcription": "[дас ХЕРЦ]",
+                "sentence": "Mein Herz bricht vor Schmerz und Liebe.",
+                "sentenceTranslation": "Моё сердце разбивается от боли и любви."
             },
             {
-                word: 'die Trauer',
-                translation: 'скорбь',
-                transcription: '[ди ТРАУ-ер]',
-                sentence: 'Die Trauer überwältigt meine Seele.',
-                sentenceTranslation: 'Скорбь переполняет мою душу.'
+                "word": "die Trauer",
+                "translation": "скорбь",
+                "transcription": "[ди ТРАУ-ер]",
+                "sentence": "Die Trauer überwältigt meine Seele.",
+                "sentenceTranslation": "Скорбь переполняет мою душу."
             },
             {
-                word: 'der Abschied',
-                translation: 'прощание',
-                transcription: '[дер АБ-шид]',
-                sentence: 'Das ist unser letzter Abschied, mein Kind.',
-                sentenceTranslation: 'Это наше последнее прощание, дитя моё.'
+                "word": "der Abschied",
+                "translation": "прощание",
+                "transcription": "[дер АБ-шид]",
+                "sentence": "Das ist unser letzter Abschied, mein Kind.",
+                "sentenceTranslation": "Это наше последнее прощание, дитя моё."
             },
             {
-                word: 'ewig',
-                translation: 'вечный',
-                transcription: '[Э-виг]',
-                sentence: 'Unsere Liebe wird ewig dauern, mein Kind.',
-                sentenceTranslation: 'Наша любовь будет вечной, дитя моё.'
-            },
+                "word": "ewig",
+                "translation": "вечный",
+                "transcription": "[Э-виг]",
+                "sentence": "Unsere Liebe wird ewig dauern, mein Kind.",
+                "sentenceTranslation": "Наша любовь будет вечной, дитя моё."
+            }
         ]
-    },
+    }
 };
 
 
