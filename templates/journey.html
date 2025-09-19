@@ -66,6 +66,42 @@
             </div>
         </div>
 
+        <div class="constructor-section">
+            <h2>🧩 Конструктор предложений</h2>
+            <p class="constructor-intro">Соберите немецкое предложение из фрагментов и проверьте себя по переводу.</p>
+
+            {% for phase in journey_phases %}
+            <section class="constructor-panel{% if loop.first %} active{% endif %}" data-phase="{{ phase.id }}">
+                <div class="constructor-header">
+                    <div class="constructor-word" data-constructor-word>—</div>
+                    <div class="constructor-translation" data-constructor-translation></div>
+                    <div class="constructor-progress" data-constructor-progress></div>
+                </div>
+                <p class="constructor-hint" data-constructor-hint>Выберите следующую фразу, чтобы начать тренировку.</p>
+
+                <div class="constructor-areas">
+                    <div class="constructor-source" data-constructor-source></div>
+                    <div class="constructor-target" data-constructor-target>
+                        <div class="constructor-placeholder">Перетащите или нажмите на фрагменты, чтобы собрать предложение.</div>
+                    </div>
+                </div>
+
+                <div class="constructor-controls">
+                    <button class="constructor-control constructor-check" type="button">Проверить</button>
+                    <button class="constructor-control constructor-reset" type="button">Сбросить</button>
+                    <button class="constructor-control constructor-next" type="button">Следующее предложение</button>
+                </div>
+
+                <div class="constructor-feedback" aria-live="polite"></div>
+                <div class="constructor-original" data-constructor-original></div>
+
+                {% if not phase.sentence_parts %}
+                <p class="constructor-empty">Для этой фазы пока нет предложений для конструктора, они появятся позже.</p>
+                {% endif %}
+            </section>
+            {% endfor %}
+        </div>
+
         <div class="relations-wrapper">
             {% for phase in journey_phases %}
             {% set phase_id = phase.id if phase.id else 'phase-' ~ loop.index0 %}

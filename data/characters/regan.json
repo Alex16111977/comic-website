@@ -21,56 +21,88 @@
           "russian": "притворяться",
           "transcription": "[ФОР-той-шен]",
           "sentence": "Regan steht unter dem glühenden Kronleuchter des Thronsaals. Mein Atem zeichnet das Wort „vortäuschen“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "Регана стоит под пылающей люстрой тронного зала. Моё дыхание рисует слово «притворяться» в холодном воздухе между нами."
+          "sentence_translation": "Регана стоит под пылающей люстрой тронного зала. Моё дыхание рисует слово «притворяться» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Regan steht unter dem glühenden Kronleuchter des Thronsaals.",
+            "Mein Atem zeichnet das Wort „vortäuschen“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "übertreffen",
           "russian": "превосходить",
           "transcription": "[ю-бер-ТРЕ-фен]",
           "sentence": "Neben der ausgerollten Reichskarte beugt sich Regan über Lears schweren Tisch. Mit jeder Faser meines Körpers verspreche ich: Das Wort „übertreffen“ bleibt lebendig.",
-          "sentence_translation": "У развернутой карты королевства Регана склоняется над тяжёлым столом Лира. Каждой клеткой тела я обещаю: слово «превосходить» останется живым."
+          "sentence_translation": "У развернутой карты королевства Регана склоняется над тяжёлым столом Лира. Каждой клеткой тела я обещаю: слово «превосходить» останется живым.",
+          "sentence_parts": [
+            "Neben der ausgerollten Reichskarte beugt sich Regan über Lears schweren Tisch.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „übertreffen“ bleibt lebendig."
+          ]
         },
         {
           "german": "wetteifern",
           "russian": "состязаться",
           "transcription": "[ВЕТ-ай-ферн]",
           "sentence": "Vor den steinernen Ahnenstatuen verschränkt Regan die Hände hinter dem Rücken. Ich flüstere den Wächtern des Schicksals zu: Das Wort „wetteifern“ darf nicht vergehen.",
-          "sentence_translation": "Перед каменными статуями предков Регана сцепляет руки за спиной. Я шепчу стражам судьбы: слово «состязаться» не должно исчезнуть."
+          "sentence_translation": "Перед каменными статуями предков Регана сцепляет руки за спиной. Я шепчу стражам судьбы: слово «состязаться» не должно исчезнуть.",
+          "sentence_parts": [
+            "Vor den steinernen Ahnenstatuen verschränkt Regan die Hände hinter dem Rücken.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „wetteifern“ darf nicht vergehen."
+          ]
         },
         {
           "german": "die Falschheit",
           "russian": "фальшь",
           "transcription": "[ди ФАЛЬШ-хайт]",
           "sentence": "Zwischen flüsternden Höflingen gleitet Regan über den kalten Marmorboden. Mit fester Stimme schwöre ich mir: Das Wort „die Falschheit“ wird heute nicht verraten.",
-          "sentence_translation": "Между шепчущимися придворными Регана скользит по холодному мраморному полу. Твёрдым голосом я клянусь себе: слово «фальшь» сегодня не будет предано."
+          "sentence_translation": "Между шепчущимися придворными Регана скользит по холодному мраморному полу. Твёрдым голосом я клянусь себе: слово «фальшь» сегодня не будет предано.",
+          "sentence_parts": [
+            "Zwischen flüsternden Höflingen gleitet Regan über den kalten Marmorboden.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „die Falschheit“ wird heute nicht verraten."
+          ]
         },
         {
           "german": "vorspielen",
           "russian": "разыгрывать",
           "transcription": "[ФОР-шпи-лен]",
           "sentence": "Am Rand des purpurnen Teppichs wartet Regan auf ein Zeichen des Königs. Das Echo des Wortes „vorspielen“ übertönt das Flüstern der Höflinge.",
-          "sentence_translation": "На краю пурпурного ковра Регана ждёт знака от короля. Эхо слова «разыгрывать» заглушает шёпот придворных."
+          "sentence_translation": "На краю пурпурного ковра Регана ждёт знака от короля. Эхо слова «разыгрывать» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Am Rand des purpurnen Teppichs wartet Regan auf ein Zeichen des Königs.",
+            "Das Echo des Wortes „vorspielen“ übertönt das Flüstern der Höflinge."
+          ]
         },
         {
           "german": "die List",
           "russian": "хитрость",
           "transcription": "[ди ЛИСТ]",
           "sentence": "Unter wehenden Standarten der Schwestern senkt Regan kurz den Blick. Ich flüstere den Wächtern des Schicksals zu: Das Wort „die List“ darf nicht vergehen.",
-          "sentence_translation": "Под развевающимися штандартами сестёр Регана на миг опускает взгляд. Я шепчу стражам судьбы: слово «хитрость» не должно исчезнуть."
+          "sentence_translation": "Под развевающимися штандартами сестёр Регана на миг опускает взгляд. Я шепчу стражам судьбы: слово «хитрость» не должно исчезнуть.",
+          "sentence_parts": [
+            "Unter wehenden Standarten der Schwestern senkt Regan kurz den Blick.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „die List“ darf nicht vergehen."
+          ]
         },
         {
           "german": "erschleichen",
           "russian": "выманивать",
           "transcription": "[ер-ШЛАЙ-хен]",
           "sentence": "Hinter der vergoldeten Balustrade beobachtet Regan das gespannte Antlitz des Hofes. Wie ein stilles Gebet legt sich das Wort „erschleichen“ auf meine Lippen.",
-          "sentence_translation": "За позолоченной балюстрадой Регана наблюдает за напряжёнными лицами двора. Как тихая молитва слово «выманивать» ложится на мои губы."
+          "sentence_translation": "За позолоченной балюстрадой Регана наблюдает за напряжёнными лицами двора. Как тихая молитва слово «выманивать» ложится на мои губы.",
+          "sentence_parts": [
+            "Hinter der vergoldeten Balustrade beobachtet Regan das gespannte Antlitz des Hofes.",
+            "Wie ein stilles Gebet legt sich das Wort „erschleichen“ auf meine Lippen."
+          ]
         },
         {
           "german": "die Habgier",
           "russian": "алчность",
           "transcription": "[ди ХАБ-гир]",
           "sentence": "Im Schein der offenen Feuerbecken erhebt Regan langsam die Stimme. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Habgier“ gehört mir.",
-          "sentence_translation": "В отблесках открытых жаровен Регана медленно поднимает голос. Буря за окнами усиливает клятву: слово «алчность» принадлежит мне."
+          "sentence_translation": "В отблесках открытых жаровен Регана медленно поднимает голос. Буря за окнами усиливает клятву: слово «алчность» принадлежит мне.",
+          "sentence_parts": [
+            "Im Schein der offenen Feuerbecken erhebt Regan langsam die Stimme.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Habgier“ gehört mir."
+          ]
         }
       ],
       "quizzes": [
@@ -114,49 +146,77 @@
           "russian": "союз",
           "transcription": "[дас БЮНД-нис]",
           "sentence": "Im hallenden Torbogen von Gonerils Burg verharrt Regan zwischen gepackten Kisten. Mein Atem zeichnet das Wort „das Bündnis“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "В гулком проёме ворот замка Гонерильи Регана замирает среди нагруженных ящиков. Моё дыхание рисует слово «союз» в холодном воздухе между нами."
+          "sentence_translation": "В гулком проёме ворот замка Гонерильи Регана замирает среди нагруженных ящиков. Моё дыхание рисует слово «союз» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Im hallenden Torbogen von Gonerils Burg verharrt Regan zwischen gepackten Kisten.",
+            "Mein Atem zeichnet das Wort „das Bündnis“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "teilen",
           "russian": "делить",
           "transcription": "[ТАЙ-лен]",
           "sentence": "Auf der windigen Freitreppe blickt Regan zum schweigenden Hof hinunter. Mit fester Stimme schwöre ich mir: Das Wort „teilen“ wird heute nicht verraten.",
-          "sentence_translation": "На продуваемой ветром лестнице Регана смотрит вниз на молчаливый двор. Твёрдым голосом я клянусь себе: слово «делить» сегодня не будет предано."
+          "sentence_translation": "На продуваемой ветром лестнице Регана смотрит вниз на молчаливый двор. Твёрдым голосом я клянусь себе: слово «делить» сегодня не будет предано.",
+          "sentence_parts": [
+            "Auf der windigen Freitreppe blickt Regan zum schweigenden Hof hinunter.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „teilen“ wird heute nicht verraten."
+          ]
         },
         {
           "german": "planen",
           "russian": "планировать",
           "transcription": "[ПЛА-нен]",
           "sentence": "Zwischen zurückgelassenen Dienern schließt Regan den Reisemantel enger. Mit jeder Faser meines Körpers verspreche ich: Das Wort „planen“ bleibt lebendig.",
-          "sentence_translation": "Среди оставленных слуг Регана плотнее запахивает дорожный плащ. Каждой клеткой тела я обещаю: слово «планировать» останется живым."
+          "sentence_translation": "Среди оставленных слуг Регана плотнее запахивает дорожный плащ. Каждой клеткой тела я обещаю: слово «планировать» останется живым.",
+          "sentence_parts": [
+            "Zwischen zurückgelassenen Dienern schließt Regan den Reisemantel enger.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „planen“ bleibt lebendig."
+          ]
         },
         {
           "german": "verschwören",
           "russian": "заговорить",
           "transcription": "[фер-ШВЁ-рен]",
           "sentence": "Am dunklen Pferdestall streicht Regan einem nervösen Tier über die Mähne. Ich halte das Wort „verschwören“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "У тёмного конюшенного ряда Регана гладит гриву нервного коня. Я держу слово «заговорить» как факел у сердца."
+          "sentence_translation": "У тёмного конюшенного ряда Регана гладит гриву нервного коня. Я держу слово «заговорить» как факел у сердца.",
+          "sentence_parts": [
+            "Am dunklen Pferdestall streicht Regan einem nervösen Tier über die Mähne.",
+            "Ich halte das Wort „verschwören“ wie eine Fackel vor meinem Herzen."
+          ]
         },
         {
           "german": "die Absprache",
           "russian": "сговор",
           "transcription": "[ди АБ-шпра-хе]",
           "sentence": "Vor dem knarrenden Fallgatter tastet Regan ein letztes Mal nach dem Haustor. Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Absprache“ darf nicht vergehen.",
-          "sentence_translation": "Перед скрипящим подъёмным мостом Регана в последний раз касается родной двери. Я шепчу стражам судьбы: слово «сговор» не должно исчезнуть."
+          "sentence_translation": "Перед скрипящим подъёмным мостом Регана в последний раз касается родной двери. Я шепчу стражам судьбы: слово «сговор» не должно исчезнуть.",
+          "sentence_parts": [
+            "Vor dem knarrenden Fallgatter tastet Regan ein letztes Mal nach dem Haustor.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Absprache“ darf nicht vergehen."
+          ]
         },
         {
           "german": "vereinbaren",
           "russian": "договариваться",
           "transcription": "[фер-АЙН-ба-рен]",
           "sentence": "Zwischen verstreuten Schriftrollen dreht Regan den Ring an der Hand. Mit jeder Faser meines Körpers verspreche ich: Das Wort „vereinbaren“ bleibt lebendig.",
-          "sentence_translation": "Среди разбросанных свитков Регана вертит кольцо на пальце. Каждой клеткой тела я обещаю: слово «договариваться» останется живым."
+          "sentence_translation": "Среди разбросанных свитков Регана вертит кольцо на пальце. Каждой клеткой тела я обещаю: слово «договариваться» останется живым.",
+          "sentence_parts": [
+            "Zwischen verstreuten Schriftrollen dreht Regan den Ring an der Hand.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „vereinbaren“ bleibt lebendig."
+          ]
         },
         {
           "german": "die Strategie",
           "russian": "стратегия",
           "transcription": "[ди штра-те-ГИ]",
           "sentence": "Am leeren Bankettisch zählt Regan die verlöschenden Kerzen. Das Echo des Wortes „die Strategie“ übertönt das Flüstern der Höflinge.",
-          "sentence_translation": "У пустого банкетного стола Регана пересчитывает гаснущие свечи. Эхо слова «стратегия» заглушает шёпот придворных."
+          "sentence_translation": "У пустого банкетного стола Регана пересчитывает гаснущие свечи. Эхо слова «стратегия» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Am leeren Bankettisch zählt Regan die verlöschenden Kerzen.",
+            "Das Echo des Wortes „die Strategie“ übertönt das Flüstern der Höflinge."
+          ]
         }
       ],
       "quizzes": [
@@ -200,56 +260,89 @@
           "russian": "пытать",
           "transcription": "[ФОЛЬ-терн]",
           "sentence": "Im zugigen Seitenflügel lauscht Regan dem Heulen der Küstenwinde. Mein Atem zeichnet das Wort „foltern“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "В продуваемом ветром боковом крыле Регана слушает вой прибрежного ветра. Моё дыхание рисует слово «пытать» в холодном воздухе между нами."
+          "sentence_translation": "В продуваемом ветром боковом крыле Регана слушает вой прибрежного ветра. Моё дыхание рисует слово «пытать» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Im zugigen Seitenflügel lauscht Regan dem Heulen der Küstenwinde.",
+            "Mein Atem zeichnet das Wort „foltern“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "erniedrigen",
           "russian": "унижать",
           "transcription": "[ер-НИД-ри-ген]",
           "sentence": "Vor dem rauchigen Kamin der Burg faltet Regan einen zerknitterten Brief. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „erniedrigen“ gehört mir.",
-          "sentence_translation": "Перед дымным камином замка Регана складывает измятый лист. Буря за окнами усиливает клятву: слово «унижать» принадлежит мне."
+          "sentence_translation": "Перед дымным камином замка Регана складывает измятый лист. Буря за окнами усиливает клятву: слово «унижать» принадлежит мне.",
+          "sentence_parts": [
+            "Vor dem rauchigen Kamin der Burg faltet Regan einen zerknitterten Brief.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „erniedrigen“ gehört mir."
+          ]
         },
         {
           "german": "verhöhnen",
           "russian": "насмехаться",
           "transcription": "[фер-ХЁ-нен]",
           "sentence": "Unter farblosen Wandteppichen schreitet Regan rastlos auf und ab. Ich halte das Wort „verhöhnen“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "Под выцветшими гобеленами Регана беспокойно меряет шагами зал. Я держу слово «насмехаться» как факел у сердца."
+          "sentence_translation": "Под выцветшими гобеленами Регана беспокойно меряет шагами зал. Я держу слово «насмехаться» как факел у сердца.",
+          "sentence_parts": [
+            "Unter farblosen Wandteppichen schreitet Regan rastlos auf und ab.",
+            "Ich halte das Wort „verhöhnen“ wie eine Fackel vor meinem Herzen."
+          ]
         },
         {
           "german": "die Bosheit",
           "russian": "злоба",
           "transcription": "[ди БОС-хайт]",
           "sentence": "An der schmalen Fensterluke zählt Regan die Fackeln auf dem Hof. Ich halte das Wort „die Bosheit“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "У узкой бойницы Регана считает факелы на дворе. Я держу слово «злоба» как факел у сердца."
+          "sentence_translation": "У узкой бойницы Регана считает факелы на дворе. Я держу слово «злоба» как факел у сердца.",
+          "sentence_parts": [
+            "An der schmalen Fensterluke zählt Regan die Fackeln auf dem Hof.",
+            "Ich halte das Wort „die Bosheit“ wie eine Fackel vor meinem Herzen."
+          ]
         },
         {
           "german": "misshandeln",
           "russian": "жестоко обращаться",
           "transcription": "[МИС-хан-дельн]",
           "sentence": "Zwischen Reisekoffern der Gesandten sucht Regan nach frischen Botschaften. Mit jeder Faser meines Körpers verspreche ich: Das Wort „misshandeln“ bleibt lebendig.",
-          "sentence_translation": "Среди дорожных сундуков послов Регана ищет свежие вести. Каждой клеткой тела я обещаю: слово «жестоко обращаться» останется живым."
+          "sentence_translation": "Среди дорожных сундуков послов Регана ищет свежие вести. Каждой клеткой тела я обещаю: слово «жестоко обращаться» останется живым.",
+          "sentence_parts": [
+            "Zwischen Reisekoffern der Gesandten sucht Regan nach frischen Botschaften.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „misshandeln“ bleibt lebendig."
+          ]
         },
         {
           "german": "die Härte",
           "russian": "жёсткость",
           "transcription": "[ди ХЕР-те]",
           "sentence": "Im stillen Kapellenraum kniet Regan vor der kalten Steinfigur. Ich presse das Wort „die Härte“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "В тихой капелле Регана преклоняет колени перед холодной каменной фигурой. Я стискиваю слово «жёсткость» зубами, чтобы не вырвалось сомнение."
+          "sentence_translation": "В тихой капелле Регана преклоняет колени перед холодной каменной фигурой. Я стискиваю слово «жёсткость» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Im stillen Kapellenraum kniet Regan vor der kalten Steinfigur.",
+            "Ich presse das Wort „die Härte“ zwischen die Zähne,",
+            "damit kein Zweifel entweicht."
+          ]
         },
         {
           "german": "abweisen",
           "russian": "отвергать",
           "transcription": "[АБ-вай-зен]",
           "sentence": "Auf dem Balkon, den das Meer besprüht, hält Regan die Laterne fest. Mein Atem zeichnet das Wort „abweisen“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "На балконе, омываемом морскими брызгами, Регана крепко держит фонарь. Моё дыхание рисует слово «отвергать» в холодном воздухе между нами."
+          "sentence_translation": "На балконе, омываемом морскими брызгами, Регана крепко держит фонарь. Моё дыхание рисует слово «отвергать» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Auf dem Balkon, den das Meer besprüht, hält Regan die Laterne fest.",
+            "Mein Atem zeichnet das Wort „abweisen“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "die Grausamkeit",
           "russian": "жестокость",
           "transcription": "[ди ГРАУ-зам-кайт]",
           "sentence": "Im Schatten der hohen Burgmauern schreibt Regan eine fiebrige Antwort. Mein Atem zeichnet das Wort „die Grausamkeit“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "В тени высоких стен Регана пишет лихорадочный ответ. Моё дыхание рисует слово «жестокость» в холодном воздухе между нами."
+          "sentence_translation": "В тени высоких стен Регана пишет лихорадочный ответ. Моё дыхание рисует слово «жестокость» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Im Schatten der hohen Burgmauern schreibt Regan eine fiebrige Antwort.",
+            "Mein Atem zeichnet das Wort „die Grausamkeit“ in die kalte Luft zwischen uns."
+          ]
         }
       ],
       "quizzes": [
@@ -293,56 +386,88 @@
           "russian": "ослеплять",
           "transcription": "[БЛЕН-ден]",
           "sentence": "Mitten auf der vom Regen gepeitschten Heide stemmt sich Regan gegen den Wind. Ich flüstere den Wächtern des Schicksals zu: Das Wort „blenden“ darf nicht vergehen.",
-          "sentence_translation": "Посреди хлещущей дождём пустоши Регана упирается в ветер. Я шепчу стражам судьбы: слово «ослеплять» не должно исчезнуть."
+          "sentence_translation": "Посреди хлещущей дождём пустоши Регана упирается в ветер. Я шепчу стражам судьбы: слово «ослеплять» не должно исчезнуть.",
+          "sentence_parts": [
+            "Mitten auf der vom Regen gepeitschten Heide stemmt sich Regan gegen den Wind.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „blenden“ darf nicht vergehen."
+          ]
         },
         {
           "german": "der Sadismus",
           "russian": "садизм",
           "transcription": "[дер за-ДИС-мус]",
           "sentence": "Unter einem zerrissenen Banner schützt Regan die Augen vor den Blitzen. Mit jeder Faser meines Körpers verspreche ich: Das Wort „der Sadismus“ bleibt lebendig.",
-          "sentence_translation": "Под разорванным знаменем Регана прикрывает глаза от молний. Каждой клеткой тела я обещаю: слово «садизм» останется живым."
+          "sentence_translation": "Под разорванным знаменем Регана прикрывает глаза от молний. Каждой клеткой тела я обещаю: слово «садизм» останется живым.",
+          "sentence_parts": [
+            "Unter einem zerrissenen Banner schützt Regan die Augen vor den Blitzen.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „der Sadismus“ bleibt lebendig."
+          ]
         },
         {
           "german": "genießen",
           "russian": "наслаждаться",
           "transcription": "[ге-НИ-сен]",
           "sentence": "Am Rand eines umgestürzten Baumes sucht Regan Deckung vor dem Donner. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „genießen“ gehört mir.",
-          "sentence_translation": "У поваленного дерева Регана ищет укрытия от грома. Буря за окнами усиливает клятву: слово «наслаждаться» принадлежит мне."
+          "sentence_translation": "У поваленного дерева Регана ищет укрытия от грома. Буря за окнами усиливает клятву: слово «наслаждаться» принадлежит мне.",
+          "sentence_parts": [
+            "Am Rand eines umgestürzten Baumes sucht Regan Deckung vor dem Donner.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „genießen“ gehört mir."
+          ]
         },
         {
           "german": "ausstechen",
           "russian": "выкалывать",
           "transcription": "[АУС-ште-хен]",
           "sentence": "Zwischen schäumenden Wassergräben stolpert Regan durch den Schlamm. Ich atme tief ein und lasse nur das Wort „ausstechen“ wieder hinaus.",
-          "sentence_translation": "Между пенящимися лужами Регана пробирается через грязь. Я глубоко вдыхаю и выпускаю только слово «выкалывать»."
+          "sentence_translation": "Между пенящимися лужами Регана пробирается через грязь. Я глубоко вдыхаю и выпускаю только слово «выкалывать».",
+          "sentence_parts": [
+            "Zwischen schäumenden Wassergräben stolpert Regan durch den Schlamm.",
+            "Ich atme tief ein und lasse nur das Wort „ausstechen“ wieder hinaus."
+          ]
         },
         {
           "german": "die Folter",
           "russian": "пытка",
           "transcription": "[ди ФОЛЬ-тер]",
           "sentence": "Vor einem zuckenden Himmel hebt Regan die Arme trotzig an. Ich zeichne das Wort „die Folter“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "На фоне вспыхивающего неба Регана упрямо поднимает руки. Я черчу слово «пытка» в мыслях поверх линий судьбы."
+          "sentence_translation": "На фоне вспыхивающего неба Регана упрямо поднимает руки. Я черчу слово «пытка» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Vor einem zuckenden Himmel hebt Regan die Arme trotzig an.",
+            "Ich zeichne das Wort „die Folter“ in Gedanken über die Linien des Schicksals."
+          ]
         },
         {
           "german": "erbarmungslos",
           "russian": "беспощадный",
           "transcription": "[ер-БАР-мунгс-лос]",
           "sentence": "Unter dem durchtränkten Umhang presst Regan den Atem gegen die Kälte. Ich flüstere den Wächtern des Schicksals zu: Das Wort „erbarmungslos“ darf nicht vergehen.",
-          "sentence_translation": "Под промокшим плащом Регана прижимает дыхание к груди, спасаясь от холода. Я шепчу стражам судьбы: слово «беспощадный» не должно исчезнуть."
+          "sentence_translation": "Под промокшим плащом Регана прижимает дыхание к груди, спасаясь от холода. Я шепчу стражам судьбы: слово «беспощадный» не должно исчезнуть.",
+          "sentence_parts": [
+            "Unter dem durchtränkten Umhang presst Regan den Atem gegen die Kälte.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „erbarmungslos“ darf nicht vergehen."
+          ]
         },
         {
           "german": "die Brutalität",
           "russian": "брутальность",
           "transcription": "[ди бру-та-ли-ТЕТ]",
           "sentence": "Am kläglichen Feuerrest wärmt Regan zitternde Finger. Das kalte Licht lässt das Wort „die Brutalität“ wie geschmolzenes Gold erscheinen.",
-          "sentence_translation": "У жалких огненных углей Регана греет дрожащие пальцы. Холодный свет заставляет слово «брутальность» сиять словно расплавленное золото."
+          "sentence_translation": "У жалких огненных углей Регана греет дрожащие пальцы. Холодный свет заставляет слово «брутальность» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Am kläglichen Feuerrest wärmt Regan zitternde Finger.",
+            "Das kalte Licht lässt das Wort „die Brutalität“ wie geschmolzenes Gold erscheinen."
+          ]
         },
         {
           "german": "zertreten",
           "russian": "растаптывать",
           "transcription": "[цер-ТРЕ-тен]",
           "sentence": "Zwischen heulenden Hunden ruft Regan gegen den tosenden Sturm an. Mit jeder Faser meines Körpers verspreche ich: Das Wort „zertreten“ bleibt lebendig.",
-          "sentence_translation": "Среди воющих псов Регана перекрикивает беснующуюся бурю. Каждой клеткой тела я обещаю: слово «растаптывать» останется живым."
+          "sentence_translation": "Среди воющих псов Регана перекрикивает беснующуюся бурю. Каждой клеткой тела я обещаю: слово «растаптывать» останется живым.",
+          "sentence_parts": [
+            "Zwischen heulenden Hunden ruft Regan gegen den tosenden Sturm an.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „zertreten“ bleibt lebendig."
+          ]
         }
       ],
       "quizzes": [
@@ -386,49 +511,77 @@
           "russian": "вдова",
           "transcription": "[ди ВИТ-ве]",
           "sentence": "Im dunklen Zelt der Feldärzte sitzt Regan bei der flackernden Kerze. Selbst wenn die Welt zerfällt, bleibt das Wort „die Witwe“ mein Nordstern.",
-          "sentence_translation": "В тёмном шатре полевых лекарей Регана сидит у мерцающей свечи. Даже если мир распадается, слово «вдова» остаётся моим северным светом."
+          "sentence_translation": "В тёмном шатре полевых лекарей Регана сидит у мерцающей свечи. Даже если мир распадается, слово «вдова» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Im dunklen Zelt der Feldärzte sitzt Regan bei der flackernden Kerze.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „die Witwe“ mein Nordstern."
+          ]
         },
         {
           "german": "begehren",
           "russian": "вожделеть",
           "transcription": "[бе-ГЕ-рен]",
           "sentence": "Zwischen zerbeulten Rüstungen streicht Regan über ein altes Wappen. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „begehren“ gehört mir.",
-          "sentence_translation": "Среди помятых доспехов Регана гладит старый герб. Буря за окнами усиливает клятву: слово «вожделеть» принадлежит мне."
+          "sentence_translation": "Среди помятых доспехов Регана гладит старый герб. Буря за окнами усиливает клятву: слово «вожделеть» принадлежит мне.",
+          "sentence_parts": [
+            "Zwischen zerbeulten Rüstungen streicht Regan über ein altes Wappen.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „begehren“ gehört mir."
+          ]
         },
         {
           "german": "verführen",
           "russian": "соблазнять",
           "transcription": "[фер-ФЮ-рен]",
           "sentence": "Am niedrigen Dachbalken der Hütte stößt Regan fast den Kopf. Mein Atem zeichnet das Wort „verführen“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "О низкую балку хижины Регана едва не ударяется головой. Моё дыхание рисует слово «соблазнять» в холодном воздухе между нами."
+          "sentence_translation": "О низкую балку хижины Регана едва не ударяется головой. Моё дыхание рисует слово «соблазнять» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Am niedrigen Dachbalken der Hütte stößt Regan fast den Kopf.",
+            "Mein Atem zeichnet das Wort „verführen“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "die Begierde",
           "russian": "вожделение",
           "transcription": "[ди бе-ГИР-де]",
           "sentence": "Neben der schlafenden Wache flüstert Regan in die schwere Nacht. Ich halte das Wort „die Begierde“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "Рядом со спящим стражем Регана шепчет в тяжёлую ночь. Я держу слово «вожделение» как факел у сердца."
+          "sentence_translation": "Рядом со спящим стражем Регана шепчет в тяжёлую ночь. Я держу слово «вожделение» как факел у сердца.",
+          "sentence_parts": [
+            "Neben der schlafenden Wache flüstert Regan in die schwere Nacht.",
+            "Ich halte das Wort „die Begierde“ wie eine Fackel vor meinem Herzen."
+          ]
         },
         {
           "german": "locken",
           "russian": "заманивать",
           "transcription": "[ЛО-кен]",
           "sentence": "Vor dem einfachen Feldbett betrachtet Regan die Narben vergangener Schlachten. Wie ein stilles Gebet legt sich das Wort „locken“ auf meine Lippen.",
-          "sentence_translation": "Перед грубой походной койкой Регана разглядывает шрамы прошлых битв. Как тихая молитва слово «заманивать» ложится на мои губы."
+          "sentence_translation": "Перед грубой походной койкой Регана разглядывает шрамы прошлых битв. Как тихая молитва слово «заманивать» ложится на мои губы.",
+          "sentence_parts": [
+            "Vor dem einfachen Feldbett betrachtet Regan die Narben vergangener Schlachten.",
+            "Wie ein stilles Gebet legt sich das Wort „locken“ auf meine Lippen."
+          ]
         },
         {
           "german": "die Lust",
           "russian": "похоть",
           "transcription": "[ди ЛУСТ]",
           "sentence": "Im Geruch von feuchtem Stroh legt Regan den Mantel zur Seite. Mit fester Stimme schwöre ich mir: Das Wort „die Lust“ wird heute nicht verraten.",
-          "sentence_translation": "В запахе влажной соломы Регана откладывает плащ в сторону. Твёрдым голосом я клянусь себе: слово «похоть» сегодня не будет предано."
+          "sentence_translation": "В запахе влажной соломы Регана откладывает плащ в сторону. Твёрдым голосом я клянусь себе: слово «похоть» сегодня не будет предано.",
+          "sentence_parts": [
+            "Im Geruch von feuchtem Stroh legt Regan den Mantel zur Seite.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „die Lust“ wird heute nicht verraten."
+          ]
         },
         {
           "german": "werben",
           "russian": "добиваться",
           "transcription": "[ВЕР-бен]",
           "sentence": "Auf dem wackligen Holztisch ordnet Regan zerlesene Briefe. Mit fester Stimme schwöre ich mir: Das Wort „werben“ wird heute nicht verraten.",
-          "sentence_translation": "На шатком деревянном столе Регана раскладывает зачитанные письма. Твёрдым голосом я клянусь себе: слово «добиваться» сегодня не будет предано."
+          "sentence_translation": "На шатком деревянном столе Регана раскладывает зачитанные письма. Твёрдым голосом я клянусь себе: слово «добиваться» сегодня не будет предано.",
+          "sentence_parts": [
+            "Auf dem wackligen Holztisch ordnet Regan zerlesene Briefe.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „werben“ wird heute nicht verraten."
+          ]
         }
       ],
       "quizzes": [
@@ -472,49 +625,78 @@
           "russian": "соревноваться",
           "transcription": "[ВЕТ-кемп-фен]",
           "sentence": "Auf den weißen Klippen von Dover blickt Regan in den aufgewühlten Kanal. Selbst wenn die Welt zerfällt, bleibt das Wort „wettkämpfen“ mein Nordstern.",
-          "sentence_translation": "На белых скалах Дувра Регана смотрит в вздыбленный пролив. Даже если мир распадается, слово «соревноваться» остаётся моим северным светом."
+          "sentence_translation": "На белых скалах Дувра Регана смотрит в вздыбленный пролив. Даже если мир распадается, слово «соревноваться» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Auf den weißen Klippen von Dover blickt Regan in den aufgewühlten Kanal.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „wettkämpfen“ mein Nordstern."
+          ]
         },
         {
           "german": "hassen",
           "russian": "ненавидеть",
           "transcription": "[ХА-сен]",
           "sentence": "Zwischen flatternden Feldzeichen richtet Regan den Helm. Ich zeichne das Wort „hassen“ mit unsichtbarer Tinte auf meine Handfläche.",
-          "sentence_translation": "Среди хлопающих штандартов Регана поправляет шлем. Я вывожу слово «ненавидеть» невидимыми чернилами на ладони."
+          "sentence_translation": "Среди хлопающих штандартов Регана поправляет шлем. Я вывожу слово «ненавидеть» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Zwischen flatternden Feldzeichen richtet Regan den Helm.",
+            "Ich zeichne das Wort „hassen“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
         },
         {
           "german": "bedrohen",
           "russian": "угрожать",
           "transcription": "[бе-ДРО-ен]",
           "sentence": "Am Lagerfeuer der Franzosen zeichnet Regan Marschrouten in den Sand. Das Echo des Wortes „bedrohen“ übertönt das Flüstern der Höflinge.",
-          "sentence_translation": "У французского костра Регана рисует в песке путь марша. Эхо слова «угрожать» заглушает шёпот придворных."
+          "sentence_translation": "У французского костра Регана рисует в песке путь марша. Эхо слова «угрожать» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Am Lagerfeuer der Franzosen zeichnet Regan Marschrouten in den Sand.",
+            "Das Echo des Wortes „bedrohen“ übertönt das Flüstern der Höflinge."
+          ]
         },
         {
           "german": "die Rivalität",
           "russian": "соперничество",
           "transcription": "[ди ри-ва-ли-ТЕТ]",
           "sentence": "Neben verschnürten Versorgungskisten kontrolliert Regan das Siegel. Ich presse das Wort „die Rivalität“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "У перевязанных провиантных ящиков Регана проверяет печати. Я стискиваю слово «соперничество» зубами, чтобы не вырвалось сомнение."
+          "sentence_translation": "У перевязанных провиантных ящиков Регана проверяет печати. Я стискиваю слово «соперничество» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Neben verschnürten Versorgungskisten kontrolliert Regan das Siegel.",
+            "Ich presse das Wort „die Rivalität“ zwischen die Zähne,",
+            "damit kein Zweifel entweicht."
+          ]
         },
         {
           "german": "bekämpfen",
           "russian": "бороться",
           "transcription": "[бе-КЕМП-фен]",
           "sentence": "Vor dem Seidenzelt der Heerführer lauscht Regan dem dumpfen Meer. Ich zeichne das Wort „bekämpfen“ mit unsichtbarer Tinte auf meine Handfläche.",
-          "sentence_translation": "Перед шёлковым шатром полководцев Регана слушает глухой шум моря. Я вывожу слово «бороться» невидимыми чернилами на ладони."
+          "sentence_translation": "Перед шёлковым шатром полководцев Регана слушает глухой шум моря. Я вывожу слово «бороться» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Vor dem Seidenzelt der Heerführer lauscht Regan dem dumpfen Meer.",
+            "Ich zeichne das Wort „bekämpfen“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
         },
         {
           "german": "misstrauen",
           "russian": "не доверять",
           "transcription": "[МИС-трау-ен]",
           "sentence": "Auf dem sandigen Trainingsplatz übt Regan das Ziehen des Schwerts. Das Echo des Wortes „misstrauen“ übertönt das Flüstern der Höflinge.",
-          "sentence_translation": "На песчаном плацу Регана отрабатывает выхват меча. Эхо слова «не доверять» заглушает шёпот придворных."
+          "sentence_translation": "На песчаном плацу Регана отрабатывает выхват меча. Эхо слова «не доверять» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Auf dem sandigen Trainingsplatz übt Regan das Ziehen des Schwerts.",
+            "Das Echo des Wortes „misstrauen“ übertönt das Flüstern der Höflinge."
+          ]
         },
         {
           "german": "argwöhnen",
           "russian": "подозревать",
           "transcription": "[АРГ-вё-нен]",
           "sentence": "Zwischen pochenden Trommeln hebt Regan das Banner der Hoffnung. Ich zeichne das Wort „argwöhnen“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "Под гул барабанов Регана поднимает знамя надежды. Я черчу слово «подозревать» в мыслях поверх линий судьбы."
+          "sentence_translation": "Под гул барабанов Регана поднимает знамя надежды. Я черчу слово «подозревать» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Zwischen pochenden Trommeln hebt Regan das Banner der Hoffnung.",
+            "Ich zeichne das Wort „argwöhnen“ in Gedanken über die Linien des Schicksals."
+          ]
         }
       ],
       "quizzes": [
@@ -558,56 +740,88 @@
           "russian": "отравленный",
           "transcription": "[фер-ГИФ-тет]",
           "sentence": "Im feuchten Kerker stützt Regan sich an den tropfenden Stein. Ich atme tief ein und lasse nur das Wort „vergiftet“ wieder hinaus.",
-          "sentence_translation": "В сыром подземелье Регана опирается на сочащийся камень. Я глубоко вдыхаю и выпускаю только слово «отравленный»."
+          "sentence_translation": "В сыром подземелье Регана опирается на сочащийся камень. Я глубоко вдыхаю и выпускаю только слово «отравленный».",
+          "sentence_parts": [
+            "Im feuchten Kerker stützt Regan sich an den tropfenden Stein.",
+            "Ich atme tief ein und lasse nur das Wort „vergiftet“ wieder hinaus."
+          ]
         },
         {
           "german": "leiden",
           "russian": "страдать",
           "transcription": "[ЛАЙ-ден]",
           "sentence": "Unter der trüben Laterne zählt Regan die eisernen Ringe der Kette. Ich zeichne das Wort „leiden“ mit unsichtbarer Tinte auf meine Handfläche.",
-          "sentence_translation": "Под мутным фонарём Регана пересчитывает железные кольца цепи. Я вывожу слово «страдать» невидимыми чернилами на ладони."
+          "sentence_translation": "Под мутным фонарём Регана пересчитывает железные кольца цепи. Я вывожу слово «страдать» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Unter der trüben Laterne zählt Regan die eisernen Ringe der Kette.",
+            "Ich zeichne das Wort „leiden“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
         },
         {
           "german": "verenden",
           "russian": "издыхать",
           "transcription": "[фер-ЕН-ден]",
           "sentence": "Neben der schweren Holztür horcht Regan auf entferntes Schluchzen. Wie ein stilles Gebet legt sich das Wort „verenden“ auf meine Lippen.",
-          "sentence_translation": "У тяжёлой двери Регана прислушивается к далёким рыданиям. Как тихая молитва слово «издыхать» ложится на мои губы."
+          "sentence_translation": "У тяжёлой двери Регана прислушивается к далёким рыданиям. Как тихая молитва слово «издыхать» ложится на мои губы.",
+          "sentence_parts": [
+            "Neben der schweren Holztür horcht Regan auf entferntes Schluchzen.",
+            "Wie ein stilles Gebet legt sich das Wort „verenden“ auf meine Lippen."
+          ]
         },
         {
           "german": "die Qual",
           "russian": "мучение",
           "transcription": "[ди КВАЛЬ]",
           "sentence": "Auf der kalten Steinbank zieht Regan den Mantel enger um die Schultern. Ich atme tief ein und lasse nur das Wort „die Qual“ wieder hinaus.",
-          "sentence_translation": "На холодной каменной скамье Регана плотнее кутается в плащ. Я глубоко вдыхаю и выпускаю только слово «мучение»."
+          "sentence_translation": "На холодной каменной скамье Регана плотнее кутается в плащ. Я глубоко вдыхаю и выпускаю только слово «мучение».",
+          "sentence_parts": [
+            "Auf der kalten Steinbank zieht Regan den Mantel enger um die Schultern.",
+            "Ich atme tief ein und lasse nur das Wort „die Qual“ wieder hinaus."
+          ]
         },
         {
           "german": "verwünschen",
           "russian": "проклинать",
           "transcription": "[фер-ВЮН-шен]",
           "sentence": "Zwischen Schatten der Gitterstäbe hebt Regan das Gesicht zum Licht. Ich presse das Wort „verwünschen“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "Между тенями решёток Регана поднимает лицо к свету. Я стискиваю слово «проклинать» зубами, чтобы не вырвалось сомнение."
+          "sentence_translation": "Между тенями решёток Регана поднимает лицо к свету. Я стискиваю слово «проклинать» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Zwischen Schatten der Gitterstäbe hebt Regan das Gesicht zum Licht.",
+            "Ich presse das Wort „verwünschen“ zwischen die Zähne, damit kein Zweifel entweicht."
+          ]
         },
         {
           "german": "das Verhängnis",
           "russian": "рок",
           "transcription": "[дас фер-ХЕНГ-нис]",
           "sentence": "Am rostigen Wassereimer spiegelt Regan kurz die eigenen Augen. Selbst wenn die Welt zerfällt, bleibt das Wort „das Verhängnis“ mein Nordstern.",
-          "sentence_translation": "У ржавого ведра с водой Регана на мгновение видит отражение глаз. Даже если мир распадается, слово «рок» остаётся моим северным светом."
+          "sentence_translation": "У ржавого ведра с водой Регана на мгновение видит отражение глаз. Даже если мир распадается, слово «рок» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Am rostigen Wassereimer spiegelt Regan kurz die eigenen Augen.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „das Verhängnis“ mein Nordstern."
+          ]
         },
         {
           "german": "büßen",
           "russian": "расплачиваться",
           "transcription": "[БЮ-сен]",
           "sentence": "Im dumpfen Hall der Schritte zählt Regan den Rhythmus der Wachen. Ich halte das Wort „büßen“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "В глухом эхе шагов Регана отсчитывает ритм часовых. Я держу слово «расплачиваться» как факел у сердца."
+          "sentence_translation": "В глухом эхе шагов Регана отсчитывает ритм часовых. Я держу слово «расплачиваться» как факел у сердца.",
+          "sentence_parts": [
+            "Im dumpfen Hall der Schritte zählt Regan den Rhythmus der Wachen.",
+            "Ich halte das Wort „büßen“ wie eine Fackel vor meinem Herzen."
+          ]
         },
         {
           "german": "verflucht",
           "russian": "проклятый",
           "transcription": "[фер-ФЛУХТ]",
           "sentence": "Vor dem verriegelten Fenster zeichnet Regan Kreise in den Staub. Das kalte Licht lässt das Wort „verflucht“ wie geschmolzenes Gold erscheinen.",
-          "sentence_translation": "Перед заколоченным окном Регана чертит круги в пыли. Холодный свет заставляет слово «проклятый» сиять словно расплавленное золото."
+          "sentence_translation": "Перед заколоченным окном Регана чертит круги в пыли. Холодный свет заставляет слово «проклятый» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Vor dem verriegelten Fenster zeichnet Regan Kreise in den Staub.",
+            "Das kalte Licht lässt das Wort „verflucht“ wie geschmolzenes Gold erscheinen."
+          ]
         }
       ],
       "quizzes": [

@@ -45,6 +45,12 @@ class LiraJSGenerator:
                 elif not isinstance(collocations, list):
                     collocations = []
 
+                sentence_parts = word.get('sentence_parts') or []
+                if isinstance(sentence_parts, str):
+                    sentence_parts = [sentence_parts]
+                elif not isinstance(sentence_parts, list):
+                    sentence_parts = []
+
                 words.append({
                     'word': word.get('german', ''),
                     'translation': word.get('russian', ''),
@@ -55,7 +61,8 @@ class LiraJSGenerator:
                     'themes': themes,
                     'wordFamily': word_family,  # Для relations
                     'synonyms': synonyms,        # Для relations
-                    'collocations': collocations # Для relations
+                    'collocations': collocations, # Для relations
+                    'sentenceParts': sentence_parts,
                 })
 
             quizzes = []
@@ -76,12 +83,30 @@ class LiraJSGenerator:
                     'correctIndex': correct_index,
                 })
 
+            constructor_sets = []
+            for vocab in phase.get('vocabulary', []):
+                parts = vocab.get('sentence_parts') or []
+                if isinstance(parts, str):
+                    parts = [parts]
+                elif not isinstance(parts, list):
+                    parts = []
+
+                if len(parts) > 1:
+                    constructor_sets.append({
+                        'word': vocab.get('german', ''),
+                        'translation': vocab.get('russian', ''),
+                        'parts': parts,
+                        'sentence': vocab.get('sentence', ''),
+                        'sentenceTranslation': vocab.get('sentence_translation', ''),
+                    })
+
             phase_vocabularies[phase_id] = {
                 'title': phase.get('title', ''),
                 'description': phase.get('description', ''),
                 'words': words,
                 'quizzes': quizzes,
                 'quizAttempts': {},
+                'sentenceParts': constructor_sets,
             }
 
         character_id = character_data.get('id') or character_data.get('slug') or 'journey'
@@ -104,6 +129,7 @@ let isTransitioning = false; // Prevent double clicks/taps
 let progressLineElement = null;
 let progressLineLength = 0;
 const QUIZ_ADVANCE_DELAY = 1200;
+const constructorState = {};
 
 function getPhaseStorageKey(phaseKey) {
     const safePhase = phaseKey || 'unknown';
@@ -540,6 +566,323 @@ function initializeProgressLine() {
     updateProgressLineByPercent(startValue);
 }
 
+function getConstructorSets(phaseKey) {
+    const phase = phaseVocabularies[phaseKey];
+    if (!phase) {
+        return [];
+    }
+
+    const sets = phase.sentenceParts;
+    return Array.isArray(sets) ? sets : [];
+}
+
+function ensureConstructorState(phaseKey) {
+    if (!constructorState[phaseKey]) {
+        constructorState[phaseKey] = {
+            index: 0,
+        };
+    }
+    return constructorState[phaseKey];
+}
+
+function buildConstructorFragment(text, index) {
+    const fragment = document.createElement('button');
+    fragment.type = 'button';
+    fragment.className = 'constructor-fragment';
+    fragment.dataset.index = String(index);
+    fragment.textContent = text;
+    return fragment;
+}
+
+function clearConstructorFeedback(panel) {
+    if (!panel) return;
+
+    const feedback = panel.querySelector('.constructor-feedback');
+    if (feedback) {
+        feedback.textContent = '';
+        feedback.classList.remove('success', 'error');
+    }
+
+    const original = panel.querySelector('[data-constructor-original]');
+    if (original) {
+        original.textContent = '';
+    }
+}
+
+function updateConstructorPlaceholder(panel) {
+    if (!panel) return;
+
+    const target = panel.querySelector('[data-constructor-target]');
+    if (!target) return;
+
+    const fragments = target.querySelectorAll('.constructor-fragment');
+    if (fragments.length > 0) {
+        target.classList.add('has-fragments');
+    } else {
+        target.classList.remove('has-fragments');
+    }
+}
+
+function renderConstructorForPhase(phaseKey) {
+    const panel = document.querySelector(`.constructor-panel[data-phase="${phaseKey}"]`);
+    if (!panel) {
+        return;
+    }
+
+    const sets = getConstructorSets(phaseKey);
+    const state = ensureConstructorState(phaseKey);
+
+    const wordElement = panel.querySelector('[data-constructor-word]');
+    const translationElement = panel.querySelector('[data-constructor-translation]');
+    const progressElement = panel.querySelector('[data-constructor-progress]');
+    const hintElement = panel.querySelector('[data-constructor-hint]');
+    const source = panel.querySelector('[data-constructor-source]');
+    const target = panel.querySelector('[data-constructor-target]');
+    const checkBtn = panel.querySelector('.constructor-check');
+    const resetBtn = panel.querySelector('.constructor-reset');
+    const nextBtn = panel.querySelector('.constructor-next');
+
+    clearConstructorFeedback(panel);
+
+    if (!sets.length) {
+        if (wordElement) wordElement.textContent = '—';
+        if (translationElement) translationElement.textContent = '';
+        if (progressElement) progressElement.textContent = '';
+        if (hintElement) {
+            hintElement.textContent = 'Для этой фазы пока нет предложений для конструктора.';
+        }
+        if (source) {
+            source.innerHTML = '';
+        }
+        if (target) {
+            target.innerHTML = '<div class="constructor-placeholder">Предложения появятся позже.</div>';
+            target.classList.remove('has-fragments');
+        }
+        [checkBtn, resetBtn, nextBtn].forEach(btn => {
+            if (btn) {
+                btn.disabled = true;
+            }
+        });
+        return;
+    }
+
+    if (state.index >= sets.length) {
+        state.index = 0;
+    }
+    if (state.index < 0) {
+        state.index = sets.length - 1;
+    }
+
+    const current = sets[state.index];
+
+    if (wordElement) {
+        wordElement.textContent = current.word || '—';
+    }
+
+    if (translationElement) {
+        translationElement.textContent = 'Перевод появится после проверки.';
+    }
+
+    if (progressElement) {
+        progressElement.textContent = `${state.index + 1} / ${sets.length}`;
+    }
+
+    if (hintElement) {
+        if (current.translation) {
+            hintElement.textContent = `Соберите предложение со словом «${current.word}». Подсказка: ${current.translation}.`;
+        } else {
+            hintElement.textContent = `Соберите предложение со словом «${current.word}».`;
+        }
+    }
+
+    if (source) {
+        source.innerHTML = '';
+        const indices = current.parts.map((_, idx) => idx);
+        const shuffled = shuffleArray(indices);
+        shuffled.forEach(idx => {
+            const fragment = buildConstructorFragment(current.parts[idx], idx);
+            source.appendChild(fragment);
+        });
+    }
+
+    if (target) {
+        target.innerHTML = '<div class="constructor-placeholder">Перетащите или нажмите на фрагменты, чтобы собрать предложение.</div>';
+        target.classList.remove('has-fragments');
+    }
+
+    [checkBtn, resetBtn, nextBtn].forEach(btn => {
+        if (btn) {
+            btn.disabled = false;
+        }
+    });
+
+    panel.dataset.constructorIndex = String(state.index);
+}
+
+function toggleConstructorFragment(panel, fragment) {
+    if (!panel || !fragment) return;
+
+    const source = panel.querySelector('[data-constructor-source]');
+    const target = panel.querySelector('[data-constructor-target]');
+    if (!source || !target) return;
+
+    if (fragment.parentElement === source) {
+        target.appendChild(fragment);
+        fragment.classList.add('in-target');
+    } else {
+        source.appendChild(fragment);
+        fragment.classList.remove('in-target');
+    }
+
+    if (navigator.vibrate && isTouchDevice) {
+        navigator.vibrate(10);
+    }
+
+    clearConstructorFeedback(panel);
+
+    const translationElement = panel.querySelector('[data-constructor-translation]');
+    if (translationElement) {
+        translationElement.textContent = 'Перевод появится после проверки.';
+    }
+
+    updateConstructorPlaceholder(panel);
+}
+
+function handleConstructorCheck(panel) {
+    if (!panel) return;
+
+    const phaseKey = panel.dataset.phase;
+    const sets = getConstructorSets(phaseKey);
+    if (!sets.length) {
+        return;
+    }
+
+    const state = ensureConstructorState(phaseKey);
+    const current = sets[state.index] || sets[0];
+
+    const target = panel.querySelector('[data-constructor-target]');
+    const feedback = panel.querySelector('.constructor-feedback');
+    const translationElement = panel.querySelector('[data-constructor-translation]');
+    const originalElement = panel.querySelector('[data-constructor-original]');
+
+    if (!target || !feedback) {
+        return;
+    }
+
+    const fragments = Array.from(target.querySelectorAll('.constructor-fragment'));
+
+    if (fragments.length !== current.parts.length) {
+        feedback.textContent = 'Используйте все фрагменты, прежде чем проверять.';
+        feedback.classList.add('error');
+        feedback.classList.remove('success');
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(30);
+        }
+        return;
+    }
+
+    const indices = fragments.map(fragment => parseInt(fragment.dataset.index || '0', 10));
+    const isCorrect = indices.every((value, idx) => value === idx);
+
+    if (isCorrect) {
+        feedback.textContent = 'Отлично! Предложение собрано верно.';
+        feedback.classList.add('success');
+        feedback.classList.remove('error');
+        if (translationElement) {
+            if (current.sentenceTranslation) {
+                translationElement.textContent = `Перевод: ${current.sentenceTranslation}`;
+            } else {
+                translationElement.textContent = 'Перевод: —';
+            }
+        }
+        if (originalElement) {
+            originalElement.textContent = current.sentence ? `Оригинал: "${current.sentence}"` : '';
+        }
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(20);
+        }
+    } else {
+        feedback.textContent = 'Порядок фрагментов пока неверный. Попробуйте ещё раз.';
+        feedback.classList.add('error');
+        feedback.classList.remove('success');
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(40);
+        }
+    }
+}
+
+function handleConstructorReset(panel) {
+    if (!panel) return;
+    const phaseKey = panel.dataset.phase;
+    if (!phaseKey) return;
+    renderConstructorForPhase(phaseKey);
+    updateConstructorPlaceholder(panel);
+}
+
+function handleConstructorNext(panel) {
+    if (!panel) return;
+    const phaseKey = panel.dataset.phase;
+    const sets = getConstructorSets(phaseKey);
+    if (!sets.length) {
+        return;
+    }
+
+    const state = ensureConstructorState(phaseKey);
+    state.index = (state.index + 1) % sets.length;
+    renderConstructorForPhase(phaseKey);
+    updateConstructorPlaceholder(panel);
+
+    if (navigator.vibrate && isTouchDevice) {
+        navigator.vibrate(15);
+    }
+}
+
+function initializeConstructorSection() {
+    const panels = document.querySelectorAll('.constructor-panel');
+    panels.forEach(panel => {
+        panel.addEventListener('click', event => {
+            const target = event.target;
+            if (!(target instanceof HTMLElement)) {
+                return;
+            }
+
+            if (target.classList.contains('constructor-fragment')) {
+                toggleConstructorFragment(panel, target);
+            }
+        });
+
+        const checkBtn = panel.querySelector('.constructor-check');
+        if (checkBtn) {
+            checkBtn.addEventListener('click', () => handleConstructorCheck(panel));
+        }
+
+        const resetBtn = panel.querySelector('.constructor-reset');
+        if (resetBtn) {
+            resetBtn.addEventListener('click', () => handleConstructorReset(panel));
+        }
+
+        const nextBtn = panel.querySelector('.constructor-next');
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => handleConstructorNext(panel));
+        }
+    });
+}
+
+function activateConstructorPhase(phaseKey) {
+    const panels = document.querySelectorAll('.constructor-panel');
+    let activeRendered = false;
+
+    panels.forEach(panel => {
+        const isCurrent = panel.dataset.phase === phaseKey;
+        panel.classList.toggle('active', isCurrent);
+        if (isCurrent && !activeRendered) {
+            renderConstructorForPhase(phaseKey);
+            updateConstructorPlaceholder(panel);
+            activeRendered = true;
+        }
+    });
+}
+
 function displayVocabulary(phaseKey) {
     // Prevent multiple rapid transitions
     if (isTransitioning) return;
@@ -607,6 +950,9 @@ function displayVocabulary(phaseKey) {
 
     // Setup relations for current phase
     setupRelationsForPhase(phaseKey);
+
+    // Update constructor section
+    activateConstructorPhase(phaseKey);
 
     grid.innerHTML = '';
 
@@ -1533,6 +1879,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const journeyPoints = document.querySelectorAll('.journey-point');
     initializeProgressLine();
+    initializeConstructorSection();
     attachQuizHandlers();
 
     // Initialize relation toggles

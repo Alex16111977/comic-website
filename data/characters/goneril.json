@@ -21,56 +21,88 @@
           "russian": "ложь",
           "transcription": "[ди ЛЮ-ге]",
           "sentence": "Goneril steht unter dem glühenden Kronleuchter des Thronsaals. Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Lüge“ bleibt lebendig.",
-          "sentence_translation": "Гонерилья стоит под пылающей люстрой тронного зала. Каждой клеткой тела я обещаю: слово «ложь» останется живым."
+          "sentence_translation": "Гонерилья стоит под пылающей люстрой тронного зала. Каждой клеткой тела я обещаю: слово «ложь» останется живым.",
+          "sentence_parts": [
+            "Goneril steht unter dem glühenden Kronleuchter des Thronsaals.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Lüge“ bleibt lebendig."
+          ]
         },
         {
           "german": "schwören",
           "russian": "клясться",
           "transcription": "[ШВЁ-рен]",
           "sentence": "Neben der ausgerollten Reichskarte beugt sich Goneril über Lears schweren Tisch. Ich flüstere den Wächtern des Schicksals zu: Das Wort „schwören“ darf nicht vergehen.",
-          "sentence_translation": "У развернутой карты королевства Гонерилья склоняется над тяжёлым столом Лира. Я шепчу стражам судьбы: слово «клясться» не должно исчезнуть."
+          "sentence_translation": "У развернутой карты королевства Гонерилья склоняется над тяжёлым столом Лира. Я шепчу стражам судьбы: слово «клясться» не должно исчезнуть.",
+          "sentence_parts": [
+            "Neben der ausgerollten Reichskarte beugt sich Goneril über Lears schweren Tisch.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „schwören“ darf nicht vergehen."
+          ]
         },
         {
           "german": "das Erbe",
           "russian": "наследство",
           "transcription": "[дас ЕР-бе]",
           "sentence": "Vor den steinernen Ahnenstatuen verschränkt Goneril die Hände hinter dem Rücken. Mit jeder Faser meines Körpers verspreche ich: Das Wort „das Erbe“ bleibt lebendig.",
-          "sentence_translation": "Перед каменными статуями предков Гонерилья сцепляет руки за спиной. Каждой клеткой тела я обещаю: слово «наследство» останется живым."
+          "sentence_translation": "Перед каменными статуями предков Гонерилья сцепляет руки за спиной. Каждой клеткой тела я обещаю: слово «наследство» останется живым.",
+          "sentence_parts": [
+            "Vor den steinernen Ahnenstatuen verschränkt Goneril die Hände hinter dem Rücken.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „das Erbe“ bleibt lebendig."
+          ]
         },
         {
           "german": "heucheln",
           "russian": "лицемерить",
           "transcription": "[ХОЙ-хельн]",
           "sentence": "Zwischen flüsternden Höflingen gleitet Goneril über den kalten Marmorboden. Ich umarme das Wort „heucheln“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "Между шепчущимися придворными Гонерилья скользит по холодному мраморному полу. Я обнимаю слово «лицемерить», будто это единственный союзник."
+          "sentence_translation": "Между шепчущимися придворными Гонерилья скользит по холодному мраморному полу. Я обнимаю слово «лицемерить», будто это единственный союзник.",
+          "sentence_parts": [
+            "Zwischen flüsternden Höflingen gleitet Goneril über den kalten Marmorboden.",
+            "Ich umarme das Wort „heucheln“, als wäre es mein einziger Verbündeter."
+          ]
         },
         {
           "german": "die Gier",
           "russian": "жадность",
           "transcription": "[ди ГИР]",
           "sentence": "Am Rand des purpurnen Teppichs wartet Goneril auf ein Zeichen des Königs. Ich zeichne das Wort „die Gier“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "На краю пурпурного ковра Гонерилья ждёт знака от короля. Я черчу слово «жадность» в мыслях поверх линий судьбы."
+          "sentence_translation": "На краю пурпурного ковра Гонерилья ждёт знака от короля. Я черчу слово «жадность» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Am Rand des purpurnen Teppichs wartet Goneril auf ein Zeichen des Königs.",
+            "Ich zeichne das Wort „die Gier“ in Gedanken über die Linien des Schicksals."
+          ]
         },
         {
           "german": "täuschen",
           "russian": "обманывать",
           "transcription": "[ТОЙ-шен]",
           "sentence": "Unter wehenden Standarten der Schwestern senkt Goneril kurz den Blick. Mit jeder Faser meines Körpers verspreche ich: Das Wort „täuschen“ bleibt lebendig.",
-          "sentence_translation": "Под развевающимися штандартами сестёр Гонерилья на миг опускает взгляд. Каждой клеткой тела я обещаю: слово «обманывать» останется живым."
+          "sentence_translation": "Под развевающимися штандартами сестёр Гонерилья на миг опускает взгляд. Каждой клеткой тела я обещаю: слово «обманывать» останется живым.",
+          "sentence_parts": [
+            "Unter wehenden Standarten der Schwestern senkt Goneril kurz den Blick.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „täuschen“ bleibt lebendig."
+          ]
         },
         {
           "german": "schmeicheln",
           "russian": "льстить",
           "transcription": "[ШМАЙ-хельн]",
           "sentence": "Hinter der vergoldeten Balustrade beobachtet Goneril das gespannte Antlitz des Hofes. Das Echo des Wortes „schmeicheln“ übertönt das Flüstern der Höflinge.",
-          "sentence_translation": "За позолоченной балюстрадой Гонерилья наблюдает за напряжёнными лицами двора. Эхо слова «льстить» заглушает шёпот придворных."
+          "sentence_translation": "За позолоченной балюстрадой Гонерилья наблюдает за напряжёнными лицами двора. Эхо слова «льстить» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Hinter der vergoldeten Balustrade beobachtet Goneril das gespannte Antlitz des Hofes.",
+            "Das Echo des Wortes „schmeicheln“ übertönt das Flüstern der Höflinge."
+          ]
         },
         {
           "german": "das Vermögen",
           "russian": "состояние",
           "transcription": "[дас фер-МЁ-ген]",
           "sentence": "Im Schein der offenen Feuerbecken erhebt Goneril langsam die Stimme. Ich umarme das Wort „das Vermögen“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "В отблесках открытых жаровен Гонерилья медленно поднимает голос. Я обнимаю слово «состояние», будто это единственный союзник."
+          "sentence_translation": "В отблесках открытых жаровен Гонерилья медленно поднимает голос. Я обнимаю слово «состояние», будто это единственный союзник.",
+          "sentence_parts": [
+            "Im Schein der offenen Feuerbecken erhebt Goneril langsam die Stimme.",
+            "Ich umarme das Wort „das Vermögen“, als wäre es mein einziger Verbündeter."
+          ]
         }
       ],
       "quizzes": [
@@ -114,56 +146,88 @@
           "russian": "власть",
           "transcription": "[ди МАХТ]",
           "sentence": "Im hallenden Torbogen von Gonerils Burg verharrt Goneril zwischen gepackten Kisten. Ich umarme das Wort „die Macht“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "В гулком проёме ворот замка Гонерильи Гонерилья замирает среди нагруженных ящиков. Я обнимаю слово «власть», будто это единственный союзник."
+          "sentence_translation": "В гулком проёме ворот замка Гонерильи Гонерилья замирает среди нагруженных ящиков. Я обнимаю слово «власть», будто это единственный союзник.",
+          "sentence_parts": [
+            "Im hallenden Torbogen von Gonerils Burg verharrt Goneril zwischen gepackten Kisten.",
+            "Ich umarme das Wort „die Macht“, als wäre es mein einziger Verbündeter."
+          ]
         },
         {
           "german": "herrschen",
           "russian": "править",
           "transcription": "[ХЕР-шен]",
           "sentence": "Auf der windigen Freitreppe blickt Goneril zum schweigenden Hof hinunter. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „herrschen“ gehört mir.",
-          "sentence_translation": "На продуваемой ветром лестнице Гонерилья смотрит вниз на молчаливый двор. Буря за окнами усиливает клятву: слово «править» принадлежит мне."
+          "sentence_translation": "На продуваемой ветром лестнице Гонерилья смотрит вниз на молчаливый двор. Буря за окнами усиливает клятву: слово «править» принадлежит мне.",
+          "sentence_parts": [
+            "Auf der windigen Freitreppe blickt Goneril zum schweigenden Hof hinunter.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „herrschen“ gehört mir."
+          ]
         },
         {
           "german": "befehlen",
           "russian": "приказывать",
           "transcription": "[бе-ФЕ-лен]",
           "sentence": "Zwischen zurückgelassenen Dienern schließt Goneril den Reisemantel enger. Das Echo des Wortes „befehlen“ übertönt das Flüstern der Höflinge.",
-          "sentence_translation": "Среди оставленных слуг Гонерилья плотнее запахивает дорожный плащ. Эхо слова «приказывать» заглушает шёпот придворных."
+          "sentence_translation": "Среди оставленных слуг Гонерилья плотнее запахивает дорожный плащ. Эхо слова «приказывать» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Zwischen zurückgelassenen Dienern schließt Goneril den Reisemantel enger.",
+            "Das Echo des Wortes „befehlen“ übertönt das Flüstern der Höflinge."
+          ]
         },
         {
           "german": "der Thron",
           "russian": "трон",
           "transcription": "[дер ТРОН]",
           "sentence": "Am dunklen Pferdestall streicht Goneril einem nervösen Tier über die Mähne. Mein Atem zeichnet das Wort „der Thron“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "У тёмного конюшенного ряда Гонерилья гладит гриву нервного коня. Моё дыхание рисует слово «трон» в холодном воздухе между нами."
+          "sentence_translation": "У тёмного конюшенного ряда Гонерилья гладит гриву нервного коня. Моё дыхание рисует слово «трон» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Am dunklen Pferdestall streicht Goneril einem nervösen Tier über die Mähne.",
+            "Mein Atem zeichnet das Wort „der Thron“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "erobern",
           "russian": "завоёвывать",
           "transcription": "[ер-О-берн]",
           "sentence": "Vor dem knarrenden Fallgatter tastet Goneril ein letztes Mal nach dem Haustor. Mit jeder Faser meines Körpers verspreche ich: Das Wort „erobern“ bleibt lebendig.",
-          "sentence_translation": "Перед скрипящим подъёмным мостом Гонерилья в последний раз касается родной двери. Каждой клеткой тела я обещаю: слово «завоёвывать» останется живым."
+          "sentence_translation": "Перед скрипящим подъёмным мостом Гонерилья в последний раз касается родной двери. Каждой клеткой тела я обещаю: слово «завоёвывать» останется живым.",
+          "sentence_parts": [
+            "Vor dem knarrenden Fallgatter tastet Goneril ein letztes Mal nach dem Haustor.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „erobern“ bleibt lebendig."
+          ]
         },
         {
           "german": "die Herrschaft",
           "russian": "господство",
           "transcription": "[ди ХЕР-шафт]",
           "sentence": "Zwischen verstreuten Schriftrollen dreht Goneril den Ring an der Hand. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Herrschaft“ gehört mir.",
-          "sentence_translation": "Среди разбросанных свитков Гонерилья вертит кольцо на пальце. Буря за окнами усиливает клятву: слово «господство» принадлежит мне."
+          "sentence_translation": "Среди разбросанных свитков Гонерилья вертит кольцо на пальце. Буря за окнами усиливает клятву: слово «господство» принадлежит мне.",
+          "sentence_parts": [
+            "Zwischen verstreuten Schriftrollen dreht Goneril den Ring an der Hand.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Herrschaft“ gehört mir."
+          ]
         },
         {
           "german": "regieren",
           "russian": "управлять",
           "transcription": "[ре-ГИ-рен]",
           "sentence": "Am leeren Bankettisch zählt Goneril die verlöschenden Kerzen. Mit fester Stimme schwöre ich mir: Das Wort „regieren“ wird heute nicht verraten.",
-          "sentence_translation": "У пустого банкетного стола Гонерилья пересчитывает гаснущие свечи. Твёрдым голосом я клянусь себе: слово «управлять» сегодня не будет предано."
+          "sentence_translation": "У пустого банкетного стола Гонерилья пересчитывает гаснущие свечи. Твёрдым голосом я клянусь себе: слово «управлять» сегодня не будет предано.",
+          "sentence_parts": [
+            "Am leeren Bankettisch zählt Goneril die verlöschenden Kerzen.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „regieren“ wird heute nicht verraten."
+          ]
         },
         {
           "german": "unterwerfen",
           "russian": "подчинять",
           "transcription": "[ун-тер-ВЕР-фен]",
           "sentence": "Zwischen schweigenden Wachen geht Goneril auf den kalten Hof hinaus. Mit jeder Faser meines Körpers verspreche ich: Das Wort „unterwerfen“ bleibt lebendig.",
-          "sentence_translation": "Между молчаливыми стражниками Гонерилья выходит на холодный двор. Каждой клеткой тела я обещаю: слово «подчинять» останется живым."
+          "sentence_translation": "Между молчаливыми стражниками Гонерилья выходит на холодный двор. Каждой клеткой тела я обещаю: слово «подчинять» останется живым.",
+          "sentence_parts": [
+            "Zwischen schweigenden Wachen geht Goneril auf den kalten Hof hinaus.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „unterwerfen“ bleibt lebendig."
+          ]
         }
       ],
       "quizzes": [
@@ -207,56 +271,88 @@
           "russian": "унижать",
           "transcription": "[де-МЮ-ти-ген]",
           "sentence": "Im zugigen Seitenflügel lauscht Goneril dem Heulen der Küstenwinde. Ich zeichne das Wort „demütigen“ mit unsichtbarer Tinte auf meine Handfläche.",
-          "sentence_translation": "В продуваемом ветром боковом крыле Гонерилья слушает вой прибрежного ветра. Я вывожу слово «унижать» невидимыми чернилами на ладони."
+          "sentence_translation": "В продуваемом ветром боковом крыле Гонерилья слушает вой прибрежного ветра. Я вывожу слово «унижать» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Im zugigen Seitenflügel lauscht Goneril dem Heulen der Küstenwinde.",
+            "Ich zeichne das Wort „demütigen“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
         },
         {
           "german": "grausam",
           "russian": "жестокий",
           "transcription": "[ГРАУ-зам]",
           "sentence": "Vor dem rauchigen Kamin der Burg faltet Goneril einen zerknitterten Brief. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „grausam“ gehört mir.",
-          "sentence_translation": "Перед дымным камином замка Гонерилья складывает измятый лист. Буря за окнами усиливает клятву: слово «жестокий» принадлежит мне."
+          "sentence_translation": "Перед дымным камином замка Гонерилья складывает измятый лист. Буря за окнами усиливает клятву: слово «жестокий» принадлежит мне.",
+          "sentence_parts": [
+            "Vor dem rauchigen Kamin der Burg faltet Goneril einen zerknitterten Brief.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „grausam“ gehört mir."
+          ]
         },
         {
           "german": "die Rache",
           "russian": "месть",
           "transcription": "[ди РА-хе]",
           "sentence": "Unter farblosen Wandteppichen schreitet Goneril rastlos auf und ab. Selbst wenn die Welt zerfällt, bleibt das Wort „die Rache“ mein Nordstern.",
-          "sentence_translation": "Под выцветшими гобеленами Гонерилья беспокойно меряет шагами зал. Даже если мир распадается, слово «месть» остаётся моим северным светом."
+          "sentence_translation": "Под выцветшими гобеленами Гонерилья беспокойно меряет шагами зал. Даже если мир распадается, слово «месть» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Unter farblosen Wandteppichen schreitet Goneril rastlos auf und ab.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „die Rache“ mein Nordstern."
+          ]
         },
         {
           "german": "vertreiben",
           "russian": "изгонять",
           "transcription": "[фер-ТРАЙ-бен]",
           "sentence": "An der schmalen Fensterluke zählt Goneril die Fackeln auf dem Hof. Mit fester Stimme schwöre ich mir: Das Wort „vertreiben“ wird heute nicht verraten.",
-          "sentence_translation": "У узкой бойницы Гонерилья считает факелы на дворе. Твёрдым голосом я клянусь себе: слово «изгонять» сегодня не будет предано."
+          "sentence_translation": "У узкой бойницы Гонерилья считает факелы на дворе. Твёрдым голосом я клянусь себе: слово «изгонять» сегодня не будет предано.",
+          "sentence_parts": [
+            "An der schmalen Fensterluke zählt Goneril die Fackeln auf dem Hof.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „vertreiben“ wird heute nicht verraten."
+          ]
         },
         {
           "german": "verachten",
           "russian": "презирать",
           "transcription": "[фер-АХ-тен]",
           "sentence": "Zwischen Reisekoffern der Gesandten sucht Goneril nach frischen Botschaften. Mit fester Stimme schwöre ich mir: Das Wort „verachten“ wird heute nicht verraten.",
-          "sentence_translation": "Среди дорожных сундуков послов Гонерилья ищет свежие вести. Твёрдым голосом я клянусь себе: слово «презирать» сегодня не будет предано."
+          "sentence_translation": "Среди дорожных сундуков послов Гонерилья ищет свежие вести. Твёрдым голосом я клянусь себе: слово «презирать» сегодня не будет предано.",
+          "sentence_parts": [
+            "Zwischen Reisekoffern der Gesandten sucht Goneril nach frischen Botschaften.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „verachten“ wird heute nicht verraten."
+          ]
         },
         {
           "german": "verweigern",
           "russian": "отказывать",
           "transcription": "[фер-ВАЙ-герн]",
           "sentence": "Im stillen Kapellenraum kniet Goneril vor der kalten Steinfigur. Ich zeichne das Wort „verweigern“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "В тихой капелле Гонерилья преклоняет колени перед холодной каменной фигурой. Я черчу слово «отказывать» в мыслях поверх линий судьбы."
+          "sentence_translation": "В тихой капелле Гонерилья преклоняет колени перед холодной каменной фигурой. Я черчу слово «отказывать» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Im stillen Kapellenraum kniet Goneril vor der kalten Steinfigur.",
+            "Ich zeichne das Wort „verweigern“ in Gedanken über die Linien des Schicksals."
+          ]
         },
         {
           "german": "quälen",
           "russian": "мучить",
           "transcription": "[КВЕ-лен]",
           "sentence": "Auf dem Balkon, den das Meer besprüht, hält Goneril die Laterne fest. Selbst wenn die Welt zerfällt, bleibt das Wort „quälen“ mein Nordstern.",
-          "sentence_translation": "На балконе, омываемом морскими брызгами, Гонерилья крепко держит фонарь. Даже если мир распадается, слово «мучить» остаётся моим северным светом."
+          "sentence_translation": "На балконе, омываемом морскими брызгами, Гонерилья крепко держит фонарь. Даже если мир распадается, слово «мучить» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Auf dem Balkon, den das Meer besprüht, hält Goneril die Laterne fest.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „quälen“ mein Nordstern."
+          ]
         },
         {
           "german": "beschränken",
           "russian": "ограничивать",
           "transcription": "[бе-ШРЕН-кен]",
           "sentence": "Im Schatten der hohen Burgmauern schreibt Goneril eine fiebrige Antwort. Ich presse das Wort „beschränken“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "В тени высоких стен Гонерилья пишет лихорадочный ответ. Я стискиваю слово «ограничивать» зубами, чтобы не вырвалось сомнение."
+          "sentence_translation": "В тени высоких стен Гонерилья пишет лихорадочный ответ. Я стискиваю слово «ограничивать» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Im Schatten der hohen Burgmauern schreibt Goneril eine fiebrige Antwort.",
+            "Ich presse das Wort „beschränken“ zwischen die Zähne, damit kein Zweifel entweicht."
+          ]
         }
       ],
       "quizzes": [
@@ -300,49 +396,77 @@
           "russian": "отвергать",
           "transcription": "[фер-ШТО-сен]",
           "sentence": "Mitten auf der vom Regen gepeitschten Heide stemmt sich Goneril gegen den Wind. Wie ein stilles Gebet legt sich das Wort „verstoßen“ auf meine Lippen.",
-          "sentence_translation": "Посреди хлещущей дождём пустоши Гонерилья упирается в ветер. Как тихая молитва слово «отвергать» ложится на мои губы."
+          "sentence_translation": "Посреди хлещущей дождём пустоши Гонерилья упирается в ветер. Как тихая молитва слово «отвергать» ложится на мои губы.",
+          "sentence_parts": [
+            "Mitten auf der vom Regen gepeitschten Heide stemmt sich Goneril gegen den Wind.",
+            "Wie ein stilles Gebet legt sich das Wort „verstoßen“ auf meine Lippen."
+          ]
         },
         {
           "german": "der Sturm",
           "russian": "буря",
           "transcription": "[дер ШТУРМ]",
           "sentence": "Unter einem zerrissenen Banner schützt Goneril die Augen vor den Blitzen. Ich umarme das Wort „der Sturm“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "Под разорванным знаменем Гонерилья прикрывает глаза от молний. Я обнимаю слово «буря», будто это единственный союзник."
+          "sentence_translation": "Под разорванным знаменем Гонерилья прикрывает глаза от молний. Я обнимаю слово «буря», будто это единственный союзник.",
+          "sentence_parts": [
+            "Unter einem zerrissenen Banner schützt Goneril die Augen vor den Blitzen.",
+            "Ich umarme das Wort „der Sturm“, als wäre es mein einziger Verbündeter."
+          ]
         },
         {
           "german": "gnadenlos",
           "russian": "безжалостный",
           "transcription": "[ГНА-ден-лос]",
           "sentence": "Am Rand eines umgestürzten Baumes sucht Goneril Deckung vor dem Donner. Ich halte das Wort „gnadenlos“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "У поваленного дерева Гонерилья ищет укрытия от грома. Я держу слово «безжалостный» как факел у сердца."
+          "sentence_translation": "У поваленного дерева Гонерилья ищет укрытия от грома. Я держу слово «безжалостный» как факел у сердца.",
+          "sentence_parts": [
+            "Am Rand eines umgestürzten Baumes sucht Goneril Deckung vor dem Donner.",
+            "Ich halte das Wort „gnadenlos“ wie eine Fackel vor meinem Herzen."
+          ]
         },
         {
           "german": "verschließen",
           "russian": "запирать",
           "transcription": "[фер-ШЛИ-сен]",
           "sentence": "Zwischen schäumenden Wassergräben stolpert Goneril durch den Schlamm. Ich presse das Wort „verschließen“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "Между пенящимися лужами Гонерилья пробирается через грязь. Я стискиваю слово «запирать» зубами, чтобы не вырвалось сомнение."
+          "sentence_translation": "Между пенящимися лужами Гонерилья пробирается через грязь. Я стискиваю слово «запирать» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Zwischen schäumenden Wassergräben stolpert Goneril durch den Schlamm.",
+            "Ich presse das Wort „verschließen“ zwischen die Zähne, damit kein Zweifel entweicht."
+          ]
         },
         {
           "german": "die Kälte",
           "russian": "холод",
           "transcription": "[ди КЕЛ-те]",
           "sentence": "Vor einem zuckenden Himmel hebt Goneril die Arme trotzig an. Ich atme tief ein und lasse nur das Wort „die Kälte“ wieder hinaus.",
-          "sentence_translation": "На фоне вспыхивающего неба Гонерилья упрямо поднимает руки. Я глубоко вдыхаю и выпускаю только слово «холод»."
+          "sentence_translation": "На фоне вспыхивающего неба Гонерилья упрямо поднимает руки. Я глубоко вдыхаю и выпускаю только слово «холод».",
+          "sentence_parts": [
+            "Vor einem zuckenden Himmel hebt Goneril die Arme trotzig an.",
+            "Ich atme tief ein und lasse nur das Wort „die Kälte“ wieder hinaus."
+          ]
         },
         {
           "german": "erbarmungslos",
           "russian": "беспощадный",
           "transcription": "[ер-БАР-мунгс-лос]",
           "sentence": "Unter dem durchtränkten Umhang presst Goneril den Atem gegen die Kälte. Ich presse das Wort „erbarmungslos“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "Под промокшим плащом Гонерилья прижимает дыхание к груди, спасаясь от холода. Я стискиваю слово «беспощадный» зубами, чтобы не вырвалось сомнение."
+          "sentence_translation": "Под промокшим плащом Гонерилья прижимает дыхание к груди, спасаясь от холода. Я стискиваю слово «беспощадный» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Unter dem durchtränkten Umhang presst Goneril den Atem gegen die Kälte.",
+            "Ich presse das Wort „erbarmungslos“ zwischen die Zähne, damit kein Zweifel entweicht."
+          ]
         },
         {
           "german": "verhärten",
           "russian": "ожесточаться",
           "transcription": "[фер-ХЕР-тен]",
           "sentence": "Am kläglichen Feuerrest wärmt Goneril zitternde Finger. Ich atme tief ein und lasse nur das Wort „verhärten“ wieder hinaus.",
-          "sentence_translation": "У жалких огненных углей Гонерилья греет дрожащие пальцы. Я глубоко вдыхаю и выпускаю только слово «ожесточаться»."
+          "sentence_translation": "У жалких огненных углей Гонерилья греет дрожащие пальцы. Я глубоко вдыхаю и выпускаю только слово «ожесточаться».",
+          "sentence_parts": [
+            "Am kläglichen Feuerrest wärmt Goneril zitternde Finger.",
+            "Ich atme tief ein und lasse nur das Wort „verhärten“ wieder hinaus."
+          ]
         }
       ],
       "quizzes": [
@@ -386,56 +510,88 @@
           "russian": "ссориться",
           "transcription": "[ШТРАЙ-тен]",
           "sentence": "Im dunklen Zelt der Feldärzte sitzt Goneril bei der flackernden Kerze. Ich atme tief ein und lasse nur das Wort „streiten“ wieder hinaus.",
-          "sentence_translation": "В тёмном шатре полевых лекарей Гонерилья сидит у мерцающей свечи. Я глубоко вдыхаю и выпускаю только слово «ссориться»."
+          "sentence_translation": "В тёмном шатре полевых лекарей Гонерилья сидит у мерцающей свечи. Я глубоко вдыхаю и выпускаю только слово «ссориться».",
+          "sentence_parts": [
+            "Im dunklen Zelt der Feldärzte sitzt Goneril bei der flackernden Kerze.",
+            "Ich atme tief ein und lasse nur das Wort „streiten“ wieder hinaus."
+          ]
         },
         {
           "german": "verraten",
           "russian": "предавать",
           "transcription": "[фер-РА-тен]",
           "sentence": "Zwischen zerbeulten Rüstungen streicht Goneril über ein altes Wappen. Ich atme tief ein und lasse nur das Wort „verraten“ wieder hinaus.",
-          "sentence_translation": "Среди помятых доспехов Гонерилья гладит старый герб. Я глубоко вдыхаю и выпускаю только слово «предавать»."
+          "sentence_translation": "Среди помятых доспехов Гонерилья гладит старый герб. Я глубоко вдыхаю и выпускаю только слово «предавать».",
+          "sentence_parts": [
+            "Zwischen zerbeulten Rüstungen streicht Goneril über ein altes Wappen.",
+            "Ich atme tief ein und lasse nur das Wort „verraten“ wieder hinaus."
+          ]
         },
         {
           "german": "die Zwietracht",
           "russian": "раздор",
           "transcription": "[ди ЦВИ-трахт]",
           "sentence": "Am niedrigen Dachbalken der Hütte stößt Goneril fast den Kopf. Ich zeichne das Wort „die Zwietracht“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "О низкую балку хижины Гонерилья едва не ударяется головой. Я черчу слово «раздор» в мыслях поверх линий судьбы."
+          "sentence_translation": "О низкую балку хижины Гонерилья едва не ударяется головой. Я черчу слово «раздор» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Am niedrigen Dachbalken der Hütte stößt Goneril fast den Kopf.",
+            "Ich zeichne das Wort „die Zwietracht“ in Gedanken über die Linien des Schicksals."
+          ]
         },
         {
           "german": "hassen",
           "russian": "ненавидеть",
           "transcription": "[ХА-сен]",
           "sentence": "Neben der schlafenden Wache flüstert Goneril in die schwere Nacht. Ich zeichne das Wort „hassen“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "Рядом со спящим стражем Гонерилья шепчет в тяжёлую ночь. Я черчу слово «ненавидеть» в мыслях поверх линий судьбы."
+          "sentence_translation": "Рядом со спящим стражем Гонерилья шепчет в тяжёлую ночь. Я черчу слово «ненавидеть» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Neben der schlafenden Wache flüstert Goneril in die schwere Nacht.",
+            "Ich zeichne das Wort „hassen“ in Gedanken über die Linien des Schicksals."
+          ]
         },
         {
           "german": "betrügen",
           "russian": "изменять",
           "transcription": "[бе-ТРЮ-ген]",
           "sentence": "Vor dem einfachen Feldbett betrachtet Goneril die Narben vergangener Schlachten. Ich zeichne das Wort „betrügen“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "Перед грубой походной койкой Гонерилья разглядывает шрамы прошлых битв. Я черчу слово «изменять» в мыслях поверх линий судьбы."
+          "sentence_translation": "Перед грубой походной койкой Гонерилья разглядывает шрамы прошлых битв. Я черчу слово «изменять» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Vor dem einfachen Feldbett betrachtet Goneril die Narben vergangener Schlachten.",
+            "Ich zeichne das Wort „betrügen“ in Gedanken über die Linien des Schicksals."
+          ]
         },
         {
           "german": "die Verachtung",
           "russian": "презрение",
           "transcription": "[ди фер-АХ-тунг]",
           "sentence": "Im Geruch von feuchtem Stroh legt Goneril den Mantel zur Seite. Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Verachtung“ bleibt lebendig.",
-          "sentence_translation": "В запахе влажной соломы Гонерилья откладывает плащ в сторону. Каждой клеткой тела я обещаю: слово «презрение» останется живым."
+          "sentence_translation": "В запахе влажной соломы Гонерилья откладывает плащ в сторону. Каждой клеткой тела я обещаю: слово «презрение» останется живым.",
+          "sentence_parts": [
+            "Im Geruch von feuchtem Stroh legt Goneril den Mantel zur Seite.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Verachtung“ bleibt lebendig."
+          ]
         },
         {
           "german": "zerstören",
           "russian": "разрушать",
           "transcription": "[цер-ШТЁ-рен]",
           "sentence": "Auf dem wackligen Holztisch ordnet Goneril zerlesene Briefe. Ich presse das Wort „zerstören“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "На шатком деревянном столе Гонерилья раскладывает зачитанные письма. Я стискиваю слово «разрушать» зубами, чтобы не вырвалось сомнение."
+          "sentence_translation": "На шатком деревянном столе Гонерилья раскладывает зачитанные письма. Я стискиваю слово «разрушать» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Auf dem wackligen Holztisch ordnet Goneril zerlesene Briefe.",
+            "Ich presse das Wort „zerstören“ zwischen die Zähne, damit kein Zweifel entweicht."
+          ]
         },
         {
           "german": "die Leidenschaft",
           "russian": "страсть",
           "transcription": "[ди ЛАЙ-ден-шафт]",
           "sentence": "Am Eingang der Hütte späht Goneril nach einem vertrauten Schatten. Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Leidenschaft“ bleibt lebendig.",
-          "sentence_translation": "У входа в хижину Гонерилья высматривает знакомую тень. Каждой клеткой тела я обещаю: слово «страсть» останется живым."
+          "sentence_translation": "У входа в хижину Гонерилья высматривает знакомую тень. Каждой клеткой тела я обещаю: слово «страсть» останется живым.",
+          "sentence_parts": [
+            "Am Eingang der Hütte späht Goneril nach einem vertrauten Schatten.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Leidenschaft“ bleibt lebendig."
+          ]
         }
       ],
       "quizzes": [
@@ -479,56 +635,88 @@
           "russian": "ревность",
           "transcription": "[ди АЙ-фер-зухт]",
           "sentence": "Auf den weißen Klippen von Dover blickt Goneril in den aufgewühlten Kanal. Wie ein stilles Gebet legt sich das Wort „die Eifersucht“ auf meine Lippen.",
-          "sentence_translation": "На белых скалах Дувра Гонерилья смотрит в вздыбленный пролив. Как тихая молитва слово «ревность» ложится на мои губы."
+          "sentence_translation": "На белых скалах Дувра Гонерилья смотрит в вздыбленный пролив. Как тихая молитва слово «ревность» ложится на мои губы.",
+          "sentence_parts": [
+            "Auf den weißen Klippen von Dover blickt Goneril in den aufgewühlten Kanal.",
+            "Wie ein stilles Gebet legt sich das Wort „die Eifersucht“ auf meine Lippen."
+          ]
         },
         {
           "german": "rivalisieren",
           "russian": "соперничать",
           "transcription": "[ри-ва-ли-ЗИ-рен]",
           "sentence": "Zwischen flatternden Feldzeichen richtet Goneril den Helm. Wie ein stilles Gebet legt sich das Wort „rivalisieren“ auf meine Lippen.",
-          "sentence_translation": "Среди хлопающих штандартов Гонерилья поправляет шлем. Как тихая молитва слово «соперничать» ложится на мои губы."
+          "sentence_translation": "Среди хлопающих штандартов Гонерилья поправляет шлем. Как тихая молитва слово «соперничать» ложится на мои губы.",
+          "sentence_parts": [
+            "Zwischen flatternden Feldzeichen richtet Goneril den Helm.",
+            "Wie ein stilles Gebet legt sich das Wort „rivalisieren“ auf meine Lippen."
+          ]
         },
         {
           "german": "kämpfen",
           "russian": "бороться",
           "transcription": "[КЕМП-фен]",
           "sentence": "Am Lagerfeuer der Franzosen zeichnet Goneril Marschrouten in den Sand. Selbst wenn die Welt zerfällt, bleibt das Wort „kämpfen“ mein Nordstern.",
-          "sentence_translation": "У французского костра Гонерилья рисует в песке путь марша. Даже если мир распадается, слово «бороться» остаётся моим северным светом."
+          "sentence_translation": "У французского костра Гонерилья рисует в песке путь марша. Даже если мир распадается, слово «бороться» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Am Lagerfeuer der Franzosen zeichnet Goneril Marschrouten in den Sand.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „kämpfen“ mein Nordstern."
+          ]
         },
         {
           "german": "begehren",
           "russian": "желать",
           "transcription": "[бе-ГЕ-рен]",
           "sentence": "Neben verschnürten Versorgungskisten kontrolliert Goneril das Siegel. Mit fester Stimme schwöre ich mir: Das Wort „begehren“ wird heute nicht verraten.",
-          "sentence_translation": "У перевязанных провиантных ящиков Гонерилья проверяет печати. Твёрдым голосом я клянусь себе: слово «желать» сегодня не будет предано."
+          "sentence_translation": "У перевязанных провиантных ящиков Гонерилья проверяет печати. Твёрдым голосом я клянусь себе: слово «желать» сегодня не будет предано.",
+          "sentence_parts": [
+            "Neben verschnürten Versorgungskisten kontrolliert Goneril das Siegel.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „begehren“ wird heute nicht verraten."
+          ]
         },
         {
           "german": "beseitigen",
           "russian": "устранять",
           "transcription": "[бе-ЗАЙ-ти-ген]",
           "sentence": "Vor dem Seidenzelt der Heerführer lauscht Goneril dem dumpfen Meer. Ich zeichne das Wort „beseitigen“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "Перед шёлковым шатром полководцев Гонерилья слушает глухой шум моря. Я черчу слово «устранять» в мыслях поверх линий судьбы."
+          "sentence_translation": "Перед шёлковым шатром полководцев Гонерилья слушает глухой шум моря. Я черчу слово «устранять» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Vor dem Seidenzelt der Heerführer lauscht Goneril dem dumpfen Meer.",
+            "Ich zeichne das Wort „beseitigen“ in Gedanken über die Linien des Schicksals."
+          ]
         },
         {
           "german": "das Gift",
           "russian": "яд",
           "transcription": "[дас ГИФТ]",
           "sentence": "Auf dem sandigen Trainingsplatz übt Goneril das Ziehen des Schwerts. Ich zeichne das Wort „das Gift“ mit unsichtbarer Tinte auf meine Handfläche.",
-          "sentence_translation": "На песчаном плацу Гонерилья отрабатывает выхват меча. Я вывожу слово «яд» невидимыми чернилами на ладони."
+          "sentence_translation": "На песчаном плацу Гонерилья отрабатывает выхват меча. Я вывожу слово «яд» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Auf dem sandigen Trainingsplatz übt Goneril das Ziehen des Schwerts.",
+            "Ich zeichne das Wort „das Gift“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
         },
         {
           "german": "die Intrige",
           "russian": "интрига",
           "transcription": "[ди ин-ТРИ-ге]",
           "sentence": "Zwischen pochenden Trommeln hebt Goneril das Banner der Hoffnung. Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Intrige“ darf nicht vergehen.",
-          "sentence_translation": "Под гул барабанов Гонерилья поднимает знамя надежды. Я шепчу стражам судьбы: слово «интрига» не должно исчезнуть."
+          "sentence_translation": "Под гул барабанов Гонерилья поднимает знамя надежды. Я шепчу стражам судьбы: слово «интрига» не должно исчезнуть.",
+          "sentence_parts": [
+            "Zwischen pochenden Trommeln hebt Goneril das Banner der Hoffnung.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Intrige“ darf nicht vergehen."
+          ]
         },
         {
           "german": "morden",
           "russian": "убивать",
           "transcription": "[МОР-ден]",
           "sentence": "Am Morgennebel der Küste legt Goneril die Hand auf das pochende Herz. Wie ein stilles Gebet legt sich das Wort „morden“ auf meine Lippen.",
-          "sentence_translation": "В утреннем тумане побережья Гонерилья кладёт ладонь на бьющееся сердце. Как тихая молитва слово «убивать» ложится на мои губы."
+          "sentence_translation": "В утреннем тумане побережья Гонерилья кладёт ладонь на бьющееся сердце. Как тихая молитва слово «убивать» ложится на мои губы.",
+          "sentence_parts": [
+            "Am Morgennebel der Küste legt Goneril die Hand auf das pochende Herz.",
+            "Wie ein stilles Gebet legt sich das Wort „morden“ auf meine Lippen."
+          ]
         }
       ],
       "quizzes": [
@@ -572,56 +760,88 @@
           "russian": "отравлять",
           "transcription": "[фер-ГИФ-тен]",
           "sentence": "Im feuchten Kerker stützt Goneril sich an den tropfenden Stein. Das Echo des Wortes „vergiften“ übertönt das Flüstern der Höflinge.",
-          "sentence_translation": "В сыром подземелье Гонерилья опирается на сочащийся камень. Эхо слова «отравлять» заглушает шёпот придворных."
+          "sentence_translation": "В сыром подземелье Гонерилья опирается на сочащийся камень. Эхо слова «отравлять» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Im feuchten Kerker stützt Goneril sich an den tropfenden Stein.",
+            "Das Echo des Wortes „vergiften“ übertönt das Flüstern der Höflinge."
+          ]
         },
         {
           "german": "die Verzweiflung",
           "russian": "отчаяние",
           "transcription": "[ди фер-ЦВАЙ-флунг]",
           "sentence": "Unter der trüben Laterne zählt Goneril die eisernen Ringe der Kette. Das Echo des Wortes „die Verzweiflung“ übertönt das Flüstern der Höflinge.",
-          "sentence_translation": "Под мутным фонарём Гонерилья пересчитывает железные кольца цепи. Эхо слова «отчаяние» заглушает шёпот придворных."
+          "sentence_translation": "Под мутным фонарём Гонерилья пересчитывает железные кольца цепи. Эхо слова «отчаяние» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Unter der trüben Laterne zählt Goneril die eisernen Ringe der Kette.",
+            "Das Echo des Wortes „die Verzweiflung“ übertönt das Flüstern der Höflinge."
+          ]
         },
         {
           "german": "sterben",
           "russian": "умирать",
           "transcription": "[ШТЕР-бен]",
           "sentence": "Neben der schweren Holztür horcht Goneril auf entferntes Schluchzen. Ich zeichne das Wort „sterben“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "У тяжёлой двери Гонерилья прислушивается к далёким рыданиям. Я черчу слово «умирать» в мыслях поверх линий судьбы."
+          "sentence_translation": "У тяжёлой двери Гонерилья прислушивается к далёким рыданиям. Я черчу слово «умирать» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Neben der schweren Holztür horcht Goneril auf entferntes Schluchzen.",
+            "Ich zeichne das Wort „sterben“ in Gedanken über die Linien des Schicksals."
+          ]
         },
         {
           "german": "die Schuld",
           "russian": "вина",
           "transcription": "[ди ШУЛЬД]",
           "sentence": "Auf der kalten Steinbank zieht Goneril den Mantel enger um die Schultern. Ich halte das Wort „die Schuld“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "На холодной каменной скамье Гонерилья плотнее кутается в плащ. Я держу слово «вина» как факел у сердца."
+          "sentence_translation": "На холодной каменной скамье Гонерилья плотнее кутается в плащ. Я держу слово «вина» как факел у сердца.",
+          "sentence_parts": [
+            "Auf der kalten Steinbank zieht Goneril den Mantel enger um die Schultern.",
+            "Ich halte das Wort „die Schuld“ wie eine Fackel vor meinem Herzen."
+          ]
         },
         {
           "german": "vernichten",
           "russian": "уничтожать",
           "transcription": "[фер-НИХ-тен]",
           "sentence": "Zwischen Schatten der Gitterstäbe hebt Goneril das Gesicht zum Licht. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „vernichten“ gehört mir.",
-          "sentence_translation": "Между тенями решёток Гонерилья поднимает лицо к свету. Буря за окнами усиливает клятву: слово «уничтожать» принадлежит мне."
+          "sentence_translation": "Между тенями решёток Гонерилья поднимает лицо к свету. Буря за окнами усиливает клятву: слово «уничтожать» принадлежит мне.",
+          "sentence_parts": [
+            "Zwischen Schatten der Gitterstäbe hebt Goneril das Gesicht zum Licht.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „vernichten“ gehört mir."
+          ]
         },
         {
           "german": "das Verderben",
           "russian": "погибель",
           "transcription": "[дас фер-ДЕР-бен]",
           "sentence": "Am rostigen Wassereimer spiegelt Goneril kurz die eigenen Augen. Mein Atem zeichnet das Wort „das Verderben“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "У ржавого ведра с водой Гонерилья на мгновение видит отражение глаз. Моё дыхание рисует слово «погибель» в холодном воздухе между нами."
+          "sentence_translation": "У ржавого ведра с водой Гонерилья на мгновение видит отражение глаз. Моё дыхание рисует слово «погибель» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Am rostigen Wassereimer spiegelt Goneril kurz die eigenen Augen.",
+            "Mein Atem zeichnet das Wort „das Verderben“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "bereuen",
           "russian": "сожалеть",
           "transcription": "[бе-РОЙ-ен]",
           "sentence": "Im dumpfen Hall der Schritte zählt Goneril den Rhythmus der Wachen. Ich flüstere den Wächtern des Schicksals zu: Das Wort „bereuen“ darf nicht vergehen.",
-          "sentence_translation": "В глухом эхе шагов Гонерилья отсчитывает ритм часовых. Я шепчу стражам судьбы: слово «сожалеть» не должно исчезнуть."
+          "sentence_translation": "В глухом эхе шагов Гонерилья отсчитывает ритм часовых. Я шепчу стражам судьбы: слово «сожалеть» не должно исчезнуть.",
+          "sentence_parts": [
+            "Im dumpfen Hall der Schritte zählt Goneril den Rhythmus der Wachen.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „bereuen“ darf nicht vergehen."
+          ]
         },
         {
           "german": "die Hölle",
           "russian": "ад",
           "transcription": "[ди ХЁ-ле]",
           "sentence": "Vor dem verriegelten Fenster zeichnet Goneril Kreise in den Staub. Selbst wenn die Welt zerfällt, bleibt das Wort „die Hölle“ mein Nordstern.",
-          "sentence_translation": "Перед заколоченным окном Гонерилья чертит круги в пыли. Даже если мир распадается, слово «ад» остаётся моим северным светом."
+          "sentence_translation": "Перед заколоченным окном Гонерилья чертит круги в пыли. Даже если мир распадается, слово «ад» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Vor dem verriegelten Fenster zeichnet Goneril Kreise in den Staub.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „die Hölle“ mein Nordstern."
+          ]
         }
       ],
       "quizzes": [

@@ -21,56 +21,88 @@
           "russian": "трон",
           "transcription": "[дер ТРОН]",
           "sentence": "König Lear steht unter dem glühenden Kronleuchter des Thronsaals. Mein Atem zeichnet das Wort „der Thron“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "Лир стоит под пылающей люстрой тронного зала. Моё дыхание рисует слово «трон» в холодном воздухе между нами."
+          "sentence_translation": "Лир стоит под пылающей люстрой тронного зала. Моё дыхание рисует слово «трон» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "König Lear steht unter dem glühenden Kronleuchter des Thronsaals.",
+            "Mein Atem zeichnet das Wort „der Thron“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "das Königreich",
           "russian": "королевство",
           "transcription": "[дас КЁ-ниг-райх]",
           "sentence": "Neben der ausgerollten Reichskarte beugt sich König Lear über Lears schweren Tisch. Das kalte Licht lässt das Wort „das Königreich“ wie geschmolzenes Gold erscheinen.",
-          "sentence_translation": "У развернутой карты королевства Лир склоняется над тяжёлым столом Лира. Холодный свет заставляет слово «королевство» сиять словно расплавленное золото."
+          "sentence_translation": "У развернутой карты королевства Лир склоняется над тяжёлым столом Лира. Холодный свет заставляет слово «королевство» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Neben der ausgerollten Reichskarte beugt sich König Lear über Lears schweren Tisch.",
+            "Das kalte Licht lässt das Wort „das Königreich“ wie geschmolzenes Gold erscheinen."
+          ]
         },
         {
           "german": "die Macht",
           "russian": "власть",
           "transcription": "[ди МАХТ]",
           "sentence": "Vor den steinernen Ahnenstatuen verschränkt König Lear die Hände hinter dem Rücken. Mein Atem zeichnet das Wort „die Macht“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "Перед каменными статуями предков Лир сцепляет руки за спиной. Моё дыхание рисует слово «власть» в холодном воздухе между нами."
+          "sentence_translation": "Перед каменными статуями предков Лир сцепляет руки за спиной. Моё дыхание рисует слово «власть» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Vor den steinernen Ahnenstatuen verschränkt König Lear die Hände hinter dem Rücken.",
+            "Mein Atem zeichnet das Wort „die Macht“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "herrschen",
           "russian": "править",
           "transcription": "[ХЕР-шен]",
           "sentence": "Zwischen flüsternden Höflingen gleitet König Lear über den kalten Marmorboden. Mein Atem zeichnet das Wort „herrschen“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "Между шепчущимися придворными Лир скользит по холодному мраморному полу. Моё дыхание рисует слово «править» в холодном воздухе между нами."
+          "sentence_translation": "Между шепчущимися придворными Лир скользит по холодному мраморному полу. Моё дыхание рисует слово «править» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Zwischen flüsternden Höflingen gleitet König Lear über den kalten Marmorboden.",
+            "Mein Atem zeichnet das Wort „herrschen“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "verkünden",
           "russian": "провозглашать",
           "transcription": "[фер-КЮН-ден]",
           "sentence": "Am Rand des purpurnen Teppichs wartet König Lear auf ein Zeichen des Königs. Ich zeichne das Wort „verkünden“ mit unsichtbarer Tinte auf meine Handfläche.",
-          "sentence_translation": "На краю пурпурного ковра Лир ждёт знака от короля. Я вывожу слово «провозглашать» невидимыми чернилами на ладони."
+          "sentence_translation": "На краю пурпурного ковра Лир ждёт знака от короля. Я вывожу слово «провозглашать» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Am Rand des purpurnen Teppichs wartet König Lear auf ein Zeichen des Königs.",
+            "Ich zeichne das Wort „verkünden“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
         },
         {
           "german": "die Krone",
           "russian": "корона",
           "transcription": "[ди КРО-не]",
           "sentence": "Unter wehenden Standarten der Schwestern senkt König Lear kurz den Blick. Ich zeichne das Wort „die Krone“ mit unsichtbarer Tinte auf meine Handfläche.",
-          "sentence_translation": "Под развевающимися штандартами сестёр Лир на миг опускает взгляд. Я вывожу слово «корона» невидимыми чернилами на ладони."
+          "sentence_translation": "Под развевающимися штандартами сестёр Лир на миг опускает взгляд. Я вывожу слово «корона» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Unter wehenden Standarten der Schwestern senkt König Lear kurz den Blick.",
+            "Ich zeichne das Wort „die Krone“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
         },
         {
           "german": "die Zeremonie",
           "russian": "церемония",
           "transcription": "[ди це-ре-мо-НИ]",
           "sentence": "Hinter der vergoldeten Balustrade beobachtet König Lear das gespannte Antlitz des Hofes. Mit fester Stimme schwöre ich mir: Das Wort „die Zeremonie“ wird heute nicht verraten.",
-          "sentence_translation": "За позолоченной балюстрадой Лир наблюдает за напряжёнными лицами двора. Твёрдым голосом я клянусь себе: слово «церемония» сегодня не будет предано."
+          "sentence_translation": "За позолоченной балюстрадой Лир наблюдает за напряжёнными лицами двора. Твёрдым голосом я клянусь себе: слово «церемония» сегодня не будет предано.",
+          "sentence_parts": [
+            "Hinter der vergoldeten Balustrade beobachtet König Lear das gespannte Antlitz des Hofes.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „die Zeremonie“ wird heute nicht verraten."
+          ]
         },
         {
           "german": "prächtig",
           "russian": "великолепный",
           "transcription": "[ПРЕХ-тиг]",
           "sentence": "Im Schein der offenen Feuerbecken erhebt König Lear langsam die Stimme. Ich halte das Wort „prächtig“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "В отблесках открытых жаровен Лир медленно поднимает голос. Я держу слово «великолепный» как факел у сердца."
+          "sentence_translation": "В отблесках открытых жаровен Лир медленно поднимает голос. Я держу слово «великолепный» как факел у сердца.",
+          "sentence_parts": [
+            "Im Schein der offenen Feuerbecken erhebt König Lear langsam die Stimme.",
+            "Ich halte das Wort „prächtig“ wie eine Fackel vor meinem Herzen."
+          ]
         }
       ],
       "quizzes": [
@@ -114,56 +146,89 @@
           "russian": "унижать",
           "transcription": "[де-МЮ-ти-ген]",
           "sentence": "Im hallenden Torbogen von Gonerils Burg verharrt König Lear zwischen gepackten Kisten. Ich halte das Wort „demütigen“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "В гулком проёме ворот замка Гонерильи Лир замирает среди нагруженных ящиков. Я держу слово «унижать» как факел у сердца."
+          "sentence_translation": "В гулком проёме ворот замка Гонерильи Лир замирает среди нагруженных ящиков. Я держу слово «унижать» как факел у сердца.",
+          "sentence_parts": [
+            "Im hallenden Torbogen von Gonerils Burg verharrt König Lear zwischen gepackten Kisten.",
+            "Ich halte das Wort „demütigen“ wie eine Fackel vor meinem Herzen."
+          ]
         },
         {
           "german": "der Zorn",
           "russian": "гнев",
           "transcription": "[дер ЦОРН]",
           "sentence": "Auf der windigen Freitreppe blickt König Lear zum schweigenden Hof hinunter. Ich presse das Wort „der Zorn“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "На продуваемой ветром лестнице Лир смотрит вниз на молчаливый двор. Я стискиваю слово «гнев» зубами, чтобы не вырвалось сомнение."
+          "sentence_translation": "На продуваемой ветром лестнице Лир смотрит вниз на молчаливый двор. Я стискиваю слово «гнев» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Auf der windigen Freitreppe blickt König Lear zum schweigenden Hof hinunter.",
+            "Ich presse das Wort „der Zorn“ zwischen die Zähne,",
+            "damit kein Zweifel entweicht."
+          ]
         },
         {
           "german": "die Undankbarkeit",
           "russian": "неблагодарность",
           "transcription": "[ди УН-данк-бар-кайт]",
           "sentence": "Zwischen zurückgelassenen Dienern schließt König Lear den Reisemantel enger. Selbst wenn die Welt zerfällt, bleibt das Wort „die Undankbarkeit“ mein Nordstern.",
-          "sentence_translation": "Среди оставленных слуг Лир плотнее запахивает дорожный плащ. Даже если мир распадается, слово «неблагодарность» остаётся моим северным светом."
+          "sentence_translation": "Среди оставленных слуг Лир плотнее запахивает дорожный плащ. Даже если мир распадается, слово «неблагодарность» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Zwischen zurückgelassenen Dienern schließt König Lear den Reisemantel enger.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „die Undankbarkeit“ mein Nordstern."
+          ]
         },
         {
           "german": "verfluchen",
           "russian": "проклинать",
           "transcription": "[фер-ФЛУ-хен]",
           "sentence": "Am dunklen Pferdestall streicht König Lear einem nervösen Tier über die Mähne. Ich flüstere den Wächtern des Schicksals zu: Das Wort „verfluchen“ darf nicht vergehen.",
-          "sentence_translation": "У тёмного конюшенного ряда Лир гладит гриву нервного коня. Я шепчу стражам судьбы: слово «проклинать» не должно исчезнуть."
+          "sentence_translation": "У тёмного конюшенного ряда Лир гладит гриву нервного коня. Я шепчу стражам судьбы: слово «проклинать» не должно исчезнуть.",
+          "sentence_parts": [
+            "Am dunklen Pferdestall streicht König Lear einem nervösen Tier über die Mähne.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „verfluchen“ darf nicht vergehen."
+          ]
         },
         {
           "german": "vertreiben",
           "russian": "изгонять",
           "transcription": "[фер-ТРАЙ-бен]",
           "sentence": "Vor dem knarrenden Fallgatter tastet König Lear ein letztes Mal nach dem Haustor. Mit fester Stimme schwöre ich mir: Das Wort „vertreiben“ wird heute nicht verraten.",
-          "sentence_translation": "Перед скрипящим подъёмным мостом Лир в последний раз касается родной двери. Твёрдым голосом я клянусь себе: слово «изгонять» сегодня не будет предано."
+          "sentence_translation": "Перед скрипящим подъёмным мостом Лир в последний раз касается родной двери. Твёрдым голосом я клянусь себе: слово «изгонять» сегодня не будет предано.",
+          "sentence_parts": [
+            "Vor dem knarrenden Fallgatter tastet König Lear ein letztes Mal nach dem Haustor.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „vertreiben“ wird heute nicht verraten."
+          ]
         },
         {
           "german": "die Kränkung",
           "russian": "обида",
           "transcription": "[ди КРЭН-кунг]",
           "sentence": "Zwischen verstreuten Schriftrollen dreht König Lear den Ring an der Hand. Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Kränkung“ bleibt lebendig.",
-          "sentence_translation": "Среди разбросанных свитков Лир вертит кольцо на пальце. Каждой клеткой тела я обещаю: слово «обида» останется живым."
+          "sentence_translation": "Среди разбросанных свитков Лир вертит кольцо на пальце. Каждой клеткой тела я обещаю: слово «обида» останется живым.",
+          "sentence_parts": [
+            "Zwischen verstreuten Schriftrollen dreht König Lear den Ring an der Hand.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Kränkung“ bleibt lebendig."
+          ]
         },
         {
           "german": "bereuen",
           "russian": "сожалеть",
           "transcription": "[бе-РОЙ-ен]",
           "sentence": "Am leeren Bankettisch zählt König Lear die verlöschenden Kerzen. Wie ein stilles Gebet legt sich das Wort „bereuen“ auf meine Lippen.",
-          "sentence_translation": "У пустого банкетного стола Лир пересчитывает гаснущие свечи. Как тихая молитва слово «сожалеть» ложится на мои губы."
+          "sentence_translation": "У пустого банкетного стола Лир пересчитывает гаснущие свечи. Как тихая молитва слово «сожалеть» ложится на мои губы.",
+          "sentence_parts": [
+            "Am leeren Bankettisch zählt König Lear die verlöschenden Kerzen.",
+            "Wie ein stilles Gebet legt sich das Wort „bereuen“ auf meine Lippen."
+          ]
         },
         {
           "german": "der Fluch",
           "russian": "проклятие",
           "transcription": "[дер ФЛУХ]",
           "sentence": "Zwischen schweigenden Wachen geht König Lear auf den kalten Hof hinaus. Ich zeichne das Wort „der Fluch“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "Между молчаливыми стражниками Лир выходит на холодный двор. Я черчу слово «проклятие» в мыслях поверх линий судьбы."
+          "sentence_translation": "Между молчаливыми стражниками Лир выходит на холодный двор. Я черчу слово «проклятие» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Zwischen schweigenden Wachen geht König Lear auf den kalten Hof hinaus.",
+            "Ich zeichne das Wort „der Fluch“ in Gedanken über die Linien des Schicksals."
+          ]
         }
       ],
       "quizzes": [
@@ -207,56 +272,90 @@
           "russian": "покидать",
           "transcription": "[фер-ЛА-сен]",
           "sentence": "Im zugigen Seitenflügel lauscht König Lear dem Heulen der Küstenwinde. Wie ein stilles Gebet legt sich das Wort „verlassen“ auf meine Lippen.",
-          "sentence_translation": "В продуваемом ветром боковом крыле Лир слушает вой прибрежного ветра. Как тихая молитва слово «покидать» ложится на мои губы."
+          "sentence_translation": "В продуваемом ветром боковом крыле Лир слушает вой прибрежного ветра. Как тихая молитва слово «покидать» ложится на мои губы.",
+          "sentence_parts": [
+            "Im zugigen Seitenflügel lauscht König Lear dem Heulen der Küstenwinde.",
+            "Wie ein stilles Gebet legt sich das Wort „verlassen“ auf meine Lippen."
+          ]
         },
         {
           "german": "verstoßen",
           "russian": "отвергать",
           "transcription": "[фер-ШТО-сен]",
           "sentence": "Vor dem rauchigen Kamin der Burg faltet König Lear einen zerknitterten Brief. Mit jeder Faser meines Körpers verspreche ich: Das Wort „verstoßen“ bleibt lebendig.",
-          "sentence_translation": "Перед дымным камином замка Лир складывает измятый лист. Каждой клеткой тела я обещаю: слово «отвергать» останется живым."
+          "sentence_translation": "Перед дымным камином замка Лир складывает измятый лист. Каждой клеткой тела я обещаю: слово «отвергать» останется живым.",
+          "sentence_parts": [
+            "Vor dem rauchigen Kamin der Burg faltet König Lear einen zerknitterten Brief.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „verstoßen“ bleibt lebendig."
+          ]
         },
         {
           "german": "die Grausamkeit",
           "russian": "жестокость",
           "transcription": "[ди ГРАУ-зам-кайт]",
           "sentence": "Unter farblosen Wandteppichen schreitet König Lear rastlos auf und ab. Wie ein stilles Gebet legt sich das Wort „die Grausamkeit“ auf meine Lippen.",
-          "sentence_translation": "Под выцветшими гобеленами Лир беспокойно меряет шагами зал. Как тихая молитва слово «жестокость» ложится на мои губы."
+          "sentence_translation": "Под выцветшими гобеленами Лир беспокойно меряет шагами зал. Как тихая молитва слово «жестокость» ложится на мои губы.",
+          "sentence_parts": [
+            "Unter farblosen Wandteppichen schreitet König Lear rastlos auf und ab.",
+            "Wie ein stilles Gebet legt sich das Wort „die Grausamkeit“ auf meine Lippen."
+          ]
         },
         {
           "german": "die Verzweiflung",
           "russian": "отчаяние",
           "transcription": "[ди фер-ЦВАЙ-флунг]",
           "sentence": "An der schmalen Fensterluke zählt König Lear die Fackeln auf dem Hof. Ich zeichne das Wort „die Verzweiflung“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "У узкой бойницы Лир считает факелы на дворе. Я черчу слово «отчаяние» в мыслях поверх линий судьбы."
+          "sentence_translation": "У узкой бойницы Лир считает факелы на дворе. Я черчу слово «отчаяние» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "An der schmalen Fensterluke zählt König Lear die Fackeln auf dem Hof.",
+            "Ich zeichne das Wort „die Verzweiflung“ in Gedanken über die Linien des Schicksals."
+          ]
         },
         {
           "german": "betteln",
           "russian": "просить",
           "transcription": "[БЕ-тельн]",
           "sentence": "Zwischen Reisekoffern der Gesandten sucht König Lear nach frischen Botschaften. Ich presse das Wort „betteln“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "Среди дорожных сундуков послов Лир ищет свежие вести. Я стискиваю слово «просить» зубами, чтобы не вырвалось сомнение."
+          "sentence_translation": "Среди дорожных сундуков послов Лир ищет свежие вести. Я стискиваю слово «просить» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Zwischen Reisekoffern der Gesandten sucht König Lear nach frischen Botschaften.",
+            "Ich presse das Wort „betteln“ zwischen die Zähne, damit kein Zweifel entweicht."
+          ]
         },
         {
           "german": "die Einsamkeit",
           "russian": "одиночество",
           "transcription": "[ди АЙН-зам-кайт]",
           "sentence": "Im stillen Kapellenraum kniet König Lear vor der kalten Steinfigur. Ich umarme das Wort „die Einsamkeit“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "В тихой капелле Лир преклоняет колени перед холодной каменной фигурой. Я обнимаю слово «одиночество», будто это единственный союзник."
+          "sentence_translation": "В тихой капелле Лир преклоняет колени перед холодной каменной фигурой. Я обнимаю слово «одиночество», будто это единственный союзник.",
+          "sentence_parts": [
+            "Im stillen Kapellenraum kniet König Lear vor der kalten Steinfigur.",
+            "Ich umarme das Wort „die Einsamkeit“, als wäre es mein einziger Verbündeter."
+          ]
         },
         {
           "german": "die Träne",
           "russian": "слеза",
           "transcription": "[ди ТРЭ-не]",
           "sentence": "Auf dem Balkon, den das Meer besprüht, hält König Lear die Laterne fest. Selbst wenn die Welt zerfällt, bleibt das Wort „die Träne“ mein Nordstern.",
-          "sentence_translation": "На балконе, омываемом морскими брызгами, Лир крепко держит фонарь. Даже если мир распадается, слово «слеза» остаётся моим северным светом."
+          "sentence_translation": "На балконе, омываемом морскими брызгами, Лир крепко держит фонарь. Даже если мир распадается, слово «слеза» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Auf dem Balkon,",
+            "den das Meer besprüht,",
+            "hält König Lear die Laterne fest.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „die Träne“ mein Nordstern."
+          ]
         },
         {
           "german": "die Not",
           "russian": "нужда",
           "transcription": "[ди НОТ]",
           "sentence": "Im Schatten der hohen Burgmauern schreibt König Lear eine fiebrige Antwort. Mein Atem zeichnet das Wort „die Not“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "В тени высоких стен Лир пишет лихорадочный ответ. Моё дыхание рисует слово «нужда» в холодном воздухе между нами."
+          "sentence_translation": "В тени высоких стен Лир пишет лихорадочный ответ. Моё дыхание рисует слово «нужда» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Im Schatten der hohen Burgmauern schreibt König Lear eine fiebrige Antwort.",
+            "Mein Atem zeichnet das Wort „die Not“ in die kalte Luft zwischen uns."
+          ]
         }
       ],
       "quizzes": [
@@ -300,56 +399,88 @@
           "russian": "буря",
           "transcription": "[дер ШТУРМ]",
           "sentence": "Mitten auf der vom Regen gepeitschten Heide stemmt sich König Lear gegen den Wind. Ich umarme das Wort „der Sturm“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "Посреди хлещущей дождём пустоши Лир упирается в ветер. Я обнимаю слово «буря», будто это единственный союзник."
+          "sentence_translation": "Посреди хлещущей дождём пустоши Лир упирается в ветер. Я обнимаю слово «буря», будто это единственный союзник.",
+          "sentence_parts": [
+            "Mitten auf der vom Regen gepeitschten Heide stemmt sich König Lear gegen den Wind.",
+            "Ich umarme das Wort „der Sturm“, als wäre es mein einziger Verbündeter."
+          ]
         },
         {
           "german": "der Wahnsinn",
           "russian": "безумие",
           "transcription": "[дер ВАН-зин]",
           "sentence": "Unter einem zerrissenen Banner schützt König Lear die Augen vor den Blitzen. Mein Atem zeichnet das Wort „der Wahnsinn“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "Под разорванным знаменем Лир прикрывает глаза от молний. Моё дыхание рисует слово «безумие» в холодном воздухе между нами."
+          "sentence_translation": "Под разорванным знаменем Лир прикрывает глаза от молний. Моё дыхание рисует слово «безумие» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Unter einem zerrissenen Banner schützt König Lear die Augen vor den Blitzen.",
+            "Mein Atem zeichnet das Wort „der Wahnsinn“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "toben",
           "russian": "бушевать",
           "transcription": "[ТО-бен]",
           "sentence": "Am Rand eines umgestürzten Baumes sucht König Lear Deckung vor dem Donner. Ich flüstere den Wächtern des Schicksals zu: Das Wort „toben“ darf nicht vergehen.",
-          "sentence_translation": "У поваленного дерева Лир ищет укрытия от грома. Я шепчу стражам судьбы: слово «бушевать» не должно исчезнуть."
+          "sentence_translation": "У поваленного дерева Лир ищет укрытия от грома. Я шепчу стражам судьбы: слово «бушевать» не должно исчезнуть.",
+          "sentence_parts": [
+            "Am Rand eines umgestürzten Baumes sucht König Lear Deckung vor dem Donner.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „toben“ darf nicht vergehen."
+          ]
         },
         {
           "german": "der Donner",
           "russian": "гром",
           "transcription": "[дер ДО-нер]",
           "sentence": "Zwischen schäumenden Wassergräben stolpert König Lear durch den Schlamm. Ich umarme das Wort „der Donner“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "Между пенящимися лужами Лир пробирается через грязь. Я обнимаю слово «гром», будто это единственный союзник."
+          "sentence_translation": "Между пенящимися лужами Лир пробирается через грязь. Я обнимаю слово «гром», будто это единственный союзник.",
+          "sentence_parts": [
+            "Zwischen schäumenden Wassergräben stolpert König Lear durch den Schlamm.",
+            "Ich umarme das Wort „der Donner“, als wäre es mein einziger Verbündeter."
+          ]
         },
         {
           "german": "der Blitz",
           "russian": "молния",
           "transcription": "[дер БЛИЦ]",
           "sentence": "Vor einem zuckenden Himmel hebt König Lear die Arme trotzig an. Ich atme tief ein und lasse nur das Wort „der Blitz“ wieder hinaus.",
-          "sentence_translation": "На фоне вспыхивающего неба Лир упрямо поднимает руки. Я глубоко вдыхаю и выпускаю только слово «молния»."
+          "sentence_translation": "На фоне вспыхивающего неба Лир упрямо поднимает руки. Я глубоко вдыхаю и выпускаю только слово «молния».",
+          "sentence_parts": [
+            "Vor einem zuckenden Himmel hebt König Lear die Arme trotzig an.",
+            "Ich atme tief ein und lasse nur das Wort „der Blitz“ wieder hinaus."
+          ]
         },
         {
           "german": "schreien",
           "russian": "кричать",
           "transcription": "[ШРАЙ-ен]",
           "sentence": "Unter dem durchtränkten Umhang presst König Lear den Atem gegen die Kälte. Ich zeichne das Wort „schreien“ mit unsichtbarer Tinte auf meine Handfläche.",
-          "sentence_translation": "Под промокшим плащом Лир прижимает дыхание к груди, спасаясь от холода. Я вывожу слово «кричать» невидимыми чернилами на ладони."
+          "sentence_translation": "Под промокшим плащом Лир прижимает дыхание к груди, спасаясь от холода. Я вывожу слово «кричать» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Unter dem durchtränkten Umhang presst König Lear den Atem gegen die Kälte.",
+            "Ich zeichne das Wort „schreien“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
         },
         {
           "german": "nackt",
           "russian": "голый",
           "transcription": "[НАКТ]",
           "sentence": "Am kläglichen Feuerrest wärmt König Lear zitternde Finger. Ich zeichne das Wort „nackt“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "У жалких огненных углей Лир греет дрожащие пальцы. Я черчу слово «голый» в мыслях поверх линий судьбы."
+          "sentence_translation": "У жалких огненных углей Лир греет дрожащие пальцы. Я черчу слово «голый» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Am kläglichen Feuerrest wärmt König Lear zitternde Finger.",
+            "Ich zeichne das Wort „nackt“ in Gedanken über die Linien des Schicksals."
+          ]
         },
         {
           "german": "das Chaos",
           "russian": "хаос",
           "transcription": "[дас ХА-ос]",
           "sentence": "Zwischen heulenden Hunden ruft König Lear gegen den tosenden Sturm an. Ich halte das Wort „das Chaos“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "Среди воющих псов Лир перекрикивает беснующуюся бурю. Я держу слово «хаос» как факел у сердца."
+          "sentence_translation": "Среди воющих псов Лир перекрикивает беснующуюся бурю. Я держу слово «хаос» как факел у сердца.",
+          "sentence_parts": [
+            "Zwischen heulenden Hunden ruft König Lear gegen den tosenden Sturm an.",
+            "Ich halte das Wort „das Chaos“ wie eine Fackel vor meinem Herzen."
+          ]
         }
       ],
       "quizzes": [
@@ -393,56 +524,88 @@
           "russian": "нищета",
           "transcription": "[дас Э-ленд]",
           "sentence": "Im dunklen Zelt der Feldärzte sitzt König Lear bei der flackernden Kerze. Selbst wenn die Welt zerfällt, bleibt das Wort „das Elend“ mein Nordstern.",
-          "sentence_translation": "В тёмном шатре полевых лекарей Лир сидит у мерцающей свечи. Даже если мир распадается, слово «нищета» остаётся моим северным светом."
+          "sentence_translation": "В тёмном шатре полевых лекарей Лир сидит у мерцающей свечи. Даже если мир распадается, слово «нищета» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Im dunklen Zelt der Feldärzte sitzt König Lear bei der flackernden Kerze.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „das Elend“ mein Nordstern."
+          ]
         },
         {
           "german": "der Bettler",
           "russian": "нищий",
           "transcription": "[дер БЕТ-лер]",
           "sentence": "Zwischen zerbeulten Rüstungen streicht König Lear über ein altes Wappen. Mit fester Stimme schwöre ich mir: Das Wort „der Bettler“ wird heute nicht verraten.",
-          "sentence_translation": "Среди помятых доспехов Лир гладит старый герб. Твёрдым голосом я клянусь себе: слово «нищий» сегодня не будет предано."
+          "sentence_translation": "Среди помятых доспехов Лир гладит старый герб. Твёрдым голосом я клянусь себе: слово «нищий» сегодня не будет предано.",
+          "sentence_parts": [
+            "Zwischen zerbeulten Rüstungen streicht König Lear über ein altes Wappen.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „der Bettler“ wird heute nicht verraten."
+          ]
         },
         {
           "german": "arm",
           "russian": "бедный",
           "transcription": "[АРМ]",
           "sentence": "Am niedrigen Dachbalken der Hütte stößt König Lear fast den Kopf. Selbst wenn die Welt zerfällt, bleibt das Wort „arm“ mein Nordstern.",
-          "sentence_translation": "О низкую балку хижины Лир едва не ударяется головой. Даже если мир распадается, слово «бедный» остаётся моим северным светом."
+          "sentence_translation": "О низкую балку хижины Лир едва не ударяется головой. Даже если мир распадается, слово «бедный» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Am niedrigen Dachbalken der Hütte stößt König Lear fast den Kopf.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „arm“ mein Nordstern."
+          ]
         },
         {
           "german": "frieren",
           "russian": "мёрзнуть",
           "transcription": "[ФРИ-рен]",
           "sentence": "Neben der schlafenden Wache flüstert König Lear in die schwere Nacht. Das kalte Licht lässt das Wort „frieren“ wie geschmolzenes Gold erscheinen.",
-          "sentence_translation": "Рядом со спящим стражем Лир шепчет в тяжёлую ночь. Холодный свет заставляет слово «мёрзнуть» сиять словно расплавленное золото."
+          "sentence_translation": "Рядом со спящим стражем Лир шепчет в тяжёлую ночь. Холодный свет заставляет слово «мёрзнуть» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Neben der schlafenden Wache flüstert König Lear in die schwere Nacht.",
+            "Das kalte Licht lässt das Wort „frieren“ wie geschmolzenes Gold erscheinen."
+          ]
         },
         {
           "german": "die Hütte",
           "russian": "хижина",
           "transcription": "[ди ХЮ-те]",
           "sentence": "Vor dem einfachen Feldbett betrachtet König Lear die Narben vergangener Schlachten. Ich zeichne das Wort „die Hütte“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "Перед грубой походной койкой Лир разглядывает шрамы прошлых битв. Я черчу слово «хижина» в мыслях поверх линий судьбы."
+          "sentence_translation": "Перед грубой походной койкой Лир разглядывает шрамы прошлых битв. Я черчу слово «хижина» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Vor dem einfachen Feldbett betrachtet König Lear die Narben vergangener Schlachten.",
+            "Ich zeichne das Wort „die Hütte“ in Gedanken über die Linien des Schicksals."
+          ]
         },
         {
           "german": "leiden",
           "russian": "страдать",
           "transcription": "[ЛАЙ-ден]",
           "sentence": "Im Geruch von feuchtem Stroh legt König Lear den Mantel zur Seite. Mein Atem zeichnet das Wort „leiden“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "В запахе влажной соломы Лир откладывает плащ в сторону. Моё дыхание рисует слово «страдать» в холодном воздухе между нами."
+          "sentence_translation": "В запахе влажной соломы Лир откладывает плащ в сторону. Моё дыхание рисует слово «страдать» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Im Geruch von feuchtem Stroh legt König Lear den Mantel zur Seite.",
+            "Mein Atem zeichnet das Wort „leiden“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "der Narr",
           "russian": "шут",
           "transcription": "[дер НАР]",
           "sentence": "Auf dem wackligen Holztisch ordnet König Lear zerlesene Briefe. Selbst wenn die Welt zerfällt, bleibt das Wort „der Narr“ mein Nordstern.",
-          "sentence_translation": "На шатком деревянном столе Лир раскладывает зачитанные письма. Даже если мир распадается, слово «шут» остаётся моим северным светом."
+          "sentence_translation": "На шатком деревянном столе Лир раскладывает зачитанные письма. Даже если мир распадается, слово «шут» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Auf dem wackligen Holztisch ordnet König Lear zerlesene Briefe.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „der Narr“ mein Nordstern."
+          ]
         },
         {
           "german": "die Erkenntnis",
           "russian": "познание",
           "transcription": "[ди ер-КЕНТ-нис]",
           "sentence": "Am Eingang der Hütte späht König Lear nach einem vertrauten Schatten. Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Erkenntnis“ darf nicht vergehen.",
-          "sentence_translation": "У входа в хижину Лир высматривает знакомую тень. Я шепчу стражам судьбы: слово «познание» не должно исчезнуть."
+          "sentence_translation": "У входа в хижину Лир высматривает знакомую тень. Я шепчу стражам судьбы: слово «познание» не должно исчезнуть.",
+          "sentence_parts": [
+            "Am Eingang der Hütte späht König Lear nach einem vertrauten Schatten.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Erkenntnis“ darf nicht vergehen."
+          ]
         }
       ],
       "quizzes": [
@@ -486,56 +649,88 @@
           "russian": "узнавать",
           "transcription": "[эр-КЕ-нен]",
           "sentence": "Auf den weißen Klippen von Dover blickt König Lear in den aufgewühlten Kanal. Ich halte das Wort „erkennen“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "На белых скалах Дувра Лир смотрит в вздыбленный пролив. Я держу слово «узнавать» как факел у сердца."
+          "sentence_translation": "На белых скалах Дувра Лир смотрит в вздыбленный пролив. Я держу слово «узнавать» как факел у сердца.",
+          "sentence_parts": [
+            "Auf den weißen Klippen von Dover blickt König Lear in den aufgewühlten Kanal.",
+            "Ich halte das Wort „erkennen“ wie eine Fackel vor meinem Herzen."
+          ]
         },
         {
           "german": "verstehen",
           "russian": "понимать",
           "transcription": "[фер-ШТЕ-ен]",
           "sentence": "Zwischen flatternden Feldzeichen richtet König Lear den Helm. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „verstehen“ gehört mir.",
-          "sentence_translation": "Среди хлопающих штандартов Лир поправляет шлем. Буря за окнами усиливает клятву: слово «понимать» принадлежит мне."
+          "sentence_translation": "Среди хлопающих штандартов Лир поправляет шлем. Буря за окнами усиливает клятву: слово «понимать» принадлежит мне.",
+          "sentence_parts": [
+            "Zwischen flatternden Feldzeichen richtet König Lear den Helm.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „verstehen“ gehört mir."
+          ]
         },
         {
           "german": "die Wahrheit",
           "russian": "правда",
           "transcription": "[ди ВАР-хайт]",
           "sentence": "Am Lagerfeuer der Franzosen zeichnet König Lear Marschrouten in den Sand. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Wahrheit“ gehört mir.",
-          "sentence_translation": "У французского костра Лир рисует в песке путь марша. Буря за окнами усиливает клятву: слово «правда» принадлежит мне."
+          "sentence_translation": "У французского костра Лир рисует в песке путь марша. Буря за окнами усиливает клятву: слово «правда» принадлежит мне.",
+          "sentence_parts": [
+            "Am Lagerfeuer der Franzosen zeichnet König Lear Marschrouten in den Sand.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Wahrheit“ gehört mir."
+          ]
         },
         {
           "german": "die Reue",
           "russian": "раскаяние",
           "transcription": "[ди РОЙ-е]",
           "sentence": "Neben verschnürten Versorgungskisten kontrolliert König Lear das Siegel. Das Echo des Wortes „die Reue“ übertönt das Flüstern der Höflinge.",
-          "sentence_translation": "У перевязанных провиантных ящиков Лир проверяет печати. Эхо слова «раскаяние» заглушает шёпот придворных."
+          "sentence_translation": "У перевязанных провиантных ящиков Лир проверяет печати. Эхо слова «раскаяние» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Neben verschnürten Versorgungskisten kontrolliert König Lear das Siegel.",
+            "Das Echo des Wortes „die Reue“ übertönt das Flüstern der Höflinge."
+          ]
         },
         {
           "german": "die Weisheit",
           "russian": "мудрость",
           "transcription": "[ди ВАЙС-хайт]",
           "sentence": "Vor dem Seidenzelt der Heerführer lauscht König Lear dem dumpfen Meer. Ich umarme das Wort „die Weisheit“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "Перед шёлковым шатром полководцев Лир слушает глухой шум моря. Я обнимаю слово «мудрость», будто это единственный союзник."
+          "sentence_translation": "Перед шёлковым шатром полководцев Лир слушает глухой шум моря. Я обнимаю слово «мудрость», будто это единственный союзник.",
+          "sentence_parts": [
+            "Vor dem Seidenzelt der Heerführer lauscht König Lear dem dumpfen Meer.",
+            "Ich umarme das Wort „die Weisheit“, als wäre es mein einziger Verbündeter."
+          ]
         },
         {
           "german": "vergeben",
           "russian": "прощать",
           "transcription": "[фер-ГЕ-бен]",
           "sentence": "Auf dem sandigen Trainingsplatz übt König Lear das Ziehen des Schwerts. Wie ein stilles Gebet legt sich das Wort „vergeben“ auf meine Lippen.",
-          "sentence_translation": "На песчаном плацу Лир отрабатывает выхват меча. Как тихая молитва слово «прощать» ложится на мои губы."
+          "sentence_translation": "На песчаном плацу Лир отрабатывает выхват меча. Как тихая молитва слово «прощать» ложится на мои губы.",
+          "sentence_parts": [
+            "Auf dem sandigen Trainingsplatz übt König Lear das Ziehen des Schwerts.",
+            "Wie ein stilles Gebet legt sich das Wort „vergeben“ auf meine Lippen."
+          ]
         },
         {
           "german": "die Einsicht",
           "russian": "прозрение",
           "transcription": "[ди АЙН-зихт]",
           "sentence": "Zwischen pochenden Trommeln hebt König Lear das Banner der Hoffnung. Mein Atem zeichnet das Wort „die Einsicht“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "Под гул барабанов Лир поднимает знамя надежды. Моё дыхание рисует слово «прозрение» в холодном воздухе между нами."
+          "sentence_translation": "Под гул барабанов Лир поднимает знамя надежды. Моё дыхание рисует слово «прозрение» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Zwischen pochenden Trommeln hebt König Lear das Banner der Hoffnung.",
+            "Mein Atem zeichnet das Wort „die Einsicht“ in die kalte Luft zwischen uns."
+          ]
         },
         {
           "german": "schuldig",
           "russian": "виновный",
           "transcription": "[ШУЛЬ-диг]",
           "sentence": "Am Morgennebel der Küste legt König Lear die Hand auf das pochende Herz. Selbst wenn die Welt zerfällt, bleibt das Wort „schuldig“ mein Nordstern.",
-          "sentence_translation": "В утреннем тумане побережья Лир кладёт ладонь на бьющееся сердце. Даже если мир распадается, слово «виновный» остаётся моим северным светом."
+          "sentence_translation": "В утреннем тумане побережья Лир кладёт ладонь на бьющееся сердце. Даже если мир распадается, слово «виновный» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Am Morgennebel der Küste legt König Lear die Hand auf das pochende Herz.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „schuldig“ mein Nordstern."
+          ]
         }
       ],
       "quizzes": [
@@ -579,56 +774,90 @@
           "russian": "прощать",
           "transcription": "[фер-ЦАЙ-ен]",
           "sentence": "Im feuchten Kerker stützt König Lear sich an den tropfenden Stein. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „verzeihen“ gehört mir.",
-          "sentence_translation": "В сыром подземелье Лир опирается на сочащийся камень. Буря за окнами усиливает клятву: слово «прощать» принадлежит мне."
+          "sentence_translation": "В сыром подземелье Лир опирается на сочащийся камень. Буря за окнами усиливает клятву: слово «прощать» принадлежит мне.",
+          "sentence_parts": [
+            "Im feuchten Kerker stützt König Lear sich an den tropfenden Stein.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „verzeihen“ gehört mir."
+          ]
         },
         {
           "german": "der Tod",
           "russian": "смерть",
           "transcription": "[дер ТОД]",
           "sentence": "Unter der trüben Laterne zählt König Lear die eisernen Ringe der Kette. Ich umarme das Wort „der Tod“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "Под мутным фонарём Лир пересчитывает железные кольца цепи. Я обнимаю слово «смерть», будто это единственный союзник."
+          "sentence_translation": "Под мутным фонарём Лир пересчитывает железные кольца цепи. Я обнимаю слово «смерть», будто это единственный союзник.",
+          "sentence_parts": [
+            "Unter der trüben Laterne zählt König Lear die eisernen Ringe der Kette.",
+            "Ich umarme das Wort „der Tod“, als wäre es mein einziger Verbündeter."
+          ]
         },
         {
           "german": "sterben",
           "russian": "умирать",
           "transcription": "[ШТЕР-бен]",
           "sentence": "Neben der schweren Holztür horcht König Lear auf entferntes Schluchzen. Wie ein stilles Gebet legt sich das Wort „sterben“ auf meine Lippen.",
-          "sentence_translation": "У тяжёлой двери Лир прислушивается к далёким рыданиям. Как тихая молитва слово «умирать» ложится на мои губы."
+          "sentence_translation": "У тяжёлой двери Лир прислушивается к далёким рыданиям. Как тихая молитва слово «умирать» ложится на мои губы.",
+          "sentence_parts": [
+            "Neben der schweren Holztür horcht König Lear auf entferntes Schluchzen.",
+            "Wie ein stilles Gebet legt sich das Wort „sterben“ auf meine Lippen."
+          ]
         },
         {
           "german": "das Ende",
           "russian": "конец",
           "transcription": "[дас ЕН-де]",
           "sentence": "Auf der kalten Steinbank zieht König Lear den Mantel enger um die Schultern. Ich presse das Wort „das Ende“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "На холодной каменной скамье Лир плотнее кутается в плащ. Я стискиваю слово «конец» зубами, чтобы не вырвалось сомнение."
+          "sentence_translation": "На холодной каменной скамье Лир плотнее кутается в плащ. Я стискиваю слово «конец» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Auf der kalten Steinbank zieht König Lear den Mantel enger um die Schultern.",
+            "Ich presse das Wort „das Ende“ zwischen die Zähne,",
+            "damit kein Zweifel entweicht."
+          ]
         },
         {
           "german": "das Herz",
           "russian": "сердце",
           "transcription": "[дас ХЕРЦ]",
           "sentence": "Zwischen Schatten der Gitterstäbe hebt König Lear das Gesicht zum Licht. Ich umarme das Wort „das Herz“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "Между тенями решёток Лир поднимает лицо к свету. Я обнимаю слово «сердце», будто это единственный союзник."
+          "sentence_translation": "Между тенями решёток Лир поднимает лицо к свету. Я обнимаю слово «сердце», будто это единственный союзник.",
+          "sentence_parts": [
+            "Zwischen Schatten der Gitterstäbe hebt König Lear das Gesicht zum Licht.",
+            "Ich umarme das Wort „das Herz“, als wäre es mein einziger Verbündeter."
+          ]
         },
         {
           "german": "die Trauer",
           "russian": "скорбь",
           "transcription": "[ди ТРАУ-ер]",
           "sentence": "Am rostigen Wassereimer spiegelt König Lear kurz die eigenen Augen. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Trauer“ gehört mir.",
-          "sentence_translation": "У ржавого ведра с водой Лир на мгновение видит отражение глаз. Буря за окнами усиливает клятву: слово «скорбь» принадлежит мне."
+          "sentence_translation": "У ржавого ведра с водой Лир на мгновение видит отражение глаз. Буря за окнами усиливает клятву: слово «скорбь» принадлежит мне.",
+          "sentence_parts": [
+            "Am rostigen Wassereimer spiegelt König Lear kurz die eigenen Augen.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Trauer“ gehört mir."
+          ]
         },
         {
           "german": "der Abschied",
           "russian": "прощание",
           "transcription": "[дер АБ-шид]",
           "sentence": "Im dumpfen Hall der Schritte zählt König Lear den Rhythmus der Wachen. Ich presse das Wort „der Abschied“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "В глухом эхе шагов Лир отсчитывает ритм часовых. Я стискиваю слово «прощание» зубами, чтобы не вырвалось сомнение."
+          "sentence_translation": "В глухом эхе шагов Лир отсчитывает ритм часовых. Я стискиваю слово «прощание» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Im dumpfen Hall der Schritte zählt König Lear den Rhythmus der Wachen.",
+            "Ich presse das Wort „der Abschied“ zwischen die Zähne,",
+            "damit kein Zweifel entweicht."
+          ]
         },
         {
           "german": "ewig",
           "russian": "вечный",
           "transcription": "[Э-виг]",
           "sentence": "Vor dem verriegelten Fenster zeichnet König Lear Kreise in den Staub. Ich flüstere den Wächtern des Schicksals zu: Das Wort „ewig“ darf nicht vergehen.",
-          "sentence_translation": "Перед заколоченным окном Лир чертит круги в пыли. Я шепчу стражам судьбы: слово «вечный» не должно исчезнуть."
+          "sentence_translation": "Перед заколоченным окном Лир чертит круги в пыли. Я шепчу стражам судьбы: слово «вечный» не должно исчезнуть.",
+          "sentence_parts": [
+            "Vor dem verriegelten Fenster zeichnet König Lear Kreise in den Staub.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „ewig“ darf nicht vergehen."
+          ]
         }
       ],
       "quizzes": [
