@@ -320,6 +320,154 @@
         return order.map(key => mergedMap.get(key));
     }
 
+    function normalizeId(value) {
+        if (value === undefined || value === null) {
+            return "";
+        }
+
+        if (typeof value === "string") {
+            return value.trim();
+        }
+
+        return String(value);
+    }
+
+    function queueItemMatches(entry, tuple) {
+        if (!entry || typeof entry !== "object") {
+            return false;
+        }
+
+        return (
+            normalizeId(entry.wordId) === tuple.wordId
+            && normalizeId(entry.characterId) === tuple.characterId
+            && normalizeId(entry.phaseId) === tuple.phaseId
+        );
+    }
+
+    function extractTupleFromCard(card) {
+        const dataset = (card && card.dataset) || {};
+        return {
+            wordId: normalizeId(dataset.wordId),
+            characterId: normalizeId(dataset.characterId),
+            phaseId: normalizeId(dataset.phaseId),
+        };
+    }
+
+    async function persistRemoval(tuple) {
+        if (typeof fetch !== "function") {
+            throw new Error("Fetch API is not available in this environment");
+        }
+
+        const response = await fetch("/api/review-queue/remove", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                wordId: tuple.wordId || "",
+                characterId: tuple.characterId || "",
+                phaseId: tuple.phaseId || "",
+            }),
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+        }
+
+        let payload = null;
+        try {
+            payload = await response.json();
+        } catch (error) {
+            payload = null;
+        }
+
+        if (payload && Object.prototype.hasOwnProperty.call(payload, "success") && !payload.success) {
+            const reason = payload.error || payload.message || "Removal rejected";
+            throw new Error(reason);
+        }
+
+        return payload;
+    }
+
+    async function handleRemove(target) {
+        const card = target && typeof target.closest === "function"
+            ? target.closest(".review-card")
+            : target;
+
+        if (!card || !card.dataset) {
+            return false;
+        }
+
+        const tuple = extractTupleFromCard(card);
+        const previousQueue = readQueueFromStorage();
+        const updatedQueue = previousQueue.filter(item => !queueItemMatches(item, tuple));
+        writeQueueToStorage(updatedQueue);
+
+        try {
+            await persistRemoval(tuple);
+
+            if (card.parentElement && typeof card.parentElement.removeChild === "function") {
+                card.parentElement.removeChild(card);
+            } else if (typeof card.remove === "function") {
+                card.remove();
+            }
+
+            return true;
+        } catch (error) {
+            console.error("[ReviewQueue] Failed to persist removal", error);
+            writeQueueToStorage(previousQueue);
+
+            if (card.classList && typeof card.classList.add === "function") {
+                card.classList.add("remove-error");
+                setTimeout(() => {
+                    if (card.classList && typeof card.classList.remove === "function") {
+                        card.classList.remove("remove-error");
+                    }
+                }, 2500);
+            }
+
+            throw error;
+        }
+    }
+
+    function setupRemovalHandlers() {
+        if (typeof document === "undefined") {
+            return;
+        }
+
+        const grid = document.querySelector(".review-grid");
+        if (!grid || typeof grid.addEventListener !== "function") {
+            return;
+        }
+
+        grid.addEventListener("click", event => {
+            const originalTarget = event.target;
+            if (!originalTarget || typeof originalTarget.closest !== "function") {
+                return;
+            }
+
+            const button = originalTarget.closest(".review-remove");
+            if (!button) {
+                return;
+            }
+
+            event.preventDefault();
+
+            if (button.disabled) {
+                return;
+            }
+
+            const card = button.closest(".review-card");
+            if (!card) {
+                return;
+            }
+
+            button.disabled = true;
+            handleRemove(card)
+                .catch(() => {
+                    button.disabled = false;
+                });
+        });
+    }
+
     function syncQueueFromDom() {
         lastReadQueue = readQueueFromStorage();
         const domQueueItems = extractDomQueueItems();
@@ -337,10 +485,12 @@
                 if (lastReadQueue.length) {
                     writeQueueToStorage(lastReadQueue);
                 }
+                setupRemovalHandlers();
                 return;
             }
 
             writeQueueToStorage(mergedQueue);
+            setupRemovalHandlers();
         });
     }
 
@@ -351,6 +501,9 @@
             writeQueueToStorage,
             extractDomQueueItems,
             mergeQueues,
+            handleRemove,
+            persistRemoval,
+            setupRemovalHandlers,
         };
     }
 })();

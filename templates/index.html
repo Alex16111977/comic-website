@@ -39,7 +39,14 @@
             </div>
             <div class="review-grid">
                 {% for item in review_items %}
-                <article class="review-card" data-word-id="{{ item.id }}">
+                <article class="review-card"
+                    data-word-id="{{ item.id }}"
+                    {% if item.character_id %}data-character-id="{{ item.character_id }}"{% endif %}
+                    {% if item.phase_id %}data-phase-id="{{ item.phase_id }}"{% endif %}>
+                    <button class="review-remove" type="button" data-action="remove"
+                        aria-label="Убрать «{{ item.word }}» из очереди">
+                        Убрать
+                    </button>
                     <div class="review-card-header">
                         <div class="review-icon">{{ item.emoji }}</div>
                         <div class="review-title">
