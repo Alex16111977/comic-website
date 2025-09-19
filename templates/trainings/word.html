@@ -12,12 +12,37 @@
         <header class="training-header">
             <a class="back-link" href="../index.html">← На главную</a>
             <div class="word-title">
-                <div class="word-emoji" aria-hidden="true">{{ word.emoji or "📘" }}</div>
+                <div class="word-illustrations" aria-hidden="true">
+                    <div class="word-emoji">{{ word.emoji or "📘" }}</div>
+                    {% if word.visual_hint %}
+                    <div class="word-visual-hint">{{ word.visual_hint }}</div>
+                    {% endif %}
+                </div>
                 <div>
                     <p class="word-article">{{ word.article }}</p>
                     <h1>{{ word.word }}</h1>
                     {% if translations.ru or translations.en %}
                     <p class="word-translation">{{ translations.ru or translations.en }}</p>
+                    {% endif %}
+                    {% if word.visual_hint or word.themes %}
+                    <div class="word-highlights" role="list">
+                        {% if word.visual_hint %}
+                        <div class="word-highlight" role="listitem">
+                            <span class="word-highlight-icon" aria-hidden="true">{{ word.visual_hint }}</span>
+                            <span class="word-highlight-label">Образ слова</span>
+                        </div>
+                        {% endif %}
+                        {% if word.themes %}
+                        <div class="word-highlight word-highlight--themes" role="listitem">
+                            <span class="word-highlight-label">Темы:</span>
+                            <div class="theme-badges">
+                                {% for theme in word.themes %}
+                                <span class="theme-badge">{{ theme }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
                     {% endif %}
                 </div>
             </div>

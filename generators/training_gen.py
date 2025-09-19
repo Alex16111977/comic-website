@@ -1,5 +1,6 @@
 """Training page generator for vocabulary items."""
 
+import json
 import random
 import re
 from typing import Dict, List, Optional
@@ -15,6 +16,7 @@ class TrainingPageGenerator(BaseGenerator):
         self._data = vocabulary_data or {}
         self._words: List[Dict] = list(self._data.get("words", []))
         self._categories: Dict[str, Dict] = self._data.get("categories", {})
+        self._enrich_words_with_visuals()
 
     def find_word(self, word_id: str) -> Optional[Dict]:
         """Return a word entry by its identifier."""
@@ -170,6 +172,70 @@ class TrainingPageGenerator(BaseGenerator):
                 }
             )
         return result
+
+    # ------------------------------------------------------------------
+    # Data enrichment helpers
+    # ------------------------------------------------------------------
+    def _enrich_words_with_visuals(self) -> None:
+        """Attach visual hints and themes from extended vocabulary file."""
+
+        data_dir = getattr(self.config, "DATA_DIR", None)
+        if not data_dir:
+            return
+
+        vocabulary_path = data_dir / "vocabulary" / "vocabulary.json"
+        if not vocabulary_path.exists():
+            return
+
+        try:
+            with vocabulary_path.open("r", encoding="utf-8") as fp:
+                raw_vocabulary = json.load(fp)
+        except (OSError, json.JSONDecodeError):
+            return
+
+        vocabulary_entries = raw_vocabulary.get("vocabulary") or []
+        if not isinstance(vocabulary_entries, list):
+            return
+
+        by_id: Dict[str, Dict] = {}
+        by_word: Dict[str, Dict] = {}
+        for entry in vocabulary_entries:
+            if not isinstance(entry, dict):
+                continue
+            entry_id = entry.get("id")
+            entry_word = entry.get("german")
+            if isinstance(entry_id, str) and entry_id not in by_id:
+                by_id[entry_id] = entry
+            if isinstance(entry_word, str):
+                key = entry_word.strip().lower()
+                if key and key not in by_word:
+                    by_word[key] = entry
+
+        for word in self._words:
+            if not isinstance(word, dict):
+                continue
+
+            matched_entry: Optional[Dict] = None
+            word_id = word.get("id")
+            if isinstance(word_id, str):
+                matched_entry = by_id.get(word_id)
+
+            if not matched_entry:
+                word_label = word.get("word")
+                if isinstance(word_label, str):
+                    matched_entry = by_word.get(word_label.strip().lower())
+
+            if not matched_entry:
+                continue
+
+            visual_hint = matched_entry.get("visual_hint")
+            themes = matched_entry.get("themes")
+
+            if visual_hint and not word.get("visual_hint"):
+                word["visual_hint"] = visual_hint
+
+            if isinstance(themes, list) and themes and not word.get("themes"):
+                word["themes"] = list(themes)
 
     @staticmethod
     def _extract_translation(word: Dict) -> Optional[str]:
