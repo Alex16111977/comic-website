@@ -1,5 +1,8 @@
 """JavaScript Generator for Lira Journey interactivity"""
 
+import json
+
+
 class LiraJSGenerator:
     """Generate JavaScript for journey interactivity with mobile support"""
     
@@ -7,33 +10,34 @@ class LiraJSGenerator:
     def generate(character_data):
         """Generate JS with vocabulary data from character JSON"""
         
-        # Build vocabulary object from character data
-        vocab_js = "const phaseVocabularies = {\n"
-        
+        # Build vocabulary object from character data using JSON serialization
+        phase_vocabularies = {}
+
         for phase in character_data.get('journey_phases', []):
-            phase_id = phase['id']
-            vocab_js += f"    {phase_id}: {{\n"
-            vocab_js += f"        title: '{phase['title']}',\n"
-            vocab_js += f"        description: '{phase['description']}',\n"
-            vocab_js += "        words: [\n"
-            
+            phase_id = phase.get('id')
+            if not phase_id:
+                continue
+
+            words = []
             for word in phase.get('vocabulary', []):
-                # Escape single quotes in sentences
-                sentence = word.get('sentence', '').replace("'", "\\'")
-                sentence_trans = word.get('sentence_translation', '').replace("'", "\\'")
-                
-                vocab_js += f"            {{\n"
-                vocab_js += f"                word: '{word['german']}',\n"
-                vocab_js += f"                translation: '{word['russian']}',\n"
-                vocab_js += f"                transcription: '{word['transcription']}',\n"
-                vocab_js += f"                sentence: '{sentence}',\n"
-                vocab_js += f"                sentenceTranslation: '{sentence_trans}'\n"
-                vocab_js += f"            }},\n"
-            
-            vocab_js += "        ]\n"
-            vocab_js += "    },\n"
-        
-        vocab_js += "};\n\n"
+                words.append({
+                    'word': word.get('german', ''),
+                    'translation': word.get('russian', ''),
+                    'transcription': word.get('transcription', ''),
+                    'sentence': word.get('sentence', ''),
+                    'sentenceTranslation': word.get('sentence_translation', ''),
+                })
+
+            phase_vocabularies[phase_id] = {
+                'title': phase.get('title', ''),
+                'description': phase.get('description', ''),
+                'words': words,
+            }
+
+        vocab_js = (
+            "const phaseVocabularies = "
+            f"{json.dumps(phase_vocabularies, ensure_ascii=False, indent=4)};\n\n"
+        )
         
         # Add enhanced mobile-friendly interaction code
         vocab_js += '''
