@@ -131,7 +131,7 @@
                 </div>
             </div>
             <h2>🧠 Викторина по фазам</h2>
-            <p class="quiz-intro">Проверьте знание слов: в текущей фазе <span class="quiz-count">{% if quizzes and quizzes[0].questions %}{{ quizzes[0].questions | length }}{% else %}0{% endif %}</span> вопрос(ов).</p>
+            <p class="quiz-intro">Проверьте знание слов с мини-викториной.</p>
 
             {% for quiz in quizzes %}
             <div class="quiz-phase-container{% if quiz.is_active %} active{% endif %}" data-phase="{{ quiz.phase_id }}">
