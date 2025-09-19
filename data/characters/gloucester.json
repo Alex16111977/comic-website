@@ -15,56 +15,121 @@
           "russian": "знать",
           "transcription": "[дер А-дель]",
           "sentence": "Als Adel diene ich meinem König treu.",
-          "sentence_translation": "Как знать я верно служу своему королю."
+          "sentence_translation": "Как знать я верно служу своему королю.",
+          "sentence_parts": [
+            "Als",
+            "Adel",
+            "diene",
+            "ich",
+            "meinem",
+            "König",
+            "treu."
+          ]
         },
         {
           "german": "dienen",
           "russian": "служить",
           "transcription": "[ДИ-нен]",
           "sentence": "Ich diene dem König seit vielen Jahren.",
-          "sentence_translation": "Я служу королю много лет."
+          "sentence_translation": "Я служу королю много лет.",
+          "sentence_parts": [
+            "Ich",
+            "diene",
+            "dem",
+            "König",
+            "seit",
+            "vielen",
+            "Jahren."
+          ]
         },
         {
           "german": "vertrauen",
           "russian": "доверять",
           "transcription": "[фер-ТРАУ-ен]",
           "sentence": "Ich vertraue beiden Söhnen gleich.",
-          "sentence_translation": "Я доверяю обоим сыновьям одинаково."
+          "sentence_translation": "Я доверяю обоим сыновьям одинаково.",
+          "sentence_parts": [
+            "Ich",
+            "vertraue",
+            "beiden",
+            "Söhnen",
+            "gleich."
+          ]
         },
         {
           "german": "der Graf",
           "russian": "граф",
           "transcription": "[дер ГРАФ]",
           "sentence": "Als Graf habe ich große Verantwortung.",
-          "sentence_translation": "Как граф я несу большую ответственность."
+          "sentence_translation": "Как граф я несу большую ответственность.",
+          "sentence_parts": [
+            "Als",
+            "Graf",
+            "habe",
+            "ich",
+            "große",
+            "Verantwortung."
+          ]
         },
         {
           "german": "die Ehre",
           "russian": "честь",
           "transcription": "[ди Э-ре]",
           "sentence": "Meine Ehre ist mein höchstes Gut.",
-          "sentence_translation": "Моя честь - моё высшее благо."
+          "sentence_translation": "Моя честь - моё высшее благо.",
+          "sentence_parts": [
+            "Meine",
+            "Ehre",
+            "ist",
+            "mein",
+            "höchstes",
+            "Gut."
+          ]
         },
         {
           "german": "rechtschaffen",
           "russian": "праведный",
           "transcription": "[РЕХТ-ша-фен]",
           "sentence": "Ich bin ein rechtschaffener Mann.",
-          "sentence_translation": "Я праведный человек."
+          "sentence_translation": "Я праведный человек.",
+          "sentence_parts": [
+            "Ich",
+            "bin",
+            "ein",
+            "rechtschaffener",
+            "Mann."
+          ]
         },
         {
           "german": "die Pflicht",
           "russian": "долг",
           "transcription": "[ди ПФЛИХТ]",
           "sentence": "Meine Pflicht ruft mich zum König.",
-          "sentence_translation": "Мой долг зовёт меня к королю."
+          "sentence_translation": "Мой долг зовёт меня к королю.",
+          "sentence_parts": [
+            "Meine",
+            "Pflicht",
+            "ruft",
+            "mich",
+            "zum",
+            "König."
+          ]
         },
         {
           "german": "achten",
           "russian": "уважать",
           "transcription": "[АХ-тен]",
           "sentence": "Ich achte beide Söhne, Edgar und Edmund.",
-          "sentence_translation": "Я уважаю обоих сыновей, Эдгара и Эдмунда."
+          "sentence_translation": "Я уважаю обоих сыновей, Эдгара и Эдмунда.",
+          "sentence_parts": [
+            "Ich",
+            "achte",
+            "beide",
+            "Söhne,",
+            "Edgar",
+            "und",
+            "Edmund."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -86,56 +151,119 @@
           "russian": "письмо",
           "transcription": "[дер БРИФ]",
           "sentence": "Dieser Brief beweist Edgars Verrat.",
-          "sentence_translation": "Это письмо доказывает предательство Эдгара."
+          "sentence_translation": "Это письмо доказывает предательство Эдгара.",
+          "sentence_parts": [
+            "Dieser",
+            "Brief",
+            "beweist",
+            "Edgars",
+            "Verrat."
+          ]
         },
         {
           "german": "glauben",
           "russian": "верить",
           "transcription": "[ГЛАУ-бен]",
           "sentence": "Ich glaube Edmunds Lügen sofort.",
-          "sentence_translation": "Я сразу верю лжи Эдмунда."
+          "sentence_translation": "Я сразу верю лжи Эдмунда.",
+          "sentence_parts": [
+            "Ich",
+            "glaube",
+            "Edmunds",
+            "Lügen",
+            "sofort."
+          ]
         },
         {
           "german": "täuschen",
           "russian": "обманывать",
           "transcription": "[ТОЙ-шен]",
           "sentence": "Edmund täuscht mich mit falschen Beweisen.",
-          "sentence_translation": "Эдмунд обманывает меня ложными доказательствами."
+          "sentence_translation": "Эдмунд обманывает меня ложными доказательствами.",
+          "sentence_parts": [
+            "Edmund",
+            "täuscht",
+            "mich",
+            "mit",
+            "falschen",
+            "Beweisen."
+          ]
         },
         {
           "german": "der Betrug",
           "russian": "обман",
           "transcription": "[дер бе-ТРУГ]",
           "sentence": "Ich erkenne den Betrug nicht.",
-          "sentence_translation": "Я не распознаю обман."
+          "sentence_translation": "Я не распознаю обман.",
+          "sentence_parts": [
+            "Ich",
+            "erkenne",
+            "den",
+            "Betrug",
+            "nicht."
+          ]
         },
         {
           "german": "arglos",
           "russian": "простодушный",
           "transcription": "[АРГ-лос]",
           "sentence": "Ich bin zu arglos für solche Intrigen.",
-          "sentence_translation": "Я слишком простодушен для таких интриг."
+          "sentence_translation": "Я слишком простодушен для таких интриг.",
+          "sentence_parts": [
+            "Ich",
+            "bin",
+            "zu",
+            "arglos",
+            "für",
+            "solche",
+            "Intrigen."
+          ]
         },
         {
           "german": "verdächtigen",
           "russian": "подозревать",
           "transcription": "[фер-ДЕХ-ти-ген]",
           "sentence": "Ich verdächtige meinen guten Sohn Edgar.",
-          "sentence_translation": "Я подозреваю моего доброго сына Эдгара."
+          "sentence_translation": "Я подозреваю моего доброго сына Эдгара.",
+          "sentence_parts": [
+            "Ich",
+            "verdächtige",
+            "meinen",
+            "guten",
+            "Sohn",
+            "Edgar."
+          ]
         },
         {
           "german": "leichtgläubig",
           "russian": "легковерный",
           "transcription": "[ЛАЙХТ-глой-биг]",
           "sentence": "Ich bin zu leichtgläubig für diese Welt.",
-          "sentence_translation": "Я слишком легковерен для этого мира."
+          "sentence_translation": "Я слишком легковерен для этого мира.",
+          "sentence_parts": [
+            "Ich",
+            "bin",
+            "zu",
+            "leichtgläubig",
+            "für",
+            "diese",
+            "Welt."
+          ]
         },
         {
           "german": "die Falle",
           "russian": "ловушка",
           "transcription": "[ди ФА-ле]",
           "sentence": "Ich tappe blind in Edmunds Falle.",
-          "sentence_translation": "Я слепо попадаю в ловушку Эдмунда."
+          "sentence_translation": "Я слепо попадаю в ловушку Эдмунда.",
+          "sentence_parts": [
+            "Ich",
+            "tappe",
+            "blind",
+            "in",
+            "Edmunds",
+            "Falle."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -157,49 +285,103 @@
           "russian": "изгонять",
           "transcription": "[фер-ШТО-сен]",
           "sentence": "Ich verstoße meinen unschuldigen Sohn.",
-          "sentence_translation": "Я изгоняю своего невинного сына."
+          "sentence_translation": "Я изгоняю своего невинного сына.",
+          "sentence_parts": [
+            "Ich",
+            "verstoße",
+            "meinen",
+            "unschuldigen",
+            "Sohn."
+          ]
         },
         {
           "german": "verfluchen",
           "russian": "проклинать",
           "transcription": "[фер-ФЛУ-хен]",
           "sentence": "Im Zorn verfluche ich Edgar.",
-          "sentence_translation": "В гневе я проклинаю Эдгара."
+          "sentence_translation": "В гневе я проклинаю Эдгара.",
+          "sentence_parts": [
+            "Im",
+            "Zorn",
+            "verfluche",
+            "ich",
+            "Edgar."
+          ]
         },
         {
           "german": "bereuen",
           "russian": "сожалеть",
           "transcription": "[бе-РОЙ-ен]",
           "sentence": "Später werde ich diese Tat bitter bereuen.",
-          "sentence_translation": "Позже я горько пожалею об этом поступке."
+          "sentence_translation": "Позже я горько пожалею об этом поступке.",
+          "sentence_parts": [
+            "Später",
+            "werde",
+            "ich",
+            "diese",
+            "Tat",
+            "bitter",
+            "bereuen."
+          ]
         },
         {
           "german": "der Irrtum",
           "russian": "заблуждение",
           "transcription": "[дер ИР-тум]",
           "sentence": "Mein Irrtum zerstört meine Familie.",
-          "sentence_translation": "Моё заблуждение разрушает мою семью."
+          "sentence_translation": "Моё заблуждение разрушает мою семью.",
+          "sentence_parts": [
+            "Mein",
+            "Irrtum",
+            "zerstört",
+            "meine",
+            "Familie."
+          ]
         },
         {
           "german": "blind",
           "russian": "слепой",
           "transcription": "[БЛИНД]",
           "sentence": "Ich bin blind für die Wahrheit.",
-          "sentence_translation": "Я слеп к правде."
+          "sentence_translation": "Я слеп к правде.",
+          "sentence_parts": [
+            "Ich",
+            "bin",
+            "blind",
+            "für",
+            "die",
+            "Wahrheit."
+          ]
         },
         {
           "german": "jagen",
           "russian": "гнать",
           "transcription": "[Я-ген]",
           "sentence": "Ich jage meinen Sohn fort wie einen Verbrecher.",
-          "sentence_translation": "Я гоню сына прочь как преступника."
+          "sentence_translation": "Я гоню сына прочь как преступника.",
+          "sentence_parts": [
+            "Ich",
+            "jage",
+            "meinen",
+            "Sohn",
+            "fort",
+            "wie",
+            "einen",
+            "Verbrecher."
+          ]
         },
         {
           "german": "die Ungerechtigkeit",
           "russian": "несправедливость",
           "transcription": "[ди УН-ге-рех-тиг-кайт]",
           "sentence": "Ich begehe große Ungerechtigkeit.",
-          "sentence_translation": "Я совершаю большую несправедливость."
+          "sentence_translation": "Я совершаю большую несправедливость.",
+          "sentence_parts": [
+            "Ich",
+            "begehe",
+            "große",
+            "Ungerechtigkeit."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -221,56 +403,123 @@
           "russian": "помогать",
           "transcription": "[ХЕЛЬ-фен]",
           "sentence": "Heimlich helfe ich dem verstoßenen König.",
-          "sentence_translation": "Тайно я помогаю изгнанному королю."
+          "sentence_translation": "Тайно я помогаю изгнанному королю.",
+          "sentence_parts": [
+            "Heimlich",
+            "helfe",
+            "ich",
+            "dem",
+            "verstoßenen",
+            "König."
+          ]
         },
         {
           "german": "das Mitleid",
           "russian": "сострадание",
           "transcription": "[дас МИТ-лайд]",
           "sentence": "Mitleid erfüllt mein Herz für Lear.",
-          "sentence_translation": "Сострадание наполняет моё сердце к Лиру."
+          "sentence_translation": "Сострадание наполняет моё сердце к Лиру.",
+          "sentence_parts": [
+            "Mitleid",
+            "erfüllt",
+            "mein",
+            "Herz",
+            "für",
+            "Lear."
+          ]
         },
         {
           "german": "riskieren",
           "russian": "рисковать",
           "transcription": "[рис-КИ-рен]",
           "sentence": "Ich riskiere alles für den alten König.",
-          "sentence_translation": "Я рискую всем ради старого короля."
+          "sentence_translation": "Я рискую всем ради старого короля.",
+          "sentence_parts": [
+            "Ich",
+            "riskiere",
+            "alles",
+            "für",
+            "den",
+            "alten",
+            "König."
+          ]
         },
         {
           "german": "die Gefahr",
           "russian": "опасность",
           "transcription": "[ди ге-ФАР]",
           "sentence": "Die Gefahr der Entdeckung ist groß.",
-          "sentence_translation": "Опасность разоблачения велика."
+          "sentence_translation": "Опасность разоблачения велика.",
+          "sentence_parts": [
+            "Die",
+            "Gefahr",
+            "der",
+            "Entdeckung",
+            "ist",
+            "groß."
+          ]
         },
         {
           "german": "heimlich",
           "russian": "тайно",
           "transcription": "[ХАЙМ-лих]",
           "sentence": "Ich handle heimlich gegen die neuen Herrscher.",
-          "sentence_translation": "Я действую тайно против новых правителей."
+          "sentence_translation": "Я действую тайно против новых правителей.",
+          "sentence_parts": [
+            "Ich",
+            "handle",
+            "heimlich",
+            "gegen",
+            "die",
+            "neuen",
+            "Herrscher."
+          ]
         },
         {
           "german": "schützen",
           "russian": "защищать",
           "transcription": "[ШЮ-цен]",
           "sentence": "Ich will den wahnsinnigen König schützen.",
-          "sentence_translation": "Я хочу защитить безумного короля."
+          "sentence_translation": "Я хочу защитить безумного короля.",
+          "sentence_parts": [
+            "Ich",
+            "will",
+            "den",
+            "wahnsinnigen",
+            "König",
+            "schützen."
+          ]
         },
         {
           "german": "der Verrat",
           "russian": "измена",
           "transcription": "[дер фер-РАТ]",
           "sentence": "Meine Hilfe gilt als Verrat.",
-          "sentence_translation": "Моя помощь считается изменой."
+          "sentence_translation": "Моя помощь считается изменой.",
+          "sentence_parts": [
+            "Meine",
+            "Hilfe",
+            "gilt",
+            "als",
+            "Verrat."
+          ]
         },
         {
           "german": "wagen",
           "russian": "осмеливаться",
           "transcription": "[ВА-ген]",
           "sentence": "Ich wage es, gegen die Töchter zu handeln.",
-          "sentence_translation": "Я осмеливаюсь действовать против дочерей."
+          "sentence_translation": "Я осмеливаюсь действовать против дочерей.",
+          "sentence_parts": [
+            "Ich",
+            "wage",
+            "es,",
+            "gegen",
+            "die",
+            "Töchter",
+            "zu",
+            "handeln."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -292,49 +541,102 @@
           "russian": "ослеплять",
           "transcription": "[БЛЕН-ден]",
           "sentence": "Sie blenden mich für meinen Verrat.",
-          "sentence_translation": "Они ослепляют меня за мою измену."
+          "sentence_translation": "Они ослепляют меня за мою измену.",
+          "sentence_parts": [
+            "Sie",
+            "blenden",
+            "mich",
+            "für",
+            "meinen",
+            "Verrat."
+          ]
         },
         {
           "german": "die Folter",
           "russian": "пытка",
           "transcription": "[ди ФОЛЬ-тер]",
           "sentence": "Die Folter ist grausam und erbarmungslos.",
-          "sentence_translation": "Пытка жестока и беспощадна."
+          "sentence_translation": "Пытка жестока и беспощадна.",
+          "sentence_parts": [
+            "Die",
+            "Folter",
+            "ist",
+            "grausam",
+            "und",
+            "erbarmungslos."
+          ]
         },
         {
           "german": "der Schmerz",
           "russian": "боль",
           "transcription": "[дер ШМЕРЦ]",
           "sentence": "Der Schmerz durchbohrt meine Seele.",
-          "sentence_translation": "Боль пронзает мою душу."
+          "sentence_translation": "Боль пронзает мою душу.",
+          "sentence_parts": [
+            "Der",
+            "Schmerz",
+            "durchbohrt",
+            "meine",
+            "Seele."
+          ]
         },
         {
           "german": "die Dunkelheit",
           "russian": "темнота",
           "transcription": "[ди ДУН-кель-хайт]",
           "sentence": "Ewige Dunkelheit umgibt mich nun.",
-          "sentence_translation": "Вечная темнота окружает меня теперь."
+          "sentence_translation": "Вечная темнота окружает меня теперь.",
+          "sentence_parts": [
+            "Ewige",
+            "Dunkelheit",
+            "umgibt",
+            "mich",
+            "nun."
+          ]
         },
         {
           "german": "schreien",
           "russian": "кричать",
           "transcription": "[ШРАЙ-ен]",
           "sentence": "Ich schreie vor unerträglichem Schmerz.",
-          "sentence_translation": "Я кричу от невыносимой боли."
+          "sentence_translation": "Я кричу от невыносимой боли.",
+          "sentence_parts": [
+            "Ich",
+            "schreie",
+            "vor",
+            "unerträglichem",
+            "Schmerz."
+          ]
         },
         {
           "german": "erblinden",
           "russian": "слепнуть",
           "transcription": "[ер-БЛИН-ден]",
           "sentence": "Ich erblinde durch ihre Grausamkeit.",
-          "sentence_translation": "Я слепну от их жестокости."
+          "sentence_translation": "Я слепну от их жестокости.",
+          "sentence_parts": [
+            "Ich",
+            "erblinde",
+            "durch",
+            "ihre",
+            "Grausamkeit."
+          ]
         },
         {
           "german": "die Rache",
           "russian": "месть",
           "transcription": "[ди РА-хе]",
           "sentence": "Dies ist ihre Rache für meine Treue.",
-          "sentence_translation": "Это их месть за мою верность."
+          "sentence_translation": "Это их месть за мою верность.",
+          "sentence_parts": [
+            "Dies",
+            "ist",
+            "ihre",
+            "Rache",
+            "für",
+            "meine",
+            "Treue."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -356,56 +658,118 @@
           "russian": "отчаяние",
           "transcription": "[ди фер-ЦВАЙ-флунг]",
           "sentence": "Die Verzweiflung treibt mich zum Abgrund.",
-          "sentence_translation": "Отчаяние гонит меня к пропасти."
+          "sentence_translation": "Отчаяние гонит меня к пропасти.",
+          "sentence_parts": [
+            "Die",
+            "Verzweiflung",
+            "treibt",
+            "mich",
+            "zum",
+            "Abgrund."
+          ]
         },
         {
           "german": "springen",
           "russian": "прыгать",
           "transcription": "[ШПРИН-ген]",
           "sentence": "Ich will von den Klippen springen.",
-          "sentence_translation": "Я хочу прыгнуть со скал."
+          "sentence_translation": "Я хочу прыгнуть со скал.",
+          "sentence_parts": [
+            "Ich",
+            "will",
+            "von",
+            "den",
+            "Klippen",
+            "springen."
+          ]
         },
         {
           "german": "die Täuschung",
           "russian": "обман",
           "transcription": "[ди ТОЙ-шунг]",
           "sentence": "Edgars liebevolle Täuschung rettet mich.",
-          "sentence_translation": "Любящий обман Эдгара спасает меня."
+          "sentence_translation": "Любящий обман Эдгара спасает меня.",
+          "sentence_parts": [
+            "Edgars",
+            "liebevolle",
+            "Täuschung",
+            "rettet",
+            "mich."
+          ]
         },
         {
           "german": "der Abgrund",
           "russian": "пропасть",
           "transcription": "[дер АБ-грунд]",
           "sentence": "Der Abgrund ruft nach mir.",
-          "sentence_translation": "Пропасть зовёт меня."
+          "sentence_translation": "Пропасть зовёт меня.",
+          "sentence_parts": [
+            "Der",
+            "Abgrund",
+            "ruft",
+            "nach",
+            "mir."
+          ]
         },
         {
           "german": "aufgeben",
           "russian": "сдаваться",
           "transcription": "[АУФ-ге-бен]",
           "sentence": "Ich will das Leben aufgeben.",
-          "sentence_translation": "Я хочу отказаться от жизни."
+          "sentence_translation": "Я хочу отказаться от жизни.",
+          "sentence_parts": [
+            "Ich",
+            "will",
+            "das",
+            "Leben",
+            "aufgeben."
+          ]
         },
         {
           "german": "die Hoffnungslosigkeit",
           "russian": "безнадёжность",
           "transcription": "[ди ХОФ-нунгс-ло-зиг-кайт]",
           "sentence": "Die Hoffnungslosigkeit erdrückt mich.",
-          "sentence_translation": "Безнадёжность давит меня."
+          "sentence_translation": "Безнадёжность давит меня.",
+          "sentence_parts": [
+            "Die",
+            "Hoffnungslosigkeit",
+            "erdrückt",
+            "mich."
+          ]
         },
         {
           "german": "stürzen",
           "russian": "падать",
           "transcription": "[ШТЮР-цен]",
           "sentence": "Ich glaube, von hohen Klippen zu stürzen.",
-          "sentence_translation": "Я верю, что падаю с высоких скал."
+          "sentence_translation": "Я верю, что падаю с высоких скал.",
+          "sentence_parts": [
+            "Ich",
+            "glaube,",
+            "von",
+            "hohen",
+            "Klippen",
+            "zu",
+            "stürzen."
+          ]
         },
         {
           "german": "erlösen",
           "russian": "избавлять",
           "transcription": "[ер-ЛЁ-зен]",
           "sentence": "Der Tod soll mich von der Schuld erlösen.",
-          "sentence_translation": "Смерть должна избавить меня от вины."
+          "sentence_translation": "Смерть должна избавить меня от вины.",
+          "sentence_parts": [
+            "Der",
+            "Tod",
+            "soll",
+            "mich",
+            "von",
+            "der",
+            "Schuld",
+            "erlösen."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -427,56 +791,119 @@
           "russian": "узнавать",
           "transcription": "[ер-КЕН-нен]",
           "sentence": "Endlich erkenne ich meinen treuen Edgar.",
-          "sentence_translation": "Наконец я узнаю моего верного Эдгара."
+          "sentence_translation": "Наконец я узнаю моего верного Эдгара.",
+          "sentence_parts": [
+            "Endlich",
+            "erkenne",
+            "ich",
+            "meinen",
+            "treuen",
+            "Edgar."
+          ]
         },
         {
           "german": "vergeben",
           "russian": "прощать",
           "transcription": "[фер-ГЕ-бен]",
           "sentence": "Edgar vergibt mir meine Blindheit.",
-          "sentence_translation": "Эдгар прощает мне мою слепоту."
+          "sentence_translation": "Эдгар прощает мне мою слепоту.",
+          "sentence_parts": [
+            "Edgar",
+            "vergibt",
+            "mir",
+            "meine",
+            "Blindheit."
+          ]
         },
         {
           "german": "sterben",
           "russian": "умирать",
           "transcription": "[ШТЕР-бен]",
           "sentence": "Ich sterbe vor Freude und Kummer.",
-          "sentence_translation": "Я умираю от радости и горя."
+          "sentence_translation": "Я умираю от радости и горя.",
+          "sentence_parts": [
+            "Ich",
+            "sterbe",
+            "vor",
+            "Freude",
+            "und",
+            "Kummer."
+          ]
         },
         {
           "german": "die Erkenntnis",
           "russian": "осознание",
           "transcription": "[ди ер-КЕНТ-нис]",
           "sentence": "Die späte Erkenntnis bricht mein Herz.",
-          "sentence_translation": "Позднее осознание разбивает моё сердце."
+          "sentence_translation": "Позднее осознание разбивает моё сердце.",
+          "sentence_parts": [
+            "Die",
+            "späte",
+            "Erkenntnis",
+            "bricht",
+            "mein",
+            "Herz."
+          ]
         },
         {
           "german": "die Reue",
           "russian": "раскаяние",
           "transcription": "[ди РОЙ-е]",
           "sentence": "Die Reue überwältigt meine Seele.",
-          "sentence_translation": "Раскаяние переполняет мою душу."
+          "sentence_translation": "Раскаяние переполняет мою душу.",
+          "sentence_parts": [
+            "Die",
+            "Reue",
+            "überwältigt",
+            "meine",
+            "Seele."
+          ]
         },
         {
           "german": "umarmen",
           "russian": "обнимать",
           "transcription": "[ум-АР-мен]",
           "sentence": "Ein letztes Mal umarme ich meinen Sohn.",
-          "sentence_translation": "В последний раз я обнимаю сына."
+          "sentence_translation": "В последний раз я обнимаю сына.",
+          "sentence_parts": [
+            "Ein",
+            "letztes",
+            "Mal",
+            "umarme",
+            "ich",
+            "meinen",
+            "Sohn."
+          ]
         },
         {
           "german": "die Versöhnung",
           "russian": "примирение",
           "transcription": "[ди фер-ЗЁ-нунг]",
           "sentence": "Die Versöhnung kommt zu spät.",
-          "sentence_translation": "Примирение приходит слишком поздно."
+          "sentence_translation": "Примирение приходит слишком поздно.",
+          "sentence_parts": [
+            "Die",
+            "Versöhnung",
+            "kommt",
+            "zu",
+            "spät."
+          ]
         },
         {
           "german": "das Herz",
           "russian": "сердце",
           "transcription": "[дас ХЕРЦ]",
           "sentence": "Mein Herz zerbricht vor Glück und Leid.",
-          "sentence_translation": "Моё сердце разрывается от счастья и горя."
+          "sentence_translation": "Моё сердце разрывается от счастья и горя.",
+          "sentence_parts": [
+            "Mein",
+            "Herz",
+            "zerbricht",
+            "vor",
+            "Glück",
+            "und",
+            "Leid."
+          ]
         }
       ],
       "theatrical_scene": {

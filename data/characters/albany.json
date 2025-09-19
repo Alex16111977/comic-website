@@ -15,56 +15,125 @@
           "russian": "молчание",
           "transcription": "[дас ШВАЙ-ген]",
           "sentence": "Mein Schweigen macht mich zum Mitschuldigen.",
-          "sentence_translation": "Моё молчание делает меня соучастником."
+          "sentence_translation": "Моё молчание делает меня соучастником.",
+          "sentence_parts": [
+            "Mein",
+            "Schweigen",
+            "macht",
+            "mich",
+            "zum",
+            "Mitschuldigen."
+          ]
         },
         {
           "german": "die Schwäche",
           "russian": "слабость",
           "transcription": "[ди ШВЕ-хе]",
           "sentence": "Meine Schwäche erlaubt das Böse zu wachsen.",
-          "sentence_translation": "Моя слабость позволяет злу расти."
+          "sentence_translation": "Моя слабость позволяет злу расти.",
+          "sentence_parts": [
+            "Meine",
+            "Schwäche",
+            "erlaubt",
+            "das",
+            "Böse",
+            "zu",
+            "wachsen."
+          ]
         },
         {
           "german": "die Ehe",
           "russian": "брак",
           "transcription": "[ди Э-е]",
           "sentence": "Die Ehe bindet mich an eine grausame Frau.",
-          "sentence_translation": "Брак связывает меня с жестокой женой."
+          "sentence_translation": "Брак связывает меня с жестокой женой.",
+          "sentence_parts": [
+            "Die",
+            "Ehe",
+            "bindet",
+            "mich",
+            "an",
+            "eine",
+            "grausame",
+            "Frau."
+          ]
         },
         {
           "german": "dulden",
           "russian": "терпеть",
           "transcription": "[ДУЛЬ-ден]",
           "sentence": "Ich dulde ihre Grausamkeit zu lange.",
-          "sentence_translation": "Я слишком долго терплю её жестокость."
+          "sentence_translation": "Я слишком долго терплю её жестокость.",
+          "sentence_parts": [
+            "Ich",
+            "dulde",
+            "ihre",
+            "Grausamkeit",
+            "zu",
+            "lange."
+          ]
         },
         {
           "german": "passiv",
           "russian": "пассивный",
           "transcription": "[па-СИФ]",
           "sentence": "Passiv schaue ich dem Unrecht zu.",
-          "sentence_translation": "Пассивно я наблюдаю за несправедливостью."
+          "sentence_translation": "Пассивно я наблюдаю за несправедливостью.",
+          "sentence_parts": [
+            "Passiv",
+            "schaue",
+            "ich",
+            "dem",
+            "Unrecht",
+            "zu."
+          ]
         },
         {
           "german": "nachgeben",
           "russian": "уступать",
           "transcription": "[НАХ-ге-бен]",
           "sentence": "Zu oft gebe ich ihrem Willen nach.",
-          "sentence_translation": "Слишком часто я уступаю её воле."
+          "sentence_translation": "Слишком часто я уступаю её воле.",
+          "sentence_parts": [
+            "Zu",
+            "oft",
+            "gebe",
+            "ich",
+            "ihrem",
+            "Willen",
+            "nach."
+          ]
         },
         {
           "german": "zögern",
           "russian": "колебаться",
           "transcription": "[ЦЁ-герн]",
           "sentence": "Ich zögere, wenn ich handeln sollte.",
-          "sentence_translation": "Я колеблюсь, когда должен действовать."
+          "sentence_translation": "Я колеблюсь, когда должен действовать.",
+          "sentence_parts": [
+            "Ich",
+            "zögere,",
+            "wenn",
+            "ich",
+            "handeln",
+            "sollte."
+          ]
         },
         {
           "german": "mild",
           "russian": "мягкий",
           "transcription": "[МИЛЬД]",
           "sentence": "Meine milde Art wird als Schwäche gesehen.",
-          "sentence_translation": "Моя мягкость воспринимается как слабость."
+          "sentence_translation": "Моя мягкость воспринимается как слабость.",
+          "sentence_parts": [
+            "Meine",
+            "milde",
+            "Art",
+            "wird",
+            "als",
+            "Schwäche",
+            "gesehen."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -86,49 +155,107 @@
           "russian": "сомнение",
           "transcription": "[дер ЦВАЙ-фель]",
           "sentence": "Der Zweifel an ihrer Güte wächst in mir.",
-          "sentence_translation": "Сомнение в её доброте растёт во мне."
+          "sentence_translation": "Сомнение в её доброте растёт во мне.",
+          "sentence_parts": [
+            "Der",
+            "Zweifel",
+            "an",
+            "ihrer",
+            "Güte",
+            "wächst",
+            "in",
+            "mir."
+          ]
         },
         {
           "german": "das Gewissen",
           "russian": "совесть",
           "transcription": "[дас ге-ВИ-сен]",
           "sentence": "Mein Gewissen beginnt mich zu quälen.",
-          "sentence_translation": "Моя совесть начинает мучить меня."
+          "sentence_translation": "Моя совесть начинает мучить меня.",
+          "sentence_parts": [
+            "Mein",
+            "Gewissen",
+            "beginnt",
+            "mich",
+            "zu",
+            "quälen."
+          ]
         },
         {
           "german": "das Unbehagen",
           "russian": "беспокойство",
           "transcription": "[дас УН-бе-ха-ген]",
           "sentence": "Ein tiefes Unbehagen erfüllt meine Seele.",
-          "sentence_translation": "Глубокое беспокойство наполняет мою душу."
+          "sentence_translation": "Глубокое беспокойство наполняет мою душу.",
+          "sentence_parts": [
+            "Ein",
+            "tiefes",
+            "Unbehagen",
+            "erfüllt",
+            "meine",
+            "Seele."
+          ]
         },
         {
           "german": "hinterfragen",
           "russian": "подвергать сомнению",
           "transcription": "[ХИН-тер-фра-ген]",
           "sentence": "Ich beginne ihre Taten zu hinterfragen.",
-          "sentence_translation": "Я начинаю подвергать сомнению её поступки."
+          "sentence_translation": "Я начинаю подвергать сомнению её поступки.",
+          "sentence_parts": [
+            "Ich",
+            "beginne",
+            "ihre",
+            "Taten",
+            "zu",
+            "hinterfragen."
+          ]
         },
         {
           "german": "beunruhigen",
           "russian": "тревожить",
           "transcription": "[бе-УН-ру-и-ген]",
           "sentence": "Ihre Grausamkeit beunruhigt mich zunehmend.",
-          "sentence_translation": "Её жестокость всё больше тревожит меня."
+          "sentence_translation": "Её жестокость всё больше тревожит меня.",
+          "sentence_parts": [
+            "Ihre",
+            "Grausamkeit",
+            "beunruhigt",
+            "mich",
+            "zunehmend."
+          ]
         },
         {
           "german": "unsicher",
           "russian": "неуверенный",
           "transcription": "[УН-зи-хер]",
           "sentence": "Ich werde unsicher in meinem Schweigen.",
-          "sentence_translation": "Я становлюсь неуверенным в своём молчании."
+          "sentence_translation": "Я становлюсь неуверенным в своём молчании.",
+          "sentence_parts": [
+            "Ich",
+            "werde",
+            "unsicher",
+            "in",
+            "meinem",
+            "Schweigen."
+          ]
         },
         {
           "german": "grübeln",
           "russian": "размышлять",
           "transcription": "[ГРЮ-бельн]",
           "sentence": "Nachts grüble ich über richtig und falsch.",
-          "sentence_translation": "Ночами я размышляю о правильном и неправильном."
+          "sentence_translation": "Ночами я размышляю о правильном и неправильном.",
+          "sentence_parts": [
+            "Nachts",
+            "grüble",
+            "ich",
+            "über",
+            "richtig",
+            "und",
+            "falsch."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -150,56 +277,122 @@
           "russian": "осознание",
           "transcription": "[ди ер-КЕНТ-нис]",
           "sentence": "Die Erkenntnis ihrer Bosheit erschüttert mich.",
-          "sentence_translation": "Осознание её злобы потрясает меня."
+          "sentence_translation": "Осознание её злобы потрясает меня.",
+          "sentence_parts": [
+            "Die",
+            "Erkenntnis",
+            "ihrer",
+            "Bosheit",
+            "erschüttert",
+            "mich."
+          ]
         },
         {
           "german": "das Entsetzen",
           "russian": "ужас",
           "transcription": "[дас энт-ЗЕ-цен]",
           "sentence": "Mit Entsetzen sehe ich ihr wahres Gesicht.",
-          "sentence_translation": "С ужасом я вижу её истинное лицо."
+          "sentence_translation": "С ужасом я вижу её истинное лицо.",
+          "sentence_parts": [
+            "Mit",
+            "Entsetzen",
+            "sehe",
+            "ich",
+            "ihr",
+            "wahres",
+            "Gesicht."
+          ]
         },
         {
           "german": "erwachen",
           "russian": "пробуждаться",
           "transcription": "[ер-ВА-хен]",
           "sentence": "Endlich erwache ich aus meiner Blindheit.",
-          "sentence_translation": "Наконец я пробуждаюсь от своей слепоты."
+          "sentence_translation": "Наконец я пробуждаюсь от своей слепоты.",
+          "sentence_parts": [
+            "Endlich",
+            "erwache",
+            "ich",
+            "aus",
+            "meiner",
+            "Blindheit."
+          ]
         },
         {
           "german": "begreifen",
           "russian": "понимать",
           "transcription": "[бе-ГРАЙ-фен]",
           "sentence": "Ich begreife das Ausmaß ihrer Grausamkeit.",
-          "sentence_translation": "Я понимаю масштаб её жестокости."
+          "sentence_translation": "Я понимаю масштаб её жестокости.",
+          "sentence_parts": [
+            "Ich",
+            "begreife",
+            "das",
+            "Ausmaß",
+            "ihrer",
+            "Grausamkeit."
+          ]
         },
         {
           "german": "erschrecken",
           "russian": "пугаться",
           "transcription": "[ер-ШРЕК-кен]",
           "sentence": "Ihre Taten erschrecken mein gutes Herz.",
-          "sentence_translation": "Её поступки пугают моё доброе сердце."
+          "sentence_translation": "Её поступки пугают моё доброе сердце.",
+          "sentence_parts": [
+            "Ihre",
+            "Taten",
+            "erschrecken",
+            "mein",
+            "gutes",
+            "Herz."
+          ]
         },
         {
           "german": "aufwachen",
           "russian": "просыпаться",
           "transcription": "[АУФ-ва-хен]",
           "sentence": "Ich wache auf aus meinem langen Schlaf.",
-          "sentence_translation": "Я просыпаюсь от долгого сна."
+          "sentence_translation": "Я просыпаюсь от долгого сна.",
+          "sentence_parts": [
+            "Ich",
+            "wache",
+            "auf",
+            "aus",
+            "meinem",
+            "langen",
+            "Schlaf."
+          ]
         },
         {
           "german": "klar sehen",
           "russian": "ясно видеть",
           "transcription": "[КЛАР ЗЕ-ен]",
           "sentence": "Zum ersten Mal sehe ich klar.",
-          "sentence_translation": "Впервые я вижу ясно."
+          "sentence_translation": "Впервые я вижу ясно.",
+          "sentence_parts": [
+            "Zum",
+            "ersten",
+            "Mal",
+            "sehe",
+            "ich",
+            "klar."
+          ]
         },
         {
           "german": "die Verwandlung",
           "russian": "превращение",
           "transcription": "[ди фер-ВАНД-лунг]",
           "sentence": "Eine Verwandlung beginnt in meiner Seele.",
-          "sentence_translation": "Превращение начинается в моей душе."
+          "sentence_translation": "Превращение начинается в моей душе.",
+          "sentence_parts": [
+            "Eine",
+            "Verwandlung",
+            "beginnt",
+            "in",
+            "meiner",
+            "Seele."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -221,49 +414,106 @@
           "russian": "спор",
           "transcription": "[дер ШТРАЙТ]",
           "sentence": "Der Streit mit meiner Frau eskaliert.",
-          "sentence_translation": "Спор с моей женой обостряется."
+          "sentence_translation": "Спор с моей женой обостряется.",
+          "sentence_parts": [
+            "Der",
+            "Streit",
+            "mit",
+            "meiner",
+            "Frau",
+            "eskaliert."
+          ]
         },
         {
           "german": "der Mut",
           "russian": "мужество",
           "transcription": "[дер МУТ]",
           "sentence": "Endlich finde ich den Mut zu widersprechen.",
-          "sentence_translation": "Наконец я нахожу мужество возражать."
+          "sentence_translation": "Наконец я нахожу мужество возражать.",
+          "sentence_parts": [
+            "Endlich",
+            "finde",
+            "ich",
+            "den",
+            "Mut",
+            "zu",
+            "widersprechen."
+          ]
         },
         {
           "german": "der Widerstand",
           "russian": "сопротивление",
           "transcription": "[дер ВИ-дер-штанд]",
           "sentence": "Mein Widerstand gegen das Böse beginnt.",
-          "sentence_translation": "Моё сопротивление злу начинается."
+          "sentence_translation": "Моё сопротивление злу начинается.",
+          "sentence_parts": [
+            "Mein",
+            "Widerstand",
+            "gegen",
+            "das",
+            "Böse",
+            "beginnt."
+          ]
         },
         {
           "german": "konfrontieren",
           "russian": "противостоять",
           "transcription": "[кон-фрон-ТИ-рен]",
           "sentence": "Ich konfrontiere sie mit ihrer Grausamkeit.",
-          "sentence_translation": "Я противостою ей с её жестокостью."
+          "sentence_translation": "Я противостою ей с её жестокостью.",
+          "sentence_parts": [
+            "Ich",
+            "konfrontiere",
+            "sie",
+            "mit",
+            "ihrer",
+            "Grausamkeit."
+          ]
         },
         {
           "german": "anklagen",
           "russian": "обвинять",
           "transcription": "[АН-кла-ген]",
           "sentence": "Ich klage sie ihrer Unmenschlichkeit an.",
-          "sentence_translation": "Я обвиняю её в бесчеловечности."
+          "sentence_translation": "Я обвиняю её в бесчеловечности.",
+          "sentence_parts": [
+            "Ich",
+            "klage",
+            "sie",
+            "ihrer",
+            "Unmenschlichkeit",
+            "an."
+          ]
         },
         {
           "german": "sich wehren",
           "russian": "защищаться",
           "transcription": "[зих ВЕ-рен]",
           "sentence": "Ich wehre mich gegen ihre Tyrannei.",
-          "sentence_translation": "Я защищаюсь от её тирании."
+          "sentence_translation": "Я защищаюсь от её тирании.",
+          "sentence_parts": [
+            "Ich",
+            "wehre",
+            "mich",
+            "gegen",
+            "ihre",
+            "Tyrannei."
+          ]
         },
         {
           "german": "aufbegehren",
           "russian": "восставать",
           "transcription": "[АУФ-бе-ге-рен]",
           "sentence": "Ich begehre auf gegen das Unrecht.",
-          "sentence_translation": "Я восстаю против несправедливости."
+          "sentence_translation": "Я восстаю против несправедливости.",
+          "sentence_parts": [
+            "Ich",
+            "begehre",
+            "auf",
+            "gegen",
+            "das",
+            "Unrecht."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -285,56 +535,122 @@
           "russian": "мораль",
           "transcription": "[ди мо-РАЛЬ]",
           "sentence": "Die Moral leitet nun meine Entscheidungen.",
-          "sentence_translation": "Мораль теперь руководит моими решениями."
+          "sentence_translation": "Мораль теперь руководит моими решениями.",
+          "sentence_parts": [
+            "Die",
+            "Moral",
+            "leitet",
+            "nun",
+            "meine",
+            "Entscheidungen."
+          ]
         },
         {
           "german": "die Gerechtigkeit",
           "russian": "справедливость",
           "transcription": "[ди ге-РЕХ-тиг-кайт]",
           "sentence": "Für Gerechtigkeit will ich kämpfen.",
-          "sentence_translation": "За справедливость я хочу бороться."
+          "sentence_translation": "За справедливость я хочу бороться.",
+          "sentence_parts": [
+            "Für",
+            "Gerechtigkeit",
+            "will",
+            "ich",
+            "kämpfen."
+          ]
         },
         {
           "german": "die Entscheidung",
           "russian": "решение",
           "transcription": "[ди энт-ШАЙ-дунг]",
           "sentence": "Meine Entscheidung steht fest: ich wähle das Gute.",
-          "sentence_translation": "Моё решение твёрдо: я выбираю добро."
+          "sentence_translation": "Моё решение твёрдо: я выбираю добро.",
+          "sentence_parts": [
+            "Meine",
+            "Entscheidung",
+            "steht",
+            "fest:",
+            "ich",
+            "wähle",
+            "das",
+            "Gute."
+          ]
         },
         {
           "german": "wählen",
           "russian": "выбирать",
           "transcription": "[ВЕ-лен]",
           "sentence": "Ich wähle den schweren Weg der Tugend.",
-          "sentence_translation": "Я выбираю трудный путь добродетели."
+          "sentence_translation": "Я выбираю трудный путь добродетели.",
+          "sentence_parts": [
+            "Ich",
+            "wähle",
+            "den",
+            "schweren",
+            "Weg",
+            "der",
+            "Tugend."
+          ]
         },
         {
           "german": "rechtschaffen",
           "russian": "праведный",
           "transcription": "[РЕХТ-ша-фен]",
           "sentence": "Ich will rechtschaffen leben und handeln.",
-          "sentence_translation": "Я хочу жить и действовать праведно."
+          "sentence_translation": "Я хочу жить и действовать праведно.",
+          "sentence_parts": [
+            "Ich",
+            "will",
+            "rechtschaffen",
+            "leben",
+            "und",
+            "handeln."
+          ]
         },
         {
           "german": "das Prinzip",
           "russian": "принцип",
           "transcription": "[дас прин-ЦИП]",
           "sentence": "Meine Prinzipien sind wichtiger als meine Ehe.",
-          "sentence_translation": "Мои принципы важнее моего брака."
+          "sentence_translation": "Мои принципы важнее моего брака.",
+          "sentence_parts": [
+            "Meine",
+            "Prinzipien",
+            "sind",
+            "wichtiger",
+            "als",
+            "meine",
+            "Ehe."
+          ]
         },
         {
           "german": "edel",
           "russian": "благородный",
           "transcription": "[Э-дель]",
           "sentence": "Ich strebe nach edlen Taten.",
-          "sentence_translation": "Я стремлюсь к благородным поступкам."
+          "sentence_translation": "Я стремлюсь к благородным поступкам.",
+          "sentence_parts": [
+            "Ich",
+            "strebe",
+            "nach",
+            "edlen",
+            "Taten."
+          ]
         },
         {
           "german": "die Tugend",
           "russian": "добродетель",
           "transcription": "[ди ТУ-генд]",
           "sentence": "Die Tugend wird mein Leitstern sein.",
-          "sentence_translation": "Добродетель будет моей путеводной звездой."
+          "sentence_translation": "Добродетель будет моей путеводной звездой.",
+          "sentence_parts": [
+            "Die",
+            "Tugend",
+            "wird",
+            "mein",
+            "Leitstern",
+            "sein."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -356,49 +672,109 @@
           "russian": "борьба",
           "transcription": "[дер КАМПФ]",
           "sentence": "Der Kampf für das Recht beginnt jetzt.",
-          "sentence_translation": "Борьба за право начинается сейчас."
+          "sentence_translation": "Борьба за право начинается сейчас.",
+          "sentence_parts": [
+            "Der",
+            "Kampf",
+            "für",
+            "das",
+            "Recht",
+            "beginnt",
+            "jetzt."
+          ]
         },
         {
           "german": "das Recht",
           "russian": "право",
           "transcription": "[дас РЕХТ]",
           "sentence": "Das Recht muss über das Unrecht siegen.",
-          "sentence_translation": "Право должно победить неправду."
+          "sentence_translation": "Право должно победить неправду.",
+          "sentence_parts": [
+            "Das",
+            "Recht",
+            "muss",
+            "über",
+            "das",
+            "Unrecht",
+            "siegen."
+          ]
         },
         {
           "german": "die Güte",
           "russian": "доброта",
           "transcription": "[ди ГЮ-те]",
           "sentence": "Mit Güte will ich das Böse besiegen.",
-          "sentence_translation": "Добротой я хочу победить зло."
+          "sentence_translation": "Добротой я хочу победить зло.",
+          "sentence_parts": [
+            "Mit",
+            "Güte",
+            "will",
+            "ich",
+            "das",
+            "Böse",
+            "besiegen."
+          ]
         },
         {
           "german": "strafen",
           "russian": "наказывать",
           "transcription": "[ШТРА-фен]",
           "sentence": "Die Schuldigen müssen bestraft werden.",
-          "sentence_translation": "Виновные должны быть наказаны."
+          "sentence_translation": "Виновные должны быть наказаны.",
+          "sentence_parts": [
+            "Die",
+            "Schuldigen",
+            "müssen",
+            "bestraft",
+            "werden."
+          ]
         },
         {
           "german": "richten",
           "russian": "судить",
           "transcription": "[РИХ-тен]",
           "sentence": "Gerecht will ich über die Verbrecher richten.",
-          "sentence_translation": "Справедливо я хочу судить преступников."
+          "sentence_translation": "Справедливо я хочу судить преступников.",
+          "sentence_parts": [
+            "Gerecht",
+            "will",
+            "ich",
+            "über",
+            "die",
+            "Verbrecher",
+            "richten."
+          ]
         },
         {
           "german": "beschützen",
           "russian": "защищать",
           "transcription": "[бе-ШЮ-цен]",
           "sentence": "Die Unschuldigen will ich beschützen.",
-          "sentence_translation": "Невинных я хочу защитить."
+          "sentence_translation": "Невинных я хочу защитить.",
+          "sentence_parts": [
+            "Die",
+            "Unschuldigen",
+            "will",
+            "ich",
+            "beschützen."
+          ]
         },
         {
           "german": "eingreifen",
           "russian": "вмешиваться",
           "transcription": "[АЙН-грай-фен]",
           "sentence": "Ich greife ein, um das Schlimmste zu verhindern.",
-          "sentence_translation": "Я вмешиваюсь, чтобы предотвратить худшее."
+          "sentence_translation": "Я вмешиваюсь, чтобы предотвратить худшее.",
+          "sentence_parts": [
+            "Ich",
+            "greife",
+            "ein,",
+            "um",
+            "das",
+            "Schlimmste",
+            "zu",
+            "verhindern."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -420,56 +796,125 @@
           "russian": "правление",
           "transcription": "[ди ХЕР-шафт]",
           "sentence": "Die Herrschaft fällt nun in meine Hände.",
-          "sentence_translation": "Правление теперь переходит в мои руки."
+          "sentence_translation": "Правление теперь переходит в мои руки.",
+          "sentence_parts": [
+            "Die",
+            "Herrschaft",
+            "fällt",
+            "nun",
+            "in",
+            "meine",
+            "Hände."
+          ]
         },
         {
           "german": "die Weisheit",
           "russian": "мудрость",
           "transcription": "[ди ВАЙС-хайт]",
           "sentence": "Mit Weisheit will ich das Land führen.",
-          "sentence_translation": "С мудростью я хочу вести страну."
+          "sentence_translation": "С мудростью я хочу вести страну.",
+          "sentence_parts": [
+            "Mit",
+            "Weisheit",
+            "will",
+            "ich",
+            "das",
+            "Land",
+            "führen."
+          ]
         },
         {
           "german": "der Neuanfang",
           "russian": "новое начало",
           "transcription": "[дер НОЙ-ан-фанг]",
           "sentence": "Ein Neuanfang für das Königreich beginnt.",
-          "sentence_translation": "Новое начало для королевства начинается."
+          "sentence_translation": "Новое начало для королевства начинается.",
+          "sentence_parts": [
+            "Ein",
+            "Neuanfang",
+            "für",
+            "das",
+            "Königreich",
+            "beginnt."
+          ]
         },
         {
           "german": "lenken",
           "russian": "направлять",
           "transcription": "[ЛЕН-кен]",
           "sentence": "Ich lenke das Land in eine bessere Zukunft.",
-          "sentence_translation": "Я направляю страну в лучшее будущее."
+          "sentence_translation": "Я направляю страну в лучшее будущее.",
+          "sentence_parts": [
+            "Ich",
+            "lenke",
+            "das",
+            "Land",
+            "in",
+            "eine",
+            "bessere",
+            "Zukunft."
+          ]
         },
         {
           "german": "aufbauen",
           "russian": "строить",
           "transcription": "[АУФ-бау-ен]",
           "sentence": "Ich baue auf, was zerstört wurde.",
-          "sentence_translation": "Я строю то, что было разрушено."
+          "sentence_translation": "Я строю то, что было разрушено.",
+          "sentence_parts": [
+            "Ich",
+            "baue",
+            "auf,",
+            "was",
+            "zerstört",
+            "wurde."
+          ]
         },
         {
           "german": "erneuern",
           "russian": "обновлять",
           "transcription": "[ер-НОЙ-ерн]",
           "sentence": "Das Reich will ich erneuern und heilen.",
-          "sentence_translation": "Королевство я хочу обновить и исцелить."
+          "sentence_translation": "Королевство я хочу обновить и исцелить.",
+          "sentence_parts": [
+            "Das",
+            "Reich",
+            "will",
+            "ich",
+            "erneuern",
+            "und",
+            "heilen."
+          ]
         },
         {
           "german": "versöhnen",
           "russian": "примирять",
           "transcription": "[фер-ЗЁ-нен]",
           "sentence": "Ich will die Getrennten versöhnen.",
-          "sentence_translation": "Я хочу примирить разделённых."
+          "sentence_translation": "Я хочу примирить разделённых.",
+          "sentence_parts": [
+            "Ich",
+            "will",
+            "die",
+            "Getrennten",
+            "versöhnen."
+          ]
         },
         {
           "german": "der Friede",
           "russian": "мир",
           "transcription": "[дер ФРИ-де]",
           "sentence": "Der Friede soll wieder ins Land kommen.",
-          "sentence_translation": "Мир должен вернуться в страну."
+          "sentence_translation": "Мир должен вернуться в страну.",
+          "sentence_parts": [
+            "Der",
+            "Friede",
+            "soll",
+            "wieder",
+            "ins",
+            "Land",
+            "kommen."
+          ]
         }
       ],
       "theatrical_scene": {

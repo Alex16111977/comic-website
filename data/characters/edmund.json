@@ -21,56 +21,122 @@
           "russian": "бастард",
           "transcription": "[дер БАС-тард]",
           "sentence": "Als Bastard habe ich keine Rechte.",
-          "sentence_translation": "Как бастард я не имею прав."
+          "sentence_translation": "Как бастард я не имею прав.",
+          "sentence_parts": [
+            "Als",
+            "Bastard",
+            "habe",
+            "ich",
+            "keine",
+            "Rechte."
+          ]
         },
         {
           "german": "der Neid",
           "russian": "зависть",
           "transcription": "[дер НАЙД]",
           "sentence": "Der Neid auf Edgar verzehrt mich.",
-          "sentence_translation": "Зависть к Эдгару пожирает меня."
+          "sentence_translation": "Зависть к Эдгару пожирает меня.",
+          "sentence_parts": [
+            "Der",
+            "Neid",
+            "auf",
+            "Edgar",
+            "verzehrt",
+            "mich."
+          ]
         },
         {
           "german": "die Ambition",
           "russian": "амбиция",
           "transcription": "[ди ам-би-ЦИ-он]",
           "sentence": "Meine Ambition kennt keine Grenzen.",
-          "sentence_translation": "Моя амбиция не знает границ."
+          "sentence_translation": "Моя амбиция не знает границ.",
+          "sentence_parts": [
+            "Meine",
+            "Ambition",
+            "kennt",
+            "keine",
+            "Grenzen."
+          ]
         },
         {
           "german": "benachteiligt",
           "russian": "обделённый",
           "transcription": "[бе-НАХ-тай-лигт]",
           "sentence": "Ich bin von Geburt an benachteiligt.",
-          "sentence_translation": "Я обделён с рождения."
+          "sentence_translation": "Я обделён с рождения.",
+          "sentence_parts": [
+            "Ich",
+            "bin",
+            "von",
+            "Geburt",
+            "an",
+            "benachteiligt."
+          ]
         },
         {
           "german": "die Rache",
           "russian": "месть",
           "transcription": "[ди РА-хе]",
           "sentence": "Die Rache an der Gesellschaft ist mein Ziel.",
-          "sentence_translation": "Месть обществу - моя цель."
+          "sentence_translation": "Месть обществу - моя цель.",
+          "sentence_parts": [
+            "Die",
+            "Rache",
+            "an",
+            "der",
+            "Gesellschaft",
+            "ist",
+            "mein",
+            "Ziel."
+          ]
         },
         {
           "german": "aufsteigen",
           "russian": "возвышаться",
           "transcription": "[АУФ-штай-ген]",
           "sentence": "Ich will über alle aufsteigen.",
-          "sentence_translation": "Я хочу возвыситься над всеми."
+          "sentence_translation": "Я хочу возвыситься над всеми.",
+          "sentence_parts": [
+            "Ich",
+            "will",
+            "über",
+            "alle",
+            "aufsteigen."
+          ]
         },
         {
           "german": "unehelich",
           "russian": "внебрачный",
           "transcription": "[УН-э-е-лих]",
           "sentence": "Meine uneheliche Geburt ist mein Fluch.",
-          "sentence_translation": "Моё внебрачное рождение - мой проклятие."
+          "sentence_translation": "Моё внебрачное рождение - мой проклятие.",
+          "sentence_parts": [
+            "Meine",
+            "uneheliche",
+            "Geburt",
+            "ist",
+            "mein",
+            "Fluch."
+          ]
         },
         {
           "german": "die Natur",
           "russian": "природа",
           "transcription": "[ди на-ТУР]",
           "sentence": "Die Natur ist meine Göttin, nicht das Gesetz.",
-          "sentence_translation": "Природа - моя богиня, не закон."
+          "sentence_translation": "Природа - моя богиня, не закон.",
+          "sentence_parts": [
+            "Die",
+            "Natur",
+            "ist",
+            "meine",
+            "Göttin,",
+            "nicht",
+            "das",
+            "Gesetz."
+          ]
         }
       ]
     },
@@ -92,56 +158,115 @@
           "russian": "подделывать",
           "transcription": "[ФЕЛЬ-шен]",
           "sentence": "Ich fälsche Edgars Brief perfekt.",
-          "sentence_translation": "Я идеально подделываю письмо Эдгара."
+          "sentence_translation": "Я идеально подделываю письмо Эдгара.",
+          "sentence_parts": [
+            "Ich",
+            "fälsche",
+            "Edgars",
+            "Brief",
+            "perfekt."
+          ]
         },
         {
           "german": "intrigieren",
           "russian": "интриговать",
           "transcription": "[ин-три-ГИ-рен]",
           "sentence": "Ich intrigiere gegen meinen Bruder.",
-          "sentence_translation": "Я интригую против брата."
+          "sentence_translation": "Я интригую против брата.",
+          "sentence_parts": [
+            "Ich",
+            "intrigiere",
+            "gegen",
+            "meinen",
+            "Bruder."
+          ]
         },
         {
           "german": "beschuldigen",
           "russian": "обвинять",
           "transcription": "[бе-ШУЛЬ-ди-ген]",
           "sentence": "Ich beschuldige Edgar des Verrats.",
-          "sentence_translation": "Я обвиняю Эдгара в предательстве."
+          "sentence_translation": "Я обвиняю Эдгара в предательстве.",
+          "sentence_parts": [
+            "Ich",
+            "beschuldige",
+            "Edgar",
+            "des",
+            "Verrats."
+          ]
         },
         {
           "german": "der Plan",
           "russian": "план",
           "transcription": "[дер ПЛАН]",
           "sentence": "Mein Plan wird perfekt ausgeführt.",
-          "sentence_translation": "Мой план выполняется идеально."
+          "sentence_translation": "Мой план выполняется идеально.",
+          "sentence_parts": [
+            "Mein",
+            "Plan",
+            "wird",
+            "perfekt",
+            "ausgeführt."
+          ]
         },
         {
           "german": "manipulieren",
           "russian": "манипулировать",
           "transcription": "[ма-ни-пу-ЛИ-рен]",
           "sentence": "Ich manipuliere meinen Vater geschickt.",
-          "sentence_translation": "Я ловко манипулирую отцом."
+          "sentence_translation": "Я ловко манипулирую отцом.",
+          "sentence_parts": [
+            "Ich",
+            "manipuliere",
+            "meinen",
+            "Vater",
+            "geschickt."
+          ]
         },
         {
           "german": "der Brief",
           "russian": "письмо",
           "transcription": "[дер БРИФ]",
           "sentence": "Der gefälschte Brief ist mein Beweis.",
-          "sentence_translation": "Поддельное письмо - моё доказательство."
+          "sentence_translation": "Поддельное письмо - моё доказательство.",
+          "sentence_parts": [
+            "Der",
+            "gefälschte",
+            "Brief",
+            "ist",
+            "mein",
+            "Beweis."
+          ]
         },
         {
           "german": "lügen",
           "russian": "лгать",
           "transcription": "[ЛЮ-ген]",
           "sentence": "Ich lüge ohne mit der Wimper zu zucken.",
-          "sentence_translation": "Я лгу не моргнув глазом."
+          "sentence_translation": "Я лгу не моргнув глазом.",
+          "sentence_parts": [
+            "Ich",
+            "lüge",
+            "ohne",
+            "mit",
+            "der",
+            "Wimper",
+            "zu",
+            "zucken."
+          ]
         },
         {
           "german": "die Täuschung",
           "russian": "обман",
           "transcription": "[ди ТОЙ-шунг]",
           "sentence": "Die Täuschung ist vollkommen.",
-          "sentence_translation": "Обман совершенен."
+          "sentence_translation": "Обман совершенен.",
+          "sentence_parts": [
+            "Die",
+            "Täuschung",
+            "ist",
+            "vollkommen."
+          ]
         }
       ]
     },
@@ -163,56 +288,117 @@
           "russian": "изгонять",
           "transcription": "[фер-ТРАЙ-бен]",
           "sentence": "Ich vertreibe Edgar aus seinem Erbe.",
-          "sentence_translation": "Я изгоняю Эдгара из его наследства."
+          "sentence_translation": "Я изгоняю Эдгара из его наследства.",
+          "sentence_parts": [
+            "Ich",
+            "vertreibe",
+            "Edgar",
+            "aus",
+            "seinem",
+            "Erbe."
+          ]
         },
         {
           "german": "triumphieren",
           "russian": "торжествовать",
           "transcription": "[три-ум-ФИ-рен]",
           "sentence": "Ich triumphiere über meinen Bruder.",
-          "sentence_translation": "Я торжествую над братом."
+          "sentence_translation": "Я торжествую над братом.",
+          "sentence_parts": [
+            "Ich",
+            "triumphiere",
+            "über",
+            "meinen",
+            "Bruder."
+          ]
         },
         {
           "german": "erben",
           "russian": "наследовать",
           "transcription": "[ЭР-бен]",
           "sentence": "Nun erbe ich alles, was Edgar zustand.",
-          "sentence_translation": "Теперь я наследую всё, что полагалось Эдгару."
+          "sentence_translation": "Теперь я наследую всё, что полагалось Эдгару.",
+          "sentence_parts": [
+            "Nun",
+            "erbe",
+            "ich",
+            "alles,",
+            "was",
+            "Edgar",
+            "zustand."
+          ]
         },
         {
           "german": "der Erfolg",
           "russian": "успех",
           "transcription": "[дер эр-ФОЛЬГ]",
           "sentence": "Mein Erfolg ist vollkommen.",
-          "sentence_translation": "Мой успех полный."
+          "sentence_translation": "Мой успех полный.",
+          "sentence_parts": [
+            "Mein",
+            "Erfolg",
+            "ist",
+            "vollkommen."
+          ]
         },
         {
           "german": "gewinnen",
           "russian": "выигрывать",
           "transcription": "[ге-ВИН-нен]",
           "sentence": "Ich gewinne alles durch List.",
-          "sentence_translation": "Я выигрываю всё хитростью."
+          "sentence_translation": "Я выигрываю всё хитростью.",
+          "sentence_parts": [
+            "Ich",
+            "gewinne",
+            "alles",
+            "durch",
+            "List."
+          ]
         },
         {
           "german": "die Belohnung",
           "russian": "награда",
           "transcription": "[ди бе-ЛО-нунг]",
           "sentence": "Die Belohnung für meine Intrige ist groß.",
-          "sentence_translation": "Награда за мою интригу велика."
+          "sentence_translation": "Награда за мою интригу велика.",
+          "sentence_parts": [
+            "Die",
+            "Belohnung",
+            "für",
+            "meine",
+            "Intrige",
+            "ist",
+            "groß."
+          ]
         },
         {
           "german": "verdrängen",
           "russian": "вытеснять",
           "transcription": "[фер-ДРЕН-ген]",
           "sentence": "Ich verdränge den rechtmäßigen Erben.",
-          "sentence_translation": "Я вытесняю законного наследника."
+          "sentence_translation": "Я вытесняю законного наследника.",
+          "sentence_parts": [
+            "Ich",
+            "verdränge",
+            "den",
+            "rechtmäßigen",
+            "Erben."
+          ]
         },
         {
           "german": "der Sieg",
           "russian": "победа",
           "transcription": "[дер ЗИГ]",
           "sentence": "Der Sieg über Edgar ist süß.",
-          "sentence_translation": "Победа над Эдгаром сладка."
+          "sentence_translation": "Победа над Эдгаром сладка.",
+          "sentence_parts": [
+            "Der",
+            "Sieg",
+            "über",
+            "Edgar",
+            "ist",
+            "süß."
+          ]
         }
       ]
     },
@@ -234,56 +420,121 @@
           "russian": "объединяться",
           "transcription": "[фер-БЮН-ден]",
           "sentence": "Ich verbünde mich mit den bösen Schwestern.",
-          "sentence_translation": "Я объединяюсь со злыми сёстрами."
+          "sentence_translation": "Я объединяюсь со злыми сёстрами.",
+          "sentence_parts": [
+            "Ich",
+            "verbünde",
+            "mich",
+            "mit",
+            "den",
+            "bösen",
+            "Schwestern."
+          ]
         },
         {
           "german": "die Macht",
           "russian": "власть",
           "transcription": "[ди МАХТ]",
           "sentence": "Die Macht über das Königreich ist nah.",
-          "sentence_translation": "Власть над королевством близка."
+          "sentence_translation": "Власть над королевством близка.",
+          "sentence_parts": [
+            "Die",
+            "Macht",
+            "über",
+            "das",
+            "Königreich",
+            "ist",
+            "nah."
+          ]
         },
         {
           "german": "erobern",
           "russian": "завоёвывать",
           "transcription": "[эр-О-берн]",
           "sentence": "Wir erobern das Reich gemeinsam.",
-          "sentence_translation": "Мы завоёвываем королевство вместе."
+          "sentence_translation": "Мы завоёвываем королевство вместе.",
+          "sentence_parts": [
+            "Wir",
+            "erobern",
+            "das",
+            "Reich",
+            "gemeinsam."
+          ]
         },
         {
           "german": "das Bündnis",
           "russian": "союз",
           "transcription": "[дас БЮНД-нис]",
           "sentence": "Unser Bündnis ist stark und grausam.",
-          "sentence_translation": "Наш союз силён и жесток."
+          "sentence_translation": "Наш союз силён и жесток.",
+          "sentence_parts": [
+            "Unser",
+            "Bündnis",
+            "ist",
+            "stark",
+            "und",
+            "grausam."
+          ]
         },
         {
           "german": "verführen",
           "russian": "соблазнять",
           "transcription": "[фер-ФЮ-рен]",
           "sentence": "Ich verführe beide Schwestern gleichzeitig.",
-          "sentence_translation": "Я соблазняю обеих сестёр одновременно."
+          "sentence_translation": "Я соблазняю обеих сестёр одновременно.",
+          "sentence_parts": [
+            "Ich",
+            "verführe",
+            "beide",
+            "Schwestern",
+            "gleichzeitig."
+          ]
         },
         {
           "german": "die Eroberung",
           "russian": "завоевание",
           "transcription": "[ди эр-О-бе-рунг]",
           "sentence": "Die Eroberung des Throns ist mein Ziel.",
-          "sentence_translation": "Завоевание трона - моя цель."
+          "sentence_translation": "Завоевание трона - моя цель.",
+          "sentence_parts": [
+            "Die",
+            "Eroberung",
+            "des",
+            "Throns",
+            "ist",
+            "mein",
+            "Ziel."
+          ]
         },
         {
           "german": "beherrschen",
           "russian": "господствовать",
           "transcription": "[бе-ХЕР-шен]",
           "sentence": "Ich beherrsche das Spiel der Macht.",
-          "sentence_translation": "Я господствую в игре власти."
+          "sentence_translation": "Я господствую в игре власти.",
+          "sentence_parts": [
+            "Ich",
+            "beherrsche",
+            "das",
+            "Spiel",
+            "der",
+            "Macht."
+          ]
         },
         {
           "german": "die Allianz",
           "russian": "альянс",
           "transcription": "[ди а-ли-АНЦС]",
           "sentence": "Unsere Allianz wird alle Feinde vernichten.",
-          "sentence_translation": "Наш альянс уничтожит всех врагов."
+          "sentence_translation": "Наш альянс уничтожит всех врагов.",
+          "sentence_parts": [
+            "Unsere",
+            "Allianz",
+            "wird",
+            "alle",
+            "Feinde",
+            "vernichten."
+          ]
         }
       ]
     },
@@ -305,56 +556,118 @@
           "russian": "предавать",
           "transcription": "[фер-РА-тен]",
           "sentence": "Ich verrate meinen eigenen Vater.",
-          "sentence_translation": "Я предаю собственного отца."
+          "sentence_translation": "Я предаю собственного отца.",
+          "sentence_parts": [
+            "Ich",
+            "verrate",
+            "meinen",
+            "eigenen",
+            "Vater."
+          ]
         },
         {
           "german": "blenden",
           "russian": "ослеплять",
           "transcription": "[БЛЕН-ден]",
           "sentence": "Sie blenden ihn auf meinen Hinweis.",
-          "sentence_translation": "Они ослепляют его по моей наводке."
+          "sentence_translation": "Они ослепляют его по моей наводке.",
+          "sentence_parts": [
+            "Sie",
+            "blenden",
+            "ihn",
+            "auf",
+            "meinen",
+            "Hinweis."
+          ]
         },
         {
           "german": "die Grausamkeit",
           "russian": "жестокость",
           "transcription": "[ди ГРАУ-зам-кайт]",
           "sentence": "Meine Grausamkeit kennt keine Grenzen.",
-          "sentence_translation": "Моя жестокость не знает границ."
+          "sentence_translation": "Моя жестокость не знает границ.",
+          "sentence_parts": [
+            "Meine",
+            "Grausamkeit",
+            "kennt",
+            "keine",
+            "Grenzen."
+          ]
         },
         {
           "german": "denunzieren",
           "russian": "доносить",
           "transcription": "[де-нун-ЦИ-рен]",
           "sentence": "Ich denunziere meinen Vater als Verräter.",
-          "sentence_translation": "Я доношу на отца как на предателя."
+          "sentence_translation": "Я доношу на отца как на предателя.",
+          "sentence_parts": [
+            "Ich",
+            "denunziere",
+            "meinen",
+            "Vater",
+            "als",
+            "Verräter."
+          ]
         },
         {
           "german": "ausliefern",
           "russian": "выдавать",
           "transcription": "[АУС-ли-ферн]",
           "sentence": "Ich liefere ihn seinen Feinden aus.",
-          "sentence_translation": "Я выдаю его врагам."
+          "sentence_translation": "Я выдаю его врагам.",
+          "sentence_parts": [
+            "Ich",
+            "liefere",
+            "ihn",
+            "seinen",
+            "Feinden",
+            "aus."
+          ]
         },
         {
           "german": "die Folter",
           "russian": "пытка",
           "transcription": "[ди ФОЛЬ-тер]",
           "sentence": "Die Folter meines Vaters stört mich nicht.",
-          "sentence_translation": "Пытка моего отца меня не тревожит."
+          "sentence_translation": "Пытка моего отца меня не тревожит.",
+          "sentence_parts": [
+            "Die",
+            "Folter",
+            "meines",
+            "Vaters",
+            "stört",
+            "mich",
+            "nicht."
+          ]
         },
         {
           "german": "opfern",
           "russian": "жертвовать",
           "transcription": "[ОП-ферн]",
           "sentence": "Ich opfere ihn für meine Ambitionen.",
-          "sentence_translation": "Я жертвую им ради своих амбиций."
+          "sentence_translation": "Я жертвую им ради своих амбиций.",
+          "sentence_parts": [
+            "Ich",
+            "opfere",
+            "ihn",
+            "für",
+            "meine",
+            "Ambitionen."
+          ]
         },
         {
           "german": "erbarmungslos",
           "russian": "беспощадный",
           "transcription": "[эр-БАР-мунгс-лос]",
           "sentence": "Erbarmungslos verfolge ich mein Ziel.",
-          "sentence_translation": "Беспощадно я преследую свою цель."
+          "sentence_translation": "Беспощадно я преследую свою цель.",
+          "sentence_parts": [
+            "Erbarmungslos",
+            "verfolge",
+            "ich",
+            "mein",
+            "Ziel."
+          ]
         }
       ]
     },
@@ -376,56 +689,118 @@
           "russian": "любовная связь",
           "transcription": "[ди ЛИБ-шафт]",
           "sentence": "Meine Liebschaft mit beiden Schwestern ist gefährlich.",
-          "sentence_translation": "Моя любовная связь с обеими сёстрами опасна."
+          "sentence_translation": "Моя любовная связь с обеими сёстрами опасна.",
+          "sentence_parts": [
+            "Meine",
+            "Liebschaft",
+            "mit",
+            "beiden",
+            "Schwestern",
+            "ist",
+            "gefährlich."
+          ]
         },
         {
           "german": "die Rivalität",
           "russian": "соперничество",
           "transcription": "[ди ри-ва-ли-ТЕТ]",
           "sentence": "Ihre Rivalität spielt mir in die Hände.",
-          "sentence_translation": "Их соперничество играет мне на руку."
+          "sentence_translation": "Их соперничество играет мне на руку.",
+          "sentence_parts": [
+            "Ihre",
+            "Rivalität",
+            "spielt",
+            "mir",
+            "in",
+            "die",
+            "Hände."
+          ]
         },
         {
           "german": "spielen",
           "russian": "играть",
           "transcription": "[ШПИ-лен]",
           "sentence": "Ich spiele mit ihren Gefühlen.",
-          "sentence_translation": "Я играю с их чувствами."
+          "sentence_translation": "Я играю с их чувствами.",
+          "sentence_parts": [
+            "Ich",
+            "spiele",
+            "mit",
+            "ihren",
+            "Gefühlen."
+          ]
         },
         {
           "german": "verlocken",
           "russian": "завлекать",
           "transcription": "[фер-ЛО-кен]",
           "sentence": "Ich verlocke sie mit falschen Versprechen.",
-          "sentence_translation": "Я завлекаю их ложными обещаниями."
+          "sentence_translation": "Я завлекаю их ложными обещаниями.",
+          "sentence_parts": [
+            "Ich",
+            "verlocke",
+            "sie",
+            "mit",
+            "falschen",
+            "Versprechen."
+          ]
         },
         {
           "german": "die Lust",
           "russian": "похоть",
           "transcription": "[ди ЛУСТ]",
           "sentence": "Ihre Lust macht sie blind.",
-          "sentence_translation": "Их похоть делает их слепыми."
+          "sentence_translation": "Их похоть делает их слепыми.",
+          "sentence_parts": [
+            "Ihre",
+            "Lust",
+            "macht",
+            "sie",
+            "blind."
+          ]
         },
         {
           "german": "ausnutzen",
           "russian": "использовать",
           "transcription": "[АУС-нут-цен]",
           "sentence": "Ich nutze ihre Leidenschaft aus.",
-          "sentence_translation": "Я использую их страсть."
+          "sentence_translation": "Я использую их страсть.",
+          "sentence_parts": [
+            "Ich",
+            "nutze",
+            "ihre",
+            "Leidenschaft",
+            "aus."
+          ]
         },
         {
           "german": "jonglieren",
           "russian": "жонглировать",
           "transcription": "[жон-ГЛИ-рен]",
           "sentence": "Ich jongliere mit zwei gefährlichen Frauen.",
-          "sentence_translation": "Я жонглирую двумя опасными женщинами."
+          "sentence_translation": "Я жонглирую двумя опасными женщинами.",
+          "sentence_parts": [
+            "Ich",
+            "jongliere",
+            "mit",
+            "zwei",
+            "gefährlichen",
+            "Frauen."
+          ]
         },
         {
           "german": "die Affäre",
           "russian": "интрига",
           "transcription": "[ди а-ФЕ-ре]",
           "sentence": "Diese Affäre wird tödlich enden.",
-          "sentence_translation": "Эта интрига закончится смертью."
+          "sentence_translation": "Эта интрига закончится смертью.",
+          "sentence_parts": [
+            "Diese",
+            "Affäre",
+            "wird",
+            "tödlich",
+            "enden."
+          ]
         }
       ]
     },
@@ -447,56 +822,116 @@
           "russian": "дуэль",
           "transcription": "[дас ду-ЭЛЬ]",
           "sentence": "Das Duell mit Edgar ist mein Ende.",
-          "sentence_translation": "Дуэль с Эдгаром - мой конец."
+          "sentence_translation": "Дуэль с Эдгаром - мой конец.",
+          "sentence_parts": [
+            "Das",
+            "Duell",
+            "mit",
+            "Edgar",
+            "ist",
+            "mein",
+            "Ende."
+          ]
         },
         {
           "german": "fallen",
           "russian": "падать",
           "transcription": "[ФАЛ-лен]",
           "sentence": "Ich falle von seinem gerechten Schwert.",
-          "sentence_translation": "Я падаю от его справедливого меча."
+          "sentence_translation": "Я падаю от его справедливого меча.",
+          "sentence_parts": [
+            "Ich",
+            "falle",
+            "von",
+            "seinem",
+            "gerechten",
+            "Schwert."
+          ]
         },
         {
           "german": "bereuen",
           "russian": "сожалеть",
           "transcription": "[бе-РОЙ-ен]",
           "sentence": "Am Ende bereue ich meine Taten.",
-          "sentence_translation": "В конце я сожалею о своих делах."
+          "sentence_translation": "В конце я сожалею о своих делах.",
+          "sentence_parts": [
+            "Am",
+            "Ende",
+            "bereue",
+            "ich",
+            "meine",
+            "Taten."
+          ]
         },
         {
           "german": "die Niederlage",
           "russian": "поражение",
           "transcription": "[ди НИ-дер-ла-ге]",
           "sentence": "Die Niederlage ist vollkommen.",
-          "sentence_translation": "Поражение полное."
+          "sentence_translation": "Поражение полное.",
+          "sentence_parts": [
+            "Die",
+            "Niederlage",
+            "ist",
+            "vollkommen."
+          ]
         },
         {
           "german": "verlieren",
           "russian": "проигрывать",
           "transcription": "[фер-ЛИ-рен]",
           "sentence": "Ich verliere alles, was ich gewann.",
-          "sentence_translation": "Я проигрываю всё, что выиграл."
+          "sentence_translation": "Я проигрываю всё, что выиграл.",
+          "sentence_parts": [
+            "Ich",
+            "verliere",
+            "alles,",
+            "was",
+            "ich",
+            "gewann."
+          ]
         },
         {
           "german": "der Untergang",
           "russian": "падение",
           "transcription": "[дер УН-тер-ганг]",
           "sentence": "Mein Untergang ist gerecht.",
-          "sentence_translation": "Моё падение справедливо."
+          "sentence_translation": "Моё падение справедливо.",
+          "sentence_parts": [
+            "Mein",
+            "Untergang",
+            "ist",
+            "gerecht."
+          ]
         },
         {
           "german": "gestehen",
           "russian": "признаваться",
           "transcription": "[ге-ШТЕ-ен]",
           "sentence": "Ich gestehe alle meine Verbrechen.",
-          "sentence_translation": "Я признаюсь во всех преступлениях."
+          "sentence_translation": "Я признаюсь во всех преступлениях.",
+          "sentence_parts": [
+            "Ich",
+            "gestehe",
+            "alle",
+            "meine",
+            "Verbrechen."
+          ]
         },
         {
           "german": "das Ende",
           "russian": "конец",
           "transcription": "[дас ЭН-де]",
           "sentence": "Das Ende kommt schnell und gerecht.",
-          "sentence_translation": "Конец приходит быстро и справедливо."
+          "sentence_translation": "Конец приходит быстро и справедливо.",
+          "sentence_parts": [
+            "Das",
+            "Ende",
+            "kommt",
+            "schnell",
+            "und",
+            "gerecht."
+          ]
         }
       ]
     }

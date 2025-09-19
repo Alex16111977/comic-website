@@ -19,19 +19,32 @@ class LiraJSGenerator:
                 continue
 
             words = []
+            constructors = []
             for word in phase.get('vocabulary', []):
+                sentence_parts = word.get('sentence_parts', []) or []
+                if sentence_parts:
+                    constructors.append({
+                        'word': word.get('german', ''),
+                        'translation': word.get('russian', ''),
+                        'parts': sentence_parts,
+                        'sentence': word.get('sentence', ''),
+                        'sentenceTranslation': word.get('sentence_translation', ''),
+                    })
+
                 words.append({
                     'word': word.get('german', ''),
                     'translation': word.get('russian', ''),
                     'transcription': word.get('transcription', ''),
                     'sentence': word.get('sentence', ''),
                     'sentenceTranslation': word.get('sentence_translation', ''),
+                    'sentenceParts': sentence_parts,
                 })
 
             phase_vocabularies[phase_id] = {
                 'title': phase.get('title', ''),
                 'description': phase.get('description', ''),
                 'words': words,
+                'constructorExercises': constructors,
             }
 
         vocab_js = (
@@ -46,6 +59,7 @@ const phaseKeys = Object.keys(phaseVocabularies);
 let isTransitioning = false; // Prevent double clicks/taps
 let progressLineElement = null;
 let progressLineLength = 0;
+let draggedChip = null;
 
 // Device detection
 const isTouchDevice = ('ontouchstart' in window) || 
@@ -127,6 +141,257 @@ function initializeProgressLine() {
     updateProgressLineByPercent(startValue);
 }
 
+function shuffleArray(array) {
+    const arr = array.slice();
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+}
+
+function createConstructorChip(fragment) {
+    const chip = document.createElement('button');
+    chip.className = 'constructor-chip';
+    chip.type = 'button';
+    chip.textContent = fragment;
+    chip.dataset.fragment = fragment;
+    chip.draggable = true;
+    chip.addEventListener('dragstart', handleChipDragStart);
+    chip.addEventListener('dragend', handleChipDragEnd);
+    chip.addEventListener('click', handleChipClick);
+    return chip;
+}
+
+function handleChipDragStart(event) {
+    draggedChip = this;
+    this.classList.add('dragging');
+    if (event && event.dataTransfer) {
+        event.dataTransfer.effectAllowed = 'move';
+        event.dataTransfer.setData('text/plain', this.dataset.fragment || '');
+    }
+}
+
+function handleChipDragEnd() {
+    this.classList.remove('dragging');
+    draggedChip = null;
+}
+
+function handleChipClick() {
+    const constructor = this.closest('.sentence-constructor');
+    if (!constructor) return;
+
+    const source = constructor.querySelector('.constructor-source');
+    const target = constructor.querySelector('.constructor-dropzone');
+    if (!source || !target) return;
+
+    if (this.parentElement === source) {
+        target.appendChild(this);
+    } else {
+        source.appendChild(this);
+    }
+    evaluateConstructor(constructor);
+}
+
+function handleAreaDragOver(event) {
+    event.preventDefault();
+    if (event.dataTransfer) {
+        event.dataTransfer.dropEffect = 'move';
+    }
+}
+
+function handleAreaDragEnter(event) {
+    event.preventDefault();
+    this.classList.add('drag-over');
+}
+
+function handleAreaDragLeave() {
+    this.classList.remove('drag-over');
+}
+
+function handleDropZoneDrop(event) {
+    event.preventDefault();
+    this.classList.remove('drag-over');
+    if (!draggedChip) return;
+    if (draggedChip.parentElement !== this) {
+        this.appendChild(draggedChip);
+    }
+    const constructor = this.closest('.sentence-constructor');
+    if (constructor) {
+        evaluateConstructor(constructor);
+    }
+}
+
+function handleSourceDrop(event) {
+    event.preventDefault();
+    this.classList.remove('drag-over');
+    if (!draggedChip) return;
+    if (draggedChip.parentElement !== this) {
+        this.appendChild(draggedChip);
+    }
+    const constructor = this.closest('.sentence-constructor');
+    if (constructor) {
+        evaluateConstructor(constructor);
+    }
+}
+
+function populateConstructorChips(constructorElement, fragments, shouldShuffle = true) {
+    const source = constructorElement.querySelector('.constructor-source');
+    const target = constructorElement.querySelector('.constructor-dropzone');
+    const feedback = constructorElement.querySelector('.constructor-feedback');
+    if (!source || !target) return;
+
+    const order = shouldShuffle ? shuffleArray(fragments) : fragments.slice();
+    source.innerHTML = '';
+    target.innerHTML = '';
+
+    order.forEach(fragment => {
+        const chip = createConstructorChip(fragment);
+        source.appendChild(chip);
+    });
+
+    if (feedback) {
+        feedback.textContent = '';
+        feedback.classList.remove('success', 'error', 'hint');
+    }
+    constructorElement.classList.remove('completed');
+}
+
+function evaluateConstructor(constructorElement) {
+    const target = constructorElement.querySelector('.constructor-dropzone');
+    const feedback = constructorElement.querySelector('.constructor-feedback');
+    if (!target || !feedback) return;
+
+    const expected = JSON.parse(target.dataset.expected || '[]');
+    const chips = Array.from(target.querySelectorAll('.constructor-chip'));
+
+    feedback.classList.remove('success', 'error', 'hint');
+
+    if (!expected.length) {
+        feedback.textContent = '';
+        return;
+    }
+
+    if (chips.length === 0) {
+        feedback.textContent = '';
+        constructorElement.classList.remove('completed');
+        return;
+    }
+
+    if (chips.length < expected.length) {
+        const remaining = expected.length - chips.length;
+        feedback.textContent = `Осталось фрагментов: ${remaining}`;
+        feedback.classList.add('hint');
+        constructorElement.classList.remove('completed');
+        return;
+    }
+
+    const isCorrect = chips.every((chip, index) => chip.dataset.fragment === expected[index]);
+    if (isCorrect) {
+        feedback.textContent = 'Отлично! Предложение собрано правильно.';
+        feedback.classList.add('success');
+        constructorElement.classList.add('completed');
+    } else {
+        feedback.textContent = 'Почти! Проверьте порядок слов.';
+        feedback.classList.add('error');
+        constructorElement.classList.remove('completed');
+    }
+}
+
+function renderConstructors(constructorExercises) {
+    const section = document.querySelector('.constructor-section');
+    const grid = document.querySelector('.constructor-grid');
+    if (!section || !grid) return;
+
+    if (!constructorExercises || constructorExercises.length === 0) {
+        section.style.display = 'none';
+        grid.innerHTML = '';
+        return;
+    }
+
+    section.style.display = 'block';
+    grid.innerHTML = '';
+
+    constructorExercises.forEach((exercise, index) => {
+        const fragments = Array.isArray(exercise.parts) ? exercise.parts : [];
+        if (!fragments.length) {
+            return;
+        }
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'sentence-constructor';
+        wrapper.dataset.index = index;
+        wrapper.dataset.word = exercise.word || '';
+
+        const header = document.createElement('div');
+        header.className = 'constructor-header';
+
+        const wordInfo = document.createElement('div');
+        wordInfo.className = 'constructor-word';
+        wordInfo.innerHTML = `<strong>${exercise.word || ''}</strong> — ${exercise.translation || ''}`;
+        header.appendChild(wordInfo);
+
+        const actions = document.createElement('div');
+        actions.className = 'constructor-actions';
+
+        const resetBtn = document.createElement('button');
+        resetBtn.type = 'button';
+        resetBtn.className = 'constructor-reset';
+        resetBtn.textContent = 'Сбросить';
+        resetBtn.addEventListener('click', () => {
+            populateConstructorChips(wrapper, fragments, true);
+        });
+        actions.appendChild(resetBtn);
+
+        header.appendChild(actions);
+        wrapper.appendChild(header);
+
+        const instruction = document.createElement('p');
+        instruction.className = 'constructor-instruction';
+        instruction.textContent = 'Перетащите или нажмите на фрагменты, чтобы собрать предложение.';
+        wrapper.appendChild(instruction);
+
+        const hint = document.createElement('div');
+        hint.className = 'constructor-hint';
+        if (exercise.sentenceTranslation) {
+            hint.textContent = `Перевод: ${exercise.sentenceTranslation}`;
+        } else if (exercise.sentence) {
+            hint.textContent = exercise.sentence;
+        } else {
+            hint.style.display = 'none';
+        }
+        wrapper.appendChild(hint);
+
+        const dropzone = document.createElement('div');
+        dropzone.className = 'constructor-dropzone';
+        dropzone.dataset.expected = JSON.stringify(fragments);
+        dropzone.setAttribute('aria-label', 'Собранное предложение');
+        dropzone.addEventListener('dragover', handleAreaDragOver);
+        dropzone.addEventListener('dragenter', handleAreaDragEnter);
+        dropzone.addEventListener('dragleave', handleAreaDragLeave);
+        dropzone.addEventListener('drop', handleDropZoneDrop);
+        wrapper.appendChild(dropzone);
+
+        const source = document.createElement('div');
+        source.className = 'constructor-source';
+        source.setAttribute('aria-label', 'Фрагменты для предложения');
+        source.addEventListener('dragover', handleAreaDragOver);
+        source.addEventListener('dragenter', handleAreaDragEnter);
+        source.addEventListener('dragleave', handleAreaDragLeave);
+        source.addEventListener('drop', handleSourceDrop);
+        wrapper.appendChild(source);
+
+        const feedback = document.createElement('div');
+        feedback.className = 'constructor-feedback';
+        feedback.setAttribute('role', 'status');
+        wrapper.appendChild(feedback);
+
+        grid.appendChild(wrapper);
+
+        populateConstructorChips(wrapper, fragments, true);
+    });
+}
+
 function displayVocabulary(phaseKey) {
     // Prevent multiple rapid transitions
     if (isTransitioning) return;
@@ -176,7 +441,9 @@ function displayVocabulary(phaseKey) {
     });
     
     grid.innerHTML = '';
-    
+
+    renderConstructors(phase.constructorExercises || []);
+
     phase.words.forEach((item, index) => {
         setTimeout(() => {
             const card = document.createElement('div');

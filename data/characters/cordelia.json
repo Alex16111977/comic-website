@@ -21,56 +21,127 @@
           "russian": "правда",
           "transcription": "[ди ВАР-хайт]",
           "sentence": "Die Wahrheit war vor meinen Augen verborgen.",
-          "sentence_translation": "Правда была скрыта от моих глаз."
+          "sentence_translation": "Правда была скрыта от моих глаз.",
+          "sentence_parts": [
+            "Die",
+            "Wahrheit",
+            "war",
+            "vor",
+            "meinen",
+            "Augen",
+            "verborgen."
+          ]
         },
         {
           "german": "die Zeremonie",
           "russian": "церемония",
           "transcription": "[ди це-ре-мо-НИ]",
           "sentence": "Die Zeremonie beginnt im prächtigen Thronsaal.",
-          "sentence_translation": "Церемония начинается в великолепном тронном зале."
+          "sentence_translation": "Церемония начинается в великолепном тронном зале.",
+          "sentence_parts": [
+            "Die",
+            "Zeremonie",
+            "beginnt",
+            "im",
+            "prächtigen",
+            "Thronsaal."
+          ]
         },
         {
           "german": "verkünden",
           "russian": "провозглашать",
           "transcription": "[фер-КЮН-ден]",
           "sentence": "Ich verkünde nur die Wahrheit meines Herzens.",
-          "sentence_translation": "Я провозглашаю только правду моего сердца."
+          "sentence_translation": "Я провозглашаю только правду моего сердца.",
+          "sentence_parts": [
+            "Ich",
+            "verkünde",
+            "nur",
+            "die",
+            "Wahrheit",
+            "meines",
+            "Herzens."
+          ]
         },
         {
           "german": "die Macht",
           "russian": "власть",
           "transcription": "[ди МАХТ]",
           "sentence": "Die Macht bedeutet nichts ohne wahre Liebe.",
-          "sentence_translation": "Власть ничего не значит без истинной любви."
+          "sentence_translation": "Власть ничего не значит без истинной любви.",
+          "sentence_parts": [
+            "Die",
+            "Macht",
+            "bedeutet",
+            "nichts",
+            "ohne",
+            "wahre",
+            "Liebe."
+          ]
         },
         {
           "german": "gehorchen",
           "russian": "повиноваться",
           "transcription": "[ге-ХОР-хен]",
           "sentence": "Ich kann der Lüge nicht gehorchen.",
-          "sentence_translation": "Я не могу повиноваться лжи."
+          "sentence_translation": "Я не могу повиноваться лжи.",
+          "sentence_parts": [
+            "Ich",
+            "kann",
+            "der",
+            "Lüge",
+            "nicht",
+            "gehorchen."
+          ]
         },
         {
           "german": "die Pflicht",
           "russian": "долг",
           "transcription": "[ди ПФЛИХТ]",
           "sentence": "Meine Pflicht ist es, ehrlich zu sein.",
-          "sentence_translation": "Мой долг - быть честной."
+          "sentence_translation": "Мой долг - быть честной.",
+          "sentence_parts": [
+            "Meine",
+            "Pflicht",
+            "ist",
+            "es,",
+            "ehrlich",
+            "zu",
+            "sein."
+          ]
         },
         {
           "german": "feierlich",
           "russian": "торжественный",
           "transcription": "[ФАЙ-ер-лих]",
           "sentence": "Dieser feierliche Moment wird zur Tragödie.",
-          "sentence_translation": "Этот торжественный момент становится трагедией."
+          "sentence_translation": "Этот торжественный момент становится трагедией.",
+          "sentence_parts": [
+            "Dieser",
+            "feierliche",
+            "Moment",
+            "wird",
+            "zur",
+            "Tragödie."
+          ]
         },
         {
           "german": "die Treue",
           "russian": "верность",
           "transcription": "[ди ТРОЙ-е]",
           "sentence": "Meine Treue gilt der Wahrheit und der echten Liebe.",
-          "sentence_translation": "Моя верность принадлежит правде и истинной любви."
+          "sentence_translation": "Моя верность принадлежит правде и истинной любви.",
+          "sentence_parts": [
+            "Meine",
+            "Treue",
+            "gilt",
+            "der",
+            "Wahrheit",
+            "und",
+            "der",
+            "echten",
+            "Liebe."
+          ]
         }
       ]
     },
@@ -92,56 +163,131 @@
           "russian": "изгонять",
           "transcription": "[фер-ШТО-сен]",
           "sentence": "Der König verstößt mich aus seinem Herzen.",
-          "sentence_translation": "Король изгоняет меня из своего сердца."
+          "sentence_translation": "Король изгоняет меня из своего сердца.",
+          "sentence_parts": [
+            "Der",
+            "König",
+            "verstößt",
+            "mich",
+            "aus",
+            "seinem",
+            "Herzen."
+          ]
         },
         {
           "german": "verlassen",
           "russian": "покидать",
           "transcription": "[фер-ЛА-сен]",
           "sentence": "Schweren Herzens verlasse ich mein Vaterland.",
-          "sentence_translation": "С тяжёлым сердцем я покидаю родину."
+          "sentence_translation": "С тяжёлым сердцем я покидаю родину.",
+          "sentence_parts": [
+            "Schweren",
+            "Herzens",
+            "verlasse",
+            "ich",
+            "mein",
+            "Vaterland."
+          ]
         },
         {
           "german": "der Zorn",
           "russian": "гнев",
           "transcription": "[дер ЦОРН]",
           "sentence": "Sein Zorn ist grenzenlos und blind.",
-          "sentence_translation": "Его гнев безграничен и слеп."
+          "sentence_translation": "Его гнев безграничен и слеп.",
+          "sentence_parts": [
+            "Sein",
+            "Zorn",
+            "ist",
+            "grenzenlos",
+            "und",
+            "blind."
+          ]
         },
         {
           "german": "die Strafe",
           "russian": "наказание",
           "transcription": "[ди ШТРА-фе]",
           "sentence": "Diese Strafe ist der Preis für meine Ehrlichkeit.",
-          "sentence_translation": "Это наказание - цена моей честности."
+          "sentence_translation": "Это наказание - цена моей честности.",
+          "sentence_parts": [
+            "Diese",
+            "Strafe",
+            "ist",
+            "der",
+            "Preis",
+            "für",
+            "meine",
+            "Ehrlichkeit."
+          ]
         },
         {
           "german": "fremd",
           "russian": "чужой",
           "transcription": "[ФРЕМД]",
           "sentence": "Ich bin jetzt fremd in meinem eigenen Land.",
-          "sentence_translation": "Я теперь чужая в своей собственной стране."
+          "sentence_translation": "Я теперь чужая в своей собственной стране.",
+          "sentence_parts": [
+            "Ich",
+            "bin",
+            "jetzt",
+            "fremd",
+            "in",
+            "meinem",
+            "eigenen",
+            "Land."
+          ]
         },
         {
           "german": "die Mitgift",
           "russian": "приданое",
           "transcription": "[ди МИТ-гифт]",
           "sentence": "Ohne Mitgift bin ich reicher an Ehre.",
-          "sentence_translation": "Без приданого я богаче честью."
+          "sentence_translation": "Без приданого я богаче честью.",
+          "sentence_parts": [
+            "Ohne",
+            "Mitgift",
+            "bin",
+            "ich",
+            "reicher",
+            "an",
+            "Ehre."
+          ]
         },
         {
           "german": "aufnehmen",
           "russian": "принимать",
           "transcription": "[АУФ-не-мен]",
           "sentence": "Der König von Frankreich nimmt mich liebevoll auf.",
-          "sentence_translation": "Король Франции принимает меня с любовью."
+          "sentence_translation": "Король Франции принимает меня с любовью.",
+          "sentence_parts": [
+            "Der",
+            "König",
+            "von",
+            "Frankreich",
+            "nimmt",
+            "mich",
+            "liebevoll",
+            "auf."
+          ]
         },
         {
           "german": "die Hoffnung",
           "russian": "надежда",
           "transcription": "[ди ХОФ-нунг]",
           "sentence": "Die Hoffnung auf Versöhnung stirbt nie in meinem Herzen.",
-          "sentence_translation": "Надежда на примирение никогда не умирает в моём сердце."
+          "sentence_translation": "Надежда на примирение никогда не умирает в моём сердце.",
+          "sentence_parts": [
+            "Die",
+            "Hoffnung",
+            "auf",
+            "Versöhnung",
+            "stirbt",
+            "nie",
+            "in",
+            "meinem",
+            "Herzen."
+          ]
         }
       ]
     },
@@ -163,56 +309,129 @@
           "russian": "забота",
           "transcription": "[ди ЗОР-ге]",
           "sentence": "Die Sorge um meinen Vater lässt mich nicht schlafen.",
-          "sentence_translation": "Забота об отце не даёт мне спать."
+          "sentence_translation": "Забота об отце не даёт мне спать.",
+          "sentence_parts": [
+            "Die",
+            "Sorge",
+            "um",
+            "meinen",
+            "Vater",
+            "lässt",
+            "mich",
+            "nicht",
+            "schlafen."
+          ]
         },
         {
           "german": "die Einsamkeit",
           "russian": "одиночество",
           "transcription": "[ди АЙН-зам-кайт]",
           "sentence": "In der Einsamkeit denke ich an ihn.",
-          "sentence_translation": "В одиночестве я думаю о нём."
+          "sentence_translation": "В одиночестве я думаю о нём.",
+          "sentence_parts": [
+            "In",
+            "der",
+            "Einsamkeit",
+            "denke",
+            "ich",
+            "an",
+            "ihn."
+          ]
         },
         {
           "german": "die Nachricht",
           "russian": "известие",
           "transcription": "[ди НАХ-рихт]",
           "sentence": "Schreckliche Nachrichten erreichen mich aus England.",
-          "sentence_translation": "Ужасные известия доходят до меня из Англии."
+          "sentence_translation": "Ужасные известия доходят до меня из Англии.",
+          "sentence_parts": [
+            "Schreckliche",
+            "Nachrichten",
+            "erreichen",
+            "mich",
+            "aus",
+            "England."
+          ]
         },
         {
           "german": "die Angst",
           "russian": "страх",
           "transcription": "[ди АНГСТ]",
           "sentence": "Die Angst um meinen Vater wächst täglich.",
-          "sentence_translation": "Страх за отца растёт с каждым днём."
+          "sentence_translation": "Страх за отца растёт с каждым днём.",
+          "sentence_parts": [
+            "Die",
+            "Angst",
+            "um",
+            "meinen",
+            "Vater",
+            "wächst",
+            "täglich."
+          ]
         },
         {
           "german": "leiden",
           "russian": "страдать",
           "transcription": "[ЛАЙ-ден]",
           "sentence": "Er muss furchtbar leiden ohne mich.",
-          "sentence_translation": "Он должно быть ужасно страдает без меня."
+          "sentence_translation": "Он должно быть ужасно страдает без меня.",
+          "sentence_parts": [
+            "Er",
+            "muss",
+            "furchtbar",
+            "leiden",
+            "ohne",
+            "mich."
+          ]
         },
         {
           "german": "beschützen",
           "russian": "защищать",
           "transcription": "[бе-ШЮ-цен]",
           "sentence": "Ich kann ihn aus der Ferne nicht beschützen.",
-          "sentence_translation": "Я не могу защитить его издалека."
+          "sentence_translation": "Я не могу защитить его издалека.",
+          "sentence_parts": [
+            "Ich",
+            "kann",
+            "ihn",
+            "aus",
+            "der",
+            "Ferne",
+            "nicht",
+            "beschützen."
+          ]
         },
         {
           "german": "die Sehnsucht",
           "russian": "тоска",
           "transcription": "[ди ЗЕН-зухт]",
           "sentence": "Die Sehnsucht nach Versöhnung erfüllt mein Herz.",
-          "sentence_translation": "Тоска по примирению наполняет моё сердце."
+          "sentence_translation": "Тоска по примирению наполняет моё сердце.",
+          "sentence_parts": [
+            "Die",
+            "Sehnsucht",
+            "nach",
+            "Versöhnung",
+            "erfüllt",
+            "mein",
+            "Herz."
+          ]
         },
         {
           "german": "beten",
           "russian": "молиться",
           "transcription": "[БЕ-тен]",
           "sentence": "Jeden Tag bete ich für seine Sicherheit.",
-          "sentence_translation": "Каждый день я молюсь за его безопасность."
+          "sentence_translation": "Каждый день я молюсь за его безопасность.",
+          "sentence_parts": [
+            "Jeden",
+            "Tag",
+            "bete",
+            "ich",
+            "für",
+            "seine",
+            "Sicherheit."
+          ]
         }
       ]
     },
@@ -234,56 +453,134 @@
           "russian": "возвращаться",
           "transcription": "[цу-РЮК-ке-рен]",
           "sentence": "Mit einer Armee kehre ich zurück, meinen Vater zu retten.",
-          "sentence_translation": "С армией я возвращаюсь спасти моего отца."
+          "sentence_translation": "С армией я возвращаюсь спасти моего отца.",
+          "sentence_parts": [
+            "Mit",
+            "einer",
+            "Armee",
+            "kehre",
+            "ich",
+            "zurück,",
+            "meinen",
+            "Vater",
+            "zu",
+            "retten."
+          ]
         },
         {
           "german": "der Kampf",
           "russian": "борьба",
           "transcription": "[дер КАМПФ]",
           "sentence": "Dieser Kampf ist für die Ehre meines Vaters.",
-          "sentence_translation": "Эта борьба за честь моего отца."
+          "sentence_translation": "Эта борьба за честь моего отца.",
+          "sentence_parts": [
+            "Dieser",
+            "Kampf",
+            "ist",
+            "für",
+            "die",
+            "Ehre",
+            "meines",
+            "Vaters."
+          ]
         },
         {
           "german": "retten",
           "russian": "спасать",
           "transcription": "[РЕ-тен]",
           "sentence": "Ich muss meinen Vater vor seinen grausamen Töchtern retten.",
-          "sentence_translation": "Я должна спасти отца от его жестоких дочерей."
+          "sentence_translation": "Я должна спасти отца от его жестоких дочерей.",
+          "sentence_parts": [
+            "Ich",
+            "muss",
+            "meinen",
+            "Vater",
+            "vor",
+            "seinen",
+            "grausamen",
+            "Töchtern",
+            "retten."
+          ]
         },
         {
           "german": "die Schlacht",
           "russian": "битва",
           "transcription": "[ди ШЛАХТ]",
           "sentence": "Diese Schlacht entscheidet über das Schicksal des Königreichs.",
-          "sentence_translation": "Эта битва решает судьбу королевства."
+          "sentence_translation": "Эта битва решает судьбу королевства.",
+          "sentence_parts": [
+            "Diese",
+            "Schlacht",
+            "entscheidet",
+            "über",
+            "das",
+            "Schicksal",
+            "des",
+            "Königreichs."
+          ]
         },
         {
           "german": "mutig",
           "russian": "храбрый",
           "transcription": "[МУ-тиг]",
           "sentence": "Sei mutig, mein Herz, für die gerechte Sache.",
-          "sentence_translation": "Будь храбрым, моё сердце, ради правого дела."
+          "sentence_translation": "Будь храбрым, моё сердце, ради правого дела.",
+          "sentence_parts": [
+            "Sei",
+            "mutig,",
+            "mein",
+            "Herz,",
+            "für",
+            "die",
+            "gerechte",
+            "Sache."
+          ]
         },
         {
           "german": "die Gerechtigkeit",
           "russian": "справедливость",
           "transcription": "[ди ге-РЕХ-тиг-кайт]",
           "sentence": "Die Gerechtigkeit führt meine Klinge.",
-          "sentence_translation": "Справедливость ведёт мой клинок."
+          "sentence_translation": "Справедливость ведёт мой клинок.",
+          "sentence_parts": [
+            "Die",
+            "Gerechtigkeit",
+            "führt",
+            "meine",
+            "Klinge."
+          ]
         },
         {
           "german": "siegen",
           "russian": "побеждать",
           "transcription": "[ЗИ-ген]",
           "sentence": "Die Liebe wird über den Hass siegen.",
-          "sentence_translation": "Любовь победит ненависть."
+          "sentence_translation": "Любовь победит ненависть.",
+          "sentence_parts": [
+            "Die",
+            "Liebe",
+            "wird",
+            "über",
+            "den",
+            "Hass",
+            "siegen."
+          ]
         },
         {
           "german": "die Armee",
           "russian": "армия",
           "transcription": "[ди ар-МЭ]",
           "sentence": "Diese Armee kämpft für Gerechtigkeit und Liebe.",
-          "sentence_translation": "Эта армия сражается за справедливость и любовь."
+          "sentence_translation": "Эта армия сражается за справедливость и любовь.",
+          "sentence_parts": [
+            "Diese",
+            "Armee",
+            "kämpft",
+            "für",
+            "Gerechtigkeit",
+            "und",
+            "Liebe."
+          ]
         }
       ]
     },
@@ -305,56 +602,127 @@
           "russian": "прощать",
           "transcription": "[фер-ЦАЙ-ен]",
           "sentence": "Ich verzeihe dir alles, mein lieber Vater.",
-          "sentence_translation": "Я прощаю тебе всё, мой дорогой отец."
+          "sentence_translation": "Я прощаю тебе всё, мой дорогой отец.",
+          "sentence_parts": [
+            "Ich",
+            "verzeihe",
+            "dir",
+            "alles,",
+            "mein",
+            "lieber",
+            "Vater."
+          ]
         },
         {
           "german": "die Tränen",
           "russian": "слёзы",
           "transcription": "[ди ТРЕ-нен]",
           "sentence": "Unsere Tränen waschen den Schmerz fort.",
-          "sentence_translation": "Наши слёзы смывают боль."
+          "sentence_translation": "Наши слёзы смывают боль.",
+          "sentence_parts": [
+            "Unsere",
+            "Tränen",
+            "waschen",
+            "den",
+            "Schmerz",
+            "fort."
+          ]
         },
         {
           "german": "umarmen",
           "russian": "обнимать",
           "transcription": "[ум-АР-мен]",
           "sentence": "Lass mich dich umarmen und deine Tränen trocknen.",
-          "sentence_translation": "Позволь мне обнять тебя и вытереть твои слёзы."
+          "sentence_translation": "Позволь мне обнять тебя и вытереть твои слёзы.",
+          "sentence_parts": [
+            "Lass",
+            "mich",
+            "dich",
+            "umarmen",
+            "und",
+            "deine",
+            "Tränen",
+            "trocknen."
+          ]
         },
         {
           "german": "erkennen",
           "russian": "узнавать",
           "transcription": "[ер-КЕН-нен]",
           "sentence": "Erkennst du mich, dein Kind Cordelia?",
-          "sentence_translation": "Узнаёшь ли ты меня, твоё дитя Корделия?"
+          "sentence_translation": "Узнаёшь ли ты меня, твоё дитя Корделия?",
+          "sentence_parts": [
+            "Erkennst",
+            "du",
+            "mich,",
+            "dein",
+            "Kind",
+            "Cordelia?"
+          ]
         },
         {
           "german": "heilen",
           "russian": "исцелять",
           "transcription": "[ХАЙ-лен]",
           "sentence": "Meine Liebe wird deine Wunden heilen.",
-          "sentence_translation": "Моя любовь исцелит твои раны."
+          "sentence_translation": "Моя любовь исцелит твои раны.",
+          "sentence_parts": [
+            "Meine",
+            "Liebe",
+            "wird",
+            "deine",
+            "Wunden",
+            "heilen."
+          ]
         },
         {
           "german": "die Reue",
           "russian": "раскаяние",
           "transcription": "[ди РОЙ-е]",
           "sentence": "Deine Reue ist nicht nötig, nur deine Liebe.",
-          "sentence_translation": "Твоё раскаяние не нужно, только твоя любовь."
+          "sentence_translation": "Твоё раскаяние не нужно, только твоя любовь.",
+          "sentence_parts": [
+            "Deine",
+            "Reue",
+            "ist",
+            "nicht",
+            "nötig,",
+            "nur",
+            "deine",
+            "Liebe."
+          ]
         },
         {
           "german": "sanft",
           "russian": "нежный",
           "transcription": "[ЗАНФТ]",
           "sentence": "Sei sanft zu dir selbst, lieber Vater.",
-          "sentence_translation": "Будь нежен к себе, дорогой отец."
+          "sentence_translation": "Будь нежен к себе, дорогой отец.",
+          "sentence_parts": [
+            "Sei",
+            "sanft",
+            "zu",
+            "dir",
+            "selbst,",
+            "lieber",
+            "Vater."
+          ]
         },
         {
           "german": "die Vergebung",
           "russian": "прощение",
           "transcription": "[ди фер-ГЕ-бунг]",
           "sentence": "Die Vergebung ist der Schlüssel zum Frieden.",
-          "sentence_translation": "Прощение - ключ к покою."
+          "sentence_translation": "Прощение - ключ к покою.",
+          "sentence_parts": [
+            "Die",
+            "Vergebung",
+            "ist",
+            "der",
+            "Schlüssel",
+            "zum",
+            "Frieden."
+          ]
         }
       ]
     },
@@ -376,56 +744,123 @@
           "russian": "пленный",
           "transcription": "[ге-ФАН-ген]",
           "sentence": "Obwohl gefangen, bin ich frei in meinem Herzen.",
-          "sentence_translation": "Хотя я в плену, в сердце я свободна."
+          "sentence_translation": "Хотя я в плену, в сердце я свободна.",
+          "sentence_parts": [
+            "Obwohl",
+            "gefangen,",
+            "bin",
+            "ich",
+            "frei",
+            "in",
+            "meinem",
+            "Herzen."
+          ]
         },
         {
           "german": "das Gefängnis",
           "russian": "тюрьма",
           "transcription": "[дас ге-ФЭНГ-нис]",
           "sentence": "Dieses Gefängnis kann meine Liebe nicht einsperren.",
-          "sentence_translation": "Эта тюрьма не может запереть мою любовь."
+          "sentence_translation": "Эта тюрьма не может запереть мою любовь.",
+          "sentence_parts": [
+            "Dieses",
+            "Gefängnis",
+            "kann",
+            "meine",
+            "Liebe",
+            "nicht",
+            "einsperren."
+          ]
         },
         {
           "german": "die Würde",
           "russian": "достоинство",
           "transcription": "[ди ВЮР-де]",
           "sentence": "Mit Würde trage ich mein Schicksal.",
-          "sentence_translation": "С достоинством я несу свою судьбу."
+          "sentence_translation": "С достоинством я несу свою судьбу.",
+          "sentence_parts": [
+            "Mit",
+            "Würde",
+            "trage",
+            "ich",
+            "mein",
+            "Schicksal."
+          ]
         },
         {
           "german": "trösten",
           "russian": "утешать",
           "transcription": "[ТРЁС-тен]",
           "sentence": "Lass mich dich trösten in dieser dunklen Stunde.",
-          "sentence_translation": "Позволь мне утешить тебя в этот тёмный час."
+          "sentence_translation": "Позволь мне утешить тебя в этот тёмный час.",
+          "sentence_parts": [
+            "Lass",
+            "mich",
+            "dich",
+            "trösten",
+            "in",
+            "dieser",
+            "dunklen",
+            "Stunde."
+          ]
         },
         {
           "german": "tapfer",
           "russian": "отважный",
           "transcription": "[ТАП-фер]",
           "sentence": "Ich bleibe tapfer für dich, Vater.",
-          "sentence_translation": "Я остаюсь отважной ради тебя, отец."
+          "sentence_translation": "Я остаюсь отважной ради тебя, отец.",
+          "sentence_parts": [
+            "Ich",
+            "bleibe",
+            "tapfer",
+            "für",
+            "dich,",
+            "Vater."
+          ]
         },
         {
           "german": "die Demut",
           "russian": "смирение",
           "transcription": "[ди ДЕ-мут]",
           "sentence": "In der Demut finden wir wahre Größe.",
-          "sentence_translation": "В смирении мы находим истинное величие."
+          "sentence_translation": "В смирении мы находим истинное величие.",
+          "sentence_parts": [
+            "In",
+            "der",
+            "Demut",
+            "finden",
+            "wir",
+            "wahre",
+            "Größe."
+          ]
         },
         {
           "german": "das Schicksal",
           "russian": "судьба",
           "transcription": "[дас ШИК-заль]",
           "sentence": "Unser Schicksal ist miteinander verwoben.",
-          "sentence_translation": "Наши судьбы переплетены."
+          "sentence_translation": "Наши судьбы переплетены.",
+          "sentence_parts": [
+            "Unser",
+            "Schicksal",
+            "ist",
+            "miteinander",
+            "verwoben."
+          ]
         },
         {
           "german": "die Ehre",
           "russian": "честь",
           "transcription": "[ди Э-ре]",
           "sentence": "Unsere Ehre bleibt unbefleckt.",
-          "sentence_translation": "Наша честь остаётся незапятнанной."
+          "sentence_translation": "Наша честь остаётся незапятнанной.",
+          "sentence_parts": [
+            "Unsere",
+            "Ehre",
+            "bleibt",
+            "unbefleckt."
+          ]
         }
       ]
     },
@@ -447,56 +882,128 @@
           "russian": "смерть",
           "transcription": "[дер ТОД]",
           "sentence": "Der Tod trennt uns nur für kurze Zeit.",
-          "sentence_translation": "Смерть разлучает нас лишь ненадолго."
+          "sentence_translation": "Смерть разлучает нас лишь ненадолго.",
+          "sentence_parts": [
+            "Der",
+            "Tod",
+            "trennt",
+            "uns",
+            "nur",
+            "für",
+            "kurze",
+            "Zeit."
+          ]
         },
         {
           "german": "sterben",
           "russian": "умирать",
           "transcription": "[ШТЕР-бен]",
           "sentence": "Wenn ich sterben muss, sterbe ich mit reinem Herzen.",
-          "sentence_translation": "Если я должна умереть, я умру с чистым сердцем."
+          "sentence_translation": "Если я должна умереть, я умру с чистым сердцем.",
+          "sentence_parts": [
+            "Wenn",
+            "ich",
+            "sterben",
+            "muss,",
+            "sterbe",
+            "ich",
+            "mit",
+            "reinem",
+            "Herzen."
+          ]
         },
         {
           "german": "das Opfer",
           "russian": "жертва",
           "transcription": "[дас ОП-фер]",
           "sentence": "Ich bin das Opfer der Wahrheit und Liebe.",
-          "sentence_translation": "Я жертва правды и любви."
+          "sentence_translation": "Я жертва правды и любви.",
+          "sentence_parts": [
+            "Ich",
+            "bin",
+            "das",
+            "Opfer",
+            "der",
+            "Wahrheit",
+            "und",
+            "Liebe."
+          ]
         },
         {
           "german": "die Seele",
           "russian": "душа",
           "transcription": "[ди ЗЕ-ле]",
           "sentence": "Meine Seele ist rein vor Gott.",
-          "sentence_translation": "Моя душа чиста перед Богом."
+          "sentence_translation": "Моя душа чиста перед Богом.",
+          "sentence_parts": [
+            "Meine",
+            "Seele",
+            "ist",
+            "rein",
+            "vor",
+            "Gott."
+          ]
         },
         {
           "german": "das Ende",
           "russian": "конец",
           "transcription": "[дас ЕН-де]",
           "sentence": "Dies ist nicht das Ende, nur ein Übergang.",
-          "sentence_translation": "Это не конец, только переход."
+          "sentence_translation": "Это не конец, только переход.",
+          "sentence_parts": [
+            "Dies",
+            "ist",
+            "nicht",
+            "das",
+            "Ende,",
+            "nur",
+            "ein",
+            "Übergang."
+          ]
         },
         {
           "german": "ewig",
           "russian": "вечный",
           "transcription": "[Э-виг]",
           "sentence": "Unsere Liebe ist ewig, Vater.",
-          "sentence_translation": "Наша любовь вечна, отец."
+          "sentence_translation": "Наша любовь вечна, отец.",
+          "sentence_parts": [
+            "Unsere",
+            "Liebe",
+            "ist",
+            "ewig,",
+            "Vater."
+          ]
         },
         {
           "german": "der Abschied",
           "russian": "прощание",
           "transcription": "[дер АБ-шид]",
           "sentence": "Unser Abschied ist nur vorübergehend.",
-          "sentence_translation": "Наше прощание лишь временно."
+          "sentence_translation": "Наше прощание лишь временно.",
+          "sentence_parts": [
+            "Unser",
+            "Abschied",
+            "ist",
+            "nur",
+            "vorübergehend."
+          ]
         },
         {
           "german": "die Erlösung",
           "russian": "спасение",
           "transcription": "[ди ер-ЛЁ-зунг]",
           "sentence": "Im Tod finde ich Erlösung und Frieden.",
-          "sentence_translation": "В смерти я нахожу спасение и покой."
+          "sentence_translation": "В смерти я нахожу спасение и покой.",
+          "sentence_parts": [
+            "Im",
+            "Tod",
+            "finde",
+            "ich",
+            "Erlösung",
+            "und",
+            "Frieden."
+          ]
         }
       ]
     }

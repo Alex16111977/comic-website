@@ -15,56 +15,128 @@
           "russian": "верность",
           "transcription": "[ди ТРОЙ-е]",
           "sentence": "Die Treue zu meinem König ist unerschütterlich.",
-          "sentence_translation": "Верность моему королю непоколебима."
+          "sentence_translation": "Верность моему королю непоколебима.",
+          "sentence_parts": [
+            "Die",
+            "Treue",
+            "zu",
+            "meinem",
+            "König",
+            "ist",
+            "unerschütterlich."
+          ]
         },
         {
           "german": "der Mut",
           "russian": "мужество",
           "transcription": "[дер МУТ]",
           "sentence": "Der Mut fordert mich, die Wahrheit zu sagen.",
-          "sentence_translation": "Мужество требует от меня говорить правду."
+          "sentence_translation": "Мужество требует от меня говорить правду.",
+          "sentence_parts": [
+            "Der",
+            "Mut",
+            "fordert",
+            "mich,",
+            "die",
+            "Wahrheit",
+            "zu",
+            "sagen."
+          ]
         },
         {
           "german": "widersprechen",
           "russian": "возражать",
           "transcription": "[ВИ-дер-шпре-хен]",
           "sentence": "Ich widerspreche dem König für seine eigene Ehre.",
-          "sentence_translation": "Я возражаю королю ради его же чести."
+          "sentence_translation": "Я возражаю королю ради его же чести.",
+          "sentence_parts": [
+            "Ich",
+            "widerspreche",
+            "dem",
+            "König",
+            "für",
+            "seine",
+            "eigene",
+            "Ehre."
+          ]
         },
         {
           "german": "verteidigen",
           "russian": "защищать",
           "transcription": "[фер-ТАЙ-ди-ген]",
           "sentence": "Ich verteidige Корделия gegen Ungerechtigkeit.",
-          "sentence_translation": "Я защищаю Корделию от несправедливости."
+          "sentence_translation": "Я защищаю Корделию от несправедливости.",
+          "sentence_parts": [
+            "Ich",
+            "verteidige",
+            "Корделия",
+            "gegen",
+            "Ungerechtigkeit."
+          ]
         },
         {
           "german": "aufrichtig",
           "russian": "искренний",
           "transcription": "[АУФ-рих-тиг]",
           "sentence": "Ich bin aufrichtig, auch wenn es gefährlich ist.",
-          "sentence_translation": "Я искренен, даже если это опасно."
+          "sentence_translation": "Я искренен, даже если это опасно.",
+          "sentence_parts": [
+            "Ich",
+            "bin",
+            "aufrichtig,",
+            "auch",
+            "wenn",
+            "es",
+            "gefährlich",
+            "ist."
+          ]
         },
         {
           "german": "der Diener",
           "russian": "слуга",
           "transcription": "[дер ДИ-нер]",
           "sentence": "Als treuer Diener spreche ich offen.",
-          "sentence_translation": "Как верный слуга, я говорю открыто."
+          "sentence_translation": "Как верный слуга, я говорю открыто.",
+          "sentence_parts": [
+            "Als",
+            "treuer",
+            "Diener",
+            "spreche",
+            "ich",
+            "offen."
+          ]
         },
         {
           "german": "warnen",
           "russian": "предупреждать",
           "transcription": "[ВАР-нен]",
           "sentence": "Ich warne den König vor seinem Fehler.",
-          "sentence_translation": "Я предупреждаю короля об его ошибке."
+          "sentence_translation": "Я предупреждаю короля об его ошибке.",
+          "sentence_parts": [
+            "Ich",
+            "warne",
+            "den",
+            "König",
+            "vor",
+            "seinem",
+            "Fehler."
+          ]
         },
         {
           "german": "gerecht",
           "russian": "справедливый",
           "transcription": "[ге-РЕХТ]",
           "sentence": "Ich kämpfe für das, was gerecht ist.",
-          "sentence_translation": "Я борюсь за то, что справедливо."
+          "sentence_translation": "Я борюсь за то, что справедливо.",
+          "sentence_parts": [
+            "Ich",
+            "kämpfe",
+            "für",
+            "das,",
+            "was",
+            "gerecht",
+            "ist."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -86,49 +158,109 @@
           "russian": "изгнание",
           "transcription": "[ди фер-БА-нунг]",
           "sentence": "Die Verbannung ist der Preis für meine Ehrlichkeit.",
-          "sentence_translation": "Изгнание - цена моей честности."
+          "sentence_translation": "Изгнание - цена моей честности.",
+          "sentence_parts": [
+            "Die",
+            "Verbannung",
+            "ist",
+            "der",
+            "Preis",
+            "für",
+            "meine",
+            "Ehrlichkeit."
+          ]
         },
         {
           "german": "die Ungerechtigkeit",
           "russian": "несправедливость",
           "transcription": "[ди УН-ге-рех-тиг-кайт]",
           "sentence": "Diese Ungerechtigkeit werde ich nicht akzeptieren.",
-          "sentence_translation": "Эту несправедливость я не приму."
+          "sentence_translation": "Эту несправедливость я не приму.",
+          "sentence_parts": [
+            "Diese",
+            "Ungerechtigkeit",
+            "werde",
+            "ich",
+            "nicht",
+            "akzeptieren."
+          ]
         },
         {
           "german": "der Zorn",
           "russian": "гнев",
           "transcription": "[дер ЦОРН]",
           "sentence": "Der Zorn des Königs trifft mich ungerecht.",
-          "sentence_translation": "Гнев короля поражает меня несправедливо."
+          "sentence_translation": "Гнев короля поражает меня несправедливо.",
+          "sentence_parts": [
+            "Der",
+            "Zorn",
+            "des",
+            "Königs",
+            "trifft",
+            "mich",
+            "ungerecht."
+          ]
         },
         {
           "german": "verbannt",
           "russian": "изгнанный",
           "transcription": "[фер-БАНТ]",
           "sentence": "Verbannt aus dem Land, das ich liebe.",
-          "sentence_translation": "Изгнан из страны, которую люблю."
+          "sentence_translation": "Изгнан из страны, которую люблю.",
+          "sentence_parts": [
+            "Verbannt",
+            "aus",
+            "dem",
+            "Land,",
+            "das",
+            "ich",
+            "liebe."
+          ]
         },
         {
           "german": "der Abschied",
           "russian": "прощание",
           "transcription": "[дер АБ-шид]",
           "sentence": "Der Abschied vom Hof schmerzt mich tief.",
-          "sentence_translation": "Прощание с двором глубоко ранит меня."
+          "sentence_translation": "Прощание с двором глубоко ранит меня.",
+          "sentence_parts": [
+            "Der",
+            "Abschied",
+            "vom",
+            "Hof",
+            "schmerzt",
+            "mich",
+            "tief."
+          ]
         },
         {
           "german": "die Strafe",
           "russian": "наказание",
           "transcription": "[ди ШТРА-фе]",
           "sentence": "Diese Strafe nehme ich mit Würde an.",
-          "sentence_translation": "Это наказание я принимаю с достоинством."
+          "sentence_translation": "Это наказание я принимаю с достоинством.",
+          "sentence_parts": [
+            "Diese",
+            "Strafe",
+            "nehme",
+            "ich",
+            "mit",
+            "Würde",
+            "an."
+          ]
         },
         {
           "german": "zurückkehren",
           "russian": "возвращаться",
           "transcription": "[цу-РЮК-ке-рен]",
           "sentence": "Ich schwöre, verkleidet zurückzukehren.",
-          "sentence_translation": "Я клянусь вернуться переодетым."
+          "sentence_translation": "Я клянусь вернуться переодетым.",
+          "sentence_parts": [
+            "Ich",
+            "schwöre,",
+            "verkleidet",
+            "zurückzukehren."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -150,56 +282,128 @@
           "russian": "переодевание",
           "transcription": "[ди фер-КЛАЙ-дунг]",
           "sentence": "In Verkleidung diene ich meinem König weiter.",
-          "sentence_translation": "В переодевании я продолжаю служить королю."
+          "sentence_translation": "В переодевании я продолжаю служить королю.",
+          "sentence_parts": [
+            "In",
+            "Verkleidung",
+            "diene",
+            "ich",
+            "meinem",
+            "König",
+            "weiter."
+          ]
         },
         {
           "german": "die List",
           "russian": "хитрость",
           "transcription": "[ди ЛИСТ]",
           "sentence": "Mit List kehre ich an den Hof zurück.",
-          "sentence_translation": "Хитростью я возвращаюсь ко двору."
+          "sentence_translation": "Хитростью я возвращаюсь ко двору.",
+          "sentence_parts": [
+            "Mit",
+            "List",
+            "kehre",
+            "ich",
+            "an",
+            "den",
+            "Hof",
+            "zurück."
+          ]
         },
         {
           "german": "unerkannt",
           "russian": "неузнанный",
           "transcription": "[УН-ер-кант]",
           "sentence": "Unerkannt bleibe ich an seiner Seite.",
-          "sentence_translation": "Неузнанным я остаюсь рядом с ним."
+          "sentence_translation": "Неузнанным я остаюсь рядом с ним.",
+          "sentence_parts": [
+            "Unerkannt",
+            "bleibe",
+            "ich",
+            "an",
+            "seiner",
+            "Seite."
+          ]
         },
         {
           "german": "vorgeben",
           "russian": "притворяться",
           "transcription": "[ФОР-ге-бен]",
           "sentence": "Ich gebe vor, ein einfacher Mann zu sein.",
-          "sentence_translation": "Я притворяюсь простым человеком."
+          "sentence_translation": "Я притворяюсь простым человеком.",
+          "sentence_parts": [
+            "Ich",
+            "gebe",
+            "vor,",
+            "ein",
+            "einfacher",
+            "Mann",
+            "zu",
+            "sein."
+          ]
         },
         {
           "german": "verstellen",
           "russian": "изменять",
           "transcription": "[фер-ШТЕ-лен]",
           "sentence": "Ich verstelle meine Stimme und Haltung.",
-          "sentence_translation": "Я изменяю свой голос и осанку."
+          "sentence_translation": "Я изменяю свой голос и осанку.",
+          "sentence_parts": [
+            "Ich",
+            "verstelle",
+            "meine",
+            "Stimme",
+            "und",
+            "Haltung."
+          ]
         },
         {
           "german": "der Bart",
           "russian": "борода",
           "transcription": "[дер БАРТ]",
           "sentence": "Mit falschem Bart bin ich nicht zu erkennen.",
-          "sentence_translation": "С фальшивой бородой меня не узнать."
+          "sentence_translation": "С фальшивой бородой меня не узнать.",
+          "sentence_parts": [
+            "Mit",
+            "falschem",
+            "Bart",
+            "bin",
+            "ich",
+            "nicht",
+            "zu",
+            "erkennen."
+          ]
         },
         {
           "german": "anheuern",
           "russian": "наниматься",
           "transcription": "[АН-хой-ерн]",
           "sentence": "Als Кай heuere ich beim König an.",
-          "sentence_translation": "Как Кай я нанимаюсь к королю."
+          "sentence_translation": "Как Кай я нанимаюсь к королю.",
+          "sentence_parts": [
+            "Als",
+            "Кай",
+            "heuere",
+            "ich",
+            "beim",
+            "König",
+            "an."
+          ]
         },
         {
           "german": "treu",
           "russian": "верный",
           "transcription": "[ТРОЙ]",
           "sentence": "Treu bleibe ich trotz der Verkleidung.",
-          "sentence_translation": "Верным остаюсь несмотря на переодевание."
+          "sentence_translation": "Верным остаюсь несмотря на переодевание.",
+          "sentence_parts": [
+            "Treu",
+            "bleibe",
+            "ich",
+            "trotz",
+            "der",
+            "Verkleidung."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -221,49 +425,108 @@
           "russian": "служба",
           "transcription": "[дер ДИНСТ]",
           "sentence": "Mein Dienst geht über die Verbannung hinaus.",
-          "sentence_translation": "Моя служба идёт дальше изгнания."
+          "sentence_translation": "Моя служба идёт дальше изгнания.",
+          "sentence_parts": [
+            "Mein",
+            "Dienst",
+            "geht",
+            "über",
+            "die",
+            "Verbannung",
+            "hinaus."
+          ]
         },
         {
           "german": "der Schutz",
           "russian": "защита",
           "transcription": "[дер ШУТЦ]",
           "sentence": "Ich biete Schutz, ohne erkannt zu werden.",
-          "sentence_translation": "Я предоставляю защиту, не будучи узнанным."
+          "sentence_translation": "Я предоставляю защиту, не будучи узнанным.",
+          "sentence_parts": [
+            "Ich",
+            "biete",
+            "Schutz,",
+            "ohne",
+            "erkannt",
+            "zu",
+            "werden."
+          ]
         },
         {
           "german": "die Gefahr",
           "russian": "опасность",
           "transcription": "[ди ге-ФАР]",
           "sentence": "Trotz Gefahr bleibe ich beim König.",
-          "sentence_translation": "Несмотря на опасность, я остаюсь с королём."
+          "sentence_translation": "Несмотря на опасность, я остаюсь с королём.",
+          "sentence_parts": [
+            "Trotz",
+            "Gefahr",
+            "bleibe",
+            "ich",
+            "beim",
+            "König."
+          ]
         },
         {
           "german": "bewachen",
           "russian": "охранять",
           "transcription": "[бе-ВА-хен]",
           "sentence": "Heimlich bewache ich meinen alten Herrn.",
-          "sentence_translation": "Тайно я охраняю своего старого господина."
+          "sentence_translation": "Тайно я охраняю своего старого господина.",
+          "sentence_parts": [
+            "Heimlich",
+            "bewache",
+            "ich",
+            "meinen",
+            "alten",
+            "Herrn."
+          ]
         },
         {
           "german": "kämpfen",
           "russian": "сражаться",
           "transcription": "[КЕМП-фен]",
           "sentence": "Ich kämpfe gegen alle seine Feinde.",
-          "sentence_translation": "Я сражаюсь против всех его врагов."
+          "sentence_translation": "Я сражаюсь против всех его врагов.",
+          "sentence_parts": [
+            "Ich",
+            "kämpfe",
+            "gegen",
+            "alle",
+            "seine",
+            "Feinde."
+          ]
         },
         {
           "german": "raten",
           "russian": "советовать",
           "transcription": "[РА-тен]",
           "sentence": "Als Кай rate ich ihm zur Vorsicht.",
-          "sentence_translation": "Как Кай я советую ему осторожность."
+          "sentence_translation": "Как Кай я советую ему осторожность.",
+          "sentence_parts": [
+            "Als",
+            "Кай",
+            "rate",
+            "ich",
+            "ihm",
+            "zur",
+            "Vorsicht."
+          ]
         },
         {
           "german": "die Wache",
           "russian": "стража",
           "transcription": "[ди ВА-хе]",
           "sentence": "Ich halte Wache über seinen Schlaf.",
-          "sentence_translation": "Я держу стражу над его сном."
+          "sentence_translation": "Я держу стражу над его сном.",
+          "sentence_parts": [
+            "Ich",
+            "halte",
+            "Wache",
+            "über",
+            "seinen",
+            "Schlaf."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -285,56 +548,123 @@
           "russian": "наказание",
           "transcription": "[ди ШТРА-фе]",
           "sentence": "Diese Strafe erdulde ich für meinen König.",
-          "sentence_translation": "Это наказание я терплю ради короля."
+          "sentence_translation": "Это наказание я терплю ради короля.",
+          "sentence_parts": [
+            "Diese",
+            "Strafe",
+            "erdulde",
+            "ich",
+            "für",
+            "meinen",
+            "König."
+          ]
         },
         {
           "german": "die Demütigung",
           "russian": "унижение",
           "transcription": "[ди де-МЮ-ти-гунг]",
           "sentence": "Die Demütigung macht mich nur stärker.",
-          "sentence_translation": "Унижение делает меня только сильнее."
+          "sentence_translation": "Унижение делает меня только сильнее.",
+          "sentence_parts": [
+            "Die",
+            "Demütigung",
+            "macht",
+            "mich",
+            "nur",
+            "stärker."
+          ]
         },
         {
           "german": "die Standhaftigkeit",
           "russian": "стойкость",
           "transcription": "[ди ШТАНД-хаф-тиг-кайт]",
           "sentence": "Mit Standhaftigkeit ertrage ich die Schmach.",
-          "sentence_translation": "Со стойкостью я переношу позор."
+          "sentence_translation": "Со стойкостью я переношу позор.",
+          "sentence_parts": [
+            "Mit",
+            "Standhaftigkeit",
+            "ertrage",
+            "ich",
+            "die",
+            "Schmach."
+          ]
         },
         {
           "german": "fesseln",
           "russian": "сковывать",
           "transcription": "[ФЕ-сельн]",
           "sentence": "Sie fesseln mich wie einen gemeinen Dieb.",
-          "sentence_translation": "Они сковывают меня как обычного вора."
+          "sentence_translation": "Они сковывают меня как обычного вора.",
+          "sentence_parts": [
+            "Sie",
+            "fesseln",
+            "mich",
+            "wie",
+            "einen",
+            "gemeinen",
+            "Dieb."
+          ]
         },
         {
           "german": "erdulden",
           "russian": "терпеть",
           "transcription": "[ер-ДУЛЬ-ден]",
           "sentence": "Ich erdulde die Schande ohne Klage.",
-          "sentence_translation": "Я терплю позор без жалоб."
+          "sentence_translation": "Я терплю позор без жалоб.",
+          "sentence_parts": [
+            "Ich",
+            "erdulde",
+            "die",
+            "Schande",
+            "ohne",
+            "Klage."
+          ]
         },
         {
           "german": "der Stock",
           "russian": "колодка",
           "transcription": "[дер ШТОК]",
           "sentence": "Im Stock sitze ich die ganze Nacht.",
-          "sentence_translation": "В колодке я сижу всю ночь."
+          "sentence_translation": "В колодке я сижу всю ночь.",
+          "sentence_parts": [
+            "Im",
+            "Stock",
+            "sitze",
+            "ich",
+            "die",
+            "ganze",
+            "Nacht."
+          ]
         },
         {
           "german": "ausharren",
           "russian": "выдерживать",
           "transcription": "[АУС-ха-рен]",
           "sentence": "Ich harre aus bis zur Befreiung.",
-          "sentence_translation": "Я выдерживаю до освобождения."
+          "sentence_translation": "Я выдерживаю до освобождения.",
+          "sentence_parts": [
+            "Ich",
+            "harre",
+            "aus",
+            "bis",
+            "zur",
+            "Befreiung."
+          ]
         },
         {
           "german": "die Schande",
           "russian": "позор",
           "transcription": "[ди ШАН-де]",
           "sentence": "Diese Schande ist Cornwall's, nicht meine.",
-          "sentence_translation": "Этот позор Корнуолла, не мой."
+          "sentence_translation": "Этот позор Корнуолла, не мой.",
+          "sentence_parts": [
+            "Diese",
+            "Schande",
+            "ist",
+            "Cornwall's,",
+            "nicht",
+            "meine."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -356,49 +686,108 @@
           "russian": "буря",
           "transcription": "[дер ШТУРМ]",
           "sentence": "Im Sturm bleibe ich bei meinem König.",
-          "sentence_translation": "В буре я остаюсь с моим королём."
+          "sentence_translation": "В буре я остаюсь с моим королём.",
+          "sentence_parts": [
+            "Im",
+            "Sturm",
+            "bleibe",
+            "ich",
+            "bei",
+            "meinem",
+            "König."
+          ]
         },
         {
           "german": "der Beistand",
           "russian": "поддержка",
           "transcription": "[дер БАЙ-штанд]",
           "sentence": "Mein Beistand ist alles, was ich bieten kann.",
-          "sentence_translation": "Моя поддержка - всё, что я могу предложить."
+          "sentence_translation": "Моя поддержка - всё, что я могу предложить.",
+          "sentence_parts": [
+            "Mein",
+            "Beistand",
+            "ist",
+            "alles,",
+            "was",
+            "ich",
+            "bieten",
+            "kann."
+          ]
         },
         {
           "german": "begleiten",
           "russian": "сопровождать",
           "transcription": "[бе-ГЛАЙ-тен]",
           "sentence": "Ich begleite ihn durch Wind und Regen.",
-          "sentence_translation": "Я сопровождаю его сквозь ветер и дождь."
+          "sentence_translation": "Я сопровождаю его сквозь ветер и дождь.",
+          "sentence_parts": [
+            "Ich",
+            "begleite",
+            "ihn",
+            "durch",
+            "Wind",
+            "und",
+            "Regen."
+          ]
         },
         {
           "german": "trösten",
           "russian": "утешать",
           "transcription": "[ТРЁС-тен]",
           "sentence": "Mit Worten tröste ich den wahnsinnigen König.",
-          "sentence_translation": "Словами я утешаю безумного короля."
+          "sentence_translation": "Словами я утешаю безумного короля.",
+          "sentence_parts": [
+            "Mit",
+            "Worten",
+            "tröste",
+            "ich",
+            "den",
+            "wahnsinnigen",
+            "König."
+          ]
         },
         {
           "german": "die Zuflucht",
           "russian": "убежище",
           "transcription": "[ди ЦУ-флухт]",
           "sentence": "Ich suche Zuflucht für uns beide.",
-          "sentence_translation": "Я ищу убежище для нас обоих."
+          "sentence_translation": "Я ищу убежище для нас обоих.",
+          "sentence_parts": [
+            "Ich",
+            "suche",
+            "Zuflucht",
+            "für",
+            "uns",
+            "beide."
+          ]
         },
         {
           "german": "durchhalten",
           "russian": "выдерживать",
           "transcription": "[ДУРХ-халь-тен]",
           "sentence": "Gemeinsam werden wir durchhalten.",
-          "sentence_translation": "Вместе мы выдержим."
+          "sentence_translation": "Вместе мы выдержим.",
+          "sentence_parts": [
+            "Gemeinsam",
+            "werden",
+            "wir",
+            "durchhalten."
+          ]
         },
         {
           "german": "die Kälte",
           "russian": "холод",
           "transcription": "[ди КЕЛ-те]",
           "sentence": "Die Kälte dringt in unsere Knochen.",
-          "sentence_translation": "Холод проникает в наши кости."
+          "sentence_translation": "Холод проникает в наши кости.",
+          "sentence_parts": [
+            "Die",
+            "Kälte",
+            "dringt",
+            "in",
+            "unsere",
+            "Knochen."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -420,56 +809,130 @@
           "russian": "смерть",
           "transcription": "[дер ТОД]",
           "sentence": "Bis zum Tod bleibe ich an seiner Seite.",
-          "sentence_translation": "До смерти я остаюсь рядом с ним."
+          "sentence_translation": "До смерти я остаюсь рядом с ним.",
+          "sentence_parts": [
+            "Bis",
+            "zum",
+            "Tod",
+            "bleibe",
+            "ich",
+            "an",
+            "seiner",
+            "Seite."
+          ]
         },
         {
           "german": "der Abschied",
           "russian": "прощание",
           "transcription": "[дер АБ-шид]",
           "sentence": "Der Abschied von meinem König bricht mein Herz.",
-          "sentence_translation": "Прощание с моим королём разбивает моё сердце."
+          "sentence_translation": "Прощание с моим королём разбивает моё сердце.",
+          "sentence_parts": [
+            "Der",
+            "Abschied",
+            "von",
+            "meinem",
+            "König",
+            "bricht",
+            "mein",
+            "Herz."
+          ]
         },
         {
           "german": "ewig",
           "russian": "вечный",
           "transcription": "[Э-виг]",
           "sentence": "Meine Treue ist ewig, über den Tod hinaus.",
-          "sentence_translation": "Моя верность вечна, за пределами смерти."
+          "sentence_translation": "Моя верность вечна, за пределами смерти.",
+          "sentence_parts": [
+            "Meine",
+            "Treue",
+            "ist",
+            "ewig,",
+            "über",
+            "den",
+            "Tod",
+            "hinaus."
+          ]
         },
         {
           "german": "weinen",
           "russian": "плакать",
           "transcription": "[ВАЙ-нен]",
           "sentence": "Ich weine um meinen gefallenen König.",
-          "sentence_translation": "Я плачу о моём павшем короле."
+          "sentence_translation": "Я плачу о моём павшем короле.",
+          "sentence_parts": [
+            "Ich",
+            "weine",
+            "um",
+            "meinen",
+            "gefallenen",
+            "König."
+          ]
         },
         {
           "german": "die Erschöpfung",
           "russian": "истощение",
           "transcription": "[ди ер-ШЁП-фунг]",
           "sentence": "Die Erschöpfung überwältigt meinen alten Körper.",
-          "sentence_translation": "Истощение одолевает моё старое тело."
+          "sentence_translation": "Истощение одолевает моё старое тело.",
+          "sentence_parts": [
+            "Die",
+            "Erschöpfung",
+            "überwältigt",
+            "meinen",
+            "alten",
+            "Körper."
+          ]
         },
         {
           "german": "aufgeben",
           "russian": "сдаваться",
           "transcription": "[АУФ-ге-бен]",
           "sentence": "Ich gebe auf, nachdem mein Herr gestorben ist.",
-          "sentence_translation": "Я сдаюсь после смерти моего господина."
+          "sentence_translation": "Я сдаюсь после смерти моего господина.",
+          "sentence_parts": [
+            "Ich",
+            "gebe",
+            "auf,",
+            "nachdem",
+            "mein",
+            "Herr",
+            "gestorben",
+            "ist."
+          ]
         },
         {
           "german": "die Trauer",
           "russian": "скорбь",
           "transcription": "[ди ТРАУ-ер]",
           "sentence": "Die Trauer ist zu schwer zu ertragen.",
-          "sentence_translation": "Скорбь слишком тяжела, чтобы вынести."
+          "sentence_translation": "Скорбь слишком тяжела, чтобы вынести.",
+          "sentence_parts": [
+            "Die",
+            "Trauer",
+            "ist",
+            "zu",
+            "schwer",
+            "zu",
+            "ertragen."
+          ]
         },
         {
           "german": "folgen",
           "russian": "следовать",
           "transcription": "[ФОЛЬ-ген]",
           "sentence": "Bald folge ich meinem König ins Jenseits.",
-          "sentence_translation": "Скоро я последую за королём в иной мир."
+          "sentence_translation": "Скоро я последую за королём в иной мир.",
+          "sentence_parts": [
+            "Bald",
+            "folge",
+            "ich",
+            "meinem",
+            "König",
+            "ins",
+            "Jenseits."
+          ]
         }
       ],
       "theatrical_scene": {

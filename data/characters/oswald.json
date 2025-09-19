@@ -15,56 +15,118 @@
           "russian": "слуга",
           "transcription": "[дер ДИ-нер]",
           "sentence": "Als Diener gehorche ich meiner Herrin blind.",
-          "sentence_translation": "Как слуга я слепо подчиняюсь своей госпоже."
+          "sentence_translation": "Как слуга я слепо подчиняюсь своей госпоже.",
+          "sentence_parts": [
+            "Als",
+            "Diener",
+            "gehorche",
+            "ich",
+            "meiner",
+            "Herrin",
+            "blind."
+          ]
         },
         {
           "german": "der Gehorsam",
           "russian": "послушание",
           "transcription": "[дер ге-ХОР-зам]",
           "sentence": "Mein Gehorsam kennt keine Fragen.",
-          "sentence_translation": "Моё послушание не знает вопросов."
+          "sentence_translation": "Моё послушание не знает вопросов.",
+          "sentence_parts": [
+            "Mein",
+            "Gehorsam",
+            "kennt",
+            "keine",
+            "Fragen."
+          ]
         },
         {
           "german": "die Ergebenheit",
           "russian": "преданность",
           "transcription": "[ди ер-ГЕ-бен-хайт]",
           "sentence": "Meine Ergebenheit gilt nur Lady Goneril.",
-          "sentence_translation": "Моя преданность принадлежит только леди Гонерилье."
+          "sentence_translation": "Моя преданность принадлежит только леди Гонерилье.",
+          "sentence_parts": [
+            "Meine",
+            "Ergebenheit",
+            "gilt",
+            "nur",
+            "Lady",
+            "Goneril."
+          ]
         },
         {
           "german": "dienen",
           "russian": "служить",
           "transcription": "[ДИ-нен]",
           "sentence": "Ich diene ohne Gewissen oder Ehre.",
-          "sentence_translation": "Я служу без совести и чести."
+          "sentence_translation": "Я служу без совести и чести.",
+          "sentence_parts": [
+            "Ich",
+            "diene",
+            "ohne",
+            "Gewissen",
+            "oder",
+            "Ehre."
+          ]
         },
         {
           "german": "der Verwalter",
           "russian": "управляющий",
           "transcription": "[дер фер-ВАЛЬ-тер]",
           "sentence": "Als Verwalter kontrolliere ich den Haushalt.",
-          "sentence_translation": "Как управляющий я контролирую дом."
+          "sentence_translation": "Как управляющий я контролирую дом.",
+          "sentence_parts": [
+            "Als",
+            "Verwalter",
+            "kontrolliere",
+            "ich",
+            "den",
+            "Haushalt."
+          ]
         },
         {
           "german": "ergeben",
           "russian": "покорный",
           "transcription": "[ер-ГЕ-бен]",
           "sentence": "Ergeben folge ich jedem Befehl.",
-          "sentence_translation": "Покорно я следую каждому приказу."
+          "sentence_translation": "Покорно я следую каждому приказу.",
+          "sentence_parts": [
+            "Ergeben",
+            "folge",
+            "ich",
+            "jedem",
+            "Befehl."
+          ]
         },
         {
           "german": "unterwürfig",
           "russian": "раболепный",
           "transcription": "[УН-тер-вюр-фиг]",
           "sentence": "Unterwürfig krieche ich vor meiner Herrin.",
-          "sentence_translation": "Раболепно я пресмыкаюсь перед госпожой."
+          "sentence_translation": "Раболепно я пресмыкаюсь перед госпожой.",
+          "sentence_parts": [
+            "Unterwürfig",
+            "krieche",
+            "ich",
+            "vor",
+            "meiner",
+            "Herrin."
+          ]
         },
         {
           "german": "befolgen",
           "russian": "исполнять",
           "transcription": "[бе-ФОЛЬ-ген]",
           "sentence": "Jeden Befehl befolge ich sofort.",
-          "sentence_translation": "Каждый приказ я исполняю немедленно."
+          "sentence_translation": "Каждый приказ я исполняю немедленно.",
+          "sentence_parts": [
+            "Jeden",
+            "Befehl",
+            "befolge",
+            "ich",
+            "sofort."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -86,49 +148,108 @@
           "russian": "гонец",
           "transcription": "[дер БО-те]",
           "sentence": "Als Bote überbringe ich böse Nachrichten.",
-          "sentence_translation": "Как гонец я приношу дурные вести."
+          "sentence_translation": "Как гонец я приношу дурные вести.",
+          "sentence_parts": [
+            "Als",
+            "Bote",
+            "überbringe",
+            "ich",
+            "böse",
+            "Nachrichten."
+          ]
         },
         {
           "german": "der Auftrag",
           "russian": "поручение",
           "transcription": "[дер АУФ-траг]",
           "sentence": "Jeden Auftrag erfülle ich gewissenhaft.",
-          "sentence_translation": "Каждое поручение я выполняю добросовестно."
+          "sentence_translation": "Каждое поручение я выполняю добросовестно.",
+          "sentence_parts": [
+            "Jeden",
+            "Auftrag",
+            "erfülle",
+            "ich",
+            "gewissenhaft."
+          ]
         },
         {
           "german": "die Eile",
           "russian": "спешка",
           "transcription": "[ди АЙ-ле]",
           "sentence": "In großer Eile renne ich hin und her.",
-          "sentence_translation": "В большой спешке я бегаю туда-сюда."
+          "sentence_translation": "В большой спешке я бегаю туда-сюда.",
+          "sentence_parts": [
+            "In",
+            "großer",
+            "Eile",
+            "renne",
+            "ich",
+            "hin",
+            "und",
+            "her."
+          ]
         },
         {
           "german": "überbringen",
           "russian": "передавать",
           "transcription": "[ю-бер-БРИН-ген]",
           "sentence": "Ich überbringe Befehle an alle Diener.",
-          "sentence_translation": "Я передаю приказы всем слугам."
+          "sentence_translation": "Я передаю приказы всем слугам.",
+          "sentence_parts": [
+            "Ich",
+            "überbringe",
+            "Befehle",
+            "an",
+            "alle",
+            "Diener."
+          ]
         },
         {
           "german": "hasten",
           "russian": "спешить",
           "transcription": "[ХАС-тен]",
           "sentence": "Ich haste von einem Ort zum anderen.",
-          "sentence_translation": "Я спешу с места на место."
+          "sentence_translation": "Я спешу с места на место.",
+          "sentence_parts": [
+            "Ich",
+            "haste",
+            "von",
+            "einem",
+            "Ort",
+            "zum",
+            "anderen."
+          ]
         },
         {
           "german": "die Botschaft",
           "russian": "послание",
           "transcription": "[ди БОТ-шафт]",
           "sentence": "Die Botschaft meiner Herrin ist grausam.",
-          "sentence_translation": "Послание моей госпожи жестоко."
+          "sentence_translation": "Послание моей госпожи жестоко.",
+          "sentence_parts": [
+            "Die",
+            "Botschaft",
+            "meiner",
+            "Herrin",
+            "ist",
+            "grausam."
+          ]
         },
         {
           "german": "eilen",
           "russian": "торопиться",
           "transcription": "[АЙ-лен]",
           "sentence": "Ich eile, um ihre Wünsche zu erfüllen.",
-          "sentence_translation": "Я тороплюсь исполнить её желания."
+          "sentence_translation": "Я тороплюсь исполнить её желания.",
+          "sentence_parts": [
+            "Ich",
+            "eile,",
+            "um",
+            "ihre",
+            "Wünsche",
+            "zu",
+            "erfüllen."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -150,56 +271,121 @@
           "russian": "оскорбление",
           "transcription": "[ди бе-ЛАЙ-ди-гунг]",
           "sentence": "Jede Beleidigung spreche ich mit Genuss aus.",
-          "sentence_translation": "Каждое оскорбление я произношу с наслаждением."
+          "sentence_translation": "Каждое оскорбление я произношу с наслаждением.",
+          "sentence_parts": [
+            "Jede",
+            "Beleidigung",
+            "spreche",
+            "ich",
+            "mit",
+            "Genuss",
+            "aus."
+          ]
         },
         {
           "german": "die Respektlosigkeit",
           "russian": "неуважение",
           "transcription": "[ди рес-ПЕКТ-ло-зиг-кайт]",
           "sentence": "Meine Respektlosigkeit kennt keine Grenzen.",
-          "sentence_translation": "Моё неуважение не знает границ."
+          "sentence_translation": "Моё неуважение не знает границ.",
+          "sentence_parts": [
+            "Meine",
+            "Respektlosigkeit",
+            "kennt",
+            "keine",
+            "Grenzen."
+          ]
         },
         {
           "german": "die Feigheit",
           "russian": "трусость",
           "transcription": "[ди ФАЙГ-хайт]",
           "sentence": "Aus Feigheit greife ich nur Schwache an.",
-          "sentence_translation": "Из трусости я нападаю только на слабых."
+          "sentence_translation": "Из трусости я нападаю только на слабых.",
+          "sentence_parts": [
+            "Aus",
+            "Feigheit",
+            "greife",
+            "ich",
+            "nur",
+            "Schwache",
+            "an."
+          ]
         },
         {
           "german": "beleidigen",
           "russian": "оскорблять",
           "transcription": "[бе-ЛАЙ-ди-ген]",
           "sentence": "Ich beleidige den alten König ohne Scham.",
-          "sentence_translation": "Я оскорбляю старого короля без стыда."
+          "sentence_translation": "Я оскорбляю старого короля без стыда.",
+          "sentence_parts": [
+            "Ich",
+            "beleidige",
+            "den",
+            "alten",
+            "König",
+            "ohne",
+            "Scham."
+          ]
         },
         {
           "german": "verhöhnen",
           "russian": "высмеивать",
           "transcription": "[фер-ХЁ-нен]",
           "sentence": "Ich verhöhne seine königliche Würde.",
-          "sentence_translation": "Я высмеиваю его королевское достоинство."
+          "sentence_translation": "Я высмеиваю его королевское достоинство.",
+          "sentence_parts": [
+            "Ich",
+            "verhöhne",
+            "seine",
+            "königliche",
+            "Würde."
+          ]
         },
         {
           "german": "frech",
           "russian": "дерзкий",
           "transcription": "[ФРЕХ]",
           "sentence": "Frech widerspreche ich dem alten Mann.",
-          "sentence_translation": "Дерзко я возражаю старику."
+          "sentence_translation": "Дерзко я возражаю старику.",
+          "sentence_parts": [
+            "Frech",
+            "widerspreche",
+            "ich",
+            "dem",
+            "alten",
+            "Mann."
+          ]
         },
         {
           "german": "missachten",
           "russian": "пренебрегать",
           "transcription": "[МИС-ах-тен]",
           "sentence": "Ich missachte seinen früheren Rang.",
-          "sentence_translation": "Я пренебрегаю его прежним рангом."
+          "sentence_translation": "Я пренебрегаю его прежним рангом.",
+          "sentence_parts": [
+            "Ich",
+            "missachte",
+            "seinen",
+            "früheren",
+            "Rang."
+          ]
         },
         {
           "german": "feige",
           "russian": "трусливый",
           "transcription": "[ФАЙ-ге]",
           "sentence": "Feige verstecke ich mich hinter meiner Herrin.",
-          "sentence_translation": "Трусливо я прячусь за своей госпожой."
+          "sentence_translation": "Трусливо я прячусь за своей госпожой.",
+          "sentence_parts": [
+            "Feige",
+            "verstecke",
+            "ich",
+            "mich",
+            "hinter",
+            "meiner",
+            "Herrin."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -221,49 +407,103 @@
           "russian": "шпион",
           "transcription": "[дер шпи-ОН]",
           "sentence": "Als Spion lausche ich an jeder Tür.",
-          "sentence_translation": "Как шпион я подслушиваю у каждой двери."
+          "sentence_translation": "Как шпион я подслушиваю у каждой двери.",
+          "sentence_parts": [
+            "Als",
+            "Spion",
+            "lausche",
+            "ich",
+            "an",
+            "jeder",
+            "Tür."
+          ]
         },
         {
           "german": "der Verrat",
           "russian": "предательство",
           "transcription": "[дер фер-РАТ]",
           "sentence": "Der Verrat ist mein tägliches Geschäft.",
-          "sentence_translation": "Предательство - моё ежедневное дело."
+          "sentence_translation": "Предательство - моё ежедневное дело.",
+          "sentence_parts": [
+            "Der",
+            "Verrat",
+            "ist",
+            "mein",
+            "tägliches",
+            "Geschäft."
+          ]
         },
         {
           "german": "die Heimlichkeit",
           "russian": "скрытность",
           "transcription": "[ди ХАЙМ-лих-кайт]",
           "sentence": "In Heimlichkeit sammle ich Informationen.",
-          "sentence_translation": "В скрытности я собираю информацию."
+          "sentence_translation": "В скрытности я собираю информацию.",
+          "sentence_parts": [
+            "In",
+            "Heimlichkeit",
+            "sammle",
+            "ich",
+            "Informationen."
+          ]
         },
         {
           "german": "spionieren",
           "russian": "шпионить",
           "transcription": "[шпи-о-НИ-рен]",
           "sentence": "Ich spioniere für meine böse Herrin.",
-          "sentence_translation": "Я шпионю для моей злой госпожи."
+          "sentence_translation": "Я шпионю для моей злой госпожи.",
+          "sentence_parts": [
+            "Ich",
+            "spioniere",
+            "für",
+            "meine",
+            "böse",
+            "Herrin."
+          ]
         },
         {
           "german": "lauschen",
           "russian": "подслушивать",
           "transcription": "[ЛАУ-шен]",
           "sentence": "Heimlich lausche ich allen Gesprächen.",
-          "sentence_translation": "Тайно я подслушиваю все разговоры."
+          "sentence_translation": "Тайно я подслушиваю все разговоры.",
+          "sentence_parts": [
+            "Heimlich",
+            "lausche",
+            "ich",
+            "allen",
+            "Gesprächen."
+          ]
         },
         {
           "german": "verraten",
           "russian": "выдавать",
           "transcription": "[фер-РА-тен]",
           "sentence": "Ich verrate jeden an meine Herrin.",
-          "sentence_translation": "Я выдаю каждого своей госпоже."
+          "sentence_translation": "Я выдаю каждого своей госпоже.",
+          "sentence_parts": [
+            "Ich",
+            "verrate",
+            "jeden",
+            "an",
+            "meine",
+            "Herrin."
+          ]
         },
         {
           "german": "schnüffeln",
           "russian": "вынюхивать",
           "transcription": "[ШНЮФ-фельн]",
           "sentence": "Überall schnüffle ich nach Geheimnissen.",
-          "sentence_translation": "Везде я вынюхиваю секреты."
+          "sentence_translation": "Везде я вынюхиваю секреты.",
+          "sentence_parts": [
+            "Überall",
+            "schnüffle",
+            "ich",
+            "nach",
+            "Geheimnissen."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -285,56 +525,119 @@
           "russian": "интрига",
           "transcription": "[ди ин-ТРИ-ге]",
           "sentence": "Jede Intrige spinne ich mit Freude.",
-          "sentence_translation": "Каждую интригу я плету с радостью."
+          "sentence_translation": "Каждую интригу я плету с радостью.",
+          "sentence_parts": [
+            "Jede",
+            "Intrige",
+            "spinne",
+            "ich",
+            "mit",
+            "Freude."
+          ]
         },
         {
           "german": "der Plan",
           "russian": "план",
           "transcription": "[дер ПЛАН]",
           "sentence": "Mein hinterhältiger Plan wird funktionieren.",
-          "sentence_translation": "Мой коварный план сработает."
+          "sentence_translation": "Мой коварный план сработает.",
+          "sentence_parts": [
+            "Mein",
+            "hinterhältiger",
+            "Plan",
+            "wird",
+            "funktionieren."
+          ]
         },
         {
           "german": "die Hinterlist",
           "russian": "коварство",
           "transcription": "[ди ХИН-тер-лист]",
           "sentence": "Mit Hinterlist verfolge ich meine Ziele.",
-          "sentence_translation": "С коварством я преследую свои цели."
+          "sentence_translation": "С коварством я преследую свои цели.",
+          "sentence_parts": [
+            "Mit",
+            "Hinterlist",
+            "verfolge",
+            "ich",
+            "meine",
+            "Ziele."
+          ]
         },
         {
           "german": "schmieden",
           "russian": "ковать",
           "transcription": "[ШМИ-ден]",
           "sentence": "Ich schmiede Pläne gegen alle Feinde.",
-          "sentence_translation": "Я кую планы против всех врагов."
+          "sentence_translation": "Я кую планы против всех врагов.",
+          "sentence_parts": [
+            "Ich",
+            "schmiede",
+            "Pläne",
+            "gegen",
+            "alle",
+            "Feinde."
+          ]
         },
         {
           "german": "hintergehen",
           "russian": "обманывать",
           "transcription": "[ХИН-тер-ге-ен]",
           "sentence": "Ich hintergehe jeden, der mir traut.",
-          "sentence_translation": "Я обманываю каждого, кто мне доверяет."
+          "sentence_translation": "Я обманываю каждого, кто мне доверяет.",
+          "sentence_parts": [
+            "Ich",
+            "hintergehe",
+            "jeden,",
+            "der",
+            "mir",
+            "traut."
+          ]
         },
         {
           "german": "tückisch",
           "russian": "коварный",
           "transcription": "[ТЮ-киш]",
           "sentence": "Tückisch plane ich meinen nächsten Schritt.",
-          "sentence_translation": "Коварно я планирую свой следующий шаг."
+          "sentence_translation": "Коварно я планирую свой следующий шаг.",
+          "sentence_parts": [
+            "Tückisch",
+            "plane",
+            "ich",
+            "meinen",
+            "nächsten",
+            "Schritt."
+          ]
         },
         {
           "german": "verschlagen",
           "russian": "хитрый",
           "transcription": "[фер-ШЛАГ-ен]",
           "sentence": "Verschlagen verberge ich meine wahren Absichten.",
-          "sentence_translation": "Хитро я скрываю свои истинные намерения."
+          "sentence_translation": "Хитро я скрываю свои истинные намерения.",
+          "sentence_parts": [
+            "Verschlagen",
+            "verberge",
+            "ich",
+            "meine",
+            "wahren",
+            "Absichten."
+          ]
         },
         {
           "german": "die Falle",
           "russian": "ловушка",
           "transcription": "[ди ФА-ле]",
           "sentence": "Ich stelle Fallen für die Ahnungslosen.",
-          "sentence_translation": "Я ставлю ловушки для ничего не подозревающих."
+          "sentence_translation": "Я ставлю ловушки для ничего не подозревающих.",
+          "sentence_parts": [
+            "Ich",
+            "stelle",
+            "Fallen",
+            "für",
+            "die",
+            "Ahnungslosen."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -356,49 +659,107 @@
           "russian": "преследование",
           "transcription": "[ди фер-ФОЛЬ-гунг]",
           "sentence": "Die Verfolgung des blinden Grafen beginnt.",
-          "sentence_translation": "Преследование слепого графа начинается."
+          "sentence_translation": "Преследование слепого графа начинается.",
+          "sentence_parts": [
+            "Die",
+            "Verfolgung",
+            "des",
+            "blinden",
+            "Grafen",
+            "beginnt."
+          ]
         },
         {
           "german": "die Jagd",
           "russian": "охота",
           "transcription": "[ди ЯГДТ]",
           "sentence": "Die Jagd auf Gloucester macht mir Spaß.",
-          "sentence_translation": "Охота на Глостера доставляет мне удовольствие."
+          "sentence_translation": "Охота на Глостера доставляет мне удовольствие.",
+          "sentence_parts": [
+            "Die",
+            "Jagd",
+            "auf",
+            "Gloucester",
+            "macht",
+            "mir",
+            "Spaß."
+          ]
         },
         {
           "german": "verfolgen",
           "russian": "преследовать",
           "transcription": "[фер-ФОЛЬ-ген]",
           "sentence": "Gnadenlos verfolge ich den alten Mann.",
-          "sentence_translation": "Безжалостно я преследую старика."
+          "sentence_translation": "Безжалостно я преследую старика.",
+          "sentence_parts": [
+            "Gnadenlos",
+            "verfolge",
+            "ich",
+            "den",
+            "alten",
+            "Mann."
+          ]
         },
         {
           "german": "jagen",
           "russian": "гнаться",
           "transcription": "[Я-ген]",
           "sentence": "Wie ein Hund jage ich meine Beute.",
-          "sentence_translation": "Как собака я гонюсь за добычей."
+          "sentence_translation": "Как собака я гонюсь за добычей.",
+          "sentence_parts": [
+            "Wie",
+            "ein",
+            "Hund",
+            "jage",
+            "ich",
+            "meine",
+            "Beute."
+          ]
         },
         {
           "german": "aufspüren",
           "russian": "выслеживать",
           "transcription": "[АУФ-шпю-рен]",
           "sentence": "Ich spüre den Flüchtling überall auf.",
-          "sentence_translation": "Я выслеживаю беглеца повсюду."
+          "sentence_translation": "Я выслеживаю беглеца повсюду.",
+          "sentence_parts": [
+            "Ich",
+            "spüre",
+            "den",
+            "Flüchtling",
+            "überall",
+            "auf."
+          ]
         },
         {
           "german": "hetzen",
           "russian": "травить",
           "transcription": "[ХЕ-цен]",
           "sentence": "Ich hetze ihn bis zum Ende.",
-          "sentence_translation": "Я травлю его до конца."
+          "sentence_translation": "Я травлю его до конца.",
+          "sentence_parts": [
+            "Ich",
+            "hetze",
+            "ihn",
+            "bis",
+            "zum",
+            "Ende."
+          ]
         },
         {
           "german": "die Beute",
           "russian": "добыча",
           "transcription": "[ди БОЙ-те]",
           "sentence": "Der Graf ist meine leichte Beute.",
-          "sentence_translation": "Граф - моя лёгкая добыча."
+          "sentence_translation": "Граф - моя лёгкая добыча.",
+          "sentence_parts": [
+            "Der",
+            "Graf",
+            "ist",
+            "meine",
+            "leichte",
+            "Beute."
+          ]
         }
       ],
       "theatrical_scene": {
@@ -420,56 +781,122 @@
           "russian": "смерть",
           "transcription": "[дер ТОД]",
           "sentence": "Der Tod ereilt mich durch Эдгars Hand.",
-          "sentence_translation": "Смерть настигает меня от руки Эдгара."
+          "sentence_translation": "Смерть настигает меня от руки Эдгара.",
+          "sentence_parts": [
+            "Der",
+            "Tod",
+            "ereilt",
+            "mich",
+            "durch",
+            "Эдгars",
+            "Hand."
+          ]
         },
         {
           "german": "die Feigheit",
           "russian": "трусость",
           "transcription": "[ди ФАЙГ-хайт]",
           "sentence": "Meine Feigheit führt zu meinem Ende.",
-          "sentence_translation": "Моя трусость приводит к моему концу."
+          "sentence_translation": "Моя трусость приводит к моему концу.",
+          "sentence_parts": [
+            "Meine",
+            "Feigheit",
+            "führt",
+            "zu",
+            "meinem",
+            "Ende."
+          ]
         },
         {
           "german": "die Niederlage",
           "russian": "поражение",
           "transcription": "[ди НИ-дер-ла-ге]",
           "sentence": "Die Niederlage ist mein letztes Schicksal.",
-          "sentence_translation": "Поражение - моя последняя судьба."
+          "sentence_translation": "Поражение - моя последняя судьба.",
+          "sentence_parts": [
+            "Die",
+            "Niederlage",
+            "ist",
+            "mein",
+            "letztes",
+            "Schicksal."
+          ]
         },
         {
           "german": "fallen",
           "russian": "падать",
           "transcription": "[ФА-лен]",
           "sentence": "Ich falle wie der Feigling, der ich bin.",
-          "sentence_translation": "Я падаю как трус, которым являюсь."
+          "sentence_translation": "Я падаю как трус, которым являюсь.",
+          "sentence_parts": [
+            "Ich",
+            "falle",
+            "wie",
+            "der",
+            "Feigling,",
+            "der",
+            "ich",
+            "bin."
+          ]
         },
         {
           "german": "unterliegen",
           "russian": "проигрывать",
           "transcription": "[ун-тер-ЛИ-ген]",
           "sentence": "Ich unterliege dem edlen Edgar.",
-          "sentence_translation": "Я проигрываю благородному Эдгару."
+          "sentence_translation": "Я проигрываю благородному Эдгару.",
+          "sentence_parts": [
+            "Ich",
+            "unterliege",
+            "dem",
+            "edlen",
+            "Edgar."
+          ]
         },
         {
           "german": "wimmern",
           "russian": "хныкать",
           "transcription": "[ВИМ-мерн]",
           "sentence": "Wimmernd bitte ich um Gnade.",
-          "sentence_translation": "Хныкая, я прошу о пощаде."
+          "sentence_translation": "Хныкая, я прошу о пощаде.",
+          "sentence_parts": [
+            "Wimmernd",
+            "bitte",
+            "ich",
+            "um",
+            "Gnade."
+          ]
         },
         {
           "german": "betteln",
           "russian": "умолять",
           "transcription": "[БЕ-тельн]",
           "sentence": "Um mein Leben bettle ich vergeblich.",
-          "sentence_translation": "О жизни я умоляю напрасно."
+          "sentence_translation": "О жизни я умоляю напрасно.",
+          "sentence_parts": [
+            "Um",
+            "mein",
+            "Leben",
+            "bettle",
+            "ich",
+            "vergeblich."
+          ]
         },
         {
           "german": "erbärmlich",
           "russian": "жалкий",
           "transcription": "[ер-БЕРМ-лих]",
           "sentence": "Erbärmlich ende ich wie ich gelebt habe.",
-          "sentence_translation": "Жалко я заканчиваю, как и жил."
+          "sentence_translation": "Жалко я заканчиваю, как и жил.",
+          "sentence_parts": [
+            "Erbärmlich",
+            "ende",
+            "ich",
+            "wie",
+            "ich",
+            "gelebt",
+            "habe."
+          ]
         }
       ],
       "theatrical_scene": {
