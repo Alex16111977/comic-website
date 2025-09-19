@@ -14,57 +14,57 @@
           "german": "die Treue",
           "russian": "верность",
           "transcription": "[ди ТРОЙ-е]",
-          "sentence": "Die Treue zu meinem König ist unerschütterlich.",
-          "sentence_translation": "Верность моему королю непоколебима."
+          "sentence": "Im Thronsaal von Lear kniet Kent: Die Treue zu meinem König ist unerschütterlich.",
+          "sentence_translation": "В тронном зале Лира Кент преклоняется: Верность моему королю непоколебима."
         },
         {
           "german": "der Mut",
           "russian": "мужество",
           "transcription": "[дер МУТ]",
-          "sentence": "Der Mut fordert mich, die Wahrheit zu sagen.",
-          "sentence_translation": "Мужество требует от меня говорить правду."
+          "sentence": "Im Thronsaal von Lear kniet Kent: Der Mut fordert mich, die Wahrheit zu sagen.",
+          "sentence_translation": "В тронном зале Лира Кент преклоняется: Мужество требует от меня говорить правду."
         },
         {
           "german": "widersprechen",
           "russian": "возражать",
           "transcription": "[ВИ-дер-шпре-хен]",
-          "sentence": "Ich widerspreche dem König für seine eigene Ehre.",
-          "sentence_translation": "Я возражаю королю ради его же чести."
+          "sentence": "Im Thronsaal von Lear kniet Kent: Ich widerspreche dem König für seine eigene Ehre.",
+          "sentence_translation": "В тронном зале Лира Кент преклоняется: Я возражаю королю ради его же чести."
         },
         {
           "german": "verteidigen",
           "russian": "защищать",
           "transcription": "[фер-ТАЙ-ди-ген]",
-          "sentence": "Ich verteidige Корделия gegen Ungerechtigkeit.",
-          "sentence_translation": "Я защищаю Корделию от несправедливости."
+          "sentence": "Im Thronsaal von Lear kniet Kent: Ich verteidige Корделия gegen Ungerechtigkeit.",
+          "sentence_translation": "В тронном зале Лира Кент преклоняется: Я защищаю Корделию от несправедливости."
         },
         {
           "german": "aufrichtig",
           "russian": "искренний",
           "transcription": "[АУФ-рих-тиг]",
-          "sentence": "Ich bin aufrichtig, auch wenn es gefährlich ist.",
-          "sentence_translation": "Я искренен, даже если это опасно."
+          "sentence": "Im Thronsaal von Lear kniet Kent: Ich bin aufrichtig, auch wenn es gefährlich ist.",
+          "sentence_translation": "В тронном зале Лира Кент преклоняется: Я искренен, даже если это опасно."
         },
         {
           "german": "der Diener",
           "russian": "слуга",
           "transcription": "[дер ДИ-нер]",
-          "sentence": "Als treuer Diener spreche ich offen.",
-          "sentence_translation": "Как верный слуга, я говорю открыто."
+          "sentence": "Im Thronsaal von Lear kniet Kent: Als treuer Diener spreche ich offen.",
+          "sentence_translation": "В тронном зале Лира Кент преклоняется: Как верный слуга, я говорю открыто."
         },
         {
           "german": "warnen",
           "russian": "предупреждать",
           "transcription": "[ВАР-нен]",
-          "sentence": "Ich warne den König vor seinem Fehler.",
-          "sentence_translation": "Я предупреждаю короля об его ошибке."
+          "sentence": "Im Thronsaal von Lear kniet Kent: Ich warne den König vor seinem Fehler.",
+          "sentence_translation": "В тронном зале Лира Кент преклоняется: Я предупреждаю короля об его ошибке."
         },
         {
           "german": "gerecht",
           "russian": "справедливый",
           "transcription": "[ге-РЕХТ]",
-          "sentence": "Ich kämpfe für das, was gerecht ist.",
-          "sentence_translation": "Я борюсь за то, что справедливо."
+          "sentence": "Im Thronsaal von Lear kniet Kent: Ich kämpfe für das, was gerecht ist.",
+          "sentence_translation": "В тронном зале Лира Кент преклоняется: Я борюсь за то, что справедливо."
         }
       ],
       "theatrical_scene": {
@@ -107,50 +107,50 @@
           "german": "die Verbannung",
           "russian": "изгнание",
           "transcription": "[ди фер-БА-нунг]",
-          "sentence": "Die Verbannung ist der Preis für meine Ehrlichkeit.",
-          "sentence_translation": "Изгнание - цена моей честности."
+          "sentence": "Vor der Hofpforte, nachdem Lear ihn verstoßen hat, ruft Kent: Die Verbannung ist der Preis für meine Ehrlichkeit.",
+          "sentence_translation": "У ворот дворца, после изгнания Лиром, Кент восклицает: Изгнание - цена моей честности."
         },
         {
           "german": "die Ungerechtigkeit",
           "russian": "несправедливость",
           "transcription": "[ди УН-ге-рех-тиг-кайт]",
-          "sentence": "Diese Ungerechtigkeit werde ich nicht akzeptieren.",
-          "sentence_translation": "Эту несправедливость я не приму."
+          "sentence": "Vor der Hofpforte, nachdem Lear ihn verstoßen hat, ruft Kent: Diese Ungerechtigkeit werde ich nicht akzeptieren.",
+          "sentence_translation": "У ворот дворца, после изгнания Лиром, Кент восклицает: Эту несправедливость я не приму."
         },
         {
           "german": "der Zorn",
           "russian": "гнев",
           "transcription": "[дер ЦОРН]",
-          "sentence": "Der Zorn des Königs trifft mich ungerecht.",
-          "sentence_translation": "Гнев короля поражает меня несправедливо."
+          "sentence": "Vor der Hofpforte, nachdem Lear ihn verstoßen hat, ruft Kent: Der Zorn des Königs trifft mich ungerecht.",
+          "sentence_translation": "У ворот дворца, после изгнания Лиром, Кент восклицает: Гнев короля поражает меня несправедливо."
         },
         {
           "german": "verbannt",
           "russian": "изгнанный",
           "transcription": "[фер-БАНТ]",
-          "sentence": "Verbannt aus dem Land, das ich liebe.",
-          "sentence_translation": "Изгнан из страны, которую люблю."
+          "sentence": "Vor der Hofpforte, nachdem Lear ihn verstoßen hat, ruft Kent: Verbannt aus dem Land, das ich liebe.",
+          "sentence_translation": "У ворот дворца, после изгнания Лиром, Кент восклицает: Изгнан из страны, которую люблю."
         },
         {
           "german": "der Abschied",
           "russian": "прощание",
           "transcription": "[дер АБ-шид]",
-          "sentence": "Der Abschied vom Hof schmerzt mich tief.",
-          "sentence_translation": "Прощание с двором глубоко ранит меня."
+          "sentence": "Vor der Hofpforte, nachdem Lear ihn verstoßen hat, ruft Kent: Der Abschied vom Hof schmerzt mich tief.",
+          "sentence_translation": "У ворот дворца, после изгнания Лиром, Кент восклицает: Прощание с двором глубоко ранит меня."
         },
         {
           "german": "die Strafe",
           "russian": "наказание",
           "transcription": "[ди ШТРА-фе]",
-          "sentence": "Diese Strafe nehme ich mit Würde an.",
-          "sentence_translation": "Это наказание я принимаю с достоинством."
+          "sentence": "Vor der Hofpforte, nachdem Lear ihn verstoßen hat, ruft Kent: Diese Strafe nehme ich mit Würde an.",
+          "sentence_translation": "У ворот дворца, после изгнания Лиром, Кент восклицает: Это наказание я принимаю с достоинством."
         },
         {
           "german": "zurückkehren",
           "russian": "возвращаться",
           "transcription": "[цу-РЮК-ке-рен]",
-          "sentence": "Ich schwöre, verkleidet zurückzukehren.",
-          "sentence_translation": "Я клянусь вернуться переодетым."
+          "sentence": "Vor der Hofpforte, nachdem Lear ihn verstoßen hat, ruft Kent: Ich schwöre, verkleidet zurückzukehren.",
+          "sentence_translation": "У ворот дворца, после изгнания Лиром, Кент восклицает: Я клянусь вернуться переодетым."
         }
       ],
       "theatrical_scene": {
@@ -193,57 +193,57 @@
           "german": "die Verkleidung",
           "russian": "переодевание",
           "transcription": "[ди фер-КЛАЙ-дунг]",
-          "sentence": "In Verkleidung diene ich meinem König weiter.",
-          "sentence_translation": "В переодевании я продолжаю служить королю."
+          "sentence": "Vor Gonerils Burg legt Kent seine Verkleidung an: In Verkleidung diene ich meinem König weiter.",
+          "sentence_translation": "Перед замком Гонериль Кент надевает своё маскировочное платье: В переодевании я продолжаю служить королю."
         },
         {
           "german": "die List",
           "russian": "хитрость",
           "transcription": "[ди ЛИСТ]",
-          "sentence": "Mit List kehre ich an den Hof zurück.",
-          "sentence_translation": "Хитростью я возвращаюсь ко двору."
+          "sentence": "Vor Gonerils Burg legt Kent seine Verkleidung an: Mit List kehre ich an den Hof zurück.",
+          "sentence_translation": "Перед замком Гонериль Кент надевает своё маскировочное платье: Хитростью я возвращаюсь ко двору."
         },
         {
           "german": "unerkannt",
           "russian": "неузнанный",
           "transcription": "[УН-ер-кант]",
-          "sentence": "Unerkannt bleibe ich an seiner Seite.",
-          "sentence_translation": "Неузнанным я остаюсь рядом с ним."
+          "sentence": "Vor Gonerils Burg legt Kent seine Verkleidung an: Unerkannt bleibe ich an seiner Seite.",
+          "sentence_translation": "Перед замком Гонериль Кент надевает своё маскировочное платье: Неузнанным я остаюсь рядом с ним."
         },
         {
           "german": "vorgeben",
           "russian": "притворяться",
           "transcription": "[ФОР-ге-бен]",
-          "sentence": "Ich gebe vor, ein einfacher Mann zu sein.",
-          "sentence_translation": "Я притворяюсь простым человеком."
+          "sentence": "Vor Gonerils Burg legt Kent seine Verkleidung an: Ich gebe vor, ein einfacher Mann zu sein.",
+          "sentence_translation": "Перед замком Гонериль Кент надевает своё маскировочное платье: Я притворяюсь простым человеком."
         },
         {
           "german": "verstellen",
           "russian": "изменять",
           "transcription": "[фер-ШТЕ-лен]",
-          "sentence": "Ich verstelle meine Stimme und Haltung.",
-          "sentence_translation": "Я изменяю свой голос и осанку."
+          "sentence": "Vor Gonerils Burg legt Kent seine Verkleidung an: Ich verstelle meine Stimme und Haltung.",
+          "sentence_translation": "Перед замком Гонериль Кент надевает своё маскировочное платье: Я изменяю свой голос и осанку."
         },
         {
           "german": "der Bart",
           "russian": "борода",
           "transcription": "[дер БАРТ]",
-          "sentence": "Mit falschem Bart bin ich nicht zu erkennen.",
-          "sentence_translation": "С фальшивой бородой меня не узнать."
+          "sentence": "Vor Gonerils Burg legt Kent seine Verkleidung an: Mit falschem Bart bin ich nicht zu erkennen.",
+          "sentence_translation": "Перед замком Гонериль Кент надевает своё маскировочное платье: С фальшивой бородой меня не узнать."
         },
         {
           "german": "anheuern",
           "russian": "наниматься",
           "transcription": "[АН-хой-ерн]",
-          "sentence": "Als Кай heuere ich beim König an.",
-          "sentence_translation": "Как Кай я нанимаюсь к королю."
+          "sentence": "Vor Gonerils Burg legt Kent seine Verkleidung an: Als Кай heuere ich beim König an.",
+          "sentence_translation": "Перед замком Гонериль Кент надевает своё маскировочное платье: Как Кай я нанимаюсь к королю."
         },
         {
           "german": "treu",
           "russian": "верный",
           "transcription": "[ТРОЙ]",
-          "sentence": "Treu bleibe ich trotz der Verkleidung.",
-          "sentence_translation": "Верным остаюсь несмотря на переодевание."
+          "sentence": "Vor Gonerils Burg legt Kent seine Verkleidung an: Treu bleibe ich trotz der Verkleidung.",
+          "sentence_translation": "Перед замком Гонериль Кент надевает своё маскировочное платье: Верным остаюсь несмотря на переодевание."
         }
       ],
       "theatrical_scene": {
@@ -286,50 +286,50 @@
           "german": "der Dienst",
           "russian": "служба",
           "transcription": "[дер ДИНСТ]",
-          "sentence": "Mein Dienst geht über die Verbannung hinaus.",
-          "sentence_translation": "Моя служба идёт дальше изгнания."
+          "sentence": "Als Diener Caius an Lears Seite schwört Kent: Mein Dienst geht über die Verbannung hinaus.",
+          "sentence_translation": "В облике слуги Кая при Лире Кент клянётся: Моя служба идёт дальше изгнания."
         },
         {
           "german": "der Schutz",
           "russian": "защита",
           "transcription": "[дер ШУТЦ]",
-          "sentence": "Ich biete Schutz, ohne erkannt zu werden.",
-          "sentence_translation": "Я предоставляю защиту, не будучи узнанным."
+          "sentence": "Als Diener Caius an Lears Seite schwört Kent: Ich biete Schutz, ohne erkannt zu werden.",
+          "sentence_translation": "В облике слуги Кая при Лире Кент клянётся: Я предоставляю защиту, не будучи узнанным."
         },
         {
           "german": "die Gefahr",
           "russian": "опасность",
           "transcription": "[ди ге-ФАР]",
-          "sentence": "Trotz Gefahr bleibe ich beim König.",
-          "sentence_translation": "Несмотря на опасность, я остаюсь с королём."
+          "sentence": "Als Diener Caius an Lears Seite schwört Kent: Trotz Gefahr bleibe ich beim König.",
+          "sentence_translation": "В облике слуги Кая при Лире Кент клянётся: Несмотря на опасность, я остаюсь с королём."
         },
         {
           "german": "bewachen",
           "russian": "охранять",
           "transcription": "[бе-ВА-хен]",
-          "sentence": "Heimlich bewache ich meinen alten Herrn.",
-          "sentence_translation": "Тайно я охраняю своего старого господина."
+          "sentence": "Als Diener Caius an Lears Seite schwört Kent: Heimlich bewache ich meinen alten Herrn.",
+          "sentence_translation": "В облике слуги Кая при Лире Кент клянётся: Тайно я охраняю своего старого господина."
         },
         {
           "german": "kämpfen",
           "russian": "сражаться",
           "transcription": "[КЕМП-фен]",
-          "sentence": "Ich kämpfe gegen alle seine Feinde.",
-          "sentence_translation": "Я сражаюсь против всех его врагов."
+          "sentence": "Als Diener Caius an Lears Seite schwört Kent: Ich kämpfe gegen alle seine Feinde.",
+          "sentence_translation": "В облике слуги Кая при Лире Кент клянётся: Я сражаюсь против всех его врагов."
         },
         {
           "german": "raten",
           "russian": "советовать",
           "transcription": "[РА-тен]",
-          "sentence": "Als Кай rate ich ihm zur Vorsicht.",
-          "sentence_translation": "Как Кай я советую ему осторожность."
+          "sentence": "Als Diener Caius an Lears Seite schwört Kent: Als Кай rate ich ihm zur Vorsicht.",
+          "sentence_translation": "В облике слуги Кая при Лире Кент клянётся: Как Кай я советую ему осторожность."
         },
         {
           "german": "die Wache",
           "russian": "стража",
           "transcription": "[ди ВА-хе]",
-          "sentence": "Ich halte Wache über seinen Schlaf.",
-          "sentence_translation": "Я держу стражу над его сном."
+          "sentence": "Als Diener Caius an Lears Seite schwört Kent: Ich halte Wache über seinen Schlaf.",
+          "sentence_translation": "В облике слуги Кая при Лире Кент клянётся: Я держу стражу над его сном."
         }
       ],
       "theatrical_scene": {
@@ -372,57 +372,57 @@
           "german": "die Strafe",
           "russian": "наказание",
           "transcription": "[ди ШТРА-фе]",
-          "sentence": "Diese Strafe erdulde ich für meinen König.",
-          "sentence_translation": "Это наказание я терплю ради короля."
+          "sentence": "Im Hof von Regans Schloss sitzt Kent im Pranger: Diese Strafe erdulde ich für meinen König.",
+          "sentence_translation": "Во дворе замка Реганы Кент сидит в колодках: Это наказание я терплю ради короля."
         },
         {
           "german": "die Demütigung",
           "russian": "унижение",
           "transcription": "[ди де-МЮ-ти-гунг]",
-          "sentence": "Die Demütigung macht mich nur stärker.",
-          "sentence_translation": "Унижение делает меня только сильнее."
+          "sentence": "Im Hof von Regans Schloss sitzt Kent im Pranger: Die Demütigung macht mich nur stärker.",
+          "sentence_translation": "Во дворе замка Реганы Кент сидит в колодках: Унижение делает меня только сильнее."
         },
         {
           "german": "die Standhaftigkeit",
           "russian": "стойкость",
           "transcription": "[ди ШТАНД-хаф-тиг-кайт]",
-          "sentence": "Mit Standhaftigkeit ertrage ich die Schmach.",
-          "sentence_translation": "Со стойкостью я переношу позор."
+          "sentence": "Im Hof von Regans Schloss sitzt Kent im Pranger: Mit Standhaftigkeit ertrage ich die Schmach.",
+          "sentence_translation": "Во дворе замка Реганы Кент сидит в колодках: Со стойкостью я переношу позор."
         },
         {
           "german": "fesseln",
           "russian": "сковывать",
           "transcription": "[ФЕ-сельн]",
-          "sentence": "Sie fesseln mich wie einen gemeinen Dieb.",
-          "sentence_translation": "Они сковывают меня как обычного вора."
+          "sentence": "Im Hof von Regans Schloss sitzt Kent im Pranger: Sie fesseln mich wie einen gemeinen Dieb.",
+          "sentence_translation": "Во дворе замка Реганы Кент сидит в колодках: Они сковывают меня как обычного вора."
         },
         {
           "german": "erdulden",
           "russian": "терпеть",
           "transcription": "[ер-ДУЛЬ-ден]",
-          "sentence": "Ich erdulde die Schande ohne Klage.",
-          "sentence_translation": "Я терплю позор без жалоб."
+          "sentence": "Im Hof von Regans Schloss sitzt Kent im Pranger: Ich erdulde die Schande ohne Klage.",
+          "sentence_translation": "Во дворе замка Реганы Кент сидит в колодках: Я терплю позор без жалоб."
         },
         {
           "german": "der Stock",
           "russian": "колодка",
           "transcription": "[дер ШТОК]",
-          "sentence": "Im Stock sitze ich die ganze Nacht.",
-          "sentence_translation": "В колодке я сижу всю ночь."
+          "sentence": "Im Hof von Regans Schloss sitzt Kent im Pranger: Im Stock sitze ich die ganze Nacht.",
+          "sentence_translation": "Во дворе замка Реганы Кент сидит в колодках: В колодке я сижу всю ночь."
         },
         {
           "german": "ausharren",
           "russian": "выдерживать",
           "transcription": "[АУС-ха-рен]",
-          "sentence": "Ich harre aus bis zur Befreiung.",
-          "sentence_translation": "Я выдерживаю до освобождения."
+          "sentence": "Im Hof von Regans Schloss sitzt Kent im Pranger: Ich harre aus bis zur Befreiung.",
+          "sentence_translation": "Во дворе замка Реганы Кент сидит в колодках: Я выдерживаю до освобождения."
         },
         {
           "german": "die Schande",
           "russian": "позор",
           "transcription": "[ди ШАН-де]",
-          "sentence": "Diese Schande ist Cornwall's, nicht meine.",
-          "sentence_translation": "Этот позор Корнуолла, не мой."
+          "sentence": "Im Hof von Regans Schloss sitzt Kent im Pranger: Diese Schande ist Cornwall's, nicht meine.",
+          "sentence_translation": "Во дворе замка Реганы Кент сидит в колодках: Этот позор Корнуолла, не мой."
         }
       ],
       "theatrical_scene": {
@@ -465,50 +465,50 @@
           "german": "der Sturm",
           "russian": "буря",
           "transcription": "[дер ШТУРМ]",
-          "sentence": "Im Sturm bleibe ich bei meinem König.",
-          "sentence_translation": "В буре я остаюсь с моим королём."
+          "sentence": "Auf der Heide im Sturm stützt Kent den alten König: Im Sturm bleibe ich bei meinem König.",
+          "sentence_translation": "На пустоши в бурю Кент поддерживает старого короля: В буре я остаюсь с моим королём."
         },
         {
           "german": "der Beistand",
           "russian": "поддержка",
           "transcription": "[дер БАЙ-штанд]",
-          "sentence": "Mein Beistand ist alles, was ich bieten kann.",
-          "sentence_translation": "Моя поддержка - всё, что я могу предложить."
+          "sentence": "Auf der Heide im Sturm stützt Kent den alten König: Mein Beistand ist alles, was ich bieten kann.",
+          "sentence_translation": "На пустоши в бурю Кент поддерживает старого короля: Моя поддержка - всё, что я могу предложить."
         },
         {
           "german": "begleiten",
           "russian": "сопровождать",
           "transcription": "[бе-ГЛАЙ-тен]",
-          "sentence": "Ich begleite ihn durch Wind und Regen.",
-          "sentence_translation": "Я сопровождаю его сквозь ветер и дождь."
+          "sentence": "Auf der Heide im Sturm stützt Kent den alten König: Ich begleite ihn durch Wind und Regen.",
+          "sentence_translation": "На пустоши в бурю Кент поддерживает старого короля: Я сопровождаю его сквозь ветер и дождь."
         },
         {
           "german": "trösten",
           "russian": "утешать",
           "transcription": "[ТРЁС-тен]",
-          "sentence": "Mit Worten tröste ich den wahnsinnigen König.",
-          "sentence_translation": "Словами я утешаю безумного короля."
+          "sentence": "Auf der Heide im Sturm stützt Kent den alten König: Mit Worten tröste ich den wahnsinnigen König.",
+          "sentence_translation": "На пустоши в бурю Кент поддерживает старого короля: Словами я утешаю безумного короля."
         },
         {
           "german": "die Zuflucht",
           "russian": "убежище",
           "transcription": "[ди ЦУ-флухт]",
-          "sentence": "Ich suche Zuflucht für uns beide.",
-          "sentence_translation": "Я ищу убежище для нас обоих."
+          "sentence": "Auf der Heide im Sturm stützt Kent den alten König: Ich suche Zuflucht für uns beide.",
+          "sentence_translation": "На пустоши в бурю Кент поддерживает старого короля: Я ищу убежище для нас обоих."
         },
         {
           "german": "durchhalten",
           "russian": "выдерживать",
           "transcription": "[ДУРХ-халь-тен]",
-          "sentence": "Gemeinsam werden wir durchhalten.",
-          "sentence_translation": "Вместе мы выдержим."
+          "sentence": "Auf der Heide im Sturm stützt Kent den alten König: Gemeinsam werden wir durchhalten.",
+          "sentence_translation": "На пустоши в бурю Кент поддерживает старого короля: Вместе мы выдержим."
         },
         {
           "german": "die Kälte",
           "russian": "холод",
           "transcription": "[ди КЕЛ-те]",
-          "sentence": "Die Kälte dringt in unsere Knochen.",
-          "sentence_translation": "Холод проникает в наши кости."
+          "sentence": "Auf der Heide im Sturm stützt Kent den alten König: Die Kälte dringt in unsere Knochen.",
+          "sentence_translation": "На пустоши в бурю Кент поддерживает старого короля: Холод проникает в наши кости."
         }
       ],
       "theatrical_scene": {
@@ -551,57 +551,57 @@
           "german": "der Tod",
           "russian": "смерть",
           "transcription": "[дер ТОД]",
-          "sentence": "Bis zum Tod bleibe ich an seiner Seite.",
-          "sentence_translation": "До смерти я остаюсь рядом с ним."
+          "sentence": "Vor Cordelias Leichnam in Dover verweigert Kent die Krone: Bis zum Tod bleibe ich an seiner Seite.",
+          "sentence_translation": "Перед телом Корделии в Дувре Кент отвергает корону: До смерти я остаюсь рядом с ним."
         },
         {
           "german": "der Abschied",
           "russian": "прощание",
           "transcription": "[дер АБ-шид]",
-          "sentence": "Der Abschied von meinem König bricht mein Herz.",
-          "sentence_translation": "Прощание с моим королём разбивает моё сердце."
+          "sentence": "Vor Cordelias Leichnam in Dover verweigert Kent die Krone: Der Abschied von meinem König bricht mein Herz.",
+          "sentence_translation": "Перед телом Корделии в Дувре Кент отвергает корону: Прощание с моим королём разбивает моё сердце."
         },
         {
           "german": "ewig",
           "russian": "вечный",
           "transcription": "[Э-виг]",
-          "sentence": "Meine Treue ist ewig, über den Tod hinaus.",
-          "sentence_translation": "Моя верность вечна, за пределами смерти."
+          "sentence": "Vor Cordelias Leichnam in Dover verweigert Kent die Krone: Meine Treue ist ewig, über den Tod hinaus.",
+          "sentence_translation": "Перед телом Корделии в Дувре Кент отвергает корону: Моя верность вечна, за пределами смерти."
         },
         {
           "german": "weinen",
           "russian": "плакать",
           "transcription": "[ВАЙ-нен]",
-          "sentence": "Ich weine um meinen gefallenen König.",
-          "sentence_translation": "Я плачу о моём павшем короле."
+          "sentence": "Vor Cordelias Leichnam in Dover verweigert Kent die Krone: Ich weine um meinen gefallenen König.",
+          "sentence_translation": "Перед телом Корделии в Дувре Кент отвергает корону: Я плачу о моём павшем короле."
         },
         {
           "german": "die Erschöpfung",
           "russian": "истощение",
           "transcription": "[ди ер-ШЁП-фунг]",
-          "sentence": "Die Erschöpfung überwältigt meinen alten Körper.",
-          "sentence_translation": "Истощение одолевает моё старое тело."
+          "sentence": "Vor Cordelias Leichnam in Dover verweigert Kent die Krone: Die Erschöpfung überwältigt meinen alten Körper.",
+          "sentence_translation": "Перед телом Корделии в Дувре Кент отвергает корону: Истощение одолевает моё старое тело."
         },
         {
           "german": "aufgeben",
           "russian": "сдаваться",
           "transcription": "[АУФ-ге-бен]",
-          "sentence": "Ich gebe auf, nachdem mein Herr gestorben ist.",
-          "sentence_translation": "Я сдаюсь после смерти моего господина."
+          "sentence": "Vor Cordelias Leichnam in Dover verweigert Kent die Krone: Ich gebe auf, nachdem mein Herr gestorben ist.",
+          "sentence_translation": "Перед телом Корделии в Дувре Кент отвергает корону: Я сдаюсь после смерти моего господина."
         },
         {
           "german": "die Trauer",
           "russian": "скорбь",
           "transcription": "[ди ТРАУ-ер]",
-          "sentence": "Die Trauer ist zu schwer zu ertragen.",
-          "sentence_translation": "Скорбь слишком тяжела, чтобы вынести."
+          "sentence": "Vor Cordelias Leichnam in Dover verweigert Kent die Krone: Die Trauer ist zu schwer zu ertragen.",
+          "sentence_translation": "Перед телом Корделии в Дувре Кент отвергает корону: Скорбь слишком тяжела, чтобы вынести."
         },
         {
           "german": "folgen",
           "russian": "следовать",
           "transcription": "[ФОЛЬ-ген]",
-          "sentence": "Bald folge ich meinem König ins Jenseits.",
-          "sentence_translation": "Скоро я последую за королём в иной мир."
+          "sentence": "Vor Cordelias Leichnam in Dover verweigert Kent die Krone: Bald folge ich meinem König ins Jenseits.",
+          "sentence_translation": "Перед телом Корделии в Дувре Кент отвергает корону: Скоро я последую за королём в иной мир."
         }
       ],
       "theatrical_scene": {

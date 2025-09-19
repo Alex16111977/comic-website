@@ -20,57 +20,57 @@
           "german": "der Adel",
           "russian": "знать",
           "transcription": "[дер А-дель]",
-          "sentence": "Der Adel erwartet von mir ehrenhaftes Verhalten.",
-          "sentence_translation": "Знать ожидает от меня достойного поведения."
+          "sentence": "In Glosters Halle verspricht Edgar seinem Vater: Der Adel erwartet von mir ehrenhaftes Verhalten.",
+          "sentence_translation": "В зале Глостера Эдгар обещает отцу: Знать ожидает от меня достойного поведения."
         },
         {
           "german": "der Erbe",
           "russian": "наследник",
           "transcription": "[дер ЕР-бе]",
-          "sentence": "Als rechtmäßiger Erbe habe ich Pflichten.",
-          "sentence_translation": "Как законный наследник, у меня есть обязанности."
+          "sentence": "In Glosters Halle verspricht Edgar seinem Vater: Als rechtmäßiger Erbe habe ich Pflichten.",
+          "sentence_translation": "В зале Глостера Эдгар обещает отцу: Как законный наследник, у меня есть обязанности."
         },
         {
           "german": "das Königreich",
           "russian": "королевство",
           "transcription": "[дас КЁ-ниг-райх]",
-          "sentence": "Ich diene dem Königreich mit Ehre.",
-          "sentence_translation": "Я служу королевству с честью."
+          "sentence": "In Glosters Halle verspricht Edgar seinem Vater: Ich diene dem Königreich mit Ehre.",
+          "sentence_translation": "В зале Глостера Эдгар обещает отцу: Я служу королевству с честью."
         },
         {
           "german": "vertrauen",
           "russian": "доверять",
           "transcription": "[фер-ТРАУ-ен]",
-          "sentence": "Mein Vater vertraut mir vollkommen.",
-          "sentence_translation": "Мой отец полностью мне доверяет."
+          "sentence": "In Glosters Halle verspricht Edgar seinem Vater: Mein Vater vertraut mir vollkommen.",
+          "sentence_translation": "В зале Глостера Эдгар обещает отцу: Мой отец полностью мне доверяет."
         },
         {
           "german": "die Ehre",
           "russian": "честь",
           "transcription": "[ди Э-ре]",
-          "sentence": "Die Ehre der Familie liegt in meinen Händen.",
-          "sentence_translation": "Честь семьи в моих руках."
+          "sentence": "In Glosters Halle verspricht Edgar seinem Vater: Die Ehre der Familie liegt in meinen Händen.",
+          "sentence_translation": "В зале Глостера Эдгар обещает отцу: Честь семьи в моих руках."
         },
         {
           "german": "legitim",
           "russian": "законный",
           "transcription": "[ле-ги-ТИМ]",
-          "sentence": "Ich bin der legitime Sohn des Grafen.",
-          "sentence_translation": "Я законный сын графа."
+          "sentence": "In Glosters Halle verspricht Edgar seinem Vater: Ich bin der legitime Sohn des Grafen.",
+          "sentence_translation": "В зале Глостера Эдгар обещает отцу: Я законный сын графа."
         },
         {
           "german": "der Graf",
           "russian": "граф",
           "transcription": "[дер ГРАФ]",
-          "sentence": "Mein Vater, der Graf, ist ein edler Mann.",
-          "sentence_translation": "Мой отец, граф, благородный человек."
+          "sentence": "In Glosters Halle verspricht Edgar seinem Vater: Mein Vater, der Graf, ist ein edler Mann.",
+          "sentence_translation": "В зале Глостера Эдгар обещает отцу: Мой отец, граф, благородный человек."
         },
         {
           "german": "ahnungslos",
           "russian": "ничего не подозревающий",
           "transcription": "[А-нунгс-лос]",
-          "sentence": "Ahnungslos vertraue ich meinem Bruder.",
-          "sentence_translation": "Ничего не подозревая, я доверяю брату."
+          "sentence": "In Glosters Halle verspricht Edgar seinem Vater: Ahnungslos vertraue ich meinem Bruder.",
+          "sentence_translation": "В зале Глостера Эдгар обещает отцу: Ничего не подозревая, я доверяю брату."
         }
       ],
       "quizzes": [
@@ -113,57 +113,57 @@
           "german": "fliehen",
           "russian": "бежать",
           "transcription": "[ФЛИ-ен]",
-          "sentence": "Ich muss vor falschen Anschuldigungen fliehen.",
-          "sentence_translation": "Я должен бежать от ложных обвинений."
+          "sentence": "Nach Edmunds Verrat flieht Edgar durch den Wald: Ich muss vor falschen Anschuldigungen fliehen.",
+          "sentence_translation": "После предательства Эдмунда Эдгар бежит через лес: Я должен бежать от ложных обвинений."
         },
         {
           "german": "der Verrat",
           "russian": "предательство",
           "transcription": "[дер фер-РАТ]",
-          "sentence": "Der Verrat meines Bruders zerstört mein Leben.",
-          "sentence_translation": "Предательство моего брата разрушает мою жизнь."
+          "sentence": "Nach Edmunds Verrat flieht Edgar durch den Wald: Der Verrat meines Bruders zerstört mein Leben.",
+          "sentence_translation": "После предательства Эдмунда Эдгар бежит через лес: Предательство моего брата разрушает мою жизнь."
         },
         {
           "german": "die Gefahr",
           "russian": "опасность",
           "transcription": "[ди ге-ФАР]",
-          "sentence": "Die Gefahr lauert überall um mich herum.",
-          "sentence_translation": "Опасность подстерегает меня повсюду."
+          "sentence": "Nach Edmunds Verrat flieht Edgar durch den Wald: Die Gefahr lauert überall um mich herum.",
+          "sentence_translation": "После предательства Эдмунда Эдгар бежит через лес: Опасность подстерегает меня повсюду."
         },
         {
           "german": "verfolgen",
           "russian": "преследовать",
           "transcription": "[фер-ФОЛЬ-ген]",
-          "sentence": "Die Soldaten verfolgen mich wie einen Verbrecher.",
-          "sentence_translation": "Солдаты преследуют меня как преступника."
+          "sentence": "Nach Edmunds Verrat flieht Edgar durch den Wald: Die Soldaten verfolgen mich wie einen Verbrecher.",
+          "sentence_translation": "После предательства Эдмунда Эдгар бежит через лес: Солдаты преследуют меня как преступника."
         },
         {
           "german": "verstecken",
           "russian": "прятаться",
           "transcription": "[фер-ШТЕ-кен]",
-          "sentence": "Ich muss mich in den Wäldern verstecken.",
-          "sentence_translation": "Я должен прятаться в лесах."
+          "sentence": "Nach Edmunds Verrat flieht Edgar durch den Wald: Ich muss mich in den Wäldern verstecken.",
+          "sentence_translation": "После предательства Эдмунда Эдгар бежит через лес: Я должен прятаться в лесах."
         },
         {
           "german": "die Intrige",
           "russian": "интрига",
           "transcription": "[ди ин-ТРИ-ге]",
-          "sentence": "Edmunds Intrige hat mich zum Geächteten gemacht.",
-          "sentence_translation": "Интрига Эдмунда сделала меня изгоем."
+          "sentence": "Nach Edmunds Verrat flieht Edgar durch den Wald: Edmunds Intrige hat mich zum Geächteten gemacht.",
+          "sentence_translation": "После предательства Эдмунда Эдгар бежит через лес: Интрига Эдмунда сделала меня изгоем."
         },
         {
           "german": "der Betrug",
           "russian": "обман",
           "transcription": "[дер бе-ТРУГ]",
-          "sentence": "Dieser Betrug wird eines Tages aufgedeckt.",
-          "sentence_translation": "Этот обман однажды раскроется."
+          "sentence": "Nach Edmunds Verrat flieht Edgar durch den Wald: Dieser Betrug wird eines Tages aufgedeckt.",
+          "sentence_translation": "После предательства Эдмунда Эдгар бежит через лес: Этот обман однажды раскроется."
         },
         {
           "german": "verbannen",
           "russian": "изгнать",
           "transcription": "[фер-БАН-нен]",
-          "sentence": "Mein Vater will mich aus dem Land verbannen.",
-          "sentence_translation": "Мой отец хочет изгнать меня из страны."
+          "sentence": "Nach Edmunds Verrat flieht Edgar durch den Wald: Mein Vater will mich aus dem Land verbannen.",
+          "sentence_translation": "После предательства Эдмунда Эдгар бежит через лес: Мой отец хочет изгнать меня из страны."
         }
       ],
       "quizzes": [
@@ -206,57 +206,57 @@
           "german": "der Wahnsinn",
           "russian": "безумие",
           "transcription": "[дер ВАН-зин]",
-          "sentence": "Ich spiele den Wahnsinn, um zu überleben.",
-          "sentence_translation": "Я играю безумие, чтобы выжить."
+          "sentence": "Als armer Tom auf der Heide erklärt Edgar: Ich spiele den Wahnsinn, um zu überleben.",
+          "sentence_translation": "Под видом бедного Тома на пустоши Эдгар объясняет: Я играю безумие, чтобы выжить."
         },
         {
           "german": "der Bettler",
           "russian": "нищий",
           "transcription": "[дер БЕТ-лер]",
-          "sentence": "Als Bettler bin ich unsichtbar für meine Feinde.",
-          "sentence_translation": "Как нищий, я невидим для врагов."
+          "sentence": "Als armer Tom auf der Heide erklärt Edgar: Als Bettler bin ich unsichtbar für meine Feinde.",
+          "sentence_translation": "Под видом бедного Тома на пустоши Эдгар объясняет: Как нищий, я невидим для врагов."
         },
         {
           "german": "die Verkleidung",
           "russian": "маскировка",
           "transcription": "[ди фер-КЛАЙ-дунг]",
-          "sentence": "Diese Verkleidung ist meine einzige Rettung.",
-          "sentence_translation": "Эта маскировка - моё единственное спасение."
+          "sentence": "Als armer Tom auf der Heide erklärt Edgar: Diese Verkleidung ist meine einzige Rettung.",
+          "sentence_translation": "Под видом бедного Тома на пустоши Эдгар объясняет: Эта маскировка - моё единственное спасение."
         },
         {
           "german": "nackt",
           "russian": "голый",
           "transcription": "[НАКТ]",
-          "sentence": "Fast nackt wandere ich durch die Wildnis.",
-          "sentence_translation": "Почти голый, я брожу по дикой местности."
+          "sentence": "Als armer Tom auf der Heide erklärt Edgar: Fast nackt wandere ich durch die Wildnis.",
+          "sentence_translation": "Под видом бедного Тома на пустоши Эдгар объясняет: Почти голый, я брожу по дикой местности."
         },
         {
           "german": "murmeln",
           "russian": "бормотать",
           "transcription": "[МУР-мельн]",
-          "sentence": "Ich murmle Unsinn, um verrückt zu wirken.",
-          "sentence_translation": "Я бормочу чепуху, чтобы казаться сумасшедшим."
+          "sentence": "Als armer Tom auf der Heide erklärt Edgar: Ich murmle Unsinn, um verrückt zu wirken.",
+          "sentence_translation": "Под видом бедного Тома на пустоши Эдгар объясняет: Я бормочу чепуху, чтобы казаться сумасшедшим."
         },
         {
           "german": "zittern",
           "russian": "дрожать",
           "transcription": "[ЦИ-терн]",
-          "sentence": "Vor Kälte und Angst zittere ich ständig.",
-          "sentence_translation": "От холода и страха я постоянно дрожу."
+          "sentence": "Als armer Tom auf der Heide erklärt Edgar: Vor Kälte und Angst zittere ich ständig.",
+          "sentence_translation": "Под видом бедного Тома на пустоши Эдгар объясняет: От холода и страха я постоянно дрожу."
         },
         {
           "german": "das Elend",
           "russian": "нищета",
           "transcription": "[дас Э-ленд]",
-          "sentence": "Im Elend lerne ich die wahre Natur des Menschen.",
-          "sentence_translation": "В нищете я познаю истинную природу человека."
+          "sentence": "Als armer Tom auf der Heide erklärt Edgar: Im Elend lerne ich die wahre Natur des Menschen.",
+          "sentence_translation": "Под видом бедного Тома на пустоши Эдгар объясняет: В нищете я познаю истинную природу человека."
         },
         {
           "german": "wahnsinnig",
           "russian": "безумный",
           "transcription": "[ВАН-зи-ниг]",
-          "sentence": "Ich gebe vor, wahnsinnig zu sein.",
-          "sentence_translation": "Я притворяюсь безумным."
+          "sentence": "Als armer Tom auf der Heide erklärt Edgar: Ich gebe vor, wahnsinnig zu sein.",
+          "sentence_translation": "Под видом бедного Тома на пустоши Эдгар объясняет: Я притворяюсь безумным."
         }
       ],
       "quizzes": [
@@ -299,57 +299,57 @@
           "german": "der Sturm",
           "russian": "буря",
           "transcription": "[дер ШТУРМ]",
-          "sentence": "Der Sturm tobt über unseren Köpfen.",
-          "sentence_translation": "Буря бушует над нашими головами."
+          "sentence": "In Lears sturmgepeitschter Nacht begleitet Edgar den König: Der Sturm tobt über unseren Köpfen.",
+          "sentence_translation": "В штормовую ночь Лира Эдгар сопровождает короля: Буря бушует над нашими головами."
         },
         {
           "german": "frieren",
           "russian": "мёрзнуть",
           "transcription": "[ФРИ-рен]",
-          "sentence": "Wir frieren gemeinsam in dieser kalten Nacht.",
-          "sentence_translation": "Мы мёрзнем вместе в эту холодную ночь."
+          "sentence": "In Lears sturmgepeitschter Nacht begleitet Edgar den König: Wir frieren gemeinsam in dieser kalten Nacht.",
+          "sentence_translation": "В штормовую ночь Лира Эдгар сопровождает короля: Мы мёрзнем вместе в эту холодную ночь."
         },
         {
           "german": "leiden",
           "russian": "страдать",
           "transcription": "[ЛАЙ-ден]",
-          "sentence": "Der König leidet mehr als ich jemals gelitten habe.",
-          "sentence_translation": "Король страдает больше, чем я когда-либо страдал."
+          "sentence": "In Lears sturmgepeitschter Nacht begleitet Edgar den König: Der König leidet mehr als ich jemals gelitten habe.",
+          "sentence_translation": "В штормовую ночь Лира Эдгар сопровождает короля: Король страдает больше, чем я когда-либо страдал."
         },
         {
           "german": "die Hütte",
           "russian": "хижина",
           "transcription": "[ди ХЮ-те]",
-          "sentence": "In dieser armseligen Hütte finden wir Zuflucht.",
-          "sentence_translation": "В этой жалкой хижине мы находим убежище."
+          "sentence": "In Lears sturmgepeitschter Nacht begleitet Edgar den König: In dieser armseligen Hütte finden wir Zuflucht.",
+          "sentence_translation": "В штормовую ночь Лира Эдгар сопровождает короля: В этой жалкой хижине мы находим убежище."
         },
         {
           "german": "beschützen",
           "russian": "защищать",
           "transcription": "[бе-ШЮ-цен]",
-          "sentence": "Heimlich beschütze ich den wahnsinnigen König.",
-          "sentence_translation": "Тайно я защищаю безумного короля."
+          "sentence": "In Lears sturmgepeitschter Nacht begleitet Edgar den König: Heimlich beschütze ich den wahnsinnigen König.",
+          "sentence_translation": "В штормовую ночь Лира Эдгар сопровождает короля: Тайно я защищаю безумного короля."
         },
         {
           "german": "begleiten",
           "russian": "сопровождать",
           "transcription": "[бе-ГЛАЙ-тен]",
-          "sentence": "Als Tom begleite ich Lear durch seine dunkelste Stunde.",
-          "sentence_translation": "Как Том, я сопровождаю Лира в его самый тёмный час."
+          "sentence": "In Lears sturmgepeitschter Nacht begleitet Edgar den König: Als Tom begleite ich Lear durch seine dunkelste Stunde.",
+          "sentence_translation": "В штормовую ночь Лира Эдгар сопровождает короля: Как Том, я сопровождаю Лира в его самый тёмный час."
         },
         {
           "german": "der Donner",
           "russian": "гром",
           "transcription": "[дер ДО-нер]",
-          "sentence": "Der Donner übertönt unsere Schreie.",
-          "sentence_translation": "Гром заглушает наши крики."
+          "sentence": "In Lears sturmgepeitschter Nacht begleitet Edgar den König: Der Donner übertönt unsere Schreie.",
+          "sentence_translation": "В штормовую ночь Лира Эдгар сопровождает короля: Гром заглушает наши крики."
         },
         {
           "german": "der Blitz",
           "russian": "молния",
           "transcription": "[дер БЛИЦ]",
-          "sentence": "Die Blitze erhellen unser Elend.",
-          "sentence_translation": "Молнии освещают нашу нищету."
+          "sentence": "In Lears sturmgepeitschter Nacht begleitet Edgar den König: Die Blitze erhellen unser Elend.",
+          "sentence_translation": "В штормовую ночь Лира Эдгар сопровождает короля: Молнии освещают нашу нищету."
         }
       ],
       "quizzes": [
@@ -392,57 +392,57 @@
           "german": "blind",
           "russian": "слепой",
           "transcription": "[БЛИНД]",
-          "sentence": "Mein blinder Vater erkennt mich nicht.",
-          "sentence_translation": "Мой слепой отец не узнаёт меня."
+          "sentence": "Vor der Hütte führt Edgar den blinden Gloucester: Mein blinder Vater erkennt mich nicht.",
+          "sentence_translation": "Перед хижиной Эдгар ведёт слепого Глостера: Мой слепой отец не узнаёт меня."
         },
         {
           "german": "führen",
           "russian": "вести",
           "transcription": "[ФЮ-рен]",
-          "sentence": "Ich führe ihn sicher durch die Dunkelheit.",
-          "sentence_translation": "Я веду его безопасно сквозь тьму."
+          "sentence": "Vor der Hütte führt Edgar den blinden Gloucester: Ich führe ihn sicher durch die Dunkelheit.",
+          "sentence_translation": "Перед хижиной Эдгар ведёт слепого Глостера: Я веду его безопасно сквозь тьму."
         },
         {
           "german": "die Klippe",
           "russian": "утёс",
           "transcription": "[ди КЛИ-пе]",
-          "sentence": "Er glaubt, wir stehen am Rand der Klippe.",
-          "sentence_translation": "Он думает, мы стоим на краю утёса."
+          "sentence": "Vor der Hütte führt Edgar den blinden Gloucester: Er glaubt, wir stehen am Rand der Klippe.",
+          "sentence_translation": "Перед хижиной Эдгар ведёт слепого Глостера: Он думает, мы стоим на краю утёса."
         },
         {
           "german": "täuschen",
           "russian": "обманывать",
           "transcription": "[ТОЙ-шен]",
-          "sentence": "Ich täusche ihn, um sein Leben zu retten.",
-          "sentence_translation": "Я обманываю его, чтобы спасти его жизнь."
+          "sentence": "Vor der Hütte führt Edgar den blinden Gloucester: Ich täusche ihn, um sein Leben zu retten.",
+          "sentence_translation": "Перед хижиной Эдгар ведёт слепого Глостера: Я обманываю его, чтобы спасти его жизнь."
         },
         {
           "german": "retten",
           "russian": "спасать",
           "transcription": "[РЕ-тен]",
-          "sentence": "Mit List will ich meinen Vater retten.",
-          "sentence_translation": "Хитростью я хочу спасти отца."
+          "sentence": "Vor der Hütte führt Edgar den blinden Gloucester: Mit List will ich meinen Vater retten.",
+          "sentence_translation": "Перед хижиной Эдгар ведёт слепого Глостера: Хитростью я хочу спасти отца."
         },
         {
           "german": "die List",
           "russian": "хитрость",
           "transcription": "[ди ЛИСТ]",
-          "sentence": "Meine List bewahrt ihn vor dem Selbstmord.",
-          "sentence_translation": "Моя хитрость спасает его от самоубийства."
+          "sentence": "Vor der Hütte führt Edgar den blinden Gloucester: Meine List bewahrt ihn vor dem Selbstmord.",
+          "sentence_translation": "Перед хижиной Эдгар ведёт слепого Глостера: Моя хитрость спасает его от самоубийства."
         },
         {
           "german": "trösten",
           "russian": "утешать",
           "transcription": "[ТРЁС-тен]",
-          "sentence": "Als Fremder tröste ich meinen eigenen Vater.",
-          "sentence_translation": "Как чужой, я утешаю собственного отца."
+          "sentence": "Vor der Hütte führt Edgar den blinden Gloucester: Als Fremder tröste ich meinen eigenen Vater.",
+          "sentence_translation": "Перед хижиной Эдгар ведёт слепого Глостера: Как чужой, я утешаю собственного отца."
         },
         {
           "german": "die Verzweiflung",
           "russian": "отчаяние",
           "transcription": "[ди фер-ЦВАЙ-флунг]",
-          "sentence": "Seine Verzweiflung bricht mir das Herz.",
-          "sentence_translation": "Его отчаяние разбивает мне сердце."
+          "sentence": "Vor der Hütte führt Edgar den blinden Gloucester: Seine Verzweiflung bricht mir das Herz.",
+          "sentence_translation": "Перед хижиной Эдгар ведёт слепого Глостера: Его отчаяние разбивает мне сердце."
         }
       ],
       "quizzes": [
@@ -485,57 +485,57 @@
           "german": "der Kampf",
           "russian": "бой",
           "transcription": "[дер КАМПФ]",
-          "sentence": "Der Kampf gegen meinen Bruder ist unvermeidlich.",
-          "sentence_translation": "Бой с моим братом неизбежен."
+          "sentence": "Auf den Klippen von Dover schwört Edgar: Der Kampf gegen meinen Bruder ist unvermeidlich.",
+          "sentence_translation": "На утёсах Дувра Эдгар клянётся: Бой с моим братом неизбежен."
         },
         {
           "german": "das Duell",
           "russian": "дуэль",
           "transcription": "[дас ду-ЭЛЬ]",
-          "sentence": "In diesem Duell kämpfe ich für die Gerechtigkeit.",
-          "sentence_translation": "В этой дуэли я сражаюсь за справедливость."
+          "sentence": "Auf den Klippen von Dover schwört Edgar: In diesem Duell kämpfe ich für die Gerechtigkeit.",
+          "sentence_translation": "На утёсах Дувра Эдгар клянётся: В этой дуэли я сражаюсь за справедливость."
         },
         {
           "german": "die Rache",
           "russian": "месть",
           "transcription": "[ди РА-хе]",
-          "sentence": "Nicht Rache, sondern Gerechtigkeit leitet meine Klinge.",
-          "sentence_translation": "Не месть, а справедливость ведёт мой клинок."
+          "sentence": "Auf den Klippen von Dover schwört Edgar: Nicht Rache, sondern Gerechtigkeit leitet meine Klinge.",
+          "sentence_translation": "На утёсах Дувра Эдгар клянётся: Не месть, а справедливость ведёт мой клинок."
         },
         {
           "german": "enthüllen",
           "russian": "разоблачать",
           "transcription": "[энт-ХЮ-лен]",
-          "sentence": "Ich enthülle meine wahre Identität.",
-          "sentence_translation": "Я разоблачаю свою истинную личность."
+          "sentence": "Auf den Klippen von Dover schwört Edgar: Ich enthülle meine wahre Identität.",
+          "sentence_translation": "На утёсах Дувра Эдгар клянётся: Я разоблачаю свою истинную личность."
         },
         {
           "german": "siegen",
           "russian": "побеждать",
           "transcription": "[ЗИ-ген]",
-          "sentence": "Die Wahrheit wird über die Lüge siegen.",
-          "sentence_translation": "Правда победит ложь."
+          "sentence": "Auf den Klippen von Dover schwört Edgar: Die Wahrheit wird über die Lüge siegen.",
+          "sentence_translation": "На утёсах Дувра Эдгар клянётся: Правда победит ложь."
         },
         {
           "german": "die Gerechtigkeit",
           "russian": "справедливость",
           "transcription": "[ди ге-РЕХ-тиг-кайт]",
-          "sentence": "Die Gerechtigkeit fordert diesen Kampf.",
-          "sentence_translation": "Справедливость требует этого боя."
+          "sentence": "Auf den Klippen von Dover schwört Edgar: Die Gerechtigkeit fordert diesen Kampf.",
+          "sentence_translation": "На утёсах Дувра Эдгар клянётся: Справедливость требует этого боя."
         },
         {
           "german": "das Schwert",
           "russian": "меч",
           "transcription": "[дас ШВЕРТ]",
-          "sentence": "Mein Schwert ist die Waffe der Wahrheit.",
-          "sentence_translation": "Мой меч - оружие правды."
+          "sentence": "Auf den Klippen von Dover schwört Edgar: Mein Schwert ist die Waffe der Wahrheit.",
+          "sentence_translation": "На утёсах Дувра Эдгар клянётся: Мой меч - оружие правды."
         },
         {
           "german": "der Bruder",
           "russian": "брат",
           "transcription": "[дер БРУ-дер]",
-          "sentence": "Mein Bruder muss für seine Verbrechen büßen.",
-          "sentence_translation": "Мой брат должен поплатиться за свои преступления."
+          "sentence": "Auf den Klippen von Dover schwört Edgar: Mein Bruder muss für seine Verbrechen büßen.",
+          "sentence_translation": "На утёсах Дувра Эдгар клянётся: Мой брат должен поплатиться за свои преступления."
         }
       ],
       "quizzes": [
@@ -578,57 +578,57 @@
           "german": "überleben",
           "russian": "выживать",
           "transcription": "[ю-бер-ЛЕ-бен]",
-          "sentence": "Ich habe alle Prüfungen überlebt.",
-          "sentence_translation": "Я пережил все испытания."
+          "sentence": "Nach dem Sieg über Edmund vor Lears Hof erklärt Edgar: Ich habe alle Prüfungen überlebt.",
+          "sentence_translation": "После победы над Эдмундом перед двором Лира Эдгар объявляет: Я пережил все испытания."
         },
         {
           "german": "erben",
           "russian": "наследовать",
           "transcription": "[ЭР-бен]",
-          "sentence": "Nun erbe ich Titel und Verantwortung.",
-          "sentence_translation": "Теперь я наследую титул и ответственность."
+          "sentence": "Nach dem Sieg über Edmund vor Lears Hof erklärt Edgar: Nun erbe ich Titel und Verantwortung.",
+          "sentence_translation": "После победы над Эдмундом перед двором Лира Эдгар объявляет: Теперь я наследую титул и ответственность."
         },
         {
           "german": "die Zukunft",
           "russian": "будущее",
           "transcription": "[ди ЦУ-кунфт]",
-          "sentence": "Die Zukunft des Königreichs liegt in unseren Händen.",
-          "sentence_translation": "Будущее королевства в наших руках."
+          "sentence": "Nach dem Sieg über Edmund vor Lears Hof erklärt Edgar: Die Zukunft des Königreichs liegt in unseren Händen.",
+          "sentence_translation": "После победы над Эдмундом перед двором Лира Эдгар объявляет: Будущее королевства в наших руках."
         },
         {
           "german": "regieren",
           "russian": "править",
           "transcription": "[ре-ГИ-рен]",
-          "sentence": "Mit Weisheit werde ich regieren.",
-          "sentence_translation": "С мудростью я буду править."
+          "sentence": "Nach dem Sieg über Edmund vor Lears Hof erklärt Edgar: Mit Weisheit werde ich regieren.",
+          "sentence_translation": "После победы над Эдмундом перед двором Лира Эдгар объявляет: С мудростью я буду править."
         },
         {
           "german": "die Weisheit",
           "russian": "мудрость",
           "transcription": "[ди ВАЙС-хайт]",
-          "sentence": "Durch Leiden habe ich Weisheit erlangt.",
-          "sentence_translation": "Через страдания я обрёл мудрость."
+          "sentence": "Nach dem Sieg über Edmund vor Lears Hof erklärt Edgar: Durch Leiden habe ich Weisheit erlangt.",
+          "sentence_translation": "После победы над Эдмундом перед двором Лира Эдгар объявляет: Через страдания я обрёл мудрость."
         },
         {
           "german": "die Ordnung",
           "russian": "порядок",
           "transcription": "[ди ОРД-нунг]",
-          "sentence": "Neue Ordnung muss aus dem Chaos entstehen.",
-          "sentence_translation": "Новый порядок должен возникнуть из хаоса."
+          "sentence": "Nach dem Sieg über Edmund vor Lears Hof erklärt Edgar: Neue Ordnung muss aus dem Chaos entstehen.",
+          "sentence_translation": "После победы над Эдмундом перед двором Лира Эдгар объявляет: Новый порядок должен возникнуть из хаоса."
         },
         {
           "german": "die Verantwortung",
           "russian": "ответственность",
           "transcription": "[ди фер-АНТ-вор-тунг]",
-          "sentence": "Die Verantwortung für alle wiegt schwer.",
-          "sentence_translation": "Ответственность за всех тяжела."
+          "sentence": "Nach dem Sieg über Edmund vor Lears Hof erklärt Edgar: Die Verantwortung für alle wiegt schwer.",
+          "sentence_translation": "После победы над Эдмундом перед двором Лира Эдгар объявляет: Ответственность за всех тяжела."
         },
         {
           "german": "neu",
           "russian": "новый",
           "transcription": "[НОЙ]",
-          "sentence": "Eine neue Ära beginnt für unser Land.",
-          "sentence_translation": "Новая эра начинается для нашей страны."
+          "sentence": "Nach dem Sieg über Edmund vor Lears Hof erklärt Edgar: Eine neue Ära beginnt für unser Land.",
+          "sentence_translation": "После победы над Эдмундом перед двором Лира Эдгар объявляет: Новая эра начинается для нашей страны."
         }
       ],
       "quizzes": [

@@ -14,57 +14,57 @@
           "german": "der Diener",
           "russian": "слуга",
           "transcription": "[дер ДИ-нер]",
-          "sentence": "Als Diener gehorche ich meiner Herrin blind.",
-          "sentence_translation": "Как слуга я слепо подчиняюсь своей госпоже."
+          "sentence": "Im Haus der Goneril herrscht Oswald als Verwalter: Als Diener gehorche ich meiner Herrin blind.",
+          "sentence_translation": "В доме Гонериль Освальд распоряжается как управляющий: Как слуга я слепо подчиняюсь своей госпоже."
         },
         {
           "german": "der Gehorsam",
           "russian": "послушание",
           "transcription": "[дер ге-ХОР-зам]",
-          "sentence": "Mein Gehorsam kennt keine Fragen.",
-          "sentence_translation": "Моё послушание не знает вопросов."
+          "sentence": "Im Haus der Goneril herrscht Oswald als Verwalter: Mein Gehorsam kennt keine Fragen.",
+          "sentence_translation": "В доме Гонериль Освальд распоряжается как управляющий: Моё послушание не знает вопросов."
         },
         {
           "german": "die Ergebenheit",
           "russian": "преданность",
           "transcription": "[ди ер-ГЕ-бен-хайт]",
-          "sentence": "Meine Ergebenheit gilt nur Lady Goneril.",
-          "sentence_translation": "Моя преданность принадлежит только леди Гонерилье."
+          "sentence": "Im Haus der Goneril herrscht Oswald als Verwalter: Meine Ergebenheit gilt nur Lady Goneril.",
+          "sentence_translation": "В доме Гонериль Освальд распоряжается как управляющий: Моя преданность принадлежит только леди Гонерилье."
         },
         {
           "german": "dienen",
           "russian": "служить",
           "transcription": "[ДИ-нен]",
-          "sentence": "Ich diene ohne Gewissen oder Ehre.",
-          "sentence_translation": "Я служу без совести и чести."
+          "sentence": "Im Haus der Goneril herrscht Oswald als Verwalter: Ich diene ohne Gewissen oder Ehre.",
+          "sentence_translation": "В доме Гонериль Освальд распоряжается как управляющий: Я служу без совести и чести."
         },
         {
           "german": "der Verwalter",
           "russian": "управляющий",
           "transcription": "[дер фер-ВАЛЬ-тер]",
-          "sentence": "Als Verwalter kontrolliere ich den Haushalt.",
-          "sentence_translation": "Как управляющий я контролирую дом."
+          "sentence": "Im Haus der Goneril herrscht Oswald als Verwalter: Als Verwalter kontrolliere ich den Haushalt.",
+          "sentence_translation": "В доме Гонериль Освальд распоряжается как управляющий: Как управляющий я контролирую дом."
         },
         {
           "german": "ergeben",
           "russian": "покорный",
           "transcription": "[ер-ГЕ-бен]",
-          "sentence": "Ergeben folge ich jedem Befehl.",
-          "sentence_translation": "Покорно я следую каждому приказу."
+          "sentence": "Im Haus der Goneril herrscht Oswald als Verwalter: Ergeben folge ich jedem Befehl.",
+          "sentence_translation": "В доме Гонериль Освальд распоряжается как управляющий: Покорно я следую каждому приказу."
         },
         {
           "german": "unterwürfig",
           "russian": "раболепный",
           "transcription": "[УН-тер-вюр-фиг]",
-          "sentence": "Unterwürfig krieche ich vor meiner Herrin.",
-          "sentence_translation": "Раболепно я пресмыкаюсь перед госпожой."
+          "sentence": "Im Haus der Goneril herrscht Oswald als Verwalter: Unterwürfig krieche ich vor meiner Herrin.",
+          "sentence_translation": "В доме Гонериль Освальд распоряжается как управляющий: Раболепно я пресмыкаюсь перед госпожой."
         },
         {
           "german": "befolgen",
           "russian": "исполнять",
           "transcription": "[бе-ФОЛЬ-ген]",
-          "sentence": "Jeden Befehl befolge ich sofort.",
-          "sentence_translation": "Каждый приказ я исполняю немедленно."
+          "sentence": "Im Haus der Goneril herrscht Oswald als Verwalter: Jeden Befehl befolge ich sofort.",
+          "sentence_translation": "В доме Гонериль Освальд распоряжается как управляющий: Каждый приказ я исполняю немедленно."
         }
       ],
       "theatrical_scene": {
@@ -107,50 +107,50 @@
           "german": "der Bote",
           "russian": "гонец",
           "transcription": "[дер БО-те]",
-          "sentence": "Als Bote überbringe ich böse Nachrichten.",
-          "sentence_translation": "Как гонец я приношу дурные вести."
+          "sentence": "Zwischen Gonerils Palast und Regans Burg rennt Oswald: Als Bote überbringe ich böse Nachrichten.",
+          "sentence_translation": "Между дворцом Гонериль и замком Реганы Освальд бегает: Как гонец я приношу дурные вести."
         },
         {
           "german": "der Auftrag",
           "russian": "поручение",
           "transcription": "[дер АУФ-траг]",
-          "sentence": "Jeden Auftrag erfülle ich gewissenhaft.",
-          "sentence_translation": "Каждое поручение я выполняю добросовестно."
+          "sentence": "Zwischen Gonerils Palast und Regans Burg rennt Oswald: Jeden Auftrag erfülle ich gewissenhaft.",
+          "sentence_translation": "Между дворцом Гонериль и замком Реганы Освальд бегает: Каждое поручение я выполняю добросовестно."
         },
         {
           "german": "die Eile",
           "russian": "спешка",
           "transcription": "[ди АЙ-ле]",
-          "sentence": "In großer Eile renne ich hin und her.",
-          "sentence_translation": "В большой спешке я бегаю туда-сюда."
+          "sentence": "Zwischen Gonerils Palast und Regans Burg rennt Oswald: In großer Eile renne ich hin und her.",
+          "sentence_translation": "Между дворцом Гонериль и замком Реганы Освальд бегает: В большой спешке я бегаю туда-сюда."
         },
         {
           "german": "überbringen",
           "russian": "передавать",
           "transcription": "[ю-бер-БРИН-ген]",
-          "sentence": "Ich überbringe Befehle an alle Diener.",
-          "sentence_translation": "Я передаю приказы всем слугам."
+          "sentence": "Zwischen Gonerils Palast und Regans Burg rennt Oswald: Ich überbringe Befehle an alle Diener.",
+          "sentence_translation": "Между дворцом Гонериль и замком Реганы Освальд бегает: Я передаю приказы всем слугам."
         },
         {
           "german": "hasten",
           "russian": "спешить",
           "transcription": "[ХАС-тен]",
-          "sentence": "Ich haste von einem Ort zum anderen.",
-          "sentence_translation": "Я спешу с места на место."
+          "sentence": "Zwischen Gonerils Palast und Regans Burg rennt Oswald: Ich haste von einem Ort zum anderen.",
+          "sentence_translation": "Между дворцом Гонериль и замком Реганы Освальд бегает: Я спешу с места на место."
         },
         {
           "german": "die Botschaft",
           "russian": "послание",
           "transcription": "[ди БОТ-шафт]",
-          "sentence": "Die Botschaft meiner Herrin ist grausam.",
-          "sentence_translation": "Послание моей госпожи жестоко."
+          "sentence": "Zwischen Gonerils Palast und Regans Burg rennt Oswald: Die Botschaft meiner Herrin ist grausam.",
+          "sentence_translation": "Между дворцом Гонериль и замком Реганы Освальд бегает: Послание моей госпожи жестоко."
         },
         {
           "german": "eilen",
           "russian": "торопиться",
           "transcription": "[АЙ-лен]",
-          "sentence": "Ich eile, um ihre Wünsche zu erfüllen.",
-          "sentence_translation": "Я тороплюсь исполнить её желания."
+          "sentence": "Zwischen Gonerils Palast und Regans Burg rennt Oswald: Ich eile, um ihre Wünsche zu erfüllen.",
+          "sentence_translation": "Между дворцом Гонериль и замком Реганы Освальд бегает: Я тороплюсь исполнить её желания."
         }
       ],
       "theatrical_scene": {
@@ -193,57 +193,57 @@
           "german": "die Beleidigung",
           "russian": "оскорбление",
           "transcription": "[ди бе-ЛАЙ-ди-гунг]",
-          "sentence": "Jede Beleidigung spreche ich mit Genuss aus.",
-          "sentence_translation": "Каждое оскорбление я произношу с наслаждением."
+          "sentence": "Vor König Lear am Tor von Gonerils Schloss spottet Oswald: Jede Beleidigung spreche ich mit Genuss aus.",
+          "sentence_translation": "Перед королём Лиром у ворот замка Гонериль Освальд издевается: Каждое оскорбление я произношу с наслаждением."
         },
         {
           "german": "die Respektlosigkeit",
           "russian": "неуважение",
           "transcription": "[ди рес-ПЕКТ-ло-зиг-кайт]",
-          "sentence": "Meine Respektlosigkeit kennt keine Grenzen.",
-          "sentence_translation": "Моё неуважение не знает границ."
+          "sentence": "Vor König Lear am Tor von Gonerils Schloss spottet Oswald: Meine Respektlosigkeit kennt keine Grenzen.",
+          "sentence_translation": "Перед королём Лиром у ворот замка Гонериль Освальд издевается: Моё неуважение не знает границ."
         },
         {
           "german": "die Feigheit",
           "russian": "трусость",
           "transcription": "[ди ФАЙГ-хайт]",
-          "sentence": "Aus Feigheit greife ich nur Schwache an.",
-          "sentence_translation": "Из трусости я нападаю только на слабых."
+          "sentence": "Vor König Lear am Tor von Gonerils Schloss spottet Oswald: Aus Feigheit greife ich nur Schwache an.",
+          "sentence_translation": "Перед королём Лиром у ворот замка Гонериль Освальд издевается: Из трусости я нападаю только на слабых."
         },
         {
           "german": "beleidigen",
           "russian": "оскорблять",
           "transcription": "[бе-ЛАЙ-ди-ген]",
-          "sentence": "Ich beleidige den alten König ohne Scham.",
-          "sentence_translation": "Я оскорбляю старого короля без стыда."
+          "sentence": "Vor König Lear am Tor von Gonerils Schloss spottet Oswald: Ich beleidige den alten König ohne Scham.",
+          "sentence_translation": "Перед королём Лиром у ворот замка Гонериль Освальд издевается: Я оскорбляю старого короля без стыда."
         },
         {
           "german": "verhöhnen",
           "russian": "высмеивать",
           "transcription": "[фер-ХЁ-нен]",
-          "sentence": "Ich verhöhne seine königliche Würde.",
-          "sentence_translation": "Я высмеиваю его королевское достоинство."
+          "sentence": "Vor König Lear am Tor von Gonerils Schloss spottet Oswald: Ich verhöhne seine königliche Würde.",
+          "sentence_translation": "Перед королём Лиром у ворот замка Гонериль Освальд издевается: Я высмеиваю его королевское достоинство."
         },
         {
           "german": "frech",
           "russian": "дерзкий",
           "transcription": "[ФРЕХ]",
-          "sentence": "Frech widerspreche ich dem alten Mann.",
-          "sentence_translation": "Дерзко я возражаю старику."
+          "sentence": "Vor König Lear am Tor von Gonerils Schloss spottet Oswald: Frech widerspreche ich dem alten Mann.",
+          "sentence_translation": "Перед королём Лиром у ворот замка Гонериль Освальд издевается: Дерзко я возражаю старику."
         },
         {
           "german": "missachten",
           "russian": "пренебрегать",
           "transcription": "[МИС-ах-тен]",
-          "sentence": "Ich missachte seinen früheren Rang.",
-          "sentence_translation": "Я пренебрегаю его прежним рангом."
+          "sentence": "Vor König Lear am Tor von Gonerils Schloss spottet Oswald: Ich missachte seinen früheren Rang.",
+          "sentence_translation": "Перед королём Лиром у ворот замка Гонериль Освальд издевается: Я пренебрегаю его прежним рангом."
         },
         {
           "german": "feige",
           "russian": "трусливый",
           "transcription": "[ФАЙ-ге]",
-          "sentence": "Feige verstecke ich mich hinter meiner Herrin.",
-          "sentence_translation": "Трусливо я прячусь за своей госпожой."
+          "sentence": "Vor König Lear am Tor von Gonerils Schloss spottet Oswald: Feige verstecke ich mich hinter meiner Herrin.",
+          "sentence_translation": "Перед королём Лиром у ворот замка Гонериль Освальд издевается: Трусливо я прячусь за своей госпожой."
         }
       ],
       "theatrical_scene": {
@@ -286,50 +286,50 @@
           "german": "der Spion",
           "russian": "шпион",
           "transcription": "[дер шпи-ОН]",
-          "sentence": "Als Spion lausche ich an jeder Tür.",
-          "sentence_translation": "Как шпион я подслушиваю у каждой двери."
+          "sentence": "In den Korridoren von Albanys Burg schleicht Oswald: Als Spion lausche ich an jeder Tür.",
+          "sentence_translation": "В коридорах замка Олбани Освальд крадётся: Как шпион я подслушиваю у каждой двери."
         },
         {
           "german": "der Verrat",
           "russian": "предательство",
           "transcription": "[дер фер-РАТ]",
-          "sentence": "Der Verrat ist mein tägliches Geschäft.",
-          "sentence_translation": "Предательство - моё ежедневное дело."
+          "sentence": "In den Korridoren von Albanys Burg schleicht Oswald: Der Verrat ist mein tägliches Geschäft.",
+          "sentence_translation": "В коридорах замка Олбани Освальд крадётся: Предательство - моё ежедневное дело."
         },
         {
           "german": "die Heimlichkeit",
           "russian": "скрытность",
           "transcription": "[ди ХАЙМ-лих-кайт]",
-          "sentence": "In Heimlichkeit sammle ich Informationen.",
-          "sentence_translation": "В скрытности я собираю информацию."
+          "sentence": "In den Korridoren von Albanys Burg schleicht Oswald: In Heimlichkeit sammle ich Informationen.",
+          "sentence_translation": "В коридорах замка Олбани Освальд крадётся: В скрытности я собираю информацию."
         },
         {
           "german": "spionieren",
           "russian": "шпионить",
           "transcription": "[шпи-о-НИ-рен]",
-          "sentence": "Ich spioniere für meine böse Herrin.",
-          "sentence_translation": "Я шпионю для моей злой госпожи."
+          "sentence": "In den Korridoren von Albanys Burg schleicht Oswald: Ich spioniere für meine böse Herrin.",
+          "sentence_translation": "В коридорах замка Олбани Освальд крадётся: Я шпионю для моей злой госпожи."
         },
         {
           "german": "lauschen",
           "russian": "подслушивать",
           "transcription": "[ЛАУ-шен]",
-          "sentence": "Heimlich lausche ich allen Gesprächen.",
-          "sentence_translation": "Тайно я подслушиваю все разговоры."
+          "sentence": "In den Korridoren von Albanys Burg schleicht Oswald: Heimlich lausche ich allen Gesprächen.",
+          "sentence_translation": "В коридорах замка Олбани Освальд крадётся: Тайно я подслушиваю все разговоры."
         },
         {
           "german": "verraten",
           "russian": "выдавать",
           "transcription": "[фер-РА-тен]",
-          "sentence": "Ich verrate jeden an meine Herrin.",
-          "sentence_translation": "Я выдаю каждого своей госпоже."
+          "sentence": "In den Korridoren von Albanys Burg schleicht Oswald: Ich verrate jeden an meine Herrin.",
+          "sentence_translation": "В коридорах замка Олбани Освальд крадётся: Я выдаю каждого своей госпоже."
         },
         {
           "german": "schnüffeln",
           "russian": "вынюхивать",
           "transcription": "[ШНЮФ-фельн]",
-          "sentence": "Überall schnüffle ich nach Geheimnissen.",
-          "sentence_translation": "Везде я вынюхиваю секреты."
+          "sentence": "In den Korridoren von Albanys Burg schleicht Oswald: Überall schnüffle ich nach Geheimnissen.",
+          "sentence_translation": "В коридорах замка Олбани Освальд крадётся: Везде я вынюхиваю секреты."
         }
       ],
       "theatrical_scene": {
@@ -372,57 +372,57 @@
           "german": "die Intrige",
           "russian": "интрига",
           "transcription": "[ди ин-ТРИ-ге]",
-          "sentence": "Jede Intrige spinne ich mit Freude.",
-          "sentence_translation": "Каждую интригу я плету с радостью."
+          "sentence": "Bei nächtlichen Beratungen mit Goneril plant Oswald: Jede Intrige spinne ich mit Freude.",
+          "sentence_translation": "На ночных советах с Гонериль Освальд планирует: Каждую интригу я плету с радостью."
         },
         {
           "german": "der Plan",
           "russian": "план",
           "transcription": "[дер ПЛАН]",
-          "sentence": "Mein hinterhältiger Plan wird funktionieren.",
-          "sentence_translation": "Мой коварный план сработает."
+          "sentence": "Bei nächtlichen Beratungen mit Goneril plant Oswald: Mein hinterhältiger Plan wird funktionieren.",
+          "sentence_translation": "На ночных советах с Гонериль Освальд планирует: Мой коварный план сработает."
         },
         {
           "german": "die Hinterlist",
           "russian": "коварство",
           "transcription": "[ди ХИН-тер-лист]",
-          "sentence": "Mit Hinterlist verfolge ich meine Ziele.",
-          "sentence_translation": "С коварством я преследую свои цели."
+          "sentence": "Bei nächtlichen Beratungen mit Goneril plant Oswald: Mit Hinterlist verfolge ich meine Ziele.",
+          "sentence_translation": "На ночных советах с Гонериль Освальд планирует: С коварством я преследую свои цели."
         },
         {
           "german": "schmieden",
           "russian": "ковать",
           "transcription": "[ШМИ-ден]",
-          "sentence": "Ich schmiede Pläne gegen alle Feinde.",
-          "sentence_translation": "Я кую планы против всех врагов."
+          "sentence": "Bei nächtlichen Beratungen mit Goneril plant Oswald: Ich schmiede Pläne gegen alle Feinde.",
+          "sentence_translation": "На ночных советах с Гонериль Освальд планирует: Я кую планы против всех врагов."
         },
         {
           "german": "hintergehen",
           "russian": "обманывать",
           "transcription": "[ХИН-тер-ге-ен]",
-          "sentence": "Ich hintergehe jeden, der mir traut.",
-          "sentence_translation": "Я обманываю каждого, кто мне доверяет."
+          "sentence": "Bei nächtlichen Beratungen mit Goneril plant Oswald: Ich hintergehe jeden, der mir traut.",
+          "sentence_translation": "На ночных советах с Гонериль Освальд планирует: Я обманываю каждого, кто мне доверяет."
         },
         {
           "german": "tückisch",
           "russian": "коварный",
           "transcription": "[ТЮ-киш]",
-          "sentence": "Tückisch plane ich meinen nächsten Schritt.",
-          "sentence_translation": "Коварно я планирую свой следующий шаг."
+          "sentence": "Bei nächtlichen Beratungen mit Goneril plant Oswald: Tückisch plane ich meinen nächsten Schritt.",
+          "sentence_translation": "На ночных советах с Гонериль Освальд планирует: Коварно я планирую свой следующий шаг."
         },
         {
           "german": "verschlagen",
           "russian": "хитрый",
           "transcription": "[фер-ШЛАГ-ен]",
-          "sentence": "Verschlagen verberge ich meine wahren Absichten.",
-          "sentence_translation": "Хитро я скрываю свои истинные намерения."
+          "sentence": "Bei nächtlichen Beratungen mit Goneril plant Oswald: Verschlagen verberge ich meine wahren Absichten.",
+          "sentence_translation": "На ночных советах с Гонериль Освальд планирует: Хитро я скрываю свои истинные намерения."
         },
         {
           "german": "die Falle",
           "russian": "ловушка",
           "transcription": "[ди ФА-ле]",
-          "sentence": "Ich stelle Fallen für die Ahnungslosen.",
-          "sentence_translation": "Я ставлю ловушки для ничего не подозревающих."
+          "sentence": "Bei nächtlichen Beratungen mit Goneril plant Oswald: Ich stelle Fallen für die Ahnungslosen.",
+          "sentence_translation": "На ночных советах с Гонериль Освальд планирует: Я ставлю ловушки для ничего не подозревающих."
         }
       ],
       "theatrical_scene": {
@@ -465,50 +465,50 @@
           "german": "die Verfolgung",
           "russian": "преследование",
           "transcription": "[ди фер-ФОЛЬ-гунг]",
-          "sentence": "Die Verfolgung des blinden Grafen beginnt.",
-          "sentence_translation": "Преследование слепого графа начинается."
+          "sentence": "Auf den Feldern nahe Dover jagt Oswald den blinden Gloucester: Die Verfolgung des blinden Grafen beginnt.",
+          "sentence_translation": "На полях близ Дувра Освальд гонится за слепым Глостером: Преследование слепого графа начинается."
         },
         {
           "german": "die Jagd",
           "russian": "охота",
           "transcription": "[ди ЯГДТ]",
-          "sentence": "Die Jagd auf Gloucester macht mir Spaß.",
-          "sentence_translation": "Охота на Глостера доставляет мне удовольствие."
+          "sentence": "Auf den Feldern nahe Dover jagt Oswald den blinden Gloucester: Die Jagd auf Gloucester macht mir Spaß.",
+          "sentence_translation": "На полях близ Дувра Освальд гонится за слепым Глостером: Охота на Глостера доставляет мне удовольствие."
         },
         {
           "german": "verfolgen",
           "russian": "преследовать",
           "transcription": "[фер-ФОЛЬ-ген]",
-          "sentence": "Gnadenlos verfolge ich den alten Mann.",
-          "sentence_translation": "Безжалостно я преследую старика."
+          "sentence": "Auf den Feldern nahe Dover jagt Oswald den blinden Gloucester: Gnadenlos verfolge ich den alten Mann.",
+          "sentence_translation": "На полях близ Дувра Освальд гонится за слепым Глостером: Безжалостно я преследую старика."
         },
         {
           "german": "jagen",
           "russian": "гнаться",
           "transcription": "[Я-ген]",
-          "sentence": "Wie ein Hund jage ich meine Beute.",
-          "sentence_translation": "Как собака я гонюсь за добычей."
+          "sentence": "Auf den Feldern nahe Dover jagt Oswald den blinden Gloucester: Wie ein Hund jage ich meine Beute.",
+          "sentence_translation": "На полях близ Дувра Освальд гонится за слепым Глостером: Как собака я гонюсь за добычей."
         },
         {
           "german": "aufspüren",
           "russian": "выслеживать",
           "transcription": "[АУФ-шпю-рен]",
-          "sentence": "Ich spüre den Flüchtling überall auf.",
-          "sentence_translation": "Я выслеживаю беглеца повсюду."
+          "sentence": "Auf den Feldern nahe Dover jagt Oswald den blinden Gloucester: Ich spüre den Flüchtling überall auf.",
+          "sentence_translation": "На полях близ Дувра Освальд гонится за слепым Глостером: Я выслеживаю беглеца повсюду."
         },
         {
           "german": "hetzen",
           "russian": "травить",
           "transcription": "[ХЕ-цен]",
-          "sentence": "Ich hetze ihn bis zum Ende.",
-          "sentence_translation": "Я травлю его до конца."
+          "sentence": "Auf den Feldern nahe Dover jagt Oswald den blinden Gloucester: Ich hetze ihn bis zum Ende.",
+          "sentence_translation": "На полях близ Дувра Освальд гонится за слепым Глостером: Я травлю его до конца."
         },
         {
           "german": "die Beute",
           "russian": "добыча",
           "transcription": "[ди БОЙ-те]",
-          "sentence": "Der Graf ist meine leichte Beute.",
-          "sentence_translation": "Граф - моя лёгкая добыча."
+          "sentence": "Auf den Feldern nahe Dover jagt Oswald den blinden Gloucester: Der Graf ist meine leichte Beute.",
+          "sentence_translation": "На полях близ Дувра Освальд гонится за слепым Глостером: Граф - моя лёгкая добыча."
         }
       ],
       "theatrical_scene": {
@@ -551,57 +551,57 @@
           "german": "der Tod",
           "russian": "смерть",
           "transcription": "[дер ТОД]",
-          "sentence": "Der Tod ereilt mich durch Эдгars Hand.",
-          "sentence_translation": "Смерть настигает меня от руки Эдгара."
+          "sentence": "Als Edgar ihn am Strand von Dover stellt, jammert Oswald: Der Tod ereilt mich durch Эдгars Hand.",
+          "sentence_translation": "Когда Эдгар настигает его на берегу Дувра, Освальд стонет: Смерть настигает меня от руки Эдгара."
         },
         {
           "german": "die Feigheit",
           "russian": "трусость",
           "transcription": "[ди ФАЙГ-хайт]",
-          "sentence": "Meine Feigheit führt zu meinem Ende.",
-          "sentence_translation": "Моя трусость приводит к моему концу."
+          "sentence": "Als Edgar ihn am Strand von Dover stellt, jammert Oswald: Meine Feigheit führt zu meinem Ende.",
+          "sentence_translation": "Когда Эдгар настигает его на берегу Дувра, Освальд стонет: Моя трусость приводит к моему концу."
         },
         {
           "german": "die Niederlage",
           "russian": "поражение",
           "transcription": "[ди НИ-дер-ла-ге]",
-          "sentence": "Die Niederlage ist mein letztes Schicksal.",
-          "sentence_translation": "Поражение - моя последняя судьба."
+          "sentence": "Als Edgar ihn am Strand von Dover stellt, jammert Oswald: Die Niederlage ist mein letztes Schicksal.",
+          "sentence_translation": "Когда Эдгар настигает его на берегу Дувра, Освальд стонет: Поражение - моя последняя судьба."
         },
         {
           "german": "fallen",
           "russian": "падать",
           "transcription": "[ФА-лен]",
-          "sentence": "Ich falle wie der Feigling, der ich bin.",
-          "sentence_translation": "Я падаю как трус, которым являюсь."
+          "sentence": "Als Edgar ihn am Strand von Dover stellt, jammert Oswald: Ich falle wie der Feigling, der ich bin.",
+          "sentence_translation": "Когда Эдгар настигает его на берегу Дувра, Освальд стонет: Я падаю как трус, которым являюсь."
         },
         {
           "german": "unterliegen",
           "russian": "проигрывать",
           "transcription": "[ун-тер-ЛИ-ген]",
-          "sentence": "Ich unterliege dem edlen Edgar.",
-          "sentence_translation": "Я проигрываю благородному Эдгару."
+          "sentence": "Als Edgar ihn am Strand von Dover stellt, jammert Oswald: Ich unterliege dem edlen Edgar.",
+          "sentence_translation": "Когда Эдгар настигает его на берегу Дувра, Освальд стонет: Я проигрываю благородному Эдгару."
         },
         {
           "german": "wimmern",
           "russian": "хныкать",
           "transcription": "[ВИМ-мерн]",
-          "sentence": "Wimmernd bitte ich um Gnade.",
-          "sentence_translation": "Хныкая, я прошу о пощаде."
+          "sentence": "Als Edgar ihn am Strand von Dover stellt, jammert Oswald: Wimmernd bitte ich um Gnade.",
+          "sentence_translation": "Когда Эдгар настигает его на берегу Дувра, Освальд стонет: Хныкая, я прошу о пощаде."
         },
         {
           "german": "betteln",
           "russian": "умолять",
           "transcription": "[БЕ-тельн]",
-          "sentence": "Um mein Leben bettle ich vergeblich.",
-          "sentence_translation": "О жизни я умоляю напрасно."
+          "sentence": "Als Edgar ihn am Strand von Dover stellt, jammert Oswald: Um mein Leben bettle ich vergeblich.",
+          "sentence_translation": "Когда Эдгар настигает его на берегу Дувра, Освальд стонет: О жизни я умоляю напрасно."
         },
         {
           "german": "erbärmlich",
           "russian": "жалкий",
           "transcription": "[ер-БЕРМ-лих]",
-          "sentence": "Erbärmlich ende ich wie ich gelebt habe.",
-          "sentence_translation": "Жалко я заканчиваю, как и жил."
+          "sentence": "Als Edgar ihn am Strand von Dover stellt, jammert Oswald: Erbärmlich ende ich wie ich gelebt habe.",
+          "sentence_translation": "Когда Эдгар настигает его на берегу Дувра, Освальд стонет: Жалко я заканчиваю, как и жил."
         }
       ],
       "theatrical_scene": {
