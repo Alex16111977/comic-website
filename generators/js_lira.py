@@ -624,19 +624,14 @@ function displayVocabulary(phaseKey) {
                 ? `<div class="word-themes">${item.themes.map(theme => `<span class=\"word-theme\">${theme}</span>`).join('')}</div>`
                 : '';
 
+            // Упрощенная карточка - только слово, перевод и транскрипция
             card.innerHTML = `
                 <div class="word-card-header">
-                    ${visualHintMarkup}
                     <div class="word-meta">
-                        <div class="word-german">${item.word}</div>
+                        <div class="word-german"><strong>${item.word}</strong></div>
                         <div class="word-translation">${item.translation}</div>
-                        <div class="word-transcription">${item.transcription}</div>
+                        <div class="word-transcription"><em>${item.transcription}</em></div>
                     </div>
-                </div>
-                ${themesMarkup}
-                <div class="word-sentence">
-                    <div class="sentence-german">"${item.sentence}"</div>
-                    <div class="sentence-translation">${item.sentenceTranslation}</div>
                 </div>
             `;
             grid.appendChild(card);
