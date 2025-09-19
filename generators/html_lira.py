@@ -71,10 +71,10 @@ class LiraHTMLGenerator(BaseGenerator):
             if not phase.get("id"):
                 phase["id"] = f"phase-{index}"
 
+        exercises, quizzes, quizzes_json = self._prepare_exercises(journey_phases)
+
         relations_metadata = self._collect_relations_metadata(journey_phases)
         js = LiraJSGenerator.generate(character)
-
-        exercises, quizzes, quizzes_json = self._prepare_exercises(journey_phases)
         initial_description = journey_phases[0].get("description", "") if journey_phases else ""
         first_phase_title = journey_phases[0].get("title", "") if journey_phases else ""
         initial_progress = self._initial_progress_percentage(len(journey_phases))
@@ -235,6 +235,8 @@ class LiraHTMLGenerator(BaseGenerator):
                         "correct_index": correct_index,
                     }
                 )
+
+            phase["quizzes"] = phase_quizzes
 
             quizzes.append(
                 {

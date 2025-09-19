@@ -60,10 +60,20 @@ class LiraJSGenerator:
 
             quizzes = []
             for quiz in phase.get('quizzes', []):
+                choices = list(quiz.get('choices', []))
+                correct_index = quiz.get('correct_index')
+                if correct_index is None:
+                    correct_index = quiz.get('correctIndex', 0)
+
+                try:
+                    correct_index = int(correct_index)
+                except (TypeError, ValueError):
+                    correct_index = 0
+
                 quizzes.append({
                     'question': quiz.get('question', ''),
-                    'choices': quiz.get('choices', []),
-                    'correctIndex': quiz.get('correct_index', 0),
+                    'choices': choices,
+                    'correctIndex': correct_index,
                 })
 
             phase_vocabularies[phase_id] = {
