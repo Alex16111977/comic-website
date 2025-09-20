@@ -31,6 +31,8 @@ class PhaseSerializer:
             "const STORAGE_PREFIX = 'liraJourney';\n",
             "const REVIEW_QUEUE_KEY = `${STORAGE_PREFIX}:reviewQueue`;\n",
             "const quizStateCache = {};\n\n",
+            "window.phaseData = phaseVocabularies;\n",
+            "window.phaseKeys = Object.keys(phaseVocabularies);\n\n",
         ]
         return "".join(parts)
 
@@ -40,15 +42,32 @@ class PhaseSerializer:
             phase_id = phase.get("id")
             if not phase_id:
                 continue
+            vocabulary_entries = [self._serialize_vocabulary_entry(word) for word in phase.get("vocabulary", [])]
             phases[phase_id] = {
                 "title": phase.get("title", ""),
                 "description": phase.get("description", ""),
+                "vocabulary": vocabulary_entries,
                 "words": [self._serialize_word(word) for word in phase.get("vocabulary", [])],
                 "quizzes": [self._serialize_quiz(quiz) for quiz in phase.get("quizzes", [])],
                 "quizAttempts": {},
                 "sentenceParts": self._sentence_constructors(phase),
             }
         return phases
+
+    @staticmethod
+    def _serialize_vocabulary_entry(word: Dict[str, Any]) -> Dict[str, Any]:
+        return {
+            "german": word.get("german", ""),
+            "russian": word.get("russian", ""),
+            "sentence": word.get("sentence", ""),
+            "sentence_translation": word.get("sentence_translation", ""),
+            "russian_hint": word.get("russian_hint", ""),
+            "transcription": word.get("transcription", ""),
+            "themes": _ensure_list(word.get("themes")),
+            "sentence_parts": _ensure_list(word.get("sentence_parts")),
+            "synonyms": _ensure_list(word.get("synonyms")),
+            "visual_hint": word.get("visual_hint", ""),
+        }
 
     @staticmethod
     def _serialize_word(word: Dict[str, Any]) -> Dict[str, Any]:
