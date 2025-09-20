@@ -30,11 +30,11 @@ def main():
     if static_src.exists():
         shutil.copytree(static_src, config.OUTPUT_DIR / "static", dirs_exist_ok=True)
     
-    # Copy training.html from data to output
-    training_src = config.DATA_DIR / "training.html"
+    # Copy training.html from templates to output
+    training_src = config.TEMPLATES_DIR / "training.html"
     if training_src.exists():
         shutil.copy2(training_src, config.OUTPUT_DIR / "training.html")
-        print("[OK] Copied training.html to output")
+        print("[OK] Copied training.html from templates")
     
     # Initialize generators
     lira_gen = LiraHTMLGenerator(config)
