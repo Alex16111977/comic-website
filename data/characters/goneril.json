@@ -19,89 +19,153 @@
         {
           "german": "die Lüge",
           "russian": "ложь",
+          "russian_hint": "намеренный обман",
           "transcription": "[ди ЛЮ-ге]",
-          "sentence": "Goneril steht unter dem glühenden Kronleuchter des Thronsaals. Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Lüge“ bleibt lebendig.",
-          "sentence_translation": "Гонерилья стоит под пылающей люстрой тронного зала. Каждой клеткой тела я обещаю: слово «ложь» останется живым.",
+          "sentence": "Die grausame Goneril flüstert kalt die Lüge vor Lears Thron im Saal.",
+          "sentence_translation": "Жестокая Гонериль холодно шепчет ложь перед троном Лира в зале.",
           "sentence_parts": [
-            "Goneril steht unter dem glühenden Kronleuchter des Thronsaals.",
-            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Lüge“ bleibt lebendig."
+            "Die grausame Goneril",
+            "flüstert kalt",
+            "die Lüge",
+            "vor Lears Thron im Saal."
+          ],
+          "synonyms": [
+            "обман",
+            "неправда",
+            "враньё"
           ]
         },
         {
           "german": "schwören",
           "russian": "клясться",
+          "russian_hint": "торжественно обещать",
           "transcription": "[ШВЁ-рен]",
-          "sentence": "Neben der ausgerollten Reichskarte beugt sich Goneril über Lears schweren Tisch. Ich flüstere den Wächtern des Schicksals zu: Das Wort „schwören“ darf nicht vergehen.",
-          "sentence_translation": "У развернутой карты королевства Гонерилья склоняется над тяжёлым столом Лира. Я шепчу стражам судьбы: слово «клясться» не должно исчезнуть.",
+          "sentence": "Die grausame Goneril schwört laut auf ihre Liebe vor Lears Thron heute.",
+          "sentence_translation": "Жестокая Гонериль громко клянётся в своей любви перед троном Лира сегодня.",
           "sentence_parts": [
-            "Neben der ausgerollten Reichskarte beugt sich Goneril über Lears schweren Tisch.",
-            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „schwören“ darf nicht vergehen."
+            "Die grausame Goneril",
+            "schwört laut",
+            "auf ihre Liebe",
+            "vor Lears Thron heute."
+          ],
+          "synonyms": [
+            "присягать",
+            "обещать",
+            "заклясться"
           ]
         },
         {
           "german": "das Erbe",
           "russian": "наследство",
+          "russian_hint": "доля наследства",
           "transcription": "[дас ЕР-бе]",
-          "sentence": "Vor den steinernen Ahnenstatuen verschränkt Goneril die Hände hinter dem Rücken. Mit jeder Faser meines Körpers verspreche ich: Das Wort „das Erbe“ bleibt lebendig.",
-          "sentence_translation": "Перед каменными статуями предков Гонерилья сцепляет руки за спиной. Каждой клеткой тела я обещаю: слово «наследство» останется живым.",
+          "sentence": "Die grausame Goneril beansprucht gierig das Erbe im prunkvollen Saal heute.",
+          "sentence_translation": "Жестокая Гонериль жадно требует наследство в роскошном зале сегодня.",
           "sentence_parts": [
-            "Vor den steinernen Ahnenstatuen verschränkt Goneril die Hände hinter dem Rücken.",
-            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „das Erbe“ bleibt lebendig."
+            "Die grausame Goneril",
+            "beansprucht gierig",
+            "das Erbe",
+            "im prunkvollen Saal heute."
+          ],
+          "synonyms": [
+            "наследство",
+            "достояние",
+            "имущество"
           ]
         },
         {
           "german": "heucheln",
           "russian": "лицемерить",
+          "russian_hint": "притворно чувствовать",
           "transcription": "[ХОЙ-хельн]",
-          "sentence": "Zwischen flüsternden Höflingen gleitet Goneril über den kalten Marmorboden. Ich umarme das Wort „heucheln“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "Между шепчущимися придворными Гонерилья скользит по холодному мраморному полу. Я обнимаю слово «лицемерить», будто это единственный союзник.",
+          "sentence": "Die grausame Goneril heuchelt süß dem Vater vor Lears Thron im Saal.",
+          "sentence_translation": "Жестокая Гонериль сладко лицемерит отцу перед троном Лира в зале.",
           "sentence_parts": [
-            "Zwischen flüsternden Höflingen gleitet Goneril über den kalten Marmorboden.",
-            "Ich umarme das Wort „heucheln“, als wäre es mein einziger Verbündeter."
+            "Die grausame Goneril",
+            "heuchelt süß",
+            "dem Vater",
+            "vor Lears Thron im Saal."
+          ],
+          "synonyms": [
+            "притворяться",
+            "лицемерить",
+            "двуличничать"
           ]
         },
         {
           "german": "die Gier",
           "russian": "жадность",
+          "russian_hint": "страстное стяжание",
           "transcription": "[ди ГИР]",
-          "sentence": "Am Rand des purpurnen Teppichs wartet Goneril auf ein Zeichen des Königs. Ich zeichne das Wort „die Gier“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "На краю пурпурного ковра Гонерилья ждёт знака от короля. Я черчу слово «жадность» в мыслях поверх линий судьбы.",
+          "sentence": "Die grausame Goneril zeigt offen die Gier unter Lears Kronleuchter heute.",
+          "sentence_translation": "Жестокая Гонериль открыто показывает жадность под люстрой Лира сегодня.",
           "sentence_parts": [
-            "Am Rand des purpurnen Teppichs wartet Goneril auf ein Zeichen des Königs.",
-            "Ich zeichne das Wort „die Gier“ in Gedanken über die Linien des Schicksals."
+            "Die grausame Goneril",
+            "zeigt offen",
+            "die Gier",
+            "unter Lears Kronleuchter heute."
+          ],
+          "synonyms": [
+            "алчность",
+            "жажда",
+            "корысть"
           ]
         },
         {
           "german": "täuschen",
           "russian": "обманывать",
+          "russian_hint": "умышленно обманывать",
           "transcription": "[ТОЙ-шен]",
-          "sentence": "Unter wehenden Standarten der Schwestern senkt Goneril kurz den Blick. Mit jeder Faser meines Körpers verspreche ich: Das Wort „täuschen“ bleibt lebendig.",
-          "sentence_translation": "Под развевающимися штандартами сестёр Гонерилья на миг опускает взгляд. Каждой клеткой тела я обещаю: слово «обманывать» останется живым.",
+          "sentence": "Die grausame Goneril täuscht listig den müden König im Thronsaal vor Zeugen.",
+          "sentence_translation": "Жестокая Гонериль хитро обманывает уставшего короля в тронном зале перед свидетелями.",
           "sentence_parts": [
-            "Unter wehenden Standarten der Schwestern senkt Goneril kurz den Blick.",
-            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „täuschen“ bleibt lebendig."
+            "Die grausame Goneril",
+            "täuscht listig",
+            "den müden König",
+            "im Thronsaal vor Zeugen."
+          ],
+          "synonyms": [
+            "обманывать",
+            "одурачивать",
+            "морочить"
           ]
         },
         {
           "german": "schmeicheln",
           "russian": "льстить",
+          "russian_hint": "лестно говорить",
           "transcription": "[ШМАЙ-хельн]",
-          "sentence": "Hinter der vergoldeten Balustrade beobachtet Goneril das gespannte Antlitz des Hofes. Das Echo des Wortes „schmeicheln“ übertönt das Flüstern der Höflinge.",
-          "sentence_translation": "За позолоченной балюстрадой Гонерилья наблюдает за напряжёнными лицами двора. Эхо слова «льстить» заглушает шёпот придворных.",
+          "sentence": "Die grausame Goneril schmeichelt kunstvoll dem Vater vor Lears Thron sehr laut.",
+          "sentence_translation": "Жестокая Гонериль искусно льстит отцу перед троном Лира очень громко.",
           "sentence_parts": [
-            "Hinter der vergoldeten Balustrade beobachtet Goneril das gespannte Antlitz des Hofes.",
-            "Das Echo des Wortes „schmeicheln“ übertönt das Flüstern der Höflinge."
+            "Die grausame Goneril",
+            "schmeichelt kunstvoll",
+            "dem Vater",
+            "vor Lears Thron sehr laut."
+          ],
+          "synonyms": [
+            "льстить",
+            "угождать",
+            "заискивать"
           ]
         },
         {
           "german": "das Vermögen",
           "russian": "состояние",
+          "russian_hint": "богатое состояние",
           "transcription": "[дас фер-МЁ-ген]",
-          "sentence": "Im Schein der offenen Feuerbecken erhebt Goneril langsam die Stimme. Ich umarme das Wort „das Vermögen“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "В отблесках открытых жаровен Гонерилья медленно поднимает голос. Я обнимаю слово «состояние», будто это единственный союзник.",
+          "sentence": "Die grausame Goneril berechnet kühl das Vermögen im geteilten Königreich heute.",
+          "sentence_translation": "Жестокая Гонериль хладно подсчитывает состояние в разделённом королевстве сегодня.",
           "sentence_parts": [
-            "Im Schein der offenen Feuerbecken erhebt Goneril langsam die Stimme.",
-            "Ich umarme das Wort „das Vermögen“, als wäre es mein einziger Verbündeter."
+            "Die grausame Goneril",
+            "berechnet kühl",
+            "das Vermögen",
+            "im geteilten Königreich heute."
+          ],
+          "synonyms": [
+            "имущество",
+            "капитал",
+            "богатство"
           ]
         }
       ],
@@ -144,89 +208,153 @@
         {
           "german": "die Macht",
           "russian": "власть",
+          "russian_hint": "полная власть",
           "transcription": "[ди МАХТ]",
-          "sentence": "Im hallenden Torbogen von Gonerils Burg verharrt Goneril zwischen gepackten Kisten. Ich umarme das Wort „die Macht“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "В гулком проёме ворот замка Гонерильи Гонерилья замирает среди нагруженных ящиков. Я обнимаю слово «власть», будто это единственный союзник.",
+          "sentence": "Die grausame Goneril fordert hart die Macht über Hälfte des Reiches.",
+          "sentence_translation": "Жестокая Гонериль жёстко требует власть над половиной королевства.",
           "sentence_parts": [
-            "Im hallenden Torbogen von Gonerils Burg verharrt Goneril zwischen gepackten Kisten.",
-            "Ich umarme das Wort „die Macht“, als wäre es mein einziger Verbündeter."
+            "Die grausame Goneril",
+            "fordert hart",
+            "die Macht",
+            "über Hälfte des Reiches."
+          ],
+          "synonyms": [
+            "власть",
+            "могущество",
+            "господство"
           ]
         },
         {
           "german": "herrschen",
           "russian": "править",
+          "russian_hint": "управлять страной",
           "transcription": "[ХЕР-шен]",
-          "sentence": "Auf der windigen Freitreppe blickt Goneril zum schweigenden Hof hinunter. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „herrschen“ gehört mir.",
-          "sentence_translation": "На продуваемой ветром лестнице Гонерилья смотрит вниз на молчаливый двор. Буря за окнами усиливает клятву: слово «править» принадлежит мне.",
+          "sentence": "Die grausame Goneril will herrschen über alte Diener im neuen Palast kühl.",
+          "sentence_translation": "Жестокая Гонериль хочет править над старыми слугами в новом дворце холодно.",
           "sentence_parts": [
-            "Auf der windigen Freitreppe blickt Goneril zum schweigenden Hof hinunter.",
-            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „herrschen“ gehört mir."
+            "Die grausame Goneril",
+            "will herrschen",
+            "über alte Diener",
+            "im neuen Palast kühl."
+          ],
+          "synonyms": [
+            "властвовать",
+            "царствовать",
+            "управлять"
           ]
         },
         {
           "german": "befehlen",
           "russian": "приказывать",
+          "russian_hint": "давать приказ",
           "transcription": "[бе-ФЕ-лен]",
-          "sentence": "Zwischen zurückgelassenen Dienern schließt Goneril den Reisemantel enger. Das Echo des Wortes „befehlen“ übertönt das Flüstern der Höflinge.",
-          "sentence_translation": "Среди оставленных слуг Гонерилья плотнее запахивает дорожный плащ. Эхо слова «приказывать» заглушает шёпот придворных.",
+          "sentence": "Die grausame Goneril befiehlt herrisch dem Gefolge im großen Saal sofort.",
+          "sentence_translation": "Жестокая Гонериль властно приказывает свите в большом зале немедленно.",
           "sentence_parts": [
-            "Zwischen zurückgelassenen Dienern schließt Goneril den Reisemantel enger.",
-            "Das Echo des Wortes „befehlen“ übertönt das Flüstern der Höflinge."
+            "Die grausame Goneril",
+            "befiehlt herrisch",
+            "dem Gefolge",
+            "im großen Saal sofort."
+          ],
+          "synonyms": [
+            "приказывать",
+            "велеть",
+            "распоряжаться"
           ]
         },
         {
           "german": "der Thron",
           "russian": "трон",
+          "russian_hint": "царское сиденье",
           "transcription": "[дер ТРОН]",
-          "sentence": "Am dunklen Pferdestall streicht Goneril einem nervösen Tier über die Mähne. Mein Atem zeichnet das Wort „der Thron“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "У тёмного конюшенного ряда Гонерилья гладит гриву нервного коня. Моё дыхание рисует слово «трон» в холодном воздухе между нами.",
+          "sentence": "Die grausame Goneril begehrt gierig den Thron des greisen Vaters heute.",
+          "sentence_translation": "Жестокая Гонериль жадно желает трон дряхлого отца сегодня.",
           "sentence_parts": [
-            "Am dunklen Pferdestall streicht Goneril einem nervösen Tier über die Mähne.",
-            "Mein Atem zeichnet das Wort „der Thron“ in die kalte Luft zwischen uns."
+            "Die grausame Goneril",
+            "begehrt gierig",
+            "den Thron",
+            "des greisen Vaters heute."
+          ],
+          "synonyms": [
+            "престол",
+            "царское кресло",
+            "владычье место"
           ]
         },
         {
           "german": "erobern",
           "russian": "завоёвывать",
+          "russian_hint": "силой захватывать",
           "transcription": "[ер-О-берн]",
-          "sentence": "Vor dem knarrenden Fallgatter tastet Goneril ein letztes Mal nach dem Haustor. Mit jeder Faser meines Körpers verspreche ich: Das Wort „erobern“ bleibt lebendig.",
-          "sentence_translation": "Перед скрипящим подъёмным мостом Гонерилья в последний раз касается родной двери. Каждой клеткой тела я обещаю: слово «завоёвывать» останется живым.",
+          "sentence": "Die grausame Goneril plant heimlich zu erobern das Herz des Reiches.",
+          "sentence_translation": "Жестокая Гонериль тайно планирует завоевать сердце королевства.",
           "sentence_parts": [
-            "Vor dem knarrenden Fallgatter tastet Goneril ein letztes Mal nach dem Haustor.",
-            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „erobern“ bleibt lebendig."
+            "Die grausame Goneril",
+            "plant heimlich",
+            "zu erobern",
+            "das Herz des Reiches."
+          ],
+          "synonyms": [
+            "завоёвывать",
+            "покорять",
+            "захватывать"
           ]
         },
         {
           "german": "die Herrschaft",
           "russian": "господство",
+          "russian_hint": "полное господство",
           "transcription": "[ди ХЕР-шафт]",
-          "sentence": "Zwischen verstreuten Schriftrollen dreht Goneril den Ring an der Hand. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Herrschaft“ gehört mir.",
-          "sentence_translation": "Среди разбросанных свитков Гонерилья вертит кольцо на пальце. Буря за окнами усиливает клятву: слово «господство» принадлежит мне.",
+          "sentence": "Die grausame Goneril festigt kalt die Herrschaft über Haus und Land.",
+          "sentence_translation": "Жестокая Гонериль холодно укрепляет господство над домом и землёй.",
           "sentence_parts": [
-            "Zwischen verstreuten Schriftrollen dreht Goneril den Ring an der Hand.",
-            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Herrschaft“ gehört mir."
+            "Die grausame Goneril",
+            "festigt kalt",
+            "die Herrschaft",
+            "über Haus und Land."
+          ],
+          "synonyms": [
+            "господство",
+            "владычество",
+            "доминирование"
           ]
         },
         {
           "german": "regieren",
           "russian": "управлять",
+          "russian_hint": "направлять власть",
           "transcription": "[ре-ГИ-рен]",
-          "sentence": "Am leeren Bankettisch zählt Goneril die verlöschenden Kerzen. Mit fester Stimme schwöre ich mir: Das Wort „regieren“ wird heute nicht verraten.",
-          "sentence_translation": "У пустого банкетного стола Гонерилья пересчитывает гаснущие свечи. Твёрдым голосом я клянусь себе: слово «управлять» сегодня не будет предано.",
+          "sentence": "Die grausame Goneril regiert streng die Diener in der großen Halle.",
+          "sentence_translation": "Жестокая Гонериль строго управляет слугами в большом зале.",
           "sentence_parts": [
-            "Am leeren Bankettisch zählt Goneril die verlöschenden Kerzen.",
-            "Mit fester Stimme schwöre ich mir: Das Wort „regieren“ wird heute nicht verraten."
+            "Die grausame Goneril",
+            "regiert streng",
+            "die Diener",
+            "in der großen Halle."
+          ],
+          "synonyms": [
+            "управлять",
+            "править",
+            "властвовать"
           ]
         },
         {
           "german": "unterwerfen",
           "russian": "подчинять",
+          "russian_hint": "принуждать к покорности",
           "transcription": "[ун-тер-ВЕР-фен]",
-          "sentence": "Zwischen schweigenden Wachen geht Goneril auf den kalten Hof hinaus. Mit jeder Faser meines Körpers verspreche ich: Das Wort „unterwerfen“ bleibt lebendig.",
-          "sentence_translation": "Между молчаливыми стражниками Гонерилья выходит на холодный двор. Каждой клеткой тела я обещаю: слово «подчинять» останется живым.",
+          "sentence": "Die grausame Goneril unterwirft eisig jede Stimme in ihrem Machtbereich.",
+          "sentence_translation": "Жестокая Гонериль ледяно подчиняет каждый голос в своей власти.",
           "sentence_parts": [
-            "Zwischen schweigenden Wachen geht Goneril auf den kalten Hof hinaus.",
-            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „unterwerfen“ bleibt lebendig."
+            "Die grausame Goneril",
+            "unterwirft eisig",
+            "jede Stimme",
+            "in ihrem Machtbereich."
+          ],
+          "synonyms": [
+            "подчинять",
+            "покорять",
+            "угнетать"
           ]
         }
       ],
@@ -269,89 +397,153 @@
         {
           "german": "demütigen",
           "russian": "унижать",
+          "russian_hint": "заставлять унижаться",
           "transcription": "[де-МЮ-ти-ген]",
-          "sentence": "Im zugigen Seitenflügel lauscht Goneril dem Heulen der Küstenwinde. Ich zeichne das Wort „demütigen“ mit unsichtbarer Tinte auf meine Handfläche.",
-          "sentence_translation": "В продуваемом ветром боковом крыле Гонерилья слушает вой прибрежного ветра. Я вывожу слово «унижать» невидимыми чернилами на ладони.",
+          "sentence": "Die grausame Goneril demütigt offen den alternden Vater vor Regans kaltem Blick.",
+          "sentence_translation": "Жестокая Гонериль открыто унижает стареющего отца перед холодным взглядом Реганы.",
           "sentence_parts": [
-            "Im zugigen Seitenflügel lauscht Goneril dem Heulen der Küstenwinde.",
-            "Ich zeichne das Wort „demütigen“ mit unsichtbarer Tinte auf meine Handfläche."
+            "Die grausame Goneril",
+            "demütigt offen",
+            "den alternden Vater",
+            "vor Regans kaltem Blick."
+          ],
+          "synonyms": [
+            "унижать",
+            "оскорблять",
+            "принижать"
           ]
         },
         {
           "german": "grausam",
           "russian": "жестокий",
+          "russian_hint": "полностью жестокий",
           "transcription": "[ГРАУ-зам]",
-          "sentence": "Vor dem rauchigen Kamin der Burg faltet Goneril einen zerknitterten Brief. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „grausam“ gehört mir.",
-          "sentence_translation": "Перед дымным камином замка Гонерилья складывает измятый лист. Буря за окнами усиливает клятву: слово «жестокий» принадлежит мне.",
+          "sentence": "Die grausame Goneril handelt grausam gegen Lear im Bündnis mit Regan.",
+          "sentence_translation": "Жестокая Гонериль действует жестоко против Лира в союзе с Реганой.",
           "sentence_parts": [
-            "Vor dem rauchigen Kamin der Burg faltet Goneril einen zerknitterten Brief.",
-            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „grausam“ gehört mir."
+            "Die grausame Goneril",
+            "handelt grausam",
+            "gegen Lear",
+            "im Bündnis mit Regan."
+          ],
+          "synonyms": [
+            "жестокий",
+            "безжалостный",
+            "свирепый"
           ]
         },
         {
           "german": "die Rache",
           "russian": "месть",
+          "russian_hint": "возмездие зла",
           "transcription": "[ди РА-хе]",
-          "sentence": "Unter farblosen Wandteppichen schreitet Goneril rastlos auf und ab. Selbst wenn die Welt zerfällt, bleibt das Wort „die Rache“ mein Nordstern.",
-          "sentence_translation": "Под выцветшими гобеленами Гонерилья беспокойно меряет шагами зал. Даже если мир распадается, слово «месть» остаётся моим северным светом.",
+          "sentence": "Die grausame Goneril schmiedet heimlich die Rache mit Regan bei Nacht.",
+          "sentence_translation": "Жестокая Гонериль тайно куёт месть с Реганой ночью.",
           "sentence_parts": [
-            "Unter farblosen Wandteppichen schreitet Goneril rastlos auf und ab.",
-            "Selbst wenn die Welt zerfällt, bleibt das Wort „die Rache“ mein Nordstern."
+            "Die grausame Goneril",
+            "schmiedet heimlich",
+            "die Rache",
+            "mit Regan bei Nacht."
+          ],
+          "synonyms": [
+            "месть",
+            "воздаяние",
+            "расплата"
           ]
         },
         {
           "german": "vertreiben",
           "russian": "изгонять",
+          "russian_hint": "гнать прочь",
           "transcription": "[фер-ТРАЙ-бен]",
-          "sentence": "An der schmalen Fensterluke zählt Goneril die Fackeln auf dem Hof. Mit fester Stimme schwöre ich mir: Das Wort „vertreiben“ wird heute nicht verraten.",
-          "sentence_translation": "У узкой бойницы Гонерилья считает факелы на дворе. Твёрдым голосом я клянусь себе: слово «изгонять» сегодня не будет предано.",
+          "sentence": "Die grausame Goneril vertreibt hart den Vater aus dem eigenen Schloss.",
+          "sentence_translation": "Жестокая Гонериль сурово изгоняет отца из собственного замка.",
           "sentence_parts": [
-            "An der schmalen Fensterluke zählt Goneril die Fackeln auf dem Hof.",
-            "Mit fester Stimme schwöre ich mir: Das Wort „vertreiben“ wird heute nicht verraten."
+            "Die grausame Goneril",
+            "vertreibt hart",
+            "den Vater",
+            "aus dem eigenen Schloss."
+          ],
+          "synonyms": [
+            "изгонять",
+            "прогонять",
+            "выдворять"
           ]
         },
         {
           "german": "verachten",
           "russian": "презирать",
+          "russian_hint": "глубоко презирать",
           "transcription": "[фер-АХ-тен]",
-          "sentence": "Zwischen Reisekoffern der Gesandten sucht Goneril nach frischen Botschaften. Mit fester Stimme schwöre ich mir: Das Wort „verachten“ wird heute nicht verraten.",
-          "sentence_translation": "Среди дорожных сундуков послов Гонерилья ищет свежие вести. Твёрдым голосом я клянусь себе: слово «презирать» сегодня не будет предано.",
+          "sentence": "Die grausame Goneril verachtet offen den sanften Albany vor Regans kalten Augen.",
+          "sentence_translation": "Жестокая Гонериль открыто презирает мягкого Олбани перед холодными глазами Реганы.",
           "sentence_parts": [
-            "Zwischen Reisekoffern der Gesandten sucht Goneril nach frischen Botschaften.",
-            "Mit fester Stimme schwöre ich mir: Das Wort „verachten“ wird heute nicht verraten."
+            "Die grausame Goneril",
+            "verachtet offen",
+            "den sanften Albany",
+            "vor Regans kalten Augen."
+          ],
+          "synonyms": [
+            "презирать",
+            "гнушаться",
+            "пренебрегать"
           ]
         },
         {
           "german": "verweigern",
           "russian": "отказывать",
+          "russian_hint": "упрямо отказывать",
           "transcription": "[фер-ВАЙ-герн]",
-          "sentence": "Im stillen Kapellenraum kniet Goneril vor der kalten Steinfigur. Ich zeichne das Wort „verweigern“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "В тихой капелле Гонерилья преклоняет колени перед холодной каменной фигурой. Я черчу слово «отказывать» в мыслях поверх линий судьбы.",
+          "sentence": "Die grausame Goneril verweigert hart dem König jede Unterkunft in Nacht.",
+          "sentence_translation": "Жестокая Гонериль жёстко отказывает королю в любом приюте ночью.",
           "sentence_parts": [
-            "Im stillen Kapellenraum kniet Goneril vor der kalten Steinfigur.",
-            "Ich zeichne das Wort „verweigern“ in Gedanken über die Linien des Schicksals."
+            "Die grausame Goneril",
+            "verweigert hart",
+            "dem König",
+            "jede Unterkunft in Nacht."
+          ],
+          "synonyms": [
+            "отказывать",
+            "лишать",
+            "запрещать"
           ]
         },
         {
           "german": "quälen",
           "russian": "мучить",
+          "russian_hint": "причинять мучения",
           "transcription": "[КВЕ-лен]",
-          "sentence": "Auf dem Balkon, den das Meer besprüht, hält Goneril die Laterne fest. Selbst wenn die Welt zerfällt, bleibt das Wort „quälen“ mein Nordstern.",
-          "sentence_translation": "На балконе, омываемом морскими брызгами, Гонерилья крепко держит фонарь. Даже если мир распадается, слово «мучить» остаётся моим северным светом.",
+          "sentence": "Die grausame Goneril quält gnadenlos die alten Ritter neben Regans Blicken.",
+          "sentence_translation": "Жестокая Гонериль безжалостно мучает старых рыцарей рядом с взглядами Реганы.",
           "sentence_parts": [
-            "Auf dem Balkon, den das Meer besprüht, hält Goneril die Laterne fest.",
-            "Selbst wenn die Welt zerfällt, bleibt das Wort „quälen“ mein Nordstern."
+            "Die grausame Goneril",
+            "quält gnadenlos",
+            "die alten Ritter",
+            "neben Regans Blicken."
+          ],
+          "synonyms": [
+            "мучить",
+            "терзать",
+            "истязать"
           ]
         },
         {
           "german": "beschränken",
           "russian": "ограничивать",
+          "russian_hint": "строго ограничивать",
           "transcription": "[бе-ШРЕН-кен]",
-          "sentence": "Im Schatten der hohen Burgmauern schreibt Goneril eine fiebrige Antwort. Ich presse das Wort „beschränken“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "В тени высоких стен Гонерилья пишет лихорадочный ответ. Я стискиваю слово «ограничивать» зубами, чтобы не вырвалось сомнение.",
+          "sentence": "Die grausame Goneril beschränkt streng die Gefolgschaft auf wenige kniende Diener.",
+          "sentence_translation": "Жестокая Гонериль строго ограничивает свиту до нескольких коленопреклонённых слуг.",
           "sentence_parts": [
-            "Im Schatten der hohen Burgmauern schreibt Goneril eine fiebrige Antwort.",
-            "Ich presse das Wort „beschränken“ zwischen die Zähne, damit kein Zweifel entweicht."
+            "Die grausame Goneril",
+            "beschränkt streng",
+            "die Gefolgschaft",
+            "auf wenige kniende Diener."
+          ],
+          "synonyms": [
+            "ограничивать",
+            "уменьшать",
+            "сдерживать"
           ]
         }
       ],
@@ -394,78 +586,134 @@
         {
           "german": "verstoßen",
           "russian": "отвергать",
+          "russian_hint": "из семьи выгонять",
           "transcription": "[фер-ШТО-сен]",
-          "sentence": "Mitten auf der vom Regen gepeitschten Heide stemmt sich Goneril gegen den Wind. Wie ein stilles Gebet legt sich das Wort „verstoßen“ auf meine Lippen.",
-          "sentence_translation": "Посреди хлещущей дождём пустоши Гонерилья упирается в ветер. Как тихая молитва слово «отвергать» ложится на мои губы.",
+          "sentence": "Die grausame Goneril verstößt hart den Vater in die stürmische Nacht.",
+          "sentence_translation": "Жестокая Гонериль сурово изгоняет отца в бурную ночь.",
           "sentence_parts": [
-            "Mitten auf der vom Regen gepeitschten Heide stemmt sich Goneril gegen den Wind.",
-            "Wie ein stilles Gebet legt sich das Wort „verstoßen“ auf meine Lippen."
+            "Die grausame Goneril",
+            "verstößt hart",
+            "den Vater",
+            "in die stürmische Nacht."
+          ],
+          "synonyms": [
+            "изгонять",
+            "отвергать",
+            "отрекаться"
           ]
         },
         {
           "german": "der Sturm",
           "russian": "буря",
+          "russian_hint": "яростная буря",
           "transcription": "[дер ШТУРМ]",
-          "sentence": "Unter einem zerrissenen Banner schützt Goneril die Augen vor den Blitzen. Ich umarme das Wort „der Sturm“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "Под разорванным знаменем Гонерилья прикрывает глаза от молний. Я обнимаю слово «буря», будто это единственный союзник.",
+          "sentence": "Der tobende Sturm peitscht wild über Lear nach Gonerils hartem Befehl.",
+          "sentence_translation": "Бушующая буря яростно хлещет Лира после жёсткого приказа Гонериль.",
           "sentence_parts": [
-            "Unter einem zerrissenen Banner schützt Goneril die Augen vor den Blitzen.",
-            "Ich umarme das Wort „der Sturm“, als wäre es mein einziger Verbündeter."
+            "Der tobende Sturm",
+            "peitscht wild",
+            "über Lear",
+            "nach Gonerils hartem Befehl."
+          ],
+          "synonyms": [
+            "буря",
+            "ураган",
+            "шторм"
           ]
         },
         {
           "german": "gnadenlos",
           "russian": "безжалостный",
+          "russian_hint": "без капли жалости",
           "transcription": "[ГНА-ден-лос]",
-          "sentence": "Am Rand eines umgestürzten Baumes sucht Goneril Deckung vor dem Donner. Ich halte das Wort „gnadenlos“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "У поваленного дерева Гонерилья ищет укрытия от грома. Я держу слово «безжалостный» как факел у сердца.",
+          "sentence": "Die grausame Goneril bleibt gnadenlos gegen Lear trotz Regens und Donner.",
+          "sentence_translation": "Жестокая Гонериль остаётся безжалостной к Лиру несмотря на дождь и гром.",
           "sentence_parts": [
-            "Am Rand eines umgestürzten Baumes sucht Goneril Deckung vor dem Donner.",
-            "Ich halte das Wort „gnadenlos“ wie eine Fackel vor meinem Herzen."
+            "Die grausame Goneril",
+            "bleibt gnadenlos",
+            "gegen Lear",
+            "trotz Regens und Donner."
+          ],
+          "synonyms": [
+            "беспощадный",
+            "безжалостный",
+            "неумолимый"
           ]
         },
         {
           "german": "verschließen",
           "russian": "запирать",
+          "russian_hint": "плотно закрывать",
           "transcription": "[фер-ШЛИ-сен]",
-          "sentence": "Zwischen schäumenden Wassergräben stolpert Goneril durch den Schlamm. Ich presse das Wort „verschließen“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "Между пенящимися лужами Гонерилья пробирается через грязь. Я стискиваю слово «запирать» зубами, чтобы не вырвалось сомнение.",
+          "sentence": "Die grausame Goneril verschließt trotzig die Türen vor dem klagenden König.",
+          "sentence_translation": "Жестокая Гонериль упрямо запирает двери перед жалобным королём.",
           "sentence_parts": [
-            "Zwischen schäumenden Wassergräben stolpert Goneril durch den Schlamm.",
-            "Ich presse das Wort „verschließen“ zwischen die Zähne, damit kein Zweifel entweicht."
+            "Die grausame Goneril",
+            "verschließt trotzig",
+            "die Türen",
+            "vor dem klagenden König."
+          ],
+          "synonyms": [
+            "запирать",
+            "закрывать",
+            "затворять"
           ]
         },
         {
           "german": "die Kälte",
           "russian": "холод",
+          "russian_hint": "ледяная стужа",
           "transcription": "[ди КЕЛ-те]",
-          "sentence": "Vor einem zuckenden Himmel hebt Goneril die Arme trotzig an. Ich atme tief ein und lasse nur das Wort „die Kälte“ wieder hinaus.",
-          "sentence_translation": "На фоне вспыхивающего неба Гонерилья упрямо поднимает руки. Я глубоко вдыхаю и выпускаю только слово «холод».",
+          "sentence": "Die grausame Goneril schickt bitter die Kälte über Lear hinaus heute.",
+          "sentence_translation": "Жестокая Гонериль посылает горький холод на Лира сегодня.",
           "sentence_parts": [
-            "Vor einem zuckenden Himmel hebt Goneril die Arme trotzig an.",
-            "Ich atme tief ein und lasse nur das Wort „die Kälte“ wieder hinaus."
+            "Die grausame Goneril",
+            "schickt bitter",
+            "die Kälte",
+            "über Lear hinaus heute."
+          ],
+          "synonyms": [
+            "холод",
+            "стужа",
+            "озноб"
           ]
         },
         {
           "german": "erbarmungslos",
           "russian": "беспощадный",
+          "russian_hint": "совершенно без жалости",
           "transcription": "[ер-БАР-мунгс-лос]",
-          "sentence": "Unter dem durchtränkten Umhang presst Goneril den Atem gegen die Kälte. Ich presse das Wort „erbarmungslos“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "Под промокшим плащом Гонерилья прижимает дыхание к груди, спасаясь от холода. Я стискиваю слово «беспощадный» зубами, чтобы не вырвалось сомнение.",
+          "sentence": "Die grausame Goneril bleibt erbarmungslos gegen Bitten im tosenden Nachtsturm.",
+          "sentence_translation": "Жестокая Гонериль остаётся совершенно безжалостной к просьбам в ревущую ночную бурю.",
           "sentence_parts": [
-            "Unter dem durchtränkten Umhang presst Goneril den Atem gegen die Kälte.",
-            "Ich presse das Wort „erbarmungslos“ zwischen die Zähne, damit kein Zweifel entweicht."
+            "Die grausame Goneril",
+            "bleibt erbarmungslos",
+            "gegen Bitten",
+            "im tosenden Nachtsturm."
+          ],
+          "synonyms": [
+            "неумолимый",
+            "жестокий",
+            "безжалостный"
           ]
         },
         {
           "german": "verhärten",
           "russian": "ожесточаться",
+          "russian_hint": "делаться черствым",
           "transcription": "[фер-ХЕР-тен]",
-          "sentence": "Am kläglichen Feuerrest wärmt Goneril zitternde Finger. Ich atme tief ein und lasse nur das Wort „verhärten“ wieder hinaus.",
-          "sentence_translation": "У жалких огненных углей Гонерилья греет дрожащие пальцы. Я глубоко вдыхаю и выпускаю только слово «ожесточаться».",
+          "sentence": "Die grausame Goneril verhärtet völlig ihr Herz im Donner der Nacht.",
+          "sentence_translation": "Жестокая Гонериль полностью ожесточает сердце в гром ночи.",
           "sentence_parts": [
-            "Am kläglichen Feuerrest wärmt Goneril zitternde Finger.",
-            "Ich atme tief ein und lasse nur das Wort „verhärten“ wieder hinaus."
+            "Die grausame Goneril",
+            "verhärtet völlig",
+            "ihr Herz",
+            "im Donner der Nacht."
+          ],
+          "synonyms": [
+            "ожесточаться",
+            "черстветь",
+            "каменеть"
           ]
         }
       ],
@@ -508,89 +756,153 @@
         {
           "german": "streiten",
           "russian": "ссориться",
+          "russian_hint": "резко ругаться",
           "transcription": "[ШТРАЙ-тен]",
-          "sentence": "Im dunklen Zelt der Feldärzte sitzt Goneril bei der flackernden Kerze. Ich atme tief ein und lasse nur das Wort „streiten“ wieder hinaus.",
-          "sentence_translation": "В тёмном шатре полевых лекарей Гонерилья сидит у мерцающей свечи. Я глубоко вдыхаю и выпускаю только слово «ссориться».",
+          "sentence": "Die grausame Goneril streitet laut mit Albany im dunklen Lagerhaus.",
+          "sentence_translation": "Жестокая Гонериль громко ссорится с Олбани в тёмном складе.",
           "sentence_parts": [
-            "Im dunklen Zelt der Feldärzte sitzt Goneril bei der flackernden Kerze.",
-            "Ich atme tief ein und lasse nur das Wort „streiten“ wieder hinaus."
+            "Die grausame Goneril",
+            "streitet laut",
+            "mit Albany",
+            "im dunklen Lagerhaus."
+          ],
+          "synonyms": [
+            "ссориться",
+            "ругаться",
+            "препираться"
           ]
         },
         {
           "german": "verraten",
           "russian": "предавать",
+          "russian_hint": "изменой выдавать",
           "transcription": "[фер-РА-тен]",
-          "sentence": "Zwischen zerbeulten Rüstungen streicht Goneril über ein altes Wappen. Ich atme tief ein und lasse nur das Wort „verraten“ wieder hinaus.",
-          "sentence_translation": "Среди помятых доспехов Гонерилья гладит старый герб. Я глубоко вдыхаю и выпускаю только слово «предавать».",
+          "sentence": "Die grausame Goneril verrät kalt den Vater in der Nachtbesprechung.",
+          "sentence_translation": "Жестокая Гонериль холодно предаёт отца на ночном совещании.",
           "sentence_parts": [
-            "Zwischen zerbeulten Rüstungen streicht Goneril über ein altes Wappen.",
-            "Ich atme tief ein und lasse nur das Wort „verraten“ wieder hinaus."
+            "Die grausame Goneril",
+            "verrät kalt",
+            "den Vater",
+            "in der Nachtbesprechung."
+          ],
+          "synonyms": [
+            "предавать",
+            "выдавать",
+            "изменять"
           ]
         },
         {
           "german": "die Zwietracht",
           "russian": "раздор",
+          "russian_hint": "семена раздора",
           "transcription": "[ди ЦВИ-трахт]",
-          "sentence": "Am niedrigen Dachbalken der Hütte stößt Goneril fast den Kopf. Ich zeichne das Wort „die Zwietracht“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "О низкую балку хижины Гонерилья едва не ударяется головой. Я черчу слово «раздор» в мыслях поверх линий судьбы.",
+          "sentence": "Die grausame Goneril säht ständig die Zwietracht zwischen Hof und Volk.",
+          "sentence_translation": "Жестокая Гонериль постоянно сеет раздор между двором и народом.",
           "sentence_parts": [
-            "Am niedrigen Dachbalken der Hütte stößt Goneril fast den Kopf.",
-            "Ich zeichne das Wort „die Zwietracht“ in Gedanken über die Linien des Schicksals."
+            "Die grausame Goneril",
+            "säht ständig",
+            "die Zwietracht",
+            "zwischen Hof und Volk."
+          ],
+          "synonyms": [
+            "раздор",
+            "вражда",
+            "распря"
           ]
         },
         {
           "german": "hassen",
           "russian": "ненавидеть",
+          "russian_hint": "глубоко ненавидеть",
           "transcription": "[ХА-сен]",
-          "sentence": "Neben der schlafenden Wache flüstert Goneril in die schwere Nacht. Ich zeichne das Wort „hassen“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "Рядом со спящим стражем Гонерилья шепчет в тяжёлую ночь. Я черчу слово «ненавидеть» в мыслях поверх линий судьбы.",
+          "sentence": "Die grausame Goneril hasst heftig die ehrliche Cordelia im heimlichen Lager.",
+          "sentence_translation": "Жестокая Гонериль яростно ненавидит честную Корделию в тайном лагере.",
           "sentence_parts": [
-            "Neben der schlafenden Wache flüstert Goneril in die schwere Nacht.",
-            "Ich zeichne das Wort „hassen“ in Gedanken über die Linien des Schicksals."
+            "Die grausame Goneril",
+            "hasst heftig",
+            "die ehrliche Cordelia",
+            "im heimlichen Lager."
+          ],
+          "synonyms": [
+            "ненавидеть",
+            "презирать",
+            "возненавидеть"
           ]
         },
         {
           "german": "betrügen",
           "russian": "изменять",
+          "russian_hint": "изменять тайно",
           "transcription": "[бе-ТРЮ-ген]",
-          "sentence": "Vor dem einfachen Feldbett betrachtet Goneril die Narben vergangener Schlachten. Ich zeichne das Wort „betrügen“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "Перед грубой походной койкой Гонерилья разглядывает шрамы прошлых битв. Я черчу слово «изменять» в мыслях поверх линий судьбы.",
+          "sentence": "Die grausame Goneril betrügt offen den Ehemann mit Edmund im Zelt.",
+          "sentence_translation": "Жестокая Гонериль открыто изменяет мужу с Эдмундом в шатре.",
           "sentence_parts": [
-            "Vor dem einfachen Feldbett betrachtet Goneril die Narben vergangener Schlachten.",
-            "Ich zeichne das Wort „betrügen“ in Gedanken über die Linien des Schicksals."
+            "Die grausame Goneril",
+            "betrügt offen",
+            "den Ehemann",
+            "mit Edmund im Zelt."
+          ],
+          "synonyms": [
+            "изменять",
+            "обманывать",
+            "жульничать"
           ]
         },
         {
           "german": "die Verachtung",
           "russian": "презрение",
+          "russian_hint": "глубокое презрение",
           "transcription": "[ди фер-АХ-тунг]",
-          "sentence": "Im Geruch von feuchtem Stroh legt Goneril den Mantel zur Seite. Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Verachtung“ bleibt lebendig.",
-          "sentence_translation": "В запахе влажной соломы Гонерилья откладывает плащ в сторону. Каждой клеткой тела я обещаю: слово «презрение» останется живым.",
+          "sentence": "Die grausame Goneril zeigt offen die Verachtung für Albanys weiche Worte.",
+          "sentence_translation": "Жестокая Гонериль открыто показывает презрение к мягким словам Олбани.",
           "sentence_parts": [
-            "Im Geruch von feuchtem Stroh legt Goneril den Mantel zur Seite.",
-            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Verachtung“ bleibt lebendig."
+            "Die grausame Goneril",
+            "zeigt offen",
+            "die Verachtung",
+            "für Albanys weiche Worte."
+          ],
+          "synonyms": [
+            "презрение",
+            "пренебрежение",
+            "гордыня"
           ]
         },
         {
           "german": "zerstören",
           "russian": "разрушать",
+          "russian_hint": "полностью разрушать",
           "transcription": "[цер-ШТЁ-рен]",
-          "sentence": "Auf dem wackligen Holztisch ordnet Goneril zerlesene Briefe. Ich presse das Wort „zerstören“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "На шатком деревянном столе Гонерилья раскладывает зачитанные письма. Я стискиваю слово «разрушать» зубами, чтобы не вырвалось сомнение.",
+          "sentence": "Die grausame Goneril zerstört kalt den Frieden im Lager der Rebellen.",
+          "sentence_translation": "Жестокая Гонериль холодно разрушает мир в лагере мятежников.",
           "sentence_parts": [
-            "Auf dem wackligen Holztisch ordnet Goneril zerlesene Briefe.",
-            "Ich presse das Wort „zerstören“ zwischen die Zähne, damit kein Zweifel entweicht."
+            "Die grausame Goneril",
+            "zerstört kalt",
+            "den Frieden",
+            "im Lager der Rebellen."
+          ],
+          "synonyms": [
+            "разрушать",
+            "ломать",
+            "уничтожать"
           ]
         },
         {
           "german": "die Leidenschaft",
           "russian": "страсть",
+          "russian_hint": "жгучая страсть",
           "transcription": "[ди ЛАЙ-ден-шафт]",
-          "sentence": "Am Eingang der Hütte späht Goneril nach einem vertrauten Schatten. Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Leidenschaft“ bleibt lebendig.",
-          "sentence_translation": "У входа в хижину Гонерилья высматривает знакомую тень. Каждой клеткой тела я обещаю: слово «страсть» останется живым.",
+          "sentence": "Die grausame Goneril entfacht verbotene Leidenschaft mit Edmund hinter Vorhängen.",
+          "sentence_translation": "Жестокая Гонериль разжигает запретную страсть с Эдмундом за занавесями.",
           "sentence_parts": [
-            "Am Eingang der Hütte späht Goneril nach einem vertrauten Schatten.",
-            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Leidenschaft“ bleibt lebendig."
+            "Die grausame Goneril",
+            "entfacht verbotene",
+            "Leidenschaft",
+            "mit Edmund hinter Vorhängen."
+          ],
+          "synonyms": [
+            "страсть",
+            "пыл",
+            "вожделение"
           ]
         }
       ],
@@ -633,89 +945,153 @@
         {
           "german": "die Eifersucht",
           "russian": "ревность",
+          "russian_hint": "мучительная ревность",
           "transcription": "[ди АЙ-фер-зухт]",
-          "sentence": "Auf den weißen Klippen von Dover blickt Goneril in den aufgewühlten Kanal. Wie ein stilles Gebet legt sich das Wort „die Eifersucht“ auf meine Lippen.",
-          "sentence_translation": "На белых скалах Дувра Гонерилья смотрит в вздыбленный пролив. Как тихая молитва слово «ревность» ложится на мои губы.",
+          "sentence": "Die grausame Goneril schürt fiebernd die Eifersucht auf Regans Nähe zu Edmund.",
+          "sentence_translation": "Жестокая Гонериль лихорадочно разжигает ревность к близости Реганы с Эдмундом.",
           "sentence_parts": [
-            "Auf den weißen Klippen von Dover blickt Goneril in den aufgewühlten Kanal.",
-            "Wie ein stilles Gebet legt sich das Wort „die Eifersucht“ auf meine Lippen."
+            "Die grausame Goneril",
+            "schürt fiebernd",
+            "die Eifersucht",
+            "auf Regans Nähe zu Edmund."
+          ],
+          "synonyms": [
+            "ревность",
+            "зависть",
+            "подозрение"
           ]
         },
         {
           "german": "rivalisieren",
           "russian": "соперничать",
+          "russian_hint": "бороться соперничая",
           "transcription": "[ри-ва-ли-ЗИ-рен]",
-          "sentence": "Zwischen flatternden Feldzeichen richtet Goneril den Helm. Wie ein stilles Gebet legt sich das Wort „rivalisieren“ auf meine Lippen.",
-          "sentence_translation": "Среди хлопающих штандартов Гонерилья поправляет шлем. Как тихая молитва слово «соперничать» ложится на мои губы.",
+          "sentence": "Die grausame Goneril rivalisiert offen mit Regan am Feldlager bei Dover.",
+          "sentence_translation": "Жестокая Гонериль открыто соперничает с Реганой у полевого лагеря под Дувром.",
           "sentence_parts": [
-            "Zwischen flatternden Feldzeichen richtet Goneril den Helm.",
-            "Wie ein stilles Gebet legt sich das Wort „rivalisieren“ auf meine Lippen."
+            "Die grausame Goneril",
+            "rivalisiert offen",
+            "mit Regan",
+            "am Feldlager bei Dover."
+          ],
+          "synonyms": [
+            "соперничать",
+            "конкурировать",
+            "бороться"
           ]
         },
         {
           "german": "kämpfen",
           "russian": "бороться",
+          "russian_hint": "вести бой",
           "transcription": "[КЕМП-фен]",
-          "sentence": "Am Lagerfeuer der Franzosen zeichnet Goneril Marschrouten in den Sand. Selbst wenn die Welt zerfällt, bleibt das Wort „kämpfen“ mein Nordstern.",
-          "sentence_translation": "У французского костра Гонерилья рисует в песке путь марша. Даже если мир распадается, слово «бороться» остаётся моим северным светом.",
+          "sentence": "Die grausame Goneril kämpft eifrig um Edmund auf dem düsteren Feld.",
+          "sentence_translation": "Жестокая Гонериль усердно борется за Эдмунда на мрачном поле.",
           "sentence_parts": [
-            "Am Lagerfeuer der Franzosen zeichnet Goneril Marschrouten in den Sand.",
-            "Selbst wenn die Welt zerfällt, bleibt das Wort „kämpfen“ mein Nordstern."
+            "Die grausame Goneril",
+            "kämpft eifrig",
+            "um Edmund",
+            "auf dem düsteren Feld."
+          ],
+          "synonyms": [
+            "бороться",
+            "сражаться",
+            "драться"
           ]
         },
         {
           "german": "begehren",
           "russian": "желать",
+          "russian_hint": "страстно желать",
           "transcription": "[бе-ГЕ-рен]",
-          "sentence": "Neben verschnürten Versorgungskisten kontrolliert Goneril das Siegel. Mit fester Stimme schwöre ich mir: Das Wort „begehren“ wird heute nicht verraten.",
-          "sentence_translation": "У перевязанных провиантных ящиков Гонерилья проверяет печати. Твёрдым голосом я клянусь себе: слово «желать» сегодня не будет предано.",
+          "sentence": "Die grausame Goneril begehrt gierig den Verräter trotz Regans fordernder Nähe.",
+          "sentence_translation": "Жестокая Гонериль жадно желает предателя несмотря на настойчивую близость Реганы.",
           "sentence_parts": [
-            "Neben verschnürten Versorgungskisten kontrolliert Goneril das Siegel.",
-            "Mit fester Stimme schwöre ich mir: Das Wort „begehren“ wird heute nicht verraten."
+            "Die grausame Goneril",
+            "begehrt gierig",
+            "den Verräter",
+            "trotz Regans fordernder Nähe."
+          ],
+          "synonyms": [
+            "желать",
+            "вожделеть",
+            "домогаться"
           ]
         },
         {
           "german": "beseitigen",
           "russian": "устранять",
+          "russian_hint": "устранять угрозу",
           "transcription": "[бе-ЗАЙ-ти-ген]",
-          "sentence": "Vor dem Seidenzelt der Heerführer lauscht Goneril dem dumpfen Meer. Ich zeichne das Wort „beseitigen“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "Перед шёлковым шатром полководцев Гонерилья слушает глухой шум моря. Я черчу слово «устранять» в мыслях поверх линий судьбы.",
+          "sentence": "Die grausame Goneril plant heimlich zu beseitigen die Schwester im Feldlager.",
+          "sentence_translation": "Жестокая Гонериль тайно планирует устранить сестру в полевом лагере.",
           "sentence_parts": [
-            "Vor dem Seidenzelt der Heerführer lauscht Goneril dem dumpfen Meer.",
-            "Ich zeichne das Wort „beseitigen“ in Gedanken über die Linien des Schicksals."
+            "Die grausame Goneril",
+            "plant heimlich",
+            "zu beseitigen",
+            "die Schwester im Feldlager."
+          ],
+          "synonyms": [
+            "устранять",
+            "ликвидировать",
+            "избавлять"
           ]
         },
         {
           "german": "das Gift",
           "russian": "яд",
+          "russian_hint": "смертельный яд",
           "transcription": "[дас ГИФТ]",
-          "sentence": "Auf dem sandigen Trainingsplatz übt Goneril das Ziehen des Schwerts. Ich zeichne das Wort „das Gift“ mit unsichtbarer Tinte auf meine Handfläche.",
-          "sentence_translation": "На песчаном плацу Гонерилья отрабатывает выхват меча. Я вывожу слово «яд» невидимыми чернилами на ладони.",
+          "sentence": "Die grausame Goneril verbirgt listig das Gift für Regan im Zelt.",
+          "sentence_translation": "Жестокая Гонериль хитро прячет яд для Реганы в шатре.",
           "sentence_parts": [
-            "Auf dem sandigen Trainingsplatz übt Goneril das Ziehen des Schwerts.",
-            "Ich zeichne das Wort „das Gift“ mit unsichtbarer Tinte auf meine Handfläche."
+            "Die grausame Goneril",
+            "verbirgt listig",
+            "das Gift",
+            "für Regan im Zelt."
+          ],
+          "synonyms": [
+            "яд",
+            "отрава",
+            "токсин"
           ]
         },
         {
           "german": "die Intrige",
           "russian": "интрига",
+          "russian_hint": "подлая затея",
           "transcription": "[ди ин-ТРИ-ге]",
-          "sentence": "Zwischen pochenden Trommeln hebt Goneril das Banner der Hoffnung. Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Intrige“ darf nicht vergehen.",
-          "sentence_translation": "Под гул барабанов Гонерилья поднимает знамя надежды. Я шепчу стражам судьбы: слово «интрига» не должно исчезнуть.",
+          "sentence": "Die grausame Goneril spinnt täglich die Intrige um Edmunds dunkles Herz.",
+          "sentence_translation": "Жестокая Гонериль ежедневно плетёт интригу вокруг тёмного сердца Эдмунда.",
           "sentence_parts": [
-            "Zwischen pochenden Trommeln hebt Goneril das Banner der Hoffnung.",
-            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Intrige“ darf nicht vergehen."
+            "Die grausame Goneril",
+            "spinnt täglich",
+            "die Intrige",
+            "um Edmunds dunkles Herz."
+          ],
+          "synonyms": [
+            "интрига",
+            "заговор",
+            "махинация"
           ]
         },
         {
           "german": "morden",
           "russian": "убивать",
+          "russian_hint": "хладнокровно убивать",
           "transcription": "[МОР-ден]",
-          "sentence": "Am Morgennebel der Küste legt Goneril die Hand auf das pochende Herz. Wie ein stilles Gebet legt sich das Wort „morden“ auf meine Lippen.",
-          "sentence_translation": "В утреннем тумане побережья Гонерилья кладёт ладонь на бьющееся сердце. Как тихая молитва слово «убивать» ложится на мои губы.",
+          "sentence": "Die grausame Goneril droht heimlich zu morden um Edmund allein zu besitzen.",
+          "sentence_translation": "Жестокая Гонериль тайно грозит убивать, чтобы владеть Эдмундом одной.",
           "sentence_parts": [
-            "Am Morgennebel der Küste legt Goneril die Hand auf das pochende Herz.",
-            "Wie ein stilles Gebet legt sich das Wort „morden“ auf meine Lippen."
+            "Die grausame Goneril",
+            "droht heimlich",
+            "zu morden",
+            "um Edmund allein zu besitzen."
+          ],
+          "synonyms": [
+            "убивать",
+            "умертвлять",
+            "казнить"
           ]
         }
       ],
@@ -758,89 +1134,153 @@
         {
           "german": "vergiften",
           "russian": "отравлять",
+          "russian_hint": "тайно травить",
           "transcription": "[фер-ГИФ-тен]",
-          "sentence": "Im feuchten Kerker stützt Goneril sich an den tropfenden Stein. Das Echo des Wortes „vergiften“ übertönt das Flüstern der Höflinge.",
-          "sentence_translation": "В сыром подземелье Гонерилья опирается на сочащийся камень. Эхо слова «отравлять» заглушает шёпот придворных.",
+          "sentence": "Die grausame Goneril vergiftet heimlich die Schwester im düsteren Quartier.",
+          "sentence_translation": "Жестокая Гонериль тайно отравляет сестру в мрачных покоях.",
           "sentence_parts": [
-            "Im feuchten Kerker stützt Goneril sich an den tropfenden Stein.",
-            "Das Echo des Wortes „vergiften“ übertönt das Flüstern der Höflinge."
+            "Die grausame Goneril",
+            "vergiftet heimlich",
+            "die Schwester",
+            "im düsteren Quartier."
+          ],
+          "synonyms": [
+            "отравлять",
+            "травить",
+            "поражать"
           ]
         },
         {
           "german": "die Verzweiflung",
           "russian": "отчаяние",
+          "russian_hint": "крайнее отчаяние",
           "transcription": "[ди фер-ЦВАЙ-флунг]",
-          "sentence": "Unter der trüben Laterne zählt Goneril die eisernen Ringe der Kette. Das Echo des Wortes „die Verzweiflung“ übertönt das Flüstern der Höflinge.",
-          "sentence_translation": "Под мутным фонарём Гонерилья пересчитывает железные кольца цепи. Эхо слова «отчаяние» заглушает шёпот придворных.",
+          "sentence": "Die grausame Goneril verhüllt kalt die Verzweiflung nach Edmunds tödlicher Wunde.",
+          "sentence_translation": "Жестокая Гонериль холодно скрывает отчаяние после смертельной раны Эдмунда.",
           "sentence_parts": [
-            "Unter der trüben Laterne zählt Goneril die eisernen Ringe der Kette.",
-            "Das Echo des Wortes „die Verzweiflung“ übertönt das Flüstern der Höflinge."
+            "Die grausame Goneril",
+            "verhüllt kalt",
+            "die Verzweiflung",
+            "nach Edmunds tödlicher Wunde."
+          ],
+          "synonyms": [
+            "отчаяние",
+            "безысходность",
+            "уныние"
           ]
         },
         {
           "german": "sterben",
           "russian": "умирать",
+          "russian_hint": "утратить жизнь",
           "transcription": "[ШТЕР-бен]",
-          "sentence": "Neben der schweren Holztür horcht Goneril auf entferntes Schluchzen. Ich zeichne das Wort „sterben“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "У тяжёлой двери Гонерилья прислушивается к далёким рыданиям. Я черчу слово «умирать» в мыслях поверх линий судьбы.",
+          "sentence": "Die grausame Goneril sieht schweigend ihn sterben im stickigen Kerkerraum.",
+          "sentence_translation": "Жестокая Гонериль молча видит его умирающим в душной тюремной комнате.",
           "sentence_parts": [
-            "Neben der schweren Holztür horcht Goneril auf entferntes Schluchzen.",
-            "Ich zeichne das Wort „sterben“ in Gedanken über die Linien des Schicksals."
+            "Die grausame Goneril",
+            "sieht schweigend",
+            "ihn sterben",
+            "im stickigen Kerkerraum."
+          ],
+          "synonyms": [
+            "умирать",
+            "скончаться",
+            "гибнуть"
           ]
         },
         {
           "german": "die Schuld",
           "russian": "вина",
+          "russian_hint": "тяжёлое преступление",
           "transcription": "[ди ШУЛЬД]",
-          "sentence": "Auf der kalten Steinbank zieht Goneril den Mantel enger um die Schultern. Ich halte das Wort „die Schuld“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "На холодной каменной скамье Гонерилья плотнее кутается в плащ. Я держу слово «вина» как факел у сердца.",
+          "sentence": "Die grausame Goneril spürt plötzlich die Schuld im engen Kerkerlicht.",
+          "sentence_translation": "Жестокая Гонериль внезапно чувствует вину в узком тюремном свете.",
           "sentence_parts": [
-            "Auf der kalten Steinbank zieht Goneril den Mantel enger um die Schultern.",
-            "Ich halte das Wort „die Schuld“ wie eine Fackel vor meinem Herzen."
+            "Die grausame Goneril",
+            "spürt plötzlich",
+            "die Schuld",
+            "im engen Kerkerlicht."
+          ],
+          "synonyms": [
+            "вина",
+            "провина",
+            "грех"
           ]
         },
         {
           "german": "vernichten",
           "russian": "уничтожать",
+          "russian_hint": "полностью уничтожать",
           "transcription": "[фер-НИХ-тен]",
-          "sentence": "Zwischen Schatten der Gitterstäbe hebt Goneril das Gesicht zum Licht. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „vernichten“ gehört mir.",
-          "sentence_translation": "Между тенями решёток Гонерилья поднимает лицо к свету. Буря за окнами усиливает клятву: слово «уничтожать» принадлежит мне.",
+          "sentence": "Die grausame Goneril vernichtet alles Vertrauen mit einem letzten Befehl.",
+          "sentence_translation": "Жестокая Гонериль уничтожает всё доверие последним приказом.",
           "sentence_parts": [
-            "Zwischen Schatten der Gitterstäbe hebt Goneril das Gesicht zum Licht.",
-            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „vernichten“ gehört mir."
+            "Die grausame Goneril",
+            "vernichtet alles",
+            "Vertrauen",
+            "mit einem letzten Befehl."
+          ],
+          "synonyms": [
+            "уничтожать",
+            "истреблять",
+            "разрушать"
           ]
         },
         {
           "german": "das Verderben",
           "russian": "погибель",
+          "russian_hint": "неизбежная погибель",
           "transcription": "[дас фер-ДЕР-бен]",
-          "sentence": "Am rostigen Wassereimer spiegelt Goneril kurz die eigenen Augen. Mein Atem zeichnet das Wort „das Verderben“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "У ржавого ведра с водой Гонерилья на мгновение видит отражение глаз. Моё дыхание рисует слово «погибель» в холодном воздухе между нами.",
+          "sentence": "Die grausame Goneril spürt nah das Verderben zwischen Kerkertüren heute.",
+          "sentence_translation": "Жестокая Гонериль ощущает близкую погибель между тюремными дверями сегодня.",
           "sentence_parts": [
-            "Am rostigen Wassereimer spiegelt Goneril kurz die eigenen Augen.",
-            "Mein Atem zeichnet das Wort „das Verderben“ in die kalte Luft zwischen uns."
+            "Die grausame Goneril",
+            "spürt nah",
+            "das Verderben",
+            "zwischen Kerkertüren heute."
+          ],
+          "synonyms": [
+            "погибель",
+            "гибель",
+            "крах"
           ]
         },
         {
           "german": "bereuen",
           "russian": "сожалеть",
+          "russian_hint": "горько сожалеть",
           "transcription": "[бе-РОЙ-ен]",
-          "sentence": "Im dumpfen Hall der Schritte zählt Goneril den Rhythmus der Wachen. Ich flüstere den Wächtern des Schicksals zu: Das Wort „bereuen“ darf nicht vergehen.",
-          "sentence_translation": "В глухом эхе шагов Гонерилья отсчитывает ритм часовых. Я шепчу стражам судьбы: слово «сожалеть» не должно исчезнуть.",
+          "sentence": "Die grausame Goneril bereut leise ihr Gift im Schatten der Zelle.",
+          "sentence_translation": "Жестокая Гонериль тихо сожалеет о своём яде в тени камеры.",
           "sentence_parts": [
-            "Im dumpfen Hall der Schritte zählt Goneril den Rhythmus der Wachen.",
-            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „bereuen“ darf nicht vergehen."
+            "Die grausame Goneril",
+            "bereut leise",
+            "ihr Gift",
+            "im Schatten der Zelle."
+          ],
+          "synonyms": [
+            "сожалеть",
+            "каяться",
+            "раскаиваться"
           ]
         },
         {
           "german": "die Hölle",
           "russian": "ад",
+          "russian_hint": "мучительный ад",
           "transcription": "[ди ХЁ-ле]",
-          "sentence": "Vor dem verriegelten Fenster zeichnet Goneril Kreise in den Staub. Selbst wenn die Welt zerfällt, bleibt das Wort „die Hölle“ mein Nordstern.",
-          "sentence_translation": "Перед заколоченным окном Гонерилья чертит круги в пыли. Даже если мир распадается, слово «ад» остаётся моим северным светом.",
+          "sentence": "Die grausame Goneril fühlt nah die Hölle hinter Kerkerwänden heute.",
+          "sentence_translation": "Жестокая Гонериль чувствует близкий ад за тюремными стенами сегодня.",
           "sentence_parts": [
-            "Vor dem verriegelten Fenster zeichnet Goneril Kreise in den Staub.",
-            "Selbst wenn die Welt zerfällt, bleibt das Wort „die Hölle“ mein Nordstern."
+            "Die grausame Goneril",
+            "fühlt nah",
+            "die Hölle",
+            "hinter Kerkerwänden heute."
+          ],
+          "synonyms": [
+            "ад",
+            "мука",
+            "геенна"
           ]
         }
       ],
