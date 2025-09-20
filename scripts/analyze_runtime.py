@@ -21,8 +21,7 @@ checks = [
     ('currentPhaseIndex', 'Индекс текущей фазы'),
     ('phaseKeys', 'Массив ключей фаз'),
     ('relations-container', 'Контейнер для упражнений'),
-    ('word-families-section', 'Секция семьи слов'),
-    ('collocations-section', 'Секция коллокаций')
+    ('word-families-section', 'Секция семьи слов')
 ]
 
 for check, desc in checks:

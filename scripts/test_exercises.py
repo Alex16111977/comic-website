@@ -57,8 +57,7 @@ def test_exercises_integration():
     # 3. Проверка секций в HTML
     print("\n[3/5] Проверка секций упражнений...")
     sections = [
-        ('word-families-section', 'Секция артиклей (бывшая Семья слов)'),
-        ('collocations-section', 'Секция контекстного перевода (бывшие Коллокации)')
+        ('word-families-section', 'Секция артиклей (бывшая Семья слов)')
     ]
     
     for section, desc in sections:

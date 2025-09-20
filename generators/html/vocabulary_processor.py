@@ -53,7 +53,7 @@ class VocabularyProcessor:
 
     @staticmethod
     def _apply_defaults(word: Dict[str, Any], entry: Dict[str, Any]) -> None:
-        for key, source_key in (("wordFamily", "word_family"), ("synonyms", "synonyms"), ("collocations", "collocations")):
+        for key, source_key in (("wordFamily", "word_family"), ("synonyms", "synonyms")):
             if not word.get(key) and (values := _ensure_list(entry.get(source_key))):
                 word[key] = values
         if not word.get("visual_hint") and entry.get("visual_hint"):
@@ -67,12 +67,10 @@ class VocabularyProcessor:
             words = phase.get("vocabulary", [])
             has_family = any(_ensure_list(item.get("wordFamily")) for item in words)
             has_synonyms = any(_ensure_list(item.get("synonyms")) for item in words)
-            has_collocations = any(_ensure_list(item.get("collocations")) for item in words)
             metadata[phase.get("id", f"phase-{index}")] = {
                 "has_word_families": has_family,
                 "has_synonyms": has_synonyms,
-                "has_collocations": has_collocations,
-                "has_relations": has_family or has_synonyms or has_collocations,
+                "has_relations": has_family or has_synonyms,
             }
         return metadata
 

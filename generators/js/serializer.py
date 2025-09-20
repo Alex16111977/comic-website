@@ -73,7 +73,6 @@ class PhaseSerializer:
     def _serialize_word(word: Dict[str, Any]) -> Dict[str, Any]:
         themes = _ensure_list(word.get("themes"))
         word_family = _ensure_list(word.get("wordFamily"))
-        collocations = _ensure_list(word.get("collocations"))
         sentence_parts = _ensure_list(word.get("sentence_parts"))
         return {
             "word": word.get("german", ""),
@@ -85,7 +84,6 @@ class PhaseSerializer:
             "visual_hint": word.get("visual_hint", ""),
             "themes": themes,
             "wordFamily": word_family,
-            "collocations": collocations,
             "sentenceParts": sentence_parts,
         }
 
