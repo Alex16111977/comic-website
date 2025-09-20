@@ -22,10 +22,14 @@
         const phaseVocabulary = window.phaseData[phaseId];
         
         // Инициализируем упражнения
-        const container = document.querySelector(`.relations-container[data-phase="${phaseId}"]`);
-        if (container) {
-            initializeArticlesExercise(container, phaseVocabulary);
-            initializeContextTranslation(container, phaseVocabulary);
+        const articlesSection = document.querySelector(`.articles-container[data-phase="${phaseId}"]`);
+        if (articlesSection) {
+            initializeArticlesExercise(articlesSection, phaseVocabulary);
+        }
+
+        const contextSection = document.querySelector(`.context-container[data-phase="${phaseId}"]`);
+        if (contextSection) {
+            initializeContextTranslation(contextSection, phaseVocabulary);
         }
     };
 
@@ -34,10 +38,7 @@
     // ==========================================
     
     function initializeArticlesExercise(container, phaseVocabulary) {
-        const section = container.querySelector('.word-families-section');
-        if (!section) return;
-        
-        const content = section.querySelector('.relations-content');
+        const content = container.querySelector('.articles-content');
         if (!content) return;
         
         // Извлекаем слова с артиклями
@@ -62,8 +63,8 @@
         const shuffled = wordsWithArticles.sort(() => Math.random() - 0.5).slice(0, 9);
         
         // Обновляем атрибут наличия контента
-        section.dataset.hasContent = shuffled.length > 0 ? 'true' : 'false';
-        
+        container.dataset.hasContent = shuffled.length > 0 ? 'true' : 'false';
+
         if (shuffled.length === 0) {
             content.innerHTML = '<div class="relations-empty-state">В этой фазе нет слов с артиклями.</div>';
             return;
@@ -131,20 +132,13 @@
         const resetBtn = container.querySelector('.reset-articles-btn');
         const feedback = container.querySelector('.articles-feedback');
         const wordsContainer = container.querySelector('.words-to-sort');
-        const contentElement = container.classList.contains('relations-content')
-            ? container
-            : container.closest('.relations-content');
+        const accordionContent = container.closest('.exercise-content');
 
         function updateArticlesLayout() {
             window.requestAnimationFrame(() => {
-                if (!contentElement) return;
+                if (!accordionContent) return;
 
-                const relationSection = contentElement.closest('.relation-section');
-                if (relationSection && !relationSection.classList.contains('expanded')) {
-                    return;
-                }
-
-                contentElement.style.maxHeight = contentElement.scrollHeight + 'px';
+                accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
             });
         }
         
@@ -311,10 +305,7 @@
     // ==========================================
     
     function initializeContextTranslation(container, phaseVocabulary) {
-        const section = container.querySelector('.collocations-section');
-        if (!section) return;
-        
-        const content = section.querySelector('.relations-content');
+        const content = container.querySelector('.context-content');
         if (!content) return;
         
         // Собираем слова с полными предложениями
@@ -361,8 +352,8 @@
             .slice(0, 5);
         
         // Обновляем атрибут наличия контента
-        section.dataset.hasContent = exercises.length > 0 ? 'true' : 'false';
-        
+        container.dataset.hasContent = exercises.length > 0 ? 'true' : 'false';
+
         if (exercises.length === 0) {
             content.innerHTML = '<div class="relations-empty-state">В этой фазе нет предложений для контекстного перевода.</div>';
             return;
@@ -506,16 +497,6 @@
     // Обновляем названия секций при загрузке
     document.addEventListener('DOMContentLoaded', function() {
         // Меняем текст кнопок
-        const familiesButtons = document.querySelectorAll('.word-families-section .relation-toggle span:first-child');
-        familiesButtons.forEach(btn => {
-            btn.textContent = '🎯 Артикли и род';
-        });
-        
-        const collocationsButtons = document.querySelectorAll('.collocations-section .relation-toggle span:first-child');
-        collocationsButtons.forEach(btn => {
-            btn.textContent = '📝 Контекстный перевод';
-        });
-        
         // Инициализируем для первой фазы, если данные есть
         setTimeout(() => {
             if (window.phaseKeys && window.phaseKeys.length > 0) {

@@ -355,12 +355,13 @@ body {
     color: #333;
 }
 
+
 .exercises-section {
-    background: white;
-    border-radius: 20px;
-    padding: 40px;
-    margin-bottom: 40px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 30px 0;
+    box-shadow: 0 10px 35px rgba(15, 23, 42, 0.12);
 }
 
 .exercises-section > h2 {
@@ -373,17 +374,21 @@ body {
 .exercises-section > p {
     text-align: center;
     color: #4b5563;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
     font-size: 1em;
 }
 
 .exercise-item {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border: 1px solid #e0e0e0;
-    border-radius: 12px;
-    background: #fdfdfd;
-    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    border-radius: 8px;
     overflow: hidden;
+    background: #ffffff;
+    transition: box-shadow 0.3s ease;
+}
+
+.exercise-item:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .exercise-item:last-of-type {
@@ -392,39 +397,38 @@ body {
 
 .exercise-toggle {
     width: 100%;
-    padding: 18px 22px;
+    padding: 18px 24px;
     background: #f8f9fa;
     border: none;
     text-align: left;
-    font-size: 1.125em;
+    font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     display: flex;
     align-items: center;
     gap: 12px;
     color: #1f2937;
-    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .exercise-toggle:hover {
-    background: #eef2ff;
-    color: #312e81;
+    background: #eff1f3;
 }
 
 .exercise-toggle:focus-visible {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.35);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.35);
+}
+
+.exercise-toggle.active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
 }
 
 .exercise-toggle .toggle-icon {
     display: inline-block;
-    transition: transform 0.3s ease;
-    font-size: 0.95em;
-}
-
-.exercise-toggle.active {
-    background: #eef2ff;
-    color: #312e81;
+    font-size: 12px;
+    transition: transform 0.3s;
 }
 
 .exercise-toggle.active .toggle-icon {
@@ -432,20 +436,14 @@ body {
 }
 
 .exercise-content {
-    background: #ffffff;
-    padding: 0 24px;
+    padding: 0;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.35s ease, padding 0.35s ease;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
 }
 
 .exercise-content:not(.collapsed) {
     padding: 24px;
-}
-
-.exercise-content.collapsed {
-    max-height: 0 !important;
-    padding: 0 24px;
 }
 
 .exercise-content > *:first-child {
@@ -844,105 +842,31 @@ body {
     color: #666;
 }
 
+
 .relations-wrapper {
-    margin: 20px 0 40px;
+    margin: 0;
 }
 
-.relations-container {
+.articles-wrapper,
+.context-wrapper {
+    margin: 0;
+}
+
+.relations-container,
+.articles-container,
+.context-container {
     display: none;
-    background: white;
-    border-radius: 20px;
-    padding: 32px 36px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.12);
-    margin-bottom: 32px;
 }
 
-.relations-container.active {
+.relations-container.active,
+.articles-container.active,
+.context-container.active {
     display: block;
-    animation: fadeIn 0.45s ease;
-}
-
-.relations-title {
-    text-align: center;
-    font-size: 1.8em;
-    color: #1f2937;
-    margin-bottom: 8px;
-    font-weight: 700;
-}
-
-.relations-subtitle {
-    text-align: center;
-    color: #4b5563;
-    margin-bottom: 24px;
-    font-size: 0.95em;
-}
-
-.relation-section {
-    border: 1px solid rgba(102, 126, 234, 0.2);
-    border-radius: 16px;
-    background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
-    margin-bottom: 16px;
-    overflow: hidden;
-    transition: box-shadow 0.3s ease;
-}
-
-.relation-section:last-of-type {
-    margin-bottom: 0;
-}
-
-.relation-section[data-has-content="false"] {
-    display: none;
-}
-
-.relation-section.expanded {
-    box-shadow: 0 12px 30px rgba(102, 126, 234, 0.18);
-}
-
-.relation-toggle {
-    width: 100%;
-    background: transparent;
-    border: none;
-    padding: 18px 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.05em;
-    font-weight: 600;
-    color: #4338ca;
-    cursor: pointer;
-    transition: background 0.3s ease, color 0.3s ease;
-    text-align: left;
-}
-
-.relation-toggle:hover,
-.relation-section.expanded .relation-toggle {
-    background: rgba(102, 126, 234, 0.12);
-    color: #312e81;
-}
-
-.relation-toggle:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.35);
-}
-
-.toggle-icon {
-    font-size: 0.85em;
-    transition: transform 0.3s ease;
-}
-
-.relation-section.expanded .toggle-icon {
-    transform: rotate(180deg);
+    animation: fadeIn 0.3s ease;
 }
 
 .relations-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.35s ease, padding 0.35s ease;
-    padding: 0 24px;
-}
-
-.relation-section.expanded .relations-content {
-    padding: 18px 24px 24px;
+    padding: 0;
 }
 
 .relation-group,

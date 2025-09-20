@@ -1522,6 +1522,20 @@ function setupRelationsForPhase(phaseKey) {
             container.classList.remove('active');
         }
     });
+
+    const articlesContainers = document.querySelectorAll('.articles-container');
+    articlesContainers.forEach(container => {
+        container.classList.toggle('active', container.dataset.phase === phaseKey);
+    });
+
+    const contextContainers = document.querySelectorAll('.context-container');
+    contextContainers.forEach(container => {
+        container.classList.toggle('active', container.dataset.phase === phaseKey);
+    });
+
+    if (window.initializeExercises) {
+        window.initializeExercises(phaseKey);
+    }
 }
 
 function renderRelations(container, phaseKey) {
@@ -1530,148 +1544,39 @@ function renderRelations(container, phaseKey) {
     const phase = phaseVocabularies[phaseKey];
     if (!phase || !phase.words) return;
 
-    // Collect all relations data
-    const wordFamilies = [];
-    const wordMatchingGroups = [];
-    const collocations = [];
+    const content = container.querySelector('.relations-content');
+    if (!content) return;
 
-    phase.words.forEach(word => {
-        if (word.wordFamily && word.wordFamily.length > 0) {
-            wordFamilies.push({
-                base: word.word,
-                family: word.wordFamily
-            });
+    const wordPairs = [];
+
+    phase.words.forEach((word, wordIdx) => {
+        if (!word.word || !word.translation) return;
+
+        let russianText = word.translation;
+        if (word.russian_hint) {
+            russianText += ' (' + word.russian_hint + ')';
         }
-        // Собираем ВСЕ слова фазы для упражнения подбора
-        if (word.word && word.translation) {
-            wordMatchingGroups.push({
-                word: word.word,
-                translation: word.translation || '',
-                russian_hint: word.russian_hint || ''
-            });
-        }
-        if (word.collocations && word.collocations.length > 0) {
-            collocations.push({
-                word: word.word,
-                collocations: word.collocations
-            });
-        }
+
+        wordPairs.push({
+            id: `word-${wordIdx}`,
+            prompt: word.word,
+            match: russianText
+        });
     });
 
-    // Render Word Families section
-    const familiesSection = container.querySelector('.word-families-section');
-    if (familiesSection) {
-        const content = familiesSection.querySelector('.relations-content');
-        familiesSection.dataset.hasContent = wordFamilies.length > 0 ? 'true' : 'false';
+    container.dataset.hasContent = wordPairs.length > 0 ? 'true' : 'false';
 
-        if (content) {
-            if (wordFamilies.length > 0) {
-                content.innerHTML = wordFamilies.map((item, idx) => `
-                    <div class="relation-group" data-group-index="${idx}">
-                        <div class="relation-header">${item.base}</div>
-                        <div class="drag-targets">
-                            ${item.family.map((word, wordIdx) => `
-                                <div class="drag-target"
-                                     data-target="${word}"
-                                     data-group="${idx}"
-                                     data-word-index="${wordIdx}">
-                                    <span class="target-placeholder">?</span>
-                                    <span class="target-answer" style="display: none;">${word}</span>
-                                </div>
-                            `).join('')}
-                        </div>
-                        <div class="drag-sources">
-                            ${item.family.map((word, wordIdx) => `
-                                <div class="drag-source"
-                                     data-source="${word}"
-                                     data-group="${idx}"
-                                     data-word-index="${wordIdx}"
-                                     draggable="true">
-                                    ${word}
-                                </div>
-                            `).join('')}
-                        </div>
-                    </div>
-                `).join('');
-                attachDragDropHandlers(content);
-            } else {
-                content.innerHTML = '';
-            }
-        }
-    }
-
-    // Render Word Matching section (вместо Synonyms)
-    const synonymsSection = container.querySelector('.synonyms-section');
-    if (synonymsSection) {
-        const content = synonymsSection.querySelector('.relations-content');
-        const wordPairs = [];
-
-        // Используем ВСЕ слова текущей фазы
-        phase.words.forEach((word, wordIdx) => {
-            if (!word.word || !word.translation) return;
-            
-            // Формируем русский текст с подсказкой
-            let russianText = word.translation;
-            if (word.russian_hint) {
-                russianText += ' (' + word.russian_hint + ')';
-            }
-            
-            wordPairs.push({
-                id: `word-${wordIdx}`,
-                prompt: word.word,
-                match: russianText
-            });
+    if (wordPairs.length > 0) {
+        content.innerHTML = '';
+        buildPairMatchingActivity(content, wordPairs, {
+            promptLabel: 'Немецкие',
+            matchLabel: 'Русские',
+            matchMessage: 'Правильно! Пара найдена.',
+            mismatchMessage: 'Не совпало. Попробуйте ещё раз.',
+            successMessage: 'Отлично! Все слова подобраны!'
         });
-
-        synonymsSection.dataset.hasContent = wordPairs.length > 0 ? 'true' : 'false';
-
-        if (content) {
-            if (wordPairs.length > 0) {
-                content.innerHTML = '';
-                buildPairMatchingActivity(content, wordPairs, {
-                    promptLabel: 'Немецкие',
-                    matchLabel: 'Русские',
-                    matchMessage: 'Правильно! Пара найдена.',
-                    mismatchMessage: 'Не совпало. Попробуйте ещё раз.',
-                    successMessage: 'Отлично! Все слова подобраны!'
-                });
-            } else {
-                content.innerHTML = '<div class="relations-empty-state">Слова для подбора отсутствуют.</div>';
-            }
-        }
-    }
-
-    // Render Collocations section
-    const collocationsSection = container.querySelector('.collocations-section');
-    if (collocationsSection) {
-        const content = collocationsSection.querySelector('.relations-content');
-        const collocationPairs = [];
-
-        collocations.forEach((item, groupIdx) => {
-            if (!item || !item.collocations) return;
-            item.collocations.forEach((phrase, phraseIdx) => {
-                collocationPairs.push({
-                    id: `col-${groupIdx}-${phraseIdx}`,
-                    prompt: item.word,
-                    match: phrase
-                });
-            });
-        });
-
-        collocationsSection.dataset.hasContent = collocationPairs.length > 0 ? 'true' : 'false';
-
-        if (content) {
-            if (collocationPairs.length > 0) {
-                content.innerHTML = '';
-                buildMemoryGame(content, collocationPairs, {
-                    matchMessage: 'Ура! Коллокация открыта.',
-                    mismatchMessage: 'Эти карточки не образуют пару.',
-                    successMessage: 'Все коллокации найдены!'
-                });
-            } else {
-                content.innerHTML = '<div class="relations-empty-state">Коллокации для этой фазы отсутствуют.</div>';
-            }
-        }
+    } else {
+        content.innerHTML = '<div class="relations-empty-state">Слова для подбора отсутствуют.</div>';
     }
 }
 
