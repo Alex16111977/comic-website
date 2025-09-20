@@ -7,6 +7,38 @@ let progressLineLength = 0;
 const QUIZ_ADVANCE_DELAY = 1200;
 const constructorState = {};
 
+function shuffleWords(words) {
+    const shuffled = Array.isArray(words) ? [...words] : [];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+}
+
+function collectGlobalWordValues(type) {
+    const values = [];
+    const seen = new Set();
+
+    Object.values(phaseVocabularies || {}).forEach(phase => {
+        const words = Array.isArray(phase.words) ? phase.words : [];
+        words.forEach(entry => {
+            const value = type === 'russian' ? entry.translation : entry.word;
+            if (value && !seen.has(value)) {
+                seen.add(value);
+                values.push(value);
+            }
+        });
+    });
+
+    return values;
+}
+
+const globalOptionPools = {
+    german: collectGlobalWordValues('german'),
+    russian: collectGlobalWordValues('russian'),
+};
+
 const studyQueueState = {
     queue: [],
     lookup: new Map(),
@@ -378,288 +410,6 @@ if (typeof window !== 'undefined') {
     });
 }
 
-function getPhaseStorageKey(phaseKey) {
-    const safePhase = phaseKey || 'unknown';
-    return `${STORAGE_PREFIX}:${characterId}:${safePhase}:quizAttempts`;
-}
-
-function loadPhaseQuizState(phaseKey) {
-    if (quizStateCache[phaseKey]) {
-        return quizStateCache[phaseKey];
-    }
-
-    if (typeof localStorage === 'undefined') {
-        quizStateCache[phaseKey] = {};
-        return quizStateCache[phaseKey];
-    }
-
-    let storedValue = null;
-    try {
-        storedValue = localStorage.getItem(getPhaseStorageKey(phaseKey));
-    } catch (error) {
-        console.warn(`[QuizState] Unable to access storage for ${phaseKey}`, error);
-    }
-
-    if (!storedValue) {
-        quizStateCache[phaseKey] = {};
-        return quizStateCache[phaseKey];
-    }
-
-    try {
-        const parsed = JSON.parse(storedValue);
-        if (parsed && typeof parsed === 'object') {
-            quizStateCache[phaseKey] = parsed;
-            return parsed;
-        }
-    } catch (error) {
-        console.warn(`[QuizState] Failed to parse stored state for ${phaseKey}`, error);
-    }
-
-    quizStateCache[phaseKey] = {};
-    return quizStateCache[phaseKey];
-}
-
-function savePhaseQuizState(phaseKey, state) {
-    quizStateCache[phaseKey] = state;
-    if (phaseVocabularies[phaseKey]) {
-        phaseVocabularies[phaseKey].quizAttempts = state;
-    }
-
-    if (typeof localStorage === 'undefined') {
-        return;
-    }
-
-    try {
-        localStorage.setItem(getPhaseStorageKey(phaseKey), JSON.stringify(state));
-    } catch (error) {
-        console.warn(`[QuizState] Unable to save state for ${phaseKey}`, error);
-    }
-}
-
-function getPhaseQuizState(phaseKey) {
-    const phase = phaseVocabularies[phaseKey];
-    if (!phase) {
-        return {};
-    }
-
-    const storedState = loadPhaseQuizState(phaseKey);
-    if (!phase.quizAttempts || phase.quizAttempts !== storedState) {
-        phase.quizAttempts = storedState;
-    }
-
-    return phase.quizAttempts;
-}
-
-function extractQuizWord(questionText) {
-    if (!questionText || typeof questionText !== 'string') {
-        return '';
-    }
-
-    const angleMatch = questionText.match(/«([^»]+)»/);
-    if (angleMatch && angleMatch[1]) {
-        return angleMatch[1].trim();
-    }
-
-    const quoteMatch = questionText.match(/"([^"]+)"/);
-    if (quoteMatch && quoteMatch[1]) {
-        return quoteMatch[1].trim();
-    }
-
-    return '';
-}
-
-function findPhaseWord(phaseKey, targetWord) {
-    if (!targetWord) {
-        return null;
-    }
-
-    const phase = phaseVocabularies[phaseKey];
-    if (!phase || !Array.isArray(phase.words)) {
-        return null;
-    }
-
-    const normalizedTarget = targetWord.toLowerCase();
-    return phase.words.find(entry => {
-        const wordValue = (entry.word || '').toLowerCase();
-        return wordValue === normalizedTarget;
-    }) || null;
-}
-
-function recordQuizAttempt(phaseKey, questionIndex, selectedIndex, correctIndex, choiceLabels) {
-    if (!phaseKey) {
-        return;
-    }
-
-    const phase = phaseVocabularies[phaseKey];
-    if (!phase) {
-        return;
-    }
-
-    const quizState = getPhaseQuizState(phaseKey);
-    const quizList = Array.isArray(phase.quizzes) ? phase.quizzes : [];
-    const questionMeta = quizList[questionIndex] || {};
-    const questionText = questionMeta.question || '';
-    const detectedWord = questionMeta.targetWord || extractQuizWord(questionText);
-    if (detectedWord && !questionMeta.targetWord) {
-        questionMeta.targetWord = detectedWord;
-    }
-
-    const timestamp = new Date().toISOString();
-    const attemptRecord = {
-        selectedIndex: selectedIndex,
-        correctIndex: correctIndex,
-        isCorrect: selectedIndex === correctIndex,
-        timestamp: timestamp,
-        selectedChoice: Array.isArray(choiceLabels) && choiceLabels[selectedIndex] !== undefined
-            ? choiceLabels[selectedIndex]
-            : null,
-        correctChoice: Array.isArray(choiceLabels) && choiceLabels[correctIndex] !== undefined
-            ? choiceLabels[correctIndex]
-            : null,
-    };
-
-    if (!quizState[questionIndex] || typeof quizState[questionIndex] !== 'object') {
-        quizState[questionIndex] = {
-            attempts: [],
-            targetWord: detectedWord || '',
-            question: questionText,
-        };
-    }
-
-    const questionState = quizState[questionIndex];
-    if (detectedWord && !questionState.targetWord) {
-        questionState.targetWord = detectedWord;
-    }
-    if (questionText && !questionState.question) {
-        questionState.question = questionText;
-    }
-
-    questionState.attempts.push(attemptRecord);
-    questionState.lastCorrect = attemptRecord.isCorrect;
-    questionState.lastUpdated = timestamp;
-    questionState.lastSelectedChoice = attemptRecord.selectedChoice;
-    questionState.correctChoice = attemptRecord.correctChoice;
-
-    savePhaseQuizState(phaseKey, quizState);
-    updateQuizStatsUI(phaseKey);
-}
-
-function computePhaseQuizStats(phaseKey) {
-    const phase = phaseVocabularies[phaseKey];
-    const quizList = phase && Array.isArray(phase.quizzes) ? phase.quizzes : [];
-    const quizState = getPhaseQuizState(phaseKey);
-
-    const total = quizList.length;
-    let answered = 0;
-    let correct = 0;
-    const incorrectDetails = [];
-
-    quizList.forEach((quizItem, index) => {
-        const stateEntry = quizState[index];
-        if (!stateEntry || !Array.isArray(stateEntry.attempts) || stateEntry.attempts.length === 0) {
-            return;
-        }
-
-        answered += 1;
-        const lastAttempt = stateEntry.attempts[stateEntry.attempts.length - 1];
-        const questionText = stateEntry.question || (quizItem ? quizItem.question : '');
-        const targetWord = stateEntry.targetWord || (quizItem ? quizItem.targetWord : '');
-        const wordData = findPhaseWord(phaseKey, targetWord);
-
-        if (lastAttempt.isCorrect) {
-            correct += 1;
-        } else {
-            incorrectDetails.push({
-                word: targetWord || (wordData ? wordData.word : ''),
-                translation: wordData ? wordData.translation : '',
-                question: questionText,
-                selected: lastAttempt.selectedChoice,
-                correctAnswer: lastAttempt.correctChoice,
-                questionIndex: index,
-            });
-        }
-    });
-
-    return {
-        total: total,
-        answered: answered,
-        correct: correct,
-        incorrectDetails: incorrectDetails,
-    };
-}
-
-function updateQuizStatsUI(phaseKey) {
-    const statsPanel = document.querySelector('.quiz-stats-panel');
-    if (!statsPanel) {
-        return;
-    }
-
-    const phase = phaseVocabularies[phaseKey];
-    const stats = computePhaseQuizStats(phaseKey);
-    const phaseNameElement = statsPanel.querySelector('[data-quiz-phase-name]');
-    const summaryElement = statsPanel.querySelector('[data-quiz-summary]');
-    const progressElement = statsPanel.querySelector('[data-quiz-progress]');
-    const errorsContainer = statsPanel.querySelector('[data-quiz-errors]');
-
-    statsPanel.dataset.phase = phaseKey || '';
-
-    if (phaseNameElement) {
-        phaseNameElement.textContent = phase ? phase.title : '—';
-    }
-
-    if (summaryElement) {
-        if (!stats.total) {
-            summaryElement.textContent = 'Для этой фазы пока нет викторины.';
-        } else {
-            summaryElement.textContent = `Пройдено ${stats.answered} из ${stats.total} вопросов.`;
-        }
-    }
-
-    if (progressElement) {
-        if (!stats.total) {
-            progressElement.textContent = '—';
-        } else {
-            const percent = Math.round((stats.correct / stats.total) * 100);
-            progressElement.textContent = `${stats.correct} из ${stats.total} верно (${percent}%)`;
-        }
-    }
-
-    if (errorsContainer) {
-        if (!stats.total) {
-            errorsContainer.innerHTML = '<p class="quiz-errors-empty">Ошибок пока нет — вопросы появятся позже.</p>';
-        } else if (!stats.incorrectDetails.length) {
-            errorsContainer.innerHTML = '<p class="quiz-errors-empty">Ошибок пока нет — отличная работа!</p>';
-        } else {
-            const items = stats.incorrectDetails.map(detail => {
-                const translation = detail.translation ? ` — ${detail.translation}` : '';
-                const question = detail.question
-                    ? `<div class="quiz-error-question">${detail.question}</div>`
-                    : '';
-                const userAnswer = detail.selected
-                    ? `<span class="quiz-error-answer">Ваш ответ: ${detail.selected}</span>`
-                    : '';
-                const correctAnswer = detail.correctAnswer
-                    ? `<span class="quiz-error-correct">Верно: ${detail.correctAnswer}</span>`
-                    : '';
-                return `
-                    <li class="quiz-error-item" data-question-index="${detail.questionIndex}">
-                        <strong>${detail.word || 'Слово'}</strong>${translation}
-                        ${question}
-                        <div class="quiz-error-meta">
-                            ${userAnswer}
-                            ${correctAnswer}
-                        </div>
-                    </li>
-                `;
-            }).join('');
-            errorsContainer.innerHTML = `<ul class="quiz-error-list">${items}</ul>`;
-        }
-    }
-
-    statsPanel.classList.toggle('quiz-stats-empty', !stats.total);
-    statsPanel.classList.toggle('quiz-stats-has-errors', stats.incorrectDetails.length > 0);
-}
-
 function queuePhaseReview(detail) {
     if (typeof localStorage === 'undefined') {
         return;
@@ -692,45 +442,6 @@ function queuePhaseReview(detail) {
     } catch (error) {
         console.warn('[ReviewQueue] Unable to update review queue', error);
     }
-}
-
-function handlePhaseCompletion(phaseKey) {
-    if (!phaseKey) {
-        return;
-    }
-
-    const stats = computePhaseQuizStats(phaseKey);
-    if (!stats.total || stats.answered < stats.total) {
-        return;
-    }
-
-    const timestamp = new Date().toISOString();
-    const phase = phaseVocabularies[phaseKey] || {};
-    const eventDetail = {
-        characterId: characterId,
-        phaseId: phaseKey,
-        phaseTitle: phase.title || '',
-        completedAt: timestamp,
-        incorrectWords: stats.incorrectDetails.map(item => ({
-            word: item.word,
-            translation: item.translation,
-            question: item.question,
-            selected: item.selected,
-            correctAnswer: item.correctAnswer,
-        })),
-    };
-
-    queuePhaseReview(eventDetail);
-
-    try {
-        document.dispatchEvent(new CustomEvent('journeyPhaseCompleted', { detail: eventDetail }));
-    } catch (error) {
-        console.warn('[JourneyPhase] Unable to dispatch completion event', error);
-    }
-
-    const quizState = getPhaseQuizState(phaseKey);
-    quizState.__lastCompletion = timestamp;
-    savePhaseQuizState(phaseKey, quizState);
 }
 
 // Device detection
@@ -1210,8 +921,8 @@ function displayVocabulary(phaseKey) {
     const phase = phaseVocabularies[phaseKey];
     const grid = document.querySelector('.vocabulary-grid');
     const phaseTitle = document.getElementById('current-phase');
-    const progressFill = document.querySelector('.progress-fill');
-    const progressText = document.querySelector('.progress-text');
+    const progressFill = document.querySelector('.journey-progress .progress-fill');
+    const progressText = document.querySelector('.journey-progress .progress-text');
     
     if (!phase || !grid || !phaseTitle) {
         console.error('Missing required elements');
@@ -1254,21 +965,7 @@ function displayVocabulary(phaseKey) {
     });
 
     // Update quizzes
-    const quizContainers = document.querySelectorAll('.quiz-phase-container');
-    quizContainers.forEach(container => {
-        const isCurrent = container.dataset.phase === phaseKey;
-        container.classList.toggle('active', isCurrent);
-        resetQuizContainer(container, isCurrent);
-    });
-
-    const quizCountElement = document.querySelector('.quiz-count');
-    if (quizCountElement) {
-        const quizData = Array.isArray(phase.quizzes) ? phase.quizzes : [];
-        quizCountElement.textContent = quizData.length;
-    }
-
-    getPhaseQuizState(phaseKey);
-    updateQuizStatsUI(phaseKey);
+    initializeVocabularyQuiz(phaseKey);
 
     // Setup relations for current phase
     setupRelationsForPhase(phaseKey);
@@ -1364,192 +1061,514 @@ function displayVocabulary(phaseKey) {
     }, 500);
 }
 
-// ============= QUIZ FUNCTIONS (lines 240-400) =============
+let activeVocabularyQuiz = null;
 
-function resetQuizContainer(container, activateFirstCard = false) {
-    if (!container) return;
+class VocabularyQuiz {
+    constructor(phaseKey, words, phaseTitle) {
+        this.phaseKey = phaseKey;
+        this.phaseTitle = phaseTitle || '';
+        this.originalWords = Array.isArray(words)
+            ? words.map(word => ({ ...word }))
+            : [];
+        this.words = [];
+        this.currentIndex = 0;
+        this.correctAnswers = 0;
+        this.totalQuestions = this.originalWords.length * 2;
+        this.currentMode = 'forward';
+        this.completedForward = false;
+        this.answeredQuestions = 0;
+        this.isTransition = false;
+        this.optionLocked = false;
+        this.incorrectAnswers = [];
+        this.advanceTimeout = null;
+        this.quizCompleted = false;
+        this.advanceDelay = QUIZ_ADVANCE_DELAY;
+        this.optionButtons = [];
+        this.feedbackElement = null;
+        this.elements = {
+            content: document.querySelector('.quiz-content'),
+            currentQuestion: document.getElementById('current-question'),
+            totalQuestions: document.getElementById('total-questions'),
+            progressFill: document.querySelector('.quiz-progress .progress-fill'),
+            forwardBadge: document.querySelector('.mode-badge[data-mode="forward"]'),
+            reverseBadge: document.querySelector('.mode-badge[data-mode="reverse"]'),
+        };
+    }
 
-    const cards = Array.from(container.querySelectorAll('.quiz-card'));
-    let firstVisibleSet = false;
+    start() {
+        this.resetState();
+        this.totalQuestions = this.originalWords.length * 2;
+        this.updateModeIndicator();
+        this.updateProgressDisplay();
 
-    cards.forEach(card => {
-        const isPlaceholder = card.classList.contains('empty');
-        if (activateFirstCard && !firstVisibleSet && !isPlaceholder) {
-            card.classList.add('active');
-            firstVisibleSet = true;
+        if (!this.originalWords.length) {
+            this.renderEmptyState();
+            return;
+        }
+
+        const question = this.nextQuestion();
+        if (question) {
+            this.renderQuestion(question);
+        }
+    }
+
+    resetState() {
+        this.clearAdvanceTimeout();
+        this.words = shuffleWords(this.originalWords);
+        this.currentIndex = 0;
+        this.correctAnswers = 0;
+        this.currentMode = 'forward';
+        this.completedForward = false;
+        this.answeredQuestions = 0;
+        this.isTransition = false;
+        this.optionLocked = false;
+        this.incorrectAnswers = [];
+        this.quizCompleted = false;
+        this.optionButtons = [];
+        this.feedbackElement = null;
+    }
+
+    clearAdvanceTimeout() {
+        if (this.advanceTimeout) {
+            clearTimeout(this.advanceTimeout);
+            this.advanceTimeout = null;
+        }
+    }
+
+    updateModeIndicator() {
+        if (this.elements.forwardBadge) {
+            this.elements.forwardBadge.classList.toggle('active', this.currentMode === 'forward' && !this.quizCompleted);
+        }
+        if (this.elements.reverseBadge) {
+            this.elements.reverseBadge.classList.toggle('active', this.currentMode === 'reverse' && !this.quizCompleted);
+        }
+        if (this.quizCompleted) {
+            if (this.elements.forwardBadge) {
+                this.elements.forwardBadge.classList.remove('active');
+            }
+            if (this.elements.reverseBadge) {
+                this.elements.reverseBadge.classList.add('active');
+            }
+        }
+    }
+
+    updateProgressDisplay() {
+        const total = this.totalQuestions;
+        const answered = this.answeredQuestions;
+
+        if (this.elements.totalQuestions) {
+            this.elements.totalQuestions.textContent = total || 0;
+        }
+
+        let currentValue = 0;
+        if (!total) {
+            currentValue = 0;
+        } else if (answered >= total) {
+            currentValue = total;
         } else {
-            card.classList.remove('active');
+            currentValue = answered + 1;
         }
 
-        card.dataset.answered = 'false';
-
-        const choices = card.querySelectorAll('.quiz-choice');
-        choices.forEach(choice => {
-            choice.disabled = false;
-            choice.classList.remove('correct', 'incorrect', 'locked', 'touching');
-            choice.removeAttribute('aria-disabled');
-        });
-
-        const feedback = card.querySelector('.quiz-feedback');
-        if (feedback) {
-            feedback.textContent = '';
+        if (this.elements.currentQuestion) {
+            this.elements.currentQuestion.textContent = currentValue;
         }
-    });
 
-    const completion = container.querySelector('.quiz-completion');
-    if (completion) {
-        completion.classList.remove('visible');
-        completion.setAttribute('aria-hidden', 'true');
-    }
-
-    if (activateFirstCard && !firstVisibleSet) {
-        const placeholder = container.querySelector('.quiz-card');
-        if (placeholder) {
-            placeholder.classList.add('active');
+        if (this.elements.progressFill) {
+            const percent = total ? Math.min(100, Math.round((answered / total) * 100)) : 0;
+            this.elements.progressFill.style.width = `${percent}%`;
         }
     }
-}
 
-function advanceQuiz(currentCard) {
-    const container = currentCard ? currentCard.closest('.quiz-phase-container') : null;
-    if (!container) return;
+    renderEmptyState() {
+        if (!this.elements.content) {
+            return;
+        }
+        this.clearAdvanceTimeout();
+        this.elements.content.innerHTML = '<div class="quiz-placeholder">Слова для этой викторины появятся позже.</div>';
+        this.updateModeIndicator();
+        this.updateProgressDisplay();
+        refreshActiveExerciseContentHeight();
+    }
 
-    const phaseKey = container.dataset.phase || null;
-    const cards = Array.from(container.querySelectorAll('.quiz-card')).filter(card => !card.classList.contains('empty'));
-    const currentIndex = cards.indexOf(currentCard);
+    generateForwardQuestion(word) {
+        const options = this.generateOptions(word.russian, 'russian');
+        return {
+            question: `Что означает немецкое слово «${word.german}»?`,
+            germanWord: word.german,
+            transcription: word.transcription,
+            options: options,
+            correct: word.russian,
+            type: 'forward',
+        };
+    }
 
-    if (currentIndex === -1) return;
+    generateReverseQuestion(word) {
+        const options = this.generateOptions(word.german, 'german');
+        return {
+            question: `Как переводится на немецкий слово «${word.russian}»?`,
+            russianWord: word.russian,
+            germanWord: word.german,
+            options: options,
+            correct: word.german,
+            type: 'reverse',
+        };
+    }
 
-    if (currentIndex < cards.length - 1) {
-        currentCard.classList.remove('active');
-        const nextCard = cards[currentIndex + 1];
-        nextCard.classList.add('active');
-        nextCard.dataset.answered = 'false';
-
-        const choices = nextCard.querySelectorAll('.quiz-choice');
-        choices.forEach(choice => {
-            choice.disabled = false;
-            choice.classList.remove('correct', 'incorrect', 'locked', 'touching');
-            choice.removeAttribute('aria-disabled');
-        });
-
-        const feedback = nextCard.querySelector('.quiz-feedback');
-        if (feedback) {
-            feedback.textContent = '';
+    generateOptions(correctAnswer, type) {
+        const options = new Set();
+        if (correctAnswer) {
+            options.add(correctAnswer);
         }
 
-        if (isTouchDevice && window.innerWidth < 768) {
-            setTimeout(() => {
-                nextCard.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'center'
-                });
-            }, 150);
-        }
-    } else {
-        const completion = container.querySelector('.quiz-completion');
-        if (completion) {
-            completion.classList.add('visible');
-            completion.setAttribute('aria-hidden', 'false');
+        const localValues = this.originalWords
+            .map(word => (type === 'russian' ? word.russian : word.german))
+            .filter(Boolean);
+        const globalValues = globalOptionPools[type] || [];
+        const combinedPool = shuffleWords([...new Set([...localValues, ...globalValues])]);
 
-            if (isTouchDevice && window.innerWidth < 768) {
-                setTimeout(() => {
-                    completion.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'center'
-                    });
-                }, 150);
+        for (const candidate of combinedPool) {
+            if (!candidate || options.has(candidate)) {
+                continue;
+            }
+            options.add(candidate);
+            if (options.size === 4) {
+                break;
             }
         }
 
-        if (phaseKey) {
-            handlePhaseCompletion(phaseKey);
+        if (options.size < 4) {
+            const fallbackPool = shuffleWords(globalValues);
+            for (const candidate of fallbackPool) {
+                if (!candidate || options.has(candidate)) {
+                    continue;
+                }
+                options.add(candidate);
+                if (options.size === 4) {
+                    break;
+                }
+            }
         }
+
+        return shuffleWords(Array.from(options).slice(0, 4));
     }
 
-    if (phaseKey) {
-        updateQuizStatsUI(phaseKey);
-    }
-
-    refreshActiveExerciseContentHeight();
-}
-
-function handleQuizChoiceSelection(button) {
-    if (!button) return;
-
-    const quizCard = button.closest('.quiz-card');
-    if (!quizCard || quizCard.dataset.answered === 'true') {
-        return;
-    }
-
-    const container = quizCard.closest('.quiz-phase-container');
-    const phaseKey = container ? container.dataset.phase : null;
-    const questionIndex = parseInt(quizCard.dataset.questionIndex || '0', 10);
-    const selectedIndex = parseInt(button.dataset.choiceIndex || '0', 10);
-    const correctIndex = parseInt(quizCard.dataset.correctIndex || '0', 10);
-    const choices = Array.from(quizCard.querySelectorAll('.quiz-choice'));
-    const feedback = quizCard.querySelector('.quiz-feedback');
-
-    quizCard.dataset.answered = 'true';
-
-    choices.forEach(choice => {
-        choice.disabled = true;
-        choice.classList.add('locked');
-        choice.setAttribute('aria-disabled', 'true');
-    });
-
-    const correctChoice = choices.find(choice => parseInt(choice.dataset.choiceIndex || '0', 10) === correctIndex);
-
-    if (selectedIndex === correctIndex) {
-        button.classList.add('correct');
-        if (feedback) {
-            feedback.textContent = 'Верно! Отличная работа.';
+    renderQuestion(question) {
+        if (!this.elements.content) {
+            return;
         }
-    } else {
-        button.classList.add('incorrect');
-        if (correctChoice) {
-            correctChoice.classList.add('correct');
+
+        this.clearAdvanceTimeout();
+        this.isTransition = false;
+        this.optionLocked = false;
+        this.activeQuestion = question;
+
+        const card = document.createElement('div');
+        card.className = 'quiz-question-card';
+        card.dataset.mode = question.type;
+
+        const questionText = document.createElement('div');
+        questionText.className = 'quiz-question-text';
+        questionText.textContent = question.question;
+        card.appendChild(questionText);
+
+        const meta = document.createElement('div');
+        meta.className = 'quiz-word-meta';
+
+        if (question.type === 'forward') {
+            const wordSpan = document.createElement('span');
+            wordSpan.className = 'quiz-word';
+            wordSpan.textContent = question.germanWord;
+            meta.appendChild(wordSpan);
+
+            if (question.transcription) {
+                const transcriptionSpan = document.createElement('span');
+                transcriptionSpan.className = 'quiz-transcription';
+                transcriptionSpan.textContent = question.transcription;
+                meta.appendChild(transcriptionSpan);
+            }
+        } else {
+            const wordSpan = document.createElement('span');
+            wordSpan.className = 'quiz-word';
+            wordSpan.textContent = question.russianWord;
+            meta.appendChild(wordSpan);
         }
-        if (feedback) {
-            feedback.textContent = 'Неверно. Правильный ответ подсвечен.';
-        }
-    }
 
-    const choiceLabels = choices.map(choice => choice.textContent.trim());
-    recordQuizAttempt(phaseKey, questionIndex, selectedIndex, correctIndex, choiceLabels);
+        card.appendChild(meta);
 
-    if (navigator.vibrate && isTouchDevice) {
-        navigator.vibrate(selectedIndex === correctIndex ? 20 : 40);
-    }
+        const optionsWrapper = document.createElement('div');
+        optionsWrapper.className = 'quiz-options';
+        this.optionButtons = [];
 
-    refreshActiveExerciseContentHeight();
-
-    setTimeout(() => {
-        advanceQuiz(quizCard);
-    }, QUIZ_ADVANCE_DELAY);
-}
-
-function attachQuizHandlers() {
-    const choiceButtons = document.querySelectorAll('.quiz-choice');
-    choiceButtons.forEach(button => {
-        button.addEventListener('click', function(event) {
-            event.preventDefault();
-            event.stopPropagation();
-            handleQuizChoiceSelection(this);
+        question.options.forEach(option => {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'quiz-option';
+            button.textContent = option;
+            button.dataset.value = option;
+            button.addEventListener('click', () => this.handleOptionSelect(button, question));
+            optionsWrapper.appendChild(button);
+            this.optionButtons.push(button);
         });
 
-        if (isTouchDevice) {
-            button.addEventListener('touchstart', function() {
-                this.classList.add('touching');
-            });
+        card.appendChild(optionsWrapper);
 
-            button.addEventListener('touchend', function() {
-                setTimeout(() => {
-                    this.classList.remove('touching');
-                }, 120);
+        this.feedbackElement = document.createElement('div');
+        this.feedbackElement.className = 'quiz-feedback';
+        this.feedbackElement.setAttribute('aria-live', 'polite');
+        card.appendChild(this.feedbackElement);
+
+        this.elements.content.innerHTML = '';
+        this.elements.content.appendChild(card);
+
+        this.updateModeIndicator();
+        this.updateProgressDisplay();
+        refreshActiveExerciseContentHeight();
+    }
+
+    handleOptionSelect(button, question) {
+        if (this.optionLocked || !button || !question) {
+            return;
+        }
+
+        this.optionLocked = true;
+        const selectedValue = button.dataset.value || button.textContent || '';
+        const correctValue = question.correct;
+
+        this.optionButtons.forEach(optionButton => {
+            optionButton.classList.add('locked');
+            optionButton.disabled = true;
+            if (optionButton.dataset.value === correctValue || optionButton.textContent === correctValue) {
+                optionButton.classList.add('correct');
+            }
+        });
+
+        if (selectedValue === correctValue) {
+            button.classList.add('correct');
+            if (this.feedbackElement) {
+                this.feedbackElement.textContent = 'Верно! Отличная работа.';
+            }
+            this.correctAnswers += 1;
+        } else {
+            button.classList.add('incorrect');
+            if (this.feedbackElement) {
+                this.feedbackElement.textContent = 'Неверно. Правильный ответ подсвечен.';
+            }
+            this.incorrectAnswers.push({
+                word: question.germanWord,
+                translation: question.type === 'forward' ? correctValue : question.russianWord,
+                selected: selectedValue,
+                correct: correctValue,
+                mode: question.type,
             });
         }
-    });
+
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(selectedValue === correctValue ? 20 : 40);
+        }
+
+        this.answeredQuestions += 1;
+        this.updateProgressDisplay();
+
+        this.advanceTimeout = setTimeout(() => {
+            this.prepareNextStep();
+        }, this.advanceDelay);
+    }
+
+    prepareNextStep() {
+        this.clearAdvanceTimeout();
+        this.currentIndex += 1;
+        this.optionLocked = false;
+        this.activeQuestion = null;
+        this.renderNext();
+    }
+
+    renderNext() {
+        const nextQuestion = this.nextQuestion();
+        if (nextQuestion) {
+            this.renderQuestion(nextQuestion);
+        }
+    }
+
+    nextQuestion() {
+        if (!this.originalWords.length) {
+            this.renderEmptyState();
+            return null;
+        }
+
+        if (this.currentIndex >= this.words.length && !this.completedForward) {
+            this.completedForward = true;
+            this.currentMode = 'reverse';
+            this.currentIndex = 0;
+            this.words = shuffleWords(this.originalWords);
+            this.isTransition = true;
+            this.updateModeIndicator();
+            this.updateProgressDisplay();
+            this.showModeTransition();
+            return null;
+        }
+
+        if (this.currentIndex >= this.words.length && this.completedForward) {
+            this.showFinalResults();
+            return null;
+        }
+
+        const word = this.words[this.currentIndex];
+        if (!word) {
+            this.showFinalResults();
+            return null;
+        }
+
+        return this.currentMode === 'forward'
+            ? this.generateForwardQuestion(word)
+            : this.generateReverseQuestion(word);
+    }
+
+    showModeTransition() {
+        if (!this.elements.content) {
+            return;
+        }
+        this.clearAdvanceTimeout();
+        this.elements.content.innerHTML = `
+            <div class="mode-transition">
+                <h3>🎉 Отлично! Первый этап пройден!</h3>
+                <p>Теперь проверим обратное направление:</p>
+                <p><strong>Русский → Немецкий</strong></p>
+                <button type="button" onclick="continueQuiz()">Продолжить</button>
+            </div>
+        `;
+        const continueButton = this.elements.content.querySelector('button');
+        if (continueButton) {
+            continueButton.addEventListener('click', () => this.continueToReverse());
+        }
+        this.updateModeIndicator();
+        this.updateProgressDisplay();
+        refreshActiveExerciseContentHeight();
+    }
+
+    continueToReverse() {
+        if (!this.completedForward) {
+            return;
+        }
+
+        this.isTransition = false;
+        this.optionLocked = false;
+        this.updateModeIndicator();
+        this.renderNext();
+    }
+
+    showFinalResults() {
+        if (!this.elements.content) {
+            return;
+        }
+
+        this.clearAdvanceTimeout();
+        this.quizCompleted = true;
+        this.isTransition = false;
+        this.answeredQuestions = this.totalQuestions;
+        this.updateModeIndicator();
+        this.updateProgressDisplay();
+
+        const percentage = this.totalQuestions
+            ? Math.round((this.correctAnswers / this.totalQuestions) * 100)
+            : 0;
+
+        this.elements.content.innerHTML = `
+            <div class="quiz-results">
+                <h3>🏆 Викторина завершена!</h3>
+                <p>Результат: ${this.correctAnswers} из ${this.totalQuestions} (${percentage}%)</p>
+                <div class="result-details">
+                    <p>✅ Прямой режим (DE→RU): пройден</p>
+                    <p>✅ Обратный режим (RU→DE): пройден</p>
+                </div>
+                <button type="button" onclick="restartQuiz()">Начать заново</button>
+            </div>
+        `;
+
+        const restartButton = this.elements.content.querySelector('button');
+        if (restartButton) {
+            restartButton.addEventListener('click', () => this.restart());
+        }
+
+        refreshActiveExerciseContentHeight();
+        this.dispatchCompletionEvent();
+    }
+
+    dispatchCompletionEvent() {
+        if (!this.phaseKey) {
+            return;
+        }
+
+        const detail = {
+            characterId: typeof characterId === 'string' ? characterId : '',
+            phaseId: this.phaseKey,
+            phaseTitle: this.phaseTitle || '',
+            completedAt: new Date().toISOString(),
+            totalQuestions: this.totalQuestions,
+            correctAnswers: this.correctAnswers,
+            incorrectWords: this.incorrectAnswers.map(item => ({
+                word: item.word,
+                translation: item.translation,
+                selected: item.selected,
+                correctAnswer: item.correct,
+                mode: item.mode,
+            })),
+        };
+
+        if (typeof queuePhaseReview === 'function') {
+            queuePhaseReview(detail);
+        }
+
+        try {
+            document.dispatchEvent(new CustomEvent('journeyPhaseCompleted', { detail }));
+        } catch (error) {
+            console.warn('[VocabularyQuiz] Unable to dispatch completion event', error);
+        }
+    }
+
+    restart() {
+        this.start();
+    }
+}
+
+function buildPhaseQuizWords(phase) {
+    if (!phase || !Array.isArray(phase.words)) {
+        return [];
+    }
+
+    return phase.words
+        .map(word => ({
+            german: word.word || '',
+            russian: word.translation || '',
+            transcription: word.transcription || '',
+        }))
+        .filter(word => word.german && word.russian);
+}
+
+function initializeVocabularyQuiz(phaseKey) {
+    const phase = phaseVocabularies[phaseKey];
+    const words = buildPhaseQuizWords(phase);
+    const phaseTitle = phase ? phase.title : '';
+
+    if (activeVocabularyQuiz) {
+        activeVocabularyQuiz.clearAdvanceTimeout();
+    }
+
+    activeVocabularyQuiz = new VocabularyQuiz(phaseKey, words, phaseTitle);
+    activeVocabularyQuiz.start();
+}
+
+if (typeof window !== 'undefined') {
+    window.continueQuiz = function() {
+        if (activeVocabularyQuiz) {
+            activeVocabularyQuiz.continueToReverse();
+        }
+    };
+
+    window.restartQuiz = function() {
+        if (activeVocabularyQuiz) {
+            activeVocabularyQuiz.restart();
+        }
+    };
 }
 
 // ============= RELATIONS FUNCTIONS (lines 400-600) =============
@@ -2322,7 +2341,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const journeyPoints = document.querySelectorAll('.journey-point');
     initializeProgressLine();
     initializeConstructorSection();
-    attachQuizHandlers();
 
     const exerciseToggles = document.querySelectorAll('.exercise-toggle');
     const exerciseContents = document.querySelectorAll('.exercise-content');
