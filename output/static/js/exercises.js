@@ -131,6 +131,22 @@
         const resetBtn = container.querySelector('.reset-articles-btn');
         const feedback = container.querySelector('.articles-feedback');
         const wordsContainer = container.querySelector('.words-to-sort');
+        const contentElement = container.classList.contains('relations-content')
+            ? container
+            : container.closest('.relations-content');
+
+        function updateArticlesLayout() {
+            window.requestAnimationFrame(() => {
+                if (!contentElement) return;
+
+                const relationSection = contentElement.closest('.relation-section');
+                if (relationSection && !relationSection.classList.contains('expanded')) {
+                    return;
+                }
+
+                contentElement.style.maxHeight = contentElement.scrollHeight + 'px';
+            });
+        }
         
         // Сохраняем начальные позиции для сброса
         const initialParent = cards[0]?.parentElement;
@@ -144,9 +160,10 @@
                 card.dataset.dragArticle = card.dataset.article;
                 card.dataset.dragWord = card.dataset.word;
             });
-            
+
             card.addEventListener('dragend', () => {
                 card.classList.remove('dragging');
+                updateArticlesLayout();
             });
             
             // КЛИК для мобильных
@@ -178,14 +195,15 @@
             zone.addEventListener('drop', (e) => {
                 e.preventDefault();
                 zone.classList.remove('drag-over');
-                
+
                 const draggingCard = container.querySelector('.dragging');
                 if (draggingCard) {
                     zone.appendChild(draggingCard);
                     draggingCard.classList.remove('correct', 'incorrect');
+                    updateArticlesLayout();
                 }
             });
-            
+
             // Клик по зоне для мобильных
             zone.addEventListener('click', function(e) {
                 e.stopPropagation();
@@ -193,9 +211,37 @@
                 if (selected) {
                     this.appendChild(selected);
                     selected.classList.remove('selected', 'correct', 'incorrect');
+                    updateArticlesLayout();
                 }
             });
         });
+
+        if (wordsContainer) {
+            wordsContainer.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                e.dataTransfer.dropEffect = 'move';
+            });
+
+            wordsContainer.addEventListener('drop', (e) => {
+                e.preventDefault();
+                const draggingCard = container.querySelector('.dragging');
+                if (draggingCard) {
+                    wordsContainer.appendChild(draggingCard);
+                    draggingCard.classList.remove('correct', 'incorrect');
+                    updateArticlesLayout();
+                }
+            });
+
+            wordsContainer.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const selected = container.querySelector('.article-word-card.selected');
+                if (selected && selected.parentElement !== wordsContainer) {
+                    wordsContainer.appendChild(selected);
+                    selected.classList.remove('selected', 'correct', 'incorrect');
+                    updateArticlesLayout();
+                }
+            });
+        }
         
         // Проверка ответов
         checkBtn?.addEventListener('click', () => {
@@ -236,8 +282,10 @@
                     feedback.className = 'articles-feedback partial';
                 }
             }
+
+            updateArticlesLayout();
         });
-        
+
         // Сброс
         resetBtn?.addEventListener('click', () => {
             cards.forEach(card => {
@@ -246,12 +294,16 @@
                     initialParent.appendChild(card);
                 }
             });
-            
+
             if (feedback) {
                 feedback.innerHTML = '';
                 feedback.className = 'articles-feedback';
             }
+
+            updateArticlesLayout();
         });
+
+        updateArticlesLayout();
     }
 
     // ==========================================
