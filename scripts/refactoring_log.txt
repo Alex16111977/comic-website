@@ -1,0 +1,9 @@
+2025-09-20T13:57:00Z [INFO] Created backup snapshot backups/20250920_135655 before refactor.
+2025-09-20T13:57:30Z [INFO] Documented refactoring strategy in rules/REFACTORING_PLAN.md.
+2025-09-20T13:58:00Z [INFO] Introduced utils package with console, file, text, validation helpers.
+2025-09-20T13:59:30Z [INFO] Ran main.py after utils setup -> log scripts/test_log_20250920_135956.txt.
+2025-09-20T14:07:10Z [INFO] Split CSS generator into modular loaders and animation helpers.
+2025-09-20T14:07:40Z [INFO] Decomposed HTML generator into head, builder, template, vocabulary modules.
+2025-09-20T14:08:10Z [INFO] Ran main.py after HTML/CSS refactor -> log scripts/test_log_20250920_140733.txt.
+2025-09-20T14:10:45Z [INFO] Extracted static JS runtime and built modular serializer/generator.
+2025-09-20T14:11:15Z [INFO] Ran main.py after JS refactor -> log scripts/test_log_20250920_141006.txt.
