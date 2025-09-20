@@ -1423,19 +1423,19 @@
         }
       ],
       "word_family": [
-        "Инфинитив: bereuen",
-        "Презенс: ich bereue",
-        "Совершенный оттенок: завершённое действие «сожалеть»"
+        "Infinitiv: bereuen",
+        "Präsens: ich bereue",
+        "Partizip II: bereut"
       ],
       "synonyms": [
-        "сожалеть"
+        "bedauern",
+        "Reue empfinden",
+        "büßen"
       ],
       "collocations": [
-        "Im Sturm zeigt sich, wie wichtig das Bereuen ist. — Во время бури становится понятно, насколько важно сожалеть.",
-        "Sie wird ihre Grausamkeit bereuen! — Она пожалеет о своей жестокости!",
-        "Am Ende bereue ich meine Taten. — В конце я сожалею о своих делах.",
-        "Später werde ich diese Tat bitter bereuen. — Позже я горько пожалею об этом поступке.",
-        "Zu spät bereue ich meine Taten. — Слишком поздно я сожалею о своих делах."
+        "eine Tat bereuen",
+        "aus tiefstem Herzen bereuen",
+        "spät bereuen"
       ],
       "visual_hint": "📚"
     },
@@ -1964,15 +1964,19 @@
         }
       ],
       "word_family": [
-        "Основная форма: bitter",
-        "Сравнительная степень: bittrer",
-        "Превосходная степень: am bittersten"
+        "Positiv: bitter",
+        "Komparativ: bitterer",
+        "Superlativ: am bittersten"
       ],
       "synonyms": [
-        "горький"
+        "herb",
+        "schmerzlich",
+        "verbittert"
       ],
       "collocations": [
-        "Die Wahrheit schmeckt bitter wie Galle. — Правда горька как желчь."
+        "bittere Worte",
+        "bitter weinen",
+        "bitter lachen"
       ],
       "visual_hint": "📚"
     },
@@ -2066,16 +2070,19 @@
         }
       ],
       "word_family": [
-        "Основная форма: blind",
-        "Сравнительная степень: blinder",
-        "Превосходная степень: am blindesten"
+        "Positiv: blind",
+        "Komparativ: blinder",
+        "Superlativ: am blindesten"
       ],
       "synonyms": [
-        "слепой"
+        "sehbehindert",
+        "blicklos",
+        "orientierungslos"
       ],
       "collocations": [
-        "Mein blinder Vater erkennt mich nicht. — Мой слепой отец не узнаёт меня.",
-        "Ich bin blind für die Wahrheit. — Я слеп к правде."
+        "blind sein",
+        "blind vertrauen",
+        "blind umherirren"
       ],
       "visual_hint": "📚"
     },
@@ -3510,15 +3517,18 @@
         }
       ],
       "word_family": [
-        "Основа: das Reich",
-        "Множественное число (пример): die Reiche",
-        "Семейство значений: империя"
+        "Singular: das Reich",
+        "Plural: die Reiche",
+        "Verwandtes Wort: das Kaiserreich"
       ],
       "synonyms": [
-        "империя"
+        "das Königreich",
+        "das Herrschaftsgebiet"
       ],
       "collocations": [
-        "Lears Herz wird schwer, wenn das Reich zur Sprache kommt. — Сердце Лира тяжелеет: «империя» звучит слишком близко."
+        "das Reich teilen",
+        "über das Reich herrschen",
+        "ein Reich regieren"
       ],
       "visual_hint": "📚",
       "gender": "neuter"
@@ -4517,17 +4527,18 @@
         }
       ],
       "word_family": [
-        "Основа: der Blitz",
-        "Множественное число (пример): die Blitze",
-        "Семейство значений: молния"
+        "Singular: der Blitz",
+        "Plural: die Blitze",
+        "Verb: blitzen"
       ],
       "synonyms": [
-        "молния"
+        "der Lichtstrahl",
+        "der Funke"
       ],
       "collocations": [
-        "Für die Höflinge bleibt der Blitz ein ständiges Thema. — Для придворных «молния» — постоянная тема.",
-        "Die Blitze sollen meine weißen Haare verbrennen! — Пусть молнии сожгут мои седые волосы!",
-        "Die Blitze erhellen unser Elend. — Молнии освещают нашу нищету."
+        "ein Blitz erhellt den Himmel",
+        "vom Blitz getroffen werden",
+        "Blitz und Donner"
       ],
       "visual_hint": "📚",
       "gender": "masculine"
@@ -4751,17 +4762,18 @@
         }
       ],
       "word_family": [
-        "Основа: der Donner",
-        "Множественное число (пример): die Donner",
-        "Семейство значений: гром"
+        "Singular: der Donner",
+        "Verb: donnern",
+        "Substantiv: das Donnergrollen"
       ],
       "synonyms": [
-        "гром"
+        "das Grollen",
+        "das Krachen"
       ],
       "collocations": [
-        "Für die Höflinge bleibt der Donner ein ständiges Thema. — Для придворных «гром» — постоянная тема.",
-        "Der Donner ist die Stimme der Götter! — Гром - это голос богов!",
-        "Der Donner übertönt unsere Schreie. — Гром заглушает наши крики."
+        "Donner grollt",
+        "vom Donner erschrecken",
+        "Donner und Blitz"
       ],
       "visual_hint": "📚",
       "gender": "masculine"
@@ -6268,19 +6280,18 @@
         }
       ],
       "word_family": [
-        "Основа: der Sturm",
-        "Множественное число (пример): die Sturme",
-        "Семейство значений: буря"
+        "Singular: der Sturm",
+        "Plural: die Stürme",
+        "Verb: stürmen"
       ],
       "synonyms": [
-        "буря"
+        "das Unwetter",
+        "der Orkan"
       ],
       "collocations": [
-        "Cordelia merkt sich genau, wie der Sturm verteilt wird. — Корделия внимательно следит, кому достанется «буря».",
-        "Der Sturm in meinem Kopf ist schlimmer als draußen! — Буря в моей голове хуже, чем снаружи!",
-        "Der Sturm tobt über unseren Köpfen. — Буря бушует над нашими головами.",
-        "Im Sturm bleibe ich bei meinem König. — В буре я остаюсь с моим королём.",
-        "Der Sturm soll sein neues Zuhause sein. — Буря пусть будет его новым домом."
+        "ein Sturm zieht auf",
+        "im Sturm toben",
+        "dem Sturm trotzen"
       ],
       "visual_hint": "📚",
       "gender": "masculine"
@@ -6338,20 +6349,19 @@
         }
       ],
       "word_family": [
-        "Основа: der Tod",
-        "Множественное число (пример): die Tode",
-        "Семейство значений: смерть"
+        "Singular: der Tod",
+        "Plural: die Tode",
+        "Verb: sterben"
       ],
       "synonyms": [
-        "смерть"
+        "das Sterben",
+        "das Ende",
+        "das Ableben"
       ],
       "collocations": [
-        "Für die Höflinge bleibt der Tod ein ständiges Thema. — Для придворных «смерть» — постоянная тема.",
-        "Der Tod ereilt mich durch Эдгars Hand. — Смерть настигает меня от руки Эдгара.",
-        "Der Tod ist gnädiger als das Leben ohne dich. — Смерть милосерднее жизни без тебя.",
-        "Der Tod trennt uns nur für kurze Zeit. — Смерть разлучает нас лишь ненадолго.",
-        "Bis zum Tod bleibe ich an seiner Seite. — До смерти я остаюсь рядом с ним.",
-        "Der Tod kommt für mich zu früh. — Смерть приходит ко мне слишком рано."
+        "den Tod finden",
+        "vom Tod sprechen",
+        "den Tod beklagen"
       ],
       "visual_hint": "📚",
       "gender": "masculine"
@@ -6505,19 +6515,18 @@
         }
       ],
       "word_family": [
-        "Основа: der Verrat",
-        "Множественное число (пример): die Verrate",
-        "Семейство значений: предательство"
+        "Singular: der Verrat",
+        "Verb: verraten",
+        "Adjektiv: verräterisch"
       ],
       "synonyms": [
-        "предательство",
-        "измена"
+        "der Betrug",
+        "die Treulosigkeit"
       ],
       "collocations": [
-        "Der Narr spottet, sobald der Verrat erwähnt wird. — Шут насмехается, едва кто-то произносит «предательство».",
-        "Der Verrat ist mein tägliches Geschäft. — Предательство - моё ежедневное дело.",
-        "Der Verrat meines Bruders zerstört mein Leben. — Предательство моего брата разрушает мою жизнь.",
-        "Meine Hilfe gilt als Verrat. — Моя помощь считается изменой."
+        "einen Verrat begehen",
+        "Verrat wittern",
+        "Verrat bestrafen"
       ],
       "visual_hint": "📚",
       "gender": "masculine"
@@ -6574,18 +6583,18 @@
         }
       ],
       "word_family": [
-        "Основа: der Wahnsinn",
-        "Множественное число (пример): die Wahnsinne",
-        "Семейство значений: безумие"
+        "Singular: der Wahnsinn",
+        "Adjektiv: wahnsinnig",
+        "Substantiv: der Wahnsinnige"
       ],
       "synonyms": [
-        "безумие"
+        "der Irrsinn",
+        "die Verrücktheit"
       ],
       "collocations": [
-        "Während des Sturms wirkt der Wahnsinn noch bedrückender. — Во время бури само «безумие» звучит ещё тяжелее.",
-        "Der Wahnsinn ist gnädiger als die Vernunft! — Безумие милосерднее разума!",
-        "Ich spiele den Wahnsinn, um zu überleben. — Я играю безумие, чтобы выжить.",
-        "Im Wahnsinn finden wir uns als Brüder. — В безумии мы находим друг друга как братья."
+        "im Wahnsinn reden",
+        "in den Wahnsinn treiben",
+        "vom Wahnsinn ergriffen sein"
       ],
       "visual_hint": "📚",
       "gender": "masculine"
@@ -6739,19 +6748,18 @@
         }
       ],
       "word_family": [
-        "Основа: der Zorn",
-        "Множественное число (пример): die Zorne",
-        "Семейство значений: гнев"
+        "Singular: der Zorn",
+        "Adjektiv: zornig",
+        "Verb: erzürnen"
       ],
       "synonyms": [
-        "гнев"
+        "die Wut",
+        "der Ärger"
       ],
       "collocations": [
-        "Lears Herz wird schwer, wenn der Zorn zur Sprache kommt. — Сердце Лира тяжелеет: «гнев» звучит слишком близко.",
-        "Mein Zorn brennt wie Feuer in meiner Brust! — Мой гнев горит как огонь в моей груди!",
-        "Sein Zorn ist grenzenlos und blind. — Его гнев безграничен и слеп.",
-        "Der Zorn des Königs trifft mich ungerecht. — Гнев короля поражает меня несправедливо.",
-        "Mein Zorn kennt keine Barmherzigkeit. — Мой гнев не знает милосердия."
+        "in Zorn geraten",
+        "Zorn zeigen",
+        "vor Zorn beben"
       ],
       "visual_hint": "📚",
       "gender": "masculine"
@@ -7870,16 +7878,18 @@
         }
       ],
       "word_family": [
-        "Основа: die Erlösung",
-        "Множественное число (пример): die Erlösungen",
-        "Семейство значений: спасение"
+        "Singular: die Erlösung",
+        "Verb: erlösen",
+        "Adjektiv: erlöst"
       ],
       "synonyms": [
-        "спасение"
+        "die Befreiung",
+        "die Rettung"
       ],
       "collocations": [
-        "Der Narr spottet, sobald die Erlösung erwähnt wird. — Шут насмехается, едва кто-то произносит «спасение».",
-        "Im Tod finde ich Erlösung und Frieden. — В смерти я нахожу спасение и покой."
+        "nach Erlösung flehen",
+        "Erlösung finden",
+        "Erlösung versprechen"
       ],
       "visual_hint": "📚",
       "gender": "feminine"
@@ -9523,15 +9533,19 @@
         }
       ],
       "word_family": [
-        "Основа: die Liebe",
-        "Множественное число (пример): die Liebe",
-        "Семейство значений: любовь"
+        "Singular: die Liebe",
+        "Verb: lieben",
+        "Adjektiv: liebevoll"
       ],
       "synonyms": [
-        "любовь"
+        "die Zuneigung",
+        "die Hingabe",
+        "die Leidenschaft"
       ],
       "collocations": [
-        "Cordelia merkt sich genau, wie die Liebe verteilt wird. — Корделия внимательно следит, кому достанется «любовь»."
+        "wahre Liebe",
+        "Liebe zeigen",
+        "Liebe schwören"
       ],
       "visual_hint": "📚",
       "gender": "feminine"
@@ -9700,19 +9714,19 @@
         }
       ],
       "word_family": [
-        "Основа: die Macht",
-        "Множественное число (пример): die Machte",
-        "Семейство значений: власть"
+        "Singular: die Macht",
+        "Plural: die Mächte",
+        "Adjektiv: mächtig"
       ],
       "synonyms": [
-        "власть"
+        "die Autorität",
+        "die Herrschaft",
+        "die Gewalt"
       ],
       "collocations": [
-        "Für die Höflinge bleibt die Macht ein ständiges Thema. — Для придворных «власть» — постоянная тема.",
-        "Die Macht gebe ich an jene, die mich am meisten liebt. — Власть я отдаю той, кто любит меня больше всех.",
-        "Die Macht über das Königreich ist nah. — Власть над королевством близка.",
-        "Die Macht bedeutet nichts ohne wahre Liebe. — Власть ничего не значит без истинной любви.",
-        "Die Macht über das halbe Königreich ist mein. — Власть над половиной королевства моя."
+        "Macht ausüben",
+        "nach Macht streben",
+        "Macht teilen"
       ],
       "visual_hint": "📚",
       "gender": "feminine"
@@ -10811,15 +10825,18 @@
         }
       ],
       "word_family": [
-        "Основа: die Tochter",
-        "Множественное число (пример): die Tochter",
-        "Семейство значений: дочь"
+        "Singular: die Tochter",
+        "Plural: die Töchter",
+        "Verkleinerung: das Töchterchen"
       ],
       "synonyms": [
-        "дочь"
+        "das Kind",
+        "die Nachkommin"
       ],
       "collocations": [
-        "Für die Höflinge bleibt die Tochter ein ständiges Thema. — Для придворных «дочь» — постоянная тема."
+        "die älteste Tochter",
+        "eine Tochter verheiraten",
+        "die Tochter umarmen"
       ],
       "visual_hint": "📚",
       "gender": "feminine"
@@ -11050,17 +11067,19 @@
         }
       ],
       "word_family": [
-        "Основа: die Täuschung",
-        "Множественное число (пример): die Täuschungen",
-        "Семейство значений: обман"
+        "Singular: die Täuschung",
+        "Verb: täuschen",
+        "Adjektiv: täuschend"
       ],
       "synonyms": [
-        "обман",
-        "der Betrug — тоже «обман»"
+        "der Betrug",
+        "die Irreführung",
+        "die List"
       ],
       "collocations": [
-        "Die Täuschung ist vollkommen. — Обман совершенен.",
-        "Edgars liebevolle Täuschung rettet mich. — Любящий обман Эдгара спасает меня."
+        "eine Täuschung planen",
+        "durch Täuschung gewinnen",
+        "Täuschungen entlarven"
       ],
       "visual_hint": "📚"
     },
@@ -11455,17 +11474,18 @@
         }
       ],
       "word_family": [
-        "Основа: die Verkleidung",
-        "Множественное число (пример): die Verkleidungen",
-        "Семейство значений: маскировка"
+        "Singular: die Verkleidung",
+        "Verb: verkleiden",
+        "Partizip: verkleidet"
       ],
       "synonyms": [
-        "маскировка",
-        "переодевание"
+        "das Kostüm",
+        "die Maskerade"
       ],
       "collocations": [
-        "Diese Verkleidung ist meine einzige Rettung. — Эта маскировка - моё единственное спасение.",
-        "In Verkleidung diene ich meinem König weiter. — В переодевании я продолжаю служить королю."
+        "eine Verkleidung wählen",
+        "sich als Bettler verkleiden",
+        "in Verkleidung auftreten"
       ],
       "visual_hint": "📚"
     },
@@ -11552,16 +11572,19 @@
         }
       ],
       "word_family": [
-        "Основа: die Versöhnung",
-        "Множественное число (пример): die Versöhnungen",
-        "Семейство значений: примирение"
+        "Singular: die Versöhnung",
+        "Verb: versöhnen",
+        "Adjektiv: versöhnlich"
       ],
       "synonyms": [
-        "примирение"
+        "der Frieden",
+        "die Aussöhnung",
+        "die Einigung"
       ],
       "collocations": [
-        "Für die Höflinge bleibt die Versöhnung ein ständiges Thema. — Для придворных «примирение» — постоянная тема.",
-        "Die Versöhnung kommt zu spät. — Примирение приходит слишком поздно."
+        "Versöhnung suchen",
+        "Versöhnung feiern",
+        "nach Versöhnung verlangen"
       ],
       "visual_hint": "📚",
       "gender": "feminine"
@@ -13278,22 +13301,19 @@
         }
       ],
       "word_family": [
-        "Инфинитив: erkennen",
-        "Презенс: ich erkenne",
-        "Совершенный оттенок: завершённое действие «познавать, узнавать»"
+        "Infinitiv: erkennen",
+        "Präsens: ich erkenne",
+        "Partizip II: erkannt"
       ],
       "synonyms": [
-        "познавать",
-        "узнавать",
-        "erfahren — тоже «узнавать»",
-        "wiedererkennen — тоже «узнавать»"
+        "bemerken",
+        "einsehen",
+        "wahrnehmen"
       ],
       "collocations": [
-        "Im Sturm zeigt sich, wie wichtig das Erkennen ist. — Во время бури становится понятно, насколько важно узнавать.",
-        "Ich erkenne dich, meine treue Cordelia! — Я узнаю тебя, моя верная Корделия!",
-        "Erkennst du mich, dein Kind Cordelia? — Узнаёшь ли ты меня, твоё дитя Корделия?",
-        "Endlich erkenne ich meinen treuen Edgar. — Наконец я узнаю моего верного Эдгара.",
-        "Ich erkenne die Wahrheit hinter dem Schein. — Я познаю правду за видимостью."
+        "die Wahrheit erkennen",
+        "einen Fehler erkennen",
+        "jemanden wiedererkennen"
       ],
       "visual_hint": "📚"
     },
@@ -14379,17 +14399,19 @@
         }
       ],
       "word_family": [
-        "Инфинитив: führen",
-        "Презенс: ich führe",
-        "Совершенный оттенок: завершённое действие «вести»"
+        "Infinitiv: führen",
+        "Präsens: ich führe",
+        "Partizip II: geführt"
       ],
       "synonyms": [
-        "вести",
-        "verhalten — тоже «вести»"
+        "leiten",
+        "begleiten",
+        "anführen"
       ],
       "collocations": [
-        "Der Narr spürt, wie das Führen alle verändert. — Шут чувствует, как умение вести меняет всех.",
-        "Ich führe ihn sicher durch die Dunkelheit. — Я веду его безопасно сквозь тьму."
+        "jemanden führen",
+        "durch die Nacht führen",
+        "zum Sieg führen"
       ],
       "visual_hint": "📚"
     },
@@ -15187,18 +15209,19 @@
         }
       ],
       "word_family": [
-        "Инфинитив: herrschen",
-        "Презенс: ich rsche her",
-        "Совершенный оттенок: завершённое действие «править»"
+        "Infinitiv: herrschen",
+        "Präsens: ich herrsche",
+        "Präteritum: ich herrschte"
       ],
       "synonyms": [
-        "править",
-        "regieren — тоже «править»"
+        "regieren",
+        "dominieren",
+        "gebieten"
       ],
       "collocations": [
-        "Der Narr spürt, wie das Herrschen alle verändert. — Шут чувствует, как умение править меняет всех.",
-        "Ich habe lange genug geherrscht. — Я правил достаточно долго.",
-        "Jetzt herrsche ich über meine Länder. — Теперь я правлю своими землями."
+        "über das Reich herrschen",
+        "mit harter Hand herrschen",
+        "lange herrschen"
       ],
       "visual_hint": "📚"
     },
@@ -19181,16 +19204,19 @@
         }
       ],
       "word_family": [
-        "Инфинитив: teilen",
-        "Презенс: ich teile",
-        "Совершенный оттенок: завершённое действие «делить»"
+        "Infinitiv: teilen",
+        "Präsens: ich teile",
+        "Präteritum: ich teilte"
       ],
       "synonyms": [
-        "делить"
+        "aufteilen",
+        "verteilen",
+        "zerteilen"
       ],
       "collocations": [
-        "Der Narr spürt, wie das Teilen alle verändert. — Шут чувствует, как умение делить меняет всех.",
-        "Wir teilen das Reich zwischen uns. — Мы делим королевство между собой."
+        "das Reich teilen",
+        "den Besitz teilen",
+        "Verantwortung teilen"
       ],
       "visual_hint": "📚"
     },
@@ -19213,16 +19239,19 @@
         }
       ],
       "word_family": [
-        "Инфинитив: toben",
-        "Презенс: ich tobe",
-        "Совершенный оттенок: завершённое действие «бушевать»"
+        "Infinitiv: toben",
+        "Präsens: ich tobe",
+        "Partizip II: getobt"
       ],
       "synonyms": [
-        "бушевать"
+        "rasen",
+        "wüten",
+        "randalieren"
       ],
       "collocations": [
-        "Das Toben fällt Lear unerwartet schwer. — Лиру неожиданно тяжело бушевать.",
-        "Lasst die Winde toben und die Blitze fallen! — Пусть ветры бушуют и молнии падают!"
+        "im Sturm toben",
+        "vor Wut toben",
+        "durch den Saal toben"
       ],
       "visual_hint": "📚"
     },
@@ -20784,18 +20813,19 @@
         }
       ],
       "word_family": [
-        "Инфинитив: vergeben",
-        "Презенс: ich vergebe",
-        "Совершенный оттенок: завершённое действие «прощать»"
+        "Infinitiv: vergeben",
+        "Präsens: ich vergebe",
+        "Partizip II: vergeben"
       ],
       "synonyms": [
-        "прощать",
-        "verzeihen — тоже «прощать»"
+        "verzeihen",
+        "entschuldigen",
+        "nachsehen"
       ],
       "collocations": [
-        "Das Vergeben fällt Lear unerwartet schwer. — Лиру неожиданно тяжело прощать.",
-        "Kannst du einem törichten alten Mann vergeben? — Можешь ли ты простить глупого старика?",
-        "Edgar vergibt mir meine Blindheit. — Эдгар прощает мне мою слепоту."
+        "jemandem vergeben",
+        "Schuld vergeben",
+        "aus Liebe vergeben"
       ],
       "visual_hint": "📚"
     },
@@ -21316,17 +21346,19 @@
         }
       ],
       "word_family": [
-        "Инфинитив: verlassen",
-        "Презенс: ich verlasse",
-        "Совершенный оттенок: завершённое действие «покидать»"
+        "Infinitiv: verlassen",
+        "Präsens: ich verlasse",
+        "Partizip II: verlassen"
       ],
       "synonyms": [
-        "покидать"
+        "weggehen",
+        "aufgeben",
+        "zurücklassen"
       ],
       "collocations": [
-        "Der Narr spürt, wie das Verlassen alle verändert. — Шут чувствует, как умение покидать меняет всех.",
-        "Auch Regan will mich verlassen und verstoßen! — И Регана хочет меня покинуть и отвергнуть!",
-        "Schweren Herzens verlasse ich mein Vaterland. — С тяжёлым сердцем я покидаю родину."
+        "jemanden verlassen",
+        "den Ort verlassen",
+        "die Familie verlassen"
       ],
       "visual_hint": "📚"
     },
@@ -22028,23 +22060,19 @@
         }
       ],
       "word_family": [
-        "Инфинитив: verstoßen",
-        "Презенс: ich verstoße",
-        "Совершенный оттенок: завершённое действие «изгонять»"
+        "Infinitiv: verstoßen",
+        "Präsens: ich verstoße",
+        "Partizip II: verstoßen"
       ],
       "synonyms": [
-        "изгонять",
-        "verbannen — тоже «изгонять»",
-        "vertreiben — тоже «изгонять»",
-        "отвергать",
-        "abweisen — тоже «отвергать»"
+        "ausstoßen",
+        "ausgrenzen",
+        "enterben"
       ],
       "collocations": [
-        "Im Sturm zeigt sich, wie wichtig das Verstoßen ist. — Во время бури становится понятно, насколько важно изгонять.",
-        "Meine Töchter verstoßen mich wie einen Bettler! — Мои дочери отвергают меня как нищего!",
-        "Der König verstößt mich aus seinem Herzen. — Король изгоняет меня из своего сердца.",
-        "Ich verstoße meinen unschuldigen Sohn. — Я изгоняю своего невинного сына.",
-        "Ich verstoße meinen Vater in die Nacht. — Я отвергаю отца в ночь."
+        "jemanden verstoßen",
+        "ein Kind verstoßen",
+        "aus der Familie verstoßen"
       ],
       "visual_hint": "📚"
     },
@@ -22622,15 +22650,19 @@
         }
       ],
       "word_family": [
-        "Инфинитив: verzweifeln",
-        "Презенс: ich verzweifele",
-        "Совершенный оттенок: завершённое действие «отчаиваться»"
+        "Infinitiv: verzweifeln",
+        "Präsens: ich verzweifle",
+        "Partizip II: verzweifelt"
       ],
       "synonyms": [
-        "отчаиваться"
+        "verzagen",
+        "resignieren",
+        "den Mut verlieren"
       ],
       "collocations": [
-        "Der Narr spürt, wie das Verzweifeln alle verändert. — Шут чувствует, как умение отчаиваться меняет всех."
+        "an der Welt verzweifeln",
+        "fast verzweifeln",
+        "aus Verzweiflung schreien"
       ],
       "visual_hint": "📚"
     },
