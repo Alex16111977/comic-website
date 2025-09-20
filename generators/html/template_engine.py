@@ -18,6 +18,7 @@ class TemplateContext:
     quizzes: List[Dict[str, Any]]
     quizzes_json: str
     head: HeadContext
+    navigation: Dict[str, Any]
     relations_metadata: Dict[str, Dict[str, bool]]
     js_bundle: str
 
@@ -41,4 +42,5 @@ class JourneyTemplateEngine:
             first_phase_title=context.head.first_phase_title,
             relations_metadata=context.relations_metadata,
             js=context.js_bundle,
+            navigation=context.navigation,
         )

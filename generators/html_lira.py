@@ -33,6 +33,12 @@ class LiraHTMLGenerator(BaseGenerator):
         progress = JourneyBuilder.initial_progress(assets.phases)
         head_context = self.head_generator.build(assets.phases, progress)
         js_bundle = LiraJSGenerator.generate(character)
+        navigation = {
+            "home_href": "../index.html",
+            "home_label": "На главную",
+            "home_icon": "←",
+            "study_label": "СПИСОК ИЗУЧЕНИЯ",
+        }
         context = TemplateContext(
             character=character,
             phases=assets.phases,
@@ -40,6 +46,7 @@ class LiraHTMLGenerator(BaseGenerator):
             quizzes=assets.quizzes,
             quizzes_json=assets.quizzes_json,
             head=head_context,
+            navigation=navigation,
             relations_metadata=assets.relations_metadata,
             js_bundle=js_bundle,
         )
