@@ -539,6 +539,7 @@ function renderConstructorForPhase(phaseKey) {
                 btn.disabled = true;
             }
         });
+        refreshActiveExerciseContentHeight();
         return;
     }
 
@@ -593,6 +594,7 @@ function renderConstructorForPhase(phaseKey) {
     });
 
     panel.dataset.constructorIndex = String(state.index);
+    refreshActiveExerciseContentHeight();
 }
 
 function toggleConstructorFragment(panel, fragment) {
@@ -622,6 +624,7 @@ function toggleConstructorFragment(panel, fragment) {
     }
 
     updateConstructorPlaceholder(panel);
+    refreshActiveExerciseContentHeight();
 }
 
 function handleConstructorCheck(panel) {
@@ -685,6 +688,8 @@ function handleConstructorCheck(panel) {
             navigator.vibrate(40);
         }
     }
+
+    refreshActiveExerciseContentHeight();
 }
 
 function handleConstructorReset(panel) {
@@ -693,6 +698,7 @@ function handleConstructorReset(panel) {
     if (!phaseKey) return;
     renderConstructorForPhase(phaseKey);
     updateConstructorPlaceholder(panel);
+    refreshActiveExerciseContentHeight();
 }
 
 function handleConstructorNext(panel) {
@@ -711,6 +717,8 @@ function handleConstructorNext(panel) {
     if (navigator.vibrate && isTouchDevice) {
         navigator.vibrate(15);
     }
+
+    refreshActiveExerciseContentHeight();
 }
 
 function initializeConstructorSection() {
@@ -756,6 +764,28 @@ function activateConstructorPhase(phaseKey) {
             updateConstructorPlaceholder(panel);
             activeRendered = true;
         }
+    });
+}
+
+function refreshActiveExerciseContentHeight() {
+    const activeToggle = document.querySelector('.exercise-toggle.active');
+    if (!activeToggle) {
+        return;
+    }
+
+    const content = activeToggle.nextElementSibling;
+    if (!(content instanceof HTMLElement) || content.classList.contains('collapsed')) {
+        return;
+    }
+
+    const previousTransition = content.style.transition;
+    content.style.transition = 'none';
+    content.style.maxHeight = 'auto';
+    const newHeight = content.scrollHeight;
+
+    requestAnimationFrame(() => {
+        content.style.transition = previousTransition || '';
+        content.style.maxHeight = `${newHeight}px`;
     });
 }
 
@@ -955,7 +985,11 @@ function displayVocabulary(phaseKey) {
 
     // Update navigation buttons state
     updateNavigationButtons();
-    
+
+    setTimeout(() => {
+        refreshActiveExerciseContentHeight();
+    }, 80);
+
     // Reset transition flag
     setTimeout(() => {
         isTransitioning = false;
@@ -1068,6 +1102,8 @@ function advanceQuiz(currentCard) {
     if (phaseKey) {
         updateQuizStatsUI(phaseKey);
     }
+
+    refreshActiveExerciseContentHeight();
 }
 
 function handleQuizChoiceSelection(button) {
@@ -1117,6 +1153,8 @@ function handleQuizChoiceSelection(button) {
     if (navigator.vibrate && isTouchDevice) {
         navigator.vibrate(selectedIndex === correctIndex ? 20 : 40);
     }
+
+    refreshActiveExerciseContentHeight();
 
     setTimeout(() => {
         advanceQuiz(quizCard);
@@ -1864,6 +1902,51 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeConstructorSection();
     attachQuizHandlers();
 
+    const exerciseToggles = document.querySelectorAll('.exercise-toggle');
+    const exerciseContents = document.querySelectorAll('.exercise-content');
+
+    const collapseAllExercises = () => {
+        exerciseContents.forEach(content => {
+            content.classList.add('collapsed');
+            if (content instanceof HTMLElement) {
+                content.style.maxHeight = '0px';
+            }
+        });
+        exerciseToggles.forEach(toggle => toggle.classList.remove('active'));
+    };
+
+    exerciseToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const content = toggle.nextElementSibling;
+            if (!(content instanceof HTMLElement)) {
+                return;
+            }
+
+            const isCollapsed = content.classList.contains('collapsed');
+            collapseAllExercises();
+
+            if (isCollapsed) {
+                content.classList.remove('collapsed');
+                toggle.classList.add('active');
+                requestAnimationFrame(() => {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                });
+            }
+        });
+    });
+
+    if (exerciseToggles.length > 0) {
+        const firstToggle = exerciseToggles[0];
+        const firstContent = firstToggle.nextElementSibling;
+        if (firstContent instanceof HTMLElement) {
+            firstToggle.classList.add('active');
+            firstContent.classList.remove('collapsed');
+            requestAnimationFrame(() => {
+                firstContent.style.maxHeight = firstContent.scrollHeight + 'px';
+            });
+        }
+    }
+
     // Initialize relation toggles
     const relationToggles = document.querySelectorAll('.relation-toggle');
     relationToggles.forEach(toggle => {
@@ -1880,6 +1963,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 }
             }
+            refreshActiveExerciseContentHeight();
         });
     });
 

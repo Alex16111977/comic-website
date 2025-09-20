@@ -67,79 +67,151 @@
             </div>
         </div>
 
-        <div class="constructor-section">
-            <h2>🧩 Конструктор предложений</h2>
-            <p class="constructor-intro">Соберите немецкое предложение из фрагментов и проверьте себя по переводу.</p>
+        <div class="exercises-section">
+            <h2>📝 Упражнения</h2>
+            <p>Расширяйте лексику: найдите семьи слов, синонимы и устойчивые выражения текущей фазы.</p>
 
-            {% for phase in journey_phases %}
-            <section class="constructor-panel{% if loop.first %} active{% endif %}" data-phase="{{ phase.id }}">
-                <div class="constructor-header">
-                    <div class="constructor-word" data-constructor-word>—</div>
-                    <div class="constructor-translation" data-constructor-translation></div>
-                    <div class="constructor-progress" data-constructor-progress></div>
-                </div>
-                <p class="constructor-hint" data-constructor-hint>Выберите следующую фразу, чтобы начать тренировку.</p>
+            <div class="exercise-item">
+                <button class="exercise-toggle" type="button">
+                    <span class="toggle-icon">▶</span>
+                    🔗 Подбор слов
+                </button>
+                <div class="exercise-content collapsed">
+                    <div class="relations-wrapper">
+                        {% for phase in journey_phases %}
+                        {% set phase_id = phase.id if phase.id else 'phase-' ~ loop.index0 %}
+                        {% set relation_info = relations_metadata.get(phase_id, {}) %}
+                        <section class="relations-container{% if loop.first %} active{% endif %}" data-phase="{{ phase_id }}">
+                            <h3 class="relations-title">🔗 Подбор слов</h3>
+                            <p class="relations-subtitle">Расширяйте лексику: найдите семьи слов, синонимы и устойчивые выражения текущей фазы.</p>
 
-                <div class="constructor-areas">
-                    <div class="constructor-source" data-constructor-source></div>
-                    <div class="constructor-target" data-constructor-target>
-                        <div class="constructor-placeholder">Перетащите или нажмите на фрагменты, чтобы собрать предложение.</div>
+                            <div class="relation-section word-families-section" data-has-content="{{ 'true' if relation_info.get('has_word_families') else 'false' }}">
+                                <button class="relation-toggle" type="button">
+                                    <span>👪 Семья слов</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="relations-content"></div>
+                            </div>
+
+                            <div class="relation-section synonyms-section" data-has-content="{{ 'true' if relation_info.get('has_synonyms') else 'false' }}">
+                                <button class="relation-toggle" type="button">
+                                    <span>🔗 Подбор слов</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="relations-content"></div>
+                            </div>
+
+                            <div class="relation-section collocations-section" data-has-content="{{ 'true' if relation_info.get('has_collocations') else 'false' }}">
+                                <button class="relation-toggle" type="button">
+                                    <span>🧩 Коллокации</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="relations-content"></div>
+                            </div>
+
+                            {% if not relation_info.get('has_relations') %}
+                            <p class="relations-empty-state">Для этой фазы пока нет дополнительных связей, но они появятся позже.</p>
+                            {% endif %}
+                        </section>
+                        {% endfor %}
                     </div>
                 </div>
+            </div>
 
-                <div class="constructor-controls">
-                    <button class="constructor-control constructor-check" type="button">Проверить</button>
-                    <button class="constructor-control constructor-reset" type="button">Сбросить</button>
-                    <button class="constructor-control constructor-next" type="button">Следующее предложение</button>
+            <div class="exercise-item">
+                <button class="exercise-toggle" type="button">
+                    <span class="toggle-icon">▶</span>
+                    🧠 Викторина по фазам
+                </button>
+                <div class="exercise-content collapsed">
+                    {% if quizzes %}
+                    <div class="quiz-section" data-quiz-map='{{ quizzes_json | safe }}'>
+                        <div class="quiz-stats-panel" aria-live="polite" data-phase="">
+                            <h3 class="quiz-stats-title">📊 Статистика фазы: <span data-quiz-phase-name>{{ first_phase_title or '—' }}</span></h3>
+                            <p class="quiz-stats-summary" data-quiz-summary>Пройдено 0 из 0 вопросов.</p>
+                            <div class="quiz-progress-row">
+                                <span class="quiz-progress-label">Прогресс:</span>
+                                <span class="quiz-progress-value" data-quiz-progress>—</span>
+                            </div>
+                            <div class="quiz-errors-container" data-quiz-errors>
+                                <p class="quiz-errors-empty">Ошибок пока нет — начните викторину!</p>
+                            </div>
+                        </div>
+                        <p class="quiz-intro">Проверьте знание слов: в текущей фазе <span class="quiz-count">{% if quizzes and quizzes[0].questions %}{{ quizzes[0].questions | length }}{% else %}0{% endif %}</span> вопрос(ов).</p>
+
+                        {% for quiz in quizzes %}
+                        <div class="quiz-phase-container{% if quiz.is_active %} active{% endif %}" data-phase="{{ quiz.phase_id }}">
+                            {% if quiz.questions %}
+                                {% for question in quiz.questions %}
+                                <div class="quiz-card{% if loop.first %} active{% endif %}" data-question-index="{{ loop.index0 }}" data-correct-index="{{ question.correct_index }}">
+                                    <div class="quiz-question">{{ question.question }}</div>
+                                    <div class="quiz-choices">
+                                        {% for choice in question.choices %}
+                                        <button class="quiz-choice" type="button" data-choice-index="{{ loop.index0 }}">{{ choice }}</button>
+                                        {% endfor %}
+                                    </div>
+                                    <div class="quiz-feedback" role="status" aria-live="polite"></div>
+                                </div>
+                                {% endfor %}
+                            {% else %}
+                                <div class="quiz-card empty active">
+                                    <div class="quiz-question">Вопросы для этой фазы скоро появятся.</div>
+                                </div>
+                            {% endif %}
+                            <div class="quiz-completion" aria-hidden="true">🎉 Викторина пройдена! Так держать!</div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% else %}
+                    <div class="quiz-section quiz-section--empty">
+                        <p class="quiz-empty-message">Викторина появится позже.</p>
+                    </div>
+                    {% endif %}
                 </div>
+            </div>
 
-                <div class="constructor-feedback" aria-live="polite"></div>
-                <div class="constructor-original" data-constructor-original></div>
+            <div class="exercise-item">
+                <button class="exercise-toggle" type="button">
+                    <span class="toggle-icon">▶</span>
+                    🧩 Конструктор предложений
+                </button>
+                <div class="exercise-content collapsed">
+                    <div class="constructor-section">
+                        <p class="constructor-intro">Соберите немецкое предложение из фрагментов и проверьте себя по переводу.</p>
 
-                {% if not phase.sentence_parts %}
-                <p class="constructor-empty">Для этой фазы пока нет предложений для конструктора, они появятся позже.</p>
-                {% endif %}
-            </section>
-            {% endfor %}
-        </div>
+                        {% for phase in journey_phases %}
+                        <section class="constructor-panel{% if loop.first %} active{% endif %}" data-phase="{{ phase.id }}">
+                            <div class="constructor-header">
+                                <div class="constructor-word" data-constructor-word>—</div>
+                                <div class="constructor-translation" data-constructor-translation></div>
+                                <div class="constructor-progress" data-constructor-progress></div>
+                            </div>
+                            <p class="constructor-hint" data-constructor-hint>Выберите следующую фразу, чтобы начать тренировку.</p>
 
-        <div class="relations-wrapper">
-            {% for phase in journey_phases %}
-            {% set phase_id = phase.id if phase.id else 'phase-' ~ loop.index0 %}
-            {% set relation_info = relations_metadata.get(phase_id, {}) %}
-            <section class="relations-container{% if loop.first %} active{% endif %}" data-phase="{{ phase_id }}">
-                <h3 class="relations-title">🔗 Связи слов</h3>
-                <p class="relations-subtitle">Расширяйте лексику: найдите семьи слов, синонимы и устойчивые выражения текущей фазы.</p>
+                            <div class="constructor-areas">
+                                <div class="constructor-source" data-constructor-source></div>
+                                <div class="constructor-target" data-constructor-target>
+                                    <div class="constructor-placeholder">Перетащите или нажмите на фрагменты, чтобы собрать предложение.</div>
+                                </div>
+                            </div>
 
-                <div class="relation-section word-families-section" data-has-content="{{ 'true' if relation_info.get('has_word_families') else 'false' }}">
-                    <button class="relation-toggle" type="button">
-                        <span>👪 Семья слов</span>
-                        <span class="toggle-icon">▼</span>
-                    </button>
-                    <div class="relations-content"></div>
+                            <div class="constructor-controls">
+                                <button class="constructor-control constructor-check" type="button">Проверить</button>
+                                <button class="constructor-control constructor-reset" type="button">Сбросить</button>
+                                <button class="constructor-control constructor-next" type="button">Следующее предложение</button>
+                            </div>
+
+                            <div class="constructor-feedback" aria-live="polite"></div>
+                            <div class="constructor-original" data-constructor-original></div>
+
+                            {% if not phase.sentence_parts %}
+                            <p class="constructor-empty">Для этой фазы пока нет предложений для конструктора, они появятся позже.</p>
+                            {% endif %}
+                        </section>
+                        {% endfor %}
+                    </div>
                 </div>
-
-                <div class="relation-section synonyms-section" data-has-content="{{ 'true' if relation_info.get('has_synonyms') else 'false' }}">
-                    <button class="relation-toggle" type="button">
-                        <span>🔗 Подбор слов</span>
-                        <span class="toggle-icon">▼</span>
-                    </button>
-                    <div class="relations-content"></div>
-                </div>
-
-                <div class="relation-section collocations-section" data-has-content="{{ 'true' if relation_info.get('has_collocations') else 'false' }}">
-                    <button class="relation-toggle" type="button">
-                        <span>🧩 Коллокации</span>
-                        <span class="toggle-icon">▼</span>
-                    </button>
-                    <div class="relations-content"></div>
-                </div>
-
-                {% if not relation_info.get('has_relations') %}
-                <p class="relations-empty-state">Для этой фазы пока нет дополнительных связей, но они появятся позже.</p>
-                {% endif %}
-            </section>
-            {% endfor %}
+            </div>
         </div>
 
         <div class="exercises-container">
@@ -153,47 +225,6 @@
             </div>
             {% endfor %}
         </div>
-
-        {% if quizzes %}
-        <div class="quiz-section" data-quiz-map='{{ quizzes_json | safe }}'>
-            <div class="quiz-stats-panel" aria-live="polite" data-phase="">
-                <h3 class="quiz-stats-title">📊 Статистика фазы: <span data-quiz-phase-name>{{ first_phase_title or '—' }}</span></h3>
-                <p class="quiz-stats-summary" data-quiz-summary>Пройдено 0 из 0 вопросов.</p>
-                <div class="quiz-progress-row">
-                    <span class="quiz-progress-label">Прогресс:</span>
-                    <span class="quiz-progress-value" data-quiz-progress>—</span>
-                </div>
-                <div class="quiz-errors-container" data-quiz-errors>
-                    <p class="quiz-errors-empty">Ошибок пока нет — начните викторину!</p>
-                </div>
-            </div>
-            <h2>🧠 Викторина по фазам</h2>
-            <p class="quiz-intro">Проверьте знание слов: в текущей фазе <span class="quiz-count">{% if quizzes and quizzes[0].questions %}{{ quizzes[0].questions | length }}{% else %}0{% endif %}</span> вопрос(ов).</p>
-
-            {% for quiz in quizzes %}
-            <div class="quiz-phase-container{% if quiz.is_active %} active{% endif %}" data-phase="{{ quiz.phase_id }}">
-                {% if quiz.questions %}
-                    {% for question in quiz.questions %}
-                    <div class="quiz-card{% if loop.first %} active{% endif %}" data-question-index="{{ loop.index0 }}" data-correct-index="{{ question.correct_index }}">
-                        <div class="quiz-question">{{ question.question }}</div>
-                        <div class="quiz-choices">
-                            {% for choice in question.choices %}
-                            <button class="quiz-choice" type="button" data-choice-index="{{ loop.index0 }}">{{ choice }}</button>
-                            {% endfor %}
-                        </div>
-                        <div class="quiz-feedback" role="status" aria-live="polite"></div>
-                    </div>
-                    {% endfor %}
-                {% else %}
-                    <div class="quiz-card empty active">
-                        <div class="quiz-question">Вопросы для этой фазы скоро появятся.</div>
-                    </div>
-                {% endif %}
-                <div class="quiz-completion" aria-hidden="true">🎉 Викторина пройдена! Так держать!</div>
-            </div>
-            {% endfor %}
-        </div>
-        {% endif %}
 
         <nav class="bottom-nav">
             <a href="../index.html" class="nav-link">← К главной</a>
