@@ -51,15 +51,7 @@ class LiraJSGenerator:
                 elif not isinstance(sentence_parts, list):
                     sentence_parts = []
 
-                word_id = (
-                    word.get('id')
-                    or word.get('word_id')
-                    or word.get('wordId')
-                    or ''
-                )
-
                 words.append({
-                    'wordId': word_id,
                     'word': word.get('german', ''),
                     'translation': word.get('russian', ''),
                     'transcription': word.get('transcription', ''),
@@ -138,353 +130,6 @@ let progressLineElement = null;
 let progressLineLength = 0;
 const QUIZ_ADVANCE_DELAY = 1200;
 const constructorState = {};
-
-const STUDY_BUTTON_SELECTOR = '.btn-study';
-
-function normalizeString(value) {
-    if (value === undefined || value === null) {
-        return '';
-    }
-
-    if (typeof value === 'string') {
-        return value.trim();
-    }
-
-    return String(value).trim();
-}
-
-function escapeHtmlAttribute(value) {
-    if (value === undefined || value === null) {
-        return '';
-    }
-
-    return String(value)
-        .replace(/&/g, '&amp;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#39;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;');
-}
-
-function parseJsonList(rawValue) {
-    if (!rawValue) {
-        return [];
-    }
-
-    if (Array.isArray(rawValue)) {
-        return rawValue
-            .map(item => normalizeString(item))
-            .filter(Boolean);
-    }
-
-    if (typeof rawValue === 'string') {
-        try {
-            const parsed = JSON.parse(rawValue);
-            if (Array.isArray(parsed)) {
-                return parsed
-                    .map(item => normalizeString(item))
-                    .filter(Boolean);
-            }
-        } catch (error) {
-            // Fall through to string splitting
-        }
-
-        return rawValue
-            .split(',')
-            .map(item => normalizeString(item))
-            .filter(Boolean);
-    }
-
-    return [];
-}
-
-function readStoredReviewQueueItems() {
-    if (typeof localStorage === 'undefined') {
-        return [];
-    }
-
-    try {
-        const stored = localStorage.getItem(REVIEW_QUEUE_KEY);
-        if (!stored) {
-            return [];
-        }
-
-        const parsed = JSON.parse(stored);
-        if (!Array.isArray(parsed)) {
-            return [];
-        }
-
-        return parsed.filter(item => item && typeof item === 'object');
-    } catch (error) {
-        console.warn('[StudyQueue] Unable to read review queue', error);
-        return [];
-    }
-}
-
-function writeStoredReviewQueueItems(queue) {
-    if (typeof localStorage === 'undefined') {
-        return false;
-    }
-
-    const items = Array.isArray(queue) ? queue : [];
-
-    try {
-        localStorage.setItem(REVIEW_QUEUE_KEY, JSON.stringify(items));
-        return true;
-    } catch (error) {
-        console.warn('[StudyQueue] Unable to persist review queue', error);
-        return false;
-    }
-}
-
-function getStudyQueueKey(entry) {
-    if (!entry || typeof entry !== 'object') {
-        return 'entry::';
-    }
-
-    const wordId = normalizeString(entry.wordId || entry.wordID || entry.word_id);
-    const character = normalizeString(entry.characterId || entry.characterID || entry.character_id);
-    const phase = normalizeString(entry.phaseId || entry.phaseID || entry.phase_id);
-
-    if (wordId) {
-        return `id::${wordId}`;
-    }
-
-    const word = normalizeString(entry.word);
-    const translation = normalizeString(entry.translation);
-
-    return `word::${character}::${phase}::${word}::${translation}`;
-}
-
-function mergeStudyExamples(existingExamples, newExamples) {
-    const combined = [];
-    const seen = new Set();
-
-    const pushExample = example => {
-        if (!example || typeof example !== 'object') {
-            return;
-        }
-
-        const german = normalizeString(example.german || example.de || example.example || '');
-        const russian = normalizeString(example.russian || example.ru || example.translation || '');
-
-        if (!german && !russian) {
-            return;
-        }
-
-        const key = `${german}::${russian}`;
-        if (seen.has(key)) {
-            return;
-        }
-
-        seen.add(key);
-        combined.push({ german, russian });
-    };
-
-    if (Array.isArray(existingExamples)) {
-        existingExamples.forEach(pushExample);
-    }
-
-    if (Array.isArray(newExamples)) {
-        newExamples.forEach(pushExample);
-    }
-
-    return combined;
-}
-
-function mergeStudyEntries(existingEntry, incomingEntry) {
-    if (!existingEntry) {
-        return incomingEntry ? { ...incomingEntry } : existingEntry;
-    }
-
-    if (!incomingEntry) {
-        return { ...existingEntry };
-    }
-
-    const merged = { ...existingEntry, ...incomingEntry };
-
-    const tags = new Set();
-    if (Array.isArray(existingEntry.tags)) {
-        existingEntry.tags.forEach(tag => {
-            const normalized = normalizeString(tag);
-            if (normalized) {
-                tags.add(normalized);
-            }
-        });
-    }
-    if (Array.isArray(incomingEntry.tags)) {
-        incomingEntry.tags.forEach(tag => {
-            const normalized = normalizeString(tag);
-            if (normalized) {
-                tags.add(normalized);
-            }
-        });
-    }
-
-    if (tags.size) {
-        merged.tags = Array.from(tags);
-    }
-
-    merged.examples = mergeStudyExamples(existingEntry.examples, incomingEntry.examples);
-
-    return merged;
-}
-
-function upsertReviewQueueEntry(queue, entry) {
-    if (!entry || typeof entry !== 'object') {
-        return Array.isArray(queue) ? queue.slice() : [];
-    }
-
-    const currentQueue = Array.isArray(queue)
-        ? queue.filter(item => item && typeof item === 'object')
-        : [];
-
-    const targetKey = getStudyQueueKey(entry);
-    let replaced = false;
-
-    const updatedQueue = currentQueue.map(item => {
-        if (getStudyQueueKey(item) === targetKey) {
-            replaced = true;
-            return mergeStudyEntries(item, entry);
-        }
-        return item;
-    });
-
-    if (!replaced) {
-        updatedQueue.push(entry);
-    }
-
-    return updatedQueue;
-}
-
-function buildQueueEntryFromDataset(dataset) {
-    if (!dataset) {
-        return null;
-    }
-
-    const fallbackCharacterId = typeof characterId === 'string' ? characterId : '';
-
-    const wordId = normalizeString(dataset.wordId || dataset.wordID || dataset.word_id);
-    const word = normalizeString(dataset.word);
-
-    if (!wordId && !word) {
-        return null;
-    }
-
-    const entry = {};
-
-    const character = normalizeString(
-        dataset.characterId || dataset.characterID || dataset.character_id || fallbackCharacterId
-    );
-    const phase = normalizeString(dataset.phaseId || dataset.phaseID || dataset.phase_id || dataset.phase);
-
-    if (wordId) {
-        entry.wordId = wordId;
-    }
-
-    if (character) {
-        entry.characterId = character;
-    }
-
-    if (phase) {
-        entry.phaseId = phase;
-    }
-
-    if (word) {
-        entry.word = word;
-    }
-
-    const translation = normalizeString(dataset.translation);
-    if (translation) {
-        entry.translation = translation;
-    }
-
-    const transcription = normalizeString(dataset.transcription);
-    if (transcription) {
-        entry.transcription = transcription;
-    }
-
-    const visualHint = normalizeString(dataset.visualHint);
-    if (visualHint) {
-        entry.visualHint = visualHint;
-    }
-
-    const practiceUrl = normalizeString(dataset.practiceUrl);
-    if (practiceUrl) {
-        entry.practiceUrl = practiceUrl;
-    }
-
-    const phaseTitle = normalizeString(dataset.phaseTitle);
-    if (phaseTitle) {
-        entry.phaseTitle = phaseTitle;
-    }
-
-    const source = normalizeString(dataset.source);
-    entry.source = source || 'journey';
-
-    const tags = parseJsonList(dataset.tags || dataset.themes);
-    if (tags.length) {
-        entry.tags = tags;
-    }
-
-    const germanSentence = normalizeString(dataset.sentence);
-    const russianSentence = normalizeString(dataset.sentenceTranslation || dataset.sentence_translation);
-
-    const examples = [];
-    if (germanSentence) {
-        entry.example = germanSentence;
-    }
-    if (russianSentence) {
-        entry.exampleTranslation = russianSentence;
-    }
-    if (germanSentence || russianSentence) {
-        examples.push({
-            german: germanSentence,
-            russian: russianSentence,
-        });
-    }
-
-    entry.examples = examples;
-    entry.addedAt = new Date().toISOString();
-
-    return entry;
-}
-
-function attachStudyButtonHandler(button) {
-    if (!button || typeof button.addEventListener !== 'function') {
-        return;
-    }
-
-    if (button.dataset.studyBound === 'true') {
-        return;
-    }
-
-    button.dataset.studyBound = 'true';
-
-    button.addEventListener('click', event => {
-        event.preventDefault();
-
-        const payload = buildQueueEntryFromDataset(button.dataset);
-        if (!payload) {
-            console.warn('[StudyQueue] Unable to build study payload for button', button);
-            return;
-        }
-
-        const existingQueue = readStoredReviewQueueItems();
-        const updatedQueue = upsertReviewQueueEntry(existingQueue, payload);
-        const saved = writeStoredReviewQueueItems(updatedQueue);
-
-        if (!saved) {
-            return;
-        }
-
-        if (button.classList) {
-            button.classList.add('queued');
-        }
-
-        button.dataset.state = 'queued';
-    });
-}
 
 function getPhaseStorageKey(phaseKey) {
     const safePhase = phaseKey || 'unknown';
@@ -1317,61 +962,109 @@ function displayVocabulary(phaseKey) {
             card.className = 'word-card';
             card.style.animationDelay = `${index * 0.1}s`;
 
-            const exampleSentence = item.sentence
-                ? `<p class="sentence-german">${item.sentence}</p>`
-                : '';
-            const exampleTranslation = item.sentenceTranslation
-                ? `<p class="sentence-translation">${item.sentenceTranslation}</p>`
-                : '';
-            const exampleBlock = (exampleSentence || exampleTranslation)
-                ? `<div class="word-sentence">${exampleSentence}${exampleTranslation}</div>`
-                : '';
-            const sentenceAttr = escapeHtmlAttribute(item.sentence || '');
-            const sentenceTranslationAttr = escapeHtmlAttribute(item.sentenceTranslation || '');
-
+            // Простая карточка словаря
             card.innerHTML = `
                 <div class="word-meta">
                     <div class="word-german">${item.word}</div>
                     <div class="word-translation">${item.translation}</div>
                     <div class="word-transcription">${item.transcription}</div>
                 </div>
-                ${exampleBlock}
-                <div class="word-actions">
-                    <button class="btn-study" type="button"
-                        data-sentence="${sentenceAttr}"
-                        data-sentence-translation="${sentenceTranslationAttr}"
-                    >Учить слово</button>
-                </div>
+                <button class="btn-study" type="button"
+                    data-word="${item.word || ''}"
+                    data-translation="${item.translation || ''}"
+                    data-transcription="${item.transcription || ''}"
+                    data-sentence="${item.sentence || ''}"
+                    data-sentence-translation="${item.sentenceTranslation || ''}"
+                    data-character-id="${characterId || ''}"
+                    data-phase-key="${phaseKey || ''}"
+                >Изучить</button>
             `;
-
-            const studyButton = card.querySelector(STUDY_BUTTON_SELECTOR);
-            if (studyButton) {
-                const wordId = item.wordId || '';
-                const practiceUrl = wordId ? `../trainings/${wordId}.html` : '';
-                const themes = Array.isArray(item.themes) ? item.themes : [];
-
-                studyButton.dataset.word = item.word || '';
-                studyButton.dataset.translation = item.translation || '';
-                studyButton.dataset.transcription = item.transcription || '';
-                studyButton.dataset.characterId = characterId || '';
-                studyButton.dataset.phaseId = phaseKey || '';
-                studyButton.dataset.phaseTitle = phase.title || '';
-                studyButton.dataset.visualHint = item.visual_hint || '';
-                studyButton.dataset.sentence = item.sentence || '';
-                studyButton.dataset.sentenceTranslation = item.sentenceTranslation || '';
-                studyButton.dataset.wordId = wordId;
-                studyButton.dataset.practiceUrl = practiceUrl;
-                studyButton.dataset.source = 'journey';
-                studyButton.dataset.tags = themes.length ? JSON.stringify(themes) : '';
-
-                const ariaLabel = item.word
-                    ? `Учить слово ${item.word}`
-                    : 'Учить слово';
-                studyButton.setAttribute('aria-label', ariaLabel);
-
-                attachStudyButtonHandler(studyButton);
+            
+            // Добавляем обработчик для кнопки
+            const studyBtn = card.querySelector('.btn-study');
+            if (studyBtn) {
+                studyBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    // Создаем объект с данными слова
+                    const fullWordData = {
+                        word: this.dataset.word,
+                        translation: this.dataset.translation,
+                        transcription: this.dataset.transcription,
+                        characterId: this.dataset.characterId,
+                        phaseKey: this.dataset.phaseKey,
+                        examples: []
+                    };
+                    
+                    // Добавляем примеры если есть
+                    if (this.dataset.sentence || this.dataset.sentenceTranslation) {
+                        fullWordData.examples.push({
+                            german: this.dataset.sentence || '',
+                            russian: this.dataset.sentenceTranslation || ''
+                        });
+                    }
+                    
+                    // Получаем существующий список из localStorage
+                    let reviewQueue = [];
+                    try {
+                        const stored = localStorage.getItem(REVIEW_QUEUE_KEY);
+                        if (stored) {
+                            reviewQueue = JSON.parse(stored);
+                            if (!Array.isArray(reviewQueue)) {
+                                reviewQueue = [];
+                            }
+                        }
+                    } catch (error) {
+                        console.error('[ReviewQueue] Error reading from localStorage:', error);
+                        reviewQueue = [];
+                    }
+                    
+                    // Проверяем, не добавлено ли уже это слово
+                    const exists = reviewQueue.some(w => 
+                        w.word === fullWordData.word && 
+                        w.characterId === fullWordData.characterId
+                    );
+                    
+                    if (!exists && reviewQueue.length < 5) {
+                        // Добавляем emoji и примеры
+                        fullWordData.emoji = item.visual_hint || '📝';
+                        fullWordData.sentence = item.sentence || '';
+                        fullWordData.example = item.sentence || '';
+                        reviewQueue.push(fullWordData);
+                        
+                        try {
+                            localStorage.setItem(REVIEW_QUEUE_KEY, JSON.stringify(reviewQueue));
+                            
+                            // Визуальная обратная связь - кнопка становится зеленой
+                            this.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
+                            this.textContent = '✓ Добавлено';
+                            this.disabled = true;
+                            
+                            // Haptic feedback для мобильных
+                            if (navigator.vibrate && isTouchDevice) {
+                                navigator.vibrate(20);
+                            }
+                            
+                            console.log('[ReviewQueue] Added word to review:', fullWordData);
+                            
+                            // Отправляем событие для обновления главной страницы
+                            window.dispatchEvent(new Event('storage'));
+                        } catch (error) {
+                            console.error('[ReviewQueue] Error saving to localStorage:', error);
+                            alert('Не удалось сохранить слово для изучения');
+                        }
+                    } else if (exists) {
+                        this.textContent = 'Уже добавлено';
+                        this.disabled = true;
+                    } else {
+                        this.textContent = 'Максимум 5 слов';
+                        this.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
+                        this.disabled = true;
+                    }
+                });
             }
-
+            
             grid.appendChild(card);
         }, index * 50);
     });
