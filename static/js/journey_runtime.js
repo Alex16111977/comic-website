@@ -1138,6 +1138,47 @@ function activateConstructorPhase(phaseKey) {
     });
 }
 
+function calculateExpandedExerciseContentHeight(content) {
+    if (!(content instanceof HTMLElement)) {
+        return 0;
+    }
+
+    const selectionContainer = content.querySelector('.word-selection-container');
+    if (selectionContainer instanceof HTMLElement) {
+        const contentStyles = window.getComputedStyle(content);
+        const paddingTop = parseFloat(contentStyles.paddingTop) || 0;
+        const paddingBottom = parseFloat(contentStyles.paddingBottom) || 0;
+
+        const containerStyles = window.getComputedStyle(selectionContainer);
+        const marginTop = parseFloat(containerStyles.marginTop) || 0;
+        const marginBottom = parseFloat(containerStyles.marginBottom) || 0;
+        const selectionHeight = selectionContainer.offsetHeight + marginTop + marginBottom;
+        const baseHeight = content.scrollHeight;
+
+        return Math.ceil(Math.max(baseHeight, selectionHeight + paddingTop + paddingBottom + 40));
+    }
+
+    return Math.ceil(content.scrollHeight);
+}
+
+function updateWordColumnScrollIndicators(context) {
+    let scope = document;
+    if (context instanceof HTMLElement || context instanceof Document) {
+        scope = context;
+    }
+
+    const columns = scope.querySelectorAll('.word-selection-container .word-column');
+    columns.forEach(column => {
+        if (!(column instanceof HTMLElement)) {
+            return;
+        }
+
+        const hasOverflow = column.scrollHeight > column.clientHeight + 1;
+        const reachedBottom = column.scrollTop + column.clientHeight >= column.scrollHeight - 1;
+        column.classList.toggle('has-scroll', hasOverflow && !reachedBottom);
+    });
+}
+
 function refreshActiveExerciseContentHeight() {
     const activeToggle = document.querySelector('.exercise-toggle.active');
     if (!activeToggle) {
@@ -1151,12 +1192,13 @@ function refreshActiveExerciseContentHeight() {
 
     const previousTransition = content.style.transition;
     content.style.transition = 'none';
-    content.style.maxHeight = 'auto';
-    const newHeight = content.scrollHeight;
+    content.style.maxHeight = 'none';
+    const newHeight = calculateExpandedExerciseContentHeight(content);
 
     requestAnimationFrame(() => {
         content.style.transition = previousTransition || '';
         content.style.maxHeight = `${newHeight}px`;
+        updateWordColumnScrollIndicators(content);
     });
 }
 
@@ -1636,6 +1678,7 @@ function renderRelations(container, phaseKey) {
                     successMessage: 'Отлично! Все слова подобраны!'
                 });
             } else {
+                content.classList.remove('word-selection-host');
                 content.innerHTML = '<div class="relations-empty-state">Слова для подбора отсутствуют.</div>';
             }
         }
@@ -1721,6 +1764,7 @@ function shuffleArray(array) {
     return copy;
 }
 
+
 function buildPairMatchingActivity(container, pairs, options = {}) {
     if (!container || !pairs || pairs.length === 0) return;
 
@@ -1732,42 +1776,57 @@ function buildPairMatchingActivity(container, pairs, options = {}) {
         successMessage: 'Все пары подобраны!'
     }, options);
 
-    container.classList.add('pair-matching-container');
+    const baseStatusMessage = 'Выберите немецкое слово и его русский перевод';
+
+    container.classList.remove('pair-matching-container');
+    container.classList.add('word-selection-host');
     container.innerHTML = '';
 
+    const wrapper = document.createElement('div');
+    wrapper.className = 'word-selection-container';
+    wrapper.setAttribute('role', 'group');
+
     const layout = document.createElement('div');
-    layout.className = 'pair-matching-layout';
+    layout.className = 'word-columns';
 
-    const promptsWrapper = document.createElement('div');
-    promptsWrapper.className = 'pair-column-wrapper';
-    const promptsLabel = document.createElement('div');
-    promptsLabel.className = 'pair-column-label';
-    promptsLabel.textContent = settings.promptLabel;
     const promptsColumn = document.createElement('div');
-    promptsColumn.className = 'pair-column pair-prompts';
+    promptsColumn.className = 'word-column german-words';
+    const promptsHeading = document.createElement('h4');
+    promptsHeading.textContent = (settings.promptLabel || '').toUpperCase();
+    const promptsList = document.createElement('div');
+    promptsList.className = 'word-list';
 
-    const matchesWrapper = document.createElement('div');
-    matchesWrapper.className = 'pair-column-wrapper';
-    const matchesLabel = document.createElement('div');
-    matchesLabel.className = 'pair-column-label';
-    matchesLabel.textContent = settings.matchLabel;
     const matchesColumn = document.createElement('div');
-    matchesColumn.className = 'pair-column pair-matches';
+    matchesColumn.className = 'word-column russian-words';
+    const matchesHeading = document.createElement('h4');
+    matchesHeading.textContent = (settings.matchLabel || '').toUpperCase();
+    const matchesList = document.createElement('div');
+    matchesList.className = 'word-list';
 
-    promptsWrapper.appendChild(promptsLabel);
-    promptsWrapper.appendChild(promptsColumn);
-    matchesWrapper.appendChild(matchesLabel);
-    matchesWrapper.appendChild(matchesColumn);
+    promptsColumn.appendChild(promptsHeading);
+    promptsColumn.appendChild(promptsList);
+    matchesColumn.appendChild(matchesHeading);
+    matchesColumn.appendChild(matchesList);
 
-    layout.appendChild(promptsWrapper);
-    layout.appendChild(matchesWrapper);
+    layout.appendChild(promptsColumn);
+    layout.appendChild(matchesColumn);
 
-    const status = document.createElement('div');
-    status.className = 'pair-status';
-    status.textContent = 'Выберите немецкое слово и его русский перевод.';
+    const selectionFooter = document.createElement('div');
+    selectionFooter.className = 'selection-button';
+    selectionFooter.setAttribute('aria-live', 'polite');
 
-    container.appendChild(layout);
-    container.appendChild(status);
+    const statusButton = document.createElement('button');
+    statusButton.className = 'select-pair-btn';
+    statusButton.type = 'button';
+    statusButton.disabled = true;
+    statusButton.textContent = baseStatusMessage;
+
+    selectionFooter.appendChild(statusButton);
+
+    wrapper.appendChild(layout);
+    wrapper.appendChild(selectionFooter);
+
+    container.appendChild(wrapper);
 
     const promptCards = shuffleArray(pairs.map(pair => ({
         label: pair.prompt,
@@ -1784,18 +1843,21 @@ function buildPairMatchingActivity(container, pairs, options = {}) {
     let remainingPairs = pairs.length;
 
     function updateStatus(message, type) {
-        status.textContent = message || '';
-        status.classList.remove('success', 'error');
-        if (type) {
-            status.classList.add(type);
+        statusButton.textContent = message || '';
+        statusButton.classList.remove('is-success', 'is-error');
+        if (type === 'success') {
+            statusButton.classList.add('is-success');
+        } else if (type === 'error') {
+            statusButton.classList.add('is-error');
         }
+        refreshActiveExerciseContentHeight();
     }
 
     function handleMatchSuccess(promptCard, matchCard) {
         [promptCard, matchCard].forEach(card => {
             card.classList.remove('selected', 'incorrect');
-            card.classList.add('matched', 'correct');
-            card.setAttribute('disabled', 'true');
+            card.classList.add('matched');
+            card.disabled = true;
             card.setAttribute('aria-disabled', 'true');
         });
 
@@ -1810,6 +1872,8 @@ function buildPairMatchingActivity(container, pairs, options = {}) {
         } else {
             updateStatus(settings.matchMessage, 'success');
         }
+
+        updateWordColumnScrollIndicators(wrapper);
     }
 
     function handleMatchFailure(promptCard, matchCard) {
@@ -1827,6 +1891,7 @@ function buildPairMatchingActivity(container, pairs, options = {}) {
             [promptCard, matchCard].forEach(card => {
                 card.classList.remove('incorrect', 'selected');
             });
+            updateStatus(baseStatusMessage);
         }, 650);
     }
 
@@ -1851,59 +1916,90 @@ function buildPairMatchingActivity(container, pairs, options = {}) {
             return;
         }
 
-        if (card.classList.contains('selected')) {
-            card.classList.remove('selected');
-            if (type === 'prompt') {
-                activePrompt = null;
-            } else {
-                activeMatch = null;
-            }
-            return;
-        }
-
         if (type === 'prompt') {
+            if (activePrompt === card) {
+                card.classList.remove('selected');
+                activePrompt = null;
+                updateStatus(activeMatch ? 'Теперь выберите немецкое слово.' : baseStatusMessage);
+                return;
+            }
+
             if (activePrompt) {
                 activePrompt.classList.remove('selected');
             }
+
             activePrompt = card;
         } else {
+            if (activeMatch === card) {
+                card.classList.remove('selected');
+                activeMatch = null;
+                updateStatus(activePrompt ? 'Теперь выберите русский перевод.' : baseStatusMessage);
+                return;
+            }
+
             if (activeMatch) {
                 activeMatch.classList.remove('selected');
             }
+
             activeMatch = card;
         }
 
         card.classList.add('selected');
-        evaluateSelection();
+
+        if (activePrompt && activeMatch) {
+            evaluateSelection();
+        } else if (activePrompt) {
+            updateStatus('Теперь выберите русский перевод.', null);
+        } else if (activeMatch) {
+            updateStatus('Теперь выберите немецкое слово.', null);
+        }
     }
 
     promptCards.forEach(data => {
         const card = document.createElement('button');
+        card.className = 'word-item';
         card.type = 'button';
-        card.className = 'pair-card pair-card-prompt';
-        card.dataset.pairId = data.pairId;
         card.textContent = data.label;
+        card.dataset.pairId = data.pairId;
+        promptsList.appendChild(card);
 
-        addInteractiveListener(card, function() {
+        card.addEventListener('click', () => {
             toggleSelection(card, 'prompt');
         });
-
-        promptsColumn.appendChild(card);
     });
 
     matchCards.forEach(data => {
         const card = document.createElement('button');
+        card.className = 'word-item';
         card.type = 'button';
-        card.className = 'pair-card pair-card-match';
-        card.dataset.pairId = data.pairId;
         card.textContent = data.label;
+        card.dataset.pairId = data.pairId;
+        matchesList.appendChild(card);
 
-        addInteractiveListener(card, function() {
+        card.addEventListener('click', () => {
             toggleSelection(card, 'match');
         });
-
-        matchesColumn.appendChild(card);
     });
+
+    [promptsColumn, matchesColumn].forEach(column => {
+        column.addEventListener('scroll', () => updateWordColumnScrollIndicators(wrapper));
+    });
+
+    function shuffleArrayInPlace(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
+    shuffleArrayInPlace(Array.from(promptsList.children));
+    shuffleArrayInPlace(Array.from(matchesList.children));
+
+    Array.from(promptsList.children).forEach(child => promptsList.appendChild(child));
+    Array.from(matchesList.children).forEach(child => matchesList.appendChild(child));
+
+    updateStatus(baseStatusMessage);
+    updateWordColumnScrollIndicators(wrapper);
 }
 
 function buildMemoryGame(container, pairs, options = {}) {
@@ -2234,6 +2330,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const collapseAllExercises = () => {
         exerciseContents.forEach(content => {
             content.classList.add('collapsed');
+            content.classList.remove('expanded');
             if (content instanceof HTMLElement) {
                 content.style.maxHeight = '0px';
             }
@@ -2253,9 +2350,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (isCollapsed) {
                 content.classList.remove('collapsed');
+                content.classList.add('expanded');
                 toggle.classList.add('active');
                 requestAnimationFrame(() => {
-                    content.style.maxHeight = content.scrollHeight + 'px';
+                    const targetHeight = calculateExpandedExerciseContentHeight(content);
+                    content.style.maxHeight = `${targetHeight}px`;
+                    updateWordColumnScrollIndicators(content);
                 });
             }
         });
@@ -2267,11 +2367,19 @@ document.addEventListener('DOMContentLoaded', function() {
         if (firstContent instanceof HTMLElement) {
             firstToggle.classList.add('active');
             firstContent.classList.remove('collapsed');
+            firstContent.classList.add('expanded');
             requestAnimationFrame(() => {
-                firstContent.style.maxHeight = firstContent.scrollHeight + 'px';
+                const targetHeight = calculateExpandedExerciseContentHeight(firstContent);
+                firstContent.style.maxHeight = `${targetHeight}px`;
+                updateWordColumnScrollIndicators(firstContent);
             });
         }
     }
+
+    window.addEventListener('resize', () => {
+        refreshActiveExerciseContentHeight();
+        updateWordColumnScrollIndicators();
+    });
 
     // Initialize relation toggles
     const relationToggles = document.querySelectorAll('.relation-toggle');
@@ -2284,12 +2392,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (content) {
                     if (section.classList.contains('expanded')) {
                         content.style.maxHeight = content.scrollHeight + 'px';
+                        updateWordColumnScrollIndicators(content);
                     } else {
                         content.style.maxHeight = '0';
                     }
                 }
             }
             refreshActiveExerciseContentHeight();
+            if (!section || !section.classList.contains('expanded')) {
+                updateWordColumnScrollIndicators();
+            }
         });
     });
 
