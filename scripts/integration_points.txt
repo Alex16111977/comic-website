@@ -1,0 +1,48 @@
+INTEGRATION POINTS FOR EXERCISES
+==================================================
+
+Line 2 (phase_change):
+  let currentPhaseIndex = 0;
+
+Line 951 (phase_change):
+  const progress = ((currentPhaseIndex + 1) / phaseKeys.length) * 100;
+
+Line 1152 (relations_handler):
+  const relationsContainers = document.querySelectorAll('.relations-container');
+
+Line 1831 (phase_change):
+  prevBtn.disabled = currentPhaseIndex === 0;
+
+Line 1832 (phase_change):
+  prevBtn.style.opacity = currentPhaseIndex === 0 ? '0.5' : '1';
+
+Line 1833 (phase_change):
+  prevBtn.style.cursor = currentPhaseIndex === 0 ? 'not-allowed' : 'pointer';
+
+Line 1837 (phase_change):
+  nextBtn.disabled = currentPhaseIndex >= phaseKeys.length - 1;
+
+Line 1838 (phase_change):
+  nextBtn.style.opacity = currentPhaseIndex >= phaseKeys.length - 1 ? '0.5' : '1';
+
+Line 1839 (phase_change):
+  nextBtn.style.cursor = currentPhaseIndex >= phaseKeys.length - 1 ? 'not-allowed'
+
+Line 1850 (phase_change):
+  currentPhaseIndex = index;
+
+Line 1859 (page_init):
+  document.addEventListener('DOMContentLoaded', function() {
+
+Line 1868 (relations_handler):
+  const relationToggles = document.querySelectorAll('.relation-toggle');
+
+Line 1924 (phase_change):
+  const targetPoint = journeyPoints[currentPhaseIndex];
+
+Line 1946 (phase_change):
+  const targetPoint = journeyPoints[currentPhaseIndex];
+
+Line 2064 (page_init):
+  document.addEventListener('DOMContentLoaded', function() {
+
