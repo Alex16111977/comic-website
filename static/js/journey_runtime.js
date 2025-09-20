@@ -7,6 +7,377 @@ let progressLineLength = 0;
 const QUIZ_ADVANCE_DELAY = 1200;
 const constructorState = {};
 
+const studyQueueState = {
+    queue: [],
+    lookup: new Map(),
+    initialized: false,
+};
+
+function sanitizeStudyExample(example) {
+    if (!example || typeof example !== 'object') {
+        return null;
+    }
+
+    const german = typeof example.german === 'string' ? example.german : '';
+    const russian = typeof example.russian === 'string' ? example.russian : '';
+
+    if (!german && !russian) {
+        return null;
+    }
+
+    return {
+        german: german,
+        russian: russian,
+    };
+}
+
+function sanitizeStudyEntry(entry) {
+    if (!entry || typeof entry !== 'object') {
+        return null;
+    }
+
+    const sanitized = { ...entry };
+
+    sanitized.word = typeof sanitized.word === 'string' ? sanitized.word : '';
+    sanitized.translation = typeof sanitized.translation === 'string' ? sanitized.translation : '';
+    sanitized.transcription = typeof sanitized.transcription === 'string' ? sanitized.transcription : '';
+    sanitized.characterId = typeof sanitized.characterId === 'string' && sanitized.characterId
+        ? sanitized.characterId
+        : (typeof sanitized.character_id === 'string' ? sanitized.character_id : (typeof characterId === 'string' ? characterId : ''));
+    sanitized.phaseKey = typeof sanitized.phaseKey === 'string'
+        ? sanitized.phaseKey
+        : (typeof sanitized.phase_id === 'string' ? sanitized.phase_id : '');
+    sanitized.sentence = typeof sanitized.sentence === 'string' ? sanitized.sentence : '';
+    sanitized.sentenceTranslation = typeof sanitized.sentenceTranslation === 'string'
+        ? sanitized.sentenceTranslation
+        : '';
+    sanitized.emoji = typeof sanitized.emoji === 'string' && sanitized.emoji ? sanitized.emoji : '📝';
+
+    if (Array.isArray(sanitized.examples)) {
+        sanitized.examples = sanitized.examples
+            .map(sanitizeStudyExample)
+            .filter(Boolean);
+    } else {
+        sanitized.examples = [];
+    }
+
+    if (!sanitized.examples.length && (sanitized.sentence || sanitized.sentenceTranslation)) {
+        sanitized.examples.push({
+            german: sanitized.sentence || '',
+            russian: sanitized.sentenceTranslation || '',
+        });
+    }
+
+    if (typeof sanitized.example !== 'string' || !sanitized.example) {
+        sanitized.example = sanitized.sentence || '';
+    }
+
+    return sanitized;
+}
+
+function readStudyQueueFromStorage() {
+    if (typeof localStorage === 'undefined') {
+        return [];
+    }
+
+    let storedValue = null;
+    try {
+        storedValue = localStorage.getItem(REVIEW_QUEUE_KEY);
+    } catch (error) {
+        console.warn('[StudyQueue] Unable to read stored queue', error);
+        return [];
+    }
+
+    if (!storedValue) {
+        return [];
+    }
+
+    try {
+        const parsed = JSON.parse(storedValue);
+        if (!Array.isArray(parsed)) {
+            return [];
+        }
+        return parsed.map(sanitizeStudyEntry).filter(Boolean);
+    } catch (error) {
+        console.warn('[StudyQueue] Failed to parse stored queue', error);
+        return [];
+    }
+}
+
+function rebuildStudyLookup() {
+    studyQueueState.lookup = new Map();
+    studyQueueState.queue.forEach(entry => {
+        const key = getStudyWordKey(entry);
+        if (key) {
+            studyQueueState.lookup.set(key, entry);
+        }
+    });
+}
+
+function ensureStudyQueueLoaded(forceReload = false) {
+    if (!studyQueueState.initialized || forceReload) {
+        studyQueueState.queue = readStudyQueueFromStorage();
+        rebuildStudyLookup();
+        studyQueueState.initialized = true;
+    }
+    return studyQueueState.queue;
+}
+
+function getStudyWordKey(source) {
+    if (!source) {
+        return null;
+    }
+
+    const wordValue = typeof source.word === 'string' ? source.word.trim().toLowerCase() : '';
+    const characterValue =
+        (typeof source.characterId === 'string' && source.characterId.trim()) ? source.characterId.trim() :
+        (typeof source.character_id === 'string' && source.character_id.trim()) ? source.character_id.trim() :
+        (typeof characterId === 'string' ? characterId : '');
+
+    if (!wordValue) {
+        return null;
+    }
+
+    return `${characterValue || 'unknown'}::${wordValue}`;
+}
+
+function isWordInStudyQueue(source) {
+    ensureStudyQueueLoaded();
+    const key = getStudyWordKey(source);
+    if (!key) {
+        return false;
+    }
+    return studyQueueState.lookup.has(key);
+}
+
+function createStudyEntry(rawData) {
+    const sanitized = sanitizeStudyEntry(rawData);
+    if (!sanitized) {
+        return null;
+    }
+
+    if (!sanitized.characterId) {
+        sanitized.characterId = typeof characterId === 'string' ? characterId : '';
+    }
+
+    if (typeof sanitized.phaseKey !== 'string') {
+        sanitized.phaseKey = '';
+    }
+
+    return sanitized;
+}
+
+function persistStudyQueue(queue) {
+    if (typeof localStorage === 'undefined') {
+        return true;
+    }
+
+    try {
+        localStorage.setItem(REVIEW_QUEUE_KEY, JSON.stringify(queue));
+        if (typeof window !== 'undefined' && typeof window.dispatchEvent === 'function') {
+            window.dispatchEvent(new Event('storage'));
+        }
+        return true;
+    } catch (error) {
+        console.error('[StudyQueue] Unable to persist queue', error);
+        return false;
+    }
+}
+
+function updateStudyCounterBadge() {
+    const counter = document.querySelector('[data-study-count]');
+    if (!counter) {
+        return;
+    }
+
+    const count = Array.isArray(studyQueueState.queue) ? studyQueueState.queue.length : 0;
+    counter.textContent = String(count);
+
+    const container = counter.closest('[data-study-counter]');
+    if (container) {
+        container.classList.toggle('study-counter-badge--active', count > 0);
+
+        let wordForm = 'слов';
+        if (count > 0) {
+            const mod10 = count % 10;
+            const mod100 = count % 100;
+            if (mod10 === 1 && mod100 !== 11) {
+                wordForm = 'слово';
+            } else if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) {
+                wordForm = 'слова';
+            }
+        }
+
+        const label = count > 0
+            ? `В списке изучения ${count} ${wordForm}`
+            : 'Список изучения пуст';
+        container.setAttribute('aria-label', label);
+    }
+}
+
+function applyStudyButtonState(button, isActive) {
+    if (!button) {
+        return;
+    }
+
+    const defaultLabel = button.dataset.defaultLabel || 'Изучить';
+    const activeLabel = button.dataset.activeLabel || 'В списке';
+    const inactiveTitle = button.dataset.inactiveTitle || 'Добавить слово в список изучения';
+    const activeTitle = button.dataset.activeTitle || 'Удалить слово из списка изучения';
+
+    button.disabled = false;
+    button.style.background = '';
+    button.classList.toggle('added', Boolean(isActive));
+    button.dataset.inStudy = isActive ? 'true' : 'false';
+    button.textContent = isActive ? activeLabel : defaultLabel;
+    button.title = isActive ? activeTitle : inactiveTitle;
+    button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+}
+
+function updateAllStudyButtons() {
+    const buttons = document.querySelectorAll('.btn-study');
+    if (!buttons || buttons.length === 0) {
+        return;
+    }
+
+    buttons.forEach(button => {
+        const key = getStudyWordKey({
+            word: button.dataset.word || '',
+            characterId: button.dataset.characterId || (typeof characterId === 'string' ? characterId : ''),
+        });
+        const isActive = key ? studyQueueState.lookup.has(key) : false;
+        applyStudyButtonState(button, isActive);
+    });
+}
+
+function refreshStudyUI() {
+    updateStudyCounterBadge();
+    updateAllStudyButtons();
+}
+
+function addWordToStudyQueue(wordData) {
+    ensureStudyQueueLoaded();
+
+    const entry = createStudyEntry(wordData);
+    if (!entry) {
+        return false;
+    }
+
+    const key = getStudyWordKey(entry);
+    if (!key) {
+        return false;
+    }
+
+    if (studyQueueState.lookup.has(key)) {
+        return true;
+    }
+
+    const newQueue = studyQueueState.queue.concat([entry]);
+    if (!persistStudyQueue(newQueue)) {
+        return false;
+    }
+
+    studyQueueState.queue = newQueue;
+    studyQueueState.lookup.set(key, entry);
+    refreshStudyUI();
+    return true;
+}
+
+function removeWordFromStudyQueue(wordData) {
+    ensureStudyQueueLoaded();
+
+    const key = getStudyWordKey(wordData);
+    if (!key) {
+        return false;
+    }
+
+    if (!studyQueueState.lookup.has(key)) {
+        return true;
+    }
+
+    const newQueue = studyQueueState.queue.filter(item => getStudyWordKey(item) !== key);
+    if (!persistStudyQueue(newQueue)) {
+        return false;
+    }
+
+    studyQueueState.queue = newQueue;
+    studyQueueState.lookup.delete(key);
+    refreshStudyUI();
+    return true;
+}
+
+function toggleStudyWord(wordData) {
+    ensureStudyQueueLoaded();
+
+    const key = getStudyWordKey(wordData);
+    if (!key) {
+        return null;
+    }
+
+    if (studyQueueState.lookup.has(key)) {
+        return removeWordFromStudyQueue(wordData) ? false : null;
+    }
+
+    return addWordToStudyQueue(wordData) ? true : null;
+}
+
+function buildStudyPayloadFromButton(button, item) {
+    const dataset = button ? button.dataset || {} : {};
+    const payload = {
+        word: dataset.word || (item && item.word) || '',
+        translation: dataset.translation || (item && item.translation) || '',
+        transcription: dataset.transcription || (item && item.transcription) || '',
+        characterId: dataset.characterId || (typeof characterId === 'string' ? characterId : ''),
+        phaseKey: dataset.phaseKey || '',
+        sentence: dataset.sentence || (item && item.sentence) || '',
+        sentenceTranslation: dataset.sentenceTranslation || (item && item.sentenceTranslation) || '',
+        emoji: dataset.emoji || (item && item.visual_hint) || '📝',
+    };
+
+    const examples = [];
+    if (payload.sentence || payload.sentenceTranslation) {
+        examples.push({
+            german: payload.sentence,
+            russian: payload.sentenceTranslation,
+        });
+    }
+
+    payload.examples = examples;
+    payload.example = payload.example || payload.sentence || '';
+
+    if (item && item.russian_hint && !payload.russian_hint) {
+        payload.russian_hint = item.russian_hint;
+    }
+
+    if (item && Array.isArray(item.themes)) {
+        payload.themes = item.themes.slice();
+    }
+
+    if (item && Array.isArray(item.wordFamily)) {
+        payload.wordFamily = item.wordFamily.slice();
+    }
+
+    if (item && Array.isArray(item.collocations)) {
+        payload.collocations = item.collocations.slice();
+    }
+
+    if (item && Array.isArray(item.sentenceParts)) {
+        payload.sentenceParts = item.sentenceParts.slice();
+    }
+
+    return payload;
+}
+
+if (typeof window !== 'undefined') {
+    window.addEventListener('storage', function(event) {
+        if (event && event.key && event.key !== REVIEW_QUEUE_KEY) {
+            return;
+        }
+        ensureStudyQueueLoaded(true);
+        refreshStudyUI();
+    });
+}
+
 function getPhaseStorageKey(phaseKey) {
     const safePhase = phaseKey || 'unknown';
     return `${STORAGE_PREFIX}:${characterId}:${safePhase}:quizAttempts`;
@@ -807,6 +1178,9 @@ function displayVocabulary(phaseKey) {
     }
     
     phaseTitle.textContent = phase.title;
+
+    ensureStudyQueueLoaded();
+    updateStudyCounterBadge();
     
     // Update theatrical scene with smooth transition
     const scenes = document.querySelectorAll('.theatrical-scene');
@@ -883,100 +1257,52 @@ function displayVocabulary(phaseKey) {
                     data-sentence-translation="${item.sentenceTranslation || ''}"
                     data-character-id="${characterId || ''}"
                     data-phase-key="${phaseKey || ''}"
+                    data-emoji="${item.visual_hint || '📝'}"
                 >Изучить</button>
             `;
-            
+
             // Добавляем обработчик для кнопки
             const studyBtn = card.querySelector('.btn-study');
             if (studyBtn) {
+                studyBtn.dataset.defaultLabel = studyBtn.dataset.defaultLabel || 'Изучить';
+                studyBtn.dataset.activeLabel = studyBtn.dataset.activeLabel || 'В списке';
+                studyBtn.dataset.inactiveTitle = studyBtn.dataset.inactiveTitle || 'Добавить слово в список изучения';
+                studyBtn.dataset.activeTitle = studyBtn.dataset.activeTitle || 'Удалить слово из списка изучения';
+
+                const initialState = isWordInStudyQueue({
+                    word: item.word,
+                    characterId: characterId,
+                });
+                applyStudyButtonState(studyBtn, initialState);
+
                 studyBtn.addEventListener('click', function(e) {
                     e.preventDefault();
                     e.stopPropagation();
-                    
-                    // Создаем объект с данными слова
-                    const fullWordData = {
-                        word: this.dataset.word,
-                        translation: this.dataset.translation,
-                        transcription: this.dataset.transcription,
-                        characterId: this.dataset.characterId,
-                        phaseKey: this.dataset.phaseKey,
-                        examples: []
-                    };
-                    
-                    // Добавляем примеры и sentence_translation
-                    fullWordData.sentenceTranslation = this.dataset.sentenceTranslation || '';
-                    
-                    if (this.dataset.sentence || this.dataset.sentenceTranslation) {
-                        fullWordData.examples.push({
-                            german: this.dataset.sentence || '',
-                            russian: this.dataset.sentenceTranslation || ''
-                        });
+
+                    const payload = buildStudyPayloadFromButton(this, item);
+                    const toggled = toggleStudyWord(payload);
+
+                    if (toggled === null) {
+                        alert('Не удалось обновить список изучения');
+                        applyStudyButtonState(this, isWordInStudyQueue(payload));
+                        return;
                     }
-                    
-                    // Получаем существующий список из localStorage
-                    let reviewQueue = [];
-                    try {
-                        const stored = localStorage.getItem(REVIEW_QUEUE_KEY);
-                        if (stored) {
-                            reviewQueue = JSON.parse(stored);
-                            if (!Array.isArray(reviewQueue)) {
-                                reviewQueue = [];
-                            }
-                        }
-                    } catch (error) {
-                        console.error('[ReviewQueue] Error reading from localStorage:', error);
-                        reviewQueue = [];
-                    }
-                    
-                    // Проверяем, не добавлено ли уже это слово
-                    const exists = reviewQueue.some(w => 
-                        w.word === fullWordData.word && 
-                        w.characterId === fullWordData.characterId
-                    );
-                    
-                    if (!exists && reviewQueue.length < 5) {
-                        // Добавляем emoji и примеры
-                        fullWordData.emoji = item.visual_hint || '📝';
-                        fullWordData.sentence = item.sentence || '';
-                        fullWordData.example = item.sentence || '';
-                        reviewQueue.push(fullWordData);
-                        
-                        try {
-                            localStorage.setItem(REVIEW_QUEUE_KEY, JSON.stringify(reviewQueue));
-                            
-                            // Визуальная обратная связь - кнопка становится зеленой
-                            this.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
-                            this.textContent = '✓ Добавлено';
-                            this.disabled = true;
-                            
-                            // Haptic feedback для мобильных
-                            if (navigator.vibrate && isTouchDevice) {
-                                navigator.vibrate(20);
-                            }
-                            
-                            console.log('[ReviewQueue] Added word to review:', fullWordData);
-                            
-                            // Отправляем событие для обновления главной страницы
-                            window.dispatchEvent(new Event('storage'));
-                        } catch (error) {
-                            console.error('[ReviewQueue] Error saving to localStorage:', error);
-                            alert('Не удалось сохранить слово для изучения');
-                        }
-                    } else if (exists) {
-                        this.textContent = 'Уже добавлено';
-                        this.disabled = true;
-                    } else {
-                        this.textContent = 'Максимум 5 слов';
-                        this.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
-                        this.disabled = true;
+
+                    if (navigator.vibrate && isTouchDevice) {
+                        navigator.vibrate(20);
                     }
                 });
             }
-            
+
             grid.appendChild(card);
         }, index * 50);
     });
-    
+
+    // Ensure UI reflects current queue after rendering
+    setTimeout(() => {
+        updateAllStudyButtons();
+    }, phase.words.length * 50 + 20);
+
     // Update progress bar
     const progress = ((currentPhaseIndex + 1) / phaseKeys.length) * 100;
     if (progressFill) progressFill.style.width = progress + '%';
