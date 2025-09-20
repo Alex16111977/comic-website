@@ -4183,6 +4183,7 @@ function sanitizeStudyEntry(entry) {
 
     sanitized.word = typeof sanitized.word === 'string' ? sanitized.word : '';
     sanitized.translation = typeof sanitized.translation === 'string' ? sanitized.translation : '';
+    sanitized.russian_hint = typeof sanitized.russian_hint === 'string' ? sanitized.russian_hint : '';
     sanitized.transcription = typeof sanitized.transcription === 'string' ? sanitized.transcription : '';
     sanitized.characterId = typeof sanitized.characterId === 'string' && sanitized.characterId
         ? sanitized.characterId
@@ -4469,6 +4470,7 @@ function buildStudyPayloadFromButton(button, item) {
     const payload = {
         word: dataset.word || (item && item.word) || '',
         translation: dataset.translation || (item && item.translation) || '',
+        russian_hint: dataset.russianHint || (item && item.russian_hint) || '',
         transcription: dataset.transcription || (item && item.transcription) || '',
         characterId: dataset.characterId || (typeof characterId === 'string' ? characterId : ''),
         phaseKey: dataset.phaseKey || '',
@@ -5117,17 +5119,23 @@ function displayVocabulary(phaseKey) {
             card.className = 'word-card';
             card.style.animationDelay = `${index * 0.1}s`;
 
+            const hintMarkup = item.russian_hint
+                ? `<div class="word-hint">(${item.russian_hint})</div>`
+                : '';
+
             // Простая карточка словаря
             card.innerHTML = `
                 <div class="word-meta">
                     <div class="word-german">${item.word}</div>
                     <div class="word-translation">${item.translation}</div>
+                    ${hintMarkup}
                     <div class="word-transcription">${item.transcription}</div>
                 </div>
                 <button class="btn-study" type="button"
                     data-word="${item.word || ''}"
                     data-translation="${item.translation || ''}"
                     data-transcription="${item.transcription || ''}"
+                    data-russian-hint="${item.russian_hint || ''}"
                     data-sentence="${item.sentence || ''}"
                     data-sentence-translation="${item.sentenceTranslation || ''}"
                     data-character-id="${characterId || ''}"
