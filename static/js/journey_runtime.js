@@ -389,10 +389,6 @@ function buildStudyPayloadFromButton(button, item) {
         payload.wordFamily = item.wordFamily.slice();
     }
 
-    if (item && Array.isArray(item.collocations)) {
-        payload.collocations = item.collocations.slice();
-    }
-
     if (item && Array.isArray(item.sentenceParts)) {
         payload.sentenceParts = item.sentenceParts.slice();
     }
@@ -1604,7 +1600,6 @@ if (typeof window !== 'undefined') {
 
 function setupRelationsForPhase(phaseKey) {
     renderWordMatchingExercise(phaseKey);
-    renderCollocationsExercise(phaseKey);
 }
 
 function renderWordMatchingExercise(phaseKey) {
@@ -1657,55 +1652,6 @@ function renderWordMatchingExercise(phaseKey) {
 
     refreshActiveExerciseContentHeight();
     updateWordColumnScrollIndicators(container);
-}
-
-function renderCollocationsExercise(phaseKey) {
-    if (!phaseKey) {
-        return;
-    }
-
-    const container = document.querySelector(`[data-collocations-container][data-phase="${phaseKey}"]`);
-    if (!(container instanceof HTMLElement)) {
-        return;
-    }
-
-    const phase = phaseVocabularies[phaseKey];
-    if (!phase || !Array.isArray(phase.words)) {
-        container.innerHTML = '<div class="exercise-empty-state">Коллокации для этой фазы отсутствуют.</div>';
-        return;
-    }
-
-    const collocationPairs = [];
-    phase.words.forEach((word, groupIdx) => {
-        if (!word || !Array.isArray(word.collocations)) {
-            return;
-        }
-
-        word.collocations.forEach((phrase, phraseIdx) => {
-            if (!phrase) {
-                return;
-            }
-            collocationPairs.push({
-                id: `col-${groupIdx}-${phraseIdx}`,
-                prompt: word.word || '',
-                match: phrase
-            });
-        });
-    });
-
-    if (collocationPairs.length === 0) {
-        container.innerHTML = '<div class="exercise-empty-state">Коллокации для этой фазы отсутствуют.</div>';
-        return;
-    }
-
-    container.innerHTML = '';
-    buildMemoryGame(container, collocationPairs, {
-        matchMessage: 'Ура! Коллокация открыта.',
-        mismatchMessage: 'Эти карточки не образуют пару.',
-        successMessage: 'Все коллокации найдены!'
-    });
-
-    refreshActiveExerciseContentHeight();
 }
 
 function addInteractiveListener(element, handler) {
@@ -1990,143 +1936,6 @@ function buildPairMatchingActivity(container, pairs, options = {}) {
 
     updateStatus(baseStatusMessage);
     updateWordColumnScrollIndicators(wrapper);
-}
-
-function buildMemoryGame(container, pairs, options = {}) {
-    if (!container || !pairs || pairs.length === 0) return;
-
-    const settings = Object.assign({
-        matchMessage: 'Пара найдена!',
-        mismatchMessage: 'Это не пара.',
-        successMessage: 'Все пары найдены!'
-    }, options);
-
-    container.classList.add('memory-game-container');
-    container.innerHTML = '';
-
-    const grid = document.createElement('div');
-    grid.className = 'memory-card-grid';
-
-    const status = document.createElement('div');
-    status.className = 'memory-status';
-    status.textContent = 'Откройте карточки и найдите совпадающие пары.';
-
-    container.appendChild(grid);
-    container.appendChild(status);
-
-    const cardsData = [];
-    pairs.forEach(pair => {
-        cardsData.push({
-            pairId: pair.id,
-            label: pair.prompt,
-            role: 'prompt'
-        });
-        cardsData.push({
-            pairId: pair.id,
-            label: pair.match,
-            role: 'match'
-        });
-    });
-
-    const shuffledCards = shuffleArray(cardsData);
-
-    let flippedCards = [];
-    let matchedPairs = 0;
-    let boardLocked = false;
-
-    function updateStatus(message, type) {
-        status.textContent = message || '';
-        status.classList.remove('success', 'error');
-        if (type) {
-            status.classList.add(type);
-        }
-    }
-
-    function resetFlippedCards() {
-        flippedCards.forEach(card => {
-            card.classList.remove('flipped', 'incorrect');
-        });
-        flippedCards = [];
-        boardLocked = false;
-    }
-
-    function handleCorrectMatch(firstCard, secondCard) {
-        [firstCard, secondCard].forEach(card => {
-            card.classList.add('matched', 'correct');
-            card.setAttribute('disabled', 'true');
-            card.setAttribute('aria-disabled', 'true');
-        });
-
-        matchedPairs += 1;
-        flippedCards = [];
-
-        if (navigator.vibrate && isTouchDevice) {
-            navigator.vibrate(25);
-        }
-
-        if (matchedPairs === pairs.length) {
-            updateStatus(settings.successMessage, 'success');
-        } else {
-            updateStatus(settings.matchMessage, 'success');
-        }
-    }
-
-    function handleIncorrectMatch(firstCard, secondCard) {
-        boardLocked = true;
-        [firstCard, secondCard].forEach(card => {
-            card.classList.add('incorrect');
-        });
-
-        if (navigator.vibrate && isTouchDevice) {
-            navigator.vibrate(40);
-        }
-
-        updateStatus(settings.mismatchMessage, 'error');
-
-        setTimeout(() => {
-            resetFlippedCards();
-        }, 850);
-    }
-
-    function evaluateFlippedCards() {
-        if (flippedCards.length < 2) return;
-
-        const [firstCard, secondCard] = flippedCards;
-
-        if (firstCard.dataset.pairId === secondCard.dataset.pairId && firstCard.dataset.cardRole !== secondCard.dataset.cardRole) {
-            handleCorrectMatch(firstCard, secondCard);
-        } else {
-            handleIncorrectMatch(firstCard, secondCard);
-        }
-    }
-
-    function handleCardInteraction(card) {
-        if (boardLocked || card.classList.contains('matched') || card.classList.contains('flipped')) {
-            return;
-        }
-
-        card.classList.add('flipped');
-        flippedCards.push(card);
-        evaluateFlippedCards();
-    }
-
-    shuffledCards.forEach(data => {
-        const card = document.createElement('button');
-        card.type = 'button';
-        card.className = 'memory-card';
-        card.dataset.pairId = data.pairId;
-        card.dataset.cardRole = data.role;
-        card.innerHTML = `
-            <span class="memory-card-placeholder">?</span>
-            <span class="memory-card-content">${data.label}</span>
-        `;
-
-        addInteractiveListener(card, function() {
-            handleCardInteraction(card);
-        });
-
-        grid.appendChild(card);
-    });
 }
 
 function attachDragDropHandlers(container) {
