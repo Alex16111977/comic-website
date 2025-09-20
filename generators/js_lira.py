@@ -997,7 +997,9 @@ function displayVocabulary(phaseKey) {
                         examples: []
                     };
                     
-                    // Добавляем примеры если есть
+                    // Добавляем примеры и sentence_translation
+                    fullWordData.sentenceTranslation = this.dataset.sentenceTranslation || '';
+                    
                     if (this.dataset.sentence || this.dataset.sentenceTranslation) {
                         fullWordData.examples.push({
                             german: this.dataset.sentence || '',
