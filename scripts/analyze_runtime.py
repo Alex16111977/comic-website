@@ -1,100 +1,64 @@
-"""
-Скрипт интеграции упражнений в runtime
-Дата: 14.09.2025
-"""
-import sys
+"""Анализ модульной архитектуры JavaScript."""
 from pathlib import Path
 
-# Путь к runtime файлу
-runtime_path = Path(r'F:\AiKlientBank\KingLearComic\static\js\journey_runtime.js')
+MAX_LINES = 300
 
-# Читаем содержимое
-with open(runtime_path, 'r', encoding='utf-8') as f:
-    content = f.read()
-
-print("[АНАЛИЗ JOURNEY_RUNTIME.JS]")
-print("=" * 50)
-
-# 1. Проверяем наличие ключевых переменных
-checks = [
-    ('phaseVocabularies', 'Глобальная переменная с данными фаз'),
-    ('currentPhaseIndex', 'Индекс текущей фазы'),
-    ('phaseKeys', 'Массив ключей фаз'),
-    ('relations-container', 'Контейнер для упражнений'),
-    ('word-families-section', 'Секция семьи слов')
+MODULES = [
+    ('pages/journey.js', 'Контроллер страницы путешествия'),
+    ('pages/index.js', 'Логика главной страницы'),
+    ('pages/training.js', 'Контроллер тренировки слова'),
+    ('modules/vocabulary/loader.js', 'Загрузка словаря'),
+    ('modules/vocabulary/display.js', 'Отображение карточек'),
+    ('modules/vocabulary/study.js', 'Менеджер изучения'),
+    ('modules/navigation/phases.js', 'Навигация по фазам'),
+    ('modules/navigation/progress.js', 'Трекер прогресса'),
+    ('modules/exercises/quiz.js', 'Викторина по словам'),
+    ('modules/exercises/constructor.js', 'Конструктор предложений'),
+    ('modules/exercises/word-match.js', 'Подбор слов'),
+    ('modules/utils/dom.js', 'DOM помощники'),
+    ('modules/utils/storage.js', 'Работа с localStorage')
 ]
 
-for check, desc in checks:
-    if check in content:
-        print(f"  [OK] {check}: {desc}")
+
+def analyze_module(path: Path, description: str) -> None:
+    if not path.exists():
+        print(f"  [MISSING] {path.name:<35} — {description}")
+        return
+    line_count = sum(1 for _ in path.open('r', encoding='utf-8'))
+    status = 'OK ' if line_count <= MAX_LINES else 'WARN'
+    print(f"  [{status}] {path.relative_to(path.parents[2])} — {description} ({line_count} строк)")
+
+
+def main() -> None:
+    project_root = Path(__file__).resolve().parents[1]
+    js_root = project_root / 'static' / 'js'
+    template_path = project_root / 'templates' / 'journey.html'
+
+    print('[АНАЛИЗ МОДУЛЬНОЙ СТРУКТУРЫ]')
+    print('=' * 50)
+    print('\n[1/3] Проверка модулей...')
+    for relative_path, description in MODULES:
+        analyze_module(js_root / relative_path, description)
+
+    print('\n[2/3] Проверка импорта в шаблоне journey.html...')
+    if not template_path.exists():
+        print('  [MISSING] templates/journey.html не найден')
     else:
-        print(f"  [!] {check}: НЕ НАЙДЕНО - {desc}")
+        html = template_path.read_text(encoding='utf-8')
+        if "static/js/pages/journey.js" in html and "type=\"module\"" in html:
+            print('  [OK ] Модуль JourneyApp подключен через type="module"')
+        else:
+            print('  [WARN] Не найден импорт модуля journey.js в шаблоне')
 
-print("\n[МЕСТА ДЛЯ ИНТЕГРАЦИИ]")
-print("=" * 50)
+    print('\n[3/3] Дополнительные проверки...')
+    loader_path = js_root / 'loader.js'
+    if loader_path.exists():
+        print('  [INFO] Найден loader.js — точка входа для интеграции модулей')
+    else:
+        print('  [INFO] loader.js отсутствует (не требуется)')
 
-# 2. Ищем функции смены фаз
-lines = content.split('\n')
-integration_points = []
+    print('\nАнализ завершён.')
 
-for i, line in enumerate(lines):
-    # Ищем места где происходит смена фазы
-    if 'currentPhaseIndex' in line and '=' in line:
-        integration_points.append({
-            'line': i + 1,
-            'content': line.strip()[:80],
-            'type': 'phase_change'
-        })
-    
-    # Ищем инициализацию страницы
-    if 'DOMContentLoaded' in line or 'window.onload' in line:
-        integration_points.append({
-            'line': i + 1,
-            'content': line.strip()[:80],
-            'type': 'page_init'
-        })
-    
-    # Ищем обработку relations
-    if 'relation-toggle' in line or 'relations-container' in line:
-        integration_points.append({
-            'line': i + 1,
-            'content': line.strip()[:80],
-            'type': 'relations_handler'
-        })
 
-print(f"Найдено {len(integration_points)} точек интеграции:\n")
-for point in integration_points[:10]:
-    print(f"  Строка {point['line']} ({point['type']}):")
-    print(f"    {point['content']}")
-
-print("\n[РЕКОМЕНДАЦИИ ПО ИНТЕГРАЦИИ]")
-print("=" * 50)
-print("""
-1. В начало файла добавить загрузку exercises.js:
-   - Либо через <script> тег в HTML
-   - Либо через динамический import
-
-2. После каждой смены фазы вызывать:
-   if (window.initializeExercises) {
-       const phaseKey = phaseKeys[currentPhaseIndex];
-       window.initializeExercises(phaseKey);
-   }
-
-3. При инициализации страницы вызвать для первой фазы:
-   if (window.initializeExercises && phaseKeys.length > 0) {
-       window.initializeExercises(phaseKeys[0]);
-   }
-
-4. Убедиться что exercises.css подключен в HTML
-""")
-
-# Сохраняем места для патчинга
-patch_file = Path(r'F:\AiKlientBank\KingLearComic\scripts\integration_points.txt')
-with open(patch_file, 'w', encoding='utf-8') as f:
-    f.write("INTEGRATION POINTS FOR EXERCISES\n")
-    f.write("=" * 50 + "\n\n")
-    for point in integration_points:
-        f.write(f"Line {point['line']} ({point['type']}):\n")
-        f.write(f"  {point['content']}\n\n")
-
-print(f"\n[OK] Точки интеграции сохранены в {patch_file.name}")
+if __name__ == '__main__':
+    main()

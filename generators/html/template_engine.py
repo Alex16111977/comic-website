@@ -20,7 +20,7 @@ class TemplateContext:
     head: HeadContext
     navigation: Dict[str, Any]
     relations_metadata: Dict[str, Dict[str, bool]]
-    js_bundle: str
+    journey_data: str
 
 
 class JourneyTemplateEngine:
@@ -41,6 +41,6 @@ class JourneyTemplateEngine:
             initial_progress=context.head.initial_progress,
             first_phase_title=context.head.first_phase_title,
             relations_metadata=context.relations_metadata,
-            js=context.js_bundle,
+            journey_data=context.journey_data,
             navigation=context.navigation,
         )

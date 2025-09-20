@@ -32,7 +32,7 @@ class LiraHTMLGenerator(BaseGenerator):
         character["journey_phases"] = assets.phases
         progress = JourneyBuilder.initial_progress(assets.phases)
         head_context = self.head_generator.build(assets.phases, progress)
-        js_bundle = LiraJSGenerator.generate(character)
+        journey_data_js = LiraJSGenerator.generate(character)
         navigation = {
             "home_href": "../index.html",
             "home_label": "На главную",
@@ -48,6 +48,6 @@ class LiraHTMLGenerator(BaseGenerator):
             head=head_context,
             navigation=navigation,
             relations_metadata=assets.relations_metadata,
-            js_bundle=js_bundle,
+            journey_data=journey_data_js,
         )
         return self.template_engine.render(context)

@@ -219,7 +219,11 @@
         </nav>
     </div>
 
-    <script>{{ js | safe }}</script>
-    <script src="../static/js/exercises.js"></script>
+    <script>{{ journey_data | safe }}</script>
+    <script type="module">
+        import { JourneyApp } from '../static/js/pages/journey.js';
+        const app = new JourneyApp();
+        app.init();
+    </script>
 </body>
 </html>

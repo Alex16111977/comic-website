@@ -15,14 +15,16 @@ def test_exercises_integration():
     
     # 1. Проверка наличия файлов
     print("\n[1/5] Проверка файлов...")
+    project_root = Path(__file__).resolve().parents[1]
     files_to_check = [
-        ('static/js/exercises.js', 'JavaScript модуль упражнений'),
+        ('static/js/pages/journey.js', 'Контроллер страницы путешествия'),
+        ('static/js/pages/training.js', 'Контроллер страницы тренировки'),
+        ('static/js/modules/vocabulary/loader.js', 'Модуль словаря'),
+        ('static/js/modules/exercises/quiz.js', 'Модуль викторины'),
+        ('static/js/modules/navigation/phases.js', 'Модуль навигации по фазам'),
         ('static/css/exercises.css', 'CSS стили упражнений'),
-        ('templates/journey.html', 'HTML шаблон'),
-        ('static/js/journey_runtime.js', 'Runtime JavaScript')
+        ('templates/journey.html', 'HTML шаблон')
     ]
-    
-    project_root = Path(r'F:\AiKlientBank\KingLearComic')
     all_files_exist = True
     
     for file_path, desc in files_to_check:
@@ -44,27 +46,33 @@ def test_exercises_integration():
         html_content = f.read()
     
     checks = [
-        ('exercises.css', 'CSS стили'),
-        ('exercises.js', 'JavaScript модуль')
+        ('static/js/pages/journey.js', 'ES-модуль JourneyApp'),
+        ('type="module"', 'Подключение модулей через type="module"'),
+        ('data-matching-container', 'Секция подбора слов'),
+        ('data-context-container', 'Секция контекстного перевода'),
+        ('data-constructor-source', 'Секция конструктора предложений')
     ]
-    
-    for check, desc in checks:
-        if check in html_content:
-            print(f"  [OK] {check}: подключен - {desc}")
+
+    for snippet, desc in checks:
+        if snippet in html_content:
+            print(f"  [OK] {snippet}: найдено ({desc})")
         else:
-            print(f"  [WARNING] {check}: НЕ подключен - {desc}")
+            print(f"  [WARNING] {snippet}: не найдено ({desc})")
     
     # 3. Проверка секций в HTML
     print("\n[3/5] Проверка секций упражнений...")
     sections = [
-        ('word-families-section', 'Секция артиклей (бывшая Семья слов)')
+        ('exercise-panel" data-exercise="matching"', 'Панель упражнения "Подбор слов"'),
+        ('exercise-panel" data-exercise="context"', 'Панель упражнения "Контекст"'),
+        ('exercise-panel" data-exercise="quiz"', 'Панель викторины'),
+        ('exercise-panel" data-exercise="constructor"', 'Панель конструктора предложений')
     ]
-    
+
     for section, desc in sections:
         if section in html_content:
-            print(f"  [OK] {section}: {desc}")
+            print(f"  [OK] {desc}")
         else:
-            print(f"  [ERROR] {section}: НЕ НАЙДЕНА - {desc}")
+            print(f"  [ERROR] Не найдена {desc}")
     
     # 4. Проверка данных персонажей
     print("\n[4/5] Проверка данных для упражнений...")
