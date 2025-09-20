@@ -1,5 +1,4 @@
 """Index page generator with character cards"""
-import json
 
 from .base import BaseGenerator
 
@@ -25,16 +24,11 @@ class IndexGenerator(BaseGenerator):
         }
 
         cards = []
-        phase_total = 0
-        vocabulary_total = 0
 
         for char_file in character_files:
             character = self.load_character(char_file)
             char_id = char_file.stem
             journey_phases = character.get("journey_phases", [])
-
-            phase_total += len(journey_phases)
-            vocabulary_total += sum(len(phase.get("vocabulary", [])) for phase in journey_phases)
 
             first_icon = journey_phases[0]["icon"] if journey_phases else "👤"
             role = role_descriptions.get(char_id, character.get("title", "Персонаж"))
@@ -53,7 +47,4 @@ class IndexGenerator(BaseGenerator):
         return self.render_template(
             "index.html",
             cards=cards,
-            character_count=len(cards),
-            phase_total=phase_total,
-            vocabulary_total=vocabulary_total,
         )
