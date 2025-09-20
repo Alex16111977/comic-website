@@ -48,10 +48,10 @@ def main():
         char_file = config.CHARACTERS_DIR / f"{char_name}.json"
         if char_file.exists():
             character_files.append(char_file)
-            print(f"[FOUND] {char_name}.json ✓")
+            print(f"[FOUND] {char_name}.json [OK]")
         else:
             missing_characters.append(char_name)
-            print(f"[MISSING] {char_name}.json ✗")
+            print(f"[MISSING] {char_name}.json [X]")
     
     if missing_characters:
         print(f"\n[WARNING] Missing {len(missing_characters)} character files:")
@@ -92,16 +92,16 @@ def main():
     # Summary
     print("\n" + "=" * 60)
     print(f"[SUMMARY]")
-    print(f"  • Characters found: {len(character_files)}/12")
-    print(f"  • Pages generated: {generated_count}")
-    print(f"  • Output location: {config.OUTPUT_DIR}")
+    print(f"  - Characters found: {len(character_files)}/12")
+    print(f"  - Pages generated: {generated_count}")
+    print(f"  - Output location: {config.OUTPUT_DIR}")
     
     if generated_count == 12:
-        print(f"  • Status: ✅ ALL CHARACTERS READY!")
+        print(f"  - Status: [OK] ALL CHARACTERS READY!")
     elif generated_count > 0:
-        print(f"  • Status: ⚠️ PARTIAL SUCCESS")
+        print(f"  - Status: [WARNING] PARTIAL SUCCESS")
     else:
-        print(f"  • Status: ❌ GENERATION FAILED")
+        print(f"  - Status: [ERROR] GENERATION FAILED")
     
     print("=" * 60)
     

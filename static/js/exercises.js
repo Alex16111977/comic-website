@@ -1,27 +1,53 @@
 /**
- * Модуль упражнений для изучения немецкого
- * Упражнение 1: Артикли и род
- * Упражнение 2: Контекстный перевод
+ * Модуль интерактивных упражнений для изучения немецкого
+ * Версия: 2.0
  */
 
-// ==========================================
-// 1. УПРАЖНЕНИЕ "АРТИКЛИ И РОД"
-// ==========================================
+(function() {
+    'use strict';
 
-function initializeArticlesExercise(container, phaseVocabulary) {
-    const section = container.querySelector('.word-families-section');
-    if (!section) return;
+    // ==========================================
+    // ГЛОБАЛЬНАЯ ИНИЦИАЛИЗАЦИЯ
+    // ==========================================
     
-    const content = section.querySelector('.relations-content');
-    if (!content) return;
+    window.initializeExercises = function(phaseId) {
+        console.log('[Exercises] Initializing for phase:', phaseId);
+        
+        // Получаем данные фазы из window.phaseData
+        if (!window.phaseData || !window.phaseData[phaseId]) {
+            console.warn('[Exercises] No data for phase:', phaseId);
+            return;
+        }
+        
+        const phaseVocabulary = window.phaseData[phaseId];
+        
+        // Инициализируем упражнения
+        const container = document.querySelector(`.relations-container[data-phase="${phaseId}"]`);
+        if (container) {
+            initializeArticlesExercise(container, phaseVocabulary);
+            initializeContextTranslation(container, phaseVocabulary);
+        }
+    };
+
+    // ==========================================
+    // 1. УПРАЖНЕНИЕ "АРТИКЛИ И РОД"
+    // ==========================================
     
-    // Собираем слова с артиклями из текущей фазы
-    const wordsWithArticles = [];
-    if (phaseVocabulary && phaseVocabulary.vocabulary) {
-        phaseVocabulary.vocabulary.forEach(word => {
-            if (word.german && word.russian) {
+    function initializeArticlesExercise(container, phaseVocabulary) {
+        const section = container.querySelector('.word-families-section');
+        if (!section) return;
+        
+        const content = section.querySelector('.relations-content');
+        if (!content) return;
+        
+        // Извлекаем слова с артиклями
+        const wordsWithArticles = [];
+        if (phaseVocabulary && phaseVocabulary.vocabulary) {
+            phaseVocabulary.vocabulary.forEach(word => {
+                if (!word.german || !word.russian) return;
+                
                 const parts = word.german.split(' ');
-                if (parts[0] === 'der' || parts[0] === 'die' || parts[0] === 'das') {
+                if (['der', 'die', 'das'].includes(parts[0])) {
                     wordsWithArticles.push({
                         article: parts[0],
                         german: parts.slice(1).join(' '),
@@ -29,132 +55,150 @@ function initializeArticlesExercise(container, phaseVocabulary) {
                         fullWord: word.german
                     });
                 }
-            }
-        });
-    }
-    
-    // Обновляем атрибут наличия контента
-    section.dataset.hasContent = wordsWithArticles.length > 0 ? 'true' : 'false';
-    
-    if (wordsWithArticles.length === 0) {
-        content.innerHTML = '<div class="relations-empty-state">В этой фазе нет слов с артиклями.</div>';
-        return;
-    }
-    
-    // Ограничиваем до 9 слов за раз
-    const exerciseWords = wordsWithArticles.slice(0, 9);
-    
-    // Генерируем HTML упражнения
-    content.innerHTML = `
-        <div class="articles-exercise">
-            <div class="articles-instruction">Распределите слова по родам, перетаскивая их в нужные колонки</div>
-            
-            <div class="article-columns">
-                <div class="article-column" data-article="der">
-                    <h5 class="article-header">DER<br><span>мужской род</span></h5>
-                    <div class="article-drop-zone" data-zone="der"></div>
+            });
+        }
+        
+        // Перемешиваем и ограничиваем до 9 слов
+        const shuffled = wordsWithArticles.sort(() => Math.random() - 0.5).slice(0, 9);
+        
+        // Обновляем атрибут наличия контента
+        section.dataset.hasContent = shuffled.length > 0 ? 'true' : 'false';
+        
+        if (shuffled.length === 0) {
+            content.innerHTML = '<div class="relations-empty-state">В этой фазе нет слов с артиклями.</div>';
+            return;
+        }
+        
+        // Создаем HTML структуру
+        content.innerHTML = `
+            <div class="articles-exercise">
+                <div class="articles-instruction">
+                    Распределите слова по родам (drag & drop или клик для мобильных)
                 </div>
-                <div class="article-column" data-article="die">
-                    <h5 class="article-header">DIE<br><span>женский род</span></h5>
-                    <div class="article-drop-zone" data-zone="die"></div>
-                </div>
-                <div class="article-column" data-article="das">
-                    <h5 class="article-header">DAS<br><span>средний род</span></h5>
-                    <div class="article-drop-zone" data-zone="das"></div>
-                </div>
-            </div>
-            
-            <div class="words-to-sort">
-                ${exerciseWords.map((word, idx) => `
-                    <div class="article-word-card" 
-                         data-article="${word.article}"
-                         data-word="${word.german}"
-                         data-index="${idx}"
-                         draggable="true">
-                        <span class="word-german">${word.german}</span>
-                        <span class="word-russian">${word.russian}</span>
+                
+                <div class="article-columns">
+                    <div class="article-column" data-article="der">
+                        <h5 class="article-header">
+                            <span class="article-label">DER</span>
+                            <span class="article-desc">мужской род</span>
+                        </h5>
+                        <div class="article-drop-zone" data-zone="der"></div>
                     </div>
-                `).join('')}
+                    <div class="article-column" data-article="die">
+                        <h5 class="article-header">
+                            <span class="article-label">DIE</span>
+                            <span class="article-desc">женский род</span>
+                        </h5>
+                        <div class="article-drop-zone" data-zone="die"></div>
+                    </div>
+                    <div class="article-column" data-article="das">
+                        <h5 class="article-header">
+                            <span class="article-label">DAS</span>
+                            <span class="article-desc">средний род</span>
+                        </h5>
+                        <div class="article-drop-zone" data-zone="das"></div>
+                    </div>
+                </div>
+                
+                <div class="words-to-sort">
+                    ${shuffled.map((word, idx) => `
+                        <div class="article-word-card" 
+                             data-article="${word.article}"
+                             data-word="${word.german}"
+                             data-index="${idx}"
+                             draggable="true">
+                            <span class="word-german">${word.german}</span>
+                            <span class="word-russian">${word.russian}</span>
+                        </div>
+                    `).join('')}
+                </div>
+                
+                <div class="articles-controls">
+                    <button class="check-articles-btn" type="button">Проверить</button>
+                    <button class="reset-articles-btn" type="button">Сбросить</button>
+                </div>
+                <div class="articles-feedback"></div>
             </div>
+        `;
+        
+        attachArticlesDragDrop(content);
+    }
+    
+    function attachArticlesDragDrop(container) {
+        const cards = container.querySelectorAll('.article-word-card');
+        const zones = container.querySelectorAll('.article-drop-zone');
+        const checkBtn = container.querySelector('.check-articles-btn');
+        const resetBtn = container.querySelector('.reset-articles-btn');
+        const feedback = container.querySelector('.articles-feedback');
+        const wordsContainer = container.querySelector('.words-to-sort');
+        
+        // Сохраняем начальные позиции для сброса
+        const initialParent = cards[0]?.parentElement;
+        
+        // DRAG & DROP для десктопа
+        cards.forEach(card => {
+            card.addEventListener('dragstart', (e) => {
+                e.dataTransfer.effectAllowed = 'move';
+                e.dataTransfer.setData('text/plain', '');
+                card.classList.add('dragging');
+                card.dataset.dragArticle = card.dataset.article;
+                card.dataset.dragWord = card.dataset.word;
+            });
             
-            <div class="articles-controls">
-                <button class="check-articles-btn" type="button">Проверить</button>
-                <button class="reset-articles-btn" type="button">Сброс</button>
-            </div>
-            <div class="articles-feedback"></div>
-        </div>
-    `;
-    
-    // Добавляем обработчики
-    attachArticlesDragDrop(content);
-}
-
-function attachArticlesDragDrop(container) {
-    const cards = container.querySelectorAll('.article-word-card');
-    const zones = container.querySelectorAll('.article-drop-zone');
-    const checkBtn = container.querySelector('.check-articles-btn');
-    const resetBtn = container.querySelector('.reset-articles-btn');
-    const feedback = container.querySelector('.articles-feedback');
-    const wordsContainer = container.querySelector('.words-to-sort');
-    
-    // Drag and Drop для десктопа
-    cards.forEach(card => {
-        card.addEventListener('dragstart', (e) => {
-            e.dataTransfer.setData('article', card.dataset.article);
-            e.dataTransfer.setData('word', card.dataset.word);
-            e.dataTransfer.setData('index', card.dataset.index);
-            card.classList.add('dragging');
-        });
-        
-        card.addEventListener('dragend', () => {
-            card.classList.remove('dragging');
-        });
-        
-        // Клик для мобильных устройств
-        card.addEventListener('click', function() {
-            const selected = container.querySelector('.article-word-card.selected');
-            if (selected && selected !== this) {
-                selected.classList.remove('selected');
-            }
-            this.classList.toggle('selected');
-        });
-    });
-    
-    zones.forEach(zone => {
-        zone.addEventListener('dragover', (e) => {
-            e.preventDefault();
-            zone.classList.add('drag-over');
-        });
-        
-        zone.addEventListener('dragleave', () => {
-            zone.classList.remove('drag-over');
-        });
-        
-        zone.addEventListener('drop', (e) => {
-            e.preventDefault();
-            zone.classList.remove('drag-over');
+            card.addEventListener('dragend', () => {
+                card.classList.remove('dragging');
+            });
             
-            const word = e.dataTransfer.getData('word');
-            const card = container.querySelector(`[data-word="${word}"]`);
-            if (card) {
-                zone.appendChild(card);
-                card.classList.remove('selected');
-            }
+            // КЛИК для мобильных
+            card.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const wasSelected = this.classList.contains('selected');
+                
+                // Убираем выделение со всех карточек
+                cards.forEach(c => c.classList.remove('selected'));
+                
+                if (!wasSelected) {
+                    this.classList.add('selected');
+                }
+            });
         });
         
-        // Клик на зону для мобильных
-        zone.addEventListener('click', function() {
-            const selected = container.querySelector('.article-word-card.selected');
-            if (selected) {
-                this.appendChild(selected);
-                selected.classList.remove('selected');
-            }
+        // Обработчики для зон
+        zones.forEach(zone => {
+            zone.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                e.dataTransfer.dropEffect = 'move';
+                zone.classList.add('drag-over');
+            });
+            
+            zone.addEventListener('dragleave', () => {
+                zone.classList.remove('drag-over');
+            });
+            
+            zone.addEventListener('drop', (e) => {
+                e.preventDefault();
+                zone.classList.remove('drag-over');
+                
+                const draggingCard = container.querySelector('.dragging');
+                if (draggingCard) {
+                    zone.appendChild(draggingCard);
+                    draggingCard.classList.remove('correct', 'incorrect');
+                }
+            });
+            
+            // Клик по зоне для мобильных
+            zone.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const selected = container.querySelector('.article-word-card.selected');
+                if (selected) {
+                    this.appendChild(selected);
+                    selected.classList.remove('selected', 'correct', 'incorrect');
+                }
+            });
         });
-    });
-    
-    // Проверка ответов
-    if (checkBtn) {
-        checkBtn.addEventListener('click', () => {
+        
+        // Проверка ответов
+        checkBtn?.addEventListener('click', () => {
             let correct = 0;
             let total = 0;
             
@@ -164,214 +208,268 @@ function attachArticlesDragDrop(container) {
                 
                 cardsInZone.forEach(card => {
                     total++;
+                    card.classList.remove('correct', 'incorrect');
+                    
                     if (card.dataset.article === targetArticle) {
                         card.classList.add('correct');
-                        card.classList.remove('incorrect');
                         correct++;
                     } else {
                         card.classList.add('incorrect');
-                        card.classList.remove('correct');
                     }
                 });
             });
             
             // Проверяем карточки, оставшиеся в исходной зоне
-            const unplacedCards = wordsContainer.querySelectorAll('.article-word-card');
-            unplacedCards.forEach(card => {
-                card.classList.add('unplaced');
+            const unsortedCards = wordsContainer.querySelectorAll('.article-word-card');
+            unsortedCards.forEach(card => {
                 total++;
+                card.classList.add('incorrect');
             });
             
+            // Показываем результат
             if (feedback) {
-                if (total === 0) {
-                    feedback.innerHTML = '<span class="warning">Разместите карточки по колонкам!</span>';
-                } else if (correct === total && unplacedCards.length === 0) {
-                    feedback.innerHTML = '<span class="success">🎉 Отлично! Все артикли правильные!</span>';
-                } else if (unplacedCards.length > 0) {
-                    feedback.innerHTML = `<span class="warning">Разместите все карточки!</span>`;
+                if (correct === total && total > 0) {
+                    feedback.innerHTML = '<span class="success">[OK] Отлично! Все артикли правильные!</span>';
+                    feedback.className = 'articles-feedback success';
                 } else {
                     feedback.innerHTML = `<span class="partial">Правильно: ${correct} из ${total}. Попробуйте ещё раз!</span>`;
+                    feedback.className = 'articles-feedback partial';
                 }
             }
         });
-    }
-    
-    // Сброс упражнения
-    if (resetBtn) {
-        resetBtn.addEventListener('click', () => {
+        
+        // Сброс
+        resetBtn?.addEventListener('click', () => {
             cards.forEach(card => {
-                wordsContainer.appendChild(card);
-                card.classList.remove('correct', 'incorrect', 'selected', 'unplaced');
+                card.classList.remove('correct', 'incorrect', 'selected');
+                if (initialParent) {
+                    initialParent.appendChild(card);
+                }
             });
+            
             if (feedback) {
                 feedback.innerHTML = '';
+                feedback.className = 'articles-feedback';
             }
         });
     }
-}
 
-// ==========================================
-// 2. УПРАЖНЕНИЕ "КОНТЕКСТНЫЙ ПЕРЕВОД"
-// ==========================================
-
-function initializeContextExercise(container, phaseVocabulary) {
-    const section = container.querySelector('.collocations-section');
-    if (!section) return;
+    // ==========================================
+    // 2. УПРАЖНЕНИЕ "КОНТЕКСТНЫЙ ПЕРЕВОД"  
+    // ==========================================
     
-    const content = section.querySelector('.relations-content');
-    if (!content) return;
-    
-    // Собираем слова с предложениями
-    const contextExercises = [];
-    if (phaseVocabulary && phaseVocabulary.vocabulary) {
-        phaseVocabulary.vocabulary.forEach((word, idx) => {
-            if (word.german && word.russian && word.sentence && word.sentence_translation) {
-                // Удаляем артикль для поиска в предложении
-                const germanWord = word.german.replace(/^(der|die|das)\s+/, '');
+    function initializeContextTranslation(container, phaseVocabulary) {
+        const section = container.querySelector('.collocations-section');
+        if (!section) return;
+        
+        const content = section.querySelector('.relations-content');
+        if (!content) return;
+        
+        // Собираем слова с полными предложениями
+        const contextExercises = [];
+        
+        if (phaseVocabulary && phaseVocabulary.vocabulary) {
+            phaseVocabulary.vocabulary.forEach((word, idx) => {
+                // Проверяем наличие всех необходимых полей
+                if (!word.german || !word.russian || !word.sentence || !word.sentence_translation) {
+                    return;
+                }
                 
-                // Создаем регулярное выражение для поиска слова (с учетом склонений)
-                const wordRoot = germanWord.substring(0, Math.max(4, germanWord.length - 2));
-                const germanRegex = new RegExp(wordRoot + '\\w*', 'gi');
+                // Убираем артикль для поиска в предложении
+                const germanWord = word.german.replace(/^(der|die|das)\s+/i, '');
                 
-                // Проверяем наличие слова в предложении
-                const matches = word.sentence.match(germanRegex);
-                if (matches && matches.length > 0) {
-                    // Заменяем первое вхождение на пропуск
-                    const germanBlank = word.sentence.replace(matches[0], '_____');
-                    
+                // Создаем регулярное выражение для поиска слова с учетом окончаний
+                const wordPattern = new RegExp(
+                    `\\b${germanWord.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\w*\\b`,
+                    'gi'
+                );
+                
+                // Проверяем, есть ли слово в предложении
+                if (word.sentence.match(wordPattern)) {
                     contextExercises.push({
-                        id: idx,
+                        id: `context-${idx}`,
                         germanWord: word.german,
                         russianWord: word.russian,
-                        germanSentence: germanBlank,
+                        germanSentence: word.sentence,
                         russianSentence: word.sentence_translation,
-                        correctAnswer: word.russian,
-                        originalWord: matches[0]
+                        // Создаем предложение с пропуском
+                        germanBlank: word.sentence.replace(wordPattern, '_____'),
+                        russianBlank: word.sentence_translation.includes(word.russian) 
+                            ? word.sentence_translation.replace(word.russian, '_____')
+                            : word.sentence_translation,
+                        correctAnswer: word.russian
                     });
-                }
-            }
-        });
-    }
-    
-    // Ограничиваем до 5 упражнений
-    const exercises = contextExercises.slice(0, 5);
-    
-    // Обновляем атрибут наличия контента
-    section.dataset.hasContent = exercises.length > 0 ? 'true' : 'false';
-    
-    if (exercises.length === 0) {
-        content.innerHTML = '<div class="relations-empty-state">В этой фазе нет предложений для контекстного перевода.</div>';
-        return;
-    }
-    
-    // Генерируем HTML упражнений
-    content.innerHTML = `
-        <div class="context-exercises">
-            ${exercises.map((ex, idx) => {
-                // Генерируем варианты ответов
-                const options = [ex.correctAnswer];
-                
-                // Добавляем неправильные варианты из других слов фазы
-                const otherWords = phaseVocabulary.vocabulary
-                    .filter(w => w.russian && w.russian !== ex.correctAnswer)
-                    .map(w => w.russian)
-                    .sort(() => Math.random() - 0.5)
-                    .slice(0, 3);
-                
-                // Если недостаточно слов из фазы, добавляем общие отвлекающие варианты
-                while (options.length + otherWords.length < 4) {
-                    const distractors = ['власть', 'корона', 'королевство', 'трон', 'дочь', 'любовь', 'гнев'];
-                    const randomDistractor = distractors[Math.floor(Math.random() * distractors.length)];
-                    if (!options.includes(randomDistractor) && !otherWords.includes(randomDistractor)) {
-                        otherWords.push(randomDistractor);
-                    }
-                }
-                
-                options.push(...otherWords.slice(0, 3));
-                const shuffledOptions = options.sort(() => Math.random() - 0.5);
-                
-                return `
-                    <div class="context-exercise-card" data-exercise-id="${ex.id}">
-                        <div class="exercise-number">Упражнение ${idx + 1}</div>
-                        <div class="sentence-german">${ex.germanSentence}</div>
-                        <div class="sentence-russian">${ex.russianSentence}</div>
-                        <div class="context-question">Выберите правильный перевод пропущенного слова:</div>
-                        <div class="context-options">
-                            ${shuffledOptions.map((opt, optIdx) => `
-                                <button class="context-option" 
-                                        type="button"
-                                        data-answer="${opt}"
-                                        data-correct="${opt === ex.correctAnswer}">
-                                    ${opt}
-                                </button>
-                            `).join('')}
-                        </div>
-                        <div class="context-feedback"></div>
-                    </div>
-                `;
-            }).join('')}
-        </div>
-    `;
-    
-    // Добавляем обработчики
-    attachContextHandlers(content);
-}
-
-function attachContextHandlers(container) {
-    const cards = container.querySelectorAll('.context-exercise-card');
-    
-    cards.forEach(card => {
-        const options = card.querySelectorAll('.context-option');
-        const feedback = card.querySelector('.context-feedback');
-        
-        options.forEach(option => {
-            option.addEventListener('click', function() {
-                // Блокируем все кнопки в этой карточке
-                options.forEach(opt => opt.disabled = true);
-                
-                if (this.dataset.correct === 'true') {
-                    this.classList.add('correct');
-                    if (feedback) {
-                        feedback.innerHTML = '<span class="success">✓ Правильно!</span>';
-                    }
-                } else {
-                    this.classList.add('incorrect');
-                    // Показываем правильный ответ
-                    options.forEach(opt => {
-                        if (opt.dataset.correct === 'true') {
-                            opt.classList.add('correct');
-                        }
-                    });
-                    if (feedback) {
-                        feedback.innerHTML = '<span class="error">✗ Неверно. См. правильный ответ.</span>';
-                    }
                 }
             });
-        });
-    });
-}
-
-// ==========================================
-// 3. ИНИЦИАЛИЗАЦИЯ УПРАЖНЕНИЙ
-// ==========================================
-
-function initializeExercises(phaseKey) {
-    // Находим контейнер для текущей фазы
-    const containers = document.querySelectorAll('.relations-container');
-    
-    containers.forEach(container => {
-        if (container.dataset.phase === phaseKey) {
-            // Получаем данные словаря для текущей фазы
-            const phaseVocabulary = window.phaseVocabularies ? window.phaseVocabularies[phaseKey] : null;
-            
-            // Инициализируем упражнение с артиклями
-            initializeArticlesExercise(container, phaseVocabulary);
-            
-            // Инициализируем контекстный перевод
-            initializeContextExercise(container, phaseVocabulary);
         }
+        
+        // Ограничиваем до 5 упражнений и перемешиваем
+        const exercises = contextExercises
+            .sort(() => Math.random() - 0.5)
+            .slice(0, 5);
+        
+        // Обновляем атрибут наличия контента
+        section.dataset.hasContent = exercises.length > 0 ? 'true' : 'false';
+        
+        if (exercises.length === 0) {
+            content.innerHTML = '<div class="relations-empty-state">В этой фазе нет предложений для контекстного перевода.</div>';
+            return;
+        }
+        
+        // Создаем HTML структуру
+        content.innerHTML = `
+            <div class="context-exercises">
+                <div class="context-instruction">
+                    Выберите правильный перевод пропущенного слова в контексте
+                </div>
+                ${exercises.map((ex, idx) => {
+                    // Генерируем варианты ответов
+                    const options = generateOptions(ex.correctAnswer, phaseVocabulary);
+                    
+                    return `
+                        <div class="context-exercise-card" data-exercise-id="${ex.id}">
+                            <div class="exercise-number">Упражнение ${idx + 1}</div>
+                            
+                            <div class="context-sentences">
+                                <div class="sentence-german">${ex.germanBlank}</div>
+                                <div class="sentence-russian">${ex.russianBlank}</div>
+                            </div>
+                            
+                            <div class="context-question">
+                                Пропущенное слово: <strong>${ex.germanWord}</strong>
+                            </div>
+                            
+                            <div class="context-options">
+                                ${options.map((opt, optIdx) => `
+                                    <button class="context-option" 
+                                            type="button"
+                                            data-answer="${opt}"
+                                            data-correct="${opt === ex.correctAnswer}">
+                                        ${String.fromCharCode(65 + optIdx)}) ${opt}
+                                    </button>
+                                `).join('')}
+                            </div>
+                            
+                            <div class="context-feedback"></div>
+                        </div>
+                    `;
+                }).join('')}
+            </div>
+        `;
+        
+        attachContextHandlers(content);
+    }
+    
+    function generateOptions(correctAnswer, phaseVocabulary) {
+        const options = [correctAnswer];
+        const allTranslations = [];
+        
+        // Собираем все переводы из текущей фазы
+        if (phaseVocabulary && phaseVocabulary.vocabulary) {
+            phaseVocabulary.vocabulary.forEach(word => {
+                if (word.russian && word.russian !== correctAnswer) {
+                    allTranslations.push(word.russian);
+                }
+            });
+        }
+        
+        // Если недостаточно вариантов из текущей фазы, добавляем общие
+        if (allTranslations.length < 3) {
+            const fallbackOptions = [
+                'власть', 'трон', 'корона', 'королевство', 
+                'предательство', 'верность', 'гордость', 'дочь',
+                'судьба', 'мудрость', 'безумие', 'правда'
+            ].filter(opt => opt !== correctAnswer);
+            
+            allTranslations.push(...fallbackOptions);
+        }
+        
+        // Выбираем 3 случайных неправильных варианта
+        const wrongOptions = allTranslations
+            .sort(() => Math.random() - 0.5)
+            .slice(0, 3);
+        
+        options.push(...wrongOptions);
+        
+        // Перемешиваем варианты
+        return options.sort(() => Math.random() - 0.5);
+    }
+    
+    function attachContextHandlers(container) {
+        const cards = container.querySelectorAll('.context-exercise-card');
+        
+        cards.forEach(card => {
+            const options = card.querySelectorAll('.context-option');
+            const feedback = card.querySelector('.context-feedback');
+            
+            options.forEach(option => {
+                option.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    
+                    // Проверяем, не был ли уже дан ответ
+                    if (card.classList.contains('answered')) {
+                        return;
+                    }
+                    
+                    // Блокируем все кнопки
+                    options.forEach(opt => {
+                        opt.disabled = true;
+                        opt.classList.remove('selected');
+                    });
+                    
+                    // Отмечаем карточку как отвеченную
+                    card.classList.add('answered');
+                    this.classList.add('selected');
+                    
+                    // Проверяем ответ
+                    if (this.dataset.correct === 'true') {
+                        this.classList.add('correct');
+                        feedback.innerHTML = '<span class="success">[OK] Правильно!</span>';
+                        feedback.className = 'context-feedback success';
+                        
+                        // Анимация успеха
+                        card.classList.add('success-animation');
+                    } else {
+                        this.classList.add('incorrect');
+                        
+                        // Показываем правильный ответ
+                        options.forEach(opt => {
+                            if (opt.dataset.correct === 'true') {
+                                opt.classList.add('correct');
+                            }
+                        });
+                        
+                        feedback.innerHTML = '<span class="error">[X] Неверно. Правильный ответ выделен зеленым.</span>';
+                        feedback.className = 'context-feedback error';
+                    }
+                });
+            });
+        });
+    }
+    
+    // ==========================================
+    // ОБНОВЛЕНИЕ НАЗВАНИЙ В UI
+    // ==========================================
+    
+    // Обновляем названия секций при загрузке
+    document.addEventListener('DOMContentLoaded', function() {
+        // Меняем текст кнопок
+        const familiesButtons = document.querySelectorAll('.word-families-section .relation-toggle span:first-child');
+        familiesButtons.forEach(btn => {
+            btn.textContent = '🎯 Артикли и род';
+        });
+        
+        const collocationsButtons = document.querySelectorAll('.collocations-section .relation-toggle span:first-child');
+        collocationsButtons.forEach(btn => {
+            btn.textContent = '📝 Контекстный перевод';
+        });
+        
+        // Инициализируем для первой фазы, если данные есть
+        setTimeout(() => {
+            if (window.phaseKeys && window.phaseKeys.length > 0) {
+                window.initializeExercises(window.phaseKeys[0]);
+            }
+        }, 100);
     });
-}
 
-// Экспортируем функцию для использования в основном runtime
-window.initializeExercises = initializeExercises;
+})();
