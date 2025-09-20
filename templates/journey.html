@@ -11,14 +11,18 @@
 <body>
     <div class="container">
         <header class="page-header">
-            <div class="page-header-text">
-                <h1>👑 {{ character.title }}</h1>
-                <p class="subtitle">Изучаем немецкий через трагедию Шекспира</p>
+            <div class="header-nav">
+                <a href="{{ navigation.home_href }}" class="home-link">
+                    <span class="arrow">{{ navigation.home_icon }}</span>
+                    <span class="text">{{ navigation.home_label }}</span>
+                </a>
+                <div class="study-counter" data-study-counter role="status" aria-live="polite">
+                    <span class="study-counter-label">{{ navigation.study_label }}</span>
+                    <span class="counter-badge" data-study-count>0</span>
+                </div>
             </div>
-            <div class="study-counter-badge" data-study-counter role="status" aria-live="polite">
-                <span class="study-counter-label">Список изучения</span>
-                <span class="study-counter-value" data-study-count>0</span>
-            </div>
+            <h1>👑 {{ character.title }}</h1>
+            <p class="subtitle">Изучаем немецкий через трагедию Шекспира</p>
         </header>
 
         <div class="journey-section">
