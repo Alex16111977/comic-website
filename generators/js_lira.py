@@ -33,11 +33,7 @@ class LiraJSGenerator:
                 elif not isinstance(word_family, list):
                     word_family = []
 
-                synonyms = word.get('synonyms') or []
-                if isinstance(synonyms, str):
-                    synonyms = [synonyms]
-                elif not isinstance(synonyms, list):
-                    synonyms = []
+                # Поле synonyms больше не используется для упражнения подбора слов
 
                 collocations = word.get('collocations') or []
                 if isinstance(collocations, str):
@@ -54,13 +50,14 @@ class LiraJSGenerator:
                 words.append({
                     'word': word.get('german', ''),
                     'translation': word.get('russian', ''),
+                    'russian_hint': word.get('russian_hint', ''),  # ДОБАВЛЕНО: подсказка
                     'transcription': word.get('transcription', ''),
                     'sentence': word.get('sentence', ''),
                     'sentenceTranslation': word.get('sentence_translation', ''),
                     'visual_hint': word.get('visual_hint', ''),
                     'themes': themes,
                     'wordFamily': word_family,  # Для relations
-                    'synonyms': synonyms,        # Для relations
+                    # 'synonyms' больше не используется
                     'collocations': collocations, # Для relations
                     'sentenceParts': sentence_parts,
                 })
@@ -1292,7 +1289,7 @@ function renderRelations(container, phaseKey) {
 
     // Collect all relations data
     const wordFamilies = [];
-    const synonymGroups = [];
+    const wordMatchingGroups = [];
     const collocations = [];
 
     phase.words.forEach(word => {
@@ -1302,10 +1299,12 @@ function renderRelations(container, phaseKey) {
                 family: word.wordFamily
             });
         }
-        if (word.synonyms && word.synonyms.length > 0) {
-            synonymGroups.push({
+        // Собираем ВСЕ слова фазы для упражнения подбора
+        if (word.word && word.translation) {
+            wordMatchingGroups.push({
                 word: word.word,
-                synonyms: word.synonyms
+                translation: word.translation || '',
+                russian_hint: word.russian_hint || ''
             });
         }
         if (word.collocations && word.collocations.length > 0) {
@@ -1358,37 +1357,43 @@ function renderRelations(container, phaseKey) {
         }
     }
 
-    // Render Synonyms section
+    // Render Word Matching section (вместо Synonyms)
     const synonymsSection = container.querySelector('.synonyms-section');
     if (synonymsSection) {
         const content = synonymsSection.querySelector('.relations-content');
-        const synonymPairs = [];
+        const wordPairs = [];
 
-        synonymGroups.forEach((item, groupIdx) => {
-            if (!item || !item.synonyms) return;
-            item.synonyms.forEach((synonym, synonymIdx) => {
-                synonymPairs.push({
-                    id: `syn-${groupIdx}-${synonymIdx}`,
-                    prompt: item.word,
-                    match: synonym
-                });
+        // Используем ВСЕ слова текущей фазы
+        phase.words.forEach((word, wordIdx) => {
+            if (!word.word || !word.translation) return;
+            
+            // Формируем русский текст с подсказкой
+            let russianText = word.translation;
+            if (word.russian_hint) {
+                russianText += ' (' + word.russian_hint + ')';
+            }
+            
+            wordPairs.push({
+                id: `word-${wordIdx}`,
+                prompt: word.word,
+                match: russianText
             });
         });
 
-        synonymsSection.dataset.hasContent = synonymPairs.length > 0 ? 'true' : 'false';
+        synonymsSection.dataset.hasContent = wordPairs.length > 0 ? 'true' : 'false';
 
         if (content) {
-            if (synonymPairs.length > 0) {
+            if (wordPairs.length > 0) {
                 content.innerHTML = '';
-                buildPairMatchingActivity(content, synonymPairs, {
-                    promptLabel: 'Слова',
-                    matchLabel: 'Синонимы',
-                    matchMessage: 'Отлично! Пара найдена.',
+                buildPairMatchingActivity(content, wordPairs, {
+                    promptLabel: 'Немецкие',
+                    matchLabel: 'Русские',
+                    matchMessage: 'Правильно! Пара найдена.',
                     mismatchMessage: 'Не совпало. Попробуйте ещё раз.',
-                    successMessage: 'Вы подобрали все синонимичные пары!'
+                    successMessage: 'Отлично! Все слова подобраны!'
                 });
             } else {
-                content.innerHTML = '<div class="relations-empty-state">Синонимы для этой фазы отсутствуют.</div>';
+                content.innerHTML = '<div class="relations-empty-state">Слова для подбора отсутствуют.</div>';
             }
         }
     }
@@ -1516,7 +1521,7 @@ function buildPairMatchingActivity(container, pairs, options = {}) {
 
     const status = document.createElement('div');
     status.className = 'pair-status';
-    status.textContent = 'Выберите слово и подходящий синоним.';
+    status.textContent = 'Выберите немецкое слово и его русский перевод.';
 
     container.appendChild(layout);
     container.appendChild(status);

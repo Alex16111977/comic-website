@@ -19,111 +19,133 @@
         {
           "german": "der Thron",
           "russian": "трон",
+          "russian_hint": "символ королевской власти",
           "transcription": "[дер ТРОН]",
-          "sentence": "König Lear steht unter dem glühenden Kronleuchter des Thronsaals. Mein Atem zeichnet das Wort „der Thron“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "Лир стоит под пылающей люстрой тронного зала. Моё дыхание рисует слово «трон» в холодном воздухе между нами.",
+          "sentence": "König Lear sitzt majestätisch auf seinem goldenen Thron im prächtigen Thronsaal des Schlosses.",
+          "sentence_translation": "Король Лир сидит величественно на своём золотом троне в великолепном тронном зале замка.",
           "sentence_parts": [
-            "König Lear steht unter dem glühenden Kronleuchter des Thronsaals.",
-            "Mein Atem zeichnet das Wort „der Thron“ in die kalte Luft zwischen uns."
-          ]
+            "König Lear",
+            "sitzt majestätisch",
+            "auf seinem goldenen Thron",
+            "im prächtigen Thronsaal des Schlosses."
+          ],
+          "synonyms": ["престол", "царское место", "королевское кресло"]
         },
         {
           "german": "das Königreich",
           "russian": "королевство",
+          "russian_hint": "государство короля",
           "transcription": "[дас КЁ-ниг-райх]",
-          "sentence": "Neben der ausgerollten Reichskarte beugt sich König Lear über Lears schweren Tisch. Das kalte Licht lässt das Wort „das Königreich“ wie geschmolzenes Gold erscheinen.",
-          "sentence_translation": "У развернутой карты королевства Лир склоняется над тяжёлым столом Лира. Холодный свет заставляет слово «королевство» сиять словно расплавленное золото.",
+          "sentence": "Der alte König Lear will sein mächtiges Königreich unter seinen drei Töchtern aufteilen.",
+          "sentence_translation": "Старый Король Лир хочет разделить своё могущественное королевство между своими тремя дочерьми.",
           "sentence_parts": [
-            "Neben der ausgerollten Reichskarte beugt sich König Lear über Lears schweren Tisch.",
-            "Das kalte Licht lässt das Wort „das Königreich“ wie geschmolzenes Gold erscheinen."
-          ]
+            "Der alte König Lear",
+            "will aufteilen",
+            "sein mächtiges Königreich",
+            "unter seinen drei Töchtern."
+          ],
+          "synonyms": ["царство", "держава", "государство"]
         },
         {
           "german": "die Macht",
           "russian": "власть",
+          "russian_hint": "сила управления",
           "transcription": "[ди МАХТ]",
-          "sentence": "Vor den steinernen Ahnenstatuen verschränkt König Lear die Hände hinter dem Rücken. Mein Atem zeichnet das Wort „die Macht“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "Перед каменными статуями предков Лир сцепляет руки за спиной. Моё дыхание рисует слово «власть» в холодном воздухе между нами.",
+          "sentence": "König Lear übergibt die absolute Macht an Goneril und Regan nach ihrer falschen Liebeserklärung.",
+          "sentence_translation": "Король Лир передаёт абсолютную власть Гонерилье и Регане после их фальшивого признания в любви.",
           "sentence_parts": [
-            "Vor den steinernen Ahnenstatuen verschränkt König Lear die Hände hinter dem Rücken.",
-            "Mein Atem zeichnet das Wort „die Macht“ in die kalte Luft zwischen uns."
-          ]
+            "König Lear",
+            "übergibt",
+            "die absolute Macht",
+            "an Goneril und Regan nach ihrer falschen Liebeserklärung."
+          ],
+          "synonyms": ["могущество", "господство", "владычество"]
         },
         {
           "german": "herrschen",
           "russian": "править",
+          "russian_hint": "управлять государством",
           "transcription": "[ХЕР-шен]",
-          "sentence": "Zwischen flüsternden Höflingen gleitet König Lear über den kalten Marmorboden. Mein Atem zeichnet das Wort „herrschen“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "Между шепчущимися придворными Лир скользит по холодному мраморному полу. Моё дыхание рисует слово «править» в холодном воздухе между нами.",
+          "sentence": "Goneril und Regan wollen grausam herrschen nachdem sie das Königreich von ihrem Vater bekommen.",
+          "sentence_translation": "Гонерилья и Регана хотят жестоко править после того как получили королевство от своего отца.",
           "sentence_parts": [
-            "Zwischen flüsternden Höflingen gleitet König Lear über den kalten Marmorboden.",
-            "Mein Atem zeichnet das Wort „herrschen“ in die kalte Luft zwischen uns."
-          ]
+            "Goneril und Regan",
+            "wollen grausam herrschen",
+            "nachdem sie das Königreich",
+            "von ihrem Vater bekommen."
+          ],
+          "synonyms": ["властвовать", "царствовать", "управлять"]
         },
         {
           "german": "verkünden",
           "russian": "провозглашать",
+          "russian_hint": "официально объявлять",
           "transcription": "[фер-КЮН-ден]",
-          "sentence": "Am Rand des purpurnen Teppichs wartet König Lear auf ein Zeichen des Königs. Ich zeichne das Wort „verkünden“ mit unsichtbarer Tinte auf meine Handfläche.",
-          "sentence_translation": "На краю пурпурного ковра Лир ждёт знака от короля. Я вывожу слово «провозглашать» невидимыми чернилами на ладони.",
+          "sentence": "König Lear verkündet feierlich vor dem ganzen Hof seine Entscheidung das Königreich zu teilen.",
+          "sentence_translation": "Король Лир провозглашает торжественно перед всем двором своё решение разделить королевство.",
           "sentence_parts": [
-            "Am Rand des purpurnen Teppichs wartet König Lear auf ein Zeichen des Königs.",
-            "Ich zeichne das Wort „verkünden“ mit unsichtbarer Tinte auf meine Handfläche."
-          ]
+            "König Lear",
+            "verkündet feierlich",
+            "vor dem ganzen Hof",
+            "seine Entscheidung das Königreich zu teilen."
+          ],
+          "synonyms": ["объявлять", "возвещать", "оглашать"]
         },
         {
           "german": "die Krone",
           "russian": "корона",
+          "russian_hint": "символ королевской власти",
           "transcription": "[ди КРО-не]",
-          "sentence": "Unter wehenden Standarten der Schwestern senkt König Lear kurz den Blick. Ich zeichne das Wort „die Krone“ mit unsichtbarer Tinte auf meine Handfläche.",
-          "sentence_translation": "Под развевающимися штандартами сестёр Лир на миг опускает взгляд. Я вывожу слово «корона» невидимыми чернилами на ладони.",
+          "sentence": "Die schwere goldene Krone auf König Lears Haupt symbolisiert seine schwindende königliche Macht.",
+          "sentence_translation": "Тяжёлая золотая корона на голове Короля Лира символизирует его угасающую королевскую власть.",
           "sentence_parts": [
-            "Unter wehenden Standarten der Schwestern senkt König Lear kurz den Blick.",
-            "Ich zeichne das Wort „die Krone“ mit unsichtbarer Tinte auf meine Handfläche."
-          ]
+            "Die schwere goldene Krone",
+            "auf König Lears Haupt",
+            "symbolisiert",
+            "seine schwindende königliche Macht."
+          ],
+          "synonyms": ["венец", "диадема", "царский венец"]
         },
         {
           "german": "die Zeremonie",
           "russian": "церемония",
+          "russian_hint": "торжественный ритуал",
           "transcription": "[ди це-ре-мо-НИ]",
-          "sentence": "Hinter der vergoldeten Balustrade beobachtet König Lear das gespannte Antlitz des Hofes. Mit fester Stimme schwöre ich mir: Das Wort „die Zeremonie“ wird heute nicht verraten.",
-          "sentence_translation": "За позолоченной балюстрадой Лир наблюдает за напряжёнными лицами двора. Твёрдым голосом я клянусь себе: слово «церемония» сегодня не будет предано.",
+          "sentence": "Die verhängnisvolle Zeremonie der Reichsteilung wird für König Lear zum Beginn seiner tragischen Reise.",
+          "sentence_translation": "Роковая церемония разделения королевства становится для Короля Лира началом его трагического пути.",
           "sentence_parts": [
-            "Hinter der vergoldeten Balustrade beobachtet König Lear das gespannte Antlitz des Hofes.",
-            "Mit fester Stimme schwöre ich mir: Das Wort „die Zeremonie“ wird heute nicht verraten."
-          ]
+            "Die verhängnisvolle Zeremonie",
+            "der Reichsteilung",
+            "wird für König Lear",
+            "zum Beginn seiner tragischen Reise."
+          ],
+          "synonyms": ["обряд", "ритуал", "торжество"]
         },
         {
           "german": "prächtig",
           "russian": "великолепный",
+          "russian_hint": "роскошный, пышный",
           "transcription": "[ПРЕХ-тиг]",
-          "sentence": "Im Schein der offenen Feuerbecken erhebt König Lear langsam die Stimme. Ich halte das Wort „prächtig“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "В отблесках открытых жаровен Лир медленно поднимает голос. Я держу слово «великолепный» как факел у сердца.",
+          "sentence": "Der prächtige Thronsaal wird zum Schauplatz wo König Lear seine ehrliche Tochter Cordelia verstößt.",
+          "sentence_translation": "Великолепный тронный зал становится местом где Король Лир отвергает свою честную дочь Корделию.",
           "sentence_parts": [
-            "Im Schein der offenen Feuerbecken erhebt König Lear langsam die Stimme.",
-            "Ich halte das Wort „prächtig“ wie eine Fackel vor meinem Herzen."
-          ]
+            "Der prächtige Thronsaal",
+            "wird zum Schauplatz",
+            "wo König Lear",
+            "seine ehrliche Tochter Cordelia verstößt."
+          ],
+          "synonyms": ["роскошный", "пышный", "величественный"]
         }
       ],
       "quizzes": [
         {
           "question": "Что означает немецкое слово «der Thron»?",
-          "choices": [
-            "королевство",
-            "власть",
-            "править",
-            "трон"
-          ],
+          "choices": ["королевство", "власть", "править", "трон"],
           "correct_index": 3
         },
         {
           "question": "Что означает немецкое слово «das Königreich»?",
-          "choices": [
-            "трон",
-            "власть",
-            "править",
-            "королевство"
-          ],
+          "choices": ["трон", "власть", "править", "королевство"],
           "correct_index": 3
         }
       ]
@@ -144,112 +166,133 @@
         {
           "german": "demütigen",
           "russian": "унижать",
+          "russian_hint": "оскорблять достоинство",
           "transcription": "[де-МЮ-ти-ген]",
-          "sentence": "Im hallenden Torbogen von Gonerils Burg verharrt König Lear zwischen gepackten Kisten. Ich halte das Wort „demütigen“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "В гулком проёме ворот замка Гонерильи Лир замирает среди нагруженных ящиков. Я держу слово «унижать» как факел у сердца.",
+          "sentence": "Die undankbare Goneril will ihren alten Vater König Lear demütigen indem sie seine Dienerschaft reduziert.",
+          "sentence_translation": "Неблагодарная Гонерилья хочет унизить своего старого отца Короля Лира сокращая его свиту.",
           "sentence_parts": [
-            "Im hallenden Torbogen von Gonerils Burg verharrt König Lear zwischen gepackten Kisten.",
-            "Ich halte das Wort „demütigen“ wie eine Fackel vor meinem Herzen."
-          ]
+            "Die undankbare Goneril",
+            "will demütigen",
+            "ihren alten Vater König Lear",
+            "indem sie seine Dienerschaft reduziert."
+          ],
+          "synonyms": ["оскорблять", "позорить", "уничижать"]
         },
         {
           "german": "der Zorn",
           "russian": "гнев",
+          "russian_hint": "благородный, праведный",
           "transcription": "[дер ЦОРН]",
-          "sentence": "Auf der windigen Freitreppe blickt König Lear zum schweigenden Hof hinunter. Ich presse das Wort „der Zorn“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "На продуваемой ветром лестнице Лир смотрит вниз на молчаливый двор. Я стискиваю слово «гнев» зубами, чтобы не вырвалось сомнение.",
+          "sentence": "König Lears gerechter Zorn entflammt als Goneril ihm die königlichen Ehren verweigert und beleidigt.",
+          "sentence_translation": "Праведный гнев Короля Лира вспыхивает когда Гонерилья отказывает ему в королевских почестях и оскорбляет.",
           "sentence_parts": [
-            "Auf der windigen Freitreppe blickt König Lear zum schweigenden Hof hinunter.",
-            "Ich presse das Wort „der Zorn“ zwischen die Zähne,",
-            "damit kein Zweifel entweicht."
-          ]
+            "König Lears gerechter Zorn",
+            "entflammt",
+            "als Goneril ihm die königlichen Ehren",
+            "verweigert und beleidigt."
+          ],
+          "synonyms": ["ярость", "негодование", "возмущение"]
         },
         {
           "german": "die Undankbarkeit",
           "russian": "неблагодарность",
+          "russian_hint": "отсутствие благодарности",
           "transcription": "[ди УН-данк-бар-кайт]",
-          "sentence": "Zwischen zurückgelassenen Dienern schließt König Lear den Reisemantel enger. Selbst wenn die Welt zerfällt, bleibt das Wort „die Undankbarkeit“ mein Nordstern.",
-          "sentence_translation": "Среди оставленных слуг Лир плотнее запахивает дорожный плащ. Даже если мир распадается, слово «неблагодарность» остаётся моим северным светом.",
+          "sentence": "Die bittere Undankbarkeit seiner Tochter Goneril verwandelt König Lears Vaterliebe in brennenden Schmerz.",
+          "sentence_translation": "Горькая неблагодарность его дочери Гонерильи превращает отцовскую любовь Короля Лира в жгучую боль.",
           "sentence_parts": [
-            "Zwischen zurückgelassenen Dienern schließt König Lear den Reisemantel enger.",
-            "Selbst wenn die Welt zerfällt, bleibt das Wort „die Undankbarkeit“ mein Nordstern."
-          ]
+            "Die bittere Undankbarkeit",
+            "seiner Tochter Goneril",
+            "verwandelt König Lears Vaterliebe",
+            "in brennenden Schmerz."
+          ],
+          "synonyms": ["черная неблагодарность", "неблагодарность", "забывчивость добра"]
         },
         {
           "german": "verfluchen",
           "russian": "проклинать",
+          "russian_hint": "насылать проклятие",
           "transcription": "[фер-ФЛУ-хен]",
-          "sentence": "Am dunklen Pferdestall streicht König Lear einem nervösen Tier über die Mähne. Ich flüstere den Wächtern des Schicksals zu: Das Wort „verfluchen“ darf nicht vergehen.",
-          "sentence_translation": "У тёмного конюшенного ряда Лир гладит гриву нервного коня. Я шепчу стражам судьбы: слово «проклинать» не должно исчезнуть.",
+          "sentence": "Der verzweifelte König Lear verflucht seine grausame Tochter Goneril mit schrecklichen Worten vor allen Dienern.",
+          "sentence_translation": "Отчаявшийся Король Лир проклинает свою жестокую дочь Гонерилью страшными словами перед всеми слугами.",
           "sentence_parts": [
-            "Am dunklen Pferdestall streicht König Lear einem nervösen Tier über die Mähne.",
-            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „verfluchen“ darf nicht vergehen."
-          ]
+            "Der verzweifelte König Lear",
+            "verflucht",
+            "seine grausame Tochter Goneril",
+            "mit schrecklichen Worten vor allen Dienern."
+          ],
+          "synonyms": ["предавать проклятию", "клясть", "анафематствовать"]
         },
         {
           "german": "vertreiben",
           "russian": "изгонять",
+          "russian_hint": "силой из места",
           "transcription": "[фер-ТРАЙ-бен]",
-          "sentence": "Vor dem knarrenden Fallgatter tastet König Lear ein letztes Mal nach dem Haustor. Mit fester Stimme schwöre ich mir: Das Wort „vertreiben“ wird heute nicht verraten.",
-          "sentence_translation": "Перед скрипящим подъёмным мостом Лир в последний раз касается родной двери. Твёрдым голосом я клянусь себе: слово «изгонять» сегодня не будет предано.",
+          "sentence": "Goneril will ihren königlichen Vater aus dem Schloss vertreiben das er ihr geschenkt hat.",
+          "sentence_translation": "Гонерилья хочет изгнать своего королевского отца из замка который он ей подарил.",
           "sentence_parts": [
-            "Vor dem knarrenden Fallgatter tastet König Lear ein letztes Mal nach dem Haustor.",
-            "Mit fester Stimme schwöre ich mir: Das Wort „vertreiben“ wird heute nicht verraten."
-          ]
+            "Goneril",
+            "will vertreiben",
+            "ihren königlichen Vater",
+            "aus dem Schloss das er ihr geschenkt hat."
+          ],
+          "synonyms": ["выгонять", "прогонять", "выдворять"]
         },
         {
           "german": "die Kränkung",
           "russian": "обида",
+          "russian_hint": "душевная рана",
           "transcription": "[ди КРЭН-кунг]",
-          "sentence": "Zwischen verstreuten Schriftrollen dreht König Lear den Ring an der Hand. Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Kränkung“ bleibt lebendig.",
-          "sentence_translation": "Среди разбросанных свитков Лир вертит кольцо на пальце. Каждой клеткой тела я обещаю: слово «обида» останется живым.",
+          "sentence": "Die tiefe Kränkung durch Gonerils Verrat brennt in König Lears Herz wie glühendes Eisen.",
+          "sentence_translation": "Глубокая обида от предательства Гонерильи жжёт в сердце Короля Лира как раскалённое железо.",
           "sentence_parts": [
-            "Zwischen verstreuten Schriftrollen dreht König Lear den Ring an der Hand.",
-            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Kränkung“ bleibt lebendig."
-          ]
+            "Die tiefe Kränkung",
+            "durch Gonerils Verrat",
+            "brennt in König Lears Herz",
+            "wie glühendes Eisen."
+          ],
+          "synonyms": ["оскорбление", "уязвление", "унижение"]
         },
         {
           "german": "bereuen",
           "russian": "сожалеть",
+          "russian_hint": "раскаиваться в содеянном",
           "transcription": "[бе-РОЙ-ен]",
-          "sentence": "Am leeren Bankettisch zählt König Lear die verlöschenden Kerzen. Wie ein stilles Gebet legt sich das Wort „bereuen“ auf meine Lippen.",
-          "sentence_translation": "У пустого банкетного стола Лир пересчитывает гаснущие свечи. Как тихая молитва слово «сожалеть» ложится на мои губы.",
+          "sentence": "König Lear beginnt bitter zu bereuen dass er Cordelia verstieß und Goneril vertraute.",
+          "sentence_translation": "Король Лир начинает горько сожалеть что отверг Корделию и доверился Гонерилье.",
           "sentence_parts": [
-            "Am leeren Bankettisch zählt König Lear die verlöschenden Kerzen.",
-            "Wie ein stilles Gebet legt sich das Wort „bereuen“ auf meine Lippen."
-          ]
+            "König Lear",
+            "beginnt bitter zu bereuen",
+            "dass er Cordelia verstieß",
+            "und Goneril vertraute."
+          ],
+          "synonyms": ["раскаиваться", "жалеть", "каяться"]
         },
         {
           "german": "der Fluch",
           "russian": "проклятие",
+          "russian_hint": "злое пожелание",
           "transcription": "[дер ФЛУХ]",
-          "sentence": "Zwischen schweigenden Wachen geht König Lear auf den kalten Hof hinaus. Ich zeichne das Wort „der Fluch“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "Между молчаливыми стражниками Лир выходит на холодный двор. Я черчу слово «проклятие» в мыслях поверх линий судьбы.",
+          "sentence": "König Lears furchtbarer Fluch gegen Goneril hallt durch die Säle des Schlosses wie Donner.",
+          "sentence_translation": "Страшное проклятие Короля Лира против Гонерильи разносится по залам замка как гром.",
           "sentence_parts": [
-            "Zwischen schweigenden Wachen geht König Lear auf den kalten Hof hinaus.",
-            "Ich zeichne das Wort „der Fluch“ in Gedanken über die Linien des Schicksals."
-          ]
+            "König Lears furchtbarer Fluch",
+            "gegen Goneril",
+            "hallt durch die Säle",
+            "des Schlosses wie Donner."
+          ],
+          "synonyms": ["заклятие", "анафема", "проклятье"]
         }
       ],
       "quizzes": [
         {
           "question": "Что означает немецкое слово «demütigen»?",
-          "choices": [
-            "гнев",
-            "неблагодарность",
-            "проклинать",
-            "унижать"
-          ],
+          "choices": ["гнев", "неблагодарность", "проклинать", "унижать"],
           "correct_index": 3
         },
         {
           "question": "Что означает немецкое слово «der Zorn»?",
-          "choices": [
-            "унижать",
-            "неблагодарность",
-            "проклинать",
-            "гнев"
-          ],
+          "choices": ["унижать", "неблагодарность", "проклинать", "гнев"],
           "correct_index": 3
         }
       ]
@@ -270,113 +313,133 @@
         {
           "german": "verlassen",
           "russian": "покидать",
+          "russian_hint": "оставлять навсегда",
           "transcription": "[фер-ЛА-сен]",
-          "sentence": "Im zugigen Seitenflügel lauscht König Lear dem Heulen der Küstenwinde. Wie ein stilles Gebet legt sich das Wort „verlassen“ auf meine Lippen.",
-          "sentence_translation": "В продуваемом ветром боковом крыле Лир слушает вой прибрежного ветра. Как тихая молитва слово «покидать» ложится на мои губы.",
+          "sentence": "Der gebrochene König Lear muss Regans Schloss verlassen während draußen ein furchtbarer Sturm tobt.",
+          "sentence_translation": "Сломленный Король Лир должен покинуть замок Реганы в то время как снаружи бушует ужасная буря.",
           "sentence_parts": [
-            "Im zugigen Seitenflügel lauscht König Lear dem Heulen der Küstenwinde.",
-            "Wie ein stilles Gebet legt sich das Wort „verlassen“ auf meine Lippen."
-          ]
+            "Der gebrochene König Lear",
+            "muss verlassen",
+            "Regans Schloss",
+            "während draußen ein furchtbarer Sturm tobt."
+          ],
+          "synonyms": ["оставлять", "уходить", "бросать"]
         },
         {
           "german": "verstoßen",
           "russian": "отвергать",
+          "russian_hint": "из семьи, от себя",
           "transcription": "[фер-ШТО-сен]",
-          "sentence": "Vor dem rauchigen Kamin der Burg faltet König Lear einen zerknitterten Brief. Mit jeder Faser meines Körpers verspreche ich: Das Wort „verstoßen“ bleibt lebendig.",
-          "sentence_translation": "Перед дымным камином замка Лир складывает измятый лист. Каждой клеткой тела я обещаю: слово «отвергать» останется живым.",
+          "sentence": "Regan und Goneril verstoßen gemeinsam ihren alten Vater König Lear in die stürmische Nacht.",
+          "sentence_translation": "Регана и Гонерилья вместе отвергают своего старого отца Короля Лира в штормовую ночь.",
           "sentence_parts": [
-            "Vor dem rauchigen Kamin der Burg faltet König Lear einen zerknitterten Brief.",
-            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „verstoßen“ bleibt lebendig."
-          ]
+            "Regan und Goneril",
+            "verstoßen gemeinsam",
+            "ihren alten Vater König Lear",
+            "in die stürmische Nacht."
+          ],
+          "synonyms": ["отрекаться", "изгонять", "отталкивать"]
         },
         {
           "german": "die Grausamkeit",
           "russian": "жестокость",
+          "russian_hint": "безжалостность к другим",
           "transcription": "[ди ГРАУ-зам-кайт]",
-          "sentence": "Unter farblosen Wandteppichen schreitet König Lear rastlos auf und ab. Wie ein stilles Gebet legt sich das Wort „die Grausamkeit“ auf meine Lippen.",
-          "sentence_translation": "Под выцветшими гобеленами Лир беспокойно меряет шагами зал. Как тихая молитва слово «жестокость» ложится на мои губы.",
+          "sentence": "Die kalte Grausamkeit seiner Töchter Regan und Goneril zerbricht König Lears stolzes königliches Herz.",
+          "sentence_translation": "Холодная жестокость его дочерей Реганы и Гонерильи разбивает гордое королевское сердце Короля Лира.",
           "sentence_parts": [
-            "Unter farblosen Wandteppichen schreitet König Lear rastlos auf und ab.",
-            "Wie ein stilles Gebet legt sich das Wort „die Grausamkeit“ auf meine Lippen."
-          ]
+            "Die kalte Grausamkeit",
+            "seiner Töchter Regan und Goneril",
+            "zerbricht",
+            "König Lears stolzes königliches Herz."
+          ],
+          "synonyms": ["безжалостность", "бесчеловечность", "свирепость"]
         },
         {
           "german": "die Verzweiflung",
           "russian": "отчаяние",
+          "russian_hint": "потеря всякой надежды",
           "transcription": "[ди фер-ЦВАЙ-флунг]",
-          "sentence": "An der schmalen Fensterluke zählt König Lear die Fackeln auf dem Hof. Ich zeichne das Wort „die Verzweiflung“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "У узкой бойницы Лир считает факелы на дворе. Я черчу слово «отчаяние» в мыслях поверх линий судьбы.",
+          "sentence": "Die tiefe Verzweiflung überwältigt König Lear als beide Töchter ihm jegliche Unterkunft verweigern.",
+          "sentence_translation": "Глубокое отчаяние охватывает Короля Лира когда обе дочери отказывают ему в любом приюте.",
           "sentence_parts": [
-            "An der schmalen Fensterluke zählt König Lear die Fackeln auf dem Hof.",
-            "Ich zeichne das Wort „die Verzweiflung“ in Gedanken über die Linien des Schicksals."
-          ]
+            "Die tiefe Verzweiflung",
+            "überwältigt König Lear",
+            "als beide Töchter",
+            "ihm jegliche Unterkunft verweigern."
+          ],
+          "synonyms": ["безнадёжность", "безысходность", "уныние"]
         },
         {
           "german": "betteln",
           "russian": "просить",
+          "russian_hint": "униженно молить",
           "transcription": "[БЕ-тельн]",
-          "sentence": "Zwischen Reisekoffern der Gesandten sucht König Lear nach frischen Botschaften. Ich presse das Wort „betteln“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "Среди дорожных сундуков послов Лир ищет свежие вести. Я стискиваю слово «просить» зубами, чтобы не вырвалось сомнение.",
+          "sentence": "Der einst mächtige König Lear muss bei seinen herzlosen Töchtern um einen Schlafplatz betteln.",
+          "sentence_translation": "Некогда могущественный Король Лир вынужден просить у своих бессердечных дочерей место для ночлега.",
           "sentence_parts": [
-            "Zwischen Reisekoffern der Gesandten sucht König Lear nach frischen Botschaften.",
-            "Ich presse das Wort „betteln“ zwischen die Zähne, damit kein Zweifel entweicht."
-          ]
+            "Der einst mächtige König Lear",
+            "muss betteln",
+            "bei seinen herzlosen Töchtern",
+            "um einen Schlafplatz."
+          ],
+          "synonyms": ["умолять", "молить", "выпрашивать"]
         },
         {
           "german": "die Einsamkeit",
           "russian": "одиночество",
+          "russian_hint": "состояние без близких",
           "transcription": "[ди АЙН-зам-кайт]",
-          "sentence": "Im stillen Kapellenraum kniet König Lear vor der kalten Steinfigur. Ich umarme das Wort „die Einsamkeit“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "В тихой капелле Лир преклоняет колени перед холодной каменной фигурой. Я обнимаю слово «одиночество», будто это единственный союзник.",
+          "sentence": "Die schreckliche Einsamkeit umgibt König Lear nachdem seine eigenen Töchter ihn verraten haben.",
+          "sentence_translation": "Страшное одиночество окружает Короля Лира после того как его собственные дочери предали его.",
           "sentence_parts": [
-            "Im stillen Kapellenraum kniet König Lear vor der kalten Steinfigur.",
-            "Ich umarme das Wort „die Einsamkeit“, als wäre es mein einziger Verbündeter."
-          ]
+            "Die schreckliche Einsamkeit",
+            "umgibt König Lear",
+            "nachdem seine eigenen Töchter",
+            "ihn verraten haben."
+          ],
+          "synonyms": ["уединение", "изоляция", "оставленность"]
         },
         {
           "german": "die Träne",
           "russian": "слеза",
+          "russian_hint": "капля из глаз",
           "transcription": "[ди ТРЭ-не]",
-          "sentence": "Auf dem Balkon, den das Meer besprüht, hält König Lear die Laterne fest. Selbst wenn die Welt zerfällt, bleibt das Wort „die Träne“ mein Nordstern.",
-          "sentence_translation": "На балконе, омываемом морскими брызгами, Лир крепко держит фонарь. Даже если мир распадается, слово «слеза» остаётся моим северным светом.",
+          "sentence": "König Lear kämpft gegen die bitteren Tränen an während er Regans grausame Worte hört.",
+          "sentence_translation": "Король Лир борется с горькими слезами когда слышит жестокие слова Реганы.",
           "sentence_parts": [
-            "Auf dem Balkon,",
-            "den das Meer besprüht,",
-            "hält König Lear die Laterne fest.",
-            "Selbst wenn die Welt zerfällt, bleibt das Wort „die Träne“ mein Nordstern."
-          ]
+            "König Lear",
+            "kämpft gegen die bitteren Tränen an",
+            "während er",
+            "Regans grausame Worte hört."
+          ],
+          "synonyms": ["слезинка", "капля горя", "слёзы"]
         },
         {
           "german": "die Not",
           "russian": "нужда",
+          "russian_hint": "крайняя бедность",
           "transcription": "[ди НОТ]",
-          "sentence": "Im Schatten der hohen Burgmauern schreibt König Lear eine fiebrige Antwort. Mein Atem zeichnet das Wort „die Not“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "В тени высоких стен Лир пишет лихорадочный ответ. Моё дыхание рисует слово «нужда» в холодном воздухе между нами.",
+          "sentence": "In seiner größten Not erkennt König Lear dass nur Cordelia ihn wirklich liebte.",
+          "sentence_translation": "В своей величайшей нужде Король Лир понимает что только Корделия действительно любила его.",
           "sentence_parts": [
-            "Im Schatten der hohen Burgmauern schreibt König Lear eine fiebrige Antwort.",
-            "Mein Atem zeichnet das Wort „die Not“ in die kalte Luft zwischen uns."
-          ]
+            "In seiner größten Not",
+            "erkennt König Lear",
+            "dass nur Cordelia",
+            "ihn wirklich liebte."
+          ],
+          "synonyms": ["бедность", "лишения", "недостаток"]
         }
       ],
       "quizzes": [
         {
           "question": "Что означает немецкое слово «verlassen»?",
-          "choices": [
-            "отвергать",
-            "жестокость",
-            "отчаяние",
-            "покидать"
-          ],
+          "choices": ["отвергать", "жестокость", "отчаяние", "покидать"],
           "correct_index": 3
         },
         {
           "question": "Что означает немецкое слово «verstoßen»?",
-          "choices": [
-            "покидать",
-            "жестокость",
-            "отчаяние",
-            "отвергать"
-          ],
+          "choices": ["покидать", "жестокость", "отчаяние", "отвергать"],
           "correct_index": 3
         }
       ]
@@ -397,111 +460,133 @@
         {
           "german": "der Sturm",
           "russian": "буря",
+          "russian_hint": "сильная непогода",
           "transcription": "[дер ШТУРМ]",
-          "sentence": "Mitten auf der vom Regen gepeitschten Heide stemmt sich König Lear gegen den Wind. Ich umarme das Wort „der Sturm“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "Посреди хлещущей дождём пустоши Лир упирается в ветер. Я обнимаю слово «буря», будто это единственный союзник.",
+          "sentence": "Der wilde Sturm tobt draußen während König Lear sein Schicksal verflucht und gegen die Elemente schreit.",
+          "sentence_translation": "Дикая буря бушует снаружи в то время как Король Лир проклинает свою судьбу и кричит против стихий.",
           "sentence_parts": [
-            "Mitten auf der vom Regen gepeitschten Heide stemmt sich König Lear gegen den Wind.",
-            "Ich umarme das Wort „der Sturm“, als wäre es mein einziger Verbündeter."
-          ]
+            "Der wilde Sturm",
+            "tobt draußen",
+            "während König Lear sein Schicksal verflucht",
+            "und gegen die Elemente schreit."
+          ],
+          "synonyms": ["ураган", "шторм", "непогода"]
         },
         {
           "german": "der Wahnsinn",
           "russian": "безумие",
+          "russian_hint": "полная потеря разума",
           "transcription": "[дер ВАН-зин]",
-          "sentence": "Unter einem zerrissenen Banner schützt König Lear die Augen vor den Blitzen. Mein Atem zeichnet das Wort „der Wahnsinn“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "Под разорванным знаменем Лир прикрывает глаза от молний. Моё дыхание рисует слово «безумие» в холодном воздухе между нами.",
+          "sentence": "König Lear verfällt langsam dem schrecklichen Wahnsinn während der wilden Sturmnacht auf der Heide.",
+          "sentence_translation": "Король Лир медленно впадает в ужасное безумие во время дикой штормовой ночи на пустоши.",
           "sentence_parts": [
-            "Unter einem zerrissenen Banner schützt König Lear die Augen vor den Blitzen.",
-            "Mein Atem zeichnet das Wort „der Wahnsinn“ in die kalte Luft zwischen uns."
-          ]
+            "König Lear",
+            "verfällt langsam",
+            "dem schrecklichen Wahnsinn",
+            "während der wilden Sturmnacht auf der Heide."
+          ],
+          "synonyms": ["сумасшествие", "помешательство", "умопомрачение"]
         },
         {
           "german": "toben",
           "russian": "бушевать",
+          "russian_hint": "неистовствовать, бесноваться",
           "transcription": "[ТО-бен]",
-          "sentence": "Am Rand eines umgestürzten Baumes sucht König Lear Deckung vor dem Donner. Ich flüstere den Wächtern des Schicksals zu: Das Wort „toben“ darf nicht vergehen.",
-          "sentence_translation": "У поваленного дерева Лир ищет укрытия от грома. Я шепчу стражам судьбы: слово «бушевать» не должно исчезнуть.",
+          "sentence": "Die Naturgewalten toben wild um den wahnsinnigen König Lear der seine Kleider zerreißt.",
+          "sentence_translation": "Силы природы дико бушуют вокруг обезумевшего Короля Лира который рвёт свою одежду.",
           "sentence_parts": [
-            "Am Rand eines umgestürzten Baumes sucht König Lear Deckung vor dem Donner.",
-            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „toben“ darf nicht vergehen."
-          ]
+            "Die Naturgewalten",
+            "toben wild",
+            "um den wahnsinnigen König Lear",
+            "der seine Kleider zerreißt."
+          ],
+          "synonyms": ["свирепствовать", "неистовствовать", "буйствовать"]
         },
         {
           "german": "der Donner",
           "russian": "гром",
+          "russian_hint": "звук после молнии",
           "transcription": "[дер ДО-нер]",
-          "sentence": "Zwischen schäumenden Wassergräben stolpert König Lear durch den Schlamm. Ich umarme das Wort „der Donner“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "Между пенящимися лужами Лир пробирается через грязь. Я обнимаю слово «гром», будто это единственный союзник.",
+          "sentence": "Der laute Donner übertönt König Lears verzweifelte Schreie als er den Himmel herausfordert.",
+          "sentence_translation": "Громкий гром заглушает отчаянные крики Короля Лира когда он бросает вызов небесам.",
           "sentence_parts": [
-            "Zwischen schäumenden Wassergräben stolpert König Lear durch den Schlamm.",
-            "Ich umarme das Wort „der Donner“, als wäre es mein einziger Verbündeter."
-          ]
+            "Der laute Donner",
+            "übertönt",
+            "König Lears verzweifelte Schreie",
+            "als er den Himmel herausfordert."
+          ],
+          "synonyms": ["громыхание", "раскат грома", "грохот"]
         },
         {
           "german": "der Blitz",
           "russian": "молния",
+          "russian_hint": "электрический разряд",
           "transcription": "[дер БЛИЦ]",
-          "sentence": "Vor einem zuckenden Himmel hebt König Lear die Arme trotzig an. Ich atme tief ein und lasse nur das Wort „der Blitz“ wieder hinaus.",
-          "sentence_translation": "На фоне вспыхивающего неба Лир упрямо поднимает руки. Я глубоко вдыхаю и выпускаю только слово «молния».",
+          "sentence": "Die grellen Blitze erhellen König Lears verzerrtes Gesicht während er im Sturm sein Leid beklagt.",
+          "sentence_translation": "Яркие молнии освещают искажённое лицо Короля Лира когда он в буре оплакивает своё горе.",
           "sentence_parts": [
-            "Vor einem zuckenden Himmel hebt König Lear die Arme trotzig an.",
-            "Ich atme tief ein und lasse nur das Wort „der Blitz“ wieder hinaus."
-          ]
+            "Die grellen Blitze",
+            "erhellen",
+            "König Lears verzerrtes Gesicht",
+            "während er im Sturm sein Leid beklagt."
+          ],
+          "synonyms": ["зарница", "разряд", "вспышка"]
         },
         {
           "german": "schreien",
           "russian": "кричать",
+          "russian_hint": "громко звать",
           "transcription": "[ШРАЙ-ен]",
-          "sentence": "Unter dem durchtränkten Umhang presst König Lear den Atem gegen die Kälte. Ich zeichne das Wort „schreien“ mit unsichtbarer Tinte auf meine Handfläche.",
-          "sentence_translation": "Под промокшим плащом Лир прижимает дыхание к груди, спасаясь от холода. Я вывожу слово «кричать» невидимыми чернилами на ладони.",
+          "sentence": "Der verzweifelte König Lear schreit seine Wut und seinen Schmerz in die tobende Sturmnacht hinaus.",
+          "sentence_translation": "Отчаявшийся Король Лир кричит свою ярость и свою боль в бушующую штормовую ночь.",
           "sentence_parts": [
-            "Unter dem durchtränkten Umhang presst König Lear den Atem gegen die Kälte.",
-            "Ich zeichne das Wort „schreien“ mit unsichtbarer Tinte auf meine Handfläche."
-          ]
+            "Der verzweifelte König Lear",
+            "schreit",
+            "seine Wut und seinen Schmerz",
+            "in die tobende Sturmnacht hinaus."
+          ],
+          "synonyms": ["вопить", "орать", "реветь"]
         },
         {
           "german": "nackt",
           "russian": "голый",
+          "russian_hint": "без одежды",
           "transcription": "[НАКТ]",
-          "sentence": "Am kläglichen Feuerrest wärmt König Lear zitternde Finger. Ich zeichne das Wort „nackt“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "У жалких огненных углей Лир греет дрожащие пальцы. Я черчу слово «голый» в мыслях поверх линий судьбы.",
+          "sentence": "König Lear reißt seine königlichen Gewänder ab und steht nackt im Sturm wie ein armer Bettler.",
+          "sentence_translation": "Король Лир срывает свои королевские одеяния и стоит голый в буре как бедный нищий.",
           "sentence_parts": [
-            "Am kläglichen Feuerrest wärmt König Lear zitternde Finger.",
-            "Ich zeichne das Wort „nackt“ in Gedanken über die Linien des Schicksals."
-          ]
+            "König Lear",
+            "reißt seine königlichen Gewänder ab",
+            "und steht nackt im Sturm",
+            "wie ein armer Bettler."
+          ],
+          "synonyms": ["обнажённый", "нагой", "раздетый"]
         },
         {
           "german": "das Chaos",
           "russian": "хаос",
+          "russian_hint": "полный беспорядок",
           "transcription": "[дас ХА-ос]",
-          "sentence": "Zwischen heulenden Hunden ruft König Lear gegen den tosenden Sturm an. Ich halte das Wort „das Chaos“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "Среди воющих псов Лир перекрикивает беснующуюся бурю. Я держу слово «хаос» как факел у сердца.",
+          "sentence": "Das wilde Chaos der Natur spiegelt König Lears zerbrochenen Geisteszustand während er durch den Sturm irrt.",
+          "sentence_translation": "Дикий хаос природы отражает разрушенное состояние разума Короля Лира когда он блуждает в буре.",
           "sentence_parts": [
-            "Zwischen heulenden Hunden ruft König Lear gegen den tosenden Sturm an.",
-            "Ich halte das Wort „das Chaos“ wie eine Fackel vor meinem Herzen."
-          ]
+            "Das wilde Chaos der Natur",
+            "spiegelt",
+            "König Lears zerbrochenen Geisteszustand",
+            "während er durch den Sturm irrt."
+          ],
+          "synonyms": ["беспорядок", "сумятица", "неразбериха"]
         }
       ],
       "quizzes": [
         {
           "question": "Что означает немецкое слово «der Sturm»?",
-          "choices": [
-            "безумие",
-            "бушевать",
-            "гром",
-            "буря"
-          ],
+          "choices": ["безумие", "бушевать", "гром", "буря"],
           "correct_index": 3
         },
         {
           "question": "Что означает немецкое слово «der Wahnsinn»?",
-          "choices": [
-            "буря",
-            "бушевать",
-            "гром",
-            "безумие"
-          ],
+          "choices": ["буря", "бушевать", "гром", "безумие"],
           "correct_index": 3
         }
       ]
@@ -522,111 +607,133 @@
         {
           "german": "das Elend",
           "russian": "нищета",
+          "russian_hint": "крайняя бедность",
           "transcription": "[дас Э-ленд]",
-          "sentence": "Im dunklen Zelt der Feldärzte sitzt König Lear bei der flackernden Kerze. Selbst wenn die Welt zerfällt, bleibt das Wort „das Elend“ mein Nordstern.",
-          "sentence_translation": "В тёмном шатре полевых лекарей Лир сидит у мерцающей свечи. Даже если мир распадается, слово «нищета» остаётся моим северным светом.",
+          "sentence": "König Lear entdeckt das wahre Elend der Armen als er mit Edgar in der Hütte Zuflucht sucht.",
+          "sentence_translation": "Король Лир обнаруживает истинную нищету бедных когда он ищет убежище с Эдгаром в хижине.",
           "sentence_parts": [
-            "Im dunklen Zelt der Feldärzte sitzt König Lear bei der flackernden Kerze.",
-            "Selbst wenn die Welt zerfällt, bleibt das Wort „das Elend“ mein Nordstern."
-          ]
+            "König Lear",
+            "entdeckt",
+            "das wahre Elend der Armen",
+            "als er mit Edgar in der Hütte Zuflucht sucht."
+          ],
+          "synonyms": ["бедность", "убожество", "лишения"]
         },
         {
           "german": "der Bettler",
           "russian": "нищий",
+          "russian_hint": "просящий милостыню",
           "transcription": "[дер БЕТ-лер]",
-          "sentence": "Zwischen zerbeulten Rüstungen streicht König Lear über ein altes Wappen. Mit fester Stimme schwöre ich mir: Das Wort „der Bettler“ wird heute nicht verraten.",
-          "sentence_translation": "Среди помятых доспехов Лир гладит старый герб. Твёрдым голосом я клянусь себе: слово «нищий» сегодня не будет предано.",
+          "sentence": "Edgar verkleidet als wahnsinniger Bettler Tom lehrt König Lear die Weisheit der völligen Armut.",
+          "sentence_translation": "Эдгар переодетый безумным нищим Томом учит Короля Лира мудрости полной бедности.",
           "sentence_parts": [
-            "Zwischen zerbeulten Rüstungen streicht König Lear über ein altes Wappen.",
-            "Mit fester Stimme schwöre ich mir: Das Wort „der Bettler“ wird heute nicht verraten."
-          ]
+            "Edgar verkleidet als wahnsinniger Bettler Tom",
+            "lehrt",
+            "König Lear",
+            "die Weisheit der völligen Armut."
+          ],
+          "synonyms": ["попрошайка", "бедняк", "оборванец"]
         },
         {
           "german": "arm",
           "russian": "бедный",
+          "russian_hint": "не имеющий средств",
           "transcription": "[АРМ]",
-          "sentence": "Am niedrigen Dachbalken der Hütte stößt König Lear fast den Kopf. Selbst wenn die Welt zerfällt, bleibt das Wort „arm“ mein Nordstern.",
-          "sentence_translation": "О низкую балку хижины Лир едва не ударяется головой. Даже если мир распадается, слово «бедный» остаётся моим северным светом.",
+          "sentence": "Der einst reiche König Lear wird arm wie die Ärmsten und versteht endlich ihr Leiden.",
+          "sentence_translation": "Некогда богатый Король Лир становится бедным как беднейшие и наконец понимает их страдания.",
           "sentence_parts": [
-            "Am niedrigen Dachbalken der Hütte stößt König Lear fast den Kopf.",
-            "Selbst wenn die Welt zerfällt, bleibt das Wort „arm“ mein Nordstern."
-          ]
+            "Der einst reiche König Lear",
+            "wird arm wie die Ärmsten",
+            "und versteht endlich",
+            "ihr Leiden."
+          ],
+          "synonyms": ["неимущий", "нищий", "обездоленный"]
         },
         {
           "german": "frieren",
           "russian": "мёрзнуть",
+          "russian_hint": "страдать от холода",
           "transcription": "[ФРИ-рен]",
-          "sentence": "Neben der schlafenden Wache flüstert König Lear in die schwere Nacht. Das kalte Licht lässt das Wort „frieren“ wie geschmolzenes Gold erscheinen.",
-          "sentence_translation": "Рядом со спящим стражем Лир шепчет в тяжёлую ночь. Холодный свет заставляет слово «мёрзнуть» сиять словно расплавленное золото.",
+          "sentence": "König Lear und der Narr frieren bitterlich in der kalten Hütte während draußen der Sturm wütet.",
+          "sentence_translation": "Король Лир и Шут горько мёрзнут в холодной хижине в то время как снаружи бушует буря.",
           "sentence_parts": [
-            "Neben der schlafenden Wache flüstert König Lear in die schwere Nacht.",
-            "Das kalte Licht lässt das Wort „frieren“ wie geschmolzenes Gold erscheinen."
-          ]
+            "König Lear und der Narr",
+            "frieren bitterlich",
+            "in der kalten Hütte",
+            "während draußen der Sturm wütet."
+          ],
+          "synonyms": ["зябнуть", "коченеть", "дрожать от холода"]
         },
         {
           "german": "die Hütte",
           "russian": "хижина",
+          "russian_hint": "бедное жилище",
           "transcription": "[ди ХЮ-те]",
-          "sentence": "Vor dem einfachen Feldbett betrachtet König Lear die Narben vergangener Schlachten. Ich zeichne das Wort „die Hütte“ in Gedanken über die Linien des Schicksals.",
-          "sentence_translation": "Перед грубой походной койкой Лир разглядывает шрамы прошлых битв. Я черчу слово «хижина» в мыслях поверх линий судьбы.",
+          "sentence": "In der armseligen Hütte findet König Lear mehr Menschlichkeit als in seinen prächtigen Palästen.",
+          "sentence_translation": "В убогой хижине Король Лир находит больше человечности чем в своих роскошных дворцах.",
           "sentence_parts": [
-            "Vor dem einfachen Feldbett betrachtet König Lear die Narben vergangener Schlachten.",
-            "Ich zeichne das Wort „die Hütte“ in Gedanken über die Linien des Schicksals."
-          ]
+            "In der armseligen Hütte",
+            "findet König Lear",
+            "mehr Menschlichkeit",
+            "als in seinen prächtigen Palästen."
+          ],
+          "synonyms": ["лачуга", "хибара", "домик"]
         },
         {
           "german": "leiden",
           "russian": "страдать",
+          "russian_hint": "испытывать боль",
           "transcription": "[ЛАЙ-ден]",
-          "sentence": "Im Geruch von feuchtem Stroh legt König Lear den Mantel zur Seite. Mein Atem zeichnet das Wort „leiden“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "В запахе влажной соломы Лир откладывает плащ в сторону. Моё дыхание рисует слово «страдать» в холодном воздухе между нами.",
+          "sentence": "König Lear sieht wie die Armen leiden und bereut dass er als König ihre Not ignorierte.",
+          "sentence_translation": "Король Лир видит как бедные страдают и сожалеет что он как король игнорировал их нужду.",
           "sentence_parts": [
-            "Im Geruch von feuchtem Stroh legt König Lear den Mantel zur Seite.",
-            "Mein Atem zeichnet das Wort „leiden“ in die kalte Luft zwischen uns."
-          ]
+            "König Lear sieht",
+            "wie die Armen leiden",
+            "und bereut dass er als König",
+            "ihre Not ignorierte."
+          ],
+          "synonyms": ["мучиться", "терпеть", "испытывать боль"]
         },
         {
           "german": "der Narr",
           "russian": "шут",
+          "russian_hint": "придворный комик",
           "transcription": "[дер НАР]",
-          "sentence": "Auf dem wackligen Holztisch ordnet König Lear zerlesene Briefe. Selbst wenn die Welt zerfällt, bleibt das Wort „der Narr“ mein Nordstern.",
-          "sentence_translation": "На шатком деревянном столе Лир раскладывает зачитанные письма. Даже если мир распадается, слово «шут» остаётся моим северным светом.",
+          "sentence": "Der treue Narr bleibt bei König Lear in der Hütte und tröstet ihn mit bitteren Wahrheiten.",
+          "sentence_translation": "Верный Шут остаётся с Королём Лиром в хижине и утешает его горькими истинами.",
           "sentence_parts": [
-            "Auf dem wackligen Holztisch ordnet König Lear zerlesene Briefe.",
-            "Selbst wenn die Welt zerfällt, bleibt das Wort „der Narr“ mein Nordstern."
-          ]
+            "Der treue Narr",
+            "bleibt bei König Lear in der Hütte",
+            "und tröstet ihn",
+            "mit bitteren Wahrheiten."
+          ],
+          "synonyms": ["дурак", "скоморох", "блазень"]
         },
         {
           "german": "die Erkenntnis",
           "russian": "познание",
+          "russian_hint": "понимание истины",
           "transcription": "[ди ер-КЕНТ-нис]",
-          "sentence": "Am Eingang der Hütte späht König Lear nach einem vertrauten Schatten. Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Erkenntnis“ darf nicht vergehen.",
-          "sentence_translation": "У входа в хижину Лир высматривает знакомую тень. Я шепчу стражам судьбы: слово «познание» не должно исчезнуть.",
+          "sentence": "Die schmerzhafte Erkenntnis seiner Blindheit kommt zu König Lear erst nachdem er alles verloren hat.",
+          "sentence_translation": "Болезненное познание своей слепоты приходит к Королю Лиру только после того как он потерял всё.",
           "sentence_parts": [
-            "Am Eingang der Hütte späht König Lear nach einem vertrauten Schatten.",
-            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Erkenntnis“ darf nicht vergehen."
-          ]
+            "Die schmerzhafte Erkenntnis",
+            "seiner Blindheit",
+            "kommt zu König Lear erst",
+            "nachdem er alles verloren hat."
+          ],
+          "synonyms": ["прозрение", "осознание", "понимание"]
         }
       ],
       "quizzes": [
         {
           "question": "Что означает немецкое слово «das Elend»?",
-          "choices": [
-            "нищий",
-            "бедный",
-            "мёрзнуть",
-            "нищета"
-          ],
+          "choices": ["нищий", "бедный", "мёрзнуть", "нищета"],
           "correct_index": 3
         },
         {
           "question": "Что означает немецкое слово «der Bettler»?",
-          "choices": [
-            "нищета",
-            "бедный",
-            "мёрзнуть",
-            "нищий"
-          ],
+          "choices": ["нищета", "бедный", "мёрзнуть", "нищий"],
           "correct_index": 3
         }
       ]
@@ -647,111 +754,133 @@
         {
           "german": "erkennen",
           "russian": "узнавать",
+          "russian_hint": "видеть знакомое",
           "transcription": "[эр-КЕ-нен]",
-          "sentence": "Auf den weißen Klippen von Dover blickt König Lear in den aufgewühlten Kanal. Ich halte das Wort „erkennen“ wie eine Fackel vor meinem Herzen.",
-          "sentence_translation": "На белых скалах Дувра Лир смотрит в вздыбленный пролив. Я держу слово «узнавать» как факел у сердца.",
+          "sentence": "König Lear erkennt endlich seine treue Tochter Cordelia wieder nach seinem langen Wahnsinn in Dover.",
+          "sentence_translation": "Король Лир наконец узнаёт свою верную дочь Корделию снова после своего долгого безумия в Дувре.",
           "sentence_parts": [
-            "Auf den weißen Klippen von Dover blickt König Lear in den aufgewühlten Kanal.",
-            "Ich halte das Wort „erkennen“ wie eine Fackel vor meinem Herzen."
-          ]
+            "König Lear",
+            "erkennt endlich",
+            "seine treue Tochter Cordelia wieder",
+            "nach seinem langen Wahnsinn in Dover."
+          ],
+          "synonyms": ["опознавать", "распознавать", "признавать"]
         },
         {
           "german": "verstehen",
           "russian": "понимать",
+          "russian_hint": "осознавать смысл",
           "transcription": "[фер-ШТЕ-ен]",
-          "sentence": "Zwischen flatternden Feldzeichen richtet König Lear den Helm. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „verstehen“ gehört mir.",
-          "sentence_translation": "Среди хлопающих штандартов Лир поправляет шлем. Буря за окнами усиливает клятву: слово «понимать» принадлежит мне.",
+          "sentence": "König Lear versteht zu spät dass nur Cordelia ihn wirklich liebte ohne Falschheit oder Lüge.",
+          "sentence_translation": "Король Лир понимает слишком поздно что только Корделия действительно любила его без фальши или лжи.",
           "sentence_parts": [
-            "Zwischen flatternden Feldzeichen richtet König Lear den Helm.",
-            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „verstehen“ gehört mir."
-          ]
+            "König Lear",
+            "versteht zu spät",
+            "dass nur Cordelia ihn wirklich liebte",
+            "ohne Falschheit oder Lüge."
+          ],
+          "synonyms": ["постигать", "осознавать", "уразумевать"]
         },
         {
           "german": "die Wahrheit",
           "russian": "правда",
+          "russian_hint": "истина без лжи",
           "transcription": "[ди ВАР-хайт]",
-          "sentence": "Am Lagerfeuer der Franzosen zeichnet König Lear Marschrouten in den Sand. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Wahrheit“ gehört mir.",
-          "sentence_translation": "У французского костра Лир рисует в песке путь марша. Буря за окнами усиливает клятву: слово «правда» принадлежит мне.",
+          "sentence": "Cordelia sprach die reine Wahrheit über ihre Liebe während ihre Schwestern König Lear belogen.",
+          "sentence_translation": "Корделия говорила чистую правду о своей любви в то время как её сёстры лгали Королю Лиру.",
           "sentence_parts": [
-            "Am Lagerfeuer der Franzosen zeichnet König Lear Marschrouten in den Sand.",
-            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Wahrheit“ gehört mir."
-          ]
+            "Cordelia",
+            "sprach die reine Wahrheit",
+            "über ihre Liebe",
+            "während ihre Schwestern König Lear belogen."
+          ],
+          "synonyms": ["истина", "правдивость", "достоверность"]
         },
         {
           "german": "die Reue",
           "russian": "раскаяние",
+          "russian_hint": "сожаление о содеянном",
           "transcription": "[ди РОЙ-е]",
-          "sentence": "Neben verschnürten Versorgungskisten kontrolliert König Lear das Siegel. Das Echo des Wortes „die Reue“ übertönt das Flüstern der Höflinge.",
-          "sentence_translation": "У перевязанных провиантных ящиков Лир проверяет печати. Эхо слова «раскаяние» заглушает шёпот придворных.",
+          "sentence": "Die tiefe Reue über seine Blindheit quält König Lear als er vor Cordelia niederkniet.",
+          "sentence_translation": "Глубокое раскаяние в своей слепоте мучает Короля Лира когда он опускается на колени перед Корделией.",
           "sentence_parts": [
-            "Neben verschnürten Versorgungskisten kontrolliert König Lear das Siegel.",
-            "Das Echo des Wortes „die Reue“ übertönt das Flüstern der Höflinge."
-          ]
+            "Die tiefe Reue",
+            "über seine Blindheit",
+            "quält König Lear",
+            "als er vor Cordelia niederkniet."
+          ],
+          "synonyms": ["покаяние", "сожаление", "угрызение совести"]
         },
         {
           "german": "die Weisheit",
           "russian": "мудрость",
+          "russian_hint": "глубокое понимание",
           "transcription": "[ди ВАЙС-хайт]",
-          "sentence": "Vor dem Seidenzelt der Heerführer lauscht König Lear dem dumpfen Meer. Ich umarme das Wort „die Weisheit“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "Перед шёлковым шатром полководцев Лир слушает глухой шум моря. Я обнимаю слово «мудрость», будто это единственный союзник.",
+          "sentence": "Die bittere Weisheit kommt zu König Lear erst nachdem er durch Wahnsinn und Leiden gegangen ist.",
+          "sentence_translation": "Горькая мудрость приходит к Королю Лиру только после того как он прошёл через безумие и страдания.",
           "sentence_parts": [
-            "Vor dem Seidenzelt der Heerführer lauscht König Lear dem dumpfen Meer.",
-            "Ich umarme das Wort „die Weisheit“, als wäre es mein einziger Verbündeter."
-          ]
+            "Die bittere Weisheit",
+            "kommt zu König Lear erst",
+            "nachdem er",
+            "durch Wahnsinn und Leiden gegangen ist."
+          ],
+          "synonyms": ["премудрость", "разумность", "благоразумие"]
         },
         {
           "german": "vergeben",
           "russian": "прощать",
+          "russian_hint": "отпускать вину",
           "transcription": "[фер-ГЕ-бен]",
-          "sentence": "Auf dem sandigen Trainingsplatz übt König Lear das Ziehen des Schwerts. Wie ein stilles Gebet legt sich das Wort „vergeben“ auf meine Lippen.",
-          "sentence_translation": "На песчаном плацу Лир отрабатывает выхват меча. Как тихая молитва слово «прощать» ложится на мои губы.",
+          "sentence": "Cordelia vergibt ihrem reuigen Vater König Lear sofort mit Tränen der Liebe und des Mitleids.",
+          "sentence_translation": "Корделия прощает своего кающегося отца Короля Лира сразу со слезами любви и сострадания.",
           "sentence_parts": [
-            "Auf dem sandigen Trainingsplatz übt König Lear das Ziehen des Schwerts.",
-            "Wie ein stilles Gebet legt sich das Wort „vergeben“ auf meine Lippen."
-          ]
+            "Cordelia",
+            "vergibt sofort",
+            "ihrem reuigen Vater König Lear",
+            "mit Tränen der Liebe und des Mitleids."
+          ],
+          "synonyms": ["извинять", "отпускать грехи", "миловать"]
         },
         {
           "german": "die Einsicht",
           "russian": "прозрение",
+          "russian_hint": "внезапное понимание",
           "transcription": "[ди АЙН-зихт]",
-          "sentence": "Zwischen pochenden Trommeln hebt König Lear das Banner der Hoffnung. Mein Atem zeichnet das Wort „die Einsicht“ in die kalte Luft zwischen uns.",
-          "sentence_translation": "Под гул барабанов Лир поднимает знамя надежды. Моё дыхание рисует слово «прозрение» в холодном воздухе между нами.",
+          "sentence": "Die späte Einsicht in seine tragischen Fehler kommt zu König Lear beim Wiedersehen mit Cordelia.",
+          "sentence_translation": "Позднее прозрение своих трагических ошибок приходит к Королю Лиру при встрече с Корделией.",
           "sentence_parts": [
-            "Zwischen pochenden Trommeln hebt König Lear das Banner der Hoffnung.",
-            "Mein Atem zeichnet das Wort „die Einsicht“ in die kalte Luft zwischen uns."
-          ]
+            "Die späte Einsicht",
+            "in seine tragischen Fehler",
+            "kommt zu König Lear",
+            "beim Wiedersehen mit Cordelia."
+          ],
+          "synonyms": ["озарение", "осознание", "просветление"]
         },
         {
           "german": "schuldig",
           "russian": "виновный",
+          "russian_hint": "несущий вину",
           "transcription": "[ШУЛЬ-диг]",
-          "sentence": "Am Morgennebel der Küste legt König Lear die Hand auf das pochende Herz. Selbst wenn die Welt zerfällt, bleibt das Wort „schuldig“ mein Nordstern.",
-          "sentence_translation": "В утреннем тумане побережья Лир кладёт ладонь на бьющееся сердце. Даже если мир распадается, слово «виновный» остаётся моим северным светом.",
+          "sentence": "König Lear fühlt sich tief schuldig weil er Cordelia verstoßen und seinen falschen Töchtern vertraut hatte.",
+          "sentence_translation": "Король Лир чувствует себя глубоко виновным потому что отверг Корделию и доверился своим фальшивым дочерям.",
           "sentence_parts": [
-            "Am Morgennebel der Küste legt König Lear die Hand auf das pochende Herz.",
-            "Selbst wenn die Welt zerfällt, bleibt das Wort „schuldig“ mein Nordstern."
-          ]
+            "König Lear",
+            "fühlt sich tief schuldig",
+            "weil er Cordelia verstoßen",
+            "und seinen falschen Töchtern vertraut hatte."
+          ],
+          "synonyms": ["повинный", "виноватый", "грешный"]
         }
       ],
       "quizzes": [
         {
           "question": "Что означает немецкое слово «erkennen»?",
-          "choices": [
-            "понимать",
-            "правда",
-            "раскаяние",
-            "узнавать"
-          ],
+          "choices": ["понимать", "правда", "раскаяние", "узнавать"],
           "correct_index": 3
         },
         {
           "question": "Что означает немецкое слово «verstehen»?",
-          "choices": [
-            "узнавать",
-            "правда",
-            "раскаяние",
-            "понимать"
-          ],
+          "choices": ["узнавать", "правда", "раскаяние", "понимать"],
           "correct_index": 3
         }
       ]
@@ -772,113 +901,133 @@
         {
           "german": "verzeihen",
           "russian": "прощать",
+          "russian_hint": "давать прощение",
           "transcription": "[фер-ЦАЙ-ен]",
-          "sentence": "Im feuchten Kerker stützt König Lear sich an den tropfenden Stein. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „verzeihen“ gehört mir.",
-          "sentence_translation": "В сыром подземелье Лир опирается на сочащийся камень. Буря за окнами усиливает клятву: слово «прощать» принадлежит мне.",
+          "sentence": "König Lear und Cordelia verzeihen einander alles in ihrer letzten gemeinsamen Stunde im Gefängnis.",
+          "sentence_translation": "Король Лир и Корделия прощают друг другу всё в их последний совместный час в тюрьме.",
           "sentence_parts": [
-            "Im feuchten Kerker stützt König Lear sich an den tropfenden Stein.",
-            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „verzeihen“ gehört mir."
-          ]
+            "König Lear und Cordelia",
+            "verzeihen einander alles",
+            "in ihrer letzten gemeinsamen Stunde",
+            "im Gefängnis."
+          ],
+          "synonyms": ["извинять", "отпускать", "миловать"]
         },
         {
           "german": "der Tod",
           "russian": "смерть",
+          "russian_hint": "конец жизни",
           "transcription": "[дер ТОД]",
-          "sentence": "Unter der trüben Laterne zählt König Lear die eisernen Ringe der Kette. Ich umarme das Wort „der Tod“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "Под мутным фонарём Лир пересчитывает железные кольца цепи. Я обнимаю слово «смерть», будто это единственный союзник.",
+          "sentence": "Der grausame Tod nimmt Cordelia von König Lear kurz bevor sie beide gerettet werden könnten.",
+          "sentence_translation": "Жестокая смерть забирает Корделию у Короля Лира незадолго до того как они оба могли быть спасены.",
           "sentence_parts": [
-            "Unter der trüben Laterne zählt König Lear die eisernen Ringe der Kette.",
-            "Ich umarme das Wort „der Tod“, als wäre es mein einziger Verbündeter."
-          ]
+            "Der grausame Tod",
+            "nimmt Cordelia von König Lear",
+            "kurz bevor sie beide",
+            "gerettet werden könnten."
+          ],
+          "synonyms": ["кончина", "гибель", "уход"]
         },
         {
           "german": "sterben",
           "russian": "умирать",
+          "russian_hint": "прекращать жить",
           "transcription": "[ШТЕР-бен]",
-          "sentence": "Neben der schweren Holztür horcht König Lear auf entferntes Schluchzen. Wie ein stilles Gebet legt sich das Wort „sterben“ auf meine Lippen.",
-          "sentence_translation": "У тяжёлой двери Лир прислушивается к далёким рыданиям. Как тихая молитва слово «умирать» ложится на мои губы.",
+          "sentence": "König Lear stirbt vor Kummer als er seine tote Tochter Cordelia in seinen Armen hält.",
+          "sentence_translation": "Король Лир умирает от горя когда держит свою мёртвую дочь Корделию в своих руках.",
           "sentence_parts": [
-            "Neben der schweren Holztür horcht König Lear auf entferntes Schluchzen.",
-            "Wie ein stilles Gebet legt sich das Wort „sterben“ auf meine Lippen."
-          ]
+            "König Lear",
+            "stirbt vor Kummer",
+            "als er seine tote Tochter Cordelia",
+            "in seinen Armen hält."
+          ],
+          "synonyms": ["погибать", "скончаться", "почить"]
         },
         {
           "german": "das Ende",
           "russian": "конец",
+          "russian_hint": "завершение всего",
           "transcription": "[дас ЕН-де]",
-          "sentence": "Auf der kalten Steinbank zieht König Lear den Mantel enger um die Schultern. Ich presse das Wort „das Ende“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "На холодной каменной скамье Лир плотнее кутается в плащ. Я стискиваю слово «конец» зубами, чтобы не вырвалось сомнение.",
+          "sentence": "Das tragische Ende von König Lear kommt als er neben seiner geliebten Cordelia zusammenbricht.",
+          "sentence_translation": "Трагический конец Короля Лира наступает когда он падает рядом со своей любимой Корделией.",
           "sentence_parts": [
-            "Auf der kalten Steinbank zieht König Lear den Mantel enger um die Schultern.",
-            "Ich presse das Wort „das Ende“ zwischen die Zähne,",
-            "damit kein Zweifel entweicht."
-          ]
+            "Das tragische Ende",
+            "von König Lear kommt",
+            "als er neben seiner geliebten Cordelia",
+            "zusammenbricht."
+          ],
+          "synonyms": ["финал", "завершение", "исход"]
         },
         {
           "german": "das Herz",
           "russian": "сердце",
+          "russian_hint": "орган чувств",
           "transcription": "[дас ХЕРЦ]",
-          "sentence": "Zwischen Schatten der Gitterstäbe hebt König Lear das Gesicht zum Licht. Ich umarme das Wort „das Herz“, als wäre es mein einziger Verbündeter.",
-          "sentence_translation": "Между тенями решёток Лир поднимает лицо к свету. Я обнимаю слово «сердце», будто это единственный союзник.",
+          "sentence": "König Lears gebrochenes Herz kann den Verlust seiner einzigen wahren Tochter Cordelia nicht ertragen.",
+          "sentence_translation": "Разбитое сердце Короля Лира не может вынести потерю его единственной истинной дочери Корделии.",
           "sentence_parts": [
-            "Zwischen Schatten der Gitterstäbe hebt König Lear das Gesicht zum Licht.",
-            "Ich umarme das Wort „das Herz“, als wäre es mein einziger Verbündeter."
-          ]
+            "König Lears gebrochenes Herz",
+            "kann nicht ertragen",
+            "den Verlust",
+            "seiner einzigen wahren Tochter Cordelia."
+          ],
+          "synonyms": ["душа", "сердечко", "средоточие чувств"]
         },
         {
           "german": "die Trauer",
           "russian": "скорбь",
+          "russian_hint": "глубокая печаль",
           "transcription": "[ди ТРАУ-ер]",
-          "sentence": "Am rostigen Wassereimer spiegelt König Lear kurz die eigenen Augen. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Trauer“ gehört mir.",
-          "sentence_translation": "У ржавого ведра с водой Лир на мгновение видит отражение глаз. Буря за окнами усиливает клятву: слово «скорбь» принадлежит мне.",
+          "sentence": "Die unendliche Trauer überwältigt König Lear als er Cordelias leblose Gestalt an sich drückt.",
+          "sentence_translation": "Бесконечная скорбь охватывает Короля Лира когда он прижимает к себе безжизненное тело Корделии.",
           "sentence_parts": [
-            "Am rostigen Wassereimer spiegelt König Lear kurz die eigenen Augen.",
-            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Trauer“ gehört mir."
-          ]
+            "Die unendliche Trauer",
+            "überwältigt König Lear",
+            "als er Cordelias leblose Gestalt",
+            "an sich drückt."
+          ],
+          "synonyms": ["печаль", "горе", "траур"]
         },
         {
           "german": "der Abschied",
           "russian": "прощание",
+          "russian_hint": "последнее расставание",
           "transcription": "[дер АБ-шид]",
-          "sentence": "Im dumpfen Hall der Schritte zählt König Lear den Rhythmus der Wachen. Ich presse das Wort „der Abschied“ zwischen die Zähne, damit kein Zweifel entweicht.",
-          "sentence_translation": "В глухом эхе шагов Лир отсчитывает ритм часовых. Я стискиваю слово «прощание» зубами, чтобы не вырвалось сомнение.",
+          "sentence": "Der letzte Abschied zwischen König Lear und Cordelia wird zur herzzerreißendsten Szene der Tragödie.",
+          "sentence_translation": "Последнее прощание между Королём Лиром и Корделией становится самой душераздирающей сценой трагедии.",
           "sentence_parts": [
-            "Im dumpfen Hall der Schritte zählt König Lear den Rhythmus der Wachen.",
-            "Ich presse das Wort „der Abschied“ zwischen die Zähne,",
-            "damit kein Zweifel entweicht."
-          ]
+            "Der letzte Abschied",
+            "zwischen König Lear und Cordelia",
+            "wird zur herzzerreißendsten Szene",
+            "der Tragödie."
+          ],
+          "synonyms": ["расставание", "разлука", "прощальный час"]
         },
         {
           "german": "ewig",
           "russian": "вечный",
+          "russian_hint": "без конца",
           "transcription": "[Э-виг]",
-          "sentence": "Vor dem verriegelten Fenster zeichnet König Lear Kreise in den Staub. Ich flüstere den Wächtern des Schicksals zu: Das Wort „ewig“ darf nicht vergehen.",
-          "sentence_translation": "Перед заколоченным окном Лир чертит круги в пыли. Я шепчу стражам судьбы: слово «вечный» не должно исчезнуть.",
+          "sentence": "König Lear glaubt dass ihre Liebe ewig bestehen wird selbst nach dem Tod im Jenseits.",
+          "sentence_translation": "Король Лир верит что их любовь вечно будет существовать даже после смерти в загробной жизни.",
           "sentence_parts": [
-            "Vor dem verriegelten Fenster zeichnet König Lear Kreise in den Staub.",
-            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „ewig“ darf nicht vergehen."
-          ]
+            "König Lear glaubt",
+            "dass ihre Liebe ewig bestehen wird",
+            "selbst nach dem Tod",
+            "im Jenseits."
+          ],
+          "synonyms": ["бесконечный", "непреходящий", "бессмертный"]
         }
       ],
       "quizzes": [
         {
           "question": "Что означает немецкое слово «verzeihen»?",
-          "choices": [
-            "смерть",
-            "умирать",
-            "конец",
-            "прощать"
-          ],
+          "choices": ["смерть", "умирать", "конец", "прощать"],
           "correct_index": 3
         },
         {
           "question": "Что означает немецкое слово «der Tod»?",
-          "choices": [
-            "прощать",
-            "умирать",
-            "конец",
-            "смерть"
-          ],
+          "choices": ["прощать", "умирать", "конец", "смерть"],
           "correct_index": 3
         }
       ]
