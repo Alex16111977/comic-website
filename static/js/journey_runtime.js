@@ -6,6 +6,207 @@ let progressLineElement = null;
 let progressLineLength = 0;
 const QUIZ_ADVANCE_DELAY = 1200;
 const constructorState = {};
+const STUDY_WORDS_LIMIT = null; // null = unlimited, number = custom limit
+
+function readReviewQueue() {
+    if (typeof localStorage === 'undefined') {
+        return [];
+    }
+
+    try {
+        const stored = localStorage.getItem(REVIEW_QUEUE_KEY);
+        if (!stored) {
+            return [];
+        }
+
+        const parsed = JSON.parse(stored);
+        if (Array.isArray(parsed)) {
+            return parsed.filter(item => item && typeof item === 'object');
+        }
+    } catch (error) {
+        console.error('[ReviewQueue] Error reading from localStorage:', error);
+    }
+
+    return [];
+}
+
+function writeReviewQueue(queue) {
+    if (typeof localStorage === 'undefined') {
+        return false;
+    }
+
+    try {
+        localStorage.setItem(REVIEW_QUEUE_KEY, JSON.stringify(queue));
+        return true;
+    } catch (error) {
+        console.error('[ReviewQueue] Error saving to localStorage:', error);
+        return false;
+    }
+}
+
+function extractStudyEntries(queue) {
+    if (!Array.isArray(queue)) {
+        return [];
+    }
+
+    return queue.filter(entry => entry && typeof entry.word === 'string');
+}
+
+function findStudyWordIndex(queue, word, characterId) {
+    if (!Array.isArray(queue)) {
+        return -1;
+    }
+
+    const targetWord = typeof word === 'string' ? word : '';
+    const targetCharacterId = typeof characterId === 'string' ? characterId : '';
+
+    return queue.findIndex(entry => {
+        if (!entry || typeof entry.word !== 'string') {
+            return false;
+        }
+
+        const entryCharacterId = typeof entry.characterId === 'string' ? entry.characterId : '';
+        return entry.word === targetWord && entryCharacterId === targetCharacterId;
+    });
+}
+
+function setStudyButtonState(button, isAdded) {
+    if (!button) {
+        return;
+    }
+
+    const added = Boolean(isAdded);
+    button.disabled = false;
+    button.classList.toggle('added', added);
+    button.classList.remove('limit-reached');
+    button.style.background = '';
+    button.style.opacity = '';
+    button.style.cursor = '';
+    button.removeAttribute('aria-disabled');
+    button.setAttribute('aria-pressed', added ? 'true' : 'false');
+
+    if (added) {
+        button.textContent = '✓ Добавлено';
+    } else {
+        button.textContent = 'Изучить';
+    }
+}
+
+function updateStudyCounter(count) {
+    const header = document.querySelector('.vocabulary-section h2');
+    if (!header) {
+        return;
+    }
+
+    let counter = header.querySelector('.study-counter');
+    if (!counter) {
+        counter = document.createElement('span');
+        counter.className = 'study-counter';
+        header.appendChild(counter);
+    }
+
+    counter.textContent = `Выбрано слов: ${count}`;
+}
+
+function updateWordButtons() {
+    const queue = readReviewQueue();
+    const studyEntries = extractStudyEntries(queue);
+    const studyCount = studyEntries.length;
+
+    document.querySelectorAll('.btn-study').forEach(button => {
+        const wordId = button.dataset.word || '';
+        const characterId = button.dataset.characterId || '';
+        const existsIndex = findStudyWordIndex(queue, wordId, characterId);
+        setStudyButtonState(button, existsIndex !== -1);
+    });
+
+    if (STUDY_WORDS_LIMIT !== null) {
+        const limitReached = studyCount >= STUDY_WORDS_LIMIT;
+        document.querySelectorAll('.btn-study').forEach(button => {
+            if (!button.classList.contains('added')) {
+                if (limitReached) {
+                    button.classList.add('limit-reached');
+                    button.setAttribute('aria-disabled', 'true');
+                } else {
+                    button.classList.remove('limit-reached');
+                    button.removeAttribute('aria-disabled');
+                }
+            }
+        });
+    }
+
+    updateStudyCounter(studyCount);
+}
+
+function toggleStudyWord(button, wordData) {
+    if (!button || !wordData) {
+        return;
+    }
+
+    const queue = readReviewQueue();
+    const currentIndex = findStudyWordIndex(queue, wordData.word, wordData.characterId);
+    const updatedQueue = queue.slice();
+
+    if (currentIndex > -1) {
+        const removedWord = updatedQueue.splice(currentIndex, 1)[0];
+        if (!writeReviewQueue(updatedQueue)) {
+            alert('Не удалось обновить список для изучения');
+            updateWordButtons();
+            return;
+        }
+
+        console.log('[ReviewQueue] Removed word from review:', removedWord);
+
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(12);
+        }
+    } else {
+        if (STUDY_WORDS_LIMIT !== null) {
+            const currentCount = extractStudyEntries(queue).length;
+            if (currentCount >= STUDY_WORDS_LIMIT) {
+                button.classList.add('limit-reached');
+                button.textContent = `Максимум ${STUDY_WORDS_LIMIT} слов`;
+                setTimeout(() => updateWordButtons(), 1500);
+                return;
+            }
+        }
+
+        const newEntry = Object.assign({}, wordData);
+        if (!Array.isArray(newEntry.examples)) {
+            newEntry.examples = [];
+        } else {
+            newEntry.examples = newEntry.examples.map(example =>
+                Object.assign({}, example)
+            );
+        }
+
+        newEntry.emoji = newEntry.emoji || '📝';
+        newEntry.sentence = typeof newEntry.sentence === 'string' ? newEntry.sentence : '';
+        newEntry.example = typeof newEntry.example === 'string' ? newEntry.example : newEntry.sentence;
+        newEntry.sentenceTranslation = typeof newEntry.sentenceTranslation === 'string'
+            ? newEntry.sentenceTranslation
+            : '';
+        newEntry.addedAt = new Date().toISOString();
+
+        updatedQueue.push(newEntry);
+
+        if (!writeReviewQueue(updatedQueue)) {
+            alert('Не удалось сохранить слово для изучения');
+            updateWordButtons();
+            return;
+        }
+
+        console.log('[ReviewQueue] Added word to review:', newEntry);
+
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(20);
+        }
+    }
+
+    button.blur();
+    updateWordButtons();
+    window.dispatchEvent(new Event('storage'));
+}
 
 function getPhaseStorageKey(phaseKey) {
     const safePhase = phaseKey || 'unknown';
@@ -290,36 +491,22 @@ function updateQuizStatsUI(phaseKey) {
 }
 
 function queuePhaseReview(detail) {
-    if (typeof localStorage === 'undefined') {
-        return;
-    }
+    const queue = readReviewQueue();
 
-    let queue = [];
-    try {
-        const stored = localStorage.getItem(REVIEW_QUEUE_KEY);
-        if (stored) {
-            const parsed = JSON.parse(stored);
-            if (Array.isArray(parsed)) {
-                queue = parsed;
-            }
+    const filteredQueue = queue.filter(entry => {
+        if (!entry) {
+            return false;
         }
-    } catch (error) {
-        console.warn('[ReviewQueue] Unable to read review queue', error);
-    }
 
-    queue = queue.filter(entry => {
-        if (!entry) return false;
         return !(entry.characterId === detail.characterId && entry.phaseId === detail.phaseId);
     });
 
     if (detail.incorrectWords && detail.incorrectWords.length > 0) {
-        queue.push(detail);
+        filteredQueue.push(detail);
     }
 
-    try {
-        localStorage.setItem(REVIEW_QUEUE_KEY, JSON.stringify(queue));
-    } catch (error) {
-        console.warn('[ReviewQueue] Unable to update review queue', error);
+    if (!writeReviewQueue(filteredQueue)) {
+        console.warn('[ReviewQueue] Unable to update review queue');
     }
 }
 
@@ -832,6 +1019,10 @@ function displayVocabulary(phaseKey) {
 
     grid.innerHTML = '';
 
+    const initialQueue = readReviewQueue();
+    const initialStudyEntries = extractStudyEntries(initialQueue);
+    updateStudyCounter(initialStudyEntries.length);
+
     phase.words.forEach((item, index) => {
         setTimeout(() => {
             const card = document.createElement('div');
@@ -855,97 +1046,63 @@ function displayVocabulary(phaseKey) {
                     data-phase-key="${phaseKey || ''}"
                 >Изучить</button>
             `;
-            
-            // Добавляем обработчик для кнопки
+
+            const normalizedWord = (item.word || '').toLowerCase().trim();
+            const baseWordId = normalizedWord
+                ? normalizedWord.replace(/\s+/g, '_')
+                : `word-${index}`;
+
             const studyBtn = card.querySelector('.btn-study');
             if (studyBtn) {
+                const alreadyAdded = findStudyWordIndex(
+                    initialQueue,
+                    studyBtn.dataset.word || '',
+                    studyBtn.dataset.characterId || ''
+                ) !== -1;
+                setStudyButtonState(studyBtn, alreadyAdded);
+
                 studyBtn.addEventListener('click', function(e) {
                     e.preventDefault();
                     e.stopPropagation();
-                    
-                    // Создаем объект с данными слова
+
                     const fullWordData = {
                         word: this.dataset.word,
                         translation: this.dataset.translation,
                         transcription: this.dataset.transcription,
                         characterId: this.dataset.characterId,
                         phaseKey: this.dataset.phaseKey,
+                        sentence: this.dataset.sentence || '',
+                        example: this.dataset.sentence || '',
+                        sentenceTranslation: this.dataset.sentenceTranslation || '',
+                        wordId: baseWordId,
+                        id: `${this.dataset.characterId || 'word'}-${baseWordId}`,
                         examples: []
                     };
-                    
-                    // Добавляем примеры и sentence_translation
-                    fullWordData.sentenceTranslation = this.dataset.sentenceTranslation || '';
-                    
+
                     if (this.dataset.sentence || this.dataset.sentenceTranslation) {
                         fullWordData.examples.push({
                             german: this.dataset.sentence || '',
                             russian: this.dataset.sentenceTranslation || ''
                         });
                     }
-                    
-                    // Получаем существующий список из localStorage
-                    let reviewQueue = [];
-                    try {
-                        const stored = localStorage.getItem(REVIEW_QUEUE_KEY);
-                        if (stored) {
-                            reviewQueue = JSON.parse(stored);
-                            if (!Array.isArray(reviewQueue)) {
-                                reviewQueue = [];
-                            }
-                        }
-                    } catch (error) {
-                        console.error('[ReviewQueue] Error reading from localStorage:', error);
-                        reviewQueue = [];
-                    }
-                    
-                    // Проверяем, не добавлено ли уже это слово
-                    const exists = reviewQueue.some(w => 
-                        w.word === fullWordData.word && 
-                        w.characterId === fullWordData.characterId
-                    );
-                    
-                    if (!exists && reviewQueue.length < 5) {
-                        // Добавляем emoji и примеры
-                        fullWordData.emoji = item.visual_hint || '📝';
-                        fullWordData.sentence = item.sentence || '';
-                        fullWordData.example = item.sentence || '';
-                        reviewQueue.push(fullWordData);
-                        
-                        try {
-                            localStorage.setItem(REVIEW_QUEUE_KEY, JSON.stringify(reviewQueue));
-                            
-                            // Визуальная обратная связь - кнопка становится зеленой
-                            this.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
-                            this.textContent = '✓ Добавлено';
-                            this.disabled = true;
-                            
-                            // Haptic feedback для мобильных
-                            if (navigator.vibrate && isTouchDevice) {
-                                navigator.vibrate(20);
-                            }
-                            
-                            console.log('[ReviewQueue] Added word to review:', fullWordData);
-                            
-                            // Отправляем событие для обновления главной страницы
-                            window.dispatchEvent(new Event('storage'));
-                        } catch (error) {
-                            console.error('[ReviewQueue] Error saving to localStorage:', error);
-                            alert('Не удалось сохранить слово для изучения');
-                        }
-                    } else if (exists) {
-                        this.textContent = 'Уже добавлено';
-                        this.disabled = true;
-                    } else {
-                        this.textContent = 'Максимум 5 слов';
-                        this.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
-                        this.disabled = true;
-                    }
+
+                    fullWordData.emoji = item.visual_hint || '📝';
+
+                    toggleStudyWord(this, fullWordData);
                 });
             }
-            
+
             grid.appendChild(card);
+
+            if (index === phase.words.length - 1) {
+                updateWordButtons();
+            }
         }, index * 50);
     });
+
+    if (!phase.words.length) {
+        updateWordButtons();
+    }
     
     // Update progress bar
     const progress = ((currentPhaseIndex + 1) / phaseKeys.length) * 100;
@@ -1863,6 +2020,12 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeProgressLine();
     initializeConstructorSection();
     attachQuizHandlers();
+
+    window.addEventListener('storage', function(event) {
+        if (!event || !event.key || event.key === REVIEW_QUEUE_KEY) {
+            updateWordButtons();
+        }
+    });
 
     // Initialize relation toggles
     const relationToggles = document.querySelectorAll('.relation-toggle');
