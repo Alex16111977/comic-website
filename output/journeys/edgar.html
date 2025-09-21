@@ -5,8 +5,355 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Превращение Эдгара | König Lear</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../static/css/journey.css">
-    <link rel="stylesheet" href="../static/css/exercises.css">
+    <style>
+        /* БАЗОВЫЕ СТИЛИ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.95);
+            min-height: 100vh;
+        }
+
+        /* HEADER */
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 1rem;
+        }
+
+        .header-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .home-link {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: opacity 0.3s;
+        }
+
+        .home-link:hover {
+            opacity: 0.8;
+        }
+
+        /* JOURNEY TIMELINE */
+        .journey-timeline {
+            position: relative;
+            margin: 2rem 0;
+        }
+
+        .journey-points {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            z-index: 2;
+        }
+
+        .journey-point {
+            flex: 1;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s;
+            padding: 0.5rem;
+        }
+
+        .journey-point:hover {
+            transform: translateY(-5px);
+        }
+
+        .journey-point.active .point-circle {
+            background: #667eea;
+            color: white;
+            transform: scale(1.2);
+        }
+
+        .point-circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: white;
+            border: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.5rem;
+            font-size: 1.5rem;
+            transition: all 0.3s;
+        }
+
+        /* VOCABULARY SECTION */
+        .vocabulary-section {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 1rem;
+        }
+
+        .vocabulary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .vocab-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .vocab-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        /* EXERCISES */
+        .exercises-section {
+            margin: 3rem 0;
+        }
+
+        .exercises-accordion {
+            background: white;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .exercise-panel {
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .exercise-toggle {
+            width: 100%;
+            padding: 1.5rem;
+            background: white;
+            border: none;
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background 0.3s;
+        }
+
+        .exercise-toggle:hover {
+            background: #f8f9fa;
+        }
+
+        .exercise-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 1.5rem;
+        }
+
+        .exercise-content.expanded {
+            max-height: 2000px;
+            padding: 1.5rem;
+        }
+
+        /* УПРАЖНЕНИЯ - АРТИКЛИ */
+        .articles-exercise {
+            padding: 1rem;
+        }
+
+        .article-columns {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .article-column {
+            background: #f8f9fa;
+            border-radius: 0.5rem;
+            padding: 1rem;
+        }
+
+        .article-drop-zone {
+            min-height: 150px;
+            background: white;
+            border: 2px dashed #cbd5e0;
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .article-drop-zone.drag-over {
+            background: #e6f3ff;
+            border-color: #667eea;
+        }
+
+        .article-word-card {
+            background: white;
+            border: 2px solid #cbd5e0;
+            border-radius: 0.5rem;
+            padding: 0.75rem;
+            margin: 0.5rem;
+            cursor: move;
+            transition: all 0.3s;
+        }
+
+        .article-word-card.dragging {
+            opacity: 0.5;
+        }
+
+        .article-word-card.correct {
+            background: #d4edda;
+            border-color: #28a745;
+        }
+
+        .article-word-card.incorrect {
+            background: #f8d7da;
+            border-color: #dc3545;
+        }
+
+        .article-word-card.selected {
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+        }
+
+        /* КОНТЕКСТНЫЕ УПРАЖНЕНИЯ */
+        .context-exercise-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .context-options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+            margin: 1rem 0;
+        }
+
+        .context-option {
+            padding: 0.75rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 0.5rem;
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .context-option:hover:not(:disabled) {
+            background: #f8f9fa;
+            border-color: #667eea;
+        }
+
+        .context-option.correct {
+            background: #d4edda;
+            border-color: #28a745;
+        }
+
+        .context-option.incorrect {
+            background: #f8d7da;
+            border-color: #dc3545;
+        }
+
+        /* FEEDBACK */
+        .articles-feedback,
+        .context-feedback {
+            margin-top: 1rem;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .articles-feedback.success,
+        .context-feedback.success {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .articles-feedback.partial,
+        .context-feedback.error {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        /* BUTTONS */
+        button {
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .check-articles-btn,
+        .reset-articles-btn {
+            padding: 0.75rem 1.5rem;
+            margin: 0.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .check-articles-btn {
+            background: #667eea;
+            color: white;
+        }
+
+        .check-articles-btn:hover {
+            background: #5a67d8;
+        }
+
+        .reset-articles-btn {
+            background: #e2e8f0;
+            color: #333;
+        }
+
+        .reset-articles-btn:hover {
+            background: #cbd5e0;
+        }
+
+        /* BOTTOM NAV */
+        .bottom-nav {
+            margin-top: 3rem;
+            padding: 2rem;
+            text-align: center;
+            border-top: 2px solid #e2e8f0;
+        }
+
+        .nav-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #5a67d8;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -16,8 +363,8 @@
                     <span class="arrow">←</span>
                     <span class="text">На главную</span>
                 </a>
-                <div class="study-counter" data-study-counter role="status" aria-live="polite">
-                    <span class="study-counter-label">СПИСОК ИЗУЧЕНИЯ</span>
+                <div class="study-counter">
+                    <span>СПИСОК ИЗУЧЕНИЯ</span>
                     <span class="counter-badge" data-study-count>0</span>
                 </div>
             </div>
@@ -29,11 +376,6 @@
             <h2>📚 Путешествие Edgar</h2>
 
             <div class="journey-timeline">
-                <svg class="journey-line" width="100%" height="4">
-                    <line x1="0" y1="2" x2="100%" y2="2" stroke="#6b5b95" stroke-width="2" opacity="0.3" />
-                    <line x1="0" y1="2" x2="100%" y2="2" stroke="#6b5b95" stroke-width="3" class="progress-line" data-start-progress="14" />
-                </svg>
-
                 <div class="journey-points">
                     
                     <div class="journey-point active" data-phase="throne">
@@ -94,126 +436,24 @@
                     
                 </div>
             </div>
-
-            <div class="journey-progress">
-                <div class="progress-track">
-                    <div class="progress-fill" style="width: 14%"></div>
-                </div>
-                <div class="progress-text">Акт I: Законный наследник</div>
-            </div>
         </div>
-
-        
-        <div class="theatrical-scenes">
-            
-            <div class="theatrical-scene active" data-phase="throne">
-                <h3 class="scene-title">НЕВИННОСТЬ НАСЛЕДНИКА</h3>
-                <div class="scene-narrative">Я живу в мире <b>DER ADEL (знати)</b>, где честь превыше всего. Как <b>DER ERBE (наследник)</b> графа Глостера, я служу <b>DAS KÖNIGREICH (королевству)</b> верой и правдой. Отец полностью мне <b>VERTRAUEN (доверяет)</b>. <b>DIE EHRE (честь)</b> нашей семьи незапятнанна! Я - <b>LEGITIM (законный)</b> сын <b>DER GRAF (графа)</b>! <b>AHNUNGSLOS (ничего не подозревая)</b>, я живу в мире с братом Эдмундом. Как же я слеп! Не вижу змеи рядом! Моя наивность станет моим проклятием!</div>
-                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Эдмунд - мой любимый брат!» - говорю я отцу. «Мы делим всё поровну!» О, если бы я знал, какую бездну он готовит!</div>
-            </div>
-            
-            <div class="theatrical-scene" data-phase="goneril">
-                <h3 class="scene-title">ПРЕДАТЕЛЬСТВО БРАТА</h3>
-                <div class="scene-narrative">Эдмунд! Мой брат! Что ты наделал?! Я должен <b>FLIEHEN (бежать)</b>! <b>DER VERRAT (предательство)</b> брата как нож в спину! <b>DIE GEFAHR (опасность)</b> повсюду! Солдаты <b>VERFOLGEN (преследуют)</b> меня как зверя! Я <b>VERSTECKEN (прячусь)</b> в лесах! <b>DIE INTRIGE (интрига)</b> Эдмунда совершенна - отец верит ему! <b>DER BETRUG (обман)</b> раскрыт слишком поздно! Отец хочет меня <b>VERBANNEN (изгнать)</b>! Я потерял всё - имя, дом, будущее! Но я выживу и отомщу!</div>
-                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Эдмунд, брат, зачем?!» - кричу я в ночь. Стража приближается! Я бегу в темноту леса! Из принца - в изгоя!</div>
-            </div>
-            
-            <div class="theatrical-scene" data-phase="regan">
-                <h3 class="scene-title">БЕЗУМНЫЙ ТОМ</h3>
-                <div class="scene-narrative">Я стал Томом из Бедлама! <b>DER WAHNSINN (безумие)</b> - моя маска! Как <b>DER BETTLER (нищий)</b>, я невидим для врагов! <b>DIE VERKLEIDUNG (маскировка)</b> спасает мою жизнь! Почти <b>NACKT (голый)</b>, я брожу по пустошам! Я <b>MURMELN (бормочу)</b> бессмыслицу: «Том холоден! Дьяволы кусают!» Я <b>ZITTERN (дрожу)</b> от холода и страха! <b>DAS ELEND (нищета)</b> учит меня правде о человеческой природе! Я <b>WAHNSINNIG (безумный)</b> Том! «Фи, фо, фам! Чую кровь британца!» Никто не узнает графского сына!</div>
-                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Бедный Том! Том замёрз!» - вою я в ночь. Колючки в ногах, грязь на лице! Из принца в безумца! Но я жив!</div>
-            </div>
-            
-            <div class="theatrical-scene" data-phase="storm">
-                <h3 class="scene-title">ТОВАРИЩИ ПО НЕСЧАСТЬЮ</h3>
-                <div class="scene-narrative"><b>DER STURM (буря)</b> бушует над нами! Король Лир здесь, в хижине! Мы вместе <b>FRIEREN (мёрзнем)</b>! Он <b>LEIDEN (страдает)</b> больше меня - потерял королевство и разум! В этой жалкой <b>DIE HÜTTE (хижине)</b> мы нашли убежище. Я тайно <b>BESCHÜTZEN (защищаю)</b> безумного короля. Как Том, я <b>BEGLEITEN (сопровождаю)</b> его в безумии. <b>DER DONNER (гром)</b> гремит! <b>DER BLITZ (молния)</b> освещает наши страдания! «Бедный Том служил семи дьяволам!» - кричу я. Лир думает, я его философ!</div>
-                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Это холодная ночь для нас, безумцев!» - говорю королю. Он обнимает меня! Два изгоя в буре! Принц и король - оба нищие!</div>
-            </div>
-            
-            <div class="theatrical-scene" data-phase="hut">
-                <h3 class="scene-title">ОБМАН ВО СПАСЕНИЕ</h3>
-                <div class="scene-narrative">Боже! Мой отец <b>BLIND (слепой)</b>! Эдмунд довёл его до этого! Я <b>FÜHREN (веду)</b> его, но не открываюсь! Он хочет броситься с <b>DIE KLIPPE (утёса)</b> в Дувре! Я <b>TÄUSCHEN (обманываю)</b> его, чтобы <b>RETTEN (спасти)</b>! «Мы на вершине утёса!» - вру я. <b>DIE LIST (хитрость)</b> во имя любви! Он падает на ровном месте, думая, что прыгнул! Я <b>TRÖSTEN (утешаю)</b> его как чужой: «Боги спасли вас!» <b>DIE VERZWEIFLUNG (отчаяние)</b> отца разрывает моё сердце! Но я не могу открыться - ещё не время!</div>
-                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Прыгайте, милорд!» - кричу я. Он падает на траву! «Чудо! Вы живы!» Отец плачет! Я еле сдерживаю слёзы!</div>
-            </div>
-            
-            <div class="theatrical-scene" data-phase="dover">
-                <h3 class="scene-title">ПРАВДА ПРОТИВ ЛЖИ</h3>
-                <div class="scene-narrative">Час настал! <b>DER KAMPF (бой)</b> с братом-предателем! <b>DAS DUELL (дуэль)</b> решит всё! Не <b>DIE RACHE (месть)</b>, а <b>DIE GERECHTIGKEIT (справедливость)</b> ведёт мой меч! Я <b>ENTHÜLLEN (разоблачаю)</b> себя: «Я - Эдгар, твой брат!» Правда должна <b>SIEGEN (победить)</b> ложь! <b>DAS SCHWERT (меч)</b> в моей руке - оружие истины! «<b>DER BRUDER (брат)</b>, ты предал отца и меня!» Мы сражаемся! Клинки звенят! Эдмунд падает! Справедливость восторжествовала!</div>
-                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Моё имя - Эдгар! Твой законный брат!» - кричу я, сняв шлем. Эдмунд ранен! «Колесо судьбы совершило круг!» Правда победила!</div>
-            </div>
-            
-            <div class="theatrical-scene" data-phase="prison">
-                <h3 class="scene-title">НОВОЕ НАЧАЛО</h3>
-                <div class="scene-narrative">Я <b>ÜBERLEBEN (выжил)</b>! Теперь я <b>ERBEN (наследую)</b> титул и земли отца. <b>DIE ZUKUNFT (будущее)</b> королевства в руках выживших. Я буду <b>REGIEREN (править)</b> с <b>DIE WEISHEIT (мудростью)</b>, обретённой через страдания! <b>DIE ORDNUNG (порядок)</b> должен вернуться из хаоса! <b>DIE VERANTWORTUNG (ответственность)</b> огромна, но я готов! <b>NEU (новая)</b> эра начинается! Из безумца Тома я стал графом Эдгаром. Путь был страшен, но он закалил меня. Я буду справедливым правителем!</div>
-                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Мы, пережившие бурю, должны говорить правду!» - провозглашаю я. «Старые умерли, молодые должны нести бремя!» Я - новый граф!</div>
-            </div>
-            
-        </div>
-        
 
         <div class="vocabulary-section">
             <h2>📖 Словарь: Фаза "<span id="current-phase">Благородный сын</span>"</h2>
             <div class="vocabulary-grid"></div>
-
-            <div class="phase-navigation">
-                <button class="change-phase-btn prev-btn" type="button">← Предыдущая фаза</button>
-                <button class="change-phase-btn next-btn" type="button">Следующая фаза →</button>
-            </div>
         </div>
 
         <div class="exercises-section">
             <h2>📝 Упражнения</h2>
 
             <div class="exercises-accordion">
-                <div class="exercise-panel" data-exercise="matching">
-                    <button class="exercise-toggle" type="button">
-                        <span class="toggle-icon">▶</span>
-                        🔗 Подбор слов
-                    </button>
-                    <div class="exercise-content collapsed">
-                        <p class="exercise-description">Сопоставьте немецкие слова текущей фазы с их переводами и подсказками.</p>
-                        <div class="exercise-phase-wrapper" data-phase-wrapper="matching">
-                            
-                            <section class="exercise-phase active" data-phase="throne">
-                                <div class="matching-container" data-matching-container data-phase="throne"></div>
-                            </section>
-                            
-                            <section class="exercise-phase" data-phase="goneril">
-                                <div class="matching-container" data-matching-container data-phase="goneril"></div>
-                            </section>
-                            
-                            <section class="exercise-phase" data-phase="regan">
-                                <div class="matching-container" data-matching-container data-phase="regan"></div>
-                            </section>
-                            
-                            <section class="exercise-phase" data-phase="storm">
-                                <div class="matching-container" data-matching-container data-phase="storm"></div>
-                            </section>
-                            
-                            <section class="exercise-phase" data-phase="hut">
-                                <div class="matching-container" data-matching-container data-phase="hut"></div>
-                            </section>
-                            
-                            <section class="exercise-phase" data-phase="dover">
-                                <div class="matching-container" data-matching-container data-phase="dover"></div>
-                            </section>
-                            
-                            <section class="exercise-phase" data-phase="prison">
-                                <div class="matching-container" data-matching-container data-phase="prison"></div>
-                            </section>
-                            
-                        </div>
-                    </div>
-                </div>
-
                 <div class="exercise-panel" data-exercise="articles">
                     <button class="exercise-toggle" type="button">
                         <span class="toggle-icon">▶</span>
                         🎯 Артикли и род
                     </button>
-                    <div class="exercise-content collapsed">
-                        <p class="exercise-description">Разложите существительные по родам и запомните их вместе с переводом.</p>
-                        <div class="exercise-phase-wrapper" data-phase-wrapper="articles">
+                    <div class="exercise-content">
+                        <div class="exercise-phase-wrapper">
                             
                             <section class="exercise-phase active" data-phase="throne">
                                 <div class="articles-container" data-articles-container data-phase="throne"></div>
@@ -250,11 +490,10 @@
                 <div class="exercise-panel" data-exercise="context">
                     <button class="exercise-toggle" type="button">
                         <span class="toggle-icon">▶</span>
-                        📝 Контекстный перевод
+                        📚 Контекстный перевод
                     </button>
-                    <div class="exercise-content collapsed">
-                        <p class="exercise-description">Выберите перевод пропущенного слова в цитатах из истории персонажа.</p>
-                        <div class="exercise-phase-wrapper" data-phase-wrapper="context">
+                    <div class="exercise-content">
+                        <div class="exercise-phase-wrapper">
                             
                             <section class="exercise-phase active" data-phase="throne">
                                 <div class="context-container" data-context-container data-phase="throne"></div>
@@ -287,295 +526,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="exercise-panel" data-exercise="quiz">
-                    <button class="exercise-toggle" type="button">
-                        <span class="toggle-icon">▶</span>
-                        🧠 Викторина по словам
-                    </button>
-                    <div class="exercise-content collapsed">
-                        <div class="quiz-header">
-                            <div class="quiz-progress">
-                                <span class="progress-text">Вопрос <span id="current-question">1</span> из <span id="total-questions">1</span></span>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" style="width: 0%"></div>
-                                </div>
-                            </div>
-                            <div class="quiz-mode-indicator">
-                                <span class="mode-badge active" data-mode="forward">DE → RU</span>
-                                <span class="mode-badge" data-mode="reverse">RU → DE</span>
-                            </div>
-                        </div>
-
-                        <div class="quiz-content">
-                            <div class="quiz-placeholder">Выберите фазу, чтобы начать викторину.</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="exercise-panel" data-exercise="constructor">
-                    <button class="exercise-toggle" type="button">
-                        <span class="toggle-icon">▶</span>
-                        🧩 Конструктор предложений
-                    </button>
-                    <div class="exercise-content collapsed">
-                        <div class="constructor-section">
-                            <p class="constructor-intro">Соберите немецкое предложение из фрагментов и проверьте себя по переводу.</p>
-
-                            
-                            <section class="constructor-panel active" data-phase="throne">
-                                <div class="constructor-header">
-                                    <div class="constructor-word" data-constructor-word>—</div>
-                                    <div class="constructor-translation" data-constructor-translation></div>
-                                    <div class="constructor-progress" data-constructor-progress></div>
-                                </div>
-                                <p class="constructor-hint" data-constructor-hint>Выберите следующую фразу, чтобы начать тренировку.</p>
-
-                                <div class="constructor-areas">
-                                    <div class="constructor-source" data-constructor-source></div>
-                                    <div class="constructor-target" data-constructor-target>
-                                        <div class="constructor-placeholder">Перетащите или нажмите на фрагменты, чтобы собрать предложение.</div>
-                                    </div>
-                                </div>
-
-                                <div class="constructor-controls">
-                                    <button class="constructor-control constructor-check" type="button">Проверить</button>
-                                    <button class="constructor-control constructor-reset" type="button">Сбросить</button>
-                                    <button class="constructor-control constructor-next" type="button">Следующее предложение</button>
-                                </div>
-
-                                <div class="constructor-feedback" aria-live="polite"></div>
-                                <div class="constructor-original" data-constructor-original></div>
-
-                                
-                            </section>
-                            
-                            <section class="constructor-panel" data-phase="goneril">
-                                <div class="constructor-header">
-                                    <div class="constructor-word" data-constructor-word>—</div>
-                                    <div class="constructor-translation" data-constructor-translation></div>
-                                    <div class="constructor-progress" data-constructor-progress></div>
-                                </div>
-                                <p class="constructor-hint" data-constructor-hint>Выберите следующую фразу, чтобы начать тренировку.</p>
-
-                                <div class="constructor-areas">
-                                    <div class="constructor-source" data-constructor-source></div>
-                                    <div class="constructor-target" data-constructor-target>
-                                        <div class="constructor-placeholder">Перетащите или нажмите на фрагменты, чтобы собрать предложение.</div>
-                                    </div>
-                                </div>
-
-                                <div class="constructor-controls">
-                                    <button class="constructor-control constructor-check" type="button">Проверить</button>
-                                    <button class="constructor-control constructor-reset" type="button">Сбросить</button>
-                                    <button class="constructor-control constructor-next" type="button">Следующее предложение</button>
-                                </div>
-
-                                <div class="constructor-feedback" aria-live="polite"></div>
-                                <div class="constructor-original" data-constructor-original></div>
-
-                                
-                            </section>
-                            
-                            <section class="constructor-panel" data-phase="regan">
-                                <div class="constructor-header">
-                                    <div class="constructor-word" data-constructor-word>—</div>
-                                    <div class="constructor-translation" data-constructor-translation></div>
-                                    <div class="constructor-progress" data-constructor-progress></div>
-                                </div>
-                                <p class="constructor-hint" data-constructor-hint>Выберите следующую фразу, чтобы начать тренировку.</p>
-
-                                <div class="constructor-areas">
-                                    <div class="constructor-source" data-constructor-source></div>
-                                    <div class="constructor-target" data-constructor-target>
-                                        <div class="constructor-placeholder">Перетащите или нажмите на фрагменты, чтобы собрать предложение.</div>
-                                    </div>
-                                </div>
-
-                                <div class="constructor-controls">
-                                    <button class="constructor-control constructor-check" type="button">Проверить</button>
-                                    <button class="constructor-control constructor-reset" type="button">Сбросить</button>
-                                    <button class="constructor-control constructor-next" type="button">Следующее предложение</button>
-                                </div>
-
-                                <div class="constructor-feedback" aria-live="polite"></div>
-                                <div class="constructor-original" data-constructor-original></div>
-
-                                
-                            </section>
-                            
-                            <section class="constructor-panel" data-phase="storm">
-                                <div class="constructor-header">
-                                    <div class="constructor-word" data-constructor-word>—</div>
-                                    <div class="constructor-translation" data-constructor-translation></div>
-                                    <div class="constructor-progress" data-constructor-progress></div>
-                                </div>
-                                <p class="constructor-hint" data-constructor-hint>Выберите следующую фразу, чтобы начать тренировку.</p>
-
-                                <div class="constructor-areas">
-                                    <div class="constructor-source" data-constructor-source></div>
-                                    <div class="constructor-target" data-constructor-target>
-                                        <div class="constructor-placeholder">Перетащите или нажмите на фрагменты, чтобы собрать предложение.</div>
-                                    </div>
-                                </div>
-
-                                <div class="constructor-controls">
-                                    <button class="constructor-control constructor-check" type="button">Проверить</button>
-                                    <button class="constructor-control constructor-reset" type="button">Сбросить</button>
-                                    <button class="constructor-control constructor-next" type="button">Следующее предложение</button>
-                                </div>
-
-                                <div class="constructor-feedback" aria-live="polite"></div>
-                                <div class="constructor-original" data-constructor-original></div>
-
-                                
-                            </section>
-                            
-                            <section class="constructor-panel" data-phase="hut">
-                                <div class="constructor-header">
-                                    <div class="constructor-word" data-constructor-word>—</div>
-                                    <div class="constructor-translation" data-constructor-translation></div>
-                                    <div class="constructor-progress" data-constructor-progress></div>
-                                </div>
-                                <p class="constructor-hint" data-constructor-hint>Выберите следующую фразу, чтобы начать тренировку.</p>
-
-                                <div class="constructor-areas">
-                                    <div class="constructor-source" data-constructor-source></div>
-                                    <div class="constructor-target" data-constructor-target>
-                                        <div class="constructor-placeholder">Перетащите или нажмите на фрагменты, чтобы собрать предложение.</div>
-                                    </div>
-                                </div>
-
-                                <div class="constructor-controls">
-                                    <button class="constructor-control constructor-check" type="button">Проверить</button>
-                                    <button class="constructor-control constructor-reset" type="button">Сбросить</button>
-                                    <button class="constructor-control constructor-next" type="button">Следующее предложение</button>
-                                </div>
-
-                                <div class="constructor-feedback" aria-live="polite"></div>
-                                <div class="constructor-original" data-constructor-original></div>
-
-                                
-                            </section>
-                            
-                            <section class="constructor-panel" data-phase="dover">
-                                <div class="constructor-header">
-                                    <div class="constructor-word" data-constructor-word>—</div>
-                                    <div class="constructor-translation" data-constructor-translation></div>
-                                    <div class="constructor-progress" data-constructor-progress></div>
-                                </div>
-                                <p class="constructor-hint" data-constructor-hint>Выберите следующую фразу, чтобы начать тренировку.</p>
-
-                                <div class="constructor-areas">
-                                    <div class="constructor-source" data-constructor-source></div>
-                                    <div class="constructor-target" data-constructor-target>
-                                        <div class="constructor-placeholder">Перетащите или нажмите на фрагменты, чтобы собрать предложение.</div>
-                                    </div>
-                                </div>
-
-                                <div class="constructor-controls">
-                                    <button class="constructor-control constructor-check" type="button">Проверить</button>
-                                    <button class="constructor-control constructor-reset" type="button">Сбросить</button>
-                                    <button class="constructor-control constructor-next" type="button">Следующее предложение</button>
-                                </div>
-
-                                <div class="constructor-feedback" aria-live="polite"></div>
-                                <div class="constructor-original" data-constructor-original></div>
-
-                                
-                            </section>
-                            
-                            <section class="constructor-panel" data-phase="prison">
-                                <div class="constructor-header">
-                                    <div class="constructor-word" data-constructor-word>—</div>
-                                    <div class="constructor-translation" data-constructor-translation></div>
-                                    <div class="constructor-progress" data-constructor-progress></div>
-                                </div>
-                                <p class="constructor-hint" data-constructor-hint>Выберите следующую фразу, чтобы начать тренировку.</p>
-
-                                <div class="constructor-areas">
-                                    <div class="constructor-source" data-constructor-source></div>
-                                    <div class="constructor-target" data-constructor-target>
-                                        <div class="constructor-placeholder">Перетащите или нажмите на фрагменты, чтобы собрать предложение.</div>
-                                    </div>
-                                </div>
-
-                                <div class="constructor-controls">
-                                    <button class="constructor-control constructor-check" type="button">Проверить</button>
-                                    <button class="constructor-control constructor-reset" type="button">Сбросить</button>
-                                    <button class="constructor-control constructor-next" type="button">Следующее предложение</button>
-                                </div>
-
-                                <div class="constructor-feedback" aria-live="polite"></div>
-                                <div class="constructor-original" data-constructor-original></div>
-
-                                
-                            </section>
-                            
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-
-        <div class="exercises-container">
-            
-            <div class="exercise-container active" data-phase="throne">
-                <div class="exercise-section">
-                    <h4 class="exercise-title">📝 Упражнение: НЕВИННОСТЬ НАСЛЕДНИКА</h4>
-                    <div class="exercise-text">Я живу в мире <span class="blank" data-answer="DER ADEL" data-hint="знати">_______ (знати)</span>, где честь превыше всего. Как <span class="blank" data-answer="der ERBE" data-hint="наследник">_______ (наследник)</span> графа Глостера, я служу <span class="blank" data-answer="DAS KÖNIGREICH" data-hint="королевству">_______ (королевству)</span> верой и правдой. Отец полностью мне <span class="blank" data-answer="VERTRAUEN" data-hint="доверяет">_______ (доверяет)</span>. <span class="blank" data-answer="die EHRE" data-hint="честь">_______ (честь)</span> нашей семьи незапятнанна! Я - <span class="blank" data-answer="LEGITIM" data-hint="законный">_______ (законный)</span> сын <span class="blank" data-answer="DER GRAF" data-hint="графа">_______ (графа)</span>! <span class="blank" data-answer="AHNUNGSLOS" data-hint="ничего не подозревая">_______ (ничего не подозревая)</span>, я живу в мире с братом Эдмундом. Как же я слеп! Не вижу змеи рядом! Моя наивность станет моим проклятием!</div>
-                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                </div>
-            </div>
-            
-            <div class="exercise-container" data-phase="goneril">
-                <div class="exercise-section">
-                    <h4 class="exercise-title">📝 Упражнение: ПРЕДАТЕЛЬСТВО БРАТА</h4>
-                    <div class="exercise-text">Эдмунд! Мой брат! Что ты наделал?! Я должен <span class="blank" data-answer="FLIEHEN" data-hint="бежать">_______ (бежать)</span>! <span class="blank" data-answer="der VERRAT" data-hint="предательство">_______ (предательство)</span> брата как нож в спину! <span class="blank" data-answer="die GEFAHR" data-hint="опасность">_______ (опасность)</span> повсюду! Солдаты <span class="blank" data-answer="VERFOLGEN" data-hint="преследуют">_______ (преследуют)</span> меня как зверя! Я <span class="blank" data-answer="VERSTECKEN" data-hint="прячусь">_______ (прячусь)</span> в лесах! <span class="blank" data-answer="die INTRIGE" data-hint="интрига">_______ (интрига)</span> Эдмунда совершенна - отец верит ему! <span class="blank" data-answer="der BETRUG" data-hint="обман">_______ (обман)</span> раскрыт слишком поздно! Отец хочет меня <span class="blank" data-answer="VERBANNEN" data-hint="изгнать">_______ (изгнать)</span>! Я потерял всё - имя, дом, будущее! Но я выживу и отомщу!</div>
-                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                </div>
-            </div>
-            
-            <div class="exercise-container" data-phase="regan">
-                <div class="exercise-section">
-                    <h4 class="exercise-title">📝 Упражнение: БЕЗУМНЫЙ ТОМ</h4>
-                    <div class="exercise-text">Я стал Томом из Бедлама! <span class="blank" data-answer="der WAHNSINN" data-hint="безумие">_______ (безумие)</span> - моя маска! Как <span class="blank" data-answer="der BETTLER" data-hint="нищий">_______ (нищий)</span>, я невидим для врагов! <span class="blank" data-answer="die VERKLEIDUNG" data-hint="маскировка">_______ (маскировка)</span> спасает мою жизнь! Почти <span class="blank" data-answer="NACKT" data-hint="голый">_______ (голый)</span>, я брожу по пустошам! Я <span class="blank" data-answer="MURMELN" data-hint="бормочу">_______ (бормочу)</span> бессмыслицу: «Том холоден! Дьяволы кусают!» Я <span class="blank" data-answer="ZITTERN" data-hint="дрожу">_______ (дрожу)</span> от холода и страха! <span class="blank" data-answer="das ELEND" data-hint="нищета">_______ (нищета)</span> учит меня правде о человеческой природе! Я <span class="blank" data-answer="WAHNSINNIG" data-hint="безумный">_______ (безумный)</span> Том! «Фи, фо, фам! Чую кровь британца!» Никто не узнает графского сына!</div>
-                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                </div>
-            </div>
-            
-            <div class="exercise-container" data-phase="storm">
-                <div class="exercise-section">
-                    <h4 class="exercise-title">📝 Упражнение: ТОВАРИЩИ ПО НЕСЧАСТЬЮ</h4>
-                    <div class="exercise-text"><span class="blank" data-answer="der STURM" data-hint="буря">_______ (буря)</span> бушует над нами! Король Лир здесь, в хижине! Мы вместе <span class="blank" data-answer="FRIEREN" data-hint="мёрзнем">_______ (мёрзнем)</span>! Он <span class="blank" data-answer="LEIDEN" data-hint="страдает">_______ (страдает)</span> больше меня - потерял королевство и разум! В этой жалкой <span class="blank" data-answer="die HÜTTE" data-hint="хижине">_______ (хижине)</span> мы нашли убежище. Я тайно <span class="blank" data-answer="BESCHÜTZEN" data-hint="защищаю">_______ (защищаю)</span> безумного короля. Как Том, я <span class="blank" data-answer="BEGLEITEN" data-hint="сопровождаю">_______ (сопровождаю)</span> его в безумии. <span class="blank" data-answer="der DONNER" data-hint="гром">_______ (гром)</span> гремит! <span class="blank" data-answer="der BLITZ" data-hint="молния">_______ (молния)</span> освещает наши страдания! «Бедный Том служил семи дьяволам!» - кричу я. Лир думает, я его философ!</div>
-                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                </div>
-            </div>
-            
-            <div class="exercise-container" data-phase="hut">
-                <div class="exercise-section">
-                    <h4 class="exercise-title">📝 Упражнение: ОБМАН ВО СПАСЕНИЕ</h4>
-                    <div class="exercise-text">Боже! Мой отец <span class="blank" data-answer="BLIND" data-hint="слепой">_______ (слепой)</span>! Эдмунд довёл его до этого! Я <span class="blank" data-answer="FÜHREN" data-hint="веду">_______ (веду)</span> его, но не открываюсь! Он хочет броситься с <span class="blank" data-answer="DIE KLIPPE" data-hint="утёса">_______ (утёса)</span> в Дувре! Я <span class="blank" data-answer="TÄUSCHEN" data-hint="обманываю">_______ (обманываю)</span> его, чтобы <span class="blank" data-answer="RETTEN" data-hint="спасти">_______ (спасти)</span>! «Мы на вершине утёса!» - вру я. <span class="blank" data-answer="die LIST" data-hint="хитрость">_______ (хитрость)</span> во имя любви! Он падает на ровном месте, думая, что прыгнул! Я <span class="blank" data-answer="TRÖSTEN" data-hint="утешаю">_______ (утешаю)</span> его как чужой: «Боги спасли вас!» <span class="blank" data-answer="die VERZWEIFLUNG" data-hint="отчаяние">_______ (отчаяние)</span> отца разрывает моё сердце! Но я не могу открыться - ещё не время!</div>
-                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                </div>
-            </div>
-            
-            <div class="exercise-container" data-phase="dover">
-                <div class="exercise-section">
-                    <h4 class="exercise-title">📝 Упражнение: ПРАВДА ПРОТИВ ЛЖИ</h4>
-                    <div class="exercise-text">Час настал! <span class="blank" data-answer="der KAMPF" data-hint="бой">_______ (бой)</span> с братом-предателем! <span class="blank" data-answer="das DUELL" data-hint="дуэль">_______ (дуэль)</span> решит всё! Не <span class="blank" data-answer="die RACHE" data-hint="месть">_______ (месть)</span>, а <span class="blank" data-answer="die GERECHTIGKEIT" data-hint="справедливость">_______ (справедливость)</span> ведёт мой меч! Я <span class="blank" data-answer="ENTHÜLLEN" data-hint="разоблачаю">_______ (разоблачаю)</span> себя: «Я - Эдгар, твой брат!» Правда должна <span class="blank" data-answer="SIEGEN" data-hint="победить">_______ (победить)</span> ложь! <span class="blank" data-answer="das SCHWERT" data-hint="меч">_______ (меч)</span> в моей руке - оружие истины! «<span class="blank" data-answer="der BRUDER" data-hint="брат">_______ (брат)</span>, ты предал отца и меня!» Мы сражаемся! Клинки звенят! Эдмунд падает! Справедливость восторжествовала!</div>
-                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                </div>
-            </div>
-            
-            <div class="exercise-container" data-phase="prison">
-                <div class="exercise-section">
-                    <h4 class="exercise-title">📝 Упражнение: НОВОЕ НАЧАЛО</h4>
-                    <div class="exercise-text">Я <span class="blank" data-answer="ÜBERLEBEN" data-hint="выжил">_______ (выжил)</span>! Теперь я <span class="blank" data-answer="ERBEN" data-hint="наследую">_______ (наследую)</span> титул и земли отца. <span class="blank" data-answer="die ZUKUNFT" data-hint="будущее">_______ (будущее)</span> королевства в руках выживших. Я буду <span class="blank" data-answer="REGIEREN" data-hint="править">_______ (править)</span> с <span class="blank" data-answer="DIE WEISHEIT" data-hint="мудростью">_______ (мудростью)</span>, обретённой через страдания! <span class="blank" data-answer="die ORDNUNG" data-hint="порядок">_______ (порядок)</span> должен вернуться из хаоса! <span class="blank" data-answer="die VERANTWORTUNG" data-hint="ответственность">_______ (ответственность)</span> огромна, но я готов! <span class="blank" data-answer="NEU" data-hint="новая">_______ (новая)</span> эра начинается! Из безумца Тома я стал графом Эдгаром. Путь был страшен, но он закалил меня. Я буду справедливым правителем!</div>
-                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
-                </div>
-            </div>
-            
         </div>
 
         <nav class="bottom-nav">
@@ -583,7 +534,15 @@
         </nav>
     </div>
 
-    <script>const phaseVocabularies = {
+    <script>
+    // ========================================
+    // ЕДИНЫЙ RUNTIME БЕЗ РЕКУРСИИ
+    // ========================================
+    (function() {
+        'use strict';
+
+        // Данные персонажа и фаз (генерируется Python)
+        const phaseVocabularies = {
     "throne": {
         "title": "Благородный сын",
         "description": "Акт I: Законный наследник",
@@ -931,18 +890,18 @@
             {
                 "question": "Что означает немецкое слово «der Adel»?",
                 "choices": [
-                    "королевство",
+                    "наследник",
                     "знать",
-                    "доверять",
-                    "наследник"
+                    "королевство",
+                    "доверять"
                 ],
                 "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «der Erbe»?",
                 "choices": [
-                    "доверять",
                     "королевство",
+                    "доверять",
                     "наследник",
                     "знать"
                 ],
@@ -951,49 +910,49 @@
             {
                 "question": "Что означает немецкое слово «das Königreich»?",
                 "choices": [
-                    "знать",
-                    "доверять",
+                    "честь",
                     "королевство",
-                    "законный"
+                    "наследник",
+                    "знать"
                 ],
-                "correctIndex": 2
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «vertrauen»?",
                 "choices": [
-                    "граф",
                     "ничего не подозревающий",
                     "знать",
-                    "доверять"
-                ],
-                "correctIndex": 3
-            },
-            {
-                "question": "Что означает немецкое слово «die Ehre»?",
-                "choices": [
-                    "граф",
-                    "наследник",
-                    "честь",
-                    "знать"
+                    "доверять",
+                    "наследник"
                 ],
                 "correctIndex": 2
             },
             {
+                "question": "Что означает немецкое слово «die Ehre»?",
+                "choices": [
+                    "наследник",
+                    "честь",
+                    "ничего не подозревающий",
+                    "доверять"
+                ],
+                "correctIndex": 1
+            },
+            {
                 "question": "Что означает немецкое слово «legitim»?",
                 "choices": [
-                    "королевство",
+                    "знать",
                     "доверять",
                     "законный",
-                    "ничего не подозревающий"
+                    "наследник"
                 ],
                 "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «der Graf»?",
                 "choices": [
-                    "ничего не подозревающий",
-                    "законный",
                     "доверять",
+                    "королевство",
+                    "наследник",
                     "граф"
                 ],
                 "correctIndex": 3
@@ -1001,12 +960,12 @@
             {
                 "question": "Что означает немецкое слово «ahnungslos»?",
                 "choices": [
-                    "знать",
+                    "честь",
+                    "законный",
                     "ничего не подозревающий",
-                    "наследник",
-                    "королевство"
+                    "доверять"
                 ],
-                "correctIndex": 1
+                "correctIndex": 2
             }
         ],
         "quizAttempts": {},
@@ -1432,82 +1391,82 @@
             {
                 "question": "Что означает немецкое слово «fliehen»?",
                 "choices": [
-                    "преследовать",
                     "предательство",
                     "опасность",
-                    "бежать"
+                    "бежать",
+                    "преследовать"
                 ],
-                "correctIndex": 3
+                "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «der Verrat»?",
                 "choices": [
-                    "бежать",
-                    "предательство",
                     "преследовать",
-                    "опасность"
-                ],
-                "correctIndex": 1
-            },
-            {
-                "question": "Что означает немецкое слово «die Gefahr»?",
-                "choices": [
-                    "обман",
+                    "бежать",
                     "опасность",
-                    "преследовать",
-                    "бежать"
-                ],
-                "correctIndex": 1
-            },
-            {
-                "question": "Что означает немецкое слово «verfolgen»?",
-                "choices": [
-                    "бежать",
-                    "прятаться",
-                    "преследовать",
                     "предательство"
-                ],
-                "correctIndex": 2
-            },
-            {
-                "question": "Что означает немецкое слово «verstecken»?",
-                "choices": [
-                    "предательство",
-                    "интрига",
-                    "прятаться",
-                    "преследовать"
-                ],
-                "correctIndex": 2
-            },
-            {
-                "question": "Что означает немецкое слово «die Intrige»?",
-                "choices": [
-                    "интрига",
-                    "преследовать",
-                    "опасность",
-                    "обман"
-                ],
-                "correctIndex": 0
-            },
-            {
-                "question": "Что означает немецкое слово «der Betrug»?",
-                "choices": [
-                    "интрига",
-                    "опасность",
-                    "изгнать",
-                    "обман"
                 ],
                 "correctIndex": 3
             },
             {
-                "question": "Что означает немецкое слово «verbannen»?",
+                "question": "Что означает немецкое слово «die Gefahr»?",
+                "choices": [
+                    "интрига",
+                    "предательство",
+                    "прятаться",
+                    "опасность"
+                ],
+                "correctIndex": 3
+            },
+            {
+                "question": "Что означает немецкое слово «verfolgen»?",
                 "choices": [
                     "предательство",
-                    "изгнать",
                     "обман",
+                    "бежать",
                     "преследовать"
                 ],
+                "correctIndex": 3
+            },
+            {
+                "question": "Что означает немецкое слово «verstecken»?",
+                "choices": [
+                    "прятаться",
+                    "обман",
+                    "опасность",
+                    "изгнать"
+                ],
+                "correctIndex": 0
+            },
+            {
+                "question": "Что означает немецкое слово «die Intrige»?",
+                "choices": [
+                    "изгнать",
+                    "интрига",
+                    "бежать",
+                    "прятаться"
+                ],
                 "correctIndex": 1
+            },
+            {
+                "question": "Что означает немецкое слово «der Betrug»?",
+                "choices": [
+                    "обман",
+                    "бежать",
+                    "предательство",
+                    "опасность"
+                ],
+                "correctIndex": 0
+            },
+            {
+                "question": "Что означает немецкое слово «verbannen»?",
+                "choices": [
+                    "бежать",
+                    "предательство",
+                    "изгнать",
+                    "прятаться"
+                ],
+                "correctIndex": 2
             }
         ],
         "quizAttempts": {},
@@ -1964,58 +1923,58 @@
             {
                 "question": "Что означает немецкое слово «der Wahnsinn»?",
                 "choices": [
-                    "голый",
-                    "безумие",
                     "маскировка",
-                    "нищий"
+                    "голый",
+                    "нищий",
+                    "безумие"
                 ],
-                "correctIndex": 1
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «der Bettler»?",
                 "choices": [
                     "маскировка",
                     "безумие",
-                    "нищий",
-                    "голый"
-                ],
-                "correctIndex": 2
-            },
-            {
-                "question": "Что означает немецкое слово «die Verkleidung»?",
-                "choices": [
                     "голый",
-                    "нищета",
-                    "безумный",
-                    "маскировка"
+                    "нищий"
                 ],
                 "correctIndex": 3
             },
             {
+                "question": "Что означает немецкое слово «die Verkleidung»?",
+                "choices": [
+                    "маскировка",
+                    "бормотать",
+                    "голый",
+                    "безумие"
+                ],
+                "correctIndex": 0
+            },
+            {
                 "question": "Что означает немецкое слово «nackt»?",
                 "choices": [
-                    "нищета",
-                    "голый",
                     "маскировка",
-                    "бормотать"
+                    "безумие",
+                    "нищий",
+                    "голый"
                 ],
-                "correctIndex": 1
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «murmeln»?",
                 "choices": [
-                    "безумие",
-                    "голый",
+                    "маскировка",
                     "бормотать",
-                    "безумный"
+                    "дрожать",
+                    "голый"
                 ],
-                "correctIndex": 2
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «zittern»?",
                 "choices": [
-                    "нищета",
-                    "бормотать",
+                    "нищий",
+                    "голый",
                     "дрожать",
                     "безумный"
                 ],
@@ -2026,7 +1985,7 @@
                 "choices": [
                     "маскировка",
                     "нищета",
-                    "дрожать",
+                    "бормотать",
                     "безумие"
                 ],
                 "correctIndex": 1
@@ -2034,12 +1993,12 @@
             {
                 "question": "Что означает немецкое слово «wahnsinnig»?",
                 "choices": [
+                    "безумие",
                     "голый",
-                    "маскировка",
-                    "нищета",
-                    "безумный"
+                    "безумный",
+                    "дрожать"
                 ],
-                "correctIndex": 3
+                "correctIndex": 2
             }
         ],
         "quizAttempts": {},
@@ -2496,78 +2455,78 @@
             {
                 "question": "Что означает немецкое слово «der Sturm»?",
                 "choices": [
-                    "мёрзнуть",
+                    "хижина",
                     "буря",
-                    "страдать",
-                    "хижина"
+                    "мёрзнуть",
+                    "страдать"
                 ],
                 "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «frieren»?",
                 "choices": [
+                    "буря",
                     "мёрзнуть",
                     "страдать",
-                    "буря",
                     "хижина"
                 ],
-                "correctIndex": 0
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «leiden»?",
                 "choices": [
-                    "гром",
                     "хижина",
+                    "буря",
                     "страдать",
-                    "молния"
+                    "защищать"
                 ],
                 "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «die Hütte»?",
                 "choices": [
-                    "страдать",
-                    "сопровождать",
                     "хижина",
-                    "защищать"
+                    "защищать",
+                    "сопровождать",
+                    "буря"
                 ],
-                "correctIndex": 2
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «beschützen»?",
                 "choices": [
-                    "защищать",
+                    "страдать",
                     "буря",
-                    "хижина",
-                    "гром"
+                    "мёрзнуть",
+                    "защищать"
                 ],
-                "correctIndex": 0
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «begleiten»?",
                 "choices": [
-                    "сопровождать",
-                    "страдать",
-                    "мёрзнуть",
-                    "гром"
+                    "защищать",
+                    "гром",
+                    "молния",
+                    "сопровождать"
                 ],
-                "correctIndex": 0
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «der Donner»?",
                 "choices": [
-                    "буря",
                     "гром",
-                    "защищать",
-                    "сопровождать"
+                    "мёрзнуть",
+                    "молния",
+                    "буря"
                 ],
-                "correctIndex": 1
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «der Blitz»?",
                 "choices": [
+                    "буря",
                     "мёрзнуть",
-                    "сопровождать",
                     "молния",
                     "хижина"
                 ],
@@ -3022,80 +2981,80 @@
             {
                 "question": "Что означает немецкое слово «blind»?",
                 "choices": [
-                    "утёс",
                     "вести",
-                    "слепой",
-                    "обманывать"
+                    "обманывать",
+                    "утёс",
+                    "слепой"
                 ],
-                "correctIndex": 2
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «führen»?",
                 "choices": [
-                    "обманывать",
-                    "слепой",
-                    "утёс",
-                    "вести"
-                ],
-                "correctIndex": 3
-            },
-            {
-                "question": "Что означает немецкое слово «die Klippe»?",
-                "choices": [
-                    "утешать",
-                    "хитрость",
-                    "утёс",
-                    "обманывать"
-                ],
-                "correctIndex": 2
-            },
-            {
-                "question": "Что означает немецкое слово «täuschen»?",
-                "choices": [
                     "вести",
                     "обманывать",
                     "утёс",
-                    "хитрость"
-                ],
-                "correctIndex": 1
-            },
-            {
-                "question": "Что означает немецкое слово «retten»?",
-                "choices": [
-                    "спасать",
-                    "утёс",
-                    "слепой",
-                    "хитрость"
+                    "слепой"
                 ],
                 "correctIndex": 0
             },
             {
-                "question": "Что означает немецкое слово «die List»?",
+                "question": "Что означает немецкое слово «die Klippe»?",
                 "choices": [
-                    "утёс",
-                    "утешать",
-                    "обманывать",
-                    "хитрость"
+                    "слепой",
+                    "отчаяние",
+                    "спасать",
+                    "утёс"
                 ],
                 "correctIndex": 3
             },
             {
-                "question": "Что означает немецкое слово «trösten»?",
+                "question": "Что означает немецкое слово «täuschen»?",
                 "choices": [
                     "обманывать",
-                    "утёс",
+                    "утешать",
+                    "спасать",
+                    "вести"
+                ],
+                "correctIndex": 0
+            },
+            {
+                "question": "Что означает немецкое слово «retten»?",
+                "choices": [
                     "хитрость",
-                    "утешать"
+                    "обманывать",
+                    "утёс",
+                    "спасать"
                 ],
                 "correctIndex": 3
+            },
+            {
+                "question": "Что означает немецкое слово «die List»?",
+                "choices": [
+                    "вести",
+                    "хитрость",
+                    "слепой",
+                    "спасать"
+                ],
+                "correctIndex": 1
+            },
+            {
+                "question": "Что означает немецкое слово «trösten»?",
+                "choices": [
+                    "утёс",
+                    "утешать",
+                    "хитрость",
+                    "вести"
+                ],
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «die Verzweiflung»?",
                 "choices": [
                     "слепой",
-                    "обманывать",
+                    "утёс",
                     "отчаяние",
-                    "утёс"
+                    "вести"
                 ],
                 "correctIndex": 2
             }
@@ -3527,12 +3486,12 @@
             {
                 "question": "Что означает немецкое слово «der Kampf»?",
                 "choices": [
-                    "дуэль",
-                    "месть",
+                    "бой",
                     "разоблачать",
-                    "бой"
+                    "месть",
+                    "дуэль"
                 ],
-                "correctIndex": 3
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «das Duell»?",
@@ -3547,62 +3506,62 @@
             {
                 "question": "Что означает немецкое слово «die Rache»?",
                 "choices": [
-                    "бой",
-                    "месть",
-                    "побеждать",
-                    "меч"
+                    "меч",
+                    "дуэль",
+                    "брат",
+                    "месть"
                 ],
-                "correctIndex": 1
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «enthüllen»?",
                 "choices": [
-                    "справедливость",
-                    "бой",
                     "разоблачать",
-                    "побеждать"
-                ],
-                "correctIndex": 2
-            },
-            {
-                "question": "Что означает немецкое слово «siegen»?",
-                "choices": [
-                    "побеждать",
-                    "разоблачать",
-                    "бой",
-                    "брат"
+                    "меч",
+                    "брат",
+                    "справедливость"
                 ],
                 "correctIndex": 0
             },
             {
+                "question": "Что означает немецкое слово «siegen»?",
+                "choices": [
+                    "справедливость",
+                    "дуэль",
+                    "разоблачать",
+                    "побеждать"
+                ],
+                "correctIndex": 3
+            },
+            {
                 "question": "Что означает немецкое слово «die Gerechtigkeit»?",
                 "choices": [
-                    "побеждать",
-                    "бой",
+                    "брат",
                     "справедливость",
-                    "дуэль"
+                    "бой",
+                    "разоблачать"
                 ],
-                "correctIndex": 2
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «das Schwert»?",
                 "choices": [
-                    "побеждать",
-                    "дуэль",
                     "меч",
-                    "бой"
+                    "дуэль",
+                    "месть",
+                    "побеждать"
                 ],
-                "correctIndex": 2
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «der Bruder»?",
                 "choices": [
-                    "дуэль",
                     "брат",
                     "справедливость",
-                    "разоблачать"
+                    "бой",
+                    "дуэль"
                 ],
-                "correctIndex": 1
+                "correctIndex": 0
             }
         ],
         "quizAttempts": {},
@@ -4053,9 +4012,9 @@
             {
                 "question": "Что означает немецкое слово «überleben»?",
                 "choices": [
-                    "править",
                     "наследовать",
                     "будущее",
+                    "править",
                     "выживать"
                 ],
                 "correctIndex": 3
@@ -4064,71 +4023,71 @@
                 "question": "Что означает немецкое слово «erben»?",
                 "choices": [
                     "выживать",
+                    "будущее",
                     "править",
-                    "наследовать",
-                    "будущее"
+                    "наследовать"
                 ],
-                "correctIndex": 2
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «die Zukunft»?",
                 "choices": [
-                    "порядок",
                     "будущее",
-                    "новый",
-                    "править"
-                ],
-                "correctIndex": 1
-            },
-            {
-                "question": "Что означает немецкое слово «regieren»?",
-                "choices": [
-                    "править",
-                    "ответственность",
-                    "новый",
-                    "порядок"
+                    "порядок",
+                    "выживать",
+                    "мудрость"
                 ],
                 "correctIndex": 0
             },
             {
-                "question": "Что означает немецкое слово «die Weisheit»?",
+                "question": "Что означает немецкое слово «regieren»?",
                 "choices": [
-                    "новый",
-                    "мудрость",
-                    "править",
-                    "будущее"
-                ],
-                "correctIndex": 1
-            },
-            {
-                "question": "Что означает немецкое слово «die Ordnung»?",
-                "choices": [
-                    "новый",
-                    "выживать",
-                    "порядок",
-                    "править"
-                ],
-                "correctIndex": 2
-            },
-            {
-                "question": "Что означает немецкое слово «die Verantwortung»?",
-                "choices": [
-                    "править",
-                    "выживать",
+                    "будущее",
                     "ответственность",
+                    "править",
                     "мудрость"
                 ],
                 "correctIndex": 2
             },
             {
-                "question": "Что означает немецкое слово «neu»?",
+                "question": "Что означает немецкое слово «die Weisheit»?",
                 "choices": [
-                    "будущее",
+                    "мудрость",
                     "новый",
+                    "ответственность",
+                    "наследовать"
+                ],
+                "correctIndex": 0
+            },
+            {
+                "question": "Что означает немецкое слово «die Ordnung»?",
+                "choices": [
                     "наследовать",
-                    "править"
+                    "выживать",
+                    "новый",
+                    "порядок"
+                ],
+                "correctIndex": 3
+            },
+            {
+                "question": "Что означает немецкое слово «die Verantwortung»?",
+                "choices": [
+                    "новый",
+                    "ответственность",
+                    "выживать",
+                    "порядок"
                 ],
                 "correctIndex": 1
+            },
+            {
+                "question": "Что означает немецкое слово «neu»?",
+                "choices": [
+                    "новый",
+                    "ответственность",
+                    "мудрость",
+                    "порядок"
+                ],
+                "correctIndex": 0
             }
         ],
         "quizAttempts": {},
@@ -4230,275 +4189,130 @@ window.STORAGE_PREFIX = STORAGE_PREFIX;
 window.REVIEW_QUEUE_KEY = REVIEW_QUEUE_KEY;
 window.quizStateCache = quizStateCache;
 
-</script>
-    <script>
-    // Runtime JavaScript без модулей
-    (function() {
+
+
+        // ========================================
+        // БАЗОВАЯ НАВИГАЦИЯ ПО ФАЗАМ
+        // ========================================
         let currentPhaseIndex = 0;
-        const phaseKeys = Object.keys(phaseVocabularies);
-        let isTransitioning = false;
-
-        function displayVocabulary(phaseKey) {
-            if (isTransitioning) return;
-            isTransitioning = true;
-
-            const phase = phaseVocabularies[phaseKey];
-            const grid = document.querySelector('.vocabulary-grid');
-            const phaseTitle = document.getElementById('current-phase');
-            const progressFill = document.querySelector('.journey-progress .progress-fill');
-            const progressText = document.querySelector('.journey-progress .progress-text');
+        const phaseKeys = Object.keys(window.phaseVocabularies || {});
+        
+        function changePhase(index) {
+            if (index < 0 || index >= phaseKeys.length) return;
             
-            if (!phase || !grid || !phaseTitle) {
-                console.error('Missing required elements');
-                isTransitioning = false;
-                return;
-            }
-
-            phaseTitle.textContent = phase.title;
-
-            // Update theatrical scene
-            const scenes = document.querySelectorAll('.theatrical-scene');
-            scenes.forEach(scene => {
-                if (scene.dataset.phase === phaseKey) {
-                    scene.classList.add('active');
-                } else {
-                    scene.classList.remove('active');
-                }
-            });
-
-            // Update exercises
-            const exercises = document.querySelectorAll('.exercise-container');
-            exercises.forEach(exercise => {
-                if (exercise.dataset.phase === phaseKey) {
-                    exercise.classList.add('active');
-                } else {
-                    exercise.classList.remove('active');
-                }
-            });
-            
-            // Initialize exercises for current phase
-            if (window.initializeExercises) {
-                window.initializeExercises(phaseKey);
-            }
-
-            // Clear and populate vocabulary grid
-            grid.innerHTML = '';
-
-            phase.words.forEach((item, index) => {
-                setTimeout(() => {
-                    const card = document.createElement('div');
-                    card.className = 'word-card';
-                    card.style.animationDelay = `${index * 0.1}s`;
-
-                    const hintMarkup = item.russian_hint
-                        ? `<div class="word-hint">(${item.russian_hint})</div>`
-                        : '';
-
-                    card.innerHTML = `
-                        <div class="word-meta">
-                            <div class="word-german">${item.word}</div>
-                            <div class="word-translation">${item.translation}</div>
-                            ${hintMarkup}
-                            <div class="word-transcription">${item.transcription}</div>
-                        </div>
-                        <button class="btn-study" type="button">Изучить</button>
-                    `;
-
-                    grid.appendChild(card);
-                }, index * 50);
-            });
-
-            // Update progress bar
-            const progress = ((currentPhaseIndex + 1) / phaseKeys.length) * 100;
-            if (progressFill) progressFill.style.width = progress + '%';
-            if (progressText) progressText.textContent = phase.description;
-
-            // Update navigation buttons
-            updateNavigationButtons();
-
-            setTimeout(() => {
-                isTransitioning = false;
-            }, 500);
-        }
-
-        function updateNavigationButtons() {
-            const prevBtn = document.querySelector('.prev-btn');
-            const nextBtn = document.querySelector('.next-btn');
-            
-            if (prevBtn) {
-                prevBtn.disabled = currentPhaseIndex === 0;
-                prevBtn.style.opacity = currentPhaseIndex === 0 ? '0.5' : '1';
-                prevBtn.style.cursor = currentPhaseIndex === 0 ? 'not-allowed' : 'pointer';
-            }
-            
-            if (nextBtn) {
-                nextBtn.disabled = currentPhaseIndex >= phaseKeys.length - 1;
-                nextBtn.style.opacity = currentPhaseIndex >= phaseKeys.length - 1 ? '0.5' : '1';
-                nextBtn.style.cursor = currentPhaseIndex >= phaseKeys.length - 1 ? 'not-allowed' : 'pointer';
-            }
-        }
-
-        function handleJourneyPointClick(point, index) {
-            if (isTransitioning) return;
-            
-            const journeyPoints = document.querySelectorAll('.journey-point');
-            journeyPoints.forEach(p => p.classList.remove('active'));
-            point.classList.add('active');
             currentPhaseIndex = index;
-            displayVocabulary(point.dataset.phase);
-        }
-
-        // Initialize on DOM ready
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('[Init] Starting initialization...');
-
-            const journeyPoints = document.querySelectorAll('.journey-point');
-            console.log('[Init] Found', journeyPoints.length, 'journey points');
+            const phaseId = phaseKeys[index];
             
-            // Setup journey point clicks
-            journeyPoints.forEach((point, index) => {
-                point.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    handleJourneyPointClick(this, index);
-                });
-                
-                point.style.cursor = 'pointer';
+            // Обновляем активные точки на timeline
+            document.querySelectorAll('.journey-point').forEach((point, i) => {
+                point.classList.toggle('active', i === index);
             });
             
-            // Previous button handler
-            const prevBtn = document.querySelector('.prev-btn');
-            if (prevBtn) {
-                prevBtn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    
-                    if (!isTransitioning && currentPhaseIndex > 0) {
-                        currentPhaseIndex--;
-                        const targetPoint = journeyPoints[currentPhaseIndex];
-                        if (targetPoint) {
-                            handleJourneyPointClick(targetPoint, currentPhaseIndex);
-                        }
-                    }
-                });
+            // Обновляем название текущей фазы
+            const currentPhaseSpan = document.getElementById('current-phase');
+            if (currentPhaseSpan && window.phaseVocabularies[phaseId]) {
+                currentPhaseSpan.textContent = window.phaseVocabularies[phaseId].title;
             }
             
-            // Next button handler
-            const nextBtn = document.querySelector('.next-btn');
-            if (nextBtn) {
-                nextBtn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    
-                    if (!isTransitioning && currentPhaseIndex < phaseKeys.length - 1) {
-                        currentPhaseIndex++;
-                        const targetPoint = journeyPoints[currentPhaseIndex];
-                        if (targetPoint) {
-                            handleJourneyPointClick(targetPoint, currentPhaseIndex);
-                        }
-                    }
-                });
-            }
+            // Обновляем словарь
+            updateVocabulary(phaseId);
             
-            // Initialize first phase
-            if (journeyPoints.length > 0 && phaseKeys.length > 0) {
-                console.log('[Init] Initializing first phase:', phaseKeys[0]);
-                journeyPoints[0].classList.add('active');
-                displayVocabulary(phaseKeys[0]);
-            } else {
-                console.error('[Init] No journey points or phases found!');
-            }
-            
-            console.log('[Init] Initialization complete');
-        });
+            // Обновляем упражнения
+            updateExercises(phaseId);
+        }
 
-        // Exercise toggle handlers
-        window.toggleAnswers = function(button) {
-            const exerciseSection = button.closest('.exercise-section');
-            if (!exerciseSection) return;
+        // ========================================
+        // ОБНОВЛЕНИЕ СЛОВАРЯ
+        // ========================================
+        function updateVocabulary(phaseId) {
+            const grid = document.querySelector('.vocabulary-grid');
+            if (!grid) return;
             
-            const exerciseText = exerciseSection.querySelector('.exercise-text');
-            const blanks = exerciseText.querySelectorAll('.blank');
+            const phaseData = window.phaseVocabularies[phaseId];
+            if (!phaseData || !phaseData.words) {
+                grid.innerHTML = '<p>Нет слов для этой фазы</p>';
+                return;
+            }
             
-            if (button.textContent === 'Показать ответы') {
-                blanks.forEach(blank => {
-                    const answer = blank.getAttribute('data-answer');
-                    const hint = blank.getAttribute('data-hint');
-                    if (answer && hint) {
-                        blank.innerHTML = answer + ' (' + hint + ')';
-                        blank.style.color = '#d97706';
-                        blank.style.fontWeight = '600';
-                        blank.style.fontStyle = 'normal';
-                        blank.style.borderBottomColor = '#22c55e';
-                    }
-                });
-                button.textContent = 'Скрыть ответы';
-                button.style.background = 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)';
-            } else {
-                blanks.forEach(blank => {
-                    const hint = blank.getAttribute('data-hint');
-                    if (hint) {
-                        blank.innerHTML = '_______ (' + hint + ')';
-                        blank.style.color = '#a0aec0';
-                        blank.style.fontWeight = 'normal';
-                        blank.style.fontStyle = 'italic';
-                        blank.style.borderBottomColor = '#f6ad55';
-                    }
-                });
-                button.textContent = 'Показать ответы';
-                button.style.background = 'linear-gradient(135deg, #f6ad55 0%, #ed8936 100%)';
+            grid.innerHTML = phaseData.words.map(word => `
+                <div class="vocab-card">
+                    <div style="font-size: 1.2rem; font-weight: bold; color: #667eea;">
+                        ${word.word}
+                    </div>
+                    <div style="margin: 0.5rem 0; color: #666;">
+                        ${word.translation}
+                    </div>
+                    ${word.transcription ? `
+                        <div style="font-size: 0.9rem; color: #999; font-style: italic;">
+                            [${word.transcription}]
+                        </div>
+                    ` : ''}
+                    ${word.sentence ? `
+                        <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
+                            <div style="color: #333;">${word.sentence}</div>
+                            <div style="color: #666; font-size: 0.9rem; margin-top: 0.25rem;">
+                                ${word.sentenceTranslation}
+                            </div>
+                        </div>
+                    ` : ''}
+                </div>
+            `).join('');
+        }
+
+        // ========================================
+        // ОБНОВЛЕНИЕ УПРАЖНЕНИЙ
+        // ========================================
+        function updateExercises(phaseId) {
+            // Скрываем все фазы упражнений
+            document.querySelectorAll('.exercise-phase').forEach(phase => {
+                phase.classList.remove('active');
+                phase.style.display = 'none';
+            });
+            
+            // Показываем текущую фазу
+            document.querySelectorAll(`.exercise-phase[data-phase="${phaseId}"]`).forEach(phase => {
+                phase.classList.add('active');
+                phase.style.display = 'block';
+            });
+            
+            // Инициализируем упражнения для текущей фазы
+            initializeExercisesForPhase(phaseId);
+        }
+
+        // ========================================
+        // ИНИЦИАЛИЗАЦИЯ УПРАЖНЕНИЙ (БЕЗ РЕКУРСИИ)
+        // ========================================
+        function initializeExercisesForPhase(phaseId) {
+            const phaseData = window.phaseVocabularies[phaseId];
+            if (!phaseData) return;
+            
+            // Инициализация упражнения с артиклями
+            const articlesContainer = document.querySelector(`[data-articles-container][data-phase="${phaseId}"]`);
+            if (articlesContainer && !articlesContainer.dataset.initialized) {
+                initializeArticlesExercise(articlesContainer, phaseData);
+                articlesContainer.dataset.initialized = 'true';
+            }
+            
+            // Инициализация контекстного перевода
+            const contextContainer = document.querySelector(`[data-context-container][data-phase="${phaseId}"]`);
+            if (contextContainer && !contextContainer.dataset.initialized) {
+                initializeContextTranslation(contextContainer, phaseData);
+                contextContainer.dataset.initialized = 'true';
             }
         }
 
-        console.log('[Runtime] JavaScript loaded successfully');
-    })();
-    </script>
-    <script>
-    // Упражнения без модулей
-    (function() {
-        'use strict';
-
-        // ГЛОБАЛЬНАЯ ИНИЦИАЛИЗАЦИЯ
-        window.initializeExercises = function(phaseId) {
-            console.log('[Exercises] Initializing for phase:', phaseId);
-
-            if (!phaseId) {
-                return;
-            }
-
-            const phaseVocabulary = window.phaseVocabularies && window.phaseVocabularies[phaseId];
-            if (!phaseVocabulary) {
-                console.warn('[Exercises] No data for phase:', phaseId);
-                return;
-            }
-
-            const articlesContainer = document.querySelector(`[data-articles-container][data-phase="${phaseId}"]`);
-            if (articlesContainer) {
-                initializeArticlesExercise(articlesContainer, phaseVocabulary);
-            }
-
-            const contextContainer = document.querySelector(`[data-context-container][data-phase="${phaseId}"]`);
-            if (contextContainer) {
-                initializeContextTranslation(contextContainer, phaseVocabulary);
-            }
-        };
-
-        // УПРАЖНЕНИЕ "АРТИКЛИ И РОД"
-        function initializeArticlesExercise(container, phaseVocabulary) {
-            if (!(container instanceof HTMLElement)) {
-                return;
-            }
-
-            // Извлекаем слова с артиклями
+        // ========================================
+        // УПРАЖНЕНИЕ: АРТИКЛИ И РОД
+        // ========================================
+        function initializeArticlesExercise(container, phaseData) {
             const wordsWithArticles = [];
-            if (phaseVocabulary && phaseVocabulary.words) {
-                phaseVocabulary.words.forEach(word => {
-                    if (!word.word || !word.translation) return;
-                    
+            
+            if (phaseData.words) {
+                phaseData.words.forEach(word => {
                     const parts = word.word.split(' ');
-                    if (['der', 'die', 'das'].includes(parts[0])) {
+                    if (['der', 'die', 'das'].includes(parts[0]?.toLowerCase())) {
                         wordsWithArticles.push({
-                            article: parts[0],
+                            article: parts[0].toLowerCase(),
                             german: parts.slice(1).join(' '),
                             russian: word.translation,
                             fullWord: word.word
@@ -4507,115 +4321,89 @@ window.quizStateCache = quizStateCache;
                 });
             }
             
-            // Перемешиваем и ограничиваем до 9 слов
-            const shuffled = wordsWithArticles.sort(() => Math.random() - 0.5).slice(0, 9);
-
-            if (shuffled.length === 0) {
-                container.innerHTML = '<div class="exercise-empty-state">В этой фазе нет слов с артиклями.</div>';
+            if (wordsWithArticles.length === 0) {
+                container.innerHTML = '<p style="text-align: center; color: #666;">В этой фазе нет слов с артиклями</p>';
                 return;
             }
-
+            
+            // Перемешиваем и берем до 9 слов
+            const shuffled = wordsWithArticles
+                .sort(() => Math.random() - 0.5)
+                .slice(0, 9);
+            
             container.innerHTML = `
                 <div class="articles-exercise">
-                    <div class="articles-instruction">
-                        Распределите слова по родам (drag & drop или клик для мобильных)
-                    </div>
-
+                    <p style="margin-bottom: 1rem;">Распределите слова по родам:</p>
+                    
                     <div class="article-columns">
-                        <div class="article-column" data-article="der">
-                            <h5 class="article-header">
-                                <span class="article-label">DER</span>
-                                <span class="article-desc">мужской род</span>
-                            </h5>
+                        <div class="article-column">
+                            <h5 style="text-align: center; color: #667eea;">DER (мужской)</h5>
                             <div class="article-drop-zone" data-zone="der"></div>
                         </div>
-                        <div class="article-column" data-article="die">
-                            <h5 class="article-header">
-                                <span class="article-label">DIE</span>
-                                <span class="article-desc">женский род</span>
-                            </h5>
+                        <div class="article-column">
+                            <h5 style="text-align: center; color: #667eea;">DIE (женский)</h5>
                             <div class="article-drop-zone" data-zone="die"></div>
                         </div>
-                        <div class="article-column" data-article="das">
-                            <h5 class="article-header">
-                                <span class="article-label">DAS</span>
-                                <span class="article-desc">средний род</span>
-                            </h5>
+                        <div class="article-column">
+                            <h5 style="text-align: center; color: #667eea;">DAS (средний)</h5>
                             <div class="article-drop-zone" data-zone="das"></div>
                         </div>
                     </div>
-
-                    <div class="words-to-sort">
-                        ${shuffled.map((word, idx) => `
-                            <div class="article-word-card"
+                    
+                    <div class="words-to-sort" style="margin: 1.5rem 0; padding: 1rem; background: #f8f9fa; border-radius: 0.5rem;">
+                        ${shuffled.map(word => `
+                            <div class="article-word-card" 
                                  data-article="${word.article}"
-                                 data-word="${word.german}"
-                                 data-index="${idx}"
                                  draggable="true">
-                                <span class="word-german">${word.german}</span>
-                                <span class="word-russian">${word.russian}</span>
+                                <strong>${word.german}</strong><br>
+                                <small>${word.russian}</small>
                             </div>
                         `).join('')}
                     </div>
-
-                    <div class="articles-controls">
-                        <button class="check-articles-btn" type="button">Проверить</button>
-                        <button class="reset-articles-btn" type="button">Сбросить</button>
+                    
+                    <div style="text-align: center;">
+                        <button class="check-articles-btn">Проверить</button>
+                        <button class="reset-articles-btn">Сбросить</button>
                     </div>
                     <div class="articles-feedback"></div>
                 </div>
             `;
-
-            const exerciseElement = container.querySelector('.articles-exercise');
-            if (exerciseElement) {
-                attachArticlesDragDrop(exerciseElement);
-            }
+            
+            attachArticlesHandlers(container);
         }
-        
-        function attachArticlesDragDrop(container) {
+
+        // ========================================
+        // ОБРАБОТЧИКИ ДЛЯ АРТИКЛЕЙ
+        // ========================================
+        function attachArticlesHandlers(container) {
             const cards = container.querySelectorAll('.article-word-card');
             const zones = container.querySelectorAll('.article-drop-zone');
-            const checkBtn = container.querySelector('.check-articles-btn');
-            const resetBtn = container.querySelector('.reset-articles-btn');
-            const feedback = container.querySelector('.articles-feedback');
             const wordsContainer = container.querySelector('.words-to-sort');
             
-            // Сохраняем начальные позиции для сброса
-            const initialParent = cards[0]?.parentElement;
-            
-            // DRAG & DROP для десктопа
+            // Drag & Drop
             cards.forEach(card => {
-                card.addEventListener('dragstart', (e) => {
+                card.addEventListener('dragstart', function(e) {
                     e.dataTransfer.effectAllowed = 'move';
-                    e.dataTransfer.setData('text/plain', '');
-                    card.classList.add('dragging');
-                    card.dataset.dragArticle = card.dataset.article;
-                    card.dataset.dragWord = card.dataset.word;
-                });
-
-                card.addEventListener('dragend', () => {
-                    card.classList.remove('dragging');
+                    this.classList.add('dragging');
                 });
                 
-                // КЛИК для мобильных
-                card.addEventListener('click', function(e) {
-                    e.stopPropagation();
+                card.addEventListener('dragend', function() {
+                    this.classList.remove('dragging');
+                });
+                
+                // Клик для мобильных
+                card.addEventListener('click', function() {
                     const wasSelected = this.classList.contains('selected');
-                    
-                    // Убираем выделение со всех карточек
                     cards.forEach(c => c.classList.remove('selected'));
-                    
                     if (!wasSelected) {
                         this.classList.add('selected');
                     }
                 });
             });
             
-            // Обработчики для зон
             zones.forEach(zone => {
-                zone.addEventListener('dragover', (e) => {
+                zone.addEventListener('dragover', e => {
                     e.preventDefault();
-                    e.dataTransfer.dropEffect = 'move';
                     zone.classList.add('drag-over');
                 });
                 
@@ -4623,243 +4411,200 @@ window.quizStateCache = quizStateCache;
                     zone.classList.remove('drag-over');
                 });
                 
-                zone.addEventListener('drop', (e) => {
+                zone.addEventListener('drop', function(e) {
                     e.preventDefault();
-                    zone.classList.remove('drag-over');
-
-                    const draggingCard = container.querySelector('.dragging');
-                    if (draggingCard) {
-                        zone.appendChild(draggingCard);
-                        draggingCard.classList.remove('correct', 'incorrect');
+                    this.classList.remove('drag-over');
+                    const dragging = container.querySelector('.dragging');
+                    if (dragging) {
+                        this.appendChild(dragging);
                     }
                 });
-
+                
                 // Клик по зоне для мобильных
-                zone.addEventListener('click', function(e) {
-                    e.stopPropagation();
+                zone.addEventListener('click', function() {
                     const selected = container.querySelector('.article-word-card.selected');
                     if (selected) {
                         this.appendChild(selected);
-                        selected.classList.remove('selected', 'correct', 'incorrect');
+                        selected.classList.remove('selected');
                     }
                 });
             });
-
+            
+            // Возврат в исходную зону
             if (wordsContainer) {
-                wordsContainer.addEventListener('dragover', (e) => {
+                wordsContainer.addEventListener('dragover', e => e.preventDefault());
+                wordsContainer.addEventListener('drop', function(e) {
                     e.preventDefault();
-                    e.dataTransfer.dropEffect = 'move';
+                    const dragging = container.querySelector('.dragging');
+                    if (dragging) this.appendChild(dragging);
                 });
-
-                wordsContainer.addEventListener('drop', (e) => {
-                    e.preventDefault();
-                    const draggingCard = container.querySelector('.dragging');
-                    if (draggingCard) {
-                        wordsContainer.appendChild(draggingCard);
-                        draggingCard.classList.remove('correct', 'incorrect');
-                    }
-                });
-
-                wordsContainer.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    const selected = container.querySelector('.article-word-card.selected');
-                    if (selected && selected.parentElement !== wordsContainer) {
-                        wordsContainer.appendChild(selected);
-                        selected.classList.remove('selected', 'correct', 'incorrect');
+            }
+            
+            // Проверка
+            const checkBtn = container.querySelector('.check-articles-btn');
+            if (checkBtn) {
+                checkBtn.addEventListener('click', () => {
+                    let correct = 0, total = 0;
+                    
+                    zones.forEach(zone => {
+                        const targetArticle = zone.dataset.zone;
+                        const cardsInZone = zone.querySelectorAll('.article-word-card');
+                        
+                        cardsInZone.forEach(card => {
+                            total++;
+                            card.classList.remove('correct', 'incorrect');
+                            
+                            if (card.dataset.article === targetArticle) {
+                                card.classList.add('correct');
+                                correct++;
+                            } else {
+                                card.classList.add('incorrect');
+                            }
+                        });
+                    });
+                    
+                    const feedback = container.querySelector('.articles-feedback');
+                    if (feedback) {
+                        if (correct === total && total > 0) {
+                            feedback.innerHTML = '✅ Отлично! Все правильно!';
+                            feedback.className = 'articles-feedback success';
+                        } else {
+                            feedback.innerHTML = `Правильно: ${correct} из ${total}`;
+                            feedback.className = 'articles-feedback partial';
+                        }
                     }
                 });
             }
             
-            // Проверка ответов
-            checkBtn?.addEventListener('click', () => {
-                let correct = 0;
-                let total = 0;
-                
-                zones.forEach(zone => {
-                    const targetArticle = zone.dataset.zone;
-                    const cardsInZone = zone.querySelectorAll('.article-word-card');
-                    
-                    cardsInZone.forEach(card => {
-                        total++;
-                        card.classList.remove('correct', 'incorrect');
-                        
-                        if (card.dataset.article === targetArticle) {
-                            card.classList.add('correct');
-                            correct++;
-                        } else {
-                            card.classList.add('incorrect');
+            // Сброс
+            const resetBtn = container.querySelector('.reset-articles-btn');
+            if (resetBtn) {
+                resetBtn.addEventListener('click', () => {
+                    cards.forEach(card => {
+                        card.classList.remove('correct', 'incorrect', 'selected');
+                        if (wordsContainer) {
+                            wordsContainer.appendChild(card);
                         }
                     });
-                });
-                
-                // Проверяем карточки, оставшиеся в исходной зоне
-                const unsortedCards = wordsContainer.querySelectorAll('.article-word-card');
-                unsortedCards.forEach(card => {
-                    total++;
-                    card.classList.add('incorrect');
-                });
-                
-                // Показываем результат
-                if (feedback) {
-                    if (correct === total && total > 0) {
-                        feedback.innerHTML = '<span class="success">[OK] Отлично! Все артикли правильные!</span>';
-                        feedback.className = 'articles-feedback success';
-                    } else {
-                        feedback.innerHTML = `<span class="partial">Правильно: ${correct} из ${total}. Попробуйте ещё раз!</span>`;
-                        feedback.className = 'articles-feedback partial';
-                    }
-                }
-            });
-
-            // Сброс
-            resetBtn?.addEventListener('click', () => {
-                cards.forEach(card => {
-                    card.classList.remove('correct', 'incorrect', 'selected');
-                    if (initialParent) {
-                        initialParent.appendChild(card);
+                    
+                    const feedback = container.querySelector('.articles-feedback');
+                    if (feedback) {
+                        feedback.innerHTML = '';
+                        feedback.className = 'articles-feedback';
                     }
                 });
-
-                if (feedback) {
-                    feedback.innerHTML = '';
-                    feedback.className = 'articles-feedback';
-                }
-            });
+            }
         }
 
-        // УПРАЖНЕНИЕ "КОНТЕКСТНЫЙ ПЕРЕВОД"
-        function initializeContextTranslation(container, phaseVocabulary) {
-            if (!(container instanceof HTMLElement)) {
-                return;
-            }
-
-            // Собираем слова с полными предложениями
-            const contextExercises = [];
-
-            if (phaseVocabulary && phaseVocabulary.words) {
-                phaseVocabulary.words.forEach((word, idx) => {
-                    // Проверяем наличие всех необходимых полей
-                    if (!word.word || !word.translation || !word.sentence || !word.sentenceTranslation) {
-                        return;
-                    }
-                    
-                    // Убираем артикль для поиска в предложении
-                    const germanWord = word.word.replace(/^(der|die|das)\s+/i, '');
-                    
-                    // Создаем регулярное выражение для поиска слова с учетом окончаний
-                    const wordPattern = new RegExp(
-                        `\\b${germanWord.replace(/[.*+?^${}()|[\\]\\]/g, '\\        console.log('[Runtime] JavaScript loaded successfully');
-    })();
-    </script>')}\\w*\\b`,
-                        'gi'
-                    );
-                    
-                    // Проверяем, есть ли слово в предложении
-                    if (word.sentence.match(wordPattern)) {
-                        contextExercises.push({
-                            id: `context-${idx}`,
-                            germanWord: word.word,
-                            russianWord: word.translation,
-                            germanSentence: word.sentence,
-                            russianSentence: word.sentenceTranslation,
-                            // Создаем предложение с пропуском
-                            germanBlank: word.sentence.replace(wordPattern, '_____'),
-                            russianBlank: word.sentenceTranslation.includes(word.translation) 
-                                ? word.sentenceTranslation.replace(word.translation, '_____')
-                                : word.sentenceTranslation,
-                            correctAnswer: word.translation
-                        });
+        // ========================================
+        // УПРАЖНЕНИЕ: КОНТЕКСТНЫЙ ПЕРЕВОД
+        // ========================================
+        function initializeContextTranslation(container, phaseData) {
+            const exercises = [];
+            
+            if (phaseData.words) {
+                phaseData.words.forEach(word => {
+                    if (word.word && word.translation && word.sentence && word.sentenceTranslation) {
+                        // Безопасное создание регулярного выражения
+                        const germanWord = word.word.replace(/^(der|die|das)\s+/i, '');
+                        const escapedWord = germanWord.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                        const wordPattern = new RegExp(`\\b${escapedWord}\\w*\\b`, 'gi');
+                        
+                        if (word.sentence.match(wordPattern)) {
+                            exercises.push({
+                                germanWord: word.word,
+                                translation: word.translation,
+                                sentence: word.sentence,
+                                sentenceTranslation: word.sentenceTranslation,
+                                germanBlank: word.sentence.replace(wordPattern, '_____')
+                            });
+                        }
                     }
                 });
             }
             
-            // Ограничиваем до 5 упражнений и перемешиваем
-            const exercises = contextExercises
-                .sort(() => Math.random() - 0.5)
-                .slice(0, 5);
-            
             if (exercises.length === 0) {
-                container.innerHTML = '<div class="exercise-empty-state">В этой фазе нет предложений для контекстного перевода.</div>';
+                container.innerHTML = '<p style="text-align: center; color: #666;">В этой фазе нет упражнений для контекстного перевода</p>';
                 return;
             }
-
+            
+            // Берем до 5 упражнений
+            const selected = exercises.slice(0, 5);
+            
             container.innerHTML = `
                 <div class="context-exercises">
-                    <div class="context-instruction">
-                        Выберите правильный перевод пропущенного слова в контексте
-                    </div>
-                    ${exercises.map((ex, idx) => {
-                        const options = generateOptions(ex.correctAnswer, phaseVocabulary);
-
+                    ${selected.map((ex, idx) => {
+                        // Генерируем варианты ответов
+                        const options = generateOptions(ex.translation, phaseData);
+                        
                         return `
-                            <div class="context-exercise-card" data-exercise-id="${ex.id}">
-                                <div class="exercise-number">Упражнение ${idx + 1}</div>
-
-                                <div class="context-sentences">
-                                    <div class="sentence-german">${ex.germanBlank}</div>
-                                    <div class="sentence-russian">${ex.russianBlank}</div>
+                            <div class="context-exercise-card">
+                                <div style="font-weight: bold; margin-bottom: 1rem;">Упражнение ${idx + 1}</div>
+                                
+                                <div style="background: #f8f9fa; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem;">
+                                    <div style="margin-bottom: 0.5rem;">${ex.germanBlank}</div>
+                                    <div style="color: #666; font-style: italic;">${ex.sentenceTranslation}</div>
                                 </div>
-
-                                <div class="context-question">
+                                
+                                <div style="margin-bottom: 1rem;">
                                     Пропущенное слово: <strong>${ex.germanWord}</strong>
                                 </div>
-
+                                
                                 <div class="context-options">
-                                    ${options.map((opt, optIdx) => `
+                                    ${options.map(opt => `
                                         <button class="context-option"
-                                                type="button"
-                                                data-answer="${opt}"
-                                                data-correct="${opt === ex.correctAnswer}">
-                                            ${String.fromCharCode(65 + optIdx)}) ${opt}
+                                                data-correct="${opt === ex.translation}">
+                                            ${opt}
                                         </button>
                                     `).join('')}
                                 </div>
-
+                                
                                 <div class="context-feedback"></div>
                             </div>
                         `;
                     }).join('')}
                 </div>
             `;
-
+            
             attachContextHandlers(container);
         }
-        
-        function generateOptions(correctAnswer, phaseVocabulary) {
-            const options = [correctAnswer];
-            const allTranslations = [];
+
+        // ========================================
+        // ГЕНЕРАЦИЯ ВАРИАНТОВ ОТВЕТОВ
+        // ========================================
+        function generateOptions(correct, phaseData) {
+            const options = [correct];
+            const allTranslations = new Set();
             
-            // Собираем все переводы из текущей фазы
-            if (phaseVocabulary && phaseVocabulary.words) {
-                phaseVocabulary.words.forEach(word => {
-                    if (word.translation && word.translation !== correctAnswer) {
-                        allTranslations.push(word.translation);
+            // Собираем переводы из текущей фазы
+            if (phaseData.words) {
+                phaseData.words.forEach(word => {
+                    if (word.translation && word.translation !== correct) {
+                        allTranslations.add(word.translation);
                     }
                 });
             }
             
-            // Если недостаточно вариантов из текущей фазы, добавляем общие
-            if (allTranslations.length < 3) {
-                const fallbackOptions = [
-                    'власть', 'трон', 'корона', 'королевство', 
-                    'предательство', 'верность', 'гордость', 'дочь',
-                    'судьба', 'мудрость', 'безумие', 'правда'
-                ].filter(opt => opt !== correctAnswer);
-                
-                allTranslations.push(...fallbackOptions);
-            }
+            // Если мало вариантов, добавляем общие
+            const fallback = ['власть', 'трон', 'корона', 'королевство', 'предательство', 'верность'];
+            fallback.forEach(word => {
+                if (word !== correct) allTranslations.add(word);
+            });
             
-            // Выбираем 3 случайных неправильных варианта
-            const wrongOptions = allTranslations
+            // Выбираем 3 неправильных варианта
+            const wrong = Array.from(allTranslations)
                 .sort(() => Math.random() - 0.5)
                 .slice(0, 3);
             
-            options.push(...wrongOptions);
+            options.push(...wrong);
             
-            // Перемешиваем варианты
+            // Перемешиваем
             return options.sort(() => Math.random() - 0.5);
         }
-        
+
+        // ========================================
+        // ОБРАБОТЧИКИ ДЛЯ КОНТЕКСТНОГО ПЕРЕВОДА
+        // ========================================
         function attachContextHandlers(container) {
             const cards = container.querySelectorAll('.context-exercise-card');
             
@@ -4868,65 +4613,97 @@ window.quizStateCache = quizStateCache;
                 const feedback = card.querySelector('.context-feedback');
                 
                 options.forEach(option => {
-                    option.addEventListener('click', function(e) {
-                        e.stopPropagation();
-                        
-                        // Проверяем, не был ли уже дан ответ
-                        if (card.classList.contains('answered')) {
-                            return;
-                        }
+                    option.addEventListener('click', function() {
+                        // Блокируем повторные клики
+                        if (card.classList.contains('answered')) return;
+                        card.classList.add('answered');
                         
                         // Блокируем все кнопки
-                        options.forEach(opt => {
-                            opt.disabled = true;
-                            opt.classList.remove('selected');
-                        });
-                        
-                        // Отмечаем карточку как отвеченную
-                        card.classList.add('answered');
-                        this.classList.add('selected');
+                        options.forEach(opt => opt.disabled = true);
                         
                         // Проверяем ответ
                         if (this.dataset.correct === 'true') {
                             this.classList.add('correct');
-                            feedback.innerHTML = '<span class="success">[OK] Правильно!</span>';
+                            feedback.innerHTML = '✅ Правильно!';
                             feedback.className = 'context-feedback success';
-                            
-                            // Анимация успеха
-                            card.classList.add('success-animation');
                         } else {
                             this.classList.add('incorrect');
-                            
-                            // Показываем правильный ответ
+                            // Показываем правильный
                             options.forEach(opt => {
                                 if (opt.dataset.correct === 'true') {
                                     opt.classList.add('correct');
                                 }
                             });
-                            
-                            feedback.innerHTML = '<span class="error">[X] Неверно. Правильный ответ выделен зеленым.</span>';
+                            feedback.innerHTML = '❌ Неверно. Правильный ответ выделен зеленым.';
                             feedback.className = 'context-feedback error';
                         }
                     });
                 });
             });
         }
-        
-        // Вспомогательные функции (добавим если нужны)
-        window.refreshActiveExerciseContentHeight = window.refreshActiveExerciseContentHeight || function() {};
-        window.updateWordColumnScrollIndicators = window.updateWordColumnScrollIndicators || function() {};
-        
-        // ОБНОВЛЕНИЕ НАЗВАНИЙ В UI после переключения фазы
+
+        // ========================================
+        // АККОРДЕОН ДЛЯ УПРАЖНЕНИЙ
+        // ========================================
+        function initializeAccordion() {
+            const toggles = document.querySelectorAll('.exercise-toggle');
+            
+            toggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    const panel = this.closest('.exercise-panel');
+                    const content = panel.querySelector('.exercise-content');
+                    const icon = this.querySelector('.toggle-icon');
+                    
+                    // Закрываем другие панели
+                    document.querySelectorAll('.exercise-panel').forEach(p => {
+                        if (p !== panel) {
+                            const c = p.querySelector('.exercise-content');
+                            const i = p.querySelector('.toggle-icon');
+                            c.classList.remove('expanded');
+                            i.textContent = '▶';
+                        }
+                    });
+                    
+                    // Переключаем текущую
+                    const isExpanded = content.classList.contains('expanded');
+                    content.classList.toggle('expanded');
+                    icon.textContent = isExpanded ? '▶' : '▼';
+                });
+            });
+        }
+
+        // ========================================
+        // ОБРАБОТЧИКИ КЛИКОВ ПО TIMELINE
+        // ========================================
+        function initializeTimeline() {
+            const points = document.querySelectorAll('.journey-point');
+            
+            points.forEach((point, index) => {
+                point.addEventListener('click', () => {
+                    changePhase(index);
+                });
+            });
+        }
+
+        // ========================================
+        // ИНИЦИАЛИЗАЦИЯ ПРИ ЗАГРУЗКЕ
+        // ========================================
         document.addEventListener('DOMContentLoaded', function() {
-            setTimeout(() => {
-                if (window.phaseKeys && window.phaseKeys.length > 0) {
-                    window.initializeExercises(window.phaseKeys[0]);
-                }
-            }, 120);
+            console.log('[Journey] Initializing...');
+            
+            // Инициализация компонентов
+            initializeAccordion();
+            initializeTimeline();
+            
+            // Загрузка первой фазы
+            if (phaseKeys.length > 0) {
+                changePhase(0);
+            }
+            
+            console.log('[Journey] Ready!');
         });
 
     })();
     </script>
-    <script src="../static/js/exercises.js"></script>
 </body>
 </html>
