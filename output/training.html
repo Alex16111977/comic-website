@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренировка слова</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .training-container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        .training-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .back-link {
+            color: #6b7280;
+            text-decoration: none;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: color 0.3s;
+        }
+        
+        .back-link:hover {
+            color: #374151;
+        }
+        
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: #6b7280;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .close-btn:hover {
+            transform: scale(1.2);
+            color: #374151;
+        }
+        
+        .progress-section {
+            margin-bottom: 30px;
+        }
+        
+        .progress-label {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 10px;
+        }
+        
+        .progress-bar {
+            background: #e5e7eb;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            transition: width 0.5s ease;
+            border-radius: 4px;
+        }
+        
+        .exercise-area {
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        /* Первое знакомство */
+        .introduction {
+            text-align: center;
+            animation: fadeIn 0.5s;
+        }
+        
+        .word-display {
+            font-size: 3em;
+            font-weight: 700;
+            color: #1f2937;
+            margin: 20px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .transcription {
+            font-size: 1.2em;
+            color: #6b7280;
+            font-style: italic;
+            margin: 10px 0;
+        }
+        
+        .translation {
+            font-size: 1.5em;
+            color: #374151;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        
+        .example-box {
+            background: #f9fafb;
+            border-left: 3px solid #667eea;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+            text-align: left;
+        }
+        
+        .example-label {
+            font-size: 0.9em;
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .example-text {
+            font-size: 1.1em;
+            color: #1f2937;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .example-translation {
+            font-size: 0.95em;
+            color: #6b7280;
+        }
+        
+        /* Викторина */
+        .quiz {
+            animation: fadeIn 0.5s;
+        }
+        
+        .quiz-question {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .quiz-word {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #1f2937;
+            margin: 20px 0;
+        }
+        
+        .quiz-instruction {
+            font-size: 1.1em;
+            color: #6b7280;
+        }
+        
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .option-btn {
+            padding: 20px;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            background: white;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: #1f2937;
+            font-weight: 500;
+        }
+        
+        .option-btn:hover:not(:disabled) {
+            border-color: #667eea;
+            background: #f3f4f6;
+            transform: translateY(-2px);
+        }
+        
+        .option-btn.correct {
+            background: #10b981;
+            color: white;
+            border-color: #10b981;
+        }
+        
+        .option-btn.incorrect {
+            background: #ef4444;
+            color: white;
+            border-color: #ef4444;
+        }
+        
+        .option-btn:disabled {
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+        
+        /* Результаты */
+        .results {
+            text-align: center;
+            animation: fadeIn 0.5s;
+        }
+        
+        .success-icon {
+            font-size: 4em;
+            margin: 20px 0;
+        }
+        
+        .results-title {
+            font-size: 2em;
+            font-weight: 700;
+            color: #1f2937;
+            margin: 20px 0;
+        }
+        
+        .results-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 30px 0;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2em;
+            font-weight: 700;
+            color: #667eea;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            color: #6b7280;
+            margin-top: 5px;
+        }
+        
+        .next-btn, .continue-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 12px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+        
+        .next-btn:hover, .continue-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .shake {
+            animation: shake 0.5s;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="training-container">
+        <div class="training-header">
+            <a href="index.html" class="back-link">
+                ← Вернуться
+            </a>
+            <button class="close-btn" onclick="window.location.href='index.html'">✕</button>
+        </div>
+        
+        <div class="progress-section">
+            <div class="progress-label">
+                <span id="progress-text">Упражнение 1 из 4</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill" style="width: 25%"></div>
+            </div>
+        </div>
+        
+        <div class="exercise-area" id="exercise-area">
+            <!-- Содержимое упражнений загружается динамически -->
+        </div>
+    </div>
+
+    <script type="module">
+        import { initTrainingPage } from 'static/js/pages/training.js';
+        initTrainingPage();
+    </script>
+
+    <!-- УНИВЕРСАЛЬНОЕ ИСПРАВЛЕНИЕ УДАЛЕНИЯ КАРТОЧЕК -->
+    <!-- Добавить в конец любого HTML файла со словарем -->
+
+    <script>
+(function() {
+    'use strict';
+    
+    console.log('[FIX] Инициализация исправления удаления карточек');
+    
+    // Перехватываем все клики на кнопки удаления
+    document.addEventListener('click', function(e) {
+        // Поиск кнопки удаления
+        const removeBtn = e.target.closest('.btn-remove, .remove-btn, [data-action="remove"], button[onclick*="remove"]');
+        
+        if (!removeBtn) return;
+        
+        console.log('[FIX] Клик на кнопку удаления');
+        
+        // Получаем ID слова разными способами
+        const wordId = 
+            removeBtn.dataset.wordId ||
+            removeBtn.dataset.word ||
+            removeBtn.getAttribute('data-word-id') ||
+            removeBtn.getAttribute('data-word') ||
+            removeBtn.id ||
+            null;
+            
+        if (!wordId) {
+            console.error('[FIX] Не найден ID слова для удаления');
+            return;
+        }
+        
+        console.log('[FIX] Удаляем слово:', wordId);
+        
+        // Универсальная функция удаления
+        function removeWordFromStorage(id) {
+            const storageKeys = [
+                'reviewWords',
+                'review_words',
+                'vocabulary',
+                'words',
+                'studyWords',
+                'study_words'
+            ];
+            
+            let removed = false;
+            
+            storageKeys.forEach(key => {
+                try {
+                    const data = localStorage.getItem(key);
+                    if (!data) return;
+                    
+                    let words = JSON.parse(data);
+                    const originalLength = words.length;
+                    
+                    // Фильтруем массив
+                    words = words.filter(w => {
+                        // Проверяем все возможные форматы
+                        const wId = w.id || w.wordId || w.word || '';
+                        const wWord = w.word || '';
+                        
+                        // Нормализуем для сравнения
+                        const normalizedId = id.toLowerCase().replace(/\s+/g, '_');
+                        const normalizedWId = String(wId).toLowerCase().replace(/\s+/g, '_');
+                        const normalizedWord = wWord.toLowerCase().replace(/\s+/g, '_');
+                        
+                        // Оставляем только если НЕ совпадает
+                        return normalizedWId !== normalizedId && 
+                               normalizedWord !== normalizedId &&
+                               wId !== id &&
+                               wWord !== id;
+                    });
+                    
+                    if (words.length < originalLength) {
+                        localStorage.setItem(key, JSON.stringify(words));
+                        console.log(`[FIX] Удалено из ${key}: ${originalLength - words.length} слов`);
+                        removed = true;
+                    }
+                } catch (err) {
+                    console.error(`[FIX] Ошибка при обработке ${key}:`, err);
+                }
+            });
+            
+            if (removed) {
+                // Удаляем карточку из DOM
+                const card = removeBtn.closest('.word-card, .review-card, .vocabulary-card, .card');
+                if (card) {
+                    card.style.transition = 'opacity 0.3s, transform 0.3s';
+                    card.style.opacity = '0';
+                    card.style.transform = 'scale(0.8)';
+                    setTimeout(() => {
+                        card.remove();
+                        
+                        // Проверяем остались ли карточки
+                        const remainingCards = document.querySelectorAll('.word-card, .review-card, .vocabulary-card, .card').length;
+                        if (remainingCards === 0) {
+                            const emptyMsg = document.querySelector('.empty-message, .no-words');
+                            if (emptyMsg) {
+                                emptyMsg.style.display = 'block';
+                            }
+                        }
+                    }, 300);
+                }
+                
+                // Обновляем счетчики если есть
+                const counter = document.querySelector('.review-count, .word-count, .counter');
+                if (counter) {
+                    const currentCount = parseInt(counter.textContent) || 0;
+                    counter.textContent = Math.max(0, currentCount - 1);
+                }
+            }
+            
+            return removed;
+        }
+        
+        // Удаляем слово
+        const success = removeWordFromStorage(wordId);
+        
+        if (success) {
+            console.log('[FIX] Слово успешно удалено');
+        } else {
+            console.warn('[FIX] Слово не найдено в хранилище');
+        }
+        
+        // Останавливаем дальнейшую обработку
+        e.preventDefault();
+        e.stopPropagation();
+    });
+    
+    // Исправление для динамически создаваемых кнопок
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            mutation.addedNodes.forEach(function(node) {
+                if (node.nodeType !== 1) return; // Только элементы
+                
+                // Проверяем добавленные кнопки
+                const buttons = node.querySelectorAll ? 
+                    node.querySelectorAll('.btn-study, .study-btn, button[data-word]') : [];
+                
+                buttons.forEach(btn => {
+                    // Убеждаемся что все данные передаются
+                    const word = btn.dataset.word;
+                    if (word && !btn.dataset.wordId) {
+                        btn.dataset.wordId = word.toLowerCase().replace(/\s+/g, '_');
+                    }
+                    
+                    // Добавляем sentenceTranslation если его нет
+                    if (btn.dataset.sentence && !btn.dataset.sentenceTranslation) {
+                        // Пытаемся найти перевод в других атрибутах
+                        const translation = 
+                            btn.dataset.translation ||
+                            btn.getAttribute('data-sentence-translation') ||
+                            btn.title ||
+                            '';
+                        if (translation) {
+                            btn.dataset.sentenceTranslation = translation;
+                        }
+                    }
+                });
+            });
+        });
+    });
+    
+    // Начинаем наблюдение за изменениями DOM
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+    
+    console.log('[FIX] Исправление активировано и готово к работе');
+})();
+</script>
+
+
+<!-- РАБОЧЕЕ ИСПРАВЛЕНИЕ УДАЛЕНИЯ -->
+<script>
+/**
+ * РАБОЧЕЕ ИСПРАВЛЕНИЕ УДАЛЕНИЯ КАРТОЧЕК
+ * ======================================
+ * Простое и прямое решение без лишней сложности
+ */
+
+console.log('[WORKING FIX] Инициализация исправления удаления');
+
+// Переопределяем глобальную функцию removeWord если она существует
+if (typeof window.removeWord !== 'undefined' || window.removeWord === null) {
+    console.log('[WORKING FIX] Переопределяем существующую removeWord');
+}
+
+// Новая рабочая функция удаления
+window.removeWord = function(wordId) {
+    console.log('[WORKING FIX] removeWord вызвана для:', wordId);
+    
+    // Список всех возможных ключей в localStorage
+    const storageKeys = [
+        'test_words',      // Для тестовой страницы
+        'reviewWords',     // Основной ключ ReviewManager
+        'review_words',    // Альтернативный ключ
+        'vocabulary',      // Ключ словаря
+        'studyWords',      // Слова для изучения
+        'study_words'      // Альтернативный ключ
+    ];
+    
+    let totalRemoved = 0;
+    
+    // Проходим по всем ключам
+    storageKeys.forEach(key => {
+        try {
+            const data = localStorage.getItem(key);
+            if (!data) return;
+            
+            let words = JSON.parse(data);
+            if (!Array.isArray(words)) return;
+            
+            const originalLength = words.length;
+            
+            // Фильтруем массив - удаляем слово с любым совпадением
+            words = words.filter(w => {
+                // Получаем все возможные идентификаторы слова
+                const wordIds = [
+                    w.id,
+                    w.wordId, 
+                    w.word,
+                    w.german,
+                    w.name
+                ].filter(Boolean); // Убираем undefined/null
+                
+                // Проверяем каждый идентификатор
+                for (let wId of wordIds) {
+                    // Приводим к строке и нормализуем
+                    const normalizedWId = String(wId).toLowerCase().replace(/[\s_-]+/g, '');
+                    const normalizedSearchId = String(wordId).toLowerCase().replace(/[\s_-]+/g, '');
+                    
+                    if (normalizedWId === normalizedSearchId) {
+                        console.log(`[WORKING FIX] Найдено совпадение в ${key}: ${wId}`);
+                        return false; // Удаляем это слово
+                    }
+                }
+                
+                return true; // Оставляем слово
+            });
+            
+            // Если что-то удалили, сохраняем обратно
+            if (words.length < originalLength) {
+                localStorage.setItem(key, JSON.stringify(words));
+                const removed = originalLength - words.length;
+                totalRemoved += removed;
+                console.log(`[WORKING FIX] Удалено из ${key}: ${removed} слов`);
+            }
+        } catch (err) {
+            console.error(`[WORKING FIX] Ошибка при обработке ${key}:`, err);
+        }
+    });
+    
+    // Удаляем карточку из DOM с анимацией
+    const removeButtons = document.querySelectorAll('.btn-remove, .remove-btn, [onclick*="removeWord"]');
+    removeButtons.forEach(btn => {
+        // Ищем кнопку которая относится к этому wordId
+        const btnWordId = btn.getAttribute('data-word-id') || 
+                         btn.getAttribute('data-word') ||
+                         btn.dataset?.wordId ||
+                         btn.dataset?.word ||
+                         (btn.onclick ? btn.onclick.toString().match(/removeWord\(['"]([^'"]+)['"]\)/)?.[1] : null);
+        
+        if (btnWordId && btnWordId.toLowerCase().replace(/[\s_-]+/g, '') === 
+            wordId.toLowerCase().replace(/[\s_-]+/g, '')) {
+            
+            const card = btn.closest('.word-card, .review-card, .vocabulary-card, .card');
+            if (card) {
+                // Анимация исчезновения
+                card.style.transition = 'all 0.3s ease-out';
+                card.style.opacity = '0';
+                card.style.transform = 'scale(0.95) translateX(50px)';
+                
+                setTimeout(() => {
+                    card.remove();
+                    console.log('[WORKING FIX] Карточка удалена из DOM');
+                    
+                    // Обновляем счетчики
+                    updateCounters();
+                    
+                    // Проверяем остались ли карточки
+                    checkEmpty();
+                    
+                    // Если есть функция обновления отображения - вызываем
+                    if (typeof displayWords === 'function') {
+                        displayWords();
+                    }
+                }, 300);
+            }
+        }
+    });
+    
+    if (totalRemoved > 0) {
+        console.log(`[WORKING FIX] Всего удалено: ${totalRemoved} слов`);
+    } else {
+        console.warn('[WORKING FIX] Слово не найдено ни в одном хранилище');
+    }
+    
+    return totalRemoved > 0;
+};
+
+// Функция обновления счетчиков
+function updateCounters() {
+    const counters = document.querySelectorAll('.review-count, .word-count, .counter, #count');
+    counters.forEach(counter => {
+        const currentCount = parseInt(counter.textContent) || 0;
+        if (currentCount > 0) {
+            counter.textContent = currentCount - 1;
+        }
+    });
+}
+
+// Функция проверки пустоты
+function checkEmpty() {
+    const cards = document.querySelectorAll('.word-card, .review-card, .vocabulary-card, .card');
+    if (cards.length === 0) {
+        const emptyMessages = document.querySelectorAll('.empty-message, .no-words, .empty');
+        emptyMessages.forEach(msg => {
+            msg.style.display = 'block';
+        });
+    }
+}
+
+// Также перехватываем клики для дополнительной надежности
+document.addEventListener('click', function(e) {
+    // Проверяем, это кнопка удаления?
+    const btn = e.target.closest('.btn-remove, .remove-btn, [onclick*="removeWord"]');
+    if (!btn) return;
+    
+    console.log('[WORKING FIX] Перехвачен клик на кнопку удаления');
+    
+    // Получаем ID слова
+    const wordId = btn.getAttribute('data-word-id') || 
+                  btn.getAttribute('data-word') ||
+                  btn.dataset?.wordId ||
+                  btn.dataset?.word ||
+                  (btn.onclick ? btn.onclick.toString().match(/removeWord\(['"]([^'"]+)['"]\)/)?.[1] : null);
+    
+    if (wordId) {
+        console.log('[WORKING FIX] Найден wordId:', wordId);
+        
+        // Вызываем нашу функцию удаления
+        window.removeWord(wordId);
+        
+        // Предотвращаем стандартное действие
+        e.preventDefault();
+        e.stopPropagation();
+    }
+}, true); // true для перехвата на фазе capture
+
+// Для ReviewManager - переопределяем его метод если он существует
+if (window.ReviewManager) {
+    console.log('[WORKING FIX] Найден ReviewManager, переопределяем removeWord');
+    
+    const originalRemove = window.ReviewManager.removeWord;
+    
+    window.ReviewManager.removeWord = function(wordId) {
+        console.log('[WORKING FIX] ReviewManager.removeWord вызван для:', wordId);
+        
+        // Вызываем нашу улучшенную версию
+        const result = window.removeWord(wordId);
+        
+        // Обновляем отображение ReviewManager
+        if (this.updateDisplay) {
+            this.updateDisplay();
+        }
+        
+        return result;
+    };
+}
+
+console.log('[WORKING FIX] ✅ Исправление полностью активировано');
+console.log('[WORKING FIX] Функция window.removeWord доступна глобально');
+
+</script>
+</body>
+</html>
