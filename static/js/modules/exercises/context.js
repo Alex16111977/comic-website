@@ -32,7 +32,7 @@ export class ContextExercise {
                 return;
             }
             const germanWord = word.german.replace(/^(der|die|das)\s+/i, '');
-            const pattern = new RegExp(`\\b${germanWord.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')}\\w*\\b`, 'gi');
+            const pattern = new RegExp(`\\b${germanWord.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\w*\\b`, 'gi');
             if (!word.sentence.match(pattern)) {
                 return;
             }
