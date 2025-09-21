@@ -33,7 +33,11 @@ class PhaseSerializer:
             "const quizStateCache = {};\n\n",
             "window.phaseData = phaseVocabularies;\n",
             "window.phaseVocabularies = phaseVocabularies;\n",
-            "window.phaseKeys = Object.keys(phaseVocabularies);\n\n",
+            "window.phaseKeys = Object.keys(phaseVocabularies);\n",
+            "window.characterId = characterId;\n",
+            "window.STORAGE_PREFIX = STORAGE_PREFIX;\n",
+            "window.REVIEW_QUEUE_KEY = REVIEW_QUEUE_KEY;\n",
+            "window.quizStateCache = quizStateCache;\n\n",
         ]
         return "".join(parts)
 
