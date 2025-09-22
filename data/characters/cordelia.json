@@ -137,6 +137,45 @@
           "synonyms": ["преданность", "надёжность", "постоянство"]
         }
       ],
+      "synonym_antonym_sets": [
+        {
+          "id": "truth_vs_lie",
+          "title": "Правда против лжи",
+          "target": {
+            "word": "die Wahrheit",
+            "translation": "правда",
+            "hint": "главная ценность Корделии"
+          },
+          "synonyms": [
+            { "word": "die Ehrlichkeit", "translation": "честность" },
+            { "word": "die Aufrichtigkeit", "translation": "искренность" }
+          ],
+          "antonyms": [
+            { "word": "die Lüge", "translation": "ложь" },
+            { "word": "die Heuchelei", "translation": "лицемерие" },
+            { "word": "der Betrug", "translation": "обман" }
+          ],
+          "narration": "Корделия выбирает правду, даже если это стоит ей наследства."
+        },
+        {
+          "id": "love_spectrum",
+          "title": "Оттенки любви",
+          "target": {
+            "word": "die Liebe",
+            "translation": "любовь",
+            "hint": "чувство дочери к отцу"
+          },
+          "synonyms": [
+            { "word": "die Treue", "translation": "верность" },
+            { "word": "die Pflicht", "translation": "долг" }
+          ],
+          "antonyms": [
+            { "word": "der Hass", "translation": "ненависть" },
+            { "word": "die Gleichgültigkeit", "translation": "равнодушие" }
+          ],
+          "narration": "Её любовь честна, без преувеличений."
+        }
+      ],
       "quizzes": [
         {
           "question": "Что означает немецкое слово «die Wahrheit»?",

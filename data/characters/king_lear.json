@@ -137,6 +137,27 @@
           "synonyms": ["роскошный", "пышный", "величественный"]
         }
       ],
+      "synonym_antonym_sets": [
+        {
+          "id": "power_dynamics",
+          "title": "Власть и бессилие",
+          "target": {
+            "word": "die Macht",
+            "translation": "власть",
+            "hint": "то, что Лир теряет"
+          },
+          "synonyms": [
+            { "word": "die Herrschaft", "translation": "господство" },
+            { "word": "die Gewalt", "translation": "сила" },
+            { "word": "die Stärke", "translation": "мощь" }
+          ],
+          "antonyms": [
+            { "word": "die Schwäche", "translation": "слабость" },
+            { "word": "die Ohnmacht", "translation": "бессилие" }
+          ],
+          "narration": "От абсолютной власти к полному бессилию."
+        }
+      ],
       "quizzes": [
         {
           "question": "Что означает немецкое слово «der Thron»?",
