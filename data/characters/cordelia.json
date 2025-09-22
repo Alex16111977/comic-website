@@ -29,7 +29,11 @@
             "die reine Wahrheit über ihre Liebe",
             "während ihre Schwestern den König belügen."
           ],
-          "synonyms": ["истина", "правдивость", "достоверность"]
+          "synonyms": [
+            "истина",
+            "правдивость",
+            "достоверность"
+          ]
         },
         {
           "german": "die Zeremonie",
@@ -44,7 +48,11 @@
             "während Cordelia nervös",
             "vor ihrem Vater König Lear steht."
           ],
-          "synonyms": ["обряд", "ритуал", "торжество"]
+          "synonyms": [
+            "обряд",
+            "ритуал",
+            "торжество"
+          ]
         },
         {
           "german": "verkünden",
@@ -59,7 +67,11 @@
             "aber sie spricht",
             "nur die Wahrheit."
           ],
-          "synonyms": ["объявлять", "возвещать", "декларировать"]
+          "synonyms": [
+            "объявлять",
+            "возвещать",
+            "декларировать"
+          ]
         },
         {
           "german": "die Macht",
@@ -74,7 +86,11 @@
             "weil sie dem Vater",
             "keine falschen Komplimente macht."
           ],
-          "synonyms": ["могущество", "господство", "влияние"]
+          "synonyms": [
+            "могущество",
+            "господство",
+            "влияние"
+          ]
         },
         {
           "german": "gehorchen",
@@ -89,7 +105,11 @@
             "und sagt nur",
             "was ihr Herz wirklich fühlt."
           ],
-          "synonyms": ["подчиняться", "слушаться", "покоряться"]
+          "synonyms": [
+            "подчиняться",
+            "слушаться",
+            "покоряться"
+          ]
         },
         {
           "german": "die Pflicht",
@@ -104,7 +124,11 @@
             "den Vater aufrichtig zu lieben",
             "ohne Heuchelei."
           ],
-          "synonyms": ["обязанность", "повинность", "обязательство"]
+          "synonyms": [
+            "обязанность",
+            "повинность",
+            "обязательство"
+          ]
         },
         {
           "german": "feierlich",
@@ -119,7 +143,11 @@
             "während Goneril und Regan",
             "falsch schwören."
           ],
-          "synonyms": ["праздничный", "величественный", "парадный"]
+          "synonyms": [
+            "праздничный",
+            "величественный",
+            "парадный"
+          ]
         },
         {
           "german": "die Treue",
@@ -134,7 +162,287 @@
             "aber rettet ihre Ehre",
             "vor Gott."
           ],
-          "synonyms": ["преданность", "надёжность", "постоянство"]
+          "synonyms": [
+            "преданность",
+            "надёжность",
+            "постоянство"
+          ]
+        }
+      ],
+      "synonym_antonym_sets": [
+        {
+          "id": "truth_vs_lie",
+          "title": "Правда против лжи",
+          "target": {
+            "word": "die Wahrheit",
+            "translation": "правда",
+            "hint": "главная ценность Корделии"
+          },
+          "synonyms": [
+            {
+              "word": "die Ehrlichkeit",
+              "translation": "честность"
+            },
+            {
+              "word": "die Aufrichtigkeit",
+              "translation": "искренность"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Lüge",
+              "translation": "ложь"
+            },
+            {
+              "word": "die Heuchelei",
+              "translation": "лицемерие"
+            },
+            {
+              "word": "der Betrug",
+              "translation": "обман"
+            }
+          ],
+          "narration": "Корделия выбирает правду, даже если это стоит ей наследства."
+        },
+        {
+          "id": "love_spectrum",
+          "title": "Оттенки любви",
+          "target": {
+            "word": "die Liebe",
+            "translation": "любовь",
+            "hint": "чувство дочери к отцу"
+          },
+          "synonyms": [
+            {
+              "word": "die Treue",
+              "translation": "верность"
+            },
+            {
+              "word": "die Pflicht",
+              "translation": "долг"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "der Hass",
+              "translation": "ненависть"
+            },
+            {
+              "word": "die Gleichgültigkeit",
+              "translation": "равнодушие"
+            }
+          ],
+          "narration": "Её любовь честна, без преувеличений."
+        },
+        {
+          "id": "ceremony_vs_chaos",
+          "title": "Церемония или хаос",
+          "target": {
+            "word": "die Zeremonie",
+            "translation": "церемония",
+            "hint": "торжественный обряд испытания любви"
+          },
+          "synonyms": [
+            {
+              "word": "das Ritual",
+              "translation": "ритуал"
+            },
+            {
+              "word": "der Festakt",
+              "translation": "торжество"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "der Alltag",
+              "translation": "будни"
+            },
+            {
+              "word": "die Spontaneität",
+              "translation": "спонтанность"
+            }
+          ],
+          "narration": "Пышная церемония подчёркивает, насколько нет места искренности среди придворной игры."
+        },
+        {
+          "id": "proclaim_vs_silence",
+          "title": "Провозгласить или умолчать",
+          "target": {
+            "word": "verkünden",
+            "translation": "провозглашать",
+            "hint": "требование короля Лира"
+          },
+          "synonyms": [
+            {
+              "word": "ansagen",
+              "translation": "объявлять"
+            },
+            {
+              "word": "proklamieren",
+              "translation": "прокламировать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "verschweigen",
+              "translation": "утаивать"
+            },
+            {
+              "word": "verbergen",
+              "translation": "скрывать"
+            }
+          ],
+          "narration": "Корделия отказывается громко провозглашать чувства и выбирает честное молчание."
+        },
+        {
+          "id": "power_price",
+          "title": "Цена власти",
+          "target": {
+            "word": "die Macht",
+            "translation": "власть",
+            "hint": "то, что Корделия теряет"
+          },
+          "synonyms": [
+            {
+              "word": "die Autorität",
+              "translation": "авторитет"
+            },
+            {
+              "word": "die Herrschaft",
+              "translation": "господство"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Ohnmacht",
+              "translation": "бессилие"
+            },
+            {
+              "word": "die Schwäche",
+              "translation": "слабость"
+            }
+          ],
+          "narration": "Честность стоит Корделии любой возможности удержать власть и богатство."
+        },
+        {
+          "id": "obedience_vs_revolt",
+          "title": "Повиноваться или возразить",
+          "target": {
+            "word": "gehorchen",
+            "translation": "повиноваться",
+            "hint": "что Корделия не делает"
+          },
+          "synonyms": [
+            {
+              "word": "folgen",
+              "translation": "следовать"
+            },
+            {
+              "word": "befolgen",
+              "translation": "исполнять"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "widersprechen",
+              "translation": "возражать"
+            },
+            {
+              "word": "rebellieren",
+              "translation": "бунтовать"
+            }
+          ],
+          "narration": "Корделия слушает сердце, даже если это значит возразить королю."
+        },
+        {
+          "id": "duty_vs_freedom",
+          "title": "Долг и свобода",
+          "target": {
+            "word": "die Pflicht",
+            "translation": "долг",
+            "hint": "священная обязанность дочери"
+          },
+          "synonyms": [
+            {
+              "word": "die Verantwortung",
+              "translation": "ответственность"
+            },
+            {
+              "word": "die Aufgabe",
+              "translation": "обязанность"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Freiheit",
+              "translation": "свобода"
+            },
+            {
+              "word": "die Nachlässigkeit",
+              "translation": "небрежность"
+            }
+          ],
+          "narration": "Корделия следует долгу, даже когда свобода манит лёгким путём."
+        },
+        {
+          "id": "tone_of_truth",
+          "title": "Тон торжества",
+          "target": {
+            "word": "feierlich",
+            "translation": "торжественный",
+            "hint": "настроение тронного зала"
+          },
+          "synonyms": [
+            {
+              "word": "festlich",
+              "translation": "праздничный"
+            },
+            {
+              "word": "erhaben",
+              "translation": "возвышенный"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "alltäglich",
+              "translation": "повседневный"
+            },
+            {
+              "word": "locker",
+              "translation": "непринуждённый"
+            }
+          ],
+          "narration": "Торжественная атмосфера контрастирует с правдой, которую произносит Корделия."
+        },
+        {
+          "id": "loyalty_vs_betrayal",
+          "title": "Верность или измена",
+          "target": {
+            "word": "die Treue",
+            "translation": "верность",
+            "hint": "главная добродетель Корделии"
+          },
+          "synonyms": [
+            {
+              "word": "die Loyalität",
+              "translation": "лояльность"
+            },
+            {
+              "word": "die Beständigkeit",
+              "translation": "постоянство"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "der Verrat",
+              "translation": "предательство"
+            },
+            {
+              "word": "die Untreue",
+              "translation": "неверность"
+            }
+          ],
+          "narration": "Корделия остаётся верной, даже когда все вокруг лгут."
         }
       ],
       "quizzes": [
@@ -186,7 +494,11 @@
             "seine jüngste Tochter Cordelia",
             "vor dem versammelten Hof wegen ihrer Ehrlichkeit."
           ],
-          "synonyms": ["отвергать", "отрекаться", "выгонять"]
+          "synonyms": [
+            "отвергать",
+            "отрекаться",
+            "выгонять"
+          ]
         },
         {
           "german": "verlassen",
@@ -201,7 +513,11 @@
             "nachdem ihr Vater sie",
             "enterbt und verbannt hat."
           ],
-          "synonyms": ["оставлять", "уходить", "бросать"]
+          "synonyms": [
+            "оставлять",
+            "уходить",
+            "бросать"
+          ]
         },
         {
           "german": "der Zorn",
@@ -216,7 +532,11 @@
             "trifft Cordelia",
             "obwohl sie nur die Wahrheit sprach."
           ],
-          "synonyms": ["ярость", "злость", "негодование"]
+          "synonyms": [
+            "ярость",
+            "злость",
+            "негодование"
+          ]
         },
         {
           "german": "die Strafe",
@@ -231,7 +551,11 @@
             "und die Verbannung",
             "aus England."
           ],
-          "synonyms": ["кара", "возмездие", "взыскание"]
+          "synonyms": [
+            "кара",
+            "возмездие",
+            "взыскание"
+          ]
         },
         {
           "german": "fremd",
@@ -246,7 +570,11 @@
             "in ihrer eigenen Heimat",
             "nachdem König Lear sie öffentlich verstößt."
           ],
-          "synonyms": ["посторонний", "чуждый", "иноземный"]
+          "synonyms": [
+            "посторонний",
+            "чуждый",
+            "иноземный"
+          ]
         },
         {
           "german": "die Mitgift",
@@ -261,7 +589,11 @@
             "der ihre wahre Tugend",
             "mehr schätzt als Gold."
           ],
-          "synonyms": ["придание", "наследство", "состояние"]
+          "synonyms": [
+            "придание",
+            "наследство",
+            "состояние"
+          ]
         },
         {
           "german": "aufnehmen",
@@ -276,7 +608,11 @@
             "weil er ihre Ehrlichkeit",
             "als Schatz erkennt."
           ],
-          "synonyms": ["приютить", "взять", "впустить"]
+          "synonyms": [
+            "приютить",
+            "взять",
+            "впустить"
+          ]
         },
         {
           "german": "die Hoffnung",
@@ -291,7 +627,11 @@
             "dass ihr Vater seinen Fehler",
             "eines Tages bereut."
           ],
-          "synonyms": ["упование", "чаяние", "ожидание"]
+          "synonyms": [
+            "упование",
+            "чаяние",
+            "ожидание"
+          ]
         }
       ],
       "quizzes": [
@@ -343,7 +683,11 @@
             "während sie schreckliche Nachrichten",
             "aus England erhält."
           ],
-          "synonyms": ["беспокойство", "тревога", "попечение"]
+          "synonyms": [
+            "беспокойство",
+            "тревога",
+            "попечение"
+          ]
         },
         {
           "german": "die Einsamkeit",
@@ -358,7 +702,11 @@
             "an ihren wahnsinnigen Vater",
             "in England."
           ],
-          "synonyms": ["уединение", "изоляция", "отчуждение"]
+          "synonyms": [
+            "уединение",
+            "изоляция",
+            "отчуждение"
+          ]
         },
         {
           "german": "die Nachricht",
@@ -373,7 +721,11 @@
             "während sie in Frankreich",
             "wartet."
           ],
-          "synonyms": ["весть", "новость", "сообщение"]
+          "synonyms": [
+            "весть",
+            "новость",
+            "сообщение"
+          ]
         },
         {
           "german": "die Angst",
@@ -388,7 +740,11 @@
             "in der wilden Sturmnacht stirbt",
             "quält sie furchtbar."
           ],
-          "synonyms": ["боязнь", "ужас", "опасение"]
+          "synonyms": [
+            "боязнь",
+            "ужас",
+            "опасение"
+          ]
         },
         {
           "german": "leiden",
@@ -403,7 +759,11 @@
             "während Goneril und Regan",
             "ihn grausam behandeln."
           ],
-          "synonyms": ["мучиться", "терпеть", "болеть"]
+          "synonyms": [
+            "мучиться",
+            "терпеть",
+            "болеть"
+          ]
         },
         {
           "german": "beschützen",
@@ -418,7 +778,11 @@
             "aber sie bereitet",
             "die Armee zur Rettung vor."
           ],
-          "synonyms": ["оберегать", "охранять", "укрывать"]
+          "synonyms": [
+            "оберегать",
+            "охранять",
+            "укрывать"
+          ]
         },
         {
           "german": "die Sehnsucht",
@@ -433,7 +797,11 @@
             "treibt Cordelia",
             "zur schnellen Rückkehr nach England."
           ],
-          "synonyms": ["томление", "стремление", "жажда"]
+          "synonyms": [
+            "томление",
+            "стремление",
+            "жажда"
+          ]
         },
         {
           "german": "beten",
@@ -448,7 +816,11 @@
             "für König Lears Rettung",
             "bevor sie mit der Armee aufbricht."
           ],
-          "synonyms": ["взывать", "просить", "умолять"]
+          "synonyms": [
+            "взывать",
+            "просить",
+            "умолять"
+          ]
         }
       ],
       "quizzes": [
@@ -500,7 +872,11 @@
             "um ihren wahnsinnigen Vater Lear",
             "vor Goneril zu retten."
           ],
-          "synonyms": ["вернуться", "прибыть", "воротиться"]
+          "synonyms": [
+            "вернуться",
+            "прибыть",
+            "воротиться"
+          ]
         },
         {
           "german": "der Kampf",
@@ -515,7 +891,11 @@
             "gegen ihre grausamen Schwestern",
             "Goneril und Regan."
           ],
-          "synonyms": ["битва", "сражение", "схватка"]
+          "synonyms": [
+            "битва",
+            "сражение",
+            "схватка"
+          ]
         },
         {
           "german": "retten",
@@ -530,7 +910,11 @@
             "bevor die bösen Töchter",
             "ihn vollständig zugrunde richten können."
           ],
-          "synonyms": ["выручать", "освобождать", "избавлять"]
+          "synonyms": [
+            "выручать",
+            "освобождать",
+            "избавлять"
+          ]
         },
         {
           "german": "die Schlacht",
@@ -545,7 +929,11 @@
             "für ihren Vater",
             "gegen Edmunds Armee."
           ],
-          "synonyms": ["сражение", "бой", "баталия"]
+          "synonyms": [
+            "сражение",
+            "бой",
+            "баталия"
+          ]
         },
         {
           "german": "mutig",
@@ -560,7 +948,11 @@
             "obwohl sie weiß",
             "dass Edmund überlegen ist."
           ],
-          "synonyms": ["смелый", "отважный", "бесстрашный"]
+          "synonyms": [
+            "смелый",
+            "отважный",
+            "бесстрашный"
+          ]
         },
         {
           "german": "die Gerechtigkeit",
@@ -575,7 +967,11 @@
             "ihr helfen wird",
             "den wahnsinnigen König Lear zu befreien."
           ],
-          "synonyms": ["правосудие", "правда", "честность"]
+          "synonyms": [
+            "правосудие",
+            "правда",
+            "честность"
+          ]
         },
         {
           "german": "siegen",
@@ -590,7 +986,11 @@
             "über die schwarze Bosheit",
             "ihrer Schwestern Goneril und Regan."
           ],
-          "synonyms": ["одолеть", "превозмочь", "взять верх"]
+          "synonyms": [
+            "одолеть",
+            "превозмочь",
+            "взять верх"
+          ]
         },
         {
           "german": "die Armee",
@@ -605,7 +1005,11 @@
             "um König Lear",
             "aus Gonerilas Klauen zu befreien."
           ],
-          "synonyms": ["войско", "рать", "воинство"]
+          "synonyms": [
+            "войско",
+            "рать",
+            "воинство"
+          ]
         }
       ],
       "quizzes": [
@@ -657,7 +1061,11 @@
             "dass er sie ungerecht",
             "verstoßen und enterbt hat."
           ],
-          "synonyms": ["извинять", "миловать", "отпускать"]
+          "synonyms": [
+            "извинять",
+            "миловать",
+            "отпускать"
+          ]
         },
         {
           "german": "die Tränen",
@@ -672,7 +1080,11 @@
             "als er seine treue Cordelia",
             "wiedererkennt."
           ],
-          "synonyms": ["рыдания", "плач", "слезинки"]
+          "synonyms": [
+            "рыдания",
+            "плач",
+            "слезинки"
+          ]
         },
         {
           "german": "umarmen",
@@ -687,7 +1099,11 @@
             "nachdem sie ihn nach langer Trennung",
             "endlich gefunden hat."
           ],
-          "synonyms": ["прижимать", "заключать", "обхватывать"]
+          "synonyms": [
+            "прижимать",
+            "заключать",
+            "обхватывать"
+          ]
         },
         {
           "german": "erkennen",
@@ -702,7 +1118,11 @@
             "seine liebende Tochter Cordelia",
             "während die Musik seine Seele heilt."
           ],
-          "synonyms": ["опознавать", "признавать", "различать"]
+          "synonyms": [
+            "опознавать",
+            "признавать",
+            "различать"
+          ]
         },
         {
           "german": "heilen",
@@ -717,7 +1137,11 @@
             "König Lears zerrissene Seele",
             "nach dem schrecklichen Wahnsinn."
           ],
-          "synonyms": ["лечить", "врачевать", "заживлять"]
+          "synonyms": [
+            "лечить",
+            "врачевать",
+            "заживлять"
+          ]
         },
         {
           "german": "die Reue",
@@ -732,7 +1156,11 @@
             "als er Cordelias vergebende Liebe",
             "sieht."
           ],
-          "synonyms": ["покаяние", "сожаление", "угрызения"]
+          "synonyms": [
+            "покаяние",
+            "сожаление",
+            "угрызения"
+          ]
         },
         {
           "german": "sanft",
@@ -747,7 +1175,11 @@
             "ihren verzweifelten Vater",
             "der vor Scham und Reue weint."
           ],
-          "synonyms": ["ласковый", "мягкий", "кроткий"]
+          "synonyms": [
+            "ласковый",
+            "мягкий",
+            "кроткий"
+          ]
         },
         {
           "german": "die Vergebung",
@@ -762,7 +1194,11 @@
             "nachdem er sie so grausam",
             "verstoßen hatte."
           ],
-          "synonyms": ["помилование", "отпущение", "извинение"]
+          "synonyms": [
+            "помилование",
+            "отпущение",
+            "извинение"
+          ]
         }
       ],
       "quizzes": [
@@ -814,7 +1250,11 @@
             "nachdem ihre französische Armee",
             "verloren hat."
           ],
-          "synonyms": ["плененный", "арестованный", "схваченный"]
+          "synonyms": [
+            "плененный",
+            "арестованный",
+            "схваченный"
+          ]
         },
         {
           "german": "das Gefängnis",
@@ -829,7 +1269,11 @@
             "wo Edmund sie heimlich",
             "töten lassen will."
           ],
-          "synonyms": ["темница", "узилище", "застенок"]
+          "synonyms": [
+            "темница",
+            "узилище",
+            "застенок"
+          ]
         },
         {
           "german": "die Würde",
@@ -844,7 +1288,11 @@
             "obwohl Edmund sie",
             "zum Tode verurteilt hat."
           ],
-          "synonyms": ["честь", "благородство", "величие"]
+          "synonyms": [
+            "честь",
+            "благородство",
+            "величие"
+          ]
         },
         {
           "german": "trösten",
@@ -859,7 +1307,11 @@
             "während sie beide",
             "ins Gefängnis geführt werden."
           ],
-          "synonyms": ["успокаивать", "ободрять", "поддерживать"]
+          "synonyms": [
+            "успокаивать",
+            "ободрять",
+            "поддерживать"
+          ]
         },
         {
           "german": "tapfer",
@@ -874,7 +1326,11 @@
             "obwohl sie weiß",
             "dass Edmund sie töten wird."
           ],
-          "synonyms": ["храбрый", "мужественный", "доблестный"]
+          "synonyms": [
+            "храбрый",
+            "мужественный",
+            "доблестный"
+          ]
         },
         {
           "german": "die Demut",
@@ -889,7 +1345,11 @@
             "während sie mit König Lear",
             "gefangen ist."
           ],
-          "synonyms": ["покорность", "кротость", "терпение"]
+          "synonyms": [
+            "покорность",
+            "кротость",
+            "терпение"
+          ]
         },
         {
           "german": "das Schicksal",
@@ -904,7 +1364,11 @@
             "ins Gefängnis",
             "wo ihre Liebe triumphiert."
           ],
-          "synonyms": ["рок", "участь", "доля"]
+          "synonyms": [
+            "рок",
+            "участь",
+            "доля"
+          ]
         },
         {
           "german": "die Ehre",
@@ -919,7 +1383,11 @@
             "selbst als Edmund sie als Verräterin",
             "ins Gefängnis wirft."
           ],
-          "synonyms": ["достоинство", "слава", "почёт"]
+          "synonyms": [
+            "достоинство",
+            "слава",
+            "почёт"
+          ]
         }
       ],
       "quizzes": [
@@ -971,7 +1439,11 @@
             "während er sie tot",
             "in seinen Armen hält."
           ],
-          "synonyms": ["кончина", "гибель", "уход"]
+          "synonyms": [
+            "кончина",
+            "гибель",
+            "уход"
+          ]
         },
         {
           "german": "sterben",
@@ -986,7 +1458,11 @@
             "weil Edmund den heimlichen Mordbefehl",
             "an die Wachen gegeben hat."
           ],
-          "synonyms": ["погибать", "скончаться", "почить"]
+          "synonyms": [
+            "погибать",
+            "скончаться",
+            "почить"
+          ]
         },
         {
           "german": "das Opfer",
@@ -1001,7 +1477,11 @@
             "während ihr Vater Lear",
             "verzweifelt um Hilfe schreit."
           ],
-          "synonyms": ["мученик", "страдалец", "пострадавший"]
+          "synonyms": [
+            "мученик",
+            "страдалец",
+            "пострадавший"
+          ]
         },
         {
           "german": "die Seele",
@@ -1016,7 +1496,11 @@
             "nachdem die Henker sie",
             "im Gefängnis erdrosselt haben."
           ],
-          "synonyms": ["дух", "сердце", "сущность"]
+          "synonyms": [
+            "дух",
+            "сердце",
+            "сущность"
+          ]
         },
         {
           "german": "das Ende",
@@ -1031,7 +1515,11 @@
             "während König Lear",
             "noch auf ihre Rettung hofft."
           ],
-          "synonyms": ["финал", "развязка", "исход"]
+          "synonyms": [
+            "финал",
+            "развязка",
+            "исход"
+          ]
         },
         {
           "german": "ewig",
@@ -1046,7 +1534,11 @@
             "überlebt sogar ihren tragischen Tod",
             "im Gefängnis."
           ],
-          "synonyms": ["бессмертный", "нескончаемый", "бесконечный"]
+          "synonyms": [
+            "бессмертный",
+            "нескончаемый",
+            "бесконечный"
+          ]
         },
         {
           "german": "der Abschied",
@@ -1061,7 +1553,11 @@
             "als Edmund sie",
             "heimlich ermorden lässt."
           ],
-          "synonyms": ["расставание", "разлука", "уход"]
+          "synonyms": [
+            "расставание",
+            "разлука",
+            "уход"
+          ]
         },
         {
           "german": "die Erlösung",
@@ -1076,7 +1572,11 @@
             "während ihr verzweifelter Vater",
             "sie leblos in seinen Armen wiegt."
           ],
-          "synonyms": ["избавление", "освобождение", "искупление"]
+          "synonyms": [
+            "избавление",
+            "освобождение",
+            "искупление"
+          ]
         }
       ],
       "quizzes": [

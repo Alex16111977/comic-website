@@ -100,6 +100,252 @@
           ]
         }
       ],
+      "synonym_antonym_sets": [
+        {
+          "id": "jester_identity",
+          "title": "Шут или мудрец",
+          "target": {
+            "word": "der Narr",
+            "translation": "шут",
+            "hint": "маска персонажа"
+          },
+          "synonyms": [
+            {
+              "word": "der Spaßmacher",
+              "translation": "весельчак"
+            },
+            {
+              "word": "der Tor",
+              "translation": "глупец"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "der Weise",
+              "translation": "мудрец"
+            },
+            {
+              "word": "der Ernsthafte",
+              "translation": "серьёзный человек"
+            }
+          ],
+          "narration": "За маской шута скрывается мудрый наблюдатель."
+        },
+        {
+          "id": "wisdom_folly",
+          "title": "Мудрость и глупость",
+          "target": {
+            "word": "die Weisheit",
+            "translation": "мудрость",
+            "hint": "скрытая за маской шута"
+          },
+          "synonyms": [
+            {
+              "word": "die Klugheit",
+              "translation": "ум"
+            },
+            {
+              "word": "der Verstand",
+              "translation": "разум"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Dummheit",
+              "translation": "глупость"
+            },
+            {
+              "word": "die Torheit",
+              "translation": "безумие"
+            },
+            {
+              "word": "der Wahnsinn",
+              "translation": "сумасшествие"
+            }
+          ],
+          "narration": "Шут - единственный, кто говорит мудрые вещи под маской глупости."
+        },
+        {
+          "id": "grief_vs_joy",
+          "title": "Печаль или радость",
+          "target": {
+            "word": "die Trauer",
+            "translation": "печаль",
+            "hint": "что скрыто за шутками"
+          },
+          "synonyms": [
+            {
+              "word": "der Kummer",
+              "translation": "горе"
+            },
+            {
+              "word": "die Betrübnis",
+              "translation": "скорбь"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Freude",
+              "translation": "радость"
+            },
+            {
+              "word": "der Trost",
+              "translation": "утешение"
+            }
+          ],
+          "narration": "Под шутовским колпаком живёт грусть за судьбу короля."
+        },
+        {
+          "id": "joke_vs_mourn",
+          "title": "Шутить или скорбеть",
+          "target": {
+            "word": "scherzen",
+            "translation": "шутить",
+            "hint": "что делает шут"
+          },
+          "synonyms": [
+            {
+              "word": "witzeln",
+              "translation": "острить"
+            },
+            {
+              "word": "spaßen",
+              "translation": "веселиться"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "trauern",
+              "translation": "скорбеть"
+            },
+            {
+              "word": "schweigen",
+              "translation": "молчать"
+            }
+          ],
+          "narration": "Иногда шут вынужден веселиться, когда душе хочется скорбеть."
+        },
+        {
+          "id": "fun_vs_serious",
+          "title": "Веселье или серьёзность",
+          "target": {
+            "word": "der Spaß",
+            "translation": "веселье",
+            "hint": "его инструмент"
+          },
+          "synonyms": [
+            {
+              "word": "die Freude",
+              "translation": "радость"
+            },
+            {
+              "word": "der Scherz",
+              "translation": "шутка"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "der Ernst",
+              "translation": "серьёзность"
+            },
+            {
+              "word": "die Langeweile",
+              "translation": "скука"
+            }
+          ],
+          "narration": "Веселье помогает пережить тяжёлые речи короля."
+        },
+        {
+          "id": "clever_vs_naive",
+          "title": "Хитрость или простота",
+          "target": {
+            "word": "klug",
+            "translation": "умный",
+            "hint": "истинная сущность шута"
+          },
+          "synonyms": [
+            {
+              "word": "weise",
+              "translation": "мудрый"
+            },
+            {
+              "word": "schlau",
+              "translation": "хитрый"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "dumm",
+              "translation": "глупый"
+            },
+            {
+              "word": "töricht",
+              "translation": "безрассудный"
+            }
+          ],
+          "narration": "Шут выглядит простаком, но на деле он очень умён."
+        },
+        {
+          "id": "miss_vs_find",
+          "title": "Скучать или находить",
+          "target": {
+            "word": "vermissen",
+            "translation": "скучать",
+            "hint": "что чувствует Лир без Корделии"
+          },
+          "synonyms": [
+            {
+              "word": "sich sehnen nach",
+              "translation": "тосковать по"
+            },
+            {
+              "word": "entbehren",
+              "translation": "лишаться"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "wiederfinden",
+              "translation": "вновь находить"
+            },
+            {
+              "word": "vergessen",
+              "translation": "забывать"
+            }
+          ],
+          "narration": "Шут видит, как король скучает по честной дочери."
+        },
+        {
+          "id": "wit_vs_silence",
+          "title": "Остроумие или молчание",
+          "target": {
+            "word": "der Witz",
+            "translation": "остроумие",
+            "hint": "оружие шута"
+          },
+          "synonyms": [
+            {
+              "word": "der Scherz",
+              "translation": "шутка"
+            },
+            {
+              "word": "die Pointe",
+              "translation": "пуанте"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "das Schweigen",
+              "translation": "молчание"
+            },
+            {
+              "word": "die Beleidigung",
+              "translation": "оскорбление"
+            }
+          ],
+          "narration": "Иногда остроумие спасает ситуацию лучше, чем молчание."
+        }
+      ],
       "theatrical_scene": {
         "title": "МАСКА СМЕХА",
         "narrative": "Я - <b>DER NARR (шут)</b>, но я самый <b>KLUG (умный)</b> человек в этом дворце дураков! <b>DIE WEISHEIT (мудрость)</b> прячется за моими колокольчиками. Я <b>SCHERZEN (шучу)</b>, но <b>DIE TRAUER (печаль)</b> о Корделии разрывает моё сердце! Я <b>VERMISSEN (скучаю)</b> по ней каждый день! <b>DER SPAß (забава)</b> - моя маска, <b>DER WITZ (остроумие)</b> - мой щит. Король отдал королевство лживым дочерям, а истинную любовь изгнал! О, какая глупость! И только я, шут, вижу правду! Но кто слушает шута? Все смеются над моими песнями, не слыша горечи в словах.",
