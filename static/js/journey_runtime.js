@@ -72,7 +72,7 @@ function sanitizeStudyEntry(entry) {
 
     sanitized.word = typeof sanitized.word === 'string' ? sanitized.word : '';
     sanitized.translation = typeof sanitized.translation === 'string' ? sanitized.translation : '';
-    sanitized.russian_hint = typeof sanitized.russian_hint === 'string' ? sanitized.russian_hint : '';
+    sanitized.russian_hint = typeof sanitized.russian_hint === 'string' ? sanitized.russian_hint.trim() : '';
     sanitized.transcription = typeof sanitized.transcription === 'string' ? sanitized.transcription : '';
     sanitized.characterId = typeof sanitized.characterId === 'string' && sanitized.characterId
         ? sanitized.characterId
@@ -356,10 +356,11 @@ function toggleStudyWord(wordData) {
 
 function buildStudyPayloadFromButton(button, item) {
     const dataset = button ? button.dataset || {} : {};
+    const rawHint = dataset.russianHint || (item && item.russian_hint) || '';
     const payload = {
         word: dataset.word || (item && item.word) || '',
         translation: dataset.translation || (item && item.translation) || '',
-        russian_hint: dataset.russianHint || (item && item.russian_hint) || '',
+        russian_hint: typeof rawHint === 'string' ? rawHint.trim() : '',
         transcription: dataset.transcription || (item && item.transcription) || '',
         characterId: dataset.characterId || (typeof characterId === 'string' ? characterId : ''),
         phaseKey: dataset.phaseKey || '',
@@ -379,8 +380,8 @@ function buildStudyPayloadFromButton(button, item) {
     payload.examples = examples;
     payload.example = payload.example || payload.sentence || '';
 
-    if (item && item.russian_hint && !payload.russian_hint) {
-        payload.russian_hint = item.russian_hint;
+    if (item && typeof item.russian_hint === 'string' && !payload.russian_hint) {
+        payload.russian_hint = item.russian_hint.trim();
     }
 
     if (item && Array.isArray(item.themes)) {
@@ -1008,8 +1009,9 @@ function displayVocabulary(phaseKey) {
             card.className = 'word-card';
             card.style.animationDelay = `${index * 0.1}s`;
 
-            const hintMarkup = item.russian_hint
-                ? `<div class="word-hint">(${item.russian_hint})</div>`
+            const hintValue = typeof item.russian_hint === 'string' ? item.russian_hint.trim() : '';
+            const hintMarkup = hintValue
+                ? `<div class="word-hint">(${hintValue})</div>`
                 : '';
 
             // Простая карточка словаря
@@ -1024,7 +1026,7 @@ function displayVocabulary(phaseKey) {
                     data-word="${item.word || ''}"
                     data-translation="${item.translation || ''}"
                     data-transcription="${item.transcription || ''}"
-                    data-russian-hint="${item.russian_hint || ''}"
+                    data-russian-hint="${hintValue}"
                     data-sentence="${item.sentence || ''}"
                     data-sentence-translation="${item.sentenceTranslation || ''}"
                     data-character-id="${characterId || ''}"
@@ -1225,17 +1227,21 @@ class VocabularyQuiz {
 
     generateForwardQuestion(word) {
         const options = this.generateOptions(word.russian, 'russian');
-        
-        // Добавляем подсказку к вопросу, если она есть
+        const hint = typeof word.russianHint === 'string' && word.russianHint.trim()
+            ? word.russianHint.trim()
+            : (typeof word.russian_hint === 'string' && word.russian_hint.trim()
+                ? word.russian_hint.trim()
+                : '');
+
         let questionText = `Что означает немецкое слово «${word.german}»?`;
-        if (word.russianHint) {
-            questionText = `Что означает немецкое слово «${word.german}» (${word.russianHint})?`;
+        if (hint) {
+            questionText = `Что означает немецкое слово «${word.german}» (${hint})?`;
         }
-        
+
         return {
             question: questionText,
             germanWord: word.german,
-            russianHint: word.russianHint || '',
+            russianHint: hint,
             transcription: word.transcription,
             options: options,
             correct: word.russian,
@@ -1245,15 +1251,21 @@ class VocabularyQuiz {
 
     generateReverseQuestion(word) {
         const options = this.generateOptions(word.german, 'german');
+        const hint = typeof word.russianHint === 'string' && word.russianHint.trim()
+            ? word.russianHint.trim()
+            : (typeof word.russian_hint === 'string' && word.russian_hint.trim()
+                ? word.russian_hint.trim()
+                : '');
+
         let questionText = `Как переводится на немецкий слово «${word.russian}»?`;
-        if (word.russianHint) {
-            questionText = `Как переводится на немецкий слово «${word.russian}» (${word.russianHint})?`;
+        if (hint) {
+            questionText = `Как переводится на немецкий слово «${word.russian}» (${hint})?`;
         }
         return {
             question: questionText,
             russianWord: word.russian,
             germanWord: word.german,
-            russianHint: word.russianHint || '',
+            russianHint: hint,
             options: options,
             correct: word.german,
             type: 'reverse',
@@ -1320,17 +1332,19 @@ class VocabularyQuiz {
         const meta = document.createElement('div');
         meta.className = 'quiz-word-meta';
 
+        const questionHint = typeof question.russianHint === 'string' ? question.russianHint.trim() : '';
+
         if (question.type === 'forward') {
             const wordSpan = document.createElement('span');
             wordSpan.className = 'quiz-word';
             wordSpan.textContent = question.germanWord;
             meta.appendChild(wordSpan);
-            
+
             // Добавляем подсказку если есть
-            if (question.russianHint) {
+            if (questionHint) {
                 const hintSpan = document.createElement('span');
                 hintSpan.className = 'quiz-hint';
-                hintSpan.textContent = `(${question.russianHint})`;
+                hintSpan.textContent = `(${questionHint})`;
                 hintSpan.style.color = '#7c3aed';
                 hintSpan.style.fontSize = '0.9em';
                 hintSpan.style.marginLeft = '8px';
@@ -1349,10 +1363,10 @@ class VocabularyQuiz {
             wordSpan.textContent = question.russianWord;
             meta.appendChild(wordSpan);
 
-            if (question.russianHint) {
+            if (questionHint) {
                 const hintSpan = document.createElement('span');
                 hintSpan.className = 'quiz-hint';
-                hintSpan.textContent = `(${question.russianHint})`;
+                hintSpan.textContent = `(${questionHint})`;
                 hintSpan.style.color = '#7c3aed';
                 hintSpan.style.fontSize = '0.9em';
                 hintSpan.style.marginLeft = '8px';
@@ -1606,7 +1620,7 @@ function buildPhaseQuizWords(phase) {
         .map(word => ({
             german: word.word || '',
             russian: word.translation || '',
-            russianHint: word.russian_hint || '', // Добавляем подсказку
+            russianHint: typeof word.russian_hint === 'string' ? word.russian_hint.trim() : '',
             transcription: word.transcription || '',
         }))
         .filter(word => word.german && word.russian);
@@ -1668,8 +1682,9 @@ function renderWordMatchingExercise(phaseKey) {
         }
 
         let russianText = word.translation;
-        if (word.russian_hint) {
-            russianText += ` (${word.russian_hint})`;
+        const hint = typeof word.russian_hint === 'string' ? word.russian_hint.trim() : '';
+        if (hint) {
+            russianText += ` (${hint})`;
         }
 
         wordPairs.push({
