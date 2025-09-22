@@ -169,6 +169,27 @@
           ]
         }
       ],
+      "synonym_antonym_sets": [
+        {
+          "id": "deception_tools",
+          "title": "Инструменты обмана",
+          "target": {
+            "word": "die Lüge",
+            "translation": "ложь",
+            "hint": "оружие Гонерильи"
+          },
+          "synonyms": [
+            { "word": "die Heuchelei", "translation": "лицемерие" },
+            { "word": "der Betrug", "translation": "обман" },
+            { "word": "die Täuschung", "translation": "заблуждение" }
+          ],
+          "antonyms": [
+            { "word": "die Wahrheit", "translation": "правда" },
+            { "word": "die Ehrlichkeit", "translation": "честность" }
+          ],
+          "narration": "Гонерилья мастерски использует ложь для достижения целей."
+        }
+      ],
       "quizzes": [
         {
           "question": "Что означает немецкое слово «die Lüge»?",

@@ -105,6 +105,27 @@
           ]
         }
       ],
+      "synonym_antonym_sets": [
+        {
+          "id": "ambition_humility",
+          "title": "Амбиции против смирения",
+          "target": {
+            "word": "die Ambition",
+            "translation": "амбиция",
+            "hint": "движущая сила Эдмунда"
+          },
+          "synonyms": [
+            { "word": "der Ehrgeiz", "translation": "честолюбие" },
+            { "word": "das Streben", "translation": "стремление" },
+            { "word": "der Neid", "translation": "зависть" }
+          ],
+          "antonyms": [
+            { "word": "die Bescheidenheit", "translation": "скромность" },
+            { "word": "die Demut", "translation": "смирение" }
+          ],
+          "narration": "Бастард не знает смирения - только безграничные амбиции."
+        }
+      ],
       "quizzes": [
         {
           "question": "Что означает немецкое слово «der Bastard»?",

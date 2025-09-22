@@ -47,6 +47,10 @@ class PhaseSerializer:
                 "title": phase.get("title", ""),
                 "description": phase.get("description", ""),
                 "vocabulary": vocabulary_entries,
+                "synonymAntonymSets": [
+                    self._serialize_semantic_set(item)
+                    for item in phase.get("synonym_antonym_sets", [])
+                ],
                 "words": [self._serialize_word(word) for word in phase.get("vocabulary", [])],
                 "quizzes": [self._serialize_quiz(quiz) for quiz in phase.get("quizzes", [])],
                 "quizAttempts": {},
@@ -99,6 +103,37 @@ class PhaseSerializer:
             "question": quiz.get("question", ""),
             "choices": choices,
             "correctIndex": correct_index,
+        }
+
+    @staticmethod
+    def _serialize_semantic_set(item: Dict[str, Any]) -> Dict[str, Any]:
+        """Сериализует набор синонимов/антонимов"""
+        if not isinstance(item, dict):
+            return {}
+
+        return {
+            "id": item.get("id", ""),
+            "title": item.get("title", ""),
+            "target": {
+                "word": item.get("target", {}).get("word", ""),
+                "translation": item.get("target", {}).get("translation", ""),
+                "hint": item.get("target", {}).get("hint", ""),
+            },
+            "synonyms": [
+                {
+                    "word": entry.get("word", ""),
+                    "translation": entry.get("translation", ""),
+                }
+                for entry in item.get("synonyms", [])
+            ],
+            "antonyms": [
+                {
+                    "word": entry.get("word", ""),
+                    "translation": entry.get("translation", ""),
+                }
+                for entry in item.get("antonyms", [])
+            ],
+            "narration": item.get("narration", ""),
         }
 
     @staticmethod

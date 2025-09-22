@@ -100,6 +100,27 @@
           ]
         }
       ],
+      "synonym_antonym_sets": [
+        {
+          "id": "wisdom_folly",
+          "title": "Мудрость и глупость",
+          "target": {
+            "word": "die Weisheit",
+            "translation": "мудрость",
+            "hint": "скрытая за маской шута"
+          },
+          "synonyms": [
+            { "word": "die Klugheit", "translation": "ум" },
+            { "word": "der Verstand", "translation": "разум" }
+          ],
+          "antonyms": [
+            { "word": "die Dummheit", "translation": "глупость" },
+            { "word": "die Torheit", "translation": "безумие" },
+            { "word": "der Wahnsinn", "translation": "сумасшествие" }
+          ],
+          "narration": "Шут - единственный, кто говорит мудрые вещи под маской глупости."
+        }
+      ],
       "theatrical_scene": {
         "title": "МАСКА СМЕХА",
         "narrative": "Я - <b>DER NARR (шут)</b>, но я самый <b>KLUG (умный)</b> человек в этом дворце дураков! <b>DIE WEISHEIT (мудрость)</b> прячется за моими колокольчиками. Я <b>SCHERZEN (шучу)</b>, но <b>DIE TRAUER (печаль)</b> о Корделии разрывает моё сердце! Я <b>VERMISSEN (скучаю)</b> по ней каждый день! <b>DER SPAß (забава)</b> - моя маска, <b>DER WITZ (остроумие)</b> - мой щит. Король отдал королевство лживым дочерям, а истинную любовь изгнал! О, какая глупость! И только я, шут, вижу правду! Но кто слушает шута? Все смеются над моими песнями, не слыша горечи в словах.",
