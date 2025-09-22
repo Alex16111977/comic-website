@@ -102,17 +102,59 @@
       ],
       "synonym_antonym_sets": [
         {
-          "id": "wisdom_folly",
-          "title": "Мудрость и глупость",
+          "id": "fools_mask",
+          "title": "Маска шута",
+          "target": {
+            "word": "der Narr",
+            "translation": "шут",
+            "hint": "роль при дворе"
+          },
+          "synonyms": [
+            {
+              "word": "der Spaßmacher",
+              "translation": "затейник"
+            },
+            {
+              "word": "der Hofnarr",
+              "translation": "придворный шут"
+            },
+            {
+              "word": "der Possenreißer",
+              "translation": "шутник"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "der Weise",
+              "translation": "мудрец"
+            },
+            {
+              "word": "der Gelehrte",
+              "translation": "учёный"
+            },
+            {
+              "word": "der Ernsthafte",
+              "translation": "серьёзный человек"
+            }
+          ],
+          "narration": "Под маской шута скрывается наблюдатель королевской правды."
+        },
+        {
+          "id": "wisdom_or_folly",
+          "title": "Мудрость или глупость",
           "target": {
             "word": "die Weisheit",
             "translation": "мудрость",
-            "hint": "скрытая за маской шута"
+            "hint": "что скрыто в его шутках"
           },
           "synonyms": [
             {
               "word": "die Klugheit",
               "translation": "ум"
+            },
+            {
+              "word": "die Einsicht",
+              "translation": "проницательность"
             },
             {
               "word": "der Verstand",
@@ -126,14 +168,242 @@
             },
             {
               "word": "die Torheit",
-              "translation": "безумие"
+              "translation": "безрассудство"
             },
             {
-              "word": "der Wahnsinn",
-              "translation": "сумасшествие"
+              "word": "die Ignoranz",
+              "translation": "невежество"
             }
           ],
-          "narration": "Шут - единственный, кто говорит мудрые вещи под маской глупости."
+          "narration": "Его мудрость прячется за шутками, противопоставляя глупости двора."
+        },
+        {
+          "id": "sorrow_vs_joy",
+          "title": "Печаль или радость",
+          "target": {
+            "word": "die Trauer",
+            "translation": "скорбь",
+            "hint": "чувство по Корделии"
+          },
+          "synonyms": [
+            {
+              "word": "der Kummer",
+              "translation": "горе"
+            },
+            {
+              "word": "die Betrübnis",
+              "translation": "печаль"
+            },
+            {
+              "word": "der Schmerz",
+              "translation": "боль"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Freude",
+              "translation": "радость"
+            },
+            {
+              "word": "der Trost",
+              "translation": "утешение"
+            },
+            {
+              "word": "die Heiterkeit",
+              "translation": "весёлость"
+            }
+          ],
+          "narration": "Даже шут чувствует скорбь, скрывая её за улыбками."
+        },
+        {
+          "id": "joke_or_silence",
+          "title": "Шутить или молчать",
+          "target": {
+            "word": "scherzen",
+            "translation": "шутить",
+            "hint": "его способ говорить правду"
+          },
+          "synonyms": [
+            {
+              "word": "witzeln",
+              "translation": "острить"
+            },
+            {
+              "word": "spaßen",
+              "translation": "шутить"
+            },
+            {
+              "word": "necken",
+              "translation": "подшучивать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "schweigen",
+              "translation": "молчать"
+            },
+            {
+              "word": "trauern",
+              "translation": "скорбеть"
+            },
+            {
+              "word": "ernst reden",
+              "translation": "говорить серьёзно"
+            }
+          ],
+          "narration": "Он предпочитает шутить, ведь молчание перед ложью — тоже вина."
+        },
+        {
+          "id": "fun_vs_gravity",
+          "title": "Веселье или серьёзность",
+          "target": {
+            "word": "der Spaß",
+            "translation": "веселье",
+            "hint": "оружие шута"
+          },
+          "synonyms": [
+            {
+              "word": "der Witz",
+              "translation": "остроумие"
+            },
+            {
+              "word": "die Gaudi",
+              "translation": "потеха"
+            },
+            {
+              "word": "die Belustigung",
+              "translation": "развлечение"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "der Ernst",
+              "translation": "серьёзность"
+            },
+            {
+              "word": "die Traurigkeit",
+              "translation": "печаль"
+            },
+            {
+              "word": "der Kummer",
+              "translation": "горе"
+            }
+          ],
+          "narration": "Его веселье — щит против тяжёлого мрака королевского двора."
+        },
+        {
+          "id": "clever_vs_naive",
+          "title": "Хитрость или наивность",
+          "target": {
+            "word": "klug",
+            "translation": "умный",
+            "hint": "качество его наблюдений"
+          },
+          "synonyms": [
+            {
+              "word": "intelligent",
+              "translation": "интеллигентный"
+            },
+            {
+              "word": "gewitzt",
+              "translation": "хитроумный"
+            },
+            {
+              "word": "schlau",
+              "translation": "ловкий"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "dumm",
+              "translation": "глупый"
+            },
+            {
+              "word": "töricht",
+              "translation": "безрассудный"
+            },
+            {
+              "word": "naiv",
+              "translation": "наивный"
+            }
+          ],
+          "narration": "За шутовским колпаком скрывается острый ум, противоположный наивности."
+        },
+        {
+          "id": "longing_or_presence",
+          "title": "Тоска или присутствие",
+          "target": {
+            "word": "vermissen",
+            "translation": "скучать",
+            "hint": "что чувствует без Корделии"
+          },
+          "synonyms": [
+            {
+              "word": "sich sehnen nach",
+              "translation": "тосковать по"
+            },
+            {
+              "word": "entbehren",
+              "translation": "лишаться"
+            },
+            {
+              "word": "nachtrauern",
+              "translation": "горевать о"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "finden",
+              "translation": "находить"
+            },
+            {
+              "word": "genießen",
+              "translation": "наслаждаться"
+            },
+            {
+              "word": "vergessen",
+              "translation": "забывать"
+            }
+          ],
+          "narration": "Он скучает по Корделии, вместо того чтобы наслаждаться лёгкостью двора."
+        },
+        {
+          "id": "wit_vs_lecture",
+          "title": "Остроумие или нотации",
+          "target": {
+            "word": "der Witz",
+            "translation": "шутка",
+            "hint": "как он обличает правду"
+          },
+          "synonyms": [
+            {
+              "word": "die Pointe",
+              "translation": "пуан"
+            },
+            {
+              "word": "der Scherz",
+              "translation": "шутка"
+            },
+            {
+              "word": "die Anekdote",
+              "translation": "анекдот"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "der Ernst",
+              "translation": "серьёз"
+            },
+            {
+              "word": "die Moralpredigt",
+              "translation": "нравоучение"
+            },
+            {
+              "word": "die Belehrung",
+              "translation": "поучение"
+            }
+          ],
+          "narration": "Вместо нотаций он выбирает остроту, чтобы достучаться до короля."
         }
       ],
       "theatrical_scene": {

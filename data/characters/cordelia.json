@@ -233,6 +233,272 @@
             }
           ],
           "narration": "Её любовь честна, без преувеличений."
+        },
+        {
+          "id": "ceremony_vs_chaos",
+          "title": "Церемония или хаос",
+          "target": {
+            "word": "die Zeremonie",
+            "translation": "церемония",
+            "hint": "пышный обряд, открывающий сцену"
+          },
+          "synonyms": [
+            {
+              "word": "die Feier",
+              "translation": "праздник"
+            },
+            {
+              "word": "das Ritual",
+              "translation": "ритуал"
+            },
+            {
+              "word": "die Feierlichkeit",
+              "translation": "торжество"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "der Alltag",
+              "translation": "будни"
+            },
+            {
+              "word": "das Chaos",
+              "translation": "хаос"
+            },
+            {
+              "word": "die Spontaneität",
+              "translation": "спонтанность"
+            }
+          ],
+          "narration": "Пышная церемония рассыпается, когда Корделия нарушает игру лести."
+        },
+        {
+          "id": "proclaim_or_hide",
+          "title": "Провозгласить или скрыть",
+          "target": {
+            "word": "verkünden",
+            "translation": "провозглашать",
+            "hint": "то, чего ожидает Лир от дочерей"
+          },
+          "synonyms": [
+            {
+              "word": "ausrufen",
+              "translation": "возглашать"
+            },
+            {
+              "word": "bekanntgeben",
+              "translation": "объявлять"
+            },
+            {
+              "word": "erklären",
+              "translation": "заявлять"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "verschweigen",
+              "translation": "умалчивать"
+            },
+            {
+              "word": "verbergen",
+              "translation": "скрывать"
+            },
+            {
+              "word": "zurückhalten",
+              "translation": "сдерживать"
+            }
+          ],
+          "narration": "Корделия не может провозгласить ложь, даже под давлением короля."
+        },
+        {
+          "id": "power_vs_conscience",
+          "title": "Власть против совести",
+          "target": {
+            "word": "die Macht",
+            "translation": "власть",
+            "hint": "богатство и статус, от которых она отказывается"
+          },
+          "synonyms": [
+            {
+              "word": "die Herrschaft",
+              "translation": "господство"
+            },
+            {
+              "word": "die Autorität",
+              "translation": "авторитет"
+            },
+            {
+              "word": "der Einfluss",
+              "translation": "влияние"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Ohnmacht",
+              "translation": "бессилие"
+            },
+            {
+              "word": "die Schwäche",
+              "translation": "слабость"
+            },
+            {
+              "word": "die Unterwerfung",
+              "translation": "подчинение"
+            }
+          ],
+          "narration": "Она теряет власть, но сохраняет внутреннюю свободу и совесть."
+        },
+        {
+          "id": "obedience_or_resistance",
+          "title": "Повиноваться или сопротивляться",
+          "target": {
+            "word": "gehorchen",
+            "translation": "повиноваться",
+            "hint": "что она отказывается делать ради лжи"
+          },
+          "synonyms": [
+            {
+              "word": "folgen",
+              "translation": "следовать"
+            },
+            {
+              "word": "sich fügen",
+              "translation": "смиряться"
+            },
+            {
+              "word": "befolgen",
+              "translation": "исполнять"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "sich widersetzen",
+              "translation": "сопротивляться"
+            },
+            {
+              "word": "rebellieren",
+              "translation": "бунтовать"
+            },
+            {
+              "word": "aufbegehren",
+              "translation": "возмущаться"
+            }
+          ],
+          "narration": "Повиноваться означало бы предать себя, поэтому Корделия выбирает сопротивление."
+        },
+        {
+          "id": "duty_or_freedom",
+          "title": "Долг или свобода сердца",
+          "target": {
+            "word": "die Pflicht",
+            "translation": "долг",
+            "hint": "её моральная обязанность перед отцом"
+          },
+          "synonyms": [
+            {
+              "word": "die Verantwortung",
+              "translation": "ответственность"
+            },
+            {
+              "word": "die Verpflichtung",
+              "translation": "обязательство"
+            },
+            {
+              "word": "die Aufgabe",
+              "translation": "задача"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Freiheit",
+              "translation": "свобода"
+            },
+            {
+              "word": "das Vergnügen",
+              "translation": "удовольствие"
+            },
+            {
+              "word": "die Gleichgültigkeit",
+              "translation": "безразличие"
+            }
+          ],
+          "narration": "Её долг — говорить честно, даже когда свобода и лёгкость манят."
+        },
+        {
+          "id": "solemn_or_plain",
+          "title": "Торжественный или повседневный",
+          "target": {
+            "word": "feierlich",
+            "translation": "торжественный",
+            "hint": "тон сцены в тронном зале"
+          },
+          "synonyms": [
+            {
+              "word": "festlich",
+              "translation": "праздничный"
+            },
+            {
+              "word": "würdevoll",
+              "translation": "величественный"
+            },
+            {
+              "word": "erhaben",
+              "translation": "возвышенный"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "gewöhnlich",
+              "translation": "обычный"
+            },
+            {
+              "word": "locker",
+              "translation": "непринуждённый"
+            },
+            {
+              "word": "alltäglich",
+              "translation": "повседневный"
+            }
+          ],
+          "narration": "Торжественная атмосфера рушится, когда правда звучит без украшений."
+        },
+        {
+          "id": "loyalty_vs_betrayal",
+          "title": "Верность и измена",
+          "target": {
+            "word": "die Treue",
+            "translation": "верность",
+            "hint": "её стойкость в отношении к правде"
+          },
+          "synonyms": [
+            {
+              "word": "die Loyalität",
+              "translation": "лояльность"
+            },
+            {
+              "word": "die Beständigkeit",
+              "translation": "постоянство"
+            },
+            {
+              "word": "die Ergebenheit",
+              "translation": "преданность"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "der Verrat",
+              "translation": "предательство"
+            },
+            {
+              "word": "die Untreue",
+              "translation": "неверность"
+            },
+            {
+              "word": "die Illoyalität",
+              "translation": "нелояльность"
+            }
+          ],
+          "narration": "Даже потеряв всё, Корделия остаётся верна своим принципам."
         }
       ],
       "quizzes": [

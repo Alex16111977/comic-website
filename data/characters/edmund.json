@@ -107,8 +107,84 @@
       ],
       "synonym_antonym_sets": [
         {
-          "id": "ambition_humility",
-          "title": "Амбиции против смирения",
+          "id": "bastard_identity",
+          "title": "Бастард или наследник",
+          "target": {
+            "word": "der Bastard",
+            "translation": "бастард",
+            "hint": "клеймо, с которым он живёт"
+          },
+          "synonyms": [
+            {
+              "word": "das uneheliche Kind",
+              "translation": "внебрачный ребёнок"
+            },
+            {
+              "word": "der Außenseiter",
+              "translation": "изгой"
+            },
+            {
+              "word": "der Halbbruder",
+              "translation": "сводный брат"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "der Erbe",
+              "translation": "наследник"
+            },
+            {
+              "word": "der rechtmäßige Sohn",
+              "translation": "законный сын"
+            },
+            {
+              "word": "der Adelsspross",
+              "translation": "дворянин"
+            }
+          ],
+          "narration": "Эдмунд презирает клеймо бастарда и мечтает стать равным наследнику."
+        },
+        {
+          "id": "envy_vs_content",
+          "title": "Зависть или довольство",
+          "target": {
+            "word": "der Neid",
+            "translation": "зависть",
+            "hint": "топливо его интриг"
+          },
+          "synonyms": [
+            {
+              "word": "die Missgunst",
+              "translation": "злобная зависть"
+            },
+            {
+              "word": "die Eifersucht",
+              "translation": "ревность"
+            },
+            {
+              "word": "der Groll",
+              "translation": "злоба"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Zufriedenheit",
+              "translation": "удовлетворённость"
+            },
+            {
+              "word": "die Anerkennung",
+              "translation": "признательность"
+            },
+            {
+              "word": "die Großzügigkeit",
+              "translation": "великодушие"
+            }
+          ],
+          "narration": "Зависть к законному брату толкает Эдмунда на рискованные интриги."
+        },
+        {
+          "id": "ambition_conflict",
+          "title": "Амбиция или смирение",
           "target": {
             "word": "die Ambition",
             "translation": "амбиция",
@@ -124,8 +200,8 @@
               "translation": "стремление"
             },
             {
-              "word": "der Neid",
-              "translation": "зависть"
+              "word": "die Zielstrebigkeit",
+              "translation": "целеустремлённость"
             }
           ],
           "antonyms": [
@@ -134,11 +210,205 @@
               "translation": "скромность"
             },
             {
-              "word": "die Demut",
-              "translation": "смирение"
+              "word": "die Gleichgültigkeit",
+              "translation": "безразличие"
+            },
+            {
+              "word": "die Passivität",
+              "translation": "пассивность"
             }
           ],
-          "narration": "Бастард не знает смирения - только безграничные амбиции."
+          "narration": "Его амбиции не знают границ, противопоставляясь смирению и покою."
+        },
+        {
+          "id": "disadvantaged_or_favored",
+          "title": "Ущемлённый или привилегированный",
+          "target": {
+            "word": "benachteiligt",
+            "translation": "ущемлённый",
+            "hint": "как он чувствует своё положение"
+          },
+          "synonyms": [
+            {
+              "word": "diskriminiert",
+              "translation": "дискриминированный"
+            },
+            {
+              "word": "zurückgesetzt",
+              "translation": "обойдённый"
+            },
+            {
+              "word": "übergangen",
+              "translation": "пропущенный"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "bevorzugt",
+              "translation": "привилегированный"
+            },
+            {
+              "word": "privilegiert",
+              "translation": "привилегированный"
+            },
+            {
+              "word": "gerecht behandelt",
+              "translation": "получающий справедливое отношение"
+            }
+          ],
+          "narration": "Чувство ущемлённости питает его жажду занять место привилегированного."
+        },
+        {
+          "id": "revenge_vs_mercy",
+          "title": "Месть или милосердие",
+          "target": {
+            "word": "die Rache",
+            "translation": "месть",
+            "hint": "его ответ на несправедливость"
+          },
+          "synonyms": [
+            {
+              "word": "die Vergeltung",
+              "translation": "возмездие"
+            },
+            {
+              "word": "die Revanche",
+              "translation": "реванш"
+            },
+            {
+              "word": "die Abrechnung",
+              "translation": "расплата"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Vergebung",
+              "translation": "прощение"
+            },
+            {
+              "word": "die Gnade",
+              "translation": "милость"
+            },
+            {
+              "word": "die Versöhnung",
+              "translation": "примирение"
+            }
+          ],
+          "narration": "Он выбирает месть вместо милости, считая её единственным справедливым выходом."
+        },
+        {
+          "id": "rise_or_fall",
+          "title": "Подъём или падение",
+          "target": {
+            "word": "aufsteigen",
+            "translation": "подниматься",
+            "hint": "его мечта о возвышении"
+          },
+          "synonyms": [
+            {
+              "word": "emporsteigen",
+              "translation": "восходить"
+            },
+            {
+              "word": "aufrücken",
+              "translation": "продвигаться"
+            },
+            {
+              "word": "Karriere machen",
+              "translation": "делать карьеру"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "fallen",
+              "translation": "падать"
+            },
+            {
+              "word": "stürzen",
+              "translation": "рушиться"
+            },
+            {
+              "word": "scheitern",
+              "translation": "терпеть неудачу"
+            }
+          ],
+          "narration": "Каждый шаг Эдмунда наверх сопряжён с риском стремительного падения."
+        },
+        {
+          "id": "illegitimate_vs_legal",
+          "title": "Незаконный или законный",
+          "target": {
+            "word": "unehelich",
+            "translation": "незаконнорожденный",
+            "hint": "ярлык при рождении"
+          },
+          "synonyms": [
+            {
+              "word": "illegitim",
+              "translation": "нелегитимный"
+            },
+            {
+              "word": "außerehelich",
+              "translation": "внебрачный"
+            },
+            {
+              "word": "nichtehelich",
+              "translation": "незаконный"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "ehelich",
+              "translation": "законный"
+            },
+            {
+              "word": "legitim",
+              "translation": "легитимный"
+            },
+            {
+              "word": "rechtsgültig",
+              "translation": "правомочный"
+            }
+          ],
+          "narration": "Печать незаконности сопровождает его, пока он не докажет свою силу."
+        },
+        {
+          "id": "nature_vs_culture",
+          "title": "Природа или порядок",
+          "target": {
+            "word": "die Natur",
+            "translation": "природа",
+            "hint": "оправдание его мировоззрения"
+          },
+          "synonyms": [
+            {
+              "word": "die Wildnis",
+              "translation": "дикость"
+            },
+            {
+              "word": "die Naturordnung",
+              "translation": "естественный порядок"
+            },
+            {
+              "word": "die Erde",
+              "translation": "земля"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Kultur",
+              "translation": "культура"
+            },
+            {
+              "word": "die Zivilisation",
+              "translation": "цивилизация"
+            },
+            {
+              "word": "die Kunstwelt",
+              "translation": "мир искусственности"
+            }
+          ],
+          "narration": "Он оправдывает свои действия дикостью природы, отвергая цивилизованный порядок."
         }
       ],
       "quizzes": [

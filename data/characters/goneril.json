@@ -171,25 +171,25 @@
       ],
       "synonym_antonym_sets": [
         {
-          "id": "deception_tools",
-          "title": "Инструменты обмана",
+          "id": "lie_weapon",
+          "title": "Ложь как оружие",
           "target": {
             "word": "die Lüge",
             "translation": "ложь",
-            "hint": "оружие Гонерильи"
+            "hint": "главный инструмент Гонерильи"
           },
           "synonyms": [
             {
-              "word": "die Heuchelei",
-              "translation": "лицемерие"
-            },
-            {
-              "word": "der Betrug",
+              "word": "die Täuschung",
               "translation": "обман"
             },
             {
-              "word": "die Täuschung",
-              "translation": "заблуждение"
+              "word": "die Unwahrheit",
+              "translation": "неправда"
+            },
+            {
+              "word": "der Betrug",
+              "translation": "мошенничество"
             }
           ],
           "antonyms": [
@@ -198,11 +198,281 @@
               "translation": "правда"
             },
             {
+              "word": "die Offenheit",
+              "translation": "открытость"
+            },
+            {
               "word": "die Ehrlichkeit",
               "translation": "честность"
             }
           ],
-          "narration": "Гонерилья мастерски использует ложь для достижения целей."
+          "narration": "Гонерилья ткёт ложь, чтобы пленить отца лестью."
+        },
+        {
+          "id": "oath_twist",
+          "title": "Клятвы или отречения",
+          "target": {
+            "word": "schwören",
+            "translation": "клясться",
+            "hint": "как она уверяет отца в любви"
+          },
+          "synonyms": [
+            {
+              "word": "geloben",
+              "translation": "присягать"
+            },
+            {
+              "word": "versprechen",
+              "translation": "обещать"
+            },
+            {
+              "word": "beteuern",
+              "translation": "заверять"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "widerrufen",
+              "translation": "отрекаться"
+            },
+            {
+              "word": "brechen",
+              "translation": "нарушать"
+            },
+            {
+              "word": "verneinen",
+              "translation": "отрицать"
+            }
+          ],
+          "narration": "Её громкие клятвы готовы обернуться отречением, когда выгода исчезнет."
+        },
+        {
+          "id": "inheritance_hunger",
+          "title": "Наследство или потеря",
+          "target": {
+            "word": "das Erbe",
+            "translation": "наследство",
+            "hint": "желаемая награда за лестью"
+          },
+          "synonyms": [
+            {
+              "word": "die Erbschaft",
+              "translation": "наследство"
+            },
+            {
+              "word": "die Hinterlassenschaft",
+              "translation": "нажитое имущество"
+            },
+            {
+              "word": "das Vermächtnis",
+              "translation": "завещание"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "der Verlust",
+              "translation": "потеря"
+            },
+            {
+              "word": "die Enterbung",
+              "translation": "лишение наследства"
+            },
+            {
+              "word": "die Schulden",
+              "translation": "долги"
+            }
+          ],
+          "narration": "Наследство — её цель, а страх потерять всё толкает на обман."
+        },
+        {
+          "id": "feign_or_confess",
+          "title": "Притворство или признание",
+          "target": {
+            "word": "heucheln",
+            "translation": "лицемерить",
+            "hint": "маска нежности перед отцом"
+          },
+          "synonyms": [
+            {
+              "word": "vortäuschen",
+              "translation": "притворяться"
+            },
+            {
+              "word": "simulieren",
+              "translation": "симулировать"
+            },
+            {
+              "word": "sich verstellen",
+              "translation": "изображать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "gestehen",
+              "translation": "признаваться"
+            },
+            {
+              "word": "offenbaren",
+              "translation": "раскрывать"
+            },
+            {
+              "word": "aufrichtig sein",
+              "translation": "быть искренним"
+            }
+          ],
+          "narration": "Под улыбкой скрывается лицемерие, далёкое от признания правды."
+        },
+        {
+          "id": "greed_vs_modesty",
+          "title": "Жадность или скромность",
+          "target": {
+            "word": "die Gier",
+            "translation": "жадность",
+            "hint": "что движет сестрой"
+          },
+          "synonyms": [
+            {
+              "word": "die Habgier",
+              "translation": "алчность"
+            },
+            {
+              "word": "die Raffgier",
+              "translation": "жажда наживы"
+            },
+            {
+              "word": "die Maßlosigkeit",
+              "translation": "неумеренность"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Bescheidenheit",
+              "translation": "скромность"
+            },
+            {
+              "word": "die Großzügigkeit",
+              "translation": "щедрость"
+            },
+            {
+              "word": "die Genügsamkeit",
+              "translation": "умеренность"
+            }
+          ],
+          "narration": "Ненасытная жадность Гонерильи противопоставлена простой скромности."
+        },
+        {
+          "id": "deceive_or_reveal",
+          "title": "Обманывать или раскрывать",
+          "target": {
+            "word": "täuschen",
+            "translation": "обманывать",
+            "hint": "как она управляет восприятием"
+          },
+          "synonyms": [
+            {
+              "word": "betrügen",
+              "translation": "обманывать"
+            },
+            {
+              "word": "irreführen",
+              "translation": "вводить в заблуждение"
+            },
+            {
+              "word": "manipulieren",
+              "translation": "манипулировать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "aufklären",
+              "translation": "прояснять"
+            },
+            {
+              "word": "aufdecken",
+              "translation": "разоблачать"
+            },
+            {
+              "word": "informieren",
+              "translation": "информировать"
+            }
+          ],
+          "narration": "Каждый её жест — обман, скрывающий правду вместо того, чтобы её раскрыть."
+        },
+        {
+          "id": "flatter_or_criticize",
+          "title": "Льстить или критиковать",
+          "target": {
+            "word": "schmeicheln",
+            "translation": "льстить",
+            "hint": "способ добиться расположения"
+          },
+          "synonyms": [
+            {
+              "word": "lobhudeln",
+              "translation": "подлизываться"
+            },
+            {
+              "word": "preisen",
+              "translation": "превозносить"
+            },
+            {
+              "word": "umgarnen",
+              "translation": "очаровывать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "kritisieren",
+              "translation": "критиковать"
+            },
+            {
+              "word": "tadeln",
+              "translation": "порицать"
+            },
+            {
+              "word": "beleidigen",
+              "translation": "оскорблять"
+            }
+          ],
+          "narration": "Лесть заменяет честную критику, пока выгода на её стороне."
+        },
+        {
+          "id": "fortune_vs_ruin",
+          "title": "Состояние или крах",
+          "target": {
+            "word": "das Vermögen",
+            "translation": "состояние",
+            "hint": "награда, ради которой она играет"
+          },
+          "synonyms": [
+            {
+              "word": "der Reichtum",
+              "translation": "богатство"
+            },
+            {
+              "word": "das Kapital",
+              "translation": "капитал"
+            },
+            {
+              "word": "die Güter",
+              "translation": "имущество"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Armut",
+              "translation": "бедность"
+            },
+            {
+              "word": "die Mittellosigkeit",
+              "translation": "безденежье"
+            },
+            {
+              "word": "die Pleite",
+              "translation": "крах"
+            }
+          ],
+          "narration": "Всё её притворство ради богатства, и страх краха гонит вперёд."
         }
       ],
       "quizzes": [

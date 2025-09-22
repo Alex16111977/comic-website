@@ -171,12 +171,88 @@
       ],
       "synonym_antonym_sets": [
         {
-          "id": "power_dynamics",
-          "title": "Власть и бессилие",
+          "id": "throne_vs_exile",
+          "title": "Трон или изгнание",
+          "target": {
+            "word": "der Thron",
+            "translation": "трон",
+            "hint": "символ власти Лира"
+          },
+          "synonyms": [
+            {
+              "word": "der Königssitz",
+              "translation": "королевское сидение"
+            },
+            {
+              "word": "der Herrschersessel",
+              "translation": "кресло правителя"
+            },
+            {
+              "word": "der Thronsitz",
+              "translation": "престол"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Verbannung",
+              "translation": "изгнание"
+            },
+            {
+              "word": "der Sturz",
+              "translation": "падение"
+            },
+            {
+              "word": "die Machtlosigkeit",
+              "translation": "бессилие"
+            }
+          ],
+          "narration": "Лир цепляется за трон, боясь падения в изгнание и бессилие."
+        },
+        {
+          "id": "realm_vs_chaos",
+          "title": "Королевство или хаос",
+          "target": {
+            "word": "das Königreich",
+            "translation": "королевство",
+            "hint": "пространство его власти"
+          },
+          "synonyms": [
+            {
+              "word": "das Reich",
+              "translation": "империя"
+            },
+            {
+              "word": "der Staat",
+              "translation": "государство"
+            },
+            {
+              "word": "die Monarchie",
+              "translation": "монархия"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Provinz",
+              "translation": "провинция"
+            },
+            {
+              "word": "die Anarchie",
+              "translation": "анархия"
+            },
+            {
+              "word": "das Chaos",
+              "translation": "хаос"
+            }
+          ],
+          "narration": "Разделяя королевство, Лир рискует превратить порядок в хаос."
+        },
+        {
+          "id": "authority_slipping",
+          "title": "Власть ускользает",
           "target": {
             "word": "die Macht",
             "translation": "власть",
-            "hint": "то, что Лир теряет"
+            "hint": "ресурс, который он раздаёт"
           },
           "synonyms": [
             {
@@ -184,25 +260,219 @@
               "translation": "господство"
             },
             {
-              "word": "die Gewalt",
-              "translation": "сила"
+              "word": "die Autorität",
+              "translation": "авторитет"
             },
             {
               "word": "die Stärke",
-              "translation": "мощь"
+              "translation": "сила"
             }
           ],
           "antonyms": [
+            {
+              "word": "die Ohnmacht",
+              "translation": "бессилие"
+            },
             {
               "word": "die Schwäche",
               "translation": "слабость"
             },
             {
-              "word": "die Ohnmacht",
-              "translation": "бессилие"
+              "word": "die Unterordnung",
+              "translation": "подчинение"
             }
           ],
-          "narration": "От абсолютной власти к полному бессилию."
+          "narration": "Раздавая власть, Лир незаметно отдаёт собственную силу."
+        },
+        {
+          "id": "rule_or_obey",
+          "title": "Править или повиноваться",
+          "target": {
+            "word": "herrschen",
+            "translation": "править",
+            "hint": "главная привычка старого короля"
+          },
+          "synonyms": [
+            {
+              "word": "regieren",
+              "translation": "управлять"
+            },
+            {
+              "word": "führen",
+              "translation": "руководить"
+            },
+            {
+              "word": "bestimmen",
+              "translation": "определять"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "gehorchen",
+              "translation": "повиноваться"
+            },
+            {
+              "word": "abdanken",
+              "translation": "отрекаться"
+            },
+            {
+              "word": "unterliegen",
+              "translation": "подчиняться"
+            }
+          ],
+          "narration": "Лиру трудно принять роль, где нужно слушаться, а не приказывать."
+        },
+        {
+          "id": "decree_or_silence",
+          "title": "Указ или молчание",
+          "target": {
+            "word": "verkünden",
+            "translation": "провозглашать",
+            "hint": "его требование на церемонии"
+          },
+          "synonyms": [
+            {
+              "word": "proklamieren",
+              "translation": "прокламировать"
+            },
+            {
+              "word": "ansagen",
+              "translation": "объявлять"
+            },
+            {
+              "word": "ausrufen",
+              "translation": "возвещать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "verschweigen",
+              "translation": "умалчивать"
+            },
+            {
+              "word": "verheimlichen",
+              "translation": "утаивать"
+            },
+            {
+              "word": "zurücknehmen",
+              "translation": "отменять"
+            }
+          ],
+          "narration": "Он привык провозглашать приказы, а не хранить молчание."
+        },
+        {
+          "id": "crown_symbol",
+          "title": "Корона или унижение",
+          "target": {
+            "word": "die Krone",
+            "translation": "корона",
+            "hint": "видимый знак власти"
+          },
+          "synonyms": [
+            {
+              "word": "das Diadem",
+              "translation": "диадема"
+            },
+            {
+              "word": "der Kronreif",
+              "translation": "королевский обруч"
+            },
+            {
+              "word": "das Herrschaftszeichen",
+              "translation": "знак власти"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Entthronung",
+              "translation": "детронизация"
+            },
+            {
+              "word": "die Schande",
+              "translation": "позор"
+            },
+            {
+              "word": "die Demütigung",
+              "translation": "унижение"
+            }
+          ],
+          "narration": "Корона сияет, но угроза унижения уже стоит за порогом."
+        },
+        {
+          "id": "ritual_vs_tumult",
+          "title": "Ритуал или сумятица",
+          "target": {
+            "word": "die Zeremonie",
+            "translation": "церемония",
+            "hint": "способ распределения власти"
+          },
+          "synonyms": [
+            {
+              "word": "die Feier",
+              "translation": "празднество"
+            },
+            {
+              "word": "das Ritual",
+              "translation": "ритуал"
+            },
+            {
+              "word": "die Proklamation",
+              "translation": "провозглашение"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "der Tumult",
+              "translation": "смятение"
+            },
+            {
+              "word": "die Eile",
+              "translation": "спешка"
+            },
+            {
+              "word": "die Improvisation",
+              "translation": "импровизация"
+            }
+          ],
+          "narration": "Продуманная церемония оборачивается сумятицей чувств и власти."
+        },
+        {
+          "id": "splendour_vs_plain",
+          "title": "Великолепие или простота",
+          "target": {
+            "word": "prächtig",
+            "translation": "великолепный",
+            "hint": "как выглядит тронный зал"
+          },
+          "synonyms": [
+            {
+              "word": "glanzvoll",
+              "translation": "сияющий"
+            },
+            {
+              "word": "prunkvoll",
+              "translation": "роскошный"
+            },
+            {
+              "word": "herrlich",
+              "translation": "прекрасный"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "schlicht",
+              "translation": "простой"
+            },
+            {
+              "word": "armselig",
+              "translation": "убогий"
+            },
+            {
+              "word": "gewöhnlich",
+              "translation": "обыденный"
+            }
+          ],
+          "narration": "Блеск зала не скрывает того, как простотой оборачивается пустота власти."
         }
       ],
       "quizzes": [
