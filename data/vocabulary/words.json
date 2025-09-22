@@ -1,0 +1,249 @@
+{
+  "words": [
+    {
+      "id": "w001",
+      "word": "Reich",
+      "article": "das",
+      "gender": "Neutrum",
+      "translation": {
+        "en": "Kingdom/Empire",
+        "ru": "Королевство/Империя"
+      },
+      "phonetic": "[райх]",
+      "level": "A2",
+      "category": "royal",
+      "emoji": "👑",
+      "example": {
+        "de": "Wir teilen unser Reich unter den Töchtern auf.",
+        "en": "We divide our kingdom among the daughters.",
+        "ru": "Мы делим наше королевство между дочерьми."
+      },
+      "frequency": "high",
+      "learned": false
+    },
+    {
+      "id": "w002",
+      "word": "Macht",
+      "article": "die",
+      "gender": "Femininum",
+      "translation": {
+        "en": "Power",
+        "ru": "Власть"
+      },
+      "phonetic": "[махт]",
+      "level": "A2",
+      "category": "royal",
+      "emoji": "⚡",
+      "example": {
+        "de": "Die Macht des Königs ist groß.",
+        "en": "The king's power is great.",
+        "ru": "Власть короля велика."
+      },
+      "frequency": "high",
+      "learned": false
+    },
+    {
+      "id": "w003",
+      "word": "Tochter",
+      "article": "die",
+      "gender": "Femininum",
+      "plural": "Töchter",
+      "translation": {
+        "en": "Daughter",
+        "ru": "Дочь"
+      },
+      "phonetic": "[ТОХ-тер]",
+      "level": "A1",
+      "category": "family",
+      "emoji": "👸",
+      "example": {
+        "de": "Meine drei Töchter sind sehr unterschiedlich.",
+        "en": "My three daughters are very different.",
+        "ru": "Мои три дочери очень разные."
+      },
+      "frequency": "high",
+      "learned": false
+    },
+    {
+      "id": "w004",
+      "word": "Verzweiflung",
+      "article": "die",
+      "gender": "Femininum",
+      "translation": {
+        "en": "Despair",
+        "ru": "Отчаяние"
+      },
+      "phonetic": "[фер-ЦВАЙ-флунг]",
+      "level": "B1",
+      "category": "emotions",
+      "emoji": "💔",
+      "example": {
+        "de": "In seiner Verzweiflung verliert er den Verstand.",
+        "en": "In his despair, he loses his mind.",
+        "ru": "В отчаянии он теряет рассудок."
+      },
+      "frequency": "medium",
+      "learned": false
+    },
+    {
+      "id": "w005",
+      "word": "Sturm",
+      "article": "der",
+      "gender": "Maskulinum",
+      "translation": {
+        "en": "Storm",
+        "ru": "Буря"
+      },
+      "phonetic": "[штурм]",
+      "level": "A2",
+      "category": "nature",
+      "emoji": "⛈️",
+      "example": {
+        "de": "Der König tobt im Sturm.",
+        "en": "The king rages in the storm.",
+        "ru": "Король бушует в буре."
+      },
+      "frequency": "high",
+      "learned": false
+    },
+    {
+      "id": "w006",
+      "word": "Wahnsinn",
+      "article": "der",
+      "gender": "Maskulinum",
+      "translation": {
+        "en": "Madness",
+        "ru": "Безумие"
+      },
+      "phonetic": "[ВАН-зин]",
+      "level": "B1",
+      "category": "emotions",
+      "emoji": "🌀",
+      "example": {
+        "de": "Der Wahnsinn ergreift den alten König.",
+        "en": "Madness seizes the old king.",
+        "ru": "Безумие охватывает старого короля."
+      },
+      "frequency": "medium",
+      "learned": false
+    },
+    {
+      "id": "w007",
+      "word": "Verrat",
+      "article": "der",
+      "gender": "Maskulinum",
+      "translation": {
+        "en": "Betrayal",
+        "ru": "Предательство"
+      },
+      "phonetic": "[фер-РАТ]",
+      "level": "B1",
+      "category": "emotions",
+      "emoji": "🗡️",
+      "example": {
+        "de": "Der Verrat seiner Töchter schmerzt ihn.",
+        "en": "His daughters' betrayal pains him.",
+        "ru": "Предательство дочерей причиняет ему боль."
+      },
+      "frequency": "medium",
+      "learned": false
+    },
+    {
+      "id": "w008",
+      "word": "Krone",
+      "article": "die",
+      "gender": "Femininum",
+      "translation": {
+        "en": "Crown",
+        "ru": "Корона"
+      },
+      "phonetic": "[КРО-не]",
+      "level": "A2",
+      "category": "royal",
+      "emoji": "👑",
+      "example": {
+        "de": "Die schwere Krone drückt auf sein Haupt.",
+        "en": "The heavy crown presses on his head.",
+        "ru": "Тяжелая корона давит на его голову."
+      },
+      "frequency": "high",
+      "learned": false
+    },
+    {
+      "id": "w009",
+      "word": "Schloss",
+      "article": "das",
+      "gender": "Neutrum",
+      "plural": "Schlösser",
+      "translation": {
+        "en": "Castle",
+        "ru": "Замок"
+      },
+      "phonetic": "[шлос]",
+      "level": "A2",
+      "category": "places",
+      "emoji": "🏰",
+      "example": {
+        "de": "Im Schloss herrscht große Unruhe.",
+        "en": "There is great unrest in the castle.",
+        "ru": "В замке царит большое волнение."
+      },
+      "frequency": "high",
+      "learned": false
+    },
+    {
+      "id": "w010",
+      "word": "Versöhnung",
+      "article": "die",
+      "gender": "Femininum",
+      "translation": {
+        "en": "Reconciliation",
+        "ru": "Примирение"
+      },
+      "phonetic": "[фер-ЗЁ-нунг]",
+      "level": "B2",
+      "category": "emotions",
+      "emoji": "🤝",
+      "example": {
+        "de": "Die Versöhnung kommt zu spät.",
+        "en": "The reconciliation comes too late.",
+        "ru": "Примирение приходит слишком поздно."
+      },
+      "frequency": "low",
+      "learned": false
+    }
+  ],
+  "categories": {
+    "royal": {
+      "name": "Royal Vocabulary",
+      "emoji": "👑",
+      "color": "#FFD700"
+    },
+    "emotions": {
+      "name": "Emotions & Feelings",
+      "emoji": "❤️",
+      "color": "#FF69B4"
+    },
+    "nature": {
+      "name": "Nature & Weather",
+      "emoji": "⚡",
+      "color": "#4169E1"
+    },
+    "family": {
+      "name": "Family Relations",
+      "emoji": "👨‍👩‍👧",
+      "color": "#32CD32"
+    },
+    "places": {
+      "name": "Places & Locations",
+      "emoji": "🏰",
+      "color": "#8B4513"
+    }
+  },
+  "learning_stats": {
+    "total_words": 10,
+    "learned": 0,
+    "in_progress": 0,
+    "not_started": 10
+  }
+}

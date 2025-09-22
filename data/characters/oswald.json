@@ -1,0 +1,854 @@
+{
+  "id": "oswald",
+  "name": "Oswald",
+  "title": "Путь Освальда",
+  "journey_phases": [
+    {
+      "id": "steward",
+      "icon": "🎩",
+      "title": "Управляющий",
+      "keywords": "Diener • Gehorsam • Ergebenheit",
+      "description": "Акт I: Верный слуга Гонерильи",
+      "vocabulary": [
+        {
+          "german": "der Diener",
+          "russian": "слуга",
+          "transcription": "[дер ДИ-нер]",
+          "sentence": "Im Saal der Herrin richtet Oswald die silbernen Teller entlang der langen Tafel aus. Ich zeichne das Wort „der Diener“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "В зале госпожи Освальд выравнивает серебряные блюда вдоль длинного стола. Я черчу слово «слуга» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Im Saal der Herrin richtet Oswald die silbernen Teller entlang der langen Tafel aus.",
+            "Ich zeichne das Wort „der Diener“ in Gedanken über die Linien des Schicksals."
+          ]
+        },
+        {
+          "german": "der Gehorsam",
+          "russian": "послушание",
+          "transcription": "[дер ге-ХОР-зам]",
+          "sentence": "Vor dem Spiegel prüft Oswald den makellosen Sitz des Dienerkleids. Ich halte das Wort „der Gehorsam“ wie eine Fackel vor meinem Herzen.",
+          "sentence_translation": "Перед зеркалом Освальд проверяет безупречную посадку дворецкого наряда. Я держу слово «послушание» как факел у сердца.",
+          "sentence_parts": [
+            "Vor dem Spiegel prüft Oswald den makellosen Sitz des Dienerkleids.",
+            "Ich halte das Wort „der Gehorsam“ wie eine Fackel vor meinem Herzen."
+          ]
+        },
+        {
+          "german": "die Ergebenheit",
+          "russian": "преданность",
+          "transcription": "[ди ер-ГЕ-бен-хайт]",
+          "sentence": "Zwischen Rechnungsbüchern notiert Oswald jedes Fass Wein. Ich presse das Wort „die Ergebenheit“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "Среди бухгалтерских книг Освальд записывает каждую бочку вина. Я стискиваю слово «преданность» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Zwischen Rechnungsbüchern notiert Oswald jedes Fass Wein.",
+            "Ich presse das Wort „die Ergebenheit“ zwischen die Zähne,",
+            "damit kein Zweifel entweicht."
+          ]
+        },
+        {
+          "german": "dienen",
+          "russian": "служить",
+          "transcription": "[ДИ-нен]",
+          "sentence": "Am Hofeingang begrüßt Oswald mit steifem Nicken die ankommenden Lords. Wie ein stilles Gebet legt sich das Wort „dienen“ auf meine Lippen.",
+          "sentence_translation": "У входа во двор Освальд сдержанно кивает прибывающим лордам. Как тихая молитва слово «служить» ложится на мои губы.",
+          "sentence_parts": [
+            "Am Hofeingang begrüßt Oswald mit steifem Nicken die ankommenden Lords.",
+            "Wie ein stilles Gebet legt sich das Wort „dienen“ auf meine Lippen."
+          ]
+        },
+        {
+          "german": "der Verwalter",
+          "russian": "управляющий",
+          "transcription": "[дер фер-ВАЛЬ-тер]",
+          "sentence": "Unter den wachsamen Augen Gonerils verteilt Oswald die Tagesbefehle. Mit fester Stimme schwöre ich mir: Das Wort „der Verwalter“ wird heute nicht verraten.",
+          "sentence_translation": "Под внимательным взглядом Гонерильи Освальд раздаёт дневные распоряжения. Твёрдым голосом я клянусь себе: слово «управляющий» сегодня не будет предано.",
+          "sentence_parts": [
+            "Unter den wachsamen Augen Gonerils verteilt Oswald die Tagesbefehle.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „der Verwalter“ wird heute nicht verraten."
+          ]
+        },
+        {
+          "german": "ergeben",
+          "russian": "покорный",
+          "transcription": "[ер-ГЕ-бен]",
+          "sentence": "Auf der Küchenrampe kontrolliert Oswald die frischen Vorräte. Das Echo des Wortes „ergeben“ übertönt das Flüstern der Höflinge.",
+          "sentence_translation": "На кухонном пандусе Освальд проверяет свежие припасы. Эхо слова «покорный» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Auf der Küchenrampe kontrolliert Oswald die frischen Vorräte.",
+            "Das Echo des Wortes „ergeben“ übertönt das Flüstern der Höflinge."
+          ]
+        },
+        {
+          "german": "unterwürfig",
+          "russian": "раболепный",
+          "transcription": "[УН-тер-вюр-фиг]",
+          "sentence": "Neben der Ahnengalerie wischt Oswald letzte Staubkörner fort. Ich umarme das Wort „unterwürfig“, als wäre es mein einziger Verbündeter.",
+          "sentence_translation": "Рядом с галереей предков Освальд смахивает последние пылинки. Я обнимаю слово «раболепный», будто это единственный союзник.",
+          "sentence_parts": [
+            "Neben der Ahnengalerie wischt Oswald letzte Staubkörner fort.",
+            "Ich umarme das Wort „unterwürfig“, als wäre es mein einziger Verbündeter."
+          ]
+        },
+        {
+          "german": "befolgen",
+          "russian": "исполнять",
+          "transcription": "[бе-ФОЛЬ-ген]",
+          "sentence": "Im Kontor versiegelt Oswald sorgsam die königliche Korrespondenz. Ich atme tief ein und lasse nur das Wort „befolgen“ wieder hinaus.",
+          "sentence_translation": "В конторе Освальд тщательно запечатывает королевскую корреспонденцию. Я глубоко вдыхаю и выпускаю только слово «исполнять».",
+          "sentence_parts": [
+            "Im Kontor versiegelt Oswald sorgsam die königliche Korrespondenz.",
+            "Ich atme tief ein und lasse nur das Wort „befolgen“ wieder hinaus."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "ВЕРНЫЙ ПЁС",
+        "narrative": "Я <b>DER DIENER (слуга)</b> леди Гонерильи, и этим горжусь! Мой <b>DER GEHORSAM (послушание)</b> абсолютен! <b>DIE ERGEBENHEIT (преданность)</b> моей госпоже не знает границ! Я <b>DIENEN (служу)</b> ей всем своим существом! Как <b>DER VERWALTER (управляющий)</b> её дома, я контролирую каждую мелочь! Я <b>UNTERWÜRFIG (раболепно)</b> склоняюсь перед её величием! Каждый приказ я <b>BEFOLGEN (исполняю)</b> мгновенно! Что она прикажет - то и будет сделано! Старый король Лир? Он ничто для меня! Только воля моей госпожи имеет значение! Я готов на всё ради её благосклонности!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: Я живу только для служения ей! Моя жизнь принадлежит леди Гонерилье!",
+        "exercise_text": "Я ___ (слуга) леди Гонерильи, и этим горжусь! Мой ___ (послушание) абсолютен! ___ (преданность) моей госпоже не знает границ! Я ___ (служу) ей всем своим существом! Как ___ (управляющий) её дома, я контролирую каждую мелочь! Я ___ (раболепно) склоняюсь перед её величием! Каждый приказ я ___ (исполняю) мгновенно! Что она прикажет - то и будет сделано! Старый король Лир? Он ничто для меня! Только воля моей госпожи имеет значение! Я готов на всё ради её благосклонности!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «der Diener»?",
+          "choices": [
+            "послушание",
+            "преданность",
+            "служить",
+            "слуга"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Gehorsam»?",
+          "choices": [
+            "слуга",
+            "преданность",
+            "служить",
+            "послушание"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "messenger",
+      "icon": "📨",
+      "title": "Гонец",
+      "keywords": "Bote • Auftrag • Eile",
+      "description": "Акт I-II: Передаёт приказы",
+      "vocabulary": [
+        {
+          "german": "der Bote",
+          "russian": "гонец",
+          "transcription": "[дер БО-те]",
+          "sentence": "Auf staubigen Straßen peitscht Oswald das Pferd zu größerer Eile. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „der Bote“ gehört mir.",
+          "sentence_translation": "На пыльных дорогах Освальд подгоняет коня к большей скорости. Буря за окнами усиливает клятву: слово «гонец» принадлежит мне.",
+          "sentence_parts": [
+            "Auf staubigen Straßen peitscht Oswald das Pferd zu größerer Eile.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „der Bote“ gehört mir."
+          ]
+        },
+        {
+          "german": "der Auftrag",
+          "russian": "поручение",
+          "transcription": "[дер АУФ-траг]",
+          "sentence": "Vor verschlossenen Toren zeigt Oswald das mit Wachs versiegelte Schreiben. Das kalte Licht lässt das Wort „der Auftrag“ wie geschmolzenes Gold erscheinen.",
+          "sentence_translation": "Перед закрытыми воротами Освальд предъявляет письмо, запечатанное воском. Холодный свет заставляет слово «поручение» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Vor verschlossenen Toren zeigt Oswald das mit Wachs versiegelte Schreiben.",
+            "Das kalte Licht lässt das Wort „der Auftrag“ wie geschmolzenes Gold erscheinen."
+          ]
+        },
+        {
+          "german": "die Eile",
+          "russian": "спешка",
+          "transcription": "[ди АЙ-ле]",
+          "sentence": "In der Nacht rast Oswald mit einer Laterne als einzigem Stern. Selbst wenn die Welt zerfällt, bleibt das Wort „die Eile“ mein Nordstern.",
+          "sentence_translation": "Ночью Освальд мчится, освещаемый одной лишь латерной. Даже если мир распадается, слово «спешка» остаётся моим северным светом.",
+          "sentence_parts": [
+            "In der Nacht rast Oswald mit einer Laterne als einzigem Stern.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „die Eile“ mein Nordstern."
+          ]
+        },
+        {
+          "german": "überbringen",
+          "russian": "передавать",
+          "transcription": "[ю-бер-БРИН-ген]",
+          "sentence": "Am Grenzposten überreicht Oswald den Befehl mit überheblichem Lächeln. Das Echo des Wortes „überbringen“ übertönt das Flüstern der Höflinge.",
+          "sentence_translation": "На пограничной заставе Освальд вручает приказ с высокомерной улыбкой. Эхо слова «передавать» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Am Grenzposten überreicht Oswald den Befehl mit überheblichem Lächeln.",
+            "Das Echo des Wortes „überbringen“ übertönt das Flüstern der Höflinge."
+          ]
+        },
+        {
+          "german": "hasten",
+          "russian": "спешить",
+          "transcription": "[ХАС-тен]",
+          "sentence": "Zwischen zerrissenen Bannern schützt Oswald die Nachricht vor dem Regen. Ich flüstere den Wächtern des Schicksals zu: Das Wort „hasten“ darf nicht vergehen.",
+          "sentence_translation": "Среди порванных знамён Освальд прикрывает письмо от дождя. Я шепчу стражам судьбы: слово «спешить» не должно исчезнуть.",
+          "sentence_parts": [
+            "Zwischen zerrissenen Bannern schützt Oswald die Nachricht vor dem Regen.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „hasten“ darf nicht vergehen."
+          ]
+        },
+        {
+          "german": "die Botschaft",
+          "russian": "послание",
+          "transcription": "[ди БОТ-шафт]",
+          "sentence": "Auf dem Hofe Lear erhebt Oswald die Stimme über den Tumult. Das Echo des Wortes „die Botschaft“ übertönt das Flüstern der Höflinge.",
+          "sentence_translation": "На дворе Лира Освальд возвышает голос над шумом. Эхо слова «послание» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Auf dem Hofe Lear erhebt Oswald die Stimme über den Tumult.",
+            "Das Echo des Wortes „die Botschaft“ übertönt das Flüstern der Höflinge."
+          ]
+        },
+        {
+          "german": "eilen",
+          "russian": "торопиться",
+          "transcription": "[АЙ-лен]",
+          "sentence": "Im Schatten der Stallungen tauscht Oswald heimlich versiegelte Rollen. Mit fester Stimme schwöre ich mir: Das Wort „eilen“ wird heute nicht verraten.",
+          "sentence_translation": "В тени конюшен Освальд тайно меняет запечатанные свитки. Твёрдым голосом я клянусь себе: слово «торопиться» сегодня не будет предано.",
+          "sentence_parts": [
+            "Im Schatten der Stallungen tauscht Oswald heimlich versiegelte Rollen.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „eilen“ wird heute nicht verraten."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "БЕГУЩИЙ СЛУГА",
+        "narrative": "Я <b>DER BOTE (гонец)</b> моей жестокой госпожи! Каждый <b>DER AUFTRAG (поручение)</b> выполняю с рвением! В постоянной <b>DIE EILE (спешке)</b> я ношусь по замку! Я <b>ÜBERBRINGEN (передаю)</b> её злые приказы всем! Я <b>HASTEN (спешу)</b> от одного места к другому без отдыха! <b>DIE BOTSCHAFT (послание)</b> леди Гонерильи должно быть доставлено немедленно! Я <b>EILEN (тороплюсь)</b> исполнить каждое её желание! К Реган, к Корнуоллу, к Эдмунду - я бегу повсюду! Мои ноги не знают покоя! Письма, приказы, угрозы - всё несу я! Важность моей миссии наполняет меня гордостью!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: Я - ноги и голос моей госпожи! Через меня она правит!",
+        "exercise_text": "Я ___ (гонец) моей жестокой госпожи! Каждый ___ (поручение) выполняю с рвением! В постоянной ___ (спешке) я ношусь по замку! Я ___ (передаю) её злые приказы всем! Я ___ (спешу) от одного места к другому без отдыха! ___ (послание) леди Гонерильи должно быть доставлено немедленно! Я ___ (тороплюсь) исполнить каждое её желание! К Реган, к Корнуоллу, к Эдмунду - я бегу повсюду! Мои ноги не знают покоя! Письма, приказы, угрозы - всё несу я! Важность моей миссии наполняет меня гордостью!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «der Bote»?",
+          "choices": [
+            "поручение",
+            "спешка",
+            "передавать",
+            "гонец"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Auftrag»?",
+          "choices": [
+            "гонец",
+            "спешка",
+            "передавать",
+            "поручение"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "insult",
+      "icon": "😤",
+      "title": "Оскорбитель",
+      "keywords": "Beleidigung • Respektlosigkeit • Feigheit",
+      "description": "Акт II: Оскорбляет Лира",
+      "vocabulary": [
+        {
+          "german": "die Beleidigung",
+          "russian": "оскорбление",
+          "transcription": "[ди бе-ЛАЙ-ди-гунг]",
+          "sentence": "Vor dem gealterten König verneigt sich Oswald nur einen Hauch zu wenig. Das Echo des Wortes „die Beleidigung“ übertönt das Flüstern der Höflinge.",
+          "sentence_translation": "Перед постаревшим королём Освальд кланяется лишь на долю меньше. Эхо слова «оскорбление» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Vor dem gealterten König verneigt sich Oswald nur einen Hauch zu wenig.",
+            "Das Echo des Wortes „die Beleidigung“ übertönt das Flüstern der Höflinge."
+          ]
+        },
+        {
+          "german": "die Respektlosigkeit",
+          "russian": "неуважение",
+          "transcription": "[ди рес-ПЕКТ-ло-зиг-кайт]",
+          "sentence": "Am Torbogen blockiert Oswald den Weg mit erhobenem Stab. Ich halte das Wort „die Respektlosigkeit“ wie eine Fackel vor meinem Herzen.",
+          "sentence_translation": "В проёме ворот Освальд преграждает путь поднятым жезлом. Я держу слово «неуважение» как факел у сердца.",
+          "sentence_parts": [
+            "Am Torbogen blockiert Oswald den Weg mit erhobenem Stab.",
+            "Ich halte das Wort „die Respektlosigkeit“ wie eine Fackel vor meinem Herzen."
+          ]
+        },
+        {
+          "german": "die Feigheit",
+          "russian": "трусость",
+          "transcription": "[ди ФАЙГ-хайт]",
+          "sentence": "Zwischen entrüsteten Rittern rollt Oswald mit den Augen. Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Feigheit“ bleibt lebendig.",
+          "sentence_translation": "Среди возмущённых рыцарей Освальд закатывает глаза. Каждой клеткой тела я обещаю: слово «трусость» останется живым.",
+          "sentence_parts": [
+            "Zwischen entrüsteten Rittern rollt Oswald mit den Augen.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Feigheit“ bleibt lebendig."
+          ]
+        },
+        {
+          "german": "beleidigen",
+          "russian": "оскорблять",
+          "transcription": "[бе-ЛАЙ-ди-ген]",
+          "sentence": "Auf der Treppe wischt Oswald imaginären Staub von Lears Mantel. Ich halte das Wort „beleidigen“ wie eine Fackel vor meinem Herzen.",
+          "sentence_translation": "На лестнице Освальд стряхивает воображаемую пыль с плаща Лира. Я держу слово «оскорблять» как факел у сердца.",
+          "sentence_parts": [
+            "Auf der Treppe wischt Oswald imaginären Staub von Lears Mantel.",
+            "Ich halte das Wort „beleidigen“ wie eine Fackel vor meinem Herzen."
+          ]
+        },
+        {
+          "german": "verhöhnen",
+          "russian": "высмеивать",
+          "transcription": "[фер-ХЁ-нен]",
+          "sentence": "Neben Gonerils kühlen Blick flüstert Oswald eine spitze Bemerkung. Das kalte Licht lässt das Wort „verhöhnen“ wie geschmolzenes Gold erscheinen.",
+          "sentence_translation": "Рядом с холодным взглядом Гонерильи Освальд шепчет едкое замечание. Холодный свет заставляет слово «высмеивать» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Neben Gonerils kühlen Blick flüstert Oswald eine spitze Bemerkung.",
+            "Das kalte Licht lässt das Wort „verhöhnen“ wie geschmolzenes Gold erscheinen."
+          ]
+        },
+        {
+          "german": "frech",
+          "russian": "дерзкий",
+          "transcription": "[ФРЕХ]",
+          "sentence": "Auf dem Hof setzt Oswald sich mit verschränkten Armen gegen jede Bitte zur Wehr. Selbst wenn die Welt zerfällt, bleibt das Wort „frech“ mein Nordstern.",
+          "sentence_translation": "На дворе Освальд скрестив руки сопротивляется любой просьбе. Даже если мир распадается, слово «дерзкий» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Auf dem Hof setzt Oswald sich mit verschränkten Armen gegen jede Bitte zur Wehr.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „frech“ mein Nordstern."
+          ]
+        },
+        {
+          "german": "missachten",
+          "russian": "пренебрегать",
+          "transcription": "[МИС-ах-тен]",
+          "sentence": "Im Flur stößt Oswald den alten König absichtlich zur Seite. Mit jeder Faser meines Körpers verspreche ich: Das Wort „missachten“ bleibt lebendig.",
+          "sentence_translation": "В коридоре Освальд нарочно отталкивает старого короля в сторону. Каждой клеткой тела я обещаю: слово «пренебрегать» останется живым.",
+          "sentence_parts": [
+            "Im Flur stößt Oswald den alten König absichtlich zur Seite.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „missachten“ bleibt lebendig."
+          ]
+        },
+        {
+          "german": "feige",
+          "russian": "трусливый",
+          "transcription": "[ФАЙ-ге]",
+          "sentence": "Auf dem Balkon lacht Oswald laut über Lears Hilflosigkeit. Ich halte das Wort „feige“ wie eine Fackel vor meinem Herzen.",
+          "sentence_translation": "На балконе Освальд громко смеётся над беспомощностью Лира. Я держу слово «трусливый» как факел у сердца.",
+          "sentence_parts": [
+            "Auf dem Balkon lacht Oswald laut über Lears Hilflosigkeit.",
+            "Ich halte das Wort „feige“ wie eine Fackel vor meinem Herzen."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "НАГЛЫЙ ЛАКЕЙ",
+        "narrative": "Старый безумец Лир! Каждая <b>DIE BELEIDIGUNG (оскорбление)</b> для него - мой долг! Моя <b>DIE RESPEKTLOSIGKEIT (неуважение)</b> к бывшему королю безгранична! Да, из <b>DIE FEIGHEIT (трусости)</b> я нападаю на слабого старика! Я <b>BELEIDIGEN (оскорбляю)</b> его открыто! Я <b>VERHÖHNEN (высмеиваю)</b> его жалкие попытки сохранить достоинство! Я <b>FRECH (дерзко)</b> игнорирую его приказы! Я <b>MISSACHTEN (пренебрегаю)</b> всем, чем он был! Да, я <b>FEIGE (трусливо)</b> прячусь за спиной госпожи! Но это даёт мне власть над королем! Какое наслаждение унижать того, кто раньше был недосягаем!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Вы никто, старик!» - бросаю я в лицо бывшему королю!",
+        "exercise_text": "Старый безумец Лир! Каждая ___ (оскорбление) для него - мой долг! Моя ___ (неуважение) к бывшему королю безгранична! Да, из ___ (трусости) я нападаю на слабого старика! Я ___ (оскорбляю) его открыто! Я ___ (высмеиваю) его жалкие попытки сохранить достоинство! Я ___ (дерзко) игнорирую его приказы! Я ___ (пренебрегаю) всем, чем он был! Да, я ___ (трусливо) прячусь за спиной госпожи! Но это даёт мне власть над королем! Какое наслаждение унижать того, кто раньше был недосягаем!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Beleidigung»?",
+          "choices": [
+            "неуважение",
+            "трусость",
+            "оскорблять",
+            "оскорбление"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «die Respektlosigkeit»?",
+          "choices": [
+            "оскорбление",
+            "трусость",
+            "оскорблять",
+            "неуважение"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "spy",
+      "icon": "🕵️",
+      "title": "Шпион",
+      "keywords": "Spion • Verrat • Heimlichkeit",
+      "description": "Акт III: Шпионит за всеми",
+      "vocabulary": [
+        {
+          "german": "der Spion",
+          "russian": "шпион",
+          "transcription": "[дер шпи-ОН]",
+          "sentence": "Im Dunkel des Treppenhauses hält Oswald den Atem an, um Gespräche zu belauschen. Wie ein stilles Gebet legt sich das Wort „der Spion“ auf meine Lippen.",
+          "sentence_translation": "В темноте лестницы Освальд задерживает дыхание, подслушивая разговоры. Как тихая молитва слово «шпион» ложится на мои губы.",
+          "sentence_parts": [
+            "Im Dunkel des Treppenhauses hält Oswald den Atem an,",
+            "um Gespräche zu belauschen.",
+            "Wie ein stilles Gebet legt sich das Wort „der Spion“ auf meine Lippen."
+          ]
+        },
+        {
+          "german": "der Verrat",
+          "russian": "предательство",
+          "transcription": "[дер фер-РАТ]",
+          "sentence": "Hinter schweren Vorhängen notiert Oswald jedes geflüsterte Wort. Das kalte Licht lässt das Wort „der Verrat“ wie geschmolzenes Gold erscheinen.",
+          "sentence_translation": "За тяжёлыми портьерами Освальд записывает каждое прошептанное слово. Холодный свет заставляет слово «предательство» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Hinter schweren Vorhängen notiert Oswald jedes geflüsterte Wort.",
+            "Das kalte Licht lässt das Wort „der Verrat“ wie geschmolzenes Gold erscheinen."
+          ]
+        },
+        {
+          "german": "die Heimlichkeit",
+          "russian": "скрытность",
+          "transcription": "[ди ХАЙМ-лих-кайт]",
+          "sentence": "Auf den Mauern späht Oswald nach Reitern am Horizont. Ich halte das Wort „die Heimlichkeit“ wie eine Fackel vor meinem Herzen.",
+          "sentence_translation": "На стенах Освальд высматривает всадников на горизонте. Я держу слово «скрытность» как факел у сердца.",
+          "sentence_parts": [
+            "Auf den Mauern späht Oswald nach Reitern am Horizont.",
+            "Ich halte das Wort „die Heimlichkeit“ wie eine Fackel vor meinem Herzen."
+          ]
+        },
+        {
+          "german": "spionieren",
+          "russian": "шпионить",
+          "transcription": "[шпи-о-НИ-рен]",
+          "sentence": "Zwischen Küchenmägden tauscht Oswald Gerüchte gegen Kupferstücke. Ich halte das Wort „spionieren“ wie eine Fackel vor meinem Herzen.",
+          "sentence_translation": "Среди кухонных служанок Освальд обменивает слухи на медяки. Я держу слово «шпионить» как факел у сердца.",
+          "sentence_parts": [
+            "Zwischen Küchenmägden tauscht Oswald Gerüchte gegen Kupferstücke.",
+            "Ich halte das Wort „spionieren“ wie eine Fackel vor meinem Herzen."
+          ]
+        },
+        {
+          "german": "lauschen",
+          "russian": "подслушивать",
+          "transcription": "[ЛАУ-шен]",
+          "sentence": "Im Kerzenlicht zeichnet Oswald geheime Wege auf Pergament. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „lauschen“ gehört mir.",
+          "sentence_translation": "При свете свечи Освальд вычерчивает тайные пути на пергаменте. Буря за окнами усиливает клятву: слово «подслушивать» принадлежит мне.",
+          "sentence_parts": [
+            "Im Kerzenlicht zeichnet Oswald geheime Wege auf Pergament.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „lauschen“ gehört mir."
+          ]
+        },
+        {
+          "german": "verraten",
+          "russian": "выдавать",
+          "transcription": "[фер-РА-тен]",
+          "sentence": "Unter dem Fenster von Regan beugt Oswald sich tief in die Nacht hinaus. Ich zeichne das Wort „verraten“ mit unsichtbarer Tinte auf meine Handfläche.",
+          "sentence_translation": "Под окном Реганы Освальд глубоко склоняется в ночную тьму. Я вывожу слово «выдавать» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Unter dem Fenster von Regan beugt Oswald sich tief in die Nacht hinaus.",
+            "Ich zeichne das Wort „verraten“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
+        },
+        {
+          "german": "schnüffeln",
+          "russian": "вынюхивать",
+          "transcription": "[ШНЮФ-фельн]",
+          "sentence": "Vor Gonerils Gemach übergibt Oswald flüsternd die gesammelten Nachrichten. Ich zeichne das Wort „schnüffeln“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "Перед покоями Гонерильи Освальд шёпотом передаёт собранные вести. Я черчу слово «вынюхивать» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Vor Gonerils Gemach übergibt Oswald flüsternd die gesammelten Nachrichten.",
+            "Ich zeichne das Wort „schnüffeln“ in Gedanken über die Linien des Schicksals."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "ТЕНЬ В УГЛАХ",
+        "narrative": "Я <b>DER SPION (шпион)</b> в каждом тёмном углу! <b>DER VERRAT (предательство)</b> - моя профессия! В <b>DIE HEIMLICHKEIT (скрытности)</b> я мастер! Я <b>SPIONIEREN (шпионю)</b> за всеми в замке! Я <b>LAUSCHEN (подслушиваю)</b> каждый шёпот, каждый вздох! Я <b>VERRATEN (выдаю)</b> все секреты моей госпоже! Я <b>SCHNÜFFELN (вынюхиваю)</b> тайны как гончая! Кто с кем говорит? О чём шепчутся слуги? Что замышляет Эдмунд? Всё это я узнаю и доношу! Моя госпожа знает всё благодаря мне! Я - её глаза и уши во тьме!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: Ни один секрет не укроется от меня! Я всё вижу, всё слышу!",
+        "exercise_text": "Я ___ (шпион) в каждом тёмном углу! ___ (предательство) - моя профессия! В ___ (скрытности) я мастер! Я ___ (шпионю) за всеми в замке! Я ___ (подслушиваю) каждый шёпот, каждый вздох! Я ___ (выдаю) все секреты моей госпоже! Я ___ (вынюхиваю) тайны как гончая! Кто с кем говорит? О чём шепчутся слуги? Что замышляет Эдмунд? Всё это я узнаю и доношу! Моя госпожа знает всё благодаря мне! Я - её глаза и уши во тьме!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «der Spion»?",
+          "choices": [
+            "предательство",
+            "скрытность",
+            "шпионить",
+            "шпион"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Verrat»?",
+          "choices": [
+            "шпион",
+            "скрытность",
+            "шпионить",
+            "предательство"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "schemer",
+      "icon": "🕸️",
+      "title": "Интриган",
+      "keywords": "Intrige • Plan • Hinterlist",
+      "description": "Акт IV: Плетёт интриги",
+      "vocabulary": [
+        {
+          "german": "die Intrige",
+          "russian": "интрига",
+          "transcription": "[ди ин-ТРИ-ге]",
+          "sentence": "In der Schreibstube entwirft Oswald ein Netz aus widersprüchlichen Botschaften. Ich presse das Wort „die Intrige“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "В писчей комнате Освальд плетёт сеть противоречивых посланий. Я стискиваю слово «интрига» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "In der Schreibstube entwirft Oswald ein Netz aus widersprüchlichen Botschaften.",
+            "Ich presse das Wort „die Intrige“ zwischen die Zähne,",
+            "damit kein Zweifel entweicht."
+          ]
+        },
+        {
+          "german": "der Plan",
+          "russian": "план",
+          "transcription": "[дер ПЛАН]",
+          "sentence": "Neben Gonerils Lager zeichnet Oswald heimlich zwei Namen auf ein Pergament. Ich zeichne das Wort „der Plan“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "Рядом с ложем Гонерильи Освальд тайком выводит два имени на пергаменте. Я черчу слово «план» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Neben Gonerils Lager zeichnet Oswald heimlich zwei Namen auf ein Pergament.",
+            "Ich zeichne das Wort „der Plan“ in Gedanken über die Linien des Schicksals."
+          ]
+        },
+        {
+          "german": "die Hinterlist",
+          "russian": "коварство",
+          "transcription": "[ди ХИН-тер-лист]",
+          "sentence": "Auf der Gartenterrasse verbrennt Oswald Beweise im bronzezeitigen Becken. Ich presse das Wort „die Hinterlist“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "На садовой террасе Освальд сжигает улики в бронзовой чаше. Я стискиваю слово «коварство» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Auf der Gartenterrasse verbrennt Oswald Beweise im bronzezeitigen Becken.",
+            "Ich presse das Wort „die Hinterlist“ zwischen die Zähne,",
+            "damit kein Zweifel entweicht."
+          ]
+        },
+        {
+          "german": "schmieden",
+          "russian": "ковать",
+          "transcription": "[ШМИ-ден]",
+          "sentence": "Im Stall flüstert Oswald falsche Befehle in die Ohren der Reiter. Ich umarme das Wort „schmieden“, als wäre es mein einziger Verbündeter.",
+          "sentence_translation": "В конюшне Освальд шепчет ложные приказы в уши всадников. Я обнимаю слово «ковать», будто это единственный союзник.",
+          "sentence_parts": [
+            "Im Stall flüstert Oswald falsche Befehle in die Ohren der Reiter.",
+            "Ich umarme das Wort „schmieden“, als wäre es mein einziger Verbündeter."
+          ]
+        },
+        {
+          "german": "hintergehen",
+          "russian": "обманывать",
+          "transcription": "[ХИН-тер-ге-ен]",
+          "sentence": "Vor Regans Dienern versteckt Oswald die Briefe im Futter der Pferde. Das Echo des Wortes „hintergehen“ übertönt das Flüstern der Höflinge.",
+          "sentence_translation": "Перед слугами Реганы Освальд прячет письма в корме лошадей. Эхо слова «обманывать» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Vor Regans Dienern versteckt Oswald die Briefe im Futter der Pferde.",
+            "Das Echo des Wortes „hintergehen“ übertönt das Flüstern der Höflinge."
+          ]
+        },
+        {
+          "german": "tückisch",
+          "russian": "коварный",
+          "transcription": "[ТЮ-киш]",
+          "sentence": "Unter der Laube formt Oswald aus Wachs ein neues Siegel. Selbst wenn die Welt zerfällt, bleibt das Wort „tückisch“ mein Nordstern.",
+          "sentence_translation": "Под беседкой Освальд отливает из воска новую печать. Даже если мир распадается, слово «коварный» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Unter der Laube formt Oswald aus Wachs ein neues Siegel.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „tückisch“ mein Nordstern."
+          ]
+        },
+        {
+          "german": "verschlagen",
+          "russian": "хитрый",
+          "transcription": "[фер-ШЛАГ-ен]",
+          "sentence": "In der Mitternachtspause verteilt Oswald verschlüsselte Notizen. Das Echo des Wortes „verschlagen“ übertönt das Flüstern der Höflinge.",
+          "sentence_translation": "В полночный перерыв Освальд раздаёт зашифрованные записки. Эхо слова «хитрый» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "In der Mitternachtspause verteilt Oswald verschlüsselte Notizen.",
+            "Das Echo des Wortes „verschlagen“ übertönt das Flüstern der Höflinge."
+          ]
+        },
+        {
+          "german": "die Falle",
+          "russian": "ловушка",
+          "transcription": "[ди ФА-ле]",
+          "sentence": "Auf dem Kartentisch verschiebt Oswald Figuren, als wären es echte Menschen. Ich presse das Wort „die Falle“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "На столе с картами Освальд переставляет фигурки, будто это живые люди. Я стискиваю слово «ловушка» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Auf dem Kartentisch verschiebt Oswald Figuren, als wären es echte Menschen.",
+            "Ich presse das Wort „die Falle“ zwischen die Zähne,",
+            "damit kein Zweifel entweicht."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "ПАУК В ПАУТИНЕ",
+        "narrative": "Каждая <b>DIE INTRIGE (интрига)</b> - моё искусство! Мой <b>DER PLAN (план)</b> безупречен! С <b>DIE HINTERLIST (коварством)</b> я опутываю всех! Я <b>SCHMIEDEN (кую)</b> заговоры против врагов госпожи! Я <b>HINTERGEHEN (обманываю)</b> доверчивых дураков! Я <b>TÜCKISCH (коварно)</b> расставляю сети! Я <b>VERSCHLAGEN (хитро)</b> манипулирую всеми! Каждая <b>DIE FALLE (ловушка)</b> продумана до мелочей! Эдгар думает, что скрывается? Я найду его! Глостер ищет помощи? Я выдам его! Все танцуют по моей дудке! Моя госпожа будет довольна моей изобретательностью!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: Я дёргаю за ниточки, и все пляшут как марионетки!",
+        "exercise_text": "Каждая ___ (интрига) - моё искусство! Мой ___ (план) безупречен! С ___ (коварством) я опутываю всех! Я ___ (кую) заговоры против врагов госпожи! Я ___ (обманываю) доверчивых дураков! Я ___ (коварно) расставляю сети! Я ___ (хитро) манипулирую всеми! Каждая ___ (ловушка) продумана до мелочей! Эдгар думает, что скрывается? Я найду его! Глостер ищет помощи? Я выдам его! Все танцуют по моей дудке! Моя госпожа будет довольна моей изобретательностью!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Intrige»?",
+          "choices": [
+            "план",
+            "коварство",
+            "ковать",
+            "интрига"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Plan»?",
+          "choices": [
+            "интрига",
+            "коварство",
+            "ковать",
+            "план"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "pursuer",
+      "icon": "🏃",
+      "title": "Преследователь",
+      "keywords": "Verfolgung • Jagd • Gefahr",
+      "description": "Акт IV: Преследует Глостера",
+      "vocabulary": [
+        {
+          "german": "die Verfolgung",
+          "russian": "преследование",
+          "transcription": "[ди фер-ФОЛЬ-гунг]",
+          "sentence": "Mit gespannter Armbrust durchstreift Oswald die nächtlichen Felder. Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Verfolgung“ bleibt lebendig.",
+          "sentence_translation": "С натянутым арбалетом Освальд прочёсывает ночные поля. Каждой клеткой тела я обещаю: слово «преследование» останется живым.",
+          "sentence_parts": [
+            "Mit gespannter Armbrust durchstreift Oswald die nächtlichen Felder.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Verfolgung“ bleibt lebendig."
+          ]
+        },
+        {
+          "german": "die Jagd",
+          "russian": "охота",
+          "transcription": "[ди ЯГДТ]",
+          "sentence": "Auf dem Küstenpfad späht Oswald nach Spuren des fliehenden Grafen. Das Echo des Wortes „die Jagd“ übertönt das Flüstern der Höflinge.",
+          "sentence_translation": "На прибрежной тропе Освальд высматривает следы бегущего графа. Эхо слова «охота» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Auf dem Küstenpfad späht Oswald nach Spuren des fliehenden Grafen.",
+            "Das Echo des Wortes „die Jagd“ übertönt das Flüstern der Höflinge."
+          ]
+        },
+        {
+          "german": "verfolgen",
+          "russian": "преследовать",
+          "transcription": "[фер-ФОЛЬ-ген]",
+          "sentence": "Zwischen Dornenhecken zückt Oswald das versteckte Messer. Mein Atem zeichnet das Wort „verfolgen“ in die kalte Luft zwischen uns.",
+          "sentence_translation": "Среди колючих кустов Освальд выхватывает спрятанный нож. Моё дыхание рисует слово «преследовать» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Zwischen Dornenhecken zückt Oswald das versteckte Messer.",
+            "Mein Atem zeichnet das Wort „verfolgen“ in die kalte Luft zwischen uns."
+          ]
+        },
+        {
+          "german": "jagen",
+          "russian": "гнаться",
+          "transcription": "[Я-ген]",
+          "sentence": "Am Moorloch testet Oswald die Tiefe mit der Spitze der Lanze. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „jagen“ gehört mir.",
+          "sentence_translation": "У болотной ямы Освальд проверяет глубину наконечником копья. Буря за окнами усиливает клятву: слово «гнаться» принадлежит мне.",
+          "sentence_parts": [
+            "Am Moorloch testet Oswald die Tiefe mit der Spitze der Lanze.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „jagen“ gehört mir."
+          ]
+        },
+        {
+          "german": "aufspüren",
+          "russian": "выслеживать",
+          "transcription": "[АУФ-шпю-рен]",
+          "sentence": "Vor einem verlassenen Hof horcht Oswald auf das Schnaufen der Pferde. Wie ein stilles Gebet legt sich das Wort „aufspüren“ auf meine Lippen.",
+          "sentence_translation": "У заброшенного двора Освальд прислушивается к сопению коней. Как тихая молитва слово «выслеживать» ложится на мои губы.",
+          "sentence_parts": [
+            "Vor einem verlassenen Hof horcht Oswald auf das Schnaufen der Pferde.",
+            "Wie ein stilles Gebet legt sich das Wort „aufspüren“ auf meine Lippen."
+          ]
+        },
+        {
+          "german": "hetzen",
+          "russian": "травить",
+          "transcription": "[ХЕ-цен]",
+          "sentence": "Unter Regans Banner motiviert Oswald die Soldaten zu schnellerer Jagd. Ich halte das Wort „hetzen“ wie eine Fackel vor meinem Herzen.",
+          "sentence_translation": "Под знаменем Реганы Освальд подгоняет солдат к более быстрой охоте. Я держу слово «травить» как факел у сердца.",
+          "sentence_parts": [
+            "Unter Regans Banner motiviert Oswald die Soldaten zu schnellerer Jagd.",
+            "Ich halte das Wort „hetzen“ wie eine Fackel vor meinem Herzen."
+          ]
+        },
+        {
+          "german": "die Beute",
+          "russian": "добыча",
+          "transcription": "[ди БОЙ-те]",
+          "sentence": "Auf den Klippen über Dover späht Oswald in die graue Ferne. Mit fester Stimme schwöre ich mir: Das Wort „die Beute“ wird heute nicht verraten.",
+          "sentence_translation": "На скалах над Дувром Освальд вглядывается в серую даль. Твёрдым голосом я клянусь себе: слово «добыча» сегодня не будет предано.",
+          "sentence_parts": [
+            "Auf den Klippen über Dover späht Oswald in die graue Ferne.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „die Beute“ wird heute nicht verraten."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "ОХОТНИЧИЙ ПЁС",
+        "narrative": "<b>DIE VERFOLGUNG (преследование)</b> слепого Глостера началось! <b>DIE JAGD (охота)</b> на предателя - моя миссия! Я <b>VERFOLGEN (преследую)</b> его без жалости! Как гончая я <b>JAGEN (гонюсь)</b> за ним! Я <b>AUFSPÜREN (выслеживаю)</b> его следы повсюду! Я <b>HETZEN (травлю)</b> его как дикого зверя! Слепой граф - лёгкая <b>DIE BEUTE (добыча)</b> для меня! Он думает, что сможет скрыться? Глупец! Я чую его страх за версту! Моя госпожа приказала поймать его, и я не подведу! Загоню его в угол как крысу!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: Я настигну слепца и доставлю его голову моей госпоже!",
+        "exercise_text": "___ (преследование) слепого Глостера началось! ___ (охота) на предателя - моя миссия! Я ___ (преследую) его без жалости! Как гончая я ___ (гонюсь) за ним! Я ___ (выслеживаю) его следы повсюду! Я ___ (травлю) его как дикого зверя! Слепой граф - лёгкая ___ (добыча) для меня! Он думает, что сможет скрыться? Глупец! Я чую его страх за версту! Моя госпожа приказала поймать его, и я не подведу! Загоню его в угол как крысу!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Verfolgung»?",
+          "choices": [
+            "охота",
+            "преследовать",
+            "гнаться",
+            "преследование"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «die Jagd»?",
+          "choices": [
+            "преследование",
+            "преследовать",
+            "гнаться",
+            "охота"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "coward_death",
+      "icon": "💀",
+      "title": "Смерть труса",
+      "keywords": "Tod • Feigheit • Niederlage",
+      "description": "Акт IV: Убит Эдгаром",
+      "vocabulary": [
+        {
+          "german": "der Tod",
+          "russian": "смерть",
+          "transcription": "[дер ТОД]",
+          "sentence": "Im dunstigen Wald stürzt Oswald vor Edgars Klinge rückwärts. Mein Atem zeichnet das Wort „der Tod“ in die kalte Luft zwischen uns.",
+          "sentence_translation": "В туманном лесу Освальд падает навзничь перед клинком Эдгара. Моё дыхание рисует слово «смерть» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Im dunstigen Wald stürzt Oswald vor Edgars Klinge rückwärts.",
+            "Mein Atem zeichnet das Wort „der Tod“ in die kalte Luft zwischen uns."
+          ]
+        },
+        {
+          "german": "die Feigheit",
+          "russian": "трусость",
+          "transcription": "[ди ФАЙГ-хайт]",
+          "sentence": "Neben einem morschen Baum bittet Oswald mit erhobenen Händen um Gnade. Ich halte das Wort „die Feigheit“ wie eine Fackel vor meinem Herzen.",
+          "sentence_translation": "У трухлявого дерева Освальд вздымает руки, умоляя о пощаде. Я держу слово «трусость» как факел у сердца.",
+          "sentence_parts": [
+            "Neben einem morschen Baum bittet Oswald mit erhobenen Händen um Gnade.",
+            "Ich halte das Wort „die Feigheit“ wie eine Fackel vor meinem Herzen."
+          ]
+        },
+        {
+          "german": "die Niederlage",
+          "russian": "поражение",
+          "transcription": "[ди НИ-дер-ла-ге]",
+          "sentence": "Am Boden liegend tastet Oswald vergeblich nach dem verlorenen Schwert. Ich halte das Wort „die Niederlage“ wie eine Fackel vor meinem Herzen.",
+          "sentence_translation": "Лежа на земле, Освальд тщетно ищет потерянный меч. Я держу слово «поражение» как факел у сердца.",
+          "sentence_parts": [
+            "Am Boden liegend tastet Oswald vergeblich nach dem verlorenen Schwert.",
+            "Ich halte das Wort „die Niederlage“ wie eine Fackel vor meinem Herzen."
+          ]
+        },
+        {
+          "german": "fallen",
+          "russian": "падать",
+          "transcription": "[ФА-лен]",
+          "sentence": "Vor Edgars ernster Miene rutscht Oswald im nassen Laub aus. Wie ein stilles Gebet legt sich das Wort „fallen“ auf meine Lippen.",
+          "sentence_translation": "Перед суровым взглядом Эдгара Освальд скользит на мокрой листве. Как тихая молитва слово «падать» ложится на мои губы.",
+          "sentence_parts": [
+            "Vor Edgars ernster Miene rutscht Oswald im nassen Laub aus.",
+            "Wie ein stilles Gebet legt sich das Wort „fallen“ auf meine Lippen."
+          ]
+        },
+        {
+          "german": "unterliegen",
+          "russian": "проигрывать",
+          "transcription": "[ун-тер-ЛИ-ген]",
+          "sentence": "Unter einem kalten Regen stammelt Oswald letzte Ausflüchte. Mein Atem zeichnet das Wort „unterliegen“ in die kalte Luft zwischen uns.",
+          "sentence_translation": "Под холодным дождём Освальд лепечет последние оправдания. Моё дыхание рисует слово «проигрывать» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Unter einem kalten Regen stammelt Oswald letzte Ausflüchte.",
+            "Mein Atem zeichnet das Wort „unterliegen“ in die kalte Luft zwischen uns."
+          ]
+        },
+        {
+          "german": "wimmern",
+          "russian": "хныкать",
+          "transcription": "[ВИМ-мерн]",
+          "sentence": "Im Schatten der Bäume erkennt Oswald zu spät die gerechte Vergeltung. Ich umarme das Wort „wimmern“, als wäre es mein einziger Verbündeter.",
+          "sentence_translation": "В тени деревьев Освальд слишком поздно осознаёт справедливое возмездие. Я обнимаю слово «хныкать», будто это единственный союзник.",
+          "sentence_parts": [
+            "Im Schatten der Bäume erkennt Oswald zu spät die gerechte Vergeltung.",
+            "Ich umarme das Wort „wimmern“, als wäre es mein einziger Verbündeter."
+          ]
+        },
+        {
+          "german": "betteln",
+          "russian": "умолять",
+          "transcription": "[БЕ-тельн]",
+          "sentence": "Auf dem Waldboden erlischt Oswalds Atem ohne Ehrenwache. Ich zeichne das Wort „betteln“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "На лесной земле дыхание Освальд гаснет без почётного караула. Я черчу слово «умолять» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Auf dem Waldboden erlischt Oswalds Atem ohne Ehrenwache.",
+            "Ich zeichne das Wort „betteln“ in Gedanken über die Linien des Schicksals."
+          ]
+        },
+        {
+          "german": "erbärmlich",
+          "russian": "жалкий",
+          "transcription": "[ер-БЕРМ-лих]",
+          "sentence": "Neben dem fallengelassenen Brief liegt Oswald reglos im Schlamm. Das kalte Licht lässt das Wort „erbärmlich“ wie geschmolzenes Gold erscheinen.",
+          "sentence_translation": "Рядом с оброненным письмом Освальд неподвижно лежит в грязи. Холодный свет заставляет слово «жалкий» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Neben dem fallengelassenen Brief liegt Oswald reglos im Schlamm.",
+            "Das kalte Licht lässt das Wort „erbärmlich“ wie geschmolzenes Gold erscheinen."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "ЖАЛКАЯ СМЕРТЬ",
+        "narrative": "Нет! <b>DER TOD (смерть)</b> пришла слишком рано! Моя <b>DIE FEIGHEIT (трусость)</b> меня погубила! <b>DIE NIEDERLAGE (поражение)</b> от руки нищего Эдгара! Я <b>FALLEN (падаю)</b> на колени перед ним! Я <b>UNTERLIEGEN (проигрываю)</b> в схватке с крестьянином! Я <b>WIMMERN (хныкаю)</b> как побитая собака! Я <b>BETTELN (умоляю)</b> о пощаде! Но нет милосердия для меня! Я <b>ERBÄRMLICH (жалко)</b> умираю, как жалко жил! Вся моя подлость, все интриги - всё напрасно! Меч Эдгара пронзает меня! Госпожа... я подвёл вас... Прости меня... Темнота... Холод...",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Пощади!» - визжу я, но меч Эдгара уже в моей груди!",
+        "exercise_text": "Нет! ___ (смерть) пришла слишком рано! Моя ___ (трусость) меня погубила! ___ (поражение) от руки нищего Эдгара! Я ___ (падаю) на колени перед ним! Я ___ (проигрываю) в схватке с крестьянином! Я ___ (хныкаю) как побитая собака! Я ___ (умоляю) о пощаде! Но нет милосердия для меня! Я ___ (жалко) умираю, как жалко жил! Вся моя подлость, все интриги - всё напрасно! Меч Эдгара пронзает меня! Госпожа... я подвёл вас... Прости меня... Темнота... Холод..."
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «der Tod»?",
+          "choices": [
+            "трусость",
+            "поражение",
+            "падать",
+            "смерть"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «die Feigheit»?",
+          "choices": [
+            "смерть",
+            "поражение",
+            "падать",
+            "трусость"
+          ],
+          "correct_index": 3
+        }
+      ]
+    }
+  ]
+}

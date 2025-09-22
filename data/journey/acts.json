@@ -1,0 +1,240 @@
+{
+  "acts": [
+    {
+      "id": 1,
+      "position": {"x": 100, "y": 400},
+      "animation_delay": 0,
+      "glow_color": "#FFD700",
+      "background_pattern": "radial-gradient(circle, rgba(255,215,0,0.1), transparent)",
+      "title": {
+        "de": "Die Teilung des Reiches",
+        "en": "The Division of the Kingdom",
+        "ru": "Разделение королевства"
+      },
+      "description": {
+        "de": "König Lear teilt sein Reich unter seinen Töchtern auf",
+        "en": "King Lear divides his kingdom among his daughters",
+        "ru": "Король Лир делит королевство между дочерьми"
+      },
+      "emoji": "👑",
+      "difficulty": "A2",
+      "duration": "15 min",
+      "word_count": 50,
+      "unlocked": true,
+      "completed": false,
+      "progress": 20,
+      "learning_points": [
+        "Royal vocabulary",
+        "Family relationships",
+        "Expressing emotions",
+        "Modal verbs"
+      ],
+      "key_vocabulary": ["Reich", "Macht", "Tochter", "Liebe", "teilen", "herrschen"],
+      "rewards": {
+        "xp": 100,
+        "achievements": ["first_act"],
+        "unlocks": ["act_2"]
+      }
+    },
+    {
+      "id": 2,
+      "position": {"x": 600, "y": 400},
+      "animation_delay": 0.2,
+      "glow_color": "#9333EA",
+      "background_pattern": "radial-gradient(circle, rgba(147,51,234,0.1), transparent)",
+      "title": {
+        "de": "Die Ablehnung",
+        "en": "The Rejection",
+        "ru": "Отвержение"
+      },
+      "description": {
+        "de": "Lear wird von Goneril und Regan verstoßen",
+        "en": "Lear is cast out by Goneril and Regan",
+        "ru": "Лира изгоняют Гонерилья и Регана"
+      },
+      "emoji": "🏰",
+      "difficulty": "B1",
+      "duration": "20 min",
+      "word_count": 75,
+      "unlocked": false,
+      "completed": false,
+      "progress": 0,
+      "learning_points": [
+        "Conflict vocabulary",
+        "Past tense narration",
+        "Emotional expressions",
+        "Conjunctions"
+      ],
+      "key_vocabulary": ["Ablehnung", "Verrat", "Zorn", "verstoßen", "verlassen", "bitter"],
+      "rewards": {
+        "xp": 150,
+        "achievements": ["family_drama"],
+        "unlocks": ["act_3"]
+      }
+    },
+    {
+      "id": 3,
+      "position": {"x": 1100, "y": 400},
+      "animation_delay": 0.4,
+      "glow_color": "#3B82F6",
+      "background_pattern": "radial-gradient(circle, rgba(59,130,246,0.1), transparent)",
+      "title": {
+        "de": "Der Sturm",
+        "en": "The Storm",
+        "ru": "Буря"
+      },
+      "description": {
+        "de": "Lear tobt im Sturm und verliert den Verstand",
+        "en": "Lear rages in the storm and loses his mind",
+        "ru": "Лир бушует в буре и теряет рассудок"
+      },
+      "emoji": "⚡",
+      "difficulty": "B1+",
+      "duration": "25 min",
+      "word_count": 100,
+      "unlocked": false,
+      "completed": false,
+      "progress": 0,
+      "learning_points": [
+        "Weather vocabulary",
+        "Metaphorical language",
+        "Subjunctive mood",
+        "Complex sentences"
+      ],
+      "key_vocabulary": ["Sturm", "Wahnsinn", "Donner", "Blitz", "toben", "verzweifeln"],
+      "rewards": {
+        "xp": 200,
+        "achievements": ["storm_survivor"],
+        "unlocks": ["act_4"]
+      }
+    },
+    {
+      "id": 4,
+      "position": {"x": 1300, "y": 200},
+      "animation_delay": 0.6,
+      "glow_color": "#EF4444",
+      "background_pattern": "radial-gradient(circle, rgba(239,68,68,0.1), transparent)",
+      "title": {
+        "de": "Die Blendung",
+        "en": "The Blinding",
+        "ru": "Ослепление"
+      },
+      "description": {
+        "de": "Gloucester wird geblendet, Edgar führt ihn",
+        "en": "Gloucester is blinded, Edgar guides him",
+        "ru": "Глостера ослепляют, Эдгар ведёт его"
+      },
+      "emoji": "👁️",
+      "difficulty": "B2",
+      "duration": "20 min",
+      "word_count": 80,
+      "unlocked": false,
+      "completed": false,
+      "progress": 0,
+      "learning_points": [
+        "Body parts vocabulary",
+        "Passive voice",
+        "Cause and effect",
+        "Reported speech"
+      ],
+      "key_vocabulary": ["Blendung", "Verkleidung", "Täuschung", "führen", "blind", "erkennen"],
+      "rewards": {
+        "xp": 180,
+        "achievements": ["subplot_master"],
+        "unlocks": ["act_5"]
+      }
+    },
+    {
+      "id": 5,
+      "position": {"x": 1300, "y": 600},
+      "animation_delay": 0.8,
+      "glow_color": "#8B5CF6",
+      "background_pattern": "radial-gradient(circle, rgba(139,92,246,0.1), transparent)",
+      "title": {
+        "de": "Die Versöhnung und der Tod",
+        "en": "Reconciliation and Death",
+        "ru": "Примирение и смерть"
+      },
+      "description": {
+        "de": "Lear und Cordelia vereinen sich, bevor die Tragödie endet",
+        "en": "Lear and Cordelia reunite before tragedy strikes",
+        "ru": "Лир и Корделия воссоединяются перед трагедией"
+      },
+      "emoji": "💔",
+      "difficulty": "B2",
+      "duration": "30 min",
+      "word_count": 120,
+      "unlocked": false,
+      "completed": false,
+      "progress": 0,
+      "learning_points": [
+        "Advanced emotions",
+        "Literary language",
+        "Perfect tenses",
+        "Philosophical themes"
+      ],
+      "key_vocabulary": ["Versöhnung", "Erlösung", "Tod", "Tragödie", "bereuen", "vergeben"],
+      "rewards": {
+        "xp": 300,
+        "achievements": ["story_complete", "tragedy_master"],
+        "unlocks": ["bonus_content"]
+      }
+    }
+  ],
+  "path_decorations": [
+    {
+      "type": "crown",
+      "emoji": "👑",
+      "position": {"x": "20%", "y": "10%"},
+      "animation": "floating",
+      "delay": 0
+    },
+    {
+      "type": "sword",
+      "emoji": "⚔️",
+      "position": {"x": "70%", "y": "20%"},
+      "animation": "floating",
+      "delay": 0.5
+    },
+    {
+      "type": "castle",
+      "emoji": "🏰",
+      "position": {"x": "40%", "y": "60%"},
+      "animation": "floating",
+      "delay": 1
+    },
+    {
+      "type": "scroll",
+      "emoji": "📜",
+      "position": {"x": "85%", "y": "40%"},
+      "animation": "floating",
+      "delay": 1.5
+    }
+  ],
+  "achievement_triggers": {
+    "first_act": {
+      "condition": "complete_act_1",
+      "reward_xp": 100,
+      "title": "First Steps",
+      "description": "Complete your first act"
+    },
+    "speed_reader": {
+      "condition": "complete_act_in_10_min",
+      "reward_xp": 50,
+      "title": "Speed Reader",
+      "description": "Complete an act in under 10 minutes"
+    },
+    "perfect_score": {
+      "condition": "100_percent_quiz",
+      "reward_xp": 150,
+      "title": "Perfect Score",
+      "description": "Get 100% on all quizzes in an act"
+    },
+    "vocabulary_master": {
+      "condition": "learn_50_words",
+      "reward_xp": 200,
+      "title": "Vocabulary Master",
+      "description": "Learn 50 new words"
+    }
+  }
+}

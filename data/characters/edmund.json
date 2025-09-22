@@ -1,0 +1,885 @@
+{
+  "id": "edmund",
+  "name": "Edmund",
+  "title": "Путь Эдмунда",
+  "journey_phases": [
+    {
+      "id": "throne",
+      "icon": "😤",
+      "title": "Незаконнорождённый",
+      "keywords": "Bastard • Neid • Ambition",
+      "description": "Акт I: Зависть бастарда",
+      "theatrical_scene": {
+        "title": "ПРОКЛЯТИЕ БАСТАРДА",
+        "narrative": "Почему?! Почему я <b>DER BASTARD (бастард)</b>?! <b>DER NEID (зависть)</b> к Эдгару сжигает меня! <b>DIE AMBITION (амбиция)</b> - моё топливо! Я <b>BENACHTEILIGT (обделён)</b> только из-за рождения! <b>DIE RACHE (месть)</b> обществу - вот мой путь! Я <b>AUFSTEIGEN (возвышусь)</b> над всеми! Моё <b>UNEHELICH (внебрачное)</b> рождение не определит мою судьбу! <b>DIE NATUR (природа)</b> - моя богиня, не их лицемерные законы! «Природа, ты моя богиня!» - клянусь я в темноте. Эдгар падёт, а я поднимусь!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Зачем я должен стоять в тени законного?!» - кричу я небесам. «Я возьму всё силой и хитростью! Бастарды, вперёд!»",
+        "exercise_text": "Почему?! Почему я ___ (бастард)?! ___ (зависть) к Эдгару сжигает меня! ___ (амбиция) - моё топливо! Я ___ (обделён) только из-за рождения! ___ (месть) обществу - вот мой путь! Я ___ (возвышусь) над всеми! Моё ___ (внебрачное) рождение не определит мою судьбу! ___ (природа) - моя богиня, не их лицемерные законы! «Природа, ты моя богиня!» - клянусь я в темноте. Эдгар падёт, а я поднимусь!"
+      },
+      "vocabulary": [
+        {
+          "german": "der Bastard",
+          "russian": "бастард",
+          "transcription": "[дер БАС-тард]",
+          "sentence": "Edmund steht unter dem glühenden Kronleuchter des Thronsaals. Mein Atem zeichnet das Wort „der Bastard“ in die kalte Luft zwischen uns.",
+          "sentence_translation": "Эдмунд стоит под пылающей люстрой тронного зала. Моё дыхание рисует слово «бастард» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Edmund steht unter dem glühenden Kronleuchter des Thronsaals.",
+            "Mein Atem zeichnet das Wort „der Bastard“ in die kalte Luft zwischen uns."
+          ]
+        },
+        {
+          "german": "der Neid",
+          "russian": "зависть",
+          "transcription": "[дер НАЙД]",
+          "sentence": "Neben der ausgerollten Reichskarte beugt sich Edmund über Lears schweren Tisch. Ich umarme das Wort „der Neid“, als wäre es mein einziger Verbündeter.",
+          "sentence_translation": "У развернутой карты королевства Эдмунд склоняется над тяжёлым столом Лира. Я обнимаю слово «зависть», будто это единственный союзник.",
+          "sentence_parts": [
+            "Neben der ausgerollten Reichskarte beugt sich Edmund über Lears schweren Tisch.",
+            "Ich umarme das Wort „der Neid“, als wäre es mein einziger Verbündeter."
+          ]
+        },
+        {
+          "german": "die Ambition",
+          "russian": "амбиция",
+          "transcription": "[ди ам-би-ЦИ-он]",
+          "sentence": "Vor den steinernen Ahnenstatuen verschränkt Edmund die Hände hinter dem Rücken. Das Echo des Wortes „die Ambition“ übertönt das Flüstern der Höflinge.",
+          "sentence_translation": "Перед каменными статуями предков Эдмунд сцепляет руки за спиной. Эхо слова «амбиция» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Vor den steinernen Ahnenstatuen verschränkt Edmund die Hände hinter dem Rücken.",
+            "Das Echo des Wortes „die Ambition“ übertönt das Flüstern der Höflinge."
+          ]
+        },
+        {
+          "german": "benachteiligt",
+          "russian": "обделённый",
+          "transcription": "[бе-НАХ-тай-лигт]",
+          "sentence": "Zwischen flüsternden Höflingen gleitet Edmund über den kalten Marmorboden. Ich zeichne das Wort „benachteiligt“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "Между шепчущимися придворными Эдмунд скользит по холодному мраморному полу. Я черчу слово «обделённый» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Zwischen flüsternden Höflingen gleitet Edmund über den kalten Marmorboden.",
+            "Ich zeichne das Wort „benachteiligt“ in Gedanken über die Linien des Schicksals."
+          ]
+        },
+        {
+          "german": "die Rache",
+          "russian": "месть",
+          "transcription": "[ди РА-хе]",
+          "sentence": "Am Rand des purpurnen Teppichs wartet Edmund auf ein Zeichen des Königs. Mein Atem zeichnet das Wort „die Rache“ in die kalte Luft zwischen uns.",
+          "sentence_translation": "На краю пурпурного ковра Эдмунд ждёт знака от короля. Моё дыхание рисует слово «месть» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Am Rand des purpurnen Teppichs wartet Edmund auf ein Zeichen des Königs.",
+            "Mein Atem zeichnet das Wort „die Rache“ in die kalte Luft zwischen uns."
+          ]
+        },
+        {
+          "german": "aufsteigen",
+          "russian": "возвышаться",
+          "transcription": "[АУФ-штай-ген]",
+          "sentence": "Unter wehenden Standarten der Schwestern senkt Edmund kurz den Blick. Ich zeichne das Wort „aufsteigen“ mit unsichtbarer Tinte auf meine Handfläche.",
+          "sentence_translation": "Под развевающимися штандартами сестёр Эдмунд на миг опускает взгляд. Я вывожу слово «возвышаться» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Unter wehenden Standarten der Schwestern senkt Edmund kurz den Blick.",
+            "Ich zeichne das Wort „aufsteigen“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
+        },
+        {
+          "german": "unehelich",
+          "russian": "внебрачный",
+          "transcription": "[УН-э-е-лих]",
+          "sentence": "Hinter der vergoldeten Balustrade beobachtet Edmund das gespannte Antlitz des Hofes. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „unehelich“ gehört mir.",
+          "sentence_translation": "За позолоченной балюстрадой Эдмунд наблюдает за напряжёнными лицами двора. Буря за окнами усиливает клятву: слово «внебрачный» принадлежит мне.",
+          "sentence_parts": [
+            "Hinter der vergoldeten Balustrade beobachtet Edmund das gespannte Antlitz des Hofes.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „unehelich“ gehört mir."
+          ]
+        },
+        {
+          "german": "die Natur",
+          "russian": "природа",
+          "transcription": "[ди на-ТУР]",
+          "sentence": "Im Schein der offenen Feuerbecken erhebt Edmund langsam die Stimme. Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Natur“ darf nicht vergehen.",
+          "sentence_translation": "В отблесках открытых жаровен Эдмунд медленно поднимает голос. Я шепчу стражам судьбы: слово «природа» не должно исчезнуть.",
+          "sentence_parts": [
+            "Im Schein der offenen Feuerbecken erhebt Edmund langsam die Stimme.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Natur“ darf nicht vergehen."
+          ]
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «der Bastard»?",
+          "choices": [
+            "зависть",
+            "амбиция",
+            "обделённый",
+            "бастард"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Neid»?",
+          "choices": [
+            "бастард",
+            "амбиция",
+            "обделённый",
+            "зависть"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "goneril",
+      "icon": "📜",
+      "title": "Интрига с письмом",
+      "keywords": "fälschen • intrigieren • beschuldigen",
+      "description": "Акт I: Обман отца",
+      "theatrical_scene": {
+        "title": "ПОДДЕЛЬНОЕ ПИСЬМО",
+        "narrative": "План готов! Я <b>FÄLSCHEN (подделываю)</b> письмо от имени Эдгара! Я <b>INTRIGIEREN (интригую)</b> как мастер! Я <b>BESCHULDIGEN (обвиняю)</b> брата в измене! <b>DER PLAN (план)</b> безупречен! Я <b>MANIPULIEREN (манипулирую)</b> отцом виртуозно! <b>DER BRIEF (письмо)</b> - моё оружие! Я <b>LÜGEN (лгу)</b> с невинным лицом! <b>DIE TÄUSCHUNG (обман)</b> - моё искусство! «Отец, я случайно нашёл это письмо...» - говорю я, дрожа от притворного страха. Глупый старик верит каждому слову!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Эдгар хочет вашей смерти!» - шепчу я отцу. Его лицо белеет! «Но я защищу вас!» План работает идеально!",
+        "exercise_text": "План готов! Я ___ (подделываю) письмо от имени Эдгара! Я ___ (интригую) как мастер! Я ___ (обвиняю) брата в измене! ___ (план) безупречен! Я ___ (манипулирую) отцом виртуозно! ___ (письмо) - моё оружие! Я ___ (лгу) с невинным лицом! ___ (обман) - моё искусство! «Отец, я случайно нашёл это письмо...» - говорю я, дрожа от притворного страха. Глупый старик верит каждому слову!"
+      },
+      "vocabulary": [
+        {
+          "german": "fälschen",
+          "russian": "подделывать",
+          "transcription": "[ФЕЛЬ-шен]",
+          "sentence": "Im hallenden Torbogen von Gonerils Burg verharrt Edmund zwischen gepackten Kisten. Mit fester Stimme schwöre ich mir: Das Wort „fälschen“ wird heute nicht verraten.",
+          "sentence_translation": "В гулком проёме ворот замка Гонерильи Эдмунд замирает среди нагруженных ящиков. Твёрдым голосом я клянусь себе: слово «подделывать» сегодня не будет предано.",
+          "sentence_parts": [
+            "Im hallenden Torbogen von Gonerils Burg verharrt Edmund zwischen gepackten Kisten.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „fälschen“ wird heute nicht verraten."
+          ]
+        },
+        {
+          "german": "intrigieren",
+          "russian": "интриговать",
+          "transcription": "[ин-три-ГИ-рен]",
+          "sentence": "Auf der windigen Freitreppe blickt Edmund zum schweigenden Hof hinunter. Ich zeichne das Wort „intrigieren“ mit unsichtbarer Tinte auf meine Handfläche.",
+          "sentence_translation": "На продуваемой ветром лестнице Эдмунд смотрит вниз на молчаливый двор. Я вывожу слово «интриговать» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Auf der windigen Freitreppe blickt Edmund zum schweigenden Hof hinunter.",
+            "Ich zeichne das Wort „intrigieren“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
+        },
+        {
+          "german": "beschuldigen",
+          "russian": "обвинять",
+          "transcription": "[бе-ШУЛЬ-ди-ген]",
+          "sentence": "Zwischen zurückgelassenen Dienern schließt Edmund den Reisemantel enger. Ich flüstere den Wächtern des Schicksals zu: Das Wort „beschuldigen“ darf nicht vergehen.",
+          "sentence_translation": "Среди оставленных слуг Эдмунд плотнее запахивает дорожный плащ. Я шепчу стражам судьбы: слово «обвинять» не должно исчезнуть.",
+          "sentence_parts": [
+            "Zwischen zurückgelassenen Dienern schließt Edmund den Reisemantel enger.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „beschuldigen“ darf nicht vergehen."
+          ]
+        },
+        {
+          "german": "der Plan",
+          "russian": "план",
+          "transcription": "[дер ПЛАН]",
+          "sentence": "Am dunklen Pferdestall streicht Edmund einem nervösen Tier über die Mähne. Ich presse das Wort „der Plan“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "У тёмного конюшенного ряда Эдмунд гладит гриву нервного коня. Я стискиваю слово «план» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Am dunklen Pferdestall streicht Edmund einem nervösen Tier über die Mähne.",
+            "Ich presse das Wort „der Plan“ zwischen die Zähne,",
+            "damit kein Zweifel entweicht."
+          ]
+        },
+        {
+          "german": "manipulieren",
+          "russian": "манипулировать",
+          "transcription": "[ма-ни-пу-ЛИ-рен]",
+          "sentence": "Vor dem knarrenden Fallgatter tastet Edmund ein letztes Mal nach dem Haustor. Mit fester Stimme schwöre ich mir: Das Wort „manipulieren“ wird heute nicht verraten.",
+          "sentence_translation": "Перед скрипящим подъёмным мостом Эдмунд в последний раз касается родной двери. Твёрдым голосом я клянусь себе: слово «манипулировать» сегодня не будет предано.",
+          "sentence_parts": [
+            "Vor dem knarrenden Fallgatter tastet Edmund ein letztes Mal nach dem Haustor.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „manipulieren“ wird heute nicht verraten."
+          ]
+        },
+        {
+          "german": "der Brief",
+          "russian": "письмо",
+          "transcription": "[дер БРИФ]",
+          "sentence": "Zwischen verstreuten Schriftrollen dreht Edmund den Ring an der Hand. Ich umarme das Wort „der Brief“, als wäre es mein einziger Verbündeter.",
+          "sentence_translation": "Среди разбросанных свитков Эдмунд вертит кольцо на пальце. Я обнимаю слово «письмо», будто это единственный союзник.",
+          "sentence_parts": [
+            "Zwischen verstreuten Schriftrollen dreht Edmund den Ring an der Hand.",
+            "Ich umarme das Wort „der Brief“, als wäre es mein einziger Verbündeter."
+          ]
+        },
+        {
+          "german": "lügen",
+          "russian": "лгать",
+          "transcription": "[ЛЮ-ген]",
+          "sentence": "Am leeren Bankettisch zählt Edmund die verlöschenden Kerzen. Mit jeder Faser meines Körpers verspreche ich: Das Wort „lügen“ bleibt lebendig.",
+          "sentence_translation": "У пустого банкетного стола Эдмунд пересчитывает гаснущие свечи. Каждой клеткой тела я обещаю: слово «лгать» останется живым.",
+          "sentence_parts": [
+            "Am leeren Bankettisch zählt Edmund die verlöschenden Kerzen.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „lügen“ bleibt lebendig."
+          ]
+        },
+        {
+          "german": "die Täuschung",
+          "russian": "обман",
+          "transcription": "[ди ТОЙ-шунг]",
+          "sentence": "Zwischen schweigenden Wachen geht Edmund auf den kalten Hof hinaus. Das Echo des Wortes „die Täuschung“ übertönt das Flüstern der Höflinge.",
+          "sentence_translation": "Между молчаливыми стражниками Эдмунд выходит на холодный двор. Эхо слова «обман» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Zwischen schweigenden Wachen geht Edmund auf den kalten Hof hinaus.",
+            "Das Echo des Wortes „die Täuschung“ übertönt das Flüstern der Höflinge."
+          ]
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «fälschen»?",
+          "choices": [
+            "интриговать",
+            "обвинять",
+            "план",
+            "подделывать"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «intrigieren»?",
+          "choices": [
+            "подделывать",
+            "обвинять",
+            "план",
+            "интриговать"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "regan",
+      "icon": "🎭",
+      "title": "Изгнание Эдгара",
+      "keywords": "vertreiben • triumphieren • erben",
+      "description": "Акт II: Победа интриги",
+      "theatrical_scene": {
+        "title": "ТРИУМФ БАСТАРДА",
+        "narrative": "Победа! Я <b>VERTREIBEN (изгнал)</b> Эдгара! Я <b>TRIUMPHIEREN (торжествую)</b>! Теперь я <b>ERBEN (наследую)</b> всё! Мой <b>ERFOLG (успех)</b> полный! Я <b>GEWINNEN (выиграл)</b> эту игру! <b>DIE BELOHNUNG (награда)</b> - титул и земли! Я <b>VERDRÄNGEN (вытеснил)</b> законного сына! <b>DER SIEG (победа)</b> сладка как мёд! Отец сделал меня своим единственным наследником! «Эдмунд, ты мой истинный сын!» - говорит он со слезами. Я еле сдерживаю улыбку триумфа!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Эдгар бежал как трус!» - докладываю я отцу. «Теперь я ваш единственный сын!» Из бастарда - в наследника!",
+        "exercise_text": "Победа! Я ___ (изгнал) Эдгара! Я ___ (торжествую)! Теперь я ___ (наследую) всё! Мой ___ (успех) полный! Я ___ (выиграл) эту игру! ___ (награда) - титул и земли! Я ___ (вытеснил) законного сына! ___ (победа) сладка как мёд! Отец сделал меня своим единственным наследником! «Эдмунд, ты мой истинный сын!» - говорит он со слезами. Я еле сдерживаю улыбку триумфа!"
+      },
+      "vocabulary": [
+        {
+          "german": "vertreiben",
+          "russian": "изгонять",
+          "transcription": "[фер-ТРАЙ-бен]",
+          "sentence": "Im zugigen Seitenflügel lauscht Edmund dem Heulen der Küstenwinde. Das Echo des Wortes „vertreiben“ übertönt das Flüstern der Höflinge.",
+          "sentence_translation": "В продуваемом ветром боковом крыле Эдмунд слушает вой прибрежного ветра. Эхо слова «изгонять» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Im zugigen Seitenflügel lauscht Edmund dem Heulen der Küstenwinde.",
+            "Das Echo des Wortes „vertreiben“ übertönt das Flüstern der Höflinge."
+          ]
+        },
+        {
+          "german": "triumphieren",
+          "russian": "торжествовать",
+          "transcription": "[три-ум-ФИ-рен]",
+          "sentence": "Vor dem rauchigen Kamin der Burg faltet Edmund einen zerknitterten Brief. Ich halte das Wort „triumphieren“ wie eine Fackel vor meinem Herzen.",
+          "sentence_translation": "Перед дымным камином замка Эдмунд складывает измятый лист. Я держу слово «торжествовать» как факел у сердца.",
+          "sentence_parts": [
+            "Vor dem rauchigen Kamin der Burg faltet Edmund einen zerknitterten Brief.",
+            "Ich halte das Wort „triumphieren“ wie eine Fackel vor meinem Herzen."
+          ]
+        },
+        {
+          "german": "erben",
+          "russian": "наследовать",
+          "transcription": "[ЭР-бен]",
+          "sentence": "Unter farblosen Wandteppichen schreitet Edmund rastlos auf und ab. Ich zeichne das Wort „erben“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "Под выцветшими гобеленами Эдмунд беспокойно меряет шагами зал. Я черчу слово «наследовать» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Unter farblosen Wandteppichen schreitet Edmund rastlos auf und ab.",
+            "Ich zeichne das Wort „erben“ in Gedanken über die Linien des Schicksals."
+          ]
+        },
+        {
+          "german": "der Erfolg",
+          "russian": "успех",
+          "transcription": "[дер эр-ФОЛЬГ]",
+          "sentence": "An der schmalen Fensterluke zählt Edmund die Fackeln auf dem Hof. Wie ein stilles Gebet legt sich das Wort „der Erfolg“ auf meine Lippen.",
+          "sentence_translation": "У узкой бойницы Эдмунд считает факелы на дворе. Как тихая молитва слово «успех» ложится на мои губы.",
+          "sentence_parts": [
+            "An der schmalen Fensterluke zählt Edmund die Fackeln auf dem Hof.",
+            "Wie ein stilles Gebet legt sich das Wort „der Erfolg“ auf meine Lippen."
+          ]
+        },
+        {
+          "german": "gewinnen",
+          "russian": "выигрывать",
+          "transcription": "[ге-ВИН-нен]",
+          "sentence": "Zwischen Reisekoffern der Gesandten sucht Edmund nach frischen Botschaften. Ich umarme das Wort „gewinnen“, als wäre es mein einziger Verbündeter.",
+          "sentence_translation": "Среди дорожных сундуков послов Эдмунд ищет свежие вести. Я обнимаю слово «выигрывать», будто это единственный союзник.",
+          "sentence_parts": [
+            "Zwischen Reisekoffern der Gesandten sucht Edmund nach frischen Botschaften.",
+            "Ich umarme das Wort „gewinnen“, als wäre es mein einziger Verbündeter."
+          ]
+        },
+        {
+          "german": "die Belohnung",
+          "russian": "награда",
+          "transcription": "[ди бе-ЛО-нунг]",
+          "sentence": "Im stillen Kapellenraum kniet Edmund vor der kalten Steinfigur. Ich zeichne das Wort „die Belohnung“ mit unsichtbarer Tinte auf meine Handfläche.",
+          "sentence_translation": "В тихой капелле Эдмунд преклоняет колени перед холодной каменной фигурой. Я вывожу слово «награда» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Im stillen Kapellenraum kniet Edmund vor der kalten Steinfigur.",
+            "Ich zeichne das Wort „die Belohnung“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
+        },
+        {
+          "german": "verdrängen",
+          "russian": "вытеснять",
+          "transcription": "[фер-ДРЕН-ген]",
+          "sentence": "Auf dem Balkon, den das Meer besprüht, hält Edmund die Laterne fest. Das kalte Licht lässt das Wort „verdrängen“ wie geschmolzenes Gold erscheinen.",
+          "sentence_translation": "На балконе, омываемом морскими брызгами, Эдмунд крепко держит фонарь. Холодный свет заставляет слово «вытеснять» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Auf dem Balkon, den das Meer besprüht, hält Edmund die Laterne fest.",
+            "Das kalte Licht lässt das Wort „verdrängen“ wie geschmolzenes Gold erscheinen."
+          ]
+        },
+        {
+          "german": "der Sieg",
+          "russian": "победа",
+          "transcription": "[дер ЗИГ]",
+          "sentence": "Im Schatten der hohen Burgmauern schreibt Edmund eine fiebrige Antwort. Ich zeichne das Wort „der Sieg“ mit unsichtbarer Tinte auf meine Handfläche.",
+          "sentence_translation": "В тени высоких стен Эдмунд пишет лихорадочный ответ. Я вывожу слово «победа» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Im Schatten der hohen Burgmauern schreibt Edmund eine fiebrige Antwort.",
+            "Ich zeichne das Wort „der Sieg“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «vertreiben»?",
+          "choices": [
+            "торжествовать",
+            "наследовать",
+            "успех",
+            "изгонять"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «triumphieren»?",
+          "choices": [
+            "изгонять",
+            "наследовать",
+            "успех",
+            "торжествовать"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "storm",
+      "icon": "⚔️",
+      "title": "Союз с сёстрами",
+      "keywords": "verbünden • Macht • erobern",
+      "description": "Акт III: Альянс со злом",
+      "theatrical_scene": {
+        "title": "АЛЬЯНС ХИЩНИКОВ",
+        "narrative": "Гонерилья и Регана - мои союзницы и любовницы! Я <b>VERBÜNDEN (объединяюсь)</b> с ними! <b>DIE MACHT (власть)</b> будет нашей! Мы <b>EROBERN (завоёвываем)</b> королевство! <b>DAS BÜNDNIS (союз)</b> выгоден всем! Я <b>VERFÜHREN (соблазняю)</b> обеих сестёр! <b>DIE EROBERUNG (завоевание)</b> идёт по плану! Я <b>BEHERRSCHEN (господствую)</b> над ситуацией! <b>DIE ALLIANZ (альянс)</b> зла непобедим! Старый король безумен, Глостер ослеплён - путь к трону открыт!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Я буду королём!» - шепчу я сёстрам. «А вы - моими королевами!» Они обе готовы убить друг друга за меня!",
+        "exercise_text": "Гонерилья и Регана - мои союзницы и любовницы! Я ___ (объединяюсь) с ними! ___ (власть) будет нашей! Мы ___ (завоёвываем) королевство! ___ (союз) выгоден всем! Я ___ (соблазняю) обеих сестёр! ___ (завоевание) идёт по плану! Я ___ (господствую) над ситуацией! ___ (альянс) зла непобедим! Старый король безумен, Глостер ослеплён - путь к трону открыт!"
+      },
+      "vocabulary": [
+        {
+          "german": "verbünden",
+          "russian": "объединяться",
+          "transcription": "[фер-БЮН-ден]",
+          "sentence": "Mitten auf der vom Regen gepeitschten Heide stemmt sich Edmund gegen den Wind. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „verbünden“ gehört mir.",
+          "sentence_translation": "Посреди хлещущей дождём пустоши Эдмунд упирается в ветер. Буря за окнами усиливает клятву: слово «объединяться» принадлежит мне.",
+          "sentence_parts": [
+            "Mitten auf der vom Regen gepeitschten Heide stemmt sich Edmund gegen den Wind.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „verbünden“ gehört mir."
+          ]
+        },
+        {
+          "german": "die Macht",
+          "russian": "власть",
+          "transcription": "[ди МАХТ]",
+          "sentence": "Unter einem zerrissenen Banner schützt Edmund die Augen vor den Blitzen. Ich umarme das Wort „die Macht“, als wäre es mein einziger Verbündeter.",
+          "sentence_translation": "Под разорванным знаменем Эдмунд прикрывает глаза от молний. Я обнимаю слово «власть», будто это единственный союзник.",
+          "sentence_parts": [
+            "Unter einem zerrissenen Banner schützt Edmund die Augen vor den Blitzen.",
+            "Ich umarme das Wort „die Macht“, als wäre es mein einziger Verbündeter."
+          ]
+        },
+        {
+          "german": "erobern",
+          "russian": "завоёвывать",
+          "transcription": "[эр-О-берн]",
+          "sentence": "Am Rand eines umgestürzten Baumes sucht Edmund Deckung vor dem Donner. Das kalte Licht lässt das Wort „erobern“ wie geschmolzenes Gold erscheinen.",
+          "sentence_translation": "У поваленного дерева Эдмунд ищет укрытия от грома. Холодный свет заставляет слово «завоёвывать» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Am Rand eines umgestürzten Baumes sucht Edmund Deckung vor dem Donner.",
+            "Das kalte Licht lässt das Wort „erobern“ wie geschmolzenes Gold erscheinen."
+          ]
+        },
+        {
+          "german": "das Bündnis",
+          "russian": "союз",
+          "transcription": "[дас БЮНД-нис]",
+          "sentence": "Zwischen schäumenden Wassergräben stolpert Edmund durch den Schlamm. Das kalte Licht lässt das Wort „das Bündnis“ wie geschmolzenes Gold erscheinen.",
+          "sentence_translation": "Между пенящимися лужами Эдмунд пробирается через грязь. Холодный свет заставляет слово «союз» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Zwischen schäumenden Wassergräben stolpert Edmund durch den Schlamm.",
+            "Das kalte Licht lässt das Wort „das Bündnis“ wie geschmolzenes Gold erscheinen."
+          ]
+        },
+        {
+          "german": "verführen",
+          "russian": "соблазнять",
+          "transcription": "[фер-ФЮ-рен]",
+          "sentence": "Vor einem zuckenden Himmel hebt Edmund die Arme trotzig an. Ich umarme das Wort „verführen“, als wäre es mein einziger Verbündeter.",
+          "sentence_translation": "На фоне вспыхивающего неба Эдмунд упрямо поднимает руки. Я обнимаю слово «соблазнять», будто это единственный союзник.",
+          "sentence_parts": [
+            "Vor einem zuckenden Himmel hebt Edmund die Arme trotzig an.",
+            "Ich umarme das Wort „verführen“, als wäre es mein einziger Verbündeter."
+          ]
+        },
+        {
+          "german": "die Eroberung",
+          "russian": "завоевание",
+          "transcription": "[ди эр-О-бе-рунг]",
+          "sentence": "Unter dem durchtränkten Umhang presst Edmund den Atem gegen die Kälte. Ich halte das Wort „die Eroberung“ wie eine Fackel vor meinem Herzen.",
+          "sentence_translation": "Под промокшим плащом Эдмунд прижимает дыхание к груди, спасаясь от холода. Я держу слово «завоевание» как факел у сердца.",
+          "sentence_parts": [
+            "Unter dem durchtränkten Umhang presst Edmund den Atem gegen die Kälte.",
+            "Ich halte das Wort „die Eroberung“ wie eine Fackel vor meinem Herzen."
+          ]
+        },
+        {
+          "german": "beherrschen",
+          "russian": "господствовать",
+          "transcription": "[бе-ХЕР-шен]",
+          "sentence": "Am kläglichen Feuerrest wärmt Edmund zitternde Finger. Ich presse das Wort „beherrschen“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "У жалких огненных углей Эдмунд греет дрожащие пальцы. Я стискиваю слово «господствовать» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Am kläglichen Feuerrest wärmt Edmund zitternde Finger.",
+            "Ich presse das Wort „beherrschen“ zwischen die Zähne, damit kein Zweifel entweicht."
+          ]
+        },
+        {
+          "german": "die Allianz",
+          "russian": "альянс",
+          "transcription": "[ди а-ли-АНЦС]",
+          "sentence": "Zwischen heulenden Hunden ruft Edmund gegen den tosenden Sturm an. Ich presse das Wort „die Allianz“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "Среди воющих псов Эдмунд перекрикивает беснующуюся бурю. Я стискиваю слово «альянс» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Zwischen heulenden Hunden ruft Edmund gegen den tosenden Sturm an.",
+            "Ich presse das Wort „die Allianz“ zwischen die Zähne,",
+            "damit kein Zweifel entweicht."
+          ]
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «verbünden»?",
+          "choices": [
+            "власть",
+            "завоёвывать",
+            "союз",
+            "объединяться"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «die Macht»?",
+          "choices": [
+            "объединяться",
+            "завоёвывать",
+            "союз",
+            "власть"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "hut",
+      "icon": "👑",
+      "title": "Предательство отца",
+      "keywords": "verraten • blenden • Grausamkeit",
+      "description": "Акт III-IV: Ослепление Глостера",
+      "theatrical_scene": {
+        "title": "ПРЕДАТЕЛЬСТВО ОТЦА",
+        "narrative": "Отец помог Лиру! Я <b>VERRATEN (предаю)</b> его без колебаний! Пусть его <b>BLENDEN (ослепят)</b>! <b>DIE GRAUSAMKEIT (жестокость)</b> необходима! Я <b>DENUNZIEREN (доношу)</b> на собственного отца! <b>AUSLIEFERN (выдаю)</b> его Корнуоллу и Регане! <b>DIE FOLTER (пытка)</b> - его судьба! Я <b>OPFERN (жертвую)</b> им ради власти! <b>ERBARMUNGSLOS (беспощадно)</b> иду к цели! «Он предатель!» - говорю я Регане. «Делайте с ним что хотите!» Глаза отца выкалывают, а я становлюсь графом!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Вырвите ему глаза!» - слышу я крики отца. Я улыбаюсь! «Спасибо, отец, за титул графа!» Кровь отца - моя корона!",
+        "exercise_text": "Отец помог Лиру! Я ___ (предаю) его без колебаний! Пусть его ___ (ослепят)! ___ (жестокость) необходима! Я ___ (доношу) на собственного отца! ___ (выдаю) его Корнуоллу и Регане! ___ (пытка) - его судьба! Я ___ (жертвую) им ради власти! ___ (беспощадно) иду к цели! «Он предатель!» - говорю я Регане. «Делайте с ним что хотите!» Глаза отца выкалывают, а я становлюсь графом!"
+      },
+      "vocabulary": [
+        {
+          "german": "verraten",
+          "russian": "предавать",
+          "transcription": "[фер-РА-тен]",
+          "sentence": "Im dunklen Zelt der Feldärzte sitzt Edmund bei der flackernden Kerze. Mein Atem zeichnet das Wort „verraten“ in die kalte Luft zwischen uns.",
+          "sentence_translation": "В тёмном шатре полевых лекарей Эдмунд сидит у мерцающей свечи. Моё дыхание рисует слово «предавать» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Im dunklen Zelt der Feldärzte sitzt Edmund bei der flackernden Kerze.",
+            "Mein Atem zeichnet das Wort „verraten“ in die kalte Luft zwischen uns."
+          ]
+        },
+        {
+          "german": "blenden",
+          "russian": "ослеплять",
+          "transcription": "[БЛЕН-ден]",
+          "sentence": "Zwischen zerbeulten Rüstungen streicht Edmund über ein altes Wappen. Ich flüstere den Wächtern des Schicksals zu: Das Wort „blenden“ darf nicht vergehen.",
+          "sentence_translation": "Среди помятых доспехов Эдмунд гладит старый герб. Я шепчу стражам судьбы: слово «ослеплять» не должно исчезнуть.",
+          "sentence_parts": [
+            "Zwischen zerbeulten Rüstungen streicht Edmund über ein altes Wappen.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „blenden“ darf nicht vergehen."
+          ]
+        },
+        {
+          "german": "die Grausamkeit",
+          "russian": "жестокость",
+          "transcription": "[ди ГРАУ-зам-кайт]",
+          "sentence": "Am niedrigen Dachbalken der Hütte stößt Edmund fast den Kopf. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Grausamkeit“ gehört mir.",
+          "sentence_translation": "О низкую балку хижины Эдмунд едва не ударяется головой. Буря за окнами усиливает клятву: слово «жестокость» принадлежит мне.",
+          "sentence_parts": [
+            "Am niedrigen Dachbalken der Hütte stößt Edmund fast den Kopf.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Grausamkeit“ gehört mir."
+          ]
+        },
+        {
+          "german": "denunzieren",
+          "russian": "доносить",
+          "transcription": "[де-нун-ЦИ-рен]",
+          "sentence": "Neben der schlafenden Wache flüstert Edmund in die schwere Nacht. Ich presse das Wort „denunzieren“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "Рядом со спящим стражем Эдмунд шепчет в тяжёлую ночь. Я стискиваю слово «доносить» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Neben der schlafenden Wache flüstert Edmund in die schwere Nacht.",
+            "Ich presse das Wort „denunzieren“ zwischen die Zähne, damit kein Zweifel entweicht."
+          ]
+        },
+        {
+          "german": "ausliefern",
+          "russian": "выдавать",
+          "transcription": "[АУС-ли-ферн]",
+          "sentence": "Vor dem einfachen Feldbett betrachtet Edmund die Narben vergangener Schlachten. Mit fester Stimme schwöre ich mir: Das Wort „ausliefern“ wird heute nicht verraten.",
+          "sentence_translation": "Перед грубой походной койкой Эдмунд разглядывает шрамы прошлых битв. Твёрдым голосом я клянусь себе: слово «выдавать» сегодня не будет предано.",
+          "sentence_parts": [
+            "Vor dem einfachen Feldbett betrachtet Edmund die Narben vergangener Schlachten.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „ausliefern“ wird heute nicht verraten."
+          ]
+        },
+        {
+          "german": "die Folter",
+          "russian": "пытка",
+          "transcription": "[ди ФОЛЬ-тер]",
+          "sentence": "Im Geruch von feuchtem Stroh legt Edmund den Mantel zur Seite. Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Folter“ bleibt lebendig.",
+          "sentence_translation": "В запахе влажной соломы Эдмунд откладывает плащ в сторону. Каждой клеткой тела я обещаю: слово «пытка» останется живым.",
+          "sentence_parts": [
+            "Im Geruch von feuchtem Stroh legt Edmund den Mantel zur Seite.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Folter“ bleibt lebendig."
+          ]
+        },
+        {
+          "german": "opfern",
+          "russian": "жертвовать",
+          "transcription": "[ОП-ферн]",
+          "sentence": "Auf dem wackligen Holztisch ordnet Edmund zerlesene Briefe. Das kalte Licht lässt das Wort „opfern“ wie geschmolzenes Gold erscheinen.",
+          "sentence_translation": "На шатком деревянном столе Эдмунд раскладывает зачитанные письма. Холодный свет заставляет слово «жертвовать» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Auf dem wackligen Holztisch ordnet Edmund zerlesene Briefe.",
+            "Das kalte Licht lässt das Wort „opfern“ wie geschmolzenes Gold erscheinen."
+          ]
+        },
+        {
+          "german": "erbarmungslos",
+          "russian": "беспощадный",
+          "transcription": "[эр-БАР-мунгс-лос]",
+          "sentence": "Am Eingang der Hütte späht Edmund nach einem vertrauten Schatten. Ich presse das Wort „erbarmungslos“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "У входа в хижину Эдмунд высматривает знакомую тень. Я стискиваю слово «беспощадный» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Am Eingang der Hütte späht Edmund nach einem vertrauten Schatten.",
+            "Ich presse das Wort „erbarmungslos“ zwischen die Zähne, damit kein Zweifel entweicht."
+          ]
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «verraten»?",
+          "choices": [
+            "ослеплять",
+            "жестокость",
+            "доносить",
+            "предавать"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «blenden»?",
+          "choices": [
+            "предавать",
+            "жестокость",
+            "доносить",
+            "ослеплять"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "dover",
+      "icon": "💕",
+      "title": "Любовный треугольник",
+      "keywords": "Liebschaft • Rivalität • spielen",
+      "description": "Акт IV-V: Между двух сестёр",
+      "theatrical_scene": {
+        "title": "ИГРА С ОГНЁМ",
+        "narrative": "Обе сестры хотят меня! <b>DIE LIEBSCHAFT (любовная связь)</b> с каждой! <b>DIE RIVALITÄT (соперничество)</b> между ними - моё оружие! Я <b>SPIELEN (играю)</b> с обеими! Я <b>VERLOCKEN (завлекаю)</b> их обещаниями! <b>DIE LUST (похоть)</b> ослепляет их! Я <b>AUSNUTZEN (использую)</b> их страсть! <b>JONGLIEREN (жонглирую)</b> их чувствами! <b>DIE AFFÄRE (интрига)</b> становится смертельной! Гонерилья пишет любовные письма, Регана предлагает брак! Пусть убьют друг друга за меня!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Я люблю вас обеих!» - лгу я с улыбкой. «Но достанусь только одной!» Они готовы на всё! Я - кукловод их страстей!",
+        "exercise_text": "Обе сестры хотят меня! ___ (любовная связь) с каждой! ___ (соперничество) между ними - моё оружие! Я ___ (играю) с обеими! Я ___ (завлекаю) их обещаниями! ___ (похоть) ослепляет их! Я ___ (использую) их страсть! ___ (жонглирую) их чувствами! ___ (интрига) становится смертельной! Гонерилья пишет любовные письма, Регана предлагает брак! Пусть убьют друг друга за меня!"
+      },
+      "vocabulary": [
+        {
+          "german": "die Liebschaft",
+          "russian": "любовная связь",
+          "transcription": "[ди ЛИБ-шафт]",
+          "sentence": "Auf den weißen Klippen von Dover blickt Edmund in den aufgewühlten Kanal. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Liebschaft“ gehört mir.",
+          "sentence_translation": "На белых скалах Дувра Эдмунд смотрит в вздыбленный пролив. Буря за окнами усиливает клятву: слово «любовная связь» принадлежит мне.",
+          "sentence_parts": [
+            "Auf den weißen Klippen von Dover blickt Edmund in den aufgewühlten Kanal.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Liebschaft“ gehört mir."
+          ]
+        },
+        {
+          "german": "die Rivalität",
+          "russian": "соперничество",
+          "transcription": "[ди ри-ва-ли-ТЕТ]",
+          "sentence": "Zwischen flatternden Feldzeichen richtet Edmund den Helm. Ich halte das Wort „die Rivalität“ wie eine Fackel vor meinem Herzen.",
+          "sentence_translation": "Среди хлопающих штандартов Эдмунд поправляет шлем. Я держу слово «соперничество» как факел у сердца.",
+          "sentence_parts": [
+            "Zwischen flatternden Feldzeichen richtet Edmund den Helm.",
+            "Ich halte das Wort „die Rivalität“ wie eine Fackel vor meinem Herzen."
+          ]
+        },
+        {
+          "german": "spielen",
+          "russian": "играть",
+          "transcription": "[ШПИ-лен]",
+          "sentence": "Am Lagerfeuer der Franzosen zeichnet Edmund Marschrouten in den Sand. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „spielen“ gehört mir.",
+          "sentence_translation": "У французского костра Эдмунд рисует в песке путь марша. Буря за окнами усиливает клятву: слово «играть» принадлежит мне.",
+          "sentence_parts": [
+            "Am Lagerfeuer der Franzosen zeichnet Edmund Marschrouten in den Sand.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „spielen“ gehört mir."
+          ]
+        },
+        {
+          "german": "verlocken",
+          "russian": "завлекать",
+          "transcription": "[фер-ЛО-кен]",
+          "sentence": "Neben verschnürten Versorgungskisten kontrolliert Edmund das Siegel. Ich flüstere den Wächtern des Schicksals zu: Das Wort „verlocken“ darf nicht vergehen.",
+          "sentence_translation": "У перевязанных провиантных ящиков Эдмунд проверяет печати. Я шепчу стражам судьбы: слово «завлекать» не должно исчезнуть.",
+          "sentence_parts": [
+            "Neben verschnürten Versorgungskisten kontrolliert Edmund das Siegel.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „verlocken“ darf nicht vergehen."
+          ]
+        },
+        {
+          "german": "die Lust",
+          "russian": "похоть",
+          "transcription": "[ди ЛУСТ]",
+          "sentence": "Vor dem Seidenzelt der Heerführer lauscht Edmund dem dumpfen Meer. Ich presse das Wort „die Lust“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "Перед шёлковым шатром полководцев Эдмунд слушает глухой шум моря. Я стискиваю слово «похоть» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Vor dem Seidenzelt der Heerführer lauscht Edmund dem dumpfen Meer.",
+            "Ich presse das Wort „die Lust“ zwischen die Zähne,",
+            "damit kein Zweifel entweicht."
+          ]
+        },
+        {
+          "german": "ausnutzen",
+          "russian": "использовать",
+          "transcription": "[АУС-нут-цен]",
+          "sentence": "Auf dem sandigen Trainingsplatz übt Edmund das Ziehen des Schwerts. Ich atme tief ein und lasse nur das Wort „ausnutzen“ wieder hinaus.",
+          "sentence_translation": "На песчаном плацу Эдмунд отрабатывает выхват меча. Я глубоко вдыхаю и выпускаю только слово «использовать».",
+          "sentence_parts": [
+            "Auf dem sandigen Trainingsplatz übt Edmund das Ziehen des Schwerts.",
+            "Ich atme tief ein und lasse nur das Wort „ausnutzen“ wieder hinaus."
+          ]
+        },
+        {
+          "german": "jonglieren",
+          "russian": "жонглировать",
+          "transcription": "[жон-ГЛИ-рен]",
+          "sentence": "Zwischen pochenden Trommeln hebt Edmund das Banner der Hoffnung. Das kalte Licht lässt das Wort „jonglieren“ wie geschmolzenes Gold erscheinen.",
+          "sentence_translation": "Под гул барабанов Эдмунд поднимает знамя надежды. Холодный свет заставляет слово «жонглировать» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Zwischen pochenden Trommeln hebt Edmund das Banner der Hoffnung.",
+            "Das kalte Licht lässt das Wort „jonglieren“ wie geschmolzenes Gold erscheinen."
+          ]
+        },
+        {
+          "german": "die Affäre",
+          "russian": "интрига",
+          "transcription": "[ди а-ФЕ-ре]",
+          "sentence": "Am Morgennebel der Küste legt Edmund die Hand auf das pochende Herz. Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Affäre“ darf nicht vergehen.",
+          "sentence_translation": "В утреннем тумане побережья Эдмунд кладёт ладонь на бьющееся сердце. Я шепчу стражам судьбы: слово «интрига» не должно исчезнуть.",
+          "sentence_parts": [
+            "Am Morgennebel der Küste legt Edmund die Hand auf das pochende Herz.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Affäre“ darf nicht vergehen."
+          ]
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Liebschaft»?",
+          "choices": [
+            "соперничество",
+            "играть",
+            "завлекать",
+            "любовная связь"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «die Rivalität»?",
+          "choices": [
+            "любовная связь",
+            "играть",
+            "завлекать",
+            "соперничество"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "prison",
+      "icon": "⚔️",
+      "title": "Дуэль и смерть",
+      "keywords": "Duell • fallen • bereuen",
+      "description": "Акт V: Поражение и раскаяние",
+      "theatrical_scene": {
+        "title": "КОЛЕСО ФОРТУНЫ",
+        "narrative": "Эдгар вызывает меня на <b>DAS DUELL (дуэль)</b>! Я <b>FALLEN (падаю)</b> от его меча! Неужели я <b>BEREUEN (сожалею)</b>? <b>DIE NIEDERLAGE (поражение)</b> горько! Я <b>VERLIEREN (проигрываю)</b> всё! <b>DER UNTERGANG (падение)</b> стремительно! Я <b>GESTEHEN (признаюсь)</b> во всех грехах! <b>DAS ENDE (конец)</b> близок! «Колесо совершило круг!» - говорит Эдгар. Он прав. Я приказал убить Корделию и Лира! «Отмените приказ!» - кричу я. Но поздно! Смерть забирает меня!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Я любил их обеих!» - признаюсь я умирая. «И они любили меня!» Кровь заливает лёгкие! Бастард умирает как граф!",
+        "exercise_text": "Эдгар вызывает меня на ___ (дуэль)! Я ___ (падаю) от его меча! Неужели я ___ (сожалею)? ___ (поражение) горько! Я ___ (проигрываю) всё! ___ (падение) стремительно! Я ___ (признаюсь) во всех грехах! ___ (конец) близок! «Колесо совершило круг!» - говорит Эдгар. Он прав. Я приказал убить Корделию и Лира! «Отмените приказ!» - кричу я. Но поздно! Смерть забирает меня!"
+      },
+      "vocabulary": [
+        {
+          "german": "das Duell",
+          "russian": "дуэль",
+          "transcription": "[дас ду-ЭЛЬ]",
+          "sentence": "Im feuchten Kerker stützt Edmund sich an den tropfenden Stein. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „das Duell“ gehört mir.",
+          "sentence_translation": "В сыром подземелье Эдмунд опирается на сочащийся камень. Буря за окнами усиливает клятву: слово «дуэль» принадлежит мне.",
+          "sentence_parts": [
+            "Im feuchten Kerker stützt Edmund sich an den tropfenden Stein.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „das Duell“ gehört mir."
+          ]
+        },
+        {
+          "german": "fallen",
+          "russian": "падать",
+          "transcription": "[ФАЛ-лен]",
+          "sentence": "Unter der trüben Laterne zählt Edmund die eisernen Ringe der Kette. Ich zeichne das Wort „fallen“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "Под мутным фонарём Эдмунд пересчитывает железные кольца цепи. Я черчу слово «падать» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Unter der trüben Laterne zählt Edmund die eisernen Ringe der Kette.",
+            "Ich zeichne das Wort „fallen“ in Gedanken über die Linien des Schicksals."
+          ]
+        },
+        {
+          "german": "bereuen",
+          "russian": "сожалеть",
+          "transcription": "[бе-РОЙ-ен]",
+          "sentence": "Neben der schweren Holztür horcht Edmund auf entferntes Schluchzen. Das Echo des Wortes „bereuen“ übertönt das Flüstern der Höflinge.",
+          "sentence_translation": "У тяжёлой двери Эдмунд прислушивается к далёким рыданиям. Эхо слова «сожалеть» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Neben der schweren Holztür horcht Edmund auf entferntes Schluchzen.",
+            "Das Echo des Wortes „bereuen“ übertönt das Flüstern der Höflinge."
+          ]
+        },
+        {
+          "german": "die Niederlage",
+          "russian": "поражение",
+          "transcription": "[ди НИ-дер-ла-ге]",
+          "sentence": "Auf der kalten Steinbank zieht Edmund den Mantel enger um die Schultern. Ich zeichne das Wort „die Niederlage“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "На холодной каменной скамье Эдмунд плотнее кутается в плащ. Я черчу слово «поражение» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Auf der kalten Steinbank zieht Edmund den Mantel enger um die Schultern.",
+            "Ich zeichne das Wort „die Niederlage“ in Gedanken über die Linien des Schicksals."
+          ]
+        },
+        {
+          "german": "verlieren",
+          "russian": "проигрывать",
+          "transcription": "[фер-ЛИ-рен]",
+          "sentence": "Zwischen Schatten der Gitterstäbe hebt Edmund das Gesicht zum Licht. Mit fester Stimme schwöre ich mir: Das Wort „verlieren“ wird heute nicht verraten.",
+          "sentence_translation": "Между тенями решёток Эдмунд поднимает лицо к свету. Твёрдым голосом я клянусь себе: слово «проигрывать» сегодня не будет предано.",
+          "sentence_parts": [
+            "Zwischen Schatten der Gitterstäbe hebt Edmund das Gesicht zum Licht.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „verlieren“ wird heute nicht verraten."
+          ]
+        },
+        {
+          "german": "der Untergang",
+          "russian": "падение",
+          "transcription": "[дер УН-тер-ганг]",
+          "sentence": "Am rostigen Wassereimer spiegelt Edmund kurz die eigenen Augen. Ich halte das Wort „der Untergang“ wie eine Fackel vor meinem Herzen.",
+          "sentence_translation": "У ржавого ведра с водой Эдмунд на мгновение видит отражение глаз. Я держу слово «падение» как факел у сердца.",
+          "sentence_parts": [
+            "Am rostigen Wassereimer spiegelt Edmund kurz die eigenen Augen.",
+            "Ich halte das Wort „der Untergang“ wie eine Fackel vor meinem Herzen."
+          ]
+        },
+        {
+          "german": "gestehen",
+          "russian": "признаваться",
+          "transcription": "[ге-ШТЕ-ен]",
+          "sentence": "Im dumpfen Hall der Schritte zählt Edmund den Rhythmus der Wachen. Das Echo des Wortes „gestehen“ übertönt das Flüstern der Höflinge.",
+          "sentence_translation": "В глухом эхе шагов Эдмунд отсчитывает ритм часовых. Эхо слова «признаваться» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Im dumpfen Hall der Schritte zählt Edmund den Rhythmus der Wachen.",
+            "Das Echo des Wortes „gestehen“ übertönt das Flüstern der Höflinge."
+          ]
+        },
+        {
+          "german": "das Ende",
+          "russian": "конец",
+          "transcription": "[дас ЭН-де]",
+          "sentence": "Vor dem verriegelten Fenster zeichnet Edmund Kreise in den Staub. Ich atme tief ein und lasse nur das Wort „das Ende“ wieder hinaus.",
+          "sentence_translation": "Перед заколоченным окном Эдмунд чертит круги в пыли. Я глубоко вдыхаю и выпускаю только слово «конец».",
+          "sentence_parts": [
+            "Vor dem verriegelten Fenster zeichnet Edmund Kreise in den Staub.",
+            "Ich atme tief ein und lasse nur das Wort „das Ende“ wieder hinaus."
+          ]
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «das Duell»?",
+          "choices": [
+            "падать",
+            "сожалеть",
+            "поражение",
+            "дуэль"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «fallen»?",
+          "choices": [
+            "дуэль",
+            "сожалеть",
+            "поражение",
+            "падать"
+          ],
+          "correct_index": 3
+        }
+      ]
+    }
+  ]
+}

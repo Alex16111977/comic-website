@@ -1,0 +1,17 @@
+{
+  "$schema": "scene_v1",
+  "scene_id": "",
+  "act": 1,
+  "scene": 1,
+  "title": {
+    "de": "",
+    "ru": ""
+  },
+  "location": "",
+  "time_of_day": "",
+  "characters_present": [],
+  "vocabulary_focus": [],
+  "learning_objectives": [],
+  "dramatic_function": "",
+  "pages": []
+}

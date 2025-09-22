@@ -1,0 +1,853 @@
+{
+  "id": "kent",
+  "name": "Kent",
+  "title": "Путь Кента",
+  "journey_phases": [
+    {
+      "id": "loyalty",
+      "icon": "🛡️",
+      "title": "Верность королю",
+      "keywords": "Treue • Mut • Wahrheit",
+      "description": "Акт I: Защищает Корделию в тронном зале",
+      "vocabulary": [
+        {
+          "german": "die Treue",
+          "russian": "верность",
+          "transcription": "[ди ТРОЙ-е]",
+          "sentence": "Mitten im Tumult der Thronfeier tritt Kent vor den Königsthron. Ich zeichne das Wort „die Treue“ mit unsichtbarer Tinte auf meine Handfläche.",
+          "sentence_translation": "Посреди суматохи тронной церемонии Кент выходит к королевскому трону. Я вывожу слово «верность» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Mitten im Tumult der Thronfeier tritt Kent vor den Königsthron.",
+            "Ich zeichne das Wort „die Treue“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
+        },
+        {
+          "german": "der Mut",
+          "russian": "мужество",
+          "transcription": "[дер МУТ]",
+          "sentence": "Zwischen scharfgezogenen Schwertern stellt sich Kent vor die jüngste Tochter. Ich halte das Wort „der Mut“ wie eine Fackel vor meinem Herzen.",
+          "sentence_translation": "Между обнажёнными мечами Кент встаёт перед младшей дочерью. Я держу слово «мужество» как факел у сердца.",
+          "sentence_parts": [
+            "Zwischen scharfgezogenen Schwertern stellt sich Kent vor die jüngste Tochter.",
+            "Ich halte das Wort „der Mut“ wie eine Fackel vor meinem Herzen."
+          ]
+        },
+        {
+          "german": "widersprechen",
+          "russian": "возражать",
+          "transcription": "[ВИ-дер-шпре-хен]",
+          "sentence": "Vor der erstaunten Ritterschar reißt Kent sein Wappen vom Brustpanzer. Ich presse das Wort „widersprechen“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "Перед изумлёнными рыцарями Кент срывает герб с нагрудника. Я стискиваю слово «возражать» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Vor der erstaunten Ritterschar reißt Kent sein Wappen vom Brustpanzer.",
+            "Ich presse das Wort „widersprechen“ zwischen die Zähne, damit kein Zweifel entweicht."
+          ]
+        },
+        {
+          "german": "verteidigen",
+          "russian": "защищать",
+          "transcription": "[фер-ТАЙ-ди-ген]",
+          "sentence": "Unter den strengen Blicken des Hofes schlägt Kent die Faust auf das Geländer. Ich flüstere den Wächtern des Schicksals zu: Das Wort „verteidigen“ darf nicht vergehen.",
+          "sentence_translation": "Под строгими взглядами двора Кент бьёт кулаком по перилам. Я шепчу стражам судьбы: слово «защищать» не должно исчезнуть.",
+          "sentence_parts": [
+            "Unter den strengen Blicken des Hofes schlägt Kent die Faust auf das Geländer.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „verteidigen“ darf nicht vergehen."
+          ]
+        },
+        {
+          "german": "aufrichtig",
+          "russian": "искренний",
+          "transcription": "[АУФ-рих-тиг]",
+          "sentence": "Neben Lears Stab kniet Kent und hebt unbeirrbar den Kopf. Das Echo des Wortes „aufrichtig“ übertönt das Flüstern der Höflinge.",
+          "sentence_translation": "У посоха Лира Кент встаёт на колено и упрямо поднимает голову. Эхо слова «искренний» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Neben Lears Stab kniet Kent und hebt unbeirrbar den Kopf.",
+            "Das Echo des Wortes „aufrichtig“ übertönt das Flüstern der Höflinge."
+          ]
+        },
+        {
+          "german": "der Diener",
+          "russian": "слуга",
+          "transcription": "[дер ДИ-нер]",
+          "sentence": "Auf den Stufen zur Thronrampe breitet Kent schützend die Arme aus. Mit jeder Faser meines Körpers verspreche ich: Das Wort „der Diener“ bleibt lebendig.",
+          "sentence_translation": "На ступенях ведущих к трону Кент защитно разводит руки. Каждой клеткой тела я обещаю: слово «слуга» останется живым.",
+          "sentence_parts": [
+            "Auf den Stufen zur Thronrampe breitet Kent schützend die Arme aus.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „der Diener“ bleibt lebendig."
+          ]
+        },
+        {
+          "german": "warnen",
+          "russian": "предупреждать",
+          "transcription": "[ВАР-нен]",
+          "sentence": "Zwischen höfischen Fanfaren ruft Kent seine Warnung gegen das Hofgeflüster. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „warnen“ gehört mir.",
+          "sentence_translation": "Среди придворных фанфар Кент выкрикивает предупреждение против шёпота двора. Буря за окнами усиливает клятву: слово «предупреждать» принадлежит мне.",
+          "sentence_parts": [
+            "Zwischen höfischen Fanfaren ruft Kent seine Warnung gegen das Hofgeflüster.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „warnen“ gehört mir."
+          ]
+        },
+        {
+          "german": "gerecht",
+          "russian": "справедливый",
+          "transcription": "[ге-РЕХТ]",
+          "sentence": "Im Schatten des Königsbanners legt Kent die Hand auf das Herz. Ich presse das Wort „gerecht“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "В тени королевского знамени Кент кладёт руку на сердце. Я стискиваю слово «справедливый» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Im Schatten des Königsbanners legt Kent die Hand auf das Herz.",
+            "Ich presse das Wort „gerecht“ zwischen die Zähne, damit kein Zweifel entweicht."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "ВОССТАНИЕ ПРАВДЫ",
+        "narrative": "Я - граф Кент, и <b>DIE TREUE (верность)</b> моя движет мной! В тронном зале я должен <b>WIDERSPRECHEN (возражать)</b> королю! <b>DER MUT (мужество)</b> требует от меня <b>VERTEIDIGEN (защищать)</b> невинную Корделию! Я <b>AUFRICHTIG (искренен)</b>, хотя знаю цену этой искренности. Как <b>DER DIENER (слуга)</b> короля, я должен <b>WARNEN (предупреждать)</b> его! «Остановитесь, мой король!» - кричу я. «То, что вы делаете, не <b>GERECHT (справедливо)</b>!» Гонерилья и Регана - льстивые змеи, а Корделия - истинная дочь! Но гнев Лира слеп, а моя правда его оскорбляет.",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Отмените это решение, пока не поздно!» - умоляю я, но вижу в глазах короля только ярость!",
+        "exercise_text": "Я - граф Кент, и ___ (верность) моя движет мной! В тронном зале я должен ___ (возражать) королю! ___ (мужество) требует от меня ___ (защищать) невинную Корделию! Я ___ (искренен), хотя знаю цену этой искренности. Как ___ (слуга) короля, я должен ___ (предупреждать) его! «Остановитесь, мой король!» - кричу я. «То, что вы делаете, не ___ (справедливо)!» Гонерилья и Регана - льстивые змеи, а Корделия - истинная дочь! Но гнев Лира слеп, а моя правда его оскорбляет."
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Treue»?",
+          "choices": [
+            "мужество",
+            "возражать",
+            "защищать",
+            "верность"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Mut»?",
+          "choices": [
+            "верность",
+            "возражать",
+            "защищать",
+            "мужество"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "banishment",
+      "icon": "🚪",
+      "title": "Изгнание",
+      "keywords": "Verbannung • Ungerechtigkeit • Zorn",
+      "description": "Акт I: Изгнан за правду",
+      "vocabulary": [
+        {
+          "german": "die Verbannung",
+          "russian": "изгнание",
+          "transcription": "[ди фер-БА-нунг]",
+          "sentence": "Auf den kalten Stufen des Hofes hört Kent das Urteil der Verbannung. Ich zeichne das Wort „die Verbannung“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "На холодных ступенях двора Кент слышит приговор об изгнании. Я черчу слово «изгнание» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Auf den kalten Stufen des Hofes hört Kent das Urteil der Verbannung.",
+            "Ich zeichne das Wort „die Verbannung“ in Gedanken über die Linien des Schicksals."
+          ]
+        },
+        {
+          "german": "die Ungerechtigkeit",
+          "russian": "несправедливость",
+          "transcription": "[ди УН-ге-рех-тиг-кайт]",
+          "sentence": "Zwischen abziehenden Soldaten hält Kent nur den Reisestock in der Hand. Wie ein stilles Gebet legt sich das Wort „die Ungerechtigkeit“ auf meine Lippen.",
+          "sentence_translation": "Среди расходящихся солдат Кент сжимает в руке лишь дорожный посох. Как тихая молитва слово «несправедливость» ложится на мои губы.",
+          "sentence_parts": [
+            "Zwischen abziehenden Soldaten hält Kent nur den Reisestock in der Hand.",
+            "Wie ein stilles Gebet legt sich das Wort „die Ungerechtigkeit“ auf meine Lippen."
+          ]
+        },
+        {
+          "german": "der Zorn",
+          "russian": "гнев",
+          "transcription": "[дер ЦОРН]",
+          "sentence": "Vor dem geschlossenen Burgtor wirft Kent den Blick noch einmal zurück. Das kalte Licht lässt das Wort „der Zorn“ wie geschmolzenes Gold erscheinen.",
+          "sentence_translation": "У закрытых ворот замка Кент бросает последний взгляд назад. Холодный свет заставляет слово «гнев» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Vor dem geschlossenen Burgtor wirft Kent den Blick noch einmal zurück.",
+            "Das kalte Licht lässt das Wort „der Zorn“ wie geschmolzenes Gold erscheinen."
+          ]
+        },
+        {
+          "german": "verbannt",
+          "russian": "изгнанный",
+          "transcription": "[фер-БАНТ]",
+          "sentence": "Auf dem Regenpflaster bleibt Kent stehen, während die Trommeln schweigen. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „verbannt“ gehört mir.",
+          "sentence_translation": "На мокрой мостовой Кент замирает, пока барабаны смолкают. Буря за окнами усиливает клятву: слово «изгнанный» принадлежит мне.",
+          "sentence_parts": [
+            "Auf dem Regenpflaster bleibt Kent stehen, während die Trommeln schweigen.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „verbannt“ gehört mir."
+          ]
+        },
+        {
+          "german": "der Abschied",
+          "russian": "прощание",
+          "transcription": "[дер АБ-шид]",
+          "sentence": "Zwischen verstreuten Reisebündeln befestigt Kent das Schwert am Gürtel. Ich atme tief ein und lasse nur das Wort „der Abschied“ wieder hinaus.",
+          "sentence_translation": "Среди разбросанных узлов Кент затягивает меч на поясе. Я глубоко вдыхаю и выпускаю только слово «прощание».",
+          "sentence_parts": [
+            "Zwischen verstreuten Reisebündeln befestigt Kent das Schwert am Gürtel.",
+            "Ich atme tief ein und lasse nur das Wort „der Abschied“ wieder hinaus."
+          ]
+        },
+        {
+          "german": "die Strafe",
+          "russian": "наказание",
+          "transcription": "[ди ШТРА-фе]",
+          "sentence": "Unter dem grauen Himmel zieht Kent den Mantelkragen hoch. Ich presse das Wort „die Strafe“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "Под серым небом Кент поднимает ворот плаща. Я стискиваю слово «наказание» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Unter dem grauen Himmel zieht Kent den Mantelkragen hoch.",
+            "Ich presse das Wort „die Strafe“ zwischen die Zähne,",
+            "damit kein Zweifel entweicht."
+          ]
+        },
+        {
+          "german": "zurückkehren",
+          "russian": "возвращаться",
+          "transcription": "[цу-РЮК-ке-рен]",
+          "sentence": "Vor der trostlosen Landstraße richtet Kent den Blick entschlossen nach vorn. Mein Atem zeichnet das Wort „zurückkehren“ in die kalte Luft zwischen uns.",
+          "sentence_translation": "Перед пустынной дорогой Кент решительно смотрит вперёд. Моё дыхание рисует слово «возвращаться» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Vor der trostlosen Landstraße richtet Kent den Blick entschlossen nach vorn.",
+            "Mein Atem zeichnet das Wort „zurückkehren“ in die kalte Luft zwischen uns."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "ГОРЬКОЕ ИЗГНАНИЕ",
+        "narrative": "<b>DIE VERBANNUNG (изгнание)</b> - вот мой приговор! <b>DER ZORN (гнев)</b> короля обрушивается на меня как молот! Я <b>VERBANNT (изгнан)</b> из страны, которой служил всю жизнь! <b>DIE UNGERECHTIGKEIT (несправедливость)</b> этого решения жжёт мою душу! <b>DER ABSCHIED (прощание)</b> с двором разрывает сердце, но я принимаю <b>DIE STRAFE (наказание)</b> с высоко поднятой головой. «Прощайте!» - говорю я придворным. Но в сердце моём уже зреет план - я буду <b>ZURÜCKKEHREN (возвращаться)</b>! Мой король нуждается во мне, даже если не знает этого. Я найду способ служить ему снова!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Пять дней даёте мне покинуть королевство? Я уйду через час!» - гордо заявляю я, скрывая боль.",
+        "exercise_text": "___ (изгнание) - вот мой приговор! ___ (гнев) короля обрушивается на меня как молот! Я ___ (изгнан) из страны, которой служил всю жизнь! ___ (несправедливость) этого решения жжёт мою душу! ___ (прощание) с двором разрывает сердце, но я принимаю ___ (наказание) с высоко поднятой головой. «Прощайте!» - говорю я придворным. Но в сердце моём уже зреет план - я буду ___ (возвращаться)! Мой король нуждается во мне, даже если не знает этого. Я найду способ служить ему снова!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Verbannung»?",
+          "choices": [
+            "несправедливость",
+            "гнев",
+            "изгнанный",
+            "изгнание"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «die Ungerechtigkeit»?",
+          "choices": [
+            "изгнание",
+            "гнев",
+            "изгнанный",
+            "несправедливость"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "disguise",
+      "icon": "🎭",
+      "title": "Маскировка",
+      "keywords": "Verkleidung • List • Rückkehr",
+      "description": "Акт I-II: Возвращается как слуга Кай",
+      "vocabulary": [
+        {
+          "german": "die Verkleidung",
+          "russian": "переодевание",
+          "transcription": "[ди фер-КЛАЙ-дунг]",
+          "sentence": "In der verqualmten Herberge streift Kent das grobe Knechtsgewand über. Wie ein stilles Gebet legt sich das Wort „die Verkleidung“ auf meine Lippen.",
+          "sentence_translation": "В задымлённой харчевне Кент натягивает грубое платье слуги. Как тихая молитва слово «переодевание» ложится на мои губы.",
+          "sentence_parts": [
+            "In der verqualmten Herberge streift Kent das grobe Knechtsgewand über.",
+            "Wie ein stilles Gebet legt sich das Wort „die Verkleidung“ auf meine Lippen."
+          ]
+        },
+        {
+          "german": "die List",
+          "russian": "хитрость",
+          "transcription": "[ди ЛИСТ]",
+          "sentence": "Vor einem beschlagenen Spiegel übt Kent die raue Stimme des Kays. Selbst wenn die Welt zerfällt, bleibt das Wort „die List“ mein Nordstern.",
+          "sentence_translation": "Перед запотевшим зеркалом Кент тренирует хриплый голос Кая. Даже если мир распадается, слово «хитрость» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Vor einem beschlagenen Spiegel übt Kent die raue Stimme des Kays.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „die List“ mein Nordstern."
+          ]
+        },
+        {
+          "german": "unerkannt",
+          "russian": "неузнанный",
+          "transcription": "[УН-ер-кант]",
+          "sentence": "Unter einem zerknitterten Hut verbirgt Kent die königliche Haltung. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „unerkannt“ gehört mir.",
+          "sentence_translation": "Под мятой шляпой Кент скрывает королевскую осанку. Буря за окнами усиливает клятву: слово «неузнанный» принадлежит мне.",
+          "sentence_parts": [
+            "Unter einem zerknitterten Hut verbirgt Kent die königliche Haltung.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „unerkannt“ gehört mir."
+          ]
+        },
+        {
+          "german": "vorgeben",
+          "russian": "притворяться",
+          "transcription": "[ФОР-ге-бен]",
+          "sentence": "Zwischen neugierigen Fuhrknechten studiert Kent die Dienstbefehle. Ich zeichne das Wort „vorgeben“ mit unsichtbarer Tinte auf meine Handfläche.",
+          "sentence_translation": "Среди любопытных возниц Кент изучает служебные приказы. Я вывожу слово «притворяться» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Zwischen neugierigen Fuhrknechten studiert Kent die Dienstbefehle.",
+            "Ich zeichne das Wort „vorgeben“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
+        },
+        {
+          "german": "verstellen",
+          "russian": "изменять",
+          "transcription": "[фер-ШТЕ-лен]",
+          "sentence": "Am Ufer des Hafens wäscht Kent die Spuren des alten Lebens ab. Ich atme tief ein und lasse nur das Wort „verstellen“ wieder hinaus.",
+          "sentence_translation": "На пристани Кент смывает следы прежней жизни. Я глубоко вдыхаю и выпускаю только слово «изменять».",
+          "sentence_parts": [
+            "Am Ufer des Hafens wäscht Kent die Spuren des alten Lebens ab.",
+            "Ich atme tief ein und lasse nur das Wort „verstellen“ wieder hinaus."
+          ]
+        },
+        {
+          "german": "der Bart",
+          "russian": "борода",
+          "transcription": "[дер БАРТ]",
+          "sentence": "Auf dem staubigen Markt prüft Kent die Tragriemen des Gepäcks. Ich flüstere den Wächtern des Schicksals zu: Das Wort „der Bart“ darf nicht vergehen.",
+          "sentence_translation": "На пыльном рынке Кент проверяет ремни поклажи. Я шепчу стражам судьбы: слово «борода» не должно исчезнуть.",
+          "sentence_parts": [
+            "Auf dem staubigen Markt prüft Kent die Tragriemen des Gepäcks.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „der Bart“ darf nicht vergehen."
+          ]
+        },
+        {
+          "german": "anheuern",
+          "russian": "наниматься",
+          "transcription": "[АН-хой-ерн]",
+          "sentence": "Im Schatten einer Gasse versteckt Kent den einst glänzenden Siegelring. Das kalte Licht lässt das Wort „anheuern“ wie geschmolzenes Gold erscheinen.",
+          "sentence_translation": "В тени переулка Кент прячет некогда блестящий перстень. Холодный свет заставляет слово «наниматься» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Im Schatten einer Gasse versteckt Kent den einst glänzenden Siegelring.",
+            "Das kalte Licht lässt das Wort „anheuern“ wie geschmolzenes Gold erscheinen."
+          ]
+        },
+        {
+          "german": "treu",
+          "russian": "верный",
+          "transcription": "[ТРОЙ]",
+          "sentence": "Unter einem Wagenrad kauert Kent, bis der Ruf nach Dienern erschallt. Das Echo des Wortes „treu“ übertönt das Flüstern der Höflinge.",
+          "sentence_translation": "Под колесом телеги Кент затаивается, пока не прозвучит зов для слуг. Эхо слова «верный» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Unter einem Wagenrad kauert Kent, bis der Ruf nach Dienern erschallt.",
+            "Das Echo des Wortes „treu“ übertönt das Flüstern der Höflinge."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "СЛУГА КАЙ",
+        "narrative": "Я стою перед зеркалом в <b>DIE VERKLEIDUNG (переодевании)</b>. С <b>DER BART (бородой)</b> и грубой одеждой я <b>UNERKANNT (неузнанный)</b>! Я <b>VERSTELLEN (изменяю)</b> голос, делаю его грубее. Я <b>VORGEBEN (притворяюсь)</b> простым человеком по имени Кай. С <b>DIE LIST (хитростью)</b> я вернусь к моему королю! Вот я <b>ANHEUERN (нанимаюсь)</b> к нему на службу. «Я честный человек, ищущий работу», - говорю я грубым голосом. Лир не узнаёт меня! Я остаюсь <b>TREU (верным)</b>, даже если он думает, что Кент мёртв. Моя маскировка совершенна!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Я буду служить тому, кто достоин!» - говорю я Лиру, и он принимает меня, не зная, что принимает старого друга!",
+        "exercise_text": "Я стою перед зеркалом в ___ (переодевании). С ___ (бородой) и грубой одеждой я ___ (неузнанный)! Я ___ (изменяю) голос, делаю его грубее. Я ___ (притворяюсь) простым человеком по имени Кай. С ___ (хитростью) я вернусь к моему королю! Вот я ___ (нанимаюсь) к нему на службу. «Я честный человек, ищущий работу», - говорю я грубым голосом. Лир не узнаёт меня! Я остаюсь ___ (верным), даже если он думает, что Кент мёртв. Моя маскировка совершенна!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Verkleidung»?",
+          "choices": [
+            "хитрость",
+            "неузнанный",
+            "притворяться",
+            "переодевание"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «die List»?",
+          "choices": [
+            "переодевание",
+            "неузнанный",
+            "притворяться",
+            "хитрость"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "service",
+      "icon": "⚔️",
+      "title": "Тайная служба",
+      "keywords": "Dienst • Schutz • Gefahr",
+      "description": "Акт II-III: Служит неузнанным",
+      "vocabulary": [
+        {
+          "german": "der Dienst",
+          "russian": "служба",
+          "transcription": "[дер ДИНСТ]",
+          "sentence": "Im nächtlichen Wachraum poliert Kent schweigend die Rüstung des Königs. Das Echo des Wortes „der Dienst“ übertönt das Flüstern der Höflinge.",
+          "sentence_translation": "В ночной караульной Кент молча полирует королевские доспехи. Эхо слова «служба» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Im nächtlichen Wachraum poliert Kent schweigend die Rüstung des Königs.",
+            "Das Echo des Wortes „der Dienst“ übertönt das Flüstern der Höflinge."
+          ]
+        },
+        {
+          "german": "der Schutz",
+          "russian": "защита",
+          "transcription": "[дер ШУТЦ]",
+          "sentence": "Neben dem Lager des erschöpften Herrschers hält Kent unbeweglich Wache. Das Echo des Wortes „der Schutz“ übertönt das Flüstern der Höflinge.",
+          "sentence_translation": "У ложа измождённого правителя Кент неподвижно несёт стражу. Эхо слова «защита» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Neben dem Lager des erschöpften Herrschers hält Kent unbeweglich Wache.",
+            "Das Echo des Wortes „der Schutz“ übertönt das Flüstern der Höflinge."
+          ]
+        },
+        {
+          "german": "die Gefahr",
+          "russian": "опасность",
+          "transcription": "[ди ге-ФАР]",
+          "sentence": "Unter Regenmänteln der Wachen verbirgt Kent seine Narben. Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Gefahr“ bleibt lebendig.",
+          "sentence_translation": "Под дождевыми плащами стражей Кент скрывает свои шрамы. Каждой клеткой тела я обещаю: слово «опасность» останется живым.",
+          "sentence_parts": [
+            "Unter Regenmänteln der Wachen verbirgt Kent seine Narben.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Gefahr“ bleibt lebendig."
+          ]
+        },
+        {
+          "german": "bewachen",
+          "russian": "охранять",
+          "transcription": "[бе-ВА-хен]",
+          "sentence": "Am Stalltor sattelt Kent in der Dunkelheit ein trotziges Pferd. Selbst wenn die Welt zerfällt, bleibt das Wort „bewachen“ mein Nordstern.",
+          "sentence_translation": "У дверей конюшни Кент в темноте осёдлывает упрямого коня. Даже если мир распадается, слово «охранять» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Am Stalltor sattelt Kent in der Dunkelheit ein trotziges Pferd.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „bewachen“ mein Nordstern."
+          ]
+        },
+        {
+          "german": "kämpfen",
+          "russian": "сражаться",
+          "transcription": "[КЕМП-фен]",
+          "sentence": "In der Küche der Dienerschaft füllt Kent den dampfenden Becher. Ich zeichne das Wort „kämpfen“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "В кухне прислуги Кент наполняет дымящийся кубок. Я черчу слово «сражаться» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "In der Küche der Dienerschaft füllt Kent den dampfenden Becher.",
+            "Ich zeichne das Wort „kämpfen“ in Gedanken über die Linien des Schicksals."
+          ]
+        },
+        {
+          "german": "raten",
+          "russian": "советовать",
+          "transcription": "[РА-тен]",
+          "sentence": "Vor der Schlafstatt des Königs ordnet Kent die verstreuten Decken. Ich umarme das Wort „raten“, als wäre es mein einziger Verbündeter.",
+          "sentence_translation": "Перед ложем короля Кент раскладывает разбросанные покрывала. Я обнимаю слово «советовать», будто это единственный союзник.",
+          "sentence_parts": [
+            "Vor der Schlafstatt des Königs ordnet Kent die verstreuten Decken.",
+            "Ich umarme das Wort „raten“, als wäre es mein einziger Verbündeter."
+          ]
+        },
+        {
+          "german": "die Wache",
+          "russian": "стража",
+          "transcription": "[ди ВА-хе]",
+          "sentence": "Auf dem Hof prüft Kent das Zaumzeug, bevor der Morgen graut. Selbst wenn die Welt zerfällt, bleibt das Wort „die Wache“ mein Nordstern.",
+          "sentence_translation": "Во дворе Кент проверяет уздечку, пока не рассвело. Даже если мир распадается, слово «стража» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Auf dem Hof prüft Kent das Zaumzeug, bevor der Morgen graut.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „die Wache“ mein Nordstern."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "ТАЙНЫЙ ЗАЩИТНИК",
+        "narrative": "Мой <b>DER DIENST (служба)</b> продолжается в тени! Я <b>BEWACHEN (охраняю)</b> короля день и ночь. <b>DIE GEFAHR (опасность)</b> повсюду - Освальд оскорбляет его, дочери предают! Я <b>KÄMPFEN (сражаюсь)</b> с наглецом Освальдом, защищая честь короля! <b>DER SCHUTZ (защита)</b>, которую я даю, невидима, но реальна. Я <b>RATEN (советую)</b> королю быть осторожным с дочерьми. Ночью я держу <b>DIE WACHE (стражу)</b>, пока он спит. Он думает, что я простой слуга Кай, но я - его самый верный рыцарь. Каждый день я рискую разоблачением, но это моя священная миссия!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «За вами, господин, я пойду в ад!» - клянусь я, и это чистая правда!",
+        "exercise_text": "Мой ___ (служба) продолжается в тени! Я ___ (охраняю) короля день и ночь. ___ (опасность) повсюду - Освальд оскорбляет его, дочери предают! Я ___ (сражаюсь) с наглецом Освальдом, защищая честь короля! ___ (защита), которую я даю, невидима, но реальна. Я ___ (советую) королю быть осторожным с дочерьми. Ночью я держу ___ (стражу), пока он спит. Он думает, что я простой слуга Кай, но я - его самый верный рыцарь. Каждый день я рискую разоблачением, но это моя священная миссия!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «der Dienst»?",
+          "choices": [
+            "защита",
+            "опасность",
+            "охранять",
+            "служба"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Schutz»?",
+          "choices": [
+            "служба",
+            "опасность",
+            "охранять",
+            "защита"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "stocks",
+      "icon": "⛓️",
+      "title": "В колодках",
+      "keywords": "Strafe • Demütigung • Standhaftigkeit",
+      "description": "Акт II: Наказан Корнуоллом",
+      "vocabulary": [
+        {
+          "german": "die Strafe",
+          "russian": "наказание",
+          "transcription": "[ди ШТРА-фе]",
+          "sentence": "Im Regen der Burgmauer sitzt Kent mit gefesselten Füßen in den harten Hölzern. Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Strafe“ darf nicht vergehen.",
+          "sentence_translation": "Под дождём у крепостной стены Кент сидит с закреплёнными ногами в жёстких колодках. Я шепчу стражам судьбы: слово «наказание» не должно исчезнуть.",
+          "sentence_parts": [
+            "Im Regen der Burgmauer sitzt Kent mit gefesselten Füßen in den harten Hölzern.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Strafe“ darf nicht vergehen."
+          ]
+        },
+        {
+          "german": "die Demütigung",
+          "russian": "унижение",
+          "transcription": "[ди де-МЮ-ти-гунг]",
+          "sentence": "Neben den Spottliedern der Wachen hält Kent den Kopf stolz erhoben. Ich presse das Wort „die Demütigung“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "Под насмешливые песни стражи Кент гордо держит голову. Я стискиваю слово «унижение» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Neben den Spottliedern der Wachen hält Kent den Kopf stolz erhoben.",
+            "Ich presse das Wort „die Demütigung“ zwischen die Zähne,",
+            "damit kein Zweifel entweicht."
+          ]
+        },
+        {
+          "german": "die Standhaftigkeit",
+          "russian": "стойкость",
+          "transcription": "[ди ШТАНД-хаф-тиг-кайт]",
+          "sentence": "Vor dem trüben Mondlicht reibt Kent den schmerzenden Nacken. Ich zeichne das Wort „die Standhaftigkeit“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "В тусклом лунном свете Кент растирает затёкшую шею. Я черчу слово «стойкость» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Vor dem trüben Mondlicht reibt Kent den schmerzenden Nacken.",
+            "Ich zeichne das Wort „die Standhaftigkeit“ in Gedanken über die Linien des Schicksals."
+          ]
+        },
+        {
+          "german": "fesseln",
+          "russian": "сковывать",
+          "transcription": "[ФЕ-сельн]",
+          "sentence": "Zwischen den Pfützen der Nacht starren Kents Schuhe in den Himmel. Selbst wenn die Welt zerfällt, bleibt das Wort „fesseln“ mein Nordstern.",
+          "sentence_translation": "Среди ночных луж сапоги Кент устремлены в небо. Даже если мир распадается, слово «сковывать» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Zwischen den Pfützen der Nacht starren Kents Schuhe in den Himmel.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „fesseln“ mein Nordstern."
+          ]
+        },
+        {
+          "german": "erdulden",
+          "russian": "терпеть",
+          "transcription": "[ер-ДУЛЬ-ден]",
+          "sentence": "Am Morgenfrost haucht Kent Eisblumen auf das Holz. Selbst wenn die Welt zerfällt, bleibt das Wort „erdulden“ mein Nordstern.",
+          "sentence_translation": "В утренний мороз Кент выдыхает ледяные узоры на дерево. Даже если мир распадается, слово «терпеть» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Am Morgenfrost haucht Kent Eisblumen auf das Holz.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „erdulden“ mein Nordstern."
+          ]
+        },
+        {
+          "german": "der Stock",
+          "russian": "колодка",
+          "transcription": "[дер ШТОК]",
+          "sentence": "Neben einem verirrten Bauernkind lächelt Kent trotz der Demütigung. Das kalte Licht lässt das Wort „der Stock“ wie geschmolzenes Gold erscheinen.",
+          "sentence_translation": "Рядом с заблудившимся крестьянином Кент улыбается несмотря на унижение. Холодный свет заставляет слово «колодка» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Neben einem verirrten Bauernkind lächelt Kent trotz der Demütigung.",
+            "Das kalte Licht lässt das Wort „der Stock“ wie geschmolzenes Gold erscheinen."
+          ]
+        },
+        {
+          "german": "ausharren",
+          "russian": "выдерживать",
+          "transcription": "[АУС-ха-рен]",
+          "sentence": "Unter dem grauen Himmel zählt Kent geduldig die Tropfen auf dem Gesicht. Ich flüstere den Wächtern des Schicksals zu: Das Wort „ausharren“ darf nicht vergehen.",
+          "sentence_translation": "Под серым небом Кент терпеливо считает капли на лице. Я шепчу стражам судьбы: слово «выдерживать» не должно исчезнуть.",
+          "sentence_parts": [
+            "Unter dem grauen Himmel zählt Kent geduldig die Tropfen auf dem Gesicht.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „ausharren“ darf nicht vergehen."
+          ]
+        },
+        {
+          "german": "die Schande",
+          "russian": "позор",
+          "transcription": "[ди ШАН-де]",
+          "sentence": "Auf dem verlassenen Hof lauscht Kent dem fern rollenden Donner. Das kalte Licht lässt das Wort „die Schande“ wie geschmolzenes Gold erscheinen.",
+          "sentence_translation": "На пустынном дворе Кент прислушивается к далёкому грохоту грома. Холодный свет заставляет слово «позор» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Auf dem verlassenen Hof lauscht Kent dem fern rollenden Donner.",
+            "Das kalte Licht lässt das Wort „die Schande“ wie geschmolzenes Gold erscheinen."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "НОЧЬ В КОЛОДКАХ",
+        "narrative": "Они <b>FESSELN (сковывают)</b> меня в <b>DER STOCK (колодки)</b>! Корнуолл и Регана наказывают меня как преступника! <b>DIE STRAFE (наказание)</b> жестоко, но я <b>ERDULDEN (терплю)</b> его с <b>DIE STANDHAFTIGKEIT (стойкостью)</b>. <b>DIE DEMÜTIGUNG (унижение)</b> публично - все видят слугу короля в колодках! Но <b>DIE SCHANDE (позор)</b> не мой - это позор тех, кто так обращается со слугой короля! Всю ночь я <b>AUSHARREN (выдерживаю)</b> холод и боль. Ноги немеют, спина горит, но дух мой не сломлен! Когда король увидит меня так, он поймёт, как низко пали его дочери!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Поставить в колодки слугу короля?!» - кричит Лир, увидев меня. Его гнев - моя награда за страдания!",
+        "exercise_text": "Они ___ (сковывают) меня в ___ (колодки)! Корнуолл и Регана наказывают меня как преступника! ___ (наказание) жестоко, но я ___ (терплю) его с ___ (стойкостью). ___ (унижение) публично - все видят слугу короля в колодках! Но ___ (позор) не мой - это позор тех, кто так обращается со слугой короля! Всю ночь я ___ (выдерживаю) холод и боль. Ноги немеют, спина горит, но дух мой не сломлен! Когда король увидит меня так, он поймёт, как низко пали его дочери!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Strafe»?",
+          "choices": [
+            "унижение",
+            "стойкость",
+            "сковывать",
+            "наказание"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «die Demütigung»?",
+          "choices": [
+            "наказание",
+            "стойкость",
+            "сковывать",
+            "унижение"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "storm_companion",
+      "icon": "⛈️",
+      "title": "Спутник в буре",
+      "keywords": "Sturm • Beistand • Treue",
+      "description": "Акт III: Поддерживает Лира",
+      "vocabulary": [
+        {
+          "german": "der Sturm",
+          "russian": "буря",
+          "transcription": "[дер ШТУРМ]",
+          "sentence": "Mit der Laterne in der Faust sucht Kent nach dem Schatten des Königs. Wie ein stilles Gebet legt sich das Wort „der Sturm“ auf meine Lippen.",
+          "sentence_translation": "С фонарём в кулаке Кент ищет тень короля. Как тихая молитва слово «буря» ложится на мои губы.",
+          "sentence_parts": [
+            "Mit der Laterne in der Faust sucht Kent nach dem Schatten des Königs.",
+            "Wie ein stilles Gebet legt sich das Wort „der Sturm“ auf meine Lippen."
+          ]
+        },
+        {
+          "german": "der Beistand",
+          "russian": "поддержка",
+          "transcription": "[дер БАЙ-штанд]",
+          "sentence": "Neben dem tobenden Monarchen breitet Kent den Mantel wie ein Schild. Das kalte Licht lässt das Wort „der Beistand“ wie geschmolzenes Gold erscheinen.",
+          "sentence_translation": "Рядом с бушующим монархом Кент раскрывает плащ как щит. Холодный свет заставляет слово «поддержка» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Neben dem tobenden Monarchen breitet Kent den Mantel wie ein Schild.",
+            "Das kalte Licht lässt das Wort „der Beistand“ wie geschmolzenes Gold erscheinen."
+          ]
+        },
+        {
+          "german": "begleiten",
+          "russian": "сопровождать",
+          "transcription": "[бе-ГЛАЙ-тен]",
+          "sentence": "Auf dem überfluteten Pfad hält Kent das Pferd am Zügel. Ich zeichne das Wort „begleiten“ mit unsichtbarer Tinte auf meine Handfläche.",
+          "sentence_translation": "На затопленной тропе Кент держит коня за повод. Я вывожу слово «сопровождать» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Auf dem überfluteten Pfad hält Kent das Pferd am Zügel.",
+            "Ich zeichne das Wort „begleiten“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
+        },
+        {
+          "german": "trösten",
+          "russian": "утешать",
+          "transcription": "[ТРЁС-тен]",
+          "sentence": "Zwischen klatschenden Ästen ruft Kent beruhigende Worte. Mein Atem zeichnet das Wort „trösten“ in die kalte Luft zwischen uns.",
+          "sentence_translation": "Среди хлещущих веток Кент говорит успокаивающие слова. Моё дыхание рисует слово «утешать» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Zwischen klatschenden Ästen ruft Kent beruhigende Worte.",
+            "Mein Atem zeichnet das Wort „trösten“ in die kalte Luft zwischen uns."
+          ]
+        },
+        {
+          "german": "die Zuflucht",
+          "russian": "убежище",
+          "transcription": "[ди ЦУ-флухт]",
+          "sentence": "Vor der klappernden Hütte hebt Kent die Fackel, um den Weg zu zeigen. Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Zuflucht“ bleibt lebendig.",
+          "sentence_translation": "Перед дрожащей хижиной Кент поднимает факел, освещая путь. Каждой клеткой тела я обещаю: слово «убежище» останется живым.",
+          "sentence_parts": [
+            "Vor der klappernden Hütte hebt Kent die Fackel,",
+            "um den Weg zu zeigen.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Zuflucht“ bleibt lebendig."
+          ]
+        },
+        {
+          "german": "durchhalten",
+          "russian": "выдерживать",
+          "transcription": "[ДУРХ-халь-тен]",
+          "sentence": "Am Rand des Moorfelds stützt Kent den taumelnden Herrscher. Ich umarme das Wort „durchhalten“, als wäre es mein einziger Verbündeter.",
+          "sentence_translation": "На краю болотного поля Кент поддерживает качающегося правителя. Я обнимаю слово «выдерживать», будто это единственный союзник.",
+          "sentence_parts": [
+            "Am Rand des Moorfelds stützt Kent den taumelnden Herrscher.",
+            "Ich umarme das Wort „durchhalten“, als wäre es mein einziger Verbündeter."
+          ]
+        },
+        {
+          "german": "die Kälte",
+          "russian": "холод",
+          "transcription": "[ди КЕЛ-те]",
+          "sentence": "Unter dem peitschenden Regen spricht Kent ein leises Trostlied. Ich presse das Wort „die Kälte“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "Под хлещущим дождём Кент тихо напевает утешительную песнь. Я стискиваю слово «холод» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Unter dem peitschenden Regen spricht Kent ein leises Trostlied.",
+            "Ich presse das Wort „die Kälte“ zwischen die Zähne,",
+            "damit kein Zweifel entweicht."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "В СЕРДЦЕ БУРИ",
+        "narrative": "<b>DER STURM (буря)</b> ревёт вокруг нас! Я <b>BEGLEITEN (сопровождаю)</b> безумного короля через ад стихии! Дождь хлещет, <b>DIE KÄLTE (холод)</b> пронизывает до костей, но мой <b>DER BEISTAND (поддержка)</b> не ослабевает! Я ищу <b>DIE ZUFLUCHT (убежище)</b> - хижину, пещеру, что угодно! «Мы должны <b>DURCHHALTEN (выдержать)</b>, мой король!» - кричу я сквозь вой ветра. Я пытаюсь <b>TRÖSTEN (утешать)</b> его, но он говорит с громом и молниями. Мой старый господин потерял разум, но не потерял меня! Я останусь с ним до конца!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Войдите в хижину, господин! Сжальтесь над собой!» - умоляю я, но он хочет чувствовать то, что чувствуют нищие!",
+        "exercise_text": "___ (буря) ревёт вокруг нас! Я ___ (сопровождаю) безумного короля через ад стихии! Дождь хлещет, ___ (холод) пронизывает до костей, но мой ___ (поддержка) не ослабевает! Я ищу ___ (убежище) - хижину, пещеру, что угодно! «Мы должны ___ (выдержать), мой король!» - кричу я сквозь вой ветра. Я пытаюсь ___ (утешать) его, но он говорит с громом и молниями. Мой старый господин потерял разум, но не потерял меня! Я останусь с ним до конца!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «der Sturm»?",
+          "choices": [
+            "поддержка",
+            "сопровождать",
+            "утешать",
+            "буря"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Beistand»?",
+          "choices": [
+            "буря",
+            "сопровождать",
+            "утешать",
+            "поддержка"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "final_loyalty",
+      "icon": "💔",
+      "title": "Верность до конца",
+      "keywords": "Tod • Abschied • ewige Treue",
+      "description": "Акт V: Остаётся с умирающим Лиром",
+      "vocabulary": [
+        {
+          "german": "der Tod",
+          "russian": "смерть",
+          "transcription": "[дер ТОД]",
+          "sentence": "Im stillen Sterbezimmer wacht Kent an Lears letztem Lager. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „der Tod“ gehört mir.",
+          "sentence_translation": "В тихой опочивальне смерти Кент стоит у последнего ложа Лира. Буря за окнами усиливает клятву: слово «смерть» принадлежит мне.",
+          "sentence_parts": [
+            "Im stillen Sterbezimmer wacht Kent an Lears letztem Lager.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „der Tod“ gehört mir."
+          ]
+        },
+        {
+          "german": "der Abschied",
+          "russian": "прощание",
+          "transcription": "[дер АБ-шид]",
+          "sentence": "Neben der verlöschenden Kerze streicht Kent über den zerrissenen Umhang. Wie ein stilles Gebet legt sich das Wort „der Abschied“ auf meine Lippen.",
+          "sentence_translation": "У догорающей свечи Кент гладит разорванный плащ. Как тихая молитва слово «прощание» ложится на мои губы.",
+          "sentence_parts": [
+            "Neben der verlöschenden Kerze streicht Kent über den zerrissenen Umhang.",
+            "Wie ein stilles Gebet legt sich das Wort „der Abschied“ auf meine Lippen."
+          ]
+        },
+        {
+          "german": "ewig",
+          "russian": "вечный",
+          "transcription": "[Э-виг]",
+          "sentence": "Vor den starren Wachen flüstert Kent ein letztes Versprechen. Mit fester Stimme schwöre ich mir: Das Wort „ewig“ wird heute nicht verraten.",
+          "sentence_translation": "Перед оцепеневшими стражами Кент шепчет последнее обещание. Твёрдым голосом я клянусь себе: слово «вечный» сегодня не будет предано.",
+          "sentence_parts": [
+            "Vor den starren Wachen flüstert Kent ein letztes Versprechen.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „ewig“ wird heute nicht verraten."
+          ]
+        },
+        {
+          "german": "weinen",
+          "russian": "плакать",
+          "transcription": "[ВАЙ-нен]",
+          "sentence": "Auf dem leeren Thronstuhl legt Kent den eigenen Stab nieder. Mein Atem zeichnet das Wort „weinen“ in die kalte Luft zwischen uns.",
+          "sentence_translation": "На пустом троне Кент кладёт свой посох. Моё дыхание рисует слово «плакать» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Auf dem leeren Thronstuhl legt Kent den eigenen Stab nieder.",
+            "Mein Atem zeichnet das Wort „weinen“ in die kalte Luft zwischen uns."
+          ]
+        },
+        {
+          "german": "die Erschöpfung",
+          "russian": "истощение",
+          "transcription": "[ди ер-ШЁП-фунг]",
+          "sentence": "Zwischen verblassenden Wandmalereien schließt Kent kurz die Augen. Selbst wenn die Welt zerfällt, bleibt das Wort „die Erschöpfung“ mein Nordstern.",
+          "sentence_translation": "Среди блекнущих настенных росписей Кент на мгновение закрывает глаза. Даже если мир распадается, слово «истощение» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Zwischen verblassenden Wandmalereien schließt Kent kurz die Augen.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „die Erschöpfung“ mein Nordstern."
+          ]
+        },
+        {
+          "german": "aufgeben",
+          "russian": "сдаваться",
+          "transcription": "[АУФ-ге-бен]",
+          "sentence": "Am offenen Fenster lässt Kent den kalten Morgen herein. Ich flüstere den Wächtern des Schicksals zu: Das Wort „aufgeben“ darf nicht vergehen.",
+          "sentence_translation": "У распахнутого окна Кент впускает холодное утро. Я шепчу стражам судьбы: слово «сдаваться» не должно исчезнуть.",
+          "sentence_parts": [
+            "Am offenen Fenster lässt Kent den kalten Morgen herein.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „aufgeben“ darf nicht vergehen."
+          ]
+        },
+        {
+          "german": "die Trauer",
+          "russian": "скорбь",
+          "transcription": "[ди ТРАУ-ер]",
+          "sentence": "Im Schatten der Trauernden hält Kent Lears Hand bis zum letzten Schlag. Ich zeichne das Wort „die Trauer“ mit unsichtbarer Tinte auf meine Handfläche.",
+          "sentence_translation": "В тени скорбящих Кент держит руку Лира до последнего удара. Я вывожу слово «скорбь» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Im Schatten der Trauernden hält Kent Lears Hand bis zum letzten Schlag.",
+            "Ich zeichne das Wort „die Trauer“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
+        },
+        {
+          "german": "folgen",
+          "russian": "следовать",
+          "transcription": "[ФОЛЬ-ген]",
+          "sentence": "Vor der stillen Hofkapelle beugt Kent das Knie für ein stummes Gebet. Ich halte das Wort „folgen“ wie eine Fackel vor meinem Herzen.",
+          "sentence_translation": "Перед молчаливой придворной часовней Кент преклоняет колено в безмолвной молитве. Я держу слово «следовать» как факел у сердца.",
+          "sentence_parts": [
+            "Vor der stillen Hofkapelle beugt Kent das Knie für ein stummes Gebet.",
+            "Ich halte das Wort „folgen“ wie eine Fackel vor meinem Herzen."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "ПОСЛЕДНИЙ ДОЛГ",
+        "narrative": "Корделия мертва! Лир умирает! <b>DER TOD (смерть)</b> забирает всех, кого я любил! Я <b>WEINEN (плачу)</b> над телом моего короля. <b>DER ABSCHIED (прощание)</b> невыносимо! Моя <b>EWIG (вечная)</b> верность исполнена - я служил до конца! <b>DIE ERSCHÖPFUNG (истощение)</b> овладевает мной. <b>DIE TRAUER (скорбь)</b> слишком тяжела для старого сердца. Я готов <b>AUFGEBEN (сдаться)</b> и <b>FOLGEN (следовать)</b> за моим господином. «Мой господин, я иду!» - шепчу я. Моя служба в этом мире окончена. Пусть Эдгар и Олбани правят. Мой путь ведёт за моим королём в вечность!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Он ушёл навсегда!» - рыдаю я над телом Лира. Моё сердце разбито, моя жизнь окончена!",
+        "exercise_text": "Корделия мертва! Лир умирает! ___ (смерть) забирает всех, кого я любил! Я ___ (плачу) над телом моего короля. ___ (прощание) невыносимо! Моя ___ (вечная) верность исполнена - я служил до конца! ___ (истощение) овладевает мной. ___ (скорбь) слишком тяжела для старого сердца. Я готов ___ (сдаться) и ___ (следовать) за моим господином. «Мой господин, я иду!» - шепчу я. Моя служба в этом мире окончена. Пусть Эдгар и Олбани правят. Мой путь ведёт за моим королём в вечность!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «der Tod»?",
+          "choices": [
+            "прощание",
+            "вечный",
+            "плакать",
+            "смерть"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Abschied»?",
+          "choices": [
+            "смерть",
+            "вечный",
+            "плакать",
+            "прощание"
+          ],
+          "correct_index": 3
+        }
+      ]
+    }
+  ]
+}

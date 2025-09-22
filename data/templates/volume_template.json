@@ -1,0 +1,18 @@
+{
+  "$schema": "volume_v1",
+  "volume_id": "",
+  "title": {
+    "de": "",
+    "ru": ""
+  },
+  "subtitle": {
+    "de": "",
+    "ru": ""
+  },
+  "issue_count": 0,
+  "total_pages": 0,
+  "vocabulary_count": 0,
+  "difficulty_level": "B1",
+  "learning_path": [],
+  "completion_time_minutes": 0
+}

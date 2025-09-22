@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ character.title }} | König Lear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/journey.css">
+    <link rel="stylesheet" href="../static/css/exercises.css">
+</head>
+<body>
+    <div class="container">
+        <header class="page-header">
+            <div class="header-nav">
+                <a href="{{ navigation.home_href }}" class="home-link">
+                    <span class="arrow">{{ navigation.home_icon }}</span>
+                    <span class="text">{{ navigation.home_label }}</span>
+                </a>
+                <div class="study-counter" data-study-counter role="status" aria-live="polite">
+                    <span class="study-counter-label">{{ navigation.study_label }}</span>
+                    <span class="counter-badge" data-study-count>0</span>
+                </div>
+            </div>
+            <h1>👑 {{ character.title }}</h1>
+            <p class="subtitle">Изучаем немецкий через трагедию Шекспира</p>
+        </header>
+
+        <div class="journey-section">
+            <h2>📚 Путешествие {{ character.name }}</h2>
+
+            <div class="journey-timeline">
+                <svg class="journey-line" width="100%" height="4">
+                    <line x1="0" y1="2" x2="100%" y2="2" stroke="#6b5b95" stroke-width="2" opacity="0.3" />
+                    <line x1="0" y1="2" x2="100%" y2="2" stroke="#6b5b95" stroke-width="3" class="progress-line" data-start-progress="{{ initial_progress }}" />
+                </svg>
+
+                <div class="journey-points">
+                    {% for phase in journey_phases %}
+                    <div class="journey-point{% if loop.first %} active{% endif %}" data-phase="{{ phase.id }}">
+                        <div class="point-circle">{{ phase.icon }}</div>
+                        <h4>{{ phase.title }}</h4>
+                        {% if phase.keywords %}
+                        <p>{{ phase.keywords }}</p>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="journey-progress">
+                <div class="progress-track">
+                    <div class="progress-fill" style="width: {{ initial_progress }}%"></div>
+                </div>
+                <div class="progress-text">{{ initial_description }}</div>
+            </div>
+        </div>
+
+        {% if journey_phases %}
+        <div class="theatrical-scenes">
+            {% for phase in journey_phases if phase.theatrical_scene %}
+            <div class="theatrical-scene{% if loop.first %} active{% endif %}" data-phase="{{ phase.id }}">
+                <h3 class="scene-title">{{ phase.theatrical_scene.title }}</h3>
+                <div class="scene-narrative">{{ phase.theatrical_scene.narrative | safe }}</div>
+                <div class="emotional-peak">{{ phase.theatrical_scene.emotional_peak }}</div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="vocabulary-section">
+            <h2>📖 Словарь: Фаза "<span id="current-phase">{{ first_phase_title }}</span>"</h2>
+            <div class="vocabulary-grid"></div>
+
+            <div class="phase-navigation">
+                <button class="change-phase-btn prev-btn" type="button">← Предыдущая фаза</button>
+                <button class="change-phase-btn next-btn" type="button">Следующая фаза →</button>
+            </div>
+        </div>
+
+        <div class="exercises-section">
+            <h2>📝 Упражнения</h2>
+
+            <div class="exercises-accordion">
+                <div class="exercise-panel" data-exercise="matching">
+                    <button class="exercise-toggle" type="button">
+                        <span class="toggle-icon">▶</span>
+                        🔗 Подбор слов
+                    </button>
+                    <div class="exercise-content collapsed">
+                        <p class="exercise-description">Сопоставьте немецкие слова текущей фазы с их переводами и подсказками.</p>
+                        <div class="exercise-phase-wrapper" data-phase-wrapper="matching">
+                            {% for phase in journey_phases %}
+                            <section class="exercise-phase{% if loop.first %} active{% endif %}" data-phase="{{ phase.id }}">
+                                <div class="matching-container" data-matching-container data-phase="{{ phase.id }}"></div>
+                            </section>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exercise-panel" data-exercise="articles">
+                    <button class="exercise-toggle" type="button">
+                        <span class="toggle-icon">▶</span>
+                        🎯 Артикли и род
+                    </button>
+                    <div class="exercise-content collapsed">
+                        <p class="exercise-description">Разложите существительные по родам и запомните их вместе с переводом.</p>
+                        <div class="exercise-phase-wrapper" data-phase-wrapper="articles">
+                            {% for phase in journey_phases %}
+                            <section class="exercise-phase{% if loop.first %} active{% endif %}" data-phase="{{ phase.id }}">
+                                <div class="articles-container" data-articles-container data-phase="{{ phase.id }}"></div>
+                            </section>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exercise-panel" data-exercise="context">
+                    <button class="exercise-toggle" type="button">
+                        <span class="toggle-icon">▶</span>
+                        📝 Контекстный перевод
+                    </button>
+                    <div class="exercise-content collapsed">
+                        <p class="exercise-description">Выберите перевод пропущенного слова в цитатах из истории персонажа.</p>
+                        <div class="exercise-phase-wrapper" data-phase-wrapper="context">
+                            {% for phase in journey_phases %}
+                            <section class="exercise-phase{% if loop.first %} active{% endif %}" data-phase="{{ phase.id }}">
+                                <div class="context-container" data-context-container data-phase="{{ phase.id }}"></div>
+                            </section>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exercise-panel" data-exercise="quiz">
+                    <button class="exercise-toggle" type="button">
+                        <span class="toggle-icon">▶</span>
+                        🧠 Викторина по словам
+                    </button>
+                    <div class="exercise-content collapsed">
+                        <div class="quiz-header">
+                            <div class="quiz-progress">
+                                <span class="progress-text">Вопрос <span id="current-question">1</span> из <span id="total-questions">1</span></span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="quiz-mode-indicator">
+                                <span class="mode-badge active" data-mode="forward">DE → RU</span>
+                                <span class="mode-badge" data-mode="reverse">RU → DE</span>
+                            </div>
+                        </div>
+
+                        <div class="quiz-content">
+                            <div class="quiz-placeholder">Выберите фазу, чтобы начать викторину.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exercise-panel" data-exercise="constructor">
+                    <button class="exercise-toggle" type="button">
+                        <span class="toggle-icon">▶</span>
+                        🧩 Конструктор предложений
+                    </button>
+                    <div class="exercise-content collapsed">
+                        <div class="constructor-section">
+                            <p class="constructor-intro">Соберите немецкое предложение из фрагментов и проверьте себя по переводу.</p>
+
+                            {% for phase in journey_phases %}
+                            <section class="constructor-panel{% if loop.first %} active{% endif %}" data-phase="{{ phase.id }}">
+                                <div class="constructor-header">
+                                    <div class="constructor-word" data-constructor-word>—</div>
+                                    <div class="constructor-translation" data-constructor-translation></div>
+                                    <div class="constructor-progress" data-constructor-progress></div>
+                                </div>
+                                <p class="constructor-hint" data-constructor-hint>Выберите следующую фразу, чтобы начать тренировку.</p>
+
+                                <div class="constructor-areas">
+                                    <div class="constructor-source" data-constructor-source></div>
+                                    <div class="constructor-target" data-constructor-target>
+                                        <div class="constructor-placeholder">Перетащите или нажмите на фрагменты, чтобы собрать предложение.</div>
+                                    </div>
+                                </div>
+
+                                <div class="constructor-controls">
+                                    <button class="constructor-control constructor-check" type="button">Проверить</button>
+                                    <button class="constructor-control constructor-reset" type="button">Сбросить</button>
+                                    <button class="constructor-control constructor-next" type="button">Следующее предложение</button>
+                                </div>
+
+                                <div class="constructor-feedback" aria-live="polite"></div>
+                                <div class="constructor-original" data-constructor-original></div>
+
+                                {% if not phase.sentence_parts %}
+                                <p class="constructor-empty">Для этой фазы пока нет предложений для конструктора, они появятся позже.</p>
+                                {% endif %}
+                            </section>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="exercises-container">
+            {% for exercise in exercises %}
+            <div class="exercise-container{% if exercise.is_active %} active{% endif %}" data-phase="{{ exercise.phase_id }}">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: {{ exercise.title }}</h4>
+                    <div class="exercise-text">{{ exercise.text | safe }}</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <nav class="bottom-nav">
+            <a href="../index.html" class="nav-link">← К главной</a>
+        </nav>
+    </div>
+
+    <script>{{ js | safe }}</script>
+    <script src="../static/js/exercises.js"></script>
+</body>
+</html>

@@ -1,0 +1,344 @@
+/* Упражнение: Артикли и род */
+.articles-exercise {
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.articles-instruction,
+.context-instruction {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.article-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .article-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+.article-column {
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    min-height: 150px;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.article-column[data-article="der"] {
+    border-color: #4a90e2;
+}
+
+.article-column[data-article="die"] {
+    border-color: #e74c3c;
+}
+
+.article-column[data-article="das"] {
+    border-color: #27ae60;
+}
+
+.article-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.article-label {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+}
+
+.article-desc {
+    font-size: 0.85em;
+    color: #888;
+    display: block;
+    margin-top: 4px;
+}
+
+.article-drop-zone {
+    min-height: 120px;
+    border: 2px dashed #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1 1 auto;
+}
+
+.article-drop-zone.drag-over {
+    background: #e8f4f8;
+    border-color: #4CAF50;
+    transform: scale(1.02);
+}
+
+.words-to-sort {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+    min-height: 50px;
+}
+
+.article-word-card {
+    background: white;
+    border: 2px solid #6b5b95;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: move;
+    transition: all 0.3s;
+    user-select: none;
+}
+
+.article-word-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.article-word-card.dragging {
+    opacity: 0.5;
+    transform: rotate(5deg);
+}
+
+.article-word-card.selected {
+    border-color: #ffc107;
+    background: #fff9e6;
+    transform: scale(1.05);
+}
+
+.article-word-card.correct {
+    background: #d4edda;
+    border-color: #28a745;
+    animation: correctPulse 0.5s;
+}
+
+.article-word-card.incorrect {
+    background: #f8d7da;
+    border-color: #dc3545;
+    animation: shake 0.5s;
+}
+
+@keyframes correctPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+.word-german {
+    font-weight: bold;
+    display: block;
+    color: #333;
+}
+
+.word-russian {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 2px;
+}
+
+.articles-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 30px 0 0;
+}
+
+.article-drop-zone .article-word-card {
+    width: 100%;
+}
+
+.check-articles-btn,
+.reset-articles-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.check-articles-btn {
+    background: #6b5b95;
+    color: white;
+}
+
+.check-articles-btn:hover {
+    background: #5a4a84;
+}
+
+.reset-articles-btn {
+    background: #e0e0e0;
+    color: #333;
+}
+
+.reset-articles-btn:hover {
+    background: #d0d0d0;
+}
+
+.articles-feedback {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    min-height: 30px;
+}
+
+.articles-feedback.success {
+    color: #28a745;
+}
+
+.articles-feedback.partial {
+    color: #ffc107;
+}
+
+/* Упражнение: Контекстный перевод */
+.context-exercises {
+    padding: 20px;
+}
+
+.context-exercise-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.context-exercise-card.answered {
+    border-color: #e0e0e0;
+}
+
+.context-exercise-card.success-animation {
+    animation: successGlow 0.5s;
+}
+
+@keyframes successGlow {
+    0%, 100% { box-shadow: none; }
+    50% { box-shadow: 0 0 20px rgba(40, 167, 69, 0.3); }
+}
+
+.exercise-number {
+    font-weight: bold;
+    color: #6b5b95;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.context-sentences {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+
+.sentence-german {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f0f4f8;
+    border-left: 3px solid #6b5b95;
+}
+
+.sentence-russian {
+    color: #666;
+    font-style: italic;
+    padding: 10px;
+}
+
+.context-question {
+    margin: 15px 0;
+    text-align: center;
+    color: #333;
+}
+
+.context-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 15px 0;
+}
+
+@media (max-width: 576px) {
+    .context-options {
+        grid-template-columns: 1fr;
+    }
+}
+
+.context-option {
+    padding: 12px;
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: left;
+}
+
+.context-option:hover:not(:disabled) {
+    border-color: #6b5b95;
+    background: #f0f8ff;
+    transform: translateX(5px);
+}
+
+.context-option:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.context-option.selected {
+    border-color: #ffc107;
+    background: #fff9e6;
+}
+
+.context-option.correct {
+    background: #d4edda;
+    border-color: #28a745;
+}
+
+.context-option.incorrect {
+    background: #f8d7da;
+    border-color: #dc3545;
+}
+
+.context-feedback {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    min-height: 25px;
+}
+
+.context-feedback.success {
+    color: #28a745;
+}
+
+.context-feedback.error {
+    color: #dc3545;
+}
+
+/* Общие стили */
+.relations-empty-state {
+    text-align: center;
+    color: #999;
+    padding: 30px;
+    font-style: italic;
+}

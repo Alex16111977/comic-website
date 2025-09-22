@@ -1,0 +1,29 @@
+{
+  "queue": [
+    {
+      "wordId": "w008",
+      "characterId": "king_lear",
+      "phaseId": "throne"
+    },
+    {
+      "wordId": "w002",
+      "characterId": "king_lear",
+      "phaseId": "throne"
+    },
+    {
+      "wordId": "w001",
+      "characterId": "king_lear",
+      "phaseId": "throne"
+    },
+    {
+      "wordId": "w009",
+      "characterId": "king_lear",
+      "phaseId": "goneril"
+    },
+    {
+      "wordId": "w005",
+      "characterId": "king_lear",
+      "phaseId": "storm"
+    }
+  ]
+}

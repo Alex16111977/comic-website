@@ -1,0 +1,852 @@
+{
+  "id": "fool",
+  "name": "Fool",
+  "title": "Путь Шута",
+  "journey_phases": [
+    {
+      "id": "jester",
+      "icon": "🃏",
+      "title": "Королевский шут",
+      "keywords": "Narr • Weisheit • Trauer",
+      "description": "Акт I: При дворе, грустит о Корделии",
+      "vocabulary": [
+        {
+          "german": "der Narr",
+          "russian": "шут",
+          "transcription": "[дер НАР]",
+          "sentence": "Im grellen Licht des Thronsaals schlägt Fool die Laute an. Ich presse das Wort „der Narr“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "В ярком свете тронного зала Шут ударяет по струнам лютни. Я стискиваю слово «шут» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Im grellen Licht des Thronsaals schlägt Fool die Laute an.",
+            "Ich presse das Wort „der Narr“ zwischen die Zähne,",
+            "damit kein Zweifel entweicht."
+          ]
+        },
+        {
+          "german": "die Weisheit",
+          "russian": "мудрость",
+          "transcription": "[ди ВАЙС-хайт]",
+          "sentence": "Neben Lears Krone balanciert Fool auf einem Fuß. Ich atme tief ein und lasse nur das Wort „die Weisheit“ wieder hinaus.",
+          "sentence_translation": "Рядом с короной Лира Шут балансирует на одной ноге. Я глубоко вдыхаю и выпускаю только слово «мудрость».",
+          "sentence_parts": [
+            "Neben Lears Krone balanciert Fool auf einem Fuß.",
+            "Ich atme tief ein und lasse nur das Wort „die Weisheit“ wieder hinaus."
+          ]
+        },
+        {
+          "german": "die Trauer",
+          "russian": "печаль",
+          "transcription": "[ди ТРАУ-ер]",
+          "sentence": "Zwischen Hofdamen und Rittern wirbelt Fool mit flatterndem Schellenkleid. Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Trauer“ bleibt lebendig.",
+          "sentence_translation": "Между дамами двора и рыцарями Шут кружится в звенящем костюме. Каждой клеткой тела я обещаю: слово «печаль» останется живым.",
+          "sentence_parts": [
+            "Zwischen Hofdamen und Rittern wirbelt Fool mit flatterndem Schellenkleid.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Trauer“ bleibt lebendig."
+          ]
+        },
+        {
+          "german": "scherzen",
+          "russian": "шутить",
+          "transcription": "[ШЕР-цен]",
+          "sentence": "Vor dem königlichen Podest verzieht Fool die Maske zum Spott. Ich zeichne das Wort „scherzen“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "Перед королевским помостом Шут кривит маску насмешки. Я черчу слово «шутить» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Vor dem königlichen Podest verzieht Fool die Maske zum Spott.",
+            "Ich zeichne das Wort „scherzen“ in Gedanken über die Linien des Schicksals."
+          ]
+        },
+        {
+          "german": "der Spaß",
+          "russian": "забава",
+          "transcription": "[дер ШПАС]",
+          "sentence": "Am Bankettisch jongliert Fool mit goldenen Pokalen. Selbst wenn die Welt zerfällt, bleibt das Wort „der Spaß“ mein Nordstern.",
+          "sentence_translation": "У банкетного стола Шут жонглирует золотыми кубками. Даже если мир распадается, слово «забава» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Am Bankettisch jongliert Fool mit goldenen Pokalen.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „der Spaß“ mein Nordstern."
+          ]
+        },
+        {
+          "german": "klug",
+          "russian": "умный",
+          "transcription": "[КЛУГ]",
+          "sentence": "Zwischen Lachern und Seufzern zeichnet Fool Grimassen in die Luft. Das kalte Licht lässt das Wort „klug“ wie geschmolzenes Gold erscheinen.",
+          "sentence_translation": "Среди смеха и вздохов Шут рисует в воздухе гримасы. Холодный свет заставляет слово «умный» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Zwischen Lachern und Seufzern zeichnet Fool Grimassen in die Luft.",
+            "Das kalte Licht lässt das Wort „klug“ wie geschmolzenes Gold erscheinen."
+          ]
+        },
+        {
+          "german": "vermissen",
+          "russian": "скучать",
+          "transcription": "[фер-МИ-сен]",
+          "sentence": "Im Schatten der Säulen lauscht Fool den leisen Worten Cordelias. Mein Atem zeichnet das Wort „vermissen“ in die kalte Luft zwischen uns.",
+          "sentence_translation": "В тени колонн Шут прислушивается к тихим словам Корделии. Моё дыхание рисует слово «скучать» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Im Schatten der Säulen lauscht Fool den leisen Worten Cordelias.",
+            "Mein Atem zeichnet das Wort „vermissen“ in die kalte Luft zwischen uns."
+          ]
+        },
+        {
+          "german": "der Witz",
+          "russian": "остроумие",
+          "transcription": "[дер ВИТЦ]",
+          "sentence": "Auf der Marmorstufe lässt Fool ein Glöckchen über den Boden tanzen. Mit jeder Faser meines Körpers verspreche ich: Das Wort „der Witz“ bleibt lebendig.",
+          "sentence_translation": "На мраморной ступени Шут пускает колокольчик плясать по полу. Каждой клеткой тела я обещаю: слово «остроумие» останется живым.",
+          "sentence_parts": [
+            "Auf der Marmorstufe lässt Fool ein Glöckchen über den Boden tanzen.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „der Witz“ bleibt lebendig."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "МАСКА СМЕХА",
+        "narrative": "Я - <b>DER NARR (шут)</b>, но я самый <b>KLUG (умный)</b> человек в этом дворце дураков! <b>DIE WEISHEIT (мудрость)</b> прячется за моими колокольчиками. Я <b>SCHERZEN (шучу)</b>, но <b>DIE TRAUER (печаль)</b> о Корделии разрывает моё сердце! Я <b>VERMISSEN (скучаю)</b> по ней каждый день! <b>DER SPAß (забава)</b> - моя маска, <b>DER WITZ (остроумие)</b> - мой щит. Король отдал королевство лживым дочерям, а истинную любовь изгнал! О, какая глупость! И только я, шут, вижу правду! Но кто слушает шута? Все смеются над моими песнями, не слыша горечи в словах.",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Корделия уехала во Францию, и с ней ушла вся радость!» - пою я, пряча слёзы за улыбкой.",
+        "exercise_text": "Я - ___ (шут), но я самый ___ (умный) человек в этом дворце дураков! ___ (мудрость) прячется за моими колокольчиками. Я ___ (шучу), но ___ (печаль) о Корделии разрывает моё сердце! Я ___ (скучаю) по ней каждый день! ___ (забава) - моя маска, ___ (остроумие) - мой щит. Король отдал королевство лживым дочерям, а истинную любовь изгнал! О, какая глупость! И только я, шут, вижу правду! Но кто слушает шута? Все смеются над моими песнями, не слыша горечи в словах."
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «der Narr»?",
+          "choices": [
+            "мудрость",
+            "печаль",
+            "шутить",
+            "шут"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «die Weisheit»?",
+          "choices": [
+            "шут",
+            "печаль",
+            "шутить",
+            "мудрость"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "bitter_truths",
+      "icon": "🎭",
+      "title": "Горькие истины",
+      "keywords": "Wahrheit • Scherz • Warnung",
+      "description": "Акт I: Говорит правду через шутки",
+      "vocabulary": [
+        {
+          "german": "die Wahrheit",
+          "russian": "правда",
+          "transcription": "[ди ВАР-хайт]",
+          "sentence": "Vor Lears Ohr flüstert Fool mit funkelndem Blick die spöttische Wahrheit. Mit fester Stimme schwöre ich mir: Das Wort „die Wahrheit“ wird heute nicht verraten.",
+          "sentence_translation": "У самого уха Лира Шут с блеском в глазах шепчет язвительную правду. Твёрдым голосом я клянусь себе: слово «правда» сегодня не будет предано.",
+          "sentence_parts": [
+            "Vor Lears Ohr flüstert Fool mit funkelndem Blick die spöttische Wahrheit.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „die Wahrheit“ wird heute nicht verraten."
+          ]
+        },
+        {
+          "german": "der Scherz",
+          "russian": "шутка",
+          "transcription": "[дер ШЕРЦ]",
+          "sentence": "Auf dem Hofbalkon zeigt Fool mit der Laute auf die heuchlerischen Schwestern. Ich presse das Wort „der Scherz“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "На дворцовом балконе Шут указывает лютней на лицемерных сестёр. Я стискиваю слово «шутка» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Auf dem Hofbalkon zeigt Fool mit der Laute auf die heuchlerischen Schwestern.",
+            "Ich presse das Wort „der Scherz“ zwischen die Zähne,",
+            "damit kein Zweifel entweicht."
+          ]
+        },
+        {
+          "german": "die Warnung",
+          "russian": "предупреждение",
+          "transcription": "[ди ВАР-нунг]",
+          "sentence": "Zwischen umgestoßenen Bechern sammelt Fool die Lügen wie Perlen auf. Ich zeichne das Wort „die Warnung“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "Среди опрокинутых кубков Шут собирает ложь словно жемчуг. Я черчу слово «предупреждение» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Zwischen umgestoßenen Bechern sammelt Fool die Lügen wie Perlen auf.",
+            "Ich zeichne das Wort „die Warnung“ in Gedanken über die Linien des Schicksals."
+          ]
+        },
+        {
+          "german": "bitter",
+          "russian": "горький",
+          "transcription": "[БИ-тер]",
+          "sentence": "An Lears Seite zeichnet Fool mit Kreide eine Krone auf den Boden. Wie ein stilles Gebet legt sich das Wort „bitter“ auf meine Lippen.",
+          "sentence_translation": "Рядом с Лиром Шут мелом рисует корону на полу. Как тихая молитва слово «горький» ложится на мои губы.",
+          "sentence_parts": [
+            "An Lears Seite zeichnet Fool mit Kreide eine Krone auf den Boden.",
+            "Wie ein stilles Gebet legt sich das Wort „bitter“ auf meine Lippen."
+          ]
+        },
+        {
+          "german": "spotten",
+          "russian": "насмехаться",
+          "transcription": "[ШПО-тен]",
+          "sentence": "Im Gedränge der Höflinge spielt Fool eine schrille Warnmelodie. Mit fester Stimme schwöre ich mir: Das Wort „spotten“ wird heute nicht verraten.",
+          "sentence_translation": "В толчее придворных Шут играет пронзительную мелодию предупреждения. Твёрдым голосом я клянусь себе: слово «насмехаться» сегодня не будет предано.",
+          "sentence_parts": [
+            "Im Gedränge der Höflinge spielt Fool eine schrille Warnmelodie.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „spotten“ wird heute nicht verraten."
+          ]
+        },
+        {
+          "german": "necken",
+          "russian": "дразнить",
+          "transcription": "[НЕ-кен]",
+          "sentence": "Auf den Stufen zum Thron zieht Fool die Stirn in tiefe Falten. Ich presse das Wort „necken“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "На ступенях, ведущих к трону, Шут морщит лоб глубокими складками. Я стискиваю слово «дразнить» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Auf den Stufen zum Thron zieht Fool die Stirn in tiefe Falten.",
+            "Ich presse das Wort „necken“ zwischen die Zähne, damit kein Zweifel entweicht."
+          ]
+        },
+        {
+          "german": "enthüllen",
+          "russian": "раскрывать",
+          "transcription": "[энт-ХЮ-лен]",
+          "sentence": "Neben dem Tränenstrom des Königs wischt Fool die Schminke vom Gesicht. Ich zeichne das Wort „enthüllen“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "Рядом с потоками слёз короля Шут стирает грим с лица. Я черчу слово «раскрывать» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Neben dem Tränenstrom des Königs wischt Fool die Schminke vom Gesicht.",
+            "Ich zeichne das Wort „enthüllen“ in Gedanken über die Linien des Schicksals."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "ЯДОВИТЫЕ ШУТКИ",
+        "narrative": "<b>DIE WAHRHEIT (правда)</b> - мой товар, но я продаю её как <b>DER SCHERZ (шутку)</b>! Каждая <b>DIE WARNUNG (предупреждение)</b> звучит как песенка! «Дядюшка, ты сделал своих дочерей матерями, а себя - ребёнком!» Я <b>NECKEN (дражню)</b> короля, я <b>SPOTTEN (насмехаюсь)</b> над его глупостью! <b>BITTER (горькая)</b> правда льётся из моих уст! Я <b>ENTHÜLLEN (раскрываю)</b> его ошибки в каждой рифме! «Ты отдал всё и не оставил себе ничего, старый дурак!» Но он смеётся, не понимая, что шут - единственный, кто говорит правду в этом дворце лжи!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Правда и ложь поменялись местами! Теперь тот, кто говорит правду - шут, а лжецы - принцессы!»",
+        "exercise_text": "___ (правда) - мой товар, но я продаю её как ___ (шутку)! Каждая ___ (предупреждение) звучит как песенка! «Дядюшка, ты сделал своих дочерей матерями, а себя - ребёнком!» Я ___ (дражню) короля, я ___ (насмехаюсь) над его глупостью! ___ (горькая) правда льётся из моих уст! Я ___ (раскрываю) его ошибки в каждой рифме! «Ты отдал всё и не оставил себе ничего, старый дурак!» Но он смеётся, не понимая, что шут - единственный, кто говорит правду в этом дворце лжи!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Wahrheit»?",
+          "choices": [
+            "шутка",
+            "предупреждение",
+            "горький",
+            "правда"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Scherz»?",
+          "choices": [
+            "правда",
+            "предупреждение",
+            "горький",
+            "шутка"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "prophecies",
+      "icon": "🔮",
+      "title": "Пророчества",
+      "keywords": "Prophezeiung • Rätsel • Vorahnung",
+      "description": "Акт II: Предсказывает беды",
+      "vocabulary": [
+        {
+          "german": "die Prophezeiung",
+          "russian": "пророчество",
+          "transcription": "[ди про-фе-ЦАЙ-унг]",
+          "sentence": "Unter dem Sternenzelt deutet Fool mit dem Stab die funkelnden Zeichen. Das kalte Licht lässt das Wort „die Prophezeiung“ wie geschmolzenes Gold erscheinen.",
+          "sentence_translation": "Под звёздным шатром Шут посохом указывает на мерцающие знаки. Холодный свет заставляет слово «пророчество» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Unter dem Sternenzelt deutet Fool mit dem Stab die funkelnden Zeichen.",
+            "Das kalte Licht lässt das Wort „die Prophezeiung“ wie geschmolzenes Gold erscheinen."
+          ]
+        },
+        {
+          "german": "das Rätsel",
+          "russian": "загадка",
+          "transcription": "[дас РЕТ-зель]",
+          "sentence": "Auf den Mauern des Schlosses rezitiert Fool Verse von kommenden Stürmen. Ich flüstere den Wächtern des Schicksals zu: Das Wort „das Rätsel“ darf nicht vergehen.",
+          "sentence_translation": "На стенах замка Шут декламирует стихи о грядущих бурях. Я шепчу стражам судьбы: слово «загадка» не должно исчезнуть.",
+          "sentence_parts": [
+            "Auf den Mauern des Schlosses rezitiert Fool Verse von kommenden Stürmen.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „das Rätsel“ darf nicht vergehen."
+          ]
+        },
+        {
+          "german": "die Vorahnung",
+          "russian": "предчувствие",
+          "transcription": "[ди ФОР-а-нунг]",
+          "sentence": "Zwischen Rauch und Kerzenduft schleudert Fool rätselhafte Reime. Mit fester Stimme schwöre ich mir: Das Wort „die Vorahnung“ wird heute nicht verraten.",
+          "sentence_translation": "Среди дыма и аромата свечей Шут бросает загадочные рифмы. Твёрдым голосом я клянусь себе: слово «предчувствие» сегодня не будет предано.",
+          "sentence_parts": [
+            "Zwischen Rauch und Kerzenduft schleudert Fool rätselhafte Reime.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „die Vorahnung“ wird heute nicht verraten."
+          ]
+        },
+        {
+          "german": "vorhersagen",
+          "russian": "предсказывать",
+          "transcription": "[ФОР-хер-за-ген]",
+          "sentence": "Am Brunnen des Hofes wirft Fool Kiesel, um die Zukunft zu spiegeln. Ich atme tief ein und lasse nur das Wort „vorhersagen“ wieder hinaus.",
+          "sentence_translation": "У дворцового фонтана Шут бросает гальку, чтобы отразить будущее. Я глубоко вдыхаю и выпускаю только слово «предсказывать».",
+          "sentence_parts": [
+            "Am Brunnen des Hofes wirft Fool Kiesel, um die Zukunft zu spiegeln.",
+            "Ich atme tief ein und lasse nur das Wort „vorhersagen“ wieder hinaus."
+          ]
+        },
+        {
+          "german": "deuten",
+          "russian": "толковать",
+          "transcription": "[ДОЙ-тен]",
+          "sentence": "Vor erstaunten Dienern zeichnet Fool Kreise in den Staub. Ich presse das Wort „deuten“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "Перед поражёнными слугами Шут чертит круги в пыли. Я стискиваю слово «толковать» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Vor erstaunten Dienern zeichnet Fool Kreise in den Staub.",
+            "Ich presse das Wort „deuten“ zwischen die Zähne, damit kein Zweifel entweicht."
+          ]
+        },
+        {
+          "german": "ahnen",
+          "russian": "предчувствовать",
+          "transcription": "[А-нен]",
+          "sentence": "Auf der Markttreppe singt Fool von Königen, die zu Bettlern werden. Mit fester Stimme schwöre ich mir: Das Wort „ahnen“ wird heute nicht verraten.",
+          "sentence_translation": "На рыночной лестнице Шут поёт о королях, становящихся нищими. Твёрдым голосом я клянусь себе: слово «предчувствовать» сегодня не будет предано.",
+          "sentence_parts": [
+            "Auf der Markttreppe singt Fool von Königen, die zu Bettlern werden.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „ahnen“ wird heute nicht verraten."
+          ]
+        },
+        {
+          "german": "das Omen",
+          "russian": "знамение",
+          "transcription": "[дас О-мен]",
+          "sentence": "Neben einem reisenden Pilger deutet Fool in den flammenden Himmel. Mit fester Stimme schwöre ich mir: Das Wort „das Omen“ wird heute nicht verraten.",
+          "sentence_translation": "Рядом со странствующим пилигримом Шут указывает на пылающее небо. Твёрдым голосом я клянусь себе: слово «знамение» сегодня не будет предано.",
+          "sentence_parts": [
+            "Neben einem reisenden Pilger deutet Fool in den flammenden Himmel.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „das Omen“ wird heute nicht verraten."
+          ]
+        },
+        {
+          "german": "rätselhaft",
+          "russian": "загадочный",
+          "transcription": "[РЕТ-зель-хафт]",
+          "sentence": "Im Gewitterlicht zählt Fool die Schläge, die die Zukunft ankündigen. Ich zeichne das Wort „rätselhaft“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "В свете грозы Шут отсчитывает удары, возвещающие будущее. Я черчу слово «загадочный» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Im Gewitterlicht zählt Fool die Schläge, die die Zukunft ankündigen.",
+            "Ich zeichne das Wort „rätselhaft“ in Gedanken über die Linien des Schicksals."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "ВИДЕНИЯ ГИБЕЛИ",
+        "narrative": "Слушайте мою <b>DIE PROPHEZEIUNG (пророчество)</b>! В каждом <b>DAS RÄTSEL (загадке)</b> я <b>VORHERSAGEN (предсказываю)</b> будущее! <b>DIE VORAHNUNG (предчувствие)</b> тьмы наполняет меня! Я <b>DEUTEN (толкую)</b> знаки - каждое <b>DAS OMEN (знамение)</b> кричит о беде! Я <b>AHNEN (предчувствую)</b> кровь и слёзы! «Когда священники станут пивоварами, а знать начнёт шить - тогда королевство падёт!» Мои слова <b>RÄTSELHAFT (загадочны)</b>, но истинны! Буря идёт! Безумие грядёт! Смерть стучится в двери! Но кто поверит шуту-пророку? Все думают, это просто песенка дурака!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Англия погибнет от собственной глупости!» - кричу я в пустоту, зная, что меня не слышат!",
+        "exercise_text": "Слушайте мою ___ (пророчество)! В каждом ___ (загадке) я ___ (предсказываю) будущее! ___ (предчувствие) тьмы наполняет меня! Я ___ (толкую) знаки - каждое ___ (знамение) кричит о беде! Я ___ (предчувствую) кровь и слёзы! «Когда священники станут пивоварами, а знать начнёт шить - тогда королевство падёт!» Мои слова ___ (загадочны), но истинны! Буря идёт! Безумие грядёт! Смерть стучится в двери! Но кто поверит шуту-пророку? Все думают, это просто песенка дурака!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Prophezeiung»?",
+          "choices": [
+            "загадка",
+            "предчувствие",
+            "предсказывать",
+            "пророчество"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «das Rätsel»?",
+          "choices": [
+            "пророчество",
+            "предчувствие",
+            "предсказывать",
+            "загадка"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "mad_companion",
+      "icon": "🌪️",
+      "title": "Спутник безумия",
+      "keywords": "Wahnsinn • Freundschaft • Sturm",
+      "description": "Акт III: Единственный друг в буре",
+      "vocabulary": [
+        {
+          "german": "der Wahnsinn",
+          "russian": "безумие",
+          "transcription": "[дер ВАН-зин]",
+          "sentence": "In der sturmgepeitschten Heide drückt Fool Lear die klammen Hände. Mein Atem zeichnet das Wort „der Wahnsinn“ in die kalte Luft zwischen uns.",
+          "sentence_translation": "На залитой бурей пустоши Шут сжимает озябшие руки Лира. Моё дыхание рисует слово «безумие» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "In der sturmgepeitschten Heide drückt Fool Lear die klammen Hände.",
+            "Mein Atem zeichnet das Wort „der Wahnsinn“ in die kalte Luft zwischen uns."
+          ]
+        },
+        {
+          "german": "die Freundschaft",
+          "russian": "дружба",
+          "transcription": "[ди ФРОЙНД-шафт]",
+          "sentence": "Zwischen zerrissenen Zelten singt Fool ein trostloses Wiegenlied. Ich umarme das Wort „die Freundschaft“, als wäre es mein einziger Verbündeter.",
+          "sentence_translation": "Среди разорванных шатров Шут поёт безутешную колыбельную. Я обнимаю слово «дружба», будто это единственный союзник.",
+          "sentence_parts": [
+            "Zwischen zerrissenen Zelten singt Fool ein trostloses Wiegenlied.",
+            "Ich umarme das Wort „die Freundschaft“, als wäre es mein einziger Verbündeter."
+          ]
+        },
+        {
+          "german": "begleiten",
+          "russian": "сопровождать",
+          "transcription": "[бе-ГЛАЙ-тен]",
+          "sentence": "Am umgestürzten Wagen schirmt Fool den König vor der Peitsche des Regens. Ich presse das Wort „begleiten“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "У перевёрнутой повозки Шут заслоняет короля от кнута дождя. Я стискиваю слово «сопровождать» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Am umgestürzten Wagen schirmt Fool den König vor der Peitsche des Regens.",
+            "Ich presse das Wort „begleiten“ zwischen die Zähne, damit kein Zweifel entweicht."
+          ]
+        },
+        {
+          "german": "frieren",
+          "russian": "мёрзнуть",
+          "transcription": "[ФРИ-рен]",
+          "sentence": "Unter dem knarzenden Dach der Hütte sitzt Fool dicht an Lear gedrängt. Ich flüstere den Wächtern des Schicksals zu: Das Wort „frieren“ darf nicht vergehen.",
+          "sentence_translation": "Под скрипучей крышей хижины Шут сидит вплотную к Лиру. Я шепчу стражам судьбы: слово «мёрзнуть» не должно исчезнуть.",
+          "sentence_parts": [
+            "Unter dem knarzenden Dach der Hütte sitzt Fool dicht an Lear gedrängt.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „frieren“ darf nicht vergehen."
+          ]
+        },
+        {
+          "german": "singen",
+          "russian": "петь",
+          "transcription": "[ЗИН-ген]",
+          "sentence": "Vor der tobenden Nacht schreit Fool seine Possen gegen den Wind. Ich zeichne das Wort „singen“ mit unsichtbarer Tinte auf meine Handfläche.",
+          "sentence_translation": "Перед бушующей ночью Шут выкрикивает свои шутки наперекор ветру. Я вывожу слово «петь» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Vor der tobenden Nacht schreit Fool seine Possen gegen den Wind.",
+            "Ich zeichne das Wort „singen“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
+        },
+        {
+          "german": "zittern",
+          "russian": "дрожать",
+          "transcription": "[ЦИ-терн]",
+          "sentence": "Am aufgeweichten Boden zeichnet Fool mit Stock und Witz ein Schutzschild. Ich atme tief ein und lasse nur das Wort „zittern“ wieder hinaus.",
+          "sentence_translation": "На размокшей земле Шут рисует палкой и шутками защитный круг. Я глубоко вдыхаю и выпускаю только слово «дрожать».",
+          "sentence_parts": [
+            "Am aufgeweichten Boden zeichnet Fool mit Stock und Witz ein Schutzschild.",
+            "Ich atme tief ein und lasse nur das Wort „zittern“ wieder hinaus."
+          ]
+        },
+        {
+          "german": "treu",
+          "russian": "верный",
+          "transcription": "[ТРОЙ]",
+          "sentence": "In der Finsternis des Waldes zündet Fool einen letzten Funken Mut an. Ich umarme das Wort „treu“, als wäre es mein einziger Verbündeter.",
+          "sentence_translation": "В темноте леса Шут зажигает последний огонёк мужества. Я обнимаю слово «верный», будто это единственный союзник.",
+          "sentence_parts": [
+            "In der Finsternis des Waldes zündet Fool einen letzten Funken Mut an.",
+            "Ich umarme das Wort „treu“, als wäre es mein einziger Verbündeter."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "БРАТЬЯ В БУРЕ",
+        "narrative": "В буре мы с королём - братья в <b>DER WAHNSINN (безумии)</b>! Наша <b>DIE FREUNDSCHAFT (дружба)</b> крепче грома! Я <b>BEGLEITEN (сопровождаю)</b> его через ад! Мы <b>FRIEREN (мёрзнем)</b> вместе, мы <b>ZITTERN (дрожим)</b> как листья! Я <b>SINGEN (пою)</b> ему песни, чтобы заглушить вой ветра! Я остаюсь <b>TREU (верным)</b>, когда все предали! «Дурак и безумец - вот пара!» - смеюсь я сквозь слёзы. Дождь смывает краску с моего лица, но не смывает любовь к старому королю. В хижине нищего Тома мы - три безумца, потерявшие всё, кроме друг друга!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Эй, дядюшка! Безумие - это когда шут единственный друг короля!» - кричу я в грозу!",
+        "exercise_text": "В буре мы с королём - братья в ___ (безумии)! Наша ___ (дружба) крепче грома! Я ___ (сопровождаю) его через ад! Мы ___ (мёрзнем) вместе, мы ___ (дрожим) как листья! Я ___ (пою) ему песни, чтобы заглушить вой ветра! Я остаюсь ___ (верным), когда все предали! «Дурак и безумец - вот пара!» - смеюсь я сквозь слёзы. Дождь смывает краску с моего лица, но не смывает любовь к старому королю. В хижине нищего Тома мы - три безумца, потерявшие всё, кроме друг друга!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «der Wahnsinn»?",
+          "choices": [
+            "дружба",
+            "сопровождать",
+            "мёрзнуть",
+            "безумие"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «die Freundschaft»?",
+          "choices": [
+            "безумие",
+            "сопровождать",
+            "мёрзнуть",
+            "дружба"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "songs",
+      "icon": "🎵",
+      "title": "Песни в хижине",
+      "keywords": "Lied • Trost • Ironie",
+      "description": "Акт III: Поёт и утешает",
+      "vocabulary": [
+        {
+          "german": "das Lied",
+          "russian": "песня",
+          "transcription": "[дас ЛИД]",
+          "sentence": "Im warmen Schein der Hütte summt Fool eine Melodie über verlorene Kronen. Mein Atem zeichnet das Wort „das Lied“ in die kalte Luft zwischen uns.",
+          "sentence_translation": "В тёплом свете хижины Шут напевает мелодию о потерянных коронах. Моё дыхание рисует слово «песня» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Im warmen Schein der Hütte summt Fool eine Melodie über verlorene Kronen.",
+            "Mein Atem zeichnet das Wort „das Lied“ in die kalte Luft zwischen uns."
+          ]
+        },
+        {
+          "german": "der Trost",
+          "russian": "утешение",
+          "transcription": "[дер ТРОСТ]",
+          "sentence": "Neben Lear legt Fool den Kopf auf die Knie und schaukelt im Takt. Ich zeichne das Wort „der Trost“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "Рядом с Лиром Шут кладёт голову на колени и покачивается в такт. Я черчу слово «утешение» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Neben Lear legt Fool den Kopf auf die Knie und schaukelt im Takt.",
+            "Ich zeichne das Wort „der Trost“ in Gedanken über die Linien des Schicksals."
+          ]
+        },
+        {
+          "german": "die Ironie",
+          "russian": "ирония",
+          "transcription": "[ди и-ро-НИ]",
+          "sentence": "Vor der knisternden Feuerstelle klatscht Fool den Rhythmus in die Hände. Ich atme tief ein und lasse nur das Wort „die Ironie“ wieder hinaus.",
+          "sentence_translation": "Перед потрескивающим огнём Шут отбивает ритм ладонями. Я глубоко вдыхаю и выпускаю только слово «ирония».",
+          "sentence_parts": [
+            "Vor der knisternden Feuerstelle klatscht Fool den Rhythmus in die Hände.",
+            "Ich atme tief ein und lasse nur das Wort „die Ironie“ wieder hinaus."
+          ]
+        },
+        {
+          "german": "summen",
+          "russian": "напевать",
+          "transcription": "[ЗУ-мен]",
+          "sentence": "Auf dem Holzbalken sitzt Fool und schwingt die Beine zur Melodie. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „summen“ gehört mir.",
+          "sentence_translation": "На деревянной балке Шут сидит и качает ногами в такт песне. Буря за окнами усиливает клятву: слово «напевать» принадлежит мне.",
+          "sentence_parts": [
+            "Auf dem Holzbalken sitzt Fool und schwingt die Beine zur Melodie.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „summen“ gehört mir."
+          ]
+        },
+        {
+          "german": "die Melodie",
+          "russian": "мелодия",
+          "transcription": "[ди ме-ло-ДИ]",
+          "sentence": "Zwischen Schlafenden senkt Fool die Stimme zu einem flüsternden Refrain. Wie ein stilles Gebet legt sich das Wort „die Melodie“ auf meine Lippen.",
+          "sentence_translation": "Среди спящих Шут понижает голос до шёпотного припева. Как тихая молитва слово «мелодия» ложится на мои губы.",
+          "sentence_parts": [
+            "Zwischen Schlafenden senkt Fool die Stimme zu einem flüsternden Refrain.",
+            "Wie ein stilles Gebet legt sich das Wort „die Melodie“ auf meine Lippen."
+          ]
+        },
+        {
+          "german": "pfeifen",
+          "russian": "свистеть",
+          "transcription": "[ПФАЙ-фен]",
+          "sentence": "Am offenen Feld singt Fool gegen das Heulen der Nacht. Ich umarme das Wort „pfeifen“, als wäre es mein einziger Verbündeter.",
+          "sentence_translation": "На открытом поле Шут поёт наперекор вою ночи. Я обнимаю слово «свистеть», будто это единственный союзник.",
+          "sentence_parts": [
+            "Am offenen Feld singt Fool gegen das Heulen der Nacht.",
+            "Ich umarme das Wort „pfeifen“, als wäre es mein einziger Verbündeter."
+          ]
+        },
+        {
+          "german": "der Reim",
+          "russian": "рифма",
+          "transcription": "[дер РАЙМ]",
+          "sentence": "In der Morgendämmerung stimmt Fool ein hoffnungsvolles Lied an. Selbst wenn die Welt zerfällt, bleibt das Wort „der Reim“ mein Nordstern.",
+          "sentence_translation": "На рассвете Шут заводит песню надежды. Даже если мир распадается, слово «рифма» остаётся моим северным светом.",
+          "sentence_parts": [
+            "In der Morgendämmerung stimmt Fool ein hoffnungsvolles Lied an.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „der Reim“ mein Nordstern."
+          ]
+        },
+        {
+          "german": "klingen",
+          "russian": "звучать",
+          "transcription": "[КЛИН-ген]",
+          "sentence": "Über Lear gebeugt beendet Fool das Lied mit einem sanften Kuss auf die Stirn. Ich presse das Wort „klingen“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "Наклонившись над Лиром, Шут завершает песню мягким поцелуем в лоб. Я стискиваю слово «звучать» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Über Lear gebeugt beendet Fool das Lied mit einem sanften Kuss auf die Stirn.",
+            "Ich presse das Wort „klingen“ zwischen die Zähne, damit kein Zweifel entweicht."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "КОЛЫБЕЛЬНАЯ БЕЗУМИЮ",
+        "narrative": "В убогой хижине я пою <b>DAS LIED (песню)</b> для безумного короля. <b>DER TROST (утешение)</b> в моих словах слабо, но искренне. Я <b>SUMMEN (напеваю)</b> старые <b>DIE MELODIE (мелодии)</b> о временах, когда он был великим! <b>DIE IRONIE (ирония)</b> - теперь король нищий стал богаче короля богатого! Я <b>PFEIFEN (свищу)</b>, чтобы прогнать тьму. Каждый <b>DER REIM (рифма)</b> - горькая правда. Мои слова <b>KLINGEN (звучат)</b> весело, но сердце плачет. «Тот, кто имел тысячу коней, теперь счастлив с соломенной подстилкой!» О, как низко мы пали! И только песня шута напоминает о былом величии!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Спи, мой король-нищий! Завтра будет хуже!» - пою я, укрывая его соломой.",
+        "exercise_text": "В убогой хижине я пою ___ (песню) для безумного короля. ___ (утешение) в моих словах слабо, но искренне. Я ___ (напеваю) старые ___ (мелодии) о временах, когда он был великим! ___ (ирония) - теперь король нищий стал богаче короля богатого! Я ___ (свищу), чтобы прогнать тьму. Каждый ___ (рифма) - горькая правда. Мои слова ___ (звучат) весело, но сердце плачет. «Тот, кто имел тысячу коней, теперь счастлив с соломенной подстилкой!» О, как низко мы пали! И только песня шута напоминает о былом величии!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «das Lied»?",
+          "choices": [
+            "утешение",
+            "ирония",
+            "напевать",
+            "песня"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Trost»?",
+          "choices": [
+            "песня",
+            "ирония",
+            "напевать",
+            "утешение"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "wisdom",
+      "icon": "💭",
+      "title": "Последняя мудрость",
+      "keywords": "Philosophie • Schicksal • Vergänglichkeit",
+      "description": "Акт III-IV: Философские размышления",
+      "vocabulary": [
+        {
+          "german": "die Philosophie",
+          "russian": "философия",
+          "transcription": "[ди фи-ло-зо-ФИ]",
+          "sentence": "Im verlassenen Hof sitzt Fool auf einem leeren Fass und denkt laut nach. Selbst wenn die Welt zerfällt, bleibt das Wort „die Philosophie“ mein Nordstern.",
+          "sentence_translation": "На пустынном дворе Шут сидит на пустой бочке и размышляет вслух. Даже если мир распадается, слово «философия» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Im verlassenen Hof sitzt Fool auf einem leeren Fass und denkt laut nach.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „die Philosophie“ mein Nordstern."
+          ]
+        },
+        {
+          "german": "das Schicksal",
+          "russian": "судьба",
+          "transcription": "[дас ШИК-заль]",
+          "sentence": "Unter einer nackten Eiche zählt Fool die Fehler der Mächtigen. Ich flüstere den Wächtern des Schicksals zu: Das Wort „das Schicksal“ darf nicht vergehen.",
+          "sentence_translation": "Под обнажённым дубом Шут пересчитывает ошибки власть имущих. Я шепчу стражам судьбы: слово «судьба» не должно исчезнуть.",
+          "sentence_parts": [
+            "Unter einer nackten Eiche zählt Fool die Fehler der Mächtigen.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „das Schicksal“ darf nicht vergehen."
+          ]
+        },
+        {
+          "german": "die Vergänglichkeit",
+          "russian": "бренность",
+          "transcription": "[ди фер-ГЕНГ-лих-кайт]",
+          "sentence": "Am stillen Bachlauf wirft Fool Steine, um die Zeit zu messen. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Vergänglichkeit“ gehört mir.",
+          "sentence_translation": "У тихого ручья Шут бросает камни, чтобы измерить время. Буря за окнами усиливает клятву: слово «бренность» принадлежит мне.",
+          "sentence_parts": [
+            "Am stillen Bachlauf wirft Fool Steine, um die Zeit zu messen.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Vergänglichkeit“ gehört mir."
+          ]
+        },
+        {
+          "german": "nachdenken",
+          "russian": "размышлять",
+          "transcription": "[НАХ-ден-кен]",
+          "sentence": "Neben einer verlassenen Bühne probt Fool Zeilen über Narrheit und Macht. Das kalte Licht lässt das Wort „nachdenken“ wie geschmolzenes Gold erscheinen.",
+          "sentence_translation": "У заброшенной сцены Шут репетирует строки о глупости и власти. Холодный свет заставляет слово «размышлять» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Neben einer verlassenen Bühne probt Fool Zeilen über Narrheit und Macht.",
+            "Das kalte Licht lässt das Wort „nachdenken“ wie geschmolzenes Gold erscheinen."
+          ]
+        },
+        {
+          "german": "erkennen",
+          "russian": "познавать",
+          "transcription": "[ер-КЕН-нен]",
+          "sentence": "Auf dem Dachboden der Burg sortiert Fool Erinnerungen wie alte Kostüme. Ich atme tief ein und lasse nur das Wort „erkennen“ wieder hinaus.",
+          "sentence_translation": "На чердаке замка Шут раскладывает воспоминания как старые костюмы. Я глубоко вдыхаю и выпускаю только слово «познавать».",
+          "sentence_parts": [
+            "Auf dem Dachboden der Burg sortiert Fool Erinnerungen wie alte Kostüme.",
+            "Ich atme tief ein und lasse nur das Wort „erkennen“ wieder hinaus."
+          ]
+        },
+        {
+          "german": "der Sinn",
+          "russian": "смысл",
+          "transcription": "[дер ЗИН]",
+          "sentence": "Vor einem Spiegel ohne Glas betrachtet Fool das eigene müde Gesicht. Selbst wenn die Welt zerfällt, bleibt das Wort „der Sinn“ mein Nordstern.",
+          "sentence_translation": "Перед зеркалом без стекла Шут разглядывает собственное усталое лицо. Даже если мир распадается, слово «смысл» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Vor einem Spiegel ohne Glas betrachtet Fool das eigene müde Gesicht.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „der Sinn“ mein Nordstern."
+          ]
+        },
+        {
+          "german": "vergänglich",
+          "russian": "преходящий",
+          "transcription": "[фер-ГЕНГ-лих]",
+          "sentence": "Im ersten Morgenlicht schreibt Fool letzte Sprüche auf Pergament. Ich atme tief ein und lasse nur das Wort „vergänglich“ wieder hinaus.",
+          "sentence_translation": "В первом утреннем свете Шут записывает последние остроты на пергамент. Я глубоко вдыхаю и выпускаю только слово «преходящий».",
+          "sentence_parts": [
+            "Im ersten Morgenlicht schreibt Fool letzte Sprüche auf Pergament.",
+            "Ich atme tief ein und lasse nur das Wort „vergänglich“ wieder hinaus."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "МУДРОСТЬ ДУРАКА",
+        "narrative": "Моя <b>DIE PHILOSOPHIE (философия)</b> проста - мир сошёл с ума, а я единственный нормальный! Я <b>NACHDENKEN (размышляю)</b> о <b>DER SINN (смысле)</b> всего этого хаоса. <b>DAS SCHICKSAL (судьба)</b> смеётся над нами! Я <b>ERKENNEN (познаю)</b> истину - <b>DIE VERGÄNGLICHKEIT (бренность)</b> власти очевидна! Король стал нищим, дочери стали тиранами, правда стала ложью! Всё <b>VERGÄNGLICH (преходяще)</b>, только глупость вечна! «Мы рождаемся с плачем, потому что пришли в этот театр дураков!» Вот вся мудрость! Мир - сцена для безумцев, а я - единственный, кто это понимает!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Истина в том, что все мы шуты судьбы! Только я честен в своём шутовстве!»",
+        "exercise_text": "Моя ___ (философия) проста - мир сошёл с ума, а я единственный нормальный! Я ___ (размышляю) о ___ (смысле) всего этого хаоса. ___ (судьба) смеётся над нами! Я ___ (познаю) истину - ___ (бренность) власти очевидна! Король стал нищим, дочери стали тиранами, правда стала ложью! Всё ___ (преходяще), только глупость вечна! «Мы рождаемся с плачем, потому что пришли в этот театр дураков!» Вот вся мудрость! Мир - сцена для безумцев, а я - единственный, кто это понимает!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Philosophie»?",
+          "choices": [
+            "судьба",
+            "бренность",
+            "размышлять",
+            "философия"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «das Schicksal»?",
+          "choices": [
+            "философия",
+            "бренность",
+            "размышлять",
+            "судьба"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "vanishing",
+      "icon": "👻",
+      "title": "Исчезновение",
+      "keywords": "Verschwinden • Geheimnis • Leere",
+      "description": "Акт III: Таинственно исчезает",
+      "vocabulary": [
+        {
+          "german": "verschwinden",
+          "russian": "исчезать",
+          "transcription": "[фер-ШВИН-ден]",
+          "sentence": "Im Nebel des Morgens löst sich Fool zwischen den Zelten der Armee auf. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „verschwinden“ gehört mir.",
+          "sentence_translation": "В утреннем тумане Шут растворяется между шатрами армии. Буря за окнами усиливает клятву: слово «исчезать» принадлежит мне.",
+          "sentence_parts": [
+            "Im Nebel des Morgens löst sich Fool zwischen den Zelten der Armee auf.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „verschwinden“ gehört mir."
+          ]
+        },
+        {
+          "german": "das Geheimnis",
+          "russian": "тайна",
+          "transcription": "[дас ге-ХАЙМ-нис]",
+          "sentence": "Auf dem verlassenen Pfad lässt Fool nur ein Glöckchen zurück. Ich presse das Wort „das Geheimnis“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "На пустой тропе Шут оставляет лишь один колокольчик. Я стискиваю слово «тайна» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Auf dem verlassenen Pfad lässt Fool nur ein Glöckchen zurück.",
+            "Ich presse das Wort „das Geheimnis“ zwischen die Zähne,",
+            "damit kein Zweifel entweicht."
+          ]
+        },
+        {
+          "german": "die Leere",
+          "russian": "пустота",
+          "transcription": "[ди ЛЕ-ре]",
+          "sentence": "Zwischen verstreuten Karten verschwindet Fool hinter einem Wandteppich. Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Leere“ bleibt lebendig.",
+          "sentence_translation": "Среди разбросанных карт Шут исчезает за гобеленом. Каждой клеткой тела я обещаю: слово «пустота» останется живым.",
+          "sentence_parts": [
+            "Zwischen verstreuten Karten verschwindet Fool hinter einem Wandteppich.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Leere“ bleibt lebendig."
+          ]
+        },
+        {
+          "german": "sich auflösen",
+          "russian": "растворяться",
+          "transcription": "[зих АУФ-лё-зен]",
+          "sentence": "Am Rand des Schlachtfelds weht Fools bunter Schal davon. Ich zeichne das Wort „sich auflösen“ mit unsichtbarer Tinte auf meine Handfläche.",
+          "sentence_translation": "На краю поля битвы уносит пёстрый шарф Шут. Я вывожу слово «растворяться» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Am Rand des Schlachtfelds weht Fools bunter Schal davon.",
+            "Ich zeichne das Wort „sich auflösen“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
+        },
+        {
+          "german": "spurlos",
+          "russian": "бесследно",
+          "transcription": "[ШПУР-лос]",
+          "sentence": "Unter den Blicken der Soldaten verbeugt sich Fool und geht ohne Abschied. Ich umarme das Wort „spurlos“, als wäre es mein einziger Verbündeter.",
+          "sentence_translation": "Под взглядами солдат Шут кланяется и уходит без прощания. Я обнимаю слово «бесследно», будто это единственный союзник.",
+          "sentence_parts": [
+            "Unter den Blicken der Soldaten verbeugt sich Fool und geht ohne Abschied.",
+            "Ich umarme das Wort „spurlos“, als wäre es mein einziger Verbündeter."
+          ]
+        },
+        {
+          "german": "der Nebel",
+          "russian": "туман",
+          "transcription": "[дер НЕ-бель]",
+          "sentence": "Auf der Treppe der Burg bleibt Fools Schellenstab einsam liegen. Ich atme tief ein und lasse nur das Wort „der Nebel“ wieder hinaus.",
+          "sentence_translation": "На лестнице замка одиноко остаётся жезл с бубенчиками Шут. Я глубоко вдыхаю и выпускаю только слово «туман».",
+          "sentence_parts": [
+            "Auf der Treppe der Burg bleibt Fools Schellenstab einsam liegen.",
+            "Ich atme tief ein und lasse nur das Wort „der Nebel“ wieder hinaus."
+          ]
+        },
+        {
+          "german": "rätselhaft",
+          "russian": "загадочный",
+          "transcription": "[РЕТ-зель-хафт]",
+          "sentence": "Im Rauschen des Meeres verliert sich Fools Stimme wie ein ferner Traum. Ich umarme das Wort „rätselhaft“, als wäre es mein einziger Verbündeter.",
+          "sentence_translation": "В шуме моря голос Шут растворяется как далёкий сон. Я обнимаю слово «загадочный», будто это единственный союзник.",
+          "sentence_parts": [
+            "Im Rauschen des Meeres verliert sich Fools Stimme wie ein ferner Traum.",
+            "Ich umarme das Wort „rätselhaft“, als wäre es mein einziger Verbündeter."
+          ]
+        },
+        {
+          "german": "fortgehen",
+          "russian": "уходить",
+          "transcription": "[ФОРТ-ге-ен]",
+          "sentence": "Vor der aufgehenden Sonne wirft Fool einen letzten Schatten und verblasst. Ich zeichne das Wort „fortgehen“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "Перед восходящим солнцем Шут бросает последнюю тень и растворяется. Я черчу слово «уходить» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Vor der aufgehenden Sonne wirft Fool einen letzten Schatten und verblasst.",
+            "Ich zeichne das Wort „fortgehen“ in Gedanken über die Linien des Schicksals."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "РАСТВОРЕНИЕ В ТУМАНЕ",
+        "narrative": "Пришло время мне <b>VERSCHWINDEN (исчезнуть)</b>. Я <b>SICH AUFLÖSEN (растворяюсь)</b> как <b>DER NEBEL (туман)</b> на рассвете. <b>SPURLOS (бесследно)</b> я <b>FORTGEHEN (ухожу)</b> из этой трагедии. Моё исчезновение - <b>DAS GEHEIMNIS (тайна)</b>, которую никто не разгадает. Я оставляю только <b>DIE LEERE (пустоту)</b> и эхо смеха. Мой конец <b>RÄTSELHAFT (загадочен)</b> как мои песни. Куда уходят шуты, когда короли умирают? В никуда. В ничто. В смех ветра. «И пойду я спать в полдень», - говорю я в последний раз. Больше меня никто не увидит. Шут был, и шута нет.",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Прощайте! Шут уходит раньше всех, чтобы не видеть конца!» - и я исчезаю навсегда в тумане.",
+        "exercise_text": "Пришло время мне ___ (исчезнуть). Я ___ (растворяюсь) как ___ (туман) на рассвете. ___ (бесследно) я ___ (ухожу) из этой трагедии. Моё исчезновение - ___ (тайна), которую никто не разгадает. Я оставляю только ___ (пустоту) и эхо смеха. Мой конец ___ (загадочен) как мои песни. Куда уходят шуты, когда короли умирают? В никуда. В ничто. В смех ветра. «И пойду я спать в полдень», - говорю я в последний раз. Больше меня никто не увидит. Шут был, и шута нет."
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «verschwinden»?",
+          "choices": [
+            "тайна",
+            "пустота",
+            "растворяться",
+            "исчезать"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «das Geheimnis»?",
+          "choices": [
+            "исчезать",
+            "пустота",
+            "растворяться",
+            "тайна"
+          ],
+          "correct_index": 3
+        }
+      ]
+    }
+  ]
+}

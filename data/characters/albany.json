@@ -1,0 +1,850 @@
+{
+  "id": "albany",
+  "name": "Albany",
+  "title": "Путь Олбани",
+  "journey_phases": [
+    {
+      "id": "passive_duke",
+      "icon": "😶",
+      "title": "Пассивный герцог",
+      "keywords": "Schweigen • Schwäche • Ehe",
+      "description": "Акт I: Молчаливый муж Гонерильи",
+      "vocabulary": [
+        {
+          "german": "das Schweigen",
+          "russian": "молчание",
+          "transcription": "[дас ШВАЙ-ген]",
+          "sentence": "Im goldenen Saal sitzt Albany schweigend neben Gonerils Thron. Mein Atem zeichnet das Wort „das Schweigen“ in die kalte Luft zwischen uns.",
+          "sentence_translation": "В золотом зале Олбани молча сидит рядом с троном Гонерильи. Моё дыхание рисует слово «молчание» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Im goldenen Saal sitzt Albany schweigend neben Gonerils Thron.",
+            "Mein Atem zeichnet das Wort „das Schweigen“ in die kalte Luft zwischen uns."
+          ]
+        },
+        {
+          "german": "die Schwäche",
+          "russian": "слабость",
+          "transcription": "[ди ШВЕ-хе]",
+          "sentence": "Vor den streitenden Schwestern faltet Albany die Hände hinter dem Rücken. Ich halte das Wort „die Schwäche“ wie eine Fackel vor meinem Herzen.",
+          "sentence_translation": "Перед ссорящимися сёстрами Олбани складывает руки за спиной. Я держу слово «слабость» как факел у сердца.",
+          "sentence_parts": [
+            "Vor den streitenden Schwestern faltet Albany die Hände hinter dem Rücken.",
+            "Ich halte das Wort „die Schwäche“ wie eine Fackel vor meinem Herzen."
+          ]
+        },
+        {
+          "german": "die Ehe",
+          "russian": "брак",
+          "transcription": "[ди Э-е]",
+          "sentence": "Am Fenster der Audienzhalle betrachtet Albany die vorbeiziehenden Wolken. Ich zeichne das Wort „die Ehe“ mit unsichtbarer Tinte auf meine Handfläche.",
+          "sentence_translation": "У окна зала приёмов Олбани наблюдает за плывущими облаками. Я вывожу слово «брак» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Am Fenster der Audienzhalle betrachtet Albany die vorbeiziehenden Wolken.",
+            "Ich zeichne das Wort „die Ehe“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
+        },
+        {
+          "german": "dulden",
+          "russian": "терпеть",
+          "transcription": "[ДУЛЬ-ден]",
+          "sentence": "Zwischen zerstreuten Ratsmitgliedern nickt Albany zu allem bereitwillig. Ich zeichne das Wort „dulden“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "Среди рассеянных советников Олбани покорно кивает всему. Я черчу слово «терпеть» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Zwischen zerstreuten Ratsmitgliedern nickt Albany zu allem bereitwillig.",
+            "Ich zeichne das Wort „dulden“ in Gedanken über die Linien des Schicksals."
+          ]
+        },
+        {
+          "german": "passiv",
+          "russian": "пассивный",
+          "transcription": "[па-СИФ]",
+          "sentence": "Am Ende der Tafel legt Albany das Besteck ordentlich beiseite. Wie ein stilles Gebet legt sich das Wort „passiv“ auf meine Lippen.",
+          "sentence_translation": "В конце стола Олбани аккуратно откладывает приборы. Как тихая молитва слово «пассивный» ложится на мои губы.",
+          "sentence_parts": [
+            "Am Ende der Tafel legt Albany das Besteck ordentlich beiseite.",
+            "Wie ein stilles Gebet legt sich das Wort „passiv“ auf meine Lippen."
+          ]
+        },
+        {
+          "german": "nachgeben",
+          "russian": "уступать",
+          "transcription": "[НАХ-ге-бен]",
+          "sentence": "Neben Gonerils triumphierendem Lächeln bleibt Albany reglos. Ich atme tief ein und lasse nur das Wort „nachgeben“ wieder hinaus.",
+          "sentence_translation": "Рядом с торжествующей улыбкой Гонерильи Олбани остаётся неподвижным. Я глубоко вдыхаю и выпускаю только слово «уступать».",
+          "sentence_parts": [
+            "Neben Gonerils triumphierendem Lächeln bleibt Albany reglos.",
+            "Ich atme tief ein und lasse nur das Wort „nachgeben“ wieder hinaus."
+          ]
+        },
+        {
+          "german": "zögern",
+          "russian": "колебаться",
+          "transcription": "[ЦЁ-герн]",
+          "sentence": "Auf dem Balkon lauscht Albany stumm den Beschwerden der Diener. Das kalte Licht lässt das Wort „zögern“ wie geschmolzenes Gold erscheinen.",
+          "sentence_translation": "На балконе Олбани безмолвно слушает жалобы слуг. Холодный свет заставляет слово «колебаться» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Auf dem Balkon lauscht Albany stumm den Beschwerden der Diener.",
+            "Das kalte Licht lässt das Wort „zögern“ wie geschmolzenes Gold erscheinen."
+          ]
+        },
+        {
+          "german": "mild",
+          "russian": "мягкий",
+          "transcription": "[МИЛЬД]",
+          "sentence": "Im Schatten der Säulen lässt Albany den Streit an sich vorbeiziehen. Mein Atem zeichnet das Wort „mild“ in die kalte Luft zwischen uns.",
+          "sentence_translation": "В тени колонн Олбани позволяет спору пройти мимо себя. Моё дыхание рисует слово «мягкий» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Im Schatten der Säulen lässt Albany den Streit an sich vorbeiziehen.",
+            "Mein Atem zeichnet das Wort „mild“ in die kalte Luft zwischen uns."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "ТЕНЬ МУЖА",
+        "narrative": "Я герцог Олбани, но в собственном доме я - тень. <b>DAS SCHWEIGEN (молчание)</b> - мой удел. <b>DIE EHE (брак)</b> с Гонерильей - моя клетка. Я <b>DULDEN (терплю)</b> её жестокость к отцу. <b>DIE SCHWÄCHE (слабость)</b> парализует меня! Я <b>PASSIV (пассивно)</b> наблюдаю, как она изгоняет короля. Я <b>NACHGEBEN (уступаю)</b> её воле снова и снова! Я <b>ZÖGERN (колеблюсь)</b>, когда должен защитить старика. Моя <b>MILD (мягкая)</b> натура - проклятие! Гонерилья презирает меня, называет тряпкой. И она права - я не мужчина, я призрак в собственном замке!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Не надо так с отцом!» - шепчу я, но Гонерилья даже не оборачивается. Моё слово - пустой звук!",
+        "exercise_text": "Я герцог Олбани, но в собственном доме я - тень. ___ (молчание) - мой удел. ___ (брак) с Гонерильей - моя клетка. Я ___ (терплю) её жестокость к отцу. ___ (слабость) парализует меня! Я ___ (пассивно) наблюдаю, как она изгоняет короля. Я ___ (уступаю) её воле снова и снова! Я ___ (колеблюсь), когда должен защитить старика. Моя ___ (мягкая) натура - проклятие! Гонерилья презирает меня, называет тряпкой. И она права - я не мужчина, я призрак в собственном замке!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «das Schweigen»?",
+          "choices": [
+            "слабость",
+            "брак",
+            "терпеть",
+            "молчание"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «die Schwäche»?",
+          "choices": [
+            "молчание",
+            "брак",
+            "терпеть",
+            "слабость"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "first_doubts",
+      "icon": "🤔",
+      "title": "Первые сомнения",
+      "keywords": "Zweifel • Gewissen • Unbehagen",
+      "description": "Акт II: Начинает сомневаться",
+      "vocabulary": [
+        {
+          "german": "der Zweifel",
+          "russian": "сомнение",
+          "transcription": "[дер ЦВАЙ-фель]",
+          "sentence": "In der nächtlichen Galerie betrachtet Albany das verblassende Familienwappen. Wie ein stilles Gebet legt sich das Wort „der Zweifel“ auf meine Lippen.",
+          "sentence_translation": "В ночной галерее Олбани рассматривает тускнеющий семейный герб. Как тихая молитва слово «сомнение» ложится на мои губы.",
+          "sentence_parts": [
+            "In der nächtlichen Galerie betrachtet Albany das verblassende Familienwappen.",
+            "Wie ein stilles Gebet legt sich das Wort „der Zweifel“ auf meine Lippen."
+          ]
+        },
+        {
+          "german": "das Gewissen",
+          "russian": "совесть",
+          "transcription": "[дас ге-ВИ-сен]",
+          "sentence": "Vor dem Spiegel entdeckt Albany zum ersten Mal den Schatten des Zweifels. Mit fester Stimme schwöre ich mir: Das Wort „das Gewissen“ wird heute nicht verraten.",
+          "sentence_translation": "Перед зеркалом Олбани впервые замечает тень сомнения. Твёрдым голосом я клянусь себе: слово «совесть» сегодня не будет предано.",
+          "sentence_parts": [
+            "Vor dem Spiegel entdeckt Albany zum ersten Mal den Schatten des Zweifels.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „das Gewissen“ wird heute nicht verraten."
+          ]
+        },
+        {
+          "german": "das Unbehagen",
+          "russian": "беспокойство",
+          "transcription": "[дас УН-бе-ха-ген]",
+          "sentence": "Neben gestapelten Tributschriften blättert Albany nervös. Das Echo des Wortes „das Unbehagen“ übertönt das Flüstern der Höflinge.",
+          "sentence_translation": "Рядом с кипами податных свитков Олбани нервно перелистывает страницы. Эхо слова «беспокойство» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Neben gestapelten Tributschriften blättert Albany nervös.",
+            "Das Echo des Wortes „das Unbehagen“ übertönt das Flüstern der Höflinge."
+          ]
+        },
+        {
+          "german": "hinterfragen",
+          "russian": "подвергать сомнению",
+          "transcription": "[ХИН-тер-фра-ген]",
+          "sentence": "Am dunklen Hof beobachtet Albany heimlich die Grausamkeit der Wachen. Mit fester Stimme schwöre ich mir: Das Wort „hinterfragen“ wird heute nicht verraten.",
+          "sentence_translation": "Во тёмном дворе Олбани украдкой наблюдает жестокость стражи. Твёрдым голосом я клянусь себе: слово «подвергать сомнению» сегодня не будет предано.",
+          "sentence_parts": [
+            "Am dunklen Hof beobachtet Albany heimlich die Grausamkeit der Wachen.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „hinterfragen“ wird heute nicht verraten."
+          ]
+        },
+        {
+          "german": "beunruhigen",
+          "russian": "тревожить",
+          "transcription": "[бе-УН-ру-и-ген]",
+          "sentence": "Zwischen verlassenen Banketttischen greift Albany nach einem halb vollen Kelch. Das kalte Licht lässt das Wort „beunruhigen“ wie geschmolzenes Gold erscheinen.",
+          "sentence_translation": "Среди пустых банкетных столов Олбани тянется к наполовину полному кубку. Холодный свет заставляет слово «тревожить» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Zwischen verlassenen Banketttischen greift Albany nach einem halb vollen Kelch.",
+            "Das kalte Licht lässt das Wort „beunruhigen“ wie geschmolzenes Gold erscheinen."
+          ]
+        },
+        {
+          "german": "unsicher",
+          "russian": "неуверенный",
+          "transcription": "[УН-зи-хер]",
+          "sentence": "Auf dem Flur belauscht Albany ein Gespräch über Lear. Mit fester Stimme schwöre ich mir: Das Wort „unsicher“ wird heute nicht verraten.",
+          "sentence_translation": "В коридоре Олбани подслушивает разговор о Лире. Твёрдым голосом я клянусь себе: слово «неуверенный» сегодня не будет предано.",
+          "sentence_parts": [
+            "Auf dem Flur belauscht Albany ein Gespräch über Lear.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „unsicher“ wird heute nicht verraten."
+          ]
+        },
+        {
+          "german": "grübeln",
+          "russian": "размышлять",
+          "transcription": "[ГРЮ-бельн]",
+          "sentence": "Im Schlafgemach rollt Albany die Karten des Reiches unruhig zusammen. Das Echo des Wortes „grübeln“ übertönt das Flüstern der Höflinge.",
+          "sentence_translation": "В опочивальне Олбани беспокойно скручивает карты королевства. Эхо слова «размышлять» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Im Schlafgemach rollt Albany die Karten des Reiches unruhig zusammen.",
+            "Das Echo des Wortes „grübeln“ übertönt das Flüstern der Höflinge."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "ТРЕЩИНЫ В МОЛЧАНИИ",
+        "narrative": "<b>DER ZWEIFEL (сомнение)</b> растёт во мне как опухоль! <b>DAS GEWISSEN (совесть)</b> кричит всё громче! Я начинаю <b>HINTERFRAGEN (подвергать сомнению)</b> действия Гонерильи. <b>DAS UNBEHAGEN (беспокойство)</b> не даёт мне спать. Её жестокость начинает <b>BEUNRUHIGEN (тревожить)</b> меня. Я становлюсь <b>UNSICHER (неуверенным)</b> - правильно ли я поступаю? Ночами я <b>GRÜBELN (размышляю)</b> - как мы дошли до этого? Старый король скитается в буре, а мы живём в его дворце! Это неправильно! Но я всё ещё боюсь сказать это вслух. Трус! Я презираю себя!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Может, мы зашли слишком далеко?» - спрашиваю я Гонерилью. Она смотрит на меня с таким презрением!",
+        "exercise_text": "___ (сомнение) растёт во мне как опухоль! ___ (совесть) кричит всё громче! Я начинаю ___ (подвергать сомнению) действия Гонерильи. ___ (беспокойство) не даёт мне спать. Её жестокость начинает ___ (тревожить) меня. Я становлюсь ___ (неуверенным) - правильно ли я поступаю? Ночами я ___ (размышляю) - как мы дошли до этого? Старый король скитается в буре, а мы живём в его дворце! Это неправильно! Но я всё ещё боюсь сказать это вслух. Трус! Я презираю себя!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «der Zweifel»?",
+          "choices": [
+            "совесть",
+            "беспокойство",
+            "подвергать сомнению",
+            "сомнение"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «das Gewissen»?",
+          "choices": [
+            "сомнение",
+            "беспокойство",
+            "подвергать сомнению",
+            "совесть"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "awakening",
+      "icon": "😱",
+      "title": "Пробуждение",
+      "keywords": "Erkenntnis • Entsetzen • Erwachen",
+      "description": "Акт III: Осознаёт зло жены",
+      "vocabulary": [
+        {
+          "german": "die Erkenntnis",
+          "russian": "осознание",
+          "transcription": "[ди ер-КЕНТ-нис]",
+          "sentence": "Vor einem zerschlagenen Spiegel erkennt Albany die eigene Ohnmacht. Mein Atem zeichnet das Wort „die Erkenntnis“ in die kalte Luft zwischen uns.",
+          "sentence_translation": "Перед разбитым зеркалом Олбани понимает собственное бессилие. Моё дыхание рисует слово «осознание» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Vor einem zerschlagenen Spiegel erkennt Albany die eigene Ohnmacht.",
+            "Mein Atem zeichnet das Wort „die Erkenntnis“ in die kalte Luft zwischen uns."
+          ]
+        },
+        {
+          "german": "das Entsetzen",
+          "russian": "ужас",
+          "transcription": "[дас энт-ЗЕ-цен]",
+          "sentence": "Auf dem staubigen Kampfplatz zieht Albany zum ersten Mal das Schwert. Ich zeichne das Wort „das Entsetzen“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "На пыльном плацу Олбани впервые обнажает меч. Я черчу слово «ужас» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Auf dem staubigen Kampfplatz zieht Albany zum ersten Mal das Schwert.",
+            "Ich zeichne das Wort „das Entsetzen“ in Gedanken über die Linien des Schicksals."
+          ]
+        },
+        {
+          "german": "erwachen",
+          "russian": "пробуждаться",
+          "transcription": "[ер-ВА-хен]",
+          "sentence": "Zwischen aufgebrachten Dienern erhebt Albany die Stimme gegen Goneril. Ich presse das Wort „erwachen“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "Среди взбунтовавшихся слуг Олбани поднимает голос против Гонерильи. Я стискиваю слово «пробуждаться» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Zwischen aufgebrachten Dienern erhebt Albany die Stimme gegen Goneril.",
+            "Ich presse das Wort „erwachen“ zwischen die Zähne, damit kein Zweifel entweicht."
+          ]
+        },
+        {
+          "german": "begreifen",
+          "russian": "понимать",
+          "transcription": "[бе-ГРАЙ-фен]",
+          "sentence": "Am Fenster beobachtet Albany Lear, der in den Sturm getrieben wird. Ich halte das Wort „begreifen“ wie eine Fackel vor meinem Herzen.",
+          "sentence_translation": "У окна Олбани видит, как Лира гонят в бурю. Я держу слово «понимать» как факел у сердца.",
+          "sentence_parts": [
+            "Am Fenster beobachtet Albany Lear, der in den Sturm getrieben wird.",
+            "Ich halte das Wort „begreifen“ wie eine Fackel vor meinem Herzen."
+          ]
+        },
+        {
+          "german": "erschrecken",
+          "russian": "пугаться",
+          "transcription": "[ер-ШРЕК-кен]",
+          "sentence": "Auf dem Hof stoppt Albany eine grausame Strafe mit ausgestreckter Hand. Das kalte Licht lässt das Wort „erschrecken“ wie geschmolzenes Gold erscheinen.",
+          "sentence_translation": "На дворе Олбани протянутой рукой останавливает жестокую казнь. Холодный свет заставляет слово «пугаться» сиять словно расплавленное золото.",
+          "sentence_parts": [
+            "Auf dem Hof stoppt Albany eine grausame Strafe mit ausgestreckter Hand.",
+            "Das kalte Licht lässt das Wort „erschrecken“ wie geschmolzenes Gold erscheinen."
+          ]
+        },
+        {
+          "german": "aufwachen",
+          "russian": "просыпаться",
+          "transcription": "[АУФ-ва-хен]",
+          "sentence": "Im Kriegssaal zerreißt Albany einen falschen Befehl. Mit jeder Faser meines Körpers verspreche ich: Das Wort „aufwachen“ bleibt lebendig.",
+          "sentence_translation": "В военном зале Олбани разрывает ложный приказ. Каждой клеткой тела я обещаю: слово «просыпаться» останется живым.",
+          "sentence_parts": [
+            "Im Kriegssaal zerreißt Albany einen falschen Befehl.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „aufwachen“ bleibt lebendig."
+          ]
+        },
+        {
+          "german": "klar sehen",
+          "russian": "ясно видеть",
+          "transcription": "[КЛАР ЗЕ-ен]",
+          "sentence": "Neben Kent tauscht Albany einen verständnisvollen Blick. Mit fester Stimme schwöre ich mir: Das Wort „klar sehen“ wird heute nicht verraten.",
+          "sentence_translation": "Рядом с Кентом Олбани обменивается понимающим взглядом. Твёрдым голосом я клянусь себе: слово «ясно видеть» сегодня не будет предано.",
+          "sentence_parts": [
+            "Neben Kent tauscht Albany einen verständnisvollen Blick.",
+            "Mit fester Stimme schwöre ich mir: Das Wort „klar sehen“ wird heute nicht verraten."
+          ]
+        },
+        {
+          "german": "die Verwandlung",
+          "russian": "превращение",
+          "transcription": "[ди фер-ВАНД-лунг]",
+          "sentence": "An der Grenze des Herzogtums schwört Albany dem Unrecht ab. Ich zeichne das Wort „die Verwandlung“ mit unsichtbarer Tinte auf meine Handfläche.",
+          "sentence_translation": "На границе герцогства Олбани отрекается от несправедливости. Я вывожу слово «превращение» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "An der Grenze des Herzogtums schwört Albany dem Unrecht ab.",
+            "Ich zeichne das Wort „die Verwandlung“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "ПРОЗРЕНИЕ В УЖАСЕ",
+        "narrative": "<b>DIE ERKENNTNIS (осознание)</b> приходит как удар молнии! Я <b>ERWACHEN (пробуждаюсь)</b> от долгого сна! С <b>DAS ENTSETZEN (ужасом)</b> я вижу правду - я женат на монстре! Я <b>BEGREIFEN (понимаю)</b> весь масштаб зла! Глостеру выкололи глаза! Её поступки <b>ERSCHRECKEN (пугают)</b> меня до глубины души! Я <b>AUFWACHEN (просыпаюсь)</b> и впервые <b>KLAR SEHEN (ясно вижу)</b> - Гонерилья и Регана - дьяволы в женском обличье! <b>DIE VERWANDLUNG (превращение)</b> начинается во мне. Я больше не буду молчать! Я больше не буду слабым! Хватит!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Ты не женщина, ты дьявол!» - кричу я Гонерилье. Наконец-то я сказал правду!",
+        "exercise_text": "___ (осознание) приходит как удар молнии! Я ___ (пробуждаюсь) от долгого сна! С ___ (ужасом) я вижу правду - я женат на монстре! Я ___ (понимаю) весь масштаб зла! Глостеру выкололи глаза! Её поступки ___ (пугают) меня до глубины души! Я ___ (просыпаюсь) и впервые ___ (ясно вижу) - Гонерилья и Регана - дьяволы в женском обличье! ___ (превращение) начинается во мне. Я больше не буду молчать! Я больше не буду слабым! Хватит!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Erkenntnis»?",
+          "choices": [
+            "ужас",
+            "пробуждаться",
+            "понимать",
+            "осознание"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «das Entsetzen»?",
+          "choices": [
+            "осознание",
+            "пробуждаться",
+            "понимать",
+            "ужас"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "confrontation",
+      "icon": "💢",
+      "title": "Противостояние",
+      "keywords": "Streit • Mut • Widerstand",
+      "description": "Акт IV: Спорит с Гонерильей",
+      "vocabulary": [
+        {
+          "german": "der Streit",
+          "russian": "спор",
+          "transcription": "[дер ШТРАЙТ]",
+          "sentence": "Im Kriegslager stellt sich Albany Goneril mitten zwischen die Zelte. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „der Streit“ gehört mir.",
+          "sentence_translation": "В военном лагере Олбани становится перед Гонерильей среди шатров. Буря за окнами усиливает клятву: слово «спор» принадлежит мне.",
+          "sentence_parts": [
+            "Im Kriegslager stellt sich Albany Goneril mitten zwischen die Zelte.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „der Streit“ gehört mir."
+          ]
+        },
+        {
+          "german": "der Mut",
+          "russian": "мужество",
+          "transcription": "[дер МУТ]",
+          "sentence": "Vor den versammelten Offizieren wirft Albany den Handschuh auf den Tisch. Ich flüstere den Wächtern des Schicksals zu: Das Wort „der Mut“ darf nicht vergehen.",
+          "sentence_translation": "Перед собравшимися офицерами Олбани бросает перчатку на стол. Я шепчу стражам судьбы: слово «мужество» не должно исчезнуть.",
+          "sentence_parts": [
+            "Vor den versammelten Offizieren wirft Albany den Handschuh auf den Tisch.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „der Mut“ darf nicht vergehen."
+          ]
+        },
+        {
+          "german": "der Widerstand",
+          "russian": "сопротивление",
+          "transcription": "[дер ВИ-дер-штанд]",
+          "sentence": "Am Wagen voller Waffen blockiert Albany den Weg der Flüchtenden. Mein Atem zeichnet das Wort „der Widerstand“ in die kalte Luft zwischen uns.",
+          "sentence_translation": "У повозки с оружием Олбани преграждает путь беглянке. Моё дыхание рисует слово «сопротивление» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Am Wagen voller Waffen blockiert Albany den Weg der Flüchtenden.",
+            "Mein Atem zeichnet das Wort „der Widerstand“ in die kalte Luft zwischen uns."
+          ]
+        },
+        {
+          "german": "konfrontieren",
+          "russian": "противостоять",
+          "transcription": "[кон-фрон-ТИ-рен]",
+          "sentence": "Zwischen wehenden Bannern nennt Albany laut den Verrat. Ich zeichne das Wort „konfrontieren“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "Под развевающимися знамёнами Олбани громко называет предательство. Я черчу слово «противостоять» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Zwischen wehenden Bannern nennt Albany laut den Verrat.",
+            "Ich zeichne das Wort „konfrontieren“ in Gedanken über die Linien des Schicksals."
+          ]
+        },
+        {
+          "german": "anklagen",
+          "russian": "обвинять",
+          "transcription": "[АН-кла-ген]",
+          "sentence": "Auf dem Felsen bei Dover fordert Albany Edmund heraus. Mit jeder Faser meines Körpers verspreche ich: Das Wort „anklagen“ bleibt lebendig.",
+          "sentence_translation": "На скале у Дувра Олбани вызывает Эдмунда. Каждой клеткой тела я обещаю: слово «обвинять» останется живым.",
+          "sentence_parts": [
+            "Auf dem Felsen bei Dover fordert Albany Edmund heraus.",
+            "Mit jeder Faser meines Körpers verspreche ich: Das Wort „anklagen“ bleibt lebendig."
+          ]
+        },
+        {
+          "german": "sich wehren",
+          "russian": "защищаться",
+          "transcription": "[зих ВЕ-рен]",
+          "sentence": "Vor der Armee verliest Albany Gonerils geheime Briefe. Mein Atem zeichnet das Wort „sich wehren“ in die kalte Luft zwischen uns.",
+          "sentence_translation": "Перед войском Олбани зачитывает тайные письма Гонерильи. Моё дыхание рисует слово «защищаться» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Vor der Armee verliest Albany Gonerils geheime Briefe.",
+            "Mein Atem zeichnet das Wort „sich wehren“ in die kalte Luft zwischen uns."
+          ]
+        },
+        {
+          "german": "aufbegehren",
+          "russian": "восставать",
+          "transcription": "[АУФ-бе-ге-рен]",
+          "sentence": "Im hellen Tageslicht zeigt Albany auf die Verräter, ohne zu zittern. Ich flüstere den Wächtern des Schicksals zu: Das Wort „aufbegehren“ darf nicht vergehen.",
+          "sentence_translation": "При ярком дневном свете Олбани указывает на предателей без дрожи. Я шепчу стражам судьбы: слово «восставать» не должно исчезнуть.",
+          "sentence_parts": [
+            "Im hellen Tageslicht zeigt Albany auf die Verräter, ohne zu zittern.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „aufbegehren“ darf nicht vergehen."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "БИТВА СУПРУГОВ",
+        "narrative": "<b>DER STREIT (спор)</b> взрывается между нами! Наконец у меня есть <b>DER MUT (мужество)</b> говорить! Мой <b>DER WIDERSTAND (сопротивление)</b> растёт с каждым словом! Я <b>KONFRONTIEREN (противостою)</b> ей открыто! «Ты чудовище!» - кричу я. Я <b>ANKLAGEN (обвиняю)</b> её в преступлениях против отца! Я <b>SICH WEHREN (защищаюсь)</b> от её ядовитых слов! Я <b>AUFBEGEHREN (восстаю)</b> против тирании в собственном доме! Она называет меня молочным трусом, но я больше не боюсь! Она угрожает мне, но я стою твёрдо! Это война, и я выбрал свою сторону!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Лучше быть трусом с совестью, чем храбрым дьяволом!» - бросаю я ей в лицо!",
+        "exercise_text": "___ (спор) взрывается между нами! Наконец у меня есть ___ (мужество) говорить! Мой ___ (сопротивление) растёт с каждым словом! Я ___ (противостою) ей открыто! «Ты чудовище!» - кричу я. Я ___ (обвиняю) её в преступлениях против отца! Я ___ (защищаюсь) от её ядовитых слов! Я ___ (восстаю) против тирании в собственном доме! Она называет меня молочным трусом, но я больше не боюсь! Она угрожает мне, но я стою твёрдо! Это война, и я выбрал свою сторону!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «der Streit»?",
+          "choices": [
+            "мужество",
+            "сопротивление",
+            "противостоять",
+            "спор"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Mut»?",
+          "choices": [
+            "спор",
+            "сопротивление",
+            "противостоять",
+            "мужество"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "moral_stand",
+      "icon": "⚖️",
+      "title": "Моральный выбор",
+      "keywords": "Moral • Gerechtigkeit • Entscheidung",
+      "description": "Акт IV: Встаёт на сторону добра",
+      "vocabulary": [
+        {
+          "german": "die Moral",
+          "russian": "мораль",
+          "transcription": "[ди мо-РАЛЬ]",
+          "sentence": "Im Feldzelt der Verbündeten zeichnet Albany eine Linie in den Sand. Mein Atem zeichnet das Wort „die Moral“ in die kalte Luft zwischen uns.",
+          "sentence_translation": "В шатре союзников Олбани проводит линию на песке. Моё дыхание рисует слово «мораль» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Im Feldzelt der Verbündeten zeichnet Albany eine Linie in den Sand.",
+            "Mein Atem zeichnet das Wort „die Moral“ in die kalte Luft zwischen uns."
+          ]
+        },
+        {
+          "german": "die Gerechtigkeit",
+          "russian": "справедливость",
+          "transcription": "[ди ге-РЕХ-тиг-кайт]",
+          "sentence": "Zwischen verletzten Soldaten spricht Albany von Gnade. Mein Atem zeichnet das Wort „die Gerechtigkeit“ in die kalte Luft zwischen uns.",
+          "sentence_translation": "Среди раненых солдат Олбани говорит о милосердии. Моё дыхание рисует слово «справедливость» в холодном воздухе между нами.",
+          "sentence_parts": [
+            "Zwischen verletzten Soldaten spricht Albany von Gnade.",
+            "Mein Atem zeichnet das Wort „die Gerechtigkeit“ in die kalte Luft zwischen uns."
+          ]
+        },
+        {
+          "german": "die Entscheidung",
+          "russian": "решение",
+          "transcription": "[ди энт-ШАЙ-дунг]",
+          "sentence": "Am Schlachtplan stellt Albany die Figuren der Gerechten nach vorn. Ich zeichne das Wort „die Entscheidung“ mit unsichtbarer Tinte auf meine Handfläche.",
+          "sentence_translation": "Над картой сражения Олбани выдвигает вперёд фигуры праведников. Я вывожу слово «решение» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Am Schlachtplan stellt Albany die Figuren der Gerechten nach vorn.",
+            "Ich zeichne das Wort „die Entscheidung“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
+        },
+        {
+          "german": "wählen",
+          "russian": "выбирать",
+          "transcription": "[ВЕ-лен]",
+          "sentence": "Im Rat der Feldherren widerspricht Albany einer grausamen Idee. Ich atme tief ein und lasse nur das Wort „wählen“ wieder hinaus.",
+          "sentence_translation": "На совете полководцев Олбани возражает жестокой задумке. Я глубоко вдыхаю и выпускаю только слово «выбирать».",
+          "sentence_parts": [
+            "Im Rat der Feldherren widerspricht Albany einer grausamen Idee.",
+            "Ich atme tief ein und lasse nur das Wort „wählen“ wieder hinaus."
+          ]
+        },
+        {
+          "german": "rechtschaffen",
+          "russian": "праведный",
+          "transcription": "[РЕХТ-ша-фен]",
+          "sentence": "Vor dem Banner der Wahrheit hebt Albany die Stimme zu einem Eid. Ich presse das Wort „rechtschaffen“ zwischen die Zähne, damit kein Zweifel entweicht.",
+          "sentence_translation": "Перед знаменем правды Олбани поднимает голос для клятвы. Я стискиваю слово «праведный» зубами, чтобы не вырвалось сомнение.",
+          "sentence_parts": [
+            "Vor dem Banner der Wahrheit hebt Albany die Stimme zu einem Eid.",
+            "Ich presse das Wort „rechtschaffen“ zwischen die Zähne, damit kein Zweifel entweicht."
+          ]
+        },
+        {
+          "german": "das Prinzip",
+          "russian": "принцип",
+          "transcription": "[дас прин-ЦИП]",
+          "sentence": "Auf dem Hügel über dem Schlachtfeld hält Albany ein feierliches Gebet. Wie ein stilles Gebet legt sich das Wort „das Prinzip“ auf meine Lippen.",
+          "sentence_translation": "На холме над полем битвы Олбани произносит торжественную молитву. Как тихая молитва слово «принцип» ложится на мои губы.",
+          "sentence_parts": [
+            "Auf dem Hügel über dem Schlachtfeld hält Albany ein feierliches Gebet.",
+            "Wie ein stilles Gebet legt sich das Wort „das Prinzip“ auf meine Lippen."
+          ]
+        },
+        {
+          "german": "edel",
+          "russian": "благородный",
+          "transcription": "[Э-дель]",
+          "sentence": "In der Morgensonne wäscht Albany das Blut vom Schwert und schwört Frieden. Selbst wenn die Welt zerfällt, bleibt das Wort „edel“ mein Nordstern.",
+          "sentence_translation": "В утреннем солнце Олбани смывает кровь с меча и клянётся миром. Даже если мир распадается, слово «благородный» остаётся моим северным светом.",
+          "sentence_parts": [
+            "In der Morgensonne wäscht Albany das Blut vom Schwert und schwört Frieden.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „edel“ mein Nordstern."
+          ]
+        },
+        {
+          "german": "die Tugend",
+          "russian": "добродетель",
+          "transcription": "[ди ТУ-генд]",
+          "sentence": "Bei den Feldärzten verspricht Albany Schutz den Verwundeten. Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Tugend“ darf nicht vergehen.",
+          "sentence_translation": "У полевых лекарей Олбани обещает защиту раненым. Я шепчу стражам судьбы: слово «добродетель» не должно исчезнуть.",
+          "sentence_parts": [
+            "Bei den Feldärzten verspricht Albany Schutz den Verwundeten.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Tugend“ darf nicht vergehen."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "ВЫБОР ДУШИ",
+        "narrative": "<b>DIE ENTSCHEIDUNG (решение)</b> принято - я <b>WÄHLEN (выбираю)</b> сторону добра! <b>DIE MORAL (мораль)</b> теперь мой компас! Я буду бороться за <b>DIE GERECHTIGKEIT (справедливость)</b>! <b>DAS PRINZIP (принципы)</b> важнее богатства и власти! Я хочу быть <b>RECHTSCHAFFEN (праведным)</b> и <b>EDEL (благородным)</b>! <b>DIE TUGEND (добродетель)</b> - мой новый путь! Да, это означает войну с собственной женой. Да, это означает потерю всего. Но лучше потерять всё с чистой совестью, чем владеть миром с грязной душой! Я встаю на защиту Корделии и Эдгара! Справедливость восторжествует!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Я выбираю честь, даже если это означает мою гибель!» - заявляю я перед всеми!",
+        "exercise_text": "___ (решение) принято - я ___ (выбираю) сторону добра! ___ (мораль) теперь мой компас! Я буду бороться за ___ (справедливость)! ___ (принципы) важнее богатства и власти! Я хочу быть ___ (праведным) и ___ (благородным)! ___ (добродетель) - мой новый путь! Да, это означает войну с собственной женой. Да, это означает потерю всего. Но лучше потерять всё с чистой совестью, чем владеть миром с грязной душой! Я встаю на защиту Корделии и Эдгара! Справедливость восторжествует!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Moral»?",
+          "choices": [
+            "справедливость",
+            "решение",
+            "выбирать",
+            "мораль"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «die Gerechtigkeit»?",
+          "choices": [
+            "мораль",
+            "решение",
+            "выбирать",
+            "справедливость"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "justice_seeker",
+      "icon": "⚔️",
+      "title": "Поиск справедливости",
+      "keywords": "Kampf • Recht • Güte",
+      "description": "Акт V: Борется за правду",
+      "vocabulary": [
+        {
+          "german": "der Kampf",
+          "russian": "борьба",
+          "transcription": "[дер КАМПФ]",
+          "sentence": "Auf dem Tribunal errichtet Albany einen einfachen Holzstuhl als Richterstuhl. Ich zeichne das Wort „der Kampf“ mit unsichtbarer Tinte auf meine Handfläche.",
+          "sentence_translation": "На трибунале Олбани ставит простой деревянный стул как судейский. Я вывожу слово «борьба» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Auf dem Tribunal errichtet Albany einen einfachen Holzstuhl als Richterstuhl.",
+            "Ich zeichne das Wort „der Kampf“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
+        },
+        {
+          "german": "das Recht",
+          "russian": "право",
+          "transcription": "[дас РЕХТ]",
+          "sentence": "Vor den überlebenden Soldaten verliest Albany die Namen der Schuldigen. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „das Recht“ gehört mir.",
+          "sentence_translation": "Перед уцелевшими солдатами Олбани читает имена виновных. Буря за окнами усиливает клятву: слово «право» принадлежит мне.",
+          "sentence_parts": [
+            "Vor den überlebenden Soldaten verliest Albany die Namen der Schuldigen.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „das Recht“ gehört mir."
+          ]
+        },
+        {
+          "german": "die Güte",
+          "russian": "доброта",
+          "transcription": "[ди ГЮ-те]",
+          "sentence": "In der Kapelle legt Albany die Hand auf die Bibel, bevor er urteilt. Das Echo des Wortes „die Güte“ übertönt das Flüstern der Höflinge.",
+          "sentence_translation": "В капелле Олбани кладёт руку на Библию, прежде чем судить. Эхо слова «доброта» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "In der Kapelle legt Albany die Hand auf die Bibel,",
+            "bevor er urteilt.",
+            "Das Echo des Wortes „die Güte“ übertönt das Flüstern der Höflinge."
+          ]
+        },
+        {
+          "german": "strafen",
+          "russian": "наказывать",
+          "transcription": "[ШТРА-фен]",
+          "sentence": "Am Tor von Dover begrüßt Albany die Rückkehrer mit offenen Armen. Ich zeichne das Wort „strafen“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "У ворот Дувра Олбани встречает возвращающихся с распахнутыми руками. Я черчу слово «наказывать» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Am Tor von Dover begrüßt Albany die Rückkehrer mit offenen Armen.",
+            "Ich zeichne das Wort „strafen“ in Gedanken über die Linien des Schicksals."
+          ]
+        },
+        {
+          "german": "richten",
+          "russian": "судить",
+          "transcription": "[РИХ-тен]",
+          "sentence": "Auf dem Feldlager sammelt Albany Zeugnisse der Überlebenden. Ich zeichne das Wort „richten“ mit unsichtbarer Tinte auf meine Handfläche.",
+          "sentence_translation": "В походном лагере Олбани собирает свидетельства выживших. Я вывожу слово «судить» невидимыми чернилами на ладони.",
+          "sentence_parts": [
+            "Auf dem Feldlager sammelt Albany Zeugnisse der Überlebenden.",
+            "Ich zeichne das Wort „richten“ mit unsichtbarer Tinte auf meine Handfläche."
+          ]
+        },
+        {
+          "german": "beschützen",
+          "russian": "защищать",
+          "transcription": "[бе-ШЮ-цен]",
+          "sentence": "Zwischen verstummten Trommeln verliest Albany den Befehl zur Gerechtigkeit. Ich zeichne das Wort „beschützen“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "Среди смолкших барабанов Олбани зачитывает приказ о справедливости. Я черчу слово «защищать» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Zwischen verstummten Trommeln verliest Albany den Befehl zur Gerechtigkeit.",
+            "Ich zeichne das Wort „beschützen“ in Gedanken über die Linien des Schicksals."
+          ]
+        },
+        {
+          "german": "eingreifen",
+          "russian": "вмешиваться",
+          "transcription": "[АЙН-грай-фен]",
+          "sentence": "Im Schatten des zerstörten Schlosses schwört Albany das Reich zu erneuern. Ich zeichne das Wort „eingreifen“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "В тени разрушенного замка Олбани клянётся обновить королевство. Я черчу слово «вмешиваться» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "Im Schatten des zerstörten Schlosses schwört Albany das Reich zu erneuern.",
+            "Ich zeichne das Wort „eingreifen“ in Gedanken über die Linien des Schicksals."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "МЕЧ ПРАВОСУДИЯ",
+        "narrative": "<b>DER KAMPF (борьба)</b> за справедливость начинается! <b>DAS RECHT (право)</b> должно восторжествовать! С <b>DIE GÜTE (добротой)</b> в сердце я выхожу на поле битвы! Я буду <b>STRAFEN (наказывать)</b> виновных и <b>BESCHÜTZEN (защищать)</b> невинных! Я <b>RICHTEN (сужу)</b> Эдмунда и сестёр за их преступления! Я <b>EINGREIFEN (вмешиваюсь)</b>, чтобы спасти Корделию и Лира! Гонерилья отравила Регану и себя - зло пожирает само себя! Эдмунд повержен Эдгаром! Справедливость медленна, но неотвратима! Я стою среди руин, но с чистой совестью!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Арестовать Эдмунда! Справедливость требует возмездия!» - приказываю я своим солдатам!",
+        "exercise_text": "___ (борьба) за справедливость начинается! ___ (право) должно восторжествовать! С ___ (добротой) в сердце я выхожу на поле битвы! Я буду ___ (наказывать) виновных и ___ (защищать) невинных! Я ___ (сужу) Эдмунда и сестёр за их преступления! Я ___ (вмешиваюсь), чтобы спасти Корделию и Лира! Гонерилья отравила Регану и себя - зло пожирает само себя! Эдмунд повержен Эдгаром! Справедливость медленна, но неотвратима! Я стою среди руин, но с чистой совестью!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «der Kampf»?",
+          "choices": [
+            "право",
+            "доброта",
+            "наказывать",
+            "борьба"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «das Recht»?",
+          "choices": [
+            "борьба",
+            "доброта",
+            "наказывать",
+            "право"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "new_ruler",
+      "icon": "👑",
+      "title": "Новый правитель",
+      "keywords": "Herrschaft • Weisheit • Neuanfang",
+      "description": "Акт V: Становится мудрым лидером",
+      "vocabulary": [
+        {
+          "german": "die Herrschaft",
+          "russian": "правление",
+          "transcription": "[ди ХЕР-шафт]",
+          "sentence": "Im Saal voller Verwundeter verteilt Albany sanfte Worte und Befehle zugleich. Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Herrschaft“ darf nicht vergehen.",
+          "sentence_translation": "В зале, полном раненых, Олбани раздаёт мягкие слова и приказы одновременно. Я шепчу стражам судьбы: слово «правление» не должно исчезнуть.",
+          "sentence_parts": [
+            "Im Saal voller Verwundeter verteilt Albany sanfte Worte und Befehle zugleich.",
+            "Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Herrschaft“ darf nicht vergehen."
+          ]
+        },
+        {
+          "german": "die Weisheit",
+          "russian": "мудрость",
+          "transcription": "[ди ВАЙС-хайт]",
+          "sentence": "Auf dem behelfsmäßigen Thron richtet Albany das Reich wieder auf. Das Echo des Wortes „die Weisheit“ übertönt das Flüstern der Höflinge.",
+          "sentence_translation": "На временном троне Олбани вновь поднимает королевство. Эхо слова «мудрость» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Auf dem behelfsmäßigen Thron richtet Albany das Reich wieder auf.",
+            "Das Echo des Wortes „die Weisheit“ übertönt das Flüstern der Höflinge."
+          ]
+        },
+        {
+          "german": "der Neuanfang",
+          "russian": "новое начало",
+          "transcription": "[дер НОЙ-ан-фанг]",
+          "sentence": "Zwischen vertrockneten Kränzen trägt Albany die neue Krone ohne Triumph. Ich umarme das Wort „der Neuanfang“, als wäre es mein einziger Verbündeter.",
+          "sentence_translation": "Среди засохших венков Олбани носит новую корону без торжества. Я обнимаю слово «новое начало», будто это единственный союзник.",
+          "sentence_parts": [
+            "Zwischen vertrockneten Kränzen trägt Albany die neue Krone ohne Triumph.",
+            "Ich umarme das Wort „der Neuanfang“, als wäre es mein einziger Verbündeter."
+          ]
+        },
+        {
+          "german": "lenken",
+          "russian": "направлять",
+          "transcription": "[ЛЕН-кен]",
+          "sentence": "Vor dem Volk verspricht Albany Heilung für das verwundete Land. Das Echo des Wortes „lenken“ übertönt das Flüstern der Höflinge.",
+          "sentence_translation": "Перед народом Олбани обещает исцеление раненой земле. Эхо слова «направлять» заглушает шёпот придворных.",
+          "sentence_parts": [
+            "Vor dem Volk verspricht Albany Heilung für das verwundete Land.",
+            "Das Echo des Wortes „lenken“ übertönt das Flüstern der Höflinge."
+          ]
+        },
+        {
+          "german": "aufbauen",
+          "russian": "строить",
+          "transcription": "[АУФ-бау-ен]",
+          "sentence": "Auf den Stufen des Tempels hebt Albany die Gefallenen in Ehren hervor. Ich halte das Wort „aufbauen“ wie eine Fackel vor meinem Herzen.",
+          "sentence_translation": "На ступенях храма Олбани чтит павших. Я держу слово «строить» как факел у сердца.",
+          "sentence_parts": [
+            "Auf den Stufen des Tempels hebt Albany die Gefallenen in Ehren hervor.",
+            "Ich halte das Wort „aufbauen“ wie eine Fackel vor meinem Herzen."
+          ]
+        },
+        {
+          "german": "erneuern",
+          "russian": "обновлять",
+          "transcription": "[ер-НОЙ-ерн]",
+          "sentence": "Unter wehenden Flaggen lässt Albany die Glocken der Hoffnung schlagen. Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „erneuern“ gehört mir.",
+          "sentence_translation": "Под развевающимися флагами Олбани велит бить колоколам надежды. Буря за окнами усиливает клятву: слово «обновлять» принадлежит мне.",
+          "sentence_parts": [
+            "Unter wehenden Flaggen lässt Albany die Glocken der Hoffnung schlagen.",
+            "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „erneuern“ gehört mir."
+          ]
+        },
+        {
+          "german": "versöhnen",
+          "russian": "примирять",
+          "transcription": "[фер-ЗЁ-нен]",
+          "sentence": "Im Rat der Überlebenden hört Albany jedem zu, bevor er entscheidet. Selbst wenn die Welt zerfällt, bleibt das Wort „versöhnen“ mein Nordstern.",
+          "sentence_translation": "На совете выживших Олбани выслушивает каждого, прежде чем решать. Даже если мир распадается, слово «примирять» остаётся моим северным светом.",
+          "sentence_parts": [
+            "Im Rat der Überlebenden hört Albany jedem zu, bevor er entscheidet.",
+            "Selbst wenn die Welt zerfällt, bleibt das Wort „versöhnen“ mein Nordstern."
+          ]
+        },
+        {
+          "german": "der Friede",
+          "russian": "мир",
+          "transcription": "[дер ФРИ-де]",
+          "sentence": "An der Küste von Dover lässt Albany neue Schiffe zum Schutz auslaufen. Ich zeichne das Wort „der Friede“ in Gedanken über die Linien des Schicksals.",
+          "sentence_translation": "У берега Дувра Олбани отправляет в море новые корабли для защиты. Я черчу слово «мир» в мыслях поверх линий судьбы.",
+          "sentence_parts": [
+            "An der Küste von Dover lässt Albany neue Schiffe zum Schutz auslaufen.",
+            "Ich zeichne das Wort „der Friede“ in Gedanken über die Linien des Schicksals."
+          ]
+        }
+      ],
+      "theatrical_scene": {
+        "title": "РОЖДЕНИЕ КОРОЛЯ",
+        "narrative": "<b>DIE HERRSCHAFT (правление)</b> переходит ко мне и Эдгару. <b>DER NEUANFANG (новое начало)</b> для разрушенного королевства! С <b>DIE WEISHEIT (мудростью)</b>, рождённой из страданий, я буду <b>LENKEN (направлять)</b> страну к свету! Я буду <b>AUFBAUEN (строить)</b> на руинах зла! Я <b>ERNEUERN (обновлю)</b> законы и <b>VERSÖHNEN (примирю)</b> враждующих! <b>DER FRIEDE (мир)</b> вернётся в наши земли! Из слабого мужа я стал королём. Из труса - героем. Страдания научили меня силе. Теперь я знаю - истинная власть в справедливости и доброте!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Из пепла трагедии восстанет новое королевство!» - провозглашаю я, принимая корону!",
+        "exercise_text": "___ (правление) переходит ко мне и Эдгару. ___ (новое начало) для разрушенного королевства! С ___ (мудростью), рождённой из страданий, я буду ___ (направлять) страну к свету! Я буду ___ (строить) на руинах зла! Я ___ (обновлю) законы и ___ (примирю) враждующих! ___ (мир) вернётся в наши земли! Из слабого мужа я стал королём. Из труса - героем. Страдания научили меня силе. Теперь я знаю - истинная власть в справедливости и доброте!"
+      },
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Herrschaft»?",
+          "choices": [
+            "мудрость",
+            "новое начало",
+            "направлять",
+            "правление"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «die Weisheit»?",
+          "choices": [
+            "правление",
+            "новое начало",
+            "направлять",
+            "мудрость"
+          ],
+          "correct_index": 3
+        }
+      ]
+    }
+  ]
+}

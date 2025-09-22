@@ -1,0 +1,311 @@
+{
+  "template_info": {
+    "name": "Journey Template",
+    "version": "1.0.0",
+    "created": "2025-01-06",
+    "purpose": "Template for character journeys in King Lear learning system"
+  },
+  "journey": {
+    "id": "journey_lear_001",
+    "character_id": "char_001",
+    "character_name": "King Lear",
+    "title": "From Power to Madness",
+    "title_de": "Von der Macht zum Wahnsinn",
+    "description": "Follow King Lear's tragic journey from absolute power to madness and redemption",
+    "total_stages": 5,
+    "estimated_time": "2-3 hours",
+    "difficulty_progression": ["A2", "B1", "B1", "B2", "B2"],
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage_id": "stage_division",
+        "title": "The Division of Kingdom",
+        "title_de": "Die Teilung des Reiches",
+        "description": "Lear divides his kingdom among his daughters based on their declarations of love",
+        "location": {
+          "id": "loc_throne_room",
+          "name": "Throne Room",
+          "name_de": "Thronsaal",
+          "background": "assets/backgrounds/throne_room.jpg",
+          "atmosphere": "majestic"
+        },
+        "characters_present": [
+          "char_001_lear",
+          "char_002_goneril",
+          "char_003_regan",
+          "char_004_cordelia",
+          "char_005_kent",
+          "char_006_gloucester"
+        ],
+        "vocabulary_theme": "Power and Family",
+        "vocabulary_words": [
+          {
+            "word": "Reich",
+            "translation": "kingdom",
+            "level": "A2",
+            "usage": "das Reich teilen"
+          },
+          {
+            "word": "Macht",
+            "translation": "power",
+            "level": "B1",
+            "usage": "die Macht übertragen"
+          },
+          {
+            "word": "Tochter",
+            "translation": "daughter",
+            "level": "A2",
+            "usage": "meine Töchter"
+          },
+          {
+            "word": "Liebe",
+            "translation": "love",
+            "level": "A2",
+            "usage": "Liebe beweisen"
+          },
+          {
+            "word": "teilen",
+            "translation": "to divide",
+            "level": "B1",
+            "usage": "in drei Teile teilen"
+          }
+        ],
+        "grammar_focus": [
+          {
+            "topic": "Perfekt tense",
+            "example": "Wir haben unser Reich geteilt",
+            "explanation": "Used for completed actions"
+          },
+          {
+            "topic": "Modal verbs",
+            "example": "Welche von euch kann sagen...",
+            "explanation": "Expressing ability and possibility"
+          }
+        ],
+        "scenes": [
+          "act1_scene1"
+        ],
+        "comic_pages": [
+          "page_act1_scene1_001",
+          "page_act1_scene1_002",
+          "page_act1_scene1_003"
+        ],
+        "key_dialogue": {
+          "de": "Sagt mir, meine Töchter, welche von euch liebt uns am meisten?",
+          "ru": "Скажите мне, дочери мои, которая из вас любит нас больше всех?",
+          "character": "Lear"
+        },
+        "emotional_journey": {
+          "start": "confident",
+          "middle": "angry",
+          "end": "stubborn",
+          "turning_point": "Cordelia's refusal to flatter"
+        },
+        "player_choices": [
+          {
+            "id": "choice_cordelia_response",
+            "question": "How should Cordelia respond?",
+            "question_de": "Wie soll Cordelia antworten?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Tell the truth",
+                "text_de": "Die Wahrheit sagen",
+                "result": "banishment",
+                "vocabulary": ["Wahrheit", "nichts"]
+              },
+              {
+                "id": "b",
+                "text": "Flatter like sisters",
+                "text_de": "Schmeicheln wie die Schwestern",
+                "result": "alternative_timeline",
+                "vocabulary": ["schmeicheln", "Lüge"]
+              }
+            ]
+          }
+        ],
+        "learning_goals": [
+          "Understand family vocabulary",
+          "Learn to express emotions",
+          "Practice Perfekt tense",
+          "Recognize modal verbs"
+        ],
+        "achievements": [
+          {
+            "id": "ach_first_scene",
+            "title": "Scene Master",
+            "description": "Complete the first scene",
+            "icon": "🎭",
+            "xp": 100
+          }
+        ],
+        "checkpoint": {
+          "quiz": [
+            {
+              "question": "Was will König Lear teilen?",
+              "options": ["Sein Geld", "Sein Reich", "Seine Zeit"],
+              "correct": 1,
+              "explanation": "Lear will sein Reich (kingdom) unter seinen Töchtern teilen"
+            }
+          ],
+          "vocabulary_test": ["Reich", "Macht", "Tochter", "teilen", "Liebe"]
+        }
+      },
+      {
+        "stage_number": 2,
+        "stage_id": "stage_rejection",
+        "title": "The Rejection",
+        "title_de": "Die Ablehnung",
+        "description": "Lear discovers his daughters' true nature",
+        "location": {
+          "id": "loc_goneril_castle",
+          "name": "Goneril's Castle",
+          "name_de": "Gonerils Schloss",
+          "background": "assets/backgrounds/castle_dark.jpg",
+          "atmosphere": "hostile"
+        },
+        "vocabulary_theme": "Betrayal and Anger",
+        "vocabulary_words": [
+          {
+            "word": "Undank",
+            "translation": "ingratitude",
+            "level": "B1"
+          },
+          {
+            "word": "Verrat",
+            "translation": "betrayal",
+            "level": "B1"
+          },
+          {
+            "word": "Zorn",
+            "translation": "anger",
+            "level": "B1"
+          }
+        ],
+        "emotional_journey": {
+          "start": "hopeful",
+          "middle": "shocked",
+          "end": "furious",
+          "turning_point": "Goneril's cold reception"
+        }
+      },
+      {
+        "stage_number": 3,
+        "stage_id": "stage_storm",
+        "title": "The Storm",
+        "title_de": "Der Sturm",
+        "description": "Lear's descent into madness during the storm",
+        "location": {
+          "id": "loc_heath",
+          "name": "The Heath",
+          "name_de": "Die Heide",
+          "background": "assets/backgrounds/storm.jpg",
+          "atmosphere": "chaotic"
+        },
+        "vocabulary_theme": "Nature and Madness",
+        "vocabulary_words": [
+          {
+            "word": "Sturm",
+            "translation": "storm",
+            "level": "A2"
+          },
+          {
+            "word": "Wahnsinn",
+            "translation": "madness",
+            "level": "B2"
+          },
+          {
+            "word": "Donner",
+            "translation": "thunder",
+            "level": "B1"
+          },
+          {
+            "word": "Blitz",
+            "translation": "lightning",
+            "level": "B1"
+          }
+        ],
+        "special_effects": ["rain_animation", "lightning_flash", "wind_sound"],
+        "emotional_journey": {
+          "start": "defiant",
+          "middle": "breaking",
+          "end": "mad",
+          "turning_point": "Realizing his own vulnerability"
+        }
+      },
+      {
+        "stage_number": 4,
+        "stage_id": "stage_recognition",
+        "title": "Recognition and Reunion",
+        "title_de": "Erkenntnis und Wiedersehen",
+        "description": "Lear reunites with Cordelia",
+        "vocabulary_theme": "Forgiveness and Recognition",
+        "vocabulary_words": [
+          {
+            "word": "Vergebung",
+            "translation": "forgiveness",
+            "level": "B2"
+          },
+          {
+            "word": "Erkenntnis",
+            "translation": "recognition",
+            "level": "B2"
+          }
+        ]
+      },
+      {
+        "stage_number": 5,
+        "stage_id": "stage_end",
+        "title": "The Tragic End",
+        "title_de": "Das tragische Ende",
+        "description": "The final tragedy",
+        "vocabulary_theme": "Death and Loss",
+        "vocabulary_words": [
+          {
+            "word": "Tod",
+            "translation": "death",
+            "level": "B1"
+          },
+          {
+            "word": "Verlust",
+            "translation": "loss",
+            "level": "B2"
+          }
+        ],
+        "emotional_journey": {
+          "start": "hopeful",
+          "middle": "desperate",
+          "end": "tragic",
+          "turning_point": "Cordelia's death"
+        }
+      }
+    ],
+    "vocabulary_progression": {
+      "A2": ["Reich", "Tochter", "Liebe", "Sturm", "alt"],
+      "B1": ["Macht", "teilen", "Undank", "Verrat", "Zorn", "Donner", "Blitz", "Tod"],
+      "B2": ["Wahnsinn", "Vergebung", "Erkenntnis", "Verlust", "Verzweiflung"]
+    },
+    "total_vocabulary": 35,
+    "achievements": [
+      {
+        "id": "journey_complete",
+        "title": "Lear's Journey",
+        "description": "Complete King Lear's journey",
+        "icon": "👑",
+        "xp": 1000
+      },
+      {
+        "id": "vocabulary_master",
+        "title": "Word Master",
+        "description": "Learn all 35 vocabulary words",
+        "icon": "📚",
+        "xp": 500
+      }
+    ],
+    "completion_rewards": {
+      "certificate": "King Lear Journey Certificate",
+      "unlocks": ["Edgar's Journey", "Fool's Wisdom Path"],
+      "bonus_content": "Behind the scenes commentary"
+    }
+  }
+}

@@ -1,0 +1,1106 @@
+{
+  "id": "cordelia",
+  "name": "Cordelia",
+  "title": "Путь Корделии",
+  "journey_phases": [
+    {
+      "id": "throne",
+      "icon": "👸",
+      "title": "Тронный зал",
+      "keywords": "Wahrheit • Liebe • Ehrlichkeit",
+      "description": "Акт I: Честная любовь",
+      "theatrical_scene": {
+        "title": "ИСПЫТАНИЕ ИСТИННОЙ ЛЮБВИ",
+        "narrative": "Вот она - великая <b>ZEREMONIE (церемония)</b> раздела королевства. Отец хочет услышать слова любви. Сёстры льстят ему, но я не могу. <b>DIE WAHRHEIT (правда)</b> - моё единственное оружие. «Я люблю вас согласно моему долгу, не больше и не меньше». Отец требует: «<b>VERKÜNDEN (провозгласи)</b> свою любовь!» Но я не буду <b>GEHORCHEN (повиноваться)</b> лжи! <b>DIE PFLICHT (долг)</b> дочери - любить отца честно. Эта <b>FEIERLICH (торжественная)</b> клятва стоит мне всего. <b>DIE MACHT (власть)</b> и богатство исчезают. Но моя <b>DIE TREUE (верность)</b> правде остаётся нерушимой.",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Я люблю вас как дочь, а мужа буду любить как жену!» - кричу я. Отец в ярости отвергает меня! Королевство потеряно, но честь спасена!",
+        "exercise_text": "Вот она - великая ___ (церемония) раздела королевства. Отец хочет услышать слова любви. Сёстры льстят ему, но я не могу. ___ (правда) - моё единственное оружие. «Я люблю вас согласно моему долгу, не больше и не меньше». Отец требует: «___ (провозгласи) свою любовь!» Но я не буду ___ (повиноваться) лжи! ___ (долг) дочери - любить отца честно. Эта ___ (торжественная) клятва стоит мне всего. ___ (власть) и богатство исчезают. Но моя ___ (верность) правде остаётся нерушимой."
+      },
+      "vocabulary": [
+        {
+          "german": "die Wahrheit",
+          "russian": "правда",
+          "russian_hint": "истина без лжи",
+          "transcription": "[ди ВАР-хайт]",
+          "sentence": "Cordelia spricht mutig die reine Wahrheit über ihre Liebe während ihre Schwestern den König belügen.",
+          "sentence_translation": "Корделия говорит смело чистую правду о своей любви в то время как её сёстры лгут королю.",
+          "sentence_parts": [
+            "Cordelia",
+            "spricht mutig",
+            "die reine Wahrheit über ihre Liebe",
+            "während ihre Schwestern den König belügen."
+          ],
+          "synonyms": ["истина", "правдивость", "достоверность"]
+        },
+        {
+          "german": "die Zeremonie",
+          "russian": "церемония",
+          "russian_hint": "торжественное событие",
+          "transcription": "[ди це-ре-мо-НИ]",
+          "sentence": "Die königliche Zeremonie der Reichsteilung beginnt während Cordelia nervös vor ihrem Vater König Lear steht.",
+          "sentence_translation": "Королевская церемония раздела королевства начинается в то время как Корделия нервно стоит перед своим отцом королём Лиром.",
+          "sentence_parts": [
+            "Die königliche Zeremonie der Reichsteilung",
+            "beginnt",
+            "während Cordelia nervös",
+            "vor ihrem Vater König Lear steht."
+          ],
+          "synonyms": ["обряд", "ритуал", "торжество"]
+        },
+        {
+          "german": "verkünden",
+          "russian": "провозглашать",
+          "russian_hint": "объявлять публично",
+          "transcription": "[фер-КЮН-ден]",
+          "sentence": "König Lear will dass Cordelia ihre Liebe laut verkündet aber sie spricht nur die Wahrheit.",
+          "sentence_translation": "Король Лир хочет чтобы Корделия громко провозгласила свою любовь но она говорит только правду.",
+          "sentence_parts": [
+            "König Lear will",
+            "dass Cordelia ihre Liebe laut verkündet",
+            "aber sie spricht",
+            "nur die Wahrheit."
+          ],
+          "synonyms": ["объявлять", "возвещать", "декларировать"]
+        },
+        {
+          "german": "die Macht",
+          "russian": "власть",
+          "russian_hint": "сила управления",
+          "transcription": "[ди МАХТ]",
+          "sentence": "Cordelia verliert alle königliche Macht weil sie dem Vater keine falschen Komplimente macht.",
+          "sentence_translation": "Корделия теряет всю королевскую власть потому что она не делает отцу ложных комплиментов.",
+          "sentence_parts": [
+            "Cordelia",
+            "verliert alle königliche Macht",
+            "weil sie dem Vater",
+            "keine falschen Komplimente macht."
+          ],
+          "synonyms": ["могущество", "господство", "влияние"]
+        },
+        {
+          "german": "gehorchen",
+          "russian": "повиноваться",
+          "russian_hint": "подчиняться приказу",
+          "transcription": "[ге-ХОР-хен]",
+          "sentence": "Die ehrliche Cordelia will nicht blind gehorchen und sagt nur was ihr Herz wirklich fühlt.",
+          "sentence_translation": "Честная Корделия не хочет слепо повиноваться и говорит только то что её сердце действительно чувствует.",
+          "sentence_parts": [
+            "Die ehrliche Cordelia",
+            "will nicht blind gehorchen",
+            "und sagt nur",
+            "was ihr Herz wirklich fühlt."
+          ],
+          "synonyms": ["подчиняться", "слушаться", "покоряться"]
+        },
+        {
+          "german": "die Pflicht",
+          "russian": "долг",
+          "russian_hint": "обязанность, долг чести",
+          "transcription": "[ди ПФЛИХТ]",
+          "sentence": "Cordelias heilige Pflicht als Tochter ist es den Vater aufrichtig zu lieben ohne Heuchelei.",
+          "sentence_translation": "Священный долг Корделии как дочери это искренне любить отца без лицемерия.",
+          "sentence_parts": [
+            "Cordelias heilige Pflicht als Tochter",
+            "ist es",
+            "den Vater aufrichtig zu lieben",
+            "ohne Heuchelei."
+          ],
+          "synonyms": ["обязанность", "повинность", "обязательство"]
+        },
+        {
+          "german": "feierlich",
+          "russian": "торжественный",
+          "russian_hint": "важный, праздничный",
+          "transcription": "[ФАЙ-ер-лих]",
+          "sentence": "Im feierlichen Thronsaal spricht Cordelia ihre ehrlichen Worte während Goneril und Regan falsch schwören.",
+          "sentence_translation": "В торжественном тронном зале говорит Корделия свои честные слова в то время как Гонерилья и Регана ложно клянутся.",
+          "sentence_parts": [
+            "Im feierlichen Thronsaal",
+            "spricht Cordelia ihre ehrlichen Worte",
+            "während Goneril und Regan",
+            "falsch schwören."
+          ],
+          "synonyms": ["праздничный", "величественный", "парадный"]
+        },
+        {
+          "german": "die Treue",
+          "russian": "верность",
+          "russian_hint": "преданность принципам",
+          "transcription": "[ди ТРОЙ-е]",
+          "sentence": "Cordelias unerschütterliche Treue zur Wahrheit kostet sie das Erbe aber rettet ihre Ehre vor Gott.",
+          "sentence_translation": "Непоколебимая верность Корделии правде стоит ей наследства но спасает её честь перед Богом.",
+          "sentence_parts": [
+            "Cordelias unerschütterliche Treue zur Wahrheit",
+            "kostet sie das Erbe",
+            "aber rettet ihre Ehre",
+            "vor Gott."
+          ],
+          "synonyms": ["преданность", "надёжность", "постоянство"]
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Wahrheit»?",
+          "choices": [
+            "церемония",
+            "провозглашать",
+            "власть",
+            "правда"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «die Zeremonie»?",
+          "choices": [
+            "правда",
+            "провозглашать",
+            "власть",
+            "церемония"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "goneril",
+      "icon": "🚢",
+      "title": "Изгнание",
+      "keywords": "verlassen • verstoßen • Frankreich",
+      "description": "Акт I: Отъезд во Францию",
+      "theatrical_scene": {
+        "title": "ИЗГНАНИЕ БЕЗ ПРИДАНОГО",
+        "narrative": "Отец меня <b>VERSTOSSEN (изгоняет)</b>! Его <b>DER ZORN (гнев)</b> безграничен. Без <b>DIE MITGIFT (приданого)</b> я становлюсь никем. <b>DIE STRAFE (наказание)</b> за правду жестоко! Я <b>VERLASSEN (покидаю)</b> родной дом, становлюсь <b>FREMD (чужой)</b> в собственной стране. Но король Франции <b>AUFNEHMEN (принимает)</b> меня! «Она сама - сокровище», - говорит он. Сёстры торжествуют, Кент тоже изгнан за защиту меня. Но в моём сердце живёт <b>DIE HOFFNUNG (надежда)</b> - отец поймёт свою ошибку. Я уезжаю с достоинством.",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Прощайте, сёстры! Покажите теперь свою любовь!» - кричу я. Слёзы текут по щекам, но я не обернусь назад!",
+        "exercise_text": "Отец меня ___ (изгоняет)! Его ___ (гнев) безграничен. Без ___ (приданого) я становлюсь никем. ___ (наказание) за правду жестоко! Я ___ (покидаю) родной дом, становлюсь ___ (чужой) в собственной стране. Но король Франции ___ (принимает) меня! «Она сама - сокровище», - говорит он. Сёстры торжествуют, Кент тоже изгнан за защиту меня. Но в моём сердце живёт ___ (надежда) - отец поймёт свою ошибку. Я уезжаю с достоинством."
+      },
+      "vocabulary": [
+        {
+          "german": "verstoßen",
+          "russian": "изгонять",
+          "russian_hint": "из семьи, от себя",
+          "transcription": "[фер-ШТО-сен]",
+          "sentence": "König Lear verstößt wütend seine jüngste Tochter Cordelia vor dem versammelten Hof wegen ihrer Ehrlichkeit.",
+          "sentence_translation": "Король Лир гневно изгоняет свою младшую дочь Корделию перед собравшимся двором за её честность.",
+          "sentence_parts": [
+            "König Lear",
+            "verstößt wütend",
+            "seine jüngste Tochter Cordelia",
+            "vor dem versammelten Hof wegen ihrer Ehrlichkeit."
+          ],
+          "synonyms": ["отвергать", "отрекаться", "выгонять"]
+        },
+        {
+          "german": "verlassen",
+          "russian": "покидать",
+          "russian_hint": "оставлять навсегда",
+          "transcription": "[фер-ЛА-сен]",
+          "sentence": "Cordelia muss schweren Herzens das Königreich verlassen nachdem ihr Vater sie enterbt und verbannt hat.",
+          "sentence_translation": "Корделия должна с тяжёлым сердцем покинуть королевство после того как её отец лишил её наследства и изгнал.",
+          "sentence_parts": [
+            "Cordelia",
+            "muss schweren Herzens das Königreich verlassen",
+            "nachdem ihr Vater sie",
+            "enterbt und verbannt hat."
+          ],
+          "synonyms": ["оставлять", "уходить", "бросать"]
+        },
+        {
+          "german": "der Zorn",
+          "russian": "гнев",
+          "russian_hint": "благородный, праведный",
+          "transcription": "[дер ЦОРН]",
+          "sentence": "Der schreckliche Zorn des alten Königs Lear trifft Cordelia obwohl sie nur die Wahrheit sprach.",
+          "sentence_translation": "Ужасный гнев старого короля Лира поражает Корделию хотя она говорила только правду.",
+          "sentence_parts": [
+            "Der schreckliche Zorn",
+            "des alten Königs Lear",
+            "trifft Cordelia",
+            "obwohl sie nur die Wahrheit sprach."
+          ],
+          "synonyms": ["ярость", "злость", "негодование"]
+        },
+        {
+          "german": "die Strafe",
+          "russian": "наказание",
+          "russian_hint": "кара за поступок",
+          "transcription": "[ди ШТРА-фе]",
+          "sentence": "Die grausame Strafe für Cordelias Ehrlichkeit ist der Verlust ihres Erbes und die Verbannung aus England.",
+          "sentence_translation": "Жестокое наказание за честность Корделии это потеря её наследства и изгнание из Англии.",
+          "sentence_parts": [
+            "Die grausame Strafe für Cordelias Ehrlichkeit",
+            "ist der Verlust ihres Erbes",
+            "und die Verbannung",
+            "aus England."
+          ],
+          "synonyms": ["кара", "возмездие", "взыскание"]
+        },
+        {
+          "german": "fremd",
+          "russian": "чужой",
+          "russian_hint": "не свой, посторонний",
+          "transcription": "[ФРЕМД]",
+          "sentence": "Cordelia wird plötzlich fremd in ihrer eigenen Heimat nachdem König Lear sie öffentlich verstößt.",
+          "sentence_translation": "Корделия становится вдруг чужой в своей собственной родине после того как король Лир публично отвергает её.",
+          "sentence_parts": [
+            "Cordelia",
+            "wird plötzlich fremd",
+            "in ihrer eigenen Heimat",
+            "nachdem König Lear sie öffentlich verstößt."
+          ],
+          "synonyms": ["посторонний", "чуждый", "иноземный"]
+        },
+        {
+          "german": "die Mitgift",
+          "russian": "приданое",
+          "russian_hint": "имущество невесты",
+          "transcription": "[ди МИТ-гифт]",
+          "sentence": "Ohne Mitgift wird Cordelia vom französischen König geliebt der ihre wahre Tugend mehr schätzt als Gold.",
+          "sentence_translation": "Без приданого Корделию полюбил французский король который её истинную добродетель ценит больше чем золото.",
+          "sentence_parts": [
+            "Ohne Mitgift",
+            "wird Cordelia vom französischen König geliebt",
+            "der ihre wahre Tugend",
+            "mehr schätzt als Gold."
+          ],
+          "synonyms": ["придание", "наследство", "состояние"]
+        },
+        {
+          "german": "aufnehmen",
+          "russian": "принимать",
+          "russian_hint": "брать к себе",
+          "transcription": "[АУФ-не-мен]",
+          "sentence": "Der edle König von Frankreich will Cordelia gern aufnehmen weil er ihre Ehrlichkeit als Schatz erkennt.",
+          "sentence_translation": "Благородный король Франции хочет охотно принять Корделию потому что он её честность признаёт как сокровище.",
+          "sentence_parts": [
+            "Der edle König von Frankreich",
+            "will Cordelia gern aufnehmen",
+            "weil er ihre Ehrlichkeit",
+            "als Schatz erkennt."
+          ],
+          "synonyms": ["приютить", "взять", "впустить"]
+        },
+        {
+          "german": "die Hoffnung",
+          "russian": "надежда",
+          "russian_hint": "вера в лучшее",
+          "transcription": "[ди ХОФ-нунг]",
+          "sentence": "Trotz der Verbannung bewahrt Cordelia die stille Hoffnung dass ihr Vater seinen Fehler eines Tages bereut.",
+          "sentence_translation": "Несмотря на изгнание хранит Корделия тихую надежду что её отец свою ошибку однажды пожалеет.",
+          "sentence_parts": [
+            "Trotz der Verbannung",
+            "bewahrt Cordelia die stille Hoffnung",
+            "dass ihr Vater seinen Fehler",
+            "eines Tages bereut."
+          ],
+          "synonyms": ["упование", "чаяние", "ожидание"]
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «verstoßen»?",
+          "choices": [
+            "покидать",
+            "гнев",
+            "наказание",
+            "изгонять"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «verlassen»?",
+          "choices": [
+            "изгонять",
+            "гнев",
+            "наказание",
+            "покидать"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "regan",
+      "icon": "🏰",
+      "title": "Во Франции",
+      "keywords": "warten • sorgen • beten",
+      "description": "Акт II-III: Беспокойство за отца",
+      "theatrical_scene": {
+        "title": "ТРЕВОЖНЫЕ ВЕСТИ ИЗ АНГЛИИ",
+        "narrative": "Во французском замке я живу с тревогой. <b>DIE SORGE (забота)</b> об отце не даёт покоя. <b>DIE NACHRICHT (известия)</b> из Англии ужасают - отец скитается в буре! <b>DIE EINSAMKEIT (одиночество)</b> изгнания тяжела, но мысль, что отец <b>LEIDEN (страдает)</b>, невыносима! <b>DIE ANGST (страх)</b> за него растёт с каждым днём. Я не могу <b>BESCHÜTZEN (защитить)</b> его отсюда. <b>DIE SEHNSUCHT (тоска)</b> по примирению разрывает сердце. Каждую ночь я <b>BETEN (молюсь)</b> за его спасение. Муж готовит армию - мы должны действовать!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Отец в безумии!» - кричит гонец. Я падаю на колени: «Боже, сохрани его до моего возвращения!» Решение принято - мы идём!",
+        "exercise_text": "Во французском замке я живу с тревогой. ___ (забота) об отце не даёт покоя. ___ (известия) из Англии ужасают - отец скитается в буре! ___ (одиночество) изгнания тяжела, но мысль, что отец ___ (страдает), невыносима! ___ (страх) за него растёт с каждым днём. Я не могу ___ (защитить) его отсюда. ___ (тоска) по примирению разрывает сердце. Каждую ночь я ___ (молюсь) за его спасение. Муж готовит армию - мы должны действовать!"
+      },
+      "vocabulary": [
+        {
+          "german": "die Sorge",
+          "russian": "забота",
+          "russian_hint": "тревога о близких",
+          "transcription": "[ди ЗОР-ге]",
+          "sentence": "Cordelias große Sorge um König Lear wächst täglich während sie schreckliche Nachrichten aus England erhält.",
+          "sentence_translation": "Большая забота Корделии о короле Лире растёт ежедневно пока она получает ужасные известия из Англии.",
+          "sentence_parts": [
+            "Cordelias große Sorge um König Lear",
+            "wächst täglich",
+            "während sie schreckliche Nachrichten",
+            "aus England erhält."
+          ],
+          "synonyms": ["беспокойство", "тревога", "попечение"]
+        },
+        {
+          "german": "die Einsamkeit",
+          "russian": "одиночество",
+          "russian_hint": "состояние без близких",
+          "transcription": "[ди АЙН-зам-кайт]",
+          "sentence": "In der bitteren Einsamkeit der Verbannung denkt Cordelia ständig an ihren wahnsinnigen Vater in England.",
+          "sentence_translation": "В горьком одиночестве изгнания думает Корделия постоянно о своём безумном отце в Англии.",
+          "sentence_parts": [
+            "In der bitteren Einsamkeit der Verbannung",
+            "denkt Cordelia ständig",
+            "an ihren wahnsinnigen Vater",
+            "in England."
+          ],
+          "synonyms": ["уединение", "изоляция", "отчуждение"]
+        },
+        {
+          "german": "die Nachricht",
+          "russian": "известие",
+          "russian_hint": "новость, сообщение",
+          "transcription": "[ди НАХ-рихт]",
+          "sentence": "Jede neue Nachricht über Lears Wahnsinn bringt Cordelia zum Weinen während sie in Frankreich wartet.",
+          "sentence_translation": "Каждое новое известие о безумии Лира доводит Корделию до слёз пока она ждёт во Франции.",
+          "sentence_parts": [
+            "Jede neue Nachricht über Lears Wahnsinn",
+            "bringt Cordelia zum Weinen",
+            "während sie in Frankreich",
+            "wartet."
+          ],
+          "synonyms": ["весть", "новость", "сообщение"]
+        },
+        {
+          "german": "die Angst",
+          "russian": "страх",
+          "russian_hint": "боязнь за кого-то",
+          "transcription": "[ди АНГСТ]",
+          "sentence": "Cordelias tödliche Angst dass ihr alter Vater Lear in der wilden Sturmnacht stirbt quält sie furchtbar.",
+          "sentence_translation": "Смертельный страх Корделии что её старый отец Лир умрёт в дикую штормовую ночь мучает её ужасно.",
+          "sentence_parts": [
+            "Cordelias tödliche Angst",
+            "dass ihr alter Vater Lear",
+            "in der wilden Sturmnacht stirbt",
+            "quält sie furchtbar."
+          ],
+          "synonyms": ["боязнь", "ужас", "опасение"]
+        },
+        {
+          "german": "leiden",
+          "russian": "страдать",
+          "russian_hint": "испытывать муки",
+          "transcription": "[ЛАЙ-ден]",
+          "sentence": "Cordelia weiß dass König Lear schrecklich leidet während Goneril und Regan ihn grausam behandeln.",
+          "sentence_translation": "Корделия знает что король Лир ужасно страдает пока Гонерилья и Регана жестоко обращаются с ним.",
+          "sentence_parts": [
+            "Cordelia weiß",
+            "dass König Lear schrecklich leidet",
+            "während Goneril und Regan",
+            "ihn grausam behandeln."
+          ],
+          "synonyms": ["мучиться", "терпеть", "болеть"]
+        },
+        {
+          "german": "beschützen",
+          "russian": "защищать",
+          "russian_hint": "оберегать от зла",
+          "transcription": "[бе-ШЮ-цен]",
+          "sentence": "Aus der Ferne kann Cordelia ihren Vater nicht beschützen aber sie bereitet die Armee zur Rettung vor.",
+          "sentence_translation": "Издалека не может Корделия своего отца защитить но она готовит армию для спасения.",
+          "sentence_parts": [
+            "Aus der Ferne",
+            "kann Cordelia ihren Vater nicht beschützen",
+            "aber sie bereitet",
+            "die Armee zur Rettung vor."
+          ],
+          "synonyms": ["оберегать", "охранять", "укрывать"]
+        },
+        {
+          "german": "die Sehnsucht",
+          "russian": "тоска",
+          "russian_hint": "сильное желание",
+          "transcription": "[ди ЗЕН-зухт]",
+          "sentence": "Die brennende Sehnsucht nach Versöhnung mit ihrem Vater treibt Cordelia zur schnellen Rückkehr nach England.",
+          "sentence_translation": "Жгучая тоска по примирению со своим отцом гонит Корделию к скорому возвращению в Англию.",
+          "sentence_parts": [
+            "Die brennende Sehnsucht nach Versöhnung",
+            "mit ihrem Vater",
+            "treibt Cordelia",
+            "zur schnellen Rückkehr nach England."
+          ],
+          "synonyms": ["томление", "стремление", "жажда"]
+        },
+        {
+          "german": "beten",
+          "russian": "молиться",
+          "russian_hint": "просить у Бога",
+          "transcription": "[БЕ-тен]",
+          "sentence": "Jede Nacht betet Cordelia innig für König Lears Rettung bevor sie mit der Armee aufbricht.",
+          "sentence_translation": "Каждую ночь молится Корделия горячо за спасение короля Лира прежде чем выступить с армией.",
+          "sentence_parts": [
+            "Jede Nacht",
+            "betet Cordelia innig",
+            "für König Lears Rettung",
+            "bevor sie mit der Armee aufbricht."
+          ],
+          "synonyms": ["взывать", "просить", "умолять"]
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «die Sorge»?",
+          "choices": [
+            "одиночество",
+            "известие",
+            "страх",
+            "забота"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «die Einsamkeit»?",
+          "choices": [
+            "забота",
+            "известие",
+            "страх",
+            "одиночество"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "storm",
+      "icon": "⚔️",
+      "title": "Возвращение",
+      "keywords": "zurückkehren • kämpfen • retten",
+      "description": "Акт IV: Возвращение с армией",
+      "theatrical_scene": {
+        "title": "АРМИЯ ЛЮБВИ И СПРАВЕДЛИВОСТИ",
+        "narrative": "Белые скалы Дувра! Я <b>ZURÜCKKEHREN (возвращаюсь)</b> с <b>DIE ARMEE (армией)</b>! Не завоевать, а <b>RETTEN (спасти)</b> отца от жестоких сестёр! <b>DER KAMPF (борьба)</b> за его честь - мой священный долг. <b>DIE SCHLACHT (битва)</b> будет жестокой, но <b>DIE GERECHTIGKEIT (справедливость)</b> на нашей стороне! Я должна быть <b>MUTIG (храброй)</b> ради отца. Французские солдаты кричат: «За короля Лира!» Верный Кент тайно помогает нам. Любовь должна <b>SIEGEN (победить)</b> ненависть! Мечи подняты, знамёна развеваются - вперёд!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «За правду! За любовь! За отца!» - кричу я, поднимая меч! Армия ревёт! Моё сердце - щит, любовь - оружие!",
+        "exercise_text": "Белые скалы Дувра! Я ___ (возвращаюсь) с ___ (армией)! Не завоевать, а ___ (спасти) отца от жестоких сестёр! ___ (борьба) за его честь - мой священный долг. ___ (битва) будет жестокой, но ___ (справедливость) на нашей стороне! Я должна быть ___ (храброй) ради отца. Французские солдаты кричат: «За короля Лира!» Верный Кент тайно помогает нам. Любовь должна ___ (победить) ненависть! Мечи подняты, знамёна развеваются - вперёд!"
+      },
+      "vocabulary": [
+        {
+          "german": "zurückkehren",
+          "russian": "возвращаться",
+          "russian_hint": "прибывать обратно",
+          "transcription": "[цу-РЮК-ке-рен]",
+          "sentence": "Cordelia will mit französischer Armee zurückkehren um ihren wahnsinnigen Vater Lear vor Goneril zu retten.",
+          "sentence_translation": "Корделия хочет с французской армией вернуться чтобы своего безумного отца Лира от Гонерильи спасти.",
+          "sentence_parts": [
+            "Cordelia will mit französischer Armee",
+            "zurückkehren",
+            "um ihren wahnsinnigen Vater Lear",
+            "vor Goneril zu retten."
+          ],
+          "synonyms": ["вернуться", "прибыть", "воротиться"]
+        },
+        {
+          "german": "der Kampf",
+          "russian": "борьба",
+          "russian_hint": "битва за правду",
+          "transcription": "[дер КАМПФ]",
+          "sentence": "Der heilige Kampf für König Lears Ehre führt Cordelia tapfer gegen ihre grausamen Schwestern Goneril und Regan.",
+          "sentence_translation": "Священная борьба за честь короля Лира ведёт Корделию храбро против её жестоких сестёр Гонерильи и Реганы.",
+          "sentence_parts": [
+            "Der heilige Kampf für König Lears Ehre",
+            "führt Cordelia tapfer",
+            "gegen ihre grausamen Schwestern",
+            "Goneril und Regan."
+          ],
+          "synonyms": ["битва", "сражение", "схватка"]
+        },
+        {
+          "german": "retten",
+          "russian": "спасать",
+          "russian_hint": "избавлять от беды",
+          "transcription": "[РЕ-тен]",
+          "sentence": "Cordelia muss ihren alten Vater retten bevor die bösen Töchter ihn vollständig zugrunde richten können.",
+          "sentence_translation": "Корделия должна своего старого отца спасти прежде чем злые дочери его полностью погубить смогут.",
+          "sentence_parts": [
+            "Cordelia muss",
+            "ihren alten Vater retten",
+            "bevor die bösen Töchter",
+            "ihn vollständig zugrunde richten können."
+          ],
+          "synonyms": ["выручать", "освобождать", "избавлять"]
+        },
+        {
+          "german": "die Schlacht",
+          "russian": "битва",
+          "russian_hint": "большое сражение",
+          "transcription": "[ди ШЛАХТ]",
+          "sentence": "In der blutigen Schlacht bei Dover kämpft Cordelia verzweifelt für ihren Vater gegen Edmunds Armee.",
+          "sentence_translation": "В кровавой битве при Дувре сражается Корделия отчаянно за своего отца против армии Эдмунда.",
+          "sentence_parts": [
+            "In der blutigen Schlacht bei Dover",
+            "kämpft Cordelia verzweifelt",
+            "für ihren Vater",
+            "gegen Edmunds Armee."
+          ],
+          "synonyms": ["сражение", "бой", "баталия"]
+        },
+        {
+          "german": "mutig",
+          "russian": "храбрый",
+          "russian_hint": "смелый, отважный",
+          "transcription": "[МУ-тиг]",
+          "sentence": "Die mutige Cordelia führt französische Soldaten in den Krieg obwohl sie weiß dass Edmund überlegen ist.",
+          "sentence_translation": "Храбрая Корделия ведёт французских солдат на войну хотя она знает что Эдмунд превосходит их.",
+          "sentence_parts": [
+            "Die mutige Cordelia",
+            "führt französische Soldaten in den Krieg",
+            "obwohl sie weiß",
+            "dass Edmund überlegen ist."
+          ],
+          "synonyms": ["смелый", "отважный", "бесстрашный"]
+        },
+        {
+          "german": "die Gerechtigkeit",
+          "russian": "справедливость",
+          "russian_hint": "правое дело",
+          "transcription": "[ди ге-РЕХ-тиг-кайт]",
+          "sentence": "Cordelia glaubt fest dass die göttliche Gerechtigkeit ihr helfen wird den wahnsinnigen König Lear zu befreien.",
+          "sentence_translation": "Корделия верит твёрдо что божественная справедливость ей поможет безумного короля Лира освободить.",
+          "sentence_parts": [
+            "Cordelia glaubt fest",
+            "dass die göttliche Gerechtigkeit",
+            "ihr helfen wird",
+            "den wahnsinnigen König Lear zu befreien."
+          ],
+          "synonyms": ["правосудие", "правда", "честность"]
+        },
+        {
+          "german": "siegen",
+          "russian": "побеждать",
+          "russian_hint": "одерживать победу",
+          "transcription": "[ЗИ-ген]",
+          "sentence": "Cordelias reine Liebe muss siegen über die schwarze Bosheit ihrer Schwestern Goneril und Regan.",
+          "sentence_translation": "Чистая любовь Корделии должна победить над чёрной злобой её сестёр Гонерильи и Реганы.",
+          "sentence_parts": [
+            "Cordelias reine Liebe",
+            "muss siegen",
+            "über die schwarze Bosheit",
+            "ihrer Schwestern Goneril und Regan."
+          ],
+          "synonyms": ["одолеть", "превозмочь", "взять верх"]
+        },
+        {
+          "german": "die Armee",
+          "russian": "армия",
+          "russian_hint": "военные силы",
+          "transcription": "[ди ар-МЭ]",
+          "sentence": "Mit französischer Armee kehrt Cordelia nach England zurück um König Lear aus Gonerilas Klauen zu befreien.",
+          "sentence_translation": "С французской армией возвращается Корделия в Англию чтобы короля Лира из когтей Гонерильи освободить.",
+          "sentence_parts": [
+            "Mit französischer Armee",
+            "kehrt Cordelia nach England zurück",
+            "um König Lear",
+            "aus Gonerilas Klauen zu befreien."
+          ],
+          "synonyms": ["войско", "рать", "воинство"]
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «zurückkehren»?",
+          "choices": [
+            "борьба",
+            "спасать",
+            "битва",
+            "возвращаться"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «der Kampf»?",
+          "choices": [
+            "возвращаться",
+            "спасать",
+            "битва",
+            "борьба"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "hut",
+      "icon": "💔",
+      "title": "Встреча",
+      "keywords": "verzeihen • umarmen • heilen",
+      "description": "Акт IV: Встреча с отцом",
+      "theatrical_scene": {
+        "title": "СЛЁЗЫ ВОССОЕДИНЕНИЯ",
+        "narrative": "Отец спит, измученный безумием. Музыка должна <b>HEILEN (исцелить)</b> его душу. Он открывает глаза: «Ты дух?» - «Нет, отец, я твоя Корделия!» <b>DIE TRÄNEN (слёзы)</b> текут по его щекам. «<b>VERZEIHEN (Прости)</b> меня!» - плачет он. Я <b>UMARMEN (обнимаю)</b> его крепко. «Ты <b>ERKENNEN (узнаёшь)</b> меня?» - спрашиваю нежно. <b>DIE REUE (раскаяние)</b> в его глазах разрывает моё сердце. Я говорю <b>SANFT (нежно)</b>: «Тише, всё позади». <b>DIE VERGEBUNG (прощение)</b> приносит покой нашим душам. Мы снова вместе!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Не плачь, отец! Твои слёзы жгут меня!» - рыдаю я, целуя его руки. «Я люблю тебя! Всё прощено!» Мы обнимаемся как никогда!",
+        "exercise_text": "Отец спит, измученный безумием. Музыка должна ___ (исцелить) его душу. Он открывает глаза: «Ты дух?» - «Нет, отец, я твоя Корделия!» ___ (слёзы) текут по его щекам. «___ (Прости) меня!» - плачет он. Я ___ (обнимаю) его крепко. «Ты ___ (узнаёшь) меня?» - спрашиваю нежно. ___ (раскаяние) в его глазах разрывает моё сердце. Я говорю ___ (нежно): «Тише, всё позади». ___ (прощение) приносит покой нашим душам. Мы снова вместе!"
+      },
+      "vocabulary": [
+        {
+          "german": "verzeihen",
+          "russian": "прощать",
+          "russian_hint": "отпускать обиду",
+          "transcription": "[фер-ЦАЙ-ен]",
+          "sentence": "König Lear bittet Cordelia unter Tränen zu verzeihen dass er sie ungerecht verstoßen und enterbt hat.",
+          "sentence_translation": "Король Лир просит Корделию в слезах простить что он её несправедливо изгнал и лишил наследства.",
+          "sentence_parts": [
+            "König Lear bittet Cordelia unter Tränen",
+            "zu verzeihen",
+            "dass er sie ungerecht",
+            "verstoßen und enterbt hat."
+          ],
+          "synonyms": ["извинять", "миловать", "отпускать"]
+        },
+        {
+          "german": "die Tränen",
+          "russian": "слёзы",
+          "russian_hint": "капли скорби",
+          "transcription": "[ди ТРЕ-нен]",
+          "sentence": "Die heißen Tränen der Reue fließen über König Lears Wangen als er seine treue Cordelia wiedererkennt.",
+          "sentence_translation": "Горячие слёзы раскаяния текут по щекам короля Лира когда он свою верную Корделию узнаёт.",
+          "sentence_parts": [
+            "Die heißen Tränen der Reue",
+            "fließen über König Lears Wangen",
+            "als er seine treue Cordelia",
+            "wiedererkennt."
+          ],
+          "synonyms": ["рыдания", "плач", "слезинки"]
+        },
+        {
+          "german": "umarmen",
+          "russian": "обнимать",
+          "russian_hint": "заключать в объятия",
+          "transcription": "[ум-АР-мен]",
+          "sentence": "Cordelia umarmt liebevoll ihren kranken Vater Lear nachdem sie ihn nach langer Trennung endlich gefunden hat.",
+          "sentence_translation": "Корделия обнимает с любовью своего больного отца Лира после того как она его после долгой разлуки наконец нашла.",
+          "sentence_parts": [
+            "Cordelia umarmt liebevoll",
+            "ihren kranken Vater Lear",
+            "nachdem sie ihn nach langer Trennung",
+            "endlich gefunden hat."
+          ],
+          "synonyms": ["прижимать", "заключать", "обхватывать"]
+        },
+        {
+          "german": "erkennen",
+          "russian": "узнавать",
+          "russian_hint": "осознавать кто это",
+          "transcription": "[ер-КЕН-нен]",
+          "sentence": "Der wahnsinnige Lear erkennt langsam seine liebende Tochter Cordelia während die Musik seine Seele heilt.",
+          "sentence_translation": "Безумный Лир узнаёт медленно свою любящую дочь Корделию пока музыка его душу исцеляет.",
+          "sentence_parts": [
+            "Der wahnsinnige Lear",
+            "erkennt langsam",
+            "seine liebende Tochter Cordelia",
+            "während die Musik seine Seele heilt."
+          ],
+          "synonyms": ["опознавать", "признавать", "различать"]
+        },
+        {
+          "german": "heilen",
+          "russian": "исцелять",
+          "russian_hint": "лечить душу",
+          "transcription": "[ХАЙ-лен]",
+          "sentence": "Cordelias sanfte Worte und zärtliche Liebe heilen König Lears zerrissene Seele nach dem schrecklichen Wahnsinn.",
+          "sentence_translation": "Нежные слова Корделии и ласковая любовь исцеляют разорванную душу короля Лира после ужасного безумия.",
+          "sentence_parts": [
+            "Cordelias sanfte Worte und zärtliche Liebe",
+            "heilen",
+            "König Lears zerrissene Seele",
+            "nach dem schrecklichen Wahnsinn."
+          ],
+          "synonyms": ["лечить", "врачевать", "заживлять"]
+        },
+        {
+          "german": "die Reue",
+          "russian": "раскаяние",
+          "russian_hint": "сожаление о содеянном",
+          "transcription": "[ди РОЙ-е]",
+          "sentence": "Die tiefe Reue über seine Ungerechtigkeit quält König Lear als er Cordelias vergebende Liebe sieht.",
+          "sentence_translation": "Глубокое раскаяние о своей несправедливости мучает короля Лира когда он прощающую любовь Корделии видит.",
+          "sentence_parts": [
+            "Die tiefe Reue über seine Ungerechtigkeit",
+            "quält König Lear",
+            "als er Cordelias vergebende Liebe",
+            "sieht."
+          ],
+          "synonyms": ["покаяние", "сожаление", "угрызения"]
+        },
+        {
+          "german": "sanft",
+          "russian": "нежный",
+          "russian_hint": "мягкий, ласковый",
+          "transcription": "[ЗАНФТ]",
+          "sentence": "Mit sanfter Stimme beruhigt Cordelia ihren verzweifelten Vater der vor Scham und Reue weint.",
+          "sentence_translation": "Нежным голосом успокаивает Корделия своего отчаявшегося отца который от стыда и раскаяния плачет.",
+          "sentence_parts": [
+            "Mit sanfter Stimme",
+            "beruhigt Cordelia",
+            "ihren verzweifelten Vater",
+            "der vor Scham und Reue weint."
+          ],
+          "synonyms": ["ласковый", "мягкий", "кроткий"]
+        },
+        {
+          "german": "die Vergebung",
+          "russian": "прощение",
+          "russian_hint": "отпущение вины",
+          "transcription": "[ди фер-ГЕ-бунг]",
+          "sentence": "Cordelias vollständige Vergebung bringt König Lear endlich Frieden nachdem er sie so grausam verstoßen hatte.",
+          "sentence_translation": "Полное прощение Корделии приносит королю Лиру наконец покой после того как он её так жестоко отверг.",
+          "sentence_parts": [
+            "Cordelias vollständige Vergebung",
+            "bringt König Lear endlich Frieden",
+            "nachdem er sie so grausam",
+            "verstoßen hatte."
+          ],
+          "synonyms": ["помилование", "отпущение", "извинение"]
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «verzeihen»?",
+          "choices": [
+            "слёзы",
+            "обнимать",
+            "узнавать",
+            "прощать"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «die Tränen»?",
+          "choices": [
+            "прощать",
+            "обнимать",
+            "узнавать",
+            "слёзы"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "dover",
+      "icon": "⚖️",
+      "title": "Плен",
+      "keywords": "gefangen • Würde • Gerechtigkeit",
+      "description": "Акт V: Захват в плен",
+      "theatrical_scene": {
+        "title": "ПЛЕН С ДОСТОИНСТВОМ",
+        "narrative": "Битва проиграна. Эдмунд ведёт нас как <b>GEFANGEN (пленников)</b>. В <b>DAS GEFÄNGNIS (тюрьму)</b> мы идём, но с <b>DIE WÜRDE (достоинством)</b>! «Не плачь, отец», - я <b>TRÖSTEN (утешаю)</b> его. «Мы будем петь как птицы в клетке, рассказывать сказки». Я остаюсь <b>TAPFER (отважной)</b> ради него. Наша <b>DIE EHRE (честь)</b> не запятнана! <b>DAS SCHICKSAL (судьба)</b> свела нас вместе даже в темнице. В сердце живёт <b>DIE DEMUT (смирение)</b> - мы принимаем всё с покоем. Любовь делает нас свободными даже в цепях!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Кто разлучит нас теперь?» - говорю отцу, сжимая его руку. «Боги накажут тех, кто заставил нас плакать!» В темницу как на пир!",
+        "exercise_text": "Битва проиграна. Эдмунд ведёт нас как ___ (пленников). В ___ (тюрьму) мы идём, но с ___ (достоинством)! «Не плачь, отец», - я ___ (утешаю) его. «Мы будем петь как птицы в клетке, рассказывать сказки». Я остаюсь ___ (отважной) ради него. Наша ___ (честь) не запятнана! ___ (судьба) свела нас вместе даже в темнице. В сердце живёт ___ (смирение) - мы принимаем всё с покоем. Любовь делает нас свободными даже в цепях!"
+      },
+      "vocabulary": [
+        {
+          "german": "gefangen",
+          "russian": "пленный",
+          "russian_hint": "взятый в плен",
+          "transcription": "[ге-ФАН-ген]",
+          "sentence": "Der böse Edmund nimmt Cordelia und König Lear gefangen nachdem ihre französische Armee verloren hat.",
+          "sentence_translation": "Злой Эдмунд берёт Корделию и короля Лира в плен после того как их французская армия проиграла.",
+          "sentence_parts": [
+            "Der böse Edmund",
+            "nimmt Cordelia und König Lear gefangen",
+            "nachdem ihre französische Armee",
+            "verloren hat."
+          ],
+          "synonyms": ["плененный", "арестованный", "схваченный"]
+        },
+        {
+          "german": "das Gefängnis",
+          "russian": "тюрьма",
+          "russian_hint": "место заключения",
+          "transcription": "[дас ге-ФЭНГ-нис]",
+          "sentence": "Cordelia und Lear gehen würdevoll ins dunkle Gefängnis wo Edmund sie heimlich töten lassen will.",
+          "sentence_translation": "Корделия и Лир идут с достоинством в тёмную тюрьму где Эдмунд их тайно убить хочет.",
+          "sentence_parts": [
+            "Cordelia und Lear",
+            "gehen würdevoll ins dunkle Gefängnis",
+            "wo Edmund sie heimlich",
+            "töten lassen will."
+          ],
+          "synonyms": ["темница", "узилище", "застенок"]
+        },
+        {
+          "german": "die Würde",
+          "russian": "достоинство",
+          "russian_hint": "благородство духа",
+          "transcription": "[ди ВЮР-де]",
+          "sentence": "Mit königlicher Würde trägt Cordelia ihr Schicksal obwohl Edmund sie zum Tode verurteilt hat.",
+          "sentence_translation": "С королевским достоинством несёт Корделия свою судьбу хотя Эдмунд её к смерти приговорил.",
+          "sentence_parts": [
+            "Mit königlicher Würde",
+            "trägt Cordelia ihr Schicksal",
+            "obwohl Edmund sie",
+            "zum Tode verurteilt hat."
+          ],
+          "synonyms": ["честь", "благородство", "величие"]
+        },
+        {
+          "german": "trösten",
+          "russian": "утешать",
+          "russian_hint": "успокаивать в горе",
+          "transcription": "[ТРЁС-тен]",
+          "sentence": "Die liebende Cordelia tröstet ihren alten Vater Lear während sie beide ins Gefängnis geführt werden.",
+          "sentence_translation": "Любящая Корделия утешает своего старого отца Лира пока их обоих в тюрьму ведут.",
+          "sentence_parts": [
+            "Die liebende Cordelia",
+            "tröstet ihren alten Vater Lear",
+            "während sie beide",
+            "ins Gefängnis geführt werden."
+          ],
+          "synonyms": ["успокаивать", "ободрять", "поддерживать"]
+        },
+        {
+          "german": "tapfer",
+          "russian": "отважный",
+          "russian_hint": "смелый в беде",
+          "transcription": "[ТАП-фер]",
+          "sentence": "Cordelia bleibt tapfer und stark für ihren Vater obwohl sie weiß dass Edmund sie töten wird.",
+          "sentence_translation": "Корделия остаётся отважной и сильной для своего отца хотя она знает что Эдмунд её убьёт.",
+          "sentence_parts": [
+            "Cordelia bleibt tapfer und stark",
+            "für ihren Vater",
+            "obwohl sie weiß",
+            "dass Edmund sie töten wird."
+          ],
+          "synonyms": ["храбрый", "мужественный", "доблестный"]
+        },
+        {
+          "german": "die Demut",
+          "russian": "смирение",
+          "russian_hint": "принятие судьбы",
+          "transcription": "[ди ДЕ-мут]",
+          "sentence": "In heiliger Demut nimmt Cordelia ihr tragisches Schicksal an während sie mit König Lear gefangen ist.",
+          "sentence_translation": "В святом смирении принимает Корделия свою трагическую судьбу пока она с королём Лиром в плену.",
+          "sentence_parts": [
+            "In heiliger Demut",
+            "nimmt Cordelia ihr tragisches Schicksal an",
+            "während sie mit König Lear",
+            "gefangen ist."
+          ],
+          "synonyms": ["покорность", "кротость", "терпение"]
+        },
+        {
+          "german": "das Schicksal",
+          "russian": "судьба",
+          "russian_hint": "предначертанный путь",
+          "transcription": "[дас ШИК-заль]",
+          "sentence": "Das grausame Schicksal führt Cordelia und Lear zusammen ins Gefängnis wo ihre Liebe triumphiert.",
+          "sentence_translation": "Жестокая судьба ведёт Корделию и Лира вместе в тюрьму где их любовь торжествует.",
+          "sentence_parts": [
+            "Das grausame Schicksal",
+            "führt Cordelia und Lear zusammen",
+            "ins Gefängnis",
+            "wo ihre Liebe triumphiert."
+          ],
+          "synonyms": ["рок", "участь", "доля"]
+        },
+        {
+          "german": "die Ehre",
+          "russian": "честь",
+          "russian_hint": "моральное достоинство",
+          "transcription": "[ди Э-ре]",
+          "sentence": "Cordelias reine Ehre bleibt unbefleckt selbst als Edmund sie als Verräterin ins Gefängnis wirft.",
+          "sentence_translation": "Чистая честь Корделии остаётся незапятнанной даже когда Эдмунд её как предательницу в тюрьму бросает.",
+          "sentence_parts": [
+            "Cordelias reine Ehre",
+            "bleibt unbefleckt",
+            "selbst als Edmund sie als Verräterin",
+            "ins Gefängnis wirft."
+          ],
+          "synonyms": ["достоинство", "слава", "почёт"]
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «gefangen»?",
+          "choices": [
+            "тюрьма",
+            "достоинство",
+            "утешать",
+            "пленный"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «das Gefängnis»?",
+          "choices": [
+            "пленный",
+            "достоинство",
+            "утешать",
+            "тюрьма"
+          ],
+          "correct_index": 3
+        }
+      ]
+    },
+    {
+      "id": "prison",
+      "icon": "😢",
+      "title": "Финал",
+      "keywords": "sterben • Opfer • ewig",
+      "description": "Акт V: Трагический конец",
+      "theatrical_scene": {
+        "title": "ПОСЛЕДНЕЕ ДЫХАНИЕ ЛЮБВИ",
+        "narrative": "Тайный приказ Эдмунда исполнен. Я <b>STERBEN (умираю)</b>. Я - <b>DAS OPFER (жертва)</b> правды и любви. <b>DER TOD (смерть)</b> приходит тихо. Моя <b>DIE SEELE (душа)</b> спокойна - я жила честно! «Отец...» - последний вздох. <b>DAS ENDE (конец)</b> земного пути, но наша любовь <b>EWIG (вечна)</b>! <b>DER ABSCHIED (прощание)</b> - это не навсегда. <b>DIE ERLÖSUNG (спасение)</b> ждёт в небесах. Я слышу крики, бой - слишком поздно! Темнота окутывает. Прости, отец, что ухожу первой... В вечности мы встретимся снова!",
+        "emotional_peak": "🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: Верёвка затягивается... «Отец! Я люблю...» - не успеваю договорить. Последний вздох с твоим именем! Прости, что оставляю тебя!",
+        "exercise_text": "Тайный приказ Эдмунда исполнен. Я ___ (умираю). Я - ___ (жертва) правды и любви. ___ (смерть) приходит тихо. Моя ___ (душа) спокойна - я жила честно! «Отец...» - последний вздох. ___ (конец) земного пути, но наша любовь ___ (вечна)! ___ (прощание) - это не навсегда. ___ (спасение) ждёт в небесах. Я слышу крики, бой - слишком поздно! Темнота окутывает. Прости, отец, что ухожу первой... В вечности мы встретимся снова!"
+      },
+      "vocabulary": [
+        {
+          "german": "der Tod",
+          "russian": "смерть",
+          "russian_hint": "конец жизни",
+          "transcription": "[дер ТОД]",
+          "sentence": "Der tragische Tod der unschuldigen Cordelia bricht König Lears Herz während er sie tot in seinen Armen hält.",
+          "sentence_translation": "Трагическая смерть невинной Корделии разбивает сердце короля Лира пока он её мёртвую в своих руках держит.",
+          "sentence_parts": [
+            "Der tragische Tod der unschuldigen Cordelia",
+            "bricht König Lears Herz",
+            "während er sie tot",
+            "in seinen Armen hält."
+          ],
+          "synonyms": ["кончина", "гибель", "уход"]
+        },
+        {
+          "german": "sterben",
+          "russian": "умирать",
+          "russian_hint": "прекращать жить",
+          "transcription": "[ШТЕР-бен]",
+          "sentence": "Die treue Cordelia muss unschuldig sterben weil Edmund den heimlichen Mordbefehl an die Wachen gegeben hat.",
+          "sentence_translation": "Верная Корделия должна невинно умереть потому что Эдмунд тайный приказ об убийстве стражникам дал.",
+          "sentence_parts": [
+            "Die treue Cordelia",
+            "muss unschuldig sterben",
+            "weil Edmund den heimlichen Mordbefehl",
+            "an die Wachen gegeben hat."
+          ],
+          "synonyms": ["погибать", "скончаться", "почить"]
+        },
+        {
+          "german": "das Opfer",
+          "russian": "жертва",
+          "russian_hint": "невинно погибший",
+          "transcription": "[дас ОП-фер]",
+          "sentence": "Cordelia wird das unschuldige Opfer von Edmunds Bosheit während ihr Vater Lear verzweifelt um Hilfe schreit.",
+          "sentence_translation": "Корделия становится невинной жертвой злобы Эдмунда пока её отец Лир отчаянно о помощи кричит.",
+          "sentence_parts": [
+            "Cordelia wird das unschuldige Opfer",
+            "von Edmunds Bosheit",
+            "während ihr Vater Lear",
+            "verzweifelt um Hilfe schreit."
+          ],
+          "synonyms": ["мученик", "страдалец", "пострадавший"]
+        },
+        {
+          "german": "die Seele",
+          "russian": "душа",
+          "russian_hint": "духовная сущность",
+          "transcription": "[ди ЗЕ-ле]",
+          "sentence": "Cordelias reine Seele steigt zum Himmel auf nachdem die Henker sie im Gefängnis erdrosselt haben.",
+          "sentence_translation": "Чистая душа Корделии поднимается к небу после того как палачи её в тюрьме задушили.",
+          "sentence_parts": [
+            "Cordelias reine Seele",
+            "steigt zum Himmel auf",
+            "nachdem die Henker sie",
+            "im Gefängnis erdrosselt haben."
+          ],
+          "synonyms": ["дух", "сердце", "сущность"]
+        },
+        {
+          "german": "das Ende",
+          "russian": "конец",
+          "russian_hint": "завершение всего",
+          "transcription": "[дас ЕН-де]",
+          "sentence": "Das grausame Ende von Cordelias Leben kommt zu früh während König Lear noch auf ihre Rettung hofft.",
+          "sentence_translation": "Жестокий конец жизни Корделии приходит слишком рано пока король Лир ещё на её спасение надеется.",
+          "sentence_parts": [
+            "Das grausame Ende von Cordelias Leben",
+            "kommt zu früh",
+            "während König Lear",
+            "noch auf ihre Rettung hofft."
+          ],
+          "synonyms": ["финал", "развязка", "исход"]
+        },
+        {
+          "german": "ewig",
+          "russian": "вечный",
+          "russian_hint": "без конца",
+          "transcription": "[Э-виг]",
+          "sentence": "Die ewige Liebe zwischen Cordelia und König Lear überlebt sogar ihren tragischen Tod im Gefängnis.",
+          "sentence_translation": "Вечная любовь между Корделией и королём Лиром переживает даже её трагическую смерть в тюрьме.",
+          "sentence_parts": [
+            "Die ewige Liebe",
+            "zwischen Cordelia und König Lear",
+            "überlebt sogar ihren tragischen Tod",
+            "im Gefängnis."
+          ],
+          "synonyms": ["бессмертный", "нескончаемый", "бесконечный"]
+        },
+        {
+          "german": "der Abschied",
+          "russian": "прощание",
+          "russian_hint": "последнее расставание",
+          "transcription": "[дер АБ-шид]",
+          "sentence": "Der letzte Abschied zwischen Cordelia und Lear wird grausam verhindert als Edmund sie heimlich ermorden lässt.",
+          "sentence_translation": "Последнее прощание между Корделией и Лиром жестоко предотвращено когда Эдмунд её тайно убить приказывает.",
+          "sentence_parts": [
+            "Der letzte Abschied zwischen Cordelia und Lear",
+            "wird grausam verhindert",
+            "als Edmund sie",
+            "heimlich ermorden lässt."
+          ],
+          "synonyms": ["расставание", "разлука", "уход"]
+        },
+        {
+          "german": "die Erlösung",
+          "russian": "спасение",
+          "russian_hint": "избавление души",
+          "transcription": "[ди ер-ЛЁ-зунг]",
+          "sentence": "Cordelias Erlösung kommt durch den Tod während ihr verzweifelter Vater sie leblos in seinen Armen wiegt.",
+          "sentence_translation": "Спасение Корделии приходит через смерть пока её отчаявшийся отец её безжизненную в своих руках качает.",
+          "sentence_parts": [
+            "Cordelias Erlösung",
+            "kommt durch den Tod",
+            "während ihr verzweifelter Vater",
+            "sie leblos in seinen Armen wiegt."
+          ],
+          "synonyms": ["избавление", "освобождение", "искупление"]
+        }
+      ],
+      "quizzes": [
+        {
+          "question": "Что означает немецкое слово «der Tod»?",
+          "choices": [
+            "умирать",
+            "жертва",
+            "душа",
+            "смерть"
+          ],
+          "correct_index": 3
+        },
+        {
+          "question": "Что означает немецкое слово «sterben»?",
+          "choices": [
+            "смерть",
+            "жертва",
+            "душа",
+            "умирать"
+          ],
+          "correct_index": 3
+        }
+      ]
+    }
+  ]
+}
