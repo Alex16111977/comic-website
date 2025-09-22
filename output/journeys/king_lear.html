@@ -5,355 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Путешествие Короля Лира | König Lear</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* БАЗОВЫЕ СТИЛИ */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            color: #333;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-            background: rgba(255, 255, 255, 0.95);
-            min-height: 100vh;
-        }
-
-        /* HEADER */
-        .page-header {
-            text-align: center;
-            margin-bottom: 3rem;
-            padding: 2rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-radius: 1rem;
-        }
-
-        .header-nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-
-        .home-link {
-            color: white;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            transition: opacity 0.3s;
-        }
-
-        .home-link:hover {
-            opacity: 0.8;
-        }
-
-        /* JOURNEY TIMELINE */
-        .journey-timeline {
-            position: relative;
-            margin: 2rem 0;
-        }
-
-        .journey-points {
-            display: flex;
-            justify-content: space-between;
-            position: relative;
-            z-index: 2;
-        }
-
-        .journey-point {
-            flex: 1;
-            text-align: center;
-            cursor: pointer;
-            transition: transform 0.3s;
-            padding: 0.5rem;
-        }
-
-        .journey-point:hover {
-            transform: translateY(-5px);
-        }
-
-        .journey-point.active .point-circle {
-            background: #667eea;
-            color: white;
-            transform: scale(1.2);
-        }
-
-        .point-circle {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: white;
-            border: 3px solid #667eea;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 0.5rem;
-            font-size: 1.5rem;
-            transition: all 0.3s;
-        }
-
-        /* VOCABULARY SECTION */
-        .vocabulary-section {
-            margin: 3rem 0;
-            padding: 2rem;
-            background: #f8f9fa;
-            border-radius: 1rem;
-        }
-
-        .vocabulary-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .vocab-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 0.5rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .vocab-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-        }
-
-        /* EXERCISES */
-        .exercises-section {
-            margin: 3rem 0;
-        }
-
-        .exercises-accordion {
-            background: white;
-            border-radius: 0.5rem;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        .exercise-panel {
-            border-bottom: 1px solid #e2e8f0;
-        }
-
-        .exercise-toggle {
-            width: 100%;
-            padding: 1.5rem;
-            background: white;
-            border: none;
-            text-align: left;
-            font-size: 1.1rem;
-            font-weight: 600;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            transition: background 0.3s;
-        }
-
-        .exercise-toggle:hover {
-            background: #f8f9fa;
-        }
-
-        .exercise-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-            padding: 0 1.5rem;
-        }
-
-        .exercise-content.expanded {
-            max-height: 2000px;
-            padding: 1.5rem;
-        }
-
-        /* УПРАЖНЕНИЯ - АРТИКЛИ */
-        .articles-exercise {
-            padding: 1rem;
-        }
-
-        .article-columns {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
-            margin: 1.5rem 0;
-        }
-
-        .article-column {
-            background: #f8f9fa;
-            border-radius: 0.5rem;
-            padding: 1rem;
-        }
-
-        .article-drop-zone {
-            min-height: 150px;
-            background: white;
-            border: 2px dashed #cbd5e0;
-            border-radius: 0.5rem;
-            padding: 0.5rem;
-            margin-top: 1rem;
-        }
-
-        .article-drop-zone.drag-over {
-            background: #e6f3ff;
-            border-color: #667eea;
-        }
-
-        .article-word-card {
-            background: white;
-            border: 2px solid #cbd5e0;
-            border-radius: 0.5rem;
-            padding: 0.75rem;
-            margin: 0.5rem;
-            cursor: move;
-            transition: all 0.3s;
-        }
-
-        .article-word-card.dragging {
-            opacity: 0.5;
-        }
-
-        .article-word-card.correct {
-            background: #d4edda;
-            border-color: #28a745;
-        }
-
-        .article-word-card.incorrect {
-            background: #f8d7da;
-            border-color: #dc3545;
-        }
-
-        .article-word-card.selected {
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
-        }
-
-        /* КОНТЕКСТНЫЕ УПРАЖНЕНИЯ */
-        .context-exercise-card {
-            background: white;
-            border: 1px solid #e2e8f0;
-            border-radius: 0.5rem;
-            padding: 1.5rem;
-            margin: 1rem 0;
-        }
-
-        .context-options {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.75rem;
-            margin: 1rem 0;
-        }
-
-        .context-option {
-            padding: 0.75rem;
-            border: 2px solid #e2e8f0;
-            border-radius: 0.5rem;
-            background: white;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .context-option:hover:not(:disabled) {
-            background: #f8f9fa;
-            border-color: #667eea;
-        }
-
-        .context-option.correct {
-            background: #d4edda;
-            border-color: #28a745;
-        }
-
-        .context-option.incorrect {
-            background: #f8d7da;
-            border-color: #dc3545;
-        }
-
-        /* FEEDBACK */
-        .articles-feedback,
-        .context-feedback {
-            margin-top: 1rem;
-            padding: 0.75rem;
-            border-radius: 0.5rem;
-            text-align: center;
-            font-weight: 600;
-        }
-
-        .articles-feedback.success,
-        .context-feedback.success {
-            background: #d4edda;
-            color: #155724;
-        }
-
-        .articles-feedback.partial,
-        .context-feedback.error {
-            background: #fff3cd;
-            color: #856404;
-        }
-
-        /* BUTTONS */
-        button {
-            cursor: pointer;
-            font-family: inherit;
-        }
-
-        .check-articles-btn,
-        .reset-articles-btn {
-            padding: 0.75rem 1.5rem;
-            margin: 0.5rem;
-            border: none;
-            border-radius: 0.5rem;
-            font-weight: 600;
-            transition: all 0.3s;
-        }
-
-        .check-articles-btn {
-            background: #667eea;
-            color: white;
-        }
-
-        .check-articles-btn:hover {
-            background: #5a67d8;
-        }
-
-        .reset-articles-btn {
-            background: #e2e8f0;
-            color: #333;
-        }
-
-        .reset-articles-btn:hover {
-            background: #cbd5e0;
-        }
-
-        /* BOTTOM NAV */
-        .bottom-nav {
-            margin-top: 3rem;
-            padding: 2rem;
-            text-align: center;
-            border-top: 2px solid #e2e8f0;
-        }
-
-        .nav-link {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-
-        .nav-link:hover {
-            color: #5a67d8;
-        }
-    </style>
+    <link rel="stylesheet" href="../static/css/journey.css">
+    <link rel="stylesheet" href="../static/css/exercises.css">
 </head>
 <body>
     <div class="container">
@@ -363,12 +16,13 @@
                     <span class="arrow">←</span>
                     <span class="text">На главную</span>
                 </a>
-                <div class="study-counter">
-                    <span>СПИСОК ИЗУЧЕНИЯ</span>
+                <div class="study-counter" data-study-counter role="status" aria-live="polite">
+                    <span class="study-counter-label">СПИСОК ИЗУЧЕНИЯ</span>
                     <span class="counter-badge" data-study-count>0</span>
                 </div>
             </div>
-            <h1>👑 Путешествие Короля Лира</h1>
+            
+            <h1>🏰 Путешествие Короля Лира</h1>
             <p class="subtitle">Изучаем немецкий через трагедию Шекспира</p>
         </header>
 
@@ -376,172 +30,664 @@
             <h2>📚 Путешествие König Lear</h2>
 
             <div class="journey-timeline">
+                <svg class="journey-line" width="100%" height="4">
+                    <line x1="0" y1="2" x2="100%" y2="2" stroke="#6b5b95" stroke-width="2" opacity="0.3" />
+                    <line x1="0" y1="2" x2="100%" y2="2" stroke="#6b5b95" stroke-width="3" class="progress-line" data-start-progress="14" />
+                </svg>
+
                 <div class="journey-points">
+
                     
                     <div class="journey-point active" data-phase="throne">
                         <div class="point-circle">🏰</div>
                         <h4>Тронный зал</h4>
+
                         
                         <p>Thron • König • Macht</p>
+
                         
+
                     </div>
+
                     
                     <div class="journey-point" data-phase="goneril">
                         <div class="point-circle">🏛️</div>
                         <h4>У Гонерильи</h4>
+
                         
                         <p>demütigen • reduzieren • Zorn</p>
+
                         
+
                     </div>
+
                     
                     <div class="journey-point" data-phase="regan">
                         <div class="point-circle">🏠</div>
                         <h4>У Реганы</h4>
+
                         
                         <p>verlassen • verstoßen • Verzweiflung</p>
+
                         
+
                     </div>
+
                     
                     <div class="journey-point" data-phase="storm">
                         <div class="point-circle">⛈️</div>
                         <h4>Буря</h4>
+
                         
                         <p>Wahnsinn • toben • Sturm</p>
+
                         
+
                     </div>
+
                     
                     <div class="journey-point" data-phase="hut">
                         <div class="point-circle">🛖</div>
                         <h4>Хижина</h4>
+
                         
                         <p>arm • Elend • Erkenntnis</p>
+
                         
+
                     </div>
+
                     
                     <div class="journey-point" data-phase="dover">
                         <div class="point-circle">⛰️</div>
                         <h4>Дувр</h4>
+
                         
                         <p>erkennen • verstehen • Weisheit</p>
+
                         
+
                     </div>
+
                     
                     <div class="journey-point" data-phase="prison">
                         <div class="point-circle">🗝️</div>
                         <h4>Тюрьма</h4>
+
                         
                         <p>verzeihen • sterben • Ende</p>
+
                         
+
                     </div>
+
                     
+
                 </div>
+
+            <div class="journey-progress">
+                <div class="progress-track">
+                    <div class="progress-fill" style="width: 14%"></div>
+                </div>
+                <div class="progress-text">Акт I: Разделение королевства</div>
             </div>
+        </div>
+
+        
+        <div class="theatrical-scenes">
+
+            
+            
+            <div class="theatrical-scene active" data-phase="throne">
+                
+                <h3 class="scene-title">РОКОВОЕ РЕШЕНИЕ В ТРОННОМ ЗАЛЕ</h3>
+                <div class="scene-narrative">Великолепный <b>PRÄCHTIGER (великолепный)</b> тронный зал. Я восседаю на <b>THRON (троне)</b>, моя <b>KRONE (корона)</b> сверкает в свете факелов. Весь двор собрался на <b>ZEREMONIE (церемонию)</b>. «Мы стары», - <b>VERKÜNDE (провозглашаю)</b> я. «Пора разделить наше <b>KÖNIGREICH (королевство)</b> и передать <b>MACHT (власть)</b> молодым, чтобы они могли <b>HERRSCHEN (править)</b>». Я разворачиваю карту королевства. «Но сначала - испытание! Та из дочерей, что любит нас больше всех, получит лучшую часть!»</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: Момент, когда я поднимаю скипетр! «Скажите, дочери мои, которая из вас любит нас больше всех?» Тронный зал замирает в ожидании. Роковое испытание начинается!</div>
+                
+            </div>
+
+            
+            
+            <div class="theatrical-scene" data-phase="goneril">
+                
+                <h3 class="scene-title">ПЕРВОЕ ПРЕДАТЕЛЬСТВО</h3>
+                <div class="scene-narrative">В доме старшей дочери я узнаю горький вкус <b>UNDANKBARKEIT (неблагодарности)</b>. Гонерилья хочет меня <b>DEMÜTIGEN (унизить)</b>, отобрать мою свиту! «Старик безумный», - слышу я шёпот слуг. Мой <b>ZORN (гнев)</b> пылает как пожар! Я <b>VERFLUCHE (проклинаю)</b> её: «Пусть ты останешься бездетной, змея!» Она хочет <b>VERTREIBEN (изгнать)</b> меня из дома, который я ей подарил! Эта <b>KRÄNKUNG (обида)</b> жжёт сильнее огня. Я покидаю её дом с <b>FLUCH (проклятием)</b> на устах.</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Неблагодарная!» - мой крик сотрясает стены. «Ты - болезнь, язва на моём сердце! Я отрекаюсь от тебя!» Моё проклятие эхом отдаётся в залах!</div>
+                
+            </div>
+
+            
+            
+            <div class="theatrical-scene" data-phase="regan">
+                
+                <h3 class="scene-title">ДВОЙНОЕ ПРЕДАТЕЛЬСТВО</h3>
+                <div class="scene-narrative">У ворот замка Реганы - позор! Моего слугу Кента заковали в колодки! Регана с Гонерильей сговорились <b>VERSTOSSEN (отвергнуть)</b> меня. «Зачем тебе хоть один слуга?» - их <b>GRAUSAMKEIT (жестокость)</b> режет как нож. Я <b>BETTLE (прошу)</b> - я, король! - прошу крова у собственных детей! <b>VERZWEIFLUNG (отчаяние)</b> сжимает горло. «Вы думаете, я буду плакать? Нет, я найду такую месть...» <b>EINSAMKEIT (одиночество)</b> окутывает меня как саван. Ни одной <b>TRÄNE (слезы)</b> не пролью перед ними! В моей <b>NOT (нужде)</b> они видят только обузу.</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Я дал вам всё!» - кричу я в лицо дочерям. «А вы отнимаете у меня последнее - достоинство!» Гром гремит, словно небеса разделяют мой гнев!</div>
+                
+            </div>
+
+            
+            
+            <div class="theatrical-scene" data-phase="storm">
+                
+                <h3 class="scene-title">БЕЗУМИЕ В БУРЕ</h3>
+                <div class="scene-narrative"><b>STURM (буря)</b> снаружи и буря внутри! Я <b>SCHREIE (кричу)</b> в небеса: «Дуйте, ветры! Лейтесь, ливни!» <b>DONNER (гром)</b> - мой собеседник, <b>BLITZ (молния)</b> - мой факел! Пусть <b>TOBEN (бушуют)</b> все стихии! Я срываю одежды - <b>NACKT (голый)</b> я пришёл в мир, голым встречу <b>WAHNSINN (безумие)</b>! «Человек - всего лишь бедное голое животное!» <b>CHAOS (хаос)</b> в природе милосерднее, чем жестокость дочерей! Мой разум трещит как корабль в шторме!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Я - король бури!» - реву я в черное небо. «Молнии, сожгите мою седую голову! Я не прошу пощады ни у неба, ни у ада!» Безумие становится моей короной!</div>
+                
+            </div>
+
+            
+            
+            <div class="theatrical-scene" data-phase="hut">
+                
+                <h3 class="scene-title">ПРОЗРЕНИЕ В НИЩЕТЕ</h3>
+                <div class="scene-narrative">В убогой <b>HÜTTE (хижине)</b> я встречаю настоящее <b>ELEND (нищету)</b>. Бедный Том - <b>BETTLER (нищий)</b> в лохмотьях - учит меня истине. «Человек без одежд, без замков - вот истинный человек!» Мы все <b>ARM (бедны)</b> перед лицом судьбы. Мы <b>FRIEREN (мёрзнем)</b> не от холода, а от жестокости мира. Я вижу, как <b>LEIDEN (страдают)</b> те, кого я никогда не замечал на троне. Мой верный <b>NARR (шут)</b> смеётся сквозь слёзы: «Тот, кто имел всё и потерял, мудрее того, кто никогда не имел». <b>ERKENNTNIS (познание)</b> приходит через боль.</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Бедный Том мудрее короля!» - восклицаю я, глядя на нищего. «Я был слеп на троне! Только потеряв всё, я начинаю видеть!» Слёзы прозрения текут по моим щекам!</div>
+                
+            </div>
+
+            
+            
+            <div class="theatrical-scene" data-phase="dover">
+                
+                <h3 class="scene-title">ВСТРЕЧА С ИСТИННОЙ ЛЮБОВЬЮ</h3>
+                <div class="scene-narrative">На скалах Дувра я <b>ERKENNE (узнаю)</b> ангела - мою Корделию! Теперь я <b>VERSTEHE (понимаю)</b>: только она говорила <b>WAHRHEIT (правду)</b>. «Прости глупого старика!» - моя <b>REUE (раскаяние)</b> жжёт душу. Слишком поздно приходит <b>WEISHEIT (мудрость)</b>. «Можешь ли <b>VERGEBEN (простить)</b> отца, который был слеп?» Моя <b>EINSICHT (прозрение)</b> пришло ценой королевства. Я <b>SCHULDIG (виновен)</b> - я отверг истинную любовь ради лести! «Не плачь, дитя. Твои слёзы жгут мою душу сильнее адского пламени!»</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Корделия!» - падаю на колени перед дочерью. «Ты - моё искупление! Если ты не простишь меня, пусть боги покарают меня вечными муками!» Мы обнимаемся, плача!</div>
+                
+            </div>
+
+            
+            
+            <div class="theatrical-scene" data-phase="prison">
+                
+                <h3 class="scene-title">ПОСЛЕДНЕЕ ПРОЩАНИЕ</h3>
+                <div class="scene-narrative">В темнице с Корделией - рай после ада! «Мы будем петь как птицы в клетке, <b>VERZEIHEN (прощать)</b> друг друга каждый день». Но судьба жестока - моё дитя мертво! «Нет, нет, нет жизни!» <b>TOD (смерть)</b> забрал мой свет! Я готов <b>STERBEN (умереть)</b> - моё <b>HERZ (сердце)</b> разбито. «Смотрите, её губы... она дышит?» - последняя иллюзия перед <b>ENDE (концом)</b>. <b>TRAUER (скорбь)</b> разрывает душу. Наш <b>ABSCHIED (прощание)</b> - не в этом мире, а в следующем. Наша любовь <b>EWIG (вечна)</b>, даже смерть не разлучит нас!</div>
+                <div class="emotional-peak">🎭 ЭМОЦИОНАЛЬНЫЙ ПИК: «Корделия, Корделия!» - держу мёртвую дочь на руках. «Почему собака, лошадь, крыса живы, а ты не дышишь? Никогда, никогда, никогда!» Моё сердце разрывается, я падаю рядом с ней!</div>
+                
+            </div>
+
+            
+
         </div>
 
         <div class="vocabulary-section">
             <h2>📖 Словарь: Фаза "<span id="current-phase">Тронный зал</span>"</h2>
             <div class="vocabulary-grid"></div>
+
+            <div class="phase-navigation">
+                <button class="change-phase-btn prev-btn" type="button">← Предыдущая фаза</button>
+                <button class="change-phase-btn next-btn" type="button">Следующая фаза →</button>
+            </div>
         </div>
 
         <div class="exercises-section">
             <h2>📝 Упражнения</h2>
 
             <div class="exercises-accordion">
+                <div class="exercise-panel" data-exercise="matching">
+                    <button class="exercise-toggle" type="button">
+                        <span class="toggle-icon">▶</span>
+                        🔗 Подбор слов
+                    </button>
+                    <div class="exercise-content collapsed">
+                        <p class="exercise-description">Сопоставьте немецкие слова текущей фазы с их переводами и подсказками.</p>
+                        <div class="exercise-phase-wrapper" data-phase-wrapper="matching">
+
+                            
+                            <section class="exercise-phase active" data-phase="throne">
+                                <div class="matching-container" data-matching-container data-phase="throne"></div>
+                            </section>
+
+                            
+                            <section class="exercise-phase" data-phase="goneril">
+                                <div class="matching-container" data-matching-container data-phase="goneril"></div>
+                            </section>
+
+                            
+                            <section class="exercise-phase" data-phase="regan">
+                                <div class="matching-container" data-matching-container data-phase="regan"></div>
+                            </section>
+
+                            
+                            <section class="exercise-phase" data-phase="storm">
+                                <div class="matching-container" data-matching-container data-phase="storm"></div>
+                            </section>
+
+                            
+                            <section class="exercise-phase" data-phase="hut">
+                                <div class="matching-container" data-matching-container data-phase="hut"></div>
+                            </section>
+
+                            
+                            <section class="exercise-phase" data-phase="dover">
+                                <div class="matching-container" data-matching-container data-phase="dover"></div>
+                            </section>
+
+                            
+                            <section class="exercise-phase" data-phase="prison">
+                                <div class="matching-container" data-matching-container data-phase="prison"></div>
+                            </section>
+
+                            
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
                 <div class="exercise-panel" data-exercise="articles">
                     <button class="exercise-toggle" type="button">
                         <span class="toggle-icon">▶</span>
                         🎯 Артикли и род
                     </button>
-                    <div class="exercise-content">
-                        <div class="exercise-phase-wrapper">
+                    <div class="exercise-content collapsed">
+                        <p class="exercise-description">Разложите существительные по родам и запомните их вместе с переводом.</p>
+                        <div class="exercise-phase-wrapper" data-phase-wrapper="articles">
+
                             
                             <section class="exercise-phase active" data-phase="throne">
                                 <div class="articles-container" data-articles-container data-phase="throne"></div>
                             </section>
+
                             
                             <section class="exercise-phase" data-phase="goneril">
                                 <div class="articles-container" data-articles-container data-phase="goneril"></div>
                             </section>
+
                             
                             <section class="exercise-phase" data-phase="regan">
                                 <div class="articles-container" data-articles-container data-phase="regan"></div>
                             </section>
+
                             
                             <section class="exercise-phase" data-phase="storm">
                                 <div class="articles-container" data-articles-container data-phase="storm"></div>
                             </section>
+
                             
                             <section class="exercise-phase" data-phase="hut">
                                 <div class="articles-container" data-articles-container data-phase="hut"></div>
                             </section>
+
                             
                             <section class="exercise-phase" data-phase="dover">
                                 <div class="articles-container" data-articles-container data-phase="dover"></div>
                             </section>
+
                             
                             <section class="exercise-phase" data-phase="prison">
                                 <div class="articles-container" data-articles-container data-phase="prison"></div>
                             </section>
+
                             
+
                         </div>
+                    </div>
                     </div>
                 </div>
 
                 <div class="exercise-panel" data-exercise="context">
                     <button class="exercise-toggle" type="button">
                         <span class="toggle-icon">▶</span>
-                        📚 Контекстный перевод
+                        📝 Контекстный перевод
                     </button>
-                    <div class="exercise-content">
-                        <div class="exercise-phase-wrapper">
+                    <div class="exercise-content collapsed">
+                        <p class="exercise-description">Выберите перевод пропущенного слова в цитатах из истории персонажа.</p>
+                        <div class="exercise-phase-wrapper" data-phase-wrapper="context">
+
                             
                             <section class="exercise-phase active" data-phase="throne">
                                 <div class="context-container" data-context-container data-phase="throne"></div>
                             </section>
+
                             
                             <section class="exercise-phase" data-phase="goneril">
                                 <div class="context-container" data-context-container data-phase="goneril"></div>
                             </section>
+
                             
                             <section class="exercise-phase" data-phase="regan">
                                 <div class="context-container" data-context-container data-phase="regan"></div>
                             </section>
+
                             
                             <section class="exercise-phase" data-phase="storm">
                                 <div class="context-container" data-context-container data-phase="storm"></div>
                             </section>
+
                             
                             <section class="exercise-phase" data-phase="hut">
                                 <div class="context-container" data-context-container data-phase="hut"></div>
                             </section>
+
                             
                             <section class="exercise-phase" data-phase="dover">
                                 <div class="context-container" data-context-container data-phase="dover"></div>
                             </section>
+
                             
                             <section class="exercise-phase" data-phase="prison">
                                 <div class="context-container" data-context-container data-phase="prison"></div>
                             </section>
+
                             
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="exercise-panel" data-exercise="quiz">
+                    <button class="exercise-toggle" type="button">
+                        <span class="toggle-icon">▶</span>
+                        🧠 Викторина по словам
+                    </button>
+                    <div class="exercise-content collapsed">
+                        <div class="quiz-header">
+                            <div class="quiz-progress">
+                                <span class="progress-text">Вопрос <span id="current-question">1</span> из <span id="total-questions">1</span></span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="quiz-mode-indicator">
+                                <span class="mode-badge active" data-mode="forward">DE → RU</span>
+                                <span class="mode-badge" data-mode="reverse">RU → DE</span>
+                            </div>
+                        </div>
+
+                        <div class="quiz-content">
+                            <div class="quiz-placeholder">Выберите фазу, чтобы начать викторину.</div>
                         </div>
                     </div>
                 </div>
+
+                <div class="exercise-panel" data-exercise="constructor">
+                    <button class="exercise-toggle" type="button">
+                        <span class="toggle-icon">▶</span>
+                        🧩 Конструктор предложений
+                    </button>
+                    <div class="exercise-content collapsed">
+                        <div class="constructor-section">
+                            <p class="constructor-intro">Соберите немецкое предложение из фрагментов и проверьте себя по переводу.</p>
+
+                            
+                            <section class="constructor-panel active" data-phase="throne">
+                                <div class="constructor-header">
+                                    <div class="constructor-word" data-constructor-word>—</div>
+                                    <div class="constructor-translation" data-constructor-translation></div>
+                                    <div class="constructor-progress" data-constructor-progress></div>
+                                </div>
+                                <p class="constructor-hint" data-constructor-hint>Выберите следующую фразу, чтобы начать тренировку.</p>
+
+                                <div class="constructor-areas">
+                                    <div class="constructor-source" data-constructor-source></div>
+                                    <div class="constructor-target" data-constructor-target>
+                                        <div class="constructor-placeholder">Перетащите или нажмите на фрагменты, чтобы собрать предложение.</div>
+                                    </div>
+                                </div>
+
+                                <div class="constructor-controls">
+                                    <button class="constructor-control constructor-check" type="button">Проверить</button>
+                                    <button class="constructor-control constructor-reset" type="button">Сбросить</button>
+                                    <button class="constructor-control constructor-next" type="button">Следующее предложение</button>
+                                </div>
+
+                                <div class="constructor-feedback" aria-live="polite"></div>
+                                <div class="constructor-original" data-constructor-original></div>
+
+
+                            </section>
+
+                            
+                            <section class="constructor-panel" data-phase="goneril">
+                                <div class="constructor-header">
+                                    <div class="constructor-word" data-constructor-word>—</div>
+                                    <div class="constructor-translation" data-constructor-translation></div>
+                                    <div class="constructor-progress" data-constructor-progress></div>
+                                </div>
+                                <p class="constructor-hint" data-constructor-hint>Выберите следующую фразу, чтобы начать тренировку.</p>
+
+                                <div class="constructor-areas">
+                                    <div class="constructor-source" data-constructor-source></div>
+                                    <div class="constructor-target" data-constructor-target>
+                                        <div class="constructor-placeholder">Перетащите или нажмите на фрагменты, чтобы собрать предложение.</div>
+                                    </div>
+                                </div>
+
+                                <div class="constructor-controls">
+                                    <button class="constructor-control constructor-check" type="button">Проверить</button>
+                                    <button class="constructor-control constructor-reset" type="button">Сбросить</button>
+                                    <button class="constructor-control constructor-next" type="button">Следующее предложение</button>
+                                </div>
+
+                                <div class="constructor-feedback" aria-live="polite"></div>
+                                <div class="constructor-original" data-constructor-original></div>
+
+
+                            </section>
+
+                            
+                            <section class="constructor-panel" data-phase="regan">
+                                <div class="constructor-header">
+                                    <div class="constructor-word" data-constructor-word>—</div>
+                                    <div class="constructor-translation" data-constructor-translation></div>
+                                    <div class="constructor-progress" data-constructor-progress></div>
+                                </div>
+                                <p class="constructor-hint" data-constructor-hint>Выберите следующую фразу, чтобы начать тренировку.</p>
+
+                                <div class="constructor-areas">
+                                    <div class="constructor-source" data-constructor-source></div>
+                                    <div class="constructor-target" data-constructor-target>
+                                        <div class="constructor-placeholder">Перетащите или нажмите на фрагменты, чтобы собрать предложение.</div>
+                                    </div>
+                                </div>
+
+                                <div class="constructor-controls">
+                                    <button class="constructor-control constructor-check" type="button">Проверить</button>
+                                    <button class="constructor-control constructor-reset" type="button">Сбросить</button>
+                                    <button class="constructor-control constructor-next" type="button">Следующее предложение</button>
+                                </div>
+
+                                <div class="constructor-feedback" aria-live="polite"></div>
+                                <div class="constructor-original" data-constructor-original></div>
+
+
+                            </section>
+
+                            
+                            <section class="constructor-panel" data-phase="storm">
+                                <div class="constructor-header">
+                                    <div class="constructor-word" data-constructor-word>—</div>
+                                    <div class="constructor-translation" data-constructor-translation></div>
+                                    <div class="constructor-progress" data-constructor-progress></div>
+                                </div>
+                                <p class="constructor-hint" data-constructor-hint>Выберите следующую фразу, чтобы начать тренировку.</p>
+
+                                <div class="constructor-areas">
+                                    <div class="constructor-source" data-constructor-source></div>
+                                    <div class="constructor-target" data-constructor-target>
+                                        <div class="constructor-placeholder">Перетащите или нажмите на фрагменты, чтобы собрать предложение.</div>
+                                    </div>
+                                </div>
+
+                                <div class="constructor-controls">
+                                    <button class="constructor-control constructor-check" type="button">Проверить</button>
+                                    <button class="constructor-control constructor-reset" type="button">Сбросить</button>
+                                    <button class="constructor-control constructor-next" type="button">Следующее предложение</button>
+                                </div>
+
+                                <div class="constructor-feedback" aria-live="polite"></div>
+                                <div class="constructor-original" data-constructor-original></div>
+
+
+                            </section>
+
+                            
+                            <section class="constructor-panel" data-phase="hut">
+                                <div class="constructor-header">
+                                    <div class="constructor-word" data-constructor-word>—</div>
+                                    <div class="constructor-translation" data-constructor-translation></div>
+                                    <div class="constructor-progress" data-constructor-progress></div>
+                                </div>
+                                <p class="constructor-hint" data-constructor-hint>Выберите следующую фразу, чтобы начать тренировку.</p>
+
+                                <div class="constructor-areas">
+                                    <div class="constructor-source" data-constructor-source></div>
+                                    <div class="constructor-target" data-constructor-target>
+                                        <div class="constructor-placeholder">Перетащите или нажмите на фрагменты, чтобы собрать предложение.</div>
+                                    </div>
+                                </div>
+
+                                <div class="constructor-controls">
+                                    <button class="constructor-control constructor-check" type="button">Проверить</button>
+                                    <button class="constructor-control constructor-reset" type="button">Сбросить</button>
+                                    <button class="constructor-control constructor-next" type="button">Следующее предложение</button>
+                                </div>
+
+                                <div class="constructor-feedback" aria-live="polite"></div>
+                                <div class="constructor-original" data-constructor-original></div>
+
+
+                            </section>
+
+                            
+                            <section class="constructor-panel" data-phase="dover">
+                                <div class="constructor-header">
+                                    <div class="constructor-word" data-constructor-word>—</div>
+                                    <div class="constructor-translation" data-constructor-translation></div>
+                                    <div class="constructor-progress" data-constructor-progress></div>
+                                </div>
+                                <p class="constructor-hint" data-constructor-hint>Выберите следующую фразу, чтобы начать тренировку.</p>
+
+                                <div class="constructor-areas">
+                                    <div class="constructor-source" data-constructor-source></div>
+                                    <div class="constructor-target" data-constructor-target>
+                                        <div class="constructor-placeholder">Перетащите или нажмите на фрагменты, чтобы собрать предложение.</div>
+                                    </div>
+                                </div>
+
+                                <div class="constructor-controls">
+                                    <button class="constructor-control constructor-check" type="button">Проверить</button>
+                                    <button class="constructor-control constructor-reset" type="button">Сбросить</button>
+                                    <button class="constructor-control constructor-next" type="button">Следующее предложение</button>
+                                </div>
+
+                                <div class="constructor-feedback" aria-live="polite"></div>
+                                <div class="constructor-original" data-constructor-original></div>
+
+
+                            </section>
+
+                            
+                            <section class="constructor-panel" data-phase="prison">
+                                <div class="constructor-header">
+                                    <div class="constructor-word" data-constructor-word>—</div>
+                                    <div class="constructor-translation" data-constructor-translation></div>
+                                    <div class="constructor-progress" data-constructor-progress></div>
+                                </div>
+                                <p class="constructor-hint" data-constructor-hint>Выберите следующую фразу, чтобы начать тренировку.</p>
+
+                                <div class="constructor-areas">
+                                    <div class="constructor-source" data-constructor-source></div>
+                                    <div class="constructor-target" data-constructor-target>
+                                        <div class="constructor-placeholder">Перетащите или нажмите на фрагменты, чтобы собрать предложение.</div>
+                                    </div>
+                                </div>
+
+                                <div class="constructor-controls">
+                                    <button class="constructor-control constructor-check" type="button">Проверить</button>
+                                    <button class="constructor-control constructor-reset" type="button">Сбросить</button>
+                                    <button class="constructor-control constructor-next" type="button">Следующее предложение</button>
+                                </div>
+
+                                <div class="constructor-feedback" aria-live="polite"></div>
+                                <div class="constructor-original" data-constructor-original></div>
+
+
+                            </section>
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exercises-container">
+
+            
+            <div class="exercise-container active" data-phase="throne">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: РОКОВОЕ РЕШЕНИЕ В ТРОННОМ ЗАЛЕ</h4>
+                    <div class="exercise-text">Великолепный <span class="blank" data-answer="PRÄCHTIG" data-hint="великолепный">_______ (великолепный)</span> тронный зал. Я восседаю на <span class="blank" data-answer="der THRON" data-hint="троне">_______ (троне)</span>, моя <span class="blank" data-answer="die KRONE" data-hint="корона">_______ (корона)</span> сверкает в свете факелов. Весь двор собрался на <span class="blank" data-answer="die ZEREMONIE" data-hint="церемонию">_______ (церемонию)</span>. «Мы стары», - <span class="blank" data-answer="VERKÜNDE" data-hint="провозглашаю">_______ (провозглашаю)</span> я. «Пора разделить наше <span class="blank" data-answer="das KÖNIGREICH" data-hint="королевство">_______ (королевство)</span> и передать <span class="blank" data-answer="die MACHT" data-hint="власть">_______ (власть)</span> молодым, чтобы они могли <span class="blank" data-answer="HERRSCHEN" data-hint="править">_______ (править)</span>». Я разворачиваю карту королевства. «Но сначала - испытание! Та из дочерей, что любит нас больше всех, получит лучшую часть!»</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
             </div>
+
+            
+            <div class="exercise-container" data-phase="goneril">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ПЕРВОЕ ПРЕДАТЕЛЬСТВО</h4>
+                    <div class="exercise-text">В доме старшей дочери я узнаю горький вкус <span class="blank" data-answer="UNDANKBARKEIT" data-hint="неблагодарности">_______ (неблагодарности)</span>. Гонерилья хочет меня <span class="blank" data-answer="DEMÜTIGEN" data-hint="унизить">_______ (унизить)</span>, отобрать мою свиту! «Старик безумный», - слышу я шёпот слуг. Мой <span class="blank" data-answer="der ZORN" data-hint="гнев">_______ (гнев)</span> пылает как пожар! Я <span class="blank" data-answer="VERFLUCHE" data-hint="проклинаю">_______ (проклинаю)</span> её: «Пусть ты останешься бездетной, змея!» Она хочет <span class="blank" data-answer="VERTREIBEN" data-hint="изгнать">_______ (изгнать)</span> меня из дома, который я ей подарил! Эта <span class="blank" data-answer="die KRÄNKUNG" data-hint="обида">_______ (обида)</span> жжёт сильнее огня. Я покидаю её дом с <span class="blank" data-answer="der FLUCH" data-hint="проклятием">_______ (проклятием)</span> на устах.</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+
+            
+            <div class="exercise-container" data-phase="regan">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ДВОЙНОЕ ПРЕДАТЕЛЬСТВО</h4>
+                    <div class="exercise-text">У ворот замка Реганы - позор! Моего слугу Кента заковали в колодки! Регана с Гонерильей сговорились <span class="blank" data-answer="VERSTOSSEN" data-hint="отвергнуть">_______ (отвергнуть)</span> меня. «Зачем тебе хоть один слуга?» - их <span class="blank" data-answer="die GRAUSAMKEIT" data-hint="жестокость">_______ (жестокость)</span> режет как нож. Я <span class="blank" data-answer="BETTLE" data-hint="прошу">_______ (прошу)</span> - я, король! - прошу крова у собственных детей! <span class="blank" data-answer="die VERZWEIFLUNG" data-hint="отчаяние">_______ (отчаяние)</span> сжимает горло. «Вы думаете, я буду плакать? Нет, я найду такую месть...» <span class="blank" data-answer="die EINSAMKEIT" data-hint="одиночество">_______ (одиночество)</span> окутывает меня как саван. Ни одной <span class="blank" data-answer="die TRÄNE" data-hint="слезы">_______ (слезы)</span> не пролью перед ними! В моей <span class="blank" data-answer="die NOT" data-hint="нужде">_______ (нужде)</span> они видят только обузу.</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+
+            
+            <div class="exercise-container" data-phase="storm">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: БЕЗУМИЕ В БУРЕ</h4>
+                    <div class="exercise-text"><span class="blank" data-answer="der STURM" data-hint="буря">_______ (буря)</span> снаружи и буря внутри! Я <span class="blank" data-answer="SCHREIE" data-hint="кричу">_______ (кричу)</span> в небеса: «Дуйте, ветры! Лейтесь, ливни!» <span class="blank" data-answer="der DONNER" data-hint="гром">_______ (гром)</span> - мой собеседник, <span class="blank" data-answer="der BLITZ" data-hint="молния">_______ (молния)</span> - мой факел! Пусть <span class="blank" data-answer="TOBEN" data-hint="бушуют">_______ (бушуют)</span> все стихии! Я срываю одежды - <span class="blank" data-answer="NACKT" data-hint="голый">_______ (голый)</span> я пришёл в мир, голым встречу <span class="blank" data-answer="der WAHNSINN" data-hint="безумие">_______ (безумие)</span>! «Человек - всего лишь бедное голое животное!» <span class="blank" data-answer="das CHAOS" data-hint="хаос">_______ (хаос)</span> в природе милосерднее, чем жестокость дочерей! Мой разум трещит как корабль в шторме!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+
+            
+            <div class="exercise-container" data-phase="hut">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ПРОЗРЕНИЕ В НИЩЕТЕ</h4>
+                    <div class="exercise-text">В убогой <span class="blank" data-answer="die HÜTTE" data-hint="хижине">_______ (хижине)</span> я встречаю настоящее <span class="blank" data-answer="das ELEND" data-hint="нищету">_______ (нищету)</span>. Бедный Том - <span class="blank" data-answer="der BETTLER" data-hint="нищий">_______ (нищий)</span> в лохмотьях - учит меня истине. «Человек без одежд, без замков - вот истинный человек!» Мы все <span class="blank" data-answer="ARM" data-hint="бедны">_______ (бедны)</span> перед лицом судьбы. Мы <span class="blank" data-answer="FRIEREN" data-hint="мёрзнем">_______ (мёрзнем)</span> не от холода, а от жестокости мира. Я вижу, как <span class="blank" data-answer="LEIDEN" data-hint="страдают">_______ (страдают)</span> те, кого я никогда не замечал на троне. Мой верный <span class="blank" data-answer="der NARR" data-hint="шут">_______ (шут)</span> смеётся сквозь слёзы: «Тот, кто имел всё и потерял, мудрее того, кто никогда не имел». <span class="blank" data-answer="die ERKENNTNIS" data-hint="познание">_______ (познание)</span> приходит через боль.</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+
+            
+            <div class="exercise-container" data-phase="dover">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ВСТРЕЧА С ИСТИННОЙ ЛЮБОВЬЮ</h4>
+                    <div class="exercise-text">На скалах Дувра я <span class="blank" data-answer="ERKENNE" data-hint="узнаю">_______ (узнаю)</span> ангела - мою Корделию! Теперь я <span class="blank" data-answer="VERSTEHE" data-hint="понимаю">_______ (понимаю)</span>: только она говорила <span class="blank" data-answer="die WAHRHEIT" data-hint="правду">_______ (правду)</span>. «Прости глупого старика!» - моя <span class="blank" data-answer="die REUE" data-hint="раскаяние">_______ (раскаяние)</span> жжёт душу. Слишком поздно приходит <span class="blank" data-answer="die WEISHEIT" data-hint="мудрость">_______ (мудрость)</span>. «Можешь ли <span class="blank" data-answer="VERGEBEN" data-hint="простить">_______ (простить)</span> отца, который был слеп?» Моя <span class="blank" data-answer="die EINSICHT" data-hint="прозрение">_______ (прозрение)</span> пришло ценой королевства. Я <span class="blank" data-answer="SCHULDIG" data-hint="виновен">_______ (виновен)</span> - я отверг истинную любовь ради лести! «Не плачь, дитя. Твои слёзы жгут мою душу сильнее адского пламени!»</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+
+            
+            <div class="exercise-container" data-phase="prison">
+                <div class="exercise-section">
+                    <h4 class="exercise-title">📝 Упражнение: ПОСЛЕДНЕЕ ПРОЩАНИЕ</h4>
+                    <div class="exercise-text">В темнице с Корделией - рай после ада! «Мы будем петь как птицы в клетке, <span class="blank" data-answer="VERZEIHEN" data-hint="прощать">_______ (прощать)</span> друг друга каждый день». Но судьба жестока - моё дитя мертво! «Нет, нет, нет жизни!» <span class="blank" data-answer="der TOD" data-hint="смерть">_______ (смерть)</span> забрал мой свет! Я готов <span class="blank" data-answer="STERBEN" data-hint="умереть">_______ (умереть)</span> - моё <span class="blank" data-answer="das HERZ" data-hint="сердце">_______ (сердце)</span> разбито. «Смотрите, её губы... она дышит?» - последняя иллюзия перед <span class="blank" data-answer="das ENDE" data-hint="концом">_______ (концом)</span>. <span class="blank" data-answer="die TRAUER" data-hint="скорбь">_______ (скорбь)</span> разрывает душу. Наш <span class="blank" data-answer="der ABSCHIED" data-hint="прощание">_______ (прощание)</span> - не в этом мире, а в следующем. Наша любовь <span class="blank" data-answer="EWIG" data-hint="вечна">_______ (вечна)</span>, даже смерть не разлучит нас!</div>
+                    <button class="show-answer-btn" onclick="toggleAnswers(this)" type="button" aria-label="Показать или скрыть ответы">Показать ответы</button>
+                </div>
+            </div>
+
+            
+
         </div>
 
         <nav class="bottom-nav">
-            <a href="../index.html" class="nav-link">← К главной</a>
+            <a href="../index.html" class="nav-link">← На главную</a>
         </nav>
     </div>
 
     <script>
-    // ========================================
-    // ЕДИНЫЙ RUNTIME БЕЗ РЕКУРСИИ
-    // ========================================
-    (function() {
-        'use strict';
-
-        // Данные персонажа и фаз (генерируется Python)
         const phaseVocabularies = {
     "throne": {
         "title": "Тронный зал",
@@ -946,48 +1092,48 @@
             {
                 "question": "Что означает немецкое слово «der Thron»?",
                 "choices": [
-                    "королевство",
-                    "править",
                     "власть",
-                    "трон"
-                ],
-                "correctIndex": 3
-            },
-            {
-                "question": "Что означает немецкое слово «das Königreich»?",
-                "choices": [
                     "править",
-                    "власть",
-                    "королевство",
-                    "трон"
+                    "трон",
+                    "королевство"
                 ],
                 "correctIndex": 2
             },
             {
+                "question": "Что означает немецкое слово «das Königreich»?",
+                "choices": [
+                    "королевство",
+                    "власть",
+                    "трон",
+                    "править"
+                ],
+                "correctIndex": 0
+            },
+            {
                 "question": "Что означает немецкое слово «die Macht»?",
                 "choices": [
-                    "корона",
+                    "великолепный",
+                    "править",
+                    "королевство",
+                    "власть"
+                ],
+                "correctIndex": 3
+            },
+            {
+                "question": "Что означает немецкое слово «herrschen»?",
+                "choices": [
                     "власть",
+                    "править",
                     "королевство",
                     "великолепный"
                 ],
                 "correctIndex": 1
             },
             {
-                "question": "Что означает немецкое слово «herrschen»?",
-                "choices": [
-                    "великолепный",
-                    "церемония",
-                    "трон",
-                    "править"
-                ],
-                "correctIndex": 3
-            },
-            {
                 "question": "Что означает немецкое слово «verkünden»?",
                 "choices": [
-                    "трон",
-                    "королевство",
+                    "корона",
+                    "церемония",
                     "править",
                     "провозглашать"
                 ],
@@ -996,19 +1142,19 @@
             {
                 "question": "Что означает немецкое слово «die Krone»?",
                 "choices": [
-                    "трон",
                     "корона",
-                    "великолепный",
-                    "править"
+                    "трон",
+                    "провозглашать",
+                    "великолепный"
                 ],
-                "correctIndex": 1
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «die Zeremonie»?",
                 "choices": [
-                    "провозглашать",
-                    "власть",
-                    "трон",
+                    "править",
+                    "великолепный",
+                    "корона",
                     "церемония"
                 ],
                 "correctIndex": 3
@@ -1016,12 +1162,12 @@
             {
                 "question": "Что означает немецкое слово «prächtig»?",
                 "choices": [
-                    "церемония",
-                    "провозглашать",
-                    "корона",
-                    "великолепный"
+                    "трон",
+                    "великолепный",
+                    "королевство",
+                    "править"
                 ],
-                "correctIndex": 3
+                "correctIndex": 1
             }
         ],
         "quizAttempts": {},
@@ -1523,67 +1669,67 @@
             {
                 "question": "Что означает немецкое слово «demütigen»?",
                 "choices": [
-                    "проклинать",
-                    "унижать",
+                    "неблагодарность",
                     "гнев",
-                    "неблагодарность"
+                    "проклинать",
+                    "унижать"
                 ],
-                "correctIndex": 1
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «der Zorn»?",
                 "choices": [
+                    "гнев",
                     "проклинать",
                     "неблагодарность",
-                    "унижать",
-                    "гнев"
+                    "унижать"
                 ],
-                "correctIndex": 3
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «die Undankbarkeit»?",
                 "choices": [
                     "обида",
-                    "неблагодарность",
-                    "сожалеть",
-                    "проклятие"
+                    "изгонять",
+                    "гнев",
+                    "неблагодарность"
                 ],
-                "correctIndex": 1
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «verfluchen»?",
                 "choices": [
-                    "унижать",
-                    "неблагодарность",
+                    "изгонять",
                     "проклинать",
-                    "изгонять"
+                    "неблагодарность",
+                    "гнев"
                 ],
-                "correctIndex": 2
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «vertreiben»?",
                 "choices": [
-                    "неблагодарность",
+                    "сожалеть",
                     "гнев",
                     "изгонять",
-                    "проклинать"
+                    "неблагодарность"
                 ],
                 "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «die Kränkung»?",
                 "choices": [
-                    "проклятие",
-                    "унижать",
-                    "неблагодарность",
-                    "обида"
+                    "сожалеть",
+                    "обида",
+                    "проклинать",
+                    "неблагодарность"
                 ],
-                "correctIndex": 3
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «bereuen»?",
                 "choices": [
-                    "неблагодарность",
+                    "гнев",
                     "изгонять",
                     "проклинать",
                     "сожалеть"
@@ -1594,11 +1740,11 @@
                 "question": "Что означает немецкое слово «der Fluch»?",
                 "choices": [
                     "проклинать",
+                    "унижать",
                     "проклятие",
-                    "гнев",
-                    "изгонять"
+                    "обида"
                 ],
-                "correctIndex": 1
+                "correctIndex": 2
             }
         ],
         "quizAttempts": {},
@@ -2110,49 +2256,49 @@
             {
                 "question": "Что означает немецкое слово «verlassen»?",
                 "choices": [
-                    "отчаяние",
-                    "покидать",
                     "жестокость",
-                    "отвергать"
+                    "отвергать",
+                    "покидать",
+                    "отчаяние"
                 ],
-                "correctIndex": 1
+                "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «verstoßen»?",
                 "choices": [
-                    "жестокость",
                     "отчаяние",
-                    "отвергать",
-                    "покидать"
+                    "жестокость",
+                    "покидать",
+                    "отвергать"
                 ],
-                "correctIndex": 2
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «die Grausamkeit»?",
                 "choices": [
-                    "одиночество",
-                    "отвергать",
-                    "жестокость",
-                    "нужда"
+                    "покидать",
+                    "нужда",
+                    "слеза",
+                    "жестокость"
                 ],
-                "correctIndex": 2
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «die Verzweiflung»?",
                 "choices": [
-                    "жестокость",
                     "отчаяние",
                     "нужда",
-                    "покидать"
+                    "слеза",
+                    "жестокость"
                 ],
-                "correctIndex": 1
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «betteln»?",
                 "choices": [
                     "жестокость",
                     "отчаяние",
-                    "отвергать",
+                    "слеза",
                     "просить"
                 ],
                 "correctIndex": 3
@@ -2160,19 +2306,19 @@
             {
                 "question": "Что означает немецкое слово «die Einsamkeit»?",
                 "choices": [
-                    "одиночество",
-                    "нужда",
+                    "покидать",
                     "жестокость",
-                    "слеза"
+                    "одиночество",
+                    "просить"
                 ],
-                "correctIndex": 0
+                "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «die Träne»?",
                 "choices": [
+                    "отвергать",
                     "жестокость",
                     "одиночество",
-                    "покидать",
                     "слеза"
                 ],
                 "correctIndex": 3
@@ -2180,12 +2326,12 @@
             {
                 "question": "Что означает немецкое слово «die Not»?",
                 "choices": [
+                    "покидать",
                     "нужда",
-                    "слеза",
-                    "отчаяние",
-                    "отвергать"
+                    "просить",
+                    "одиночество"
                 ],
-                "correctIndex": 0
+                "correctIndex": 1
             }
         ],
         "quizAttempts": {},
@@ -2687,82 +2833,82 @@
             {
                 "question": "Что означает немецкое слово «der Sturm»?",
                 "choices": [
-                    "бушевать",
-                    "безумие",
                     "буря",
-                    "гром"
+                    "бушевать",
+                    "гром",
+                    "безумие"
                 ],
-                "correctIndex": 2
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «der Wahnsinn»?",
                 "choices": [
-                    "гром",
-                    "буря",
                     "безумие",
-                    "бушевать"
+                    "бушевать",
+                    "буря",
+                    "гром"
                 ],
-                "correctIndex": 2
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «toben»?",
                 "choices": [
-                    "молния",
-                    "буря",
+                    "безумие",
+                    "бушевать",
                     "голый",
-                    "бушевать"
+                    "хаос"
                 ],
-                "correctIndex": 3
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «der Donner»?",
                 "choices": [
-                    "хаос",
                     "голый",
-                    "бушевать",
-                    "гром"
+                    "гром",
+                    "кричать",
+                    "буря"
                 ],
-                "correctIndex": 3
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «der Blitz»?",
                 "choices": [
-                    "бушевать",
-                    "гром",
                     "молния",
-                    "безумие"
+                    "бушевать",
+                    "кричать",
+                    "буря"
                 ],
-                "correctIndex": 2
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «schreien»?",
                 "choices": [
-                    "безумие",
-                    "кричать",
                     "голый",
+                    "молния",
+                    "кричать",
                     "гром"
                 ],
-                "correctIndex": 1
+                "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «nackt»?",
                 "choices": [
-                    "бушевать",
-                    "голый",
-                    "буря",
-                    "молния"
+                    "гром",
+                    "кричать",
+                    "безумие",
+                    "голый"
                 ],
-                "correctIndex": 1
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «das Chaos»?",
                 "choices": [
-                    "кричать",
-                    "молния",
                     "хаос",
-                    "безумие"
+                    "буря",
+                    "кричать",
+                    "бушевать"
                 ],
-                "correctIndex": 2
+                "correctIndex": 0
             }
         ],
         "quizAttempts": {},
@@ -3281,81 +3427,81 @@
                 "question": "Что означает немецкое слово «das Elend»?",
                 "choices": [
                     "бедный",
-                    "нищий",
                     "нищета",
+                    "нищий",
                     "мёрзнуть"
                 ],
-                "correctIndex": 2
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «der Bettler»?",
                 "choices": [
                     "нищий",
                     "бедный",
-                    "мёрзнуть",
-                    "нищета"
+                    "нищета",
+                    "мёрзнуть"
                 ],
                 "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «arm»?",
                 "choices": [
-                    "бедный",
                     "шут",
+                    "мёрзнуть",
                     "нищета",
-                    "мёрзнуть"
+                    "бедный"
                 ],
-                "correctIndex": 0
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «frieren»?",
                 "choices": [
+                    "познание",
+                    "бедный",
                     "мёрзнуть",
-                    "хижина",
-                    "шут",
-                    "познание"
+                    "нищета"
                 ],
-                "correctIndex": 0
+                "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «die Hütte»?",
                 "choices": [
-                    "мёрзнуть",
                     "нищий",
-                    "хижина",
-                    "бедный"
+                    "страдать",
+                    "мёрзнуть",
+                    "хижина"
                 ],
-                "correctIndex": 2
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «leiden»?",
                 "choices": [
                     "нищета",
-                    "шут",
-                    "страдать",
-                    "мёрзнуть"
+                    "познание",
+                    "мёрзнуть",
+                    "страдать"
                 ],
-                "correctIndex": 2
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «der Narr»?",
                 "choices": [
-                    "шут",
-                    "страдать",
+                    "познание",
                     "мёрзнуть",
-                    "бедный"
+                    "нищий",
+                    "шут"
                 ],
-                "correctIndex": 0
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «die Erkenntnis»?",
                 "choices": [
+                    "нищий",
                     "шут",
-                    "хижина",
-                    "бедный",
-                    "познание"
+                    "познание",
+                    "страдать"
                 ],
-                "correctIndex": 3
+                "correctIndex": 2
             }
         ],
         "quizAttempts": {},
@@ -3863,19 +4009,19 @@
             {
                 "question": "Что означает немецкое слово «erkennen»?",
                 "choices": [
+                    "узнавать",
                     "понимать",
                     "раскаяние",
-                    "правда",
-                    "узнавать"
+                    "правда"
                 ],
-                "correctIndex": 3
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «verstehen»?",
                 "choices": [
-                    "узнавать",
                     "раскаяние",
                     "правда",
+                    "узнавать",
                     "понимать"
                 ],
                 "correctIndex": 3
@@ -3885,37 +4031,37 @@
                 "choices": [
                     "раскаяние",
                     "прозрение",
-                    "правда",
-                    "виновный"
+                    "прощать",
+                    "правда"
                 ],
-                "correctIndex": 2
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «die Reue»?",
                 "choices": [
-                    "понимать",
+                    "узнавать",
                     "раскаяние",
-                    "виновный",
-                    "прощать"
+                    "прозрение",
+                    "мудрость"
                 ],
                 "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «die Weisheit»?",
                 "choices": [
-                    "виновный",
-                    "раскаяние",
+                    "правда",
                     "мудрость",
-                    "прощать"
+                    "раскаяние",
+                    "понимать"
                 ],
-                "correctIndex": 2
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «vergeben»?",
                 "choices": [
                     "понимать",
-                    "правда",
                     "раскаяние",
+                    "узнавать",
                     "прощать"
                 ],
                 "correctIndex": 3
@@ -3923,9 +4069,9 @@
             {
                 "question": "Что означает немецкое слово «die Einsicht»?",
                 "choices": [
-                    "правда",
-                    "понимать",
-                    "мудрость",
+                    "прощать",
+                    "узнавать",
+                    "виновный",
                     "прозрение"
                 ],
                 "correctIndex": 3
@@ -3933,12 +4079,12 @@
             {
                 "question": "Что означает немецкое слово «schuldig»?",
                 "choices": [
-                    "мудрость",
-                    "узнавать",
+                    "понимать",
                     "виновный",
-                    "прозрение"
+                    "прозрение",
+                    "раскаяние"
                 ],
-                "correctIndex": 2
+                "correctIndex": 1
             }
         ],
         "quizAttempts": {},
@@ -4454,39 +4600,39 @@
             {
                 "question": "Что означает немецкое слово «verzeihen»?",
                 "choices": [
-                    "прощать",
-                    "смерть",
                     "умирать",
-                    "конец"
+                    "конец",
+                    "прощать",
+                    "смерть"
                 ],
-                "correctIndex": 0
+                "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «der Tod»?",
                 "choices": [
-                    "конец",
                     "прощать",
-                    "умирать",
-                    "смерть"
+                    "конец",
+                    "смерть",
+                    "умирать"
                 ],
-                "correctIndex": 3
+                "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «sterben»?",
                 "choices": [
-                    "прощание",
                     "умирать",
+                    "вечный",
                     "сердце",
-                    "конец"
+                    "смерть"
                 ],
-                "correctIndex": 1
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «das Ende»?",
                 "choices": [
-                    "умирать",
                     "смерть",
-                    "прощание",
+                    "скорбь",
+                    "сердце",
                     "конец"
                 ],
                 "correctIndex": 3
@@ -4494,29 +4640,29 @@
             {
                 "question": "Что означает немецкое слово «das Herz»?",
                 "choices": [
+                    "смерть",
                     "сердце",
                     "вечный",
-                    "конец",
-                    "умирать"
+                    "прощать"
                 ],
-                "correctIndex": 0
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «die Trauer»?",
                 "choices": [
                     "скорбь",
-                    "смерть",
-                    "конец",
-                    "прощание"
+                    "умирать",
+                    "прощать",
+                    "сердце"
                 ],
                 "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «der Abschied»?",
                 "choices": [
-                    "скорбь",
-                    "вечный",
                     "прощать",
+                    "конец",
+                    "скорбь",
                     "прощание"
                 ],
                 "correctIndex": 3
@@ -4524,12 +4670,12 @@
             {
                 "question": "Что означает немецкое слово «ewig»?",
                 "choices": [
-                    "прощание",
+                    "скорбь",
+                    "смерть",
                     "сердце",
-                    "вечный",
-                    "конец"
+                    "вечный"
                 ],
-                "correctIndex": 2
+                "correctIndex": 3
             }
         ],
         "quizAttempts": {},
@@ -4648,520 +4794,2369 @@ window.REVIEW_QUEUE_KEY = REVIEW_QUEUE_KEY;
 window.quizStateCache = quizStateCache;
 
 
+const studyQueueState = {
+    queue: [],
+    lookup: new Map(),
+    initialized: false,
+};
 
-        // ========================================
-        // БАЗОВАЯ НАВИГАЦИЯ ПО ФАЗАМ
-        // ========================================
-        let currentPhaseIndex = 0;
-        const phaseKeys = Object.keys(window.phaseVocabularies || {});
-        
-        function changePhase(index) {
-            if (index < 0 || index >= phaseKeys.length) return;
-            
-            currentPhaseIndex = index;
-            const phaseId = phaseKeys[index];
-            
-            // Обновляем активные точки на timeline
-            document.querySelectorAll('.journey-point').forEach((point, i) => {
-                point.classList.toggle('active', i === index);
-            });
-            
-            // Обновляем название текущей фазы
-            const currentPhaseSpan = document.getElementById('current-phase');
-            if (currentPhaseSpan && window.phaseVocabularies[phaseId]) {
-                currentPhaseSpan.textContent = window.phaseVocabularies[phaseId].title;
+function sanitizeStudyExample(example) {
+    if (!example || typeof example !== 'object') {
+        return null;
+    }
+
+    const german = typeof example.german === 'string' ? example.german : '';
+    const russian = typeof example.russian === 'string' ? example.russian : '';
+
+    if (!german && !russian) {
+        return null;
+    }
+
+    return {
+        german: german,
+        russian: russian,
+    };
+}
+
+function sanitizeStudyEntry(entry) {
+    if (!entry || typeof entry !== 'object') {
+        return null;
+    }
+
+    const sanitized = { ...entry };
+
+    sanitized.word = typeof sanitized.word === 'string' ? sanitized.word : '';
+    sanitized.translation = typeof sanitized.translation === 'string' ? sanitized.translation : '';
+    sanitized.russian_hint = typeof sanitized.russian_hint === 'string' ? sanitized.russian_hint : '';
+    sanitized.transcription = typeof sanitized.transcription === 'string' ? sanitized.transcription : '';
+    sanitized.characterId = typeof sanitized.characterId === 'string' && sanitized.characterId
+        ? sanitized.characterId
+        : (typeof sanitized.character_id === 'string' ? sanitized.character_id : (typeof characterId === 'string' ? characterId : ''));
+    sanitized.phaseKey = typeof sanitized.phaseKey === 'string'
+        ? sanitized.phaseKey
+        : (typeof sanitized.phase_id === 'string' ? sanitized.phase_id : '');
+    sanitized.sentence = typeof sanitized.sentence === 'string' ? sanitized.sentence : '';
+    sanitized.sentenceTranslation = typeof sanitized.sentenceTranslation === 'string'
+        ? sanitized.sentenceTranslation
+        : '';
+    sanitized.emoji = typeof sanitized.emoji === 'string' && sanitized.emoji ? sanitized.emoji : '📝';
+
+    if (Array.isArray(sanitized.examples)) {
+        sanitized.examples = sanitized.examples
+            .map(sanitizeStudyExample)
+            .filter(Boolean);
+    } else {
+        sanitized.examples = [];
+    }
+
+    if (!sanitized.examples.length && (sanitized.sentence || sanitized.sentenceTranslation)) {
+        sanitized.examples.push({
+            german: sanitized.sentence || '',
+            russian: sanitized.sentenceTranslation || '',
+        });
+    }
+
+    if (typeof sanitized.example !== 'string' || !sanitized.example) {
+        sanitized.example = sanitized.sentence || '';
+    }
+
+    return sanitized;
+}
+
+function readStudyQueueFromStorage() {
+    if (typeof localStorage === 'undefined') {
+        return [];
+    }
+
+    let storedValue = null;
+    try {
+        storedValue = localStorage.getItem(REVIEW_QUEUE_KEY);
+    } catch (error) {
+        console.warn('[StudyQueue] Unable to read stored queue', error);
+        return [];
+    }
+
+    if (!storedValue) {
+        return [];
+    }
+
+    try {
+        const parsed = JSON.parse(storedValue);
+        if (!Array.isArray(parsed)) {
+            return [];
+        }
+        return parsed.map(sanitizeStudyEntry).filter(Boolean);
+    } catch (error) {
+        console.warn('[StudyQueue] Failed to parse stored queue', error);
+        return [];
+    }
+}
+
+function rebuildStudyLookup() {
+    studyQueueState.lookup = new Map();
+    studyQueueState.queue.forEach(entry => {
+        const key = getStudyWordKey(entry);
+        if (key) {
+            studyQueueState.lookup.set(key, entry);
+        }
+    });
+}
+
+function ensureStudyQueueLoaded(forceReload = false) {
+    if (!studyQueueState.initialized || forceReload) {
+        studyQueueState.queue = readStudyQueueFromStorage();
+        rebuildStudyLookup();
+        studyQueueState.initialized = true;
+    }
+    return studyQueueState.queue;
+}
+
+function getStudyWordKey(source) {
+    if (!source) {
+        return null;
+    }
+
+    const wordValue = typeof source.word === 'string' ? source.word.trim().toLowerCase() : '';
+    const characterValue =
+        (typeof source.characterId === 'string' && source.characterId.trim()) ? source.characterId.trim() :
+        (typeof source.character_id === 'string' && source.character_id.trim()) ? source.character_id.trim() :
+        (typeof characterId === 'string' ? characterId : '');
+
+    if (!wordValue) {
+        return null;
+    }
+
+    return `${characterValue || 'unknown'}::${wordValue}`;
+}
+
+function isWordInStudyQueue(source) {
+    ensureStudyQueueLoaded();
+    const key = getStudyWordKey(source);
+    if (!key) {
+        return false;
+    }
+    return studyQueueState.lookup.has(key);
+}
+
+function createStudyEntry(rawData) {
+    const sanitized = sanitizeStudyEntry(rawData);
+    if (!sanitized) {
+        return null;
+    }
+
+    if (!sanitized.characterId) {
+        sanitized.characterId = typeof characterId === 'string' ? characterId : '';
+    }
+
+    if (typeof sanitized.phaseKey !== 'string') {
+        sanitized.phaseKey = '';
+    }
+
+    return sanitized;
+}
+
+function persistStudyQueue(queue) {
+    if (typeof localStorage === 'undefined') {
+        return true;
+    }
+
+    try {
+        localStorage.setItem(REVIEW_QUEUE_KEY, JSON.stringify(queue));
+        if (typeof window !== 'undefined' && typeof window.dispatchEvent === 'function') {
+            window.dispatchEvent(new Event('storage'));
+        }
+        return true;
+    } catch (error) {
+        console.error('[StudyQueue] Unable to persist queue', error);
+        return false;
+    }
+}
+
+function updateStudyCounterBadge() {
+    const counter = document.querySelector('[data-study-count]');
+    if (!counter) {
+        return;
+    }
+
+    const count = Array.isArray(studyQueueState.queue) ? studyQueueState.queue.length : 0;
+    counter.textContent = String(count);
+
+    const container = counter.closest('[data-study-counter]');
+    if (container) {
+        container.classList.toggle('study-counter-badge--active', count > 0);
+
+        let wordForm = 'слов';
+        if (count > 0) {
+            const mod10 = count % 10;
+            const mod100 = count % 100;
+            if (mod10 === 1 && mod100 !== 11) {
+                wordForm = 'слово';
+            } else if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) {
+                wordForm = 'слова';
             }
-            
-            // Обновляем словарь
-            updateVocabulary(phaseId);
-            
-            // Обновляем упражнения
-            updateExercises(phaseId);
         }
 
-        // ========================================
-        // ОБНОВЛЕНИЕ СЛОВАРЯ
-        // ========================================
-        function updateVocabulary(phaseId) {
-            const grid = document.querySelector('.vocabulary-grid');
-            if (!grid) return;
-            
-            const phaseData = window.phaseVocabularies[phaseId];
-            if (!phaseData || !phaseData.words) {
-                grid.innerHTML = '<p>Нет слов для этой фазы</p>';
+        const label = count > 0
+            ? `В списке изучения ${count} ${wordForm}`
+            : 'Список изучения пуст';
+        container.setAttribute('aria-label', label);
+    }
+}
+
+function applyStudyButtonState(button, isActive) {
+    if (!button) {
+        return;
+    }
+
+    const defaultLabel = button.dataset.defaultLabel || 'Изучить';
+    const activeLabel = button.dataset.activeLabel || 'В списке';
+    const inactiveTitle = button.dataset.inactiveTitle || 'Добавить слово в список изучения';
+    const activeTitle = button.dataset.activeTitle || 'Удалить слово из списка изучения';
+
+    button.disabled = false;
+    button.style.background = '';
+    button.classList.toggle('added', Boolean(isActive));
+    button.dataset.inStudy = isActive ? 'true' : 'false';
+    button.textContent = isActive ? activeLabel : defaultLabel;
+    button.title = isActive ? activeTitle : inactiveTitle;
+    button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+}
+
+function updateAllStudyButtons() {
+    const buttons = document.querySelectorAll('.btn-study');
+    if (!buttons || buttons.length === 0) {
+        return;
+    }
+
+    buttons.forEach(button => {
+        const key = getStudyWordKey({
+            word: button.dataset.word || '',
+            characterId: button.dataset.characterId || (typeof characterId === 'string' ? characterId : ''),
+        });
+        const isActive = key ? studyQueueState.lookup.has(key) : false;
+        applyStudyButtonState(button, isActive);
+    });
+}
+
+function refreshStudyUI() {
+    updateStudyCounterBadge();
+    updateAllStudyButtons();
+}
+
+function addWordToStudyQueue(wordData) {
+    ensureStudyQueueLoaded();
+
+    const entry = createStudyEntry(wordData);
+    if (!entry) {
+        return false;
+    }
+
+    const key = getStudyWordKey(entry);
+    if (!key) {
+        return false;
+    }
+
+    if (studyQueueState.lookup.has(key)) {
+        return true;
+    }
+
+    const newQueue = studyQueueState.queue.concat([entry]);
+    if (!persistStudyQueue(newQueue)) {
+        return false;
+    }
+
+    studyQueueState.queue = newQueue;
+    studyQueueState.lookup.set(key, entry);
+    refreshStudyUI();
+    return true;
+}
+
+function removeWordFromStudyQueue(wordData) {
+    ensureStudyQueueLoaded();
+
+    const key = getStudyWordKey(wordData);
+    if (!key) {
+        return false;
+    }
+
+    if (!studyQueueState.lookup.has(key)) {
+        return true;
+    }
+
+    const newQueue = studyQueueState.queue.filter(item => getStudyWordKey(item) !== key);
+    if (!persistStudyQueue(newQueue)) {
+        return false;
+    }
+
+    studyQueueState.queue = newQueue;
+    studyQueueState.lookup.delete(key);
+    refreshStudyUI();
+    return true;
+}
+
+function toggleStudyWord(wordData) {
+    ensureStudyQueueLoaded();
+
+    const key = getStudyWordKey(wordData);
+    if (!key) {
+        return null;
+    }
+
+    if (studyQueueState.lookup.has(key)) {
+        return removeWordFromStudyQueue(wordData) ? false : null;
+    }
+
+    return addWordToStudyQueue(wordData) ? true : null;
+}
+
+function buildStudyPayloadFromButton(button, item) {
+    const dataset = button ? button.dataset || {} : {};
+    const payload = {
+        word: dataset.word || (item && item.word) || '',
+        translation: dataset.translation || (item && item.translation) || '',
+        russian_hint: dataset.russianHint || (item && item.russian_hint) || '',
+        transcription: dataset.transcription || (item && item.transcription) || '',
+        characterId: dataset.characterId || (typeof characterId === 'string' ? characterId : ''),
+        phaseKey: dataset.phaseKey || '',
+        sentence: dataset.sentence || (item && item.sentence) || '',
+        sentenceTranslation: dataset.sentenceTranslation || (item && item.sentenceTranslation) || '',
+        emoji: dataset.emoji || (item && item.visual_hint) || '📝',
+    };
+
+    const examples = [];
+    if (payload.sentence || payload.sentenceTranslation) {
+        examples.push({
+            german: payload.sentence,
+            russian: payload.sentenceTranslation,
+        });
+    }
+
+    payload.examples = examples;
+    payload.example = payload.example || payload.sentence || '';
+
+    if (item && item.russian_hint && !payload.russian_hint) {
+        payload.russian_hint = item.russian_hint;
+    }
+
+    if (item && Array.isArray(item.themes)) {
+        payload.themes = item.themes.slice();
+    }
+
+    if (item && Array.isArray(item.wordFamily)) {
+        payload.wordFamily = item.wordFamily.slice();
+    }
+
+    if (item && Array.isArray(item.sentenceParts)) {
+        payload.sentenceParts = item.sentenceParts.slice();
+    }
+
+    return payload;
+}
+
+if (typeof window !== 'undefined') {
+    window.addEventListener('storage', function(event) {
+        if (event && event.key && event.key !== REVIEW_QUEUE_KEY) {
+            return;
+        }
+        ensureStudyQueueLoaded(true);
+        refreshStudyUI();
+    });
+}
+
+function queuePhaseReview(detail) {
+    if (typeof localStorage === 'undefined') {
+        return;
+    }
+
+    let queue = [];
+    try {
+        const stored = localStorage.getItem(REVIEW_QUEUE_KEY);
+        if (stored) {
+            const parsed = JSON.parse(stored);
+            if (Array.isArray(parsed)) {
+                queue = parsed;
+            }
+        }
+    } catch (error) {
+        console.warn('[ReviewQueue] Unable to read review queue', error);
+    }
+
+    queue = queue.filter(entry => {
+        if (!entry) return false;
+        return !(entry.characterId === detail.characterId && entry.phaseId === detail.phaseId);
+    });
+
+    if (detail.incorrectWords && detail.incorrectWords.length > 0) {
+        queue.push(detail);
+    }
+
+    try {
+        localStorage.setItem(REVIEW_QUEUE_KEY, JSON.stringify(queue));
+    } catch (error) {
+        console.warn('[ReviewQueue] Unable to update review queue', error);
+    }
+}
+
+// Device detection
+const isTouchDevice = ('ontouchstart' in window) ||
+                      (navigator.maxTouchPoints > 0) ||
+                      (navigator.msMaxTouchPoints > 0);
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+const isAndroid = /Android/.test(navigator.userAgent);
+
+// Prevent iOS zoom on double tap
+if (isIOS) {
+    let lastTouchEnd = 0;
+    document.addEventListener('touchend', function(event) {
+        const now = Date.now();
+        if (now - lastTouchEnd <= 300) {
+            event.preventDefault();
+        }
+        lastTouchEnd = now;
+    }, false);
+}
+
+function clampProgress(value) {
+    if (isNaN(value)) return 0;
+    return Math.min(100, Math.max(0, value));
+}
+
+function ensureProgressLineLength() {
+    if (!progressLineElement) return 0;
+    if (progressLineLength) return progressLineLength;
+
+    if (typeof progressLineElement.getTotalLength === 'function') {
+        progressLineLength = progressLineElement.getTotalLength();
+    }
+
+    if (!progressLineLength && typeof progressLineElement.getBBox === 'function') {
+        try {
+            const bbox = progressLineElement.getBBox();
+            if (bbox && bbox.width) {
+                progressLineLength = bbox.width;
+            }
+        } catch (error) {
+            console.warn('[ProgressLine] Unable to get bounding box length', error);
+        }
+    }
+
+    if (!progressLineLength) {
+        const parent = progressLineElement.parentElement;
+        if (parent) {
+            const parentWidth = parent.getBoundingClientRect().width;
+            if (parentWidth) {
+                progressLineLength = parentWidth;
+            }
+        }
+    }
+
+    if (!progressLineLength) {
+        progressLineLength = 1;
+    }
+
+    return progressLineLength;
+}
+
+function updateProgressLineByPercent(progressPercent) {
+    if (!progressLineElement) return;
+
+    const length = ensureProgressLineLength();
+    progressLineElement.style.strokeDasharray = `${length} ${length}`;
+
+    const clamped = clampProgress(progressPercent);
+    const offset = length - (length * clamped / 100);
+    progressLineElement.style.strokeDashoffset = offset;
+}
+
+function initializeProgressLine() {
+    progressLineElement = document.querySelector('.progress-line');
+    if (!progressLineElement) return;
+
+    const startValue = clampProgress(parseFloat(progressLineElement.dataset.startProgress || '0'));
+    ensureProgressLineLength();
+    updateProgressLineByPercent(startValue);
+}
+
+function getConstructorSets(phaseKey) {
+    const phase = phaseVocabularies[phaseKey];
+    if (!phase) {
+        return [];
+    }
+
+    const sets = phase.sentenceParts;
+    return Array.isArray(sets) ? sets : [];
+}
+
+function ensureConstructorState(phaseKey) {
+    if (!constructorState[phaseKey]) {
+        constructorState[phaseKey] = {
+            index: 0,
+        };
+    }
+    return constructorState[phaseKey];
+}
+
+function buildConstructorFragment(text, index) {
+    const fragment = document.createElement('button');
+    fragment.type = 'button';
+    fragment.className = 'constructor-fragment';
+    fragment.dataset.index = String(index);
+    fragment.textContent = text;
+    return fragment;
+}
+
+function clearConstructorFeedback(panel) {
+    if (!panel) return;
+
+    const feedback = panel.querySelector('.constructor-feedback');
+    if (feedback) {
+        feedback.textContent = '';
+        feedback.classList.remove('success', 'error');
+    }
+
+    const original = panel.querySelector('[data-constructor-original]');
+    if (original) {
+        original.textContent = '';
+    }
+}
+
+function updateConstructorPlaceholder(panel) {
+    if (!panel) return;
+
+    const target = panel.querySelector('[data-constructor-target]');
+    if (!target) return;
+
+    const fragments = target.querySelectorAll('.constructor-fragment');
+    if (fragments.length > 0) {
+        target.classList.add('has-fragments');
+    } else {
+        target.classList.remove('has-fragments');
+    }
+}
+
+function renderConstructorForPhase(phaseKey) {
+    const panel = document.querySelector(`.constructor-panel[data-phase="${phaseKey}"]`);
+    if (!panel) {
+        return;
+    }
+
+    const sets = getConstructorSets(phaseKey);
+    const state = ensureConstructorState(phaseKey);
+
+    const wordElement = panel.querySelector('[data-constructor-word]');
+    const translationElement = panel.querySelector('[data-constructor-translation]');
+    const progressElement = panel.querySelector('[data-constructor-progress]');
+    const hintElement = panel.querySelector('[data-constructor-hint]');
+    const source = panel.querySelector('[data-constructor-source]');
+    const target = panel.querySelector('[data-constructor-target]');
+    const checkBtn = panel.querySelector('.constructor-check');
+    const resetBtn = panel.querySelector('.constructor-reset');
+    const nextBtn = panel.querySelector('.constructor-next');
+
+    clearConstructorFeedback(panel);
+
+    if (!sets.length) {
+        if (wordElement) wordElement.textContent = '—';
+        if (translationElement) translationElement.textContent = '';
+        if (progressElement) progressElement.textContent = '';
+        if (hintElement) {
+            hintElement.textContent = 'Для этой фазы пока нет предложений для конструктора.';
+        }
+        if (source) {
+            source.innerHTML = '';
+        }
+        if (target) {
+            target.innerHTML = '<div class="constructor-placeholder">Предложения появятся позже.</div>';
+            target.classList.remove('has-fragments');
+        }
+        [checkBtn, resetBtn, nextBtn].forEach(btn => {
+            if (btn) {
+                btn.disabled = true;
+            }
+        });
+        refreshActiveExerciseContentHeight();
+        return;
+    }
+
+    if (state.index >= sets.length) {
+        state.index = 0;
+    }
+    if (state.index < 0) {
+        state.index = sets.length - 1;
+    }
+
+    const current = sets[state.index];
+
+    if (wordElement) {
+        wordElement.textContent = current.word || '—';
+    }
+
+    if (translationElement) {
+        translationElement.textContent = 'Перевод появится после проверки.';
+    }
+
+    if (progressElement) {
+        progressElement.textContent = `${state.index + 1} / ${sets.length}`;
+    }
+
+    if (hintElement) {
+        if (current.translation) {
+            hintElement.textContent = `Соберите предложение со словом «${current.word}». Подсказка: ${current.translation}.`;
+        } else {
+            hintElement.textContent = `Соберите предложение со словом «${current.word}».`;
+        }
+    }
+
+    if (source) {
+        source.innerHTML = '';
+        const indices = current.parts.map((_, idx) => idx);
+        const shuffled = shuffleArray(indices);
+        shuffled.forEach(idx => {
+            const fragment = buildConstructorFragment(current.parts[idx], idx);
+            source.appendChild(fragment);
+        });
+    }
+
+    if (target) {
+        target.innerHTML = '<div class="constructor-placeholder">Перетащите или нажмите на фрагменты, чтобы собрать предложение.</div>';
+        target.classList.remove('has-fragments');
+    }
+
+    [checkBtn, resetBtn, nextBtn].forEach(btn => {
+        if (btn) {
+            btn.disabled = false;
+        }
+    });
+
+    panel.dataset.constructorIndex = String(state.index);
+    refreshActiveExerciseContentHeight();
+}
+
+function toggleConstructorFragment(panel, fragment) {
+    if (!panel || !fragment) return;
+
+    const source = panel.querySelector('[data-constructor-source]');
+    const target = panel.querySelector('[data-constructor-target]');
+    if (!source || !target) return;
+
+    if (fragment.parentElement === source) {
+        target.appendChild(fragment);
+        fragment.classList.add('in-target');
+    } else {
+        source.appendChild(fragment);
+        fragment.classList.remove('in-target');
+    }
+
+    if (navigator.vibrate && isTouchDevice) {
+        navigator.vibrate(10);
+    }
+
+    clearConstructorFeedback(panel);
+
+    const translationElement = panel.querySelector('[data-constructor-translation]');
+    if (translationElement) {
+        translationElement.textContent = 'Перевод появится после проверки.';
+    }
+
+    updateConstructorPlaceholder(panel);
+    refreshActiveExerciseContentHeight();
+}
+
+function handleConstructorCheck(panel) {
+    if (!panel) return;
+
+    const phaseKey = panel.dataset.phase;
+    const sets = getConstructorSets(phaseKey);
+    if (!sets.length) {
+        return;
+    }
+
+    const state = ensureConstructorState(phaseKey);
+    const current = sets[state.index] || sets[0];
+
+    const target = panel.querySelector('[data-constructor-target]');
+    const feedback = panel.querySelector('.constructor-feedback');
+    const translationElement = panel.querySelector('[data-constructor-translation]');
+    const originalElement = panel.querySelector('[data-constructor-original]');
+
+    if (!target || !feedback) {
+        return;
+    }
+
+    const fragments = Array.from(target.querySelectorAll('.constructor-fragment'));
+
+    if (fragments.length !== current.parts.length) {
+        feedback.textContent = 'Используйте все фрагменты, прежде чем проверять.';
+        feedback.classList.add('error');
+        feedback.classList.remove('success');
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(30);
+        }
+        return;
+    }
+
+    const indices = fragments.map(fragment => parseInt(fragment.dataset.index || '0', 10));
+    const isCorrect = indices.every((value, idx) => value === idx);
+
+    if (isCorrect) {
+        feedback.textContent = 'Отлично! Предложение собрано верно.';
+        feedback.classList.add('success');
+        feedback.classList.remove('error');
+        if (translationElement) {
+            if (current.sentenceTranslation) {
+                translationElement.textContent = `Перевод: ${current.sentenceTranslation}`;
+            } else {
+                translationElement.textContent = 'Перевод: —';
+            }
+        }
+        if (originalElement) {
+            originalElement.textContent = current.sentence ? `Оригинал: "${current.sentence}"` : '';
+        }
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(20);
+        }
+    } else {
+        feedback.textContent = 'Порядок фрагментов пока неверный. Попробуйте ещё раз.';
+        feedback.classList.add('error');
+        feedback.classList.remove('success');
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(40);
+        }
+    }
+
+    refreshActiveExerciseContentHeight();
+}
+
+function handleConstructorReset(panel) {
+    if (!panel) return;
+    const phaseKey = panel.dataset.phase;
+    if (!phaseKey) return;
+    renderConstructorForPhase(phaseKey);
+    updateConstructorPlaceholder(panel);
+    refreshActiveExerciseContentHeight();
+}
+
+function handleConstructorNext(panel) {
+    if (!panel) return;
+    const phaseKey = panel.dataset.phase;
+    const sets = getConstructorSets(phaseKey);
+    if (!sets.length) {
+        return;
+    }
+
+    const state = ensureConstructorState(phaseKey);
+    state.index = (state.index + 1) % sets.length;
+    renderConstructorForPhase(phaseKey);
+    updateConstructorPlaceholder(panel);
+
+    if (navigator.vibrate && isTouchDevice) {
+        navigator.vibrate(15);
+    }
+
+    refreshActiveExerciseContentHeight();
+}
+
+function initializeConstructorSection() {
+    const panels = document.querySelectorAll('.constructor-panel');
+    panels.forEach(panel => {
+        panel.addEventListener('click', event => {
+            const target = event.target;
+            if (!(target instanceof HTMLElement)) {
                 return;
             }
-            
-            grid.innerHTML = phaseData.words.map(word => `
-                <div class="vocab-card">
-                    <div style="font-size: 1.2rem; font-weight: bold; color: #667eea;">
-                        ${word.word}
-                    </div>
-                    <div style="margin: 0.5rem 0; color: #666;">
-                        ${word.translation}
-                    </div>
-                    ${word.transcription ? `
-                        <div style="font-size: 0.9rem; color: #999; font-style: italic;">
-                            [${word.transcription}]
-                        </div>
-                    ` : ''}
-                    ${word.sentence ? `
-                        <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
-                            <div style="color: #333;">${word.sentence}</div>
-                            <div style="color: #666; font-size: 0.9rem; margin-top: 0.25rem;">
-                                ${word.sentenceTranslation}
-                            </div>
-                        </div>
-                    ` : ''}
-                </div>
-            `).join('');
-        }
 
-        // ========================================
-        // ОБНОВЛЕНИЕ УПРАЖНЕНИЙ
-        // ========================================
-        function updateExercises(phaseId) {
-            // Скрываем все фазы упражнений
-            document.querySelectorAll('.exercise-phase').forEach(phase => {
-                phase.classList.remove('active');
-                phase.style.display = 'none';
-            });
-            
-            // Показываем текущую фазу
-            document.querySelectorAll(`.exercise-phase[data-phase="${phaseId}"]`).forEach(phase => {
-                phase.classList.add('active');
-                phase.style.display = 'block';
-            });
-            
-            // Инициализируем упражнения для текущей фазы
-            initializeExercisesForPhase(phaseId);
-        }
-
-        // ========================================
-        // ИНИЦИАЛИЗАЦИЯ УПРАЖНЕНИЙ (БЕЗ РЕКУРСИИ)
-        // ========================================
-        function initializeExercisesForPhase(phaseId) {
-            const phaseData = window.phaseVocabularies[phaseId];
-            if (!phaseData) return;
-            
-            // Инициализация упражнения с артиклями
-            const articlesContainer = document.querySelector(`[data-articles-container][data-phase="${phaseId}"]`);
-            if (articlesContainer && !articlesContainer.dataset.initialized) {
-                initializeArticlesExercise(articlesContainer, phaseData);
-                articlesContainer.dataset.initialized = 'true';
+            if (target.classList.contains('constructor-fragment')) {
+                toggleConstructorFragment(panel, target);
             }
-            
-            // Инициализация контекстного перевода
-            const contextContainer = document.querySelector(`[data-context-container][data-phase="${phaseId}"]`);
-            if (contextContainer && !contextContainer.dataset.initialized) {
-                initializeContextTranslation(contextContainer, phaseData);
-                contextContainer.dataset.initialized = 'true';
-            }
-        }
-
-        // ========================================
-        // УПРАЖНЕНИЕ: АРТИКЛИ И РОД
-        // ========================================
-        function initializeArticlesExercise(container, phaseData) {
-            const wordsWithArticles = [];
-            
-            if (phaseData.words) {
-                phaseData.words.forEach(word => {
-                    const parts = word.word.split(' ');
-                    if (['der', 'die', 'das'].includes(parts[0]?.toLowerCase())) {
-                        wordsWithArticles.push({
-                            article: parts[0].toLowerCase(),
-                            german: parts.slice(1).join(' '),
-                            russian: word.translation,
-                            fullWord: word.word
-                        });
-                    }
-                });
-            }
-            
-            if (wordsWithArticles.length === 0) {
-                container.innerHTML = '<p style="text-align: center; color: #666;">В этой фазе нет слов с артиклями</p>';
-                return;
-            }
-            
-            // Перемешиваем и берем до 9 слов
-            const shuffled = wordsWithArticles
-                .sort(() => Math.random() - 0.5)
-                .slice(0, 9);
-            
-            container.innerHTML = `
-                <div class="articles-exercise">
-                    <p style="margin-bottom: 1rem;">Распределите слова по родам:</p>
-                    
-                    <div class="article-columns">
-                        <div class="article-column">
-                            <h5 style="text-align: center; color: #667eea;">DER (мужской)</h5>
-                            <div class="article-drop-zone" data-zone="der"></div>
-                        </div>
-                        <div class="article-column">
-                            <h5 style="text-align: center; color: #667eea;">DIE (женский)</h5>
-                            <div class="article-drop-zone" data-zone="die"></div>
-                        </div>
-                        <div class="article-column">
-                            <h5 style="text-align: center; color: #667eea;">DAS (средний)</h5>
-                            <div class="article-drop-zone" data-zone="das"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="words-to-sort" style="margin: 1.5rem 0; padding: 1rem; background: #f8f9fa; border-radius: 0.5rem;">
-                        ${shuffled.map(word => `
-                            <div class="article-word-card" 
-                                 data-article="${word.article}"
-                                 draggable="true">
-                                <strong>${word.german}</strong><br>
-                                <small>${word.russian}</small>
-                            </div>
-                        `).join('')}
-                    </div>
-                    
-                    <div style="text-align: center;">
-                        <button class="check-articles-btn">Проверить</button>
-                        <button class="reset-articles-btn">Сбросить</button>
-                    </div>
-                    <div class="articles-feedback"></div>
-                </div>
-            `;
-            
-            attachArticlesHandlers(container);
-        }
-
-        // ========================================
-        // ОБРАБОТЧИКИ ДЛЯ АРТИКЛЕЙ
-        // ========================================
-        function attachArticlesHandlers(container) {
-            const cards = container.querySelectorAll('.article-word-card');
-            const zones = container.querySelectorAll('.article-drop-zone');
-            const wordsContainer = container.querySelector('.words-to-sort');
-            
-            // Drag & Drop
-            cards.forEach(card => {
-                card.addEventListener('dragstart', function(e) {
-                    e.dataTransfer.effectAllowed = 'move';
-                    this.classList.add('dragging');
-                });
-                
-                card.addEventListener('dragend', function() {
-                    this.classList.remove('dragging');
-                });
-                
-                // Клик для мобильных
-                card.addEventListener('click', function() {
-                    const wasSelected = this.classList.contains('selected');
-                    cards.forEach(c => c.classList.remove('selected'));
-                    if (!wasSelected) {
-                        this.classList.add('selected');
-                    }
-                });
-            });
-            
-            zones.forEach(zone => {
-                zone.addEventListener('dragover', e => {
-                    e.preventDefault();
-                    zone.classList.add('drag-over');
-                });
-                
-                zone.addEventListener('dragleave', () => {
-                    zone.classList.remove('drag-over');
-                });
-                
-                zone.addEventListener('drop', function(e) {
-                    e.preventDefault();
-                    this.classList.remove('drag-over');
-                    const dragging = container.querySelector('.dragging');
-                    if (dragging) {
-                        this.appendChild(dragging);
-                    }
-                });
-                
-                // Клик по зоне для мобильных
-                zone.addEventListener('click', function() {
-                    const selected = container.querySelector('.article-word-card.selected');
-                    if (selected) {
-                        this.appendChild(selected);
-                        selected.classList.remove('selected');
-                    }
-                });
-            });
-            
-            // Возврат в исходную зону
-            if (wordsContainer) {
-                wordsContainer.addEventListener('dragover', e => e.preventDefault());
-                wordsContainer.addEventListener('drop', function(e) {
-                    e.preventDefault();
-                    const dragging = container.querySelector('.dragging');
-                    if (dragging) this.appendChild(dragging);
-                });
-            }
-            
-            // Проверка
-            const checkBtn = container.querySelector('.check-articles-btn');
-            if (checkBtn) {
-                checkBtn.addEventListener('click', () => {
-                    let correct = 0, total = 0;
-                    
-                    zones.forEach(zone => {
-                        const targetArticle = zone.dataset.zone;
-                        const cardsInZone = zone.querySelectorAll('.article-word-card');
-                        
-                        cardsInZone.forEach(card => {
-                            total++;
-                            card.classList.remove('correct', 'incorrect');
-                            
-                            if (card.dataset.article === targetArticle) {
-                                card.classList.add('correct');
-                                correct++;
-                            } else {
-                                card.classList.add('incorrect');
-                            }
-                        });
-                    });
-                    
-                    const feedback = container.querySelector('.articles-feedback');
-                    if (feedback) {
-                        if (correct === total && total > 0) {
-                            feedback.innerHTML = '✅ Отлично! Все правильно!';
-                            feedback.className = 'articles-feedback success';
-                        } else {
-                            feedback.innerHTML = `Правильно: ${correct} из ${total}`;
-                            feedback.className = 'articles-feedback partial';
-                        }
-                    }
-                });
-            }
-            
-            // Сброс
-            const resetBtn = container.querySelector('.reset-articles-btn');
-            if (resetBtn) {
-                resetBtn.addEventListener('click', () => {
-                    cards.forEach(card => {
-                        card.classList.remove('correct', 'incorrect', 'selected');
-                        if (wordsContainer) {
-                            wordsContainer.appendChild(card);
-                        }
-                    });
-                    
-                    const feedback = container.querySelector('.articles-feedback');
-                    if (feedback) {
-                        feedback.innerHTML = '';
-                        feedback.className = 'articles-feedback';
-                    }
-                });
-            }
-        }
-
-        // ========================================
-        // УПРАЖНЕНИЕ: КОНТЕКСТНЫЙ ПЕРЕВОД
-        // ========================================
-        function initializeContextTranslation(container, phaseData) {
-            const exercises = [];
-            
-            if (phaseData.words) {
-                phaseData.words.forEach(word => {
-                    if (word.word && word.translation && word.sentence && word.sentenceTranslation) {
-                        // Безопасное создание регулярного выражения
-                        const germanWord = word.word.replace(/^(der|die|das)\s+/i, '');
-                        const escapedWord = germanWord.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                        const wordPattern = new RegExp(`\\b${escapedWord}\\w*\\b`, 'gi');
-                        
-                        if (word.sentence.match(wordPattern)) {
-                            exercises.push({
-                                germanWord: word.word,
-                                translation: word.translation,
-                                sentence: word.sentence,
-                                sentenceTranslation: word.sentenceTranslation,
-                                germanBlank: word.sentence.replace(wordPattern, '_____')
-                            });
-                        }
-                    }
-                });
-            }
-            
-            if (exercises.length === 0) {
-                container.innerHTML = '<p style="text-align: center; color: #666;">В этой фазе нет упражнений для контекстного перевода</p>';
-                return;
-            }
-            
-            // Берем до 5 упражнений
-            const selected = exercises.slice(0, 5);
-            
-            container.innerHTML = `
-                <div class="context-exercises">
-                    ${selected.map((ex, idx) => {
-                        // Генерируем варианты ответов
-                        const options = generateOptions(ex.translation, phaseData);
-                        
-                        return `
-                            <div class="context-exercise-card">
-                                <div style="font-weight: bold; margin-bottom: 1rem;">Упражнение ${idx + 1}</div>
-                                
-                                <div style="background: #f8f9fa; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem;">
-                                    <div style="margin-bottom: 0.5rem;">${ex.germanBlank}</div>
-                                    <div style="color: #666; font-style: italic;">${ex.sentenceTranslation}</div>
-                                </div>
-                                
-                                <div style="margin-bottom: 1rem;">
-                                    Пропущенное слово: <strong>${ex.germanWord}</strong>
-                                </div>
-                                
-                                <div class="context-options">
-                                    ${options.map(opt => `
-                                        <button class="context-option"
-                                                data-correct="${opt === ex.translation}">
-                                            ${opt}
-                                        </button>
-                                    `).join('')}
-                                </div>
-                                
-                                <div class="context-feedback"></div>
-                            </div>
-                        `;
-                    }).join('')}
-                </div>
-            `;
-            
-            attachContextHandlers(container);
-        }
-
-        // ========================================
-        // ГЕНЕРАЦИЯ ВАРИАНТОВ ОТВЕТОВ
-        // ========================================
-        function generateOptions(correct, phaseData) {
-            const options = [correct];
-            const allTranslations = new Set();
-            
-            // Собираем переводы из текущей фазы
-            if (phaseData.words) {
-                phaseData.words.forEach(word => {
-                    if (word.translation && word.translation !== correct) {
-                        allTranslations.add(word.translation);
-                    }
-                });
-            }
-            
-            // Если мало вариантов, добавляем общие
-            const fallback = ['власть', 'трон', 'корона', 'королевство', 'предательство', 'верность'];
-            fallback.forEach(word => {
-                if (word !== correct) allTranslations.add(word);
-            });
-            
-            // Выбираем 3 неправильных варианта
-            const wrong = Array.from(allTranslations)
-                .sort(() => Math.random() - 0.5)
-                .slice(0, 3);
-            
-            options.push(...wrong);
-            
-            // Перемешиваем
-            return options.sort(() => Math.random() - 0.5);
-        }
-
-        // ========================================
-        // ОБРАБОТЧИКИ ДЛЯ КОНТЕКСТНОГО ПЕРЕВОДА
-        // ========================================
-        function attachContextHandlers(container) {
-            const cards = container.querySelectorAll('.context-exercise-card');
-            
-            cards.forEach(card => {
-                const options = card.querySelectorAll('.context-option');
-                const feedback = card.querySelector('.context-feedback');
-                
-                options.forEach(option => {
-                    option.addEventListener('click', function() {
-                        // Блокируем повторные клики
-                        if (card.classList.contains('answered')) return;
-                        card.classList.add('answered');
-                        
-                        // Блокируем все кнопки
-                        options.forEach(opt => opt.disabled = true);
-                        
-                        // Проверяем ответ
-                        if (this.dataset.correct === 'true') {
-                            this.classList.add('correct');
-                            feedback.innerHTML = '✅ Правильно!';
-                            feedback.className = 'context-feedback success';
-                        } else {
-                            this.classList.add('incorrect');
-                            // Показываем правильный
-                            options.forEach(opt => {
-                                if (opt.dataset.correct === 'true') {
-                                    opt.classList.add('correct');
-                                }
-                            });
-                            feedback.innerHTML = '❌ Неверно. Правильный ответ выделен зеленым.';
-                            feedback.className = 'context-feedback error';
-                        }
-                    });
-                });
-            });
-        }
-
-        // ========================================
-        // АККОРДЕОН ДЛЯ УПРАЖНЕНИЙ
-        // ========================================
-        function initializeAccordion() {
-            const toggles = document.querySelectorAll('.exercise-toggle');
-            
-            toggles.forEach(toggle => {
-                toggle.addEventListener('click', function() {
-                    const panel = this.closest('.exercise-panel');
-                    const content = panel.querySelector('.exercise-content');
-                    const icon = this.querySelector('.toggle-icon');
-                    
-                    // Закрываем другие панели
-                    document.querySelectorAll('.exercise-panel').forEach(p => {
-                        if (p !== panel) {
-                            const c = p.querySelector('.exercise-content');
-                            const i = p.querySelector('.toggle-icon');
-                            c.classList.remove('expanded');
-                            i.textContent = '▶';
-                        }
-                    });
-                    
-                    // Переключаем текущую
-                    const isExpanded = content.classList.contains('expanded');
-                    content.classList.toggle('expanded');
-                    icon.textContent = isExpanded ? '▶' : '▼';
-                });
-            });
-        }
-
-        // ========================================
-        // ОБРАБОТЧИКИ КЛИКОВ ПО TIMELINE
-        // ========================================
-        function initializeTimeline() {
-            const points = document.querySelectorAll('.journey-point');
-            
-            points.forEach((point, index) => {
-                point.addEventListener('click', () => {
-                    changePhase(index);
-                });
-            });
-        }
-
-        // ========================================
-        // ИНИЦИАЛИЗАЦИЯ ПРИ ЗАГРУЗКЕ
-        // ========================================
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('[Journey] Initializing...');
-            
-            // Инициализация компонентов
-            initializeAccordion();
-            initializeTimeline();
-            
-            // Загрузка первой фазы
-            if (phaseKeys.length > 0) {
-                changePhase(0);
-            }
-            
-            console.log('[Journey] Ready!');
         });
 
-    })();
-    </script>
+        const checkBtn = panel.querySelector('.constructor-check');
+        if (checkBtn) {
+            checkBtn.addEventListener('click', () => handleConstructorCheck(panel));
+        }
+
+        const resetBtn = panel.querySelector('.constructor-reset');
+        if (resetBtn) {
+            resetBtn.addEventListener('click', () => handleConstructorReset(panel));
+        }
+
+        const nextBtn = panel.querySelector('.constructor-next');
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => handleConstructorNext(panel));
+        }
+    });
+}
+
+function activateConstructorPhase(phaseKey) {
+    const panels = document.querySelectorAll('.constructor-panel');
+    let activeRendered = false;
+
+    panels.forEach(panel => {
+        const isCurrent = panel.dataset.phase === phaseKey;
+        panel.classList.toggle('active', isCurrent);
+        if (isCurrent && !activeRendered) {
+            renderConstructorForPhase(phaseKey);
+            updateConstructorPlaceholder(panel);
+            activeRendered = true;
+        }
+    });
+}
+
+function calculateExpandedExerciseContentHeight(content) {
+    if (!(content instanceof HTMLElement)) {
+        return 0;
+    }
+
+    const selectionContainer = content.querySelector('.word-selection-container');
+    if (selectionContainer instanceof HTMLElement) {
+        const contentStyles = window.getComputedStyle(content);
+        const paddingTop = parseFloat(contentStyles.paddingTop) || 0;
+        const paddingBottom = parseFloat(contentStyles.paddingBottom) || 0;
+
+        const containerStyles = window.getComputedStyle(selectionContainer);
+        const marginTop = parseFloat(containerStyles.marginTop) || 0;
+        const marginBottom = parseFloat(containerStyles.marginBottom) || 0;
+        const selectionHeight = selectionContainer.offsetHeight + marginTop + marginBottom;
+        const baseHeight = content.scrollHeight;
+
+        return Math.ceil(Math.max(baseHeight, selectionHeight + paddingTop + paddingBottom + 40));
+    }
+
+    return Math.ceil(content.scrollHeight);
+}
+
+function updateWordColumnScrollIndicators(context) {
+    let scope = document;
+    if (context instanceof HTMLElement || context instanceof Document) {
+        scope = context;
+    }
+
+    const columns = scope.querySelectorAll('.word-selection-container .word-column');
+    columns.forEach(column => {
+        if (!(column instanceof HTMLElement)) {
+            return;
+        }
+
+        const hasOverflow = column.scrollHeight > column.clientHeight + 1;
+        const reachedBottom = column.scrollTop + column.clientHeight >= column.scrollHeight - 1;
+        column.classList.toggle('has-scroll', hasOverflow && !reachedBottom);
+    });
+}
+
+function refreshActiveExerciseContentHeight() {
+    const activeToggle = document.querySelector('.exercise-toggle.active');
+    if (!activeToggle) {
+        return;
+    }
+
+    const content = activeToggle.nextElementSibling;
+    if (!(content instanceof HTMLElement) || content.classList.contains('collapsed')) {
+        return;
+    }
+
+    const previousTransition = content.style.transition;
+    content.style.transition = 'none';
+    content.style.maxHeight = 'none';
+    const newHeight = calculateExpandedExerciseContentHeight(content);
+
+    requestAnimationFrame(() => {
+        content.style.transition = previousTransition || '';
+        content.style.maxHeight = `${newHeight}px`;
+        updateWordColumnScrollIndicators(content);
+    });
+}
+
+function setActiveExerciseSections(phaseKey) {
+    if (!phaseKey) {
+        return;
+    }
+
+    const wrappers = document.querySelectorAll('.exercise-phase-wrapper');
+    wrappers.forEach(wrapper => {
+        const sections = wrapper.querySelectorAll('.exercise-phase');
+        sections.forEach(section => {
+            const isCurrent = section.dataset.phase === phaseKey;
+            section.classList.toggle('active', isCurrent);
+            section.setAttribute('aria-hidden', isCurrent ? 'false' : 'true');
+        });
+    });
+
+    refreshActiveExerciseContentHeight();
+}
+
+function displayVocabulary(phaseKey) {
+    // Prevent multiple rapid transitions
+    if (isTransitioning) return;
+    isTransitioning = true;
+
+    const phase = phaseVocabularies[phaseKey];
+    const grid = document.querySelector('.vocabulary-grid');
+    const phaseTitle = document.getElementById('current-phase');
+    const progressFill = document.querySelector('.journey-progress .progress-fill');
+    const progressText = document.querySelector('.journey-progress .progress-text');
+    
+    if (!phase || !grid || !phaseTitle) {
+        console.error('Missing required elements');
+        isTransitioning = false;
+        return;
+    }
+
+    phaseTitle.textContent = phase.title;
+
+    ensureStudyQueueLoaded();
+    updateStudyCounterBadge();
+
+    setActiveExerciseSections(phaseKey);
+
+    // Update theatrical scene with smooth transition
+    const scenes = document.querySelectorAll('.theatrical-scene');
+    scenes.forEach(scene => {
+        if (scene.dataset.phase === phaseKey) {
+            scene.classList.add('active');
+            // Scroll to scene on mobile
+            if (isTouchDevice && window.innerWidth < 768) {
+                setTimeout(() => {
+                    scene.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'start' 
+                    });
+                }, 100);
+            }
+        } else {
+            scene.classList.remove('active');
+        }
+    });
+
+    // Update exercises
+    const exercises = document.querySelectorAll('.exercise-container');
+    exercises.forEach(exercise => {
+        if (exercise.dataset.phase === phaseKey) {
+            exercise.classList.add('active');
+        } else {
+            exercise.classList.remove('active');
+        }
+    });
+
+    // Update quizzes
+    initializeVocabularyQuiz(phaseKey);
+
+    // Setup relations for current phase
+    setupRelationsForPhase(phaseKey);
+
+    if (typeof window !== 'undefined'
+        && typeof window.initializeExercises === 'function') {
+        try {
+            window.initializeExercises(phaseKey);
+        } catch (error) {
+            console.warn('[Exercises] Failed to initialize exercises for phase', phaseKey, error);
+        }
+    }
+
+    // Update constructor section
+    activateConstructorPhase(phaseKey);
+
+    grid.innerHTML = '';
+
+    phase.words.forEach((item, index) => {
+        setTimeout(() => {
+            const card = document.createElement('div');
+            card.className = 'word-card';
+            card.style.animationDelay = `${index * 0.1}s`;
+
+            const hintMarkup = item.russian_hint
+                ? `<div class="word-hint">(${item.russian_hint})</div>`
+                : '';
+
+            // Простая карточка словаря
+            card.innerHTML = `
+                <div class="word-meta">
+                    <div class="word-german">${item.word}</div>
+                    <div class="word-translation">${item.translation}</div>
+                    ${hintMarkup}
+                    <div class="word-transcription">${item.transcription}</div>
+                </div>
+                <button class="btn-study" type="button"
+                    data-word="${item.word || ''}"
+                    data-translation="${item.translation || ''}"
+                    data-transcription="${item.transcription || ''}"
+                    data-russian-hint="${item.russian_hint || ''}"
+                    data-sentence="${item.sentence || ''}"
+                    data-sentence-translation="${item.sentenceTranslation || ''}"
+                    data-character-id="${characterId || ''}"
+                    data-phase-key="${phaseKey || ''}"
+                    data-emoji="${item.visual_hint || '📝'}"
+                >Изучить</button>
+            `;
+
+            // Добавляем обработчик для кнопки
+            const studyBtn = card.querySelector('.btn-study');
+            if (studyBtn) {
+                studyBtn.dataset.defaultLabel = studyBtn.dataset.defaultLabel || 'Изучить';
+                studyBtn.dataset.activeLabel = studyBtn.dataset.activeLabel || 'В списке';
+                studyBtn.dataset.inactiveTitle = studyBtn.dataset.inactiveTitle || 'Добавить слово в список изучения';
+                studyBtn.dataset.activeTitle = studyBtn.dataset.activeTitle || 'Удалить слово из списка изучения';
+
+                const initialState = isWordInStudyQueue({
+                    word: item.word,
+                    characterId: characterId,
+                });
+                applyStudyButtonState(studyBtn, initialState);
+
+                studyBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    const payload = buildStudyPayloadFromButton(this, item);
+                    const toggled = toggleStudyWord(payload);
+
+                    if (toggled === null) {
+                        alert('Не удалось обновить список изучения');
+                        applyStudyButtonState(this, isWordInStudyQueue(payload));
+                        return;
+                    }
+
+                    if (navigator.vibrate && isTouchDevice) {
+                        navigator.vibrate(20);
+                    }
+                });
+            }
+
+            grid.appendChild(card);
+        }, index * 50);
+    });
+
+    // Ensure UI reflects current queue after rendering
+    setTimeout(() => {
+        updateAllStudyButtons();
+    }, phase.words.length * 50 + 20);
+
+    // Update progress bar
+    const progress = ((currentPhaseIndex + 1) / phaseKeys.length) * 100;
+    if (progressFill) progressFill.style.width = progress + '%';
+    if (progressText) progressText.textContent = phase.description;
+    updateProgressLineByPercent(progress);
+
+    // Update navigation buttons state
+    updateNavigationButtons();
+
+    setTimeout(() => {
+        refreshActiveExerciseContentHeight();
+    }, 80);
+
+    // Reset transition flag
+    setTimeout(() => {
+        isTransitioning = false;
+    }, 500);
+}
+
+let activeVocabularyQuiz = null;
+
+class VocabularyQuiz {
+    constructor(phaseKey, words, phaseTitle) {
+        this.phaseKey = phaseKey;
+        this.phaseTitle = phaseTitle || '';
+        this.originalWords = Array.isArray(words)
+            ? words.map(word => ({ ...word }))
+            : [];
+        this.words = [];
+        this.currentIndex = 0;
+        this.correctAnswers = 0;
+        this.totalQuestions = this.originalWords.length * 2;
+        this.currentMode = 'forward';
+        this.completedForward = false;
+        this.answeredQuestions = 0;
+        this.isTransition = false;
+        this.optionLocked = false;
+        this.incorrectAnswers = [];
+        this.advanceTimeout = null;
+        this.quizCompleted = false;
+        this.advanceDelay = QUIZ_ADVANCE_DELAY;
+        this.optionButtons = [];
+        this.feedbackElement = null;
+        this.elements = {
+            content: document.querySelector('.quiz-content'),
+            currentQuestion: document.getElementById('current-question'),
+            totalQuestions: document.getElementById('total-questions'),
+            progressFill: document.querySelector('.quiz-progress .progress-fill'),
+            forwardBadge: document.querySelector('.mode-badge[data-mode="forward"]'),
+            reverseBadge: document.querySelector('.mode-badge[data-mode="reverse"]'),
+        };
+    }
+
+    start() {
+        this.resetState();
+        this.totalQuestions = this.originalWords.length * 2;
+        this.updateModeIndicator();
+        this.updateProgressDisplay();
+
+        if (!this.originalWords.length) {
+            this.renderEmptyState();
+            return;
+        }
+
+        const question = this.nextQuestion();
+        if (question) {
+            this.renderQuestion(question);
+        }
+    }
+
+    resetState() {
+        this.clearAdvanceTimeout();
+        this.words = shuffleWords(this.originalWords);
+        this.currentIndex = 0;
+        this.correctAnswers = 0;
+        this.currentMode = 'forward';
+        this.completedForward = false;
+        this.answeredQuestions = 0;
+        this.isTransition = false;
+        this.optionLocked = false;
+        this.incorrectAnswers = [];
+        this.quizCompleted = false;
+        this.optionButtons = [];
+        this.feedbackElement = null;
+    }
+
+    clearAdvanceTimeout() {
+        if (this.advanceTimeout) {
+            clearTimeout(this.advanceTimeout);
+            this.advanceTimeout = null;
+        }
+    }
+
+    updateModeIndicator() {
+        if (this.elements.forwardBadge) {
+            this.elements.forwardBadge.classList.toggle('active', this.currentMode === 'forward' && !this.quizCompleted);
+        }
+        if (this.elements.reverseBadge) {
+            this.elements.reverseBadge.classList.toggle('active', this.currentMode === 'reverse' && !this.quizCompleted);
+        }
+        if (this.quizCompleted) {
+            if (this.elements.forwardBadge) {
+                this.elements.forwardBadge.classList.remove('active');
+            }
+            if (this.elements.reverseBadge) {
+                this.elements.reverseBadge.classList.add('active');
+            }
+        }
+    }
+
+    updateProgressDisplay() {
+        const total = this.totalQuestions;
+        const answered = this.answeredQuestions;
+
+        if (this.elements.totalQuestions) {
+            this.elements.totalQuestions.textContent = total || 0;
+        }
+
+        let currentValue = 0;
+        if (!total) {
+            currentValue = 0;
+        } else if (answered >= total) {
+            currentValue = total;
+        } else {
+            currentValue = answered + 1;
+        }
+
+        if (this.elements.currentQuestion) {
+            this.elements.currentQuestion.textContent = currentValue;
+        }
+
+        if (this.elements.progressFill) {
+            const percent = total ? Math.min(100, Math.round((answered / total) * 100)) : 0;
+            this.elements.progressFill.style.width = `${percent}%`;
+        }
+    }
+
+    renderEmptyState() {
+        if (!this.elements.content) {
+            return;
+        }
+        this.clearAdvanceTimeout();
+        this.elements.content.innerHTML = '<div class="quiz-placeholder">Слова для этой викторины появятся позже.</div>';
+        this.updateModeIndicator();
+        this.updateProgressDisplay();
+        refreshActiveExerciseContentHeight();
+    }
+
+    generateForwardQuestion(word) {
+        const options = this.generateOptions(word.russian, 'russian');
+        return {
+            question: `Что означает немецкое слово «${word.german}»?`,
+            germanWord: word.german,
+            transcription: word.transcription,
+            options: options,
+            correct: word.russian,
+            type: 'forward',
+        };
+    }
+
+    generateReverseQuestion(word) {
+        const options = this.generateOptions(word.german, 'german');
+        return {
+            question: `Как переводится на немецкий слово «${word.russian}»?`,
+            russianWord: word.russian,
+            germanWord: word.german,
+            options: options,
+            correct: word.german,
+            type: 'reverse',
+        };
+    }
+
+    generateOptions(correctAnswer, type) {
+        const options = new Set();
+        if (correctAnswer) {
+            options.add(correctAnswer);
+        }
+
+        const localValues = this.originalWords
+            .map(word => (type === 'russian' ? word.russian : word.german))
+            .filter(Boolean);
+        const globalValues = globalOptionPools[type] || [];
+        const combinedPool = shuffleWords([...new Set([...localValues, ...globalValues])]);
+
+        for (const candidate of combinedPool) {
+            if (!candidate || options.has(candidate)) {
+                continue;
+            }
+            options.add(candidate);
+            if (options.size === 4) {
+                break;
+            }
+        }
+
+        if (options.size < 4) {
+            const fallbackPool = shuffleWords(globalValues);
+            for (const candidate of fallbackPool) {
+                if (!candidate || options.has(candidate)) {
+                    continue;
+                }
+                options.add(candidate);
+                if (options.size === 4) {
+                    break;
+                }
+            }
+        }
+
+        return shuffleWords(Array.from(options).slice(0, 4));
+    }
+
+    renderQuestion(question) {
+        if (!this.elements.content) {
+            return;
+        }
+
+        this.clearAdvanceTimeout();
+        this.isTransition = false;
+        this.optionLocked = false;
+        this.activeQuestion = question;
+
+        const card = document.createElement('div');
+        card.className = 'quiz-question-card';
+        card.dataset.mode = question.type;
+
+        const questionText = document.createElement('div');
+        questionText.className = 'quiz-question-text';
+        questionText.textContent = question.question;
+        card.appendChild(questionText);
+
+        const meta = document.createElement('div');
+        meta.className = 'quiz-word-meta';
+
+        if (question.type === 'forward') {
+            const wordSpan = document.createElement('span');
+            wordSpan.className = 'quiz-word';
+            wordSpan.textContent = question.germanWord;
+            meta.appendChild(wordSpan);
+
+            if (question.transcription) {
+                const transcriptionSpan = document.createElement('span');
+                transcriptionSpan.className = 'quiz-transcription';
+                transcriptionSpan.textContent = question.transcription;
+                meta.appendChild(transcriptionSpan);
+            }
+        } else {
+            const wordSpan = document.createElement('span');
+            wordSpan.className = 'quiz-word';
+            wordSpan.textContent = question.russianWord;
+            meta.appendChild(wordSpan);
+        }
+
+        card.appendChild(meta);
+
+        const optionsWrapper = document.createElement('div');
+        optionsWrapper.className = 'quiz-options';
+        this.optionButtons = [];
+
+        question.options.forEach(option => {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'quiz-option';
+            button.textContent = option;
+            button.dataset.value = option;
+            button.addEventListener('click', () => this.handleOptionSelect(button, question));
+            optionsWrapper.appendChild(button);
+            this.optionButtons.push(button);
+        });
+
+        card.appendChild(optionsWrapper);
+
+        this.feedbackElement = document.createElement('div');
+        this.feedbackElement.className = 'quiz-feedback';
+        this.feedbackElement.setAttribute('aria-live', 'polite');
+        card.appendChild(this.feedbackElement);
+
+        this.elements.content.innerHTML = '';
+        this.elements.content.appendChild(card);
+
+        this.updateModeIndicator();
+        this.updateProgressDisplay();
+        refreshActiveExerciseContentHeight();
+    }
+
+    handleOptionSelect(button, question) {
+        if (this.optionLocked || !button || !question) {
+            return;
+        }
+
+        this.optionLocked = true;
+        const selectedValue = button.dataset.value || button.textContent || '';
+        const correctValue = question.correct;
+
+        this.optionButtons.forEach(optionButton => {
+            optionButton.classList.add('locked');
+            optionButton.disabled = true;
+            if (optionButton.dataset.value === correctValue || optionButton.textContent === correctValue) {
+                optionButton.classList.add('correct');
+            }
+        });
+
+        if (selectedValue === correctValue) {
+            button.classList.add('correct');
+            if (this.feedbackElement) {
+                this.feedbackElement.textContent = 'Верно! Отличная работа.';
+            }
+            this.correctAnswers += 1;
+        } else {
+            button.classList.add('incorrect');
+            if (this.feedbackElement) {
+                this.feedbackElement.textContent = 'Неверно. Правильный ответ подсвечен.';
+            }
+            this.incorrectAnswers.push({
+                word: question.germanWord,
+                translation: question.type === 'forward' ? correctValue : question.russianWord,
+                selected: selectedValue,
+                correct: correctValue,
+                mode: question.type,
+            });
+        }
+
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(selectedValue === correctValue ? 20 : 40);
+        }
+
+        this.answeredQuestions += 1;
+        this.updateProgressDisplay();
+
+        this.advanceTimeout = setTimeout(() => {
+            this.prepareNextStep();
+        }, this.advanceDelay);
+    }
+
+    prepareNextStep() {
+        this.clearAdvanceTimeout();
+        this.currentIndex += 1;
+        this.optionLocked = false;
+        this.activeQuestion = null;
+        this.renderNext();
+    }
+
+    renderNext() {
+        const nextQuestion = this.nextQuestion();
+        if (nextQuestion) {
+            this.renderQuestion(nextQuestion);
+        }
+    }
+
+    nextQuestion() {
+        if (!this.originalWords.length) {
+            this.renderEmptyState();
+            return null;
+        }
+
+        if (this.currentIndex >= this.words.length && !this.completedForward) {
+            this.completedForward = true;
+            this.currentMode = 'reverse';
+            this.currentIndex = 0;
+            this.words = shuffleWords(this.originalWords);
+            this.isTransition = true;
+            this.updateModeIndicator();
+            this.updateProgressDisplay();
+            this.showModeTransition();
+            return null;
+        }
+
+        if (this.currentIndex >= this.words.length && this.completedForward) {
+            this.showFinalResults();
+            return null;
+        }
+
+        const word = this.words[this.currentIndex];
+        if (!word) {
+            this.showFinalResults();
+            return null;
+        }
+
+        return this.currentMode === 'forward'
+            ? this.generateForwardQuestion(word)
+            : this.generateReverseQuestion(word);
+    }
+
+    showModeTransition() {
+        if (!this.elements.content) {
+            return;
+        }
+        this.clearAdvanceTimeout();
+        this.elements.content.innerHTML = `
+            <div class="mode-transition">
+                <h3>🎉 Отлично! Первый этап пройден!</h3>
+                <p>Теперь проверим обратное направление:</p>
+                <p><strong>Русский → Немецкий</strong></p>
+                <button type="button" onclick="continueQuiz()">Продолжить</button>
+            </div>
+        `;
+        const continueButton = this.elements.content.querySelector('button');
+        if (continueButton) {
+            continueButton.addEventListener('click', () => this.continueToReverse());
+        }
+        this.updateModeIndicator();
+        this.updateProgressDisplay();
+        refreshActiveExerciseContentHeight();
+    }
+
+    continueToReverse() {
+        if (!this.completedForward) {
+            return;
+        }
+
+        this.isTransition = false;
+        this.optionLocked = false;
+        this.updateModeIndicator();
+        this.renderNext();
+    }
+
+    showFinalResults() {
+        if (!this.elements.content) {
+            return;
+        }
+
+        this.clearAdvanceTimeout();
+        this.quizCompleted = true;
+        this.isTransition = false;
+        this.answeredQuestions = this.totalQuestions;
+        this.updateModeIndicator();
+        this.updateProgressDisplay();
+
+        const percentage = this.totalQuestions
+            ? Math.round((this.correctAnswers / this.totalQuestions) * 100)
+            : 0;
+
+        this.elements.content.innerHTML = `
+            <div class="quiz-results">
+                <h3>🏆 Викторина завершена!</h3>
+                <p>Результат: ${this.correctAnswers} из ${this.totalQuestions} (${percentage}%)</p>
+                <div class="result-details">
+                    <p>✅ Прямой режим (DE→RU): пройден</p>
+                    <p>✅ Обратный режим (RU→DE): пройден</p>
+                </div>
+                <button type="button" onclick="restartQuiz()">Начать заново</button>
+            </div>
+        `;
+
+        const restartButton = this.elements.content.querySelector('button');
+        if (restartButton) {
+            restartButton.addEventListener('click', () => this.restart());
+        }
+
+        refreshActiveExerciseContentHeight();
+        this.dispatchCompletionEvent();
+    }
+
+    dispatchCompletionEvent() {
+        if (!this.phaseKey) {
+            return;
+        }
+
+        const detail = {
+            characterId: typeof characterId === 'string' ? characterId : '',
+            phaseId: this.phaseKey,
+            phaseTitle: this.phaseTitle || '',
+            completedAt: new Date().toISOString(),
+            totalQuestions: this.totalQuestions,
+            correctAnswers: this.correctAnswers,
+            incorrectWords: this.incorrectAnswers.map(item => ({
+                word: item.word,
+                translation: item.translation,
+                selected: item.selected,
+                correctAnswer: item.correct,
+                mode: item.mode,
+            })),
+        };
+
+        if (typeof queuePhaseReview === 'function') {
+            queuePhaseReview(detail);
+        }
+
+        try {
+            document.dispatchEvent(new CustomEvent('journeyPhaseCompleted', { detail }));
+        } catch (error) {
+            console.warn('[VocabularyQuiz] Unable to dispatch completion event', error);
+        }
+    }
+
+    restart() {
+        this.start();
+    }
+}
+
+function buildPhaseQuizWords(phase) {
+    if (!phase || !Array.isArray(phase.words)) {
+        return [];
+    }
+
+    return phase.words
+        .map(word => ({
+            german: word.word || '',
+            russian: word.translation || '',
+            transcription: word.transcription || '',
+        }))
+        .filter(word => word.german && word.russian);
+}
+
+function initializeVocabularyQuiz(phaseKey) {
+    const phase = phaseVocabularies[phaseKey];
+    const words = buildPhaseQuizWords(phase);
+    const phaseTitle = phase ? phase.title : '';
+
+    if (activeVocabularyQuiz) {
+        activeVocabularyQuiz.clearAdvanceTimeout();
+    }
+
+    activeVocabularyQuiz = new VocabularyQuiz(phaseKey, words, phaseTitle);
+    activeVocabularyQuiz.start();
+}
+
+if (typeof window !== 'undefined') {
+    window.continueQuiz = function() {
+        if (activeVocabularyQuiz) {
+            activeVocabularyQuiz.continueToReverse();
+        }
+    };
+
+    window.restartQuiz = function() {
+        if (activeVocabularyQuiz) {
+            activeVocabularyQuiz.restart();
+        }
+    };
+}
+
+// ============= RELATIONS FUNCTIONS (lines 400-600) =============
+
+function setupRelationsForPhase(phaseKey) {
+    renderWordMatchingExercise(phaseKey);
+}
+
+function renderWordMatchingExercise(phaseKey) {
+    if (!phaseKey) {
+        return;
+    }
+
+    const container = document.querySelector(`[data-matching-container][data-phase="${phaseKey}"]`);
+    if (!(container instanceof HTMLElement)) {
+        return;
+    }
+
+    const phase = phaseVocabularies[phaseKey];
+    if (!phase || !Array.isArray(phase.words)) {
+        container.innerHTML = '<div class="exercise-empty-state">Слова для подбора отсутствуют.</div>';
+        return;
+    }
+
+    const wordPairs = [];
+    phase.words.forEach((word, index) => {
+        if (!word || !word.word || !word.translation) {
+            return;
+        }
+
+        let russianText = word.translation;
+        if (word.russian_hint) {
+            russianText += ` (${word.russian_hint})`;
+        }
+
+        wordPairs.push({
+            id: `word-${index}`,
+            prompt: word.word,
+            match: russianText
+        });
+    });
+
+    if (wordPairs.length === 0) {
+        container.innerHTML = '<div class="exercise-empty-state">Слова для подбора отсутствуют.</div>';
+        return;
+    }
+
+    container.innerHTML = '';
+    buildPairMatchingActivity(container, wordPairs, {
+        promptLabel: 'Немецкие',
+        matchLabel: 'Русские',
+        matchMessage: 'Правильно! Пара найдена.',
+        mismatchMessage: 'Не совпало. Попробуйте ещё раз.',
+        successMessage: 'Отлично! Все слова подобраны!'
+    });
+
+    refreshActiveExerciseContentHeight();
+    updateWordColumnScrollIndicators(container);
+}
+
+function addInteractiveListener(element, handler) {
+    if (!element || typeof handler !== 'function') return;
+
+    let touchTriggered = false;
+    const invokeHandler = function(event) {
+        handler.call(this, event);
+    };
+
+    if (isTouchDevice) {
+        element.addEventListener('touchstart', function(event) {
+            touchTriggered = true;
+            if (event.cancelable) {
+                event.preventDefault();
+            }
+            invokeHandler.call(this, event);
+        }, { passive: false });
+
+        element.addEventListener('click', function(event) {
+            if (touchTriggered) {
+                touchTriggered = false;
+                return;
+            }
+            if (event.cancelable) {
+                event.preventDefault();
+            }
+            invokeHandler.call(this, event);
+        });
+    } else {
+        element.addEventListener('click', function(event) {
+            if (event.cancelable) {
+                event.preventDefault();
+            }
+            invokeHandler.call(this, event);
+        });
+    }
+}
+
+function shuffleArray(array) {
+    const copy = Array.isArray(array) ? array.slice() : [];
+    for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
+}
+
+
+function buildPairMatchingActivity(container, pairs, options = {}) {
+    if (!container || !pairs || pairs.length === 0) return;
+
+    const settings = Object.assign({
+        promptLabel: 'Колонка 1',
+        matchLabel: 'Колонка 2',
+        matchMessage: 'Верно! Пара найдена.',
+        mismatchMessage: 'Пока не то. Попробуйте снова.',
+        successMessage: 'Все пары подобраны!'
+    }, options);
+
+    const baseStatusMessage = 'Выберите немецкое слово и его русский перевод';
+
+    container.classList.remove('pair-matching-container');
+    container.classList.add('word-selection-host');
+    container.innerHTML = '';
+
+    const wrapper = document.createElement('div');
+    wrapper.className = 'word-selection-container';
+    wrapper.setAttribute('role', 'group');
+
+    const layout = document.createElement('div');
+    layout.className = 'word-columns';
+
+    const promptsColumn = document.createElement('div');
+    promptsColumn.className = 'word-column german-words';
+    const promptsHeading = document.createElement('h4');
+    promptsHeading.textContent = (settings.promptLabel || '').toUpperCase();
+    const promptsList = document.createElement('div');
+    promptsList.className = 'word-list';
+
+    const matchesColumn = document.createElement('div');
+    matchesColumn.className = 'word-column russian-words';
+    const matchesHeading = document.createElement('h4');
+    matchesHeading.textContent = (settings.matchLabel || '').toUpperCase();
+    const matchesList = document.createElement('div');
+    matchesList.className = 'word-list';
+
+    promptsColumn.appendChild(promptsHeading);
+    promptsColumn.appendChild(promptsList);
+    matchesColumn.appendChild(matchesHeading);
+    matchesColumn.appendChild(matchesList);
+
+    layout.appendChild(promptsColumn);
+    layout.appendChild(matchesColumn);
+
+    const selectionFooter = document.createElement('div');
+    selectionFooter.className = 'selection-button';
+    selectionFooter.setAttribute('aria-live', 'polite');
+
+    const statusButton = document.createElement('button');
+    statusButton.className = 'select-pair-btn';
+    statusButton.type = 'button';
+    statusButton.disabled = true;
+    statusButton.textContent = baseStatusMessage;
+
+    selectionFooter.appendChild(statusButton);
+
+    wrapper.appendChild(layout);
+    wrapper.appendChild(selectionFooter);
+
+    container.appendChild(wrapper);
+
+    const promptCards = shuffleArray(pairs.map(pair => ({
+        label: pair.prompt,
+        pairId: pair.id
+    })));
+
+    const matchCards = shuffleArray(pairs.map(pair => ({
+        label: pair.match,
+        pairId: pair.id
+    })));
+
+    let activePrompt = null;
+    let activeMatch = null;
+    let remainingPairs = pairs.length;
+
+    function updateStatus(message, type) {
+        statusButton.textContent = message || '';
+        statusButton.classList.remove('is-success', 'is-error');
+        if (type === 'success') {
+            statusButton.classList.add('is-success');
+        } else if (type === 'error') {
+            statusButton.classList.add('is-error');
+        }
+        refreshActiveExerciseContentHeight();
+    }
+
+    function handleMatchSuccess(promptCard, matchCard) {
+        [promptCard, matchCard].forEach(card => {
+            card.classList.remove('selected', 'incorrect');
+            card.classList.add('matched');
+            card.disabled = true;
+            card.setAttribute('aria-disabled', 'true');
+        });
+
+        remainingPairs -= 1;
+
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(20);
+        }
+
+        if (remainingPairs === 0) {
+            updateStatus(settings.successMessage, 'success');
+        } else {
+            updateStatus(settings.matchMessage, 'success');
+        }
+
+        updateWordColumnScrollIndicators(wrapper);
+    }
+
+    function handleMatchFailure(promptCard, matchCard) {
+        [promptCard, matchCard].forEach(card => {
+            card.classList.add('incorrect');
+        });
+
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(40);
+        }
+
+        updateStatus(settings.mismatchMessage, 'error');
+
+        setTimeout(() => {
+            [promptCard, matchCard].forEach(card => {
+                card.classList.remove('incorrect', 'selected');
+            });
+            updateStatus(baseStatusMessage);
+        }, 650);
+    }
+
+    function evaluateSelection() {
+        if (!activePrompt || !activeMatch) return;
+
+        const promptCard = activePrompt;
+        const matchCard = activeMatch;
+
+        activePrompt = null;
+        activeMatch = null;
+
+        if (promptCard.dataset.pairId === matchCard.dataset.pairId) {
+            handleMatchSuccess(promptCard, matchCard);
+        } else {
+            handleMatchFailure(promptCard, matchCard);
+        }
+    }
+
+    function toggleSelection(card, type) {
+        if (card.classList.contains('matched')) {
+            return;
+        }
+
+        if (type === 'prompt') {
+            if (activePrompt === card) {
+                card.classList.remove('selected');
+                activePrompt = null;
+                updateStatus(activeMatch ? 'Теперь выберите немецкое слово.' : baseStatusMessage);
+                return;
+            }
+
+            if (activePrompt) {
+                activePrompt.classList.remove('selected');
+            }
+
+            activePrompt = card;
+        } else {
+            if (activeMatch === card) {
+                card.classList.remove('selected');
+                activeMatch = null;
+                updateStatus(activePrompt ? 'Теперь выберите русский перевод.' : baseStatusMessage);
+                return;
+            }
+
+            if (activeMatch) {
+                activeMatch.classList.remove('selected');
+            }
+
+            activeMatch = card;
+        }
+
+        card.classList.add('selected');
+
+        if (activePrompt && activeMatch) {
+            evaluateSelection();
+        } else if (activePrompt) {
+            updateStatus('Теперь выберите русский перевод.', null);
+        } else if (activeMatch) {
+            updateStatus('Теперь выберите немецкое слово.', null);
+        }
+    }
+
+    promptCards.forEach(data => {
+        const card = document.createElement('button');
+        card.className = 'word-item';
+        card.type = 'button';
+        card.textContent = data.label;
+        card.dataset.pairId = data.pairId;
+        promptsList.appendChild(card);
+
+        card.addEventListener('click', () => {
+            toggleSelection(card, 'prompt');
+        });
+    });
+
+    matchCards.forEach(data => {
+        const card = document.createElement('button');
+        card.className = 'word-item';
+        card.type = 'button';
+        card.textContent = data.label;
+        card.dataset.pairId = data.pairId;
+        matchesList.appendChild(card);
+
+        card.addEventListener('click', () => {
+            toggleSelection(card, 'match');
+        });
+    });
+
+    [promptsColumn, matchesColumn].forEach(column => {
+        column.addEventListener('scroll', () => updateWordColumnScrollIndicators(wrapper));
+    });
+
+    function shuffleArrayInPlace(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
+    shuffleArrayInPlace(Array.from(promptsList.children));
+    shuffleArrayInPlace(Array.from(matchesList.children));
+
+    Array.from(promptsList.children).forEach(child => promptsList.appendChild(child));
+    Array.from(matchesList.children).forEach(child => matchesList.appendChild(child));
+
+    updateStatus(baseStatusMessage);
+    updateWordColumnScrollIndicators(wrapper);
+}
+
+function attachDragDropHandlers(container) {
+    const sources = container.querySelectorAll('.drag-source');
+    const targets = container.querySelectorAll('.drag-target');
+
+    sources.forEach(source => {
+        source.addEventListener('dragstart', handleDragStart);
+        source.addEventListener('dragend', handleDragEnd);
+
+        // Touch events for mobile
+        source.addEventListener('touchstart', handleTouchStart);
+        source.addEventListener('touchmove', handleTouchMove);
+        source.addEventListener('touchend', handleTouchEnd);
+    });
+
+    targets.forEach(target => {
+        target.addEventListener('dragover', handleDragOver);
+        target.addEventListener('drop', handleDrop);
+        target.addEventListener('dragleave', handleDragLeave);
+
+        // Click to select on mobile
+        target.addEventListener('click', handleTargetClick);
+    });
+}
+
+let draggedElement = null;
+let selectedSource = null;
+
+function handleDragStart(e) {
+    draggedElement = this;
+    this.classList.add('dragging');
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('text/html', this.innerHTML);
+}
+
+function handleDragEnd(e) {
+    this.classList.remove('dragging');
+    draggedElement = null;
+}
+
+function handleDragOver(e) {
+    if (e.preventDefault) {
+        e.preventDefault();
+    }
+    e.dataTransfer.dropEffect = 'move';
+    this.classList.add('drag-over');
+    return false;
+}
+
+function handleDragLeave(e) {
+    this.classList.remove('drag-over');
+}
+
+function handleDrop(e) {
+    if (e.stopPropagation) {
+        e.stopPropagation();
+    }
+    this.classList.remove('drag-over');
+
+    if (draggedElement && draggedElement !== this) {
+        const sourceData = draggedElement.dataset.source;
+        const targetData = this.dataset.target;
+
+        if (sourceData === targetData) {
+            this.classList.add('correct');
+            const placeholder = this.querySelector('.target-placeholder');
+            const answer = this.querySelector('.target-answer');
+            if (placeholder) placeholder.style.display = 'none';
+            if (answer) answer.style.display = 'block';
+            draggedElement.style.visibility = 'hidden';
+        } else {
+            this.classList.add('incorrect');
+            setTimeout(() => {
+                this.classList.remove('incorrect');
+            }, 500);
+        }
+    }
+    return false;
+}
+
+// Touch handlers for mobile
+let touchItem = null;
+
+function handleTouchStart(e) {
+    touchItem = this;
+    selectedSource = this;
+    this.classList.add('selected');
+}
+
+function handleTouchMove(e) {
+    e.preventDefault();
+}
+
+function handleTouchEnd(e) {
+    if (!touchItem) return;
+    
+    const touch = e.changedTouches[0];
+    const target = document.elementFromPoint(touch.clientX, touch.clientY);
+    
+    if (target && target.classList.contains('drag-target')) {
+        handleTargetSelection(target, touchItem);
+    }
+    
+    touchItem.classList.remove('selected');
+    touchItem = null;
+}
+
+function handleTargetClick(e) {
+    if (selectedSource) {
+        handleTargetSelection(this, selectedSource);
+        selectedSource.classList.remove('selected');
+        selectedSource = null;
+    }
+}
+
+function handleTargetSelection(target, source) {
+    const sourceData = source.dataset.source;
+    const targetData = target.dataset.target;
+
+    if (sourceData === targetData) {
+        target.classList.add('correct');
+        const placeholder = target.querySelector('.target-placeholder');
+        const answer = target.querySelector('.target-answer');
+        if (placeholder) placeholder.style.display = 'none';
+        if (answer) answer.style.display = 'block';
+        source.style.visibility = 'hidden';
+        
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(20);
+        }
+    } else {
+        target.classList.add('incorrect');
+        setTimeout(() => {
+            target.classList.remove('incorrect');
+        }, 500);
+        
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(40);
+        }
+    }
+}
+
+// ============= END OF RELATIONS FUNCTIONS =============
+
+// Update navigation buttons based on current position
+function updateNavigationButtons() {
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    
+    if (prevBtn) {
+        prevBtn.disabled = currentPhaseIndex === 0;
+        prevBtn.style.opacity = currentPhaseIndex === 0 ? '0.5' : '1';
+        prevBtn.style.cursor = currentPhaseIndex === 0 ? 'not-allowed' : 'pointer';
+    }
+    
+    if (nextBtn) {
+        nextBtn.disabled = currentPhaseIndex >= phaseKeys.length - 1;
+        nextBtn.style.opacity = currentPhaseIndex >= phaseKeys.length - 1 ? '0.5' : '1';
+        nextBtn.style.cursor = currentPhaseIndex >= phaseKeys.length - 1 ? 'not-allowed' : 'pointer';
+    }
+}
+
+// Safe click handler for journey points
+function handleJourneyPointClick(point, index) {
+    if (isTransitioning) return;
+    
+    const journeyPoints = document.querySelectorAll('.journey-point');
+    journeyPoints.forEach(p => p.classList.remove('active'));
+    point.classList.add('active');
+    currentPhaseIndex = index;
+    displayVocabulary(point.dataset.phase);
+
+    // Provide haptic feedback on supported devices
+    if (navigator.vibrate && isTouchDevice) {
+        navigator.vibrate(10); // Short vibration feedback
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('[Init] Starting initialization...');
+
+    const journeyPoints = document.querySelectorAll('.journey-point');
+    initializeProgressLine();
+    initializeConstructorSection();
+
+    const exerciseToggles = document.querySelectorAll('.exercise-toggle');
+    const exerciseContents = document.querySelectorAll('.exercise-content');
+
+    const collapseAllExercises = () => {
+        exerciseContents.forEach(content => {
+            content.classList.add('collapsed');
+            content.classList.remove('expanded');
+            if (content instanceof HTMLElement) {
+                content.style.maxHeight = '0px';
+            }
+        });
+        exerciseToggles.forEach(toggle => toggle.classList.remove('active'));
+    };
+
+    exerciseToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const content = toggle.nextElementSibling;
+            if (!(content instanceof HTMLElement)) {
+                return;
+            }
+
+            const isCollapsed = content.classList.contains('collapsed');
+            collapseAllExercises();
+
+            if (isCollapsed) {
+                content.classList.remove('collapsed');
+                content.classList.add('expanded');
+                toggle.classList.add('active');
+                requestAnimationFrame(() => {
+                    const targetHeight = calculateExpandedExerciseContentHeight(content);
+                    content.style.maxHeight = `${targetHeight}px`;
+                    updateWordColumnScrollIndicators(content);
+                });
+            }
+        });
+    });
+
+    if (exerciseToggles.length > 0) {
+        const firstToggle = exerciseToggles[0];
+        const firstContent = firstToggle.nextElementSibling;
+        if (firstContent instanceof HTMLElement) {
+            firstToggle.classList.add('active');
+            firstContent.classList.remove('collapsed');
+            firstContent.classList.add('expanded');
+            requestAnimationFrame(() => {
+                const targetHeight = calculateExpandedExerciseContentHeight(firstContent);
+                firstContent.style.maxHeight = `${targetHeight}px`;
+                updateWordColumnScrollIndicators(firstContent);
+            });
+        }
+    }
+
+    window.addEventListener('resize', () => {
+        refreshActiveExerciseContentHeight();
+        updateWordColumnScrollIndicators();
+    });
+
+    console.log('[Init] Found', journeyPoints.length, 'journey points');
+    
+    // ИСПРАВЛЕНИЕ: Упрощенная логика обработчиков для всех устройств
+    journeyPoints.forEach((point, index) => {
+        // Универсальный обработчик клика для всех устройств
+        point.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            handleJourneyPointClick(this, index);
+        });
+        
+        // Дополнительная поддержка touch для мобильных
+        if (isTouchDevice) {
+            // Визуальная обратная связь при касании
+            point.addEventListener('touchstart', function() {
+                this.style.transform = 'scale(0.95)';
+            });
+            
+            point.addEventListener('touchend', function() {
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 100);
+            });
+        }
+        
+        // Курсор pointer для всех устройств
+        point.style.cursor = 'pointer';
+    });
+    
+    // Previous button handler - ИСПРАВЛЕНО
+    const prevBtn = document.querySelector('.prev-btn');
+    if (prevBtn) {
+        prevBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            if (!isTransitioning && currentPhaseIndex > 0) {
+                currentPhaseIndex--;
+                const targetPoint = journeyPoints[currentPhaseIndex];
+                if (targetPoint) {
+                    handleJourneyPointClick(targetPoint, currentPhaseIndex);
+                }
+                
+                // Haptic feedback для мобильных
+                if (navigator.vibrate && isTouchDevice) {
+                    navigator.vibrate(10);
+                }
+            }
+        });
+    }
+    
+    // Next button handler - ИСПРАВЛЕНО
+    const nextBtn = document.querySelector('.next-btn');
+    if (nextBtn) {
+        nextBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            if (!isTransitioning && currentPhaseIndex < phaseKeys.length - 1) {
+                currentPhaseIndex++;
+                const targetPoint = journeyPoints[currentPhaseIndex];
+                if (targetPoint) {
+                    handleJourneyPointClick(targetPoint, currentPhaseIndex);
+                }
+                
+                // Haptic feedback для мобильных
+                if (navigator.vibrate && isTouchDevice) {
+                    navigator.vibrate(10);
+                }
+            }
+        });
+    }
+    
+    // Initialize first phase
+    if (journeyPoints.length > 0 && phaseKeys.length > 0) {
+        console.log('[Init] Initializing first phase:', phaseKeys[0]);
+        journeyPoints[0].classList.add('active');
+        displayVocabulary(phaseKeys[0]);
+    } else {
+        console.error('[Init] No journey points or phases found!');
+    }
+    
+    // Add swipe support for mobile navigation
+    if (isTouchDevice) {
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        document.addEventListener('touchstart', function(e) {
+            touchStartX = e.changedTouches[0].screenX;
+        }, false);
+        
+        document.addEventListener('touchend', function(e) {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, false);
+        
+        function handleSwipe() {
+            const swipeThreshold = 50; // Minimum distance for swipe
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    // Swiped left - go to next phase
+                    if (nextBtn && !nextBtn.disabled) {
+                        nextBtn.click();
+                    }
+                } else {
+                    // Swiped right - go to previous phase
+                    if (prevBtn && !prevBtn.disabled) {
+                        prevBtn.click();
+                    }
+                }
+            }
+        }
+    }
+    
+    console.log('[Init] Initialization complete');
+});
+
+// Function to toggle answers in exercise - РАБОТАЕТ ДЛЯ ВСЕХ
+function toggleAnswers(button) {
+    // Prevent double tap/click
+    if (button.dataset.processing === 'true') return;
+    button.dataset.processing = 'true';
+    
+    const exerciseSection = button.closest('.exercise-section');
+    if (!exerciseSection) {
+        console.error('Exercise section not found');
+        button.dataset.processing = 'false';
+        return;
+    }
+    
+    const exerciseText = exerciseSection.querySelector('.exercise-text');
+    const blanks = exerciseText.querySelectorAll('.blank');
+    
+    if (button.textContent === 'Показать ответы') {
+        // Show answers
+        blanks.forEach(blank => {
+            const answer = blank.getAttribute('data-answer');
+            const hint = blank.getAttribute('data-hint');
+            if (answer && hint) {
+                blank.innerHTML = answer + ' (' + hint + ')';
+                blank.style.color = '#d97706';
+                blank.style.fontWeight = '600';
+                blank.style.fontStyle = 'normal';
+                blank.style.borderBottomColor = '#22c55e';
+            }
+        });
+        button.textContent = 'Скрыть ответы';
+        button.style.background = 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)';
+    } else {
+        // Hide answers
+        blanks.forEach(blank => {
+            const hint = blank.getAttribute('data-hint');
+            if (hint) {
+                blank.innerHTML = '_______ (' + hint + ')';
+                blank.style.color = '#a0aec0';
+                blank.style.fontWeight = 'normal';
+                blank.style.fontStyle = 'italic';
+                blank.style.borderBottomColor = '#f6ad55';
+            }
+        });
+        button.textContent = 'Показать ответы';
+        button.style.background = 'linear-gradient(135deg, #f6ad55 0%, #ed8936 100%)';
+    }
+    
+    // Haptic feedback for mobile
+    if (navigator.vibrate && isTouchDevice) {
+        navigator.vibrate(15);
+    }
+    
+    // Reset processing flag
+    setTimeout(() => {
+        button.dataset.processing = 'false';
+    }, 300);
+}
+
+// Initialize answer button handlers - УПРОЩЕНО
+document.addEventListener('DOMContentLoaded', function() {
+    const answerButtons = document.querySelectorAll('.show-answer-btn');
+    
+    answerButtons.forEach(button => {
+        // Универсальный обработчик для всех устройств
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleAnswers(this);
+        });
+        
+        // Визуальная обратная связь для мобильных
+        if (isTouchDevice) {
+            button.addEventListener('touchstart', function() {
+                this.style.transform = 'scale(0.98)';
+                this.style.opacity = '0.9';
+            });
+            
+            button.addEventListener('touchend', function() {
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                    this.style.opacity = '1';
+                }, 100);
+            });
+        }
+    });
+});
+
+// Log device info for debugging
+console.log('[Device Info]', {
+    isTouchDevice: isTouchDevice,
+    isIOS: isIOS,
+    isAndroid: isAndroid,
+    userAgent: navigator.userAgent,
+    phaseCount: phaseKeys.length
+});
+</script>
+    <script src="../static/js/exercises.js"></script>
 </body>
 </html>
