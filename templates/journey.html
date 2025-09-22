@@ -115,23 +115,6 @@
                     </div>
                 </div>
 
-                <div class="exercise-panel" data-exercise="context">
-                    <button class="exercise-toggle" type="button">
-                        <span class="toggle-icon">▶</span>
-                        📝 Контекстный перевод
-                    </button>
-                    <div class="exercise-content collapsed">
-                        <p class="exercise-description">Выберите перевод пропущенного слова в цитатах из истории персонажа.</p>
-                        <div class="exercise-phase-wrapper" data-phase-wrapper="context">
-                            {% for phase in journey_phases %}
-                            <section class="exercise-phase{% if loop.first %} active{% endif %}" data-phase="{{ phase.id }}">
-                                <div class="context-container" data-context-container data-phase="{{ phase.id }}"></div>
-                            </section>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-
                 <div class="exercise-panel" data-exercise="quiz">
                     <button class="exercise-toggle" type="button">
                         <span class="toggle-icon">▶</span>
@@ -153,6 +136,23 @@
 
                         <div class="quiz-content">
                             <div class="quiz-placeholder">Выберите фазу, чтобы начать викторину.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exercise-panel" data-exercise="context">
+                    <button class="exercise-toggle" type="button">
+                        <span class="toggle-icon">▶</span>
+                        📝 Контекстный перевод
+                    </button>
+                    <div class="exercise-content collapsed">
+                        <p class="exercise-description">Выберите перевод пропущенного слова в цитатах из истории персонажа.</p>
+                        <div class="exercise-phase-wrapper" data-phase-wrapper="context">
+                            {% for phase in journey_phases %}
+                            <section class="exercise-phase{% if loop.first %} active{% endif %}" data-phase="{{ phase.id }}">
+                                <div class="context-container" data-context-container data-phase="{{ phase.id }}"></div>
+                            </section>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
