@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Тест localStorage на мобильных устройствах</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #1f2937;
+        }
+        
+        .device-info {
+            background: #f3f4f6;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-size: 0.9em;
+        }
+        
+        .device-info div {
+            padding: 5px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .device-info div:last-child {
+            border-bottom: none;
+        }
+        
+        .test-section {
+            margin: 25px 0;
+            padding: 20px;
+            background: #fafafa;
+            border-radius: 10px;
+            border: 2px solid #e5e7eb;
+        }
+        
+        .test-title {
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #4b5563;
+            font-size: 1.1em;
+        }
+        
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 5px;
+            transition: all 0.3s;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        button:active {
+            transform: scale(0.95);
+        }
+        
+        button:hover {
+            background: #5a67d8;
+        }
+        
+        button.success {
+            background: #10b981;
+        }
+        
+        button.danger {
+            background: #ef4444;
+        }
+        
+        .result {
+            margin-top: 15px;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+            font-family: monospace;
+            font-size: 0.9em;
+            white-space: pre-wrap;
+            word-break: break-all;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        .result.success {
+            background: #d1fae5;
+            border-color: #10b981;
+        }
+        
+        .result.error {
+            background: #fee2e2;
+            border-color: #ef4444;
+        }
+        
+        .result.info {
+            background: #dbeafe;
+            border-color: #3b82f6;
+        }
+        
+        .word-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s;
+        }
+        
+        .word-card:active {
+            transform: scale(0.98);
+            background: #f9fafb;
+        }
+        
+        .word-info {
+            flex: 1;
+        }
+        
+        .word-german {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #1f2937;
+        }
+        
+        .word-russian {
+            color: #6b7280;
+            margin-top: 5px;
+        }
+        
+        .remove-btn {
+            background: #ef4444;
+            color: white;
+            border: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            font-size: 18px;
+            cursor: pointer;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .status.ok {
+            background: #d1fae5;
+            color: #065f46;
+        }
+        
+        .status.error {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        
+        .status.warning {
+            background: #fed7aa;
+            color: #92400e;
+        }
+        
+        /* Мобильная оптимизация */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 20px;
+                border-radius: 15px;
+            }
+            
+            h1 {
+                font-size: 1.5em;
+            }
+            
+            button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔬 Тест localStorage</h1>
+        <p style="color: #6b7280; margin-bottom: 20px;">
+            Проверка работы словаря на мобильных устройствах
+        </p>
+        
+        <div class="device-info">
+            <div><strong>User Agent:</strong> <span id="userAgent"></span></div>
+            <div><strong>Платформа:</strong> <span id="platform"></span></div>
+            <div><strong>Размер экрана:</strong> <span id="screenSize"></span></div>
+            <div><strong>localStorage:</strong> <span id="localStorageStatus"></span></div>
+            <div><strong>Время:</strong> <span id="currentTime"></span></div>
+        </div>
+        
+        <!-- Тест 1: Базовая проверка localStorage -->
+        <div class="test-section">
+            <div class="test-title">📝 Тест 1: Базовая проверка localStorage</div>
+            <button onclick="testLocalStorage()">Запустить тест</button>
+            <button onclick="clearLocalStorage()" class="danger">Очистить localStorage</button>
+            <div id="test1Result" class="result" style="display:none;"></div>
+        </div>
+        
+        <!-- Тест 2: Работа со словарем -->
+        <div class="test-section">
+            <div class="test-title">📚 Тест 2: Добавление слов в словарь</div>
+            <button onclick="addTestWord()">Добавить тестовое слово</button>
+            <button onclick="showWords()" class="success">Показать все слова</button>
+            <div id="wordsList"></div>
+            <div id="test2Result" class="result" style="display:none;"></div>
+        </div>
+        
+        <!-- Тест 3: Синхронизация между вкладками -->
+        <div class="test-section">
+            <div class="test-title">🔄 Тест 3: События storage</div>
+            <button onclick="testStorageEvents()">Тестировать события</button>
+            <div id="test3Result" class="result" style="display:none;"></div>
+        </div>
+        
+        <!-- Тест 4: Производительность -->
+        <div class="test-section">
+            <div class="test-title">⚡ Тест 4: Производительность и лимиты</div>
+            <button onclick="testPerformance()">Тест производительности</button>
+            <div id="test4Result" class="result" style="display:none;"></div>
+        </div>
+        
+        <!-- Общий статус -->
+        <div id="generalStatus" class="status" style="display:none;"></div>
+    </div>
+
+    <script>
+        // Константы
+        const STORAGE_KEY = 'liraJourney:reviewQueue';
+        const TEST_KEY = 'test_localStorage_mobile';
+        
+        // Информация об устройстве
+        function showDeviceInfo() {
+            document.getElementById('userAgent').textContent = navigator.userAgent;
+            document.getElementById('platform').textContent = navigator.platform || 'Неизвестно';
+            document.getElementById('screenSize').textContent = `${window.innerWidth} x ${window.innerHeight}`;
+            
+            try {
+                localStorage.setItem('test', 'test');
+                localStorage.removeItem('test');
+                document.getElementById('localStorageStatus').textContent = '✅ Доступен';
+                document.getElementById('localStorageStatus').style.color = '#10b981';
+            } catch (e) {
+                document.getElementById('localStorageStatus').textContent = '❌ Недоступен';
+                document.getElementById('localStorageStatus').style.color = '#ef4444';
+            }
+            
+            document.getElementById('currentTime').textContent = new Date().toLocaleString('ru-RU');
+        }
+        
+        // Тест 1: Базовая проверка localStorage
+        function testLocalStorage() {
+            const resultDiv = document.getElementById('test1Result');
+            resultDiv.style.display = 'block';
+            let results = [];
+            
+            try {
+                // Тест записи
+                const testData = {
+                    timestamp: Date.now(),
+                    device: navigator.userAgent,
+                    random: Math.random()
+                };
+                
+                localStorage.setItem(TEST_KEY, JSON.stringify(testData));
+                results.push('[OK] Запись в localStorage');
+                
+                // Тест чтения
+                const readData = localStorage.getItem(TEST_KEY);
+                if (readData) {
+                    const parsed = JSON.parse(readData);
+                    if (parsed.timestamp === testData.timestamp) {
+                        results.push('[OK] Чтение из localStorage');
+                        results.push('[OK] Данные сохранены корректно');
+                    } else {
+                        results.push('[ERROR] Данные повреждены');
+                    }
+                } else {
+                    results.push('[ERROR] Не удалось прочитать данные');
+                }
+                
+                // Тест удаления
+                localStorage.removeItem(TEST_KEY);
+                const afterDelete = localStorage.getItem(TEST_KEY);
+                if (!afterDelete) {
+                    results.push('[OK] Удаление из localStorage');
+                } else {
+                    results.push('[ERROR] Не удалось удалить данные');
+                }
+                
+                // Проверка квоты
+                const storageSize = new Blob(Object.values(localStorage)).size;
+                results.push(`[INFO] Используется: ${(storageSize / 1024).toFixed(2)} KB`);
+                
+                resultDiv.className = 'result success';
+                resultDiv.textContent = results.join('\n');
+                
+                updateStatus('ok', 'localStorage работает нормально');
+                
+            } catch (error) {
+                resultDiv.className = 'result error';
+                resultDiv.textContent = `[ERROR] ${error.name}: ${error.message}`;
+                
+                updateStatus('error', 'localStorage не работает!');
+            }
+        }
+        
+        // Тест 2: Работа со словарем
+        function addTestWord() {
+            try {
+                const words = getWords();
+                const newWord = {
+                    id: `word_${Date.now()}`,
+                    word: `Test ${words.length + 1}`,
+                    translation: `Тест ${words.length + 1}`,
+                    transcription: `[test ${words.length + 1}]`,
+                    characterId: 'test_character',
+                    emoji: '🎯',
+                    sentence: 'Das ist ein Test',
+                    sentenceTranslation: 'Это тест'
+                };
+                
+                words.push(newWord);
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(words));
+                
+                showWords();
+                
+                const resultDiv = document.getElementById('test2Result');
+                resultDiv.style.display = 'block';
+                resultDiv.className = 'result success';
+                resultDiv.textContent = `[OK] Слово добавлено\n[OK] Всего слов: ${words.length}`;
+                
+            } catch (error) {
+                const resultDiv = document.getElementById('test2Result');
+                resultDiv.style.display = 'block';
+                resultDiv.className = 'result error';
+                resultDiv.textContent = `[ERROR] Не удалось добавить слово: ${error.message}`;
+            }
+        }
+        
+        function getWords() {
+            try {
+                const data = localStorage.getItem(STORAGE_KEY);
+                return data ? JSON.parse(data) : [];
+            } catch (e) {
+                return [];
+            }
+        }
+        
+        function showWords() {
+            const words = getWords();
+            const container = document.getElementById('wordsList');
+            
+            if (words.length === 0) {
+                container.innerHTML = '<div style="padding: 20px; text-align: center; color: #9ca3af;">Словарь пуст</div>';
+            } else {
+                container.innerHTML = words.map(word => `
+                    <div class="word-card">
+                        <div class="word-info">
+                            <div class="word-german">${word.emoji || '📝'} ${word.word || 'Слово'}</div>
+                            <div class="word-russian">${word.translation || 'Перевод'}</div>
+                        </div>
+                        <button class="remove-btn" onclick="removeWord('${word.id || word.word}')">×</button>
+                    </div>
+                `).join('');
+            }
+        }
+        
+        function removeWord(wordId) {
+            let words = getWords();
+            words = words.filter(w => w.id !== wordId && w.word !== wordId);
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(words));
+            showWords();
+        }
+        
+        // Тест 3: События storage
+        function testStorageEvents() {
+            const resultDiv = document.getElementById('test3Result');
+            resultDiv.style.display = 'block';
+            
+            let eventFired = false;
+            
+            const listener = (e) => {
+                if (e.key === 'test_storage_event') {
+                    eventFired = true;
+                    resultDiv.className = 'result success';
+                    resultDiv.textContent = `[OK] Событие storage получено\n[OK] Ключ: ${e.key}\n[OK] Новое значение: ${e.newValue}`;
+                    window.removeEventListener('storage', listener);
+                }
+            };
+            
+            window.addEventListener('storage', listener);
+            
+            // Симуляция изменения в другой вкладке
+            setTimeout(() => {
+                localStorage.setItem('test_storage_event', Date.now());
+                
+                setTimeout(() => {
+                    if (!eventFired) {
+                        resultDiv.className = 'result warning';
+                        resultDiv.textContent = '[WARNING] События storage не работают между вкладками\n[INFO] Это нормально для одной вкладки';
+                    }
+                    localStorage.removeItem('test_storage_event');
+                }, 1000);
+            }, 100);
+        }
+        
+        // Тест 4: Производительность
+        function testPerformance() {
+            const resultDiv = document.getElementById('test4Result');
+            resultDiv.style.display = 'block';
+            
+            try {
+                const results = [];
+                
+                // Тест скорости записи
+                const writeStart = performance.now();
+                for (let i = 0; i < 100; i++) {
+                    localStorage.setItem(`perf_test_${i}`, JSON.stringify({data: 'test'}));
+                }
+                const writeTime = performance.now() - writeStart;
+                results.push(`[OK] Запись 100 элементов: ${writeTime.toFixed(2)}ms`);
+                
+                // Тест скорости чтения
+                const readStart = performance.now();
+                for (let i = 0; i < 100; i++) {
+                    localStorage.getItem(`perf_test_${i}`);
+                }
+                const readTime = performance.now() - readStart;
+                results.push(`[OK] Чтение 100 элементов: ${readTime.toFixed(2)}ms`);
+                
+                // Очистка
+                for (let i = 0; i < 100; i++) {
+                    localStorage.removeItem(`perf_test_${i}`);
+                }
+                
+                // Проверка максимального размера
+                try {
+                    const bigData = 'x'.repeat(1024 * 1024); // 1MB
+                    localStorage.setItem('size_test', bigData);
+                    localStorage.removeItem('size_test');
+                    results.push('[OK] Поддерживается минимум 1MB данных');
+                } catch (e) {
+                    results.push('[WARNING] Ограничение размера < 1MB');
+                }
+                
+                // Оценка производительности
+                if (writeTime < 50 && readTime < 50) {
+                    results.push('[OK] Производительность отличная');
+                } else if (writeTime < 100 && readTime < 100) {
+                    results.push('[OK] Производительность хорошая');
+                } else {
+                    results.push('[WARNING] Производительность низкая');
+                }
+                
+                resultDiv.className = 'result success';
+                resultDiv.textContent = results.join('\n');
+                
+            } catch (error) {
+                resultDiv.className = 'result error';
+                resultDiv.textContent = `[ERROR] Ошибка тестирования: ${error.message}`;
+            }
+        }
+        
+        // Очистка localStorage
+        function clearLocalStorage() {
+            if (confirm('Удалить все данные из localStorage?')) {
+                localStorage.clear();
+                showWords();
+                updateStatus('warning', 'localStorage очищен');
+            }
+        }
+        
+        // Обновление статуса
+        function updateStatus(type, message) {
+            const status = document.getElementById('generalStatus');
+            status.style.display = 'block';
+            status.className = `status ${type}`;
+            status.textContent = message;
+            
+            setTimeout(() => {
+                status.style.display = 'none';
+            }, 3000);
+        }
+        
+        // Инициализация
+        document.addEventListener('DOMContentLoaded', () => {
+            showDeviceInfo();
+            showWords();
+            
+            // Обновление времени
+            setInterval(() => {
+                document.getElementById('currentTime').textContent = new Date().toLocaleString('ru-RU');
+            }, 1000);
+            
+            // Слушатель событий storage
+            window.addEventListener('storage', (e) => {
+                if (e.key === STORAGE_KEY) {
+                    console.log('Storage event detected:', e);
+                    showWords();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

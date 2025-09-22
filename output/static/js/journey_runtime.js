@@ -1225,9 +1225,17 @@ class VocabularyQuiz {
 
     generateForwardQuestion(word) {
         const options = this.generateOptions(word.russian, 'russian');
+        
+        // Добавляем подсказку к вопросу, если она есть
+        let questionText = `Что означает немецкое слово «${word.german}»?`;
+        if (word.russianHint) {
+            questionText = `Что означает немецкое слово «${word.german}» (${word.russianHint})?`;
+        }
+        
         return {
-            question: `Что означает немецкое слово «${word.german}»?`,
+            question: questionText,
             germanWord: word.german,
+            russianHint: word.russianHint || '',
             transcription: word.transcription,
             options: options,
             correct: word.russian,
@@ -1312,7 +1320,18 @@ class VocabularyQuiz {
             wordSpan.className = 'quiz-word';
             wordSpan.textContent = question.germanWord;
             meta.appendChild(wordSpan);
-
+            
+            // Добавляем подсказку если есть
+            if (question.russianHint) {
+                const hintSpan = document.createElement('span');
+                hintSpan.className = 'quiz-hint';
+                hintSpan.textContent = `(${question.russianHint})`;
+                hintSpan.style.color = '#7c3aed';
+                hintSpan.style.fontSize = '0.9em';
+                hintSpan.style.marginLeft = '8px';
+                meta.appendChild(hintSpan);
+            }
+            
             if (question.transcription) {
                 const transcriptionSpan = document.createElement('span');
                 transcriptionSpan.className = 'quiz-transcription';
@@ -1572,6 +1591,7 @@ function buildPhaseQuizWords(phase) {
         .map(word => ({
             german: word.word || '',
             russian: word.translation || '',
+            russianHint: word.russian_hint || '', // Добавляем подсказку
             transcription: word.transcription || '',
         }))
         .filter(word => word.german && word.russian);
