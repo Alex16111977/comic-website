@@ -29,7 +29,11 @@
             "auf seinem goldenen Thron",
             "im prächtigen Thronsaal des Schlosses."
           ],
-          "synonyms": ["престол", "царское место", "королевское кресло"]
+          "synonyms": [
+            "престол",
+            "царское место",
+            "королевское кресло"
+          ]
         },
         {
           "german": "das Königreich",
@@ -44,7 +48,11 @@
             "sein mächtiges Königreich",
             "unter seinen drei Töchtern."
           ],
-          "synonyms": ["царство", "держава", "государство"]
+          "synonyms": [
+            "царство",
+            "держава",
+            "государство"
+          ]
         },
         {
           "german": "die Macht",
@@ -59,7 +67,11 @@
             "die absolute Macht",
             "an Goneril und Regan nach ihrer falschen Liebeserklärung."
           ],
-          "synonyms": ["могущество", "господство", "владычество"]
+          "synonyms": [
+            "могущество",
+            "господство",
+            "владычество"
+          ]
         },
         {
           "german": "herrschen",
@@ -74,7 +86,11 @@
             "nachdem sie das Königreich",
             "von ihrem Vater bekommen."
           ],
-          "synonyms": ["властвовать", "царствовать", "управлять"]
+          "synonyms": [
+            "властвовать",
+            "царствовать",
+            "управлять"
+          ]
         },
         {
           "german": "verkünden",
@@ -89,7 +105,11 @@
             "vor dem ganzen Hof",
             "seine Entscheidung das Königreich zu teilen."
           ],
-          "synonyms": ["объявлять", "возвещать", "оглашать"]
+          "synonyms": [
+            "объявлять",
+            "возвещать",
+            "оглашать"
+          ]
         },
         {
           "german": "die Krone",
@@ -104,7 +124,11 @@
             "symbolisiert",
             "seine schwindende königliche Macht."
           ],
-          "synonyms": ["венец", "диадема", "царский венец"]
+          "synonyms": [
+            "венец",
+            "диадема",
+            "царский венец"
+          ]
         },
         {
           "german": "die Zeremonie",
@@ -119,7 +143,11 @@
             "wird für König Lear",
             "zum Beginn seiner tragischen Reise."
           ],
-          "synonyms": ["обряд", "ритуал", "торжество"]
+          "synonyms": [
+            "обряд",
+            "ритуал",
+            "торжество"
+          ]
         },
         {
           "german": "prächtig",
@@ -134,7 +162,11 @@
             "wo König Lear",
             "seine ehrliche Tochter Cordelia verstößt."
           ],
-          "synonyms": ["роскошный", "пышный", "величественный"]
+          "synonyms": [
+            "роскошный",
+            "пышный",
+            "величественный"
+          ]
         }
       ],
       "synonym_antonym_sets": [
@@ -147,26 +179,101 @@
             "hint": "то, что Лир теряет"
           },
           "synonyms": [
-            { "word": "die Herrschaft", "translation": "господство" },
-            { "word": "die Gewalt", "translation": "сила" },
-            { "word": "die Stärke", "translation": "мощь" }
+            {
+              "word": "die Herrschaft",
+              "translation": "господство"
+            },
+            {
+              "word": "die Gewalt",
+              "translation": "сила"
+            },
+            {
+              "word": "die Stärke",
+              "translation": "мощь"
+            }
           ],
           "antonyms": [
-            { "word": "die Schwäche", "translation": "слабость" },
-            { "word": "die Ohnmacht", "translation": "бессилие" }
+            {
+              "word": "die Schwäche",
+              "translation": "слабость"
+            },
+            {
+              "word": "die Ohnmacht",
+              "translation": "бессилие"
+            }
           ],
           "narration": "От абсолютной власти к полному бессилию."
+        },
+        {
+          "id": "throne_der_thron",
+          "title": "Семантичне поле: трон",
+          "target": {
+            "word": "der Thron",
+            "translation": "трон",
+            "hint": "символ королевской власти"
+          },
+          "synonyms": [
+            {
+              "word": "das Престол",
+              "translation": "престол"
+            },
+            {
+              "word": "das Царское место",
+              "translation": "царское место"
+            },
+            {
+              "word": "das Королевское кресло",
+              "translation": "королевское кресло"
+            }
+          ],
+          "antonyms": [],
+          "narration": "Від трон через контрасти до розуміння."
+        },
+        {
+          "id": "throne_das_königreich",
+          "title": "Семантичне поле: королевство",
+          "target": {
+            "word": "das Königreich",
+            "translation": "королевство",
+            "hint": "государство короля"
+          },
+          "synonyms": [
+            {
+              "word": "das Царство",
+              "translation": "царство"
+            },
+            {
+              "word": "das Держава",
+              "translation": "держава"
+            },
+            {
+              "word": "das Государство",
+              "translation": "государство"
+            }
+          ],
+          "antonyms": [],
+          "narration": "Від королевство через контрасти до розуміння."
         }
       ],
       "quizzes": [
         {
           "question": "Что означает немецкое слово «der Thron»?",
-          "choices": ["королевство", "власть", "править", "трон"],
+          "choices": [
+            "королевство",
+            "власть",
+            "править",
+            "трон"
+          ],
           "correct_index": 3
         },
         {
           "question": "Что означает немецкое слово «das Königreich»?",
-          "choices": ["трон", "власть", "править", "королевство"],
+          "choices": [
+            "трон",
+            "власть",
+            "править",
+            "королевство"
+          ],
           "correct_index": 3
         }
       ]
@@ -197,7 +304,11 @@
             "ihren alten Vater König Lear",
             "indem sie seine Dienerschaft reduziert."
           ],
-          "synonyms": ["оскорблять", "позорить", "уничижать"]
+          "synonyms": [
+            "оскорблять",
+            "позорить",
+            "уничижать"
+          ]
         },
         {
           "german": "der Zorn",
@@ -212,7 +323,11 @@
             "als Goneril ihm die königlichen Ehren",
             "verweigert und beleidigt."
           ],
-          "synonyms": ["ярость", "негодование", "возмущение"]
+          "synonyms": [
+            "ярость",
+            "негодование",
+            "возмущение"
+          ]
         },
         {
           "german": "die Undankbarkeit",
@@ -227,7 +342,11 @@
             "verwandelt König Lears Vaterliebe",
             "in brennenden Schmerz."
           ],
-          "synonyms": ["черная неблагодарность", "неблагодарность", "забывчивость добра"]
+          "synonyms": [
+            "черная неблагодарность",
+            "неблагодарность",
+            "забывчивость добра"
+          ]
         },
         {
           "german": "verfluchen",
@@ -242,7 +361,11 @@
             "seine grausame Tochter Goneril",
             "mit schrecklichen Worten vor allen Dienern."
           ],
-          "synonyms": ["предавать проклятию", "клясть", "анафематствовать"]
+          "synonyms": [
+            "предавать проклятию",
+            "клясть",
+            "анафематствовать"
+          ]
         },
         {
           "german": "vertreiben",
@@ -257,7 +380,11 @@
             "ihren königlichen Vater",
             "aus dem Schloss das er ihr geschenkt hat."
           ],
-          "synonyms": ["выгонять", "прогонять", "выдворять"]
+          "synonyms": [
+            "выгонять",
+            "прогонять",
+            "выдворять"
+          ]
         },
         {
           "german": "die Kränkung",
@@ -272,7 +399,11 @@
             "brennt in König Lears Herz",
             "wie glühendes Eisen."
           ],
-          "synonyms": ["оскорбление", "уязвление", "унижение"]
+          "synonyms": [
+            "оскорбление",
+            "уязвление",
+            "унижение"
+          ]
         },
         {
           "german": "bereuen",
@@ -287,7 +418,11 @@
             "dass er Cordelia verstieß",
             "und Goneril vertraute."
           ],
-          "synonyms": ["раскаиваться", "жалеть", "каяться"]
+          "synonyms": [
+            "раскаиваться",
+            "жалеть",
+            "каяться"
+          ]
         },
         {
           "german": "der Fluch",
@@ -302,19 +437,94 @@
             "hallt durch die Säle",
             "des Schlosses wie Donner."
           ],
-          "synonyms": ["заклятие", "анафема", "проклятье"]
+          "synonyms": [
+            "заклятие",
+            "анафема",
+            "проклятье"
+          ]
         }
       ],
       "quizzes": [
         {
           "question": "Что означает немецкое слово «demütigen»?",
-          "choices": ["гнев", "неблагодарность", "проклинать", "унижать"],
+          "choices": [
+            "гнев",
+            "неблагодарность",
+            "проклинать",
+            "унижать"
+          ],
           "correct_index": 3
         },
         {
           "question": "Что означает немецкое слово «der Zorn»?",
-          "choices": ["унижать", "неблагодарность", "проклинать", "гнев"],
+          "choices": [
+            "унижать",
+            "неблагодарность",
+            "проклинать",
+            "гнев"
+          ],
           "correct_index": 3
+        }
+      ],
+      "synonym_antonym_sets": [
+        {
+          "id": "goneril_demütigen",
+          "title": "Семантичне поле: унижать",
+          "target": {
+            "word": "demütigen",
+            "translation": "унижать",
+            "hint": "оскорблять достоинство"
+          },
+          "synonyms": [
+            {
+              "word": "das Оскорблять",
+              "translation": "оскорблять"
+            },
+            {
+              "word": "das Позорить",
+              "translation": "позорить"
+            },
+            {
+              "word": "das Уничижать",
+              "translation": "уничижать"
+            }
+          ],
+          "antonyms": [],
+          "narration": "Від унижать через контрасти до розуміння."
+        },
+        {
+          "id": "goneril_der_zorn",
+          "title": "Семантичне поле: гнев",
+          "target": {
+            "word": "der Zorn",
+            "translation": "гнев",
+            "hint": "благородный, праведный"
+          },
+          "synonyms": [
+            {
+              "word": "die Wut",
+              "translation": "лють"
+            },
+            {
+              "word": "der Ärger",
+              "translation": "злість"
+            },
+            {
+              "word": "die Rage",
+              "translation": "шаленість"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Ruhe",
+              "translation": "спокій"
+            },
+            {
+              "word": "der Frieden",
+              "translation": "мир"
+            }
+          ],
+          "narration": "Від гнев через контрасти до розуміння."
         }
       ]
     },
@@ -344,7 +554,11 @@
             "Regans Schloss",
             "während draußen ein furchtbarer Sturm tobt."
           ],
-          "synonyms": ["оставлять", "уходить", "бросать"]
+          "synonyms": [
+            "оставлять",
+            "уходить",
+            "бросать"
+          ]
         },
         {
           "german": "verstoßen",
@@ -359,7 +573,11 @@
             "ihren alten Vater König Lear",
             "in die stürmische Nacht."
           ],
-          "synonyms": ["отрекаться", "изгонять", "отталкивать"]
+          "synonyms": [
+            "отрекаться",
+            "изгонять",
+            "отталкивать"
+          ]
         },
         {
           "german": "die Grausamkeit",
@@ -374,7 +592,11 @@
             "zerbricht",
             "König Lears stolzes königliches Herz."
           ],
-          "synonyms": ["безжалостность", "бесчеловечность", "свирепость"]
+          "synonyms": [
+            "безжалостность",
+            "бесчеловечность",
+            "свирепость"
+          ]
         },
         {
           "german": "die Verzweiflung",
@@ -389,7 +611,11 @@
             "als beide Töchter",
             "ihm jegliche Unterkunft verweigern."
           ],
-          "synonyms": ["безнадёжность", "безысходность", "уныние"]
+          "synonyms": [
+            "безнадёжность",
+            "безысходность",
+            "уныние"
+          ]
         },
         {
           "german": "betteln",
@@ -404,7 +630,11 @@
             "bei seinen herzlosen Töchtern",
             "um einen Schlafplatz."
           ],
-          "synonyms": ["умолять", "молить", "выпрашивать"]
+          "synonyms": [
+            "умолять",
+            "молить",
+            "выпрашивать"
+          ]
         },
         {
           "german": "die Einsamkeit",
@@ -419,7 +649,11 @@
             "nachdem seine eigenen Töchter",
             "ihn verraten haben."
           ],
-          "synonyms": ["уединение", "изоляция", "оставленность"]
+          "synonyms": [
+            "уединение",
+            "изоляция",
+            "оставленность"
+          ]
         },
         {
           "german": "die Träne",
@@ -434,7 +668,11 @@
             "während er",
             "Regans grausame Worte hört."
           ],
-          "synonyms": ["слезинка", "капля горя", "слёзы"]
+          "synonyms": [
+            "слезинка",
+            "капля горя",
+            "слёзы"
+          ]
         },
         {
           "german": "die Not",
@@ -449,19 +687,85 @@
             "dass nur Cordelia",
             "ihn wirklich liebte."
           ],
-          "synonyms": ["бедность", "лишения", "недостаток"]
+          "synonyms": [
+            "бедность",
+            "лишения",
+            "недостаток"
+          ]
         }
       ],
       "quizzes": [
         {
           "question": "Что означает немецкое слово «verlassen»?",
-          "choices": ["отвергать", "жестокость", "отчаяние", "покидать"],
+          "choices": [
+            "отвергать",
+            "жестокость",
+            "отчаяние",
+            "покидать"
+          ],
           "correct_index": 3
         },
         {
           "question": "Что означает немецкое слово «verstoßen»?",
-          "choices": ["покидать", "жестокость", "отчаяние", "отвергать"],
+          "choices": [
+            "покидать",
+            "жестокость",
+            "отчаяние",
+            "отвергать"
+          ],
           "correct_index": 3
+        }
+      ],
+      "synonym_antonym_sets": [
+        {
+          "id": "regan_verlassen",
+          "title": "Семантичне поле: покидать",
+          "target": {
+            "word": "verlassen",
+            "translation": "покидать",
+            "hint": "оставлять навсегда"
+          },
+          "synonyms": [
+            {
+              "word": "das Оставлять",
+              "translation": "оставлять"
+            },
+            {
+              "word": "das Уходить",
+              "translation": "уходить"
+            },
+            {
+              "word": "das Бросать",
+              "translation": "бросать"
+            }
+          ],
+          "antonyms": [],
+          "narration": "Від покидать через контрасти до розуміння."
+        },
+        {
+          "id": "regan_verstoßen",
+          "title": "Семантичне поле: отвергать",
+          "target": {
+            "word": "verstoßen",
+            "translation": "отвергать",
+            "hint": "из семьи, от себя"
+          },
+          "synonyms": [
+            {
+              "word": "das Отрекаться",
+              "translation": "отрекаться"
+            },
+            {
+              "word": "das Изгонять",
+              "translation": "изгонять"
+            },
+            {
+              "word": "das Отталкивать",
+              "translation": "отталкивать"
+            }
+          ],
+          "antonyms": [],
+          "narration": "Від отвергать через контрасти до розуміння."
         }
       ]
     },
@@ -491,7 +795,11 @@
             "während König Lear sein Schicksal verflucht",
             "und gegen die Elemente schreit."
           ],
-          "synonyms": ["ураган", "шторм", "непогода"]
+          "synonyms": [
+            "ураган",
+            "шторм",
+            "непогода"
+          ]
         },
         {
           "german": "der Wahnsinn",
@@ -506,7 +814,11 @@
             "dem schrecklichen Wahnsinn",
             "während der wilden Sturmnacht auf der Heide."
           ],
-          "synonyms": ["сумасшествие", "помешательство", "умопомрачение"]
+          "synonyms": [
+            "сумасшествие",
+            "помешательство",
+            "умопомрачение"
+          ]
         },
         {
           "german": "toben",
@@ -521,7 +833,11 @@
             "um den wahnsinnigen König Lear",
             "der seine Kleider zerreißt."
           ],
-          "synonyms": ["свирепствовать", "неистовствовать", "буйствовать"]
+          "synonyms": [
+            "свирепствовать",
+            "неистовствовать",
+            "буйствовать"
+          ]
         },
         {
           "german": "der Donner",
@@ -536,7 +852,11 @@
             "König Lears verzweifelte Schreie",
             "als er den Himmel herausfordert."
           ],
-          "synonyms": ["громыхание", "раскат грома", "грохот"]
+          "synonyms": [
+            "громыхание",
+            "раскат грома",
+            "грохот"
+          ]
         },
         {
           "german": "der Blitz",
@@ -551,7 +871,11 @@
             "König Lears verzerrtes Gesicht",
             "während er im Sturm sein Leid beklagt."
           ],
-          "synonyms": ["зарница", "разряд", "вспышка"]
+          "synonyms": [
+            "зарница",
+            "разряд",
+            "вспышка"
+          ]
         },
         {
           "german": "schreien",
@@ -566,7 +890,11 @@
             "seine Wut und seinen Schmerz",
             "in die tobende Sturmnacht hinaus."
           ],
-          "synonyms": ["вопить", "орать", "реветь"]
+          "synonyms": [
+            "вопить",
+            "орать",
+            "реветь"
+          ]
         },
         {
           "german": "nackt",
@@ -581,7 +909,11 @@
             "und steht nackt im Sturm",
             "wie ein armer Bettler."
           ],
-          "synonyms": ["обнажённый", "нагой", "раздетый"]
+          "synonyms": [
+            "обнажённый",
+            "нагой",
+            "раздетый"
+          ]
         },
         {
           "german": "das Chaos",
@@ -596,19 +928,103 @@
             "König Lears zerbrochenen Geisteszustand",
             "während er durch den Sturm irrt."
           ],
-          "synonyms": ["беспорядок", "сумятица", "неразбериха"]
+          "synonyms": [
+            "беспорядок",
+            "сумятица",
+            "неразбериха"
+          ]
         }
       ],
       "quizzes": [
         {
           "question": "Что означает немецкое слово «der Sturm»?",
-          "choices": ["безумие", "бушевать", "гром", "буря"],
+          "choices": [
+            "безумие",
+            "бушевать",
+            "гром",
+            "буря"
+          ],
           "correct_index": 3
         },
         {
           "question": "Что означает немецкое слово «der Wahnsinn»?",
-          "choices": ["буря", "бушевать", "гром", "безумие"],
+          "choices": [
+            "буря",
+            "бушевать",
+            "гром",
+            "безумие"
+          ],
           "correct_index": 3
+        }
+      ],
+      "synonym_antonym_sets": [
+        {
+          "id": "storm_der_sturm",
+          "title": "Семантичне поле: буря",
+          "target": {
+            "word": "der Sturm",
+            "translation": "буря",
+            "hint": "сильная непогода"
+          },
+          "synonyms": [
+            {
+              "word": "das Unwetter",
+              "translation": "негода"
+            },
+            {
+              "word": "der Orkan",
+              "translation": "ураган"
+            },
+            {
+              "word": "das Gewitter",
+              "translation": "гроза"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Stille",
+              "translation": "тиша"
+            },
+            {
+              "word": "die Windstille",
+              "translation": "штиль"
+            }
+          ],
+          "narration": "Від буря через контрасти до розуміння."
+        },
+        {
+          "id": "storm_der_wahnsinn",
+          "title": "Семантичне поле: безумие",
+          "target": {
+            "word": "der Wahnsinn",
+            "translation": "безумие",
+            "hint": "полная потеря разума"
+          },
+          "synonyms": [
+            {
+              "word": "die Verrücktheit",
+              "translation": "божевілля"
+            },
+            {
+              "word": "der Irrsinn",
+              "translation": "безумство"
+            },
+            {
+              "word": "die Geisteskrankheit",
+              "translation": "психічна хвороба"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Vernunft",
+              "translation": "розум"
+            },
+            {
+              "word": "die Klarheit",
+              "translation": "ясність"
+            }
+          ],
+          "narration": "Від безумие через контрасти до розуміння."
         }
       ]
     },
@@ -638,7 +1054,11 @@
             "das wahre Elend der Armen",
             "als er mit Edgar in der Hütte Zuflucht sucht."
           ],
-          "synonyms": ["бедность", "убожество", "лишения"]
+          "synonyms": [
+            "бедность",
+            "убожество",
+            "лишения"
+          ]
         },
         {
           "german": "der Bettler",
@@ -653,7 +1073,11 @@
             "König Lear",
             "die Weisheit der völligen Armut."
           ],
-          "synonyms": ["попрошайка", "бедняк", "оборванец"]
+          "synonyms": [
+            "попрошайка",
+            "бедняк",
+            "оборванец"
+          ]
         },
         {
           "german": "arm",
@@ -668,7 +1092,11 @@
             "und versteht endlich",
             "ihr Leiden."
           ],
-          "synonyms": ["неимущий", "нищий", "обездоленный"]
+          "synonyms": [
+            "неимущий",
+            "нищий",
+            "обездоленный"
+          ]
         },
         {
           "german": "frieren",
@@ -683,7 +1111,11 @@
             "in der kalten Hütte",
             "während draußen der Sturm wütet."
           ],
-          "synonyms": ["зябнуть", "коченеть", "дрожать от холода"]
+          "synonyms": [
+            "зябнуть",
+            "коченеть",
+            "дрожать от холода"
+          ]
         },
         {
           "german": "die Hütte",
@@ -698,7 +1130,11 @@
             "mehr Menschlichkeit",
             "als in seinen prächtigen Palästen."
           ],
-          "synonyms": ["лачуга", "хибара", "домик"]
+          "synonyms": [
+            "лачуга",
+            "хибара",
+            "домик"
+          ]
         },
         {
           "german": "leiden",
@@ -713,7 +1149,11 @@
             "und bereut dass er als König",
             "ihre Not ignorierte."
           ],
-          "synonyms": ["мучиться", "терпеть", "испытывать боль"]
+          "synonyms": [
+            "мучиться",
+            "терпеть",
+            "испытывать боль"
+          ]
         },
         {
           "german": "der Narr",
@@ -728,7 +1168,11 @@
             "und tröstet ihn",
             "mit bitteren Wahrheiten."
           ],
-          "synonyms": ["дурак", "скоморох", "блазень"]
+          "synonyms": [
+            "дурак",
+            "скоморох",
+            "блазень"
+          ]
         },
         {
           "german": "die Erkenntnis",
@@ -743,19 +1187,85 @@
             "kommt zu König Lear erst",
             "nachdem er alles verloren hat."
           ],
-          "synonyms": ["прозрение", "осознание", "понимание"]
+          "synonyms": [
+            "прозрение",
+            "осознание",
+            "понимание"
+          ]
         }
       ],
       "quizzes": [
         {
           "question": "Что означает немецкое слово «das Elend»?",
-          "choices": ["нищий", "бедный", "мёрзнуть", "нищета"],
+          "choices": [
+            "нищий",
+            "бедный",
+            "мёрзнуть",
+            "нищета"
+          ],
           "correct_index": 3
         },
         {
           "question": "Что означает немецкое слово «der Bettler»?",
-          "choices": ["нищета", "бедный", "мёрзнуть", "нищий"],
+          "choices": [
+            "нищета",
+            "бедный",
+            "мёрзнуть",
+            "нищий"
+          ],
           "correct_index": 3
+        }
+      ],
+      "synonym_antonym_sets": [
+        {
+          "id": "hut_das_elend",
+          "title": "Семантичне поле: нищета",
+          "target": {
+            "word": "das Elend",
+            "translation": "нищета",
+            "hint": "крайняя бедность"
+          },
+          "synonyms": [
+            {
+              "word": "das Бедность",
+              "translation": "бедность"
+            },
+            {
+              "word": "das Убожество",
+              "translation": "убожество"
+            },
+            {
+              "word": "das Лишения",
+              "translation": "лишения"
+            }
+          ],
+          "antonyms": [],
+          "narration": "Від нищета через контрасти до розуміння."
+        },
+        {
+          "id": "hut_der_bettler",
+          "title": "Семантичне поле: нищий",
+          "target": {
+            "word": "der Bettler",
+            "translation": "нищий",
+            "hint": "просящий милостыню"
+          },
+          "synonyms": [
+            {
+              "word": "das Попрошайка",
+              "translation": "попрошайка"
+            },
+            {
+              "word": "das Бедняк",
+              "translation": "бедняк"
+            },
+            {
+              "word": "das Оборванец",
+              "translation": "оборванец"
+            }
+          ],
+          "antonyms": [],
+          "narration": "Від нищий через контрасти до розуміння."
         }
       ]
     },
@@ -785,7 +1295,11 @@
             "seine treue Tochter Cordelia wieder",
             "nach seinem langen Wahnsinn in Dover."
           ],
-          "synonyms": ["опознавать", "распознавать", "признавать"]
+          "synonyms": [
+            "опознавать",
+            "распознавать",
+            "признавать"
+          ]
         },
         {
           "german": "verstehen",
@@ -800,7 +1314,11 @@
             "dass nur Cordelia ihn wirklich liebte",
             "ohne Falschheit oder Lüge."
           ],
-          "synonyms": ["постигать", "осознавать", "уразумевать"]
+          "synonyms": [
+            "постигать",
+            "осознавать",
+            "уразумевать"
+          ]
         },
         {
           "german": "die Wahrheit",
@@ -815,7 +1333,11 @@
             "über ihre Liebe",
             "während ihre Schwestern König Lear belogen."
           ],
-          "synonyms": ["истина", "правдивость", "достоверность"]
+          "synonyms": [
+            "истина",
+            "правдивость",
+            "достоверность"
+          ]
         },
         {
           "german": "die Reue",
@@ -830,7 +1352,11 @@
             "quält König Lear",
             "als er vor Cordelia niederkniet."
           ],
-          "synonyms": ["покаяние", "сожаление", "угрызение совести"]
+          "synonyms": [
+            "покаяние",
+            "сожаление",
+            "угрызение совести"
+          ]
         },
         {
           "german": "die Weisheit",
@@ -845,7 +1371,11 @@
             "nachdem er",
             "durch Wahnsinn und Leiden gegangen ist."
           ],
-          "synonyms": ["премудрость", "разумность", "благоразумие"]
+          "synonyms": [
+            "премудрость",
+            "разумность",
+            "благоразумие"
+          ]
         },
         {
           "german": "vergeben",
@@ -860,7 +1390,11 @@
             "ihrem reuigen Vater König Lear",
             "mit Tränen der Liebe und des Mitleids."
           ],
-          "synonyms": ["извинять", "отпускать грехи", "миловать"]
+          "synonyms": [
+            "извинять",
+            "отпускать грехи",
+            "миловать"
+          ]
         },
         {
           "german": "die Einsicht",
@@ -875,7 +1409,11 @@
             "kommt zu König Lear",
             "beim Wiedersehen mit Cordelia."
           ],
-          "synonyms": ["озарение", "осознание", "просветление"]
+          "synonyms": [
+            "озарение",
+            "осознание",
+            "просветление"
+          ]
         },
         {
           "german": "schuldig",
@@ -890,19 +1428,85 @@
             "weil er Cordelia verstoßen",
             "und seinen falschen Töchtern vertraut hatte."
           ],
-          "synonyms": ["повинный", "виноватый", "грешный"]
+          "synonyms": [
+            "повинный",
+            "виноватый",
+            "грешный"
+          ]
         }
       ],
       "quizzes": [
         {
           "question": "Что означает немецкое слово «erkennen»?",
-          "choices": ["понимать", "правда", "раскаяние", "узнавать"],
+          "choices": [
+            "понимать",
+            "правда",
+            "раскаяние",
+            "узнавать"
+          ],
           "correct_index": 3
         },
         {
           "question": "Что означает немецкое слово «verstehen»?",
-          "choices": ["узнавать", "правда", "раскаяние", "понимать"],
+          "choices": [
+            "узнавать",
+            "правда",
+            "раскаяние",
+            "понимать"
+          ],
           "correct_index": 3
+        }
+      ],
+      "synonym_antonym_sets": [
+        {
+          "id": "dover_erkennen",
+          "title": "Семантичне поле: узнавать",
+          "target": {
+            "word": "erkennen",
+            "translation": "узнавать",
+            "hint": "видеть знакомое"
+          },
+          "synonyms": [
+            {
+              "word": "das Опознавать",
+              "translation": "опознавать"
+            },
+            {
+              "word": "das Распознавать",
+              "translation": "распознавать"
+            },
+            {
+              "word": "das Признавать",
+              "translation": "признавать"
+            }
+          ],
+          "antonyms": [],
+          "narration": "Від узнавать через контрасти до розуміння."
+        },
+        {
+          "id": "dover_verstehen",
+          "title": "Семантичне поле: понимать",
+          "target": {
+            "word": "verstehen",
+            "translation": "понимать",
+            "hint": "осознавать смысл"
+          },
+          "synonyms": [
+            {
+              "word": "das Постигать",
+              "translation": "постигать"
+            },
+            {
+              "word": "das Осознавать",
+              "translation": "осознавать"
+            },
+            {
+              "word": "das Уразумевать",
+              "translation": "уразумевать"
+            }
+          ],
+          "antonyms": [],
+          "narration": "Від понимать через контрасти до розуміння."
         }
       ]
     },
@@ -932,7 +1536,11 @@
             "in ihrer letzten gemeinsamen Stunde",
             "im Gefängnis."
           ],
-          "synonyms": ["извинять", "отпускать", "миловать"]
+          "synonyms": [
+            "извинять",
+            "отпускать",
+            "миловать"
+          ]
         },
         {
           "german": "der Tod",
@@ -947,7 +1555,11 @@
             "kurz bevor sie beide",
             "gerettet werden könnten."
           ],
-          "synonyms": ["кончина", "гибель", "уход"]
+          "synonyms": [
+            "кончина",
+            "гибель",
+            "уход"
+          ]
         },
         {
           "german": "sterben",
@@ -962,7 +1574,11 @@
             "als er seine tote Tochter Cordelia",
             "in seinen Armen hält."
           ],
-          "synonyms": ["погибать", "скончаться", "почить"]
+          "synonyms": [
+            "погибать",
+            "скончаться",
+            "почить"
+          ]
         },
         {
           "german": "das Ende",
@@ -977,7 +1593,11 @@
             "als er neben seiner geliebten Cordelia",
             "zusammenbricht."
           ],
-          "synonyms": ["финал", "завершение", "исход"]
+          "synonyms": [
+            "финал",
+            "завершение",
+            "исход"
+          ]
         },
         {
           "german": "das Herz",
@@ -992,7 +1612,11 @@
             "den Verlust",
             "seiner einzigen wahren Tochter Cordelia."
           ],
-          "synonyms": ["душа", "сердечко", "средоточие чувств"]
+          "synonyms": [
+            "душа",
+            "сердечко",
+            "средоточие чувств"
+          ]
         },
         {
           "german": "die Trauer",
@@ -1007,7 +1631,11 @@
             "als er Cordelias leblose Gestalt",
             "an sich drückt."
           ],
-          "synonyms": ["печаль", "горе", "траур"]
+          "synonyms": [
+            "печаль",
+            "горе",
+            "траур"
+          ]
         },
         {
           "german": "der Abschied",
@@ -1022,7 +1650,11 @@
             "wird zur herzzerreißendsten Szene",
             "der Tragödie."
           ],
-          "synonyms": ["расставание", "разлука", "прощальный час"]
+          "synonyms": [
+            "расставание",
+            "разлука",
+            "прощальный час"
+          ]
         },
         {
           "german": "ewig",
@@ -1037,19 +1669,85 @@
             "selbst nach dem Tod",
             "im Jenseits."
           ],
-          "synonyms": ["бесконечный", "непреходящий", "бессмертный"]
+          "synonyms": [
+            "бесконечный",
+            "непреходящий",
+            "бессмертный"
+          ]
         }
       ],
       "quizzes": [
         {
           "question": "Что означает немецкое слово «verzeihen»?",
-          "choices": ["смерть", "умирать", "конец", "прощать"],
+          "choices": [
+            "смерть",
+            "умирать",
+            "конец",
+            "прощать"
+          ],
           "correct_index": 3
         },
         {
           "question": "Что означает немецкое слово «der Tod»?",
-          "choices": ["прощать", "умирать", "конец", "смерть"],
+          "choices": [
+            "прощать",
+            "умирать",
+            "конец",
+            "смерть"
+          ],
           "correct_index": 3
+        }
+      ],
+      "synonym_antonym_sets": [
+        {
+          "id": "prison_verzeihen",
+          "title": "Семантичне поле: прощать",
+          "target": {
+            "word": "verzeihen",
+            "translation": "прощать",
+            "hint": "давать прощение"
+          },
+          "synonyms": [
+            {
+              "word": "das Извинять",
+              "translation": "извинять"
+            },
+            {
+              "word": "das Отпускать",
+              "translation": "отпускать"
+            },
+            {
+              "word": "das Миловать",
+              "translation": "миловать"
+            }
+          ],
+          "antonyms": [],
+          "narration": "Від прощать через контрасти до розуміння."
+        },
+        {
+          "id": "prison_der_tod",
+          "title": "Семантичне поле: смерть",
+          "target": {
+            "word": "der Tod",
+            "translation": "смерть",
+            "hint": "конец жизни"
+          },
+          "synonyms": [
+            {
+              "word": "das Кончина",
+              "translation": "кончина"
+            },
+            {
+              "word": "das Гибель",
+              "translation": "гибель"
+            },
+            {
+              "word": "das Уход",
+              "translation": "уход"
+            }
+          ],
+          "antonyms": [],
+          "narration": "Від смерть через контрасти до розуміння."
         }
       ]
     }

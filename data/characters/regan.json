@@ -126,7 +126,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "goneril",
@@ -240,7 +241,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "regan",
@@ -366,7 +368,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "storm",
@@ -491,7 +494,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "hut",
@@ -605,7 +609,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "dover",
@@ -720,7 +725,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "prison",
@@ -845,7 +851,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     }
   ]
 }

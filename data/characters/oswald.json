@@ -127,7 +127,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "messenger",
@@ -241,7 +242,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "insult",
@@ -366,7 +368,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "spy",
@@ -481,7 +484,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "schemer",
@@ -609,7 +613,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "pursuer",
@@ -723,7 +728,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "coward_death",
@@ -848,7 +854,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     }
   ]
 }

@@ -126,7 +126,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "first_doubts",
@@ -240,7 +241,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "awakening",
@@ -365,7 +367,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "confrontation",
@@ -479,7 +482,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "moral_stand",
@@ -604,7 +608,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "justice_seeker",
@@ -719,7 +724,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "new_ruler",
@@ -844,7 +850,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     }
   ]
 }

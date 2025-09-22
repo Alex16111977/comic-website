@@ -126,7 +126,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "cruel_husband",
@@ -240,7 +241,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "tyrant",
@@ -365,7 +367,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "punishment",
@@ -478,6 +481,42 @@
             "гнев"
           ],
           "correct_index": 3
+        }
+      ],
+      "synonym_antonym_sets": [
+        {
+          "id": "punishment_der_zorn",
+          "title": "Семантичне поле: гнев",
+          "target": {
+            "word": "der Zorn",
+            "translation": "гнев",
+            "hint": ""
+          },
+          "synonyms": [
+            {
+              "word": "die Wut",
+              "translation": "лють"
+            },
+            {
+              "word": "der Ärger",
+              "translation": "злість"
+            },
+            {
+              "word": "die Rage",
+              "translation": "шаленість"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Ruhe",
+              "translation": "спокій"
+            },
+            {
+              "word": "der Frieden",
+              "translation": "мир"
+            }
+          ],
+          "narration": "Від гнев через контрасти до розуміння."
         }
       ]
     },
@@ -604,7 +643,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "wounded",
@@ -718,7 +758,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "death",
@@ -844,7 +885,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     }
   ]
 }

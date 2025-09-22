@@ -179,15 +179,55 @@
             "hint": "оружие Гонерильи"
           },
           "synonyms": [
-            { "word": "die Heuchelei", "translation": "лицемерие" },
-            { "word": "der Betrug", "translation": "обман" },
-            { "word": "die Täuschung", "translation": "заблуждение" }
+            {
+              "word": "die Heuchelei",
+              "translation": "лицемерие"
+            },
+            {
+              "word": "der Betrug",
+              "translation": "обман"
+            },
+            {
+              "word": "die Täuschung",
+              "translation": "заблуждение"
+            }
           ],
           "antonyms": [
-            { "word": "die Wahrheit", "translation": "правда" },
-            { "word": "die Ehrlichkeit", "translation": "честность" }
+            {
+              "word": "die Wahrheit",
+              "translation": "правда"
+            },
+            {
+              "word": "die Ehrlichkeit",
+              "translation": "честность"
+            }
           ],
           "narration": "Гонерилья мастерски использует ложь для достижения целей."
+        },
+        {
+          "id": "throne_schwören",
+          "title": "Семантичне поле: клясться",
+          "target": {
+            "word": "schwören",
+            "translation": "клясться",
+            "hint": "торжественно обещать"
+          },
+          "synonyms": [
+            {
+              "word": "das Присягать",
+              "translation": "присягать"
+            },
+            {
+              "word": "das Обещать",
+              "translation": "обещать"
+            },
+            {
+              "word": "das Заклясться",
+              "translation": "заклясться"
+            }
+          ],
+          "antonyms": [],
+          "narration": "Від клясться через контрасти до розуміння."
         }
       ],
       "quizzes": [
@@ -400,6 +440,76 @@
           ],
           "correct_index": 3
         }
+      ],
+      "synonym_antonym_sets": [
+        {
+          "id": "goneril_die_macht",
+          "title": "Семантичне поле: власть",
+          "target": {
+            "word": "die Macht",
+            "translation": "власть",
+            "hint": "полная власть"
+          },
+          "synonyms": [
+            {
+              "word": "die Herrschaft",
+              "translation": "господство"
+            },
+            {
+              "word": "die Gewalt",
+              "translation": "сила"
+            },
+            {
+              "word": "die Autorität",
+              "translation": "авторитет"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Schwäche",
+              "translation": "слабість"
+            },
+            {
+              "word": "die Ohnmacht",
+              "translation": "безсилля"
+            }
+          ],
+          "narration": "Від власть через контрасти до розуміння."
+        },
+        {
+          "id": "goneril_herrschen",
+          "title": "Семантичне поле: править",
+          "target": {
+            "word": "herrschen",
+            "translation": "править",
+            "hint": "управлять страной"
+          },
+          "synonyms": [
+            {
+              "word": "regieren",
+              "translation": "керувати"
+            },
+            {
+              "word": "befehlen",
+              "translation": "наказувати"
+            },
+            {
+              "word": "dominieren",
+              "translation": "домінувати"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "gehorchen",
+              "translation": "підкорятися"
+            },
+            {
+              "word": "dienen",
+              "translation": "служити"
+            }
+          ],
+          "narration": "Від править через контрасти до розуміння."
+        }
       ]
     },
     {
@@ -589,6 +699,58 @@
           ],
           "correct_index": 3
         }
+      ],
+      "synonym_antonym_sets": [
+        {
+          "id": "regan_demütigen",
+          "title": "Семантичне поле: унижать",
+          "target": {
+            "word": "demütigen",
+            "translation": "унижать",
+            "hint": "заставлять унижаться"
+          },
+          "synonyms": [
+            {
+              "word": "das Унижать",
+              "translation": "унижать"
+            },
+            {
+              "word": "das Оскорблять",
+              "translation": "оскорблять"
+            },
+            {
+              "word": "das Принижать",
+              "translation": "принижать"
+            }
+          ],
+          "antonyms": [],
+          "narration": "Від унижать через контрасти до розуміння."
+        },
+        {
+          "id": "regan_grausam",
+          "title": "Семантичне поле: жестокий",
+          "target": {
+            "word": "grausam",
+            "translation": "жестокий",
+            "hint": "полностью жестокий"
+          },
+          "synonyms": [
+            {
+              "word": "das Жестокий",
+              "translation": "жестокий"
+            },
+            {
+              "word": "das Безжалостный",
+              "translation": "безжалостный"
+            },
+            {
+              "word": "das Свирепый",
+              "translation": "свирепый"
+            }
+          ],
+          "antonyms": [],
+          "narration": "Від жестокий через контрасти до розуміння."
+        }
       ]
     },
     {
@@ -758,6 +920,67 @@
             "буря"
           ],
           "correct_index": 3
+        }
+      ],
+      "synonym_antonym_sets": [
+        {
+          "id": "storm_verstoßen",
+          "title": "Семантичне поле: отвергать",
+          "target": {
+            "word": "verstoßen",
+            "translation": "отвергать",
+            "hint": "из семьи выгонять"
+          },
+          "synonyms": [
+            {
+              "word": "das Изгонять",
+              "translation": "изгонять"
+            },
+            {
+              "word": "das Отвергать",
+              "translation": "отвергать"
+            },
+            {
+              "word": "das Отрекаться",
+              "translation": "отрекаться"
+            }
+          ],
+          "antonyms": [],
+          "narration": "Від отвергать через контрасти до розуміння."
+        },
+        {
+          "id": "storm_der_sturm",
+          "title": "Семантичне поле: буря",
+          "target": {
+            "word": "der Sturm",
+            "translation": "буря",
+            "hint": "яростная буря"
+          },
+          "synonyms": [
+            {
+              "word": "das Unwetter",
+              "translation": "негода"
+            },
+            {
+              "word": "der Orkan",
+              "translation": "ураган"
+            },
+            {
+              "word": "das Gewitter",
+              "translation": "гроза"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Stille",
+              "translation": "тиша"
+            },
+            {
+              "word": "die Windstille",
+              "translation": "штиль"
+            }
+          ],
+          "narration": "Від буря через контрасти до розуміння."
         }
       ]
     },
@@ -948,6 +1171,58 @@
           ],
           "correct_index": 3
         }
+      ],
+      "synonym_antonym_sets": [
+        {
+          "id": "hut_streiten",
+          "title": "Семантичне поле: ссориться",
+          "target": {
+            "word": "streiten",
+            "translation": "ссориться",
+            "hint": "резко ругаться"
+          },
+          "synonyms": [
+            {
+              "word": "das Ссориться",
+              "translation": "ссориться"
+            },
+            {
+              "word": "das Ругаться",
+              "translation": "ругаться"
+            },
+            {
+              "word": "das Препираться",
+              "translation": "препираться"
+            }
+          ],
+          "antonyms": [],
+          "narration": "Від ссориться через контрасти до розуміння."
+        },
+        {
+          "id": "hut_verraten",
+          "title": "Семантичне поле: предавать",
+          "target": {
+            "word": "verraten",
+            "translation": "предавать",
+            "hint": "изменой выдавать"
+          },
+          "synonyms": [
+            {
+              "word": "das Предавать",
+              "translation": "предавать"
+            },
+            {
+              "word": "das Выдавать",
+              "translation": "выдавать"
+            },
+            {
+              "word": "das Изменять",
+              "translation": "изменять"
+            }
+          ],
+          "antonyms": [],
+          "narration": "Від предавать через контрасти до розуміння."
+        }
       ]
     },
     {
@@ -1137,6 +1412,58 @@
           ],
           "correct_index": 3
         }
+      ],
+      "synonym_antonym_sets": [
+        {
+          "id": "dover_die_eifersucht",
+          "title": "Семантичне поле: ревность",
+          "target": {
+            "word": "die Eifersucht",
+            "translation": "ревность",
+            "hint": "мучительная ревность"
+          },
+          "synonyms": [
+            {
+              "word": "das Ревность",
+              "translation": "ревность"
+            },
+            {
+              "word": "das Зависть",
+              "translation": "зависть"
+            },
+            {
+              "word": "das Подозрение",
+              "translation": "подозрение"
+            }
+          ],
+          "antonyms": [],
+          "narration": "Від ревность через контрасти до розуміння."
+        },
+        {
+          "id": "dover_rivalisieren",
+          "title": "Семантичне поле: соперничать",
+          "target": {
+            "word": "rivalisieren",
+            "translation": "соперничать",
+            "hint": "бороться соперничая"
+          },
+          "synonyms": [
+            {
+              "word": "das Соперничать",
+              "translation": "соперничать"
+            },
+            {
+              "word": "das Конкурировать",
+              "translation": "конкурировать"
+            },
+            {
+              "word": "das Бороться",
+              "translation": "бороться"
+            }
+          ],
+          "antonyms": [],
+          "narration": "Від соперничать через контрасти до розуміння."
+        }
       ]
     },
     {
@@ -1325,6 +1652,67 @@
             "отчаяние"
           ],
           "correct_index": 3
+        }
+      ],
+      "synonym_antonym_sets": [
+        {
+          "id": "prison_vergiften",
+          "title": "Семантичне поле: отравлять",
+          "target": {
+            "word": "vergiften",
+            "translation": "отравлять",
+            "hint": "тайно травить"
+          },
+          "synonyms": [
+            {
+              "word": "das Отравлять",
+              "translation": "отравлять"
+            },
+            {
+              "word": "das Травить",
+              "translation": "травить"
+            },
+            {
+              "word": "das Поражать",
+              "translation": "поражать"
+            }
+          ],
+          "antonyms": [],
+          "narration": "Від отравлять через контрасти до розуміння."
+        },
+        {
+          "id": "prison_die_verzweiflung",
+          "title": "Семантичне поле: отчаяние",
+          "target": {
+            "word": "die Verzweiflung",
+            "translation": "отчаяние",
+            "hint": "крайнее отчаяние"
+          },
+          "synonyms": [
+            {
+              "word": "die Hoffnungslosigkeit",
+              "translation": "безнадія"
+            },
+            {
+              "word": "die Trostlosigkeit",
+              "translation": "безвихідь"
+            },
+            {
+              "word": "die Depression",
+              "translation": "депресія"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Hoffnung",
+              "translation": "надія"
+            },
+            {
+              "word": "der Optimismus",
+              "translation": "оптимізм"
+            }
+          ],
+          "narration": "Від отчаяние через контрасти до розуміння."
         }
       ]
     }

@@ -126,7 +126,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "goneril",
@@ -251,7 +252,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "regan",
@@ -376,6 +378,42 @@
             "нищий"
           ],
           "correct_index": 3
+        }
+      ],
+      "synonym_antonym_sets": [
+        {
+          "id": "regan_der_wahnsinn",
+          "title": "Семантичне поле: безумие",
+          "target": {
+            "word": "der Wahnsinn",
+            "translation": "безумие",
+            "hint": ""
+          },
+          "synonyms": [
+            {
+              "word": "die Verrücktheit",
+              "translation": "божевілля"
+            },
+            {
+              "word": "der Irrsinn",
+              "translation": "безумство"
+            },
+            {
+              "word": "die Geisteskrankheit",
+              "translation": "психічна хвороба"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Vernunft",
+              "translation": "розум"
+            },
+            {
+              "word": "die Klarheit",
+              "translation": "ясність"
+            }
+          ],
+          "narration": "Від безумие через контрасти до розуміння."
         }
       ]
     },
@@ -502,6 +540,42 @@
           ],
           "correct_index": 3
         }
+      ],
+      "synonym_antonym_sets": [
+        {
+          "id": "storm_der_sturm",
+          "title": "Семантичне поле: буря",
+          "target": {
+            "word": "der Sturm",
+            "translation": "буря",
+            "hint": ""
+          },
+          "synonyms": [
+            {
+              "word": "das Unwetter",
+              "translation": "негода"
+            },
+            {
+              "word": "der Orkan",
+              "translation": "ураган"
+            },
+            {
+              "word": "das Gewitter",
+              "translation": "гроза"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Stille",
+              "translation": "тиша"
+            },
+            {
+              "word": "die Windstille",
+              "translation": "штиль"
+            }
+          ],
+          "narration": "Від буря через контрасти до розуміння."
+        }
       ]
     },
     {
@@ -627,7 +701,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "dover",
@@ -753,7 +828,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "prison",
@@ -878,7 +954,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     }
   ]
 }

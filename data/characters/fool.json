@@ -110,13 +110,28 @@
             "hint": "скрытая за маской шута"
           },
           "synonyms": [
-            { "word": "die Klugheit", "translation": "ум" },
-            { "word": "der Verstand", "translation": "разум" }
+            {
+              "word": "die Klugheit",
+              "translation": "ум"
+            },
+            {
+              "word": "der Verstand",
+              "translation": "разум"
+            }
           ],
           "antonyms": [
-            { "word": "die Dummheit", "translation": "глупость" },
-            { "word": "die Torheit", "translation": "безумие" },
-            { "word": "der Wahnsinn", "translation": "сумасшествие" }
+            {
+              "word": "die Dummheit",
+              "translation": "глупость"
+            },
+            {
+              "word": "die Torheit",
+              "translation": "безумие"
+            },
+            {
+              "word": "der Wahnsinn",
+              "translation": "сумасшествие"
+            }
           ],
           "narration": "Шут - единственный, кто говорит мудрые вещи под маской глупости."
         }
@@ -263,7 +278,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "prophecies",
@@ -388,7 +404,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "mad_companion",
@@ -501,6 +518,42 @@
             "дружба"
           ],
           "correct_index": 3
+        }
+      ],
+      "synonym_antonym_sets": [
+        {
+          "id": "mad_companion_der_wahnsinn",
+          "title": "Семантичне поле: безумие",
+          "target": {
+            "word": "der Wahnsinn",
+            "translation": "безумие",
+            "hint": ""
+          },
+          "synonyms": [
+            {
+              "word": "die Verrücktheit",
+              "translation": "божевілля"
+            },
+            {
+              "word": "der Irrsinn",
+              "translation": "безумство"
+            },
+            {
+              "word": "die Geisteskrankheit",
+              "translation": "психічна хвороба"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Vernunft",
+              "translation": "розум"
+            },
+            {
+              "word": "die Klarheit",
+              "translation": "ясність"
+            }
+          ],
+          "narration": "Від безумие через контрасти до розуміння."
         }
       ]
     },
@@ -627,7 +680,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "wisdom",
@@ -741,7 +795,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "vanishing",
@@ -867,7 +922,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     }
   ]
 }

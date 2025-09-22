@@ -126,7 +126,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "goneril",
@@ -252,7 +253,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "regan",
@@ -366,7 +368,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "storm",
@@ -491,7 +494,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "hut",
@@ -607,7 +611,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "dover",
@@ -731,6 +736,42 @@
             "прыгать"
           ],
           "correct_index": 3
+        }
+      ],
+      "synonym_antonym_sets": [
+        {
+          "id": "dover_die_verzweiflung",
+          "title": "Семантичне поле: отчаяние",
+          "target": {
+            "word": "die Verzweiflung",
+            "translation": "отчаяние",
+            "hint": ""
+          },
+          "synonyms": [
+            {
+              "word": "die Hoffnungslosigkeit",
+              "translation": "безнадія"
+            },
+            {
+              "word": "die Trostlosigkeit",
+              "translation": "безвихідь"
+            },
+            {
+              "word": "die Depression",
+              "translation": "депресія"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Hoffnung",
+              "translation": "надія"
+            },
+            {
+              "word": "der Optimismus",
+              "translation": "оптимізм"
+            }
+          ],
+          "narration": "Від отчаяние через контрасти до розуміння."
         }
       ]
     },
@@ -856,6 +897,42 @@
             "прощать"
           ],
           "correct_index": 3
+        }
+      ],
+      "synonym_antonym_sets": [
+        {
+          "id": "prison_vergeben",
+          "title": "Семантичне поле: прощать",
+          "target": {
+            "word": "vergeben",
+            "translation": "прощать",
+            "hint": ""
+          },
+          "synonyms": [
+            {
+              "word": "verzeihen",
+              "translation": "вибачати"
+            },
+            {
+              "word": "begnadigen",
+              "translation": "милувати"
+            },
+            {
+              "word": "entschuldigen",
+              "translation": "виправдовувати"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "rächen",
+              "translation": "мстити"
+            },
+            {
+              "word": "bestrafen",
+              "translation": "карати"
+            }
+          ],
+          "narration": "Від прощать через контрасти до розуміння."
         }
       ]
     }

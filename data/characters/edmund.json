@@ -115,13 +115,28 @@
             "hint": "движущая сила Эдмунда"
           },
           "synonyms": [
-            { "word": "der Ehrgeiz", "translation": "честолюбие" },
-            { "word": "das Streben", "translation": "стремление" },
-            { "word": "der Neid", "translation": "зависть" }
+            {
+              "word": "der Ehrgeiz",
+              "translation": "честолюбие"
+            },
+            {
+              "word": "das Streben",
+              "translation": "стремление"
+            },
+            {
+              "word": "der Neid",
+              "translation": "зависть"
+            }
           ],
           "antonyms": [
-            { "word": "die Bescheidenheit", "translation": "скромность" },
-            { "word": "die Demut", "translation": "смирение" }
+            {
+              "word": "die Bescheidenheit",
+              "translation": "скромность"
+            },
+            {
+              "word": "die Demut",
+              "translation": "смирение"
+            }
           ],
           "narration": "Бастард не знает смирения - только безграничные амбиции."
         }
@@ -273,7 +288,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "regan",
@@ -398,7 +414,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "storm",
@@ -523,6 +540,42 @@
             "власть"
           ],
           "correct_index": 3
+        }
+      ],
+      "synonym_antonym_sets": [
+        {
+          "id": "storm_die_macht",
+          "title": "Семантичне поле: власть",
+          "target": {
+            "word": "die Macht",
+            "translation": "власть",
+            "hint": ""
+          },
+          "synonyms": [
+            {
+              "word": "die Herrschaft",
+              "translation": "господство"
+            },
+            {
+              "word": "die Gewalt",
+              "translation": "сила"
+            },
+            {
+              "word": "die Autorität",
+              "translation": "авторитет"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Schwäche",
+              "translation": "слабість"
+            },
+            {
+              "word": "die Ohnmacht",
+              "translation": "безсилля"
+            }
+          ],
+          "narration": "Від власть через контрасти до розуміння."
         }
       ]
     },
@@ -649,7 +702,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "dover",
@@ -775,7 +829,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     },
     {
       "id": "prison",
@@ -900,7 +955,8 @@
           ],
           "correct_index": 3
         }
-      ]
+      ],
+      "synonym_antonym_sets": []
     }
   ]
 }
