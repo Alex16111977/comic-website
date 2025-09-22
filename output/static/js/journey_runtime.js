@@ -1245,10 +1245,15 @@ class VocabularyQuiz {
 
     generateReverseQuestion(word) {
         const options = this.generateOptions(word.german, 'german');
+        let questionText = `Как переводится на немецкий слово «${word.russian}»?`;
+        if (word.russianHint) {
+            questionText = `Как переводится на немецкий слово «${word.russian}» (${word.russianHint})?`;
+        }
         return {
-            question: `Как переводится на немецкий слово «${word.russian}»?`,
+            question: questionText,
             russianWord: word.russian,
             germanWord: word.german,
+            russianHint: word.russianHint || '',
             options: options,
             correct: word.german,
             type: 'reverse',
@@ -1343,6 +1348,16 @@ class VocabularyQuiz {
             wordSpan.className = 'quiz-word';
             wordSpan.textContent = question.russianWord;
             meta.appendChild(wordSpan);
+
+            if (question.russianHint) {
+                const hintSpan = document.createElement('span');
+                hintSpan.className = 'quiz-hint';
+                hintSpan.textContent = `(${question.russianHint})`;
+                hintSpan.style.color = '#7c3aed';
+                hintSpan.style.fontSize = '0.9em';
+                hintSpan.style.marginLeft = '8px';
+                meta.appendChild(hintSpan);
+            }
         }
 
         card.appendChild(meta);
