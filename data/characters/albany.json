@@ -242,7 +242,46 @@
           "correct_index": 3
         }
       ],
-      "synonym_antonym_sets": []
+      "synonym_antonym_sets": [
+        {
+          "id": "first_doubts_die_verzweiflung",
+          "title": "Семантическое поле: отчаяние",
+          "target": {
+            "word": "die Verzweiflung",
+            "translation": "отчаяние",
+            "hint": "сомнения, терзающие герцога"
+          },
+          "synonyms": [
+            {
+              "word": "die Angst",
+              "translation": "страх"
+            },
+            {
+              "word": "das Elend",
+              "translation": "нищета"
+            },
+            {
+              "word": "die Trauer",
+              "translation": "печаль, печаль, скорбь, скорбь"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Hoffnung",
+              "translation": "надежда"
+            },
+            {
+              "word": "vertrauen",
+              "translation": "доверять"
+            },
+            {
+              "word": "die Freude",
+              "translation": "радость"
+            }
+          ],
+          "narration": "От отчаяние через контрасты к пониманию."
+        }
+      ]
     },
     {
       "id": "awakening",
@@ -368,7 +407,46 @@
           "correct_index": 3
         }
       ],
-      "synonym_antonym_sets": []
+      "synonym_antonym_sets": [
+        {
+          "id": "awakening_die_wahrheit",
+          "title": "Семантическое поле: правда",
+          "target": {
+            "word": "die Wahrheit",
+            "translation": "правда",
+            "hint": "истина, которую Олбани осознаёт"
+          },
+          "synonyms": [
+            {
+              "word": "die Erkenntnis",
+              "translation": "осознание, осознание, познание, познание"
+            },
+            {
+              "word": "aufrichtig",
+              "translation": "искренний"
+            },
+            {
+              "word": "enthüllen",
+              "translation": "разоблачать, разоблачать, раскрывать, раскрывать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Lüge",
+              "translation": "ложь"
+            },
+            {
+              "word": "verbergen",
+              "translation": "скрывать"
+            },
+            {
+              "word": "verschweigen",
+              "translation": "умалчивать"
+            }
+          ],
+          "narration": "От правда через контрасты к пониманию."
+        }
+      ]
     },
     {
       "id": "confrontation",

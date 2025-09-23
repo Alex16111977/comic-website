@@ -391,26 +391,30 @@
           },
           "synonyms": [
             {
-              "word": "die Verrücktheit",
-              "translation": "божевілля"
+              "word": "das Chaos",
+              "translation": "хаос"
             },
             {
-              "word": "der Irrsinn",
-              "translation": "безумство"
+              "word": "das Entsetzen",
+              "translation": "ужас"
             },
             {
-              "word": "die Geisteskrankheit",
-              "translation": "психічна хвороба"
+              "word": "die Verzweiflung",
+              "translation": "отчаяние"
             }
           ],
           "antonyms": [
             {
               "word": "die Vernunft",
-              "translation": "розум"
+              "translation": "разум"
             },
             {
-              "word": "die Klarheit",
-              "translation": "ясність"
+              "word": "die Weisheit",
+              "translation": "мудрость"
+            },
+            {
+              "word": "die Ordnung",
+              "translation": "порядок"
             }
           ],
           "narration": "Від безумие через контрасти до розуміння."
@@ -552,26 +556,30 @@
           },
           "synonyms": [
             {
-              "word": "das Unwetter",
-              "translation": "негода"
+              "word": "der Donner",
+              "translation": "гром"
             },
             {
-              "word": "der Orkan",
-              "translation": "ураган"
+              "word": "der Regen",
+              "translation": "дождь"
             },
             {
-              "word": "das Gewitter",
-              "translation": "гроза"
+              "word": "die Kälte",
+              "translation": "холод"
             }
           ],
           "antonyms": [
             {
-              "word": "die Stille",
-              "translation": "тиша"
+              "word": "die Sonne",
+              "translation": "солнце"
             },
             {
-              "word": "die Windstille",
-              "translation": "штиль"
+              "word": "die Ruhe",
+              "translation": "покой"
+            },
+            {
+              "word": "der Schutz",
+              "translation": "защита"
             }
           ],
           "narration": "Від буря через контрасти до розуміння."

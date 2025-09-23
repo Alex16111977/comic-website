@@ -749,26 +749,30 @@
           },
           "synonyms": [
             {
-              "word": "die Hoffnungslosigkeit",
-              "translation": "безнадія"
+              "word": "die Angst",
+              "translation": "страх"
             },
             {
-              "word": "die Trostlosigkeit",
-              "translation": "безвихідь"
+              "word": "das Elend",
+              "translation": "нищета"
             },
             {
-              "word": "die Depression",
-              "translation": "депресія"
+              "word": "die Trauer",
+              "translation": "печаль, печаль, скорбь, скорбь"
             }
           ],
           "antonyms": [
             {
               "word": "die Hoffnung",
-              "translation": "надія"
+              "translation": "надежда"
             },
             {
-              "word": "der Optimismus",
-              "translation": "оптимізм"
+              "word": "vertrauen",
+              "translation": "доверять"
+            },
+            {
+              "word": "die Freude",
+              "translation": "радость"
             }
           ],
           "narration": "Від отчаяние через контрасти до розуміння."
@@ -911,25 +915,29 @@
           "synonyms": [
             {
               "word": "verzeihen",
-              "translation": "вибачати"
-            },
-            {
-              "word": "begnadigen",
-              "translation": "милувати"
+              "translation": "прощать"
             },
             {
               "word": "entschuldigen",
-              "translation": "виправдовувати"
+              "translation": "извинять"
+            },
+            {
+              "word": "versöhnen",
+              "translation": "примирять"
             }
           ],
           "antonyms": [
             {
-              "word": "rächen",
-              "translation": "мстити"
+              "word": "bestrafen",
+              "translation": "карать, карать, наказывать"
             },
             {
-              "word": "bestrafen",
-              "translation": "карати"
+              "word": "verfluchen",
+              "translation": "проклинать"
+            },
+            {
+              "word": "verurteilen",
+              "translation": "осуждать"
             }
           ],
           "narration": "Від прощать через контрасти до розуміння."

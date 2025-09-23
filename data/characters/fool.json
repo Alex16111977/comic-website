@@ -111,26 +111,30 @@
           },
           "synonyms": [
             {
-              "word": "die Klugheit",
-              "translation": "ум"
+              "word": "klug",
+              "translation": "умный"
             },
             {
-              "word": "der Verstand",
+              "word": "die Einsicht",
+              "translation": "прозрение"
+            },
+            {
+              "word": "die Vernunft",
               "translation": "разум"
             }
           ],
           "antonyms": [
             {
-              "word": "die Dummheit",
-              "translation": "глупость"
-            },
-            {
-              "word": "die Torheit",
+              "word": "der Wahnsinn",
               "translation": "безумие"
             },
             {
-              "word": "der Wahnsinn",
-              "translation": "сумасшествие"
+              "word": "der Dummkopf",
+              "translation": "дурак"
+            },
+            {
+              "word": "blind",
+              "translation": "слепой"
             }
           ],
           "narration": "Шут - единственный, кто говорит мудрые вещи под маской глупости."
@@ -531,26 +535,30 @@
           },
           "synonyms": [
             {
-              "word": "die Verrücktheit",
-              "translation": "божевілля"
+              "word": "das Chaos",
+              "translation": "хаос"
             },
             {
-              "word": "der Irrsinn",
-              "translation": "безумство"
+              "word": "das Entsetzen",
+              "translation": "ужас"
             },
             {
-              "word": "die Geisteskrankheit",
-              "translation": "психічна хвороба"
+              "word": "die Verzweiflung",
+              "translation": "отчаяние"
             }
           ],
           "antonyms": [
             {
               "word": "die Vernunft",
-              "translation": "розум"
+              "translation": "разум"
             },
             {
-              "word": "die Klarheit",
-              "translation": "ясність"
+              "word": "die Weisheit",
+              "translation": "мудрость"
+            },
+            {
+              "word": "die Ordnung",
+              "translation": "порядок"
             }
           ],
           "narration": "Від безумие через контрасти до розуміння."

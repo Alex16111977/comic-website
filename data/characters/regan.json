@@ -242,7 +242,46 @@
           "correct_index": 3
         }
       ],
-      "synonym_antonym_sets": []
+      "synonym_antonym_sets": [
+        {
+          "id": "goneril_die_macht",
+          "title": "Семантическое поле: власть",
+          "target": {
+            "word": "die Macht",
+            "translation": "власть",
+            "hint": "жажда власти сестёр"
+          },
+          "synonyms": [
+            {
+              "word": "die Herrschaft",
+              "translation": "господство, господство, правление, правление"
+            },
+            {
+              "word": "der Befehl",
+              "translation": "приказ"
+            },
+            {
+              "word": "herrschen",
+              "translation": "править"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Schwäche",
+              "translation": "слабость"
+            },
+            {
+              "word": "die Demut",
+              "translation": "смирение"
+            },
+            {
+              "word": "die Niederlage",
+              "translation": "поражение"
+            }
+          ],
+          "narration": "От власть через контрасты к пониманию."
+        }
+      ]
     },
     {
       "id": "regan",
@@ -369,7 +408,46 @@
           "correct_index": 3
         }
       ],
-      "synonym_antonym_sets": []
+      "synonym_antonym_sets": [
+        {
+          "id": "regan_grausam",
+          "title": "Семантическое поле: жестокий",
+          "target": {
+            "word": "grausam",
+            "translation": "жестокий",
+            "hint": "холодная жестокость Реганы"
+          },
+          "synonyms": [
+            {
+              "word": "erbarmungslos",
+              "translation": "беспощадный"
+            },
+            {
+              "word": "gnadenlos",
+              "translation": "безжалостный"
+            },
+            {
+              "word": "die Härte",
+              "translation": "жёсткость, жёсткость, суровость, суровость"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "mild",
+              "translation": "мягкий"
+            },
+            {
+              "word": "die Güte",
+              "translation": "доброта"
+            },
+            {
+              "word": "die Liebe",
+              "translation": "любовь"
+            }
+          ],
+          "narration": "От жестокий через контрасты к пониманию."
+        }
+      ]
     },
     {
       "id": "storm",

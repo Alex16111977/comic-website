@@ -180,12 +180,16 @@
           },
           "synonyms": [
             {
-              "word": "die Ehrlichkeit",
-              "translation": "честность"
+              "word": "die Erkenntnis",
+              "translation": "осознание, осознание, познание, познание"
             },
             {
-              "word": "die Aufrichtigkeit",
-              "translation": "искренность"
+              "word": "aufrichtig",
+              "translation": "искренний"
+            },
+            {
+              "word": "enthüllen",
+              "translation": "разоблачать, разоблачать, раскрывать, раскрывать"
             }
           ],
           "antonyms": [
@@ -194,12 +198,12 @@
               "translation": "ложь"
             },
             {
-              "word": "die Heuchelei",
-              "translation": "лицемерие"
+              "word": "verbergen",
+              "translation": "скрывать"
             },
             {
-              "word": "der Betrug",
-              "translation": "обман"
+              "word": "verschweigen",
+              "translation": "умалчивать"
             }
           ],
           "narration": "Корделия выбирает правду, даже если это стоит ей наследства."
@@ -218,8 +222,12 @@
               "translation": "верность"
             },
             {
-              "word": "die Pflicht",
-              "translation": "долг"
+              "word": "die Güte",
+              "translation": "доброта"
+            },
+            {
+              "word": "die Familie",
+              "translation": "семья"
             }
           ],
           "antonyms": [
@@ -228,8 +236,12 @@
               "translation": "ненависть"
             },
             {
-              "word": "die Gleichgültigkeit",
-              "translation": "равнодушие"
+              "word": "die Grausamkeit",
+              "translation": "жестокость"
+            },
+            {
+              "word": "die Lüge",
+              "translation": "ложь"
             }
           ],
           "narration": "Её любовь честна, без преувеличений."
@@ -244,19 +256,32 @@
           },
           "synonyms": [
             {
-              "word": "der Ritus",
-              "translation": "обряд"
+              "word": "feierlich",
+              "translation": "торжественный"
             },
             {
-              "word": "das Ritual",
-              "translation": "ритуал"
+              "word": "verkünden",
+              "translation": "провозглашать"
             },
             {
-              "word": "die Feier",
-              "translation": "торжество"
+              "word": "die Krone",
+              "translation": "корона"
             }
           ],
-          "antonyms": [],
+          "antonyms": [
+            {
+              "word": "das Chaos",
+              "translation": "хаос"
+            },
+            {
+              "word": "der Streit",
+              "translation": "спор"
+            },
+            {
+              "word": "die Flucht",
+              "translation": "бегство"
+            }
+          ],
           "narration": "Від церемония через контрасти до розуміння."
         }
       ],
@@ -482,19 +507,32 @@
           },
           "synonyms": [
             {
-              "word": "abweisen",
-              "translation": "отвергать"
-            },
-            {
-              "word": "verleugnen",
-              "translation": "отрекаться"
+              "word": "verbannen",
+              "translation": "изгнать, изгнать, изгонять"
             },
             {
               "word": "vertreiben",
-              "translation": "выгонять"
+              "translation": "изгонять, изгонять, прогонять"
+            },
+            {
+              "word": "abweisen",
+              "translation": "отвергать"
             }
           ],
-          "antonyms": [],
+          "antonyms": [
+            {
+              "word": "zurückkehren",
+              "translation": "возвращаться"
+            },
+            {
+              "word": "halten",
+              "translation": "держать"
+            },
+            {
+              "word": "beschützen",
+              "translation": "защищать"
+            }
+          ],
           "narration": "Від изгонять через контрасти до розуміння."
         },
         {
@@ -507,19 +545,32 @@
           },
           "synonyms": [
             {
-              "word": "zurücklassen",
-              "translation": "оставлять"
+              "word": "aufgeben",
+              "translation": "сдаваться"
             },
             {
-              "word": "fortgehen",
-              "translation": "уходить"
+              "word": "entfliehen",
+              "translation": "убегать"
             },
             {
-              "word": "im Stich lassen",
-              "translation": "бросать"
+              "word": "fliehen",
+              "translation": "бежать"
             }
           ],
-          "antonyms": [],
+          "antonyms": [
+            {
+              "word": "zurückkehren",
+              "translation": "возвращаться"
+            },
+            {
+              "word": "bleiben",
+              "translation": "оставаться"
+            },
+            {
+              "word": "behalten",
+              "translation": "сохранять"
+            }
+          ],
           "narration": "Від покидать через контрасти до розуміння."
         }
       ]
@@ -723,19 +774,32 @@
           },
           "synonyms": [
             {
-              "word": "die Unruhe",
-              "translation": "беспокойство"
+              "word": "die Verantwortung",
+              "translation": "ответственность"
             },
             {
-              "word": "die Besorgnis",
-              "translation": "тревога"
+              "word": "die Pflicht",
+              "translation": "долг"
             },
             {
-              "word": "die Fürsorge",
-              "translation": "попечение"
+              "word": "die Angst",
+              "translation": "страх"
             }
           ],
-          "antonyms": [],
+          "antonyms": [
+            {
+              "word": "die Kälte",
+              "translation": "холод"
+            },
+            {
+              "word": "die Bosheit",
+              "translation": "злоба"
+            },
+            {
+              "word": "der Spott",
+              "translation": "насмешка"
+            }
+          ],
           "narration": "Від забота через контрасти до розуміння."
         },
         {
@@ -748,26 +812,30 @@
           },
           "synonyms": [
             {
-              "word": "die Isolation",
-              "translation": "ізоляція"
+              "word": "die Nacht",
+              "translation": "ночь"
             },
             {
-              "word": "die Verlassenheit",
-              "translation": "покинутість"
+              "word": "die Kälte",
+              "translation": "холод"
             },
             {
-              "word": "die Abgeschiedenheit",
-              "translation": "відлюдність"
+              "word": "die Trauer",
+              "translation": "печаль, печаль, скорбь, скорбь"
             }
           ],
           "antonyms": [
             {
-              "word": "die Gemeinschaft",
-              "translation": "спільнота"
+              "word": "die Familie",
+              "translation": "семья"
             },
             {
-              "word": "die Gesellschaft",
-              "translation": "товариство"
+              "word": "die Freundschaft",
+              "translation": "дружба"
+            },
+            {
+              "word": "die Liebe",
+              "translation": "любовь"
             }
           ],
           "narration": "Від одиночество через контрасти до розуміння."
@@ -973,19 +1041,32 @@
           },
           "synonyms": [
             {
-              "word": "zurückkommen",
-              "translation": "вернуться"
+              "word": "wiederkehren",
+              "translation": "возвращаться"
             },
             {
-              "word": "ankommen",
-              "translation": "прибыть"
+              "word": "umkehren",
+              "translation": "возвращаться"
             },
             {
-              "word": "heimkehren",
-              "translation": "воротиться"
+              "word": "wiedersehen",
+              "translation": "встречаться вновь"
             }
           ],
-          "antonyms": [],
+          "antonyms": [
+            {
+              "word": "verlassen",
+              "translation": "покидать"
+            },
+            {
+              "word": "fliehen",
+              "translation": "бежать"
+            },
+            {
+              "word": "verbannen",
+              "translation": "изгнать, изгнать, изгонять"
+            }
+          ],
           "narration": "Від возвращаться через контрасти до розуміння."
         },
         {
@@ -998,19 +1079,32 @@
           },
           "synonyms": [
             {
+              "word": "der Krieg",
+              "translation": "война"
+            },
+            {
               "word": "die Schlacht",
               "translation": "битва"
             },
             {
-              "word": "das Gefecht",
-              "translation": "сражение"
-            },
-            {
-              "word": "der Zweikampf",
-              "translation": "схватка"
+              "word": "der Widerstand",
+              "translation": "сопротивление"
             }
           ],
-          "antonyms": [],
+          "antonyms": [
+            {
+              "word": "der Friede",
+              "translation": "мир"
+            },
+            {
+              "word": "die Versöhnung",
+              "translation": "примирение"
+            },
+            {
+              "word": "das Bündnis",
+              "translation": "союз"
+            }
+          ],
           "narration": "Від борьба через контрасти до розуміння."
         }
       ]
@@ -1214,19 +1308,32 @@
           },
           "synonyms": [
             {
+              "word": "vergeben",
+              "translation": "прощать"
+            },
+            {
               "word": "entschuldigen",
               "translation": "извинять"
             },
             {
-              "word": "begnadigen",
-              "translation": "миловать"
-            },
-            {
-              "word": "vergeben",
-              "translation": "отпускать"
+              "word": "versöhnen",
+              "translation": "примирять"
             }
           ],
-          "antonyms": [],
+          "antonyms": [
+            {
+              "word": "bestrafen",
+              "translation": "карать, карать, наказывать"
+            },
+            {
+              "word": "anklagen",
+              "translation": "обвинять"
+            },
+            {
+              "word": "verurteilen",
+              "translation": "осуждать"
+            }
+          ],
           "narration": "Від прощать через контрасти до розуміння."
         },
         {
@@ -1239,19 +1346,32 @@
           },
           "synonyms": [
             {
-              "word": "das Schluchzen",
-              "translation": "рыдания"
+              "word": "weinen",
+              "translation": "плакать"
             },
             {
-              "word": "das Weinen",
-              "translation": "плач"
+              "word": "trauern",
+              "translation": "горевать"
             },
             {
-              "word": "die Tränchen",
-              "translation": "слезинки"
+              "word": "die Trauer",
+              "translation": "печаль, печаль, скорбь, скорбь"
             }
           ],
-          "antonyms": [],
+          "antonyms": [
+            {
+              "word": "lachen",
+              "translation": "смеяться"
+            },
+            {
+              "word": "die Freude",
+              "translation": "радость"
+            },
+            {
+              "word": "die Hoffnung",
+              "translation": "надежда"
+            }
+          ],
           "narration": "Від слёзы через контрасти до розуміння."
         }
       ]
@@ -1455,19 +1575,32 @@
           },
           "synonyms": [
             {
-              "word": "inhaftiert",
-              "translation": "плененный"
+              "word": "einsperren",
+              "translation": "запирать"
             },
             {
-              "word": "verhaftet",
-              "translation": "арестованный"
+              "word": "fesseln",
+              "translation": "сковывать"
             },
             {
-              "word": "festgenommen",
-              "translation": "схваченный"
+              "word": "bewachen",
+              "translation": "охранять"
             }
           ],
-          "antonyms": [],
+          "antonyms": [
+            {
+              "word": "befreien",
+              "translation": "освобождать"
+            },
+            {
+              "word": "fliehen",
+              "translation": "бежать"
+            },
+            {
+              "word": "retten",
+              "translation": "спасать"
+            }
+          ],
           "narration": "Від пленный через контрасти до розуміння."
         },
         {
@@ -1480,19 +1613,32 @@
           },
           "synonyms": [
             {
-              "word": "der Kerker",
-              "translation": "темница"
+              "word": "die Verbannung",
+              "translation": "изгнание"
             },
             {
-              "word": "die Haftanstalt",
-              "translation": "узилище"
+              "word": "das Exil",
+              "translation": "изгнание"
             },
             {
-              "word": "das Zuchthaus",
-              "translation": "застенок"
+              "word": "gefangen",
+              "translation": "пленный"
             }
           ],
-          "antonyms": [],
+          "antonyms": [
+            {
+              "word": "die Freiheit",
+              "translation": "свобода"
+            },
+            {
+              "word": "die Zuflucht",
+              "translation": "убежище"
+            },
+            {
+              "word": "die Heimat",
+              "translation": "родина"
+            }
+          ],
           "narration": "Від тюрьма через контрасти до розуміння."
         }
       ]
@@ -1696,19 +1842,32 @@
           },
           "synonyms": [
             {
-              "word": "das Ableben",
-              "translation": "кончина"
+              "word": "das Ende",
+              "translation": "конец"
             },
             {
-              "word": "der Exitus",
-              "translation": "гибель"
+              "word": "das Grab",
+              "translation": "могила"
             },
             {
-              "word": "das Lebensende",
-              "translation": "уход"
+              "word": "der Abschied",
+              "translation": "прощание"
             }
           ],
-          "antonyms": [],
+          "antonyms": [
+            {
+              "word": "das Leben",
+              "translation": "жизнь"
+            },
+            {
+              "word": "die Hoffnung",
+              "translation": "надежда"
+            },
+            {
+              "word": "die Erlösung",
+              "translation": "спасение"
+            }
+          ],
           "narration": "Від смерть через контрасти до розуміння."
         },
         {
@@ -1721,19 +1880,32 @@
           },
           "synonyms": [
             {
-              "word": "umkommen",
+              "word": "untergehen",
               "translation": "погибать"
             },
             {
-              "word": "versterben",
-              "translation": "скончаться"
+              "word": "verenden",
+              "translation": "издыхать"
             },
             {
-              "word": "entschlafen",
-              "translation": "почить"
+              "word": "fallen",
+              "translation": "падать"
             }
           ],
-          "antonyms": [],
+          "antonyms": [
+            {
+              "word": "leben",
+              "translation": "жить"
+            },
+            {
+              "word": "überleben",
+              "translation": "выживать"
+            },
+            {
+              "word": "erwachen",
+              "translation": "пробуждаться, пробуждаться, просыпаться"
+            }
+          ],
           "narration": "Від умирать через контрасти до розуміння."
         }
       ]
