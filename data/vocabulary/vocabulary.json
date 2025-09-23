@@ -3650,7 +3650,7 @@
       ],
       "example_sentences": [
         {
-          "de": "Im Kerker von Lear hallt die Stimme eines treuen Freundes. Ich flüstere den Wächtern des Schicksals zu: Das Wort „demütigen“ darf nicht vergehen.",
+          "de": "Im Kerker Lears hallt die Stimme eines treuen Freundes wider. Ich flüstere den Wächtern des Schicksals zu: Das Wort „demütigen“ darf nicht vergehen.",
           "ru": "В темнице Лира звучит голос верного друга. Я шепчу стражам судьбы: слово «унижать» не должно исчезнуть."
         }
       ],
@@ -3660,9 +3660,16 @@
         "Совершенный оттенок: завершённое действие «унижать»"
       ],
       "synonyms": [
-        "унижать",
-        "erniedrigen — тоже «унижать»"
+        "erniedrigen",
+        "herabsetzen",
+        "beschämen"
       ],
+      "antonyms": [
+        "ehren",
+        "würdigen",
+        "respektieren"
+      ],
+      "explanation_de": "Jemanden in seiner Würde herabsetzen und ihn klein oder beschämt fühlen lassen.",
       "visual_hint": "📚"
     },
     {
