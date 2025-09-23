@@ -209,44 +209,6 @@
           "narration": "Корделия выбирает правду, даже если это стоит ей наследства."
         },
         {
-          "id": "love_spectrum",
-          "title": "Оттенки любви",
-          "target": {
-            "word": "die Liebe",
-            "translation": "любовь",
-            "hint": "чувство дочери к отцу"
-          },
-          "synonyms": [
-            {
-              "word": "die Treue",
-              "translation": "верность"
-            },
-            {
-              "word": "die Güte",
-              "translation": "доброта"
-            },
-            {
-              "word": "die Familie",
-              "translation": "семья"
-            }
-          ],
-          "antonyms": [
-            {
-              "word": "der Hass",
-              "translation": "ненависть"
-            },
-            {
-              "word": "die Grausamkeit",
-              "translation": "жестокость"
-            },
-            {
-              "word": "die Lüge",
-              "translation": "ложь"
-            }
-          ],
-          "narration": "Её любовь честна, без преувеличений."
-        },
-        {
           "id": "throne_die_zeremonie",
           "title": "Семантичне поле: церемония",
           "target": {
@@ -283,6 +245,210 @@
             }
           ],
           "narration": "Від церемония через контрасти до розуміння."
+        },
+        {
+          "id": "throne_verkünden",
+          "title": "Семантическое поле: провозглашать",
+          "target": {
+            "word": "verkünden",
+            "translation": "провозглашать",
+            "hint": "объявлять публично"
+          },
+          "synonyms": [
+            {
+              "word": "ausrufen",
+              "translation": "восклицать"
+            },
+            {
+              "word": "zelebrieren",
+              "translation": "отмечать"
+            },
+            {
+              "word": "feiern",
+              "translation": "праздновать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "verschweigen",
+              "translation": "утаивать"
+            },
+            {
+              "word": "verheimlichen",
+              "translation": "скрывать"
+            }
+          ],
+          "narration": "От громких объявлений к тишине скрытых тайн."
+        },
+        {
+          "id": "throne_die_macht",
+          "title": "Семантическое поле: власть",
+          "target": {
+            "word": "die Macht",
+            "translation": "власть",
+            "hint": "сила управления"
+          },
+          "synonyms": [
+            {
+              "word": "die Herrschaft",
+              "translation": "власть"
+            },
+            {
+              "word": "das Reich",
+              "translation": "королевство"
+            },
+            {
+              "word": "die Königswürde",
+              "translation": "королевское достоинство"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Ohnmacht",
+              "translation": "бессилие"
+            },
+            {
+              "word": "der Sturz",
+              "translation": "падение"
+            }
+          ],
+          "narration": "От величия короны к пониманию её утраты."
+        },
+        {
+          "id": "throne_gehorchen",
+          "title": "Семантическое поле: повиноваться",
+          "target": {
+            "word": "gehorchen",
+            "translation": "повиноваться",
+            "hint": "подчиняться приказу"
+          },
+          "synonyms": [
+            {
+              "word": "handeln",
+              "translation": "действовать"
+            },
+            {
+              "word": "gestalten",
+              "translation": "создавать"
+            },
+            {
+              "word": "bewegen",
+              "translation": "двигать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "unterlassen",
+              "translation": "упускать"
+            },
+            {
+              "word": "verharren",
+              "translation": "застаиваться"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
+        },
+        {
+          "id": "throne_die_pflicht",
+          "title": "Семантическое поле: долг",
+          "target": {
+            "word": "die Pflicht",
+            "translation": "долг",
+            "hint": "обязанность, долг чести"
+          },
+          "synonyms": [
+            {
+              "word": "der Gedanke",
+              "translation": "мысль"
+            },
+            {
+              "word": "das Bild",
+              "translation": "образ"
+            },
+            {
+              "word": "das Motiv",
+              "translation": "мотив"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Leere",
+              "translation": "пустота"
+            },
+            {
+              "word": "das Vergessen",
+              "translation": "забвение"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
+        },
+        {
+          "id": "throne_feierlich",
+          "title": "Семантическое поле: торжественный",
+          "target": {
+            "word": "feierlich",
+            "translation": "торжественный",
+            "hint": "важный, праздничный"
+          },
+          "synonyms": [
+            {
+              "word": "glänzend",
+              "translation": "сияющий"
+            },
+            {
+              "word": "erhebend",
+              "translation": "возвышенный"
+            },
+            {
+              "word": "bedeutend",
+              "translation": "значительный"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "alltäglich",
+              "translation": "повседневный"
+            },
+            {
+              "word": "still",
+              "translation": "тихий"
+            }
+          ],
+          "narration": "От громких объявлений к тишине скрытых тайн."
+        },
+        {
+          "id": "throne_die_treue",
+          "title": "Семантическое поле: верность",
+          "target": {
+            "word": "die Treue",
+            "translation": "верность",
+            "hint": "преданность принципам"
+          },
+          "synonyms": [
+            {
+              "word": "der Gedanke",
+              "translation": "мысль"
+            },
+            {
+              "word": "das Bild",
+              "translation": "образ"
+            },
+            {
+              "word": "das Motiv",
+              "translation": "мотив"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Leere",
+              "translation": "пустота"
+            },
+            {
+              "word": "das Vergessen",
+              "translation": "забвение"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
         }
       ],
       "quizzes": [
@@ -572,6 +738,210 @@
             }
           ],
           "narration": "Від покидать через контрасти до розуміння."
+        },
+        {
+          "id": "goneril_der_zorn",
+          "title": "Семантическое поле: гнев",
+          "target": {
+            "word": "der Zorn",
+            "translation": "гнев",
+            "hint": "благородный, праведный"
+          },
+          "synonyms": [
+            {
+              "word": "die Wut",
+              "translation": "ярость"
+            },
+            {
+              "word": "der Fluch",
+              "translation": "проклятие"
+            },
+            {
+              "word": "die Kränkung",
+              "translation": "обида"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Ruhe",
+              "translation": "спокойствие"
+            },
+            {
+              "word": "die Versöhnung",
+              "translation": "примирение"
+            }
+          ],
+          "narration": "От вспышек ярости к тихому примирению."
+        },
+        {
+          "id": "goneril_die_strafe",
+          "title": "Семантическое поле: наказание",
+          "target": {
+            "word": "die Strafe",
+            "translation": "наказание",
+            "hint": "кара за поступок"
+          },
+          "synonyms": [
+            {
+              "word": "der Gedanke",
+              "translation": "мысль"
+            },
+            {
+              "word": "das Bild",
+              "translation": "образ"
+            },
+            {
+              "word": "das Motiv",
+              "translation": "мотив"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Leere",
+              "translation": "пустота"
+            },
+            {
+              "word": "das Vergessen",
+              "translation": "забвение"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
+        },
+        {
+          "id": "goneril_fremd",
+          "title": "Семантическое поле: чужой",
+          "target": {
+            "word": "fremd",
+            "translation": "чужой",
+            "hint": "не свой, посторонний"
+          },
+          "synonyms": [
+            {
+              "word": "verlassen",
+              "translation": "покидать"
+            },
+            {
+              "word": "verstoßen",
+              "translation": "изгонять, изгонять, отвергать, отвергать"
+            },
+            {
+              "word": "bedeutend",
+              "translation": "значительный"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "bedeutungslos",
+              "translation": "незначительный"
+            },
+            {
+              "word": "farblos",
+              "translation": "бесцветный"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
+        },
+        {
+          "id": "goneril_die_mitgift",
+          "title": "Семантическое поле: приданое",
+          "target": {
+            "word": "die Mitgift",
+            "translation": "приданое",
+            "hint": "имущество невесты"
+          },
+          "synonyms": [
+            {
+              "word": "verlassen",
+              "translation": "покидать"
+            },
+            {
+              "word": "verstoßen",
+              "translation": "изгонять, изгонять, отвергать, отвергать"
+            },
+            {
+              "word": "der Gedanke",
+              "translation": "мысль"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Leere",
+              "translation": "пустота"
+            },
+            {
+              "word": "das Vergessen",
+              "translation": "забвение"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
+        },
+        {
+          "id": "goneril_aufnehmen",
+          "title": "Семантическое поле: принимать",
+          "target": {
+            "word": "aufnehmen",
+            "translation": "принимать",
+            "hint": "брать к себе"
+          },
+          "synonyms": [
+            {
+              "word": "verlassen",
+              "translation": "покидать"
+            },
+            {
+              "word": "verstoßen",
+              "translation": "изгонять, изгонять, отвергать, отвергать"
+            },
+            {
+              "word": "handeln",
+              "translation": "действовать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "unterlassen",
+              "translation": "упускать"
+            },
+            {
+              "word": "verharren",
+              "translation": "застаиваться"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
+        },
+        {
+          "id": "goneril_die_hoffnung",
+          "title": "Семантическое поле: надежда",
+          "target": {
+            "word": "die Hoffnung",
+            "translation": "надежда",
+            "hint": "вера в лучшее"
+          },
+          "synonyms": [
+            {
+              "word": "der Gedanke",
+              "translation": "мысль"
+            },
+            {
+              "word": "das Bild",
+              "translation": "образ"
+            },
+            {
+              "word": "das Motiv",
+              "translation": "мотив"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Leere",
+              "translation": "пустота"
+            },
+            {
+              "word": "das Vergessen",
+              "translation": "забвение"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
         }
       ]
     },
@@ -839,6 +1209,210 @@
             }
           ],
           "narration": "Від одиночество через контрасти до розуміння."
+        },
+        {
+          "id": "regan_die_nachricht",
+          "title": "Семантическое поле: известие",
+          "target": {
+            "word": "die Nachricht",
+            "translation": "известие",
+            "hint": "новость, сообщение"
+          },
+          "synonyms": [
+            {
+              "word": "beten",
+              "translation": "молиться"
+            },
+            {
+              "word": "sorgen",
+              "translation": "заботиться"
+            },
+            {
+              "word": "warten",
+              "translation": "ждать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Leere",
+              "translation": "пустота"
+            },
+            {
+              "word": "das Vergessen",
+              "translation": "забвение"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
+        },
+        {
+          "id": "regan_die_angst",
+          "title": "Семантическое поле: страх",
+          "target": {
+            "word": "die Angst",
+            "translation": "страх",
+            "hint": "боязнь за кого-то"
+          },
+          "synonyms": [
+            {
+              "word": "das Leid",
+              "translation": "страдание"
+            },
+            {
+              "word": "der Schmerz",
+              "translation": "боль"
+            },
+            {
+              "word": "die Qual",
+              "translation": "мука"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Freude",
+              "translation": "радость"
+            },
+            {
+              "word": "das Glück",
+              "translation": "счастье"
+            }
+          ],
+          "narration": "От глубокой боли к надежде на исцеление."
+        },
+        {
+          "id": "regan_leiden",
+          "title": "Семантическое поле: страдать",
+          "target": {
+            "word": "leiden",
+            "translation": "страдать",
+            "hint": "испытывать муки"
+          },
+          "synonyms": [
+            {
+              "word": "bluten",
+              "translation": "кровоточить"
+            },
+            {
+              "word": "klagen",
+              "translation": "жаловаться"
+            },
+            {
+              "word": "weinen",
+              "translation": "плакать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "heilen",
+              "translation": "исцелять"
+            },
+            {
+              "word": "lindern",
+              "translation": "облегчать"
+            }
+          ],
+          "narration": "От глубокой боли к надежде на исцеление."
+        },
+        {
+          "id": "regan_beschützen",
+          "title": "Семантическое поле: защищать",
+          "target": {
+            "word": "beschützen",
+            "translation": "защищать",
+            "hint": "оберегать от зла"
+          },
+          "synonyms": [
+            {
+              "word": "handeln",
+              "translation": "действовать"
+            },
+            {
+              "word": "gestalten",
+              "translation": "создавать"
+            },
+            {
+              "word": "bewegen",
+              "translation": "двигать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "unterlassen",
+              "translation": "упускать"
+            },
+            {
+              "word": "verharren",
+              "translation": "застаиваться"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
+        },
+        {
+          "id": "regan_die_sehnsucht",
+          "title": "Семантическое поле: тоска",
+          "target": {
+            "word": "die Sehnsucht",
+            "translation": "тоска",
+            "hint": "сильное желание"
+          },
+          "synonyms": [
+            {
+              "word": "beten",
+              "translation": "молиться"
+            },
+            {
+              "word": "sorgen",
+              "translation": "заботиться"
+            },
+            {
+              "word": "warten",
+              "translation": "ждать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Freude",
+              "translation": "радость"
+            },
+            {
+              "word": "das Glück",
+              "translation": "счастье"
+            }
+          ],
+          "narration": "От глубокой боли к надежде на исцеление."
+        },
+        {
+          "id": "regan_beten",
+          "title": "Семантическое поле: молиться",
+          "target": {
+            "word": "beten",
+            "translation": "молиться",
+            "hint": "просить у Бога"
+          },
+          "synonyms": [
+            {
+              "word": "sorgen",
+              "translation": "заботиться"
+            },
+            {
+              "word": "warten",
+              "translation": "ждать"
+            },
+            {
+              "word": "handeln",
+              "translation": "действовать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "unterlassen",
+              "translation": "упускать"
+            },
+            {
+              "word": "verharren",
+              "translation": "застаиваться"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
         }
       ]
     },
@@ -1106,6 +1680,210 @@
             }
           ],
           "narration": "Від борьба через контрасти до розуміння."
+        },
+        {
+          "id": "storm_retten",
+          "title": "Семантическое поле: спасать",
+          "target": {
+            "word": "retten",
+            "translation": "спасать",
+            "hint": "избавлять от беды"
+          },
+          "synonyms": [
+            {
+              "word": "handeln",
+              "translation": "действовать"
+            },
+            {
+              "word": "gestalten",
+              "translation": "создавать"
+            },
+            {
+              "word": "bewegen",
+              "translation": "двигать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "unterlassen",
+              "translation": "упускать"
+            },
+            {
+              "word": "verharren",
+              "translation": "застаиваться"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
+        },
+        {
+          "id": "storm_die_schlacht",
+          "title": "Семантическое поле: битва",
+          "target": {
+            "word": "die Schlacht",
+            "translation": "битва",
+            "hint": "большое сражение"
+          },
+          "synonyms": [
+            {
+              "word": "der Kampf",
+              "translation": "битва"
+            },
+            {
+              "word": "das Gefecht",
+              "translation": "бой"
+            },
+            {
+              "word": "die Auseinandersetzung",
+              "translation": "столкновение"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "der Frieden",
+              "translation": "мир"
+            },
+            {
+              "word": "die Kapitulation",
+              "translation": "капитуляция"
+            }
+          ],
+          "narration": "От звона мечей к тишине мира."
+        },
+        {
+          "id": "storm_mutig",
+          "title": "Семантическое поле: храбрый",
+          "target": {
+            "word": "mutig",
+            "translation": "храбрый",
+            "hint": "смелый, отважный"
+          },
+          "synonyms": [
+            {
+              "word": "kämpfen",
+              "translation": "бороться, бороться, сражаться, сражаться"
+            },
+            {
+              "word": "retten",
+              "translation": "спасать"
+            },
+            {
+              "word": "zurückkehren",
+              "translation": "возвращаться"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "bedeutungslos",
+              "translation": "незначительный"
+            },
+            {
+              "word": "farblos",
+              "translation": "бесцветный"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
+        },
+        {
+          "id": "storm_die_gerechtigkeit",
+          "title": "Семантическое поле: справедливость",
+          "target": {
+            "word": "die Gerechtigkeit",
+            "translation": "справедливость",
+            "hint": "правое дело"
+          },
+          "synonyms": [
+            {
+              "word": "der Gedanke",
+              "translation": "мысль"
+            },
+            {
+              "word": "das Bild",
+              "translation": "образ"
+            },
+            {
+              "word": "das Motiv",
+              "translation": "мотив"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Leere",
+              "translation": "пустота"
+            },
+            {
+              "word": "das Vergessen",
+              "translation": "забвение"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
+        },
+        {
+          "id": "storm_siegen",
+          "title": "Семантическое поле: побеждать",
+          "target": {
+            "word": "siegen",
+            "translation": "побеждать",
+            "hint": "одерживать победу"
+          },
+          "synonyms": [
+            {
+              "word": "handeln",
+              "translation": "действовать"
+            },
+            {
+              "word": "gestalten",
+              "translation": "создавать"
+            },
+            {
+              "word": "bewegen",
+              "translation": "двигать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "unterlassen",
+              "translation": "упускать"
+            },
+            {
+              "word": "verharren",
+              "translation": "застаиваться"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
+        },
+        {
+          "id": "storm_die_armee",
+          "title": "Семантическое поле: армия",
+          "target": {
+            "word": "die Armee",
+            "translation": "армия",
+            "hint": "военные силы"
+          },
+          "synonyms": [
+            {
+              "word": "kämpfen",
+              "translation": "бороться, бороться, сражаться, сражаться"
+            },
+            {
+              "word": "retten",
+              "translation": "спасать"
+            },
+            {
+              "word": "zurückkehren",
+              "translation": "возвращаться"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "der Reichtum",
+              "translation": "богатство"
+            },
+            {
+              "word": "der Wohlstand",
+              "translation": "процветание"
+            }
+          ],
+          "narration": "От холода нищеты к мечте о достатке."
         }
       ]
     },
@@ -1373,6 +2151,210 @@
             }
           ],
           "narration": "Від слёзы через контрасти до розуміння."
+        },
+        {
+          "id": "hut_umarmen",
+          "title": "Семантическое поле: обнимать",
+          "target": {
+            "word": "umarmen",
+            "translation": "обнимать",
+            "hint": "заключать в объятия"
+          },
+          "synonyms": [
+            {
+              "word": "erkennen",
+              "translation": "познавать, познавать, узнавать, узнавать"
+            },
+            {
+              "word": "heilen",
+              "translation": "исцелять"
+            },
+            {
+              "word": "sterben",
+              "translation": "умирать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "der Reichtum",
+              "translation": "богатство"
+            },
+            {
+              "word": "der Wohlstand",
+              "translation": "процветание"
+            }
+          ],
+          "narration": "От холода нищеты к мечте о достатке."
+        },
+        {
+          "id": "hut_erkennen",
+          "title": "Семантическое поле: узнавать",
+          "target": {
+            "word": "erkennen",
+            "translation": "узнавать",
+            "hint": "осознавать кто это"
+          },
+          "synonyms": [
+            {
+              "word": "handeln",
+              "translation": "действовать"
+            },
+            {
+              "word": "gestalten",
+              "translation": "создавать"
+            },
+            {
+              "word": "bewegen",
+              "translation": "двигать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "unterlassen",
+              "translation": "упускать"
+            },
+            {
+              "word": "verharren",
+              "translation": "застаиваться"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
+        },
+        {
+          "id": "hut_heilen",
+          "title": "Семантическое поле: исцелять",
+          "target": {
+            "word": "heilen",
+            "translation": "исцелять",
+            "hint": "лечить душу"
+          },
+          "synonyms": [
+            {
+              "word": "umarmen",
+              "translation": "обнимать"
+            },
+            {
+              "word": "verzeihen",
+              "translation": "прощать"
+            },
+            {
+              "word": "handeln",
+              "translation": "действовать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "unterlassen",
+              "translation": "упускать"
+            },
+            {
+              "word": "verharren",
+              "translation": "застаиваться"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
+        },
+        {
+          "id": "hut_die_reue",
+          "title": "Семантическое поле: раскаяние",
+          "target": {
+            "word": "die Reue",
+            "translation": "раскаяние",
+            "hint": "сожаление о содеянном"
+          },
+          "synonyms": [
+            {
+              "word": "die Vergebung",
+              "translation": "прощение"
+            },
+            {
+              "word": "die Gnade",
+              "translation": "милость"
+            },
+            {
+              "word": "die Erlösung",
+              "translation": "искупление"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Rache",
+              "translation": "месть"
+            },
+            {
+              "word": "die Strafe",
+              "translation": "наказание"
+            }
+          ],
+          "narration": "От тяжёлого покаяния к свету милосердия."
+        },
+        {
+          "id": "hut_sanft",
+          "title": "Семантическое поле: нежный",
+          "target": {
+            "word": "sanft",
+            "translation": "нежный",
+            "hint": "мягкий, ласковый"
+          },
+          "synonyms": [
+            {
+              "word": "heilen",
+              "translation": "исцелять"
+            },
+            {
+              "word": "umarmen",
+              "translation": "обнимать"
+            },
+            {
+              "word": "verzeihen",
+              "translation": "прощать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "bedeutungslos",
+              "translation": "незначительный"
+            },
+            {
+              "word": "farblos",
+              "translation": "бесцветный"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
+        },
+        {
+          "id": "hut_die_vergebung",
+          "title": "Семантическое поле: прощение",
+          "target": {
+            "word": "die Vergebung",
+            "translation": "прощение",
+            "hint": "отпущение вины"
+          },
+          "synonyms": [
+            {
+              "word": "heilen",
+              "translation": "исцелять"
+            },
+            {
+              "word": "umarmen",
+              "translation": "обнимать"
+            },
+            {
+              "word": "verzeihen",
+              "translation": "прощать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Rache",
+              "translation": "месть"
+            },
+            {
+              "word": "die Strafe",
+              "translation": "наказание"
+            }
+          ],
+          "narration": "От тяжёлого покаяния к свету милосердия."
         }
       ]
     },
@@ -1640,6 +2622,210 @@
             }
           ],
           "narration": "Від тюрьма через контрасти до розуміння."
+        },
+        {
+          "id": "dover_die_würde",
+          "title": "Семантическое поле: достоинство",
+          "target": {
+            "word": "die Würde",
+            "translation": "достоинство",
+            "hint": "благородство духа"
+          },
+          "synonyms": [
+            {
+              "word": "der Gedanke",
+              "translation": "мысль"
+            },
+            {
+              "word": "das Bild",
+              "translation": "образ"
+            },
+            {
+              "word": "das Motiv",
+              "translation": "мотив"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Leere",
+              "translation": "пустота"
+            },
+            {
+              "word": "das Vergessen",
+              "translation": "забвение"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
+        },
+        {
+          "id": "dover_trösten",
+          "title": "Семантическое поле: утешать",
+          "target": {
+            "word": "trösten",
+            "translation": "утешать",
+            "hint": "успокаивать в горе"
+          },
+          "synonyms": [
+            {
+              "word": "vergeben",
+              "translation": "прощать"
+            },
+            {
+              "word": "verzeihen",
+              "translation": "извинять"
+            },
+            {
+              "word": "erlösen",
+              "translation": "освобождать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "rächen",
+              "translation": "мстить"
+            },
+            {
+              "word": "bestrafen",
+              "translation": "наказывать"
+            }
+          ],
+          "narration": "От тяжёлого покаяния к свету милосердия."
+        },
+        {
+          "id": "dover_tapfer",
+          "title": "Семантическое поле: отважный",
+          "target": {
+            "word": "tapfer",
+            "translation": "отважный",
+            "hint": "смелый в беде"
+          },
+          "synonyms": [
+            {
+              "word": "gefangen",
+              "translation": "пленный"
+            },
+            {
+              "word": "bedeutend",
+              "translation": "значительный"
+            },
+            {
+              "word": "prägend",
+              "translation": "формирующий"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "bedeutungslos",
+              "translation": "незначительный"
+            },
+            {
+              "word": "farblos",
+              "translation": "бесцветный"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
+        },
+        {
+          "id": "dover_die_demut",
+          "title": "Семантическое поле: смирение",
+          "target": {
+            "word": "die Demut",
+            "translation": "смирение",
+            "hint": "принятие судьбы"
+          },
+          "synonyms": [
+            {
+              "word": "gefangen",
+              "translation": "пленный"
+            },
+            {
+              "word": "der Gedanke",
+              "translation": "мысль"
+            },
+            {
+              "word": "das Bild",
+              "translation": "образ"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Leere",
+              "translation": "пустота"
+            },
+            {
+              "word": "das Vergessen",
+              "translation": "забвение"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
+        },
+        {
+          "id": "dover_das_schicksal",
+          "title": "Семантическое поле: судьба",
+          "target": {
+            "word": "das Schicksal",
+            "translation": "судьба",
+            "hint": "предначертанный путь"
+          },
+          "synonyms": [
+            {
+              "word": "die Prophezeiung",
+              "translation": "пророчество"
+            },
+            {
+              "word": "die Vorahnung",
+              "translation": "предчувствие"
+            },
+            {
+              "word": "das Omen",
+              "translation": "знамение"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "der Zufall",
+              "translation": "случайность"
+            },
+            {
+              "word": "die Freiheit",
+              "translation": "свобода"
+            }
+          ],
+          "narration": "От загадок судьбы к ясности выбора."
+        },
+        {
+          "id": "dover_die_ehre",
+          "title": "Семантическое поле: честь",
+          "target": {
+            "word": "die Ehre",
+            "translation": "честь",
+            "hint": "моральное достоинство"
+          },
+          "synonyms": [
+            {
+              "word": "der Gedanke",
+              "translation": "мысль"
+            },
+            {
+              "word": "das Bild",
+              "translation": "образ"
+            },
+            {
+              "word": "das Motiv",
+              "translation": "мотив"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Leere",
+              "translation": "пустота"
+            },
+            {
+              "word": "das Vergessen",
+              "translation": "забвение"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
         }
       ]
     },
@@ -1907,6 +3093,210 @@
             }
           ],
           "narration": "Від умирать через контрасти до розуміння."
+        },
+        {
+          "id": "prison_das_opfer",
+          "title": "Семантическое поле: жертва",
+          "target": {
+            "word": "das Opfer",
+            "translation": "жертва",
+            "hint": "невинно погибший"
+          },
+          "synonyms": [
+            {
+              "word": "der Gedanke",
+              "translation": "мысль"
+            },
+            {
+              "word": "das Bild",
+              "translation": "образ"
+            },
+            {
+              "word": "das Motiv",
+              "translation": "мотив"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Leere",
+              "translation": "пустота"
+            },
+            {
+              "word": "das Vergessen",
+              "translation": "забвение"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
+        },
+        {
+          "id": "prison_die_seele",
+          "title": "Семантическое поле: душа",
+          "target": {
+            "word": "die Seele",
+            "translation": "душа",
+            "hint": "духовная сущность"
+          },
+          "synonyms": [
+            {
+              "word": "der Gedanke",
+              "translation": "мысль"
+            },
+            {
+              "word": "das Bild",
+              "translation": "образ"
+            },
+            {
+              "word": "das Motiv",
+              "translation": "мотив"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Leere",
+              "translation": "пустота"
+            },
+            {
+              "word": "das Vergessen",
+              "translation": "забвение"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
+        },
+        {
+          "id": "prison_das_ende",
+          "title": "Семантическое поле: конец",
+          "target": {
+            "word": "das Ende",
+            "translation": "конец",
+            "hint": "завершение всего"
+          },
+          "synonyms": [
+            {
+              "word": "der Gedanke",
+              "translation": "мысль"
+            },
+            {
+              "word": "das Bild",
+              "translation": "образ"
+            },
+            {
+              "word": "das Motiv",
+              "translation": "мотив"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Leere",
+              "translation": "пустота"
+            },
+            {
+              "word": "das Vergessen",
+              "translation": "забвение"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
+        },
+        {
+          "id": "prison_ewig",
+          "title": "Семантическое поле: вечный",
+          "target": {
+            "word": "ewig",
+            "translation": "вечный",
+            "hint": "без конца"
+          },
+          "synonyms": [
+            {
+              "word": "sterben",
+              "translation": "умирать"
+            },
+            {
+              "word": "verzeihen",
+              "translation": "прощать"
+            },
+            {
+              "word": "bedeutend",
+              "translation": "значительный"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "bedeutungslos",
+              "translation": "незначительный"
+            },
+            {
+              "word": "farblos",
+              "translation": "бесцветный"
+            }
+          ],
+          "narration": "От любого понятия к его забвению."
+        },
+        {
+          "id": "prison_der_abschied",
+          "title": "Семантическое поле: прощание",
+          "target": {
+            "word": "der Abschied",
+            "translation": "прощание",
+            "hint": "последнее расставание"
+          },
+          "synonyms": [
+            {
+              "word": "ewig",
+              "translation": "вечный"
+            },
+            {
+              "word": "sterben",
+              "translation": "умирать"
+            },
+            {
+              "word": "verzeihen",
+              "translation": "прощать"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Rache",
+              "translation": "месть"
+            },
+            {
+              "word": "die Strafe",
+              "translation": "наказание"
+            }
+          ],
+          "narration": "От тяжёлого покаяния к свету милосердия."
+        },
+        {
+          "id": "prison_die_erlösung",
+          "title": "Семантическое поле: спасение",
+          "target": {
+            "word": "die Erlösung",
+            "translation": "спасение",
+            "hint": "избавление души"
+          },
+          "synonyms": [
+            {
+              "word": "die Vergebung",
+              "translation": "прощение"
+            },
+            {
+              "word": "die Gnade",
+              "translation": "милость"
+            },
+            {
+              "word": "das Mitgefühl",
+              "translation": "сострадание"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "die Rache",
+              "translation": "месть"
+            },
+            {
+              "word": "die Strafe",
+              "translation": "наказание"
+            }
+          ],
+          "narration": "От тяжёлого покаяния к свету милосердия."
         }
       ]
     }
