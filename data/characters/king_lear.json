@@ -19,7 +19,7 @@
         {
           "german": "der Thron",
           "russian": "трон",
-          "russian_hint": "королевское сиденье (Разделение королевства)",
+          "russian_hint": "символ королевской власти",
           "transcription": "[дер ТРОН]",
           "sentence": "König Lear sitzt majestätisch auf seinem goldenen Thron im prächtigen Thronsaal des Schlosses.",
           "sentence_translation": "Король Лир сидит величественно на своём золотом троне в великолепном тронном зале замка.",
@@ -38,7 +38,7 @@
         {
           "german": "das Königreich",
           "russian": "королевство",
-          "russian_hint": "королевство верной службы (Разделение королевства)",
+          "russian_hint": "государство короля",
           "transcription": "[дас КЁ-ниг-райх]",
           "sentence": "Der alte König Lear will sein mächtiges Königreich unter seinen drei Töchtern aufteilen.",
           "sentence_translation": "Старый Король Лир хочет разделить своё могущественное королевство между своими тремя дочерьми.",
@@ -57,7 +57,7 @@
         {
           "german": "die Macht",
           "russian": "власть",
-          "russian_hint": "сила управления (Разделение королевства)",
+          "russian_hint": "абстрактная власть",
           "transcription": "[ди МАХТ]",
           "sentence": "König Lear übergibt die absolute Macht an Goneril und Regan nach ihrer falschen Liebeserklärung.",
           "sentence_translation": "Король Лир передаёт абсолютную власть Гонерилье и Регане после их фальшивого признания в любви.",
@@ -76,7 +76,7 @@
         {
           "german": "herrschen",
           "russian": "править",
-          "russian_hint": "править молодым могли (Разделение королевства)",
+          "russian_hint": "править государством",
           "transcription": "[ХЕР-шен]",
           "sentence": "Goneril und Regan wollen grausam herrschen nachdem sie das Königreich von ihrem Vater bekommen.",
           "sentence_translation": "Гонерилья и Регана хотят жестоко править после того как получили королевство от своего отца.",
@@ -95,7 +95,7 @@
         {
           "german": "verkünden",
           "russian": "провозглашать",
-          "russian_hint": "провозглашать Разделение королевства (Разделение королевства)",
+          "russian_hint": "объявлять официально",
           "transcription": "[фер-КЮН-ден]",
           "sentence": "König Lear verkündet feierlich vor dem ganzen Hof seine Entscheidung das Königreich zu teilen.",
           "sentence_translation": "Король Лир провозглашает торжественно перед всем двором своё решение разделить королевство.",
@@ -114,7 +114,7 @@
         {
           "german": "die Krone",
           "russian": "корона",
-          "russian_hint": "монаршая регалия (Разделение королевства)",
+          "russian_hint": "знак монаршей власти",
           "transcription": "[ди КРО-не]",
           "sentence": "Die schwere goldene Krone auf König Lears Haupt symbolisiert seine schwindende königliche Macht.",
           "sentence_translation": "Тяжёлая золотая корона на голове Короля Лира символизирует его угасающую королевскую власть.",
@@ -133,7 +133,7 @@
         {
           "german": "die Zeremonie",
           "russian": "церемония",
-          "russian_hint": "церемония Разделение королевства (Разделение королевства)",
+          "russian_hint": "торжественный ритуал",
           "transcription": "[ди це-ре-мо-НИ]",
           "sentence": "Die verhängnisvolle Zeremonie der Reichsteilung wird für König Lear zum Beginn seiner tragischen Reise.",
           "sentence_translation": "Роковая церемония разделения королевства становится для Короля Лира началом его трагического пути.",
@@ -152,7 +152,7 @@
         {
           "german": "prächtig",
           "russian": "великолепный",
-          "russian_hint": "великолепный Разделение королевства (Разделение королевства)",
+          "russian_hint": "роскошный, пышный",
           "transcription": "[ПРЕХ-тиг]",
           "sentence": "Der prächtige Thronsaal wird zum Schauplatz wo König Lear seine ehrliche Tochter Cordelia verstößt.",
           "sentence_translation": "Великолепный тронный зал становится местом где Король Лир отвергает свою честную дочь Корделию.",
@@ -494,7 +494,7 @@
         {
           "german": "demütigen",
           "russian": "унижать",
-          "russian_hint": "морально унижать (Предательство старшей дочери)",
+          "russian_hint": "унижать достоинство",
           "transcription": "[де-МЮ-ти-ген]",
           "sentence": "Die undankbare Goneril will ihren alten Vater König Lear demütigen indem sie seine Dienerschaft reduziert.",
           "sentence_translation": "Неблагодарная Гонерилья хочет унизить своего старого отца Короля Лира сокращая его свиту.",
@@ -513,7 +513,7 @@
         {
           "german": "der Zorn",
           "russian": "гнев",
-          "russian_hint": "праведный гнев (Предательство старшей дочери)",
+          "russian_hint": "благородный гнев",
           "transcription": "[дер ЦОРН]",
           "sentence": "König Lears gerechter Zorn entflammt als Goneril ihm die königlichen Ehren verweigert und beleidigt.",
           "sentence_translation": "Праведный гнев Короля Лира вспыхивает когда Гонерилья отказывает ему в королевских почестях и оскорбляет.",
@@ -532,7 +532,7 @@
         {
           "german": "die Undankbarkeit",
           "russian": "неблагодарность",
-          "russian_hint": "неблагодарность Предательство старшей (Предательство старшей дочери)",
+          "russian_hint": "черная неблагодарность",
           "transcription": "[ди УН-данк-бар-кайт]",
           "sentence": "Die bittere Undankbarkeit seiner Tochter Goneril verwandelt König Lears Vaterliebe in brennenden Schmerz.",
           "sentence_translation": "Горькая неблагодарность его дочери Гонерильи превращает отцовскую любовь Короля Лира в жгучую боль.",
@@ -551,7 +551,7 @@
         {
           "german": "verfluchen",
           "russian": "проклинать",
-          "russian_hint": "проклинать Предательство старшей (Предательство старшей дочери)",
+          "russian_hint": "предавать проклятию",
           "transcription": "[фер-ФЛУ-хен]",
           "sentence": "Der verzweifelte König Lear verflucht seine grausame Tochter Goneril mit schrecklichen Worten vor allen Dienern.",
           "sentence_translation": "Отчаявшийся Король Лир проклинает свою жестокую дочь Гонерилью страшными словами перед всеми слугами.",
@@ -570,7 +570,7 @@
         {
           "german": "vertreiben",
           "russian": "изгонять",
-          "russian_hint": "выгонять силой (Предательство старшей дочери)",
+          "russian_hint": "изгонять силой",
           "transcription": "[фер-ТРАЙ-бен]",
           "sentence": "Goneril will ihren königlichen Vater aus dem Schloss vertreiben das er ihr geschenkt hat.",
           "sentence_translation": "Гонерилья хочет изгнать своего королевского отца из замка который он ей подарил.",
@@ -589,7 +589,7 @@
         {
           "german": "die Kränkung",
           "russian": "обида",
-          "russian_hint": "обида Предательство старшей (Предательство старшей дочери)",
+          "russian_hint": "обида души",
           "transcription": "[ди КРЭН-кунг]",
           "sentence": "Die tiefe Kränkung durch Gonerils Verrat brennt in König Lears Herz wie glühendes Eisen.",
           "sentence_translation": "Глубокая обида от предательства Гонерильи жжёт в сердце Короля Лира как раскалённое железо.",
@@ -608,7 +608,7 @@
         {
           "german": "bereuen",
           "russian": "сожалеть",
-          "russian_hint": "сожалеть Предательство старшей (Предательство старшей дочери)",
+          "russian_hint": "сожалеть о содеянном",
           "transcription": "[бе-РОЙ-ен]",
           "sentence": "König Lear beginnt bitter zu bereuen dass er Cordelia verstieß und Goneril vertraute.",
           "sentence_translation": "Король Лир начинает горько сожалеть что отверг Корделию и доверился Гонерилье.",
@@ -627,7 +627,7 @@
         {
           "german": "der Fluch",
           "russian": "проклятие",
-          "russian_hint": "проклятие Предательство старшей (Предательство старшей дочери)",
+          "russian_hint": "злое проклятие",
           "transcription": "[дер ФЛУХ]",
           "sentence": "König Lears furchtbarer Fluch gegen Goneril hallt durch die Säle des Schlosses wie Donner.",
           "sentence_translation": "Страшное проклятие Короля Лира против Гонерильи разносится по залам замка как гром.",
@@ -965,7 +965,7 @@
         {
           "german": "verlassen",
           "russian": "покидать",
-          "russian_hint": "уходить самостоятельно (Предательство младшей дочери)",
+          "russian_hint": "всеми покинутый",
           "transcription": "[фер-ЛА-сен]",
           "sentence": "Der gebrochene König Lear muss Regans Schloss verlassen während draußen ein furchtbarer Sturm tobt.",
           "sentence_translation": "Сломленный Король Лир должен покинуть замок Реганы в то время как снаружи бушует ужасная буря.",
@@ -984,7 +984,7 @@
         {
           "german": "verstoßen",
           "russian": "отвергать",
-          "russian_hint": "изгонять из семьи (Предательство младшей дочери)",
+          "russian_hint": "отвергать из семьи",
           "transcription": "[фер-ШТО-сен]",
           "sentence": "Regan und Goneril verstoßen gemeinsam ihren alten Vater König Lear in die stürmische Nacht.",
           "sentence_translation": "Регана и Гонерилья вместе отвергают своего старого отца Короля Лира в штормовую ночь.",
@@ -1003,7 +1003,7 @@
         {
           "german": "die Grausamkeit",
           "russian": "жестокость",
-          "russian_hint": "жестокость Предательство младшей (Предательство младшей дочери)",
+          "russian_hint": "безжалостная жестокость",
           "transcription": "[ди ГРАУ-зам-кайт]",
           "sentence": "Die kalte Grausamkeit seiner Töchter Regan und Goneril zerbricht König Lears stolzes königliches Herz.",
           "sentence_translation": "Холодная жестокость его дочерей Реганы и Гонерильи разбивает гордое королевское сердце Короля Лира.",
@@ -1022,7 +1022,7 @@
         {
           "german": "die Verzweiflung",
           "russian": "отчаяние",
-          "russian_hint": "отчаяние Предательство младшей (Предательство младшей дочери)",
+          "russian_hint": "полная безнадежность",
           "transcription": "[ди фер-ЦВАЙ-флунг]",
           "sentence": "Die tiefe Verzweiflung überwältigt König Lear als beide Töchter ihm jegliche Unterkunft verweigern.",
           "sentence_translation": "Глубокое отчаяние охватывает Короля Лира когда обе дочери отказывают ему в любом приюте.",
@@ -1041,7 +1041,7 @@
         {
           "german": "betteln",
           "russian": "просить",
-          "russian_hint": "просить Предательство младшей (Предательство младшей дочери)",
+          "russian_hint": "просить униженно",
           "transcription": "[БЕ-тельн]",
           "sentence": "Der einst mächtige König Lear muss bei seinen herzlosen Töchtern um einen Schlafplatz betteln.",
           "sentence_translation": "Некогда могущественный Король Лир вынужден просить у своих бессердечных дочерей место для ночлега.",
@@ -1060,7 +1060,7 @@
         {
           "german": "die Einsamkeit",
           "russian": "одиночество",
-          "russian_hint": "одиночество Предательство младшей (Предательство младшей дочери)",
+          "russian_hint": "одиночество души",
           "transcription": "[ди АЙН-зам-кайт]",
           "sentence": "Die schreckliche Einsamkeit umgibt König Lear nachdem seine eigenen Töchter ihn verraten haben.",
           "sentence_translation": "Страшное одиночество окружает Короля Лира после того как его собственные дочери предали его.",
@@ -1079,7 +1079,7 @@
         {
           "german": "die Träne",
           "russian": "слеза",
-          "russian_hint": "слеза Предательство младшей (Предательство младшей дочери)",
+          "russian_hint": "капля скорби",
           "transcription": "[ди ТРЭ-не]",
           "sentence": "König Lear kämpft gegen die bitteren Tränen an während er Regans grausame Worte hört.",
           "sentence_translation": "Король Лир борется с горькими слезами когда слышит жестокие слова Реганы.",
@@ -1098,7 +1098,7 @@
         {
           "german": "die Not",
           "russian": "нужда",
-          "russian_hint": "нужда Предательство младшей (Предательство младшей дочери)",
+          "russian_hint": "острая нужда",
           "transcription": "[ди НОТ]",
           "sentence": "In seiner größten Not erkennt König Lear dass nur Cordelia ihn wirklich liebte.",
           "sentence_translation": "В своей величайшей нужде Король Лир понимает что только Корделия действительно любила его.",
@@ -1436,7 +1436,7 @@
         {
           "german": "der Sturm",
           "russian": "буря",
-          "russian_hint": "буря Безумие в (Безумие в буре)",
+          "russian_hint": "буйство стихии",
           "transcription": "[дер ШТУРМ]",
           "sentence": "Der wilde Sturm tobt draußen während König Lear sein Schicksal verflucht und gegen die Elemente schreit.",
           "sentence_translation": "Дикая буря бушует снаружи в то время как Король Лир проклинает свою судьбу и кричит против стихий.",
@@ -1455,7 +1455,7 @@
         {
           "german": "der Wahnsinn",
           "russian": "безумие",
-          "russian_hint": "безумие в буре (Безумие в буре)",
+          "russian_hint": "потеря разума",
           "transcription": "[дер ВАН-зин]",
           "sentence": "König Lear verfällt langsam dem schrecklichen Wahnsinn während der wilden Sturmnacht auf der Heide.",
           "sentence_translation": "Король Лир медленно впадает в ужасное безумие во время дикой штормовой ночи на пустоши.",
@@ -1474,7 +1474,7 @@
         {
           "german": "toben",
           "russian": "бушевать",
-          "russian_hint": "бушевать яростно (Безумие в буре)",
+          "russian_hint": "буйствовать яростно",
           "transcription": "[ТО-бен]",
           "sentence": "Die Naturgewalten toben wild um den wahnsinnigen König Lear der seine Kleider zerreißt.",
           "sentence_translation": "Силы природы дико бушуют вокруг обезумевшего Короля Лира который рвёт свою одежду.",
@@ -1493,7 +1493,7 @@
         {
           "german": "der Donner",
           "russian": "гром",
-          "russian_hint": "гром Безумие в (Безумие в буре)",
+          "russian_hint": "громовой раскат",
           "transcription": "[дер ДО-нер]",
           "sentence": "Der laute Donner übertönt König Lears verzweifelte Schreie als er den Himmel herausfordert.",
           "sentence_translation": "Громкий гром заглушает отчаянные крики Короля Лира когда он бросает вызов небесам.",
@@ -1512,7 +1512,7 @@
         {
           "german": "der Blitz",
           "russian": "молния",
-          "russian_hint": "молния Безумие в (Безумие в буре)",
+          "russian_hint": "молния в небе",
           "transcription": "[дер БЛИЦ]",
           "sentence": "Die grellen Blitze erhellen König Lears verzerrtes Gesicht während er im Sturm sein Leid beklagt.",
           "sentence_translation": "Яркие молнии освещают искажённое лицо Короля Лира когда он в буре оплакивает своё горе.",
@@ -1531,7 +1531,7 @@
         {
           "german": "schreien",
           "russian": "кричать",
-          "russian_hint": "кричать Безумие в (Безумие в буре)",
+          "russian_hint": "кричать громко",
           "transcription": "[ШРАЙ-ен]",
           "sentence": "Der verzweifelte König Lear schreit seine Wut und seinen Schmerz in die tobende Sturmnacht hinaus.",
           "sentence_translation": "Отчаявшийся Король Лир кричит свою ярость и свою боль в бушующую штормовую ночь.",
@@ -1550,7 +1550,7 @@
         {
           "german": "nackt",
           "russian": "голый",
-          "russian_hint": "голый пришёл в (Безумие в буре)",
+          "russian_hint": "лишенный одежд",
           "transcription": "[НАКТ]",
           "sentence": "König Lear reißt seine königlichen Gewänder ab und steht nackt im Sturm wie ein armer Bettler.",
           "sentence_translation": "Король Лир срывает свои королевские одеяния и стоит голый в буре как бедный нищий.",
@@ -1569,7 +1569,7 @@
         {
           "german": "das Chaos",
           "russian": "хаос",
-          "russian_hint": "хаос Безумие в (Безумие в буре)",
+          "russian_hint": "полный беспорядок",
           "transcription": "[дас ХА-ос]",
           "sentence": "Das wilde Chaos der Natur spiegelt König Lears zerbrochenen Geisteszustand während er durch den Sturm irrt.",
           "sentence_translation": "Дикий хаос природы отражает разрушенное состояние разума Короля Лира когда он блуждает в буре.",
@@ -1907,7 +1907,7 @@
         {
           "german": "das Elend",
           "russian": "нищета",
-          "russian_hint": "нищета Встреча с (Встреча с Эдгаром)",
+          "russian_hint": "крайняя нищета",
           "transcription": "[дас Э-ленд]",
           "sentence": "König Lear entdeckt das wahre Elend der Armen als er mit Edgar in der Hütte Zuflucht sucht.",
           "sentence_translation": "Король Лир обнаруживает истинную нищету бедных когда он ищет убежище с Эдгаром в хижине.",
@@ -1926,7 +1926,7 @@
         {
           "german": "der Bettler",
           "russian": "нищий",
-          "russian_hint": "нищий Встреча с (Встреча с Эдгаром)",
+          "russian_hint": "просящий милостыню",
           "transcription": "[дер БЕТ-лер]",
           "sentence": "Edgar verkleidet als wahnsinniger Bettler Tom lehrt König Lear die Weisheit der völligen Armut.",
           "sentence_translation": "Эдгар переодетый безумным нищим Томом учит Короля Лира мудрости полной бедности.",
@@ -1945,7 +1945,7 @@
         {
           "german": "arm",
           "russian": "бедный",
-          "russian_hint": "бедный перед лицом (Встреча с Эдгаром)",
+          "russian_hint": "бедный материально",
           "transcription": "[АРМ]",
           "sentence": "Der einst reiche König Lear wird arm wie die Ärmsten und versteht endlich ihr Leiden.",
           "sentence_translation": "Некогда богатый Король Лир становится бедным как беднейшие и наконец понимает их страдания.",
@@ -1964,7 +1964,7 @@
         {
           "german": "frieren",
           "russian": "мёрзнуть",
-          "russian_hint": "мёрзнуть не (Встреча с Эдгаром)",
+          "russian_hint": "мерзнуть от холода",
           "transcription": "[ФРИ-рен]",
           "sentence": "König Lear und der Narr frieren bitterlich in der kalten Hütte während draußen der Sturm wütet.",
           "sentence_translation": "Король Лир и Шут горько мёрзнут в холодной хижине в то время как снаружи бушует буря.",
@@ -1983,7 +1983,7 @@
         {
           "german": "die Hütte",
           "russian": "хижина",
-          "russian_hint": "хижина Встреча с (Встреча с Эдгаром)",
+          "russian_hint": "бедное жилище",
           "transcription": "[ди ХЮ-те]",
           "sentence": "In der armseligen Hütte findet König Lear mehr Menschlichkeit als in seinen prächtigen Palästen.",
           "sentence_translation": "В убогой хижине Король Лир находит больше человечности чем в своих роскошных дворцах.",
@@ -2002,7 +2002,7 @@
         {
           "german": "leiden",
           "russian": "страдать",
-          "russian_hint": "переносить страдания (Встреча с Эдгаром)",
+          "russian_hint": "терпеть страдания",
           "transcription": "[ЛАЙ-ден]",
           "sentence": "König Lear sieht wie die Armen leiden und bereut dass er als König ihre Not ignorierte.",
           "sentence_translation": "Король Лир видит как бедные страдают и сожалеет что он как король игнорировал их нужду.",
@@ -2021,7 +2021,7 @@
         {
           "german": "der Narr",
           "russian": "шут",
-          "russian_hint": "шут Встреча с (Встреча с Эдгаром)",
+          "russian_hint": "придворный шут",
           "transcription": "[дер НАР]",
           "sentence": "Der treue Narr bleibt bei König Lear in der Hütte und tröstet ihn mit bitteren Wahrheiten.",
           "sentence_translation": "Верный Шут остаётся с Королём Лиром в хижине и утешает его горькими истинами.",
@@ -2040,7 +2040,7 @@
         {
           "german": "die Erkenntnis",
           "russian": "познание",
-          "russian_hint": "познание Встреча с (Встреча с Эдгаром)",
+          "russian_hint": "познание истины",
           "transcription": "[ди ер-КЕНТ-нис]",
           "sentence": "Die schmerzhafte Erkenntnis seiner Blindheit kommt zu König Lear erst nachdem er alles verloren hat.",
           "sentence_translation": "Болезненное познание своей слепоты приходит к Королю Лиру только после того как он потерял всё.",
@@ -2378,7 +2378,7 @@
         {
           "german": "erkennen",
           "russian": "узнавать",
-          "russian_hint": "узнавать Встреча с (Встреча с Корделией)",
+          "russian_hint": "узнавать знакомое",
           "transcription": "[эр-КЕ-нен]",
           "sentence": "König Lear erkennt endlich seine treue Tochter Cordelia wieder nach seinem langen Wahnsinn in Dover.",
           "sentence_translation": "Король Лир наконец узнаёт свою верную дочь Корделию снова после своего долгого безумия в Дувре.",
@@ -2397,7 +2397,7 @@
         {
           "german": "verstehen",
           "russian": "понимать",
-          "russian_hint": "понимать Встреча с (Встреча с Корделией)",
+          "russian_hint": "понимать смысл",
           "transcription": "[фер-ШТЕ-ен]",
           "sentence": "König Lear versteht zu spät dass nur Cordelia ihn wirklich liebte ohne Falschheit oder Lüge.",
           "sentence_translation": "Король Лир понимает слишком поздно что только Корделия действительно любила его без фальши или лжи.",
@@ -2416,7 +2416,7 @@
         {
           "german": "die Wahrheit",
           "russian": "правда",
-          "russian_hint": "объективная истина (Встреча с Корделией)",
+          "russian_hint": "объективная истина",
           "transcription": "[ди ВАР-хайт]",
           "sentence": "Cordelia sprach die reine Wahrheit über ihre Liebe während ihre Schwestern König Lear belogen.",
           "sentence_translation": "Корделия говорила чистую правду о своей любви в то время как её сёстры лгали Королю Лиру.",
@@ -2435,7 +2435,7 @@
         {
           "german": "die Reue",
           "russian": "раскаяние",
-          "russian_hint": "раскаяние Встреча с (Встреча с Корделией)",
+          "russian_hint": "раскаяние в содеянном",
           "transcription": "[ди РОЙ-е]",
           "sentence": "Die tiefe Reue über seine Blindheit quält König Lear als er vor Cordelia niederkniet.",
           "sentence_translation": "Глубокое раскаяние в своей слепоте мучает Короля Лира когда он опускается на колени перед Корделией.",
@@ -2454,7 +2454,7 @@
         {
           "german": "die Weisheit",
           "russian": "мудрость",
-          "russian_hint": "мудрость Встреча с (Встреча с Корделией)",
+          "russian_hint": "мудрость опыта",
           "transcription": "[ди ВАЙС-хайт]",
           "sentence": "Die bittere Weisheit kommt zu König Lear erst nachdem er durch Wahnsinn und Leiden gegangen ist.",
           "sentence_translation": "Горькая мудрость приходит к Королю Лиру только после того как он прошёл через безумие и страдания.",
@@ -2473,7 +2473,7 @@
         {
           "german": "vergeben",
           "russian": "прощать",
-          "russian_hint": "прощать Можешь отца (Встреча с Корделией)",
+          "russian_hint": "отпускать вину",
           "transcription": "[фер-ГЕ-бен]",
           "sentence": "Cordelia vergibt ihrem reuigen Vater König Lear sofort mit Tränen der Liebe und des Mitleids.",
           "sentence_translation": "Корделия прощает своего кающегося отца Короля Лира сразу со слезами любви и сострадания.",
@@ -2492,7 +2492,7 @@
         {
           "german": "die Einsicht",
           "russian": "прозрение",
-          "russian_hint": "прозрение Встреча с (Встреча с Корделией)",
+          "russian_hint": "внезапное прозрение",
           "transcription": "[ди АЙН-зихт]",
           "sentence": "Die späte Einsicht in seine tragischen Fehler kommt zu König Lear beim Wiedersehen mit Cordelia.",
           "sentence_translation": "Позднее прозрение своих трагических ошибок приходит к Королю Лиру при встрече с Корделией.",
@@ -2511,7 +2511,7 @@
         {
           "german": "schuldig",
           "russian": "виновный",
-          "russian_hint": "виновный - отверг (Встреча с Корделией)",
+          "russian_hint": "несущий вину",
           "transcription": "[ШУЛЬ-диг]",
           "sentence": "König Lear fühlt sich tief schuldig weil er Cordelia verstoßen und seinen falschen Töchtern vertraut hatte.",
           "sentence_translation": "Король Лир чувствует себя глубоко виновным потому что отверг Корделию и доверился своим фальшивым дочерям.",
@@ -2849,7 +2849,7 @@
         {
           "german": "verzeihen",
           "russian": "прощать",
-          "russian_hint": "прощать в клетке друг (Финал трагедии)",
+          "russian_hint": "прощать обиды",
           "transcription": "[фер-ЦАЙ-ен]",
           "sentence": "König Lear und Cordelia verzeihen einander alles in ihrer letzten gemeinsamen Stunde im Gefängnis.",
           "sentence_translation": "Король Лир и Корделия прощают друг другу всё в их последний совместный час в тюрьме.",
@@ -2868,7 +2868,7 @@
         {
           "german": "der Tod",
           "russian": "смерть",
-          "russian_hint": "смерть Финал трагедии (Финал трагедии)",
+          "russian_hint": "конец жизни",
           "transcription": "[дер ТОД]",
           "sentence": "Der grausame Tod nimmt Cordelia von König Lear kurz bevor sie beide gerettet werden könnten.",
           "sentence_translation": "Жестокая смерть забирает Корделию у Короля Лира незадолго до того как они оба могли быть спасены.",
@@ -2887,7 +2887,7 @@
         {
           "german": "sterben",
           "russian": "умирать",
-          "russian_hint": "умирать готов - (Финал трагедии)",
+          "russian_hint": "прекращать жить",
           "transcription": "[ШТЕР-бен]",
           "sentence": "König Lear stirbt vor Kummer als er seine tote Tochter Cordelia in seinen Armen hält.",
           "sentence_translation": "Король Лир умирает от горя когда держит свою мёртвую дочь Корделию в своих руках.",
@@ -2906,7 +2906,7 @@
         {
           "german": "das Ende",
           "russian": "конец",
-          "russian_hint": "конец Финал трагедии (Финал трагедии)",
+          "russian_hint": "финал всего",
           "transcription": "[дас ЕН-де]",
           "sentence": "Das tragische Ende von König Lear kommt als er neben seiner geliebten Cordelia zusammenbricht.",
           "sentence_translation": "Трагический конец Короля Лира наступает когда он падает рядом со своей любимой Корделией.",
@@ -2925,7 +2925,7 @@
         {
           "german": "das Herz",
           "russian": "сердце",
-          "russian_hint": "сердце Финал трагедии (Финал трагедии)",
+          "russian_hint": "средоточие чувств",
           "transcription": "[дас ХЕРЦ]",
           "sentence": "König Lears gebrochenes Herz kann den Verlust seiner einzigen wahren Tochter Cordelia nicht ertragen.",
           "sentence_translation": "Разбитое сердце Короля Лира не может вынести потерю его единственной истинной дочери Корделии.",
@@ -2944,7 +2944,7 @@
         {
           "german": "die Trauer",
           "russian": "скорбь",
-          "russian_hint": "скорбь Финал трагедии (Финал трагедии)",
+          "russian_hint": "глубокая печаль",
           "transcription": "[ди ТРАУ-ер]",
           "sentence": "Die unendliche Trauer überwältigt König Lear als er Cordelias leblose Gestalt an sich drückt.",
           "sentence_translation": "Бесконечная скорбь охватывает Короля Лира когда он прижимает к себе безжизненное тело Корделии.",
@@ -2963,7 +2963,7 @@
         {
           "german": "der Abschied",
           "russian": "прощание",
-          "russian_hint": "прощание Финал трагедии (Финал трагедии)",
+          "russian_hint": "последнее прощание",
           "transcription": "[дер АБ-шид]",
           "sentence": "Der letzte Abschied zwischen König Lear und Cordelia wird zur herzzerreißendsten Szene der Tragödie.",
           "sentence_translation": "Последнее прощание между Королём Лиром и Корделией становится самой душераздирающей сценой трагедии.",
@@ -2982,7 +2982,7 @@
         {
           "german": "ewig",
           "russian": "вечный",
-          "russian_hint": "вечный смерть не (Финал трагедии)",
+          "russian_hint": "бесконечный во времени",
           "transcription": "[Э-виг]",
           "sentence": "König Lear glaubt dass ihre Liebe ewig bestehen wird selbst nach dem Tod im Jenseits.",
           "sentence_translation": "Король Лир верит что их любовь вечно будет существовать даже после смерти в загробной жизни.",

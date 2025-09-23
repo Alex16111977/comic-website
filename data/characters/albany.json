@@ -20,7 +20,7 @@
             "Im goldenen Saal sitzt Albany schweigend neben Gonerils Thron.",
             "Mein Atem zeichnet das Wort „das Schweigen“ in die kalte Luft zwischen uns."
           ],
-          "russian_hint": "молчание - удел (Молчаливый муж Гонерильи)"
+          "russian_hint": "молчание - удел"
         },
         {
           "german": "die Schwäche",
@@ -32,7 +32,7 @@
             "Vor den streitenden Schwestern faltet Albany die Hände hinter dem Rücken.",
             "Ich halte das Wort „die Schwäche“ wie eine Fackel vor meinem Herzen."
           ],
-          "russian_hint": "слабость Молчаливый муж Гонерильи (Молчаливый муж Гонерильи)"
+          "russian_hint": "слабость Молчаливый муж Гонерильи"
         },
         {
           "german": "die Ehe",
@@ -44,7 +44,7 @@
             "Am Fenster der Audienzhalle betrachtet Albany die vorbeiziehenden Wolken.",
             "Ich zeichne das Wort „die Ehe“ mit unsichtbarer Tinte auf meine Handfläche."
           ],
-          "russian_hint": "брак с Гонерильей - (Молчаливый муж Гонерильи)"
+          "russian_hint": "брачный союз"
         },
         {
           "german": "dulden",
@@ -56,7 +56,7 @@
             "Zwischen zerstreuten Ratsmitgliedern nickt Albany zu allem bereitwillig.",
             "Ich zeichne das Wort „dulden“ in Gedanken über die Linien des Schicksals."
           ],
-          "russian_hint": "терпеть молча (Молчаливый муж Гонерильи)"
+          "russian_hint": "сносить молча"
         },
         {
           "german": "passiv",
@@ -68,7 +68,7 @@
             "Am Ende der Tafel legt Albany das Besteck ordentlich beiseite.",
             "Wie ein stilles Gebet legt sich das Wort „passiv“ auf meine Lippen."
           ],
-          "russian_hint": "пассивный наблюдаю как (Молчаливый муж Гонерильи)"
+          "russian_hint": "пассивный наблюдаю как"
         },
         {
           "german": "nachgeben",
@@ -80,7 +80,7 @@
             "Neben Gonerils triumphierendem Lächeln bleibt Albany reglos.",
             "Ich atme tief ein und lasse nur das Wort „nachgeben“ wieder hinaus."
           ],
-          "russian_hint": "уступать воле (Молчаливый муж Гонерильи)"
+          "russian_hint": "уступать воле"
         },
         {
           "german": "zögern",
@@ -92,7 +92,7 @@
             "Auf dem Balkon lauscht Albany stumm den Beschwerden der Diener.",
             "Das kalte Licht lässt das Wort „zögern“ wie geschmolzenes Gold erscheinen."
           ],
-          "russian_hint": "колебаться когда (Молчаливый муж Гонерильи)"
+          "russian_hint": "колебаться когда"
         },
         {
           "german": "mild",
@@ -104,7 +104,7 @@
             "Im Schatten der Säulen lässt Albany den Streit an sich vorbeiziehen.",
             "Mein Atem zeichnet das Wort „mild“ in die kalte Luft zwischen uns."
           ],
-          "russian_hint": "мягкий натура - (Молчаливый муж Гонерильи)"
+          "russian_hint": "мягкий натура -"
         }
       ],
       "theatrical_scene": {
@@ -427,7 +427,7 @@
             "In der nächtlichen Galerie betrachtet Albany das verblassende Familienwappen.",
             "Wie ein stilles Gebet legt sich das Wort „der Zweifel“ auf meine Lippen."
           ],
-          "russian_hint": "сомнение во как опухоль (Начинает сомневаться)"
+          "russian_hint": "сомнение в правде"
         },
         {
           "german": "das Gewissen",
@@ -439,7 +439,7 @@
             "Vor dem Spiegel entdeckt Albany zum ersten Mal den Schatten des Zweifels.",
             "Mit fester Stimme schwöre ich mir: Das Wort „das Gewissen“ wird heute nicht verraten."
           ],
-          "russian_hint": "совесть всё громче (Начинает сомневаться)"
+          "russian_hint": "голос совести"
         },
         {
           "german": "das Unbehagen",
@@ -451,7 +451,7 @@
             "Neben gestapelten Tributschriften blättert Albany nervös.",
             "Das Echo des Wortes „das Unbehagen“ übertönt das Flüstern der Höflinge."
           ],
-          "russian_hint": "беспокойство не спать (Начинает сомневаться)"
+          "russian_hint": "беспокойство не спать"
         },
         {
           "german": "hinterfragen",
@@ -463,7 +463,7 @@
             "Am dunklen Hof beobachtet Albany heimlich die Grausamkeit der Wachen.",
             "Mit fester Stimme schwöre ich mir: Das Wort „hinterfragen“ wird heute nicht verraten."
           ],
-          "russian_hint": "подвергать сомнению начинаю действия (Начинает сомневаться)"
+          "russian_hint": "подвергать сомнению начинаю действия"
         },
         {
           "german": "beunruhigen",
@@ -475,7 +475,7 @@
             "Zwischen verlassenen Banketttischen greift Albany nach einem halb vollen Kelch.",
             "Das kalte Licht lässt das Wort „beunruhigen“ wie geschmolzenes Gold erscheinen."
           ],
-          "russian_hint": "тревожить жестокость начинает (Начинает сомневаться)"
+          "russian_hint": "тревожить жестокость начинает"
         },
         {
           "german": "unsicher",
@@ -487,7 +487,7 @@
             "Auf dem Flur belauscht Albany ein Gespräch über Lear.",
             "Mit fester Stimme schwöre ich mir: Das Wort „unsicher“ wird heute nicht verraten."
           ],
-          "russian_hint": "неуверенный - правильно (Начинает сомневаться)"
+          "russian_hint": "неуверенный - правильно"
         },
         {
           "german": "grübeln",
@@ -499,7 +499,7 @@
             "Im Schlafgemach rollt Albany die Karten des Reiches unruhig zusammen.",
             "Das Echo des Wortes „grübeln“ übertönt das Flüstern der Höflinge."
           ],
-          "russian_hint": "размышлять Ночами - (Начинает сомневаться)"
+          "russian_hint": "размышлять Ночами -"
         }
       ],
       "theatrical_scene": {
@@ -788,7 +788,7 @@
             "Vor einem zerschlagenen Spiegel erkennt Albany die eigene Ohnmacht.",
             "Mein Atem zeichnet das Wort „die Erkenntnis“ in die kalte Luft zwischen uns."
           ],
-          "russian_hint": "осознание как удар молнии (Осознаёт зло жены)"
+          "russian_hint": "познание истины"
         },
         {
           "german": "das Entsetzen",
@@ -800,7 +800,7 @@
             "Auf dem staubigen Kampfplatz zieht Albany zum ersten Mal das Schwert.",
             "Ich zeichne das Wort „das Entsetzen“ in Gedanken über die Linien des Schicksals."
           ],
-          "russian_hint": "ужас вижу правду - (Осознаёт зло жены)"
+          "russian_hint": "ужас вижу правду -"
         },
         {
           "german": "erwachen",
@@ -812,7 +812,7 @@
             "Zwischen aufgebrachten Dienern erhebt Albany die Stimme gegen Goneril.",
             "Ich presse das Wort „erwachen“ zwischen die Zähne, damit kein Zweifel entweicht."
           ],
-          "russian_hint": "пробуждаться от (Осознаёт зло жены)"
+          "russian_hint": "пробуждаться от"
         },
         {
           "german": "begreifen",
@@ -824,7 +824,7 @@
             "Am Fenster beobachtet Albany Lear, der in den Sturm getrieben wird.",
             "Ich halte das Wort „begreifen“ wie eine Fackel vor meinem Herzen."
           ],
-          "russian_hint": "понимать весь (Осознаёт зло жены)"
+          "russian_hint": "понимать весь"
         },
         {
           "german": "erschrecken",
@@ -836,7 +836,7 @@
             "Auf dem Hof stoppt Albany eine grausame Strafe mit ausgestreckter Hand.",
             "Das kalte Licht lässt das Wort „erschrecken“ wie geschmolzenes Gold erscheinen."
           ],
-          "russian_hint": "пугаться поступки до (Осознаёт зло жены)"
+          "russian_hint": "пугаться поступки до"
         },
         {
           "german": "aufwachen",
@@ -848,7 +848,7 @@
             "Im Kriegssaal zerreißt Albany einen falschen Befehl.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „aufwachen“ bleibt lebendig."
           ],
-          "russian_hint": "просыпаться впервые (Осознаёт зло жены)"
+          "russian_hint": "просыпаться впервые"
         },
         {
           "german": "klar sehen",
@@ -860,7 +860,7 @@
             "Neben Kent tauscht Albany einen verständnisvollen Blick.",
             "Mit fester Stimme schwöre ich mir: Das Wort „klar sehen“ wird heute nicht verraten."
           ],
-          "russian_hint": "ясно видеть просыпаюсь впервые (Осознаёт зло жены)"
+          "russian_hint": "ясно видеть просыпаюсь впервые"
         },
         {
           "german": "die Verwandlung",
@@ -872,7 +872,7 @@
             "An der Grenze des Herzogtums schwört Albany dem Unrecht ab.",
             "Ich zeichne das Wort „die Verwandlung“ mit unsichtbarer Tinte auf meine Handfläche."
           ],
-          "russian_hint": "превращение во зло жены (Осознаёт зло жены)"
+          "russian_hint": "превращение во зло жены"
         }
       ],
       "theatrical_scene": {
@@ -1195,7 +1195,7 @@
             "Im Kriegslager stellt sich Albany Goneril mitten zwischen die Zelte.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „der Streit“ gehört mir."
           ],
-          "russian_hint": "спор между с Гонерильей (Спорит с Гонерильей)"
+          "russian_hint": "спор между с Гонерильей"
         },
         {
           "german": "der Mut",
@@ -1207,7 +1207,7 @@
             "Vor den versammelten Offizieren wirft Albany den Handschuh auf den Tisch.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „der Mut“ darf nicht vergehen."
           ],
-          "russian_hint": "мужество вступиться (Спорит с Гонерильей)"
+          "russian_hint": "храбрость духа"
         },
         {
           "german": "der Widerstand",
@@ -1219,7 +1219,7 @@
             "Am Wagen voller Waffen blockiert Albany den Weg der Flüchtenden.",
             "Mein Atem zeichnet das Wort „der Widerstand“ in die kalte Luft zwischen uns."
           ],
-          "russian_hint": "сопротивление с словом (Спорит с Гонерильей)"
+          "russian_hint": "сопротивление с словом"
         },
         {
           "german": "konfrontieren",
@@ -1231,7 +1231,7 @@
             "Zwischen wehenden Bannern nennt Albany laut den Verrat.",
             "Ich zeichne das Wort „konfrontieren“ in Gedanken über die Linien des Schicksals."
           ],
-          "russian_hint": "противостоять открыто (Спорит с Гонерильей)"
+          "russian_hint": "противостоять открыто"
         },
         {
           "german": "anklagen",
@@ -1243,7 +1243,7 @@
             "Auf dem Felsen bei Dover fordert Albany Edmund heraus.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „anklagen“ bleibt lebendig."
           ],
-          "russian_hint": "обвинять в (Спорит с Гонерильей)"
+          "russian_hint": "обвинять в"
         },
         {
           "german": "sich wehren",
@@ -1255,7 +1255,7 @@
             "Vor der Armee verliest Albany Gonerils geheime Briefe.",
             "Mein Atem zeichnet das Wort „sich wehren“ in die kalte Luft zwischen uns."
           ],
-          "russian_hint": "защищаться от (Спорит с Гонерильей)"
+          "russian_hint": "защищаться от"
         },
         {
           "german": "aufbegehren",
@@ -1267,7 +1267,7 @@
             "Im hellen Tageslicht zeigt Albany auf die Verräter, ohne zu zittern.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „aufbegehren“ darf nicht vergehen."
           ],
-          "russian_hint": "восставать против (Спорит с Гонерильей)"
+          "russian_hint": "восставать против"
         }
       ],
       "theatrical_scene": {
@@ -1556,7 +1556,7 @@
             "Im Feldzelt der Verbündeten zeichnet Albany eine Linie in den Sand.",
             "Mein Atem zeichnet das Wort „die Moral“ in die kalte Luft zwischen uns."
           ],
-          "russian_hint": "мораль теперь компас (Встаёт на сторону добра)"
+          "russian_hint": "мораль теперь компас"
         },
         {
           "german": "die Gerechtigkeit",
@@ -1568,7 +1568,7 @@
             "Zwischen verletzten Soldaten spricht Albany von Gnade.",
             "Mein Atem zeichnet das Wort „die Gerechtigkeit“ in die kalte Luft zwischen uns."
           ],
-          "russian_hint": "справедливость на сторону добра (Встаёт на сторону добра)"
+          "russian_hint": "справедливость на сторону добра"
         },
         {
           "german": "die Entscheidung",
@@ -1580,7 +1580,7 @@
             "Am Schlachtplan stellt Albany die Figuren der Gerechten nach vorn.",
             "Ich zeichne das Wort „die Entscheidung“ mit unsichtbarer Tinte auf meine Handfläche."
           ],
-          "russian_hint": "решение принято - выбираю (Встаёт на сторону добра)"
+          "russian_hint": "решение принято - выбираю"
         },
         {
           "german": "wählen",
@@ -1592,7 +1592,7 @@
             "Im Rat der Feldherren widerspricht Albany einer grausamen Idee.",
             "Ich atme tief ein und lasse nur das Wort „wählen“ wieder hinaus."
           ],
-          "russian_hint": "выбирать принято - сторону (Встаёт на сторону добра)"
+          "russian_hint": "выбирать принято - сторону"
         },
         {
           "german": "rechtschaffen",
@@ -1604,7 +1604,7 @@
             "Vor dem Banner der Wahrheit hebt Albany die Stimme zu einem Eid.",
             "Ich presse das Wort „rechtschaffen“ zwischen die Zähne, damit kein Zweifel entweicht."
           ],
-          "russian_hint": "праведный благородным (Встаёт на сторону добра)"
+          "russian_hint": "праведный благородным"
         },
         {
           "german": "das Prinzip",
@@ -1616,7 +1616,7 @@
             "Auf dem Hügel über dem Schlachtfeld hält Albany ein feierliches Gebet.",
             "Wie ein stilles Gebet legt sich das Wort „das Prinzip“ auf meine Lippen."
           ],
-          "russian_hint": "принцип важнее богатства власти (Встаёт на сторону добра)"
+          "russian_hint": "принцип важнее богатства власти"
         },
         {
           "german": "edel",
@@ -1628,7 +1628,7 @@
             "In der Morgensonne wäscht Albany das Blut vom Schwert und schwört Frieden.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „edel“ mein Nordstern."
           ],
-          "russian_hint": "благородный Встаёт на (Встаёт на сторону добра)"
+          "russian_hint": "благородного рода"
         },
         {
           "german": "die Tugend",
@@ -1640,7 +1640,7 @@
             "Bei den Feldärzten verspricht Albany Schutz den Verwundeten.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Tugend“ darf nicht vergehen."
           ],
-          "russian_hint": "добродетель - новый путь (Встаёт на сторону добра)"
+          "russian_hint": "добродетель"
         }
       ],
       "theatrical_scene": {
@@ -1963,7 +1963,7 @@
             "Auf dem Tribunal errichtet Albany einen einfachen Holzstuhl als Richterstuhl.",
             "Ich zeichne das Wort „der Kampf“ mit unsichtbarer Tinte auf meine Handfläche."
           ],
-          "russian_hint": "борьба за справедливость (Борется за правду)"
+          "russian_hint": "борьба за жизнь"
         },
         {
           "german": "das Recht",
@@ -1975,7 +1975,7 @@
             "Vor den überlebenden Soldaten verliest Albany die Namen der Schuldigen.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „das Recht“ gehört mir."
           ],
-          "russian_hint": "право должно восторжествовать (Борется за правду)"
+          "russian_hint": "право по закону"
         },
         {
           "german": "die Güte",
@@ -1988,7 +1988,7 @@
             "bevor er urteilt.",
             "Das Echo des Wortes „die Güte“ übertönt das Flüstern der Höflinge."
           ],
-          "russian_hint": "доброта в сердце выхожу (Борется за правду)"
+          "russian_hint": "доброта в сердце выхожу"
         },
         {
           "german": "strafen",
@@ -2000,7 +2000,7 @@
             "Am Tor von Dover begrüßt Albany die Rückkehrer mit offenen Armen.",
             "Ich zeichne das Wort „strafen“ in Gedanken über die Linien des Schicksals."
           ],
-          "russian_hint": "наказывать буду виновных (Борется за правду)"
+          "russian_hint": "наказывать буду виновных"
         },
         {
           "german": "richten",
@@ -2012,7 +2012,7 @@
             "Auf dem Feldlager sammelt Albany Zeugnisse der Überlebenden.",
             "Ich zeichne das Wort „richten“ mit unsichtbarer Tinte auf meine Handfläche."
           ],
-          "russian_hint": "судить Эдмунда (Борется за правду)"
+          "russian_hint": "судить Эдмунда"
         },
         {
           "german": "beschützen",
@@ -2024,7 +2024,7 @@
             "Zwischen verstummten Trommeln verliest Albany den Befehl zur Gerechtigkeit.",
             "Ich zeichne das Wort „beschützen“ in Gedanken über die Linien des Schicksals."
           ],
-          "russian_hint": "защищать наказывать виновных невинных (Борется за правду)"
+          "russian_hint": "защищать наказывать виновных невинных"
         },
         {
           "german": "eingreifen",
@@ -2036,7 +2036,7 @@
             "Im Schatten des zerstörten Schlosses schwört Albany das Reich zu erneuern.",
             "Ich zeichne das Wort „eingreifen“ in Gedanken über die Linien des Schicksals."
           ],
-          "russian_hint": "вмешиваться спасти (Борется за правду)"
+          "russian_hint": "вмешиваться спасти"
         }
       ],
       "theatrical_scene": {
@@ -2325,7 +2325,7 @@
             "Im Saal voller Verwundeter verteilt Albany sanfte Worte und Befehle zugleich.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Herrschaft“ darf nicht vergehen."
           ],
-          "russian_hint": "правление землями (Становится мудрым лидером)"
+          "russian_hint": "конкретное правление"
         },
         {
           "german": "die Weisheit",
@@ -2337,7 +2337,7 @@
             "Auf dem behelfsmäßigen Thron richtet Albany das Reich wieder auf.",
             "Das Echo des Wortes „die Weisheit“ übertönt das Flüstern der Höflinge."
           ],
-          "russian_hint": "мудрость рождённой из страданий (Становится мудрым лидером)"
+          "russian_hint": "мудрость опыта"
         },
         {
           "german": "der Neuanfang",
@@ -2349,7 +2349,7 @@
             "Zwischen vertrockneten Kränzen trägt Albany die neue Krone ohne Triumph.",
             "Ich umarme das Wort „der Neuanfang“, als wäre es mein einziger Verbündeter."
           ],
-          "russian_hint": "новое начало для разрушенного (Становится мудрым лидером)"
+          "russian_hint": "новое начало для разрушенного"
         },
         {
           "german": "lenken",
@@ -2361,7 +2361,7 @@
             "Vor dem Volk verspricht Albany Heilung für das verwundete Land.",
             "Das Echo des Wortes „lenken“ übertönt das Flüstern der Höflinge."
           ],
-          "russian_hint": "направлять страданий буду страну (Становится мудрым лидером)"
+          "russian_hint": "направлять страданий буду страну"
         },
         {
           "german": "aufbauen",
@@ -2373,7 +2373,7 @@
             "Auf den Stufen des Tempels hebt Albany die Gefallenen in Ehren hervor.",
             "Ich halte das Wort „aufbauen“ wie eine Fackel vor meinem Herzen."
           ],
-          "russian_hint": "строить буду на (Становится мудрым лидером)"
+          "russian_hint": "строить буду на"
         },
         {
           "german": "erneuern",
@@ -2385,7 +2385,7 @@
             "Unter wehenden Flaggen lässt Albany die Glocken der Hoffnung schlagen.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „erneuern“ gehört mir."
           ],
-          "russian_hint": "обновлять законы (Становится мудрым лидером)"
+          "russian_hint": "обновлять законы"
         },
         {
           "german": "versöhnen",
@@ -2397,7 +2397,7 @@
             "Im Rat der Überlebenden hört Albany jedem zu, bevor er entscheidet.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „versöhnen“ mein Nordstern."
           ],
-          "russian_hint": "примирять обновлю законы враждующих (Становится мудрым лидером)"
+          "russian_hint": "примирять обновлю законы враждующих"
         },
         {
           "german": "der Friede",
@@ -2409,7 +2409,7 @@
             "An der Küste von Dover lässt Albany neue Schiffe zum Schutz auslaufen.",
             "Ich zeichne das Wort „der Friede“ in Gedanken über die Linien des Schicksals."
           ],
-          "russian_hint": "мир в земли (Становится мудрым лидером)"
+          "russian_hint": "мир в земли"
         }
       ],
       "theatrical_scene": {

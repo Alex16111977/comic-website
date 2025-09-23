@@ -20,7 +20,7 @@
             "Gloucester steht unter dem glühenden Kronleuchter des Thronsaals.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „der Adel“ mein Nordstern."
           ],
-          "russian_hint": "знать мир чести (При дворе короля)"
+          "russian_hint": "знатное сословие"
         },
         {
           "german": "dienen",
@@ -32,7 +32,7 @@
             "Neben der ausgerollten Reichskarte beugt sich Gloucester über Lears schweren Tisch.",
             "Mit fester Stimme schwöre ich mir: Das Wort „dienen“ wird heute nicht verraten."
           ],
-          "russian_hint": "служить верно (При дворе короля)"
+          "russian_hint": "служить господину"
         },
         {
           "german": "vertrauen",
@@ -44,7 +44,7 @@
             "Vor den steinernen Ahnenstatuen verschränkt Gloucester die Hände hinter dem Rücken.",
             "Ich atme tief ein und lasse nur das Wort „vertrauen“ wieder hinaus."
           ],
-          "russian_hint": "доверять без сомнений (При дворе короля)"
+          "russian_hint": "доверять полностью"
         },
         {
           "german": "der Graf",
@@ -56,7 +56,7 @@
             "Zwischen flüsternden Höflingen gleitet Gloucester über den kalten Marmorboden.",
             "Ich zeichne das Wort „der Graf“ mit unsichtbarer Tinte auf meine Handfläche."
           ],
-          "russian_hint": "граф Глостер верный (При дворе короля)"
+          "russian_hint": "знатный титул"
         },
         {
           "german": "die Ehre",
@@ -68,7 +68,7 @@
             "Am Rand des purpurnen Teppichs wartet Gloucester auf ein Zeichen des Königs.",
             "Ich zeichne das Wort „die Ehre“ mit unsichtbarer Tinte auf meine Handfläche."
           ],
-          "russian_hint": "честь семьи незапятнанна (При дворе короля)"
+          "russian_hint": "честь семьи незапятнанна"
         },
         {
           "german": "rechtschaffen",
@@ -80,7 +80,7 @@
             "Unter wehenden Standarten der Schwestern senkt Gloucester kurz den Blick.",
             "Ich presse das Wort „rechtschaffen“ zwischen die Zähne, damit kein Zweifel entweicht."
           ],
-          "russian_hint": "праведный человек исполняющий (При дворе короля)"
+          "russian_hint": "праведный человек исполняющий"
         },
         {
           "german": "die Pflicht",
@@ -92,7 +92,7 @@
             "Hinter der vergoldeten Balustrade beobachtet Gloucester das gespannte Antlitz des Hofes.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Pflicht“ gehört mir."
           ],
-          "russian_hint": "долг перед королём королевством (При дворе короля)"
+          "russian_hint": "долг чести"
         },
         {
           "german": "achten",
@@ -104,7 +104,7 @@
             "Im Schein der offenen Feuerbecken erhebt Gloucester langsam die Stimme.",
             "Ich zeichne das Wort „achten“ mit unsichtbarer Tinte auf meine Handfläche."
           ],
-          "russian_hint": "уважать равно (При дворе короля)"
+          "russian_hint": "уважать равно"
         }
       ],
       "theatrical_scene": {
@@ -427,7 +427,7 @@
             "Im hallenden Torbogen von Gonerils Burg verharrt Gloucester zwischen gepackten Kisten.",
             "Das kalte Licht lässt das Wort „der Brief“ wie geschmolzenes Gold erscheinen."
           ],
-          "russian_hint": "письмо Поддельное (Поддельное письмо)"
+          "russian_hint": "письмо Поддельное"
         },
         {
           "german": "glauben",
@@ -439,7 +439,7 @@
             "Auf der windigen Freitreppe blickt Gloucester zum schweigenden Hof hinunter.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „glauben“ gehört mir."
           ],
-          "russian_hint": "верить слову (Поддельное письмо)"
+          "russian_hint": "верить слову"
         },
         {
           "german": "täuschen",
@@ -451,7 +451,7 @@
             "Zwischen zurückgelassenen Dienern schließt Gloucester den Reisemantel enger.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „täuschen“ gehört mir."
           ],
-          "russian_hint": "обманывать Эдмунд умеет так (Поддельное письмо)"
+          "russian_hint": "вводить в обман"
         },
         {
           "german": "der Betrug",
@@ -463,7 +463,7 @@
             "Am dunklen Pferdestall streicht Gloucester einem nervösen Tier über die Mähne.",
             "Ich zeichne das Wort „der Betrug“ in Gedanken über die Linien des Schicksals."
           ],
-          "russian_hint": "обман идеально - слишком (Поддельное письмо)"
+          "russian_hint": "обман идеально - слишком"
         },
         {
           "german": "arglos",
@@ -475,7 +475,7 @@
             "Vor dem knarrenden Fallgatter tastet Gloucester ein letztes Mal nach dem Haustor.",
             "Ich zeichne das Wort „arglos“ mit unsichtbarer Tinte auf meine Handfläche."
           ],
-          "russian_hint": "простодушный увидеть ложь (Поддельное письмо)"
+          "russian_hint": "простодушный увидеть ложь"
         },
         {
           "german": "verdächtigen",
@@ -487,7 +487,7 @@
             "Zwischen verstreuten Schriftrollen dreht Gloucester den Ring an der Hand.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „verdächtigen“ mein Nordstern."
           ],
-          "russian_hint": "подозревать Эдгара (Поддельное письмо)"
+          "russian_hint": "подозревать Эдгара"
         },
         {
           "german": "leichtgläubig",
@@ -499,7 +499,7 @@
             "Am leeren Bankettisch zählt Gloucester die verlöschenden Kerzen.",
             "Mein Atem zeichnet das Wort „leichtgläubig“ in die kalte Luft zwischen uns."
           ],
-          "russian_hint": "легковерный Поддельное письмо (Поддельное письмо)"
+          "russian_hint": "легковерный Поддельное письмо"
         },
         {
           "german": "die Falle",
@@ -512,7 +512,7 @@
             "Ich presse das Wort „die Falle“ zwischen die Zähne,",
             "damit kein Zweifel entweicht."
           ],
-          "russian_hint": "ловушка Поддельное письмо (Поддельное письмо)"
+          "russian_hint": "ловушка Поддельное письмо"
         }
       ],
       "theatrical_scene": {
@@ -835,7 +835,7 @@
             "Im zugigen Seitenflügel lauscht Gloucester dem Heulen der Küstenwinde.",
             "Ich umarme das Wort „verstoßen“, als wäre es mein einziger Verbündeter."
           ],
-          "russian_hint": "изгонять из семьи (Изгнание сына)"
+          "russian_hint": "отвергать из семьи"
         },
         {
           "german": "verfluchen",
@@ -847,7 +847,7 @@
             "Vor dem rauchigen Kamin der Burg faltet Gloucester einen zerknitterten Brief.",
             "Ich zeichne das Wort „verfluchen“ in Gedanken über die Linien des Schicksals."
           ],
-          "russian_hint": "проклинать собственного (Изгнание сына)"
+          "russian_hint": "предавать проклятию"
         },
         {
           "german": "bereuen",
@@ -859,7 +859,7 @@
             "Unter farblosen Wandteppichen schreitet Gloucester rastlos auf und ab.",
             "Das kalte Licht lässt das Wort „bereuen“ wie geschmolzenes Gold erscheinen."
           ],
-          "russian_hint": "сожалеть Когда-нибудь буду об (Изгнание сына)"
+          "russian_hint": "сожалеть о содеянном"
         },
         {
           "german": "der Irrtum",
@@ -871,7 +871,7 @@
             "An der schmalen Fensterluke zählt Gloucester die Fackeln auf dem Hof.",
             "Ich halte das Wort „der Irrtum“ wie eine Fackel vor meinem Herzen."
           ],
-          "russian_hint": "заблуждение полностью Изгнание сына (Изгнание сына)"
+          "russian_hint": "заблуждение полностью сына"
         },
         {
           "german": "blind",
@@ -883,7 +883,7 @@
             "Zwischen Reisekoffern der Gesandten sucht Gloucester nach frischen Botschaften.",
             "Wie ein stilles Gebet legt sich das Wort „blind“ auf meine Lippen."
           ],
-          "russian_hint": "слепой в ярости (Изгнание сына)"
+          "russian_hint": "лишенный зрения"
         },
         {
           "german": "jagen",
@@ -895,7 +895,7 @@
             "Im stillen Kapellenraum kniet Gloucester vor der kalten Steinfigur.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „jagen“ bleibt lebendig."
           ],
-          "russian_hint": "гнать как (Изгнание сына)"
+          "russian_hint": "гнать как"
         },
         {
           "german": "die Ungerechtigkeit",
@@ -907,7 +907,7 @@
             "Auf dem Balkon, den das Meer besprüht, hält Gloucester die Laterne fest.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Ungerechtigkeit“ bleibt lebendig."
           ],
-          "russian_hint": "несправедливость действий очевидна кроме (Изгнание сына)"
+          "russian_hint": "несправедливость действий очевидна кроме"
         }
       ],
       "theatrical_scene": {
@@ -1196,7 +1196,7 @@
             "Mitten auf der vom Regen gepeitschten Heide stemmt sich Gloucester gegen den Wind.",
             "Das Echo des Wortes „helfen“ übertönt das Flüstern der Höflinge."
           ],
-          "russian_hint": "помогать должен королю (Тайная помощь)"
+          "russian_hint": "помогать должен королю"
         },
         {
           "german": "das Mitleid",
@@ -1208,7 +1208,7 @@
             "Unter einem zerrissenen Banner schützt Gloucester die Augen vor den Blitzen.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „das Mitleid“ mein Nordstern."
           ],
-          "russian_hint": "сострадание сердце когда вижу (Тайная помощь)"
+          "russian_hint": "сострадание сердце когда вижу"
         },
         {
           "german": "riskieren",
@@ -1220,7 +1220,7 @@
             "Am Rand eines umgestürzten Baumes sucht Gloucester Deckung vor dem Donner.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „riskieren“ mein Nordstern."
           ],
-          "russian_hint": "рисковать зная что всем (Тайная помощь)"
+          "russian_hint": "рисковать зная что всем"
         },
         {
           "german": "die Gefahr",
@@ -1232,7 +1232,7 @@
             "Zwischen schäumenden Wassergräben stolpert Gloucester durch den Schlamm.",
             "Das kalte Licht lässt das Wort „die Gefahr“ wie geschmolzenes Gold erscheinen."
           ],
-          "russian_hint": "опасность повсюду - дочери (Тайная помощь)"
+          "russian_hint": "опасность повсюду - дочери"
         },
         {
           "german": "heimlich",
@@ -1244,7 +1244,7 @@
             "Vor einem zuckenden Himmel hebt Gloucester die Arme trotzig an.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „heimlich“ gehört mir."
           ],
-          "russian_hint": "тайно зная что (Тайная помощь)"
+          "russian_hint": "тайно зная что"
         },
         {
           "german": "schützen",
@@ -1256,7 +1256,7 @@
             "Unter dem durchtränkten Umhang presst Gloucester den Atem gegen die Kälte.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „schützen“ bleibt lebendig."
           ],
-          "russian_hint": "защищать хочу старого (Тайная помощь)"
+          "russian_hint": "защищать хочу старого"
         },
         {
           "german": "der Verrat",
@@ -1268,7 +1268,7 @@
             "Am kläglichen Feuerrest wärmt Gloucester zitternde Finger.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „der Verrat“ gehört mir."
           ],
-          "russian_hint": "измена в глазах Реганы (Тайная помощь)"
+          "russian_hint": "предательство доверия"
         },
         {
           "german": "wagen",
@@ -1280,7 +1280,7 @@
             "Zwischen heulenden Hunden ruft Gloucester gegen den tosenden Sturm an.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „wagen“ gehört mir."
           ],
-          "russian_hint": "осмеливаться противостоять (Тайная помощь)"
+          "russian_hint": "осмеливаться противостоять"
         }
       ],
       "theatrical_scene": {
@@ -1603,7 +1603,7 @@
             "Im dunklen Zelt der Feldärzte sitzt Gloucester bei der flackernden Kerze.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „blenden“ gehört mir."
           ],
-          "russian_hint": "ослеплять Потеря глаз (Потеря глаз)"
+          "russian_hint": "ослеплять Потеря глаз"
         },
         {
           "german": "die Folter",
@@ -1616,7 +1616,7 @@
             "Ich presse das Wort „die Folter“ zwischen die Zähne,",
             "damit kein Zweifel entweicht."
           ],
-          "russian_hint": "пытка невыносима Потеря глаз (Потеря глаз)"
+          "russian_hint": "пытка невыносима Потеря глаз"
         },
         {
           "german": "der Schmerz",
@@ -1628,7 +1628,7 @@
             "Am niedrigen Dachbalken der Hütte stößt Gloucester fast den Kopf.",
             "Ich umarme das Wort „der Schmerz“, als wäre es mein einziger Verbündeter."
           ],
-          "russian_hint": "боль не душу (Потеря глаз)"
+          "russian_hint": "душевная боль"
         },
         {
           "german": "die Dunkelheit",
@@ -1641,7 +1641,7 @@
             "Ich presse das Wort „die Dunkelheit“ zwischen die Zähne,",
             "damit kein Zweifel entweicht."
           ],
-          "russian_hint": "темнота - новый мир (Потеря глаз)"
+          "russian_hint": "темнота - новый мир"
         },
         {
           "german": "schreien",
@@ -1653,7 +1653,7 @@
             "Vor dem einfachen Feldbett betrachtet Gloucester die Narben vergangener Schlachten.",
             "Mit fester Stimme schwöre ich mir: Das Wort „schreien“ wird heute nicht verraten."
           ],
-          "russian_hint": "кричать как (Потеря глаз)"
+          "russian_hint": "кричать громко"
         },
         {
           "german": "erblinden",
@@ -1665,7 +1665,7 @@
             "Im Geruch von feuchtem Stroh legt Gloucester den Mantel zur Seite.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „erblinden“ darf nicht vergehen."
           ],
-          "russian_hint": "слепнуть навсегда (Потеря глаз)"
+          "russian_hint": "слепнуть навсегда"
         },
         {
           "german": "die Rache",
@@ -1677,7 +1677,7 @@
             "Auf dem wackligen Holztisch ordnet Gloucester zerlesene Briefe.",
             "Wie ein stilles Gebet legt sich das Wort „die Rache“ auf meine Lippen."
           ],
-          "russian_hint": "месть обидчикам (Потеря глаз)"
+          "russian_hint": "месть за обиду"
         }
       ],
       "theatrical_scene": {
@@ -1966,7 +1966,7 @@
             "Auf den weißen Klippen von Dover blickt Gloucester in den aufgewühlten Kanal.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „die Verzweiflung“ mein Nordstern."
           ],
-          "russian_hint": "отчаяние к скалам Дувра (Попытка самоубийства)"
+          "russian_hint": "полная безнадежность"
         },
         {
           "german": "springen",
@@ -1978,7 +1978,7 @@
             "Zwischen flatternden Feldzeichen richtet Gloucester den Helm.",
             "Das Echo des Wortes „springen“ übertönt das Flüstern der Höflinge."
           ],
-          "russian_hint": "прыгать хочу (Попытка самоубийства)"
+          "russian_hint": "прыгать хочу"
         },
         {
           "german": "die Täuschung",
@@ -1990,7 +1990,7 @@
             "Am Lagerfeuer der Franzosen zeichnet Gloucester Marschrouten in den Sand.",
             "Ich halte das Wort „die Täuschung“ wie eine Fackel vor meinem Herzen."
           ],
-          "russian_hint": "вводящий обман (Попытка самоубийства)"
+          "russian_hint": "вводящий обман"
         },
         {
           "german": "der Abgrund",
@@ -2002,7 +2002,7 @@
             "Neben verschnürten Versorgungskisten kontrolliert Gloucester das Siegel.",
             "Ich halte das Wort „der Abgrund“ wie eine Fackel vor meinem Herzen."
           ],
-          "russian_hint": "пропасть Попытка самоубийства (Попытка самоубийства)"
+          "russian_hint": "пропасть Попытка самоубийства"
         },
         {
           "german": "aufgeben",
@@ -2014,7 +2014,7 @@
             "Vor dem Seidenzelt der Heerführer lauscht Gloucester dem dumpfen Meer.",
             "Das kalte Licht lässt das Wort „aufgeben“ wie geschmolzenes Gold erscheinen."
           ],
-          "russian_hint": "сдаваться готов (Попытка самоубийства)"
+          "russian_hint": "сдаваться готов"
         },
         {
           "german": "die Hoffnungslosigkeit",
@@ -2026,7 +2026,7 @@
             "Auf dem sandigen Trainingsplatz übt Gloucester das Ziehen des Schwerts.",
             "Mein Atem zeichnet das Wort „die Hoffnungslosigkeit“ in die kalte Luft zwischen uns."
           ],
-          "russian_hint": "безнадёжность Попытка самоубийства (Попытка самоубийства)"
+          "russian_hint": "без надежды"
         },
         {
           "german": "stürzen",
@@ -2038,7 +2038,7 @@
             "Zwischen pochenden Trommeln hebt Gloucester das Banner der Hoffnung.",
             "Das kalte Licht lässt das Wort „stürzen“ wie geschmolzenes Gold erscheinen."
           ],
-          "russian_hint": "падать думаю что с (Попытка самоубийства)"
+          "russian_hint": "падать думаю что с"
         },
         {
           "german": "erlösen",
@@ -2050,7 +2050,7 @@
             "Am Morgennebel der Küste legt Gloucester die Hand auf das pochende Herz.",
             "Ich presse das Wort „erlösen“ zwischen die Zähne, damit kein Zweifel entweicht."
           ],
-          "russian_hint": "избавлять должна была от (Попытка самоубийства)"
+          "russian_hint": "избавлять должна была от"
         }
       ],
       "theatrical_scene": {
@@ -2377,7 +2377,7 @@
             "Im feuchten Kerker stützt Gloucester sich an den tropfenden Stein.",
             "Ich umarme das Wort „erkennen“, als wäre es mein einziger Verbündeter."
           ],
-          "russian_hint": "узнавать Наконец правду (Узнавание Эдгара)"
+          "russian_hint": "узнавать знакомое"
         },
         {
           "german": "vergeben",
@@ -2389,7 +2389,7 @@
             "Unter der trüben Laterne zählt Gloucester die eisernen Ringe der Kette.",
             "Ich zeichne das Wort „vergeben“ in Gedanken über die Linien des Schicksals."
           ],
-          "russian_hint": "прощать Эдгар (Узнавание Эдгара)"
+          "russian_hint": "отпускать вину"
         },
         {
           "german": "sterben",
@@ -2401,7 +2401,7 @@
             "Neben der schweren Holztür horcht Gloucester auf entferntes Schluchzen.",
             "Ich halte das Wort „sterben“ wie eine Fackel vor meinem Herzen."
           ],
-          "russian_hint": "умирать Узнавание Эдгара (Узнавание Эдгара)"
+          "russian_hint": "прекращать жить"
         },
         {
           "german": "die Erkenntnis",
@@ -2413,7 +2413,7 @@
             "Auf der kalten Steinbank zieht Gloucester den Mantel enger um die Schultern.",
             "Das Echo des Wortes „die Erkenntnis“ übertönt das Flüstern der Höflinge."
           ],
-          "russian_hint": "осознание как удар молнии (Узнавание Эдгара)"
+          "russian_hint": "познание истины"
         },
         {
           "german": "die Reue",
@@ -2425,7 +2425,7 @@
             "Zwischen Schatten der Gitterstäbe hebt Gloucester das Gesicht zum Licht.",
             "Ich zeichne das Wort „die Reue“ in Gedanken über die Linien des Schicksals."
           ],
-          "russian_hint": "раскаяние мою душу (Узнавание Эдгара)"
+          "russian_hint": "раскаяние в содеянном"
         },
         {
           "german": "umarmen",
@@ -2437,7 +2437,7 @@
             "Am rostigen Wassereimer spiegelt Gloucester kurz die eigenen Augen.",
             "Wie ein stilles Gebet legt sich das Wort „umarmen“ auf meine Lippen."
           ],
-          "russian_hint": "обнимать в (Узнавание Эдгара)"
+          "russian_hint": "обнимать в"
         },
         {
           "german": "die Versöhnung",
@@ -2449,7 +2449,7 @@
             "Im dumpfen Hall der Schritte zählt Gloucester den Rhythmus der Wachen.",
             "Mein Atem zeichnet das Wort „die Versöhnung“ in die kalte Luft zwischen uns."
           ],
-          "russian_hint": "примирение пришло слишком поздно (Узнавание Эдгара)"
+          "russian_hint": "примирение сторон"
         },
         {
           "german": "das Herz",
@@ -2461,7 +2461,7 @@
             "Vor dem verriegelten Fenster zeichnet Gloucester Kreise in den Staub.",
             "Ich halte das Wort „das Herz“ wie eine Fackel vor meinem Herzen."
           ],
-          "russian_hint": "сердце не - слишком (Узнавание Эдгара)"
+          "russian_hint": "средоточие чувств"
         }
       ],
       "theatrical_scene": {

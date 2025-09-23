@@ -26,7 +26,7 @@
             "Edmund steht unter dem glühenden Kronleuchter des Thronsaals.",
             "Mein Atem zeichnet das Wort „der Bastard“ in die kalte Luft zwischen uns."
           ],
-          "russian_hint": "внебрачный сын (Зависть бастарда)"
+          "russian_hint": "незаконнорожденный"
         },
         {
           "german": "der Neid",
@@ -38,7 +38,7 @@
             "Neben der ausgerollten Reichskarte beugt sich Edmund über Lears schweren Tisch.",
             "Ich umarme das Wort „der Neid“, als wäre es mein einziger Verbündeter."
           ],
-          "russian_hint": "зависть к Эдгару (Зависть бастарда)"
+          "russian_hint": "зависть к брату"
         },
         {
           "german": "die Ambition",
@@ -50,7 +50,7 @@
             "Vor den steinernen Ahnenstatuen verschränkt Edmund die Hände hinter dem Rücken.",
             "Das Echo des Wortes „die Ambition“ übertönt das Flüstern der Höflinge."
           ],
-          "russian_hint": "жажда возвышения (Зависть бастарда)"
+          "russian_hint": "жажда власти"
         },
         {
           "german": "benachteiligt",
@@ -62,7 +62,7 @@
             "Zwischen flüsternden Höflingen gleitet Edmund über den kalten Marmorboden.",
             "Ich zeichne das Wort „benachteiligt“ in Gedanken über die Linien des Schicksals."
           ],
-          "russian_hint": "оставленный без доли (Зависть бастарда)"
+          "russian_hint": "обделенный правами"
         },
         {
           "german": "die Rache",
@@ -74,7 +74,7 @@
             "Am Rand des purpurnen Teppichs wartet Edmund auf ein Zeichen des Königs.",
             "Mein Atem zeichnet das Wort „die Rache“ in die kalte Luft zwischen uns."
           ],
-          "russian_hint": "месть обидчикам (Зависть бастарда)"
+          "russian_hint": "месть за обиду"
         },
         {
           "german": "aufsteigen",
@@ -86,7 +86,7 @@
             "Unter wehenden Standarten der Schwestern senkt Edmund kurz den Blick.",
             "Ich zeichne das Wort „aufsteigen“ mit unsichtbarer Tinte auf meine Handfläche."
           ],
-          "russian_hint": "стремиться наверх (Зависть бастарда)"
+          "russian_hint": "стремиться наверх"
         },
         {
           "german": "unehelich",
@@ -98,7 +98,7 @@
             "Hinter der vergoldeten Balustrade beobachtet Edmund das gespannte Antlitz des Hofes.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „unehelich“ gehört mir."
           ],
-          "russian_hint": "рождён вне брака (Зависть бастарда)"
+          "russian_hint": "рождён вне брака"
         },
         {
           "german": "die Natur",
@@ -110,7 +110,7 @@
             "Im Schein der offenen Feuerbecken erhebt Edmund langsam die Stimme.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Natur“ darf nicht vergehen."
           ],
-          "russian_hint": "сила природы (Зависть бастарда)"
+          "russian_hint": "мир природы"
         }
       ],
       "synonym_antonym_sets": [
@@ -437,7 +437,7 @@
             "Im hallenden Torbogen von Gonerils Burg verharrt Edmund zwischen gepackten Kisten.",
             "Mit fester Stimme schwöre ich mir: Das Wort „fälschen“ wird heute nicht verraten."
           ],
-          "russian_hint": "подделывать письмо (Обман отца)"
+          "russian_hint": "подделывать письмо"
         },
         {
           "german": "intrigieren",
@@ -449,7 +449,7 @@
             "Auf der windigen Freitreppe blickt Edmund zum schweigenden Hof hinunter.",
             "Ich zeichne das Wort „intrigieren“ mit unsichtbarer Tinte auf meine Handfläche."
           ],
-          "russian_hint": "интриговать как (Обман отца)"
+          "russian_hint": "интриговать как"
         },
         {
           "german": "beschuldigen",
@@ -461,7 +461,7 @@
             "Zwischen zurückgelassenen Dienern schließt Edmund den Reisemantel enger.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „beschuldigen“ darf nicht vergehen."
           ],
-          "russian_hint": "обвинять брата (Обман отца)"
+          "russian_hint": "обвинять брата"
         },
         {
           "german": "der Plan",
@@ -474,7 +474,7 @@
             "Ich presse das Wort „der Plan“ zwischen die Zähne,",
             "damit kein Zweifel entweicht."
           ],
-          "russian_hint": "план безупречен Обман отца (Обман отца)"
+          "russian_hint": "план безупречен Обман отца"
         },
         {
           "german": "manipulieren",
@@ -486,7 +486,7 @@
             "Vor dem knarrenden Fallgatter tastet Edmund ein letztes Mal nach dem Haustor.",
             "Mit fester Stimme schwöre ich mir: Das Wort „manipulieren“ wird heute nicht verraten."
           ],
-          "russian_hint": "манипулировать отцом (Обман отца)"
+          "russian_hint": "манипулировать отцом"
         },
         {
           "german": "der Brief",
@@ -498,7 +498,7 @@
             "Zwischen verstreuten Schriftrollen dreht Edmund den Ring an der Hand.",
             "Ich umarme das Wort „der Brief“, als wäre es mein einziger Verbündeter."
           ],
-          "russian_hint": "письмо - оружие (Обман отца)"
+          "russian_hint": "письмо - оружие"
         },
         {
           "german": "lügen",
@@ -510,7 +510,7 @@
             "Am leeren Bankettisch zählt Edmund die verlöschenden Kerzen.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „lügen“ bleibt lebendig."
           ],
-          "russian_hint": "лгать с (Обман отца)"
+          "russian_hint": "говорить неправду"
         },
         {
           "german": "die Täuschung",
@@ -522,7 +522,7 @@
             "Zwischen schweigenden Wachen geht Edmund auf den kalten Hof hinaus.",
             "Das Echo des Wortes „die Täuschung“ übertönt das Flüstern der Höflinge."
           ],
-          "russian_hint": "вводящий обман (Обман отца)"
+          "russian_hint": "вводящий обман"
         }
       ],
       "quizzes": [
@@ -845,7 +845,7 @@
             "Im zugigen Seitenflügel lauscht Edmund dem Heulen der Küstenwinde.",
             "Das Echo des Wortes „vertreiben“ übertönt das Flüstern der Höflinge."
           ],
-          "russian_hint": "выгонять силой (Победа интриги)"
+          "russian_hint": "изгонять силой"
         },
         {
           "german": "triumphieren",
@@ -857,7 +857,7 @@
             "Vor dem rauchigen Kamin der Burg faltet Edmund einen zerknitterten Brief.",
             "Ich halte das Wort „triumphieren“ wie eine Fackel vor meinem Herzen."
           ],
-          "russian_hint": "торжествовать Победа интриги (Победа интриги)"
+          "russian_hint": "торжествовать Победа интриги"
         },
         {
           "german": "erben",
@@ -869,7 +869,7 @@
             "Unter farblosen Wandteppichen schreitet Edmund rastlos auf und ab.",
             "Ich zeichne das Wort „erben“ in Gedanken über die Linien des Schicksals."
           ],
-          "russian_hint": "наследовать Теперь всё (Победа интриги)"
+          "russian_hint": "наследовать Теперь всё"
         },
         {
           "german": "der Erfolg",
@@ -881,7 +881,7 @@
             "An der schmalen Fensterluke zählt Edmund die Fackeln auf dem Hof.",
             "Wie ein stilles Gebet legt sich das Wort „der Erfolg“ auf meine Lippen."
           ],
-          "russian_hint": "успех Победа интриги (Победа интриги)"
+          "russian_hint": "успех Победа интриги"
         },
         {
           "german": "gewinnen",
@@ -893,7 +893,7 @@
             "Zwischen Reisekoffern der Gesandten sucht Edmund nach frischen Botschaften.",
             "Ich umarme das Wort „gewinnen“, als wäre es mein einziger Verbündeter."
           ],
-          "russian_hint": "выигрывать эту (Победа интриги)"
+          "russian_hint": "выигрывать эту"
         },
         {
           "german": "die Belohnung",
@@ -905,7 +905,7 @@
             "Im stillen Kapellenraum kniet Edmund vor der kalten Steinfigur.",
             "Ich zeichne das Wort „die Belohnung“ mit unsichtbarer Tinte auf meine Handfläche."
           ],
-          "russian_hint": "награда - титул земли (Победа интриги)"
+          "russian_hint": "награда - титул земли"
         },
         {
           "german": "verdrängen",
@@ -917,7 +917,7 @@
             "Auf dem Balkon, den das Meer besprüht, hält Edmund die Laterne fest.",
             "Das kalte Licht lässt das Wort „verdrängen“ wie geschmolzenes Gold erscheinen."
           ],
-          "russian_hint": "вытеснять законного (Победа интриги)"
+          "russian_hint": "вытеснять законного"
         },
         {
           "german": "der Sieg",
@@ -929,7 +929,7 @@
             "Im Schatten der hohen Burgmauern schreibt Edmund eine fiebrige Antwort.",
             "Ich zeichne das Wort „der Sieg“ mit unsichtbarer Tinte auf meine Handfläche."
           ],
-          "russian_hint": "победа сладка как мёд (Победа интриги)"
+          "russian_hint": "победа сладка как мёд"
         }
       ],
       "quizzes": [
@@ -1252,7 +1252,7 @@
             "Mitten auf der vom Regen gepeitschten Heide stemmt sich Edmund gegen den Wind.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „verbünden“ gehört mir."
           ],
-          "russian_hint": "объединяться с (Альянс со злом)"
+          "russian_hint": "объединяться с"
         },
         {
           "german": "die Macht",
@@ -1264,7 +1264,7 @@
             "Unter einem zerrissenen Banner schützt Edmund die Augen vor den Blitzen.",
             "Ich umarme das Wort „die Macht“, als wäre es mein einziger Verbündeter."
           ],
-          "russian_hint": "сила управления (Альянс со злом)"
+          "russian_hint": "абстрактная власть"
         },
         {
           "german": "erobern",
@@ -1276,7 +1276,7 @@
             "Am Rand eines umgestürzten Baumes sucht Edmund Deckung vor dem Donner.",
             "Das kalte Licht lässt das Wort „erobern“ wie geschmolzenes Gold erscheinen."
           ],
-          "russian_hint": "завоёвывать королевство (Альянс со злом)"
+          "russian_hint": "завоёвывать королевство"
         },
         {
           "german": "das Bündnis",
@@ -1288,7 +1288,7 @@
             "Zwischen schäumenden Wassergräben stolpert Edmund durch den Schlamm.",
             "Das kalte Licht lässt das Wort „das Bündnis“ wie geschmolzenes Gold erscheinen."
           ],
-          "russian_hint": "союз выгоден Альянс со (Альянс со злом)"
+          "russian_hint": "союз выгоден Альянс со"
         },
         {
           "german": "verführen",
@@ -1300,7 +1300,7 @@
             "Vor einem zuckenden Himmel hebt Edmund die Arme trotzig an.",
             "Ich umarme das Wort „verführen“, als wäre es mein einziger Verbündeter."
           ],
-          "russian_hint": "соблазнять обеих (Альянс со злом)"
+          "russian_hint": "соблазнять обеих"
         },
         {
           "german": "die Eroberung",
@@ -1312,7 +1312,7 @@
             "Unter dem durchtränkten Umhang presst Edmund den Atem gegen die Kälte.",
             "Ich halte das Wort „die Eroberung“ wie eine Fackel vor meinem Herzen."
           ],
-          "russian_hint": "завоевание по плану (Альянс со злом)"
+          "russian_hint": "завоевание по плану"
         },
         {
           "german": "beherrschen",
@@ -1324,7 +1324,7 @@
             "Am kläglichen Feuerrest wärmt Edmund zitternde Finger.",
             "Ich presse das Wort „beherrschen“ zwischen die Zähne, damit kein Zweifel entweicht."
           ],
-          "russian_hint": "господствовать над (Альянс со злом)"
+          "russian_hint": "господствовать над"
         },
         {
           "german": "die Allianz",
@@ -1337,7 +1337,7 @@
             "Ich presse das Wort „die Allianz“ zwischen die Zähne,",
             "damit kein Zweifel entweicht."
           ],
-          "russian_hint": "альянс зла со злом (Альянс со злом)"
+          "russian_hint": "альянс зла со злом"
         }
       ],
       "quizzes": [
@@ -1664,7 +1664,7 @@
             "Im dunklen Zelt der Feldärzte sitzt Edmund bei der flackernden Kerze.",
             "Mein Atem zeichnet das Wort „verraten“ in die kalte Luft zwischen uns."
           ],
-          "russian_hint": "предавать без (Ослепление Глостера)"
+          "russian_hint": "предавать доверие"
         },
         {
           "german": "blenden",
@@ -1676,7 +1676,7 @@
             "Zwischen zerbeulten Rüstungen streicht Edmund über ein altes Wappen.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „blenden“ darf nicht vergehen."
           ],
-          "russian_hint": "ослеплять Глостера (Ослепление Глостера)"
+          "russian_hint": "ослеплять Глостера"
         },
         {
           "german": "die Grausamkeit",
@@ -1688,7 +1688,7 @@
             "Am niedrigen Dachbalken der Hütte stößt Edmund fast den Kopf.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Grausamkeit“ gehört mir."
           ],
-          "russian_hint": "жестокость необходима Ослепление Глостера (Ослепление Глостера)"
+          "russian_hint": "безжалостная жестокость"
         },
         {
           "german": "denunzieren",
@@ -1700,7 +1700,7 @@
             "Neben der schlafenden Wache flüstert Edmund in die schwere Nacht.",
             "Ich presse das Wort „denunzieren“ zwischen die Zähne, damit kein Zweifel entweicht."
           ],
-          "russian_hint": "доносить на (Ослепление Глостера)"
+          "russian_hint": "доносить на"
         },
         {
           "german": "ausliefern",
@@ -1712,7 +1712,7 @@
             "Vor dem einfachen Feldbett betrachtet Edmund die Narben vergangener Schlachten.",
             "Mit fester Stimme schwöre ich mir: Das Wort „ausliefern“ wird heute nicht verraten."
           ],
-          "russian_hint": "выдавать Корнуоллу (Ослепление Глостера)"
+          "russian_hint": "выдавать Корнуоллу"
         },
         {
           "german": "die Folter",
@@ -1724,7 +1724,7 @@
             "Im Geruch von feuchtem Stroh legt Edmund den Mantel zur Seite.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Folter“ bleibt lebendig."
           ],
-          "russian_hint": "пытка - судьба (Ослепление Глостера)"
+          "russian_hint": "пытка - судьба"
         },
         {
           "german": "opfern",
@@ -1736,7 +1736,7 @@
             "Auf dem wackligen Holztisch ordnet Edmund zerlesene Briefe.",
             "Das kalte Licht lässt das Wort „opfern“ wie geschmolzenes Gold erscheinen."
           ],
-          "russian_hint": "жертвовать ради (Ослепление Глостера)"
+          "russian_hint": "жертвовать ради"
         },
         {
           "german": "erbarmungslos",
@@ -1748,7 +1748,7 @@
             "Am Eingang der Hütte späht Edmund nach einem vertrauten Schatten.",
             "Ich presse das Wort „erbarmungslos“ zwischen die Zähne, damit kein Zweifel entweicht."
           ],
-          "russian_hint": "беспощадный иду к (Ослепление Глостера)"
+          "russian_hint": "беспощадный иду к"
         }
       ],
       "quizzes": [
@@ -2071,7 +2071,7 @@
             "Auf den weißen Klippen von Dover blickt Edmund in den aufgewühlten Kanal.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Liebschaft“ gehört mir."
           ],
-          "russian_hint": "любовная связь с каждой (Между двух сестёр)"
+          "russian_hint": "любовная связь с каждой"
         },
         {
           "german": "die Rivalität",
@@ -2083,7 +2083,7 @@
             "Zwischen flatternden Feldzeichen richtet Edmund den Helm.",
             "Ich halte das Wort „die Rivalität“ wie eine Fackel vor meinem Herzen."
           ],
-          "russian_hint": "соперничество между ними - (Между двух сестёр)"
+          "russian_hint": "соперничество между ними -"
         },
         {
           "german": "spielen",
@@ -2095,7 +2095,7 @@
             "Am Lagerfeuer der Franzosen zeichnet Edmund Marschrouten in den Sand.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „spielen“ gehört mir."
           ],
-          "russian_hint": "играть с (Между двух сестёр)"
+          "russian_hint": "играть с"
         },
         {
           "german": "verlocken",
@@ -2107,7 +2107,7 @@
             "Neben verschnürten Versorgungskisten kontrolliert Edmund das Siegel.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „verlocken“ darf nicht vergehen."
           ],
-          "russian_hint": "завлекать обещаниями (Между двух сестёр)"
+          "russian_hint": "завлекать обещаниями"
         },
         {
           "german": "die Lust",
@@ -2120,7 +2120,7 @@
             "Ich presse das Wort „die Lust“ zwischen die Zähne,",
             "damit kein Zweifel entweicht."
           ],
-          "russian_hint": "похоть Между двух сестёр (Между двух сестёр)"
+          "russian_hint": "похоть Между двух сестёр"
         },
         {
           "german": "ausnutzen",
@@ -2132,7 +2132,7 @@
             "Auf dem sandigen Trainingsplatz übt Edmund das Ziehen des Schwerts.",
             "Ich atme tief ein und lasse nur das Wort „ausnutzen“ wieder hinaus."
           ],
-          "russian_hint": "использовать страсть (Между двух сестёр)"
+          "russian_hint": "использовать страсть"
         },
         {
           "german": "jonglieren",
@@ -2144,7 +2144,7 @@
             "Zwischen pochenden Trommeln hebt Edmund das Banner der Hoffnung.",
             "Das kalte Licht lässt das Wort „jonglieren“ wie geschmolzenes Gold erscheinen."
           ],
-          "russian_hint": "жонглировать чувствами (Между двух сестёр)"
+          "russian_hint": "жонглировать чувствами"
         },
         {
           "german": "die Affäre",
@@ -2156,7 +2156,7 @@
             "Am Morgennebel der Küste legt Edmund die Hand auf das pochende Herz.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Affäre“ darf nicht vergehen."
           ],
-          "russian_hint": "интрига смертельной Между двух (Между двух сестёр)"
+          "russian_hint": "интрига смертельной Между двух"
         }
       ],
       "quizzes": [
@@ -2479,7 +2479,7 @@
             "Im feuchten Kerker stützt Edmund sich an den tropfenden Stein.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „das Duell“ gehört mir."
           ],
-          "russian_hint": "дуэль Поражение раскаяние (Поражение и раскаяние)"
+          "russian_hint": "дуэль Поражение раскаяние"
         },
         {
           "german": "fallen",
@@ -2491,7 +2491,7 @@
             "Unter der trüben Laterne zählt Edmund die eisernen Ringe der Kette.",
             "Ich zeichne das Wort „fallen“ in Gedanken über die Linien des Schicksals."
           ],
-          "russian_hint": "падать от (Поражение и раскаяние)"
+          "russian_hint": "падать от"
         },
         {
           "german": "bereuen",
@@ -2503,7 +2503,7 @@
             "Neben der schweren Holztür horcht Edmund auf entferntes Schluchzen.",
             "Das Echo des Wortes „bereuen“ übertönt das Flüstern der Höflinge."
           ],
-          "russian_hint": "сожалеть Неужели (Поражение и раскаяние)"
+          "russian_hint": "сожалеть о содеянном"
         },
         {
           "german": "die Niederlage",
@@ -2515,7 +2515,7 @@
             "Auf der kalten Steinbank zieht Edmund den Mantel enger um die Schultern.",
             "Ich zeichne das Wort „die Niederlage“ in Gedanken über die Linien des Schicksals."
           ],
-          "russian_hint": "поражение горько раскаяние (Поражение и раскаяние)"
+          "russian_hint": "поражение горько раскаяние"
         },
         {
           "german": "verlieren",
@@ -2527,7 +2527,7 @@
             "Zwischen Schatten der Gitterstäbe hebt Edmund das Gesicht zum Licht.",
             "Mit fester Stimme schwöre ich mir: Das Wort „verlieren“ wird heute nicht verraten."
           ],
-          "russian_hint": "проигрывать всё (Поражение и раскаяние)"
+          "russian_hint": "проигрывать всё"
         },
         {
           "german": "der Untergang",
@@ -2539,7 +2539,7 @@
             "Am rostigen Wassereimer spiegelt Edmund kurz die eigenen Augen.",
             "Ich halte das Wort „der Untergang“ wie eine Fackel vor meinem Herzen."
           ],
-          "russian_hint": "падение стремительно Поражение раскаяние (Поражение и раскаяние)"
+          "russian_hint": "падение стремительно Поражение раскаяние"
         },
         {
           "german": "gestehen",
@@ -2551,7 +2551,7 @@
             "Im dumpfen Hall der Schritte zählt Edmund den Rhythmus der Wachen.",
             "Das Echo des Wortes „gestehen“ übertönt das Flüstern der Höflinge."
           ],
-          "russian_hint": "признаваться во (Поражение и раскаяние)"
+          "russian_hint": "признаваться во"
         },
         {
           "german": "das Ende",
@@ -2563,7 +2563,7 @@
             "Vor dem verriegelten Fenster zeichnet Edmund Kreise in den Staub.",
             "Ich atme tief ein und lasse nur das Wort „das Ende“ wieder hinaus."
           ],
-          "russian_hint": "конец близок Поражение раскаяние (Поражение и раскаяние)"
+          "russian_hint": "финал всего"
         }
       ],
       "quizzes": [

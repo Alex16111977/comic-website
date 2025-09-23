@@ -19,7 +19,7 @@
         {
           "german": "die Lüge",
           "russian": "ложь",
-          "russian_hint": "сознательный обман (Фальшивая любовь)",
+          "russian_hint": "сознательный обман",
           "transcription": "[ди ЛЮ-ге]",
           "sentence": "Die grausame Goneril flüstert kalt die Lüge vor Lears Thron im Saal.",
           "sentence_translation": "Жестокая Гонериль холодно шепчет ложь перед троном Лира в зале.",
@@ -38,7 +38,7 @@
         {
           "german": "schwören",
           "russian": "клясться",
-          "russian_hint": "клясться - (Фальшивая любовь)",
+          "russian_hint": "клясться торжественно",
           "transcription": "[ШВЁ-рен]",
           "sentence": "Die grausame Goneril schwört laut auf ihre Liebe vor Lears Thron heute.",
           "sentence_translation": "Жестокая Гонериль громко клянётся в своей любви перед троном Лира сегодня.",
@@ -57,7 +57,7 @@
         {
           "german": "das Erbe",
           "russian": "наследство",
-          "russian_hint": "наследство Фальшивая любовь (Фальшивая любовь)",
+          "russian_hint": "наследство отца",
           "transcription": "[дас ЕР-бе]",
           "sentence": "Die grausame Goneril beansprucht gierig das Erbe im prunkvollen Saal heute.",
           "sentence_translation": "Жестокая Гонериль жадно требует наследство в роскошном зале сегодня.",
@@ -76,7 +76,7 @@
         {
           "german": "heucheln",
           "russian": "лицемерить",
-          "russian_hint": "лицемерить виртуозно (Фальшивая любовь)",
+          "russian_hint": "притворяться искусно",
           "transcription": "[ХОЙ-хельн]",
           "sentence": "Die grausame Goneril heuchelt süß dem Vater vor Lears Thron im Saal.",
           "sentence_translation": "Жестокая Гонериль сладко лицемерит отцу перед троном Лира в зале.",
@@ -95,7 +95,7 @@
         {
           "german": "die Gier",
           "russian": "жадность",
-          "russian_hint": "жадность к Фальшивая любовь (Фальшивая любовь)",
+          "russian_hint": "жадность к власти",
           "transcription": "[ди ГИР]",
           "sentence": "Die grausame Goneril zeigt offen die Gier unter Lears Kronleuchter heute.",
           "sentence_translation": "Жестокая Гонериль открыто показывает жадность под люстрой Лира сегодня.",
@@ -114,7 +114,7 @@
         {
           "german": "täuschen",
           "russian": "обманывать",
-          "russian_hint": "обманывать легко (Фальшивая любовь)",
+          "russian_hint": "вводить в обман",
           "transcription": "[ТОЙ-шен]",
           "sentence": "Die grausame Goneril täuscht listig den müden König im Thronsaal vor Zeugen.",
           "sentence_translation": "Жестокая Гонериль хитро обманывает уставшего короля в тронном зале перед свидетелями.",
@@ -133,7 +133,7 @@
         {
           "german": "schmeicheln",
           "russian": "льстить",
-          "russian_hint": "льстить дороже (Фальшивая любовь)",
+          "russian_hint": "льстить дороже",
           "transcription": "[ШМАЙ-хельн]",
           "sentence": "Die grausame Goneril schmeichelt kunstvoll dem Vater vor Lears Thron sehr laut.",
           "sentence_translation": "Жестокая Гонериль искусно льстит отцу перед троном Лира очень громко.",
@@ -152,7 +152,7 @@
         {
           "german": "das Vermögen",
           "russian": "состояние",
-          "russian_hint": "состояние короля скоро ко (Фальшивая любовь)",
+          "russian_hint": "богатое имущество",
           "transcription": "[дас фер-МЁ-ген]",
           "sentence": "Die grausame Goneril berechnet kühl das Vermögen im geteilten Königreich heute.",
           "sentence_translation": "Жестокая Гонериль хладно подсчитывает состояние в разделённом королевстве сегодня.",
@@ -490,7 +490,7 @@
         {
           "german": "die Macht",
           "russian": "власть",
-          "russian_hint": "сила управления (Раздел королевства)",
+          "russian_hint": "абстрактная власть",
           "transcription": "[ди МАХТ]",
           "sentence": "Die grausame Goneril fordert hart die Macht über Hälfte des Reiches.",
           "sentence_translation": "Жестокая Гонериль жёстко требует власть над половиной королевства.",
@@ -509,7 +509,7 @@
         {
           "german": "herrschen",
           "russian": "править",
-          "russian_hint": "править буду железной (Раздел королевства)",
+          "russian_hint": "править государством",
           "transcription": "[ХЕР-шен]",
           "sentence": "Die grausame Goneril will herrschen über alte Diener im neuen Palast kühl.",
           "sentence_translation": "Жестокая Гонериль хочет править над старыми слугами в новом дворце холодно.",
@@ -528,7 +528,7 @@
         {
           "german": "befehlen",
           "russian": "приказывать",
-          "russian_hint": "приказывать буду - (Раздел королевства)",
+          "russian_hint": "отдавать приказы",
           "transcription": "[бе-ФЕ-лен]",
           "sentence": "Die grausame Goneril befiehlt herrisch dem Gefolge im großen Saal sofort.",
           "sentence_translation": "Жестокая Гонериль властно приказывает свите в большом зале немедленно.",
@@ -547,7 +547,7 @@
         {
           "german": "der Thron",
           "russian": "трон",
-          "russian_hint": "королевское сиденье (Раздел королевства)",
+          "russian_hint": "символ королевской власти",
           "transcription": "[дер ТРОН]",
           "sentence": "Die grausame Goneril begehrt gierig den Thron des greisen Vaters heute.",
           "sentence_translation": "Жестокая Гонериль жадно желает трон дряхлого отца сегодня.",
@@ -566,7 +566,7 @@
         {
           "german": "erobern",
           "russian": "завоёвывать",
-          "russian_hint": "завоёвывать что (Раздел королевства)",
+          "russian_hint": "завоёвывать что",
           "transcription": "[ер-О-берн]",
           "sentence": "Die grausame Goneril plant heimlich zu erobern das Herz des Reiches.",
           "sentence_translation": "Жестокая Гонериль тайно планирует завоевать сердце королевства.",
@@ -585,7 +585,7 @@
         {
           "german": "die Herrschaft",
           "russian": "господство",
-          "russian_hint": "правление землями (Раздел королевства)",
+          "russian_hint": "конкретное правление",
           "transcription": "[ди ХЕР-шафт]",
           "sentence": "Die grausame Goneril festigt kalt die Herrschaft über Haus und Land.",
           "sentence_translation": "Жестокая Гонериль холодно укрепляет господство над домом и землёй.",
@@ -604,7 +604,7 @@
         {
           "german": "regieren",
           "russian": "управлять",
-          "russian_hint": "управлять буду без (Раздел королевства)",
+          "russian_hint": "управлять страной",
           "transcription": "[ре-ГИ-рен]",
           "sentence": "Die grausame Goneril regiert streng die Diener in der großen Halle.",
           "sentence_translation": "Жестокая Гонериль строго управляет слугами в большом зале.",
@@ -623,7 +623,7 @@
         {
           "german": "unterwerfen",
           "russian": "подчинять",
-          "russian_hint": "подчинять Все должны воле (Раздел королевства)",
+          "russian_hint": "подчинять силой",
           "transcription": "[ун-тер-ВЕР-фен]",
           "sentence": "Die grausame Goneril unterwirft eisig jede Stimme in ihrem Machtbereich.",
           "sentence_translation": "Жестокая Гонериль ледяно подчиняет каждый голос в своей власти.",
@@ -961,7 +961,7 @@
         {
           "german": "demütigen",
           "russian": "унижать",
-          "russian_hint": "морально унижать (Жестокость к Лиру)",
+          "russian_hint": "унижать достоинство",
           "transcription": "[де-МЮ-ти-ген]",
           "sentence": "Die grausame Goneril demütigt offen den alternden Vater vor Regans kaltem Blick.",
           "sentence_translation": "Жестокая Гонериль открыто унижает стареющего отца перед холодным взглядом Реганы.",
@@ -980,7 +980,7 @@
         {
           "german": "grausam",
           "russian": "жестокий",
-          "russian_hint": "жестокий без меры (Жестокость к Лиру)",
+          "russian_hint": "безжалостно жестокий",
           "transcription": "[ГРАУ-зам]",
           "sentence": "Die grausame Goneril handelt grausam gegen Lear im Bündnis mit Regan.",
           "sentence_translation": "Жестокая Гонериль действует жестоко против Лира в союзе с Реганой.",
@@ -999,7 +999,7 @@
         {
           "german": "die Rache",
           "russian": "месть",
-          "russian_hint": "месть обидчикам (Жестокость к Лиру)",
+          "russian_hint": "месть за обиду",
           "transcription": "[ди РА-хе]",
           "sentence": "Die grausame Goneril schmiedet heimlich die Rache mit Regan bei Nacht.",
           "sentence_translation": "Жестокая Гонериль тайно куёт месть с Реганой ночью.",
@@ -1018,7 +1018,7 @@
         {
           "german": "vertreiben",
           "russian": "изгонять",
-          "russian_hint": "выгонять силой (Жестокость к Лиру)",
+          "russian_hint": "изгонять силой",
           "transcription": "[фер-ТРАЙ-бен]",
           "sentence": "Die grausame Goneril vertreibt hart den Vater aus dem eigenen Schloss.",
           "sentence_translation": "Жестокая Гонериль сурово изгоняет отца из собственного замка.",
@@ -1037,7 +1037,7 @@
         {
           "german": "verachten",
           "russian": "презирать",
-          "russian_hint": "презирать слабость (Жестокость к Лиру)",
+          "russian_hint": "презирать слабость",
           "transcription": "[фер-АХ-тен]",
           "sentence": "Die grausame Goneril verachtet offen den sanften Albany vor Regans kalten Augen.",
           "sentence_translation": "Жестокая Гонериль открыто презирает мягкого Олбани перед холодными глазами Реганы.",
@@ -1056,7 +1056,7 @@
         {
           "german": "verweigern",
           "russian": "отказывать",
-          "russian_hint": "отказывать в (Жестокость к Лиру)",
+          "russian_hint": "отказывать в",
           "transcription": "[фер-ВАЙ-герн]",
           "sentence": "Die grausame Goneril verweigert hart dem König jede Unterkunft in Nacht.",
           "sentence_translation": "Жестокая Гонериль жёстко отказывает королю в любом приюте ночью.",
@@ -1075,7 +1075,7 @@
         {
           "german": "quälen",
           "russian": "мучить",
-          "russian_hint": "мучить Как приятно (Жестокость к Лиру)",
+          "russian_hint": "мучить Как приятно",
           "transcription": "[КВЕ-лен]",
           "sentence": "Die grausame Goneril quält gnadenlos die alten Ritter neben Regans Blicken.",
           "sentence_translation": "Жестокая Гонериль безжалостно мучает старых рыцарей рядом с взглядами Реганы.",
@@ -1094,7 +1094,7 @@
         {
           "german": "beschränken",
           "russian": "ограничивать",
-          "russian_hint": "ограничивать свиту (Жестокость к Лиру)",
+          "russian_hint": "ограничивать свиту",
           "transcription": "[бе-ШРЕН-кен]",
           "sentence": "Die grausame Goneril beschränkt streng die Gefolgschaft auf wenige kniende Diener.",
           "sentence_translation": "Жестокая Гонериль строго ограничивает свиту до нескольких коленопреклонённых слуг.",
@@ -1432,7 +1432,7 @@
         {
           "german": "verstoßen",
           "russian": "отвергать",
-          "russian_hint": "изгонять из семьи (Лир в буре)",
+          "russian_hint": "отвергать из семьи",
           "transcription": "[фер-ШТО-сен]",
           "sentence": "Die grausame Goneril verstößt hart den Vater in die stürmische Nacht.",
           "sentence_translation": "Жестокая Гонериль сурово изгоняет отца в бурную ночь.",
@@ -1451,7 +1451,7 @@
         {
           "german": "der Sturm",
           "russian": "буря",
-          "russian_hint": "буря Лир в буре (Лир в буре)",
+          "russian_hint": "буйство стихии",
           "transcription": "[дер ШТУРМ]",
           "sentence": "Der tobende Sturm peitscht wild über Lear nach Gonerils hartem Befehl.",
           "sentence_translation": "Бушующая буря яростно хлещет Лира после жёсткого приказа Гонериль.",
@@ -1470,7 +1470,7 @@
         {
           "german": "gnadenlos",
           "russian": "безжалостный",
-          "russian_hint": "безжалостный абсолютна (Лир в буре)",
+          "russian_hint": "безжалостный абсолютна",
           "transcription": "[ГНА-ден-лос]",
           "sentence": "Die grausame Goneril bleibt gnadenlos gegen Lear trotz Regens und Donner.",
           "sentence_translation": "Жестокая Гонериль остаётся безжалостной к Лиру несмотря на дождь и гром.",
@@ -1489,7 +1489,7 @@
         {
           "german": "verschließen",
           "russian": "запирать",
-          "russian_hint": "запирать двери (Лир в буре)",
+          "russian_hint": "запирать двери",
           "transcription": "[фер-ШЛИ-сен]",
           "sentence": "Die grausame Goneril verschließt trotzig die Türen vor dem klagenden König.",
           "sentence_translation": "Жестокая Гонериль упрямо запирает двери перед жалобным королём.",
@@ -1508,7 +1508,7 @@
         {
           "german": "die Kälte",
           "russian": "холод",
-          "russian_hint": "холод моего сердца сильнее (Лир в буре)",
+          "russian_hint": "холод моего сердца сильнее",
           "transcription": "[ди КЕЛ-те]",
           "sentence": "Die grausame Goneril schickt bitter die Kälte über Lear hinaus heute.",
           "sentence_translation": "Жестокая Гонериль посылает горький холод на Лира сегодня.",
@@ -1527,7 +1527,7 @@
         {
           "german": "erbarmungslos",
           "russian": "беспощадный",
-          "russian_hint": "беспощадный как судьба (Лир в буре)",
+          "russian_hint": "беспощадный как судьба",
           "transcription": "[ер-БАР-мунгс-лос]",
           "sentence": "Die grausame Goneril bleibt erbarmungslos gegen Bitten im tosenden Nachtsturm.",
           "sentence_translation": "Жестокая Гонериль остаётся совершенно безжалостной к просьбам в ревущую ночную бурю.",
@@ -1546,7 +1546,7 @@
         {
           "german": "verhärten",
           "russian": "ожесточаться",
-          "russian_hint": "ожесточаться Мое сердце против (Лир в буре)",
+          "russian_hint": "ожесточаться Мое сердце против",
           "transcription": "[фер-ХЕР-тен]",
           "sentence": "Die grausame Goneril verhärtet völlig ihr Herz im Donner der Nacht.",
           "sentence_translation": "Жестокая Гонериль полностью ожесточает сердце в гром ночи.",
@@ -1850,7 +1850,7 @@
         {
           "german": "streiten",
           "russian": "ссориться",
-          "russian_hint": "ссориться постоянно (Разлад с Олбани)",
+          "russian_hint": "ссориться постоянно",
           "transcription": "[ШТРАЙ-тен]",
           "sentence": "Die grausame Goneril streitet laut mit Albany im dunklen Lagerhaus.",
           "sentence_translation": "Жестокая Гонериль громко ссорится с Олбани в тёмном складе.",
@@ -1869,7 +1869,7 @@
         {
           "german": "verraten",
           "russian": "предавать",
-          "russian_hint": "предавать без (Разлад с Олбани)",
+          "russian_hint": "предавать доверие",
           "transcription": "[фер-РА-тен]",
           "sentence": "Die grausame Goneril verrät kalt den Vater in der Nachtbesprechung.",
           "sentence_translation": "Жестокая Гонериль холодно предаёт отца на ночном совещании.",
@@ -1888,7 +1888,7 @@
         {
           "german": "die Zwietracht",
           "russian": "раздор",
-          "russian_hint": "раздор в доме с (Разлад с Олбани)",
+          "russian_hint": "раздор в доме с",
           "transcription": "[ди ЦВИ-трахт]",
           "sentence": "Die grausame Goneril säht ständig die Zwietracht zwischen Hof und Volk.",
           "sentence_translation": "Жестокая Гонериль постоянно сеет раздор между двором и народом.",
@@ -1907,7 +1907,7 @@
         {
           "german": "hassen",
           "russian": "ненавидеть",
-          "russian_hint": "ненавидеть слабость (Разлад с Олбани)",
+          "russian_hint": "питать ненависть",
           "transcription": "[ХА-сен]",
           "sentence": "Die grausame Goneril hasst heftig die ehrliche Cordelia im heimlichen Lager.",
           "sentence_translation": "Жестокая Гонериль яростно ненавидит честную Корделию в тайном лагере.",
@@ -1926,7 +1926,7 @@
         {
           "german": "betrügen",
           "russian": "изменять",
-          "russian_hint": "изменять мужу (Разлад с Олбани)",
+          "russian_hint": "обманывать намеренно",
           "transcription": "[бе-ТРЮ-ген]",
           "sentence": "Die grausame Goneril betrügt offen den Ehemann mit Edmund im Zelt.",
           "sentence_translation": "Жестокая Гонериль открыто изменяет мужу с Эдмундом в шатре.",
@@ -1945,7 +1945,7 @@
         {
           "german": "die Verachtung",
           "russian": "презрение",
-          "russian_hint": "презрение к Олбани (Разлад с Олбани)",
+          "russian_hint": "презрение к Олбани",
           "transcription": "[ди фер-АХ-тунг]",
           "sentence": "Die grausame Goneril zeigt offen die Verachtung für Albanys weiche Worte.",
           "sentence_translation": "Жестокая Гонериль открыто показывает презрение к мягким словам Олбани.",
@@ -1964,7 +1964,7 @@
         {
           "german": "zerstören",
           "russian": "разрушать",
-          "russian_hint": "разрушать брак (Разлад с Олбани)",
+          "russian_hint": "разрушать брак",
           "transcription": "[цер-ШТЁ-рен]",
           "sentence": "Die grausame Goneril zerstört kalt den Frieden im Lager der Rebellen.",
           "sentence_translation": "Жестокая Гонериль холодно разрушает мир в лагере мятежников.",
@@ -1983,7 +1983,7 @@
         {
           "german": "die Leidenschaft",
           "russian": "страсть",
-          "russian_hint": "страсть к Эдмунду изнутри (Разлад с Олбани)",
+          "russian_hint": "страсть к Эдмунду изнутри",
           "transcription": "[ди ЛАЙ-ден-шафт]",
           "sentence": "Die grausame Goneril entfacht verbotene Leidenschaft mit Edmund hinter Vorhängen.",
           "sentence_translation": "Жестокая Гонериль разжигает запретную страсть с Эдмундом за занавесями.",
@@ -2321,7 +2321,7 @@
         {
           "german": "die Eifersucht",
           "russian": "ревность",
-          "russian_hint": "ревность Борьба за Эдмунда (Борьба за Эдмунда)",
+          "russian_hint": "ревность Борьба за Эдмунда",
           "transcription": "[ди АЙ-фер-зухт]",
           "sentence": "Die grausame Goneril schürt fiebernd die Eifersucht auf Regans Nähe zu Edmund.",
           "sentence_translation": "Жестокая Гонериль лихорадочно разжигает ревность к близости Реганы с Эдмундом.",
@@ -2340,7 +2340,7 @@
         {
           "german": "rivalisieren",
           "russian": "соперничать",
-          "russian_hint": "соперничать как (Борьба за Эдмунда)",
+          "russian_hint": "соперничать как",
           "transcription": "[ри-ва-ли-ЗИ-рен]",
           "sentence": "Die grausame Goneril rivalisiert offen mit Regan am Feldlager bei Dover.",
           "sentence_translation": "Жестокая Гонериль открыто соперничает с Реганой у полевого лагеря под Дувром.",
@@ -2359,7 +2359,7 @@
         {
           "german": "kämpfen",
           "russian": "бороться",
-          "russian_hint": "бороться за (Борьба за Эдмунда)",
+          "russian_hint": "бороться за",
           "transcription": "[КЕМП-фен]",
           "sentence": "Die grausame Goneril kämpft eifrig um Edmund auf dem düsteren Feld.",
           "sentence_translation": "Жестокая Гонериль усердно борется за Эдмунда на мрачном поле.",
@@ -2378,7 +2378,7 @@
         {
           "german": "begehren",
           "russian": "желать",
-          "russian_hint": "желать за что (Борьба за Эдмунда)",
+          "russian_hint": "желать за что",
           "transcription": "[бе-ГЕ-рен]",
           "sentence": "Die grausame Goneril begehrt gierig den Verräter trotz Regans fordernder Nähe.",
           "sentence_translation": "Жестокая Гонериль жадно желает предателя несмотря на настойчивую близость Реганы.",
@@ -2397,7 +2397,7 @@
         {
           "german": "beseitigen",
           "russian": "устранять",
-          "russian_hint": "устранять Борьба за (Борьба за Эдмунда)",
+          "russian_hint": "устранять Борьба за",
           "transcription": "[бе-ЗАЙ-ти-ген]",
           "sentence": "Die grausame Goneril plant heimlich zu beseitigen die Schwester im Feldlager.",
           "sentence_translation": "Жестокая Гонериль тайно планирует устранить сестру в полевом лагере.",
@@ -2416,7 +2416,7 @@
         {
           "german": "das Gift",
           "russian": "яд",
-          "russian_hint": "яд уже готов (Борьба за Эдмунда)",
+          "russian_hint": "яд уже готов",
           "transcription": "[дас ГИФТ]",
           "sentence": "Die grausame Goneril verbirgt listig das Gift für Regan im Zelt.",
           "sentence_translation": "Жестокая Гонериль хитро прячет яд для Реганы в шатре.",
@@ -2435,7 +2435,7 @@
         {
           "german": "die Intrige",
           "russian": "интрига",
-          "russian_hint": "интрига безупречна - отравленное (Борьба за Эдмунда)",
+          "russian_hint": "хитрый план",
           "transcription": "[ди ин-ТРИ-ге]",
           "sentence": "Die grausame Goneril spinnt täglich die Intrige um Edmunds dunkles Herz.",
           "sentence_translation": "Жестокая Гонериль ежедневно плетёт интригу вокруг тёмного сердца Эдмунда.",
@@ -2454,7 +2454,7 @@
         {
           "german": "morden",
           "russian": "убивать",
-          "russian_hint": "убивать готова ради (Борьба за Эдмунда)",
+          "russian_hint": "убивать готова ради",
           "transcription": "[МОР-ден]",
           "sentence": "Die grausame Goneril droht heimlich zu morden um Edmund allein zu besitzen.",
           "sentence_translation": "Жестокая Гонериль тайно грозит убивать, чтобы владеть Эдмундом одной.",
@@ -2792,7 +2792,7 @@
         {
           "german": "vergiften",
           "russian": "отравлять",
-          "russian_hint": "отравлять умирает - (Отравление и смерть)",
+          "russian_hint": "отравлять умирает -",
           "transcription": "[фер-ГИФ-тен]",
           "sentence": "Die grausame Goneril vergiftet heimlich die Schwester im düsteren Quartier.",
           "sentence_translation": "Жестокая Гонериль тайно отравляет сестру в мрачных покоях.",
@@ -2811,7 +2811,7 @@
         {
           "german": "die Verzweiflung",
           "russian": "отчаяние",
-          "russian_hint": "отчаяние Отравление смерть (Отравление и смерть)",
+          "russian_hint": "полная безнадежность",
           "transcription": "[ди фер-ЦВАЙ-флунг]",
           "sentence": "Die grausame Goneril verhüllt kalt die Verzweiflung nach Edmunds tödlicher Wunde.",
           "sentence_translation": "Жестокая Гонериль холодно скрывает отчаяние после смертельной раны Эдмунда.",
@@ -2830,7 +2830,7 @@
         {
           "german": "sterben",
           "russian": "умирать",
-          "russian_hint": "умирать по (Отравление и смерть)",
+          "russian_hint": "прекращать жить",
           "transcription": "[ШТЕР-бен]",
           "sentence": "Die grausame Goneril sieht schweigend ihn sterben im stickigen Kerkerraum.",
           "sentence_translation": "Жестокая Гонериль молча видит его умирающим в душной тюремной комнате.",
@@ -2849,7 +2849,7 @@
         {
           "german": "die Schuld",
           "russian": "вина",
-          "russian_hint": "вина Отравление смерть (Отравление и смерть)",
+          "russian_hint": "вина за поступок",
           "transcription": "[ди ШУЛЬД]",
           "sentence": "Die grausame Goneril spürt plötzlich die Schuld im engen Kerkerlicht.",
           "sentence_translation": "Жестокая Гонериль внезапно чувствует вину в узком тюремном свете.",
@@ -2868,7 +2868,7 @@
         {
           "german": "vernichten",
           "russian": "уничтожать",
-          "russian_hint": "уничтожать Отравление смерть (Отравление и смерть)",
+          "russian_hint": "уничтожать Отравление смерть",
           "transcription": "[фер-НИХ-тен]",
           "sentence": "Die grausame Goneril vernichtet alles Vertrauen mit einem letzten Befehl.",
           "sentence_translation": "Жестокая Гонериль уничтожает всё доверие последним приказом.",
@@ -2887,7 +2887,7 @@
         {
           "german": "das Verderben",
           "russian": "погибель",
-          "russian_hint": "погибель - судьба (Отравление и смерть)",
+          "russian_hint": "погибель души",
           "transcription": "[дас фер-ДЕР-бен]",
           "sentence": "Die grausame Goneril spürt nah das Verderben zwischen Kerkertüren heute.",
           "sentence_translation": "Жестокая Гонериль ощущает близкую погибель между тюремными дверями сегодня.",
@@ -2906,7 +2906,7 @@
         {
           "german": "bereuen",
           "russian": "сожалеть",
-          "russian_hint": "сожалеть не ни (Отравление и смерть)",
+          "russian_hint": "сожалеть о содеянном",
           "transcription": "[бе-РОЙ-ен]",
           "sentence": "Die grausame Goneril bereut leise ihr Gift im Schatten der Zelle.",
           "sentence_translation": "Жестокая Гонериль тихо сожалеет о своём яде в тени камеры.",
@@ -2925,7 +2925,7 @@
         {
           "german": "die Hölle",
           "russian": "ад",
-          "russian_hint": "ад Отравление смерть (Отравление и смерть)",
+          "russian_hint": "ад под нами",
           "transcription": "[ди ХЁ-ле]",
           "sentence": "Die grausame Goneril fühlt nah die Hölle hinter Kerkerwänden heute.",
           "sentence_translation": "Жестокая Гонериль чувствует близкий ад за тюремными стенами сегодня.",

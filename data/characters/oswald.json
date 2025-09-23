@@ -20,7 +20,7 @@
             "Im Saal der Herrin richtet Oswald die silbernen Teller entlang der langen Tafel aus.",
             "Ich zeichne das Wort „der Diener“ in Gedanken über die Linien des Schicksals."
           ],
-          "russian_hint": "слуга короля (Верный слуга Гонерильи)"
+          "russian_hint": "слуга господина"
         },
         {
           "german": "der Gehorsam",
@@ -32,7 +32,7 @@
             "Vor dem Spiegel prüft Oswald den makellosen Sitz des Dienerkleids.",
             "Ich halte das Wort „der Gehorsam“ wie eine Fackel vor meinem Herzen."
           ],
-          "russian_hint": "полное подчинение (Верный слуга Гонерильи)"
+          "russian_hint": "полное подчинение"
         },
         {
           "german": "die Ergebenheit",
@@ -45,7 +45,7 @@
             "Ich presse das Wort „die Ergebenheit“ zwischen die Zähne,",
             "damit kein Zweifel entweicht."
           ],
-          "russian_hint": "служебная преданность (Верный слуга Гонерильи)"
+          "russian_hint": "служебная преданность"
         },
         {
           "german": "dienen",
@@ -57,7 +57,7 @@
             "Am Hofeingang begrüßt Oswald mit steifem Nicken die ankommenden Lords.",
             "Wie ein stilles Gebet legt sich das Wort „dienen“ auf meine Lippen."
           ],
-          "russian_hint": "служить верно (Верный слуга Гонерильи)"
+          "russian_hint": "служить господину"
         },
         {
           "german": "der Verwalter",
@@ -69,7 +69,7 @@
             "Unter den wachsamen Augen Gonerils verteilt Oswald die Tagesbefehle.",
             "Mit fester Stimme schwöre ich mir: Das Wort „der Verwalter“ wird heute nicht verraten."
           ],
-          "russian_hint": "домашний управляющий (Верный слуга Гонерильи)"
+          "russian_hint": "домашний управляющий"
         },
         {
           "german": "ergeben",
@@ -81,7 +81,7 @@
             "Auf der Küchenrampe kontrolliert Oswald die frischen Vorräte.",
             "Das Echo des Wortes „ergeben“ übertönt das Flüstern der Höflinge."
           ],
-          "russian_hint": "покорный госпоже (Верный слуга Гонерильи)"
+          "russian_hint": "покорный госпоже"
         },
         {
           "german": "unterwürfig",
@@ -93,7 +93,7 @@
             "Neben der Ahnengalerie wischt Oswald letzte Staubkörner fort.",
             "Ich umarme das Wort „unterwürfig“, als wäre es mein einziger Verbündeter."
           ],
-          "russian_hint": "раболепный поклон (Верный слуга Гонерильи)"
+          "russian_hint": "раболепный поклон"
         },
         {
           "german": "befolgen",
@@ -105,7 +105,7 @@
             "Im Kontor versiegelt Oswald sorgsam die königliche Korrespondenz.",
             "Ich atme tief ein und lasse nur das Wort „befolgen“ wieder hinaus."
           ],
-          "russian_hint": "исполнять приказы (Верный слуга Гонерильи)"
+          "russian_hint": "исполнять приказы"
         }
       ],
       "theatrical_scene": {
@@ -428,7 +428,7 @@
             "Auf staubigen Straßen peitscht Oswald das Pferd zu größerer Eile.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „der Bote“ gehört mir."
           ],
-          "russian_hint": "гонец жестокой госпожи (Передаёт приказы)"
+          "russian_hint": "гонец жестокой госпожи"
         },
         {
           "german": "der Auftrag",
@@ -440,7 +440,7 @@
             "Vor verschlossenen Toren zeigt Oswald das mit Wachs versiegelte Schreiben.",
             "Das kalte Licht lässt das Wort „der Auftrag“ wie geschmolzenes Gold erscheinen."
           ],
-          "russian_hint": "поручение выполняю с (Передаёт приказы)"
+          "russian_hint": "поручение выполняю с"
         },
         {
           "german": "die Eile",
@@ -452,7 +452,7 @@
             "In der Nacht rast Oswald mit einer Laterne als einzigem Stern.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „die Eile“ mein Nordstern."
           ],
-          "russian_hint": "спешка ношусь по замку (Передаёт приказы)"
+          "russian_hint": "спешка ношусь по замку"
         },
         {
           "german": "überbringen",
@@ -464,7 +464,7 @@
             "Am Grenzposten überreicht Oswald den Befehl mit überheblichem Lächeln.",
             "Das Echo des Wortes „überbringen“ übertönt das Flüstern der Höflinge."
           ],
-          "russian_hint": "передавать злые (Передаёт приказы)"
+          "russian_hint": "передавать злые"
         },
         {
           "german": "hasten",
@@ -476,7 +476,7 @@
             "Zwischen zerrissenen Bannern schützt Oswald die Nachricht vor dem Regen.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „hasten“ darf nicht vergehen."
           ],
-          "russian_hint": "спешить от (Передаёт приказы)"
+          "russian_hint": "спешить от"
         },
         {
           "german": "die Botschaft",
@@ -488,7 +488,7 @@
             "Auf dem Hofe Lear erhebt Oswald die Stimme über den Tumult.",
             "Das Echo des Wortes „die Botschaft“ übertönt das Flüstern der Höflinge."
           ],
-          "russian_hint": "послание леди Гонерильи должно (Передаёт приказы)"
+          "russian_hint": "послание леди Гонерильи должно"
         },
         {
           "german": "eilen",
@@ -500,7 +500,7 @@
             "Im Schatten der Stallungen tauscht Oswald heimlich versiegelte Rollen.",
             "Mit fester Stimme schwöre ich mir: Das Wort „eilen“ wird heute nicht verraten."
           ],
-          "russian_hint": "торопиться исполнить (Передаёт приказы)"
+          "russian_hint": "торопиться исполнить"
         }
       ],
       "theatrical_scene": {
@@ -789,7 +789,7 @@
             "Vor dem gealterten König verneigt sich Oswald nur einen Hauch zu wenig.",
             "Das Echo des Wortes „die Beleidigung“ übertönt das Flüstern der Höflinge."
           ],
-          "russian_hint": "оскорбление для него - (Оскорбляет Лира)"
+          "russian_hint": "оскорбление для него -"
         },
         {
           "german": "die Respektlosigkeit",
@@ -801,7 +801,7 @@
             "Am Torbogen blockiert Oswald den Weg mit erhobenem Stab.",
             "Ich halte das Wort „die Respektlosigkeit“ wie eine Fackel vor meinem Herzen."
           ],
-          "russian_hint": "неуважение к бывшему королю (Оскорбляет Лира)"
+          "russian_hint": "неуважение к бывшему королю"
         },
         {
           "german": "die Feigheit",
@@ -813,7 +813,7 @@
             "Zwischen entrüsteten Rittern rollt Oswald mit den Augen.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Feigheit“ bleibt lebendig."
           ],
-          "russian_hint": "трусость нападаю на слабого (Оскорбляет Лира)"
+          "russian_hint": "трусость нападаю на слабого"
         },
         {
           "german": "beleidigen",
@@ -825,7 +825,7 @@
             "Auf der Treppe wischt Oswald imaginären Staub von Lears Mantel.",
             "Ich halte das Wort „beleidigen“ wie eine Fackel vor meinem Herzen."
           ],
-          "russian_hint": "оскорблять открыто (Оскорбляет Лира)"
+          "russian_hint": "оскорблять открыто"
         },
         {
           "german": "verhöhnen",
@@ -837,7 +837,7 @@
             "Neben Gonerils kühlen Blick flüstert Oswald eine spitze Bemerkung.",
             "Das kalte Licht lässt das Wort „verhöhnen“ wie geschmolzenes Gold erscheinen."
           ],
-          "russian_hint": "высмеивать жалкие (Оскорбляет Лира)"
+          "russian_hint": "высмеивать жалкие"
         },
         {
           "german": "frech",
@@ -849,7 +849,7 @@
             "Auf dem Hof setzt Oswald sich mit verschränkten Armen gegen jede Bitte zur Wehr.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „frech“ mein Nordstern."
           ],
-          "russian_hint": "дерзкий игнорирую приказы (Оскорбляет Лира)"
+          "russian_hint": "дерзкий игнорирую приказы"
         },
         {
           "german": "missachten",
@@ -861,7 +861,7 @@
             "Im Flur stößt Oswald den alten König absichtlich zur Seite.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „missachten“ bleibt lebendig."
           ],
-          "russian_hint": "пренебрегать всем (Оскорбляет Лира)"
+          "russian_hint": "пренебрегать всем"
         },
         {
           "german": "feige",
@@ -873,7 +873,7 @@
             "Auf dem Balkon lacht Oswald laut über Lears Hilflosigkeit.",
             "Ich halte das Wort „feige“ wie eine Fackel vor meinem Herzen."
           ],
-          "russian_hint": "трусливый прячусь за (Оскорбляет Лира)"
+          "russian_hint": "трусливый прячусь за"
         }
       ],
       "theatrical_scene": {
@@ -1197,7 +1197,7 @@
             "um Gespräche zu belauschen.",
             "Wie ein stilles Gebet legt sich das Wort „der Spion“ auf meine Lippen."
           ],
-          "russian_hint": "шпион в каждом тёмном (Шпионит за всеми)"
+          "russian_hint": "шпион в каждом тёмном"
         },
         {
           "german": "der Verrat",
@@ -1209,7 +1209,7 @@
             "Hinter schweren Vorhängen notiert Oswald jedes geflüsterte Wort.",
             "Das kalte Licht lässt das Wort „der Verrat“ wie geschmolzenes Gold erscheinen."
           ],
-          "russian_hint": "предательство - профессия (Шпионит за всеми)"
+          "russian_hint": "предательство доверия"
         },
         {
           "german": "die Heimlichkeit",
@@ -1221,7 +1221,7 @@
             "Auf den Mauern späht Oswald nach Reitern am Horizont.",
             "Ich halte das Wort „die Heimlichkeit“ wie eine Fackel vor meinem Herzen."
           ],
-          "russian_hint": "скрытность мастер за всеми (Шпионит за всеми)"
+          "russian_hint": "скрытность мастер за всеми"
         },
         {
           "german": "spionieren",
@@ -1233,7 +1233,7 @@
             "Zwischen Küchenmägden tauscht Oswald Gerüchte gegen Kupferstücke.",
             "Ich halte das Wort „spionieren“ wie eine Fackel vor meinem Herzen."
           ],
-          "russian_hint": "шпионить за (Шпионит за всеми)"
+          "russian_hint": "шпионить за"
         },
         {
           "german": "lauschen",
@@ -1245,7 +1245,7 @@
             "Im Kerzenlicht zeichnet Oswald geheime Wege auf Pergament.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „lauschen“ gehört mir."
           ],
-          "russian_hint": "подслушивать шёпот (Шпионит за всеми)"
+          "russian_hint": "подслушивать шёпот"
         },
         {
           "german": "verraten",
@@ -1257,7 +1257,7 @@
             "Unter dem Fenster von Regan beugt Oswald sich tief in die Nacht hinaus.",
             "Ich zeichne das Wort „verraten“ mit unsichtbarer Tinte auf meine Handfläche."
           ],
-          "russian_hint": "выдавать все (Шпионит за всеми)"
+          "russian_hint": "предавать доверие"
         },
         {
           "german": "schnüffeln",
@@ -1269,7 +1269,7 @@
             "Vor Gonerils Gemach übergibt Oswald flüsternd die gesammelten Nachrichten.",
             "Ich zeichne das Wort „schnüffeln“ in Gedanken über die Linien des Schicksals."
           ],
-          "russian_hint": "вынюхивать тайны (Шпионит за всеми)"
+          "russian_hint": "вынюхивать тайны"
         }
       ],
       "theatrical_scene": {
@@ -1563,7 +1563,7 @@
             "Ich presse das Wort „die Intrige“ zwischen die Zähne,",
             "damit kein Zweifel entweicht."
           ],
-          "russian_hint": "интрига - искусство (Плетёт интриги)"
+          "russian_hint": "хитрый план"
         },
         {
           "german": "der Plan",
@@ -1575,7 +1575,7 @@
             "Neben Gonerils Lager zeichnet Oswald heimlich zwei Namen auf ein Pergament.",
             "Ich zeichne das Wort „der Plan“ in Gedanken über die Linien des Schicksals."
           ],
-          "russian_hint": "план безупречен интриги (Плетёт интриги)"
+          "russian_hint": "план безупречен интриги"
         },
         {
           "german": "die Hinterlist",
@@ -1588,7 +1588,7 @@
             "Ich presse das Wort „die Hinterlist“ zwischen die Zähne,",
             "damit kein Zweifel entweicht."
           ],
-          "russian_hint": "коварство опутываю всех (Плетёт интриги)"
+          "russian_hint": "коварство опутываю всех"
         },
         {
           "german": "schmieden",
@@ -1600,7 +1600,7 @@
             "Im Stall flüstert Oswald falsche Befehle in die Ohren der Reiter.",
             "Ich umarme das Wort „schmieden“, als wäre es mein einziger Verbündeter."
           ],
-          "russian_hint": "ковать заговоры (Плетёт интриги)"
+          "russian_hint": "ковать заговоры"
         },
         {
           "german": "hintergehen",
@@ -1612,7 +1612,7 @@
             "Vor Regans Dienern versteckt Oswald die Briefe im Futter der Pferde.",
             "Das Echo des Wortes „hintergehen“ übertönt das Flüstern der Höflinge."
           ],
-          "russian_hint": "обманывать доверчивых (Плетёт интриги)"
+          "russian_hint": "обманывать доверчивых"
         },
         {
           "german": "tückisch",
@@ -1624,7 +1624,7 @@
             "Unter der Laube formt Oswald aus Wachs ein neues Siegel.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „tückisch“ mein Nordstern."
           ],
-          "russian_hint": "коварный расставляю сети (Плетёт интриги)"
+          "russian_hint": "коварный расставляю сети"
         },
         {
           "german": "verschlagen",
@@ -1636,7 +1636,7 @@
             "In der Mitternachtspause verteilt Oswald verschlüsselte Notizen.",
             "Das Echo des Wortes „verschlagen“ übertönt das Flüstern der Höflinge."
           ],
-          "russian_hint": "хитрый манипулирую всеми (Плетёт интриги)"
+          "russian_hint": "хитрый манипулирую всеми"
         },
         {
           "german": "die Falle",
@@ -1649,7 +1649,7 @@
             "Ich presse das Wort „die Falle“ zwischen die Zähne,",
             "damit kein Zweifel entweicht."
           ],
-          "russian_hint": "ловушка продумана до мелочей (Плетёт интриги)"
+          "russian_hint": "ловушка продумана до мелочей"
         }
       ],
       "theatrical_scene": {
@@ -1972,7 +1972,7 @@
             "Mit gespannter Armbrust durchstreift Oswald die nächtlichen Felder.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Verfolgung“ bleibt lebendig."
           ],
-          "russian_hint": "преследование слепого Глостера (Преследует Глостера)"
+          "russian_hint": "преследование слепого Глостера"
         },
         {
           "german": "die Jagd",
@@ -1984,7 +1984,7 @@
             "Auf dem Küstenpfad späht Oswald nach Spuren des fliehenden Grafen.",
             "Das Echo des Wortes „die Jagd“ übertönt das Flüstern der Höflinge."
           ],
-          "russian_hint": "охота на предателя - (Преследует Глостера)"
+          "russian_hint": "охота на предателя -"
         },
         {
           "german": "verfolgen",
@@ -1996,7 +1996,7 @@
             "Zwischen Dornenhecken zückt Oswald das versteckte Messer.",
             "Mein Atem zeichnet das Wort „verfolgen“ in die kalte Luft zwischen uns."
           ],
-          "russian_hint": "преследовать без (Преследует Глостера)"
+          "russian_hint": "преследовать без"
         },
         {
           "german": "jagen",
@@ -2008,7 +2008,7 @@
             "Am Moorloch testet Oswald die Tiefe mit der Spitze der Lanze.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „jagen“ gehört mir."
           ],
-          "russian_hint": "гнаться Как гончая за (Преследует Глостера)"
+          "russian_hint": "гнаться Как гончая за"
         },
         {
           "german": "aufspüren",
@@ -2020,7 +2020,7 @@
             "Vor einem verlassenen Hof horcht Oswald auf das Schnaufen der Pferde.",
             "Wie ein stilles Gebet legt sich das Wort „aufspüren“ auf meine Lippen."
           ],
-          "russian_hint": "выслеживать следы (Преследует Глостера)"
+          "russian_hint": "выслеживать следы"
         },
         {
           "german": "hetzen",
@@ -2032,7 +2032,7 @@
             "Unter Regans Banner motiviert Oswald die Soldaten zu schnellerer Jagd.",
             "Ich halte das Wort „hetzen“ wie eine Fackel vor meinem Herzen."
           ],
-          "russian_hint": "травить как (Преследует Глостера)"
+          "russian_hint": "травить как"
         },
         {
           "german": "die Beute",
@@ -2044,7 +2044,7 @@
             "Auf den Klippen über Dover späht Oswald in die graue Ferne.",
             "Mit fester Stimme schwöre ich mir: Das Wort „die Beute“ wird heute nicht verraten."
           ],
-          "russian_hint": "добыча для Глостера (Преследует Глостера)"
+          "russian_hint": "добыча для Глостера"
         }
       ],
       "theatrical_scene": {
@@ -2333,7 +2333,7 @@
             "Im dunstigen Wald stürzt Oswald vor Edgars Klinge rückwärts.",
             "Mein Atem zeichnet das Wort „der Tod“ in die kalte Luft zwischen uns."
           ],
-          "russian_hint": "смерть пришла слишком рано (Убит Эдгаром)"
+          "russian_hint": "конец жизни"
         },
         {
           "german": "die Feigheit",
@@ -2345,7 +2345,7 @@
             "Neben einem morschen Baum bittet Oswald mit erhobenen Händen um Gnade.",
             "Ich halte das Wort „die Feigheit“ wie eine Fackel vor meinem Herzen."
           ],
-          "russian_hint": "трусость погубила Эдгаром (Убит Эдгаром)"
+          "russian_hint": "трусость погубила Эдгаром"
         },
         {
           "german": "die Niederlage",
@@ -2357,7 +2357,7 @@
             "Am Boden liegend tastet Oswald vergeblich nach dem verlorenen Schwert.",
             "Ich halte das Wort „die Niederlage“ wie eine Fackel vor meinem Herzen."
           ],
-          "russian_hint": "поражение от руки нищего (Убит Эдгаром)"
+          "russian_hint": "поражение от руки нищего"
         },
         {
           "german": "fallen",
@@ -2369,7 +2369,7 @@
             "Vor Edgars ernster Miene rutscht Oswald im nassen Laub aus.",
             "Wie ein stilles Gebet legt sich das Wort „fallen“ auf meine Lippen."
           ],
-          "russian_hint": "падать на (Убит Эдгаром)"
+          "russian_hint": "падать на"
         },
         {
           "german": "unterliegen",
@@ -2381,7 +2381,7 @@
             "Unter einem kalten Regen stammelt Oswald letzte Ausflüchte.",
             "Mein Atem zeichnet das Wort „unterliegen“ in die kalte Luft zwischen uns."
           ],
-          "russian_hint": "проигрывать в (Убит Эдгаром)"
+          "russian_hint": "проигрывать в"
         },
         {
           "german": "wimmern",
@@ -2393,7 +2393,7 @@
             "Im Schatten der Bäume erkennt Oswald zu spät die gerechte Vergeltung.",
             "Ich umarme das Wort „wimmern“, als wäre es mein einziger Verbündeter."
           ],
-          "russian_hint": "хныкать как (Убит Эдгаром)"
+          "russian_hint": "хныкать как"
         },
         {
           "german": "betteln",
@@ -2405,7 +2405,7 @@
             "Auf dem Waldboden erlischt Oswalds Atem ohne Ehrenwache.",
             "Ich zeichne das Wort „betteln“ in Gedanken über die Linien des Schicksals."
           ],
-          "russian_hint": "умолять о (Убит Эдгаром)"
+          "russian_hint": "просить униженно"
         },
         {
           "german": "erbärmlich",
@@ -2417,7 +2417,7 @@
             "Neben dem fallengelassenen Brief liegt Oswald reglos im Schlamm.",
             "Das kalte Licht lässt das Wort „erbärmlich“ wie geschmolzenes Gold erscheinen."
           ],
-          "russian_hint": "жалкий умираю как (Убит Эдгаром)"
+          "russian_hint": "жалкий умираю как"
         }
       ],
       "theatrical_scene": {
