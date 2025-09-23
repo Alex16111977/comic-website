@@ -244,15 +244,15 @@
           },
           "synonyms": [
             {
-              "word": "das Обряд",
+              "word": "der Ritus",
               "translation": "обряд"
             },
             {
-              "word": "das Ритуал",
+              "word": "das Ritual",
               "translation": "ритуал"
             },
             {
-              "word": "das Торжество",
+              "word": "die Feier",
               "translation": "торжество"
             }
           ],
@@ -482,15 +482,15 @@
           },
           "synonyms": [
             {
-              "word": "das Отвергать",
+              "word": "abweisen",
               "translation": "отвергать"
             },
             {
-              "word": "das Отрекаться",
+              "word": "verleugnen",
               "translation": "отрекаться"
             },
             {
-              "word": "das Выгонять",
+              "word": "vertreiben",
               "translation": "выгонять"
             }
           ],
@@ -507,15 +507,15 @@
           },
           "synonyms": [
             {
-              "word": "das Оставлять",
+              "word": "zurücklassen",
               "translation": "оставлять"
             },
             {
-              "word": "das Уходить",
+              "word": "fortgehen",
               "translation": "уходить"
             },
             {
-              "word": "das Бросать",
+              "word": "im Stich lassen",
               "translation": "бросать"
             }
           ],
@@ -723,15 +723,15 @@
           },
           "synonyms": [
             {
-              "word": "das Беспокойство",
+              "word": "die Unruhe",
               "translation": "беспокойство"
             },
             {
-              "word": "das Тревога",
+              "word": "die Besorgnis",
               "translation": "тревога"
             },
             {
-              "word": "das Попечение",
+              "word": "die Fürsorge",
               "translation": "попечение"
             }
           ],
@@ -973,15 +973,15 @@
           },
           "synonyms": [
             {
-              "word": "das Вернуться",
+              "word": "zurückkommen",
               "translation": "вернуться"
             },
             {
-              "word": "das Прибыть",
+              "word": "ankommen",
               "translation": "прибыть"
             },
             {
-              "word": "das Воротиться",
+              "word": "heimkehren",
               "translation": "воротиться"
             }
           ],
@@ -998,15 +998,15 @@
           },
           "synonyms": [
             {
-              "word": "das Битва",
+              "word": "die Schlacht",
               "translation": "битва"
             },
             {
-              "word": "das Сражение",
+              "word": "das Gefecht",
               "translation": "сражение"
             },
             {
-              "word": "das Схватка",
+              "word": "der Zweikampf",
               "translation": "схватка"
             }
           ],
@@ -1214,15 +1214,15 @@
           },
           "synonyms": [
             {
-              "word": "das Извинять",
+              "word": "entschuldigen",
               "translation": "извинять"
             },
             {
-              "word": "das Миловать",
+              "word": "begnadigen",
               "translation": "миловать"
             },
             {
-              "word": "das Отпускать",
+              "word": "vergeben",
               "translation": "отпускать"
             }
           ],
@@ -1239,15 +1239,15 @@
           },
           "synonyms": [
             {
-              "word": "das Рыдания",
+              "word": "das Schluchzen",
               "translation": "рыдания"
             },
             {
-              "word": "das Плач",
+              "word": "das Weinen",
               "translation": "плач"
             },
             {
-              "word": "das Слезинки",
+              "word": "die Tränchen",
               "translation": "слезинки"
             }
           ],
@@ -1455,15 +1455,15 @@
           },
           "synonyms": [
             {
-              "word": "das Плененный",
+              "word": "inhaftiert",
               "translation": "плененный"
             },
             {
-              "word": "das Арестованный",
+              "word": "verhaftet",
               "translation": "арестованный"
             },
             {
-              "word": "das Схваченный",
+              "word": "festgenommen",
               "translation": "схваченный"
             }
           ],
@@ -1480,15 +1480,15 @@
           },
           "synonyms": [
             {
-              "word": "das Темница",
+              "word": "der Kerker",
               "translation": "темница"
             },
             {
-              "word": "das Узилище",
+              "word": "die Haftanstalt",
               "translation": "узилище"
             },
             {
-              "word": "das Застенок",
+              "word": "das Zuchthaus",
               "translation": "застенок"
             }
           ],
@@ -1696,15 +1696,15 @@
           },
           "synonyms": [
             {
-              "word": "das Кончина",
+              "word": "das Ableben",
               "translation": "кончина"
             },
             {
-              "word": "das Гибель",
+              "word": "der Exitus",
               "translation": "гибель"
             },
             {
-              "word": "das Уход",
+              "word": "das Lebensende",
               "translation": "уход"
             }
           ],
@@ -1721,15 +1721,15 @@
           },
           "synonyms": [
             {
-              "word": "das Погибать",
+              "word": "umkommen",
               "translation": "погибать"
             },
             {
-              "word": "das Скончаться",
+              "word": "versterben",
               "translation": "скончаться"
             },
             {
-              "word": "das Почить",
+              "word": "entschlafen",
               "translation": "почить"
             }
           ],

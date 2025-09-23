@@ -214,15 +214,15 @@
           },
           "synonyms": [
             {
-              "word": "das Присягать",
+              "word": "geloben",
               "translation": "присягать"
             },
             {
-              "word": "das Обещать",
+              "word": "versprechen",
               "translation": "обещать"
             },
             {
-              "word": "das Заклясться",
+              "word": "beschwören",
               "translation": "заклясться"
             }
           ],
@@ -711,15 +711,15 @@
           },
           "synonyms": [
             {
-              "word": "das Унижать",
+              "word": "erniedrigen",
               "translation": "унижать"
             },
             {
-              "word": "das Оскорблять",
+              "word": "beleidigen",
               "translation": "оскорблять"
             },
             {
-              "word": "das Принижать",
+              "word": "herabsetzen",
               "translation": "принижать"
             }
           ],
@@ -736,15 +736,15 @@
           },
           "synonyms": [
             {
-              "word": "das Жестокий",
+              "word": "brutal",
               "translation": "жестокий"
             },
             {
-              "word": "das Безжалостный",
+              "word": "gnadenlos",
               "translation": "безжалостный"
             },
             {
-              "word": "das Свирепый",
+              "word": "unbarmherzig",
               "translation": "свирепый"
             }
           ],
@@ -933,15 +933,15 @@
           },
           "synonyms": [
             {
-              "word": "das Изгонять",
+              "word": "vertreiben",
               "translation": "изгонять"
             },
             {
-              "word": "das Отвергать",
+              "word": "abweisen",
               "translation": "отвергать"
             },
             {
-              "word": "das Отрекаться",
+              "word": "verleugnen",
               "translation": "отрекаться"
             }
           ],
@@ -1183,15 +1183,15 @@
           },
           "synonyms": [
             {
-              "word": "das Ссориться",
+              "word": "zanken",
               "translation": "ссориться"
             },
             {
-              "word": "das Ругаться",
+              "word": "schimpfen",
               "translation": "ругаться"
             },
             {
-              "word": "das Препираться",
+              "word": "hadern",
               "translation": "препираться"
             }
           ],
@@ -1208,15 +1208,15 @@
           },
           "synonyms": [
             {
-              "word": "das Предавать",
+              "word": "hintergehen",
               "translation": "предавать"
             },
             {
-              "word": "das Выдавать",
+              "word": "preisgeben",
               "translation": "выдавать"
             },
             {
-              "word": "das Изменять",
+              "word": "betrügen",
               "translation": "изменять"
             }
           ],
@@ -1424,15 +1424,15 @@
           },
           "synonyms": [
             {
-              "word": "das Ревность",
+              "word": "der Neid",
               "translation": "ревность"
             },
             {
-              "word": "das Зависть",
+              "word": "die Missgunst",
               "translation": "зависть"
             },
             {
-              "word": "das Подозрение",
+              "word": "der Argwohn",
               "translation": "подозрение"
             }
           ],
@@ -1449,15 +1449,15 @@
           },
           "synonyms": [
             {
-              "word": "das Соперничать",
+              "word": "konkurrieren",
               "translation": "соперничать"
             },
             {
-              "word": "das Конкурировать",
+              "word": "wetteifern",
               "translation": "конкурировать"
             },
             {
-              "word": "das Бороться",
+              "word": "kämpfen",
               "translation": "бороться"
             }
           ],
@@ -1665,15 +1665,15 @@
           },
           "synonyms": [
             {
-              "word": "das Отравлять",
+              "word": "giftmischen",
               "translation": "отравлять"
             },
             {
-              "word": "das Травить",
+              "word": "intoxizieren",
               "translation": "травить"
             },
             {
-              "word": "das Поражать",
+              "word": "schädigen",
               "translation": "поражать"
             }
           ],

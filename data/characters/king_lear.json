@@ -214,15 +214,15 @@
           },
           "synonyms": [
             {
-              "word": "das Престол",
+              "word": "der Herrschersitz",
               "translation": "престол"
             },
             {
-              "word": "das Царское место",
+              "word": "der Königsstuhl",
               "translation": "царское место"
             },
             {
-              "word": "das Королевское кресло",
+              "word": "der Thronsessel",
               "translation": "королевское кресло"
             }
           ],
@@ -239,15 +239,15 @@
           },
           "synonyms": [
             {
-              "word": "das Царство",
+              "word": "das Reich",
               "translation": "царство"
             },
             {
-              "word": "das Держава",
+              "word": "der Staat",
               "translation": "держава"
             },
             {
-              "word": "das Государство",
+              "word": "das Imperium",
               "translation": "государство"
             }
           ],
@@ -477,15 +477,15 @@
           },
           "synonyms": [
             {
-              "word": "das Оскорблять",
+              "word": "beleidigen",
               "translation": "оскорблять"
             },
             {
-              "word": "das Позорить",
+              "word": "beschämen",
               "translation": "позорить"
             },
             {
-              "word": "das Уничижать",
+              "word": "erniedrigen",
               "translation": "уничижать"
             }
           ],
@@ -727,15 +727,15 @@
           },
           "synonyms": [
             {
-              "word": "das Оставлять",
+              "word": "zurücklassen",
               "translation": "оставлять"
             },
             {
-              "word": "das Уходить",
+              "word": "fortgehen",
               "translation": "уходить"
             },
             {
-              "word": "das Бросать",
+              "word": "im Stich lassen",
               "translation": "бросать"
             }
           ],
@@ -752,15 +752,15 @@
           },
           "synonyms": [
             {
-              "word": "das Отрекаться",
+              "word": "verleugnen",
               "translation": "отрекаться"
             },
             {
-              "word": "das Изгонять",
+              "word": "vertreiben",
               "translation": "изгонять"
             },
             {
-              "word": "das Отталкивать",
+              "word": "abweisen",
               "translation": "отталкивать"
             }
           ],
@@ -1227,15 +1227,15 @@
           },
           "synonyms": [
             {
-              "word": "das Бедность",
+              "word": "die Armut",
               "translation": "бедность"
             },
             {
-              "word": "das Убожество",
+              "word": "die Dürftigkeit",
               "translation": "убожество"
             },
             {
-              "word": "das Лишения",
+              "word": "die Entbehrung",
               "translation": "лишения"
             }
           ],
@@ -1252,15 +1252,15 @@
           },
           "synonyms": [
             {
-              "word": "das Попрошайка",
+              "word": "der Bettelmann",
               "translation": "попрошайка"
             },
             {
-              "word": "das Бедняк",
+              "word": "der Arme",
               "translation": "бедняк"
             },
             {
-              "word": "das Оборванец",
+              "word": "der Landstreicher",
               "translation": "оборванец"
             }
           ],
@@ -1468,15 +1468,15 @@
           },
           "synonyms": [
             {
-              "word": "das Опознавать",
+              "word": "identifizieren",
               "translation": "опознавать"
             },
             {
-              "word": "das Распознавать",
+              "word": "wiedererkennen",
               "translation": "распознавать"
             },
             {
-              "word": "das Признавать",
+              "word": "anerkennen",
               "translation": "признавать"
             }
           ],
@@ -1493,15 +1493,15 @@
           },
           "synonyms": [
             {
-              "word": "das Постигать",
+              "word": "begreifen",
               "translation": "постигать"
             },
             {
-              "word": "das Осознавать",
+              "word": "erfassen",
               "translation": "осознавать"
             },
             {
-              "word": "das Уразумевать",
+              "word": "einsehen",
               "translation": "уразумевать"
             }
           ],
@@ -1709,15 +1709,15 @@
           },
           "synonyms": [
             {
-              "word": "das Извинять",
+              "word": "entschuldigen",
               "translation": "извинять"
             },
             {
-              "word": "das Отпускать",
+              "word": "vergeben",
               "translation": "отпускать"
             },
             {
-              "word": "das Миловать",
+              "word": "begnadigen",
               "translation": "миловать"
             }
           ],
@@ -1734,15 +1734,15 @@
           },
           "synonyms": [
             {
-              "word": "das Кончина",
+              "word": "das Ableben",
               "translation": "кончина"
             },
             {
-              "word": "das Гибель",
+              "word": "der Exitus",
               "translation": "гибель"
             },
             {
-              "word": "das Уход",
+              "word": "das Lebensende",
               "translation": "уход"
             }
           ],
