@@ -19,7 +19,8 @@
           "sentence_parts": [
             "Mitten im Tumult der Thronfeier tritt Kent vor den Königsthron.",
             "Ich zeichne das Wort „die Treue“ mit unsichtbarer Tinte auf meine Handfläche."
-          ]
+          ],
+          "russian_hint": "верность королю (Защищает Корделию в тронном зале)"
         },
         {
           "german": "der Mut",
@@ -30,7 +31,8 @@
           "sentence_parts": [
             "Zwischen scharfgezogenen Schwertern stellt sich Kent vor die jüngste Tochter.",
             "Ich halte das Wort „der Mut“ wie eine Fackel vor meinem Herzen."
-          ]
+          ],
+          "russian_hint": "мужество вступиться (Защищает Корделию в тронном зале)"
         },
         {
           "german": "widersprechen",
@@ -41,7 +43,8 @@
           "sentence_parts": [
             "Vor der erstaunten Ritterschar reißt Kent sein Wappen vom Brustpanzer.",
             "Ich presse das Wort „widersprechen“ zwischen die Zähne, damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "возражать королю (Защищает Корделию в тронном зале)"
         },
         {
           "german": "verteidigen",
@@ -52,7 +55,8 @@
           "sentence_parts": [
             "Unter den strengen Blicken des Hofes schlägt Kent die Faust auf das Geländer.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „verteidigen“ darf nicht vergehen."
-          ]
+          ],
+          "russian_hint": "защищать невинных (Защищает Корделию в тронном зале)"
         },
         {
           "german": "aufrichtig",
@@ -63,7 +67,8 @@
           "sentence_parts": [
             "Neben Lears Stab kniet Kent und hebt unbeirrbar den Kopf.",
             "Das Echo des Wortes „aufrichtig“ übertönt das Flüstern der Höflinge."
-          ]
+          ],
+          "russian_hint": "искренний перед троном (Защищает Корделию в тронном зале)"
         },
         {
           "german": "der Diener",
@@ -74,7 +79,8 @@
           "sentence_parts": [
             "Auf den Stufen zur Thronrampe breitet Kent schützend die Arme aus.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „der Diener“ bleibt lebendig."
-          ]
+          ],
+          "russian_hint": "слуга короля (Защищает Корделию в тронном зале)"
         },
         {
           "german": "warnen",
@@ -85,7 +91,8 @@
           "sentence_parts": [
             "Zwischen höfischen Fanfaren ruft Kent seine Warnung gegen das Hofgeflüster.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „warnen“ gehört mir."
-          ]
+          ],
+          "russian_hint": "предупреждать владыку (Защищает Корделию в тронном зале)"
         },
         {
           "german": "gerecht",
@@ -96,7 +103,8 @@
           "sentence_parts": [
             "Im Schatten des Königsbanners legt Kent die Hand auf das Herz.",
             "Ich presse das Wort „gerecht“ zwischen die Zähne, damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "справедливый поступок (Защищает Корделию в тронном зале)"
         }
       ],
       "theatrical_scene": {
@@ -418,7 +426,8 @@
           "sentence_parts": [
             "Auf den kalten Stufen des Hofes hört Kent das Urteil der Verbannung.",
             "Ich zeichne das Wort „die Verbannung“ in Gedanken über die Linien des Schicksals."
-          ]
+          ],
+          "russian_hint": "изгнание - вот приговор (Изгнан за правду)"
         },
         {
           "german": "die Ungerechtigkeit",
@@ -429,7 +438,8 @@
           "sentence_parts": [
             "Zwischen abziehenden Soldaten hält Kent nur den Reisestock in der Hand.",
             "Wie ein stilles Gebet legt sich das Wort „die Ungerechtigkeit“ auf meine Lippen."
-          ]
+          ],
+          "russian_hint": "несправедливость решения мою душу (Изгнан за правду)"
         },
         {
           "german": "der Zorn",
@@ -440,7 +450,8 @@
           "sentence_parts": [
             "Vor dem geschlossenen Burgtor wirft Kent den Blick noch einmal zurück.",
             "Das kalte Licht lässt das Wort „der Zorn“ wie geschmolzenes Gold erscheinen."
-          ]
+          ],
+          "russian_hint": "праведный гнев (Изгнан за правду)"
         },
         {
           "german": "verbannt",
@@ -451,7 +462,8 @@
           "sentence_parts": [
             "Auf dem Regenpflaster bleibt Kent stehen, während die Trommeln schweigen.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „verbannt“ gehört mir."
-          ]
+          ],
+          "russian_hint": "изгнанный из страны (Изгнан за правду)"
         },
         {
           "german": "der Abschied",
@@ -462,7 +474,8 @@
           "sentence_parts": [
             "Zwischen verstreuten Reisebündeln befestigt Kent das Schwert am Gürtel.",
             "Ich atme tief ein und lasse nur das Wort „der Abschied“ wieder hinaus."
-          ]
+          ],
+          "russian_hint": "прощание с двором сердце (Изгнан за правду)"
         },
         {
           "german": "die Strafe",
@@ -474,7 +487,8 @@
             "Unter dem grauen Himmel zieht Kent den Mantelkragen hoch.",
             "Ich presse das Wort „die Strafe“ zwischen die Zähne,",
             "damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "наказание с высоко поднятой (Изгнан за правду)"
         },
         {
           "german": "zurückkehren",
@@ -485,7 +499,8 @@
           "sentence_parts": [
             "Vor der trostlosen Landstraße richtet Kent den Blick entschlossen nach vorn.",
             "Mein Atem zeichnet das Wort „zurückkehren“ in die kalte Luft zwischen uns."
-          ]
+          ],
+          "russian_hint": "возвращаться - буду (Изгнан за правду)"
         }
       ],
       "theatrical_scene": {
@@ -773,7 +788,8 @@
           "sentence_parts": [
             "In der verqualmten Herberge streift Kent das grobe Knechtsgewand über.",
             "Wie ein stilles Gebet legt sich das Wort „die Verkleidung“ auf meine Lippen."
-          ]
+          ],
+          "russian_hint": "переодевание как слуга Кай (Возвращается как слуга Кай)"
         },
         {
           "german": "die List",
@@ -784,7 +800,8 @@
           "sentence_parts": [
             "Vor einem beschlagenen Spiegel übt Kent die raue Stimme des Kays.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „die List“ mein Nordstern."
-          ]
+          ],
+          "russian_hint": "хитрость вернусь к королю (Возвращается как слуга Кай)"
         },
         {
           "german": "unerkannt",
@@ -795,7 +812,8 @@
           "sentence_parts": [
             "Unter einem zerknitterten Hut verbirgt Kent die königliche Haltung.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „unerkannt“ gehört mir."
-          ]
+          ],
+          "russian_hint": "неузнанный Возвращается как (Возвращается как слуга Кай)"
         },
         {
           "german": "vorgeben",
@@ -806,7 +824,8 @@
           "sentence_parts": [
             "Zwischen neugierigen Fuhrknechten studiert Kent die Dienstbefehle.",
             "Ich zeichne das Wort „vorgeben“ mit unsichtbarer Tinte auf meine Handfläche."
-          ]
+          ],
+          "russian_hint": "притворяться простым (Возвращается как слуга Кай)"
         },
         {
           "german": "verstellen",
@@ -817,7 +836,8 @@
           "sentence_parts": [
             "Am Ufer des Hafens wäscht Kent die Spuren des alten Lebens ab.",
             "Ich atme tief ein und lasse nur das Wort „verstellen“ wieder hinaus."
-          ]
+          ],
+          "russian_hint": "изменять голос (Возвращается как слуга Кай)"
         },
         {
           "german": "der Bart",
@@ -828,7 +848,8 @@
           "sentence_parts": [
             "Auf dem staubigen Markt prüft Kent die Tragriemen des Gepäcks.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „der Bart“ darf nicht vergehen."
-          ]
+          ],
+          "russian_hint": "борода грубой одеждой неузнанный (Возвращается как слуга Кай)"
         },
         {
           "german": "anheuern",
@@ -839,7 +860,8 @@
           "sentence_parts": [
             "Im Schatten einer Gasse versteckt Kent den einst glänzenden Siegelring.",
             "Das kalte Licht lässt das Wort „anheuern“ wie geschmolzenes Gold erscheinen."
-          ]
+          ],
+          "russian_hint": "наниматься Вот к (Возвращается как слуга Кай)"
         },
         {
           "german": "treu",
@@ -850,7 +872,8 @@
           "sentence_parts": [
             "Unter einem Wagenrad kauert Kent, bis der Ruf nach Dienern erschallt.",
             "Das Echo des Wortes „treu“ übertönt das Flüstern der Höflinge."
-          ]
+          ],
+          "russian_hint": "верный думает что (Возвращается как слуга Кай)"
         }
       ],
       "theatrical_scene": {
@@ -1172,7 +1195,8 @@
           "sentence_parts": [
             "Im nächtlichen Wachraum poliert Kent schweigend die Rüstung des Königs.",
             "Das Echo des Wortes „der Dienst“ übertönt das Flüstern der Höflinge."
-          ]
+          ],
+          "russian_hint": "служба в тени (Служит неузнанным)"
         },
         {
           "german": "der Schutz",
@@ -1183,7 +1207,8 @@
           "sentence_parts": [
             "Neben dem Lager des erschöpften Herrschers hält Kent unbeweglich Wache.",
             "Das Echo des Wortes „der Schutz“ übertönt das Flüstern der Höflinge."
-          ]
+          ],
+          "russian_hint": "защита которую даю невидима (Служит неузнанным)"
         },
         {
           "german": "die Gefahr",
@@ -1194,7 +1219,8 @@
           "sentence_parts": [
             "Unter Regenmänteln der Wachen verbirgt Kent seine Narben.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Gefahr“ bleibt lebendig."
-          ]
+          ],
+          "russian_hint": "опасность повсюду - Освальд (Служит неузнанным)"
         },
         {
           "german": "bewachen",
@@ -1205,7 +1231,8 @@
           "sentence_parts": [
             "Am Stalltor sattelt Kent in der Dunkelheit ein trotziges Pferd.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „bewachen“ mein Nordstern."
-          ]
+          ],
+          "russian_hint": "охранять короля (Служит неузнанным)"
         },
         {
           "german": "kämpfen",
@@ -1216,7 +1243,8 @@
           "sentence_parts": [
             "In der Küche der Dienerschaft füllt Kent den dampfenden Becher.",
             "Ich zeichne das Wort „kämpfen“ in Gedanken über die Linien des Schicksals."
-          ]
+          ],
+          "russian_hint": "сражаться с (Служит неузнанным)"
         },
         {
           "german": "raten",
@@ -1227,7 +1255,8 @@
           "sentence_parts": [
             "Vor der Schlafstatt des Königs ordnet Kent die verstreuten Decken.",
             "Ich umarme das Wort „raten“, als wäre es mein einziger Verbündeter."
-          ]
+          ],
+          "russian_hint": "советовать королю (Служит неузнанным)"
         },
         {
           "german": "die Wache",
@@ -1238,7 +1267,8 @@
           "sentence_parts": [
             "Auf dem Hof prüft Kent das Zaumzeug, bevor der Morgen graut.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „die Wache“ mein Nordstern."
-          ]
+          ],
+          "russian_hint": "стража пока неузнанным (Служит неузнанным)"
         }
       ],
       "theatrical_scene": {
@@ -1526,7 +1556,8 @@
           "sentence_parts": [
             "Im Regen der Burgmauer sitzt Kent mit gefesselten Füßen in den harten Hölzern.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Strafe“ darf nicht vergehen."
-          ]
+          ],
+          "russian_hint": "наказание жестоко терплю с (Наказан Корнуоллом)"
         },
         {
           "german": "die Demütigung",
@@ -1538,7 +1569,8 @@
             "Neben den Spottliedern der Wachen hält Kent den Kopf stolz erhoben.",
             "Ich presse das Wort „die Demütigung“ zwischen die Zähne,",
             "damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "унижение публично - все (Наказан Корнуоллом)"
         },
         {
           "german": "die Standhaftigkeit",
@@ -1549,7 +1581,8 @@
           "sentence_parts": [
             "Vor dem trüben Mondlicht reibt Kent den schmerzenden Nacken.",
             "Ich zeichne das Wort „die Standhaftigkeit“ in Gedanken über die Linien des Schicksals."
-          ]
+          ],
+          "russian_hint": "стойкость Наказан Корнуоллом (Наказан Корнуоллом)"
         },
         {
           "german": "fesseln",
@@ -1560,7 +1593,8 @@
           "sentence_parts": [
             "Zwischen den Pfützen der Nacht starren Kents Schuhe in den Himmel.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „fesseln“ mein Nordstern."
-          ]
+          ],
+          "russian_hint": "сковывать в (Наказан Корнуоллом)"
         },
         {
           "german": "erdulden",
@@ -1571,7 +1605,8 @@
           "sentence_parts": [
             "Am Morgenfrost haucht Kent Eisblumen auf das Holz.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „erdulden“ mein Nordstern."
-          ]
+          ],
+          "russian_hint": "терпеть наказание жестоко с (Наказан Корнуоллом)"
         },
         {
           "german": "der Stock",
@@ -1582,7 +1617,8 @@
           "sentence_parts": [
             "Neben einem verirrten Bauernkind lächelt Kent trotz der Demütigung.",
             "Das kalte Licht lässt das Wort „der Stock“ wie geschmolzenes Gold erscheinen."
-          ]
+          ],
+          "russian_hint": "колодка Наказан Корнуоллом (Наказан Корнуоллом)"
         },
         {
           "german": "ausharren",
@@ -1593,7 +1629,8 @@
           "sentence_parts": [
             "Unter dem grauen Himmel zählt Kent geduldig die Tropfen auf dem Gesicht.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „ausharren“ darf nicht vergehen."
-          ]
+          ],
+          "russian_hint": "выдерживать Всю ночь холод (Наказан Корнуоллом)"
         },
         {
           "german": "die Schande",
@@ -1604,7 +1641,8 @@
           "sentence_parts": [
             "Auf dem verlassenen Hof lauscht Kent dem fern rollenden Donner.",
             "Das kalte Licht lässt das Wort „die Schande“ wie geschmolzenes Gold erscheinen."
-          ]
+          ],
+          "russian_hint": "позор не - тех (Наказан Корнуоллом)"
         }
       ],
       "theatrical_scene": {
@@ -1926,7 +1964,8 @@
           "sentence_parts": [
             "Mit der Laterne in der Faust sucht Kent nach dem Schatten des Königs.",
             "Wie ein stilles Gebet legt sich das Wort „der Sturm“ auf meine Lippen."
-          ]
+          ],
+          "russian_hint": "буря вокруг Лира (Поддерживает Лира)"
         },
         {
           "german": "der Beistand",
@@ -1937,7 +1976,8 @@
           "sentence_parts": [
             "Neben dem tobenden Monarchen breitet Kent den Mantel wie ein Schild.",
             "Das kalte Licht lässt das Wort „der Beistand“ wie geschmolzenes Gold erscheinen."
-          ]
+          ],
+          "russian_hint": "поддержка не Лира (Поддерживает Лира)"
         },
         {
           "german": "begleiten",
@@ -1948,7 +1988,8 @@
           "sentence_parts": [
             "Auf dem überfluteten Pfad hält Kent das Pferd am Zügel.",
             "Ich zeichne das Wort „begleiten“ mit unsichtbarer Tinte auf meine Handfläche."
-          ]
+          ],
+          "russian_hint": "сопровождать безумного (Поддерживает Лира)"
         },
         {
           "german": "trösten",
@@ -1959,7 +2000,8 @@
           "sentence_parts": [
             "Zwischen klatschenden Ästen ruft Kent beruhigende Worte.",
             "Mein Atem zeichnet das Wort „trösten“ in die kalte Luft zwischen uns."
-          ]
+          ],
+          "russian_hint": "утешать пытаюсь говорит (Поддерживает Лира)"
         },
         {
           "german": "die Zuflucht",
@@ -1971,7 +2013,8 @@
             "Vor der klappernden Hütte hebt Kent die Fackel,",
             "um den Weg zu zeigen.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Zuflucht“ bleibt lebendig."
-          ]
+          ],
+          "russian_hint": "убежище - хижину пещеру (Поддерживает Лира)"
         },
         {
           "german": "durchhalten",
@@ -1982,7 +2025,8 @@
           "sentence_parts": [
             "Am Rand des Moorfelds stützt Kent den taumelnden Herrscher.",
             "Ich umarme das Wort „durchhalten“, als wäre es mein einziger Verbündeter."
-          ]
+          ],
+          "russian_hint": "выдерживать должны король (Поддерживает Лира)"
         },
         {
           "german": "die Kälte",
@@ -1994,7 +2038,8 @@
             "Unter dem peitschenden Regen spricht Kent ein leises Trostlied.",
             "Ich presse das Wort „die Kälte“ zwischen die Zähne,",
             "damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "холод до костей поддержка (Поддерживает Лира)"
         }
       ],
       "theatrical_scene": {
@@ -2286,7 +2331,8 @@
           "sentence_parts": [
             "Im stillen Sterbezimmer wacht Kent an Lears letztem Lager.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „der Tod“ gehört mir."
-          ]
+          ],
+          "russian_hint": "смерть всех кого любил (Остаётся с умирающим Лиром)"
         },
         {
           "german": "der Abschied",
@@ -2297,7 +2343,8 @@
           "sentence_parts": [
             "Neben der verlöschenden Kerze streicht Kent über den zerrissenen Umhang.",
             "Wie ein stilles Gebet legt sich das Wort „der Abschied“ auf meine Lippen."
-          ]
+          ],
+          "russian_hint": "прощание невыносимо с Лиром (Остаётся с умирающим Лиром)"
         },
         {
           "german": "ewig",
@@ -2308,7 +2355,8 @@
           "sentence_parts": [
             "Vor den starren Wachen flüstert Kent ein letztes Versprechen.",
             "Mit fester Stimme schwöre ich mir: Das Wort „ewig“ wird heute nicht verraten."
-          ]
+          ],
+          "russian_hint": "вечный верность исполнена (Остаётся с умирающим Лиром)"
         },
         {
           "german": "weinen",
@@ -2319,7 +2367,8 @@
           "sentence_parts": [
             "Auf dem leeren Thronstuhl legt Kent den eigenen Stab nieder.",
             "Mein Atem zeichnet das Wort „weinen“ in die kalte Luft zwischen uns."
-          ]
+          ],
+          "russian_hint": "плакать над (Остаётся с умирающим Лиром)"
         },
         {
           "german": "die Erschöpfung",
@@ -2330,7 +2379,8 @@
           "sentence_parts": [
             "Zwischen verblassenden Wandmalereien schließt Kent kurz die Augen.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „die Erschöpfung“ mein Nordstern."
-          ]
+          ],
+          "russian_hint": "истощение с Лиром (Остаётся с умирающим Лиром)"
         },
         {
           "german": "aufgeben",
@@ -2341,7 +2391,8 @@
           "sentence_parts": [
             "Am offenen Fenster lässt Kent den kalten Morgen herein.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „aufgeben“ darf nicht vergehen."
-          ]
+          ],
+          "russian_hint": "сдаваться готов следовать (Остаётся с умирающим Лиром)"
         },
         {
           "german": "die Trauer",
@@ -2352,7 +2403,8 @@
           "sentence_parts": [
             "Im Schatten der Trauernden hält Kent Lears Hand bis zum letzten Schlag.",
             "Ich zeichne das Wort „die Trauer“ mit unsichtbarer Tinte auf meine Handfläche."
-          ]
+          ],
+          "russian_hint": "скорбь слишком для старого (Остаётся с умирающим Лиром)"
         },
         {
           "german": "folgen",
@@ -2363,7 +2415,8 @@
           "sentence_parts": [
             "Vor der stillen Hofkapelle beugt Kent das Knie für ein stummes Gebet.",
             "Ich halte das Wort „folgen“ wie eine Fackel vor meinem Herzen."
-          ]
+          ],
+          "russian_hint": "следовать готов сдаться за (Остаётся с умирающим Лиром)"
         }
       ],
       "theatrical_scene": {

@@ -19,7 +19,8 @@
           "sentence_parts": [
             "In der Waffenkammer betrachtet Cornwall gierig die ausgestellten Kronjuwelen.",
             "Das Echo des Wortes „der Ehrgeiz“ übertönt das Flüstern der Höflinge."
-          ]
+          ],
+          "russian_hint": "честолюбие во как неугасимый (Жаждет власти)"
         },
         {
           "german": "die Gier",
@@ -30,7 +31,8 @@
           "sentence_parts": [
             "Vor der Karte Englands fährt Cornwall mit dem Dolch über neue Grenzen.",
             "Mein Atem zeichnet das Wort „die Gier“ in die kalte Luft zwischen uns."
-          ]
+          ],
+          "russian_hint": "жадность к власти каждую (Жаждет власти)"
         },
         {
           "german": "streben",
@@ -41,7 +43,8 @@
           "sentence_parts": [
             "Zwischen knienden Vasallen lässt Cornwall die Finger über den Thronsessel gleiten.",
             "Ich presse das Wort „streben“ zwischen die Zähne, damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "стремиться к (Жаждет власти)"
         },
         {
           "german": "verlangen",
@@ -52,7 +55,8 @@
           "sentence_parts": [
             "Am hohen Fenster misst Cornwall den Abstand zur Hauptstadt.",
             "Mein Atem zeichnet das Wort „verlangen“ in die kalte Luft zwischen uns."
-          ]
+          ],
+          "russian_hint": "желать править (Жаждет власти)"
         },
         {
           "german": "begehren",
@@ -63,7 +67,8 @@
           "sentence_parts": [
             "Neben dem schwelenden Kamin testet Cornwall das Gewicht eines Schwertes.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „begehren“ darf nicht vergehen."
-          ]
+          ],
+          "russian_hint": "вожделеть Жаждет власти (Жаждет власти)"
         },
         {
           "german": "gierig",
@@ -74,7 +79,8 @@
           "sentence_parts": [
             "Auf dem Turnierplatz lässt Cornwall seine Reiter zu später Stunde antreten.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „gierig“ mein Nordstern."
-          ]
+          ],
+          "russian_hint": "жадный до каждой (Жаждет власти)"
         },
         {
           "german": "die Herrschsucht",
@@ -85,7 +91,8 @@
           "sentence_parts": [
             "Zwischen Pergamentrollen überdenkt Cornwall geheime Bündnisse.",
             "Wie ein stilles Gebet legt sich das Wort „die Herrschsucht“ auf meine Lippen."
-          ]
+          ],
+          "russian_hint": "властолюбие не границ (Жаждет власти)"
         },
         {
           "german": "ergreifen",
@@ -96,7 +103,8 @@
           "sentence_parts": [
             "Im Spiegel der Audienzhalle probt Cornwall das Lächeln eines Herrschers.",
             "Ich umarme das Wort „ergreifen“, als wäre es mein einziger Verbündeter."
-          ]
+          ],
+          "russian_hint": "захватывать которую могу (Жаждет власти)"
         }
       ],
       "theatrical_scene": {
@@ -418,7 +426,8 @@
           "sentence_parts": [
             "Neben Regans vergiftetem Lächeln hebt Cornwall den Kelch zum Spott.",
             "Ich umarme das Wort „die Grausamkeit“, als wäre es mein einziger Verbündeter."
-          ]
+          ],
+          "russian_hint": "жестокость Реганы (Поддерживает жестокость Реганы)"
         },
         {
           "german": "die Bosheit",
@@ -429,7 +438,8 @@
           "sentence_parts": [
             "Auf der Galerie des Schlosses applaudiert Cornwall den Demütigungen des Königs.",
             "Ich umarme das Wort „die Bosheit“, als wäre es mein einziger Verbündeter."
-          ]
+          ],
+          "russian_hint": "злоба непобедимыми жестокость Реганы (Поддерживает жестокость Реганы)"
         },
         {
           "german": "billigen",
@@ -440,7 +450,8 @@
           "sentence_parts": [
             "Zwischen eingeschüchterten Dienern greift Cornwall nach der Peitsche.",
             "Das kalte Licht lässt das Wort „billigen“ wie geschmolzenes Gold erscheinen."
-          ]
+          ],
+          "russian_hint": "одобрять жестокое (Поддерживает жестокость Реганы)"
         },
         {
           "german": "unterstützen",
@@ -451,7 +462,8 @@
           "sentence_parts": [
             "Am hohen Lehnsessel sitzt Cornwall mit kalter Zufriedenheit.",
             "Ich zeichne das Wort „unterstützen“ in Gedanken über die Linien des Schicksals."
-          ]
+          ],
+          "russian_hint": "поддерживать в бурю полностью (Поддерживает жестокость Реганы)"
         },
         {
           "german": "anstacheln",
@@ -462,7 +474,8 @@
           "sentence_parts": [
             "Vor dem Bannerschrank zerreißt Cornwall einen höflichen Bittbrief.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „anstacheln“ mein Nordstern."
-          ]
+          ],
+          "russian_hint": "подстрекать быть (Поддерживает жестокость Реганы)"
         },
         {
           "german": "ermutigen",
@@ -473,7 +486,8 @@
           "sentence_parts": [
             "Unter stürmischen Trommeln befiehlt Cornwall den Wachen näherzukommen.",
             "Das Echo des Wortes „ermutigen“ übertönt das Flüstern der Höflinge."
-          ]
+          ],
+          "russian_hint": "поощрять тёмные (Поддерживает жестокость Реганы)"
         },
         {
           "german": "die Härte",
@@ -484,7 +498,8 @@
           "sentence_parts": [
             "Im Schatten der Folterkammer tauscht Cornwall mit Regan heimliche Blicke.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Härte“ darf nicht vergehen."
-          ]
+          ],
+          "russian_hint": "суровость - вот что (Поддерживает жестокость Реганы)"
         }
       ],
       "theatrical_scene": {
@@ -772,7 +787,8 @@
           "sentence_parts": [
             "Auf dem Burghof verteilt Cornwall neue, erbarmungslose Dekrete.",
             "Ich zeichne das Wort „die Tyrannei“ mit unsichtbarer Tinte auf meine Handfläche."
-          ]
+          ],
+          "russian_hint": "тирания по всему герцогству (Правит железной рукой)"
         },
         {
           "german": "die Unterdrückung",
@@ -783,7 +799,8 @@
           "sentence_parts": [
             "Vor gefesselten Gefangenen lässt Cornwall die Streitkolben prüfen.",
             "Mein Atem zeichnet das Wort „die Unterdrückung“ in die kalte Luft zwischen uns."
-          ]
+          ],
+          "russian_hint": "угнетение - главный инструмент (Правит железной рукой)"
         },
         {
           "german": "die Furcht",
@@ -794,7 +811,8 @@
           "sentence_parts": [
             "Zwischen klirrenden Ketten schreitet Cornwall mit schwerem Schritt.",
             "Ich halte das Wort „die Furcht“ wie eine Fackel vor meinem Herzen."
-          ]
+          ],
+          "russian_hint": "страх контролирую подданного (Правит железной рукой)"
         },
         {
           "german": "unterdrücken",
@@ -805,7 +823,8 @@
           "sentence_parts": [
             "Am schwarzen Banner der Macht schwört Cornwall sich ewige Herrschaft.",
             "Mein Atem zeichnet das Wort „unterdrücken“ in die kalte Luft zwischen uns."
-          ]
+          ],
+          "russian_hint": "подавлять любое (Правит железной рукой)"
         },
         {
           "german": "knechten",
@@ -816,7 +835,8 @@
           "sentence_parts": [
             "Auf dem Gerichtspodest stützt Cornwall sich auf den Stab aus Eisen.",
             "Ich presse das Wort „knechten“ zwischen die Zähne, damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "порабощать Правит железной (Правит железной рукой)"
         },
         {
           "german": "zwingen",
@@ -827,7 +847,8 @@
           "sentence_parts": [
             "Unter den Blicken eingeschüchterter Edelleute reißt Cornwall das Urteil an sich.",
             "Ich zeichne das Wort „zwingen“ mit unsichtbarer Tinte auf meine Handfläche."
-          ]
+          ],
+          "russian_hint": "принуждать всех (Правит железной рукой)"
         },
         {
           "german": "die Willkür",
@@ -838,7 +859,8 @@
           "sentence_parts": [
             "An der Treppe zum Kerker verteilt Cornwall grausame Befehle.",
             "Ich umarme das Wort „die Willkür“, als wäre es mein einziger Verbündeter."
-          ]
+          ],
+          "russian_hint": "произвол - единственный закон (Правит железной рукой)"
         },
         {
           "german": "brutal",
@@ -849,7 +871,8 @@
           "sentence_parts": [
             "Im düsteren Thronsaal schlägt Cornwall mit der Faust auf die Armlehne.",
             "Ich halte das Wort „brutal“ wie eine Fackel vor meinem Herzen."
-          ]
+          ],
+          "russian_hint": "брутальный уничтожаю любого (Правит железной рукой)"
         }
       ],
       "theatrical_scene": {
@@ -1171,7 +1194,8 @@
           "sentence_parts": [
             "Vor den geschockten Höflingen deutet Cornwall auf die leeren Holzkolben.",
             "Wie ein stilles Gebet legt sich das Wort „die Strafe“ auf meine Lippen."
-          ]
+          ],
+          "russian_hint": "наказание примерной Кента (Наказывает Кента)"
         },
         {
           "german": "der Zorn",
@@ -1182,7 +1206,8 @@
           "sentence_parts": [
             "Auf dem nassen Hof befiehlt Cornwall die Fesselung des Widerspenstigen.",
             "Mit fester Stimme schwöre ich mir: Das Wort „der Zorn“ wird heute nicht verraten."
-          ]
+          ],
+          "russian_hint": "праведный гнев (Наказывает Кента)"
         },
         {
           "german": "bestrafen",
@@ -1193,7 +1218,8 @@
           "sentence_parts": [
             "Neben Regans spöttischem Blick wirft Cornwall das Urteil in die Luft.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „bestrafen“ darf nicht vergehen."
-          ]
+          ],
+          "russian_hint": "карать за (Наказывает Кента)"
         },
         {
           "german": "züchtigen",
@@ -1204,7 +1230,8 @@
           "sentence_parts": [
             "Am Werkzeugtisch der Garde prüft Cornwall die scharfen Nägel.",
             "Ich presse das Wort „züchtigen“ zwischen die Zähne, damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "наказывать публично (Наказывает Кента)"
         },
         {
           "german": "demütigen",
@@ -1215,7 +1242,8 @@
           "sentence_parts": [
             "Vor den verschreckten Dienern lächelt Cornwall über das Flehen um Gnade.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „demütigen“ darf nicht vergehen."
-          ]
+          ],
+          "russian_hint": "морально унижать (Наказывает Кента)"
         },
         {
           "german": "erniedrigen",
@@ -1226,7 +1254,8 @@
           "sentence_parts": [
             "Unter Donnerhall befiehlt Cornwall das Opfer in den Regen zu stellen.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „erniedrigen“ mein Nordstern."
-          ]
+          ],
+          "russian_hint": "понижать статус (Наказывает Кента)"
         },
         {
           "german": "quälen",
@@ -1237,7 +1266,8 @@
           "sentence_parts": [
             "Auf dem Steinboden hinterlässt Cornwall Spuren von Blut und Wasser.",
             "Ich halte das Wort „quälen“ wie eine Fackel vor meinem Herzen."
-          ]
+          ],
+          "russian_hint": "мучить доставляет удовольствие верного (Наказывает Кента)"
         }
       ],
       "theatrical_scene": {
@@ -1529,7 +1559,8 @@
           "sentence_parts": [
             "Im düsteren Saal bindet Cornwall den Grafen an den eichenen Stuhl.",
             "Mit fester Stimme schwöre ich mir: Das Wort „die Folter“ wird heute nicht verraten."
-          ]
+          ],
+          "russian_hint": "пытка Глостера (Ослепляет Глостера)"
         },
         {
           "german": "der Sadismus",
@@ -1540,7 +1571,8 @@
           "sentence_parts": [
             "Neben knirschenden Seilen entfachen Regans Diener das Feuer, während Cornwall zuschaut.",
             "Ich zeichne das Wort „der Sadismus“ in Gedanken über die Linien des Schicksals."
-          ]
+          ],
+          "russian_hint": "садизм наконец полное удовлетворение (Ослепляет Глостера)"
         },
         {
           "german": "das Blut",
@@ -1551,7 +1583,8 @@
           "sentence_parts": [
             "Vor der versammelten Ritterschaft lässt Cornwall die Dolche bereitlegen.",
             "Ich zeichne das Wort „das Blut“ in Gedanken über die Linien des Schicksals."
-          ]
+          ],
+          "russian_hint": "кровь в лицо (Ослепляет Глостера)"
         },
         {
           "german": "foltern",
@@ -1562,7 +1595,8 @@
           "sentence_parts": [
             "Am blutbefleckten Boden tritt Cornwall das Geständnis aus dem Gefangenen.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „foltern“ bleibt lebendig."
-          ]
+          ],
+          "russian_hint": "пытать буду старого (Ослепляет Глостера)"
         },
         {
           "german": "verstümmeln",
@@ -1573,7 +1607,8 @@
           "sentence_parts": [
             "Zwischen aufschreienden Dienern bleibt Cornwall eiskalt und unbewegt.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „verstümmeln“ mein Nordstern."
-          ]
+          ],
+          "russian_hint": "калечить за (Ослепляет Глостера)"
         },
         {
           "german": "blenden",
@@ -1584,7 +1619,8 @@
           "sentence_parts": [
             "Unter Regans Jubel reißt Cornwall das grausame Werk zu Ende.",
             "Mein Atem zeichnet das Wort „blenden“ in die kalte Luft zwischen uns."
-          ]
+          ],
+          "russian_hint": "ослеплять собственными (Ослепляет Глостера)"
         },
         {
           "german": "ausstechen",
@@ -1595,7 +1631,8 @@
           "sentence_parts": [
             "Vor den entsetzten Augen des Hofes wischt Cornwall das Blut vom Stiefel.",
             "Ich atme tief ein und lasse nur das Wort „ausstechen“ wieder hinaus."
-          ]
+          ],
+          "russian_hint": "выкалывать Первый глаз медленно (Ослепляет Глостера)"
         },
         {
           "german": "die Qual",
@@ -1606,7 +1643,8 @@
           "sentence_parts": [
             "Im Nachhall der Schreie richtet Cornwall den Mantel und wendet sich zur Tür.",
             "Ich umarme das Wort „die Qual“, als wäre es mein einziger Verbündeter."
-          ]
+          ],
+          "russian_hint": "мука - награда (Ослепляет Глостера)"
         }
       ],
       "theatrical_scene": {
@@ -1928,7 +1966,8 @@
           "sentence_parts": [
             "Im dunklen Korridor presst Cornwall die Hand gegen die frische Wunde.",
             "Ich atme tief ein und lasse nur das Wort „die Wunde“ wieder hinaus."
-          ]
+          ],
+          "russian_hint": "рана огнём в спине (Ранен слугой)"
         },
         {
           "german": "der Schmerz",
@@ -1939,7 +1978,8 @@
           "sentence_parts": [
             "Auf der Treppe taumelt Cornwall, während das Blut den Stein färbt.",
             "Das kalte Licht lässt das Wort „der Schmerz“ wie geschmolzenes Gold erscheinen."
-          ]
+          ],
+          "russian_hint": "боль невыносима Ранен слугой (Ранен слугой)"
         },
         {
           "german": "die Überraschung",
@@ -1950,7 +1990,8 @@
           "sentence_parts": [
             "Neben Regans erschrockener Stimme sucht Cornwall Halt am Geländer.",
             "Ich zeichne das Wort „die Überraschung“ mit unsichtbarer Tinte auf meine Handfläche."
-          ]
+          ],
+          "russian_hint": "удивление Ранен слугой (Ранен слугой)"
         },
         {
           "german": "bluten",
@@ -1961,7 +2002,8 @@
           "sentence_parts": [
             "Im Stall greift Cornwall nach einem Sattel, doch die Kräfte schwinden.",
             "Ich umarme das Wort „bluten“, als wäre es mein einziger Verbündeter."
-          ]
+          ],
+          "russian_hint": "кровоточить как (Ранен слугой)"
         },
         {
           "german": "verwundet",
@@ -1972,7 +2014,8 @@
           "sentence_parts": [
             "Vor dem Tor der Burg hinterlässt Cornwall eine Spur aus rotem Staub.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „verwundet“ mein Nordstern."
-          ]
+          ],
+          "russian_hint": "раненый каким-то ничтожеством (Ранен слугой)"
         },
         {
           "german": "schwächen",
@@ -1983,7 +2026,8 @@
           "sentence_parts": [
             "Auf dem Hof sinkt Cornwall zwischen erschrockenen Wachen zusammen.",
             "Wie ein stilles Gebet legt sich das Wort „schwächen“ auf meine Lippen."
-          ]
+          ],
+          "russian_hint": "ослаблять Удар могучее (Ранен слугой)"
         },
         {
           "german": "leiden",
@@ -1994,7 +2038,8 @@
           "sentence_parts": [
             "Unter dem bleiernen Himmel schwört Cornwall Rache mit letzter Kraft.",
             "Das kalte Licht lässt das Wort „leiden“ wie geschmolzenes Gold erscheinen."
-          ]
+          ],
+          "russian_hint": "переносить страдания (Ранен слугой)"
         }
       ],
       "theatrical_scene": {
@@ -2282,7 +2327,8 @@
           "sentence_parts": [
             "Im Treppenhaus der Burg bricht Cornwall auf das kalte Steinpodest.",
             "Mein Atem zeichnet das Wort „der Tod“ in die kalte Luft zwischen uns."
-          ]
+          ],
+          "russian_hint": "смерть слишком быстро (Умирает от раны)"
         },
         {
           "german": "die Vergeltung",
@@ -2293,7 +2339,8 @@
           "sentence_parts": [
             "Zwischen zerbrochenen Waffen liegt Cornwall und ringt nach Atem.",
             "Das kalte Licht lässt das Wort „die Vergeltung“ wie geschmolzenes Gold erscheinen."
-          ]
+          ],
+          "russian_hint": "возмездие настигло неожиданно (Умирает от раны)"
         },
         {
           "german": "das Ende",
@@ -2304,7 +2351,8 @@
           "sentence_parts": [
             "Vor Regans entsetztem Blick verliert Cornwall den Griff um das eigene Blut.",
             "Ich halte das Wort „das Ende“ wie eine Fackel vor meinem Herzen."
-          ]
+          ],
+          "russian_hint": "конец от руки жалкого (Умирает от раны)"
         },
         {
           "german": "sterben",
@@ -2315,7 +2363,8 @@
           "sentence_parts": [
             "Am Fuß der Treppe murmelt Cornwall die letzten Befehle.",
             "Ich umarme das Wort „sterben“, als wäre es mein einziger Verbündeter."
-          ]
+          ],
+          "russian_hint": "умирать без (Умирает от раны)"
         },
         {
           "german": "verenden",
@@ -2326,7 +2375,8 @@
           "sentence_parts": [
             "Auf der kalten Flaggenkiste sinkt Cornwall schwer zusammen.",
             "Mein Atem zeichnet das Wort „verenden“ in die kalte Luft zwischen uns."
-          ]
+          ],
+          "russian_hint": "издыхать как (Умирает от раны)"
         },
         {
           "german": "verfluchen",
@@ -2337,7 +2387,8 @@
           "sentence_parts": [
             "Neben zerborstenen Fenstern haucht Cornwall den letzten Fluch aus.",
             "Mit fester Stimme schwöre ich mir: Das Wort „verfluchen“ wird heute nicht verraten."
-          ]
+          ],
+          "russian_hint": "проклинать всех (Умирает от раны)"
         },
         {
           "german": "röcheln",
@@ -2348,7 +2399,8 @@
           "sentence_parts": [
             "Unter dem prasselnden Regen verglimmt Cornwalls Leben rasch.",
             "Ich halte das Wort „röcheln“ wie eine Fackel vor meinem Herzen."
-          ]
+          ],
+          "russian_hint": "хрипеть захлёбываясь (Умирает от раны)"
         },
         {
           "german": "die Strafe",
@@ -2360,7 +2412,8 @@
             "Im Staub des Hofes starrt Cornwall zum grauen Himmel,",
             "bevor die Augen erlöschen.",
             "Ich atme tief ein und lasse nur das Wort „die Strafe“ wieder hinaus."
-          ]
+          ],
+          "russian_hint": "кара за мою жестокость (Умирает от раны)"
         }
       ],
       "theatrical_scene": {

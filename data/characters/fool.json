@@ -20,7 +20,8 @@
             "Im grellen Licht des Thronsaals schlägt Fool die Laute an.",
             "Ich presse das Wort „der Narr“ zwischen die Zähne,",
             "damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "шут самый умный человек (При дворе, грустит о Корделии)"
         },
         {
           "german": "die Weisheit",
@@ -31,7 +32,8 @@
           "sentence_parts": [
             "Neben Lears Krone balanciert Fool auf einem Fuß.",
             "Ich atme tief ein und lasse nur das Wort „die Weisheit“ wieder hinaus."
-          ]
+          ],
+          "russian_hint": "мудрость за колокольчиками (При дворе, грустит о Корделии)"
         },
         {
           "german": "die Trauer",
@@ -42,7 +44,8 @@
           "sentence_parts": [
             "Zwischen Hofdamen und Rittern wirbelt Fool mit flatterndem Schellenkleid.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Trauer“ bleibt lebendig."
-          ]
+          ],
+          "russian_hint": "печаль о Корделии сердце (При дворе, грустит о Корделии)"
         },
         {
           "german": "scherzen",
@@ -53,7 +56,8 @@
           "sentence_parts": [
             "Vor dem königlichen Podest verzieht Fool die Maske zum Spott.",
             "Ich zeichne das Wort „scherzen“ in Gedanken über die Linien des Schicksals."
-          ]
+          ],
+          "russian_hint": "шутить печаль (При дворе, грустит о Корделии)"
         },
         {
           "german": "der Spaß",
@@ -64,7 +68,8 @@
           "sentence_parts": [
             "Am Bankettisch jongliert Fool mit goldenen Pokalen.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „der Spaß“ mein Nordstern."
-          ]
+          ],
+          "russian_hint": "забава - маска остроумие (При дворе, грустит о Корделии)"
         },
         {
           "german": "klug",
@@ -75,7 +80,8 @@
           "sentence_parts": [
             "Zwischen Lachern und Seufzern zeichnet Fool Grimassen in die Luft.",
             "Das kalte Licht lässt das Wort „klug“ wie geschmolzenes Gold erscheinen."
-          ]
+          ],
+          "russian_hint": "умный человек в (При дворе, грустит о Корделии)"
         },
         {
           "german": "vermissen",
@@ -86,7 +92,8 @@
           "sentence_parts": [
             "Im Schatten der Säulen lauscht Fool den leisen Worten Cordelias.",
             "Mein Atem zeichnet das Wort „vermissen“ in die kalte Luft zwischen uns."
-          ]
+          ],
+          "russian_hint": "скучать по (При дворе, грустит о Корделии)"
         },
         {
           "german": "der Witz",
@@ -97,7 +104,8 @@
           "sentence_parts": [
             "Auf der Marmorstufe lässt Fool ein Glöckchen über den Boden tanzen.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „der Witz“ bleibt lebendig."
-          ]
+          ],
+          "russian_hint": "остроумие - При дворе (При дворе, грустит о Корделии)"
         }
       ],
       "synonym_antonym_sets": [
@@ -423,7 +431,8 @@
           "sentence_parts": [
             "Vor Lears Ohr flüstert Fool mit funkelndem Blick die spöttische Wahrheit.",
             "Mit fester Stimme schwöre ich mir: Das Wort „die Wahrheit“ wird heute nicht verraten."
-          ]
+          ],
+          "russian_hint": "объективная истина (Говорит правду через шутки)"
         },
         {
           "german": "der Scherz",
@@ -435,7 +444,8 @@
             "Auf dem Hofbalkon zeigt Fool mit der Laute auf die heuchlerischen Schwestern.",
             "Ich presse das Wort „der Scherz“ zwischen die Zähne,",
             "damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "шутка правду через (Говорит правду через шутки)"
         },
         {
           "german": "die Warnung",
@@ -446,7 +456,8 @@
           "sentence_parts": [
             "Zwischen umgestoßenen Bechern sammelt Fool die Lügen wie Perlen auf.",
             "Ich zeichne das Wort „die Warnung“ in Gedanken über die Linien des Schicksals."
-          ]
+          ],
+          "russian_hint": "предупреждение как песенка (Говорит правду через шутки)"
         },
         {
           "german": "bitter",
@@ -457,7 +468,8 @@
           "sentence_parts": [
             "An Lears Seite zeichnet Fool mit Kreide eine Krone auf den Boden.",
             "Wie ein stilles Gebet legt sich das Wort „bitter“ auf meine Lippen."
-          ]
+          ],
+          "russian_hint": "горький правда льётся (Говорит правду через шутки)"
         },
         {
           "german": "spotten",
@@ -468,7 +480,8 @@
           "sentence_parts": [
             "Im Gedränge der Höflinge spielt Fool eine schrille Warnmelodie.",
             "Mit fester Stimme schwöre ich mir: Das Wort „spotten“ wird heute nicht verraten."
-          ]
+          ],
+          "russian_hint": "насмехаться дражню короля над (Говорит правду через шутки)"
         },
         {
           "german": "necken",
@@ -479,7 +492,8 @@
           "sentence_parts": [
             "Auf den Stufen zum Thron zieht Fool die Stirn in tiefe Falten.",
             "Ich presse das Wort „necken“ zwischen die Zähne, damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "дразнить короля (Говорит правду через шутки)"
         },
         {
           "german": "enthüllen",
@@ -490,7 +504,8 @@
           "sentence_parts": [
             "Neben dem Tränenstrom des Königs wischt Fool die Schminke vom Gesicht.",
             "Ich zeichne das Wort „enthüllen“ in Gedanken über die Linien des Schicksals."
-          ]
+          ],
+          "russian_hint": "раскрывать ошибки (Говорит правду через шутки)"
         }
       ],
       "theatrical_scene": {
@@ -778,7 +793,8 @@
           "sentence_parts": [
             "Unter dem Sternenzelt deutet Fool mit dem Stab die funkelnden Zeichen.",
             "Das kalte Licht lässt das Wort „die Prophezeiung“ wie geschmolzenes Gold erscheinen."
-          ]
+          ],
+          "russian_hint": "пророчество беды (Предсказывает беды)"
         },
         {
           "german": "das Rätsel",
@@ -789,7 +805,8 @@
           "sentence_parts": [
             "Auf den Mauern des Schlosses rezitiert Fool Verse von kommenden Stürmen.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „das Rätsel“ darf nicht vergehen."
-          ]
+          ],
+          "russian_hint": "загадка предсказываю будущее (Предсказывает беды)"
         },
         {
           "german": "die Vorahnung",
@@ -800,7 +817,8 @@
           "sentence_parts": [
             "Zwischen Rauch und Kerzenduft schleudert Fool rätselhafte Reime.",
             "Mit fester Stimme schwöre ich mir: Das Wort „die Vorahnung“ wird heute nicht verraten."
-          ]
+          ],
+          "russian_hint": "предчувствие тьмы беды (Предсказывает беды)"
         },
         {
           "german": "vorhersagen",
@@ -811,7 +829,8 @@
           "sentence_parts": [
             "Am Brunnen des Hofes wirft Fool Kiesel, um die Zukunft zu spiegeln.",
             "Ich atme tief ein und lasse nur das Wort „vorhersagen“ wieder hinaus."
-          ]
+          ],
+          "russian_hint": "предсказывать каждом загадке будущее (Предсказывает беды)"
         },
         {
           "german": "deuten",
@@ -822,7 +841,8 @@
           "sentence_parts": [
             "Vor erstaunten Dienern zeichnet Fool Kreise in den Staub.",
             "Ich presse das Wort „deuten“ zwischen die Zähne, damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "толковать знаки (Предсказывает беды)"
         },
         {
           "german": "ahnen",
@@ -833,7 +853,8 @@
           "sentence_parts": [
             "Auf der Markttreppe singt Fool von Königen, die zu Bettlern werden.",
             "Mit fester Stimme schwöre ich mir: Das Wort „ahnen“ wird heute nicht verraten."
-          ]
+          ],
+          "russian_hint": "предчувствовать кровь (Предсказывает беды)"
         },
         {
           "german": "das Omen",
@@ -844,7 +865,8 @@
           "sentence_parts": [
             "Neben einem reisenden Pilger deutet Fool in den flammenden Himmel.",
             "Mit fester Stimme schwöre ich mir: Das Wort „das Omen“ wird heute nicht verraten."
-          ]
+          ],
+          "russian_hint": "знамение о беде (Предсказывает беды)"
         },
         {
           "german": "rätselhaft",
@@ -855,7 +877,8 @@
           "sentence_parts": [
             "Im Gewitterlicht zählt Fool die Schläge, die die Zukunft ankündigen.",
             "Ich zeichne das Wort „rätselhaft“ in Gedanken über die Linien des Schicksals."
-          ]
+          ],
+          "russian_hint": "загадочный истинны (Предсказывает беды)"
         }
       ],
       "theatrical_scene": {
@@ -1177,7 +1200,8 @@
           "sentence_parts": [
             "In der sturmgepeitschten Heide drückt Fool Lear die klammen Hände.",
             "Mein Atem zeichnet das Wort „der Wahnsinn“ in die kalte Luft zwischen uns."
-          ]
+          ],
+          "russian_hint": "безумие Единственный друг в (Единственный друг в буре)"
         },
         {
           "german": "die Freundschaft",
@@ -1188,7 +1212,8 @@
           "sentence_parts": [
             "Zwischen zerrissenen Zelten singt Fool ein trostloses Wiegenlied.",
             "Ich umarme das Wort „die Freundschaft“, als wäre es mein einziger Verbündeter."
-          ]
+          ],
+          "russian_hint": "дружба крепче грома (Единственный друг в буре)"
         },
         {
           "german": "begleiten",
@@ -1199,7 +1224,8 @@
           "sentence_parts": [
             "Am umgestürzten Wagen schirmt Fool den König vor der Peitsche des Regens.",
             "Ich presse das Wort „begleiten“ zwischen die Zähne, damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "сопровождать через (Единственный друг в буре)"
         },
         {
           "german": "frieren",
@@ -1210,7 +1236,8 @@
           "sentence_parts": [
             "Unter dem knarzenden Dach der Hütte sitzt Fool dicht an Lear gedrängt.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „frieren“ darf nicht vergehen."
-          ]
+          ],
+          "russian_hint": "мёрзнуть вместе (Единственный друг в буре)"
         },
         {
           "german": "singen",
@@ -1221,7 +1248,8 @@
           "sentence_parts": [
             "Vor der tobenden Nacht schreit Fool seine Possen gegen den Wind.",
             "Ich zeichne das Wort „singen“ mit unsichtbarer Tinte auf meine Handfläche."
-          ]
+          ],
+          "russian_hint": "петь песни (Единственный друг в буре)"
         },
         {
           "german": "zittern",
@@ -1232,7 +1260,8 @@
           "sentence_parts": [
             "Am aufgeweichten Boden zeichnet Fool mit Stock und Witz ein Schutzschild.",
             "Ich atme tief ein und lasse nur das Wort „zittern“ wieder hinaus."
-          ]
+          ],
+          "russian_hint": "дрожать мёрзнем вместе как (Единственный друг в буре)"
         },
         {
           "german": "treu",
@@ -1243,7 +1272,8 @@
           "sentence_parts": [
             "In der Finsternis des Waldes zündet Fool einen letzten Funken Mut an.",
             "Ich umarme das Wort „treu“, als wäre es mein einziger Verbündeter."
-          ]
+          ],
+          "russian_hint": "верный когда все (Единственный друг в буре)"
         }
       ],
       "theatrical_scene": {
@@ -1535,7 +1565,8 @@
           "sentence_parts": [
             "Im warmen Schein der Hütte summt Fool eine Melodie über verlorene Kronen.",
             "Mein Atem zeichnet das Wort „das Lied“ in die kalte Luft zwischen uns."
-          ]
+          ],
+          "russian_hint": "песня для безумного короля (Поёт и утешает)"
         },
         {
           "german": "der Trost",
@@ -1546,7 +1577,8 @@
           "sentence_parts": [
             "Neben Lear legt Fool den Kopf auf die Knie und schaukelt im Takt.",
             "Ich zeichne das Wort „der Trost“ in Gedanken über die Linien des Schicksals."
-          ]
+          ],
+          "russian_hint": "утешение в словах слабо (Поёт и утешает)"
         },
         {
           "german": "die Ironie",
@@ -1557,7 +1589,8 @@
           "sentence_parts": [
             "Vor der knisternden Feuerstelle klatscht Fool den Rhythmus in die Hände.",
             "Ich atme tief ein und lasse nur das Wort „die Ironie“ wieder hinaus."
-          ]
+          ],
+          "russian_hint": "ирония - теперь король (Поёт и утешает)"
         },
         {
           "german": "summen",
@@ -1568,7 +1601,8 @@
           "sentence_parts": [
             "Auf dem Holzbalken sitzt Fool und schwingt die Beine zur Melodie.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „summen“ gehört mir."
-          ]
+          ],
+          "russian_hint": "напевать старые (Поёт и утешает)"
         },
         {
           "german": "die Melodie",
@@ -1579,7 +1613,8 @@
           "sentence_parts": [
             "Zwischen Schlafenden senkt Fool die Stimme zu einem flüsternden Refrain.",
             "Wie ein stilles Gebet legt sich das Wort „die Melodie“ auf meine Lippen."
-          ]
+          ],
+          "russian_hint": "мелодия о временах когда (Поёт и утешает)"
         },
         {
           "german": "pfeifen",
@@ -1590,7 +1625,8 @@
           "sentence_parts": [
             "Am offenen Feld singt Fool gegen das Heulen der Nacht.",
             "Ich umarme das Wort „pfeifen“, als wäre es mein einziger Verbündeter."
-          ]
+          ],
+          "russian_hint": "свистеть прогнать (Поёт и утешает)"
         },
         {
           "german": "der Reim",
@@ -1601,7 +1637,8 @@
           "sentence_parts": [
             "In der Morgendämmerung stimmt Fool ein hoffnungsvolles Lied an.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „der Reim“ mein Nordstern."
-          ]
+          ],
+          "russian_hint": "рифма - горькая правда (Поёт и утешает)"
         },
         {
           "german": "klingen",
@@ -1612,7 +1649,8 @@
           "sentence_parts": [
             "Über Lear gebeugt beendet Fool das Lied mit einem sanften Kuss auf die Stirn.",
             "Ich presse das Wort „klingen“ zwischen die Zähne, damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "звучать слова весело (Поёт и утешает)"
         }
       ],
       "theatrical_scene": {
@@ -1934,7 +1972,8 @@
           "sentence_parts": [
             "Im verlassenen Hof sitzt Fool auf einem leeren Fass und denkt laut nach.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „die Philosophie“ mein Nordstern."
-          ]
+          ],
+          "russian_hint": "философия проста - мир (Философские размышления)"
         },
         {
           "german": "das Schicksal",
@@ -1945,7 +1984,8 @@
           "sentence_parts": [
             "Unter einer nackten Eiche zählt Fool die Fehler der Mächtigen.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „das Schicksal“ darf nicht vergehen."
-          ]
+          ],
+          "russian_hint": "судьба над Философские размышления (Философские размышления)"
         },
         {
           "german": "die Vergänglichkeit",
@@ -1956,7 +1996,8 @@
           "sentence_parts": [
             "Am stillen Bachlauf wirft Fool Steine, um die Zeit zu messen.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Vergänglichkeit“ gehört mir."
-          ]
+          ],
+          "russian_hint": "бренность власти очевидна (Философские размышления)"
         },
         {
           "german": "nachdenken",
@@ -1967,7 +2008,8 @@
           "sentence_parts": [
             "Neben einer verlassenen Bühne probt Fool Zeilen über Narrheit und Macht.",
             "Das kalte Licht lässt das Wort „nachdenken“ wie geschmolzenes Gold erscheinen."
-          ]
+          ],
+          "russian_hint": "размышлять о (Философские размышления)"
         },
         {
           "german": "erkennen",
@@ -1978,7 +2020,8 @@
           "sentence_parts": [
             "Auf dem Dachboden der Burg sortiert Fool Erinnerungen wie alte Kostüme.",
             "Ich atme tief ein und lasse nur das Wort „erkennen“ wieder hinaus."
-          ]
+          ],
+          "russian_hint": "познавать истину (Философские размышления)"
         },
         {
           "german": "der Sinn",
@@ -1989,7 +2032,8 @@
           "sentence_parts": [
             "Vor einem Spiegel ohne Glas betrachtet Fool das eigene müde Gesicht.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „der Sinn“ mein Nordstern."
-          ]
+          ],
+          "russian_hint": "смысл всего хаоса (Философские размышления)"
         },
         {
           "german": "vergänglich",
@@ -2000,7 +2044,8 @@
           "sentence_parts": [
             "Im ersten Morgenlicht schreibt Fool letzte Sprüche auf Pergament.",
             "Ich atme tief ein und lasse nur das Wort „vergänglich“ wieder hinaus."
-          ]
+          ],
+          "russian_hint": "преходящий глупость вечна (Философские размышления)"
         }
       ],
       "theatrical_scene": {
@@ -2288,7 +2333,8 @@
           "sentence_parts": [
             "Im Nebel des Morgens löst sich Fool zwischen den Zelten der Armee auf.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „verschwinden“ gehört mir."
-          ]
+          ],
+          "russian_hint": "исчезать Пришло время (Таинственно исчезает)"
         },
         {
           "german": "das Geheimnis",
@@ -2300,7 +2346,8 @@
             "Auf dem verlassenen Pfad lässt Fool nur ein Glöckchen zurück.",
             "Ich presse das Wort „das Geheimnis“ zwischen die Zähne,",
             "damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "тайна которую никто не (Таинственно исчезает)"
         },
         {
           "german": "die Leere",
@@ -2311,7 +2358,8 @@
           "sentence_parts": [
             "Zwischen verstreuten Karten verschwindet Fool hinter einem Wandteppich.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Leere“ bleibt lebendig."
-          ]
+          ],
+          "russian_hint": "пустота эхо смеха (Таинственно исчезает)"
         },
         {
           "german": "sich auflösen",
@@ -2322,7 +2370,8 @@
           "sentence_parts": [
             "Am Rand des Schlachtfelds weht Fools bunter Schal davon.",
             "Ich zeichne das Wort „sich auflösen“ mit unsichtbarer Tinte auf meine Handfläche."
-          ]
+          ],
+          "russian_hint": "растворяться как (Таинственно исчезает)"
         },
         {
           "german": "spurlos",
@@ -2333,7 +2382,8 @@
           "sentence_parts": [
             "Unter den Blicken der Soldaten verbeugt sich Fool und geht ohne Abschied.",
             "Ich umarme das Wort „spurlos“, als wäre es mein einziger Verbündeter."
-          ]
+          ],
+          "russian_hint": "бесследно ухожу из (Таинственно исчезает)"
         },
         {
           "german": "der Nebel",
@@ -2344,7 +2394,8 @@
           "sentence_parts": [
             "Auf der Treppe der Burg bleibt Fools Schellenstab einsam liegen.",
             "Ich atme tief ein und lasse nur das Wort „der Nebel“ wieder hinaus."
-          ]
+          ],
+          "russian_hint": "туман на рассвете (Таинственно исчезает)"
         },
         {
           "german": "rätselhaft",
@@ -2355,7 +2406,8 @@
           "sentence_parts": [
             "Im Rauschen des Meeres verliert sich Fools Stimme wie ein ferner Traum.",
             "Ich umarme das Wort „rätselhaft“, als wäre es mein einziger Verbündeter."
-          ]
+          ],
+          "russian_hint": "загадочный как песни (Таинственно исчезает)"
         },
         {
           "german": "fortgehen",
@@ -2366,7 +2418,8 @@
           "sentence_parts": [
             "Vor der aufgehenden Sonne wirft Fool einen letzten Schatten und verblasst.",
             "Ich zeichne das Wort „fortgehen“ in Gedanken über die Linien des Schicksals."
-          ]
+          ],
+          "russian_hint": "уходить бесследно из (Таинственно исчезает)"
         }
       ],
       "theatrical_scene": {
