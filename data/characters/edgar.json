@@ -25,7 +25,8 @@
           "sentence_parts": [
             "Edgar steht unter dem glühenden Kronleuchter des Thronsaals.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „der Adel“ bleibt lebendig."
-          ]
+          ],
+          "russian_hint": "знать мир чести (Законный наследник)"
         },
         {
           "german": "der Erbe",
@@ -36,7 +37,8 @@
           "sentence_parts": [
             "Neben der ausgerollten Reichskarte beugt sich Edgar über Lears schweren Tisch.",
             "Mein Atem zeichnet das Wort „der Erbe“ in die kalte Luft zwischen uns."
-          ]
+          ],
+          "russian_hint": "наследник графа (Законный наследник)"
         },
         {
           "german": "das Königreich",
@@ -47,7 +49,8 @@
           "sentence_parts": [
             "Vor den steinernen Ahnenstatuen verschränkt Edgar die Hände hinter dem Rücken.",
             "Wie ein stilles Gebet legt sich das Wort „das Königreich“ auf meine Lippen."
-          ]
+          ],
+          "russian_hint": "королевство верной службы (Законный наследник)"
         },
         {
           "german": "vertrauen",
@@ -58,7 +61,8 @@
           "sentence_parts": [
             "Zwischen flüsternden Höflingen gleitet Edgar über den kalten Marmorboden.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „vertrauen“ gehört mir."
-          ]
+          ],
+          "russian_hint": "доверять без сомнений (Законный наследник)"
         },
         {
           "german": "die Ehre",
@@ -69,7 +73,8 @@
           "sentence_parts": [
             "Am Rand des purpurnen Teppichs wartet Edgar auf ein Zeichen des Königs.",
             "Wie ein stilles Gebet legt sich das Wort „die Ehre“ auf meine Lippen."
-          ]
+          ],
+          "russian_hint": "честь семьи незапятнанна (Законный наследник)"
         },
         {
           "german": "legitim",
@@ -80,7 +85,8 @@
           "sentence_parts": [
             "Unter wehenden Standarten der Schwestern senkt Edgar kurz den Blick.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „legitim“ bleibt lebendig."
-          ]
+          ],
+          "russian_hint": "законный сын графа (Законный наследник)"
         },
         {
           "german": "der Graf",
@@ -91,7 +97,8 @@
           "sentence_parts": [
             "Hinter der vergoldeten Balustrade beobachtet Edgar das gespannte Antlitz des Hofes.",
             "Das kalte Licht lässt das Wort „der Graf“ wie geschmolzenes Gold erscheinen."
-          ]
+          ],
+          "russian_hint": "граф Глостер верный (Законный наследник)"
         },
         {
           "german": "ahnungslos",
@@ -102,7 +109,8 @@
           "sentence_parts": [
             "Im Schein der offenen Feuerbecken erhebt Edgar langsam die Stimme.",
             "Ich presse das Wort „ahnungslos“ zwischen die Zähne, damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "ничего не подозревая (Законный наследник)"
         }
       ],
       "quizzes": [
@@ -424,7 +432,8 @@
           "sentence_parts": [
             "Im hallenden Torbogen von Gonerils Burg verharrt Edgar zwischen gepackten Kisten.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „fliehen“ mein Nordstern."
-          ]
+          ],
+          "russian_hint": "бежать должен (Предательство Эдмунда)"
         },
         {
           "german": "der Verrat",
@@ -435,7 +444,8 @@
           "sentence_parts": [
             "Auf der windigen Freitreppe blickt Edgar zum schweigenden Hof hinunter.",
             "Ich umarme das Wort „der Verrat“, als wäre es mein einziger Verbündeter."
-          ]
+          ],
+          "russian_hint": "предательство брата как нож (Предательство Эдмунда)"
         },
         {
           "german": "die Gefahr",
@@ -446,7 +456,8 @@
           "sentence_parts": [
             "Zwischen zurückgelassenen Dienern schließt Edgar den Reisemantel enger.",
             "Ich zeichne das Wort „die Gefahr“ mit unsichtbarer Tinte auf meine Handfläche."
-          ]
+          ],
+          "russian_hint": "опасность повсюду Предательство Эдмунда (Предательство Эдмунда)"
         },
         {
           "german": "verfolgen",
@@ -457,7 +468,8 @@
           "sentence_parts": [
             "Am dunklen Pferdestall streicht Edgar einem nervösen Tier über die Mähne.",
             "Ich zeichne das Wort „verfolgen“ mit unsichtbarer Tinte auf meine Handfläche."
-          ]
+          ],
+          "russian_hint": "преследовать Солдаты как (Предательство Эдмунда)"
         },
         {
           "german": "verstecken",
@@ -468,7 +480,8 @@
           "sentence_parts": [
             "Vor dem knarrenden Fallgatter tastet Edgar ein letztes Mal nach dem Haustor.",
             "Das kalte Licht lässt das Wort „verstecken“ wie geschmolzenes Gold erscheinen."
-          ]
+          ],
+          "russian_hint": "прятаться в (Предательство Эдмунда)"
         },
         {
           "german": "die Intrige",
@@ -479,7 +492,8 @@
           "sentence_parts": [
             "Zwischen verstreuten Schriftrollen dreht Edgar den Ring an der Hand.",
             "Mein Atem zeichnet das Wort „die Intrige“ in die kalte Luft zwischen uns."
-          ]
+          ],
+          "russian_hint": "интрига Эдмунда совершенна - (Предательство Эдмунда)"
         },
         {
           "german": "der Betrug",
@@ -490,7 +504,8 @@
           "sentence_parts": [
             "Am leeren Bankettisch zählt Edgar die verlöschenden Kerzen.",
             "Wie ein stilles Gebet legt sich das Wort „der Betrug“ auf meine Lippen."
-          ]
+          ],
+          "russian_hint": "обман раскрыт слишком поздно (Предательство Эдмунда)"
         },
         {
           "german": "verbannen",
@@ -501,7 +516,8 @@
           "sentence_parts": [
             "Zwischen schweigenden Wachen geht Edgar auf den kalten Hof hinaus.",
             "Ich atme tief ein und lasse nur das Wort „verbannen“ wieder hinaus."
-          ]
+          ],
+          "russian_hint": "изгонять из страны (Предательство Эдмунда)"
         }
       ],
       "quizzes": [
@@ -823,7 +839,8 @@
           "sentence_parts": [
             "Im zugigen Seitenflügel lauscht Edgar dem Heulen der Küstenwinde.",
             "Mit fester Stimme schwöre ich mir: Das Wort „der Wahnsinn“ wird heute nicht verraten."
-          ]
+          ],
+          "russian_hint": "безумие - маска (Превращение в безумца)"
         },
         {
           "german": "der Bettler",
@@ -834,7 +851,8 @@
           "sentence_parts": [
             "Vor dem rauchigen Kamin der Burg faltet Edgar einen zerknitterten Brief.",
             "Ich halte das Wort „der Bettler“ wie eine Fackel vor meinem Herzen."
-          ]
+          ],
+          "russian_hint": "нищий для врагов (Превращение в безумца)"
         },
         {
           "german": "die Verkleidung",
@@ -845,7 +863,8 @@
           "sentence_parts": [
             "Unter farblosen Wandteppichen schreitet Edgar rastlos auf und ab.",
             "Mit fester Stimme schwöre ich mir: Das Wort „die Verkleidung“ wird heute nicht verraten."
-          ]
+          ],
+          "russian_hint": "маскировка мою жизнь (Превращение в безумца)"
         },
         {
           "german": "nackt",
@@ -856,7 +875,8 @@
           "sentence_parts": [
             "An der schmalen Fensterluke zählt Edgar die Fackeln auf dem Hof.",
             "Ich presse das Wort „nackt“ zwischen die Zähne, damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "голый брожу по (Превращение в безумца)"
         },
         {
           "german": "murmeln",
@@ -867,7 +887,8 @@
           "sentence_parts": [
             "Zwischen Reisekoffern der Gesandten sucht Edgar nach frischen Botschaften.",
             "Ich halte das Wort „murmeln“ wie eine Fackel vor meinem Herzen."
-          ]
+          ],
+          "russian_hint": "бормотать бессмыслицу (Превращение в безумца)"
         },
         {
           "german": "zittern",
@@ -878,7 +899,8 @@
           "sentence_parts": [
             "Im stillen Kapellenraum kniet Edgar vor der kalten Steinfigur.",
             "Ich presse das Wort „zittern“ zwischen die Zähne, damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "дрожать от (Превращение в безумца)"
         },
         {
           "german": "das Elend",
@@ -890,7 +912,8 @@
             "Auf dem Balkon, den das Meer besprüht, hält Edgar die Laterne fest.",
             "Ich presse das Wort „das Elend“ zwischen die Zähne,",
             "damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "нищета правде о человеческой (Превращение в безумца)"
         },
         {
           "german": "wahnsinnig",
@@ -901,7 +924,8 @@
           "sentence_parts": [
             "Im Schatten der hohen Burgmauern schreibt Edgar eine fiebrige Antwort.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „wahnsinnig“ bleibt lebendig."
-          ]
+          ],
+          "russian_hint": "совсем безумен (Превращение в безумца)"
         }
       ],
       "quizzes": [
@@ -1227,7 +1251,8 @@
           "sentence_parts": [
             "Mitten auf der vom Regen gepeitschten Heide stemmt sich Edgar gegen den Wind.",
             "Wie ein stilles Gebet legt sich das Wort „der Sturm“ auf meine Lippen."
-          ]
+          ],
+          "russian_hint": "буря над Встреча с (Встреча с Лиром)"
         },
         {
           "german": "frieren",
@@ -1238,7 +1263,8 @@
           "sentence_parts": [
             "Unter einem zerrissenen Banner schützt Edgar die Augen vor den Blitzen.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „frieren“ bleibt lebendig."
-          ]
+          ],
+          "russian_hint": "мёрзнуть вместе (Встреча с Лиром)"
         },
         {
           "german": "leiden",
@@ -1249,7 +1275,8 @@
           "sentence_parts": [
             "Am Rand eines umgestürzten Baumes sucht Edgar Deckung vor dem Donner.",
             "Ich atme tief ein und lasse nur das Wort „leiden“ wieder hinaus."
-          ]
+          ],
+          "russian_hint": "переносить страдания (Встреча с Лиром)"
         },
         {
           "german": "die Hütte",
@@ -1260,7 +1287,8 @@
           "sentence_parts": [
             "Zwischen schäumenden Wassergräben stolpert Edgar durch den Schlamm.",
             "Ich umarme das Wort „die Hütte“, als wäre es mein einziger Verbündeter."
-          ]
+          ],
+          "russian_hint": "хижина нашли убежище (Встреча с Лиром)"
         },
         {
           "german": "beschützen",
@@ -1271,7 +1299,8 @@
           "sentence_parts": [
             "Vor einem zuckenden Himmel hebt Edgar die Arme trotzig an.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „beschützen“ bleibt lebendig."
-          ]
+          ],
+          "russian_hint": "защищать тайно безумного (Встреча с Лиром)"
         },
         {
           "german": "begleiten",
@@ -1282,7 +1311,8 @@
           "sentence_parts": [
             "Unter dem durchtränkten Umhang presst Edgar den Atem gegen die Kälte.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „begleiten“ bleibt lebendig."
-          ]
+          ],
+          "russian_hint": "сопровождать Как в (Встреча с Лиром)"
         },
         {
           "german": "der Donner",
@@ -1293,7 +1323,8 @@
           "sentence_parts": [
             "Am kläglichen Feuerrest wärmt Edgar zitternde Finger.",
             "Ich zeichne das Wort „der Donner“ in Gedanken über die Linien des Schicksals."
-          ]
+          ],
+          "russian_hint": "гром Встреча с Лиром (Встреча с Лиром)"
         },
         {
           "german": "der Blitz",
@@ -1304,7 +1335,8 @@
           "sentence_parts": [
             "Zwischen heulenden Hunden ruft Edgar gegen den tosenden Sturm an.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „der Blitz“ darf nicht vergehen."
-          ]
+          ],
+          "russian_hint": "молния страдания Встреча с (Встреча с Лиром)"
         }
       ],
       "quizzes": [
@@ -1630,7 +1662,8 @@
           "sentence_parts": [
             "Im dunklen Zelt der Feldärzte sitzt Edgar bei der flackernden Kerze.",
             "Ich atme tief ein und lasse nur das Wort „blind“ wieder hinaus."
-          ]
+          ],
+          "russian_hint": "слепой Спасение отца (Спасение отца)"
         },
         {
           "german": "führen",
@@ -1641,7 +1674,8 @@
           "sentence_parts": [
             "Zwischen zerbeulten Rüstungen streicht Edgar über ein altes Wappen.",
             "Ich atme tief ein und lasse nur das Wort „führen“ wieder hinaus."
-          ]
+          ],
+          "russian_hint": "вести не (Спасение отца)"
         },
         {
           "german": "die Klippe",
@@ -1652,7 +1686,8 @@
           "sentence_parts": [
             "Am niedrigen Dachbalken der Hütte stößt Edgar fast den Kopf.",
             "Ich halte das Wort „die Klippe“ wie eine Fackel vor meinem Herzen."
-          ]
+          ],
+          "russian_hint": "утёс в Дувре (Спасение отца)"
         },
         {
           "german": "täuschen",
@@ -1663,7 +1698,8 @@
           "sentence_parts": [
             "Neben der schlafenden Wache flüstert Edgar in die schwere Nacht.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „täuschen“ gehört mir."
-          ]
+          ],
+          "russian_hint": "обманывать спасти (Спасение отца)"
         },
         {
           "german": "retten",
@@ -1674,7 +1710,8 @@
           "sentence_parts": [
             "Vor dem einfachen Feldbett betrachtet Edgar die Narben vergangener Schlachten.",
             "Mit fester Stimme schwöre ich mir: Das Wort „retten“ wird heute nicht verraten."
-          ]
+          ],
+          "russian_hint": "спасать обманываю (Спасение отца)"
         },
         {
           "german": "die List",
@@ -1685,7 +1722,8 @@
           "sentence_parts": [
             "Im Geruch von feuchtem Stroh legt Edgar den Mantel zur Seite.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „die List“ mein Nordstern."
-          ]
+          ],
+          "russian_hint": "хитрость во имя любви (Спасение отца)"
         },
         {
           "german": "trösten",
@@ -1696,7 +1734,8 @@
           "sentence_parts": [
             "Auf dem wackligen Holztisch ordnet Edgar zerlesene Briefe.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „trösten“ darf nicht vergehen."
-          ]
+          ],
+          "russian_hint": "утешать как (Спасение отца)"
         },
         {
           "german": "die Verzweiflung",
@@ -1707,7 +1746,8 @@
           "sentence_parts": [
             "Am Eingang der Hütte späht Edgar nach einem vertrauten Schatten.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Verzweiflung“ gehört mir."
-          ]
+          ],
+          "russian_hint": "отчаяние отца сердце (Спасение отца)"
         }
       ],
       "quizzes": [
@@ -2029,7 +2069,8 @@
           "sentence_parts": [
             "Auf den weißen Klippen von Dover blickt Edgar in den aufgewühlten Kanal.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „der Kampf“ mein Nordstern."
-          ]
+          ],
+          "russian_hint": "бой с Поединок Эдмундом (Поединок с Эдмундом)"
         },
         {
           "german": "das Duell",
@@ -2040,7 +2081,8 @@
           "sentence_parts": [
             "Zwischen flatternden Feldzeichen richtet Edgar den Helm.",
             "Ich atme tief ein und lasse nur das Wort „das Duell“ wieder hinaus."
-          ]
+          ],
+          "russian_hint": "дуэль всё Поединок с (Поединок с Эдмундом)"
         },
         {
           "german": "die Rache",
@@ -2052,7 +2094,8 @@
             "Am Lagerfeuer der Franzosen zeichnet Edgar Marschrouten in den Sand.",
             "Ich presse das Wort „die Rache“ zwischen die Zähne,",
             "damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "месть обидчикам (Поединок с Эдмундом)"
         },
         {
           "german": "enthüllen",
@@ -2063,7 +2106,8 @@
           "sentence_parts": [
             "Neben verschnürten Versorgungskisten kontrolliert Edgar das Siegel.",
             "Ich halte das Wort „enthüllen“ wie eine Fackel vor meinem Herzen."
-          ]
+          ],
+          "russian_hint": "разоблачать - (Поединок с Эдмундом)"
         },
         {
           "german": "siegen",
@@ -2074,7 +2118,8 @@
           "sentence_parts": [
             "Vor dem Seidenzelt der Heerführer lauscht Edgar dem dumpfen Meer.",
             "Mein Atem zeichnet das Wort „siegen“ in die kalte Luft zwischen uns."
-          ]
+          ],
+          "russian_hint": "побеждать Правда должна ложь (Поединок с Эдмундом)"
         },
         {
           "german": "die Gerechtigkeit",
@@ -2085,7 +2130,8 @@
           "sentence_parts": [
             "Auf dem sandigen Trainingsplatz übt Edgar das Ziehen des Schwerts.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Gerechtigkeit“ darf nicht vergehen."
-          ]
+          ],
+          "russian_hint": "справедливость меч Поединок с (Поединок с Эдмундом)"
         },
         {
           "german": "das Schwert",
@@ -2096,7 +2142,8 @@
           "sentence_parts": [
             "Zwischen pochenden Trommeln hebt Edgar das Banner der Hoffnung.",
             "Ich zeichne das Wort „das Schwert“ mit unsichtbarer Tinte auf meine Handfläche."
-          ]
+          ],
+          "russian_hint": "меч в руке - (Поединок с Эдмундом)"
         },
         {
           "german": "der Bruder",
@@ -2107,7 +2154,8 @@
           "sentence_parts": [
             "Am Morgennebel der Küste legt Edgar die Hand auf das pochende Herz.",
             "Wie ein stilles Gebet legt sich das Wort „der Bruder“ auf meine Lippen."
-          ]
+          ],
+          "russian_hint": "брат отца Поединок с (Поединок с Эдмундом)"
         }
       ],
       "quizzes": [
@@ -2429,7 +2477,8 @@
           "sentence_parts": [
             "Im feuchten Kerker stützt Edgar sich an den tropfenden Stein.",
             "Ich halte das Wort „überleben“ wie eine Fackel vor meinem Herzen."
-          ]
+          ],
+          "russian_hint": "выживать Новый граф (Новый граф)"
         },
         {
           "german": "erben",
@@ -2440,7 +2489,8 @@
           "sentence_parts": [
             "Unter der trüben Laterne zählt Edgar die eisernen Ringe der Kette.",
             "Mit fester Stimme schwöre ich mir: Das Wort „erben“ wird heute nicht verraten."
-          ]
+          ],
+          "russian_hint": "наследовать Теперь титул (Новый граф)"
         },
         {
           "german": "die Zukunft",
@@ -2451,7 +2501,8 @@
           "sentence_parts": [
             "Neben der schweren Holztür horcht Edgar auf entferntes Schluchzen.",
             "Das Echo des Wortes „die Zukunft“ übertönt das Flüstern der Höflinge."
-          ]
+          ],
+          "russian_hint": "будущее королевства в руках (Новый граф)"
         },
         {
           "german": "regieren",
@@ -2462,7 +2513,8 @@
           "sentence_parts": [
             "Auf der kalten Steinbank zieht Edgar den Mantel enger um die Schultern.",
             "Ich atme tief ein und lasse nur das Wort „regieren“ wieder hinaus."
-          ]
+          ],
+          "russian_hint": "править буду с (Новый граф)"
         },
         {
           "german": "die Weisheit",
@@ -2473,7 +2525,8 @@
           "sentence_parts": [
             "Zwischen Schatten der Gitterstäbe hebt Edgar das Gesicht zum Licht.",
             "Ich halte das Wort „die Weisheit“ wie eine Fackel vor meinem Herzen."
-          ]
+          ],
+          "russian_hint": "мудрость обретённой через страдания (Новый граф)"
         },
         {
           "german": "die Ordnung",
@@ -2484,7 +2537,8 @@
           "sentence_parts": [
             "Am rostigen Wassereimer spiegelt Edgar kurz die eigenen Augen.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „die Ordnung“ bleibt lebendig."
-          ]
+          ],
+          "russian_hint": "порядок должен из хаоса (Новый граф)"
         },
         {
           "german": "die Verantwortung",
@@ -2495,7 +2549,8 @@
           "sentence_parts": [
             "Im dumpfen Hall der Schritte zählt Edgar den Rhythmus der Wachen.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Verantwortung“ darf nicht vergehen."
-          ]
+          ],
+          "russian_hint": "ответственность огромна готов (Новый граф)"
         },
         {
           "german": "neu",
@@ -2506,7 +2561,8 @@
           "sentence_parts": [
             "Vor dem verriegelten Fenster zeichnet Edgar Kreise in den Staub.",
             "Mit fester Stimme schwöre ich mir: Das Wort „neu“ wird heute nicht verraten."
-          ]
+          ],
+          "russian_hint": "новый эра начинается (Новый граф)"
         }
       ],
       "quizzes": [

@@ -25,7 +25,8 @@
           "sentence_parts": [
             "Regan steht unter dem glühenden Kronleuchter des Thronsaals.",
             "Mein Atem zeichnet das Wort „vortäuschen“ in die kalte Luft zwischen uns."
-          ]
+          ],
+          "russian_hint": "притворяться ещё (Соревнование в лести)"
         },
         {
           "german": "übertreffen",
@@ -36,7 +37,8 @@
           "sentence_parts": [
             "Neben der ausgerollten Reichskarte beugt sich Regan über Lears schweren Tisch.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „übertreffen“ bleibt lebendig."
-          ]
+          ],
+          "russian_hint": "превосходить должна сестру (Соревнование в лести)"
         },
         {
           "german": "wetteifern",
@@ -47,7 +49,8 @@
           "sentence_parts": [
             "Vor den steinernen Ahnenstatuen verschränkt Regan die Hände hinter dem Rücken.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „wetteifern“ darf nicht vergehen."
-          ]
+          ],
+          "russian_hint": "состязаться за (Соревнование в лести)"
         },
         {
           "german": "die Falschheit",
@@ -58,7 +61,8 @@
           "sentence_parts": [
             "Zwischen flüsternden Höflingen gleitet Regan über den kalten Marmorboden.",
             "Mit fester Stimme schwöre ich mir: Das Wort „die Falschheit“ wird heute nicht verraten."
-          ]
+          ],
+          "russian_hint": "фальшь слов совершенна (Соревнование в лести)"
         },
         {
           "german": "vorspielen",
@@ -69,7 +73,8 @@
           "sentence_parts": [
             "Am Rand des purpurnen Teppichs wartet Regan auf ein Zeichen des Königs.",
             "Das Echo des Wortes „vorspielen“ übertönt das Flüstern der Höflinge."
-          ]
+          ],
+          "russian_hint": "разыгрывать идеальную (Соревнование в лести)"
         },
         {
           "german": "die List",
@@ -80,7 +85,8 @@
           "sentence_parts": [
             "Unter wehenden Standarten der Schwestern senkt Regan kurz den Blick.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „die List“ darf nicht vergehen."
-          ]
+          ],
+          "russian_hint": "хитрость - оружие (Соревнование в лести)"
         },
         {
           "german": "erschleichen",
@@ -91,7 +97,8 @@
           "sentence_parts": [
             "Hinter der vergoldeten Balustrade beobachtet Regan das gespannte Antlitz des Hofes.",
             "Wie ein stilles Gebet legt sich das Wort „erschleichen“ auf meine Lippen."
-          ]
+          ],
+          "russian_hint": "выманивать королевство (Соревнование в лести)"
         },
         {
           "german": "die Habgier",
@@ -102,7 +109,8 @@
           "sentence_parts": [
             "Im Schein der offenen Feuerbecken erhebt Regan langsam die Stimme.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „die Habgier“ gehört mir."
-          ]
+          ],
+          "russian_hint": "алчность Соревнование в лести (Соревнование в лести)"
         }
       ],
       "quizzes": [
@@ -424,7 +432,8 @@
           "sentence_parts": [
             "Im hallenden Torbogen von Gonerils Burg verharrt Regan zwischen gepackten Kisten.",
             "Mein Atem zeichnet das Wort „das Bündnis“ in die kalte Luft zwischen uns."
-          ]
+          ],
+          "russian_hint": "союз с сестрой (Союз с сестрой)"
         },
         {
           "german": "teilen",
@@ -435,7 +444,8 @@
           "sentence_parts": [
             "Auf der windigen Freitreppe blickt Regan zum schweigenden Hof hinunter.",
             "Mit fester Stimme schwöre ich mir: Das Wort „teilen“ wird heute nicht verraten."
-          ]
+          ],
+          "russian_hint": "делить королевство (Союз с сестрой)"
         },
         {
           "german": "planen",
@@ -446,7 +456,8 @@
           "sentence_parts": [
             "Zwischen zurückgelassenen Dienern schließt Regan den Reisemantel enger.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „planen“ bleibt lebendig."
-          ]
+          ],
+          "russian_hint": "планировать Вместе падение (Союз с сестрой)"
         },
         {
           "german": "verschwören",
@@ -457,7 +468,8 @@
           "sentence_parts": [
             "Am dunklen Pferdestall streicht Regan einem nervösen Tier über die Mähne.",
             "Ich halte das Wort „verschwören“ wie eine Fackel vor meinem Herzen."
-          ]
+          ],
+          "russian_hint": "заговорить против (Союз с сестрой)"
         },
         {
           "german": "die Absprache",
@@ -468,7 +480,8 @@
           "sentence_parts": [
             "Vor dem knarrenden Fallgatter tastet Regan ein letztes Mal nach dem Haustor.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „die Absprache“ darf nicht vergehen."
-          ]
+          ],
+          "russian_hint": "сговор между крепок как (Союз с сестрой)"
         },
         {
           "german": "vereinbaren",
@@ -479,7 +492,8 @@
           "sentence_parts": [
             "Zwischen verstreuten Schriftrollen dreht Regan den Ring an der Hand.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „vereinbaren“ bleibt lebendig."
-          ]
+          ],
+          "russian_hint": "договариваться действовать (Союз с сестрой)"
         },
         {
           "german": "die Strategie",
@@ -490,7 +504,8 @@
           "sentence_parts": [
             "Am leeren Bankettisch zählt Regan die verlöschenden Kerzen.",
             "Das Echo des Wortes „die Strategie“ übertönt das Flüstern der Höflinge."
-          ]
+          ],
+          "russian_hint": "стратегия проста - сделать (Союз с сестрой)"
         }
       ],
       "quizzes": [
@@ -778,7 +793,8 @@
           "sentence_parts": [
             "Im zugigen Seitenflügel lauscht Regan dem Heulen der Küstenwinde.",
             "Mein Atem zeichnet das Wort „foltern“ in die kalte Luft zwischen uns."
-          ]
+          ],
+          "russian_hint": "пытать Теперь очередь (Унижение отца)"
         },
         {
           "german": "erniedrigen",
@@ -789,7 +805,8 @@
           "sentence_parts": [
             "Vor dem rauchigen Kamin der Burg faltet Regan einen zerknitterten Brief.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „erniedrigen“ gehört mir."
-          ]
+          ],
+          "russian_hint": "понижать статус (Унижение отца)"
         },
         {
           "german": "verhöhnen",
@@ -800,7 +817,8 @@
           "sentence_parts": [
             "Unter farblosen Wandteppichen schreitet Regan rastlos auf und ab.",
             "Ich halte das Wort „verhöhnen“ wie eine Fackel vor meinem Herzen."
-          ]
+          ],
+          "russian_hint": "насмехаться над (Унижение отца)"
         },
         {
           "german": "die Bosheit",
@@ -811,7 +829,8 @@
           "sentence_parts": [
             "An der schmalen Fensterluke zählt Regan die Fackeln auf dem Hof.",
             "Ich halte das Wort „die Bosheit“ wie eine Fackel vor meinem Herzen."
-          ]
+          ],
+          "russian_hint": "злоба во сильнее у (Унижение отца)"
         },
         {
           "german": "misshandeln",
@@ -822,7 +841,8 @@
           "sentence_parts": [
             "Zwischen Reisekoffern der Gesandten sucht Regan nach frischen Botschaften.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „misshandeln“ bleibt lebendig."
-          ]
+          ],
+          "russian_hint": "жестоко обращаться с (Унижение отца)"
         },
         {
           "german": "die Härte",
@@ -834,7 +854,8 @@
             "Im stillen Kapellenraum kniet Regan vor der kalten Steinfigur.",
             "Ich presse das Wort „die Härte“ zwischen die Zähne,",
             "damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "жёсткость моего сердца как (Унижение отца)"
         },
         {
           "german": "abweisen",
@@ -845,7 +866,8 @@
           "sentence_parts": [
             "Auf dem Balkon, den das Meer besprüht, hält Regan die Laterne fest.",
             "Mein Atem zeichnet das Wort „abweisen“ in die kalte Luft zwischen uns."
-          ]
+          ],
+          "russian_hint": "отвергать все (Унижение отца)"
         },
         {
           "german": "die Grausamkeit",
@@ -856,7 +878,8 @@
           "sentence_parts": [
             "Im Schatten der hohen Burgmauern schreibt Regan eine fiebrige Antwort.",
             "Mein Atem zeichnet das Wort „die Grausamkeit“ in die kalte Luft zwischen uns."
-          ]
+          ],
+          "russian_hint": "жестокость - истинная природа (Унижение отца)"
         }
       ],
       "quizzes": [
@@ -1178,7 +1201,8 @@
           "sentence_parts": [
             "Mitten auf der vom Regen gepeitschten Heide stemmt sich Regan gegen den Wind.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „blenden“ darf nicht vergehen."
-          ]
+          ],
+          "russian_hint": "ослеплять Время (Садистское удовольствие)"
         },
         {
           "german": "der Sadismus",
@@ -1189,7 +1213,8 @@
           "sentence_parts": [
             "Unter einem zerrissenen Banner schützt Regan die Augen vor den Blitzen.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „der Sadismus“ bleibt lebendig."
-          ]
+          ],
+          "russian_hint": "садизм во удовольствие (Садистское удовольствие)"
         },
         {
           "german": "genießen",
@@ -1200,7 +1225,8 @@
           "sentence_parts": [
             "Am Rand eines umgestürzten Baumes sucht Regan Deckung vor dem Donner.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „genießen“ gehört mir."
-          ]
+          ],
+          "russian_hint": "наслаждаться криком (Садистское удовольствие)"
         },
         {
           "german": "ausstechen",
@@ -1211,7 +1237,8 @@
           "sentence_parts": [
             "Zwischen schäumenden Wassergräben stolpert Regan durch den Schlamm.",
             "Ich atme tief ein und lasse nur das Wort „ausstechen“ wieder hinaus."
-          ]
+          ],
+          "russian_hint": "выкалывать глаза (Садистское удовольствие)"
         },
         {
           "german": "die Folter",
@@ -1222,7 +1249,8 @@
           "sentence_parts": [
             "Vor einem zuckenden Himmel hebt Regan die Arme trotzig an.",
             "Ich zeichne das Wort „die Folter“ in Gedanken über die Linien des Schicksals."
-          ]
+          ],
+          "russian_hint": "пытка - развлечение (Садистское удовольствие)"
         },
         {
           "german": "erbarmungslos",
@@ -1233,7 +1261,8 @@
           "sentence_parts": [
             "Unter dem durchtränkten Umhang presst Regan den Atem gegen die Kälte.",
             "Ich flüstere den Wächtern des Schicksals zu: Das Wort „erbarmungslos“ darf nicht vergehen."
-          ]
+          ],
+          "russian_hint": "беспощадный в мести (Садистское удовольствие)"
         },
         {
           "german": "die Brutalität",
@@ -1244,7 +1273,8 @@
           "sentence_parts": [
             "Am kläglichen Feuerrest wärmt Regan zitternde Finger.",
             "Das kalte Licht lässt das Wort „die Brutalität“ wie geschmolzenes Gold erscheinen."
-          ]
+          ],
+          "russian_hint": "брутальность Корнуолла Садистское удовольствие (Садистское удовольствие)"
         },
         {
           "german": "zertreten",
@@ -1255,7 +1285,8 @@
           "sentence_parts": [
             "Zwischen heulenden Hunden ruft Regan gegen den tosenden Sturm an.",
             "Mit jeder Faser meines Körpers verspreche ich: Das Wort „zertreten“ bleibt lebendig."
-          ]
+          ],
+          "russian_hint": "растаптывать выколотый (Садистское удовольствие)"
         }
       ],
       "quizzes": [
@@ -1577,7 +1608,8 @@
           "sentence_parts": [
             "Im dunklen Zelt der Feldärzte sitzt Regan bei der flackernden Kerze.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „die Witwe“ mein Nordstern."
-          ]
+          ],
+          "russian_hint": "вдова Смерть Корнуолла (Смерть Корнуолла)"
         },
         {
           "german": "begehren",
@@ -1588,7 +1620,8 @@
           "sentence_parts": [
             "Zwischen zerbeulten Rüstungen streicht Regan über ein altes Wappen.",
             "Der Sturm vor den Fenstern verstärkt den Schwur: Das Wort „begehren“ gehört mir."
-          ]
+          ],
+          "russian_hint": "вожделеть Теперь Эдмунда (Смерть Корнуолла)"
         },
         {
           "german": "verführen",
@@ -1599,7 +1632,8 @@
           "sentence_parts": [
             "Am niedrigen Dachbalken der Hütte stößt Regan fast den Kopf.",
             "Mein Atem zeichnet das Wort „verführen“ in die kalte Luft zwischen uns."
-          ]
+          ],
+          "russian_hint": "соблазнять хочу полностью (Смерть Корнуолла)"
         },
         {
           "german": "die Begierde",
@@ -1610,7 +1644,8 @@
           "sentence_parts": [
             "Neben der schlafenden Wache flüstert Regan in die schwere Nacht.",
             "Ich halte das Wort „die Begierde“ wie eine Fackel vor meinem Herzen."
-          ]
+          ],
+          "russian_hint": "вожделение Смерть Корнуолла (Смерть Корнуолла)"
         },
         {
           "german": "locken",
@@ -1621,7 +1656,8 @@
           "sentence_parts": [
             "Vor dem einfachen Feldbett betrachtet Regan die Narben vergangener Schlachten.",
             "Wie ein stilles Gebet legt sich das Wort „locken“ auf meine Lippen."
-          ]
+          ],
+          "russian_hint": "заманивать обещаниями (Смерть Корнуолла)"
         },
         {
           "german": "die Lust",
@@ -1632,7 +1668,8 @@
           "sentence_parts": [
             "Im Geruch von feuchtem Stroh legt Regan den Mantel zur Seite.",
             "Mit fester Stimme schwöre ich mir: Das Wort „die Lust“ wird heute nicht verraten."
-          ]
+          ],
+          "russian_hint": "похоть разум Смерть Корнуолла (Смерть Корнуолла)"
         },
         {
           "german": "werben",
@@ -1643,7 +1680,8 @@
           "sentence_parts": [
             "Auf dem wackligen Holztisch ordnet Regan zerlesene Briefe.",
             "Mit fester Stimme schwöre ich mir: Das Wort „werben“ wird heute nicht verraten."
-          ]
+          ],
+          "russian_hint": "добиваться любви (Смерть Корнуолла)"
         }
       ],
       "quizzes": [
@@ -1931,7 +1969,8 @@
           "sentence_parts": [
             "Auf den weißen Klippen von Dover blickt Regan in den aufgewühlten Kanal.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „wettkämpfen“ mein Nordstern."
-          ]
+          ],
+          "russian_hint": "соревноваться за (Борьба за Эдмунда)"
         },
         {
           "german": "hassen",
@@ -1942,7 +1981,8 @@
           "sentence_parts": [
             "Zwischen flatternden Feldzeichen richtet Regan den Helm.",
             "Ich zeichne das Wort „hassen“ mit unsichtbarer Tinte auf meine Handfläche."
-          ]
+          ],
+          "russian_hint": "ненавидеть как (Борьба за Эдмунда)"
         },
         {
           "german": "bedrohen",
@@ -1953,7 +1993,8 @@
           "sentence_parts": [
             "Am Lagerfeuer der Franzosen zeichnet Regan Marschrouten in den Sand.",
             "Das Echo des Wortes „bedrohen“ übertönt das Flüstern der Höflinge."
-          ]
+          ],
+          "russian_hint": "угрожать открыто (Борьба за Эдмунда)"
         },
         {
           "german": "die Rivalität",
@@ -1965,7 +2006,8 @@
             "Neben verschnürten Versorgungskisten kontrolliert Regan das Siegel.",
             "Ich presse das Wort „die Rivalität“ zwischen die Zähne,",
             "damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "соперничество между смертельно (Борьба за Эдмунда)"
         },
         {
           "german": "bekämpfen",
@@ -1976,7 +2018,8 @@
           "sentence_parts": [
             "Vor dem Seidenzelt der Heerführer lauscht Regan dem dumpfen Meer.",
             "Ich zeichne das Wort „bekämpfen“ mit unsichtbarer Tinte auf meine Handfläche."
-          ]
+          ],
+          "russian_hint": "бороться с (Борьба за Эдмунда)"
         },
         {
           "german": "misstrauen",
@@ -1987,7 +2030,8 @@
           "sentence_parts": [
             "Auf dem sandigen Trainingsplatz übt Regan das Ziehen des Schwerts.",
             "Das Echo des Wortes „misstrauen“ übertönt das Flüstern der Höflinge."
-          ]
+          ],
+          "russian_hint": "не доверять - (Борьба за Эдмунда)"
         },
         {
           "german": "argwöhnen",
@@ -1998,7 +2042,8 @@
           "sentence_parts": [
             "Zwischen pochenden Trommeln hebt Regan das Banner der Hoffnung.",
             "Ich zeichne das Wort „argwöhnen“ in Gedanken über die Linien des Schicksals."
-          ]
+          ],
+          "russian_hint": "подозревать яд (Борьба за Эдмунда)"
         }
       ],
       "quizzes": [
@@ -2286,7 +2331,8 @@
           "sentence_parts": [
             "Im feuchten Kerker stützt Regan sich an den tropfenden Stein.",
             "Ich atme tief ein und lasse nur das Wort „vergiftet“ wieder hinaus."
-          ]
+          ],
+          "russian_hint": "отравленный сестрой (Отравление сестрой)"
         },
         {
           "german": "leiden",
@@ -2297,7 +2343,8 @@
           "sentence_parts": [
             "Unter der trüben Laterne zählt Regan die eisernen Ringe der Kette.",
             "Ich zeichne das Wort „leiden“ mit unsichtbarer Tinte auf meine Handfläche."
-          ]
+          ],
+          "russian_hint": "переносить страдания (Отравление сестрой)"
         },
         {
           "german": "verenden",
@@ -2308,7 +2355,8 @@
           "sentence_parts": [
             "Neben der schweren Holztür horcht Regan auf entferntes Schluchzen.",
             "Wie ein stilles Gebet legt sich das Wort „verenden“ auf meine Lippen."
-          ]
+          ],
+          "russian_hint": "издыхать как (Отравление сестрой)"
         },
         {
           "german": "die Qual",
@@ -2319,7 +2367,8 @@
           "sentence_parts": [
             "Auf der kalten Steinbank zieht Regan den Mantel enger um die Schultern.",
             "Ich atme tief ein und lasse nur das Wort „die Qual“ wieder hinaus."
-          ]
+          ],
+          "russian_hint": "мучение внутренности Отравление сестрой (Отравление сестрой)"
         },
         {
           "german": "verwünschen",
@@ -2330,7 +2379,8 @@
           "sentence_parts": [
             "Zwischen Schatten der Gitterstäbe hebt Regan das Gesicht zum Licht.",
             "Ich presse das Wort „verwünschen“ zwischen die Zähne, damit kein Zweifel entweicht."
-          ]
+          ],
+          "russian_hint": "проклинать последним (Отравление сестрой)"
         },
         {
           "german": "das Verhängnis",
@@ -2341,7 +2391,8 @@
           "sentence_parts": [
             "Am rostigen Wassereimer spiegelt Regan kurz die eigenen Augen.",
             "Selbst wenn die Welt zerfällt, bleibt das Wort „das Verhängnis“ mein Nordstern."
-          ]
+          ],
+          "russian_hint": "рок настиг Отравление сестрой (Отравление сестрой)"
         },
         {
           "german": "büßen",
@@ -2352,7 +2403,8 @@
           "sentence_parts": [
             "Im dumpfen Hall der Schritte zählt Regan den Rhythmus der Wachen.",
             "Ich halte das Wort „büßen“ wie eine Fackel vor meinem Herzen."
-          ]
+          ],
+          "russian_hint": "расплачиваться за (Отравление сестрой)"
         },
         {
           "german": "verflucht",
@@ -2363,7 +2415,8 @@
           "sentence_parts": [
             "Vor dem verriegelten Fenster zeichnet Regan Kreise in den Staub.",
             "Das kalte Licht lässt das Wort „verflucht“ wie geschmolzenes Gold erscheinen."
-          ]
+          ],
+          "russian_hint": "проклятый кровь (Отравление сестрой)"
         }
       ],
       "quizzes": [
