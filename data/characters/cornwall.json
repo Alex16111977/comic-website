@@ -495,25 +495,29 @@
           "synonyms": [
             {
               "word": "die Wut",
-              "translation": "лють"
+              "translation": "ярость"
             },
             {
-              "word": "der Ärger",
-              "translation": "злість"
+              "word": "der Hass",
+              "translation": "ненависть"
             },
             {
-              "word": "die Rage",
-              "translation": "шаленість"
+              "word": "die Bosheit",
+              "translation": "злоба"
             }
           ],
           "antonyms": [
             {
-              "word": "die Ruhe",
-              "translation": "спокій"
+              "word": "der Friede",
+              "translation": "мир"
             },
             {
-              "word": "der Frieden",
-              "translation": "мир"
+              "word": "die Vergebung",
+              "translation": "прощение"
+            },
+            {
+              "word": "die Ruhe",
+              "translation": "покой"
             }
           ],
           "narration": "Від гнев через контрасти до розуміння."

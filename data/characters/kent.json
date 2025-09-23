@@ -739,26 +739,30 @@
           },
           "synonyms": [
             {
-              "word": "das Unwetter",
-              "translation": "негода"
+              "word": "der Donner",
+              "translation": "гром"
             },
             {
-              "word": "der Orkan",
-              "translation": "ураган"
+              "word": "der Regen",
+              "translation": "дождь"
             },
             {
-              "word": "das Gewitter",
-              "translation": "гроза"
+              "word": "die Kälte",
+              "translation": "холод"
             }
           ],
           "antonyms": [
             {
-              "word": "die Stille",
-              "translation": "тиша"
+              "word": "die Sonne",
+              "translation": "солнце"
             },
             {
-              "word": "die Windstille",
-              "translation": "штиль"
+              "word": "die Ruhe",
+              "translation": "покой"
+            },
+            {
+              "word": "der Schutz",
+              "translation": "защита"
             }
           ],
           "narration": "Від буря через контрасти до розуміння."

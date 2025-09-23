@@ -180,16 +180,16 @@
           },
           "synonyms": [
             {
-              "word": "die Heuchelei",
-              "translation": "лицемерие"
-            },
-            {
-              "word": "der Betrug",
+              "word": "die Täuschung",
               "translation": "обман"
             },
             {
-              "word": "die Täuschung",
-              "translation": "заблуждение"
+              "word": "die Intrige",
+              "translation": "интрига"
+            },
+            {
+              "word": "belügen",
+              "translation": "лгать"
             }
           ],
           "antonyms": [
@@ -198,8 +198,12 @@
               "translation": "правда"
             },
             {
-              "word": "die Ehrlichkeit",
-              "translation": "честность"
+              "word": "aufrichtig",
+              "translation": "искренний"
+            },
+            {
+              "word": "die Treue",
+              "translation": "верность"
             }
           ],
           "narration": "Гонерилья мастерски использует ложь для достижения целей."
@@ -214,19 +218,32 @@
           },
           "synonyms": [
             {
-              "word": "geloben",
-              "translation": "присягать"
-            },
-            {
               "word": "versprechen",
               "translation": "обещать"
             },
             {
-              "word": "beschwören",
-              "translation": "заклясться"
+              "word": "verkünden",
+              "translation": "провозглашать"
+            },
+            {
+              "word": "drohen",
+              "translation": "угрожать"
             }
           ],
-          "antonyms": [],
+          "antonyms": [
+            {
+              "word": "brechen",
+              "translation": "ломать"
+            },
+            {
+              "word": "lügen",
+              "translation": "лгать"
+            },
+            {
+              "word": "widerrufen",
+              "translation": "отменять"
+            }
+          ],
           "narration": "Від клясться через контрасти до розуміння."
         }
       ],
@@ -453,25 +470,29 @@
           "synonyms": [
             {
               "word": "die Herrschaft",
-              "translation": "господство"
+              "translation": "господство, господство, правление, правление"
             },
             {
-              "word": "die Gewalt",
-              "translation": "сила"
+              "word": "der Befehl",
+              "translation": "приказ"
             },
             {
-              "word": "die Autorität",
-              "translation": "авторитет"
+              "word": "herrschen",
+              "translation": "править"
             }
           ],
           "antonyms": [
             {
               "word": "die Schwäche",
-              "translation": "слабість"
+              "translation": "слабость"
             },
             {
-              "word": "die Ohnmacht",
-              "translation": "безсилля"
+              "word": "die Demut",
+              "translation": "смирение"
+            },
+            {
+              "word": "die Niederlage",
+              "translation": "поражение"
             }
           ],
           "narration": "Від власть через контрасти до розуміння."
@@ -487,25 +508,29 @@
           "synonyms": [
             {
               "word": "regieren",
-              "translation": "керувати"
+              "translation": "править, править, управлять, управлять"
             },
             {
-              "word": "befehlen",
-              "translation": "наказувати"
+              "word": "beherrschen",
+              "translation": "владеть, господствовать, господствовать"
             },
             {
-              "word": "dominieren",
-              "translation": "домінувати"
+              "word": "führen",
+              "translation": "вести"
             }
           ],
           "antonyms": [
             {
-              "word": "gehorchen",
-              "translation": "підкорятися"
+              "word": "dienen",
+              "translation": "служить"
             },
             {
-              "word": "dienen",
-              "translation": "служити"
+              "word": "folgen",
+              "translation": "следовать"
+            },
+            {
+              "word": "gehorchen",
+              "translation": "повиноваться, повиноваться, подчиняться"
             }
           ],
           "narration": "Від править через контрасти до розуміння."
@@ -715,15 +740,28 @@
               "translation": "унижать"
             },
             {
-              "word": "beleidigen",
-              "translation": "оскорблять"
+              "word": "verhöhnen",
+              "translation": "высмеивать, высмеивать, насмехаться, насмехаться"
             },
             {
-              "word": "herabsetzen",
-              "translation": "принижать"
+              "word": "beleidigen",
+              "translation": "оскорблять"
             }
           ],
-          "antonyms": [],
+          "antonyms": [
+            {
+              "word": "ehren",
+              "translation": "чтить"
+            },
+            {
+              "word": "achten",
+              "translation": "уважать"
+            },
+            {
+              "word": "beschützen",
+              "translation": "защищать"
+            }
+          ],
           "narration": "Від унижать через контрасти до розуміння."
         },
         {
@@ -736,19 +774,32 @@
           },
           "synonyms": [
             {
-              "word": "brutal",
-              "translation": "жестокий"
+              "word": "erbarmungslos",
+              "translation": "беспощадный"
             },
             {
               "word": "gnadenlos",
               "translation": "безжалостный"
             },
             {
-              "word": "unbarmherzig",
-              "translation": "свирепый"
+              "word": "die Härte",
+              "translation": "жёсткость, жёсткость, суровость, суровость"
             }
           ],
-          "antonyms": [],
+          "antonyms": [
+            {
+              "word": "mild",
+              "translation": "мягкий"
+            },
+            {
+              "word": "die Güte",
+              "translation": "доброта"
+            },
+            {
+              "word": "die Liebe",
+              "translation": "любовь"
+            }
+          ],
           "narration": "Від жестокий через контрасти до розуміння."
         }
       ]
@@ -933,19 +984,32 @@
           },
           "synonyms": [
             {
+              "word": "verbannen",
+              "translation": "изгнать, изгнать, изгонять"
+            },
+            {
               "word": "vertreiben",
-              "translation": "изгонять"
+              "translation": "изгонять, изгонять, прогонять"
             },
             {
               "word": "abweisen",
               "translation": "отвергать"
-            },
-            {
-              "word": "verleugnen",
-              "translation": "отрекаться"
             }
           ],
-          "antonyms": [],
+          "antonyms": [
+            {
+              "word": "zurückkehren",
+              "translation": "возвращаться"
+            },
+            {
+              "word": "halten",
+              "translation": "держать"
+            },
+            {
+              "word": "beschützen",
+              "translation": "защищать"
+            }
+          ],
           "narration": "Від отвергать через контрасти до розуміння."
         },
         {
@@ -958,26 +1022,30 @@
           },
           "synonyms": [
             {
-              "word": "das Unwetter",
-              "translation": "негода"
+              "word": "der Donner",
+              "translation": "гром"
             },
             {
-              "word": "der Orkan",
-              "translation": "ураган"
+              "word": "der Regen",
+              "translation": "дождь"
             },
             {
-              "word": "das Gewitter",
-              "translation": "гроза"
+              "word": "die Kälte",
+              "translation": "холод"
             }
           ],
           "antonyms": [
             {
-              "word": "die Stille",
-              "translation": "тиша"
+              "word": "die Sonne",
+              "translation": "солнце"
             },
             {
-              "word": "die Windstille",
-              "translation": "штиль"
+              "word": "die Ruhe",
+              "translation": "покой"
+            },
+            {
+              "word": "der Schutz",
+              "translation": "защита"
             }
           ],
           "narration": "Від буря через контрасти до розуміння."
@@ -1183,19 +1251,32 @@
           },
           "synonyms": [
             {
-              "word": "zanken",
-              "translation": "ссориться"
+              "word": "kämpfen",
+              "translation": "бороться, бороться, сражаться, сражаться"
             },
             {
-              "word": "schimpfen",
-              "translation": "ругаться"
+              "word": "rivalisieren",
+              "translation": "соперничать"
             },
             {
-              "word": "hadern",
-              "translation": "препираться"
+              "word": "schreien",
+              "translation": "кричать"
             }
           ],
-          "antonyms": [],
+          "antonyms": [
+            {
+              "word": "versöhnen",
+              "translation": "примирять"
+            },
+            {
+              "word": "vergeben",
+              "translation": "прощать"
+            },
+            {
+              "word": "umarmen",
+              "translation": "обнимать"
+            }
+          ],
           "narration": "Від ссориться через контрасти до розуміння."
         },
         {
@@ -1208,19 +1289,32 @@
           },
           "synonyms": [
             {
-              "word": "hintergehen",
-              "translation": "предавать"
-            },
-            {
-              "word": "preisgeben",
+              "word": "ausliefern",
               "translation": "выдавать"
             },
             {
-              "word": "betrügen",
-              "translation": "изменять"
+              "word": "verkaufen",
+              "translation": "продавать"
+            },
+            {
+              "word": "enthüllen",
+              "translation": "разоблачать, разоблачать, раскрывать, раскрывать"
             }
           ],
-          "antonyms": [],
+          "antonyms": [
+            {
+              "word": "beschützen",
+              "translation": "защищать"
+            },
+            {
+              "word": "treu",
+              "translation": "верный"
+            },
+            {
+              "word": "verteidigen",
+              "translation": "защищать"
+            }
+          ],
           "narration": "Від предавать через контрасти до розуміння."
         }
       ]
@@ -1425,18 +1519,31 @@
           "synonyms": [
             {
               "word": "der Neid",
-              "translation": "ревность"
-            },
-            {
-              "word": "die Missgunst",
               "translation": "зависть"
             },
             {
-              "word": "der Argwohn",
-              "translation": "подозрение"
+              "word": "die Rivalität",
+              "translation": "соперничество"
+            },
+            {
+              "word": "die Gier",
+              "translation": "жадность"
             }
           ],
-          "antonyms": [],
+          "antonyms": [
+            {
+              "word": "die Treue",
+              "translation": "верность"
+            },
+            {
+              "word": "die Liebe",
+              "translation": "любовь"
+            },
+            {
+              "word": "die Freundschaft",
+              "translation": "дружба"
+            }
+          ],
           "narration": "Від ревность через контрасти до розуміння."
         },
         {
@@ -1449,19 +1556,32 @@
           },
           "synonyms": [
             {
-              "word": "konkurrieren",
-              "translation": "соперничать"
-            },
-            {
-              "word": "wetteifern",
-              "translation": "конкурировать"
-            },
-            {
               "word": "kämpfen",
-              "translation": "бороться"
+              "translation": "бороться, бороться, сражаться, сражаться"
+            },
+            {
+              "word": "streiten",
+              "translation": "спорить, ссориться, ссориться"
+            },
+            {
+              "word": "wettkämpfen",
+              "translation": "соревноваться"
             }
           ],
-          "antonyms": [],
+          "antonyms": [
+            {
+              "word": "versöhnen",
+              "translation": "примирять"
+            },
+            {
+              "word": "verbinden",
+              "translation": "соединять"
+            },
+            {
+              "word": "vereinen",
+              "translation": "объединять"
+            }
+          ],
           "narration": "Від соперничать через контрасти до розуміння."
         }
       ]
@@ -1665,19 +1785,32 @@
           },
           "synonyms": [
             {
-              "word": "giftmischen",
-              "translation": "отравлять"
+              "word": "töten",
+              "translation": "убивать"
             },
             {
-              "word": "intoxizieren",
-              "translation": "травить"
+              "word": "vernichten",
+              "translation": "уничтожать"
             },
             {
-              "word": "schädigen",
-              "translation": "поражать"
+              "word": "verderben",
+              "translation": "портить"
             }
           ],
-          "antonyms": [],
+          "antonyms": [
+            {
+              "word": "heilen",
+              "translation": "исцелять"
+            },
+            {
+              "word": "retten",
+              "translation": "спасать"
+            },
+            {
+              "word": "beschützen",
+              "translation": "защищать"
+            }
+          ],
           "narration": "Від отравлять через контрасти до розуміння."
         },
         {
@@ -1690,26 +1823,30 @@
           },
           "synonyms": [
             {
-              "word": "die Hoffnungslosigkeit",
-              "translation": "безнадія"
+              "word": "die Angst",
+              "translation": "страх"
             },
             {
-              "word": "die Trostlosigkeit",
-              "translation": "безвихідь"
+              "word": "das Elend",
+              "translation": "нищета"
             },
             {
-              "word": "die Depression",
-              "translation": "депресія"
+              "word": "die Trauer",
+              "translation": "печаль, печаль, скорбь, скорбь"
             }
           ],
           "antonyms": [
             {
               "word": "die Hoffnung",
-              "translation": "надія"
+              "translation": "надежда"
             },
             {
-              "word": "der Optimismus",
-              "translation": "оптимізм"
+              "word": "vertrauen",
+              "translation": "доверять"
+            },
+            {
+              "word": "die Freude",
+              "translation": "радость"
             }
           ],
           "narration": "Від отчаяние через контрасти до розуміння."
