@@ -510,12 +510,28 @@ class MnemonicsGenerator:
     
     def generate_vocabulary_section(self, character_data: Dict, phase_id: str = None) -> str:
         """Генерація секції словника з кольоровою кодировкою для конкретної фази"""
-        html = """
-<section class="vocabulary-section">
-    <h2 class="section-title">📚 Словарь урока</h2>
-    
-    <!-- Легенда артиклів -->
-    <div class="articles-legend">
+        phases = character_data.get('journey_phases', [])
+
+        # Визначаємо поточну фазу для відображення назви в заголовку словника
+        selected_phase: Optional[Dict] = None
+        if phase_id:
+            selected_phase = next((phase for phase in phases if phase.get('id') == phase_id), None)
+        if selected_phase is None and phases:
+            selected_phase = phases[0]
+
+        phase_title = ""
+        if selected_phase:
+            phase_title = (selected_phase.get('title') or "").strip()
+
+        current_phase_title = phase_title or "Фаза урока"
+
+        html = f"""
+<section class=\"vocabulary-section\">
+    <div class=\"vocabulary-header\">
+        <h2 class=\"section-title\">📚 Словарь урока <span id=\"current-phase\" class=\"current-phase-title\">{current_phase_title}</span></h2>
+
+        <!-- Легенда артиклів -->
+        <div class=\"articles-legend\">
         <div class="legend-item legend-der">
             <span class="legend-icon">♂</span>
             <span>der — мужской</span>
@@ -528,8 +544,9 @@ class MnemonicsGenerator:
             <span class="legend-icon">⚪</span>
             <span>das — средний</span>
         </div>
+        </div>
     </div>
-    
+
     <!-- Сітка слів -->
     <div class="vocabulary-grid">
 """
