@@ -982,7 +982,7 @@ function extractArticleData(wordValue) {
 
 function resolveNeutralLabel(item) {
     if (!item || typeof item !== 'object') {
-        return NEUTRAL_LABEL_FALLBACK;
+        return '';
     }
 
     for (const key of NEUTRAL_LABEL_KEYS) {
@@ -995,24 +995,24 @@ function resolveNeutralLabel(item) {
         }
     }
 
-    return NEUTRAL_LABEL_FALLBACK;
+    return '';
 }
 
 function createNeutralChip(label) {
     const chip = document.createElement('span');
     chip.className = 'word-type-chip';
-    chip.textContent = label || NEUTRAL_LABEL_FALLBACK;
+    chip.textContent = typeof label === 'string' ? label : '';
     return chip;
 }
 
 function createArticleChip(article) {
-    const chip = document.createElement('span');
     const meta = article ? ARTICLE_META[article] : null;
 
     if (!meta) {
-        return createNeutralChip(NEUTRAL_LABEL_FALLBACK);
+        return null;
     }
 
+    const chip = document.createElement('span');
     chip.className = `article-chip ${meta.chipClass}`;
     const icon = document.createElement('span');
     icon.className = 'article-icon';
@@ -1116,10 +1116,13 @@ function buildVocabularyCardElement(item, phaseKey) {
     const header = document.createElement('div');
     header.className = 'vocab-header';
 
+    const neutralLabel = meta ? '' : resolveNeutralLabel(item);
     const badge = meta
         ? createArticleChip(article)
-        : createNeutralChip(resolveNeutralLabel(item));
-    header.appendChild(badge);
+        : (neutralLabel ? createNeutralChip(neutralLabel) : null);
+    if (badge) {
+        header.appendChild(badge);
+    }
 
     const wordElement = document.createElement('div');
     wordElement.className = 'vocab-word';
