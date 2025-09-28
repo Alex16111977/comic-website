@@ -164,6 +164,12 @@ class MnemonicsGenerator:
     transition: all 0.3s ease;
 }
 
+.vocab-card.is-neutral {
+    background: linear-gradient(135deg, #edf2f7, #e2e8f0) !important;
+    border-left: 4px solid #718096 !important;
+    transition: all 0.3s ease;
+}
+
 .vocab-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 24px rgba(0,0,0,0.15);
@@ -185,6 +191,12 @@ class MnemonicsGenerator:
     background: linear-gradient(135deg, #c8e6c9, #a5d6a7) !important;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(56, 142, 60, 0.3);
+}
+
+.vocab-card.is-neutral:hover {
+    background: linear-gradient(135deg, #e2e8f0, #cbd5e0) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(113, 128, 150, 0.3);
 }
 
 /* Заголовок картки з артиклем */
@@ -216,6 +228,24 @@ class MnemonicsGenerator:
 
 .article-chip.das {
     background: var(--das-primary);
+}
+
+.article-chip.neutral {
+    background: #4a5568;
+}
+
+.word-type-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    background: rgba(113, 128, 150, 0.15);
+    color: #2d3748;
 }
 
 .article-icon {
@@ -516,22 +546,39 @@ class MnemonicsGenerator:
         for word in vocabulary:
             german = word['german']
             article = self.extract_article(german)
-            
-            if article and article in self.GENDER_COLORS:
-                color_data = self.GENDER_COLORS[article]
-                word_only = german.replace(f"{article} ", "")
-                
-                html += f"""
-        <div class="vocab-card is-{article}" data-word="{word_only}" data-article="{article}">
-            <div class="vocab-header">
-                <span class="article-chip {article}">
-                    <span class="article-icon">{color_data['icon']}</span>
-                    <span>{article}</span>
-                </span>
-                <div class="vocab-word">{word_only}</div>
+            color_data = self.GENDER_COLORS.get(article)
+
+            if color_data:
+                card_class = f"is-{article}"
+                word_display = german.replace(f"{article} ", "", 1)
+                badge_html = ''.join([
+                    f'<span class="article-chip {article}">',
+                    f'<span class="article-icon">{color_data["icon"]}</span>',
+                    f'<span>{article}</span>',
+                    '</span>'
+                ])
+                data_article = article
+            else:
+                card_class = "is-neutral"
+                word_display = german
+                neutral_label = word.get('part_of_speech') or word.get('pos') or word.get('type')
+                if neutral_label:
+                    label_text = neutral_label
+                else:
+                    label_text = "лексика без артикля"
+                badge_html = f'<span class="word-type-chip">{label_text}</span>'
+                data_article = ""
+
+            data_article_attr = f" data-article=\"{data_article}\"" if data_article else ""
+
+            html += f"""
+        <div class=\"vocab-card {card_class}\" data-word=\"{word_display}\"{data_article_attr}>
+            <div class=\"vocab-header\">
+                {badge_html}
+                <div class=\"vocab-word\">{word_display}</div>
             </div>
-            <div class="vocab-translation">{word['russian']}</div>
-            <div class="vocab-transcription">{word['transcription']}</div>
+            <div class=\"vocab-translation\">{word['russian']}</div>
+            <div class=\"vocab-transcription\">{word['transcription']}</div>
         </div>
 """
         
