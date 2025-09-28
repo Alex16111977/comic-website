@@ -67,17 +67,39 @@ class LiraHTMLGenerator(BaseGenerator):
         # Отримуємо HTML і додаємо мнемотехніку
         html = self.template_engine.render(context)
         
-        # НОВЕ: Вставка словника ЗВЕРХУ (після theatrical-scene, перед exercises)
-        theatrical_end = html.find('</div><!-- end theatrical-scene -->')
-        exercises_start = html.find('<div class="exercises-container">')
-        
-        if theatrical_end > 0 and exercises_start > theatrical_end:
+        # НОВЕ: Вставка словника ЗВЕРХУ (після блока theatrical-scenes, перед exercises)
+        scenes_start = html.find('<div class="theatrical-scenes">')
+        insert_pos = None
+
+        if scenes_start != -1:
+            search_pos = html.find('>', scenes_start)
+            if search_pos != -1:
+                pos = search_pos + 1
+                div_count = 1
+
+                while div_count > 0 and pos < len(html):
+                    next_open = html.find('<div', pos)
+                    next_close = html.find('</div>', pos)
+
+                    if next_close == -1:
+                        break
+
+                    if next_open != -1 and next_open < next_close:
+                        div_count += 1
+                        pos = next_open + 4
+                    else:
+                        div_count -= 1
+                        if div_count == 0:
+                            insert_pos = next_close + len('</div>')
+                            break
+                        pos = next_close + len('</div>')
+
+        if insert_pos is not None:
             # Генеруємо словник для поточної фази
             first_phase_id = assets.phases[0].get('id') if assets.phases else None
             vocab_html = self.mnemo_gen.generate_vocabulary_section(character, phase_id=first_phase_id)
-            
+
             # Вставляємо між театральною сценою та вправами
-            insert_pos = theatrical_end + len('</div><!-- end theatrical-scene -->')
             html = html[:insert_pos] + f'\n\n        {vocab_html}\n\n' + html[insert_pos:]
             print(f"[DEBUG] Словник вставлено ЗВЕРХУ для {character['id']}")
         
@@ -103,49 +125,38 @@ class LiraHTMLGenerator(BaseGenerator):
         # ВИПРАВЛЕНО: Вставляємо вправу ВСЕРЕДИНУ exercises-container
         exercises_start = html.find('<div class="exercises-container">')
         if exercises_start > 0:
-            # Знаходимо кінець exercises-container
-            # Шукаємо закриваючий div для exercises-container
-            exercises_end = html.find('</div><!-- end exercises-container -->')
-            
-            if exercises_end > exercises_start:
-                # Генеруємо вправу для першої фази
-                first_phase_id = assets.phases[0].get('id') if assets.phases else None
-                mnemo_quiz = self.mnemo_gen.generate_articles_quiz(character, phase_id=first_phase_id)
-                
-                # Вставляємо вправу ВСЕРЕДИНУ exercises-container перед закриваючим тегом
-                html = html[:exercises_end] + f'\n\n        {mnemo_quiz}\n\n        ' + html[exercises_end:]
-                print(f"[DEBUG] Вправа вставлена ВСЕРЕДИНУ exercises для {character['id']}")
-            else:
-                # Якщо немає спеціального коментаря, шукаємо за структурою
-                # Знаходимо всі закриваючі div після exercises-container
-                search_pos = exercises_start + len('<div class="exercises-container">')
-                
-                # Рахуємо відкриті div теги
+            search_pos = html.find('>', exercises_start)
+
+            if search_pos != -1:
+                pos = search_pos + 1
                 div_count = 1
-                pos = search_pos
-                
+                exercises_end = None
+
                 while div_count > 0 and pos < len(html):
                     next_open = html.find('<div', pos)
                     next_close = html.find('</div>', pos)
-                    
+
                     if next_close == -1:
                         break
-                    
+
                     if next_open != -1 and next_open < next_close:
                         div_count += 1
                         pos = next_open + 4
                     else:
                         div_count -= 1
                         if div_count == 0:
-                            # Знайшли закриваючий div для exercises-container
-                            first_phase_id = assets.phases[0].get('id') if assets.phases else None
-                            mnemo_quiz = self.mnemo_gen.generate_articles_quiz(character, phase_id=first_phase_id)
-                            
-                            # Вставляємо перед закриваючим div
-                            html = html[:next_close] + f'\n\n        {mnemo_quiz}\n\n        ' + html[next_close:]
-                            print(f"[DEBUG] Вправа вставлена ВСЕРЕДИНУ exercises (альтернативний метод) для {character['id']}")
+                            exercises_end = next_close
                             break
-                        pos = next_close + 6
+                        pos = next_close + len('</div>')
+
+                if div_count == 0 and exercises_end is not None:
+                    # Генеруємо вправу для першої фази
+                    first_phase_id = assets.phases[0].get('id') if assets.phases else None
+                    mnemo_quiz = self.mnemo_gen.generate_articles_quiz(character, phase_id=first_phase_id)
+
+                    # Вставляємо вправу ВСЕРЕДИНУ exercises-container перед закриваючим тегом
+                    html = html[:exercises_end] + f'\n\n        {mnemo_quiz}\n\n        ' + html[exercises_end:]
+                    print(f"[DEBUG] Вправа вставлена ВСЕРЕДИНУ exercises для {character['id']}")
         else:
             print(f"[ERROR] exercises-container не знайдено для {character['id']}")
         
