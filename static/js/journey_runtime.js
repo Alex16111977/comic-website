@@ -7,6 +7,10 @@ let progressLineLength = 0;
 const QUIZ_ADVANCE_DELAY = 1200;
 const constructorState = {};
 
+// Make phaseVocabularies available as phaseData for exercises.js
+window.phaseData = phaseVocabularies;
+window.phaseKeys = phaseKeys;
+
 function shuffleWords(words) {
     const shuffled = Array.isArray(words) ? [...words] : [];
     for (let i = shuffled.length - 1; i > 0; i--) {
@@ -989,9 +993,11 @@ function displayVocabulary(phaseKey) {
     // Setup relations for current phase
     setupRelationsForPhase(phaseKey);
 
+    // Initialize exercises for current phase
     if (typeof window !== 'undefined'
         && typeof window.initializeExercises === 'function') {
         try {
+            console.log('[Exercises] Initializing for phase:', phaseKey);
             window.initializeExercises(phaseKey);
         } catch (error) {
             console.warn('[Exercises] Failed to initialize exercises for phase', phaseKey, error);
@@ -2315,6 +2321,14 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('[Init] Initializing first phase:', phaseKeys[0]);
         journeyPoints[0].classList.add('active');
         displayVocabulary(phaseKeys[0]);
+        
+        // Also initialize exercises for first phase
+        if (typeof window.initializeExercises === 'function') {
+            setTimeout(() => {
+                console.log('[Init] Initializing exercises for first phase');
+                window.initializeExercises(phaseKeys[0]);
+            }, 500);
+        }
     } else {
         console.error('[Init] No journey points or phases found!');
     }

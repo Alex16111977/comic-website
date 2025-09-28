@@ -1,0 +1,236 @@
+/* 
+ * ОПТИМІЗАЦІЯ УПРАЖНЕННЯ "ПОДБОР СЛОВ" ДЛЯ ПЛАНШЕТІВ
+ * Проблема: Потрібна прокрутка для перегляду всіх слів
+ * Рішення: Фіксована висота без скролла для планшетів
+ */
+
+/* Контейнер упражнення */
+.word-selection-container,
+.word-selection-host {
+    margin-top: 16px;
+    width: 100%;
+}
+
+/* Двоколоночний layout - БЕЗ СКРОЛЛА */
+.word-columns {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 20px !important;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    padding: 16px;
+    /* Висота для 12+ слів БЕЗ прокрутки */
+    min-height: 520px !important;
+    max-height: none !important;
+}
+
+/* Колонки слів */
+.word-column {
+    display: flex !important;
+    flex-direction: column !important;
+    /* БЕЗ overflow - всі слова видно */
+    overflow: visible !important;
+    max-height: none !important;
+    height: auto !important;
+}
+
+.word-column h4 {
+    text-align: center;
+    color: #4b5563;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e2e8f0;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+/* Список слів - БЕЗ СКРОЛЛА */
+.word-list {
+    flex: 1;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    /* КРИТИЧНО: без обмежень висоти */
+    overflow: visible !important;
+    max-height: none !important;
+    height: auto !important;
+}
+
+/* Приховуємо індикатори прокрутки */
+.word-column::after {
+    display: none !important;
+}
+
+/* Приховуємо текст "Прокрутите для больше слов" */
+.word-list::after,
+.word-column::after,
+.word-list::before,
+.word-column::before {
+    content: none !important;
+    display: none !important;
+}
+
+/* Слова-кнопки оптимізовані для планшетів */
+.word-item {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+    font-size: 14px;
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+}
+
+.word-item:hover:not(.matched):not(.incorrect) {
+    border-color: #a78bfa;
+    background: #f9fafb;
+    transform: translateX(2px);
+}
+
+.word-item.selected {
+    background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+    border-color: #6366f1;
+    transform: scale(1.01);
+}
+
+.word-item.matched {
+    background: linear-gradient(135deg, #22c55e, #16a34a) !important;
+    color: white !important;
+    border-color: #16a34a;
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+.word-item.incorrect {
+    background: linear-gradient(135deg, #ef4444, #dc2626) !important;
+    color: white !important;
+    animation: shake 0.5s;
+}
+
+/* Планшети iPad та Android */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .word-columns {
+        min-height: 480px !important;
+        padding: 14px;
+        gap: 16px !important;
+    }
+    
+    .word-item {
+        min-height: 36px;
+        padding: 7px 10px;
+        font-size: 13px;
+    }
+    
+    .word-list {
+        gap: 5px;
+    }
+}
+
+/* Мобільні телефони */
+@media (max-width: 767px) {
+    .word-columns {
+        grid-template-columns: 1fr !important;
+        min-height: auto !important;
+    }
+    
+    .word-column + .word-column {
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 2px solid #e2e8f0;
+    }
+    
+    /* На мобільних можна дозволити скролл якщо потрібно */
+    .word-list {
+        max-height: 300px;
+        overflow-y: auto;
+    }
+    
+    .word-item {
+        font-size: 15px;
+        min-height: 40px;
+    }
+}
+
+/* Великі екрани */
+@media (min-width: 1025px) {
+    .word-columns {
+        min-height: 550px !important;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    .word-item {
+        min-height: 42px;
+        font-size: 15px;
+    }
+}
+
+/* Прибираємо непотрібні елементи */
+.has-scroll::after,
+.scroll-indicator {
+    display: none !important;
+}
+
+/* Анімація для помилкових відповідей */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
+/* Кнопка статусу внизу */
+.selection-button {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+}
+
+.select-pair-btn {
+    padding: 10px 20px;
+    background: #6b5b95;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: default;
+    transition: all 0.3s;
+}
+
+.select-pair-btn.is-success {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.select-pair-btn.is-error {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    animation: shake 0.5s;
+}
+
+/* КРИТИЧНО: Забороняємо будь-які обмеження висоти */
+.matching-container,
+[data-matching-container] {
+    max-height: none !important;
+    overflow: visible !important;
+}
+
+/* Видаляємо всі scroll-індикатори */
+.word-column.has-scroll,
+.word-list.has-scroll {
+    overflow: visible !important;
+}
+
+.word-column.has-scroll::after,
+.word-list.has-scroll::after {
+    content: none !important;
+    display: none !important;
+}

@@ -46,269 +46,208 @@
     // ==========================================
     
     function initializeArticlesExercise(container, phaseVocabulary) {
-        if (!(container instanceof HTMLElement)) {
-            return;
-        }
+        if (!(container instanceof HTMLElement)) return;
 
         // Извлекаем слова с артиклями
         const wordsWithArticles = [];
         if (phaseVocabulary && phaseVocabulary.vocabulary) {
             phaseVocabulary.vocabulary.forEach(word => {
                 if (!word.german || !word.russian) return;
-                
                 const parts = word.german.split(' ');
                 if (['der', 'die', 'das'].includes(parts[0])) {
                     wordsWithArticles.push({
                         article: parts[0],
-                        german: parts.slice(1).join(' '),
-                        russian: word.russian,
-                        fullWord: word.german
+                        noun: parts.slice(1).join(' '),
+                        translation: word.russian,
+                        hint: word.russian_hint || ''
                     });
                 }
             });
         }
         
-        // Перемешиваем и ограничиваем до 9 слов
-        const shuffled = wordsWithArticles.sort(() => Math.random() - 0.5).slice(0, 9);
-
-        if (shuffled.length === 0) {
+        if (wordsWithArticles.length === 0) {
             container.innerHTML = '<div class="exercise-empty-state">В этой фазе нет слов с артиклями.</div>';
             return;
         }
 
+        // Перемешиваем слова
+        const shuffled = wordsWithArticles.sort(() => Math.random() - 0.5);
+        
+        // Создаем HTML структуру
         container.innerHTML = `
-            <div class="articles-exercise">
-                <div class="articles-instruction">
-                    Распределите слова по родам (drag & drop или клик для мобильных)
-                </div>
-
-                <div class="article-columns">
-                    <div class="article-column" data-article="der">
-                        <h5 class="article-header">
-                            <span class="article-label">DER</span>
-                            <span class="article-desc">мужской род</span>
-                        </h5>
-                        <div class="article-drop-zone" data-zone="der"></div>
+            <div class="articles-exercise-new">
+                <div class="articles-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%"></div>
                     </div>
-                    <div class="article-column" data-article="die">
-                        <h5 class="article-header">
-                            <span class="article-label">DIE</span>
-                            <span class="article-desc">женский род</span>
-                        </h5>
-                        <div class="article-drop-zone" data-zone="die"></div>
-                    </div>
-                    <div class="article-column" data-article="das">
-                        <h5 class="article-header">
-                            <span class="article-label">DAS</span>
-                            <span class="article-desc">средний род</span>
-                        </h5>
-                        <div class="article-drop-zone" data-zone="das"></div>
+                    <div class="progress-text">
+                        Правильно: <span id="articles-correct">0</span> из <span id="articles-total">${shuffled.length}</span>
                     </div>
                 </div>
-
-                <div class="words-to-sort">
+                
+                <div class="articles-grid">
                     ${shuffled.map((word, idx) => `
-                        <div class="article-word-card"
-                             data-article="${word.article}"
-                             data-word="${word.german}"
-                             data-index="${idx}"
-                             draggable="true">
-                            <span class="word-german">${word.german}</span>
-                            <span class="word-russian">${word.russian}</span>
+                        <div class="article-item" data-correct="${word.article}" data-index="${idx}">
+                            <div class="article-word">
+                                <span class="noun">${word.noun}</span>
+                                <small>${word.translation}</small>
+                            </div>
+                            <div class="article-buttons">
+                                <button onclick="checkArticle(this, 'der')" class="article-btn" data-article="der">der</button>
+                                <button onclick="checkArticle(this, 'die')" class="article-btn" data-article="die">die</button>
+                                <button onclick="checkArticle(this, 'das')" class="article-btn" data-article="das">das</button>
+                            </div>
                         </div>
                     `).join('')}
                 </div>
-
-                <div class="articles-controls">
-                    <button class="check-articles-btn" type="button">Проверить</button>
-                    <button class="reset-articles-btn" type="button">Сбросить</button>
+                
+                <div class="articles-reset">
+                    <button class="reset-articles-btn" onclick="resetArticles()">Начать заново</button>
                 </div>
-                <div class="articles-feedback"></div>
             </div>
         `;
+        
+        // Инициализируем счетчики
+        window.articlesTotal = shuffled.length;
+        window.articlesCorrect = 0;
+    }
 
-        const exerciseElement = container.querySelector('.articles-exercise');
-        if (exerciseElement) {
-            attachArticlesDragDrop(exerciseElement);
+    // Глобальная функция проверки артикля
+    window.checkArticle = function(button, selectedArticle) {
+        const item = button.closest('.article-item');
+        const correct = item.dataset.correct;
+        
+        // Если уже решено, не реагируем
+        if (item.classList.contains('completed')) return;
+        
+        if (selectedArticle === correct) {
+            // Правильный ответ
+            button.classList.add('correct');
+            item.classList.add('completed');
+            
+            // Блокируем все кнопки в этой карточке
+            item.querySelectorAll('button').forEach(btn => {
+                btn.disabled = true;
+            });
+            
+            // Обновляем счетчик
+            window.articlesCorrect++;
+            updateArticlesProgress();
+            
+            // Проверяем завершение
+            if (window.articlesCorrect === window.articlesTotal) {
+                setTimeout(() => {
+                    showCompletionMessage();
+                }, 500);
+            }
+        } else {
+            // Неправильный ответ
+            button.classList.add('incorrect');
+            setTimeout(() => {
+                button.classList.remove('incorrect');
+            }, 500);
         }
+    };
+
+    // Обновление прогресса
+    window.updateArticlesProgress = function() {
+        const fill = document.querySelector('.articles-exercise-new .progress-fill');
+        const counter = document.getElementById('articles-correct');
+        
+        if (fill) {
+            const percent = (window.articlesCorrect / window.articlesTotal * 100);
+            fill.style.width = percent + '%';
+        }
+        if (counter) {
+            counter.textContent = window.articlesCorrect;
+        }
+    };
+
+    // Сброс упражнения
+    window.resetArticles = function() {
+        const container = document.querySelector('.articles-exercise-new');
+        if (!container) return;
+        
+        // Сбрасываем счетчики
+        window.articlesCorrect = 0;
+        updateArticlesProgress();
+        
+        // Убираем классы и разблокируем кнопки
+        container.querySelectorAll('.article-item').forEach(item => {
+            item.classList.remove('completed');
+            item.querySelectorAll('button').forEach(btn => {
+                btn.disabled = false;
+                btn.classList.remove('correct', 'incorrect');
+            });
+        });
+        
+        // Удаляем сообщение о завершении если есть
+        const message = container.querySelector('.completion-message');
+        if (message) message.remove();
+    };
+
+    // Сообщение о завершении
+    function showCompletionMessage() {
+        const container = document.querySelector('.articles-exercise-new');
+        if (!container) return;
+        
+        // Создаем оверлей (затемненный фон)
+        const overlay = document.createElement('div');
+        overlay.className = 'completion-overlay';
+        overlay.addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeCompletionMessage();
+            }
+        });
+        
+        // Обработчик нажатия Escape
+        const handleEscape = function(e) {
+            if (e.key === 'Escape') {
+                closeCompletionMessage();
+                document.removeEventListener('keydown', handleEscape);
+            }
+        };
+        document.addEventListener('keydown', handleEscape);
+        
+        const message = document.createElement('div');
+        message.className = 'completion-message';
+        message.innerHTML = `
+            <button onclick="closeCompletionMessage()" class="btn-close-x" title="Закрыть">&times;</button>
+            <h3>🎉 Отлично!</h3>
+            <p>Вы правильно определили все артикли!</p>
+            <p class="completion-stats">Правильно: ${window.articlesCorrect} из ${window.articlesTotal}</p>
+            <div class="completion-buttons">
+                <button onclick="closeCompletionMessage()" class="btn-close">Закрыть</button>
+                <button onclick="resetArticles()" class="btn-retry">Попробовать снова</button>
+            </div>
+        `;
+        
+        overlay.appendChild(message);
+        document.body.appendChild(overlay);
+        
+        setTimeout(() => {
+            overlay.classList.add('show');
+            message.classList.add('show');
+        }, 100);
     }
     
-    function attachArticlesDragDrop(container) {
-        const cards = container.querySelectorAll('.article-word-card');
-        const zones = container.querySelectorAll('.article-drop-zone');
-        const checkBtn = container.querySelector('.check-articles-btn');
-        const resetBtn = container.querySelector('.reset-articles-btn');
-        const feedback = container.querySelector('.articles-feedback');
-        const wordsContainer = container.querySelector('.words-to-sort');
-        const accordionContent = container.closest('.exercise-content');
-
-        function updateArticlesLayout() {
-            window.requestAnimationFrame(() => {
-                refreshActiveExerciseContentHeight();
-                updateWordColumnScrollIndicators(container);
-                if (accordionContent instanceof HTMLElement) {
-                    accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-                }
-            });
-        }
+    // Функция закрытия окна завершения
+    window.closeCompletionMessage = function() {
+        const overlay = document.querySelector('.completion-overlay');
+        const message = document.querySelector('.completion-message');
         
-        // Сохраняем начальные позиции для сброса
-        const initialParent = cards[0]?.parentElement;
-        
-        // DRAG & DROP для десктопа
-        cards.forEach(card => {
-            card.addEventListener('dragstart', (e) => {
-                e.dataTransfer.effectAllowed = 'move';
-                e.dataTransfer.setData('text/plain', '');
-                card.classList.add('dragging');
-                card.dataset.dragArticle = card.dataset.article;
-                card.dataset.dragWord = card.dataset.word;
-            });
-
-            card.addEventListener('dragend', () => {
-                card.classList.remove('dragging');
-                updateArticlesLayout();
-            });
-            
-            // КЛИК для мобильных
-            card.addEventListener('click', function(e) {
-                e.stopPropagation();
-                const wasSelected = this.classList.contains('selected');
-                
-                // Убираем выделение со всех карточек
-                cards.forEach(c => c.classList.remove('selected'));
-                
-                if (!wasSelected) {
-                    this.classList.add('selected');
-                }
-            });
-        });
-        
-        // Обработчики для зон
-        zones.forEach(zone => {
-            zone.addEventListener('dragover', (e) => {
-                e.preventDefault();
-                e.dataTransfer.dropEffect = 'move';
-                zone.classList.add('drag-over');
-            });
-            
-            zone.addEventListener('dragleave', () => {
-                zone.classList.remove('drag-over');
-            });
-            
-            zone.addEventListener('drop', (e) => {
-                e.preventDefault();
-                zone.classList.remove('drag-over');
-
-                const draggingCard = container.querySelector('.dragging');
-                if (draggingCard) {
-                    zone.appendChild(draggingCard);
-                    draggingCard.classList.remove('correct', 'incorrect');
-                    updateArticlesLayout();
-                }
-            });
-
-            // Клик по зоне для мобильных
-            zone.addEventListener('click', function(e) {
-                e.stopPropagation();
-                const selected = container.querySelector('.article-word-card.selected');
-                if (selected) {
-                    this.appendChild(selected);
-                    selected.classList.remove('selected', 'correct', 'incorrect');
-                    updateArticlesLayout();
-                }
-            });
-        });
-
-        if (wordsContainer) {
-            wordsContainer.addEventListener('dragover', (e) => {
-                e.preventDefault();
-                e.dataTransfer.dropEffect = 'move';
-            });
-
-            wordsContainer.addEventListener('drop', (e) => {
-                e.preventDefault();
-                const draggingCard = container.querySelector('.dragging');
-                if (draggingCard) {
-                    wordsContainer.appendChild(draggingCard);
-                    draggingCard.classList.remove('correct', 'incorrect');
-                    updateArticlesLayout();
-                }
-            });
-
-            wordsContainer.addEventListener('click', function(e) {
-                e.stopPropagation();
-                const selected = container.querySelector('.article-word-card.selected');
-                if (selected && selected.parentElement !== wordsContainer) {
-                    wordsContainer.appendChild(selected);
-                    selected.classList.remove('selected', 'correct', 'incorrect');
-                    updateArticlesLayout();
-                }
-            });
-        }
-        
-        // Проверка ответов
-        checkBtn?.addEventListener('click', () => {
-            let correct = 0;
-            let total = 0;
-            
-            zones.forEach(zone => {
-                const targetArticle = zone.dataset.zone;
-                const cardsInZone = zone.querySelectorAll('.article-word-card');
-                
-                cardsInZone.forEach(card => {
-                    total++;
-                    card.classList.remove('correct', 'incorrect');
-                    
-                    if (card.dataset.article === targetArticle) {
-                        card.classList.add('correct');
-                        correct++;
-                    } else {
-                        card.classList.add('incorrect');
-                    }
-                });
-            });
-            
-            // Проверяем карточки, оставшиеся в исходной зоне
-            const unsortedCards = wordsContainer.querySelectorAll('.article-word-card');
-            unsortedCards.forEach(card => {
-                total++;
-                card.classList.add('incorrect');
-            });
-            
-            // Показываем результат
-            if (feedback) {
-                if (correct === total && total > 0) {
-                    feedback.innerHTML = '<span class="success">[OK] Отлично! Все артикли правильные!</span>';
-                    feedback.className = 'articles-feedback success';
-                } else {
-                    feedback.innerHTML = `<span class="partial">Правильно: ${correct} из ${total}. Попробуйте ещё раз!</span>`;
-                    feedback.className = 'articles-feedback partial';
-                }
+        if (overlay) {
+            overlay.classList.remove('show');
+            if (message) {
+                message.classList.remove('show');
             }
+            
+            setTimeout(() => {
+                overlay.remove();
+            }, 300);
+        }
+    };
 
-            updateArticlesLayout();
-        });
-
-        // Сброс
-        resetBtn?.addEventListener('click', () => {
-            cards.forEach(card => {
-                card.classList.remove('correct', 'incorrect', 'selected');
-                if (initialParent) {
-                    initialParent.appendChild(card);
-                }
-            });
-
-            if (feedback) {
-                feedback.innerHTML = '';
-                feedback.className = 'articles-feedback';
-            }
-
-            updateArticlesLayout();
-        });
-
-        updateArticlesLayout();
-    }
 
     // ==========================================
     // 2. УПРАЖНЕНИЕ "КОНТЕКСТНЫЙ ПЕРЕВОД"  

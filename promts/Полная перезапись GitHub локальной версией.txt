@@ -1,0 +1,10 @@
+cd F:\AiKlientBank\Lir
+
+# Добавить ВСЕ что есть локально
+git add -A
+
+# Коммит с описанием
+git commit -m "Full sync from local - $(Get-Date -Format 'yyyy-MM-dd HH:mm')"
+
+# Force push (перезапишет GitHub)
+git push origin main --force

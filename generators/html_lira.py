@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Any
 
 from .base import BaseGenerator
+from .mnemonics_gen import MnemonicsGenerator
 from .html import (
     HeadGenerator,
     JourneyBuilder,
@@ -24,6 +25,7 @@ class LiraHTMLGenerator(BaseGenerator):
         self.journey_builder = JourneyBuilder(self.vocabulary)
         self.head_generator = HeadGenerator()
         self.template_engine = JourneyTemplateEngine(self)
+        self.mnemo_gen = MnemonicsGenerator(config)
 
     def generate_journey(self, character_file: Path) -> str:
         character = self.load_character(character_file)
@@ -33,6 +35,16 @@ class LiraHTMLGenerator(BaseGenerator):
         progress = JourneyBuilder.initial_progress(assets.phases)
         head_context = self.head_generator.build(assets.phases, progress)
         js_bundle = LiraJSGenerator.generate(character)
+        
+        # Додаємо мнемотехніку
+        mnemo_css = self.mnemo_gen.generate_css()
+        mnemo_js = self.mnemo_gen.generate_javascript()
+        mnemo_vocabulary = self.mnemo_gen.generate_vocabulary_section(character)
+        mnemo_quiz = self.mnemo_gen.generate_articles_quiz(character)
+        
+        # Об'єднуємо JS
+        js_bundle = js_bundle + "\n" + mnemo_js
+        
         navigation = {
             "home_href": "../index.html",
             "home_label": "На главную",
@@ -50,4 +62,14 @@ class LiraHTMLGenerator(BaseGenerator):
             relations_metadata=assets.relations_metadata,
             js_bundle=js_bundle,
         )
-        return self.template_engine.render(context)
+        
+        # Отримуємо HTML і додаємо мнемотехніку
+        html = self.template_engine.render(context)
+        
+        # Вставляємо CSS мнемотехніки в head
+        html = html.replace('</style>', mnemo_css + '\n</style>')
+        
+        # Додаємо секції мнемотехніки перед </main>
+        html = html.replace('</main>', mnemo_vocabulary + mnemo_quiz + '</main>')
+        
+        return html
