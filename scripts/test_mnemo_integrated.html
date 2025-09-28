@@ -94,21 +94,18 @@
 }
 
 .vocab-card.is-der {
-    background: linear-gradient(135deg, #e3f2fd, #bbdefb) !important;
-    border-left: 4px solid #1976d2 !important;
-    transition: all 0.3s ease;
+    background: linear-gradient(135deg, var(--der-bg) 0%, white 100%);
+    border-color: var(--der-primary);
 }
 
 .vocab-card.is-die {
-    background: linear-gradient(135deg, #fce4ec, #f8bbd0) !important;
-    border-left: 4px solid #d32f2f !important;
-    transition: all 0.3s ease;
+    background: linear-gradient(135deg, var(--die-bg) 0%, white 100%);
+    border-color: var(--die-primary);
 }
 
 .vocab-card.is-das {
-    background: linear-gradient(135deg, #e8f5e9, #c8e6c9) !important;
-    border-left: 4px solid #388e3c !important;
-    transition: all 0.3s ease;
+    background: linear-gradient(135deg, var(--das-bg) 0%, white 100%);
+    border-color: var(--das-primary);
 }
 
 .vocab-card:hover {
@@ -117,21 +114,15 @@
 }
 
 .vocab-card.is-der:hover {
-    background: linear-gradient(135deg, #bbdefb, #90caf9) !important;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(25, 118, 210, 0.3);
+    background: linear-gradient(135deg, var(--der-bg) 0%, var(--der-light) 100%);
 }
 
 .vocab-card.is-die:hover {
-    background: linear-gradient(135deg, #f8bbd0, #f48fb1) !important;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(211, 47, 47, 0.3);
+    background: linear-gradient(135deg, var(--die-bg) 0%, var(--die-light) 100%);
 }
 
 .vocab-card.is-das:hover {
-    background: linear-gradient(135deg, #c8e6c9, #a5d6a7) !important;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(56, 142, 60, 0.3);
+    background: linear-gradient(135deg, var(--das-bg) 0%, var(--das-light) 100%);
 }
 
 /* Заголовок картки з артиклем */
@@ -1073,19 +1064,441 @@
                 </div>
             </div>
             
+        </div>
+
         
+<section class="vocabulary-section">
+    <h2 class="section-title">📚 Словник з кольоровою мнемотехнікою</h2>
+    
+    <!-- Легенда артиклів -->
+    <div class="articles-legend">
+        <div class="legend-item legend-der">
+            <span class="legend-icon">♂</span>
+            <span>der — чоловічий</span>
+        </div>
+        <div class="legend-item legend-die">
+            <span class="legend-icon">♀</span>
+            <span>die — жіночий</span>
+        </div>
+        <div class="legend-item legend-das">
+            <span class="legend-icon">⚪</span>
+            <span>das — середній</span>
+        </div>
+    </div>
+    
+    <!-- Сітка слів -->
+    <div class="vocabulary-grid">
+
+        <div class="vocab-card is-der" data-article="der">
+            <div class="vocab-header">
+                <span class="article-chip der">
+                    <span class="article-icon">♂</span>
+                    <span>der</span>
+                </span>
+                <div class="vocab-word">Thron</div>
+            </div>
+            <div class="vocab-translation">трон</div>
+            <div class="vocab-transcription">[дер ТРОН]</div>
+        </div>
+
+        <div class="vocab-card is-das" data-article="das">
+            <div class="vocab-header">
+                <span class="article-chip das">
+                    <span class="article-icon">⚪</span>
+                    <span>das</span>
+                </span>
+                <div class="vocab-word">Königreich</div>
+            </div>
+            <div class="vocab-translation">королевство</div>
+            <div class="vocab-transcription">[дас КЁ-ниг-райх]</div>
+        </div>
+
+        <div class="vocab-card is-die" data-article="die">
+            <div class="vocab-header">
+                <span class="article-chip die">
+                    <span class="article-icon">♀</span>
+                    <span>die</span>
+                </span>
+                <div class="vocab-word">Macht</div>
+            </div>
+            <div class="vocab-translation">власть</div>
+            <div class="vocab-transcription">[ди МАХТ]</div>
+        </div>
+
+        <div class="vocab-card is-die" data-article="die">
+            <div class="vocab-header">
+                <span class="article-chip die">
+                    <span class="article-icon">♀</span>
+                    <span>die</span>
+                </span>
+                <div class="vocab-word">Krone</div>
+            </div>
+            <div class="vocab-translation">корона</div>
+            <div class="vocab-transcription">[ди КРО-не]</div>
+        </div>
+
+        <div class="vocab-card is-die" data-article="die">
+            <div class="vocab-header">
+                <span class="article-chip die">
+                    <span class="article-icon">♀</span>
+                    <span>die</span>
+                </span>
+                <div class="vocab-word">Zeremonie</div>
+            </div>
+            <div class="vocab-translation">церемония</div>
+            <div class="vocab-transcription">[ди це-ре-мо-НИ]</div>
+        </div>
+
+        <div class="vocab-card is-der" data-article="der">
+            <div class="vocab-header">
+                <span class="article-chip der">
+                    <span class="article-icon">♂</span>
+                    <span>der</span>
+                </span>
+                <div class="vocab-word">Zorn</div>
+            </div>
+            <div class="vocab-translation">гнев</div>
+            <div class="vocab-transcription">[дер ЦОРН]</div>
+        </div>
+
+        <div class="vocab-card is-die" data-article="die">
+            <div class="vocab-header">
+                <span class="article-chip die">
+                    <span class="article-icon">♀</span>
+                    <span>die</span>
+                </span>
+                <div class="vocab-word">Undankbarkeit</div>
+            </div>
+            <div class="vocab-translation">неблагодарность</div>
+            <div class="vocab-transcription">[ди УН-данк-бар-кайт]</div>
+        </div>
+
+        <div class="vocab-card is-die" data-article="die">
+            <div class="vocab-header">
+                <span class="article-chip die">
+                    <span class="article-icon">♀</span>
+                    <span>die</span>
+                </span>
+                <div class="vocab-word">Kränkung</div>
+            </div>
+            <div class="vocab-translation">обида</div>
+            <div class="vocab-transcription">[ди КРЭН-кунг]</div>
+        </div>
+
+        <div class="vocab-card is-der" data-article="der">
+            <div class="vocab-header">
+                <span class="article-chip der">
+                    <span class="article-icon">♂</span>
+                    <span>der</span>
+                </span>
+                <div class="vocab-word">Fluch</div>
+            </div>
+            <div class="vocab-translation">проклятие</div>
+            <div class="vocab-transcription">[дер ФЛУХ]</div>
+        </div>
+
+        <div class="vocab-card is-die" data-article="die">
+            <div class="vocab-header">
+                <span class="article-chip die">
+                    <span class="article-icon">♀</span>
+                    <span>die</span>
+                </span>
+                <div class="vocab-word">Grausamkeit</div>
+            </div>
+            <div class="vocab-translation">жестокость</div>
+            <div class="vocab-transcription">[ди ГРАУ-зам-кайт]</div>
+        </div>
+
+        <div class="vocab-card is-die" data-article="die">
+            <div class="vocab-header">
+                <span class="article-chip die">
+                    <span class="article-icon">♀</span>
+                    <span>die</span>
+                </span>
+                <div class="vocab-word">Verzweiflung</div>
+            </div>
+            <div class="vocab-translation">отчаяние</div>
+            <div class="vocab-transcription">[ди фер-ЦВАЙ-флунг]</div>
+        </div>
+
+        <div class="vocab-card is-die" data-article="die">
+            <div class="vocab-header">
+                <span class="article-chip die">
+                    <span class="article-icon">♀</span>
+                    <span>die</span>
+                </span>
+                <div class="vocab-word">Einsamkeit</div>
+            </div>
+            <div class="vocab-translation">одиночество</div>
+            <div class="vocab-transcription">[ди АЙН-зам-кайт]</div>
+        </div>
+
+        <div class="vocab-card is-die" data-article="die">
+            <div class="vocab-header">
+                <span class="article-chip die">
+                    <span class="article-icon">♀</span>
+                    <span>die</span>
+                </span>
+                <div class="vocab-word">Träne</div>
+            </div>
+            <div class="vocab-translation">слеза</div>
+            <div class="vocab-transcription">[ди ТРЭ-не]</div>
+        </div>
+
+        <div class="vocab-card is-die" data-article="die">
+            <div class="vocab-header">
+                <span class="article-chip die">
+                    <span class="article-icon">♀</span>
+                    <span>die</span>
+                </span>
+                <div class="vocab-word">Not</div>
+            </div>
+            <div class="vocab-translation">нужда</div>
+            <div class="vocab-transcription">[ди НОТ]</div>
+        </div>
+
+        <div class="vocab-card is-der" data-article="der">
+            <div class="vocab-header">
+                <span class="article-chip der">
+                    <span class="article-icon">♂</span>
+                    <span>der</span>
+                </span>
+                <div class="vocab-word">Sturm</div>
+            </div>
+            <div class="vocab-translation">буря</div>
+            <div class="vocab-transcription">[дер ШТУРМ]</div>
+        </div>
+
+        <div class="vocab-card is-der" data-article="der">
+            <div class="vocab-header">
+                <span class="article-chip der">
+                    <span class="article-icon">♂</span>
+                    <span>der</span>
+                </span>
+                <div class="vocab-word">Wahnsinn</div>
+            </div>
+            <div class="vocab-translation">безумие</div>
+            <div class="vocab-transcription">[дер ВАН-зин]</div>
+        </div>
+
+        <div class="vocab-card is-der" data-article="der">
+            <div class="vocab-header">
+                <span class="article-chip der">
+                    <span class="article-icon">♂</span>
+                    <span>der</span>
+                </span>
+                <div class="vocab-word">Donner</div>
+            </div>
+            <div class="vocab-translation">гром</div>
+            <div class="vocab-transcription">[дер ДО-нер]</div>
+        </div>
+
+        <div class="vocab-card is-der" data-article="der">
+            <div class="vocab-header">
+                <span class="article-chip der">
+                    <span class="article-icon">♂</span>
+                    <span>der</span>
+                </span>
+                <div class="vocab-word">Blitz</div>
+            </div>
+            <div class="vocab-translation">молния</div>
+            <div class="vocab-transcription">[дер БЛИЦ]</div>
+        </div>
+
+        <div class="vocab-card is-das" data-article="das">
+            <div class="vocab-header">
+                <span class="article-chip das">
+                    <span class="article-icon">⚪</span>
+                    <span>das</span>
+                </span>
+                <div class="vocab-word">Chaos</div>
+            </div>
+            <div class="vocab-translation">хаос</div>
+            <div class="vocab-transcription">[дас ХА-ос]</div>
+        </div>
+
+        <div class="vocab-card is-das" data-article="das">
+            <div class="vocab-header">
+                <span class="article-chip das">
+                    <span class="article-icon">⚪</span>
+                    <span>das</span>
+                </span>
+                <div class="vocab-word">Elend</div>
+            </div>
+            <div class="vocab-translation">нищета</div>
+            <div class="vocab-transcription">[дас Э-ленд]</div>
+        </div>
+
+        <div class="vocab-card is-der" data-article="der">
+            <div class="vocab-header">
+                <span class="article-chip der">
+                    <span class="article-icon">♂</span>
+                    <span>der</span>
+                </span>
+                <div class="vocab-word">Bettler</div>
+            </div>
+            <div class="vocab-translation">нищий</div>
+            <div class="vocab-transcription">[дер БЕТ-лер]</div>
+        </div>
+
+        <div class="vocab-card is-die" data-article="die">
+            <div class="vocab-header">
+                <span class="article-chip die">
+                    <span class="article-icon">♀</span>
+                    <span>die</span>
+                </span>
+                <div class="vocab-word">Hütte</div>
+            </div>
+            <div class="vocab-translation">хижина</div>
+            <div class="vocab-transcription">[ди ХЮ-те]</div>
+        </div>
+
+        <div class="vocab-card is-der" data-article="der">
+            <div class="vocab-header">
+                <span class="article-chip der">
+                    <span class="article-icon">♂</span>
+                    <span>der</span>
+                </span>
+                <div class="vocab-word">Narr</div>
+            </div>
+            <div class="vocab-translation">шут</div>
+            <div class="vocab-transcription">[дер НАР]</div>
+        </div>
+
+        <div class="vocab-card is-die" data-article="die">
+            <div class="vocab-header">
+                <span class="article-chip die">
+                    <span class="article-icon">♀</span>
+                    <span>die</span>
+                </span>
+                <div class="vocab-word">Erkenntnis</div>
+            </div>
+            <div class="vocab-translation">познание</div>
+            <div class="vocab-transcription">[ди ер-КЕНТ-нис]</div>
+        </div>
+
+        <div class="vocab-card is-die" data-article="die">
+            <div class="vocab-header">
+                <span class="article-chip die">
+                    <span class="article-icon">♀</span>
+                    <span>die</span>
+                </span>
+                <div class="vocab-word">Wahrheit</div>
+            </div>
+            <div class="vocab-translation">правда</div>
+            <div class="vocab-transcription">[ди ВАР-хайт]</div>
+        </div>
+
+        <div class="vocab-card is-die" data-article="die">
+            <div class="vocab-header">
+                <span class="article-chip die">
+                    <span class="article-icon">♀</span>
+                    <span>die</span>
+                </span>
+                <div class="vocab-word">Reue</div>
+            </div>
+            <div class="vocab-translation">раскаяние</div>
+            <div class="vocab-transcription">[ди РОЙ-е]</div>
+        </div>
+
+        <div class="vocab-card is-die" data-article="die">
+            <div class="vocab-header">
+                <span class="article-chip die">
+                    <span class="article-icon">♀</span>
+                    <span>die</span>
+                </span>
+                <div class="vocab-word">Weisheit</div>
+            </div>
+            <div class="vocab-translation">мудрость</div>
+            <div class="vocab-transcription">[ди ВАЙС-хайт]</div>
+        </div>
+
+        <div class="vocab-card is-die" data-article="die">
+            <div class="vocab-header">
+                <span class="article-chip die">
+                    <span class="article-icon">♀</span>
+                    <span>die</span>
+                </span>
+                <div class="vocab-word">Einsicht</div>
+            </div>
+            <div class="vocab-translation">прозрение</div>
+            <div class="vocab-transcription">[ди АЙН-зихт]</div>
+        </div>
+
+        <div class="vocab-card is-der" data-article="der">
+            <div class="vocab-header">
+                <span class="article-chip der">
+                    <span class="article-icon">♂</span>
+                    <span>der</span>
+                </span>
+                <div class="vocab-word">Tod</div>
+            </div>
+            <div class="vocab-translation">смерть</div>
+            <div class="vocab-transcription">[дер ТОД]</div>
+        </div>
+
+        <div class="vocab-card is-das" data-article="das">
+            <div class="vocab-header">
+                <span class="article-chip das">
+                    <span class="article-icon">⚪</span>
+                    <span>das</span>
+                </span>
+                <div class="vocab-word">Ende</div>
+            </div>
+            <div class="vocab-translation">конец</div>
+            <div class="vocab-transcription">[дас ЕН-де]</div>
+        </div>
+
+        <div class="vocab-card is-das" data-article="das">
+            <div class="vocab-header">
+                <span class="article-chip das">
+                    <span class="article-icon">⚪</span>
+                    <span>das</span>
+                </span>
+                <div class="vocab-word">Herz</div>
+            </div>
+            <div class="vocab-translation">сердце</div>
+            <div class="vocab-transcription">[дас ХЕРЦ]</div>
+        </div>
+
+        <div class="vocab-card is-die" data-article="die">
+            <div class="vocab-header">
+                <span class="article-chip die">
+                    <span class="article-icon">♀</span>
+                    <span>die</span>
+                </span>
+                <div class="vocab-word">Trauer</div>
+            </div>
+            <div class="vocab-translation">скорбь</div>
+            <div class="vocab-transcription">[ди ТРАУ-ер]</div>
+        </div>
+
+        <div class="vocab-card is-der" data-article="der">
+            <div class="vocab-header">
+                <span class="article-chip der">
+                    <span class="article-icon">♂</span>
+                    <span>der</span>
+                </span>
+                <div class="vocab-word">Abschied</div>
+            </div>
+            <div class="vocab-translation">прощание</div>
+            <div class="vocab-transcription">[дер АБ-шид]</div>
+        </div>
+
+    </div>
+</section>
 
         
 <section class="articles-quiz" data-quiz="articles">
     <div class="quiz-header">
-        <h3 class="quiz-title">🎯 Артикли и род</h3>
-        <p class="quiz-description">Выберите правильный артикль для существительных из урока</p>
+        <h2 class="quiz-title">🎯 Вправа: Артиклі та рід</h2>
+        <p class="quiz-description">Виберіть правильний артикль для іменників з уроку</p>
     </div>
     
     <!-- Прогрес -->
     <div class="quiz-progress">
         <div class="progress-count">
-            <strong>0</strong>/<span class="total">0</span> правильных
+            <strong>0</strong>/<span class="total">0</span> правильних
         </div>
         <div class="progress-bar">
             <div class="progress-fill" style="width: 0%"></div>
@@ -1175,11 +1588,217 @@
             </div>
         </div>
 
+        <div class="quiz-item" data-correct="der">
+            <div class="quiz-word">Zorn</div>
+            <div class="quiz-translation">гнев</div>
+            <div class="article-buttons">
+                <button class="article-btn der" data-article="der">
+                    <span class="article-icon">♂</span> der
+                </button>
+                <button class="article-btn die" data-article="die">
+                    <span class="article-icon">♀</span> die
+                </button>
+                <button class="article-btn das" data-article="das">
+                    <span class="article-icon">⚪</span> das
+                </button>
+            </div>
+        </div>
+
+        <div class="quiz-item" data-correct="die">
+            <div class="quiz-word">Undankbarkeit</div>
+            <div class="quiz-translation">неблагодарность</div>
+            <div class="article-buttons">
+                <button class="article-btn der" data-article="der">
+                    <span class="article-icon">♂</span> der
+                </button>
+                <button class="article-btn die" data-article="die">
+                    <span class="article-icon">♀</span> die
+                </button>
+                <button class="article-btn das" data-article="das">
+                    <span class="article-icon">⚪</span> das
+                </button>
+            </div>
+        </div>
+
+        <div class="quiz-item" data-correct="die">
+            <div class="quiz-word">Kränkung</div>
+            <div class="quiz-translation">обида</div>
+            <div class="article-buttons">
+                <button class="article-btn der" data-article="der">
+                    <span class="article-icon">♂</span> der
+                </button>
+                <button class="article-btn die" data-article="die">
+                    <span class="article-icon">♀</span> die
+                </button>
+                <button class="article-btn das" data-article="das">
+                    <span class="article-icon">⚪</span> das
+                </button>
+            </div>
+        </div>
+
+        <div class="quiz-item" data-correct="der">
+            <div class="quiz-word">Fluch</div>
+            <div class="quiz-translation">проклятие</div>
+            <div class="article-buttons">
+                <button class="article-btn der" data-article="der">
+                    <span class="article-icon">♂</span> der
+                </button>
+                <button class="article-btn die" data-article="die">
+                    <span class="article-icon">♀</span> die
+                </button>
+                <button class="article-btn das" data-article="das">
+                    <span class="article-icon">⚪</span> das
+                </button>
+            </div>
+        </div>
+
+        <div class="quiz-item" data-correct="die">
+            <div class="quiz-word">Grausamkeit</div>
+            <div class="quiz-translation">жестокость</div>
+            <div class="article-buttons">
+                <button class="article-btn der" data-article="der">
+                    <span class="article-icon">♂</span> der
+                </button>
+                <button class="article-btn die" data-article="die">
+                    <span class="article-icon">♀</span> die
+                </button>
+                <button class="article-btn das" data-article="das">
+                    <span class="article-icon">⚪</span> das
+                </button>
+            </div>
+        </div>
+
+        <div class="quiz-item" data-correct="die">
+            <div class="quiz-word">Verzweiflung</div>
+            <div class="quiz-translation">отчаяние</div>
+            <div class="article-buttons">
+                <button class="article-btn der" data-article="der">
+                    <span class="article-icon">♂</span> der
+                </button>
+                <button class="article-btn die" data-article="die">
+                    <span class="article-icon">♀</span> die
+                </button>
+                <button class="article-btn das" data-article="das">
+                    <span class="article-icon">⚪</span> das
+                </button>
+            </div>
+        </div>
+
+        <div class="quiz-item" data-correct="die">
+            <div class="quiz-word">Einsamkeit</div>
+            <div class="quiz-translation">одиночество</div>
+            <div class="article-buttons">
+                <button class="article-btn der" data-article="der">
+                    <span class="article-icon">♂</span> der
+                </button>
+                <button class="article-btn die" data-article="die">
+                    <span class="article-icon">♀</span> die
+                </button>
+                <button class="article-btn das" data-article="das">
+                    <span class="article-icon">⚪</span> das
+                </button>
+            </div>
+        </div>
+
+        <div class="quiz-item" data-correct="die">
+            <div class="quiz-word">Träne</div>
+            <div class="quiz-translation">слеза</div>
+            <div class="article-buttons">
+                <button class="article-btn der" data-article="der">
+                    <span class="article-icon">♂</span> der
+                </button>
+                <button class="article-btn die" data-article="die">
+                    <span class="article-icon">♀</span> die
+                </button>
+                <button class="article-btn das" data-article="das">
+                    <span class="article-icon">⚪</span> das
+                </button>
+            </div>
+        </div>
+
+        <div class="quiz-item" data-correct="die">
+            <div class="quiz-word">Not</div>
+            <div class="quiz-translation">нужда</div>
+            <div class="article-buttons">
+                <button class="article-btn der" data-article="der">
+                    <span class="article-icon">♂</span> der
+                </button>
+                <button class="article-btn die" data-article="die">
+                    <span class="article-icon">♀</span> die
+                </button>
+                <button class="article-btn das" data-article="das">
+                    <span class="article-icon">⚪</span> das
+                </button>
+            </div>
+        </div>
+
+        <div class="quiz-item" data-correct="der">
+            <div class="quiz-word">Sturm</div>
+            <div class="quiz-translation">буря</div>
+            <div class="article-buttons">
+                <button class="article-btn der" data-article="der">
+                    <span class="article-icon">♂</span> der
+                </button>
+                <button class="article-btn die" data-article="die">
+                    <span class="article-icon">♀</span> die
+                </button>
+                <button class="article-btn das" data-article="das">
+                    <span class="article-icon">⚪</span> das
+                </button>
+            </div>
+        </div>
+
+        <div class="quiz-item" data-correct="der">
+            <div class="quiz-word">Wahnsinn</div>
+            <div class="quiz-translation">безумие</div>
+            <div class="article-buttons">
+                <button class="article-btn der" data-article="der">
+                    <span class="article-icon">♂</span> der
+                </button>
+                <button class="article-btn die" data-article="die">
+                    <span class="article-icon">♀</span> die
+                </button>
+                <button class="article-btn das" data-article="das">
+                    <span class="article-icon">⚪</span> das
+                </button>
+            </div>
+        </div>
+
+        <div class="quiz-item" data-correct="der">
+            <div class="quiz-word">Donner</div>
+            <div class="quiz-translation">гром</div>
+            <div class="article-buttons">
+                <button class="article-btn der" data-article="der">
+                    <span class="article-icon">♂</span> der
+                </button>
+                <button class="article-btn die" data-article="die">
+                    <span class="article-icon">♀</span> die
+                </button>
+                <button class="article-btn das" data-article="das">
+                    <span class="article-icon">⚪</span> das
+                </button>
+            </div>
+        </div>
+
+        <div class="quiz-item" data-correct="der">
+            <div class="quiz-word">Blitz</div>
+            <div class="quiz-translation">молния</div>
+            <div class="article-buttons">
+                <button class="article-btn der" data-article="der">
+                    <span class="article-icon">♂</span> der
+                </button>
+                <button class="article-btn die" data-article="die">
+                    <span class="article-icon">♀</span> die
+                </button>
+                <button class="article-btn das" data-article="das">
+                    <span class="article-icon">⚪</span> das
+                </button>
+            </div>
+        </div>
+
     </div>
 </section>
 
-
-        </div>
 
         <nav class="bottom-nav">
             <a href="../index.html" class="nav-link">← К главной</a>
@@ -1876,59 +2495,59 @@
             {
                 "question": "Что означает немецкое слово «der Thron»?",
                 "choices": [
-                    "править",
                     "королевство",
-                    "трон",
-                    "власть"
+                    "править",
+                    "власть",
+                    "трон"
                 ],
-                "correctIndex": 2
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «das Königreich»?",
                 "choices": [
-                    "королевство",
                     "править",
                     "трон",
-                    "власть"
+                    "власть",
+                    "королевство"
                 ],
-                "correctIndex": 0
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «die Macht»?",
                 "choices": [
-                    "править",
                     "корона",
                     "власть",
-                    "королевство"
+                    "провозглашать",
+                    "править"
                 ],
-                "correctIndex": 2
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «herrschen»?",
                 "choices": [
-                    "великолепный",
                     "корона",
                     "править",
-                    "церемония"
+                    "королевство",
+                    "великолепный"
                 ],
-                "correctIndex": 2
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «verkünden»?",
                 "choices": [
-                    "провозглашать",
+                    "великолепный",
                     "церемония",
-                    "трон",
-                    "править"
+                    "власть",
+                    "провозглашать"
                 ],
-                "correctIndex": 0
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «die Krone»?",
                 "choices": [
-                    "великолепный",
-                    "церемония",
                     "королевство",
+                    "великолепный",
+                    "провозглашать",
                     "корона"
                 ],
                 "correctIndex": 3
@@ -1937,21 +2556,21 @@
                 "question": "Что означает немецкое слово «die Zeremonie»?",
                 "choices": [
                     "провозглашать",
-                    "церемония",
-                    "править",
-                    "королевство"
+                    "королевство",
+                    "трон",
+                    "церемония"
                 ],
-                "correctIndex": 1
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «prächtig»?",
                 "choices": [
-                    "церемония",
+                    "великолепный",
+                    "провозглашать",
                     "трон",
-                    "королевство",
-                    "великолепный"
+                    "королевство"
                 ],
-                "correctIndex": 3
+                "correctIndex": 0
             }
         ],
         "quizAttempts": {},
@@ -2735,19 +3354,19 @@
             {
                 "question": "Что означает немецкое слово «demütigen»?",
                 "choices": [
+                    "проклинать",
                     "унижать",
-                    "гнев",
                     "неблагодарность",
-                    "проклинать"
+                    "гнев"
                 ],
-                "correctIndex": 0
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «der Zorn»?",
                 "choices": [
                     "унижать",
-                    "неблагодарность",
                     "проклинать",
+                    "неблагодарность",
                     "гнев"
                 ],
                 "correctIndex": 3
@@ -2755,62 +3374,62 @@
             {
                 "question": "Что означает немецкое слово «die Undankbarkeit»?",
                 "choices": [
-                    "обида",
-                    "сожалеть",
+                    "унижать",
                     "изгонять",
-                    "неблагодарность"
+                    "неблагодарность",
+                    "проклятие"
                 ],
-                "correctIndex": 3
+                "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «verfluchen»?",
                 "choices": [
-                    "изгонять",
-                    "гнев",
-                    "проклинать",
-                    "унижать"
-                ],
-                "correctIndex": 2
-            },
-            {
-                "question": "Что означает немецкое слово «vertreiben»?",
-                "choices": [
-                    "изгонять",
-                    "проклинать",
-                    "унижать",
-                    "сожалеть"
-                ],
-                "correctIndex": 0
-            },
-            {
-                "question": "Что означает немецкое слово «die Kränkung»?",
-                "choices": [
                     "неблагодарность",
+                    "обида",
                     "гнев",
-                    "проклятие",
-                    "обида"
+                    "проклинать"
                 ],
                 "correctIndex": 3
             },
             {
-                "question": "Что означает немецкое слово «bereuen»?",
+                "question": "Что означает немецкое слово «vertreiben»?",
                 "choices": [
-                    "обида",
-                    "гнев",
-                    "сожалеть",
+                    "неблагодарность",
+                    "проклинать",
+                    "изгонять",
                     "унижать"
                 ],
                 "correctIndex": 2
             },
             {
-                "question": "Что означает немецкое слово «der Fluch»?",
+                "question": "Что означает немецкое слово «die Kränkung»?",
                 "choices": [
-                    "неблагодарность",
-                    "проклятие",
-                    "унижать",
-                    "сожалеть"
+                    "проклинать",
+                    "обида",
+                    "сожалеть",
+                    "изгонять"
                 ],
                 "correctIndex": 1
+            },
+            {
+                "question": "Что означает немецкое слово «bereuen»?",
+                "choices": [
+                    "унижать",
+                    "сожалеть",
+                    "проклятие",
+                    "гнев"
+                ],
+                "correctIndex": 1
+            },
+            {
+                "question": "Что означает немецкое слово «der Fluch»?",
+                "choices": [
+                    "обида",
+                    "неблагодарность",
+                    "проклятие",
+                    "изгонять"
+                ],
+                "correctIndex": 2
             }
         ],
         "quizAttempts": {},
@@ -3605,81 +4224,81 @@
                 "question": "Что означает немецкое слово «verlassen»?",
                 "choices": [
                     "отвергать",
+                    "отчаяние",
                     "покидать",
-                    "жестокость",
-                    "отчаяние"
+                    "жестокость"
                 ],
-                "correctIndex": 1
+                "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «verstoßen»?",
                 "choices": [
-                    "отвергать",
                     "покидать",
-                    "отчаяние",
-                    "жестокость"
+                    "жестокость",
+                    "отвергать",
+                    "отчаяние"
                 ],
-                "correctIndex": 0
+                "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «die Grausamkeit»?",
                 "choices": [
                     "отчаяние",
+                    "просить",
                     "жестокость",
-                    "покидать",
-                    "просить"
+                    "отвергать"
                 ],
-                "correctIndex": 1
+                "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «die Verzweiflung»?",
                 "choices": [
-                    "слеза",
-                    "жестокость",
-                    "покидать",
-                    "отчаяние"
+                    "просить",
+                    "отчаяние",
+                    "отвергать",
+                    "слеза"
                 ],
-                "correctIndex": 3
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «betteln»?",
                 "choices": [
-                    "жестокость",
-                    "покидать",
-                    "одиночество",
-                    "просить"
+                    "отчаяние",
+                    "просить",
+                    "слеза",
+                    "нужда"
                 ],
-                "correctIndex": 3
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «die Einsamkeit»?",
                 "choices": [
-                    "одиночество",
-                    "покидать",
                     "просить",
-                    "жестокость"
+                    "одиночество",
+                    "отчаяние",
+                    "отвергать"
                 ],
-                "correctIndex": 0
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «die Träne»?",
                 "choices": [
+                    "слеза",
+                    "одиночество",
                     "отвергать",
-                    "просить",
-                    "покидать",
-                    "слеза"
+                    "просить"
                 ],
-                "correctIndex": 3
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «die Not»?",
                 "choices": [
+                    "слеза",
+                    "одиночество",
                     "нужда",
-                    "просить",
-                    "отчаяние",
-                    "одиночество"
+                    "покидать"
                 ],
-                "correctIndex": 0
+                "correctIndex": 2
             }
         ],
         "quizAttempts": {},
@@ -4463,82 +5082,82 @@
             {
                 "question": "Что означает немецкое слово «der Sturm»?",
                 "choices": [
-                    "бушевать",
                     "безумие",
-                    "буря",
-                    "гром"
+                    "гром",
+                    "бушевать",
+                    "буря"
                 ],
-                "correctIndex": 2
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «der Wahnsinn»?",
                 "choices": [
-                    "гром",
                     "безумие",
-                    "бушевать",
-                    "буря"
+                    "гром",
+                    "буря",
+                    "бушевать"
                 ],
-                "correctIndex": 1
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «toben»?",
                 "choices": [
                     "бушевать",
-                    "безумие",
+                    "молния",
                     "буря",
-                    "гром"
+                    "кричать"
                 ],
                 "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «der Donner»?",
                 "choices": [
+                    "голый",
                     "гром",
-                    "хаос",
-                    "безумие",
-                    "буря"
+                    "кричать",
+                    "безумие"
                 ],
-                "correctIndex": 0
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «der Blitz»?",
                 "choices": [
-                    "буря",
-                    "хаос",
-                    "безумие",
-                    "молния"
+                    "бушевать",
+                    "молния",
+                    "гром",
+                    "голый"
                 ],
-                "correctIndex": 3
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «schreien»?",
                 "choices": [
-                    "безумие",
                     "кричать",
-                    "хаос",
-                    "гром"
+                    "гром",
+                    "голый",
+                    "молния"
                 ],
-                "correctIndex": 1
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «nackt»?",
                 "choices": [
-                    "молния",
-                    "голый",
                     "безумие",
-                    "хаос"
+                    "хаос",
+                    "молния",
+                    "голый"
                 ],
-                "correctIndex": 1
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «das Chaos»?",
                 "choices": [
-                    "хаос",
+                    "бушевать",
                     "безумие",
-                    "буря",
-                    "молния"
+                    "хаос",
+                    "кричать"
                 ],
-                "correctIndex": 0
+                "correctIndex": 2
             }
         ],
         "quizAttempts": {},
@@ -5339,8 +5958,8 @@
                 "question": "Что означает немецкое слово «das Elend»?",
                 "choices": [
                     "нищета",
-                    "мёрзнуть",
                     "нищий",
+                    "мёрзнуть",
                     "бедный"
                 ],
                 "correctIndex": 0
@@ -5348,39 +5967,39 @@
             {
                 "question": "Что означает немецкое слово «der Bettler»?",
                 "choices": [
-                    "нищий",
                     "бедный",
-                    "нищета",
-                    "мёрзнуть"
-                ],
-                "correctIndex": 0
-            },
-            {
-                "question": "Что означает немецкое слово «arm»?",
-                "choices": [
-                    "хижина",
-                    "бедный",
-                    "нищета",
-                    "мёрзнуть"
-                ],
-                "correctIndex": 1
-            },
-            {
-                "question": "Что означает немецкое слово «frieren»?",
-                "choices": [
-                    "шут",
                     "нищий",
                     "мёрзнуть",
                     "нищета"
                 ],
+                "correctIndex": 1
+            },
+            {
+                "question": "Что означает немецкое слово «arm»?",
+                "choices": [
+                    "страдать",
+                    "хижина",
+                    "бедный",
+                    "мёрзнуть"
+                ],
                 "correctIndex": 2
+            },
+            {
+                "question": "Что означает немецкое слово «frieren»?",
+                "choices": [
+                    "мёрзнуть",
+                    "нищета",
+                    "нищий",
+                    "познание"
+                ],
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «die Hütte»?",
                 "choices": [
-                    "познание",
                     "бедный",
                     "шут",
+                    "страдать",
                     "хижина"
                 ],
                 "correctIndex": 3
@@ -5388,32 +6007,32 @@
             {
                 "question": "Что означает немецкое слово «leiden»?",
                 "choices": [
-                    "страдать",
-                    "нищета",
+                    "шут",
                     "хижина",
-                    "нищий"
+                    "нищий",
+                    "страдать"
                 ],
-                "correctIndex": 0
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «der Narr»?",
                 "choices": [
-                    "шут",
+                    "нищий",
                     "мёрзнуть",
-                    "нищета",
-                    "страдать"
+                    "бедный",
+                    "шут"
                 ],
-                "correctIndex": 0
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «die Erkenntnis»?",
                 "choices": [
-                    "страдать",
-                    "познание",
                     "мёрзнуть",
-                    "нищета"
+                    "бедный",
+                    "нищий",
+                    "познание"
                 ],
-                "correctIndex": 1
+                "correctIndex": 3
             }
         ],
         "quizAttempts": {},
@@ -6213,72 +6832,72 @@
             {
                 "question": "Что означает немецкое слово «verstehen»?",
                 "choices": [
-                    "раскаяние",
-                    "понимать",
+                    "узнавать",
                     "правда",
-                    "узнавать"
+                    "раскаяние",
+                    "понимать"
                 ],
-                "correctIndex": 1
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «die Wahrheit»?",
                 "choices": [
-                    "раскаяние",
-                    "правда",
+                    "мудрость",
+                    "понимать",
                     "прозрение",
-                    "узнавать"
+                    "правда"
                 ],
-                "correctIndex": 1
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «die Reue»?",
                 "choices": [
                     "понимать",
-                    "раскаяние",
-                    "правда",
-                    "прозрение"
-                ],
-                "correctIndex": 1
-            },
-            {
-                "question": "Что означает немецкое слово «die Weisheit»?",
-                "choices": [
-                    "прозрение",
-                    "раскаяние",
-                    "понимать",
-                    "мудрость"
+                    "виновный",
+                    "мудрость",
+                    "раскаяние"
                 ],
                 "correctIndex": 3
             },
             {
-                "question": "Что означает немецкое слово «vergeben»?",
+                "question": "Что означает немецкое слово «die Weisheit»?",
                 "choices": [
                     "правда",
                     "прощать",
                     "мудрость",
-                    "прозрение"
+                    "понимать"
+                ],
+                "correctIndex": 2
+            },
+            {
+                "question": "Что означает немецкое слово «vergeben»?",
+                "choices": [
+                    "мудрость",
+                    "прощать",
+                    "прозрение",
+                    "раскаяние"
                 ],
                 "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «die Einsicht»?",
                 "choices": [
-                    "раскаяние",
+                    "правда",
                     "прозрение",
-                    "прощать",
-                    "правда"
+                    "виновный",
+                    "узнавать"
                 ],
                 "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «schuldig»?",
                 "choices": [
-                    "понимать",
-                    "прощать",
-                    "виновный",
-                    "мудрость"
+                    "мудрость",
+                    "правда",
+                    "прозрение",
+                    "виновный"
                 ],
-                "correctIndex": 2
+                "correctIndex": 3
             }
         ],
         "quizAttempts": {},
@@ -7077,37 +7696,37 @@
                 "question": "Что означает немецкое слово «verzeihen»?",
                 "choices": [
                     "умирать",
+                    "прощать",
                     "конец",
-                    "смерть",
-                    "прощать"
+                    "смерть"
                 ],
-                "correctIndex": 3
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «der Tod»?",
                 "choices": [
                     "прощать",
                     "конец",
-                    "смерть",
-                    "умирать"
+                    "умирать",
+                    "смерть"
                 ],
-                "correctIndex": 2
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «sterben»?",
                 "choices": [
+                    "сердце",
                     "умирать",
-                    "конец",
-                    "прощать",
-                    "сердце"
+                    "вечный",
+                    "скорбь"
                 ],
-                "correctIndex": 0
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «das Ende»?",
                 "choices": [
-                    "скорбь",
-                    "вечный",
+                    "прощание",
+                    "умирать",
                     "смерть",
                     "конец"
                 ],
@@ -7116,40 +7735,40 @@
             {
                 "question": "Что означает немецкое слово «das Herz»?",
                 "choices": [
+                    "умирать",
+                    "вечный",
                     "сердце",
-                    "прощать",
-                    "смерть",
-                    "конец"
+                    "прощать"
                 ],
-                "correctIndex": 0
+                "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «die Trauer»?",
                 "choices": [
+                    "прощание",
                     "прощать",
-                    "вечный",
                     "скорбь",
-                    "прощание"
+                    "сердце"
                 ],
                 "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «der Abschied»?",
                 "choices": [
-                    "прощать",
-                    "скорбь",
                     "прощание",
-                    "смерть"
+                    "умирать",
+                    "смерть",
+                    "прощать"
                 ],
-                "correctIndex": 2
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «ewig»?",
                 "choices": [
-                    "конец",
                     "прощать",
+                    "сердце",
                     "вечный",
-                    "умирать"
+                    "конец"
                 ],
                 "correctIndex": 2
             }
@@ -9816,9 +10435,9 @@ console.log('[Device Info]', {
             const message = document.createElement('div');
             message.className = 'completion-message';
             message.innerHTML = `
-                <h2>🎉 Отлично!</h2>
-                <p>Вы правильно определили все артикли!</p>
-                <p>Правильных ответов: ${correctCount}/${totalCount}</p>
+                <h2>🎉 Відмінно!</h2>
+                <p>Ви правильно визначили всі артиклі!</p>
+                <p>Правильних відповідей: ${correctCount}/${totalCount}</p>
             `;
             document.body.appendChild(message);
             

@@ -18,7 +18,7 @@ class MnemonicsGenerator:
             'bg': '#EBF4FF',         # Пастельно-синій
             'light': '#C3DAFE',      # Світло-синій
             'icon': '♂',             # Символ чоловічого роду
-            'label': 'чоловічий',
+            'label': 'мужской',
             'name': 'der'
         },
         'die': {
@@ -27,7 +27,7 @@ class MnemonicsGenerator:
             'bg': '#FFE5E5',         # Пастельно-червоний
             'light': '#FED7D7',      # Світло-червоний
             'icon': '♀',             # Символ жіночого роду
-            'label': 'жіночий',
+            'label': 'женский',
             'name': 'die'
         },
         'das': {
@@ -36,7 +36,7 @@ class MnemonicsGenerator:
             'bg': '#FFF9DB',         # Пастельно-жовтий
             'light': '#FEEBC8',      # Світло-жовтий
             'icon': '⚪',            # Символ середнього роду
-            'label': 'середній',
+            'label': 'средний',
             'name': 'das'
         }
     }
@@ -45,6 +45,13 @@ class MnemonicsGenerator:
         """Ініціалізація генератора"""
         self.config = config
         self.base_dir = Path(config.BASE_DIR)
+    
+    def get_phase_vocabulary(self, character_data, phase_id):
+        """Отримує словник для конкретної фази"""
+        for phase in character_data.get('journey_phases', []):
+            if phase.get('id') == phase_id:
+                return phase.get('vocabulary', [])
+        return []
         
     def extract_article(self, german_word: str) -> str:
         """Витягти артикль з німецького слова"""
@@ -140,18 +147,21 @@ class MnemonicsGenerator:
 }
 
 .vocab-card.is-der {
-    background: linear-gradient(135deg, var(--der-bg) 0%, white 100%);
-    border-color: var(--der-primary);
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb) !important;
+    border-left: 4px solid #1976d2 !important;
+    transition: all 0.3s ease;
 }
 
 .vocab-card.is-die {
-    background: linear-gradient(135deg, var(--die-bg) 0%, white 100%);
-    border-color: var(--die-primary);
+    background: linear-gradient(135deg, #fce4ec, #f8bbd0) !important;
+    border-left: 4px solid #d32f2f !important;
+    transition: all 0.3s ease;
 }
 
 .vocab-card.is-das {
-    background: linear-gradient(135deg, var(--das-bg) 0%, white 100%);
-    border-color: var(--das-primary);
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9) !important;
+    border-left: 4px solid #388e3c !important;
+    transition: all 0.3s ease;
 }
 
 .vocab-card:hover {
@@ -160,15 +170,21 @@ class MnemonicsGenerator:
 }
 
 .vocab-card.is-der:hover {
-    background: linear-gradient(135deg, var(--der-bg) 0%, var(--der-light) 100%);
+    background: linear-gradient(135deg, #bbdefb, #90caf9) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(25, 118, 210, 0.3);
 }
 
 .vocab-card.is-die:hover {
-    background: linear-gradient(135deg, var(--die-bg) 0%, var(--die-light) 100%);
+    background: linear-gradient(135deg, #f8bbd0, #f48fb1) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(211, 47, 47, 0.3);
 }
 
 .vocab-card.is-das:hover {
-    background: linear-gradient(135deg, var(--das-bg) 0%, var(--das-light) 100%);
+    background: linear-gradient(135deg, #c8e6c9, #a5d6a7) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(56, 142, 60, 0.3);
 }
 
 /* Заголовок картки з артиклем */
@@ -462,25 +478,25 @@ class MnemonicsGenerator:
 """
         return css
     
-    def generate_vocabulary_section(self, character_data: Dict) -> str:
-        """Генерація секції словника з кольоровою кодировкою"""
+    def generate_vocabulary_section(self, character_data: Dict, phase_id: str = None) -> str:
+        """Генерація секції словника з кольоровою кодировкою для конкретної фази"""
         html = """
 <section class="vocabulary-section">
-    <h2 class="section-title">📚 Словник з кольоровою мнемотехнікою</h2>
+    <h2 class="section-title">📚 Словарь урока</h2>
     
     <!-- Легенда артиклів -->
     <div class="articles-legend">
         <div class="legend-item legend-der">
             <span class="legend-icon">♂</span>
-            <span>der — чоловічий</span>
+            <span>der — мужской</span>
         </div>
         <div class="legend-item legend-die">
             <span class="legend-icon">♀</span>
-            <span>die — жіночий</span>
+            <span>die — женский</span>
         </div>
         <div class="legend-item legend-das">
             <span class="legend-icon">⚪</span>
-            <span>das — середній</span>
+            <span>das — средний</span>
         </div>
     </div>
     
@@ -488,14 +504,16 @@ class MnemonicsGenerator:
     <div class="vocabulary-grid">
 """
         
-        # Збираємо всі слова з усіх фаз
-        all_words = []
-        for phase in character_data.get('journey_phases', []):
-            for word in phase.get('vocabulary', []):
-                all_words.append(word)
+        # Отримуємо слова конкретної фази
+        if phase_id:
+            vocabulary = self.get_phase_vocabulary(character_data, phase_id)
+        else:
+            # Якщо phase_id не вказано - беремо першу фазу
+            phases = character_data.get('journey_phases', [])
+            vocabulary = phases[0].get('vocabulary', []) if phases else []
         
         # Генеруємо картки для кожного слова
-        for word in all_words:
+        for word in vocabulary:
             german = word['german']
             article = self.extract_article(german)
             
@@ -504,7 +522,7 @@ class MnemonicsGenerator:
                 word_only = german.replace(f"{article} ", "")
                 
                 html += f"""
-        <div class="vocab-card is-{article}" data-article="{article}">
+        <div class="vocab-card is-{article}" data-word="{word_only}" data-article="{article}">
             <div class="vocab-header">
                 <span class="article-chip {article}">
                     <span class="article-icon">{color_data['icon']}</span>
@@ -523,19 +541,19 @@ class MnemonicsGenerator:
 """
         return html
     
-    def generate_articles_quiz(self, character_data: Dict) -> str:
-        """Генерація інтерактивної вправи на артиклі"""
+    def generate_articles_quiz(self, character_data: Dict, phase_id: str = None) -> str:
+        """Генерація інтерактивної вправи на артиклі зі словами з уроку"""
         html = """
 <section class="articles-quiz" data-quiz="articles">
     <div class="quiz-header">
-        <h2 class="quiz-title">🎯 Вправа: Артиклі та рід</h2>
-        <p class="quiz-description">Виберіть правильний артикль для іменників з уроку</p>
+        <h3 class="quiz-title">🎯 Артикли и род</h3>
+        <p class="quiz-description">Выберите правильный артикль для существительных из урока</p>
     </div>
     
     <!-- Прогрес -->
     <div class="quiz-progress">
         <div class="progress-count">
-            <strong>0</strong>/<span class="total">0</span> правильних
+            <strong>0</strong>/<span class="total">0</span> правильных
         </div>
         <div class="progress-bar">
             <div class="progress-fill" style="width: 0%"></div>
@@ -546,10 +564,13 @@ class MnemonicsGenerator:
     <div class="quiz-grid">
 """
         
-        # Збираємо слова для вправи (максимум 18)
+        # Збираємо слова з конкретної фази або всіх
         quiz_words = []
-        for phase in character_data.get('journey_phases', []):
-            for word in phase.get('vocabulary', []):
+        
+        if phase_id:
+            # Якщо вказана фаза - беремо слова з неї
+            vocab = self.get_phase_vocabulary(character_data, phase_id)
+            for word in vocab:
                 german = word['german']
                 article = self.extract_article(german)
                 if article:
@@ -559,10 +580,23 @@ class MnemonicsGenerator:
                         'article': article,
                         'translation': word['russian']
                     })
-                    if len(quiz_words) >= 18:
-                        break
-            if len(quiz_words) >= 18:
-                break
+        else:
+            # Інакше беремо слова з усіх фаз (максимум 18)
+            for phase in character_data.get('journey_phases', []):
+                for word in phase.get('vocabulary', []):
+                    german = word['german']
+                    article = self.extract_article(german)
+                    if article:
+                        word_only = german.replace(f"{article} ", "")
+                        quiz_words.append({
+                            'word': word_only,
+                            'article': article,
+                            'translation': word['russian']
+                        })
+                        if len(quiz_words) >= 18:
+                            break
+                if len(quiz_words) >= 18:
+                    break
         
         # Генеруємо картки питань
         for item in quiz_words:
@@ -676,9 +710,9 @@ class MnemonicsGenerator:
             const message = document.createElement('div');
             message.className = 'completion-message';
             message.innerHTML = `
-                <h2>🎉 Відмінно!</h2>
-                <p>Ви правильно визначили всі артиклі!</p>
-                <p>Правильних відповідей: ${correctCount}/${totalCount}</p>
+                <h2>🎉 Отлично!</h2>
+                <p>Вы правильно определили все артикли!</p>
+                <p>Правильных ответов: ${correctCount}/${totalCount}</p>
             `;
             document.body.appendChild(message);
             

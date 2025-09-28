@@ -1,0 +1,120 @@
+"""HTML Generator for Lira Journey pages."""
+from __future__ import annotations
+
+from pathlib import Path
+from typing import Any
+import re
+
+from .base import BaseGenerator
+from .mnemonics_gen import MnemonicsGenerator
+from .html import (
+    HeadGenerator,
+    JourneyBuilder,
+    JourneyTemplateEngine,
+    TemplateContext,
+    VocabularyProcessor,
+)
+from .js_lira import LiraJSGenerator
+
+
+class LiraHTMLGenerator(BaseGenerator):
+    """Generate complete HTML pages in Lira journey style."""
+
+    def __init__(self, config: Any) -> None:
+        super().__init__(config)
+        self.vocabulary = VocabularyProcessor(self.config.DATA_DIR)
+        self.journey_builder = JourneyBuilder(self.vocabulary)
+        self.head_generator = HeadGenerator()
+        self.template_engine = JourneyTemplateEngine(self)
+        self.mnemo_gen = MnemonicsGenerator(config)
+
+    def generate_journey(self, character_file: Path) -> str:
+        character = self.load_character(character_file)
+        self.vocabulary.enrich_character(character)
+        assets = self.journey_builder.prepare(character)
+        character["journey_phases"] = assets.phases
+        progress = JourneyBuilder.initial_progress(assets.phases)
+        head_context = self.head_generator.build(assets.phases, progress)
+        js_bundle = LiraJSGenerator.generate(character)
+        
+        # Додаємо мнемотехніку
+        mnemo_css = self.mnemo_gen.generate_css()
+        mnemo_js = self.mnemo_gen.generate_javascript()
+        mnemo_vocabulary = self.mnemo_gen.generate_vocabulary_section(character)
+        mnemo_quiz = self.mnemo_gen.generate_articles_quiz(character)
+        
+        # Об'єднуємо JS
+        js_bundle = js_bundle + "\n" + mnemo_js
+        
+        navigation = {
+            "home_href": "../index.html",
+            "home_label": "На главную",
+            "home_icon": "←",
+            "study_label": "СПИСОК ИЗУЧЕНИЯ",
+        }
+        context = TemplateContext(
+            character=character,
+            phases=assets.phases,
+            exercises=assets.exercises,
+            quizzes=assets.quizzes,
+            quizzes_json=assets.quizzes_json,
+            head=head_context,
+            navigation=navigation,
+            relations_metadata=assets.relations_metadata,
+            js_bundle=js_bundle,
+        )
+        
+        # Отримуємо HTML і додаємо мнемотехніку
+        html = self.template_engine.render(context)
+        
+        # Видаляємо існуючий порожній vocabulary-grid (якщо є)
+        # Цей елемент знаходиться в оригінальному шаблоні і конфліктує з нашим
+        if '<div class="vocabulary-grid"></div>' in html:
+            html = html.replace('<div class="vocabulary-grid"></div>', '')
+            print(f"[DEBUG] Видалено порожній vocabulary-grid для {character['id']}")
+        
+        # Аналогічно для всього vocabulary-section блоку
+        vocab_pattern = r'<div class="vocabulary-section">\s*<h2>[^<]*</h2>\s*<div class="vocabulary-grid"></div>\s*[^<]*</div>'
+        if re.search(vocab_pattern, html):
+            html = re.sub(vocab_pattern, '', html)
+            print(f"[DEBUG] Видалено порожню vocabulary-section для {character['id']}")
+        
+        # Вставляємо CSS мнемотехніки в head
+        # Додаємо CSS стилі в head через style тег
+        if mnemo_css and '</head>' in html:
+            style_block = f'<style>\n{mnemo_css}\n</style>'
+            html = html.replace('</head>', f'{style_block}\n</head>')
+            print(f"[DEBUG] CSS мнемотехніки додано в head для {character['id']}")
+        
+        # Вставляємо HTML секції мнемотехніки між exercises та bottom-nav
+        # Важливо: шукаємо патерн після exercises-container
+        exercises_pos = html.find('exercises-container')
+        if exercises_pos > 0:
+            # Шукаємо закриття exercises блоку
+            # Патерн знайдений аналізом: два закриваючих div з відступами перед nav
+            pattern = r'(</div>\n            </div>\n            \n        </div>\n\n        )(<nav class="bottom-nav">)'
+            
+            # Шукаємо патерн ПІСЛЯ exercises позиції
+            match = re.search(pattern, html[exercises_pos:])
+            if match:
+                # Знайшли правильне місце - вставляємо мнемотехніку
+                before_nav = match.group(1)
+                nav_tag = match.group(2)
+                
+                # Замінюємо тільки в потрібному місці
+                old_section = before_nav + nav_tag
+                new_section = f'{before_nav}{mnemo_vocabulary}\n        {mnemo_quiz}\n\n        {nav_tag}'
+                
+                # Знаходимо позицію в повному HTML
+                insert_pos = html.find(old_section, exercises_pos)
+                if insert_pos > 0:
+                    html = html[:insert_pos] + new_section + html[insert_pos + len(old_section):]
+                    print(f"[DEBUG] Мнемотехніка вставлена після exercises для {character['id']}")
+                else:
+                    print(f"[WARNING] Не знайдено точку вставки для {character['id']}")
+            else:
+                print(f"[WARNING] Не знайдено патерн після exercises для {character['id']}")
+        else:
+            print(f"[ERROR] exercises-container не знайдено для {character['id']}")
+        
+        return html

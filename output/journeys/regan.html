@@ -8,6 +8,422 @@
     <link rel="stylesheet" href="../static/css/journey.css">
     <link rel="stylesheet" href="../static/css/exercises.css">
     <link rel="stylesheet" href="../static/css/word_matching_fix.css">
+<style>
+
+/* ========================================
+   КОЛЬОРОВА МНЕМОТЕХНІКА ДЛЯ АРТИКЛІВ
+   ======================================== */
+
+/* CSS змінні для кольорів */
+:root {
+    /* Der - чоловічий */
+    --der-primary: #2B6CB0;
+    --der-hover: #2C5282;
+    --der-bg: #EBF4FF;
+    --der-light: #C3DAFE;
+    
+    /* Die - жіночий */
+    --die-primary: #C53030;
+    --die-hover: #9B2C2C;
+    --die-bg: #FFE5E5;
+    --die-light: #FED7D7;
+    
+    /* Das - середній */
+    --das-primary: #D69E2E;
+    --das-hover: #B7791F;
+    --das-bg: #FFF9DB;
+    --das-light: #FEEBC8;
+}
+
+/* Легенда артиклів */
+.articles-legend {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.legend-item.legend-der {
+    background: var(--der-bg);
+    color: var(--der-primary);
+}
+
+.legend-item.legend-die {
+    background: var(--die-bg);
+    color: var(--die-primary);
+}
+
+.legend-item.legend-das {
+    background: var(--das-bg);
+    color: var(--das-primary);
+}
+
+.legend-icon {
+    font-size: 1.25rem;
+}
+
+/* Картки словника з кольоровою кодировкою */
+.vocabulary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.vocab-card {
+    position: relative;
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.vocab-card.is-der {
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb) !important;
+    border-left: 4px solid #1976d2 !important;
+    transition: all 0.3s ease;
+}
+
+.vocab-card.is-die {
+    background: linear-gradient(135deg, #fce4ec, #f8bbd0) !important;
+    border-left: 4px solid #d32f2f !important;
+    transition: all 0.3s ease;
+}
+
+.vocab-card.is-das {
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9) !important;
+    border-left: 4px solid #388e3c !important;
+    transition: all 0.3s ease;
+}
+
+.vocab-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.vocab-card.is-der:hover {
+    background: linear-gradient(135deg, #bbdefb, #90caf9) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(25, 118, 210, 0.3);
+}
+
+.vocab-card.is-die:hover {
+    background: linear-gradient(135deg, #f8bbd0, #f48fb1) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(211, 47, 47, 0.3);
+}
+
+.vocab-card.is-das:hover {
+    background: linear-gradient(135deg, #c8e6c9, #a5d6a7) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(56, 142, 60, 0.3);
+}
+
+/* Заголовок картки з артиклем */
+.vocab-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.article-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.article-chip.der {
+    background: var(--der-primary);
+}
+
+.article-chip.die {
+    background: var(--die-primary);
+}
+
+.article-chip.das {
+    background: var(--das-primary);
+}
+
+.article-icon {
+    font-size: 1rem;
+}
+
+/* Слово в картці */
+.vocab-word {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2D3748;
+}
+
+.vocab-translation {
+    color: #718096;
+    font-size: 1.125rem;
+    margin-top: 0.5rem;
+}
+
+.vocab-transcription {
+    color: #A0AEC0;
+    font-size: 0.875rem;
+    font-style: italic;
+    margin-top: 0.25rem;
+}
+
+/* Упражнение на артикли */
+.articles-quiz {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    margin: 2rem 0;
+}
+
+.quiz-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.quiz-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2D3748;
+    margin-bottom: 0.5rem;
+}
+
+.quiz-description {
+    color: #718096;
+    font-size: 1.125rem;
+}
+
+/* Прогрес-бар */
+.quiz-progress {
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.progress-count {
+    display: flex;
+    justify-content: center;
+    font-size: 1.125rem;
+    color: #4A5568;
+    margin-bottom: 0.5rem;
+}
+
+.progress-count strong {
+    color: #38A169;
+    font-size: 1.5rem;
+    margin: 0 0.25rem;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    background: #E2E8F0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #805AD5 0%, #D53F8C 100%);
+    transition: width 0.5s ease;
+    border-radius: 6px;
+}
+
+/* Сітка питань */
+.quiz-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.quiz-item {
+    background: #F7FAFC;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.quiz-item.item-solved {
+    background: linear-gradient(135deg, rgba(56,161,105,0.12) 0%, rgba(72,187,120,0.18) 100%);
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.quiz-word {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2D3748;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.quiz-translation {
+    color: #718096;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Кнопки артиклів */
+.article-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.article-btn {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid currentColor;
+    border-radius: 10px;
+    background: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.article-btn.der {
+    color: var(--der-primary);
+    border-color: var(--der-primary);
+}
+
+.article-btn.die {
+    color: var(--die-primary);
+    border-color: var(--die-primary);
+}
+
+.article-btn.das {
+    color: var(--das-primary);
+    border-color: var(--das-primary);
+}
+
+.article-btn:hover:not(:disabled) {
+    background: currentColor;
+    color: white;
+    transform: scale(1.05);
+}
+
+.article-btn.der:hover {
+    background: var(--der-primary);
+}
+
+.article-btn.die:hover {
+    background: var(--die-primary);
+}
+
+.article-btn.das:hover {
+    background: var(--das-primary);
+}
+
+/* Стани кнопок */
+.article-btn.is-correct {
+    background: linear-gradient(135deg, #48BB78 0%, #38A169 100%);
+    color: white;
+    border-color: #38A169;
+    animation: correctPulse 0.5s ease;
+}
+
+.article-btn.is-wrong {
+    background: linear-gradient(135deg, #F56565 0%, #E53E3E 100%);
+    color: white;
+    border-color: #E53E3E;
+    animation: shake 0.5s ease;
+}
+
+.article-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Анімації */
+@keyframes correctPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+}
+
+/* Повідомлення про завершення */
+.completion-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    text-align: center;
+    z-index: 1000;
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .articles-legend {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .vocabulary-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .quiz-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .article-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .article-btn {
+        width: 100%;
+    }
+}
+
+</style>
 </head>
 <body>
     <div class="container">
@@ -154,7 +570,7 @@
 
         <div class="vocabulary-section">
             <h2>📖 Словарь: Фаза "<span id="current-phase">Притворная любовь</span>"</h2>
-            <div class="vocabulary-grid"></div>
+            
 
             <div class="phase-navigation">
                 <button class="change-phase-btn prev-btn" type="button">← Предыдущая фаза</button>
@@ -657,6 +1073,80 @@
                 </div>
             </div>
             
+        
+
+        
+<section class="articles-quiz" data-quiz="articles">
+    <div class="quiz-header">
+        <h3 class="quiz-title">🎯 Артикли и род</h3>
+        <p class="quiz-description">Выберите правильный артикль для существительных из урока</p>
+    </div>
+    
+    <!-- Прогрес -->
+    <div class="quiz-progress">
+        <div class="progress-count">
+            <strong>0</strong>/<span class="total">0</span> правильных
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 0%"></div>
+        </div>
+    </div>
+    
+    <!-- Питання -->
+    <div class="quiz-grid">
+
+        <div class="quiz-item" data-correct="die">
+            <div class="quiz-word">Falschheit</div>
+            <div class="quiz-translation">фальшь</div>
+            <div class="article-buttons">
+                <button class="article-btn der" data-article="der">
+                    <span class="article-icon">♂</span> der
+                </button>
+                <button class="article-btn die" data-article="die">
+                    <span class="article-icon">♀</span> die
+                </button>
+                <button class="article-btn das" data-article="das">
+                    <span class="article-icon">⚪</span> das
+                </button>
+            </div>
+        </div>
+
+        <div class="quiz-item" data-correct="die">
+            <div class="quiz-word">List</div>
+            <div class="quiz-translation">хитрость</div>
+            <div class="article-buttons">
+                <button class="article-btn der" data-article="der">
+                    <span class="article-icon">♂</span> der
+                </button>
+                <button class="article-btn die" data-article="die">
+                    <span class="article-icon">♀</span> die
+                </button>
+                <button class="article-btn das" data-article="das">
+                    <span class="article-icon">⚪</span> das
+                </button>
+            </div>
+        </div>
+
+        <div class="quiz-item" data-correct="die">
+            <div class="quiz-word">Habgier</div>
+            <div class="quiz-translation">алчность</div>
+            <div class="article-buttons">
+                <button class="article-btn der" data-article="der">
+                    <span class="article-icon">♂</span> der
+                </button>
+                <button class="article-btn die" data-article="die">
+                    <span class="article-icon">♀</span> die
+                </button>
+                <button class="article-btn das" data-article="das">
+                    <span class="article-icon">⚪</span> das
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
         </div>
 
         <nav class="bottom-nav">
@@ -1315,82 +1805,82 @@
             {
                 "question": "Что означает немецкое слово «vortäuschen»?",
                 "choices": [
-                    "состязаться",
+                    "превосходить",
                     "притворяться",
                     "фальшь",
-                    "превосходить"
+                    "состязаться"
                 ],
                 "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «übertreffen»?",
                 "choices": [
+                    "фальшь",
                     "превосходить",
                     "притворяться",
-                    "состязаться",
-                    "фальшь"
+                    "состязаться"
                 ],
-                "correctIndex": 0
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «wetteifern»?",
                 "choices": [
-                    "выманивать",
-                    "разыгрывать",
                     "состязаться",
-                    "хитрость"
+                    "притворяться",
+                    "хитрость",
+                    "выманивать"
                 ],
-                "correctIndex": 2
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «die Falschheit»?",
                 "choices": [
                     "разыгрывать",
-                    "превосходить",
+                    "хитрость",
                     "фальшь",
-                    "состязаться"
+                    "алчность"
                 ],
                 "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «vorspielen»?",
                 "choices": [
-                    "превосходить",
-                    "хитрость",
                     "разыгрывать",
-                    "выманивать"
+                    "притворяться",
+                    "состязаться",
+                    "превосходить"
                 ],
-                "correctIndex": 2
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «die List»?",
                 "choices": [
+                    "состязаться",
                     "хитрость",
-                    "выманивать",
-                    "алчность",
-                    "притворяться"
+                    "фальшь",
+                    "превосходить"
                 ],
-                "correctIndex": 0
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «erschleichen»?",
                 "choices": [
                     "фальшь",
                     "алчность",
-                    "превосходить",
-                    "выманивать"
+                    "выманивать",
+                    "разыгрывать"
                 ],
-                "correctIndex": 3
+                "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «die Habgier»?",
                 "choices": [
+                    "фальшь",
                     "алчность",
-                    "притворяться",
-                    "выманивать",
-                    "состязаться"
+                    "разыгрывать",
+                    "выманивать"
                 ],
-                "correctIndex": 0
+                "correctIndex": 1
             }
         ],
         "quizAttempts": {},
@@ -2034,72 +2524,72 @@
             {
                 "question": "Что означает немецкое слово «das Bündnis»?",
                 "choices": [
-                    "делить",
                     "союз",
                     "планировать",
-                    "заговорить"
+                    "заговорить",
+                    "делить"
                 ],
-                "correctIndex": 1
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «teilen»?",
                 "choices": [
-                    "планировать",
+                    "делить",
                     "заговорить",
                     "союз",
-                    "делить"
+                    "планировать"
                 ],
-                "correctIndex": 3
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «planen»?",
                 "choices": [
                     "планировать",
-                    "заговорить",
-                    "стратегия",
-                    "союз"
+                    "делить",
+                    "договариваться",
+                    "сговор"
                 ],
                 "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «verschwören»?",
                 "choices": [
-                    "сговор",
-                    "заговорить",
-                    "делить",
-                    "договариваться"
-                ],
-                "correctIndex": 1
-            },
-            {
-                "question": "Что означает немецкое слово «die Absprache»?",
-                "choices": [
-                    "союз",
+                    "стратегия",
                     "делить",
                     "сговор",
-                    "договариваться"
-                ],
-                "correctIndex": 2
-            },
-            {
-                "question": "Что означает немецкое слово «vereinbaren»?",
-                "choices": [
-                    "планировать",
-                    "сговор",
-                    "делить",
-                    "договариваться"
+                    "заговорить"
                 ],
                 "correctIndex": 3
             },
             {
-                "question": "Что означает немецкое слово «die Strategie»?",
+                "question": "Что означает немецкое слово «die Absprache»?",
                 "choices": [
-                    "стратегия",
+                    "делить",
+                    "планировать",
                     "договариваться",
-                    "заговорить",
                     "сговор"
                 ],
-                "correctIndex": 0
+                "correctIndex": 3
+            },
+            {
+                "question": "Что означает немецкое слово «vereinbaren»?",
+                "choices": [
+                    "союз",
+                    "заговорить",
+                    "договариваться",
+                    "сговор"
+                ],
+                "correctIndex": 2
+            },
+            {
+                "question": "Что означает немецкое слово «die Strategie»?",
+                "choices": [
+                    "планировать",
+                    "договариваться",
+                    "союз",
+                    "стратегия"
+                ],
+                "correctIndex": 3
             }
         ],
         "quizAttempts": {},
@@ -2877,59 +3367,59 @@
             {
                 "question": "Что означает немецкое слово «erniedrigen»?",
                 "choices": [
-                    "унижать",
+                    "пытать",
                     "насмехаться",
-                    "злоба",
-                    "пытать"
+                    "унижать",
+                    "злоба"
                 ],
-                "correctIndex": 0
+                "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «verhöhnen»?",
                 "choices": [
-                    "унижать",
-                    "насмехаться",
-                    "пытать",
-                    "жёсткость"
+                    "жестокость",
+                    "злоба",
+                    "жёсткость",
+                    "насмехаться"
                 ],
-                "correctIndex": 1
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «die Bosheit»?",
                 "choices": [
-                    "жестоко обращаться",
-                    "унижать",
+                    "отвергать",
+                    "пытать",
                     "злоба",
-                    "жёсткость"
+                    "жестокость"
                 ],
                 "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «misshandeln»?",
                 "choices": [
+                    "жестоко обращаться",
+                    "отвергать",
                     "унижать",
-                    "злоба",
-                    "насмехаться",
-                    "жестоко обращаться"
+                    "насмехаться"
                 ],
-                "correctIndex": 3
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «die Härte»?",
                 "choices": [
                     "унижать",
+                    "злоба",
                     "насмехаться",
-                    "жёсткость",
-                    "злоба"
+                    "жёсткость"
                 ],
-                "correctIndex": 2
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «abweisen»?",
                 "choices": [
                     "отвергать",
-                    "злоба",
-                    "жестоко обращаться",
+                    "жестокость",
+                    "насмехаться",
                     "пытать"
                 ],
                 "correctIndex": 0
@@ -2937,8 +3427,8 @@
             {
                 "question": "Что означает немецкое слово «die Grausamkeit»?",
                 "choices": [
+                    "унижать",
                     "злоба",
-                    "жёсткость",
                     "жестокость",
                     "отвергать"
                 ],
@@ -3701,29 +4191,29 @@
             {
                 "question": "Что означает немецкое слово «der Sadismus»?",
                 "choices": [
-                    "выкалывать",
                     "наслаждаться",
-                    "ослеплять",
-                    "садизм"
+                    "садизм",
+                    "выкалывать",
+                    "ослеплять"
                 ],
-                "correctIndex": 3
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «genießen»?",
                 "choices": [
                     "беспощадный",
-                    "садизм",
+                    "наслаждаться",
                     "пытка",
-                    "наслаждаться"
+                    "выкалывать"
                 ],
-                "correctIndex": 3
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «ausstechen»?",
                 "choices": [
-                    "наслаждаться",
-                    "пытка",
-                    "растаптывать",
+                    "беспощадный",
+                    "садизм",
+                    "ослеплять",
                     "выкалывать"
                 ],
                 "correctIndex": 3
@@ -3731,29 +4221,29 @@
             {
                 "question": "Что означает немецкое слово «die Folter»?",
                 "choices": [
-                    "садизм",
-                    "растаптывать",
                     "пытка",
-                    "наслаждаться"
+                    "выкалывать",
+                    "брутальность",
+                    "беспощадный"
                 ],
-                "correctIndex": 2
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «erbarmungslos»?",
                 "choices": [
-                    "садизм",
+                    "наслаждаться",
                     "беспощадный",
-                    "брутальность",
-                    "ослеплять"
+                    "выкалывать",
+                    "брутальность"
                 ],
                 "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «die Brutalität»?",
                 "choices": [
-                    "растаптывать",
                     "наслаждаться",
                     "садизм",
+                    "растаптывать",
                     "брутальность"
                 ],
                 "correctIndex": 3
@@ -3761,12 +4251,12 @@
             {
                 "question": "Что означает немецкое слово «zertreten»?",
                 "choices": [
-                    "наслаждаться",
-                    "брутальность",
                     "растаптывать",
-                    "ослеплять"
+                    "пытка",
+                    "беспощадный",
+                    "брутальность"
                 ],
-                "correctIndex": 2
+                "correctIndex": 0
             }
         ],
         "quizAttempts": {},
@@ -4420,12 +4910,12 @@
             {
                 "question": "Что означает немецкое слово «die Witwe»?",
                 "choices": [
-                    "вожделение",
                     "соблазнять",
-                    "вожделеть",
-                    "вдова"
+                    "вдова",
+                    "вожделение",
+                    "вожделеть"
                 ],
-                "correctIndex": 3
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «begehren»?",
@@ -4440,52 +4930,52 @@
             {
                 "question": "Что означает немецкое слово «verführen»?",
                 "choices": [
+                    "соблазнять",
+                    "вожделеть",
                     "вожделение",
-                    "похоть",
-                    "вдова",
-                    "соблазнять"
+                    "похоть"
                 ],
-                "correctIndex": 3
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «die Begierde»?",
                 "choices": [
-                    "вожделеть",
-                    "добиваться",
+                    "похоть",
+                    "соблазнять",
                     "вожделение",
-                    "вдова"
+                    "заманивать"
                 ],
                 "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «locken»?",
                 "choices": [
+                    "вдова",
                     "вожделение",
-                    "вожделеть",
-                    "заманивать",
-                    "добиваться"
+                    "похоть",
+                    "заманивать"
                 ],
-                "correctIndex": 2
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «die Lust»?",
                 "choices": [
-                    "заманивать",
-                    "похоть",
                     "соблазнять",
-                    "вожделеть"
+                    "похоть",
+                    "вожделеть",
+                    "вожделение"
                 ],
                 "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «werben»?",
                 "choices": [
+                    "добиваться",
                     "вожделеть",
-                    "соблазнять",
-                    "вдова",
-                    "добиваться"
+                    "заманивать",
+                    "похоть"
                 ],
-                "correctIndex": 3
+                "correctIndex": 0
             }
         ],
         "quizAttempts": {},
@@ -5128,72 +5618,72 @@
             {
                 "question": "Что означает немецкое слово «wettkämpfen»?",
                 "choices": [
-                    "ненавидеть",
                     "соревноваться",
+                    "соперничество",
                     "угрожать",
-                    "соперничество"
+                    "ненавидеть"
                 ],
-                "correctIndex": 1
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «hassen»?",
                 "choices": [
+                    "ненавидеть",
                     "соревноваться",
-                    "угрожать",
                     "соперничество",
-                    "ненавидеть"
+                    "угрожать"
                 ],
-                "correctIndex": 3
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «bedrohen»?",
-                "choices": [
-                    "ненавидеть",
-                    "соперничество",
-                    "подозревать",
-                    "угрожать"
-                ],
-                "correctIndex": 3
-            },
-            {
-                "question": "Что означает немецкое слово «die Rivalität»?",
-                "choices": [
-                    "бороться",
-                    "ненавидеть",
-                    "соперничество",
-                    "подозревать"
-                ],
-                "correctIndex": 2
-            },
-            {
-                "question": "Что означает немецкое слово «bekämpfen»?",
                 "choices": [
                     "подозревать",
                     "угрожать",
                     "не доверять",
                     "бороться"
                 ],
+                "correctIndex": 1
+            },
+            {
+                "question": "Что означает немецкое слово «die Rivalität»?",
+                "choices": [
+                    "соревноваться",
+                    "не доверять",
+                    "бороться",
+                    "соперничество"
+                ],
                 "correctIndex": 3
+            },
+            {
+                "question": "Что означает немецкое слово «bekämpfen»?",
+                "choices": [
+                    "не доверять",
+                    "бороться",
+                    "угрожать",
+                    "соперничество"
+                ],
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «misstrauen»?",
                 "choices": [
-                    "бороться",
-                    "подозревать",
                     "не доверять",
-                    "ненавидеть"
+                    "бороться",
+                    "ненавидеть",
+                    "соревноваться"
                 ],
-                "correctIndex": 2
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «argwöhnen»?",
                 "choices": [
-                    "соперничество",
                     "ненавидеть",
                     "подозревать",
-                    "не доверять"
+                    "не доверять",
+                    "соперничество"
                 ],
-                "correctIndex": 2
+                "correctIndex": 1
             }
         ],
         "quizAttempts": {},
@@ -5919,12 +6409,12 @@
             {
                 "question": "Что означает немецкое слово «vergiftet»?",
                 "choices": [
-                    "издыхать",
                     "мучение",
-                    "страдать",
-                    "отравленный"
+                    "отравленный",
+                    "издыхать",
+                    "страдать"
                 ],
-                "correctIndex": 3
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «leiden»?",
@@ -5939,62 +6429,62 @@
             {
                 "question": "Что означает немецкое слово «verenden»?",
                 "choices": [
-                    "расплачиваться",
                     "мучение",
-                    "проклинать",
-                    "издыхать"
+                    "расплачиваться",
+                    "издыхать",
+                    "проклинать"
                 ],
-                "correctIndex": 3
+                "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «die Qual»?",
                 "choices": [
-                    "страдать",
                     "мучение",
-                    "рок",
-                    "отравленный"
+                    "проклинать",
+                    "отравленный",
+                    "рок"
                 ],
-                "correctIndex": 1
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «verwünschen»?",
                 "choices": [
-                    "издыхать",
+                    "мучение",
                     "страдать",
-                    "расплачиваться",
-                    "проклинать"
+                    "проклинать",
+                    "рок"
                 ],
-                "correctIndex": 3
+                "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «das Verhängnis»?",
                 "choices": [
                     "расплачиваться",
-                    "рок",
                     "проклинать",
-                    "мучение"
+                    "проклятый",
+                    "рок"
                 ],
-                "correctIndex": 1
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «büßen»?",
                 "choices": [
-                    "рок",
-                    "отравленный",
+                    "издыхать",
                     "расплачиваться",
-                    "издыхать"
+                    "страдать",
+                    "отравленный"
                 ],
-                "correctIndex": 2
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «verflucht»?",
                 "choices": [
-                    "отравленный",
-                    "страдать",
                     "проклятый",
+                    "расплачиваться",
+                    "отравленный",
                     "издыхать"
                 ],
-                "correctIndex": 2
+                "correctIndex": 0
             }
         ],
         "quizAttempts": {},
@@ -8643,9 +9133,9 @@ console.log('[Device Info]', {
             const message = document.createElement('div');
             message.className = 'completion-message';
             message.innerHTML = `
-                <h2>🎉 Відмінно!</h2>
-                <p>Ви правильно визначили всі артиклі!</p>
-                <p>Правильних відповідей: ${correctCount}/${totalCount}</p>
+                <h2>🎉 Отлично!</h2>
+                <p>Вы правильно определили все артикли!</p>
+                <p>Правильных ответов: ${correctCount}/${totalCount}</p>
             `;
             document.body.appendChild(message);
             

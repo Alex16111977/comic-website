@@ -1,0 +1,152 @@
+"""HTML Generator for Lira Journey pages."""
+from __future__ import annotations
+
+from pathlib import Path
+from typing import Any
+import re
+
+from .base import BaseGenerator
+from .mnemonics_gen import MnemonicsGenerator
+from .html import (
+    HeadGenerator,
+    JourneyBuilder,
+    JourneyTemplateEngine,
+    TemplateContext,
+    VocabularyProcessor,
+)
+from .js_lira import LiraJSGenerator
+
+
+class LiraHTMLGenerator(BaseGenerator):
+    """Generate complete HTML pages in Lira journey style."""
+
+    def __init__(self, config: Any) -> None:
+        super().__init__(config)
+        self.vocabulary = VocabularyProcessor(self.config.DATA_DIR)
+        self.journey_builder = JourneyBuilder(self.vocabulary)
+        self.head_generator = HeadGenerator()
+        self.template_engine = JourneyTemplateEngine(self)
+        self.mnemo_gen = MnemonicsGenerator(config)
+
+    def generate_journey(self, character_file: Path) -> str:
+        character = self.load_character(character_file)
+        self.vocabulary.enrich_character(character)
+        assets = self.journey_builder.prepare(character)
+        character["journey_phases"] = assets.phases
+        progress = JourneyBuilder.initial_progress(assets.phases)
+        head_context = self.head_generator.build(assets.phases, progress)
+        js_bundle = LiraJSGenerator.generate(character)
+        
+        # Додаємо мнемотехніку
+        mnemo_css = self.mnemo_gen.generate_css()
+        mnemo_js = self.mnemo_gen.generate_javascript()
+        mnemo_vocabulary = self.mnemo_gen.generate_vocabulary_section(character)
+        mnemo_quiz = self.mnemo_gen.generate_articles_quiz(character)
+        
+        # Об'єднуємо JS
+        js_bundle = js_bundle + "\n" + mnemo_js
+        
+        navigation = {
+            "home_href": "../index.html",
+            "home_label": "На главную",
+            "home_icon": "←",
+            "study_label": "СПИСОК ИЗУЧЕНИЯ",
+        }
+        context = TemplateContext(
+            character=character,
+            phases=assets.phases,
+            exercises=assets.exercises,
+            quizzes=assets.quizzes,
+            quizzes_json=assets.quizzes_json,
+            head=head_context,
+            navigation=navigation,
+            relations_metadata=assets.relations_metadata,
+            js_bundle=js_bundle,
+        )
+        
+        # Отримуємо HTML і додаємо мнемотехніку
+        html = self.template_engine.render(context)
+        
+        # Додаємо вправу на артиклі в exercises-section
+        exercises_pattern = '''</div>
+            </div>
+        </div>
+
+        <div class="exercises-container">'''
+        
+        if exercises_pattern in html:
+            # Генеруємо вправу для першої фази
+            first_phase_id = assets.phases[0].get('id') if assets.phases else None
+            articles_quiz = self.mnemo_gen.generate_articles_quiz(character, phase_id=first_phase_id)
+            
+            # Вставляємо перед exercises-container
+            old_pattern = exercises_pattern
+            new_pattern = f"""</div>
+            </div>
+            
+            <!-- Вправа на артиклі з мнемотехнікою -->
+            {articles_quiz}
+        </div>
+
+        <div class="exercises-container">"""
+            html = html.replace(old_pattern, new_pattern)
+            print(f"[DEBUG] Вправа на артиклі додана в exercises для {character['id']}")
+        
+        # Вставляємо словник з мнемотехнікою в vocabulary-section
+        # Замінюємо порожній vocabulary-grid на наш
+        if '<div class="vocabulary-grid"></div>' in html:
+            # Генеруємо картки слів з кольоровою кодировкою
+            vocab_html = self.generate_vocabulary_cards(character)
+            html = html.replace('<div class="vocabulary-grid"></div>', vocab_html)
+            print(f"[DEBUG] Словник з мнемотехнікою додано для {character['id']}")
+        
+        # Аналогічно для всього vocabulary-section блоку
+        vocab_pattern = r'<div class="vocabulary-section">\s*<h2>[^<]*</h2>\s*<div class="vocabulary-grid"></div>\s*[^<]*</div>'
+        if re.search(vocab_pattern, html):
+            html = re.sub(vocab_pattern, '', html)
+            print(f"[DEBUG] Видалено порожню vocabulary-section для {character['id']}")
+        
+        # Вставляємо CSS мнемотехніки в head
+        # Додаємо CSS стилі в head через style тег
+        if mnemo_css and '</head>' in html:
+            style_block = f'<style>\n{mnemo_css}\n</style>'
+            html = html.replace('</head>', f'{style_block}\n</head>')
+            print(f"[DEBUG] CSS мнемотехніки додано в head для {character['id']}")
+        
+        # Якщо не знайшли exercises-container
+        if exercises_pattern not in html:
+            print(f"[ERROR] exercises-container не знайдено для {character['id']}")
+        
+        return html
+
+    def generate_vocabulary_cards(self, character):
+        """Генерує картки словника з кольоровою кодировкою для поточної фази"""
+        html = '<div class="vocabulary-grid">'
+        
+        # Беремо першу фазу за замовчуванням (буде змінюватись через JS)
+        first_phase = character.get('journey_phases', [{}])[0]
+        vocab = first_phase.get('vocabulary', [])
+        
+        for word_data in vocab:
+            german = word_data['german']
+            article = self.mnemo_gen.extract_article(german)
+            if article:
+                word_only = german.replace(f"{article} ", "")
+                color_class = f"is-{article}"
+                color_data = self.mnemo_gen.GENDER_COLORS.get(article, {})
+                
+                html += f"""
+                <div class="vocab-card {color_class}" data-article="{article}">
+                    <div class="vocab-header">
+                        <span class="article-chip {article}">
+                            <span class="article-icon">{color_data.get('icon', '')}</span>
+                            <span>{article}</span>
+                        </span>
+                        <div class="vocab-word">{word_only}</div>
+                    </div>
+                    <div class="vocab-translation">{word_data['russian']}</div>
+                    <div class="vocab-transcription">{word_data['transcription']}</div>
+                </div>"""
+            
+        html += '</div>'
+        return html
