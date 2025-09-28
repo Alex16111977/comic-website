@@ -111,6 +111,12 @@
     transition: all 0.3s ease;
 }
 
+.vocab-card.is-neutral {
+    background: linear-gradient(135deg, #edf2f7, #e2e8f0) !important;
+    border-left: 4px solid #718096 !important;
+    transition: all 0.3s ease;
+}
+
 .vocab-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 24px rgba(0,0,0,0.15);
@@ -132,6 +138,12 @@
     background: linear-gradient(135deg, #c8e6c9, #a5d6a7) !important;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(56, 142, 60, 0.3);
+}
+
+.vocab-card.is-neutral:hover {
+    background: linear-gradient(135deg, #e2e8f0, #cbd5e0) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(113, 128, 150, 0.3);
 }
 
 /* Заголовок картки з артиклем */
@@ -163,6 +175,24 @@
 
 .article-chip.das {
     background: var(--das-primary);
+}
+
+.article-chip.neutral {
+    background: #4a5568;
+}
+
+.word-type-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    background: rgba(113, 128, 150, 0.15);
+    color: #2d3748;
 }
 
 .article-icon {
@@ -592,10 +622,7 @@
 
         <div class="vocab-card is-die" data-word="Wahrheit" data-article="die">
             <div class="vocab-header">
-                <span class="article-chip die">
-                    <span class="article-icon">♀</span>
-                    <span>die</span>
-                </span>
+                <span class="article-chip die"><span class="article-icon">♀</span><span>die</span></span>
                 <div class="vocab-word">Wahrheit</div>
             </div>
             <div class="vocab-translation">правда</div>
@@ -604,46 +631,61 @@
 
         <div class="vocab-card is-die" data-word="Zeremonie" data-article="die">
             <div class="vocab-header">
-                <span class="article-chip die">
-                    <span class="article-icon">♀</span>
-                    <span>die</span>
-                </span>
+                <span class="article-chip die"><span class="article-icon">♀</span><span>die</span></span>
                 <div class="vocab-word">Zeremonie</div>
             </div>
             <div class="vocab-translation">церемония</div>
             <div class="vocab-transcription">[ди це-ре-мо-НИ]</div>
         </div>
 
+        <div class="vocab-card is-neutral" data-word="verkünden">
+            <div class="vocab-header">
+                <span class="word-type-chip">лексика без артикля</span>
+                <div class="vocab-word">verkünden</div>
+            </div>
+            <div class="vocab-translation">провозглашать</div>
+            <div class="vocab-transcription">[фер-КЮН-ден]</div>
+        </div>
+
         <div class="vocab-card is-die" data-word="Macht" data-article="die">
             <div class="vocab-header">
-                <span class="article-chip die">
-                    <span class="article-icon">♀</span>
-                    <span>die</span>
-                </span>
+                <span class="article-chip die"><span class="article-icon">♀</span><span>die</span></span>
                 <div class="vocab-word">Macht</div>
             </div>
             <div class="vocab-translation">власть</div>
             <div class="vocab-transcription">[ди МАХТ]</div>
         </div>
 
+        <div class="vocab-card is-neutral" data-word="gehorchen">
+            <div class="vocab-header">
+                <span class="word-type-chip">лексика без артикля</span>
+                <div class="vocab-word">gehorchen</div>
+            </div>
+            <div class="vocab-translation">повиноваться</div>
+            <div class="vocab-transcription">[ге-ХОР-хен]</div>
+        </div>
+
         <div class="vocab-card is-die" data-word="Pflicht" data-article="die">
             <div class="vocab-header">
-                <span class="article-chip die">
-                    <span class="article-icon">♀</span>
-                    <span>die</span>
-                </span>
+                <span class="article-chip die"><span class="article-icon">♀</span><span>die</span></span>
                 <div class="vocab-word">Pflicht</div>
             </div>
             <div class="vocab-translation">долг</div>
             <div class="vocab-transcription">[ди ПФЛИХТ]</div>
         </div>
 
+        <div class="vocab-card is-neutral" data-word="feierlich">
+            <div class="vocab-header">
+                <span class="word-type-chip">лексика без артикля</span>
+                <div class="vocab-word">feierlich</div>
+            </div>
+            <div class="vocab-translation">торжественный</div>
+            <div class="vocab-transcription">[ФАЙ-ер-лих]</div>
+        </div>
+
         <div class="vocab-card is-die" data-word="Treue" data-article="die">
             <div class="vocab-header">
-                <span class="article-chip die">
-                    <span class="article-icon">♀</span>
-                    <span>die</span>
-                </span>
+                <span class="article-chip die"><span class="article-icon">♀</span><span>die</span></span>
                 <div class="vocab-word">Treue</div>
             </div>
             <div class="vocab-translation">верность</div>
@@ -1953,18 +1995,18 @@
             {
                 "question": "Что означает немецкое слово «die Wahrheit»?",
                 "choices": [
-                    "церемония",
                     "провозглашать",
+                    "власть",
                     "правда",
-                    "власть"
+                    "церемония"
                 ],
                 "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «die Zeremonie»?",
                 "choices": [
-                    "власть",
                     "провозглашать",
+                    "власть",
                     "правда",
                     "церемония"
                 ],
@@ -1973,62 +2015,62 @@
             {
                 "question": "Что означает немецкое слово «verkünden»?",
                 "choices": [
-                    "повиноваться",
-                    "власть",
+                    "долг",
                     "провозглашать",
-                    "торжественный"
+                    "торжественный",
+                    "повиноваться"
                 ],
-                "correctIndex": 2
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «die Macht»?",
                 "choices": [
                     "правда",
                     "власть",
-                    "долг",
-                    "торжественный"
+                    "церемония",
+                    "провозглашать"
                 ],
                 "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «gehorchen»?",
                 "choices": [
-                    "провозглашать",
+                    "правда",
+                    "торжественный",
                     "повиноваться",
-                    "власть",
-                    "торжественный"
-                ],
-                "correctIndex": 1
-            },
-            {
-                "question": "Что означает немецкое слово «die Pflicht»?",
-                "choices": [
-                    "власть",
-                    "провозглашать",
-                    "долг",
                     "церемония"
                 ],
                 "correctIndex": 2
             },
             {
-                "question": "Что означает немецкое слово «feierlich»?",
+                "question": "Что означает немецкое слово «die Pflicht»?",
                 "choices": [
                     "торжественный",
-                    "повиноваться",
-                    "правда",
+                    "долг",
+                    "верность",
                     "провозглашать"
                 ],
-                "correctIndex": 0
+                "correctIndex": 1
+            },
+            {
+                "question": "Что означает немецкое слово «feierlich»?",
+                "choices": [
+                    "верность",
+                    "провозглашать",
+                    "торжественный",
+                    "долг"
+                ],
+                "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «die Treue»?",
                 "choices": [
+                    "провозглашать",
                     "церемония",
-                    "власть",
-                    "верность",
-                    "провозглашать"
+                    "торжественный",
+                    "верность"
                 ],
-                "correctIndex": 2
+                "correctIndex": 3
             }
         ],
         "quizAttempts": {},
@@ -2804,40 +2846,40 @@
             {
                 "question": "Что означает немецкое слово «verstoßen»?",
                 "choices": [
-                    "покидать",
-                    "изгонять",
+                    "наказание",
                     "гнев",
-                    "наказание"
+                    "изгонять",
+                    "покидать"
                 ],
-                "correctIndex": 1
+                "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «verlassen»?",
                 "choices": [
-                    "гнев",
-                    "покидать",
+                    "наказание",
                     "изгонять",
-                    "наказание"
-                ],
-                "correctIndex": 1
-            },
-            {
-                "question": "Что означает немецкое слово «der Zorn»?",
-                "choices": [
-                    "принимать",
-                    "приданое",
-                    "надежда",
-                    "гнев"
+                    "гнев",
+                    "покидать"
                 ],
                 "correctIndex": 3
             },
             {
+                "question": "Что означает немецкое слово «der Zorn»?",
+                "choices": [
+                    "изгонять",
+                    "гнев",
+                    "приданое",
+                    "чужой"
+                ],
+                "correctIndex": 1
+            },
+            {
                 "question": "Что означает немецкое слово «die Strafe»?",
                 "choices": [
-                    "покидать",
+                    "изгонять",
                     "наказание",
-                    "приданое",
-                    "надежда"
+                    "чужой",
+                    "принимать"
                 ],
                 "correctIndex": 1
             },
@@ -2845,41 +2887,41 @@
                 "question": "Что означает немецкое слово «fremd»?",
                 "choices": [
                     "гнев",
+                    "принимать",
                     "чужой",
-                    "наказание",
-                    "приданое"
+                    "надежда"
                 ],
-                "correctIndex": 1
+                "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «die Mitgift»?",
                 "choices": [
-                    "чужой",
-                    "принимать",
+                    "покидать",
+                    "надежда",
                     "приданое",
-                    "изгонять"
+                    "наказание"
                 ],
                 "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «aufnehmen»?",
                 "choices": [
-                    "изгонять",
-                    "приданое",
+                    "чужой",
                     "принимать",
+                    "изгонять",
                     "надежда"
                 ],
-                "correctIndex": 2
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «die Hoffnung»?",
                 "choices": [
-                    "приданое",
-                    "изгонять",
+                    "покидать",
                     "надежда",
-                    "принимать"
+                    "наказание",
+                    "чужой"
                 ],
-                "correctIndex": 2
+                "correctIndex": 1
             }
         ],
         "quizAttempts": {},
@@ -3655,69 +3697,69 @@
             {
                 "question": "Что означает немецкое слово «die Sorge»?",
                 "choices": [
+                    "известие",
                     "забота",
                     "одиночество",
-                    "известие",
                     "страх"
                 ],
-                "correctIndex": 0
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «die Einsamkeit»?",
                 "choices": [
-                    "страх",
                     "одиночество",
+                    "забота",
+                    "страх",
+                    "известие"
+                ],
+                "correctIndex": 0
+            },
+            {
+                "question": "Что означает немецкое слово «die Nachricht»?",
+                "choices": [
+                    "страх",
                     "известие",
+                    "тоска",
                     "забота"
                 ],
                 "correctIndex": 1
             },
             {
-                "question": "Что означает немецкое слово «die Nachricht»?",
-                "choices": [
-                    "известие",
-                    "страх",
-                    "тоска",
-                    "молиться"
-                ],
-                "correctIndex": 0
-            },
-            {
                 "question": "Что означает немецкое слово «die Angst»?",
                 "choices": [
-                    "страх",
                     "одиночество",
+                    "известие",
+                    "страх",
+                    "тоска"
+                ],
+                "correctIndex": 2
+            },
+            {
+                "question": "Что означает немецкое слово «leiden»?",
+                "choices": [
+                    "страдать",
+                    "защищать",
                     "тоска",
                     "забота"
                 ],
                 "correctIndex": 0
             },
             {
-                "question": "Что означает немецкое слово «leiden»?",
-                "choices": [
-                    "известие",
-                    "молиться",
-                    "забота",
-                    "страдать"
-                ],
-                "correctIndex": 3
-            },
-            {
                 "question": "Что означает немецкое слово «beschützen»?",
                 "choices": [
+                    "страх",
                     "тоска",
-                    "молиться",
                     "защищать",
-                    "одиночество"
+                    "забота"
                 ],
                 "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «die Sehnsucht»?",
                 "choices": [
-                    "молиться",
-                    "страдать",
-                    "известие",
+                    "защищать",
+                    "страх",
+                    "одиночество",
                     "тоска"
                 ],
                 "correctIndex": 3
@@ -3725,12 +3767,12 @@
             {
                 "question": "Что означает немецкое слово «beten»?",
                 "choices": [
-                    "страх",
-                    "защищать",
-                    "молиться",
-                    "одиночество"
+                    "забота",
+                    "известие",
+                    "тоска",
+                    "молиться"
                 ],
-                "correctIndex": 2
+                "correctIndex": 3
             }
         ],
         "quizAttempts": {},
@@ -4502,59 +4544,59 @@
             {
                 "question": "Что означает немецкое слово «zurückkehren»?",
                 "choices": [
-                    "возвращаться",
                     "битва",
-                    "спасать",
-                    "борьба"
+                    "возвращаться",
+                    "борьба",
+                    "спасать"
                 ],
-                "correctIndex": 0
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «der Kampf»?",
                 "choices": [
-                    "битва",
                     "спасать",
-                    "возвращаться",
-                    "борьба"
-                ],
-                "correctIndex": 3
-            },
-            {
-                "question": "Что означает немецкое слово «retten»?",
-                "choices": [
-                    "битва",
-                    "справедливость",
                     "борьба",
-                    "спасать"
-                ],
-                "correctIndex": 3
-            },
-            {
-                "question": "Что означает немецкое слово «die Schlacht»?",
-                "choices": [
-                    "армия",
                     "битва",
-                    "побеждать",
                     "возвращаться"
                 ],
                 "correctIndex": 1
             },
             {
-                "question": "Что означает немецкое слово «mutig»?",
+                "question": "Что означает немецкое слово «retten»?",
                 "choices": [
                     "спасать",
-                    "армия",
-                    "храбрый",
-                    "возвращаться"
+                    "борьба",
+                    "побеждать",
+                    "битва"
                 ],
-                "correctIndex": 2
+                "correctIndex": 0
+            },
+            {
+                "question": "Что означает немецкое слово «die Schlacht»?",
+                "choices": [
+                    "битва",
+                    "справедливость",
+                    "возвращаться",
+                    "борьба"
+                ],
+                "correctIndex": 0
+            },
+            {
+                "question": "Что означает немецкое слово «mutig»?",
+                "choices": [
+                    "возвращаться",
+                    "храбрый",
+                    "справедливость",
+                    "спасать"
+                ],
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «die Gerechtigkeit»?",
                 "choices": [
-                    "храбрый",
-                    "спасать",
                     "битва",
+                    "армия",
+                    "спасать",
                     "справедливость"
                 ],
                 "correctIndex": 3
@@ -4562,22 +4604,22 @@
             {
                 "question": "Что означает немецкое слово «siegen»?",
                 "choices": [
-                    "храбрый",
+                    "битва",
                     "побеждать",
-                    "справедливость",
-                    "спасать"
+                    "храбрый",
+                    "борьба"
                 ],
                 "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «die Armee»?",
                 "choices": [
-                    "справедливость",
-                    "битва",
-                    "армия",
-                    "храбрый"
+                    "побеждать",
+                    "спасать",
+                    "возвращаться",
+                    "армия"
                 ],
-                "correctIndex": 2
+                "correctIndex": 3
             }
         ],
         "quizAttempts": {},
@@ -5367,20 +5409,20 @@
             {
                 "question": "Что означает немецкое слово «verzeihen»?",
                 "choices": [
-                    "обнимать",
                     "узнавать",
+                    "прощать",
                     "слёзы",
-                    "прощать"
+                    "обнимать"
                 ],
-                "correctIndex": 3
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «die Tränen»?",
                 "choices": [
                     "слёзы",
                     "обнимать",
-                    "прощать",
-                    "узнавать"
+                    "узнавать",
+                    "прощать"
                 ],
                 "correctIndex": 0
             },
@@ -5389,60 +5431,60 @@
                 "choices": [
                     "обнимать",
                     "исцелять",
-                    "раскаяние",
-                    "прощать"
-                ],
-                "correctIndex": 0
-            },
-            {
-                "question": "Что означает немецкое слово «erkennen»?",
-                "choices": [
-                    "прощать",
-                    "нежный",
-                    "обнимать",
-                    "узнавать"
-                ],
-                "correctIndex": 3
-            },
-            {
-                "question": "Что означает немецкое слово «heilen»?",
-                "choices": [
-                    "исцелять",
-                    "прощать",
                     "прощение",
                     "нежный"
                 ],
                 "correctIndex": 0
             },
             {
-                "question": "Что означает немецкое слово «die Reue»?",
+                "question": "Что означает немецкое слово «erkennen»?",
                 "choices": [
                     "узнавать",
                     "раскаяние",
-                    "прощение",
+                    "прощать",
                     "обнимать"
+                ],
+                "correctIndex": 0
+            },
+            {
+                "question": "Что означает немецкое слово «heilen»?",
+                "choices": [
+                    "обнимать",
+                    "прощение",
+                    "нежный",
+                    "исцелять"
+                ],
+                "correctIndex": 3
+            },
+            {
+                "question": "Что означает немецкое слово «die Reue»?",
+                "choices": [
+                    "обнимать",
+                    "раскаяние",
+                    "слёзы",
+                    "прощение"
                 ],
                 "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «sanft»?",
                 "choices": [
-                    "нежный",
                     "узнавать",
                     "слёзы",
-                    "исцелять"
+                    "нежный",
+                    "прощать"
                 ],
-                "correctIndex": 0
+                "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «die Vergebung»?",
                 "choices": [
-                    "прощать",
-                    "слёзы",
+                    "обнимать",
                     "узнавать",
-                    "прощение"
+                    "прощение",
+                    "раскаяние"
                 ],
-                "correctIndex": 3
+                "correctIndex": 2
             }
         ],
         "quizAttempts": {},
@@ -6218,82 +6260,82 @@
             {
                 "question": "Что означает немецкое слово «gefangen»?",
                 "choices": [
-                    "пленный",
-                    "тюрьма",
                     "утешать",
-                    "достоинство"
+                    "пленный",
+                    "достоинство",
+                    "тюрьма"
                 ],
-                "correctIndex": 0
+                "correctIndex": 1
             },
             {
                 "question": "Что означает немецкое слово «das Gefängnis»?",
                 "choices": [
                     "тюрьма",
-                    "достоинство",
                     "утешать",
-                    "пленный"
+                    "пленный",
+                    "достоинство"
                 ],
                 "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «die Würde»?",
                 "choices": [
-                    "тюрьма",
+                    "достоинство",
+                    "смирение",
                     "отважный",
-                    "пленный",
-                    "достоинство"
+                    "утешать"
                 ],
-                "correctIndex": 3
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «trösten»?",
                 "choices": [
-                    "утешать",
-                    "судьба",
-                    "отважный",
-                    "достоинство"
+                    "честь",
+                    "смирение",
+                    "тюрьма",
+                    "утешать"
                 ],
-                "correctIndex": 0
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «tapfer»?",
                 "choices": [
-                    "тюрьма",
-                    "отважный",
                     "пленный",
-                    "смирение"
+                    "тюрьма",
+                    "достоинство",
+                    "отважный"
                 ],
-                "correctIndex": 1
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «die Demut»?",
                 "choices": [
+                    "честь",
+                    "пленный",
                     "смирение",
-                    "утешать",
-                    "достоинство",
-                    "отважный"
+                    "достоинство"
                 ],
-                "correctIndex": 0
+                "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «das Schicksal»?",
                 "choices": [
-                    "судьба",
+                    "пленный",
                     "честь",
-                    "достоинство",
-                    "смирение"
+                    "судьба",
+                    "утешать"
                 ],
-                "correctIndex": 0
+                "correctIndex": 2
             },
             {
                 "question": "Что означает немецкое слово «die Ehre»?",
                 "choices": [
-                    "отважный",
-                    "честь",
                     "достоинство",
-                    "пленный"
+                    "смирение",
+                    "пленный",
+                    "честь"
                 ],
-                "correctIndex": 1
+                "correctIndex": 3
             }
         ],
         "quizAttempts": {},
@@ -7091,9 +7133,9 @@
             {
                 "question": "Что означает немецкое слово «der Tod»?",
                 "choices": [
+                    "душа",
                     "умирать",
                     "жертва",
-                    "душа",
                     "смерть"
                 ],
                 "correctIndex": 3
@@ -7101,72 +7143,72 @@
             {
                 "question": "Что означает немецкое слово «sterben»?",
                 "choices": [
-                    "душа",
-                    "умирать",
+                    "смерть",
                     "жертва",
-                    "смерть"
+                    "душа",
+                    "умирать"
                 ],
-                "correctIndex": 1
+                "correctIndex": 3
             },
             {
                 "question": "Что означает немецкое слово «das Opfer»?",
                 "choices": [
-                    "смерть",
-                    "душа",
+                    "жертва",
                     "прощание",
-                    "жертва"
+                    "конец",
+                    "умирать"
                 ],
-                "correctIndex": 3
+                "correctIndex": 0
             },
             {
                 "question": "Что означает немецкое слово «die Seele»?",
                 "choices": [
-                    "прощание",
-                    "вечный",
-                    "душа",
-                    "смерть"
-                ],
-                "correctIndex": 2
-            },
-            {
-                "question": "Что означает немецкое слово «das Ende»?",
-                "choices": [
-                    "спасение",
                     "конец",
-                    "умирать",
-                    "вечный"
-                ],
-                "correctIndex": 1
-            },
-            {
-                "question": "Что означает немецкое слово «ewig»?",
-                "choices": [
-                    "прощание",
-                    "вечный",
-                    "умирать",
-                    "спасение"
-                ],
-                "correctIndex": 1
-            },
-            {
-                "question": "Что означает немецкое слово «der Abschied»?",
-                "choices": [
-                    "вечный",
-                    "душа",
-                    "спасение",
-                    "прощание"
+                    "смерть",
+                    "жертва",
+                    "душа"
                 ],
                 "correctIndex": 3
             },
             {
-                "question": "Что означает немецкое слово «die Erlösung»?",
+                "question": "Что означает немецкое слово «das Ende»?",
                 "choices": [
-                    "смерть",
+                    "жертва",
                     "спасение",
                     "умирать",
                     "конец"
                 ],
+                "correctIndex": 3
+            },
+            {
+                "question": "Что означает немецкое слово «ewig»?",
+                "choices": [
+                    "душа",
+                    "жертва",
+                    "конец",
+                    "вечный"
+                ],
+                "correctIndex": 3
+            },
+            {
+                "question": "Что означает немецкое слово «der Abschied»?",
+                "choices": [
+                    "душа",
+                    "прощание",
+                    "умирать",
+                    "смерть"
+                ],
                 "correctIndex": 1
+            },
+            {
+                "question": "Что означает немецкое слово «die Erlösung»?",
+                "choices": [
+                    "умирать",
+                    "смерть",
+                    "спасение",
+                    "душа"
+                ],
+                "correctIndex": 2
             }
         ],
         "quizAttempts": {},
