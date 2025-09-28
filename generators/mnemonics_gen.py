@@ -549,6 +549,11 @@ class MnemonicsGenerator:
 
     <!-- Сітка слів -->
     <div class="vocabulary-grid"></div>
+
+    <div class="phase-navigation">
+        <button class="change-phase-btn prev-btn" type="button">← Предыдущая фаза</button>
+        <button class="change-phase-btn next-btn" type="button">Следующая фаза →</button>
+    </div>
 </section>
 """
         return html
