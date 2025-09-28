@@ -157,42 +157,4 @@ class LiraHTMLGenerator(BaseGenerator):
             html = html.replace('</head>', f'{style_block}\n</head>')
             print(f"[DEBUG] CSS мнемотехніки додано в head для {character['id']}")
         
-        # ВИПРАВЛЕНО: Вставляємо вправу ВСЕРЕДИНУ exercises-container
-        exercises_start = html.find('<div class="exercises-container">')
-        if exercises_start > 0:
-            search_pos = html.find('>', exercises_start)
-
-            if search_pos != -1:
-                pos = search_pos + 1
-                div_count = 1
-                exercises_end = None
-
-                while div_count > 0 and pos < len(html):
-                    next_open = html.find('<div', pos)
-                    next_close = html.find('</div>', pos)
-
-                    if next_close == -1:
-                        break
-
-                    if next_open != -1 and next_open < next_close:
-                        div_count += 1
-                        pos = next_open + 4
-                    else:
-                        div_count -= 1
-                        if div_count == 0:
-                            exercises_end = next_close
-                            break
-                        pos = next_close + len('</div>')
-
-                if div_count == 0 and exercises_end is not None:
-                    # Генеруємо вправу для першої фази
-                    first_phase_id = assets.phases[0].get('id') if assets.phases else None
-                    mnemo_quiz = self.mnemo_gen.generate_articles_quiz(character, phase_id=first_phase_id)
-
-                    # Вставляємо вправу ВСЕРЕДИНУ exercises-container перед закриваючим тегом
-                    html = html[:exercises_end] + f'\n\n        {mnemo_quiz}\n\n        ' + html[exercises_end:]
-                    print(f"[DEBUG] Вправа вставлена ВСЕРЕДИНУ exercises для {character['id']}")
-        else:
-            print(f"[ERROR] exercises-container не знайдено для {character['id']}")
-        
         return html

@@ -23,10 +23,7 @@
             return;
         }
 
-        const articlesContainer = document.querySelector(`[data-articles-container][data-phase="${phaseId}"]`);
-        if (articlesContainer) {
-            initializeArticlesExercise(articlesContainer, phaseVocabulary);
-        }
+        initializeArticlesExercise(phaseId, phaseVocabulary);
 
         const synonymsContainer = document.querySelector(
             `[data-synonyms-container][data-phase="${phaseId}"]`
@@ -45,208 +42,225 @@
     // 1. УПРАЖНЕНИЕ "АРТИКЛИ И РОД"
     // ==========================================
     
-    function initializeArticlesExercise(container, phaseVocabulary) {
-        if (!(container instanceof HTMLElement)) return;
+    function initializeArticlesExercise(activePhaseId, phaseVocabulary) {
+        const containers = document.querySelectorAll('[data-articles-container]');
 
-        // Извлекаем слова с артиклями
-        const wordsWithArticles = [];
-        if (phaseVocabulary && phaseVocabulary.vocabulary) {
-            phaseVocabulary.vocabulary.forEach(word => {
-                if (!word.german || !word.russian) return;
-                const parts = word.german.split(' ');
-                if (['der', 'die', 'das'].includes(parts[0])) {
-                    wordsWithArticles.push({
-                        article: parts[0],
-                        noun: parts.slice(1).join(' '),
-                        translation: word.russian,
-                        hint: word.russian_hint || ''
-                    });
-                }
-            });
+        if (!containers.length) {
+            return;
         }
-        
-        if (wordsWithArticles.length === 0) {
+
+        containers.forEach(container => {
+            if (container.dataset.phase === activePhaseId) {
+                renderArticlesQuiz(container, phaseVocabulary);
+            } else {
+                container.innerHTML = '';
+            }
+        });
+    }
+
+    function renderArticlesQuiz(container, phaseVocabulary) {
+        if (!(container instanceof HTMLElement)) {
+            return;
+        }
+
+        const quizWords = collectArticleWords(phaseVocabulary);
+
+        if (quizWords.length === 0) {
             container.innerHTML = '<div class="exercise-empty-state">В этой фазе нет слов с артиклями.</div>';
             return;
         }
 
-        // Перемешиваем слова
-        const shuffled = wordsWithArticles.sort(() => Math.random() - 0.5);
-        
-        // Создаем HTML структуру
-        container.innerHTML = `
-            <div class="articles-exercise-new">
-                <div class="articles-progress">
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 0%"></div>
-                    </div>
-                    <div class="progress-text">
-                        Правильно: <span id="articles-correct">0</span> из <span id="articles-total">${shuffled.length}</span>
-                    </div>
-                </div>
-                
-                <div class="articles-grid">
-                    ${shuffled.map((word, idx) => `
-                        <div class="article-item" data-correct="${word.article}" data-index="${idx}">
-                            <div class="article-word">
-                                <span class="noun">${word.noun}</span>
-                                <small>${word.translation}</small>
-                            </div>
-                            <div class="article-buttons">
-                                <button onclick="checkArticle(this, 'der')" class="article-btn" data-article="der">der</button>
-                                <button onclick="checkArticle(this, 'die')" class="article-btn" data-article="die">die</button>
-                                <button onclick="checkArticle(this, 'das')" class="article-btn" data-article="das">das</button>
-                            </div>
-                        </div>
-                    `).join('')}
-                </div>
-                
-                <div class="articles-reset">
-                    <button class="reset-articles-btn" onclick="resetArticles()">Начать заново</button>
-                </div>
-            </div>
-        `;
-        
-        // Инициализируем счетчики
-        window.articlesTotal = shuffled.length;
-        window.articlesCorrect = 0;
+        container.innerHTML = createArticlesQuizMarkup(quizWords);
+
+        const quizElement = container.querySelector('.articles-quiz');
+        if (quizElement) {
+            attachArticlesQuizHandlers(quizElement);
+        }
     }
 
-    // Глобальная функция проверки артикля
-    window.checkArticle = function(button, selectedArticle) {
-        const item = button.closest('.article-item');
-        const correct = item.dataset.correct;
-        
-        // Если уже решено, не реагируем
-        if (item.classList.contains('completed')) return;
-        
-        if (selectedArticle === correct) {
-            // Правильный ответ
-            button.classList.add('correct');
-            item.classList.add('completed');
-            
-            // Блокируем все кнопки в этой карточке
-            item.querySelectorAll('button').forEach(btn => {
-                btn.disabled = true;
-            });
-            
-            // Обновляем счетчик
-            window.articlesCorrect++;
-            updateArticlesProgress();
-            
-            // Проверяем завершение
-            if (window.articlesCorrect === window.articlesTotal) {
-                setTimeout(() => {
-                    showCompletionMessage();
-                }, 500);
-            }
-        } else {
-            // Неправильный ответ
-            button.classList.add('incorrect');
-            setTimeout(() => {
-                button.classList.remove('incorrect');
-            }, 500);
+    function collectArticleWords(phaseVocabulary) {
+        if (!phaseVocabulary || !Array.isArray(phaseVocabulary.vocabulary)) {
+            return [];
         }
-    };
 
-    // Обновление прогресса
-    window.updateArticlesProgress = function() {
-        const fill = document.querySelector('.articles-exercise-new .progress-fill');
-        const counter = document.getElementById('articles-correct');
-        
-        if (fill) {
-            const percent = (window.articlesCorrect / window.articlesTotal * 100);
-            fill.style.width = percent + '%';
-        }
-        if (counter) {
-            counter.textContent = window.articlesCorrect;
-        }
-    };
+        return phaseVocabulary.vocabulary
+            .map(entry => {
+                if (!entry || !entry.german) {
+                    return null;
+                }
 
-    // Сброс упражнения
-    window.resetArticles = function() {
-        const container = document.querySelector('.articles-exercise-new');
-        if (!container) return;
-        
-        // Сбрасываем счетчики
-        window.articlesCorrect = 0;
-        updateArticlesProgress();
-        
-        // Убираем классы и разблокируем кнопки
-        container.querySelectorAll('.article-item').forEach(item => {
-            item.classList.remove('completed');
-            item.querySelectorAll('button').forEach(btn => {
-                btn.disabled = false;
-                btn.classList.remove('correct', 'incorrect');
+                const parts = entry.german.trim().split(/\s+/);
+                if (parts.length < 2) {
+                    return null;
+                }
+
+                const article = parts[0].toLowerCase();
+                if (!['der', 'die', 'das'].includes(article)) {
+                    return null;
+                }
+
+                return {
+                    article,
+                    noun: parts.slice(1).join(' '),
+                    translation: entry.russian || '—'
+                };
+            })
+            .filter(Boolean);
+    }
+
+    function createArticlesQuizMarkup(words) {
+        const itemsMarkup = words.map(item => `
+        <div class="quiz-item" data-correct="${item.article}">
+            <div class="quiz-word">${escapeHtml(item.noun)}</div>
+            <div class="quiz-translation">${escapeHtml(item.translation)}</div>
+            <div class="article-buttons">
+                <button class="article-btn der" data-article="der">
+                    <span class="article-icon">♂</span> der
+                </button>
+                <button class="article-btn die" data-article="die">
+                    <span class="article-icon">♀</span> die
+                </button>
+                <button class="article-btn das" data-article="das">
+                    <span class="article-icon">⚪</span> das
+                </button>
+            </div>
+        </div>`).join('');
+
+        return `
+        <section class="articles-quiz" data-quiz="articles">
+            <div class="quiz-header">
+                <h3 class="quiz-title">🎯 Артикли и род</h3>
+                <p class="quiz-description">Выберите правильный артикль для существительных из урока</p>
+            </div>
+
+            <div class="articles-legend">
+                <div class="legend-item legend-der">
+                    <span class="legend-icon">♂</span>
+                    <span>der — мужской</span>
+                </div>
+                <div class="legend-item legend-die">
+                    <span class="legend-icon">♀</span>
+                    <span>die — женский</span>
+                </div>
+                <div class="legend-item legend-das">
+                    <span class="legend-icon">⚪</span>
+                    <span>das — средний</span>
+                </div>
+            </div>
+
+            <div class="quiz-progress">
+                <div class="progress-count">
+                    <strong>0</strong>/<span class="total">0</span> правильных
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <div class="quiz-grid">
+                ${itemsMarkup}
+            </div>
+        </section>`;
+    }
+
+    function attachArticlesQuizHandlers(quizElement) {
+        const items = quizElement.querySelectorAll('.quiz-item');
+        const total = items.length;
+        const progressCount = quizElement.querySelector('.progress-count strong');
+        const totalElement = quizElement.querySelector('.total');
+        const progressFill = quizElement.querySelector('.progress-fill');
+
+        if (totalElement) {
+            totalElement.textContent = total;
+        }
+
+        let solved = 0;
+
+        items.forEach(item => {
+            const buttons = item.querySelectorAll('.article-btn');
+            const correctArticle = item.dataset.correct;
+            let answered = false;
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    if (answered) {
+                        return;
+                    }
+
+                    const selected = button.dataset.article;
+
+                    if (selected === correctArticle) {
+                        answered = true;
+                        solved += 1;
+                        item.classList.add('item-solved');
+                        button.classList.add('is-correct');
+                        buttons.forEach(btn => {
+                            btn.disabled = true;
+                        });
+
+                        updateArticlesProgress(progressCount, progressFill, solved, total);
+
+                        if (solved === total) {
+                            showQuizCompletion(quizElement, solved, total);
+                        }
+                    } else {
+                        button.classList.add('is-wrong');
+                        setTimeout(() => {
+                            button.classList.remove('is-wrong');
+                        }, 500);
+                    }
+                });
             });
         });
-        
-        // Удаляем сообщение о завершении если есть
-        const message = container.querySelector('.completion-message');
-        if (message) message.remove();
-    };
 
-    // Сообщение о завершении
-    function showCompletionMessage() {
-        const container = document.querySelector('.articles-exercise-new');
-        if (!container) return;
-        
-        // Создаем оверлей (затемненный фон)
-        const overlay = document.createElement('div');
-        overlay.className = 'completion-overlay';
-        overlay.addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeCompletionMessage();
-            }
-        });
-        
-        // Обработчик нажатия Escape
-        const handleEscape = function(e) {
-            if (e.key === 'Escape') {
-                closeCompletionMessage();
-                document.removeEventListener('keydown', handleEscape);
-            }
-        };
-        document.addEventListener('keydown', handleEscape);
-        
+        updateArticlesProgress(progressCount, progressFill, solved, total);
+    }
+
+    function updateArticlesProgress(counterElement, barElement, solved, total) {
+        if (counterElement) {
+            counterElement.textContent = solved;
+        }
+
+        if (barElement) {
+            const percentage = total > 0 ? (solved / total) * 100 : 0;
+            barElement.style.width = `${percentage}%`;
+        }
+    }
+
+    function showQuizCompletion(quizElement, solved, total) {
+        if (!quizElement) {
+            return;
+        }
+
+        const existing = quizElement.querySelector('.quiz-completion');
+        if (existing) {
+            existing.remove();
+        }
+
         const message = document.createElement('div');
-        message.className = 'completion-message';
+        message.className = 'quiz-completion';
+        message.setAttribute('role', 'status');
         message.innerHTML = `
-            <button onclick="closeCompletionMessage()" class="btn-close-x" title="Закрыть">&times;</button>
-            <h3>🎉 Отлично!</h3>
+            <h4>🎉 Отлично!</h4>
             <p>Вы правильно определили все артикли!</p>
-            <p class="completion-stats">Правильно: ${window.articlesCorrect} из ${window.articlesTotal}</p>
-            <div class="completion-buttons">
-                <button onclick="closeCompletionMessage()" class="btn-close">Закрыть</button>
-                <button onclick="resetArticles()" class="btn-retry">Попробовать снова</button>
-            </div>
+            <p class="completion-stats">Правильно: ${solved} из ${total}</p>
         `;
-        
-        overlay.appendChild(message);
-        document.body.appendChild(overlay);
-        
-        setTimeout(() => {
-            overlay.classList.add('show');
-            message.classList.add('show');
-        }, 100);
+
+        quizElement.appendChild(message);
     }
-    
-    // Функция закрытия окна завершения
-    window.closeCompletionMessage = function() {
-        const overlay = document.querySelector('.completion-overlay');
-        const message = document.querySelector('.completion-message');
-        
-        if (overlay) {
-            overlay.classList.remove('show');
-            if (message) {
-                message.classList.remove('show');
-            }
-            
-            setTimeout(() => {
-                overlay.remove();
-            }, 300);
+
+    function escapeHtml(value) {
+        if (value == null) {
+            return '';
         }
-    };
+
+        return String(value)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    }
 
 
     // ==========================================
