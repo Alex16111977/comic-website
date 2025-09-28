@@ -43,6 +43,36 @@ const globalOptionPools = {
     russian: collectGlobalWordValues('russian'),
 };
 
+const ARTICLE_META = {
+    der: {
+        icon: '♂',
+        cardClass: 'is-der',
+        chipClass: 'der',
+    },
+    die: {
+        icon: '♀',
+        cardClass: 'is-die',
+        chipClass: 'die',
+    },
+    das: {
+        icon: '⚪',
+        cardClass: 'is-das',
+        chipClass: 'das',
+    },
+};
+
+const NEUTRAL_LABEL_FALLBACK = 'лексика без артикля';
+const NEUTRAL_LABEL_KEYS = [
+    'part_of_speech',
+    'partOfSpeech',
+    'pos',
+    'type',
+    'wordType',
+    'word_type',
+    'category',
+    'wordCategory',
+];
+
 const studyQueueState = {
     queue: [],
     lookup: new Map(),
@@ -934,6 +964,203 @@ function setActiveExerciseSections(phaseKey) {
     refreshActiveExerciseContentHeight();
 }
 
+function extractArticleData(wordValue) {
+    const raw = typeof wordValue === 'string' ? wordValue.trim() : '';
+    if (!raw) {
+        return { baseWord: '', article: null };
+    }
+
+    const match = raw.match(/^(der|die|das)\s+/i);
+    if (!match) {
+        return { baseWord: raw, article: null };
+    }
+
+    const article = match[1].toLowerCase();
+    const baseWord = raw.slice(match[0].length).trim() || raw;
+    return { baseWord, article };
+}
+
+function resolveNeutralLabel(item) {
+    if (!item || typeof item !== 'object') {
+        return NEUTRAL_LABEL_FALLBACK;
+    }
+
+    for (const key of NEUTRAL_LABEL_KEYS) {
+        const value = item[key];
+        if (typeof value === 'string') {
+            const trimmed = value.trim();
+            if (trimmed) {
+                return trimmed;
+            }
+        }
+    }
+
+    return NEUTRAL_LABEL_FALLBACK;
+}
+
+function createNeutralChip(label) {
+    const chip = document.createElement('span');
+    chip.className = 'word-type-chip';
+    chip.textContent = label || NEUTRAL_LABEL_FALLBACK;
+    return chip;
+}
+
+function createArticleChip(article) {
+    const chip = document.createElement('span');
+    const meta = article ? ARTICLE_META[article] : null;
+
+    if (!meta) {
+        return createNeutralChip(NEUTRAL_LABEL_FALLBACK);
+    }
+
+    chip.className = `article-chip ${meta.chipClass}`;
+    const icon = document.createElement('span');
+    icon.className = 'article-icon';
+    icon.textContent = meta.icon;
+    const label = document.createElement('span');
+    label.textContent = article;
+    chip.append(icon, label);
+    return chip;
+}
+
+function createStudyButtonForWord(item, phaseKey) {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'btn-study';
+    button.textContent = 'Изучить';
+
+    const safe = value => {
+        if (typeof value === 'string') {
+            return value;
+        }
+        if (value === null || value === undefined) {
+            return '';
+        }
+        return String(value);
+    };
+
+    button.dataset.word = safe(item && item.word);
+    button.dataset.translation = safe(item && item.translation);
+    button.dataset.transcription = safe(item && item.transcription);
+    button.dataset.russianHint = safe(item && item.russian_hint);
+    button.dataset.sentence = safe(item && item.sentence);
+    button.dataset.sentenceTranslation = safe(item && item.sentenceTranslation);
+    const resolvedCharacterId = typeof characterId === 'string'
+        ? characterId
+        : (characterId === null || characterId === undefined ? '' : String(characterId));
+    button.dataset.characterId = safe(resolvedCharacterId);
+    button.dataset.phaseKey = safe(phaseKey || '');
+    button.dataset.emoji = safe((item && (item.visual_hint || item.emoji)) || '📝');
+
+    return button;
+}
+
+function setupStudyButtonForCard(studyBtn, item) {
+    if (!studyBtn) {
+        return;
+    }
+
+    studyBtn.dataset.defaultLabel = studyBtn.dataset.defaultLabel || 'Изучить';
+    studyBtn.dataset.activeLabel = studyBtn.dataset.activeLabel || 'В списке';
+    studyBtn.dataset.inactiveTitle = studyBtn.dataset.inactiveTitle || 'Добавить слово в список изучения';
+    studyBtn.dataset.activeTitle = studyBtn.dataset.activeTitle || 'Удалить слово из списка изучения';
+
+    const initialState = isWordInStudyQueue({
+        word: item && item.word,
+        characterId: characterId,
+    });
+    applyStudyButtonState(studyBtn, initialState);
+
+    studyBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        const payload = buildStudyPayloadFromButton(this, item);
+        const toggled = toggleStudyWord(payload);
+
+        if (toggled === null) {
+            alert('Не удалось обновить список изучения');
+            applyStudyButtonState(this, isWordInStudyQueue(payload));
+            return;
+        }
+
+        if (navigator.vibrate && isTouchDevice) {
+            navigator.vibrate(20);
+        }
+    });
+}
+
+function buildVocabularyCardElement(item, phaseKey) {
+    if (!item || typeof item !== 'object') {
+        return null;
+    }
+
+    const { baseWord, article } = extractArticleData(item && item.word);
+    const card = document.createElement('div');
+    card.classList.add('vocab-card');
+
+    const meta = article ? ARTICLE_META[article] : null;
+    if (meta) {
+        card.classList.add(meta.cardClass);
+        card.dataset.article = article;
+    } else {
+        card.classList.add('is-neutral');
+    }
+
+    const rawWord = item && typeof item.word === 'string' ? item.word.trim() : '';
+    const cardWord = baseWord || rawWord;
+    if (cardWord) {
+        card.dataset.word = cardWord;
+    }
+
+    const header = document.createElement('div');
+    header.className = 'vocab-header';
+
+    const badge = meta
+        ? createArticleChip(article)
+        : createNeutralChip(resolveNeutralLabel(item));
+    header.appendChild(badge);
+
+    const wordElement = document.createElement('div');
+    wordElement.className = 'vocab-word';
+    wordElement.textContent = cardWord || '';
+    header.appendChild(wordElement);
+    card.appendChild(header);
+
+    const translationElement = document.createElement('div');
+    translationElement.className = 'vocab-translation';
+    translationElement.textContent = item && typeof item.translation === 'string'
+        ? item.translation
+        : '';
+    card.appendChild(translationElement);
+
+    const hintValue = item && typeof item.russian_hint === 'string'
+        ? item.russian_hint.trim()
+        : '';
+    if (hintValue) {
+        const hintElement = document.createElement('div');
+        hintElement.className = 'word-hint';
+        hintElement.textContent = `(${hintValue})`;
+        card.appendChild(hintElement);
+    }
+
+    const transcriptionValue = item && typeof item.transcription === 'string'
+        ? item.transcription.trim()
+        : '';
+    if (transcriptionValue) {
+        const transcriptionElement = document.createElement('div');
+        transcriptionElement.className = 'vocab-transcription';
+        transcriptionElement.textContent = transcriptionValue;
+        card.appendChild(transcriptionElement);
+    }
+
+    const studyBtn = createStudyButtonForWord(item, phaseKey);
+    card.appendChild(studyBtn);
+    setupStudyButtonForCard(studyBtn, item);
+
+    return card;
+}
+
 function displayVocabulary(phaseKey) {
     // Prevent multiple rapid transitions
     if (isTransitioning) return;
@@ -1009,71 +1236,16 @@ function displayVocabulary(phaseKey) {
 
     grid.innerHTML = '';
 
-    phase.words.forEach((item, index) => {
+    const words = Array.isArray(phase.words) ? phase.words : [];
+
+    words.forEach((item, index) => {
         setTimeout(() => {
-            const card = document.createElement('div');
-            card.className = 'word-card';
-            card.style.animationDelay = `${index * 0.1}s`;
-
-            const hintValue = typeof item.russian_hint === 'string' ? item.russian_hint.trim() : '';
-            const hintMarkup = hintValue
-                ? `<div class="word-hint">(${hintValue})</div>`
-                : '';
-
-            // Простая карточка словаря
-            card.innerHTML = `
-                <div class="word-meta">
-                    <div class="word-german">${item.word}</div>
-                    <div class="word-translation">${item.translation}</div>
-                    ${hintMarkup}
-                    <div class="word-transcription">${item.transcription}</div>
-                </div>
-                <button class="btn-study" type="button"
-                    data-word="${item.word || ''}"
-                    data-translation="${item.translation || ''}"
-                    data-transcription="${item.transcription || ''}"
-                    data-russian-hint="${hintValue}"
-                    data-sentence="${item.sentence || ''}"
-                    data-sentence-translation="${item.sentenceTranslation || ''}"
-                    data-character-id="${characterId || ''}"
-                    data-phase-key="${phaseKey || ''}"
-                    data-emoji="${item.visual_hint || '📝'}"
-                >Изучить</button>
-            `;
-
-            // Добавляем обработчик для кнопки
-            const studyBtn = card.querySelector('.btn-study');
-            if (studyBtn) {
-                studyBtn.dataset.defaultLabel = studyBtn.dataset.defaultLabel || 'Изучить';
-                studyBtn.dataset.activeLabel = studyBtn.dataset.activeLabel || 'В списке';
-                studyBtn.dataset.inactiveTitle = studyBtn.dataset.inactiveTitle || 'Добавить слово в список изучения';
-                studyBtn.dataset.activeTitle = studyBtn.dataset.activeTitle || 'Удалить слово из списка изучения';
-
-                const initialState = isWordInStudyQueue({
-                    word: item.word,
-                    characterId: characterId,
-                });
-                applyStudyButtonState(studyBtn, initialState);
-
-                studyBtn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-
-                    const payload = buildStudyPayloadFromButton(this, item);
-                    const toggled = toggleStudyWord(payload);
-
-                    if (toggled === null) {
-                        alert('Не удалось обновить список изучения');
-                        applyStudyButtonState(this, isWordInStudyQueue(payload));
-                        return;
-                    }
-
-                    if (navigator.vibrate && isTouchDevice) {
-                        navigator.vibrate(20);
-                    }
-                });
+            const card = buildVocabularyCardElement(item, phaseKey);
+            if (!card) {
+                return;
             }
 
+            card.style.animationDelay = `${index * 0.1}s`;
             grid.appendChild(card);
         }, index * 50);
     });
@@ -1081,7 +1253,7 @@ function displayVocabulary(phaseKey) {
     // Ensure UI reflects current queue after rendering
     setTimeout(() => {
         updateAllStudyButtons();
-    }, phase.words.length * 50 + 20);
+    }, words.length * 50 + 20);
 
     // Update progress bar
     const progress = ((currentPhaseIndex + 1) / phaseKeys.length) * 100;

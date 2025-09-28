@@ -548,59 +548,7 @@ class MnemonicsGenerator:
     </div>
 
     <!-- Сітка слів -->
-    <div class="vocabulary-grid">
-"""
-        
-        # Отримуємо слова конкретної фази
-        if phase_id:
-            vocabulary = self.get_phase_vocabulary(character_data, phase_id)
-        else:
-            # Якщо phase_id не вказано - беремо першу фазу
-            phases = character_data.get('journey_phases', [])
-            vocabulary = phases[0].get('vocabulary', []) if phases else []
-        
-        # Генеруємо картки для кожного слова
-        for word in vocabulary:
-            german = word['german']
-            article = self.extract_article(german)
-            color_data = self.GENDER_COLORS.get(article)
-
-            if color_data:
-                card_class = f"is-{article}"
-                word_display = german.replace(f"{article} ", "", 1)
-                badge_html = ''.join([
-                    f'<span class="article-chip {article}">',
-                    f'<span class="article-icon">{color_data["icon"]}</span>',
-                    f'<span>{article}</span>',
-                    '</span>'
-                ])
-                data_article = article
-            else:
-                card_class = "is-neutral"
-                word_display = german
-                neutral_label = word.get('part_of_speech') or word.get('pos') or word.get('type')
-                if neutral_label:
-                    label_text = neutral_label
-                else:
-                    label_text = "лексика без артикля"
-                badge_html = f'<span class="word-type-chip">{label_text}</span>'
-                data_article = ""
-
-            data_article_attr = f" data-article=\"{data_article}\"" if data_article else ""
-
-            html += f"""
-        <div class=\"vocab-card {card_class}\" data-word=\"{word_display}\"{data_article_attr}>
-            <div class=\"vocab-header\">
-                {badge_html}
-                <div class=\"vocab-word\">{word_display}</div>
-            </div>
-            <div class=\"vocab-translation\">{word['russian']}</div>
-            <div class=\"vocab-transcription\">{word['transcription']}</div>
-        </div>
-"""
-        
-        html += """
-    </div>
+    <div class="vocabulary-grid"></div>
 </section>
 """
         return html
