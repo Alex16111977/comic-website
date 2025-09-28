@@ -3,7 +3,6 @@ from __future__ import annotations
 
 from pathlib import Path
 from typing import Any
-import re
 
 from .base import BaseGenerator
 from .mnemonics_gen import MnemonicsGenerator
@@ -103,17 +102,53 @@ class LiraHTMLGenerator(BaseGenerator):
             html = html[:insert_pos] + f'\n\n        {vocab_html}\n\n' + html[insert_pos:]
             print(f"[DEBUG] Словник вставлено ЗВЕРХУ для {character['id']}")
         
-        # Видаляємо існуючий порожній vocabulary-grid (якщо є)
-        # Цей елемент знаходиться в оригінальному шаблоні і конфліктує з нашим
-        if '<div class="vocabulary-grid"></div>' in html:
-            html = html.replace('<div class="vocabulary-grid"></div>', '')
-            print(f"[DEBUG] Видалено порожній vocabulary-grid для {character['id']}")
-        
-        # Аналогічно для всього vocabulary-section блоку
-        vocab_pattern = r'<div class="vocabulary-section">\s*<h2>[^<]*</h2>\s*<div class="vocabulary-grid"></div>\s*[^<]*</div>'
-        if re.search(vocab_pattern, html):
-            html = re.sub(vocab_pattern, '', html)
-            print(f"[DEBUG] Видалено порожню vocabulary-section для {character['id']}")
+        # Видаляємо placeholder-блок словника у вигляді <div class="vocabulary-section">...
+        # Залишаємо недоторканим новий варіант, що використовує <section>.
+        search_start = 0
+        placeholder_removed = False
+
+        while True:
+            block_start = html.find('<div class="vocabulary-section">', search_start)
+            if block_start == -1:
+                break
+
+            start_tag_end = html.find('>', block_start)
+            if start_tag_end == -1:
+                break
+
+            pos = start_tag_end + 1
+            depth = 1
+
+            while depth > 0 and pos < len(html):
+                next_open = html.find('<div', pos)
+                next_close = html.find('</div>', pos)
+
+                if next_close == -1:
+                    break
+
+                if next_open != -1 and next_open < next_close:
+                    depth += 1
+                    pos = next_open + 4
+                else:
+                    depth -= 1
+                    pos = next_close + len('</div>')
+
+            if depth != 0:
+                # Не вдалося знайти коректне закриття блоку, припиняємо пошук.
+                break
+
+            block_end = pos
+            block_content = html[block_start:block_end]
+
+            if '<div class="vocabulary-grid"></div>' in block_content:
+                html = html[:block_start] + html[block_end:]
+                placeholder_removed = True
+                search_start = block_start
+            else:
+                search_start = block_end
+
+        if placeholder_removed:
+            print(f"[DEBUG] Видалено placeholder vocabulary-section для {character['id']}")
         
         # Вставляємо CSS мнемотехніки в head
         # Додаємо CSS стилі в head через style тег
